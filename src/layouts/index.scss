@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+
+@import "./bulmaio/bulmaio";
+
+@import "./bulmaio_jinja2/article_card";
+@import "./bulmaio_jinja2/breadcrumb";
+@import "./bulmaio_jinja2/content";
+
+.bio-page-sidebar {
+  font-size: $size-small;
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  .bio-page-sidenav-published-heading li {
+    padding: 0.5em 0.75em;
+  }
+
+  .menu-label {
+    margin-bottom: 2em;
+  }
+}
