@@ -27,25 +27,27 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
   return (
     <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
-      <div className="bio-resourcecards">
-        {resources &&
-          resources.map(resource => {
-            const rfm = resource.frontmatter;
-            const href = `/tips/${rfm.path}`;
-            const thumbnail = rfm.thumbnail;
-            return (
-              <ResourceCard
-                key={href}
-                title={rfm.title}
-                subtitle={rfm.subtitle}
-                technologies={rfm.technologies}
-                topics={rfm.topics}
-                href={href}
-                thumbnail={thumbnail}
-                date={rfm.date}
-              />
-            );
-          })}
+      <div className="columns">
+        <div className="column is-three-quarters-desktop bio-resourcecards">
+          {resources &&
+            resources.map(resource => {
+              const rfm = resource.frontmatter;
+              const href = `/tips/${rfm.path}`;
+              const thumbnail = rfm.thumbnail;
+              return (
+                <ResourceCard
+                  key={href}
+                  title={rfm.title}
+                  subtitle={rfm.subtitle}
+                  technologies={rfm.technologies}
+                  topics={rfm.topics}
+                  href={href}
+                  thumbnail={thumbnail}
+                  date={rfm.date}
+                />
+              );
+            })}
+        </div>
       </div>
     </ImageLayout>
   );

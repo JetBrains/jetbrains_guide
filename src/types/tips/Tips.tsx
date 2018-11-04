@@ -28,35 +28,37 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
   const authors = data.authors.edges.map(edge => edge.node);
   return (
     <DefaultLayout title="Tips" subtitle="Resources organized by programming technologies">
-      <div className="bio-resourcecards">
-        {items &&
-          items.map(item => {
-            const frontmatter = item.frontmatter;
-            const href = `/tips/${frontmatter.path}`;
+      <div className="columns">
+        <div className="column is-three-quarters-desktop bio-resourcecards">
+          {items &&
+            items.map(item => {
+              const frontmatter = item.frontmatter;
+              const href = `/tips/${frontmatter.path}`;
 
-            // Use the first technology's icon as the logo
-            const thumbnail = frontmatter.thumbnail;
+              // Use the first technology's icon as the logo
+              const thumbnail = frontmatter.thumbnail;
 
-            const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
-            const author = {
-              title: authorRef.frontmatter.title,
-              headshot: authorRef.frontmatter.headshot,
-              href: `/authors/${authorRef.frontmatter.label}`
-            };
-            return (
-              <ResourceCard
-                key={href}
-                title={frontmatter.title}
-                subtitle={frontmatter.subtitle}
-                technologies={frontmatter.technologies}
-                topics={frontmatter.topics}
-                href={href}
-                thumbnail={thumbnail}
-                author={author}
-                date={frontmatter.date}
-              />
-            );
-          })}
+              const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
+              const author = {
+                title: authorRef.frontmatter.title,
+                headshot: authorRef.frontmatter.headshot,
+                href: `/authors/${authorRef.frontmatter.label}`
+              };
+              return (
+                <ResourceCard
+                  key={href}
+                  title={frontmatter.title}
+                  subtitle={frontmatter.subtitle}
+                  technologies={frontmatter.technologies}
+                  topics={frontmatter.topics}
+                  href={href}
+                  thumbnail={thumbnail}
+                  author={author}
+                  date={frontmatter.date}
+                />
+              );
+            })}
+        </div>
       </div>
     </DefaultLayout>
   );

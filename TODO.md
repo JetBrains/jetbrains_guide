@@ -4,10 +4,6 @@
 
 ## Next
 
-- Make short video is-three-fifths and try to get rid of some overlays
-
-- Make the listings 3/5ths
-
 - Get rid of tweet dates
 
 - Get a “Learn More” button above the fold which scrolls
@@ -119,4 +115,8 @@ in Sprout and not have to upload the video
 - Put published date in the listings
 
 - Make a square, smaller thumbnail from the poster to use in listings
+
+- Make short video is-three-fifths
+
+- Make the listings 3/4ths
 

@@ -32,33 +32,35 @@ const Technology: React.SFC<ITechnologyProps> = ({ data }) => {
   return (
     <LogoLayout title={frontmatter.title} subtitle={frontmatter.subtitle} logo={frontmatter.logo}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: technology.html }} />
-      <nav className="bio-resourcecards">
-        {resources &&
-          resources.map(resource => {
-            const rfm = resource.frontmatter;
-            const href = `/tips/${rfm.path}`;
-            const authorRef = authors.find(a => a.frontmatter.label === rfm.author) as IAuthor;
-            const author = {
-              title: authorRef.frontmatter.title,
-              headshot: authorRef.frontmatter.headshot,
-              href: `/authors/${authorRef.frontmatter.label}`
-            };
-            const thumbnail = rfm.thumbnail;
-            return (
-              <ResourceCard
-                key={href}
-                title={rfm.title}
-                subtitle={rfm.subtitle}
-                technologies={rfm.technologies}
-                topics={rfm.topics}
-                href={href}
-                thumbnail={thumbnail}
-                author={author}
-                date={rfm.date}
-              />
-            );
-          })}
-      </nav>
+      <div className="columns">
+        <nav className="column is-three-quarters-desktop bio-resourcecards">
+          {resources &&
+            resources.map(resource => {
+              const rfm = resource.frontmatter;
+              const href = `/tips/${rfm.path}`;
+              const authorRef = authors.find(a => a.frontmatter.label === rfm.author) as IAuthor;
+              const author = {
+                title: authorRef.frontmatter.title,
+                headshot: authorRef.frontmatter.headshot,
+                href: `/authors/${authorRef.frontmatter.label}`
+              };
+              const thumbnail = rfm.thumbnail;
+              return (
+                <ResourceCard
+                  key={href}
+                  title={rfm.title}
+                  subtitle={rfm.subtitle}
+                  technologies={rfm.technologies}
+                  topics={rfm.topics}
+                  href={href}
+                  thumbnail={thumbnail}
+                  author={author}
+                  date={rfm.date}
+                />
+              );
+            })}
+        </nav>
+      </div>
     </LogoLayout>
   );
 };
