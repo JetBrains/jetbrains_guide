@@ -15,6 +15,7 @@ seealso:
   href: "https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html"      
 - title: "No Tabs in IntelliJ IDEA"
   href: "https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/"      
+thumbnail: "./thumbnail.png"
 shortVideo:
     poster: "./poster_short.png"
     url: "https://www.youtube.com/watch?v=nBF9tT787B0"

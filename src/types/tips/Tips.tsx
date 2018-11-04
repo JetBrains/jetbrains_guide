@@ -7,7 +7,7 @@ import ResourceCard from '../../components/ResourceCard';
 
 import { ITipEdges } from './models';
 import { IAuthor, IAuthorEdges } from '../authors/models';
-import { ITechnology, ITechnologyEdges } from '../technologies/models';
+import { ITechnologyEdges } from '../technologies/models';
 
 interface ITipsProps {
   data: {
@@ -26,7 +26,6 @@ interface ITipsProps {
 const Tips: React.SFC<ITipsProps> = ({ data }) => {
   const items = data.tips.edges.map(edge => edge.node);
   const authors = data.authors.edges.map(edge => edge.node);
-  const technologies = data.technologies.edges.map(edge => edge.node);
   return (
     <DefaultLayout title="Tips" subtitle="Resources organized by programming technologies">
       <div className="bio-resourcecards">
@@ -36,10 +35,7 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
             const href = `/tips/${frontmatter.path}`;
 
             // Use the first technology's icon as the logo
-            const technologyRef = technologies.find(
-              technology => technology.frontmatter.label === frontmatter.technologies[0]
-            ) as ITechnology;
-            const logo = technologyRef.frontmatter.logo;
+            const thumbnail = frontmatter.thumbnail;
 
             const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
             const author = {
@@ -55,7 +51,7 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
                 technologies={frontmatter.technologies}
                 topics={frontmatter.topics}
                 href={href}
-                logo_href={logo}
+                thumbnail={thumbnail}
                 author={author}
                 date={frontmatter.date}
               />
@@ -114,6 +110,14 @@ export const query = graphql`
             technologies
             topics
             author
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

@@ -11,6 +11,7 @@ export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
   topics: string[];
   author: string;
   shortVideo?: any;
+  thumbnail?: any;
 }
 
 export interface IBaseCategoryFrontmatter extends IBaseFrontmatter {

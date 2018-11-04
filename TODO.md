@@ -2,8 +2,6 @@
 
 ## Now
 
-- Make a square, smaller thumbnail from the poster to use in listings
-
 ## Next
 
 - Make short video is-three-fifths and try to get rid of some overlays
@@ -119,4 +117,6 @@ in Sprout and not have to upload the video
 - Hamburger collapse/expand JS
 
 - Put published date in the listings
+
+- Make a square, smaller thumbnail from the poster to use in listings
 

@@ -34,26 +34,26 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
       <nav className="bio-resourcecards">
         {resources &&
           resources.map(resource => {
-            const frontmatter = resource.frontmatter;
-            const href = `/tips/${frontmatter.path}`;
-            const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
+            const rfm = resource.frontmatter;
+            const href = `/tips/${rfm.path}`;
+            const authorRef = authors.find(a => a.frontmatter.label === rfm.author) as IAuthor;
             const author = {
               title: authorRef.frontmatter.title,
               headshot: authorRef.frontmatter.headshot,
               href: `/authors/${authorRef.frontmatter.label}`
             };
-            const thumbnail = frontmatter.shortVideo.poster;
+            const thumbnail = rfm.thumbnail;
             return (
               <ResourceCard
                 key={href}
-                title={frontmatter.title}
-                subtitle={frontmatter.subtitle}
-                technologies={frontmatter.technologies}
-                topics={frontmatter.topics}
+                title={rfm.title}
+                subtitle={rfm.subtitle}
+                technologies={rfm.technologies}
+                topics={rfm.topics}
                 href={href}
                 thumbnail={thumbnail}
                 author={author}
-                date={frontmatter.date}
+                date={rfm.date}
               />
             );
           })}
@@ -97,13 +97,11 @@ export const query = graphql`
             author
             topics
             technologies
-            shortVideo {
-              poster {
-                publicURL
-                childImageSharp {
-                  fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
-                  }
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

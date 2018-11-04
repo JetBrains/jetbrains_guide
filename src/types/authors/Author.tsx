@@ -30,19 +30,19 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
       <div className="bio-resourcecards">
         {resources &&
           resources.map(resource => {
-            const frontmatter = resource.frontmatter;
-            const href = '/tips/' + frontmatter.path;
-            const thumbnail = frontmatter.shortVideo.poster;
+            const rfm = resource.frontmatter;
+            const href = `/tips/${rfm.path}`;
+            const thumbnail = rfm.thumbnail;
             return (
               <ResourceCard
                 key={href}
-                title={frontmatter.title}
-                subtitle={frontmatter.subtitle}
-                technologies={frontmatter.technologies}
-                topics={frontmatter.topics}
+                title={rfm.title}
+                subtitle={rfm.subtitle}
+                technologies={rfm.technologies}
+                topics={rfm.topics}
                 href={href}
                 thumbnail={thumbnail}
-                date={frontmatter.date}
+                date={rfm.date}
               />
             );
           })}
@@ -103,13 +103,11 @@ export const query = graphql`
             author
             technologies
             topics
-            shortVideo {
-              poster {
-                publicURL
-                childImageSharp {
-                  fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
-                  }
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
