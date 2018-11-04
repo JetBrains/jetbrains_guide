@@ -9,7 +9,7 @@ it('renders the default NavbarSubItem', () => {
     <NavbarSubItem {...MORE_SUBMENU.items[0]}/>);
 
   const a = wrapper.find('a');
-  expect(a.hasClass('navbar-item bd-navbar-item-class1'));
+  expect(a.hasClass('navbar-item bd-navbar-item-class'));
   const span1 = wrapper.find('span.icon');
   expect(span1.hasClass('has-text-accent1'));
   const i = span1.find('i');

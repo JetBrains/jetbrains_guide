@@ -1,22 +1,21 @@
 {
-  "name": "gatsyby-typescript-template",
-  "description": "gatsyby with typescript and tslint",
+  "name": "pycharm_guide",
+  "description": "Gatsby-driven compendium of PyCharm learning resources",
   "version": "1.0.0",
-  "author": "Ryo Ikeura ( ikeryo1182@gmail.com )",
+  "author": "Paul Everitt <paul.everitt@jetbrains.com>",
   "keywords": [
     "gatsby, typescript"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop",
-    "fix": "prettier --write 'src/**/*.{ts,tsx,scss,md}' && tslint --fix 'src/**/*.{ts,tsx}' -p tsconfig.json && stylelint --fix 'src/**/*.scss' "
+    "start": "gatsby develop"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.14",
     "@types/enzyme-adapter-react-16": "^1.0.3",
-    "@types/jest": "^23.3.7",
+    "@types/jest": "^23.3.9",
     "@types/node": "^10.12.0",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
@@ -39,9 +38,7 @@
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-transformer-remark": "^2.1.5",
     "gatsby-transformer-sharp": "^2.1.5",
-    "husky": "^1.1.0",
     "jest": "^23.6.0",
-    "lint-staged": "^7.3.0",
     "node-sass": "^4.9.3",
     "prettier": "^1.14.3",
     "prismjs": "^1.15.0",
@@ -52,12 +49,6 @@
     "react-test-renderer": "^16.6.0",
     "remark": "^10.0.0",
     "remark-html": "^8.0.0",
-    "stylelint": "^9.6.0",
-    "stylelint-config-css-modules": "^1.3.0",
-    "stylelint-config-prettier": "^4.0.0",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.1",
     "ts-jest": "^23.10.4",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
