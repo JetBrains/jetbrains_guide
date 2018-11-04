@@ -7,9 +7,6 @@ technologies: ["ansible", "angular"]
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Save space and stay keyboard-centric by turning off the tabs"
-tweets:
-- date: "2017-07-10"
-  href: "https://twitter.com/pycharm/status/884381701782343683"
 seealso:
 - title: "Managing Editor Tabs"
   href: "https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html"      

@@ -7,9 +7,6 @@ technologies: ["angular", "ansible"]
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Save space by turning off various toolbars and Project Tool"
-tweets:
-- date: "2017-07-07"
-  href: "https://twitter.com/pycharm/status/883294535270510592"
 seealso:
 - title: "Configuring Menus and Toolbars"
   href: "https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html"      

@@ -5,11 +5,6 @@ interface IVideoPlayer {
   url: any;
 }
 
-interface ITweet {
-  date: string;
-  href: string;
-}
-
 interface ISeeAlso {
   title: string;
   href: string;
@@ -19,7 +14,6 @@ export interface ITipFrontmatter extends IBaseResourceFrontmatter {
   shortVideo: IVideoPlayer;
   longVideo: IVideoPlayer;
   leadin: string;
-  tweets?: ITweet[];
   seealso?: ISeeAlso[];
 }
 

@@ -21,7 +21,6 @@ const Tip: React.SFC<ITipProps> = ({ data }) => {
 
   const shortVideo = frontmatter.shortVideo;
   const longVideo = frontmatter.longVideo;
-  const tweets = frontmatter.tweets;
   const seealso = frontmatter.seealso;
   const leadin = frontmatter.leadin;
 
@@ -79,15 +78,6 @@ const Tip: React.SFC<ITipProps> = ({ data }) => {
             </div>
             <div className="column is-two-fifths content" dangerouslySetInnerHTML={{ __html: leadin }} />
           </div>
-          <div className="content">
-            <strong>Tweets:</strong>
-            {tweets &&
-              tweets.map(tweet => (
-                <a href={tweet.href} key={tweet.href} style={{ marginLeft: '0.5em', display: 'inline-block' }}>
-                  {tweet.date}
-                </a>
-              ))}
-          </div>
           <header className="is-size-3 is-bold">In Depth</header>
           <div className="content" dangerouslySetInnerHTML={{ __html: tip.html }} />
           {seealso && (
@@ -130,10 +120,6 @@ export const query = graphql`
         author
         topics
         leadin
-        tweets {
-          date
-          href
-        }
         seealso {
           title
           href

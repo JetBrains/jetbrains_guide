@@ -4,8 +4,6 @@
 
 ## Next
 
-- Get rid of tweet dates
-
 - Get a “Learn More” button above the fold which scrolls
 
 - Homepage: remove a bunch of text, then provide listing of recent 
@@ -18,14 +16,6 @@ tips, resource box with embedded video
 - Get the listings to have color for tags, technology
 
 ## Before MVP
-
-- Rewrite into new repo
-
-    - Remove husky and thus lint-staged
-    
-    - Remove stylelint
-    
-    - Remove tests (but not Jest setup)
 
 - Better README in repo root
 
@@ -119,4 +109,14 @@ in Sprout and not have to upload the video
 - Make short video is-three-fifths
 
 - Make the listings 3/4ths
+
+- Get rid of tweet dates
+
+- Rewrite into new repo
+
+    - Remove husky and thus lint-staged
+    
+    - Remove stylelint
+    
+    - Remove tests (but not Jest setup)
 
