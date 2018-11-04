@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-remark-images`,
       options: {
-        maxWidth: 1080,
-      },
+        maxWidth: 1080
+      }
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
@@ -57,7 +57,8 @@ module.exports = {
               // If you're unsure, it's best to use the default value.
               classPrefix: 'language-'
             }
-          }]
+          }
+        ]
       }
     }
   ]

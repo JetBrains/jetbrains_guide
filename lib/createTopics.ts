@@ -2,33 +2,27 @@ import { resolve } from 'path';
 import { GatsbyCreatePages } from './types';
 import { ISlugEdge } from './models';
 
-const createTopics: GatsbyCreatePages = async ({
-                                                 graphql,
-                                                 boundActionCreators
-                                               }) => {
+const createTopics: GatsbyCreatePages = async ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
 
   createPage({
-      path: '/topics',
-      component: resolve(`src/types/topics/Topics.tsx`)
-    }
-  );
+    path: '/topics',
+    component: resolve(`src/types/topics/Topics.tsx`)
+  });
 
   // Now create each individual page
-  const allMarkdown = await graphql(`{
-    allMarkdownRemark(
-      filter: {frontmatter: {type: {eq: "topic"}}}
-      limit: 2000
-    ) {
-      edges {
-        node {
-          fields {
-            slug
+  const allMarkdown = await graphql(`
+    {
+      allMarkdownRemark(filter: { frontmatter: { type: { eq: "topic" } } }, limit: 2000) {
+        edges {
+          node {
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  }
   `);
 
   const edges: ISlugEdge[] = allMarkdown.data.allMarkdownRemark.edges;
@@ -44,7 +38,6 @@ const createTopics: GatsbyCreatePages = async ({
       }
     });
   });
-
 };
 
 export default createTopics;

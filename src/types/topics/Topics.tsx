@@ -15,12 +15,12 @@ interface ITopicsProps {
 const Topics: React.SFC<ITopicsProps> = ({ data }) => {
   const items = data.allMarkdownRemark.edges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Topics"
-                   subtitle="Resources organized by programming topics">
+    <DefaultLayout title="Topics" subtitle="Resources organized by programming topics">
       <nav className="bd-links bio-resourcecards">
-        {items && items.map(item => {
+        {items &&
+          items.map(item => {
             const frontmatter = item.frontmatter;
-            const href = '/topics/' + frontmatter.label;
+            const href = `/topics/${frontmatter.label}`;
             return (
               <SubsectionTopic
                 key={href}
@@ -31,8 +31,7 @@ const Topics: React.SFC<ITopicsProps> = ({ data }) => {
                 icon={item.frontmatter.icon}
               />
             );
-          }
-        )}
+          })}
       </nav>
     </DefaultLayout>
   );
@@ -43,25 +42,26 @@ export default Topics;
 export const query = graphql`
   query {
     allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: {frontmatter: {type: {eq: "topic"}}}
-          limit: 1000
-        ) {
-            edges {
-              node {
-                excerpt(pruneLength: 250)
-                html
-                id
-                frontmatter {
-                            type
-                            label
-                            title
-                            subtitle
-                            date
-                            accent
-                            icon
-                          }
-                }
-            }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { type: { eq: "topic" } } }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          html
+          id
+          frontmatter {
+            type
+            label
+            title
+            subtitle
+            date
+            accent
+            icon
           }
-    }`;
+        }
+      }
+    }
+  }
+`;

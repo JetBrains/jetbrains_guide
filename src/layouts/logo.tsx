@@ -23,18 +23,17 @@ class LogoLayout extends React.PureComponent<LogoLayoutProps, {}> {
       <div>
         <Helmet
           title={`${title} - PyCharm Guide`}
-          meta={[{ name: 'description', content: 'template' },
-            { name: 'keywords', content: 'template, something' }]}
+          meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
-          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"/>
-          <meta charSet="utf-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <html lang="en"/>
-          <body className="layout-default"/>
-          <link rel="shortcut icon" href={favicon}/>
+          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+          <meta charSet="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <html lang="en" />
+          <body className="layout-default" />
+          <link rel="shortcut icon" href={favicon} />
         </Helmet>
-        <Navbar {...NAVBAR}/>
+        <Navbar {...NAVBAR} />
 
         <main className="bd-main bulmaio-body">
           <div className="bd-main-container container">
@@ -42,22 +41,14 @@ class LogoLayout extends React.PureComponent<LogoLayoutProps, {}> {
               <article className="media">
                 <figure className="media-left">
                   <div className="image is-rounded is-96x96">
-                    <img className="bio-resourcecard-logo"
-                         src={logo} alt="Logo"/>
+                    <img className="bio-resourcecard-logo" src={logo} alt="Logo" />
                   </div>
                 </figure>
                 <div className="media-content">
                   <div className="content">
-
                     <div className="bd-header-titles">
-                      <h1 className="title">
-                        {title}
-                      </h1>
-                      {subtitle && (
-                        <p className="subtitle is-4">
-                          {subtitle}
-                        </p>
-                      )}
+                      <h1 className="title">{title}</h1>
+                      {subtitle && <p className="subtitle is-4">{subtitle}</p>}
                     </div>
                   </div>
                 </div>
@@ -65,10 +56,9 @@ class LogoLayout extends React.PureComponent<LogoLayoutProps, {}> {
             </header>
 
             {this.props.children}
-
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

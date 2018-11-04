@@ -53,17 +53,17 @@ const Tip: React.SFC<ITipProps> = ({ data }) => {
 
   // Make the sidebar
   const authors = data.authors.edges.map(edge => edge.node);
-  const authorRef = authors.find(author => author.frontmatter.label == frontmatter.author) as IAuthor;
+  const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
   const author = {
     title: authorRef.frontmatter.title,
     headshot: authorRef.frontmatter.headshot,
-    href: '/authors/' + authorRef.frontmatter.label
+    href: `/authors/${authorRef.frontmatter.label}`
   };
 
   const sidebar = {
     published: {
-      date: frontmatter.date,
-      author: author
+      author,
+      date: frontmatter.date
     },
     technologies: frontmatter.technologies,
     topics: frontmatter.topics

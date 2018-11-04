@@ -21,23 +21,20 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, {}> {
       <div>
         <Helmet
           title="PyCharm Guide"
-          meta={[{ name: 'description', content: 'template' },
-            { name: 'keywords', content: 'template, something' }]}
+          meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
-          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"/>
-          <meta charSet="utf-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <html lang="en"/>
-          <body className="layout-default"/>
-          <link rel="shortcut icon" href={favicon}/>
+          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <html lang="en" />
+          <body className="layout-default" />
+          <link rel="shortcut icon" href={favicon} />
         </Helmet>
-        <Navbar {...NAVBAR}/>
+        <Navbar {...NAVBAR} />
 
-        <div className="content">
-          {this.props.children}
-        </div>
-        <Footer/>
+        <div className="content">{this.props.children}</div>
+        <Footer />
       </div>
     );
   }

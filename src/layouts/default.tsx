@@ -21,26 +21,25 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, {}> {
       <div>
         <Helmet
           title={`${this.props.title} - PyCharm Guide`}
-          meta={[{ name: 'description', content: 'template' },
-            { name: 'keywords', content: 'template, something' }]}
+          meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
-          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"/>
-          <meta charSet="utf-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <html lang="en"/>
-          <body className="layout-default"/>
-          <link rel="shortcut icon" href={favicon}/>
+          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+          <meta charSet="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <html lang="en" />
+          <body className="layout-default" />
+          <link rel="shortcut icon" href={favicon} />
         </Helmet>
-        <Navbar {...NAVBAR}/>
+        <Navbar {...NAVBAR} />
 
         <main className="bd-main bulmaio-body">
           <div className="bd-main-container container">
-            <Heading title={this.props.title} subtitle={this.props.subtitle}/>
+            <Heading title={this.props.title} subtitle={this.props.subtitle} />
             {this.props.children}
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

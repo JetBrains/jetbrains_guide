@@ -13,7 +13,7 @@ interface IAuthorProps {
     resources: {
       edges: IBaseResourceEdges;
     };
-  }
+  };
 }
 
 const Author: React.SFC<IAuthorProps> = ({ data }) => {
@@ -22,31 +22,30 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
 
   // Filter the resources to only those matching this technology
   const label = author.frontmatter.label;
-  const resources = data.resources.edges.map(edge => edge.node)
-    .filter(node => node.frontmatter.author === label);
+  const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.author === label);
 
   return (
-    <ImageLayout title={frontmatter.title}
-                 subtitle={frontmatter.subtitle}
-                 headshot={frontmatter.headshot}
-    >
-      <div className="bd-content content"
-           dangerouslySetInnerHTML={{ __html: author.html }}/>
+    <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
+      <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
       <div className="bio-resourcecards">
-        {resources && resources.map(resource => {
-          const frontmatter = resource.frontmatter;
-          const href = '/tips/' + frontmatter.path;
-          const thumbnail = frontmatter.shortVideo.poster;
-          return <ResourceCard key={href}
-                               title={frontmatter.title}
-                               subtitle={frontmatter.subtitle}
-                               technologies={frontmatter.technologies}
-                               topics={frontmatter.topics}
-                               href={href}
-                               thumbnail={thumbnail}
-                               date={frontmatter.date}
-          />;
-        })}
+        {resources &&
+          resources.map(resource => {
+            const frontmatter = resource.frontmatter;
+            const href = '/tips/' + frontmatter.path;
+            const thumbnail = frontmatter.shortVideo.poster;
+            return (
+              <ResourceCard
+                key={href}
+                title={frontmatter.title}
+                subtitle={frontmatter.subtitle}
+                technologies={frontmatter.technologies}
+                topics={frontmatter.topics}
+                href={href}
+                thumbnail={thumbnail}
+                date={frontmatter.date}
+              />
+            );
+          })}
       </div>
     </ImageLayout>
   );
@@ -56,7 +55,7 @@ export default Author;
 
 export const query = graphql`
   query($slug: String!) {
-    author:markdownRemark(fields: { slug: { eq: $slug } }) {
+    author: markdownRemark(fields: { slug: { eq: $slug } }) {
       excerpt(pruneLength: 250)
       html
       id
@@ -79,15 +78,15 @@ export const query = graphql`
               srcSetWebp
               sizes
               originalImg
-              originalName        
-            }     
+              originalName
+            }
           }
-        }          
+        }
       }
     }
-    resources:allMarkdownRemark(
+    resources: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {type: {eq: "tip"}}}
+      filter: { frontmatter: { type: { eq: "tip" } } }
       limit: 1000
     ) {
       edges {
@@ -110,14 +109,13 @@ export const query = graphql`
                 childImageSharp {
                   fluid(maxWidth: 1000) {
                     ...GatsbyImageSharpFluid
-                  }     
+                  }
                 }
-              }         
-            }   
+              }
+            }
           }
         }
       }
-    }    
-}`;
-
-
+    }
+  }
+`;

@@ -4,11 +4,7 @@ import createTechnologies from './createTechnologies';
 import createAuthors from './createAuthors';
 import createTopics from './createTopics';
 
-const createPages: GatsbyCreatePages = async ({
-                                                graphql,
-                                                boundActionCreators
-                                              }) => {
-
+const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }) => {
   createAuthors({ graphql, boundActionCreators });
   createTechnologies({ graphql, boundActionCreators });
   createTopics({ graphql, boundActionCreators });

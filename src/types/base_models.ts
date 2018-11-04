@@ -7,8 +7,8 @@ export interface IBaseFrontmatter {
 export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
   path: string;
   date: string;
-  technologies: Array<string>;
-  topics: Array<string>;
+  technologies: string[];
+  topics: string[];
   author: string;
   shortVideo?: any;
 }
