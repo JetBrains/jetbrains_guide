@@ -14,8 +14,8 @@ const Navbar: React.SFC<INavbarProps> = ({ brand, start, end }) => (
     <div className="container">
       <NavbarBrand {...brand} />
       <div id="navMenuIndex" className="navbar-menu">
-        <NavbarStart {...start}/>
-        <NavbarEnd {...end}/>
+        <NavbarStart {...start} />
+        <NavbarEnd {...end} />
       </div>
     </div>
   </nav>

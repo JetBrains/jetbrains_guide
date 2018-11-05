@@ -9,8 +9,18 @@ const AboutPage: React.SFC = () => (
           <h1>Welcome to the PyCharm Guide</h1>
           <p>
             The PyCharm Guide collects lots of PyCharm resources -- blog posts, videos, tip tweets, articles, and more -- from inside and
-            outside of JetBrains, into a convenient, interlinked guide.
+            outside of JetBrains, into a convenient, interlinked, attractive site.
           </p>
+
+          <article className="message is-info">
+            <div className="message-header">
+              <p>Note</p>
+            </div>
+            <div className="message-body">
+              The Guide is still in "soft launch", used only for tips. We're not yet explaining how to contribute. Both of these are coming
+              near the end of the year.
+            </div>
+          </article>
 
           <h2>Why The Guide?</h2>
           <p>Lots of resources, why another?</p>

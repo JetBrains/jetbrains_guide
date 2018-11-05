@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from '@reach/router';
 
 export interface INavbarLinkProps {
   href: string;
@@ -8,16 +7,11 @@ export interface INavbarLinkProps {
 }
 
 const NavbarLink: React.SFC<INavbarLinkProps> = ({ href, color, icon }) => (
-  <Link className="navbar-item is-hidden-touch is-hidden-desktop-only"
-     to={href}
-     target="_blank"
-  >
-    <span className="icon"
-          style={{ color: '#' + color }}>
-      <i className={'fab fa-lg fa-' + icon}/>
+  <a className="navbar-item is-hidden-touch is-hidden-desktop-only" href={href} target="_blank">
+    <span className="icon" style={{ color: `#${color}` }}>
+      <i className={`fab fa-lg fa-${icon}`} />
     </span>
-  </Link>
-
+  </a>
 );
 
 export default NavbarLink;

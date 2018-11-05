@@ -97,7 +97,7 @@ export const query = graphql`
     tips: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { type: { eq: "tip" } } }
-      limit: 1000
+      limit: 3
     ) {
       edges {
         node {

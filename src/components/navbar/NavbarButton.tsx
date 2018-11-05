@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
 export interface INavbarButtonProps {
   accent: string;
@@ -9,9 +8,9 @@ export interface INavbarButtonProps {
 
 const NavbarButton: React.SFC<INavbarButtonProps> = ({ accent, href, label }) => (
   <p className="control">
-    <Link className={'button is-' + accent} to={href}>
+    <a className={`button is-${accent}`} href={href} target="_new">
       <strong>{label}</strong>
-    </Link>
+    </a>
   </p>
 );
 
