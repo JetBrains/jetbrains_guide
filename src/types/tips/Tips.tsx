@@ -9,7 +9,7 @@ import { ITipEdges } from './models';
 import { IAuthor, IAuthorEdges } from '../authors/models';
 import { ITechnologyEdges } from '../technologies/models';
 
-interface ITipsProps {
+export interface ITipsProps {
   data: {
     tips: {
       edges: ITipEdges;

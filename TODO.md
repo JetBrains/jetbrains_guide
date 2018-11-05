@@ -2,18 +2,13 @@
 
 ## Now
 
-- Sidebar panel for tips showing internal links
+- Fix all footer links, header links, etc.
 
 ## Next
 
-- Homepage: remove a bunch of text, then provide listing of recent 
-tips, resource box with embedded video
+- Get the listings to have color for tags, technology
 
 ## Soon
-
-- The links in "More"
-
-- Get the listings to have color for tags, technology
 
 ## Before MVP
 
@@ -125,4 +120,11 @@ in Sprout and not have to upload the video
 - Get a “Learn More” button above the fold which scrolls
 
 - Decrease min-height on the heading to get rid of some empty space
+
+- Sidebar panel for tips showing internal links
+
+- The links in "More"
+
+- Homepage: remove a bunch of text, then provide listing of recent 
+tips, resource box with embedded video
 

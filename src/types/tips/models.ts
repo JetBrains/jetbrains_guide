@@ -1,6 +1,6 @@
 import { IBaseResourceNode, IBaseResourceFrontmatter } from '../base_models';
 
-interface IVideoPlayer {
+export interface IVideoPlayer {
   poster: any;
   url: any;
 }
