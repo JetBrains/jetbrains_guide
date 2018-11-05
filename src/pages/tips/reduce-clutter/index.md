@@ -18,9 +18,9 @@ longVideo:
     poster: "./poster_long.png"
     url: "https://www.youtube.com/watch?v=wDYJx-mkPpw"
 leadin: |
-    ## Highlight The Point
+    ## Take Back Space for Editing
     
-    *Make some text as emphasizing the key point.*
+    *You don't have to use all those tools. Let's turn them off.*
     
     By default, PyCharm has lots of features visible and available. 
     As you learn your way around, you want to give more space to 
@@ -42,3 +42,7 @@ file explorer.
 "How will I navigate to my files?" you ask. Later  tips will answer 
 that, ultimately with: "You don't." Meaning, you grow out of 
 "files" as a useful place to jump to.
+
+In fact, later tips will show how you can, with the keyboard instead 
+of the mouse, temporarily bring some of those hidden tools back from 
+the dead.

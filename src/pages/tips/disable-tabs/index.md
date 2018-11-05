@@ -20,6 +20,10 @@ longVideo:
     poster: "./poster_long.png"
     url: "https://www.youtube.com/watch?v=9HWkImburic"
 leadin: |
+    ## Go tabless
+    
+    *There are better choices. Let's turn off tabs.*
+
     Tabs are a great way to focus on the few files for a 
     task. But they have some downsides.
     
