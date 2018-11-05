@@ -10,7 +10,8 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.14",

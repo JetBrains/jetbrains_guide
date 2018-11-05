@@ -14,28 +14,39 @@ export const BRAND: INavbarBrandProps = {};
 
 export const LINKS = [
   {
-    color: 'light', href: 'https://github.com/jetbrains/pycharm_guide',
+    color: 'light',
+    href: 'https://github.com/jetbrains/pycharm_guide',
     icon: 'github'
   },
   {
-    color: '55acee', href: 'https://twitter.com/pycharm',
+    color: '55acee',
+    href: 'https://twitter.com/pycharm',
     icon: 'twitter'
   }
 ];
 
 export const BUTTONS = [
-  { accent: 'light', href: 'https://www.jetbrains.com/pycharm/download/',
-    label: 'Get PyCharm' }
+  {
+    accent: 'light',
+    href: 'https://www.jetbrains.com/pycharm/download/',
+    label: 'Get PyCharm'
+  }
 ];
 
 export const MENUITEM1: INavbarMenuItemProps = {
-  accent: 'primary', href: 'href1', css_class: 'documentation',
-  label: 'Learn', icon: 'book'
+  accent: 'primary',
+  href: 'href1',
+  css_class: 'documentation',
+  label: 'Learn',
+  icon: 'book'
 };
 
 export const MENUITEM2: INavbarMenuItemProps = {
-  accent: 'rss', href: 'href2', css_class: 'blog',
-  label: 'News', icon: 'rss'
+  accent: 'rss',
+  href: 'href2',
+  css_class: 'blog',
+  label: 'News',
+  icon: 'rss'
 };
 
 export const MORE_SUBMENU: INavbarSubMenuProps = {
@@ -43,8 +54,11 @@ export const MORE_SUBMENU: INavbarSubMenuProps = {
   href: '/more',
   items: [
     {
-      label: 'About the Guide', href: 'href1', accent: 'success',
-      icon: 'rocket', description: 'The PyCharm Guide is a community-driven compendium of PyCharm learning resources.'
+      label: 'About the Guide',
+      href: 'about',
+      accent: 'success',
+      icon: 'rocket',
+      description: 'The PyCharm Guide is a community-driven compendium of PyCharm learning resources.'
     }
   ]
 };
