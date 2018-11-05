@@ -96,7 +96,9 @@ class Tip extends Component<ITipProps> {
             </div>
             <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
               <header className="is-size-3 is-bold">In Depth</header>
-              <div className="content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+              <div className="columns">
+                <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+              </div>
             </Element>
             <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
               {seealso && (
