@@ -2,11 +2,7 @@
 
 ## Now
 
-- Fix all footer links, header links, etc.
-
 ## Next
-
-- Get the listings to have color for tags, technology
 
 ## Soon
 
@@ -127,4 +123,8 @@ in Sprout and not have to upload the video
 
 - Homepage: remove a bunch of text, then provide listing of recent 
 tips, resource box with embedded video
+
+- Fix all footer links, header links, etc.
+
+- Get the listings to have color for tags, technology
 

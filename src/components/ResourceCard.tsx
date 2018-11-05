@@ -61,8 +61,10 @@ const ResourceCard: React.SFC<IResourceCardProps> = props => {
               {props.technologies.map(technology => (
                 <span className="level-item bio-common-card-references" key={technology}>
                   <div className="tags">
-                    <span className="tag is-rounded">
-                      <Link to={`/technologies/${technology}`}>{technology}</Link>
+                    <span className="tag is-rounded has-text-warning">
+                      <Link to={`/technologies/${technology}`} className="has-text-danger">
+                        {technology}
+                      </Link>
                     </span>
                   </div>
                 </span>
@@ -71,7 +73,9 @@ const ResourceCard: React.SFC<IResourceCardProps> = props => {
                 <span className="level-item bio-common-card-references" key={topic}>
                   <div className="tags">
                     <span className="tag is-rounded">
-                      <Link to={`/topics/${topic}`}>{topic}</Link>
+                      <Link to={`/topics/${topic}`} className="has-text-primary">
+                        {topic}
+                      </Link>
                     </span>
                   </div>
                 </span>
