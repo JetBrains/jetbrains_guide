@@ -2,6 +2,8 @@
 
 ## Now
 
+- Sidebar panel for tips showing internal links
+
 ## Next
 
 - Homepage: remove a bunch of text, then provide listing of recent 
@@ -13,8 +15,6 @@ tips, resource box with embedded video
 
 - Get the listings to have color for tags, technology
 
-- Sidebar panel for tips showing internal links
-
 ## Before MVP
 
 - Better README in repo root
@@ -24,6 +24,8 @@ tips, resource box with embedded video
 ## Later
 
 - Scroll the sidebar with the scrolling
+
+- Clean up all unused bio class names
 
 - Get the Twitter <head> metadata to allow just posting the link 
 in Sprout and not have to upload the video

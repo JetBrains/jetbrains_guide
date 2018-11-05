@@ -1,5 +1,8 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
+import Img from 'gatsby-image';
+import { Link } from 'gatsby';
+import { Link as ScrollLink } from 'react-scroll';
 
 import './index.scss';
 // @ts-ignore
@@ -9,8 +12,6 @@ import Navbar from '../components/navbar/Navbar';
 import { NAVBAR } from '../components/navbar/constants';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
-import Img from 'gatsby-image';
-import { Link } from 'gatsby';
 
 interface IPublished {
   date: string;
@@ -73,6 +74,28 @@ const ReferenceGroup: React.SFC<IReferenceGroup> = ({ reftype, accent, reference
   </div>
 );
 
+const DocLinks: React.SFC = () => {
+  const links = [
+    { label: 'In Depth', target: 'in-depth' },
+    { label: 'See Also', target: 'see-also' },
+    { label: 'Full Video', target: 'full-video' }
+  ];
+  return (
+    <div className="bio-page-sidebar-references-group" style={{ marginTop: '1rem' }}>
+      <p className="menu-label bio-page-sidebar-published">On This Page</p>
+      <ul className="menu-list">
+        {links.map(link => (
+          <li key={link.target}>
+            <ScrollLink activeClass="active" to={link.target} spy={true} smooth={true} offset={0} duration={500} style={{ width: 'auto' }}>
+              {link.label}
+            </ScrollLink>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 interface ISidebar {
   published: IPublished;
   technologies: string[];
@@ -117,6 +140,7 @@ class SidebarLayout extends React.PureComponent<SidebarLayoutProps, {}> {
                 {published && <Published {...published} />}
                 <ReferenceGroup reftype="technologies" accent="danger" references={this.props.sidebar.technologies} />
                 <ReferenceGroup reftype="topics" accent="primary" references={this.props.sidebar.topics} />
+                <DocLinks />
               </aside>
             </div>
           </div>

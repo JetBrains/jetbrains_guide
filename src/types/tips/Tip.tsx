@@ -82,7 +82,7 @@ class Tip extends Component<ITipProps> {
                   <Link
                     activeClass="active"
                     className="button is-light"
-                    to="test1"
+                    to="in-depth"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -91,12 +91,14 @@ class Tip extends Component<ITipProps> {
                   >
                     Learn More
                   </Link>
-                </div>{' '}
+                </div>
               </div>
             </div>
-            <Element name="test1" className="element">
+            <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
               <header className="is-size-3 is-bold">In Depth</header>
               <div className="content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+            </Element>
+            <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
               {seealso && (
                 <>
                   <header className="is-size-3 is-bold">See Also</header>
@@ -111,7 +113,8 @@ class Tip extends Component<ITipProps> {
                   </div>
                 </>
               )}
-
+            </Element>
+            <Element name="full-video" className="element" style={{ marginTop: '1rem' }}>
               <header className="is-size-3 is-bold">Full Video</header>
               <VideoPlayer {...longVideoJsOptions} />
             </Element>

@@ -6,16 +6,10 @@ export interface IHeadingProps {
 }
 
 const Heading: React.SFC<IHeadingProps> = ({ title, subtitle }) => (
-  <header className="bd-header">
+  <header className="bd-header" style={{ minHeight: '100px' }}>
     <div className="bd-header-titles">
-      <h1 className="title">
-        {title}
-      </h1>
-      {subtitle && (
-        <p className="subtitle is-4">
-          {subtitle}
-        </p>
-      )}
+      <h1 className="title">{title}</h1>
+      {subtitle && <p className="subtitle is-4">{subtitle}</p>}
     </div>
   </header>
 );
