@@ -4,8 +4,6 @@
 
 ## Next
 
-- Get a “Learn More” button above the fold which scrolls
-
 - Homepage: remove a bunch of text, then provide listing of recent 
 tips, resource box with embedded video
 
@@ -121,4 +119,8 @@ in Sprout and not have to upload the video
     - Remove stylelint
     
     - Remove tests (but not Jest setup)
+
+- Get a “Learn More” button above the fold which scrolls
+
+- Decrease min-height on the heading to get rid of some empty space
 
