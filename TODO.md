@@ -4,17 +4,11 @@
 
 ## Next
 
-## Soon
-
 ## Before MVP
 
-- Better README in repo root
+## Soon
 
-    - Explain milestones, future work
-
-## Later
-
-- Scroll the sidebar with the scrolling
+- Get rid of "path" in frontmatter and infer from filename
 
 - Clean up all unused bio class names
 
@@ -23,23 +17,25 @@ in Sprout and not have to upload the video
 
 - Get "news" working
 
-- Disqus
-
-- Homepage
-
 - Some way to do fragments in graphql queries
 
 - Tests
 
 - Pagination
 
-- Search
-
-- Get rid of "path" in frontmatter and infer from filename
-
 - Tutorials with steps
 
 - Convert navbar et al. to be driven by settings in gatsby-config
+
+## Later
+
+- Scroll the sidebar with the scrolling
+
+- Disqus
+
+- Homepage
+
+- Search
 
 ## Someday
 
@@ -127,4 +123,8 @@ tips, resource box with embedded video
 - Fix all footer links, header links, etc.
 
 - Get the listings to have color for tags, technology
+
+- Better README in repo root
+
+    - Explain milestones, future work
 
