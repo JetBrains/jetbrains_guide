@@ -3,7 +3,7 @@ type: "tip"
 path: "disable-tabs"
 date: 2017-07-07
 title: "Disable Tabs"
-technologies: ["ansible", "angular"]
+technologies: []
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Save space and stay keyboard-centric by turning off the tabs"

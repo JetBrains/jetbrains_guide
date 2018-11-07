@@ -3,7 +3,7 @@ type: "tip"
 path: "recent-files-last-visited"
 date: 2018-11-04
 title: "Jump to Recent File"
-technologies: ["ansible"]
+technologies: []
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Use Recent Files to quickly jump to last-visited file"

@@ -111,6 +111,8 @@ interface SidebarLayoutProps extends React.HTMLProps<HTMLDivElement> {
 class SidebarLayout extends React.PureComponent<SidebarLayoutProps, {}> {
   public render() {
     const published = this.props.sidebar.published;
+    const technologies = this.props.sidebar.technologies;
+    const topics = this.props.sidebar.topics;
     return (
       <div>
         <Helmet
@@ -138,8 +140,8 @@ class SidebarLayout extends React.PureComponent<SidebarLayoutProps, {}> {
 
               <aside className="bd-side bio-page-sidebar">
                 {published && <Published {...published} />}
-                <ReferenceGroup reftype="technologies" accent="danger" references={this.props.sidebar.technologies} />
-                <ReferenceGroup reftype="topics" accent="primary" references={this.props.sidebar.topics} />
+                {technologies.length > 0 && <ReferenceGroup reftype="technologies" accent="danger" references={technologies} />}
+                {topics.length > 0 && <ReferenceGroup reftype="topics" accent="primary" references={topics} />}
                 <DocLinks />
               </aside>
             </div>

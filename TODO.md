@@ -2,9 +2,13 @@
 
 ## Now
 
+- Allow empty technologies/topics
+
 ## Next
 
 ## Before MVP
+
+- Favicon
 
 ## Soon
 

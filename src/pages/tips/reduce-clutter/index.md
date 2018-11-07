@@ -3,7 +3,7 @@ type: "tip"
 path: "reduce-clutter"
 date: 2017-07-07
 title: "Reduce Clutter by Disabling Tools"
-technologies: ["angular", "ansible"]
+technologies: ["angular"]
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Save space by turning off various toolbars and Project Tool"
