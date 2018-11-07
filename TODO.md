@@ -2,8 +2,6 @@
 
 ## Now
 
-- Allow empty technologies/topics
-
 ## Next
 
 ## Before MVP
@@ -48,6 +46,10 @@ in Sprout and not have to upload the video
 - Breadcrumbs
 
 - Avoid doing so many graphql queries per page (absence of joins)
+
+- Documents with no topics/technologies in frontmatter
+
+- Corpus with no frontmatter with topic or technology
 
 ## Done
 
@@ -131,4 +133,6 @@ tips, resource box with embedded video
 - Better README in repo root
 
     - Explain milestones, future work
+
+- Allow empty technologies/topics
 
