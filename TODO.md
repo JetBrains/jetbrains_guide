@@ -63,6 +63,9 @@ in Sprout and not have to upload the video
 
 - Heading
 
+- Remark plugin that displays the action key binding for the current 
+  browser platform
+
 - Categories/tags -> Technologies/topics
 
 - Richer formatting on technologies and topics
