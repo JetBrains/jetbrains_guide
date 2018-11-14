@@ -39,10 +39,19 @@ const TipItem: React.SFC<ITipItemProps> = ({ title, subtitle, href, shortVideo }
         </div>
         <div className="media-content">
           <div className="content bio-resourcecard-props">
-            <Link to={href}>
-              <strong>{title}</strong>
-            </Link>
-            {subtitle && <div style={{ minHeight: '2.2rem' }}>{subtitle}</div>}
+            <div>
+              <div>
+                <Link to={href}>
+                  <strong>{title}</strong>
+                </Link>
+                <div>{subtitle && <div style={{ minHeight: '2.2rem' }}>{subtitle}</div>}</div>
+              </div>
+              <div style={{ marginTop: '1rem' }}>
+                <Link className="button is-light" style={{ width: 'auto' }} to={href}>
+                  More
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -83,6 +92,11 @@ const IndexPage: React.SFC<ITipsProps> = ({ data }) => {
                   );
                 })}
             </div>
+          </div>
+          <div style={{ marginTop: '1rem', display: 'flex' }}>
+            <Link className="button is-success" to={`/tips/`}>
+              All Tips
+            </Link>
           </div>
         </div>
       </section>
