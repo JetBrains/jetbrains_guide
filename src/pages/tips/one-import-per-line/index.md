@@ -1,7 +1,7 @@
 ---
 type: "tip"
 path: "one-import-per-line"
-date: 2018-11-04
+date: 2018-11-06
 title: "One Import Per Line Preference"
 technologies: []
 topics: ["editing"]
@@ -17,7 +17,7 @@ seealso:
 thumbnail: "./thumbnail.png"
 shortVideo:
     poster: "./poster_short.png"
-    url: "https://www.youtube.com/watch?v=qWm9REpweD8"
+    url: "https://www.youtube.com/watch?v=EvKXVp4BXGk"
 longVideo:
     poster: "./poster_long.png"
     url: "https://www.youtube.com/watch?v=X43p3MBx9i8"
