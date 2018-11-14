@@ -139,3 +139,4 @@ tips, resource box with embedded video
 
 - Allow empty technologies/topics
 
+- Change navbar from dark to black
