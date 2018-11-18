@@ -8,6 +8,8 @@
 
 - Favicon
 
+- Get Google Analytics dropped in
+
 ## Soon
 
 - Get rid of "path" in frontmatter and infer from filename
@@ -35,9 +37,13 @@ in Sprout and not have to upload the video
 
 - Disqus
 
-- Homepage
+- Playlists
+
+- Markdown shortcodes for actions
 
 - Search
+
+- Consider different fonts
 
 ## Someday
 
