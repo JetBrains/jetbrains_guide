@@ -6,7 +6,11 @@ import { graphql } from 'gatsby';
 import { ITip } from './models';
 import VideoPlayer from '../../components/VideoPlayer';
 import { IAuthor, IAuthorEdges } from '../authors/models';
-import SidebarLayout from '../../layouts/sidebar';
+import SidebarLayout from '../../layouts/SidebarLayout';
+import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarPublished from '../../components/sidebar/SidebarPublished';
+import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
+import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
 
 interface ITipProps {
   data: {
@@ -37,19 +41,21 @@ class Tip extends Component<ITipProps> {
         }
       ]
     };
-    const longVideoJsOptions = {
-      controls: true,
-      poster: longVideo.poster.publicURL,
-      height: 720,
-      width: 1024,
-      techOrder: ['youtube'],
-      sources: [
-        {
-          src: longVideo.url,
-          type: 'video/youtube'
+    const longVideoJsOptions = longVideo
+      ? {
+          controls: true,
+          poster: longVideo.poster.publicURL,
+          height: 720,
+          width: 1024,
+          techOrder: ['youtube'],
+          sources: [
+            {
+              src: longVideo.url,
+              type: 'video/youtube'
+            }
+          ]
         }
-      ]
-    };
+      : null;
     const authors = data.authors.edges.map(edge => edge.node);
     const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
     const author = {
@@ -57,14 +63,26 @@ class Tip extends Component<ITipProps> {
       headshot: authorRef.frontmatter.headshot,
       href: `/authors/${authorRef.frontmatter.label}`
     };
-    const sidebar = {
-      published: {
-        author,
-        date: frontmatter.date
-      },
-      technologies: frontmatter.technologies,
-      topics: frontmatter.topics
-    };
+
+    const links: IDoclink[] = [];
+    if (tip.html) {
+      links.push({ label: 'In Depth', target: 'in-depth' });
+    }
+    if (frontmatter.seealso) {
+      links.push({ label: 'See Also', target: 'see-also' });
+    }
+    if (longVideo) {
+      links.push({ label: 'Full Video', target: 'full-video' });
+    }
+
+    const sidebar = (
+      <Sidebar>
+        <SidebarPublished date={frontmatter.date} author={author} />
+        <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={frontmatter.technologies} />
+        <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={frontmatter.topics} />
+        <SidebarDoclinks links={links} />
+      </Sidebar>
+    );
     return (
       <SidebarLayout title={frontmatter.title} subtitle={frontmatter.subtitle} sidebar={sidebar}>
         {tip ? (
@@ -78,30 +96,34 @@ class Tip extends Component<ITipProps> {
                 style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
               >
                 <div dangerouslySetInnerHTML={{ __html: leadin }} />
-                <div>
-                  <Link
-                    activeClass="active"
-                    className="button is-light"
-                    to="in-depth"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    style={{ width: 'auto' }}
-                  >
-                    Learn More
-                  </Link>
-                </div>
+                {tip.html && (
+                  <div>
+                    <Link
+                      activeClass="active"
+                      className="button is-light"
+                      to="in-depth"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      style={{ width: 'auto' }}
+                    >
+                      Learn More
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
-            <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
-              <header className="is-size-3 is-bold">In Depth</header>
-              <div className="columns">
-                <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
-              </div>
-            </Element>
-            <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
-              {seealso && (
+            {tip.html && (
+              <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
+                <header className="is-size-3 is-bold">In Depth</header>
+                <div className="columns">
+                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+                </div>
+              </Element>
+            )}
+            {seealso && (
+              <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
                 <>
                   <header className="is-size-3 is-bold">See Also</header>
                   <div className="content">
@@ -114,12 +136,14 @@ class Tip extends Component<ITipProps> {
                     </ul>
                   </div>
                 </>
-              )}
-            </Element>
-            <Element name="full-video" className="element" style={{ marginTop: '1rem' }}>
-              <header className="is-size-3 is-bold">Full Video</header>
-              <VideoPlayer {...longVideoJsOptions} />
-            </Element>
+              </Element>
+            )}
+            {longVideoJsOptions && (
+              <Element name="full-video" className="element" style={{ marginTop: '1rem' }}>
+                <header className="is-size-3 is-bold">Full Video</header>
+                <VideoPlayer {...longVideoJsOptions} />
+              </Element>
+            )}
           </>
         ) : null}
       </SidebarLayout>

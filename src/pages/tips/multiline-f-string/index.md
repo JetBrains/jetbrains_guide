@@ -19,10 +19,3 @@ leadin: |
     PyCharm 2018.3 has new features, speedups, and bug fixes for f-strings. 
     Put them to use with multiline reformatting.
     
----
-
-Python 3.6 introduced 
-
-- Link to RealPython and Python docs
-
-- Ticket for more improvements https://youtrack.jetbrains.com/issue/PY-31442

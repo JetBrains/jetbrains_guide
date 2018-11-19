@@ -2,6 +2,7 @@
 
 ## Now
 
+
 ## Next
 
 - Rewrite tip subtitles to be 140 char tweet bodies
@@ -15,6 +16,8 @@
 - Favicon
 
 - Get Google Analytics dropped in
+
+- jetbrains.com/pycharm/guide proxy
 
 ## Soon
 
@@ -152,3 +155,8 @@ tips, resource box with embedded video
 - Allow empty technologies/topics
 
 - Change navbar from dark to black
+
+- Refactor sidebar into subcomponents
+
+- Don't show full movie, see also, learn more, in-depth in body or 
+sidebar if null
