@@ -4,6 +4,12 @@
 
 ## Next
 
+- Rewrite tip subtitles to be 140 char tweet bodies
+
+- Re-do the audio on the first two tips
+
+- Put zoom-and-pan and annotations in other videos
+
 ## Before MVP
 
 - Favicon
@@ -17,7 +23,7 @@
 - Clean up all unused bio class names
 
 - Get the Twitter <head> metadata to allow just posting the link 
-in Sprout and not have to upload the video
+in Sprout and not have to upload the video meaning Twitter Cards
 
 - Get "news" working
 

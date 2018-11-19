@@ -6,12 +6,6 @@ module.exports = {
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-remark-images`,
-      options: {
-        maxWidth: 1080
-      }
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
@@ -28,6 +22,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1080
+            }
+          },
           'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-embed-snippet',
