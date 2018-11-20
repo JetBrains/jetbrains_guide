@@ -10,6 +10,9 @@ import Navbar from '../components/navbar/Navbar';
 import { NAVBAR } from '../components/navbar/constants';
 import Footer from '../components/Footer';
 
+import HeadScript from './GtmHead';
+import BodyScript from './GtmBody';
+
 interface ImageLayoutProps extends React.HTMLProps<HTMLDivElement> {
   title: string;
   subtitle?: string;
@@ -26,13 +29,14 @@ class ImageLayout extends React.PureComponent<ImageLayoutProps, {}> {
           title={`${title} - PyCharm Guide`}
           meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
-          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"/>
-          <meta charSet="utf-8"/>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-          <meta name="viewport" content="width=device-width, initial-scale=1"/>
-          <html lang="en"/>
-          <body className="layout-default"/>
-          <link rel="shortcut icon" href={favicon}/>
+          <HeadScript />
+          <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+          <meta charSet="utf-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <html lang="en" />
+          <body className="layout-default" />
+          <link rel="shortcut icon" href={favicon} />
         </Helmet>
         <Navbar {...NAVBAR} />
 
@@ -42,7 +46,7 @@ class ImageLayout extends React.PureComponent<ImageLayoutProps, {}> {
               <article className="media">
                 <figure className="media-left">
                   <div className="image is-rounded is-96x96">
-                    <Img className="bio-resourcecard-logo" fluid={headshot.childImageSharp.fluid}/>
+                    <Img className="bio-resourcecard-logo" fluid={headshot.childImageSharp.fluid} />
                   </div>
                 </figure>
                 <div className="media-content">
@@ -59,7 +63,8 @@ class ImageLayout extends React.PureComponent<ImageLayoutProps, {}> {
             {this.props.children}
           </div>
         </main>
-        <Footer/>
+        <Footer />
+        <BodyScript />
       </div>
     );
   }

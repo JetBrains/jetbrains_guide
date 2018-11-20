@@ -10,6 +10,9 @@ import { NAVBAR } from '../components/navbar/constants';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 
+import HeadScript from './GtmHead';
+import BodyScript from './GtmBody';
+
 interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
   title: string;
   subtitle?: string;
@@ -23,6 +26,7 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, {}> {
           title={`${this.props.title} - PyCharm Guide`}
           meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
+          <HeadScript />
           <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
           <meta charSet="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,6 +44,7 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, {}> {
           </div>
         </main>
         <Footer />
+        <BodyScript />
       </div>
     );
   }

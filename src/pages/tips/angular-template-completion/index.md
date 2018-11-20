@@ -15,7 +15,7 @@ seealso:
 thumbnail: "./thumbnail.png"
 shortVideo:
     poster: "./poster_short.png"
-    url: "https://www.youtube.com/watch?v=4s3sXNw2Imc"
+    url: "https://www.youtube.com/watch?v=YhCMWZfQP-w"
 longVideo:
     poster: "./poster_long.png"
     url: "https://www.youtube.com/watch?v=JUmIiZpazic"
