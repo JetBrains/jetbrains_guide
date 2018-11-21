@@ -17,6 +17,10 @@ export interface ITutorialFrontmatter extends IBaseResourceFrontmatter {
   seealso?: ISeeAlso[];
 }
 
+export interface ITutorialStep extends IBaseResourceNode {
+  frontmatter: ITutorialFrontmatter;
+}
+
 export interface ITutorial extends IBaseResourceNode {
   frontmatter: ITutorialFrontmatter;
 }

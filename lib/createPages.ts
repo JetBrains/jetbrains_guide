@@ -4,6 +4,7 @@ import createTechnologies from './createTechnologies';
 import createAuthors from './createAuthors';
 import createTopics from './createTopics';
 import createTutorials from './createTutorials';
+import createTutorialSteps from './createTutorialSteps';
 
 const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }) => {
   createAuthors({ graphql, boundActionCreators });
@@ -13,6 +14,7 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }) 
   // Create the type pages
   createTips({ graphql, boundActionCreators });
   createTutorials({ graphql, boundActionCreators });
+  createTutorialSteps({ graphql, boundActionCreators });
 };
 
 module.exports = createPages;

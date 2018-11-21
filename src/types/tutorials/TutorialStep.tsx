@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, Element } from 'react-scroll';
 
 import { graphql } from 'gatsby';
-import { ITutorial } from './models';
+import { ITutorialStep } from './models';
 import VideoPlayer from '../../components/VideoPlayer';
 import { IAuthor, IAuthorEdges } from '../authors/models';
 import SidebarLayout from '../../layouts/SidebarLayout';
@@ -12,20 +12,20 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
 
-interface ITutorialProps {
+interface ITutorialStepProps {
   data: {
-    markdownRemark: ITutorial;
+    markdownRemark: ITutorialStep;
     authors: {
       edges: IAuthorEdges;
     };
   };
 }
 
-class Tutorial extends Component<ITutorialProps> {
+class TutorialStep extends Component<ITutorialStepProps> {
   render() {
     const { data } = this.props;
-    const tutorial = data.markdownRemark;
-    const { frontmatter } = tutorial;
+    const tutorialStep = data.markdownRemark;
+    const { frontmatter } = tutorialStep;
     const shortVideo = frontmatter.shortVideo;
     const longVideo = frontmatter.longVideo;
     const seealso = frontmatter.seealso;
@@ -65,7 +65,7 @@ class Tutorial extends Component<ITutorialProps> {
     };
 
     const links: IDoclink[] = [];
-    if (tutorial.html) {
+    if (tutorialStep.html) {
       links.push({ label: 'In Depth', target: 'in-depth' });
     }
     if (frontmatter.seealso) {
@@ -85,7 +85,7 @@ class Tutorial extends Component<ITutorialProps> {
     );
     return (
       <SidebarLayout title={frontmatter.title} subtitle={frontmatter.subtitle} sidebar={sidebar}>
-        {tutorial ? (
+        {tutorialStep ? (
           <>
             <div className="columns">
               <div className="column is-three-fifths">
@@ -96,7 +96,7 @@ class Tutorial extends Component<ITutorialProps> {
                 style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
               >
                 <div dangerouslySetInnerHTML={{ __html: leadin }} />
-                {tutorial.html && (
+                {tutorialStep.html && (
                   <div>
                     <Link
                       activeClass="active"
@@ -114,11 +114,11 @@ class Tutorial extends Component<ITutorialProps> {
                 )}
               </div>
             </div>
-            {tutorial.html && (
+            {tutorialStep.html && (
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>
                 <div className="columns">
-                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
+                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorialStep.html }} />
                 </div>
               </Element>
             )}
@@ -151,7 +151,7 @@ class Tutorial extends Component<ITutorialProps> {
   }
 }
 
-export default Tutorial;
+export default TutorialStep;
 
 export const query = graphql`
   query($slug: String!) {
