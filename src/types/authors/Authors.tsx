@@ -21,8 +21,7 @@ const Authors: React.SFC<IAuthorsProps> = ({ data }) => {
       <nav className="bd-links bio-resourcecards">
         {items &&
           items.map(item => {
-            const frontmatter = item.frontmatter;
-            const href = '/authors/' + frontmatter.label;
+            const href = item.fields.slug;
             return (
               <SubsectionAuthor
                 key={href}
@@ -52,6 +51,9 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             label

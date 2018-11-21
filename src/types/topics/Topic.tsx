@@ -36,12 +36,12 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
           {resources &&
             resources.map(resource => {
               const rfm = resource.frontmatter;
-              const href = `/tips/${rfm.path}`;
+              const href = resource.fields.slug;
               const authorRef = authors.find(a => a.frontmatter.label === rfm.author) as IAuthor;
               const author = {
                 title: authorRef.frontmatter.title,
                 headshot: authorRef.frontmatter.headshot,
-                href: `/authors/${authorRef.frontmatter.label}`
+                href: authorRef.fields.slug
               };
               const thumbnail = rfm.thumbnail;
               return (
@@ -72,6 +72,9 @@ export const query = graphql`
       excerpt(pruneLength: 250)
       html
       id
+      fields {
+        slug
+      }
       frontmatter {
         type
         label
@@ -90,10 +93,12 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             date(formatString: "MMMM Do, YYYY")
-            path
             title
             subtitle
             author
@@ -117,6 +122,9 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             label

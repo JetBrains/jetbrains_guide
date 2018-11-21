@@ -24,7 +24,7 @@ const Technologies: React.SFC<ITechnologiesProps> = ({ data }) => {
         {items &&
           items.map(item => {
             const frontmatter = item.frontmatter;
-            const href = '/technologies/' + frontmatter.label;
+            const href = item.fields.slug;
             const logo = frontmatter.logo ? frontmatter.logo : DEFAULT_LOGO;
             return (
               <SubsectionTechnology
@@ -55,6 +55,9 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             label

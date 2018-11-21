@@ -5,14 +5,14 @@ import { graphql } from 'gatsby';
 import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
 
-import { ITipEdges } from './models';
+import { ITutorialEdges } from './models';
 import { IAuthor, IAuthorEdges } from '../authors/models';
 import { ITechnologyEdges } from '../technologies/models';
 
-export interface ITipsProps {
+export interface ITutorialProps {
   data: {
-    tips: {
-      edges: ITipEdges;
+    tutorials: {
+      edges: ITutorialEdges;
     };
     authors: {
       edges: IAuthorEdges;
@@ -23,18 +23,17 @@ export interface ITipsProps {
   };
 }
 
-const Tips: React.SFC<ITipsProps> = ({ data }) => {
-  const items = data.tips.edges.map(edge => edge.node);
+const Tutorials: React.SFC<ITutorialProps> = ({ data }) => {
+  const items = data.tutorials.edges.map(edge => edge.node);
   const authors = data.authors.edges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Tips" subtitle="Resources organized by programming technologies">
+    <DefaultLayout title="Tutorials" subtitle="Resources organized by programming technologies">
       <div className="columns">
         <div className="column is-three-quarters-desktop bio-resourcecards">
           {items &&
             items.map(item => {
               const frontmatter = item.frontmatter;
-              const fields = item.fields;
-              const href = fields.slug;
+              const href = item.fields.slug;
 
               // Use the first technology's icon as the logo
               const thumbnail = frontmatter.thumbnail;
@@ -43,7 +42,7 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
               const author = {
                 title: authorRef.frontmatter.title,
                 headshot: authorRef.frontmatter.headshot,
-                href: authorRef.fields.slug
+                href: `/authors/${authorRef.frontmatter.label}`
               };
               return (
                 <ResourceCard
@@ -65,7 +64,7 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
   );
 };
 
-export default Tips;
+export default Tutorials;
 
 export const query = graphql`
   query {
@@ -75,9 +74,6 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
-          fields {
-            slug
-          }
           frontmatter {
             type
             label
@@ -97,9 +93,9 @@ export const query = graphql`
       }
     }
 
-    tips: allMarkdownRemark(
+    tutorials: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "tip" } } }
+      filter: { frontmatter: { type: { eq: "tutorial" } } }
       limit: 1000
     ) {
       edges {

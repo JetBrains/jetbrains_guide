@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link, Element } from 'react-scroll';
 
 import { graphql } from 'gatsby';
-import { ITip } from './models';
+import { ITutorial } from './models';
 import VideoPlayer from '../../components/VideoPlayer';
 import { IAuthor, IAuthorEdges } from '../authors/models';
 import SidebarLayout from '../../layouts/SidebarLayout';
@@ -12,20 +12,20 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
 
-interface ITipProps {
+interface ITutorialProps {
   data: {
-    markdownRemark: ITip;
+    markdownRemark: ITutorial;
     authors: {
       edges: IAuthorEdges;
     };
   };
 }
 
-class Tip extends Component<ITipProps> {
+class Tutorial extends Component<ITutorialProps> {
   render() {
     const { data } = this.props;
-    const tip = data.markdownRemark;
-    const { frontmatter } = tip;
+    const tutorial = data.markdownRemark;
+    const { frontmatter } = tutorial;
     const shortVideo = frontmatter.shortVideo;
     const longVideo = frontmatter.longVideo;
     const seealso = frontmatter.seealso;
@@ -61,11 +61,11 @@ class Tip extends Component<ITipProps> {
     const author = {
       title: authorRef.frontmatter.title,
       headshot: authorRef.frontmatter.headshot,
-      href: `/authors/${authorRef.frontmatter.label}`
+      href: authorRef.fields.slug
     };
 
     const links: IDoclink[] = [];
-    if (tip.html) {
+    if (tutorial.html) {
       links.push({ label: 'In Depth', target: 'in-depth' });
     }
     if (frontmatter.seealso) {
@@ -85,7 +85,7 @@ class Tip extends Component<ITipProps> {
     );
     return (
       <SidebarLayout title={frontmatter.title} subtitle={frontmatter.subtitle} sidebar={sidebar}>
-        {tip ? (
+        {tutorial ? (
           <>
             <div className="columns">
               <div className="column is-three-fifths">
@@ -96,7 +96,7 @@ class Tip extends Component<ITipProps> {
                 style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
               >
                 <div dangerouslySetInnerHTML={{ __html: leadin }} />
-                {tip.html && (
+                {tutorial.html && (
                   <div>
                     <Link
                       activeClass="active"
@@ -114,11 +114,11 @@ class Tip extends Component<ITipProps> {
                 )}
               </div>
             </div>
-            {tip.html && (
+            {tutorial.html && (
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>
                 <div className="columns">
-                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
                 </div>
               </Element>
             )}
@@ -151,7 +151,7 @@ class Tip extends Component<ITipProps> {
   }
 }
 
-export default Tip;
+export default Tutorial;
 
 export const query = graphql`
   query($slug: String!) {

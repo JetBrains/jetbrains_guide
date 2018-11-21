@@ -5,7 +5,6 @@ export interface IBaseFrontmatter {
 }
 
 export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
-  path: string;
   date: string;
   technologies: string[];
   topics: string[];
@@ -18,11 +17,16 @@ export interface IBaseCategoryFrontmatter extends IBaseFrontmatter {
   label: string;
 }
 
+export interface IFields {
+  slug: string;
+}
+
 export interface IBaseNode {
   id: string;
   excerpt: string;
   html: string;
   frontmatter: IBaseFrontmatter;
+  fields: IFields;
 }
 
 export interface IBaseResourceNode extends IBaseNode {

@@ -32,7 +32,7 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
           {resources &&
             resources.map(resource => {
               const rfm = resource.frontmatter;
-              const href = `/tips/${rfm.path}`;
+              const href = resource.fields.slug;
               const thumbnail = rfm.thumbnail;
               return (
                 <ResourceCard
@@ -96,10 +96,12 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             date(formatString: "MMMM Do, YYYY")
-            path
             title
             subtitle
             author
