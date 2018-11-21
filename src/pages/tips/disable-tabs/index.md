@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "disable-tabs"
 date: 2017-07-07
 title: "Disable Tabs"
 technologies: []

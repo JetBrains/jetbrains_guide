@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "navigate-to-file"
 date: 2018-11-07
 title: "Navigate to File"
 technologies: []

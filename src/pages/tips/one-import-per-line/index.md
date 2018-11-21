@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "one-import-per-line"
 date: 2018-11-06
 title: "One Import Per Line Preference"
 technologies: []

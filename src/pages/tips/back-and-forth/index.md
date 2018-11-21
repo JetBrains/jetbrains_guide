@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "back-and-forth"
 date: 2018-11-09
 title: "Navigate Cursor Position Back and Forth "
 technologies: []

@@ -1,6 +1,5 @@
 ---
 type: "tutorial"
-path: "disable-tabs"
 date: 2017-07-07
 title: "Tutorial Disable Tabs"
 technologies: []

@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "recent-files"
 date: 2018-11-04
 title: "Jump to Recent File"
 technologies: []

@@ -1,6 +1,5 @@
 ---
 type: "tip"
-path: "navigate-to-symbol"
 date: 2018-11-08
 title: "Navigate to Symbol"
 technologies: []

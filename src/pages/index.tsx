@@ -80,7 +80,7 @@ const IndexPage: React.SFC<ITipsProps> = ({ data }) => {
               {items &&
                 items.map(item => {
                   const frontmatter = item.frontmatter;
-                  const href = `/tips/${frontmatter.path}`;
+                  const href = item.fields.slug;
                   return (
                     <TipItem
                       key={href}
@@ -118,10 +118,12 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           html
           id
+          fields {
+            slug
+          }
           frontmatter {
             type
             date(formatString: "MMMM Do, YYYY")
-            path
             title
             subtitle
             technologies
