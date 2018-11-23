@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Typescript Sample`
   },
+  pathPrefix: '/pycharm/guide',
   plugins: [
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,

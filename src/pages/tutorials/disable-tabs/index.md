@@ -6,6 +6,8 @@ technologies: []
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Tutorial....Save space and stay keyboard-centric by turning off the tabs"
+steps:
+- "step1"
 seealso:
 - title: "Managing Editor Tabs"
   href: "https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html"      

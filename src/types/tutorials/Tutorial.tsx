@@ -11,10 +11,14 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
+import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
 
 interface ITutorialProps {
   data: {
     markdownRemark: ITutorial;
+    tutorialsteps: {
+      edges: ITutorialStepEdges;
+    };
     authors: {
       edges: IAuthorEdges;
     };
@@ -56,6 +60,27 @@ class Tutorial extends Component<ITutorialProps> {
           ]
         }
       : null;
+
+    // Tutorialsteps
+
+    // First, make a mapping of slug -> tutorialstep
+    const allTutorialSteps: { [index: string]: string } = {};
+    data.tutorialsteps.edges.forEach(edge => {
+      const node = edge.node;
+      allTutorialSteps[node.fields.slug] = node.frontmatter.title;
+    });
+
+    // Now convert the list of frontmatter step slugs into actual step info
+    const thisSlug = data.markdownRemark.fields.slug;
+    const steps: IStep[] = frontmatter.steps.map(stepSlug => {
+      const fullStepSlug = `${thisSlug + stepSlug}/`;
+      return {
+        target: fullStepSlug,
+        label: allTutorialSteps[fullStepSlug]
+      };
+    });
+
+    // Authors
     const authors = data.authors.edges.map(edge => edge.node);
     const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
     const author = {
@@ -81,6 +106,7 @@ class Tutorial extends Component<ITutorialProps> {
         <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={frontmatter.technologies} />
         <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={frontmatter.topics} />
         <SidebarDoclinks links={links} />
+        <SidebarSteps steps={steps} />
       </Sidebar>
     );
     return (
@@ -167,6 +193,7 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         title
         subtitle
+        steps
         technologies
         author
         topics
