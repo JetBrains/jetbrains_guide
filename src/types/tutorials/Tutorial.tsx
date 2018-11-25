@@ -108,6 +108,62 @@ export const query = graphql`
       }
     }
 
+    tutorialsteps: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { type: { eq: "tutorialstep" } } }
+      limit: 1000
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          html
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            technologies
+            topics
+            author {
+              excerpt(pruneLength: 250)
+              html
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+                label
+                title
+                subtitle
+                date
+                headshot {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 1000) {
       edges {
         node {
