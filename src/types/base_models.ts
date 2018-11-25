@@ -1,3 +1,5 @@
+import { IAuthor } from './authors/models';
+
 export interface IBaseFrontmatter {
   type: string;
   title: string;
@@ -8,7 +10,7 @@ export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
   date: string;
   technologies: string[];
   topics: string[];
-  author: string;
+  author: IAuthor;
   shortVideo?: any;
   thumbnail?: any;
 }

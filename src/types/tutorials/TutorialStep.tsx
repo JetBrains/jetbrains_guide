@@ -4,7 +4,6 @@ import { Element } from 'react-scroll';
 
 import { graphql } from 'gatsby';
 import { ITutorialStep } from './models';
-import { IAuthor, IAuthorEdges } from '../authors/models';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
@@ -13,9 +12,6 @@ import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGro
 interface ITutorialStepProps {
   data: {
     markdownRemark: ITutorialStep;
-    authors: {
-      edges: IAuthorEdges;
-    };
   };
 }
 
@@ -24,14 +20,13 @@ class TutorialStep extends Component<ITutorialStepProps> {
     const { data } = this.props;
     const tutorialStep = data.markdownRemark;
     const { frontmatter } = tutorialStep;
-    const authors = data.authors.edges.map(edge => edge.node);
-    const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
-    const author = {
-      title: authorRef.frontmatter.title,
-      headshot: authorRef.frontmatter.headshot,
-      href: authorRef.fields.slug
-    };
 
+    const thisAuthor = tutorialStep.frontmatter.author;
+    const author = {
+      title: thisAuthor.frontmatter.title,
+      headshot: thisAuthor.frontmatter.headshot,
+      href: thisAuthor.fields.slug
+    };
     const sidebar = (
       <Sidebar>
         <SidebarPublished date={frontmatter.date} author={author} />
@@ -75,7 +70,29 @@ export const query = graphql`
         title
         subtitle
         technologies
-        author
+        author {
+          excerpt(pruneLength: 250)
+          html
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            type
+            label
+            title
+            subtitle
+            date
+            headshot {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         topics
         leadin
         seealso {
@@ -100,34 +117,6 @@ export const query = graphql`
             childImageSharp {
               fluid(maxWidth: 1000) {
                 ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-
-    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 1000) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            type
-            label
-            title
-            subtitle
-            date
-            headshot {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
               }
             }
           }

@@ -22,7 +22,7 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
 
   // Filter the resources to only those matching this technology
   const label = author.frontmatter.label;
-  const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.author === label);
+  const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.author.frontmatter.label === label);
 
   return (
     <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
@@ -104,9 +104,31 @@ export const query = graphql`
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            author
             technologies
             topics
+            author {
+              excerpt(pruneLength: 250)
+              html
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+                label
+                title
+                subtitle
+                date
+                headshot {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
             thumbnail {
               publicURL
               childImageSharp {

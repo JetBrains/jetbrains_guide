@@ -6,16 +6,12 @@ import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
 
 import { ITipEdges } from './models';
-import { IAuthor, IAuthorEdges } from '../authors/models';
 import { ITechnologyEdges } from '../technologies/models';
 
 export interface ITipsProps {
   data: {
     tips: {
       edges: ITipEdges;
-    };
-    authors: {
-      edges: IAuthorEdges;
     };
     technologies: {
       edges: ITechnologyEdges;
@@ -25,7 +21,6 @@ export interface ITipsProps {
 
 const Tips: React.SFC<ITipsProps> = ({ data }) => {
   const items = data.tips.edges.map(edge => edge.node);
-  const authors = data.authors.edges.map(edge => edge.node);
   return (
     <DefaultLayout title="Tips" subtitle="Resources organized by programming technologies">
       <div className="columns">
@@ -39,11 +34,11 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
               // Use the first technology's icon as the logo
               const thumbnail = frontmatter.thumbnail;
 
-              const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
+              const thisAuthor = item.frontmatter.author;
               const author = {
-                title: authorRef.frontmatter.title,
-                headshot: authorRef.frontmatter.headshot,
-                href: authorRef.fields.slug
+                title: thisAuthor.frontmatter.title,
+                headshot: thisAuthor.frontmatter.headshot,
+                href: thisAuthor.fields.slug
               };
               return (
                 <ResourceCard
@@ -69,34 +64,6 @@ export default Tips;
 
 export const query = graphql`
   query {
-    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 1000) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            type
-            label
-            title
-            subtitle
-            date
-            headshot {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
     tips: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { type: { eq: "tip" } } }
@@ -117,7 +84,29 @@ export const query = graphql`
             subtitle
             technologies
             topics
-            author
+            author {
+              excerpt(pruneLength: 250)
+              html
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+                label
+                title
+                subtitle
+                date
+                headshot {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
             thumbnail {
               publicURL
               childImageSharp {

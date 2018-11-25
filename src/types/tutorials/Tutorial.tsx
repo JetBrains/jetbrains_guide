@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import { graphql } from 'gatsby';
 import { ITutorial, ITutorialStep, ITutorialStepEdges } from './models';
-import { IAuthor, IAuthorEdges } from '../authors/models';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
@@ -15,9 +14,6 @@ interface ITutorialProps {
     markdownRemark: ITutorial;
     tutorialsteps: {
       edges: ITutorialStepEdges;
-    };
-    authors: {
-      edges: IAuthorEdges;
     };
   };
 }
@@ -53,13 +49,11 @@ class Tutorial extends Component<ITutorialProps> {
       };
     });
 
-    // Authors
-    const authors = data.authors.edges.map(edge => edge.node);
-    const authorRef = authors.find(a => a.frontmatter.label === frontmatter.author) as IAuthor;
+    const thisAuthor = tutorial.frontmatter.author;
     const author = {
-      title: authorRef.frontmatter.title,
-      headshot: authorRef.frontmatter.headshot,
-      href: authorRef.fields.slug
+      title: thisAuthor.frontmatter.title,
+      headshot: thisAuthor.frontmatter.headshot,
+      href: thisAuthor.fields.slug
     };
 
     const sidebar = (
@@ -103,7 +97,29 @@ export const query = graphql`
         subtitle
         steps
         technologies
-        author
+        author {
+          excerpt(pruneLength: 250)
+          html
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            type
+            label
+            title
+            subtitle
+            date
+            headshot {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         topics
       }
     }
@@ -152,34 +168,6 @@ export const query = graphql`
               }
             }
             thumbnail {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 1000) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            type
-            label
-            title
-            subtitle
-            date
-            headshot {
               publicURL
               childImageSharp {
                 fluid(maxWidth: 1000) {

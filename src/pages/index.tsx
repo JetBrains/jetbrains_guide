@@ -128,7 +128,6 @@ export const query = graphql`
             subtitle
             technologies
             topics
-            author
             shortVideo {
               url
               poster {

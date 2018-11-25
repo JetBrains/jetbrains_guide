@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Typescript Sample`
   },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': `MarkdownRemark.frontmatter.label`
+  },
   pathPrefix: '/pycharm/guide',
   plugins: [
     `gatsby-remark-copy-linked-files`,

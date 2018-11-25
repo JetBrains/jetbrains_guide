@@ -6,16 +6,12 @@ import { ITopic } from './models';
 import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
 import { IBaseResourceEdges } from '../base_models';
-import { IAuthor, IAuthorEdges } from '../authors/models';
 
 interface ITopicProps {
   data: {
     topic: ITopic;
     resources: {
       edges: IBaseResourceEdges;
-    };
-    authors: {
-      edges: IAuthorEdges;
     };
   };
 }
@@ -27,7 +23,6 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
   // Filter the resources to only those matching this topic
   const label = topic.frontmatter.label;
   const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.topics.includes(label));
-  const authors = data.authors.edges.map(edge => edge.node);
   return (
     <DefaultLayout title={title} subtitle={subtitle}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: topic.html }} />
@@ -37,11 +32,11 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
             resources.map(resource => {
               const rfm = resource.frontmatter;
               const href = resource.fields.slug;
-              const authorRef = authors.find(a => a.frontmatter.label === rfm.author) as IAuthor;
+              const thisAuthor = resource.frontmatter.author;
               const author = {
-                title: authorRef.frontmatter.title,
-                headshot: authorRef.frontmatter.headshot,
-                href: authorRef.fields.slug
+                title: thisAuthor.frontmatter.title,
+                headshot: thisAuthor.frontmatter.headshot,
+                href: thisAuthor.fields.slug
               };
               const thumbnail = rfm.thumbnail;
               return (
@@ -101,37 +96,32 @@ export const query = graphql`
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            author
-            topics
-            technologies
-            thumbnail {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
+            author {
+              excerpt(pruneLength: 250)
+              html
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                type
+                label
+                title
+                subtitle
+                date
+                headshot {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
               }
             }
-          }
-        }
-      }
-    }
-    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 1000) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            type
-            label
-            title
-            subtitle
-            date
-            headshot {
+            topics
+            technologies
+            thumbnail {
               publicURL
               childImageSharp {
                 fluid(maxWidth: 1000) {
