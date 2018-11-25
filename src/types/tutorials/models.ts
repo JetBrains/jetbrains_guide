@@ -1,24 +1,15 @@
 import { IBaseResourceNode, IBaseResourceFrontmatter } from '../base_models';
 
-export interface IVideoPlayer {
-  poster: any;
-  url: any;
-}
-
-interface ISeeAlso {
-  title: string;
-  href: string;
+export interface ITutorialStepFrontmatter extends IBaseResourceFrontmatter {
+  steps: string[];
 }
 
 export interface ITutorialFrontmatter extends IBaseResourceFrontmatter {
-  shortVideo: IVideoPlayer;
-  longVideo: IVideoPlayer;
-  leadin: string;
-  seealso?: ISeeAlso[];
+  steps: string[];
 }
 
 export interface ITutorialStep extends IBaseResourceNode {
-  frontmatter: ITutorialFrontmatter;
+  frontmatter: ITutorialStepFrontmatter;
 }
 
 export interface ITutorial extends IBaseResourceNode {
@@ -30,3 +21,8 @@ export interface ITutorialEdge {
 }
 
 export type ITutorialEdges = ITutorialEdge[];
+export interface ITutorialStepEdge {
+  node: ITutorialStep;
+}
+
+export type ITutorialStepEdges = ITutorialStepEdge[];

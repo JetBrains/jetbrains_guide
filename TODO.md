@@ -5,6 +5,10 @@
 
 ## Next
 
+- Use gatsby-config to turn tutorials on/off
+
+- Get icons out of that other website and host locally 
+
 - Rewrite tip subtitles to be 140 char tweet bodies
 
 - Re-do the audio on the first two tips
@@ -20,6 +24,8 @@
 - jetbrains.com/pycharm/guide proxy
 
 ## Soon
+
+- Refactor layout components to not repeat so much
 
 - Get rid of "path" in frontmatter and infer from filename
 
@@ -43,6 +49,8 @@ in Sprout and not have to upload the video meaning Twitter Cards
 ## Later
 
 - Scroll the sidebar with the scrolling
+
+- SEO with JSON-LD
 
 - Disqus
 
