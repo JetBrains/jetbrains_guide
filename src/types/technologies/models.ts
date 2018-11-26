@@ -4,12 +4,12 @@ export interface ITechnologyFrontmatter extends IBaseCategoryFrontmatter {
   logo: string;
 }
 
-export interface ITechnology extends IBaseCategoryNode {
+export interface ITechnologyNode extends IBaseCategoryNode {
   frontmatter: ITechnologyFrontmatter;
 }
 
 export interface ITechnologyEdge {
-  node: ITechnology;
+  node: ITechnologyNode;
 }
 
 export type ITechnologyEdges = ITechnologyEdge[];

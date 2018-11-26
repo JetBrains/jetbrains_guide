@@ -5,12 +5,12 @@ export interface ITopicFrontmatter extends IBaseCategoryFrontmatter {
   icon: string;
 }
 
-export interface ITopic extends IBaseCategoryNode {
+export interface ITopicNode extends IBaseCategoryNode {
   frontmatter: ITopicFrontmatter;
 }
 
 export interface ITopicEdge {
-  node: ITopic;
+  node: ITopicNode;
 }
 
 export type ITopicEdges = ITopicEdge[];

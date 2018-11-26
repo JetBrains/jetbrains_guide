@@ -1,44 +1,105 @@
+// From https://github.com/gatsbyjs/gatsby/issues/3129
+
+interface ISingleReference {
+  [index: string]: string;
+}
+
+interface IManyReference {
+  [index: string]: string[];
+}
+
+interface IResourceReferences {
+  author: ISingleReference;
+  technologies: IManyReference;
+  topics: IManyReference;
+}
+
 const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
   const { createNodeField } = boundActionCreators;
 
-  const tipsOfAuthors = {};
-  const authorOfTips = {}; // reverse index
+  // Each kind of category, e.g. author, gets fields for each kind of resource
+  const resourcesOfReferences = { author: {}, technology: {}, topic: {} };
 
-  // as we can have multiple authors in tip we should handle both cases
-  // both when author is specified as single item and when there is list of authors
-  // abstracting it to helper function help prevent code duplication
-  const getAuthorNodeByName = (name: string) =>
-    getNodes().find((node2: any) => node2.internal.type === `MarkdownRemark` && node2.frontmatter.label === name);
+  // Each resource, e.g. tip, gets fields for each kind of category
+  const referencesOfResource: IResourceReferences = { author: {}, technologies: {}, topics: {} };
 
-  // iterate through all markdown nodes to link tips to author
-  // and build author index
+  // Find reftype node (e.g. author) by label name
+  const getReferenceNodeByLabel = (reftype: string, name: string) =>
+    getNodes().find((node2: any) => {
+      const fm = node2.frontmatter;
+      return node2.internal.type === `MarkdownRemark` && fm.type === reftype && fm.label === name;
+    });
+
+  // iterate through all markdown nodes to link resources to reftypes
+  // and build reftype index
   getNodes()
     .filter((node: any) => node.internal.type === `MarkdownRemark`)
     .forEach((node: any) => {
       if (node.frontmatter.author) {
-        const authorNodes =
-          node.frontmatter.author instanceof Array
-            ? node.frontmatter.author.map(getAuthorNodeByName) // get array of nodes
-            : [getAuthorNodeByName(node.frontmatter.author)]; // get single node and create 1 element array
+        const authorNode = getReferenceNodeByLabel('author', node.frontmatter.author);
 
-        // filtered not defined nodes and iterate through defined authors nodes to add data to indexes
-        authorNodes.filter((authorNode: any) => authorNode).map((authorNode: any) => {
-          // if it's first time for this author init empty array for his tips
-          if (!(authorNode.id in tipsOfAuthors)) {
+        // Put this author, on the resource
+        referencesOfResource.author[node.id] = authorNode.id;
+
+        // Add this resource, to the author
+        if (!(authorNode.id in resourcesOfReferences.author)) {
+          // @ts-ignore
+          resourcesOfReferences.author[authorNode.id] = [];
+        }
+        // add tip to this author
+        // @ts-ignore
+        resourcesOfReferences.author[authorNode.id].push(node.id);
+      }
+
+      if (node.frontmatter.technologies) {
+        const technologyNodes = node.frontmatter.technologies.map((technologyLabel: string) => {
+          return getReferenceNodeByLabel('technology', technologyLabel);
+        });
+
+        technologyNodes.filter((technologyNode: any) => technologyNode).map((technologyNode: any) => {
+          // Add this resource, to the reference
+          if (!(technologyNode.id in resourcesOfReferences.technology)) {
             // @ts-ignore
-            tipsOfAuthors[authorNode.id] = [];
+            resourcesOfReferences.technology[technologyNode.id] = [];
           }
-          // add tip to this author
           // @ts-ignore
-          tipsOfAuthors[authorNode.id].push(node.id);
+          resourcesOfReferences.technology[technologyNode.id].push(node.id);
 
+          // Add this reference to the resource
+          if (!referencesOfResource.technologies[node.id]) {
+            referencesOfResource.technologies[node.id] = [technologyNode.id];
+          } else {
+            referencesOfResource.technologies[node.id].push(technologyNode.id);
+          }
+        });
+      }
+
+      if (node.frontmatter.topics) {
+        const topicNodes = node.frontmatter.topics.map((topicLabel: string) => {
+          return getReferenceNodeByLabel('topic', topicLabel);
+        });
+
+        topicNodes.filter((topicNode: any) => topicNode).map((topicNode: any) => {
+          // Add this resource, to the reference
+          if (!(topicNode.id in resourcesOfReferences.topic)) {
+            // @ts-ignore
+            resourcesOfReferences.topic[topicNode.id] = [];
+          }
           // @ts-ignore
-          authorOfTips[node.id] = authorNode.id;
+          resourcesOfReferences.topic[topicNode.id].push(node.id);
+
+          // Add this reference to the resource
+          if (!referencesOfResource.topics[node.id]) {
+            referencesOfResource.topics[node.id] = [topicNode.id];
+          } else {
+            referencesOfResource.topics[node.id].push(topicNode.id);
+          }
         });
       }
     });
 
-  Object.entries(tipsOfAuthors).forEach(([authorNodeId, tipIds]) => {
+  // First the resources on references
+  Object.entries(resourcesOfReferences.author).forEach(([authorNodeId, tipIds]) => {
     createNodeField({
       node: getNode(authorNodeId),
       name: `tips`,
@@ -46,12 +107,47 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
     });
   });
 
-  Object.entries(authorOfTips).forEach(([tipNodeId, authorId]) => {
+  Object.entries(resourcesOfReferences.topic).forEach(([topicNodeId, tipIds]) => {
+    createNodeField({
+      node: getNode(topicNodeId),
+      name: `tips`,
+      value: tipIds
+    });
+  });
+
+  Object.entries(resourcesOfReferences.technology).forEach(([technologyNodeId, tipIds]) => {
+    createNodeField({
+      node: getNode(technologyNodeId),
+      name: `tips`,
+      value: tipIds
+    });
+  });
+
+  // Now the references on resources
+  Object.entries(referencesOfResource.author).forEach(([tipNodeId, authorId]) => {
     // @ts-ignore
     createNodeField({
       node: getNode(tipNodeId),
       name: `author`,
       value: authorId
+    });
+  });
+
+  Object.entries(referencesOfResource.technologies).forEach(([tipNodeId, technologyIds]) => {
+    // @ts-ignore
+    createNodeField({
+      node: getNode(tipNodeId),
+      name: `technologies`,
+      value: technologyIds
+    });
+  });
+
+  Object.entries(referencesOfResource.topics).forEach(([tipNodeId, topicIds]) => {
+    // @ts-ignore
+    createNodeField({
+      node: getNode(tipNodeId),
+      name: `topics`,
+      value: topicIds
     });
   });
 };

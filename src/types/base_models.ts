@@ -1,5 +1,7 @@
 import { IAuthorNode } from './authors/models';
 import { ITipNode } from './tips/models';
+import { ITechnologyNode } from './technologies/models';
+import { ITopicNode } from './topics/models';
 
 export interface IBaseFrontmatter {
   type: string;
@@ -26,6 +28,8 @@ export interface IFields {
 
 export interface IResourceFields extends IFields {
   author: IAuthorNode;
+  technologies: ITechnologyNode[];
+  topics: ITopicNode[];
 }
 
 export interface ICategoryFields extends IFields {

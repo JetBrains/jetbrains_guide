@@ -2,7 +2,7 @@
 type: "tip"
 date: 2017-07-07
 title: "Reduce Clutter by Disabling Tools"
-technologies: ["angular"]
+technologies: []
 topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Save space by turning off various toolbars and Project Tool"

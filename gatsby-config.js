@@ -4,6 +4,8 @@ module.exports = {
   },
   mapping: {
     'MarkdownRemark.fields.author': `MarkdownRemark.id`,
+    'MarkdownRemark.fields.technologies': `MarkdownRemark.id`,
+    'MarkdownRemark.fields.topics': `MarkdownRemark.id`,
     'MarkdownRemark.fields.tips': `MarkdownRemark.id`
   },
   pathPrefix: '/pycharm/guide',

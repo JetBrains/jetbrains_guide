@@ -24,15 +24,16 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
           {author.fields.tips &&
             author.fields.tips.map(resource => {
               const rfm = resource.frontmatter;
-              const href = resource.fields.slug;
+              const fields = resource.fields;
+              const href = fields.slug;
               const thumbnail = rfm.thumbnail;
               return (
                 <ResourceCard
                   key={href}
                   title={rfm.title}
                   subtitle={rfm.subtitle}
-                  technologies={rfm.technologies}
-                  topics={rfm.topics}
+                  technologies={fields.technologies}
+                  topics={fields.topics}
                   href={href}
                   thumbnail={thumbnail}
                   date={rfm.date}
@@ -60,14 +61,28 @@ export const query = graphql`
           id
           fields {
             slug
+            technologies {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
+            topics {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
           }
           frontmatter {
             type
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            technologies
-            topics
             thumbnail {
               publicURL
               childImageSharp {
@@ -99,38 +114,6 @@ export const query = graphql`
               sizes
               originalImg
               originalName
-            }
-          }
-        }
-      }
-    }
-    resources: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "tip" } } }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            type
-            date(formatString: "MMMM Do, YYYY")
-            title
-            subtitle
-            technologies
-            topics
-            thumbnail {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
             }
           }
         }

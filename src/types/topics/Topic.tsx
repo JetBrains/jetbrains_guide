@@ -2,27 +2,21 @@ import * as React from 'react';
 
 import { graphql } from 'gatsby';
 
-import { ITopic } from './models';
+import { ITopicNode } from './models';
 import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
-import { IBaseResourceEdges } from '../base_models';
 
 interface ITopicProps {
   data: {
-    topic: ITopic;
-    resources: {
-      edges: IBaseResourceEdges;
-    };
+    topic: ITopicNode;
   };
 }
 
-const Topic: React.SFC<ITopicProps> = ({ data }) => {
-  const { topic } = data;
+const Topic: React.SFC<ITopicProps> = ({ data: { topic } }) => {
   const { title, subtitle } = topic.frontmatter;
 
-  // Filter the resources to only those matching this topic
-  const label = topic.frontmatter.label;
-  const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.topics.includes(label));
+  const resources = topic.fields.tips;
+
   return (
     <DefaultLayout title={title} subtitle={subtitle}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: topic.html }} />
@@ -31,8 +25,9 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
           {resources &&
             resources.map(resource => {
               const rfm = resource.frontmatter;
-              const href = resource.fields.slug;
-              const thisAuthor = resource.fields.author;
+              const fields = resource.fields;
+              const href = fields.slug;
+              const thisAuthor = fields.author;
               const author = {
                 title: thisAuthor.frontmatter.title,
                 headshot: thisAuthor.frontmatter.headshot,
@@ -44,8 +39,8 @@ const Topic: React.SFC<ITopicProps> = ({ data }) => {
                   key={href}
                   title={rfm.title}
                   subtitle={rfm.subtitle}
-                  technologies={rfm.technologies}
-                  topics={rfm.topics}
+                  technologies={fields.technologies}
+                  topics={fields.topics}
                   href={href}
                   thumbnail={thumbnail}
                   author={author}
@@ -69,27 +64,28 @@ export const query = graphql`
       id
       fields {
         slug
-      }
-      frontmatter {
-        type
-        label
-        title
-        subtitle
-        date
-      }
-    }
-    resources: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "tip" } } }
-      limit: 1000
-    ) {
-      edges {
-        node {
+        tips {
           excerpt(pruneLength: 250)
           html
           id
           fields {
             slug
+            technologies {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
+            topics {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
             author {
               excerpt(pruneLength: 250)
               html
@@ -119,8 +115,6 @@ export const query = graphql`
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            topics
-            technologies
             thumbnail {
               publicURL
               childImageSharp {
@@ -131,6 +125,13 @@ export const query = graphql`
             }
           }
         }
+      }
+      frontmatter {
+        type
+        label
+        title
+        subtitle
+        date
       }
     }
   }

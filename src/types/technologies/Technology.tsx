@@ -3,28 +3,18 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import ResourceCard from '../../components/ResourceCard';
-import { ITechnology } from './models';
-import { IBaseResourceEdges } from '../base_models';
+import { ITechnologyNode } from './models';
 import LogoLayout from '../../layouts/logo';
 
 interface ITechnologyProps {
   data: {
-    technology: ITechnology;
-    resources: {
-      edges: IBaseResourceEdges;
-    };
+    technology: ITechnologyNode;
   };
 }
 
-const Technology: React.SFC<ITechnologyProps> = ({ data }) => {
-  const { technology } = data;
+const Technology: React.SFC<ITechnologyProps> = ({ data: { technology } }) => {
   const { frontmatter } = technology;
-
-  // Filter the resources to only those matching this technology
-  const label = technology.frontmatter.label;
-  const resources = data.resources.edges
-    ? data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.technologies.includes(label))
-    : [];
+  const resources = technology.fields.tips;
 
   return (
     <LogoLayout title={frontmatter.title} subtitle={frontmatter.subtitle} logo={frontmatter.logo}>
@@ -48,8 +38,8 @@ const Technology: React.SFC<ITechnologyProps> = ({ data }) => {
                   key={href}
                   title={rfm.title}
                   subtitle={rfm.subtitle}
-                  technologies={rfm.technologies}
-                  topics={rfm.topics}
+                  technologies={resource.fields.technologies}
+                  topics={resource.fields.topics}
                   href={href}
                   thumbnail={thumbnail}
                   author={author}
@@ -73,28 +63,28 @@ export const query = graphql`
       id
       fields {
         slug
-      }
-      frontmatter {
-        type
-        label
-        title
-        subtitle
-        date
-        logo
-      }
-    }
-    resources: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "tip" } } }
-      limit: 1000
-    ) {
-      edges {
-        node {
+        tips {
           excerpt(pruneLength: 250)
           html
           id
           fields {
             slug
+            technologies {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
+            topics {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
             author {
               excerpt(pruneLength: 250)
               html
@@ -124,8 +114,6 @@ export const query = graphql`
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            technologies
-            topics
             thumbnail {
               publicURL
               childImageSharp {
@@ -136,6 +124,14 @@ export const query = graphql`
             }
           }
         }
+      }
+      frontmatter {
+        type
+        label
+        title
+        subtitle
+        logo
+        date
       }
     }
   }

@@ -6,21 +6,17 @@ import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
 
 import { ITipEdges } from './models';
-import { ITechnologyEdges } from '../technologies/models';
 
 export interface ITipsProps {
   data: {
     tips: {
       edges: ITipEdges;
     };
-    technologies: {
-      edges: ITechnologyEdges;
-    };
   };
 }
 
-const Tips: React.SFC<ITipsProps> = ({ data }) => {
-  const items = data.tips.edges.map(edge => edge.node);
+const Tips: React.SFC<ITipsProps> = ({ data: { tips } }) => {
+  const items = tips.edges.map(edge => edge.node);
   return (
     <DefaultLayout title="Tips" subtitle="Resources organized by programming technologies">
       <div className="columns">
@@ -31,7 +27,6 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
               const fields = item.fields;
               const href = fields.slug;
 
-              // Use the first technology's icon as the logo
               const thumbnail = frontmatter.thumbnail;
 
               // @ts-ignore
@@ -46,8 +41,8 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
                   key={href}
                   title={frontmatter.title}
                   subtitle={frontmatter.subtitle}
-                  technologies={frontmatter.technologies}
-                  topics={frontmatter.topics}
+                  technologies={fields.technologies}
+                  topics={fields.topics}
                   href={href}
                   thumbnail={thumbnail}
                   author={author}
@@ -77,6 +72,22 @@ export const query = graphql`
           id
           fields {
             slug
+            technologies {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
+            topics {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
             author {
               excerpt(pruneLength: 250)
               html
@@ -85,11 +96,7 @@ export const query = graphql`
                 slug
               }
               frontmatter {
-                type
-                label
                 title
-                subtitle
-                date
                 headshot {
                   publicURL
                   childImageSharp {
@@ -106,8 +113,6 @@ export const query = graphql`
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
-            technologies
-            topics
             thumbnail {
               publicURL
               childImageSharp {
@@ -116,26 +121,6 @@ export const query = graphql`
                 }
               }
             }
-          }
-        }
-      }
-    }
-
-    technologies: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "technology" } } }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            type
-            label
-            title
-            subtitle
-            date
-            logo
           }
         }
       }

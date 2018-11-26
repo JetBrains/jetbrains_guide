@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
+import { ITechnologyNode } from '../types/technologies/models';
+import { ITopicNode } from '../types/topics/models';
 
 interface IAuthorProps {
   title: string;
@@ -15,8 +17,8 @@ interface IResourceCardProps {
   href: string;
   date?: string;
   logo_href?: string;
-  technologies: string[];
-  topics: string[];
+  technologies: ITechnologyNode[];
+  topics: ITopicNode[];
   author?: IAuthorProps;
   thumbnail?: any;
 }
@@ -58,28 +60,30 @@ const ResourceCard: React.SFC<IResourceCardProps> = props => {
                   <span className="bio-card-author-label">{props.author.title}</span>
                 </Link>
               )}
-              {props.technologies.map(technology => (
-                <span className="level-item bio-common-card-references" key={technology}>
-                  <div className="tags">
-                    <span className="tag is-rounded has-text-warning">
-                      <Link to={`/technologies/${technology}`} className="has-text-danger">
-                        {technology}
-                      </Link>
-                    </span>
-                  </div>
-                </span>
-              ))}
-              {props.topics.map(topic => (
-                <span className="level-item bio-common-card-references" key={topic}>
-                  <div className="tags">
-                    <span className="tag is-rounded">
-                      <Link to={`/topics/${topic}`} className="has-text-primary">
-                        {topic}
-                      </Link>
-                    </span>
-                  </div>
-                </span>
-              ))}
+              {props.technologies &&
+                props.technologies.map(technology => (
+                  <span className="level-item bio-common-card-references" key={technology.fields.slug}>
+                    <div className="tags">
+                      <span className="tag is-rounded has-text-warning">
+                        <Link to={technology.fields.slug} className="has-text-danger">
+                          {technology.frontmatter.label}
+                        </Link>
+                      </span>
+                    </div>
+                  </span>
+                ))}
+              {props.topics &&
+                props.topics.map(topic => (
+                  <span className="level-item bio-common-card-references" key={topic.fields.slug}>
+                    <div className="tags">
+                      <span className="tag is-rounded">
+                        <Link to={topic.fields.slug} className="has-text-primary">
+                          {topic.frontmatter.label}
+                        </Link>
+                      </span>
+                    </div>
+                  </span>
+                ))}
             </div>
             {props.date && (
               <div className="level-right is-size-7 has-text-grey">
