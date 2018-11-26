@@ -3,16 +3,12 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import ResourceCard from '../../components/ResourceCard';
-import { IAuthor } from './models';
-import { IBaseResourceEdges } from '../base_models';
+import { IAuthorNode } from './models';
 import ImageLayout from '../../layouts/image';
 
 interface IAuthorProps {
   data: {
-    author: IAuthor;
-    resources: {
-      edges: IBaseResourceEdges;
-    };
+    author: IAuthorNode;
   };
 }
 
@@ -20,17 +16,13 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
   const { author } = data;
   const { frontmatter } = author;
 
-  // Filter the resources to only those matching this technology
-  const label = author.frontmatter.label;
-  const resources = data.resources.edges.map(edge => edge.node).filter(node => node.frontmatter.author.frontmatter.label === label);
-
   return (
     <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
       <div className="columns">
         <div className="column is-three-quarters-desktop bio-resourcecards">
-          {resources &&
-            resources.map(resource => {
+          {author.fields.tips &&
+            author.fields.tips.map(resource => {
               const rfm = resource.frontmatter;
               const href = resource.fields.slug;
               const thumbnail = rfm.thumbnail;
@@ -61,6 +53,32 @@ export const query = graphql`
       excerpt(pruneLength: 250)
       html
       id
+      fields {
+        tips {
+          excerpt(pruneLength: 250)
+          html
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            technologies
+            topics
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
       frontmatter {
         type
         label
@@ -106,29 +124,6 @@ export const query = graphql`
             subtitle
             technologies
             topics
-            author {
-              excerpt(pruneLength: 250)
-              html
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                type
-                label
-                title
-                subtitle
-                date
-                headshot {
-                  publicURL
-                  childImageSharp {
-                    fluid(maxWidth: 1000) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            }
             thumbnail {
               publicURL
               childImageSharp {

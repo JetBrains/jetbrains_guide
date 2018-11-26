@@ -1,4 +1,5 @@
-import { IAuthor } from './authors/models';
+import { IAuthorNode } from './authors/models';
+import { ITipNode } from './tips/models';
 
 export interface IBaseFrontmatter {
   type: string;
@@ -10,7 +11,7 @@ export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
   date: string;
   technologies: string[];
   topics: string[];
-  author: IAuthor;
+  author: string;
   shortVideo?: any;
   thumbnail?: any;
 }
@@ -23,20 +24,29 @@ export interface IFields {
   slug: string;
 }
 
+export interface IResourceFields extends IFields {
+  author: IAuthorNode;
+}
+
+export interface ICategoryFields extends IFields {
+  tips: ITipNode[];
+}
+
 export interface IBaseNode {
   id: string;
   excerpt: string;
   html: string;
   frontmatter: IBaseFrontmatter;
-  fields: IFields;
 }
 
 export interface IBaseResourceNode extends IBaseNode {
   frontmatter: IBaseResourceFrontmatter;
+  fields: IResourceFields;
 }
 
 export interface IBaseCategoryNode extends IBaseNode {
   frontmatter: IBaseCategoryFrontmatter;
+  fields: ICategoryFields;
 }
 
 export interface IBaseResourceEdge {

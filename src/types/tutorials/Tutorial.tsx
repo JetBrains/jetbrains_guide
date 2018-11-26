@@ -49,7 +49,7 @@ class Tutorial extends Component<ITutorialProps> {
       };
     });
 
-    const thisAuthor = tutorial.frontmatter.author;
+    const thisAuthor = tutorial.fields.author;
     const author = {
       title: thisAuthor.frontmatter.title,
       headshot: thisAuthor.frontmatter.headshot,
@@ -89,14 +89,6 @@ export const query = graphql`
       id
       fields {
         slug
-      }
-      frontmatter {
-        type
-        date(formatString: "MMMM Do, YYYY")
-        title
-        subtitle
-        steps
-        technologies
         author {
           excerpt(pruneLength: 250)
           html
@@ -120,6 +112,14 @@ export const query = graphql`
             }
           }
         }
+      }
+      frontmatter {
+        type
+        date(formatString: "MMMM Do, YYYY")
+        title
+        subtitle
+        steps
+        technologies
         topics
       }
     }
@@ -136,14 +136,6 @@ export const query = graphql`
           id
           fields {
             slug
-          }
-          frontmatter {
-            type
-            date(formatString: "MMMM Do, YYYY")
-            title
-            subtitle
-            technologies
-            topics
             author {
               excerpt(pruneLength: 250)
               html
@@ -167,6 +159,14 @@ export const query = graphql`
                 }
               }
             }
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            technologies
+            topics
             thumbnail {
               publicURL
               childImageSharp {

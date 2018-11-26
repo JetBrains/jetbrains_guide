@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Element, Link } from 'react-scroll';
 
 import { graphql } from 'gatsby';
-import { ITip } from './models';
+import { ITipNode } from './models';
 import VideoPlayer from '../../components/VideoPlayer';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -13,7 +13,7 @@ import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDocli
 
 interface ITipProps {
   data: {
-    markdownRemark: ITip;
+    markdownRemark: ITipNode;
   };
 }
 
@@ -53,7 +53,7 @@ class Tip extends Component<ITipProps> {
         }
       : null;
 
-    const thisAuthor = tip.frontmatter.author;
+    const thisAuthor = tip.fields.author;
     const author = {
       title: thisAuthor.frontmatter.title,
       headshot: thisAuthor.frontmatter.headshot,
@@ -157,13 +157,6 @@ export const query = graphql`
       id
       fields {
         slug
-      }
-      frontmatter {
-        type
-        date(formatString: "MMMM Do, YYYY")
-        title
-        subtitle
-        technologies
         author {
           excerpt(pruneLength: 250)
           html
@@ -187,6 +180,13 @@ export const query = graphql`
             }
           }
         }
+      }
+      frontmatter {
+        type
+        date(formatString: "MMMM Do, YYYY")
+        title
+        subtitle
+        technologies
         topics
         leadin
         seealso {

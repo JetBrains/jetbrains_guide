@@ -3,7 +3,8 @@ module.exports = {
     title: `Gatsby Typescript Sample`
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': `MarkdownRemark.frontmatter.label`
+    'MarkdownRemark.fields.author': `MarkdownRemark.id`,
+    'MarkdownRemark.fields.tips': `MarkdownRemark.id`
   },
   pathPrefix: '/pycharm/guide',
   plugins: [

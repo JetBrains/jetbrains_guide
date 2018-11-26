@@ -21,7 +21,7 @@ class TutorialStep extends Component<ITutorialStepProps> {
     const tutorialStep = data.markdownRemark;
     const { frontmatter } = tutorialStep;
 
-    const thisAuthor = tutorialStep.frontmatter.author;
+    const thisAuthor = tutorialStep.fields.author;
     const author = {
       title: thisAuthor.frontmatter.title,
       headshot: thisAuthor.frontmatter.headshot,
@@ -63,13 +63,6 @@ export const query = graphql`
       id
       fields {
         slug
-      }
-      frontmatter {
-        type
-        date(formatString: "MMMM Do, YYYY")
-        title
-        subtitle
-        technologies
         author {
           excerpt(pruneLength: 250)
           html
@@ -93,6 +86,13 @@ export const query = graphql`
             }
           }
         }
+      }
+      frontmatter {
+        type
+        date(formatString: "MMMM Do, YYYY")
+        title
+        subtitle
+        technologies
         topics
         leadin
         seealso {

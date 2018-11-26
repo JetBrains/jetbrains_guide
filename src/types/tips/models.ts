@@ -17,12 +17,12 @@ export interface ITipFrontmatter extends IBaseResourceFrontmatter {
   seealso?: ISeeAlso[];
 }
 
-export interface ITip extends IBaseResourceNode {
+export interface ITipNode extends IBaseResourceNode {
   frontmatter: ITipFrontmatter;
 }
 
 export interface ITipEdge {
-  node: ITip;
+  node: ITipNode;
 }
 
 export type ITipEdges = ITipEdge[];

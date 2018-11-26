@@ -4,12 +4,12 @@ export interface IAuthorFrontmatter extends IBaseCategoryFrontmatter {
   headshot: string;
 }
 
-export interface IAuthor extends IBaseCategoryNode {
+export interface IAuthorNode extends IBaseCategoryNode {
   frontmatter: IAuthorFrontmatter;
 }
 
 export interface IAuthorEdge {
-  node: IAuthor;
+  node: IAuthorNode;
 }
 
 export type IAuthorEdges = IAuthorEdge[];

@@ -34,7 +34,8 @@ const Tips: React.SFC<ITipsProps> = ({ data }) => {
               // Use the first technology's icon as the logo
               const thumbnail = frontmatter.thumbnail;
 
-              const thisAuthor = item.frontmatter.author;
+              // @ts-ignore
+              const thisAuthor = item.fields.author;
               const author = {
                 title: thisAuthor.frontmatter.title,
                 headshot: thisAuthor.frontmatter.headshot,
@@ -76,14 +77,6 @@ export const query = graphql`
           id
           fields {
             slug
-          }
-          frontmatter {
-            type
-            date(formatString: "MMMM Do, YYYY")
-            title
-            subtitle
-            technologies
-            topics
             author {
               excerpt(pruneLength: 250)
               html
@@ -107,6 +100,14 @@ export const query = graphql`
                 }
               }
             }
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            technologies
+            topics
             thumbnail {
               publicURL
               childImageSharp {

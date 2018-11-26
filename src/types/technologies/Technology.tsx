@@ -36,7 +36,7 @@ const Technology: React.SFC<ITechnologyProps> = ({ data }) => {
               const rfm = resource.frontmatter;
               const href = resource.fields.slug;
 
-              const thisAuthor = resource.frontmatter.author;
+              const thisAuthor = resource.fields.author;
               const author = {
                 title: thisAuthor.frontmatter.title,
                 headshot: thisAuthor.frontmatter.headshot,
@@ -95,12 +95,6 @@ export const query = graphql`
           id
           fields {
             slug
-          }
-          frontmatter {
-            type
-            date(formatString: "MMMM Do, YYYY")
-            title
-            subtitle
             author {
               excerpt(pruneLength: 250)
               html
@@ -124,6 +118,12 @@ export const query = graphql`
                 }
               }
             }
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
             technologies
             topics
             thumbnail {

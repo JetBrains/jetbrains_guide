@@ -9,3 +9,4 @@ require('ts-node').register({
 // typescript files
 exports.createPages = require('./lib/createPages');
 exports.onCreateNode = require('./lib/createNode');
+exports.sourceNodes = require('./lib/sourceNodes');
