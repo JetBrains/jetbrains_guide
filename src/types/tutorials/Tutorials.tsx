@@ -28,6 +28,7 @@ const Tutorials: React.SFC<ITutorialProps> = ({ data }) => {
           {items &&
             items.map(item => {
               const frontmatter = item.frontmatter;
+              const fields = item.fields;
               const href = item.fields.slug;
 
               // Use the first technology's icon as the logo
@@ -44,8 +45,8 @@ const Tutorials: React.SFC<ITutorialProps> = ({ data }) => {
                   key={href}
                   title={frontmatter.title}
                   subtitle={frontmatter.subtitle}
-                  technologies={frontmatter.technologies}
-                  topics={frontmatter.topics}
+                  technologies={fields.technologies}
+                  topics={fields.topics}
                   href={href}
                   thumbnail={thumbnail}
                   author={author}
