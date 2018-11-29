@@ -25,7 +25,7 @@ const Technologies: React.SFC<ITechnologiesProps> = ({ data }) => {
           items.map(item => {
             const frontmatter = item.frontmatter;
             const href = item.fields.slug;
-            const logo = frontmatter.logo ? frontmatter.logo : DEFAULT_LOGO;
+            const logo = frontmatter.logo.publicURL ? frontmatter.logo.publicURL : DEFAULT_LOGO;
             return (
               <SubsectionTechnology
                 key={href}
@@ -64,7 +64,9 @@ export const query = graphql`
             title
             subtitle
             date
-            logo
+            logo {
+              publicURL
+            }
           }
         }
       }

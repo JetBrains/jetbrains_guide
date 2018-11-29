@@ -4,7 +4,7 @@ date: 2017-07-07
 label: "ansible"
 title: "Ansible"
 subtitle: "Software automation"
-logo: "https://cdn.worldvectorlogo.com/logos/ansible.svg"
+logo: "./ansible.svg"
 ---
 
 Devops is complicated. Ansible is a configuration management system that

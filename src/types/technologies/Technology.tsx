@@ -130,7 +130,9 @@ export const query = graphql`
         label
         title
         subtitle
-        logo
+        logo {
+          publicURL
+        }
         date
       }
     }

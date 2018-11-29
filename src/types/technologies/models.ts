@@ -1,7 +1,9 @@
 import { IBaseCategoryFrontmatter, IBaseCategoryNode } from '../base_models';
 
 export interface ITechnologyFrontmatter extends IBaseCategoryFrontmatter {
-  logo: string;
+  logo: {
+    publicURL: string;
+  };
 }
 
 export interface ITechnologyNode extends IBaseCategoryNode {

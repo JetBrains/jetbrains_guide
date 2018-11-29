@@ -2,12 +2,7 @@
 
 ## Now
 
-
 ## Next
-
-- Use gatsby-config to turn tutorials on/off
-
-- Get icons out of that other website and host locally 
 
 - Rewrite tip subtitles to be 140 char tweet bodies
 
@@ -17,17 +12,15 @@
 
 ## Before MVP
 
-- Favicon
-
-- Get Google Analytics dropped in
-
-- jetbrains.com/pycharm/guide proxy
-
 ## Soon
 
-- Refactor layout components to not repeat so much
+- Pagination
 
-- Get rid of "path" in frontmatter and infer from filename
+- Tutorials with steps
+
+- Change category "label" to just use the filename
+
+- Refactor layout components to not repeat so much
 
 - Clean up all unused bio class names
 
@@ -36,13 +29,7 @@ in Sprout and not have to upload the video meaning Twitter Cards
 
 - Get "news" working
 
-- Some way to do fragments in graphql queries
-
 - Tests
-
-- Pagination
-
-- Tutorials with steps
 
 - Convert navbar et al. to be driven by settings in gatsby-config
 
@@ -172,4 +159,12 @@ sidebar if null
 - Refactor all queries and components to use "mapping" via the 
 sourceNodes event
 
+- Favicon
+
+- jetbrains.com/pycharm/guide proxy
+
 - Wire up Google Tag Manager plugin
+
+- Get icons out of that other website and host locally 
+
+- Get rid of "path" in frontmatter and infer from filename

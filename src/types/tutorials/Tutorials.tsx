@@ -134,7 +134,9 @@ export const query = graphql`
             title
             subtitle
             date
-            logo
+            logo {
+              publicURL
+            }
           }
         }
       }
