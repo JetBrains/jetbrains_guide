@@ -168,3 +168,8 @@ tips, resource box with embedded video
 
 - Don't show full movie, see also, learn more, in-depth in body or 
 sidebar if null
+
+- Refactor all queries and components to use "mapping" via the 
+sourceNodes event
+
+- Wire up Google Tag Manager plugin

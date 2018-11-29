@@ -21,6 +21,16 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-manifest',
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-5P98",
+
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,

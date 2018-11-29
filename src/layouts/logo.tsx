@@ -9,9 +9,6 @@ import Navbar from '../components/navbar/Navbar';
 import { NAVBAR } from '../components/navbar/constants';
 import Footer from '../components/Footer';
 
-import BodyScript from './GtmBody';
-import HeadScript from './GtmHead';
-
 interface LogoLayoutProps extends React.HTMLProps<HTMLDivElement> {
   title: string;
   subtitle?: string;
@@ -28,7 +25,6 @@ class LogoLayout extends React.PureComponent<LogoLayoutProps, {}> {
           title={`${title} - PyCharm Guide`}
           meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
         >
-          <HeadScript />
           <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
           <meta charSet="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,7 +59,6 @@ class LogoLayout extends React.PureComponent<LogoLayoutProps, {}> {
           </div>
         </main>
         <Footer />
-        <BodyScript />
       </div>
     );
   }

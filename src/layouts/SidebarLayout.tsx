@@ -10,9 +10,6 @@ import { NAVBAR } from '../components/navbar/constants';
 import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 
-import BodyScript from './GtmBody';
-import HeadScript from './GtmHead';
-
 export interface ISidebarLayoutProps extends React.HTMLProps<HTMLDivElement> {
   title: string;
   subtitle?: string;
@@ -26,7 +23,6 @@ const SidebarLayout: React.SFC<ISidebarLayoutProps> = ({ title, subtitle, childr
       title={`${title} - PyCharm Guide`}
       meta={[{ name: 'description', content: 'template' }, { name: 'keywords', content: 'template, something' }]}
     >
-      <HeadScript />
       <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -51,7 +47,6 @@ const SidebarLayout: React.SFC<ISidebarLayoutProps> = ({ title, subtitle, childr
       </div>
     </main>
     <Footer />
-    <BodyScript />
   </div>
 );
 
