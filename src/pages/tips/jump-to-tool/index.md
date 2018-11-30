@@ -5,7 +5,7 @@ title: "Use Recent Files to Open Tool Window"
 technologies: []
 topics: ["navigation"]
 author: "pauleveritt"
-subtitle: "From the Recent Files popup, open one of the IDE tool windows."
+subtitle: "From the Recent Files popup, open one of the IDE tool windows"
 thumbnail: "./thumbnail.png"
 shortVideo:
     poster: "./poster_short.png"

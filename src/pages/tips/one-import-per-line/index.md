@@ -5,7 +5,7 @@ title: "One Import Per Line Preference"
 technologies: []
 topics: ["editing"]
 author: "pauleveritt"
-subtitle: "Tell PyCharm to put each import on a separate line."
+subtitle: "Tell PyCharm to put each import on a separate line"
 seealso:
 - title: "Code Style Preferences for Python Imports"
   href: "https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports"      

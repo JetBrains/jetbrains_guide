@@ -5,7 +5,7 @@ title: "Navigate to File"
 technologies: []
 topics: ["navigation"]
 author: "pauleveritt"
-subtitle: "Jump to a file without using a tree."
+subtitle: "Jump to a file without using a tree"
 seealso:
 - title: "Navigating by File"
   href: "https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a"  

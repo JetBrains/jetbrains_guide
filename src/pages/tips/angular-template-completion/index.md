@@ -5,7 +5,7 @@ title: "Better Autocomplete Results in Angular Templates"
 technologies: ["angular"]
 topics: ["editing"]
 author: "pauleveritt"
-subtitle: "Narrow the universe of completions to those that matter."
+subtitle: "Narrow the universe of completions to those that matter"
 seealso:
 - title: "PyCharm Help for Angular"
   href: "https://www.jetbrains.com/help/pycharm/angular.html"      
