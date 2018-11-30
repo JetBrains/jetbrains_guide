@@ -21,8 +21,6 @@ leadin: |
     
     *Diving into a codepath and want to get retrace your steps?*
 
-        
-    
 ---
 
 Decades of old habits make us think of files, with their deeply-nested 

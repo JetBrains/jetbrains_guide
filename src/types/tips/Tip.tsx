@@ -54,11 +54,13 @@ class Tip extends Component<ITipProps> {
       : null;
 
     const thisAuthor = tip.fields.author;
-    const author = {
-      title: thisAuthor.frontmatter.title,
-      headshot: thisAuthor.frontmatter.headshot,
-      href: thisAuthor.fields.slug
-    };
+    const author = thisAuthor
+      ? {
+          title: thisAuthor.frontmatter.title,
+          headshot: thisAuthor.frontmatter.headshot,
+          href: thisAuthor.fields.slug
+        }
+      : undefined;
 
     const links: IDoclink[] = [];
     if (tip.html) {
@@ -73,7 +75,7 @@ class Tip extends Component<ITipProps> {
 
     const sidebar = (
       <Sidebar>
-        <SidebarPublished date={frontmatter.date} author={author} />
+        {author && <SidebarPublished date={frontmatter.date} author={author} />}
         <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={frontmatter.technologies} />
         <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={frontmatter.topics} />
         <SidebarDoclinks links={links} />
