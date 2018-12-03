@@ -11,6 +11,7 @@
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "start": "gatsby develop",
+    "serve": "lite-server --baseDir=deploy",
     "deploy": "rm -rf deploy/pycharm/guide && firebase deploy && cp -r public deploy/pycharm/guide"
   },
   "devDependencies": {
@@ -68,7 +69,6 @@
   },
   "dependencies": {
     "bulma-steps-component": "^0.5.3",
-    "gatsby-plugin-google-tagmanager": "^2.0.7",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-images": "^2.0.4",
     "video.js": "^7.2.4",
