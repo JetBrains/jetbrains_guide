@@ -31,11 +31,13 @@ const Tips: React.SFC<ITipsProps> = ({ data: { tips } }) => {
 
               // @ts-ignore
               const thisAuthor = item.fields.author;
-              const author = {
-                title: thisAuthor.frontmatter.title,
-                headshot: thisAuthor.frontmatter.headshot,
-                href: thisAuthor.fields.slug
-              };
+              const author = thisAuthor
+                ? {
+                    title: thisAuthor.frontmatter.title,
+                    headshot: thisAuthor.frontmatter.headshot,
+                    href: thisAuthor.fields.slug
+                  }
+                : undefined;
               return (
                 <ResourceCard
                   key={href}
@@ -44,8 +46,8 @@ const Tips: React.SFC<ITipsProps> = ({ data: { tips } }) => {
                   technologies={fields.technologies}
                   topics={fields.topics}
                   href={href}
-                  thumbnail={thumbnail}
                   author={author}
+                  thumbnail={thumbnail}
                   date={frontmatter.date}
                 />
               );

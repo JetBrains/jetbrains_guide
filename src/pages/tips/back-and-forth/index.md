@@ -5,7 +5,7 @@ title: "Navigate Cursor Position Back and Forth "
 technologies: []
 topics: ["navigation"]
 author: "pauleveritt"
-subtitle: "Easily get back to where you were, or where you went."
+subtitle: "Easily get back to where you were, or where you went"
 seealso:
 - title: "Navigate to Navigated Items"
   href: "https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html"  
@@ -21,8 +21,6 @@ leadin: |
     
     *Diving into a codepath and want to get retrace your steps?*
 
-        
-    
 ---
 
 Decades of old habits make us think of files, with their deeply-nested 

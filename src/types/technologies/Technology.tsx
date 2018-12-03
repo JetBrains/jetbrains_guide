@@ -17,7 +17,7 @@ const Technology: React.SFC<ITechnologyProps> = ({ data: { technology } }) => {
   const resources = technology.fields.tips;
 
   return (
-    <LogoLayout title={frontmatter.title} subtitle={frontmatter.subtitle} logo={frontmatter.logo}>
+    <LogoLayout title={frontmatter.title} subtitle={frontmatter.subtitle} logo={frontmatter.logo.publicURL}>
       <div className="bd-content content" dangerouslySetInnerHTML={{ __html: technology.html }} />
       <div className="columns">
         <nav className="column is-three-quarters-desktop bio-resourcecards">

@@ -28,11 +28,13 @@ const Topic: React.SFC<ITopicProps> = ({ data: { topic } }) => {
               const fields = resource.fields;
               const href = fields.slug;
               const thisAuthor = fields.author;
-              const author = {
-                title: thisAuthor.frontmatter.title,
-                headshot: thisAuthor.frontmatter.headshot,
-                href: thisAuthor.fields.slug
-              };
+              const author = thisAuthor
+                ? {
+                    title: thisAuthor.frontmatter.title,
+                    headshot: thisAuthor.frontmatter.headshot,
+                    href: thisAuthor.fields.slug
+                  }
+                : undefined;
               const thumbnail = rfm.thumbnail;
               return (
                 <ResourceCard

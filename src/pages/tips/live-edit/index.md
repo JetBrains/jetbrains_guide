@@ -5,7 +5,7 @@ title: "LiveEdit HTML and CSS"
 technologies: []
 topics: ["editing"]
 author: "pauleveritt"
-subtitle: "With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save."
+subtitle: "With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save"
 thumbnail: "./thumbnail.png"
 shortVideo:
     poster: "./poster_short.png"
