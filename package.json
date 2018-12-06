@@ -12,7 +12,7 @@
     "build": "gatsby build --prefix-paths",
     "start": "gatsby develop",
     "serve": "lite-server",
-    "deploy": "rm -rf deploy/pycharm/guide && firebase deploy && cp -r public deploy/pycharm/guide"
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.14",

@@ -2,15 +2,27 @@
 
 ## Now
 
-## Next
-
 - Rewrite tip subtitles to be 140 char tweet bodies
+
+- Remove Ansible
+
+- Remove Technologies from top menu
+
+## Next
 
 - Re-do the audio on the first two tips
 
 - Put zoom-and-pan and annotations in other videos
 
 ## Before MVP
+
+- Get home page thumbnails to be responsive
+
+- Wider box on home page listing
+
+- Tips/Topics/Technologies/Authors to be in a container at smaller screens
+
+- Get the fontawesome icon displayed when looking at at a single topic
 
 ## Soon
 
@@ -32,6 +44,8 @@ in Sprout and not have to upload the video meaning Twitter Cards
 - Tests
 
 - Convert navbar et al. to be driven by settings in gatsby-config
+
+- Put credits to open source packages a la Made With
 
 ## Later
 
