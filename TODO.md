@@ -2,17 +2,11 @@
 
 ## Now
 
-- Rewrite tip subtitles to be 140 char tweet bodies
-
-- Remove Ansible
-
-- Remove Technologies from top menu
+- Technologies should use an img path with the prefix in it
 
 ## Next
 
-- Re-do the audio on the first two tips
-
-- Put zoom-and-pan and annotations in other videos
+- Move "See Also" to below the listings
 
 ## Before MVP
 
@@ -182,3 +176,10 @@ sourceNodes event
 - Get icons out of that other website and host locally 
 
 - Get rid of "path" in frontmatter and infer from filename
+
+- Rewrite tip subtitles to be 140 char tweet bodies
+
+- Remove Ansible
+
+- Re-do the audio on the first two tips
+
