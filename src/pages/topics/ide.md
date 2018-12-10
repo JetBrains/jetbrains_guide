@@ -6,6 +6,7 @@ title: "IDE"
 subtitle: "Resources related to IDE functionality independent of language"
 accent: "primary"
 icon: "fas fa-edit"
+seealso:
 ---
 
 PyCharm is built atop IntelliJ IDEA, our platform for building IDEs. 

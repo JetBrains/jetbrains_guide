@@ -10,6 +10,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
+import SeeAlso from '../../components/SeeAlso';
 
 interface ITipProps {
   data: {
@@ -122,18 +123,7 @@ class Tip extends Component<ITipProps> {
             )}
             {seealso && (
               <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
-                <>
-                  <header className="is-size-3 is-bold">See Also</header>
-                  <div className="content">
-                    <ul>
-                      {seealso.map(see => (
-                        <li key={see.href}>
-                          <a href={see.href}>{see.title}</a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </>
+                <SeeAlso items={seealso} />
               </Element>
             )}
             {longVideoJsOptions && (

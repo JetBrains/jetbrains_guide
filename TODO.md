@@ -2,11 +2,9 @@
 
 ## Now
 
-- Technologies should use an img path with the prefix in it
+- Move "See Also" to below the listings
 
 ## Next
-
-- Move "See Also" to below the listings
 
 ## Before MVP
 

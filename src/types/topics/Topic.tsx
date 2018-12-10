@@ -5,6 +5,8 @@ import { graphql } from 'gatsby';
 import { ITopicNode } from './models';
 import DefaultLayout from '../../layouts/default';
 import ResourceCard from '../../components/ResourceCard';
+import { Element } from 'react-scroll/modules';
+import SeeAlso from '../../components/SeeAlso';
 
 interface ITopicProps {
   data: {
@@ -12,8 +14,8 @@ interface ITopicProps {
   };
 }
 
-const Topic: React.SFC<ITopicProps> = ({ data: { topic } }) => {
-  const { title, subtitle } = topic.frontmatter;
+const Topic: React.FunctionComponent<ITopicProps> = ({ data: { topic } }) => {
+  const { title, subtitle, seealso } = topic.frontmatter;
 
   const resources = topic.fields.tips;
 
@@ -50,6 +52,11 @@ const Topic: React.SFC<ITopicProps> = ({ data: { topic } }) => {
                 />
               );
             })}
+          {seealso && (
+            <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
+              <SeeAlso items={seealso} />
+            </Element>
+          )}
         </nav>
       </div>
     </DefaultLayout>
@@ -101,6 +108,10 @@ export const query = graphql`
                 title
                 subtitle
                 date
+                seealso {
+                  title
+                  href
+                }
                 headshot {
                   publicURL
                   childImageSharp {
@@ -134,6 +145,10 @@ export const query = graphql`
         title
         subtitle
         date
+        seealso {
+          title
+          href
+        }
       }
     }
   }

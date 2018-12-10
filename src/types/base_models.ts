@@ -3,10 +3,21 @@ import { ITipNode } from './tips/models';
 import { ITechnologyNode } from './technologies/models';
 import { ITopicNode } from './topics/models';
 
+export interface ISeeAlso {
+  title: string;
+  href: string;
+}
+
+export interface IVideoPlayer {
+  poster: any;
+  url: any;
+}
+
 export interface IBaseFrontmatter {
   type: string;
   title: string;
   subtitle?: string;
+  seealso?: ISeeAlso[];
 }
 
 export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
