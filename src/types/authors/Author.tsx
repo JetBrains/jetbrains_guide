@@ -18,7 +18,11 @@ const Author: React.SFC<IAuthorProps> = ({ data }) => {
 
   return (
     <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
-      <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
+      <div className="columns">
+        <div className="column is-three-quarters-desktop bio-resourcecards">
+          <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
+        </div>
+      </div>
       <div className="columns">
         <div className="column is-three-quarters-desktop bio-resourcecards">
           {author.fields.tips &&
