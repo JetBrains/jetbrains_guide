@@ -2,15 +2,13 @@
 
 ## Now
 
-- Move "See Also" to below the listings
+- Get home page thumbnails to be responsive
+
+- Wider box on home page listing
 
 ## Next
 
 ## Before MVP
-
-- Get home page thumbnails to be responsive
-
-- Wider box on home page listing
 
 - Tips/Topics/Technologies/Authors to be in a container at smaller screens
 
@@ -180,4 +178,6 @@ sourceNodes event
 - Remove Ansible
 
 - Re-do the audio on the first two tips
+
+- Move "See Also" to below the listings
 
