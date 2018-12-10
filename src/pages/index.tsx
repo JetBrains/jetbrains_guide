@@ -4,8 +4,8 @@ import DefaultLayout from '../layouts/generic';
 import splash from './pycharm_splash.svg';
 import { ITipsProps } from '../types/tips/Tips';
 import { graphql, Link } from 'gatsby';
-import { IVideoPlayer } from '../types/tips/models';
 import VideoPlayer from '../components/VideoPlayer';
+import { IVideoPlayer } from '../types/base_models';
 
 const dataUri = `url("${splash}") center center`;
 
@@ -31,13 +31,11 @@ const TipItem: React.SFC<ITipItemProps> = ({ title, subtitle, href, shortVideo }
 
   return (
     <div className="bio-resourcecard box">
-      <article className="media">
-        <div className="media-left">
-          <figure className="image" style={{ width: 480, height: 270 }}>
-            <VideoPlayer {...shortVideoJsOptions} />
-          </figure>
+      <div className="columns">
+        <div className="column is-three-fifths">
+          <VideoPlayer {...shortVideoJsOptions} />
         </div>
-        <div className="media-content">
+        <div className="column is-two-fifths content" style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}>
           <div className="content bio-resourcecard-props">
             <div>
               <div>
@@ -54,7 +52,7 @@ const TipItem: React.SFC<ITipItemProps> = ({ title, subtitle, href, shortVideo }
             </div>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   );
 };

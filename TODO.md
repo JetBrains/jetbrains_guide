@@ -2,10 +2,6 @@
 
 ## Now
 
-- Get home page thumbnails to be responsive
-
-- Wider box on home page listing
-
 ## Next
 
 ## Before MVP
@@ -181,3 +177,4 @@ sourceNodes event
 
 - Move "See Also" to below the listings
 
+- Get home page thumbnails to be responsive
