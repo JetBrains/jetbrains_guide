@@ -6,8 +6,6 @@
 
 ## Before MVP
 
-- Tips/Topics/Technologies/Authors to be in a container at smaller screens
-
 - Get the fontawesome icon displayed when looking at at a single topic
 
 ## Soon
@@ -178,3 +176,5 @@ sourceNodes event
 - Move "See Also" to below the listings
 
 - Get home page thumbnails to be responsive
+
+- Tips/Topics/Technologies/Authors to be in a container at smaller screens

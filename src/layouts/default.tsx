@@ -35,8 +35,10 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, {}> {
 
         <main className="bd-main bulmaio-body">
           <div className="bd-main-container container">
-            <Heading title={this.props.title} subtitle={this.props.subtitle} />
-            {this.props.children}
+            <div className="bd-lead">
+              <Heading title={this.props.title} subtitle={this.props.subtitle} />
+              {this.props.children}
+            </div>
           </div>
         </main>
         <Footer />

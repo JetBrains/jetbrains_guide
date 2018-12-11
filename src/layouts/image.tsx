@@ -38,25 +38,26 @@ class ImageLayout extends React.PureComponent<ImageLayoutProps, {}> {
 
         <main className="bd-main bulmaio-body">
           <div className="bd-main-container container">
-            <header className="bd-header">
-              <article className="media">
-                <figure className="media-left">
-                  <div className="image is-rounded is-96x96">
-                    <Img className="bio-resourcecard-logo" fluid={headshot.childImageSharp.fluid} />
-                  </div>
-                </figure>
-                <div className="media-content">
-                  <div className="content">
-                    <div className="bd-header-titles">
-                      <h1 className="title">{title}</h1>
-                      {subtitle && <p className="subtitle is-4">{subtitle}</p>}
+            <div className="bd-lead">
+              <header className="bd-header">
+                <article className="media">
+                  <figure className="media-left">
+                    <div className="image is-rounded is-96x96">
+                      <Img className="bio-resourcecard-logo" fluid={headshot.childImageSharp.fluid} />
+                    </div>
+                  </figure>
+                  <div className="media-content">
+                    <div className="content">
+                      <div className="bd-header-titles">
+                        <h1 className="title">{title}</h1>
+                        {subtitle && <p className="subtitle is-4">{subtitle}</p>}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </article>
-            </header>
-
-            {this.props.children}
+                </article>
+              </header>
+              {this.props.children}
+            </div>
           </div>
         </main>
         <Footer />

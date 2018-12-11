@@ -17,7 +17,7 @@ export interface ISidebarLayoutProps extends React.HTMLProps<HTMLDivElement> {
   children: ReactNode;
 }
 
-const SidebarLayout: React.SFC<ISidebarLayoutProps> = ({ title, subtitle, children, sidebar }) => (
+const SidebarLayout: React.FunctionComponent<ISidebarLayoutProps> = ({ title, subtitle, children, sidebar }) => (
   <div>
     <Helmet
       title={`${title} - PyCharm Guide`}
