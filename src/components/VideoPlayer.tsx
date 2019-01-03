@@ -1,5 +1,6 @@
 import * as React from 'react';
 import videojs from 'video.js';
+
 require('videojs-youtube');
 import 'video.js/dist/video-js.css';
 
