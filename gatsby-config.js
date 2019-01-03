@@ -12,7 +12,6 @@ module.exports = {
   },
   pathPrefix: '/pycharm/guide',
   plugins: [
-    `gatsby-plugin-tslint`,
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

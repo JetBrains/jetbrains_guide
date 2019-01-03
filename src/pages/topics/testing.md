@@ -9,6 +9,6 @@ icon: "fas fa-chart-bar"
 seealso:
 ---
 
-Testing and test-driven development is an important part of professional 
-coding. PyCharm's "Visual Testing" puts a friendly GUI on writing and 
+Testing and test-driven development is an important part of professional
+coding. PyCharm's "Visual Testing" puts a friendly GUI on writing and
 running Python tests.

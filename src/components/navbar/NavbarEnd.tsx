@@ -9,8 +9,8 @@ export interface INavbarEndProps {
 
 const NavbarEnd: React.FunctionComponent<INavbarEndProps> = ({ links, buttons }) => (
   <div className="navbar-end">
-    {links && links.map((link) => <NavbarLink key={link.href} {...link} />)}
-    {buttons && buttons.map((button) => <NavbarButton key={button.href} {...button} />)}
+    {links && links.map(link => <NavbarLink key={link.href} {...link} />)}
+    {buttons && buttons.map(button => <NavbarButton key={button.href} {...button} />)}
   </div>
 );
 

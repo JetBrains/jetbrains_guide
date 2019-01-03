@@ -9,5 +9,5 @@ icon: "fas fa-edit"
 seealso:
 ---
 
-PyCharm is built atop IntelliJ IDEA, our platform for building IDEs. 
+PyCharm is built atop IntelliJ IDEA, our platform for building IDEs.
 It thus shares functionality with all our IDE tools.

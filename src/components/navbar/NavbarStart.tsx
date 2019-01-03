@@ -4,7 +4,7 @@ import { INavbarMenuItemProps } from './NavbarMenuItem';
 import { INavbarSubMenuProps } from './NavbarSubMenu';
 
 export interface INavbarStartProps {
-  items: Array<INavbarMenuItemProps | INavbarSubMenuProps>;
+  items: INavbarMenuItemProps[] | INavbarSubMenuProps[];
 }
 
 const NavbarStart: React.FunctionComponent<INavbarStartProps> = () => (

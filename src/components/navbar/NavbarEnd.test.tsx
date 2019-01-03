@@ -5,7 +5,7 @@ import { END } from './constants';
 import NavbarEnd from './NavbarEnd';
 
 describe('NavbarEnd', () => {
-  const wrapper = mount(<NavbarEnd {...END}/>);
+  const wrapper = mount(<NavbarEnd {...END} />);
 
   it('renders the buttons', () => {
     const buttons = wrapper.find('p.control');
@@ -16,5 +16,4 @@ describe('NavbarEnd', () => {
     const links = wrapper.find('a.navbar-item');
     expect(links.length).toEqual(2);
   });
-
 });
