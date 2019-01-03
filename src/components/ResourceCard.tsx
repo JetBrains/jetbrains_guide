@@ -23,7 +23,7 @@ interface IResourceCardProps {
   thumbnail?: any;
 }
 
-const ResourceCard: React.SFC<IResourceCardProps> = props => {
+const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
   return (
     <div className="bio-resourcecard box">
       <article className="media">

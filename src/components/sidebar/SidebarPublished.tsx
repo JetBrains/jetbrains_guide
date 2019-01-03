@@ -12,7 +12,7 @@ interface ISidebarPublishedProps {
   };
 }
 
-const SidebarPublished: React.SFC<ISidebarPublishedProps> = ({ date, author }) => (
+const SidebarPublished: React.FunctionComponent<ISidebarPublishedProps> = ({ date, author }) => (
   <div className="bio-page-sidenav-published-heading">
     <p className="menu-label bio-page-sidebar-published">Published</p>
     <ul className="menu-list">

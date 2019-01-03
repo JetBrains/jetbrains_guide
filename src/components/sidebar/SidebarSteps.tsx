@@ -11,7 +11,7 @@ export interface ISidebarStepsProps {
   steps: IStep[];
 }
 
-const Step: React.SFC<IStep> = ({ label, target, marker }) => (
+const Step: React.FunctionComponent<IStep> = ({ label, target, marker }) => (
   <li className={`steps-segment is-active`}>
     <Link to={target} style={{ width: 'auto' }} className="has-text-dark">
       <span className="steps-marker is-primary">{marker}</span>
@@ -22,7 +22,7 @@ const Step: React.SFC<IStep> = ({ label, target, marker }) => (
   </li>
 );
 
-const SidebarSteps: React.SFC<ISidebarStepsProps> = ({ steps }) => {
+const SidebarSteps: React.FunctionComponent<ISidebarStepsProps> = ({ steps }) => {
   return (
     <div className="bio-page-sidebar-references-group" style={{ marginTop: '1rem' }}>
       {steps.length > 0 && (

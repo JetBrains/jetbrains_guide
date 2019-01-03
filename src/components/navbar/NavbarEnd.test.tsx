@@ -1,15 +1,15 @@
-import * as React from 'react';
 import { mount } from 'enzyme';
+import * as React from 'react';
+import { END } from './constants';
 
 import NavbarEnd from './NavbarEnd';
-import { END } from './constants';
 
 describe('NavbarEnd', () => {
   const wrapper = mount(<NavbarEnd {...END}/>);
 
   it('renders the buttons', () => {
     const buttons = wrapper.find('p.control');
-    expect(buttons.length).toEqual(2);
+    expect(buttons.length).toEqual(1);
   });
 
   it('renders the buttons', () => {

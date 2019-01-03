@@ -24,7 +24,7 @@ interface IAuthorEntry {
   headshot: any;
 }
 
-export const SubsectionAuthor: React.SFC<IAuthorEntry> = (entry) => (
+export const SubsectionAuthor: React.FunctionComponent<IAuthorEntry> = (entry) => (
   <Link className="bd-link"
         to={entry.href}>
     <h2 className="bd-link-name">
@@ -43,7 +43,7 @@ export const SubsectionAuthor: React.SFC<IAuthorEntry> = (entry) => (
     )}
   </Link>);
 
-export const SubsectionTopic: React.SFC<ITopicEntry> = (entry) => (
+export const SubsectionTopic: React.FunctionComponent<ITopicEntry> = (entry) => (
   <Link className="bd-link"
         to={entry.href}>
     <h2 className="bd-link-name">
@@ -61,7 +61,7 @@ export const SubsectionTopic: React.SFC<ITopicEntry> = (entry) => (
     )}
   </Link>);
 
-export const SubsectionTechnology: React.SFC<ITechnologyEntry> = (entry) => (
+export const SubsectionTechnology: React.FunctionComponent<ITechnologyEntry> = (entry) => (
   <Link className="bd-link"
         to={entry.href}>
     <h2 className="bd-link-name">

@@ -1,13 +1,13 @@
+import { Link } from 'gatsby';
 import * as React from 'react';
 import { INavbarMenuItemProps } from './NavbarMenuItem';
 import { INavbarSubMenuProps } from './NavbarSubMenu';
-import { Link } from 'gatsby';
 
 export interface INavbarStartProps {
   items: Array<INavbarMenuItemProps | INavbarSubMenuProps>;
 }
 
-const NavbarStart: React.SFC<INavbarStartProps> = () => (
+const NavbarStart: React.FunctionComponent<INavbarStartProps> = () => (
   <div className="navbar-start">
     <Link className={'navbar-item bd-navbar-item-documentation'} to={`/tips`}>
       <span className={'icon has-text-success'}>

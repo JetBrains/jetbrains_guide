@@ -7,7 +7,7 @@ export interface ISidebarReferenceGroup {
   references: string[];
 }
 
-const SidebarReferenceGroup: React.SFC<ISidebarReferenceGroup> = ({ reftype, accent, references }) => (
+const SidebarReferenceGroup: React.FunctionComponent<ISidebarReferenceGroup> = ({ reftype, accent, references }) => (
   <div className="bio-page-sidebar-references-group">
     {references.length > 0 && (
       <>

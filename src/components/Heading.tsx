@@ -5,7 +5,7 @@ export interface IHeadingProps {
   subtitle?: string;
 }
 
-const Heading: React.SFC<IHeadingProps> = ({ title, subtitle }) => (
+const Heading: React.FunctionComponent<IHeadingProps> = ({ title, subtitle }) => (
   <header className="bd-header" style={{ minHeight: '100px' }}>
     <div className="bd-header-titles">
       <h1 className="title">{title}</h1>

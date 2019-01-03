@@ -1,12 +1,41 @@
 {
-  "rulesDirectory": [
-    "tslint-plugin-prettier"
-  ],
+  "defaultSeverity": "error",
   "extends": [
-    "tslint-config-blvd/react",
-    "tslint-config-prettier"
+    "tslint:recommended",
+    "tslint-react"
   ],
+  "jsRules": {},
   "rules": {
-    "prettier": true
-  }
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "interface-name": [
+      false
+    ],
+    "jsx-no-multiline-js": [
+      false
+    ],
+    "jsx-alignment": false,
+    "jsx-boolean-value": true,
+    "jsx-curly-spacing": [
+      true,
+      "never"
+    ],
+    "jsx-equals-spacing": [
+      true,
+      "never"
+    ],
+    "jsx-key": true,
+    "jsx-no-bind": true,
+    "jsx-no-lambda": true,
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+    "jsx-wrap-multiline": true,
+    "no-var-requires": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"],
+    "trailing-comma": [false]
+  },
+  "rulesDirectory": []
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-const Footer: React.SFC = () => (
+const Footer: React.FunctionComponent = () => (
   <footer className="footer">
     <div className="container">
       <div className="bd-footer-links">

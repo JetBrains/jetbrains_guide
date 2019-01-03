@@ -1,7 +1,7 @@
 import * as React from 'react';
 import NavbarBrand, { INavbarBrandProps } from './NavbarBrand';
-import NavbarStart, { INavbarStartProps } from './NavbarStart';
 import NavbarEnd, { INavbarEndProps } from './NavbarEnd';
+import NavbarStart, { INavbarStartProps } from './NavbarStart';
 
 export interface INavbarProps {
   brand: INavbarBrandProps;
@@ -9,7 +9,7 @@ export interface INavbarProps {
   end: INavbarEndProps;
 }
 
-const Navbar: React.SFC<INavbarProps> = ({ brand, start, end }) => (
+const Navbar: React.FunctionComponent<INavbarProps> = ({ brand, start, end }) => (
   <nav id="navbar" className="navbar is-spaced is-black">
     <div className="container">
       <NavbarBrand {...brand} />

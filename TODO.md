@@ -6,9 +6,11 @@
 
 ## Before MVP
 
-- Get the fontawesome icon displayed when looking at at a single topic
-
 ## Soon
+
+- The pytest logo isn't square on the technology page
+
+- Get the fontawesome icon displayed when looking at at a single topic
 
 - Pagination
 
