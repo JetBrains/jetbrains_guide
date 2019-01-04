@@ -1,14 +1,11 @@
 ---
-type: 'tutorial'
+type: 'tutorialstep'
 date: 2017-07-07
-title: 'Tutorial Disable Tabs'
+title: 'Step 2'
 technologies: []
 topics: ['ide']
 author: 'pauleveritt'
-subtitle: 'Tutorial....Save space and stay keyboard-centric by turning off the tabs'
-steps:
-  - 'step1'
-  - 'step2'
+subtitle: 'A second tutorial step'
 seealso:
   - title: 'Managing Editor Tabs'
     href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html'
