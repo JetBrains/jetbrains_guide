@@ -1,7 +1,11 @@
 import { IBaseCategoryFrontmatter, IBaseCategoryNode } from '../base_models';
 
 export interface IAuthorFrontmatter extends IBaseCategoryFrontmatter {
-  headshot: string;
+  headshot: {
+    childImageSharp: {
+      fluid: any;
+    };
+  };
 }
 
 export interface IAuthorNode extends IBaseCategoryNode {

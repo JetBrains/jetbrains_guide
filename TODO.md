@@ -2,11 +2,35 @@
 
 ## Now
 
+- Tutorials
+
+    - Tutorials
+    
+        - Screenshot
+
+    - Tutorial
+   
+        - Get steps listing in Tutorial
+        
+        - Ensure sidebar listing has active etc.
+    
+    - Tutorial Steps
+    
+        - Sidebar listing with current etc.
+        
+        - Bottom navigation for previous/next    
+
+        - Video player
+        
+        - Working files
+        
+        - Link to repo
+        
 ## Next
 
-## Before MVP
-
 ## Soon
+
+- Switch thumbnails to different aspect ratio
 
 - The pytest logo isn't square on the technology page
 
