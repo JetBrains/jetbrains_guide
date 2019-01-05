@@ -1,3 +1,5 @@
+import { join } from 'path';
+
 // From https://github.com/gatsbyjs/gatsby/issues/3129
 
 interface ISingleReference {
@@ -17,6 +19,9 @@ interface IResourceReferences {
 const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
   const { createNodeField } = boundActionCreators;
 
+  // Compendium of all resources, slug -> node.id
+  const slugsToResource: ISingleReference = {};
+
   // Each kind of category, e.g. author, gets fields for each kind of resource
   const resourcesOfReferences = { author: {}, technology: {}, topic: {} };
 
@@ -35,6 +40,9 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
   getNodes()
     .filter((node: any) => node.internal.type === `MarkdownRemark`)
     .forEach((node: any) => {
+      // Add this to the slug->node.id mapping
+      slugsToResource[node.fields.slug] = node.id;
+
       if (node.frontmatter.author) {
         const authorNode = getReferenceNodeByLabel('author', node.frontmatter.author);
 
@@ -56,22 +64,24 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
           return getReferenceNodeByLabel('technology', technologyLabel);
         });
 
-        technologyNodes.filter((technologyNode: any) => technologyNode).map((technologyNode: any) => {
-          // Add this resource, to the reference
-          if (!(technologyNode.id in resourcesOfReferences.technology)) {
+        technologyNodes
+          .filter((technologyNode: any) => technologyNode)
+          .map((technologyNode: any) => {
+            // Add this resource, to the reference
+            if (!(technologyNode.id in resourcesOfReferences.technology)) {
+              // @ts-ignore
+              resourcesOfReferences.technology[technologyNode.id] = [];
+            }
             // @ts-ignore
-            resourcesOfReferences.technology[technologyNode.id] = [];
-          }
-          // @ts-ignore
-          resourcesOfReferences.technology[technologyNode.id].push(node.id);
+            resourcesOfReferences.technology[technologyNode.id].push(node.id);
 
-          // Add this reference to the resource
-          if (!referencesOfResource.technologies[node.id]) {
-            referencesOfResource.technologies[node.id] = [technologyNode.id];
-          } else {
-            referencesOfResource.technologies[node.id].push(technologyNode.id);
-          }
-        });
+            // Add this reference to the resource
+            if (!referencesOfResource.technologies[node.id]) {
+              referencesOfResource.technologies[node.id] = [technologyNode.id];
+            } else {
+              referencesOfResource.technologies[node.id].push(technologyNode.id);
+            }
+          });
       }
 
       if (node.frontmatter.topics) {
@@ -79,22 +89,24 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
           return getReferenceNodeByLabel('topic', topicLabel);
         });
 
-        topicNodes.filter((topicNode: any) => topicNode).map((topicNode: any) => {
-          // Add this resource, to the reference
-          if (!(topicNode.id in resourcesOfReferences.topic)) {
+        topicNodes
+          .filter((topicNode: any) => topicNode)
+          .map((topicNode: any) => {
+            // Add this resource, to the reference
+            if (!(topicNode.id in resourcesOfReferences.topic)) {
+              // @ts-ignore
+              resourcesOfReferences.topic[topicNode.id] = [];
+            }
             // @ts-ignore
-            resourcesOfReferences.topic[topicNode.id] = [];
-          }
-          // @ts-ignore
-          resourcesOfReferences.topic[topicNode.id].push(node.id);
+            resourcesOfReferences.topic[topicNode.id].push(node.id);
 
-          // Add this reference to the resource
-          if (!referencesOfResource.topics[node.id]) {
-            referencesOfResource.topics[node.id] = [topicNode.id];
-          } else {
-            referencesOfResource.topics[node.id].push(topicNode.id);
-          }
-        });
+            // Add this reference to the resource
+            if (!referencesOfResource.topics[node.id]) {
+              referencesOfResource.topics[node.id] = [topicNode.id];
+            } else {
+              referencesOfResource.topics[node.id].push(topicNode.id);
+            }
+          });
       }
     });
 
@@ -150,6 +162,26 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
       value: topicIds
     });
   });
+
+  // For each tutorial, put the related tutorial steps onto a field
+  Object.values(slugsToResource)
+    .filter((nodeId: string) => getNode(nodeId).frontmatter.type === 'tutorial')
+    .forEach((nodeId: string) => {
+      const node = getNode(nodeId);
+      const nodeSlug = node.fields.slug;
+      if (node.frontmatter.type === 'tutorial') {
+        // Iterate over each step, make a full slug, get the object, append
+        const stepSlugs = node.frontmatter.steps.map((stepSlug: string) => join(nodeSlug, stepSlug, '/'));
+        const steps = stepSlugs.map((stepSlug: string) => {
+          return slugsToResource[stepSlug];
+        });
+        createNodeField({
+          node,
+          name: 'tutorialsteps',
+          value: steps
+        });
+      }
+    });
 };
 
 module.exports = sourceNodes;

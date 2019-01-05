@@ -2,7 +2,7 @@
 type: 'tutorial'
 date: 2017-07-07
 title: 'Tutorial Disable Tabs'
-technologies: []
+technologies: ['typescript']
 topics: ['ide']
 author: 'pauleveritt'
 subtitle: 'Tutorial....Save space and stay keyboard-centric by turning off the tabs'

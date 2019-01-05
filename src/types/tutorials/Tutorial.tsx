@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-
 import { graphql } from 'gatsby';
-import { ITutorialNode, ITutorialStep, ITutorialStepEdges } from './models';
-import SidebarLayout from '../../layouts/SidebarLayout';
+import React, { Component } from 'react';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
+import SidebarLayout from '../../layouts/SidebarLayout';
+import { ITutorialNode, ITutorialStepEdges } from './models';
 import StepsListing from './StepsListing';
 
 interface ITutorialProps {
@@ -23,29 +22,13 @@ class Tutorial extends Component<ITutorialProps> {
     const { data } = this.props;
     const tutorial = data.markdownRemark;
     const { frontmatter } = tutorial;
-
-    // Tutorialsteps
-
-    // First, make a mapping of slug -> tutorialstep
-    const allTutorialSteps: { [index: string]: ITutorialStep } = {};
-    data.tutorialsteps.edges.forEach(edge => {
-      const node = edge.node;
-      allTutorialSteps[node.fields.slug] = node;
-    });
-
-    // Get array of tutorialsteps that are "in" this tutorial
-    const thisSlug = data.markdownRemark.fields.slug;
-    const theseSteps = frontmatter.steps.map(stepSlug => {
-      const fullStepSlug = `${thisSlug + stepSlug}/`;
-      return allTutorialSteps[fullStepSlug];
-    });
+    const { tutorialsteps } = tutorial.fields;
 
     // Flatten into the minimum needed for the sidebar steps component
-    const sidebarSteps: IStep[] = frontmatter.steps.map(stepSlug => {
-      const fullStepSlug = `${thisSlug + stepSlug}/`;
+    const sidebarSteps: IStep[] = tutorialsteps.map(step => {
       return {
-        target: fullStepSlug,
-        label: allTutorialSteps[fullStepSlug].frontmatter.title
+        target: step.fields.slug,
+        label: step.frontmatter.title
       };
     });
 
@@ -72,7 +55,7 @@ class Tutorial extends Component<ITutorialProps> {
               <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
             </div>
           ) : null}
-          <StepsListing steps={theseSteps} />
+          <StepsListing steps={tutorialsteps} />
         </>
       </SidebarLayout>
     );
@@ -84,15 +67,47 @@ export default Tutorial;
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      excerpt(pruneLength: 250)
       html
-      id
       fields {
         slug
+        tutorialsteps {
+          fields {
+            slug
+            author {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                subtitle
+                headshot {
+                  publicURL
+                  childImageSharp {
+                    fluid(maxWidth: 1000) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
+          }
+          frontmatter {
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            technologies
+            topics
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         author {
-          excerpt(pruneLength: 250)
-          html
-          id
           fields {
             slug
           }
@@ -121,62 +136,6 @@ export const query = graphql`
         steps
         technologies
         topics
-      }
-    }
-
-    tutorialsteps: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "tutorialstep" } } }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          fields {
-            slug
-            author {
-              excerpt(pruneLength: 250)
-              html
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                type
-                label
-                title
-                subtitle
-                date
-                headshot {
-                  publicURL
-                  childImageSharp {
-                    fluid(maxWidth: 1000) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-              }
-            }
-          }
-          frontmatter {
-            type
-            date(formatString: "MMMM Do, YYYY")
-            title
-            subtitle
-            technologies
-            topics
-            thumbnail {
-              publicURL
-              childImageSharp {
-                fluid(maxWidth: 1000) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
       }
     }
   }

@@ -8,16 +8,17 @@ export interface ITutorialFrontmatter extends IBaseResourceFrontmatter {
   steps: string[];
 }
 
-export interface ITutorialStep extends IBaseResourceNode {
+export interface ITutorialStepNode extends IBaseResourceNode {
   frontmatter: ITutorialStepFrontmatter;
 }
 
 export interface ITutorialFields extends IBaseResourceFields {
-  steps: ITutorialStep[];
+  tutorialsteps: ITutorialStepNode[];
 }
 
 export interface ITutorialNode extends IBaseResourceNode {
   frontmatter: ITutorialFrontmatter;
+  fields: ITutorialFields;
 }
 
 export interface ITutorialEdge {
@@ -26,7 +27,7 @@ export interface ITutorialEdge {
 
 export type ITutorialEdges = ITutorialEdge[];
 export interface ITutorialStepEdge {
-  node: ITutorialStep;
+  node: ITutorialStepNode;
 }
 
 export type ITutorialStepEdges = ITutorialStepEdge[];

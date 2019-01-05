@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Element } from 'react-scroll';
 
 import { graphql } from 'gatsby';
-import { ITutorialStep } from './models';
+import { ITutorialStepNode } from './models';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
@@ -11,7 +11,7 @@ import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGro
 
 interface ITutorialStepProps {
   data: {
-    markdownRemark: ITutorialStep;
+    markdownRemark: ITutorialStepNode;
   };
 }
 
