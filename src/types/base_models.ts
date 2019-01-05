@@ -37,7 +37,7 @@ export interface IFields {
   slug: string;
 }
 
-export interface IResourceFields extends IFields {
+export interface IBaseResourceFields extends IFields {
   author: IAuthorNode;
   technologies: ITechnologyNode[];
   topics: ITopicNode[];
@@ -56,7 +56,7 @@ export interface IBaseNode {
 
 export interface IBaseResourceNode extends IBaseNode {
   frontmatter: IBaseResourceFrontmatter;
-  fields: IResourceFields;
+  fields: IBaseResourceFields;
 }
 
 export interface IBaseCategoryNode extends IBaseNode {

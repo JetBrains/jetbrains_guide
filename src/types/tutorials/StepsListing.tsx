@@ -1,9 +1,9 @@
 import React from 'react';
 import ResourceCard from '../../components/ResourceCard';
-import { ITutorial } from './models';
+import { ITutorialNode } from './models';
 
 export interface IStepsListingProps {
-  steps: ITutorial[];
+  steps: ITutorialNode[];
 }
 
 const StepsListing: React.FunctionComponent<IStepsListingProps> = ({ steps }) => {

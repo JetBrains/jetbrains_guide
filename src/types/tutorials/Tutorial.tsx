@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { graphql } from 'gatsby';
-import { ITutorial, ITutorialStep, ITutorialStepEdges } from './models';
+import { ITutorialNode, ITutorialStep, ITutorialStepEdges } from './models';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
@@ -11,7 +11,7 @@ import StepsListing from './StepsListing';
 
 interface ITutorialProps {
   data: {
-    markdownRemark: ITutorial;
+    markdownRemark: ITutorialNode;
     tutorialsteps: {
       edges: ITutorialStepEdges;
     };
