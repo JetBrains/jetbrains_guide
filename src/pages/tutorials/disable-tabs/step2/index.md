@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Step 2'
-technologies: ['typescript']
+technologies: ['pytest']
 topics: ['ide']
 author: 'pauleveritt'
 subtitle: 'A second tutorial step'

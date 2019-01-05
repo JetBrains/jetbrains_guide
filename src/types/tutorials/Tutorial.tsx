@@ -5,15 +5,12 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
 import SidebarLayout from '../../layouts/SidebarLayout';
-import { ITutorialNode, ITutorialStepEdges } from './models';
+import { ITutorialNode } from './models';
 import StepsListing from './StepsListing';
 
 interface ITutorialProps {
   data: {
     markdownRemark: ITutorialNode;
-    tutorialsteps: {
-      edges: ITutorialStepEdges;
-    };
   };
 }
 
@@ -73,6 +70,22 @@ export const query = graphql`
         tutorialsteps {
           fields {
             slug
+            technologies {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
+            topics {
+              fields {
+                slug
+              }
+              frontmatter {
+                label
+              }
+            }
             author {
               fields {
                 slug

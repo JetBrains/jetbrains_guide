@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Step 1'
-technologies: ['typescript']
+technologies: ['angular']
 topics: ['ide']
 author: 'pauleveritt'
 subtitle: 'Tutorial Step....Save space and stay keyboard-centric by turning off the tabs'
