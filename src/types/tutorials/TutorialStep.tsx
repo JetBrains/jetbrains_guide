@@ -41,7 +41,7 @@ class TutorialStep extends Component<ITutorialStepProps> {
         <SidebarPublished date={frontmatter.date} author={author} />
         <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={frontmatter.technologies} />
         <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={frontmatter.topics} />
-        <SidebarSteps steps={sidebarSteps} />
+        <SidebarSteps currentSlug={tutorialStep.fields.slug} steps={sidebarSteps} />
       </Sidebar>
     );
     return (
