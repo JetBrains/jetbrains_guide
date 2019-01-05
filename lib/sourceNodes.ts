@@ -164,24 +164,22 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
   });
 
   // For each tutorial, put the related tutorial steps onto a field
-  Object.values(slugsToResource)
-    .filter((nodeId: string) => getNode(nodeId).frontmatter.type === 'tutorial')
-    .forEach((nodeId: string) => {
-      const node = getNode(nodeId);
-      const nodeSlug = node.fields.slug;
-      if (node.frontmatter.type === 'tutorial') {
-        // Iterate over each step, make a full slug, get the object, append
-        const stepSlugs = node.frontmatter.steps.map((stepSlug: string) => join(nodeSlug, stepSlug, '/'));
-        const steps = stepSlugs.map((stepSlug: string) => {
-          return slugsToResource[stepSlug];
-        });
-        createNodeField({
-          node,
-          name: 'tutorialsteps',
-          value: steps
-        });
-      }
-    });
+  Object.values(slugsToResource).forEach((nodeId: string) => {
+    const node = getNode(nodeId);
+    const nodeSlug = node.fields.slug;
+    if (node.frontmatter.type === 'tutorial') {
+      // Iterate over each step, make a full slug, get the object, append
+      const stepSlugs = node.frontmatter.steps.map((stepSlug: string) => join(nodeSlug, stepSlug, '/'));
+      const steps = stepSlugs.map((stepSlug: string) => {
+        return slugsToResource[stepSlug];
+      });
+      createNodeField({
+        node,
+        name: 'tutorialsteps',
+        value: steps
+      });
+    }
+  });
 };
 
 module.exports = sourceNodes;
