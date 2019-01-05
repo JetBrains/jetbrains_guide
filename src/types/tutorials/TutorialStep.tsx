@@ -1,13 +1,13 @@
+import { graphql } from 'gatsby';
 import React, { Component } from 'react';
 
 import { Element } from 'react-scroll';
-
-import { graphql } from 'gatsby';
-import { ITutorialStepNode } from './models';
-import SidebarLayout from '../../layouts/SidebarLayout';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
+import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
+import SidebarLayout from '../../layouts/SidebarLayout';
+import { ITutorialStepNode } from './models';
 
 interface ITutorialStepProps {
   data: {
@@ -19,9 +19,18 @@ class TutorialStep extends Component<ITutorialStepProps> {
   render() {
     const { data } = this.props;
     const tutorialStep = data.markdownRemark;
-    const { frontmatter } = tutorialStep;
+    const { fields, frontmatter } = tutorialStep;
+    const { tutorialsteps } = fields.tutorial.fields;
 
-    const thisAuthor = tutorialStep.fields.author;
+    // Flatten into the minimum needed for the sidebar steps component
+    const sidebarSteps: IStep[] = tutorialsteps.map(step => {
+      return {
+        target: step.fields.slug,
+        label: step.frontmatter.title
+      };
+    });
+
+    const thisAuthor = fields.author;
     const author = {
       title: thisAuthor.frontmatter.title,
       headshot: thisAuthor.frontmatter.headshot,
@@ -32,6 +41,7 @@ class TutorialStep extends Component<ITutorialStepProps> {
         <SidebarPublished date={frontmatter.date} author={author} />
         <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={frontmatter.technologies} />
         <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={frontmatter.topics} />
+        <SidebarSteps steps={sidebarSteps} />
       </Sidebar>
     );
     return (
@@ -63,6 +73,19 @@ export const query = graphql`
       id
       fields {
         slug
+        tutorial {
+          fields {
+            slug
+            tutorialsteps {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
         author {
           excerpt(pruneLength: 250)
           html

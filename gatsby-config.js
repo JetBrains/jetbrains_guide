@@ -7,9 +7,9 @@ module.exports = {
     'MarkdownRemark.fields.technologies': `MarkdownRemark.id`,
     'MarkdownRemark.fields.topics': `MarkdownRemark.id`,
     'MarkdownRemark.fields.tips': `MarkdownRemark.id`,
-    'MarkdownRemark.fields.tutorials': `MarkdownRemark.id`,
     'MarkdownRemark.fields.tutorialsteps': `MarkdownRemark.id`,
-    'MarkdownRemark.fields.tutorialsteps.fields.author': `MarkdownRemark.id`
+    'MarkdownRemark.fields.tutorialsteps.fields.author': `MarkdownRemark.id`,
+    'MarkdownRemark.fields.tutorial': `MarkdownRemark.id`,
   },
   pathPrefix: '/pycharm/guide',
   plugins: [

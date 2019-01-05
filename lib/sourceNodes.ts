@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join, resolve } from 'path';
 
 // From https://github.com/gatsbyjs/gatsby/issues/3129
 
@@ -177,6 +177,14 @@ const sourceNodes = ({ boundActionCreators, getNodes, getNode }: any) => {
         node,
         name: 'tutorialsteps',
         value: steps
+      });
+    } else if (node.frontmatter.type === 'tutorialstep') {
+      // Put a link to the parent
+      const parentSlug = `${resolve(nodeSlug, '..')}/`;
+      createNodeField({
+        node,
+        name: 'tutorial',
+        value: slugsToResource[parentSlug]
       });
     }
   });
