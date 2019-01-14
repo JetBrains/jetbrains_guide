@@ -8,6 +8,8 @@ import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGro
 import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import { ITutorialStepNode } from './models';
+import TopNav from './TopNav';
+import { getPrevNextBySlug } from './utils';
 
 interface ITutorialStepProps {
   data: {
@@ -20,7 +22,8 @@ class TutorialStep extends Component<ITutorialStepProps> {
     const { data } = this.props;
     const tutorialStep = data.markdownRemark;
     const { fields, frontmatter } = tutorialStep;
-    const { tutorialsteps } = fields.tutorial.fields;
+    const { tutorial } = fields;
+    const { tutorialsteps } = tutorial.fields;
 
     // Flatten into the minimum needed for the sidebar steps component
     const sidebarSteps: IStep[] = tutorialsteps.map(step => {
@@ -44,8 +47,26 @@ class TutorialStep extends Component<ITutorialStepProps> {
         <SidebarSteps currentSlug={tutorialStep.fields.slug} steps={sidebarSteps} />
       </Sidebar>
     );
+
+    // Up, Previous, Next
+    const navUp = { label: tutorial.frontmatter.title, slug: tutorial.fields.slug };
+    const prevNext = getPrevNextBySlug(
+      tutorial.fields.tutorialsteps.map(step => {
+        return { label: step.frontmatter.title, slug: step.fields.slug };
+      }),
+      tutorialStep.fields.slug
+    );
+
+    const navPrevious = prevNext.previous;
+    const navNext = prevNext.next;
+
     return (
-      <SidebarLayout title={frontmatter.title} subtitle={frontmatter.subtitle} sidebar={sidebar}>
+      <SidebarLayout
+        topNav={<TopNav up={navUp} previous={navPrevious} next={navNext} />}
+        title={frontmatter.title}
+        subtitle={frontmatter.subtitle}
+        sidebar={sidebar}
+      >
         {tutorialStep ? (
           <>
             {tutorialStep.html && (
@@ -74,6 +95,9 @@ export const query = graphql`
       fields {
         slug
         tutorial {
+          frontmatter {
+            title
+          }
           fields {
             slug
             tutorialsteps {

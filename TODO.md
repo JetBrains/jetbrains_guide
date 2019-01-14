@@ -16,7 +16,7 @@
     
     - Tutorial Steps
     
-        - Sidebar listing with current etc.
+        - Top listing: up, prev, next
         
         - Bottom navigation for previous/next    
 
@@ -26,6 +26,8 @@
         
         - Link to repo
         
+        - Sidebar listing with current etc.
+
 ## Next
 
 ## Soon

@@ -11,13 +11,15 @@ import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 
 export interface ISidebarLayoutProps extends React.HTMLProps<HTMLDivElement> {
+  topNav?: ReactNode;
   title: string;
   subtitle?: string;
   sidebar?: ReactNode;
   children: ReactNode;
+  bottomNav?: ReactNode;
 }
 
-const SidebarLayout: React.FunctionComponent<ISidebarLayoutProps> = ({ title, subtitle, children, sidebar }) => (
+const SidebarLayout: React.FunctionComponent<ISidebarLayoutProps> = ({ topNav, title, subtitle, children, sidebar, bottomNav }) => (
   <div>
     <Helmet
       title={`${title} - PyCharm Guide`}
@@ -38,8 +40,10 @@ const SidebarLayout: React.FunctionComponent<ISidebarLayoutProps> = ({ title, su
       <div className="bd-main-container container">
         <div className="bd-duo">
           <div className="bd-lead">
+            {topNav}
             <Heading title={title} subtitle={subtitle} />
             {children}
+            {bottomNav}
           </div>
 
           {sidebar}
