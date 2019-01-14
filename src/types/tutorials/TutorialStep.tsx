@@ -7,6 +7,7 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
 import SidebarLayout from '../../layouts/SidebarLayout';
+import BottomNav from './BottomNav';
 import { ITutorialStepNode } from './models';
 import TopNav from './TopNav';
 import { getPrevNextBySlug } from './utils';
@@ -66,6 +67,7 @@ class TutorialStep extends Component<ITutorialStepProps> {
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         sidebar={sidebar}
+        bottomNav={<BottomNav previous={navPrevious} next={navNext} />}
       >
         {tutorialStep ? (
           <>

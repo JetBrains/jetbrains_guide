@@ -1,11 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-export interface ITopNavProps {
-  up: {
-    label: string;
-    slug: string;
-  };
+export interface IBottomNavProps {
   previous?: {
     label: string;
     slug: string;
@@ -16,24 +12,22 @@ export interface ITopNavProps {
   };
 }
 
-const TopNav: React.FunctionComponent<ITopNavProps> = ({ up, previous, next }) => (
+const BottomNav: React.FunctionComponent<IBottomNavProps> = ({ previous, next }) => (
   <div className="columns is-size-6">
-    <div className="column is-9">
-      Up to:{' '}
-      <Link className="topnav-up" to={up.slug}>
-        {up.label}
-      </Link>
-    </div>
     <div className="column">
       {previous && (
-        <Link to={previous.slug} className="topnav-previous button is-small" style={{ border: 'none' }}>
+        <Link to={previous.slug} className="bottomnav-previous is-small" style={{ textAlign: 'right' }}>
           <span className="icon" title={previous.label}>
             <i className="fas fa-arrow-left" />
           </span>
+          <span style={{ paddingLeft: '1em' }}>{previous.label}</span>
         </Link>
       )}
+    </div>
+    <div className="column">
       {next && (
-        <Link to={next.slug} className="topnav-next button is-small" style={{ border: 'none' }}>
+        <Link to={next.slug} className="bottomnav-next is-small" style={{ textAlign: 'left' }}>
+          <span style={{ paddingRight: '1em' }}>{next.label}</span>
           <span className="icon" title={next.label}>
             <i className="fas fa-arrow-right" />
           </span>
@@ -43,4 +37,4 @@ const TopNav: React.FunctionComponent<ITopNavProps> = ({ up, previous, next }) =
   </div>
 );
 
-export default TopNav;
+export default BottomNav;
