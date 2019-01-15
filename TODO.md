@@ -2,16 +2,6 @@
 
 ## Now
 
-- Tutorials
-
-    - Tutorial Steps
-    
-        - Video player
-        
-        - Working files
-        
-        - Link to repo
-        
 ## Next
 
 ## Soon
@@ -210,3 +200,6 @@ sourceNodes event
         - Bottom navigation for previous/next    
 
         - Sidebar listing with current etc.
+
+        - Video player
+        
