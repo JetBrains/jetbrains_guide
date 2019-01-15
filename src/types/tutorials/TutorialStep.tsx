@@ -68,8 +68,9 @@ class TutorialStep extends Component<ITutorialStepProps> {
       ? {
           controls: true,
           poster: longVideo.poster.publicURL,
-          height: 720,
-          width: 1024,
+          fluid: true,
+          // height: 720,
+          // width: 1024,
           techOrder: ['youtube'],
           sources: [
             {
@@ -99,7 +100,7 @@ class TutorialStep extends Component<ITutorialStepProps> {
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>
                 <div className="columns">
-                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorialStep.html }} />
+                  <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: tutorialStep.html }} />
                 </div>
               </Element>
             )}

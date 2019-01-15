@@ -18,13 +18,13 @@ export interface ITopNavProps {
 
 const TopNav: React.FunctionComponent<ITopNavProps> = ({ up, previous, next }) => (
   <div className="columns is-size-6">
-    <div className="column is-9">
+    <div className="column is-10">
       Up to:{' '}
       <Link className="topnav-up" to={up.slug}>
         {up.label}
       </Link>
     </div>
-    <div className="column">
+    <div className="column" style={{ textAlign: 'right' }}>
       {previous && (
         <Link to={previous.slug} className="topnav-previous button is-small" style={{ border: 'none' }}>
           <span className="icon" title={previous.label}>
