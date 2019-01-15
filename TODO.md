@@ -2,6 +2,10 @@
 
 ## Now
 
+- Technologies
+
+    - Website URL in schema and page
+
 ## Next
 
 ## Soon
