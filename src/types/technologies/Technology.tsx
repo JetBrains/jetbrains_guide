@@ -12,13 +12,20 @@ interface ITechnologyProps {
   };
 }
 
-const Technology: React.SFC<ITechnologyProps> = ({ data: { technology } }) => {
+const Technology: React.FunctionComponent<ITechnologyProps> = ({ data: { technology } }) => {
   const { frontmatter } = technology;
   const resources = technology.fields.tips;
 
   return (
     <LogoLayout title={frontmatter.title} subtitle={frontmatter.subtitle} logo={frontmatter.logo.publicURL}>
-      <div className="bd-content content" dangerouslySetInnerHTML={{ __html: technology.html }} />
+      <div className="columns">
+        <div className="column is-9">
+          <div className="bd-content content" dangerouslySetInnerHTML={{ __html: technology.html }} />
+          <p>
+            <a href={frontmatter.website}>Website</a>
+          </p>
+        </div>
+      </div>
       <div className="columns">
         <nav className="column is-three-quarters-desktop bio-resourcecards">
           {resources &&

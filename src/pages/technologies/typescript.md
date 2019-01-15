@@ -5,6 +5,7 @@ label: 'typescript'
 title: 'TypeScript'
 subtitle: 'A typed superset of JavaScript which compiles to plain JavaScript'
 logo: './typescript-original.svg'
+website: 'https://www.typescriptlang.org'
 ---
 
 TypeScript starts from the same syntax and semantics that millions of

@@ -4,6 +4,7 @@ export interface ITechnologyFrontmatter extends IBaseCategoryFrontmatter {
   logo: {
     publicURL: string;
   };
+  website: string;
 }
 
 export interface ITechnologyNode extends IBaseCategoryNode {
