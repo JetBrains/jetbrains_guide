@@ -13,7 +13,7 @@ export interface IBottomNavProps {
 }
 
 const BottomNav: React.FunctionComponent<IBottomNavProps> = ({ previous, next }) => (
-  <div className="columns is-size-6">
+  <div className="columns is-size-10 is-size-6">
     <div className="column">
       {previous && (
         <Link to={previous.slug} className="bottomnav-previous is-small" style={{ textAlign: 'right' }}>

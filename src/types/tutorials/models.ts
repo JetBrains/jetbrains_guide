@@ -1,7 +1,8 @@
-import { IBaseResourceNode, IBaseResourceFrontmatter, IBaseResourceFields } from '../base_models';
+import { IBaseResourceNode, IBaseResourceFrontmatter, IBaseResourceFields, IVideoPlayer } from '../base_models';
 
 export interface ITutorialStepFrontmatter extends IBaseResourceFrontmatter {
   steps: string[];
+  longVideo: IVideoPlayer;
 }
 
 export interface ITutorialFrontmatter extends IBaseResourceFrontmatter {

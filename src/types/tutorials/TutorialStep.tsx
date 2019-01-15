@@ -7,6 +7,7 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 import SidebarSteps, { IStep } from '../../components/sidebar/SidebarSteps';
 import SidebarLayout from '../../layouts/SidebarLayout';
+import VideoPlayer from '../../components/VideoPlayer';
 import BottomNav from './BottomNav';
 import { ITutorialStepNode } from './models';
 import TopNav from './TopNav';
@@ -61,6 +62,24 @@ class TutorialStep extends Component<ITutorialStepProps> {
     const navPrevious = prevNext.previous;
     const navNext = prevNext.next;
 
+    // Video
+    const longVideo = frontmatter.longVideo;
+    const longVideoJsOptions = longVideo
+      ? {
+          controls: true,
+          poster: longVideo.poster.publicURL,
+          height: 720,
+          width: 1024,
+          techOrder: ['youtube'],
+          sources: [
+            {
+              src: longVideo.url,
+              type: 'video/youtube'
+            }
+          ]
+        }
+      : null;
+
     return (
       <SidebarLayout
         topNav={<TopNav up={navUp} previous={navPrevious} next={navNext} />}
@@ -71,6 +90,11 @@ class TutorialStep extends Component<ITutorialStepProps> {
       >
         {tutorialStep ? (
           <>
+            {longVideoJsOptions && (
+              <Element name="full-video" className="element" style={{ marginTop: '1rem' }}>
+                <VideoPlayer {...longVideoJsOptions} />
+              </Element>
+            )}
             {tutorialStep.html && (
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>

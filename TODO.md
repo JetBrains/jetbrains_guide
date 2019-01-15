@@ -4,30 +4,14 @@
 
 - Tutorials
 
-    - Tutorials
-    
-        - Screenshot
-
-    - Tutorial
-   
-        - Get steps listing in Tutorial
-        
-        - Ensure sidebar listing has active etc.
-    
     - Tutorial Steps
     
-        - Top listing: up, prev, next
-        
-        - Bottom navigation for previous/next    
-
         - Video player
         
         - Working files
         
         - Link to repo
         
-        - Sidebar listing with current etc.
-
 ## Next
 
 ## Soon
@@ -206,3 +190,23 @@ sourceNodes event
 - Get home page thumbnails to be responsive
 
 - Tips/Topics/Technologies/Authors to be in a container at smaller screens
+
+- Tutorials
+
+    - Tutorials
+    
+        - Screenshot
+
+    - Tutorial
+   
+        - Get steps listing in Tutorial
+        
+        - Ensure sidebar listing has active etc.
+    
+    - Tutorial Steps
+    
+        - Top listing: up, prev, next
+
+        - Bottom navigation for previous/next    
+
+        - Sidebar listing with current etc.
