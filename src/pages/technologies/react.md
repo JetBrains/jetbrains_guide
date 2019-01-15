@@ -1,0 +1,12 @@
+---
+type: 'technology'
+date: 2017-07-07
+label: 'react'
+title: 'React'
+subtitle: 'A JavaScript library for building user interfaces'
+logo: './react-original.svg'
+---
+
+React makes it painless to create interactive UIs. Design simple views for
+each state in your application, and React will efficiently update and
+render just the right components when your data changes.
