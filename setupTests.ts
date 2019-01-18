@@ -6,5 +6,5 @@ configure({ adapter: new Adapter() });
 
 // @ts-ignore
 global.___loader = {
-    enqueue: jest.fn(),
+  enqueue: jest.fn()
 };
