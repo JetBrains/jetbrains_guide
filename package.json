@@ -81,6 +81,7 @@
   },
   "dependencies": {
     "bulma-steps-component": "^0.5.3",
+    "gatsby-plugin-gtag": "^1.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-images": "^2.0.4",
     "video.js": "^7.2.4",

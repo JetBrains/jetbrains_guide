@@ -22,6 +22,12 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-manifest',
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        // your google analytics tracking id
+        trackingId: `UA-47631155-3`
+      },
+    },    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
