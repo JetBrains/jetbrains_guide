@@ -47,3 +47,5 @@ In this tip we show turning off tabs as a prelude to other tips
 related to keyboard-centric navigation. We show navigating through
 preferences to the action, as well as searching for the action
 and even setting it in the popup.
+
+`embed:tutorials/react_typescript_tdd/project_setup/tslint.json`

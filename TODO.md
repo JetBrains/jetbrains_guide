@@ -2,9 +2,7 @@
 
 ## Now
 
-- Technologies
-
-    - Website URL in schema and page
+- Allow tutorials with .tsx etc.
 
 ## Next
 
@@ -17,8 +15,6 @@
 - Get the fontawesome icon displayed when looking at at a single topic
 
 - Pagination
-
-- Tutorials with steps
 
 - Change category "label" to just use the filename
 
@@ -207,3 +203,5 @@ sourceNodes event
 
         - Video player
         
+- Technologies: Website URL in schema and page
+
