@@ -21,7 +21,9 @@ const Topic: React.FunctionComponent<ITopicProps> = ({ data: { topic } }) => {
 
   return (
     <DefaultLayout title={title} subtitle={subtitle}>
-      <div className="bd-content content" dangerouslySetInnerHTML={{ __html: topic.html }} />
+      <div className="columns">
+        <div className="column bd-content is-three-quarters-desktop content" dangerouslySetInnerHTML={{ __html: topic.html }} />
+      </div>
       <div className="columns">
         <nav className="column is-three-quarters-desktop bio-resourcecards">
           {resources &&
