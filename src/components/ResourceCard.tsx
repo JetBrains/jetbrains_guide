@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { ITechnologyNode } from '../types/technologies/models';
-import { ITopicNode } from '../types/topics/models';
+import { ITechnologyNode } from '../../tmp/technologies/models';
+import { ITopicNode } from '../../tmp/topics/models';
 
 interface IAuthorProps {
   title: string;

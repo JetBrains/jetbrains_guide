@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { graphql } from 'gatsby';
+// import { graphql } from 'gatsby';
 
 import ResourceCard from '../../components/ResourceCard';
 import { IAuthorNode } from './models';
@@ -12,8 +12,7 @@ interface IAuthorProps {
   };
 }
 
-const Author: React.SFC<IAuthorProps> = ({ data }) => {
-  const { author } = data;
+const Author: React.FunctionComponent<IAuthorProps> = ({ data: { author, tips } }) => {
   const { frontmatter } = author;
 
   return (
@@ -58,8 +57,35 @@ export const query = graphql`
       excerpt(pruneLength: 250)
       html
       id
-      fields {
-        tips {
+      frontmatter {
+        type
+        label
+        title
+        subtitle
+        date
+        headshot {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+            }
+          }
+        }
+      }
+    }
+
+    tips: allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
+      edges {
+        node {
           excerpt(pruneLength: 250)
           html
           id
@@ -94,30 +120,6 @@ export const query = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-          }
-        }
-      }
-      frontmatter {
-        type
-        label
-        title
-        subtitle
-        date
-        headshot {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              base64
-              tracedSVG
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-              originalImg
-              originalName
             }
           }
         }

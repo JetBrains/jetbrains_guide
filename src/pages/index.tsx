@@ -2,7 +2,7 @@ import * as React from 'react';
 import DefaultLayout from '../layouts/generic';
 // @ts-ignore
 import splash from './pycharm_splash.svg';
-import { ITipsProps } from '../types/tips/Tips';
+import { ITipsProps } from '../../tmp/tips/Tips';
 import { graphql, Link } from 'gatsby';
 import VideoPlayer from '../components/VideoPlayer';
 import { IVideoPlayer } from '../types/base_models';

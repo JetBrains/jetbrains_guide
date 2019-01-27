@@ -14,8 +14,12 @@ interface IAuthorsProps {
   };
 }
 
-const Authors: React.SFC<IAuthorsProps> = ({ data }) => {
-  const items = data.allMarkdownRemark.edges.map(edge => edge.node);
+const Authors: React.FunctionComponent<IAuthorsProps> = ({
+  data: {
+    allMarkdownRemark: { edges: authorEdges }
+  }
+}) => {
+  const items = authorEdges.map(edge => edge.node);
   return (
     <DefaultLayout title="Authors" subtitle="Resources organized by author">
       <nav className="bd-links bio-resourcecards">
