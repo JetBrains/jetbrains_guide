@@ -8,20 +8,19 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
 
   // First do the "listing" pages for each type
   Object.values(configTypes).map((ct: any) => {
-    if (ct.plural !== 'authors') {
-      return;
+    if (ct.plural === 'authors' || ct.plural === 'technologies') {
+      createPage({
+        path: `/${ct.plural}`,
+        component: path.resolve(ct.listing)
+      });
     }
-    createPage({
-      path: `/${ct.plural}`,
-      component: path.resolve(ct.listing)
-    });
   });
 
   let allMarkdown: any = {};
   try {
     allMarkdown = await graphql(`
       {
-        allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }, limit: 2000) {
+        allMarkdownRemark {
           edges {
             node {
               fields {
@@ -44,7 +43,7 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
     // Get the type metadata for this page's type and use the template
     // specified in the setup
 
-    if (node.frontmatter.type === 'author') {
+    if (node.frontmatter.type === 'author' || node.frontmatter.type === 'technology') {
       const configType = configTypes[node.frontmatter.type];
       createPage({
         path: node.fields.slug,

@@ -1,22 +1,15 @@
-/*
-
-A wrapped component for listings that want a headshot or 
-other image in the header area.
-
- */
-
 import React from 'react';
-import ImageLayout from '../layouts/image';
+import LogoLayout from '../layouts/logo';
 import ResourceCard from './ResourceCard';
 
-export interface IImageLayoutListingProps {
+export interface ILogoLayoutListingProps {
   resource: any;
   resources: any[];
 }
 
-const ImageLayoutListing: React.FunctionComponent<IImageLayoutListingProps> = ({ resource, resources }) => {
+const LogoLayoutListing: React.FunctionComponent<ILogoLayoutListingProps> = ({ resource, resources }) => {
   return (
-    <ImageLayout title={resource.title} subtitle={resource.subtitle} headshot={resource.headshot}>
+    <LogoLayout title={resource.title} subtitle={resource.subtitle} logo={resource.logo.publicURL}>
       <div className="columns">
         <div className="column is-three-quarters-desktop">
           <div className="bd-content content" dangerouslySetInnerHTML={{ __html: resource.html }} />
@@ -30,8 +23,8 @@ const ImageLayoutListing: React.FunctionComponent<IImageLayoutListingProps> = ({
             })}
         </div>
       </div>
-    </ImageLayout>
+    </LogoLayout>
   );
 };
 
-export default ImageLayoutListing;
+export default LogoLayoutListing;

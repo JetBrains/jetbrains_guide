@@ -1,8 +1,8 @@
 import { graphql } from 'gatsby';
-import ImageLayoutListing from '../../components/ImageLayoutListing';
 import ListingWrapper from '../../components/ListingWrapper';
+import LogoLayoutListing from '../../components/LogoLayoutListing';
 
-export default ListingWrapper(ImageLayoutListing);
+export default ListingWrapper(LogoLayoutListing);
 
 export const query = graphql`
   query($path: String!) {
@@ -14,24 +14,10 @@ export const query = graphql`
         label
         title
         subtitle
-        date
-        headshot {
+        logo {
           publicURL
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              base64
-              tracedSVG
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-              originalImg
-              originalName
-            }
-          }
         }
+        date
       }
     }
 
