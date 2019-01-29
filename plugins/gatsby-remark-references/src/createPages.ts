@@ -3,7 +3,6 @@ import { GatsbyCreatePages } from './types';
 
 const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, pluginOptions: any) => {
   const { createPage } = boundActionCreators;
-  console.log(35435, graphql);
 
   const configTypes = pluginOptions.types;
 

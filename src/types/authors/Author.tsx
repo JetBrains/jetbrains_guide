@@ -1,59 +1,12 @@
-import React from 'react';
+import { graphql } from 'gatsby';
+import ImageLayoutListing from '../../components/ImageLayoutListing';
+import ListingWrapper from '../../components/ListingWrapper';
 
-// import { graphql } from 'gatsby';
-
-import ResourceCard from '../../components/ResourceCard';
-import { IAuthorNode } from './models';
-import ImageLayout from '../../layouts/image';
-
-interface IAuthorProps {
-  data: {
-    author: IAuthorNode;
-  };
-}
-
-const Author: React.FunctionComponent<IAuthorProps> = ({ data: { author, tips } }) => {
-  const { frontmatter } = author;
-
-  return (
-    <ImageLayout title={frontmatter.title} subtitle={frontmatter.subtitle} headshot={frontmatter.headshot}>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop">
-          <div className="bd-content content" dangerouslySetInnerHTML={{ __html: author.html }} />
-        </div>
-      </div>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop bio-resourcecards">
-          {author.fields.tips &&
-            author.fields.tips.map(resource => {
-              const rfm = resource.frontmatter;
-              const fields = resource.fields;
-              const href = fields.slug;
-              const thumbnail = rfm.thumbnail;
-              return (
-                <ResourceCard
-                  key={href}
-                  title={rfm.title}
-                  subtitle={rfm.subtitle}
-                  technologies={fields.technologies}
-                  topics={fields.topics}
-                  href={href}
-                  thumbnail={thumbnail}
-                  date={rfm.date}
-                />
-              );
-            })}
-        </div>
-      </div>
-    </ImageLayout>
-  );
-};
-
-export default Author;
+export default ListingWrapper(ImageLayoutListing);
 
 export const query = graphql`
-  query($slug: String!) {
-    author: markdownRemark(fields: { slug: { eq: $slug } }) {
+  query($path: String!) {
+    resource: markdownRemark(fields: { slug: { eq: $path } }) {
       excerpt(pruneLength: 250)
       html
       id
@@ -83,7 +36,7 @@ export const query = graphql`
       }
     }
 
-    tips: allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
+    resources: allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
       edges {
         node {
           excerpt(pruneLength: 250)
@@ -91,28 +44,15 @@ export const query = graphql`
           id
           fields {
             slug
-            technologies {
-              fields {
-                slug
-              }
-              frontmatter {
-                label
-              }
-            }
-            topics {
-              fields {
-                slug
-              }
-              frontmatter {
-                label
-              }
-            }
           }
           frontmatter {
             type
             date(formatString: "MMMM Do, YYYY")
             title
             subtitle
+            author
+            technologies
+            topics
             thumbnail {
               publicURL
               childImageSharp {
@@ -121,6 +61,32 @@ export const query = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    technologies: allMarkdownRemark(filter: { frontmatter: { type: { eq: "technology" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            label
+          }
+        }
+      }
+    }
+
+    topics: allMarkdownRemark(filter: { frontmatter: { type: { eq: "topic" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            label
           }
         }
       }

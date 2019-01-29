@@ -1,8 +1,7 @@
-import * as React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { ITechnologyNode } from '../../tmp/technologies/models';
-import { ITopicNode } from '../../tmp/topics/models';
+import * as React from 'react';
+import { IListingCategoryItem } from './ListingWrapper';
 
 interface IAuthorProps {
   title: string;
@@ -11,14 +10,14 @@ interface IAuthorProps {
   twitter?: string;
 }
 
-interface IResourceCardProps {
+export interface IResourceCardProps {
   title: string;
   subtitle?: string;
-  href: string;
+  slug: string;
   date?: string;
   logo_href?: string;
-  technologies: ITechnologyNode[];
-  topics: ITopicNode[];
+  technologies: IListingCategoryItem[];
+  topics: IListingCategoryItem[];
   author?: IAuthorProps;
   thumbnail?: any;
 }
@@ -41,7 +40,7 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
         </div>
         <div className="media-content">
           <div className="content bio-resourcecard-props">
-            <Link to={props.href}>
+            <Link to={props.slug}>
               <strong>{props.title}</strong>
             </Link>
             {props.subtitle && <div style={{ minHeight: '2.2rem' }}>{props.subtitle}</div>}
@@ -62,11 +61,11 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
               )}
               {props.technologies &&
                 props.technologies.map(technology => (
-                  <span className="level-item bio-common-card-references" key={technology.fields.slug}>
+                  <span className="level-item bio-common-card-references" key={technology.slug}>
                     <div className="tags">
                       <span className="tag is-rounded has-text-warning">
-                        <Link to={technology.fields.slug} className="has-text-danger">
-                          {technology.frontmatter.label}
+                        <Link to={technology.slug} className="has-text-danger">
+                          {technology.label}
                         </Link>
                       </span>
                     </div>
@@ -74,11 +73,11 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
                 ))}
               {props.topics &&
                 props.topics.map(topic => (
-                  <span className="level-item bio-common-card-references" key={topic.fields.slug}>
+                  <span className="level-item bio-common-card-references" key={topic.slug}>
                     <div className="tags">
                       <span className="tag is-rounded">
-                        <Link to={topic.fields.slug} className="has-text-primary">
-                          {topic.frontmatter.label}
+                        <Link to={topic.slug} className="has-text-primary">
+                          {topic.label}
                         </Link>
                       </span>
                     </div>

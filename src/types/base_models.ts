@@ -1,8 +1,3 @@
-import { IAuthorNode } from './authors/models';
-import { ITipNode } from './tips/models';
-import { ITechnologyNode } from './technologies/models';
-import { ITopicNode } from './topics/models';
-
 export interface ISeeAlso {
   title: string;
   href: string;
@@ -37,15 +32,9 @@ export interface IFields {
   slug: string;
 }
 
-export interface IBaseResourceFields extends IFields {
-  author: IAuthorNode;
-  technologies: ITechnologyNode[];
-  topics: ITopicNode[];
-}
+export interface IBaseResourceFields extends IFields {}
 
-export interface ICategoryFields extends IFields {
-  tips: ITipNode[];
-}
+export interface ICategoryFields extends IFields {}
 
 export interface IBaseNode {
   id: string;
