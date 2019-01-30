@@ -82,6 +82,11 @@ module.exports = {
             listing: `src/types/technologies/Technologies.tsx`,
             item: `src/types/technologies/Technology.tsx`
           },
+          topic: {
+            plural: `topics`,
+            listing: `src/types/topics/Topics.tsx`,
+            item: `src/types/topics/Topic.tsx`
+          },
           tip: {
             plural: `tips`,
             listing: `src/types/tips/Tips.tsx`,

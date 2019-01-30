@@ -1,40 +1,37 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { SubsectionTechnology } from '../../components/Subsection';
+import { SubsectionTopic } from '../../components/Subsection';
 import DefaultLayout from '../../layouts/default';
 
-import { ITechnologyEdges } from './models';
+import { ITopicEdges } from './models';
 
-interface ITechnologiesProps {
+interface ITTopicsProps {
   data: {
     allMarkdownRemark: {
-      edges: ITechnologyEdges;
+      edges: ITopicEdges;
     };
   };
 }
 
-const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
-
-const Technologies: React.FunctionComponent<ITechnologiesProps> = ({
+const Topics: React.FunctionComponent<ITTopicsProps> = ({
   data: {
-    allMarkdownRemark: { edges: technologyEdges }
+    allMarkdownRemark: { edges: topicEdges }
   }
 }) => {
-  const items = technologyEdges.map(edge => edge.node);
+  const items = topicEdges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Technologies" subtitle="Resources organized by programming technologies">
+    <DefaultLayout title="Topics" subtitle="Resources organized by programming topics">
       <nav className="bd-links bio-resourcecards">
         {items &&
           items.map(item => {
-            const frontmatter = item.frontmatter;
-            const logo = frontmatter.logo.publicURL ? frontmatter.logo.publicURL : DEFAULT_LOGO;
             return (
-              <SubsectionTechnology
+              <SubsectionTopic
                 key={item.fields.slug}
                 title={item.frontmatter.title}
                 subtitle={item.frontmatter.subtitle}
                 href={item.fields.slug}
-                logo={logo}
+                accent={item.frontmatter.accent}
+                icon={item.frontmatter.icon}
               />
             );
           })}
@@ -43,13 +40,13 @@ const Technologies: React.FunctionComponent<ITechnologiesProps> = ({
   );
 };
 
-export default Technologies;
+export default Topics;
 
 export const query = graphql`
   query {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { type: { eq: "technology" } } }
+      filter: { frontmatter: { type: { eq: "topic" } } }
       limit: 1000
     ) {
       edges {
@@ -65,9 +62,8 @@ export const query = graphql`
             title
             subtitle
             date
-            logo {
-              publicURL
-            }
+            accent
+            icon
           }
         }
       }
