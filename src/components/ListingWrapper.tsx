@@ -43,13 +43,15 @@ const ListingWrapper = (Component: any) => ({ data: { resource, authors, resourc
     topics: {}
   };
 
-  authors.edges.map(edge => {
-    references.authors[edge.node.frontmatter.label] = {
-      title: edge.node.frontmatter.title,
-      slug: edge.node.fields.slug,
-      headshot: edge.node.frontmatter.headshot
-    };
-  });
+  if (authors) {
+    authors.edges.map(edge => {
+      references.authors[edge.node.frontmatter.label] = {
+        title: edge.node.frontmatter.title,
+        slug: edge.node.fields.slug,
+        headshot: edge.node.frontmatter.headshot
+      };
+    });
+  }
   technologies.edges.map(edge => {
     references.technologies[edge.node.frontmatter.label] = {
       label: edge.node.frontmatter.label,
