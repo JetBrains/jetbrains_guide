@@ -3,13 +3,6 @@ import Img from 'gatsby-image';
 import * as React from 'react';
 import { IListingCategoryItem } from './ListingWrapper';
 
-interface IAuthorProps {
-  title: string;
-  href: string;
-  headshot: any;
-  twitter?: string;
-}
-
 export interface IResourceCardProps {
   title: string;
   subtitle?: string;
@@ -18,7 +11,7 @@ export interface IResourceCardProps {
   logo_href?: string;
   technologies: IListingCategoryItem[];
   topics: IListingCategoryItem[];
-  author?: IAuthorProps;
+  author?: IListingCategoryItem;
   thumbnail?: any;
 }
 
@@ -48,7 +41,7 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
           <nav className="level is-mobile">
             <div className="level-left">
               {props.author && (
-                <Link className="level-item bio-card-author" to={props.author.href}>
+                <Link className="level-item bio-card-author" to={props.author.slug}>
                   <figure className="image is-rounded is-24x24">
                     {props.author.headshot && (
                       <div className="image is-rounded is-24x24">
@@ -59,7 +52,7 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
                   <span className="bio-card-author-label">{props.author.title}</span>
                 </Link>
               )}
-              {props.technologies &&
+              {props.technologies.length > 0 &&
                 props.technologies.map(technology => (
                   <span className="level-item bio-common-card-references" key={technology.slug}>
                     <div className="tags">
@@ -71,7 +64,7 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
                     </div>
                   </span>
                 ))}
-              {props.topics &&
+              {props.topics.length > 0 &&
                 props.topics.map(topic => (
                   <span className="level-item bio-common-card-references" key={topic.slug}>
                     <div className="tags">

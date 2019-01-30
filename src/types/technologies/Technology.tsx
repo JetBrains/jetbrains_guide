@@ -51,6 +51,28 @@ export const query = graphql`
       }
     }
 
+    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            label
+            headshot {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
     technologies: allMarkdownRemark(filter: { frontmatter: { type: { eq: "technology" } } }) {
       edges {
         node {
