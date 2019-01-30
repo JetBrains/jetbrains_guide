@@ -43,7 +43,7 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
     // Get the type metadata for this page's type and use the template
     // specified in the setup
 
-    if (node.frontmatter.type === 'author' || node.frontmatter.type === 'technology') {
+    if (node.frontmatter.type === 'author' || node.frontmatter.type === 'technology' || node.frontmatter.type === 'topic') {
       const configType = configTypes[node.frontmatter.type];
       createPage({
         path: node.fields.slug,
