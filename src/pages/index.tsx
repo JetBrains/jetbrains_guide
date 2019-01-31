@@ -1,5 +1,5 @@
 import * as React from 'react';
-import DefaultLayout from '../layouts/generic';
+import DefaultLayout from '../layouts/default';
 // @ts-ignore
 import splash from './pycharm_splash.svg';
 import { ITipsProps } from '../../tmp/tips/Tips';
@@ -16,7 +16,7 @@ interface ITipItemProps {
   shortVideo: IVideoPlayer;
 }
 
-const TipItem: React.SFC<ITipItemProps> = ({ title, subtitle, href, shortVideo }) => {
+const TipItem: React.FunctionComponent<ITipItemProps> = ({ title, subtitle, href, shortVideo }) => {
   const shortVideoJsOptions = {
     controls: true,
     poster: shortVideo.poster.publicURL,
@@ -57,11 +57,11 @@ const TipItem: React.SFC<ITipItemProps> = ({ title, subtitle, href, shortVideo }
   );
 };
 
-const IndexPage: React.SFC<ITipsProps> = ({ data }) => {
-  const items = data.tips.edges.map(edge => edge.node);
+const IndexPage: React.FunctionComponent<ITipsProps> = ({ data }) => {
+  const items = data.tips.edges.map((edge: any) => edge.node);
 
   return (
-    <DefaultLayout>
+    <DefaultLayout title="Home Page">
       <section className="hero is-medium" style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
         <div className="hero-body">
           <div className="container">
@@ -76,7 +76,7 @@ const IndexPage: React.SFC<ITipsProps> = ({ data }) => {
           <div className="columns">
             <div className="column is-four-fifths-desktop bio-resourcecards">
               {items &&
-                items.map(item => {
+                items.map((item: any) => {
                   const frontmatter = item.frontmatter;
                   const href = item.fields.slug;
                   return (

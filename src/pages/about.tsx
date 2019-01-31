@@ -1,8 +1,8 @@
 import * as React from 'react';
-import DefaultLayout from '../layouts/generic';
+import DefaultLayout from '../layouts/default';
 
 const AboutPage: React.SFC = () => (
-  <DefaultLayout>
+  <DefaultLayout title="About the Guide">
     <div className="container content" style={{ marginTop: '2rem' }}>
       <div className="columns is-mobile">
         <div className="column is-three-quarters-desktop">
