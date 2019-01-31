@@ -31,11 +31,13 @@ export interface IListingCategoryItem {
 }
 
 const ListingWrapper = (Component: any) => ({ data: { resource, authors, resources, technologies, topics } }: IListingWrapperProps) => {
-  const resourceNode = {
-    ...resource.frontmatter,
-    excerpt: resource.excerpt,
-    html: resource.html
-  };
+  const resourceNode = resource
+    ? {
+        ...resource.frontmatter,
+        excerpt: resource.excerpt,
+        html: resource.html
+      }
+    : undefined;
 
   const references: { [s: string]: { [s: string]: IListingCategoryItem } } = {
     authors: {},

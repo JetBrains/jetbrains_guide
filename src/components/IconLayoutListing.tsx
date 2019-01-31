@@ -1,5 +1,5 @@
 import React from 'react';
-import IconLayout from '../layouts/icon';
+import ReferenceLayout from '../layouts/ReferenceLayout';
 import ResourceCard from './ResourceCard';
 
 export interface IIconLayoutListingProps {
@@ -9,21 +9,23 @@ export interface IIconLayoutListingProps {
 
 const IconLayoutListing: React.FunctionComponent<IIconLayoutListingProps> = ({ resource, resources }) => {
   return (
-    <IconLayout title={resource.title} subtitle={resource.subtitle} accent={resource.accent} icon={resource.icon}>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop">
-          <div className="bd-content content" dangerouslySetInnerHTML={{ __html: resource.html }} />
-        </div>
-      </div>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop bio-resourcecards">
-          {resources &&
-            resources.map(r => {
-              return <ResourceCard key={r.slug} {...r} />;
-            })}
-        </div>
-      </div>
-    </IconLayout>
+    <ReferenceLayout title={resource.title} subtitle={resource.subtitle} bodyHtml={resource.html}>
+      {{
+        figure: (
+          <span className={`icon is-large has-text-${resource.accent}`}>
+            <i className={`${resource.icon} fa-3x`} />
+          </span>
+        ),
+        listing: (
+          <div>
+            {resources &&
+              resources.map(r => {
+                return <ResourceCard key={r.slug} {...r} />;
+              })}
+          </div>
+        )
+      }}
+    </ReferenceLayout>
   );
 };
 

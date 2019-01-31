@@ -1,8 +1,8 @@
 import * as React from 'react';
-import DefaultLayout from '../layouts/default';
+import BaseLayout from '../layouts/BaseLayout';
 
-const AboutPage: React.SFC = () => (
-  <DefaultLayout title="About the Guide">
+const AboutPage: React.FunctionComponent = () => (
+  <BaseLayout title="About the Guide">
     <div className="container content" style={{ marginTop: '2rem' }}>
       <div className="columns is-mobile">
         <div className="column is-three-quarters-desktop">
@@ -36,7 +36,7 @@ const AboutPage: React.SFC = () => (
         </div>
       </div>
     </div>
-  </DefaultLayout>
+  </BaseLayout>
 );
 
 export default AboutPage;

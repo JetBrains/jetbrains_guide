@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import { SubsectionTechnology } from '../../components/Subsection';
-import DefaultLayout from '../../layouts/default';
+import ReferenceLayout from '../../layouts/ReferenceLayout';
 
 import { ITechnologyEdges } from './models';
 
@@ -22,24 +22,28 @@ const Technologies: React.FunctionComponent<ITechnologiesProps> = ({
 }) => {
   const items = technologyEdges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Technologies" subtitle="Resources organized by programming technologies">
-      <nav className="bd-links bio-resourcecards">
-        {items &&
-          items.map(item => {
-            const frontmatter = item.frontmatter;
-            const logo = frontmatter.logo.publicURL ? frontmatter.logo.publicURL : DEFAULT_LOGO;
-            return (
-              <SubsectionTechnology
-                key={item.fields.slug}
-                title={item.frontmatter.title}
-                subtitle={item.frontmatter.subtitle}
-                href={item.fields.slug}
-                logo={logo}
-              />
-            );
-          })}
-      </nav>
-    </DefaultLayout>
+    <ReferenceLayout title={'Technologies'} subtitle={'Resources organized by programming technologies'}>
+      {{
+        listing: (
+          <nav className="bd-links bio-resourcecards">
+            {items &&
+              items.map(item => {
+                const frontmatter = item.frontmatter;
+                const logo = frontmatter.logo.publicURL ? frontmatter.logo.publicURL : DEFAULT_LOGO;
+                return (
+                  <SubsectionTechnology
+                    key={item.fields.slug}
+                    title={item.frontmatter.title}
+                    subtitle={item.frontmatter.subtitle}
+                    href={item.fields.slug}
+                    logo={logo}
+                  />
+                );
+              })}
+          </nav>
+        )
+      }}
+    </ReferenceLayout>
   );
 };
 

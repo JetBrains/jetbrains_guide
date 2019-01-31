@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import { SubsectionTopic } from '../../components/Subsection';
-import DefaultLayout from '../../layouts/default';
+import ReferenceLayout from '../../layouts/ReferenceLayout';
 
 import { ITopicEdges } from './models';
 
@@ -20,23 +20,27 @@ const Topics: React.FunctionComponent<ITTopicsProps> = ({
 }) => {
   const items = topicEdges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Topics" subtitle="Resources organized by programming topics">
-      <nav className="bd-links bio-resourcecards">
-        {items &&
-          items.map(item => {
-            return (
-              <SubsectionTopic
-                key={item.fields.slug}
-                title={item.frontmatter.title}
-                subtitle={item.frontmatter.subtitle}
-                href={item.fields.slug}
-                accent={item.frontmatter.accent}
-                icon={item.frontmatter.icon}
-              />
-            );
-          })}
-      </nav>
-    </DefaultLayout>
+    <ReferenceLayout title={'Topics'} subtitle={'Resources organized by programming topics'}>
+      {{
+        listing: (
+          <nav className="bd-links bio-resourcecards">
+            {items &&
+              items.map(item => {
+                return (
+                  <SubsectionTopic
+                    key={item.fields.slug}
+                    title={item.frontmatter.title}
+                    subtitle={item.frontmatter.subtitle}
+                    href={item.fields.slug}
+                    accent={item.frontmatter.accent}
+                    icon={item.frontmatter.icon}
+                  />
+                );
+              })}
+          </nav>
+        )
+      }}
+    </ReferenceLayout>
   );
 };
 

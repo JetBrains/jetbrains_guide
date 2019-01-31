@@ -1,11 +1,11 @@
+import { graphql, Link } from 'gatsby';
 import * as React from 'react';
-import DefaultLayout from '../layouts/default';
+import { ITipsProps } from '../../tmp/tips/Tips';
+import VideoPlayer from '../components/VideoPlayer';
+import HomepageLayout from '../layouts/HomepageLayout';
+import { IVideoPlayer } from '../types/base_models';
 // @ts-ignore
 import splash from './pycharm_splash.svg';
-import { ITipsProps } from '../../tmp/tips/Tips';
-import { graphql, Link } from 'gatsby';
-import VideoPlayer from '../components/VideoPlayer';
-import { IVideoPlayer } from '../types/base_models';
 
 const dataUri = `url("${splash}") center center`;
 
@@ -57,48 +57,54 @@ const TipItem: React.FunctionComponent<ITipItemProps> = ({ title, subtitle, href
   );
 };
 
-const IndexPage: React.FunctionComponent<ITipsProps> = ({ data }) => {
-  const items = data.tips.edges.map((edge: any) => edge.node);
+const IndexPage: React.FunctionComponent<ITipsProps> = ({ data: { tips } }) => {
+  const items = tips.edges.map((edge: any) => edge.node);
 
   return (
-    <DefaultLayout title="Home Page">
-      <section className="hero is-medium" style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
-        <div className="hero-body">
-          <div className="container">
-            <h1 className="title">PyCharm Guide</h1>
-            <h2 className="subtitle">Well-organized collection of learning resources for PyCharm</h2>
-          </div>
-        </div>
-      </section>
-      <section className="section has-background-light">
-        <div className="container">
-          <h1 className="title">Recent Tips</h1>
-          <div className="columns">
-            <div className="column is-four-fifths-desktop bio-resourcecards">
-              {items &&
-                items.map((item: any) => {
-                  const frontmatter = item.frontmatter;
-                  const href = item.fields.slug;
-                  return (
-                    <TipItem
-                      key={href}
-                      title={frontmatter.title}
-                      subtitle={frontmatter.subtitle}
-                      href={href}
-                      shortVideo={frontmatter.shortVideo}
-                    />
-                  );
-                })}
+    <HomepageLayout title="Home Page">
+      {{
+        hero: (
+          <section className="hero is-medium" style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
+            <div className="hero-body">
+              <div className="container">
+                <h1 className="title">PyCharm Guide</h1>
+                <h2 className="subtitle">Well-organized collection of learning resources for PyCharm</h2>
+              </div>
             </div>
-          </div>
-          <div style={{ marginTop: '1rem', display: 'flex' }}>
-            <Link className="button is-success" to={`/tips/`}>
-              All Tips
-            </Link>
-          </div>
-        </div>
-      </section>
-    </DefaultLayout>
+          </section>
+        ),
+        main: (
+          <section className="section has-background-light">
+            <div className="container">
+              <h1 className="title">Recent Tips</h1>
+              <div className="columns">
+                <div className="column is-four-fifths-desktop bio-resourcecards">
+                  {items &&
+                    items.map((item: any) => {
+                      const frontmatter = item.frontmatter;
+                      const href = item.fields.slug;
+                      return (
+                        <TipItem
+                          key={href}
+                          title={frontmatter.title}
+                          subtitle={frontmatter.subtitle}
+                          href={href}
+                          shortVideo={frontmatter.shortVideo}
+                        />
+                      );
+                    })}
+                </div>
+              </div>
+              <div style={{ marginTop: '1rem', display: 'flex' }}>
+                <Link className="button is-success" to={`/tips/`}>
+                  All Tips
+                </Link>
+              </div>
+            </div>
+          </section>
+        )
+      }}
+    </HomepageLayout>
   );
 };
 

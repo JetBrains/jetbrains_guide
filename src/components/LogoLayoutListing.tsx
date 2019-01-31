@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoLayout from '../layouts/logo';
+import ReferenceLayout from '../layouts/ReferenceLayout';
 import ResourceCard from './ResourceCard';
 
 export interface ILogoLayoutListingProps {
@@ -9,21 +9,23 @@ export interface ILogoLayoutListingProps {
 
 const LogoLayoutListing: React.FunctionComponent<ILogoLayoutListingProps> = ({ resource, resources }) => {
   return (
-    <LogoLayout title={resource.title} subtitle={resource.subtitle} logo={resource.logo.publicURL}>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop">
-          <div className="bd-content content" dangerouslySetInnerHTML={{ __html: resource.html }} />
-        </div>
-      </div>
-      <div className="columns">
-        <div className="column is-three-quarters-desktop bio-resourcecards">
-          {resources &&
-            resources.map(r => {
-              return <ResourceCard key={r.slug} {...r} />;
-            })}
-        </div>
-      </div>
-    </LogoLayout>
+    <ReferenceLayout title={resource.title} subtitle={resource.subtitle} bodyHtml={resource.html}>
+      {{
+        figure: (
+          <div className="image is-rounded is-96x96">
+            <img className="bio-resourcecard-logo" src={resource.logo.publicURL} alt="Logo" />
+          </div>
+        ),
+        listing: (
+          <div>
+            {resources &&
+              resources.map(r => {
+                return <ResourceCard key={r.slug} {...r} />;
+              })}
+          </div>
+        )
+      }}
+    </ReferenceLayout>
   );
 };
 
