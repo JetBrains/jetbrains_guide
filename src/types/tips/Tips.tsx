@@ -32,7 +32,6 @@ export const query = graphql`
     resources: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }, filter: { frontmatter: { type: { eq: "tip" } } }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           html
           id
           fields {
