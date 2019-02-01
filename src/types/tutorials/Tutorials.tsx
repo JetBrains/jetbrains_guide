@@ -40,48 +40,6 @@ const Tutorials: React.FunctionComponent<ITutorialsProps> = ({ resources }) => {
 
 export default ListingWrapper(Tutorials);
 
-// const Tutorials: React.SFC<ITutorialProps> = ({ data }) => {
-//   const items = data.tutorials.edges.map(edge => edge.node);
-//   return (
-//     <DefaultLayout title="Tutorials" subtitle="Resources organized by programming technologies">
-//       <div className="columns">
-//         <div className="column is-three-quarters-desktop bio-resourcecards">
-//           {items &&
-//             items.map(item => {
-//               const frontmatter = item.frontmatter;
-//               const fields = item.fields;
-//               const href = item.fields.slug;
-//
-//               // Use the first technology's icon as the logo
-//               const thumbnail = frontmatter.thumbnail;
-//
-//               const thisAuthor = item.fields.author;
-//               const author = {
-//                 title: thisAuthor.frontmatter.title,
-//                 headshot: thisAuthor.frontmatter.headshot,
-//                 href: thisAuthor.fields.slug
-//               };
-//               return (
-//                 <ResourceCard
-//                   key={href}
-//                   title={frontmatter.title}
-//                   subtitle={frontmatter.subtitle}
-//                   technologies={fields.technologies}
-//                   topics={fields.topics}
-//                   href={href}
-//                   thumbnail={thumbnail}
-//                   author={author}
-//                   date={frontmatter.date}
-//                 />
-//               );
-//             })}
-//         </div>
-//       </div>
-//     </DefaultLayout>
-//   );
-// };
-
-// export default Tutorials;
 
 export const query = graphql`
   query {
