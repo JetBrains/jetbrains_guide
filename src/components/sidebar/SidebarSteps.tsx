@@ -3,7 +3,7 @@ import SidebarStep from './SidebarStep';
 
 export interface IStep {
   label: string;
-  target: string;
+  slug: string;
 }
 
 export interface ISidebarStepsProps {
@@ -20,11 +20,11 @@ const SidebarSteps: React.FunctionComponent<ISidebarStepsProps> = ({ currentSlug
           <ul className="steps has-content-centered is-vertical is-small">
             {steps.map((step, index) => (
               <SidebarStep
-                key={step.target}
+                key={step.slug}
                 label={step.label}
-                target={step.target}
+                target={step.slug}
                 marker={index + 1}
-                isActive={step.target === currentSlug}
+                isActive={step.slug === currentSlug}
               />
             ))}
           </ul>

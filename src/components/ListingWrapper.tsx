@@ -28,6 +28,7 @@ export interface IListingCategoryItem {
   slug: string;
   title?: string;
   headshot?: any;
+  steps?: string[];
 }
 
 const ListingWrapper = (Component: any) => ({ data: { resource, authors, resources, technologies, topics } }: IListingWrapperProps) => {

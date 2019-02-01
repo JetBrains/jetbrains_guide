@@ -97,6 +97,9 @@ module.exports = {
             listing: `src/types/tutorials/Tutorials.tsx`,
             item: `src/types/tutorials/Tutorial.tsx`
           },
+          tutorialstep: {
+            item: `src/types/tutorials/TutorialStep.tsx`
+          },
         }
       }
     }
