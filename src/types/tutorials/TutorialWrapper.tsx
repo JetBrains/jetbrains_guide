@@ -6,13 +6,14 @@ resource objects. Mainly to get author information.
 
  */
 
+import { join } from 'path';
 import React from 'react';
 import { IListingCategoryItem } from '../../components/ListingWrapper';
 import { IResourceCardProps } from '../../components/ResourceCard';
 import { IAuthorEdge, IAuthorEdges } from '../authors/models';
 import { ITechnologyEdges } from '../technologies/models';
 import { ITopicEdges } from '../topics/models';
-import { ITutorialNode, ITutorialStepEdges } from './models';
+import { ITutorialNode, ITutorialStepEdges, ITutorialStepNode } from './models';
 
 export interface ITutorialWrapperProps {
   data: {
@@ -24,7 +25,9 @@ export interface ITutorialWrapperProps {
   };
 }
 
-const TutorialWrapper = (Component: any) => ({ data: { resource, tutorialsteps, authors, technologies, topics } }: ITutorialWrapperProps) => {
+const TutorialWrapper = (Component: any) => ({
+  data: { resource, tutorialsteps, authors, technologies, topics }
+}: ITutorialWrapperProps) => {
   const resourceNode = {
     ...resource.frontmatter,
     excerpt: resource.excerpt,
@@ -43,18 +46,17 @@ const TutorialWrapper = (Component: any) => ({ data: { resource, tutorialsteps, 
   const references: { [s: string]: { [s: string]: IListingCategoryItem } } = {
     authors: {},
     technologies: {},
-    topics: {}
+    topics: {},
+    tutorialsteps: {}
   };
 
-  if (authors) {
-    authors.edges.map(edge => {
-      references.authors[edge.node.frontmatter.label] = {
-        title: edge.node.frontmatter.title,
-        slug: edge.node.fields.slug,
-        headshot: edge.node.frontmatter.headshot
-      };
-    });
-  }
+  authors.edges.map(edge => {
+    references.authors[edge.node.frontmatter.label] = {
+      title: edge.node.frontmatter.title,
+      slug: edge.node.fields.slug,
+      headshot: edge.node.frontmatter.headshot
+    };
+  });
   technologies.edges.map(edge => {
     references.technologies[edge.node.frontmatter.label] = {
       label: edge.node.frontmatter.label,
@@ -68,24 +70,28 @@ const TutorialWrapper = (Component: any) => ({ data: { resource, tutorialsteps, 
     };
   });
 
+  const flattenedTutorialSteps: { [s: string]: ITutorialStepNode } = {};
+  tutorialsteps.edges.map(edge => {
+    flattenedTutorialSteps[edge.node.fields.slug] = edge.node;
+  });
+
   // Flatten the tutorialsteps
   // const stepSlugs = resource.frontmatter.steps;
   // const tutorialSteps = stepSlugs;
 
-  const flattenedResources: IResourceCardProps[] = tutorialsteps.edges
-    .filter(({ node }) => node.frontmatter.type === 'tutorialstep')
-    .map(({ node }) => {
-      const theseAuthors = references.authors ? references.authors[node.frontmatter.author] : undefined;
-      return {
-        title: node.frontmatter.title,
-        subtitle: node.frontmatter.subtitle,
-        slug: node.fields.slug,
-        thumbnail: node.frontmatter.thumbnail,
-        author: theseAuthors,
-        technologies: node.frontmatter.technologies.map(t => references.technologies[t]),
-        topics: node.frontmatter.topics.map(t => references.topics[t])
-      };
-    });
+  const flattenedResources: IResourceCardProps[] = resourceNode.steps.map(step => {
+    const fullStepSlug = join(resource.fields.slug, step, '/');
+    const node = flattenedTutorialSteps[fullStepSlug];
+    return {
+      title: node.frontmatter.title,
+      subtitle: node.frontmatter.subtitle,
+      slug: node.fields.slug,
+      thumbnail: node.frontmatter.thumbnail,
+      author: references.authors[node.frontmatter.author],
+      technologies: node.frontmatter.technologies.map(t => references.technologies[t]),
+      topics: node.frontmatter.topics.map(t => references.topics[t])
+    };
+  });
 
   return <Component resource={resourceNode} author={author} tutorialSteps={flattenedResources} />;
 };

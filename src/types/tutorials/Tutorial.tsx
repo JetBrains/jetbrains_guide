@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
+import StepsListing from './StepsListing';
 import TutorialWrapper from './TutorialWrapper';
 
 import SidebarLayout from '../../layouts/SidebarLayout';
@@ -38,6 +39,7 @@ const Tutorial: React.FunctionComponent<ITutorialProps> = ({ resource: tutorial,
                 <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
               </div>
             ) : null}
+            <StepsListing steps={tutorialSteps} />
           </>
         )
       }}
@@ -127,7 +129,10 @@ export const query = graphql`
           }
           frontmatter {
             title
-            label
+            subtitle
+            author
+            technologies
+            topics
             thumbnail {
               publicURL
               childImageSharp {

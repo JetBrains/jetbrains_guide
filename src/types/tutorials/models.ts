@@ -10,6 +10,7 @@ export interface ITutorialFrontmatter extends IBaseResourceFrontmatter {
 }
 
 export interface ITutorialStepFields extends IBaseResourceFields {
+  slug: string;
   tutorial: ITutorialNode;
 }
 
