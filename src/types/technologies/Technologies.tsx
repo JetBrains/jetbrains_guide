@@ -59,7 +59,6 @@ export const query = graphql`
       edges {
         node {
           html
-          id
           fields {
             slug
           }

@@ -1,10 +1,8 @@
-import * as React from 'react';
-
 import { graphql } from 'gatsby';
-
-import { IAuthorEdges } from './models';
-import DefaultLayout from '../../layouts/default';
+import * as React from 'react';
 import { SubsectionAuthor } from '../../components/Subsection';
+import ReferenceLayout from '../../layouts/ReferenceLayout';
+import { IAuthorEdges } from './models';
 
 interface IAuthorsProps {
   data: {
@@ -21,23 +19,26 @@ const Authors: React.FunctionComponent<IAuthorsProps> = ({
 }) => {
   const items = authorEdges.map(edge => edge.node);
   return (
-    <DefaultLayout title="Authors" subtitle="Resources organized by author">
-      <nav className="bd-links bio-resourcecards">
-        {items &&
-          items.map(item => {
-            const href = item.fields.slug;
-            return (
-              <SubsectionAuthor
-                key={href}
-                title={item.frontmatter.title}
-                subtitle={item.frontmatter.subtitle}
-                href={href}
-                headshot={item.frontmatter.headshot}
-              />
-            );
-          })}
-      </nav>
-    </DefaultLayout>
+    <ReferenceLayout title="Authors" subtitle="Resources organized by author">
+      {{
+        listing: (
+          <nav className="bd-links bio-resourcecards">
+            {items &&
+              items.map(item => {
+                return (
+                  <SubsectionAuthor
+                    key={item.fields.slug}
+                    title={item.frontmatter.title}
+                    subtitle={item.frontmatter.subtitle}
+                    href={item.fields.slug}
+                    headshot={item.frontmatter.headshot}
+                  />
+                );
+              })}
+          </nav>
+        )
+      }}
+    </ReferenceLayout>
   );
 };
 
@@ -52,9 +53,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           html
-          id
           fields {
             slug
           }
