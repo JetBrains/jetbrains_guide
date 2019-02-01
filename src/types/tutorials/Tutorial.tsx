@@ -15,8 +15,6 @@ interface ITutorialProps {
 }
 
 const Tutorial: React.FunctionComponent<ITutorialProps> = ({ resource: tutorial, author, tutorialSteps }) => {
-  console.log(94922, 'tutorialsteps', tutorialSteps);
-
   const sidebar = (
     <Sidebar>
       {author && <SidebarPublished date={tutorial.date} author={author} />}
