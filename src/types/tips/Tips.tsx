@@ -25,7 +25,9 @@ const Tips: React.FunctionComponent<ITipsProps> = ({ resources }) => {
   );
 };
 
-export default ListingWrapper(Tips);
+const comparator = () => true;
+
+export default ListingWrapper(Tips, comparator);
 
 export const query = graphql`
   query {
