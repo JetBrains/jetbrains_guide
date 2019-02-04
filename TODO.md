@@ -2,17 +2,34 @@
 
 ## Now
 
-- Allow tutorials with .tsx etc.
-
 ## Next
+
+- Change the author filename and label from `pauleveritt` to `pwe`
+
+- Content improvements
+
+    - Re-do videos as 1080p 60fps
+    
+    - Change from callout to ghosting
+    
+    - Have the long video match the "In Depth"
+    
+    - Change the `leadin` YAML to not have another heading
+    
+    - Short tip titles and tweet-worthy subtitles
+    
+    - Switch thumbnails to different aspect ratio
+
+- Get rid of the `excerpt`, `id` and other unused fields in 
+  GraphQL queries
 
 ## Soon
 
-- Switch thumbnails to different aspect ratio
+- Land the Twitter Player Card
+
+- Switch "On This Page" to use GraphQL table of contents
 
 - The pytest logo isn't square on the technology page
-
-- Get the fontawesome icon displayed when looking at at a single topic
 
 - Pagination
 
@@ -35,6 +52,8 @@ in Sprout and not have to upload the video meaning Twitter Cards
 
 ## Later
 
+- Handle YAML in frontmatter better e.g. use plugin
+
 - Scroll the sidebar with the scrolling
 
 - SEO with JSON-LD
@@ -50,6 +69,8 @@ in Sprout and not have to upload the video meaning Twitter Cards
 - Consider different fonts
 
 ## Someday
+
+- Allow tutorials with .tsx etc. instead of the parallel structure of `content`
 
 - Some concept of draft
 
@@ -204,4 +225,6 @@ sourceNodes event
         - Video player
         
 - Technologies: Website URL in schema and page
+
+- Get the fontawesome icon displayed when looking at at a single topic
 
