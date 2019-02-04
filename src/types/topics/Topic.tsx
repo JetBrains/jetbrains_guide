@@ -2,7 +2,12 @@ import { graphql } from 'gatsby';
 import IconLayoutListing from '../../components/IconLayoutListing';
 import ListingWrapper from '../../components/ListingWrapper';
 
-export default ListingWrapper(IconLayoutListing);
+const comparator = (resourceNode: any, target: any) => {
+  const labels: string[] = target.topics.map((t: any) => t.label);
+  return labels.includes(resourceNode.label);
+};
+
+export default ListingWrapper(IconLayoutListing, comparator);
 
 export const query = graphql`
   query($path: String!) {
