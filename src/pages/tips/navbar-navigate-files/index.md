@@ -14,10 +14,10 @@ seealso:
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  url: 'https://www.youtube.com/watch?v=vQTYCuBd9u4'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  url: 'https://www.youtube.com/watch?v=1iI8r6fg62I'
 leadin: |
     Move up, down, and around in the Navigation Bar, from the cozy confines of the 
     mouse. Get to the file or directory you want, then do what you need...open a 
@@ -42,3 +42,17 @@ For looking at the directory the currently-edited file is in, this is even
 easier. Activating the Navigation Bar makes the current file selected. You 
 don't have to press `Left` to select the parent directory. Just press 
 `Down`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

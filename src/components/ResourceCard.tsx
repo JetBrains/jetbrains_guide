@@ -21,12 +21,12 @@ const ResourceCard: React.FunctionComponent<IResourceCardProps> = props => {
       <article className="media">
         <div className="media-left">
           {props.logo_href && (
-            <figure className="image is-64x64 }">
+            <figure className="image is-64x64">
               <img src={props.logo_href} alt="Logo" />
             </figure>
           )}
           {props.thumbnail && (
-            <figure className="image is-96x96 }">
+            <figure className="image is-96x96">
               <Img fluid={props.thumbnail.childImageSharp.fluid} />
             </figure>
           )}
