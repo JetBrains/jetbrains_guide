@@ -11,7 +11,6 @@ import { IAuthorEdges } from '../types/authors/models';
 import { IBaseCategoryNode, IBaseResourceEdge, IBaseResourceEdges, IBaseResourceNode } from '../types/base_models';
 import { ITechnologyEdges } from '../types/technologies/models';
 import { ITopicEdges } from '../types/topics/models';
-import { IResourceCardProps } from './ResourceCard';
 
 export interface IListingWrapperProps {
   data: {
@@ -31,7 +30,9 @@ export interface IListingCategoryItem {
   steps?: string[];
 }
 
-const ListingWrapper = (Component: any) => ({ data: { resource, authors, resources, technologies, topics } }: IListingWrapperProps) => {
+const ListingWrapper = (Component: any, comparator: any) => ({
+  data: { resource, authors, resources, technologies, topics }
+}: IListingWrapperProps) => {
   const resourceNode = resource
     ? {
         ...resource.frontmatter,
@@ -51,6 +52,7 @@ const ListingWrapper = (Component: any) => ({ data: { resource, authors, resourc
       references.authors[edge.node.frontmatter.label] = {
         title: edge.node.frontmatter.title,
         slug: edge.node.fields.slug,
+        label: edge.node.frontmatter.label,
         headshot: edge.node.frontmatter.headshot
       };
     });
@@ -68,19 +70,21 @@ const ListingWrapper = (Component: any) => ({ data: { resource, authors, resourc
     };
   });
 
-  const flattenedResources: IResourceCardProps[] = resources.edges.map(({ node }: IBaseResourceEdge) => {
-    const theseAuthors = references.authors ? references.authors[node.frontmatter.author] : undefined;
-    return {
-      title: node.frontmatter.title,
-      subtitle: node.frontmatter.subtitle,
-      date: node.frontmatter.date,
-      slug: node.fields.slug,
-      thumbnail: node.frontmatter.thumbnail,
-      author: theseAuthors,
-      technologies: node.frontmatter.technologies.map(t => references.technologies[t]),
-      topics: node.frontmatter.topics.map(t => references.topics[t])
-    };
-  });
+  const flattenedResources: any[] = resources.edges
+    .map(({ node }: IBaseResourceEdge) => {
+      const thisAuthor = references.authors ? references.authors[node.frontmatter.author] : undefined;
+      return {
+        title: node.frontmatter.title,
+        subtitle: node.frontmatter.subtitle,
+        date: node.frontmatter.date,
+        slug: node.fields.slug,
+        thumbnail: node.frontmatter.thumbnail,
+        author: thisAuthor,
+        technologies: node.frontmatter.technologies.map(t => references.technologies[t]),
+        topics: node.frontmatter.topics.map(t => references.topics[t])
+      };
+    })
+    .filter(target => comparator(resourceNode, target));
   return <Component resource={resourceNode} resources={flattenedResources} />;
 };
 

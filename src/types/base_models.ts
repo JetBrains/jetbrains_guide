@@ -53,6 +53,10 @@ export interface IBaseCategoryNode extends IBaseNode {
   fields: ICategoryFields;
 }
 
+export interface IBaseCategoryEdge {
+  node: IBaseCategoryNode;
+}
+
 export interface IBaseResourceEdge {
   node: IBaseResourceNode;
 }

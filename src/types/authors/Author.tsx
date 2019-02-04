@@ -2,7 +2,11 @@ import { graphql } from 'gatsby';
 import ImageLayoutListing from '../../components/ImageLayoutListing';
 import ListingWrapper from '../../components/ListingWrapper';
 
-export default ListingWrapper(ImageLayoutListing);
+const comparator = (resourceNode: any, target: any) => {
+  return resourceNode.label === target.author.label;
+};
+
+export default ListingWrapper(ImageLayoutListing, comparator);
 
 export const query = graphql`
   query($path: String!) {
@@ -53,6 +57,28 @@ export const query = graphql`
             technologies
             topics
             thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            label
+            headshot {
               publicURL
               childImageSharp {
                 fluid(maxWidth: 1000) {
