@@ -73,6 +73,7 @@ const ListingWrapper = (Component: any) => ({ data: { resource, authors, resourc
     return {
       title: node.frontmatter.title,
       subtitle: node.frontmatter.subtitle,
+      date: node.frontmatter.date,
       slug: node.fields.slug,
       thumbnail: node.frontmatter.thumbnail,
       author: theseAuthors,
