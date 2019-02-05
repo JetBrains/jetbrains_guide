@@ -16,10 +16,10 @@ seealso:
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
 leadin: |
     Want to create a file somewhere in your project tree, without the mouse? 
     Use the Navigation Bar to get to a directory then use the keyboard 

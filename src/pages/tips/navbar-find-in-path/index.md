@@ -16,10 +16,10 @@ seealso:
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  url: 'https://www.youtube.com/watch?v=X3_dfC_P3tM'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  url: 'https://www.youtube.com/watch?v=one9a9CAeCg'
 leadin: |
     Closed the Project Tool and need to find a file somewhere in the project 
     tree? Activate the Navigation Bar, navigate to the target, and use Find 

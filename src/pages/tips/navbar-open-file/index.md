@@ -14,10 +14,10 @@ seealso:
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  url: 'https://www.youtube.com/watch?v=G1K1hIW4msM'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  url: 'https://www.youtube.com/watch?v=46KIWSORWAE'
 leadin: |
     When you need to browse to a directory to find and open file, the 
     Navigation Bar is your best bet. Keyboard-first, use the cursor 

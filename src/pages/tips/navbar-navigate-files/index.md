@@ -42,17 +42,3 @@ For looking at the directory the currently-edited file is in, this is even
 easier. Activating the Navigation Bar makes the current file selected. You 
 don't have to press `Left` to select the parent directory. Just press 
 `Down`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -16,10 +16,10 @@ seealso:
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  url: 'https://www.youtube.com/watch?v=PRPGmkGrMGI'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  url: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
 leadin: |
     Want to really move fast through listings? Speed search is the all-purpose 
     facility for narrowing to what you're looking for. Parts of strings, 
