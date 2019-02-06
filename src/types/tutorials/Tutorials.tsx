@@ -38,8 +38,9 @@ const Tutorials: React.FunctionComponent<ITutorialsProps> = ({ resources }) => {
   );
 };
 
-export default ListingWrapper(Tutorials);
+const comparator = () => true;
 
+export default ListingWrapper(Tutorials, comparator);
 
 export const query = graphql`
   query {
