@@ -1,11 +1,11 @@
 ---
 type: 'tip'
-date: 2019-01-22
+date: 2019-01-20
 title: 'Activate Navigation Bar'
 technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
-subtitle: 'Bring up the Navigation Bar as needed, let it disappear when finished'
+subtitle: 'Bring up the Navigation Bar as needed, let it disappear when finished.'
 seealso:
   - title: 'Navigation bar'
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
@@ -19,6 +19,8 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=uD1s8eF6lvU'
 leadin: |
+  *The no-distraction way to work with your files.*
+  
   Minimal UI means no project tool window or Navigation Bar.  But 
   how do you then move around files?
   
@@ -26,6 +28,8 @@ leadin: |
   what you need, then the popup disappears.
 
 ---
+
+First in a six-part series on the Navigation Bar. *Next:* [Navigate Files With Navigation Bar](../navbar-navigate-files)
 
 Getting into the flow means stripping down your UI distraction (turn off the 
 `Project` window and `Navigation Bar`) then going *keyboard-centric* to avoid 

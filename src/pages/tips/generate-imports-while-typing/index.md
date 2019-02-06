@@ -5,7 +5,7 @@ title: 'Generate Imports While Typing'
 technologies: []
 topics: ['python']
 author: 'pauleveritt'
-subtitle: 'Avoid interruption by letting PyCharm generate your imports as you type'
+subtitle: 'Avoid interruption by letting PyCharm generate your imports as you type.'
 seealso:
   - title: 'Creating and Optimizing Imports'
     href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
@@ -19,10 +19,12 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=N4gm5mEZ1R8'
 leadin: |
-  ### Type what you want, let PyCharm do the rest
+  *Tired of stopping your coding to go write an import?*
+
+  Type what you want, let PyCharm do the rest.
 
   You could scroll up, type your import, find where you were, and resume. 
-  Or, you could just type your symbol and let Python make the import. No 
+  Instead, just type your symbol and let Python make the import. No 
   distractions.
 ---
 

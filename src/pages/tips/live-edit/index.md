@@ -5,7 +5,7 @@ title: 'LiveEdit HTML and CSS'
 technologies: []
 topics: ['editing']
 author: 'pauleveritt'
-subtitle: 'With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save'
+subtitle: 'With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save.'
 thumbnail: './thumbnail.png'
 shortVideo:
   poster: './poster_short.png'
@@ -14,9 +14,9 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=EYwXD6vAACg'
 leadin: |
-  ### What you see is what you type
+  *Tired of starting a server a reloading your browser to see file changes?*
 
-  *Install the LiveEdit plugin and easily view HTML and CSS, including changes*
+  Install the LiveEdit plugin and easily view HTML and CSS, including changes.
 
   The LiveEdit plugin for PyCharm Professional (not bundled) is easy 
   to install and gives a great editing experience for HTML and CSS.

@@ -15,6 +15,8 @@
     - "Now" section of bullets to demo what's being taught
         
 * Frontmatter "leadin" shouldn't have headings
+
+    - But make the first line italics, posing a question
    
 * UI elements with camel case...Navigation Bar (not navigation bar)
     

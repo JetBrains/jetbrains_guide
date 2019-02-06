@@ -3,9 +3,9 @@ type: 'tip'
 date: 2018-11-04
 title: 'Jump to Recent File'
 technologies: []
-topics: ['navigation']
+topics: ['navigation', 'speedsearch']
 author: 'pauleveritt'
-subtitle: 'Use Recent Files to quickly jump to last-visited file'
+subtitle: 'Use Recent Files to quickly jump to last-visited file.'
 seealso:
   - title: 'Navigating to Recent File'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html'
@@ -19,9 +19,9 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=bepgM6KMQpw'
 leadin: |
-  ### The First, Best Navigation Choice
+  *Want the easiest way to jump between files?*
 
-  *Mouseless == navigating files by keyboard.*
+  Mouseless == navigating files by keyboard.
 
   Switching between files...we all do this, all the time. 
   Use the ``Recent Files`` action to quickly jump between 

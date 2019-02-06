@@ -5,7 +5,7 @@ title: 'Optimize Imports'
 technologies: []
 topics: ['python']
 author: 'pauleveritt'
-subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports'
+subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports.'
 seealso:
   - title: 'Optimizing Imports'
     href: 'https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html'
@@ -19,9 +19,7 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=69lj4lxL8Wk'
 leadin: |
-  ### Hand import management to PyCharm
-
-  *Unsorted imports. Unused imports. No problem -- Optimize Imports*
+  *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
 
   PyCharm's ``Optimize Imports`` action is every Python developer's 
   second-best friend. Along with ``Reformat Code``, keeping your 

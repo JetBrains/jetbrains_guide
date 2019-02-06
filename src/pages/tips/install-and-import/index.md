@@ -5,7 +5,7 @@ title: 'Install and import'
 technologies: []
 topics: ['python']
 author: 'pauleveritt'
-subtitle: 'While typing a symbol, let PyCharm install it and generate the import'
+subtitle: 'While typing a symbol, let PyCharm install it and generate the import.'
 seealso:
   - title: 'Creating and Optimizing Imports'
     href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
@@ -17,10 +17,10 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=Vq7IBjmqanI'
 leadin: |
-  ### Hey PyCharm, get this package for me
+  *Type the symbol, let your IDE install the package and write the import.*
 
-  PyCharm can generate your import for you, even when you haven't installed the 
-  package.
+  IDEs are great at janitorial work. PyCharm can generate your import for you, even 
+  when you haven't installed the  package.
 ---
 
 You're writing code and want to import a package, and want PyCharm to generate the

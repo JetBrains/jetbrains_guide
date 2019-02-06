@@ -5,7 +5,7 @@ title: 'Run Single Test'
 technologies: ['pytest']
 topics: ['testing']
 author: 'pauleveritt'
-subtitle: 'Speed up testing by focusing on one test'
+subtitle: 'Speed up testing by focusing on one test.'
 seealso:
   - title: 'Performing Tests'
     href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
@@ -19,8 +19,8 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=DXtL_GDiqzs'
 leadin: |
-  ### Focused testing, visually
-
+  *Get into TDD flow by focusing on one test.*
+  
   Want to focus your testing on just one test? PyCharm has 
   many ways to tell the test runner and UI: "Just this."
 ---

@@ -1,11 +1,11 @@
 ---
 type: 'tip'
-date: 2019-01-22
+date: 2019-01-23
 title: 'Narrow Navigation Bar With Speed Search'
 technologies: []
 topics: ['navigation', 'navigationbar', 'speedsearch']
 author: 'pauleveritt'
-subtitle: 'Narrow and select from a long folder listing Navigation Bar by typing a speed search'
+subtitle: 'Narrow and select from a long folder listing Navigation Bar by typing a speed search.'
 seealso:
   - title: 'Speed Search in Tool Windows'
     href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
@@ -21,11 +21,15 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
 leadin: |
+    *Want to quickly select a file in a directory, without the mouse?*
+
     Want to really move fast through listings? Speed search is the all-purpose 
     facility for narrowing to what you're looking for. Parts of strings, 
     punctuation, file extensions...whatever it takes to filter down the list.
 
 ---
+
+Fourth in a six-part series on the Navigation Bar. *Previous:* [Open File With Navigation Bar](../navbar-open-file) | *Next:* [Create New File With Navigation Bar](../navbar-create-file) 
 
 We've discussed getting into the flow by reducing UI clutter and being 
 keyboard-focused. We're using the Navigation Bar on-demand to get to targets 

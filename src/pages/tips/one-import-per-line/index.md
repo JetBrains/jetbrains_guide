@@ -5,7 +5,7 @@ title: 'One Import Per Line Preference'
 technologies: []
 topics: ['editing']
 author: 'pauleveritt'
-subtitle: 'Tell PyCharm to put each import on a separate line'
+subtitle: 'Tell PyCharm to put each import on a separate line when it cleans up your imports.'
 seealso:
   - title: 'Code Style Preferences for Python Imports'
     href: 'https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports'
@@ -21,13 +21,11 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=X43p3MBx9i8'
 leadin: |
-  ### Your Janitor for Python Imports
-
   *Don't waste time manually putting imports one-per-line. Let your tool do it.*
 
-  Switching between files...we all do this, all the time. 
-  Use the ``Recent Files`` action to quickly jump between 
-  the files you are working on.
+  Switching between files...we all do this, all the time. Use the ``Recent Files`` 
+  action to quickly jump between the files you are working on. Moral of the story? 
+  Let PyCharm be your janitor.
 ---
 
 Writing Python code means importing stuff. Lots of code can mean lots

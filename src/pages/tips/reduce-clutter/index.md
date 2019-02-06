@@ -1,11 +1,11 @@
 ---
 type: 'tip'
-date: 2017-07-07
+date: 2018-11-04
 title: 'Reduce Clutter by Disabling Tools'
 technologies: []
 topics: ['ide']
 author: 'pauleveritt'
-subtitle: 'Save space by turning off various toolbars and Project Tool'
+subtitle: 'Save space by turning off various toolbars and Project Tool.'
 seealso:
   - title: 'Configuring Menus and Toolbars'
     href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
@@ -17,8 +17,6 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=wDYJx-mkPpw'
 leadin: |
-  ## Take Back Space for Editing
-
   *You don't have to use all those tools. Let's turn them off.*
 
   By default, PyCharm has lots of features visible and available. 

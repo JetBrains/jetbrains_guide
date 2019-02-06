@@ -5,7 +5,7 @@ title: 'Navigate to Symbol'
 technologies: []
 topics: ['navigation']
 author: 'pauleveritt'
-subtitle: 'Navigate your project by code, not files'
+subtitle: 'Navigate your project by code, not files.'
 seealso:
   - title: 'Navigating by Name'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
@@ -21,10 +21,10 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=xIzqtXSbRpM'
 leadin: |
-  ### The smartest way to navigate
+  *The best way to move around the code in your project.*
 
-  *Want to get from A to B? Don't think of B as files. Think 
-  in terms of code.*
+  Want to get from A to B? Don't think of B as files. Think 
+  in terms of code.
 
   We are hardwired to think of moving around the "files" in our 
   project. But we have a smart IDE that makes it fast to jump to 

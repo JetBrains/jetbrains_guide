@@ -5,7 +5,7 @@ title: 'Reformat Code'
 technologies: []
 topics: ['python']
 author: 'pauleveritt'
-subtitle: 'Tell PyCharm to clean up indentation and other code style in your file'
+subtitle: 'Tell PyCharm to clean up indentation and other code style in your file.'
 seealso:
   - title: 'Reformatting Source Code'
     href: 'https://www.jetbrains.com/help/pycharm/reformatting-source-code.html'
@@ -21,8 +21,6 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=mpJH60TNLLE'
 leadin: |
-  ### Cleaning up your code, with ease
-
   *If re-indenting your code or fixing long lines doesn't 
   sound fun, let PyCharm do it for you.*
 

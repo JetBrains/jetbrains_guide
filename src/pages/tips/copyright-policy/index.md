@@ -1,12 +1,11 @@
 ---
-
 type: "tip"
 date: 2018-11-08
 title: "Managing Copyright Policy"
 technologies: []
 topics: ["ide"]
 author: "pauleveritt"
-subtitle: "Use the copyright tool to manage a copyright statement across project files"
+subtitle: "Use the copyright tool to manage a copyright statement across project files."
 thumbnail: "./thumbnail.png"
 seealso:
     - title: "Copyright in PyCharm Help"
@@ -15,7 +14,7 @@ shortVideo:
     poster: "./poster_short.png"
     url: "https://www.youtube.com/watch?v=73vXhhmBuYQ"
 leadin: | 
-  ### Let the IDE do your manual tasks...including copyright updates
+  *Let the IDE do your manual tasks...including copyright updates.*
 
   Maintaining a project with yearly changes to a copyright statement
   which appears in tons of files? Let your tool do the work for you.

@@ -1,11 +1,11 @@
 ---
 type: 'tip'
-date: 2019-01-22
+date: 2019-01-24
 title: 'Create New File With Navigation Bar'
 technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
-subtitle: 'Activate the Navigation Bar and create a new file somewhere in the project tree'
+subtitle: 'Activate the Navigation Bar and create a new file somewhere in the project tree.'
 seealso:
   - title: 'Creating Files from Templates'
     href: 'https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html'
@@ -21,11 +21,15 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
 leadin: |
+    *Want to create files without interrupting your flow?*
+
     Want to create a file somewhere in your project tree, without the mouse? 
     Use the Navigation Bar to get to a directory then use the keyboard 
     to make and open a new file at the target.
 
 ---
+
+Fifth in a six-part series on the Navigation Bar. *Previous:* [Narrow Navigation Bar With Speed Search](../navbar-speed-search) | *Next:* [Find In Path With Navigation Bar](../navbar-find-in-path) 
 
 How can I create a file if I've turned off the Project Tool? Let the 
 Navigation Bar be your one-stop replacement for the Project Tool.

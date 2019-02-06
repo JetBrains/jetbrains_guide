@@ -1,11 +1,11 @@
 ---
 type: 'tip'
 date: 2018-11-09
-title: 'Navigate Cursor Position Back and Forth '
+title: 'Navigate Cursor Position Back and Forth'
 technologies: []
 topics: ['navigation']
 author: 'pauleveritt'
-subtitle: 'Easily get back to where you were, or where you went'
+subtitle: 'Easily navigate back to where you were, or where you went.'
 seealso:
   - title: 'Navigate to Navigated Items'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html'
@@ -17,9 +17,12 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=xIzqtXSbRpM'
 leadin: |
-  ### The most natural way to follow your tracks
-
   *Diving into a codepath and want to get retrace your steps?*
+
+  Sometimes you dive into a codepath and can't find your way back.  Dive 
+  with confidence, letting the IDE remember your cursor position. Backwards 
+  *and* forwards.
+  
 ---
 
 Decades of old habits make us think of files, with their deeply-nested

@@ -1,11 +1,11 @@
 ---
 type: 'tip'
-date: 2017-07-07
+date: 2018-11-04
 title: 'Disable Tabs'
 technologies: []
 topics: ['ide']
 author: 'pauleveritt'
-subtitle: 'Save space and stay keyboard-centric by turning off the tabs'
+subtitle: 'Save space and stay keyboard-centric by turning off the tabs.'
 seealso:
   - title: 'Managing Editor Tabs'
     href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html'
@@ -19,15 +19,14 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=9HWkImburic'
 leadin: |
-  ## Go tabless
+  *Want a cleaner UI with less noise to juggle in your head?*
 
-  *There are better choices. Let's turn off tabs.*
+  There are better choices for moving between files than tabs. 
+  Let's turn them off.
 
-  Tabs are a great way to focus on the few files for a 
-  task. But they have some downsides.
-
-  Try disabling your tabs as a first step towards a 
-  more-focused, keyboard-centric workflow.
+  Tabs are a great way to focus on the few files for a task. But 
+  they have some downsides. Try disabling your tabs as a first step 
+  towards a more-focused, keyboard-centric workflow.
 ---
 
 People love tabs. It's the default way in PyCharm to jump around

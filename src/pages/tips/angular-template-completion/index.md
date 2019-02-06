@@ -5,7 +5,7 @@ title: 'Better Autocomplete Results in Angular Templates'
 technologies: ['angular']
 topics: ['editing']
 author: 'pauleveritt'
-subtitle: 'Narrow the universe of completions to those that matter'
+subtitle: 'Narrow the universe of Angular template completions to those that matter.'
 seealso:
   - title: 'PyCharm Help for Angular'
     href: 'https://www.jetbrains.com/help/pycharm/angular.html'
@@ -19,9 +19,7 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=JUmIiZpazic'
 leadin: |
-  ### Let the IDE find the value
-
-  *Lots of variables names available in Angular templates. Which one is best?*
+  *Angular template autocomplete gives tons of choices. Which one is best?*
 
   There's a difference between mediocre autocomplete and "you read my mind." 
   PyCharm Professional's inclusion of WebStorm inherits its ongoing efforts 

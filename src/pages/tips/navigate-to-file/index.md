@@ -5,7 +5,7 @@ title: 'Navigate to File'
 technologies: []
 topics: ['navigation']
 author: 'pauleveritt'
-subtitle: 'Jump to a file without using a tree'
+subtitle: 'Jump to a file without using the Project Tool and your mouse.'
 seealso:
   - title: 'Navigating by File'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
@@ -19,8 +19,6 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
 leadin: |
-  ### Jump to files the smart way
-
   *Opening files doesn't have to mean the Project Tool or mouse.*
 
   If you know the name -- or parts of the name -- of the file, 
