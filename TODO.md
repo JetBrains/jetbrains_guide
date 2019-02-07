@@ -228,3 +228,4 @@ sourceNodes event
 
 - Get the fontawesome icon displayed when looking at at a single topic
 
+- Add a temporary "Series" capability to tips
