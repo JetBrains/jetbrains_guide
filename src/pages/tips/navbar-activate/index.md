@@ -20,10 +20,10 @@ series:
       slug: '/tips/navbar-navigate-files/'
     - label: 'Open File With Navigation Bar'
       slug: '/tips/navbar-open-file/'
-    - label: 'Narrow Navigation Bar With Speed Search'
-      slug: '/tips/navbar-speed-search/'
     - label: 'Create New File With Navigation Bar'
       slug: '/tips/navbar-create-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
     - label: 'Find in Path With Navigation Bar'
       slug: '/tips/navbar-find-in-path/'
 seealso:

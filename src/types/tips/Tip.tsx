@@ -89,7 +89,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
             <div className="dropdown-trigger" style={{ width: '20rem' }}>
               <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
                 <span>
-                  Series {series.position} of {series.total}
+                  Tip {series.position} of {series.total}
                 </span>
                 <span className="icon is-small">
                   <i className="fas fa-angle-down" aria-hidden="true" />
@@ -125,7 +125,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
     </div>
   ) : null;
 
-  const bottomNav = <BottomNav previous={series.previous} next={series.next} />;
+  const bottomNav = series ? <BottomNav previous={series.previous} next={series.next} /> : null;
 
   return (
     <SidebarLayout title={tip.title} subtitle={tip.subtitle}>
