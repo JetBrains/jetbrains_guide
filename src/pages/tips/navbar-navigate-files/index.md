@@ -6,6 +6,29 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Move around your project tree and select files, from your keyboard, with the Navigation Bar.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 2
+  total: 6
+  previous:
+    label: 'First Activate Navigation Bar'
+    slug: '/tips/navbar-activate/'
+  next:  
+    label: 'Open File With Navigation Bar'
+    slug: '/tips/navbar-open-file/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Navigation bar'
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
@@ -26,8 +49,6 @@ leadin: |
     file, make a new directory, find in path at the location.
 
 ---
-
-Second in a six-part series on the Navigation Bar. *Previous:* [Activate Navigation Bar](../navbar-activate) | *Next:* [Open File With Navigation Bar](../navbar-open-file) 
 
 We've discussed "getting into the flow"...strip down the IDE to focus and don't 
 take your hands off the keyboard. But if you've turned off your Project tool 

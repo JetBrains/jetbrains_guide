@@ -6,6 +6,29 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Open a file somewhere in the project tree using the keyboard and Navigation Bar.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 3
+  total: 6
+  previous:
+    label: 'Navigate Files With Navigation Bar'
+    slug: '/tips/navbar-navigate-files/'
+  next:  
+    label: 'Narrow Navigation Bar With Speed Search'
+    slug: '/tips/navbar-speed-search/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Navigation bar'
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
@@ -26,8 +49,6 @@ leadin: |
     keys to select, then press enter.
 
 ---
-
-Third in a six-part series on the Navigation Bar. *Previous:* [Navigate Files With Navigation Bar](../navbar-navigate-files) | *Next:* [Narrow Navigation Bar With Speed Search](../navbar-speed-search) 
 
 If you've closed the Project Tool window and hidden the Navigation 
 Bar, you need a way to open file that's keyboard centric and doesn't 

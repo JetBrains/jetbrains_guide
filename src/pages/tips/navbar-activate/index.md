@@ -6,6 +6,26 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Bring up the Navigation Bar as needed, let it disappear when finished.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 1
+  total: 6
+  next:  
+    label: 'Navigate Files With Navigation Bar'
+    slug: '/tips/navbar-navigate-files/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Navigation bar'
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
@@ -28,8 +48,6 @@ leadin: |
   what you need, then the popup disappears.
 
 ---
-
-First in a six-part series on the Navigation Bar. *Next:* [Navigate Files With Navigation Bar](../navbar-navigate-files)
 
 Getting into the flow means stripping down your UI distraction (turn off the 
 `Project` window and `Navigation Bar`) then going *keyboard-centric* to avoid 

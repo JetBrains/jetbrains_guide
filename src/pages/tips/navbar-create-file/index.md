@@ -6,6 +6,29 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Activate the Navigation Bar and create a new file somewhere in the project tree.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 4
+  total: 6
+  previous:
+    label: 'Narrow Navigation Bar With Speed Search'
+    slug: '/tips/navbar-speed-search/'
+  next:  
+    label: 'Find in Path With Navigation Bar'
+    slug: '/tips/navbar-find-in-path/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Creating Files from Templates'
     href: 'https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html'
@@ -28,8 +51,6 @@ leadin: |
     to make and open a new file at the target.
 
 ---
-
-Fifth in a six-part series on the Navigation Bar. *Previous:* [Narrow Navigation Bar With Speed Search](../navbar-speed-search) | *Next:* [Find In Path With Navigation Bar](../navbar-find-in-path) 
 
 How can I create a file if I've turned off the Project Tool? Let the 
 Navigation Bar be your one-stop replacement for the Project Tool.

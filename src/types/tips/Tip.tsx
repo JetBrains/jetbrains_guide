@@ -1,7 +1,7 @@
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import React from 'react';
 
-import { Element, Link } from 'react-scroll';
+import { Element, Link as ScrollLink } from 'react-scroll';
 import ResourceWrapper from '../../components/ResourceWrapper';
 import SeeAlso from '../../components/SeeAlso';
 import Sidebar from '../../components/sidebar/Sidebar';
@@ -11,6 +11,7 @@ import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGro
 
 import VideoPlayer from '../../components/VideoPlayer';
 import SidebarLayout from '../../layouts/SidebarLayout';
+import BottomNav from '../tutorials/BottomNav';
 
 interface ITipProps {
   resource: any;
@@ -69,12 +70,71 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
     </Sidebar>
   );
 
+  const series = tip.series;
+  const topNav = series ? (
+    <div className="columns">
+      <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
+        {series.previous && (
+          <Link to={series.previous.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.previous.label}>
+            <span className="icon">
+              <i className="fas fa-arrow-left" />
+            </span>
+            <span style={{ paddingLeft: '1em' }}>Previous</span>
+          </Link>
+        )}
+      </div>
+      <div className="column has-text-centered is-one-half is-full-mobile">
+        <div>
+          <div className="dropdown is-hoverable">
+            <div className="dropdown-trigger" style={{ width: '20rem' }}>
+              <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <span>
+                  Series {series.position} of {series.total}
+                </span>
+                <span className="icon is-small">
+                  <i className="fas fa-angle-down" aria-hidden="true" />
+                </span>
+              </button>
+            </div>
+            <div className="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div className="dropdown-content">
+                <div className="dropdown-item">
+                  <strong className="is-size-5">{series.title}</strong>
+                </div>
+                <hr className="dropdown-divider" />
+                {series.all.map((step: any) => (
+                  <Link to={step.slug} className="dropdown-item" key={step.slug}>
+                    {step.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="column has-text-right is-one-quarter-desktop is-hidden-mobile">
+        {series.next && (
+          <Link to={series.next.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.next.label}>
+            <span style={{ paddingLeft: '1em' }}>Next</span>
+            <span className="icon">
+              <i className="fas fa-arrow-right" />
+            </span>
+          </Link>
+        )}
+      </div>
+    </div>
+  ) : null;
+
+  const bottomNav = <BottomNav previous={series.previous} next={series.next} />;
+
   return (
     <SidebarLayout title={tip.title} subtitle={tip.subtitle}>
       {{
+        topNav,
+        bottomNav,
         sidebar,
         main: (
-          <>
+          <div style={{ marginBottom: '3rem' }}>
             <div className="columns">
               <div className="column is-three-fifths">
                 <VideoPlayer {...shortVideoJsOptions} />
@@ -86,7 +146,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
                 <div dangerouslySetInnerHTML={{ __html: leadin }} />
                 {tip.html && (
                   <div>
-                    <Link
+                    <ScrollLink
                       activeClass="active"
                       className="button is-light"
                       to="in-depth"
@@ -97,7 +157,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
                       style={{ width: 'auto' }}
                     >
                       Learn More
-                    </Link>
+                    </ScrollLink>
                   </div>
                 )}
               </div>
@@ -121,7 +181,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
                 <VideoPlayer {...longVideoJsOptions} />
               </Element>
             )}
-          </>
+          </div>
         )
       }}
     </SidebarLayout>
@@ -148,6 +208,23 @@ export const query = graphql`
         technologies
         topics
         leadin
+        series {
+          title
+          position
+          total
+          previous {
+            label
+            slug
+          }
+          next {
+            label
+            slug
+          }
+          all {
+            label
+            slug
+          }
+        }
         seealso {
           title
           href

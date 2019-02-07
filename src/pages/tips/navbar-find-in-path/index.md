@@ -6,6 +6,26 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Use keyboard and Navigation Bar to find files under a path.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 6
+  total: 6
+  previous:
+    label: 'Create New File With Navigation Bar'
+    slug: '/tips/navbar-create-file/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Finding and replacing text in a project'
     href: 'https://www.jetbrains.com/help/pycharm/finding-and-replacing-text-in-project.html'
@@ -28,8 +48,6 @@ leadin: |
     in Path from the keyboard.
 
 ---
-
-Last in a six-part series on the Navigation Bar. *Previous:* [Create New File With Navigation Bar](../navbar-create-file)
 
 You want to find a file at a path in your project tree. But you've turned 
 off the Project Tool. You could turn it back on, find the file, then 

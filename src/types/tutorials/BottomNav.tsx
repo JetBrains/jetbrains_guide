@@ -14,9 +14,9 @@ export interface IBottomNavProps {
 
 const BottomNav: React.FunctionComponent<IBottomNavProps> = ({ previous, next }) => (
   <div className="columns is-size-10 is-size-6">
-    <div className="column">
+    <div className="column has-text-left">
       {previous && (
-        <Link to={previous.slug} className="bottomnav-previous is-small" style={{ textAlign: 'right' }}>
+        <Link to={previous.slug} className="bottomnav-previous is-small">
           <span className="icon" title={previous.label}>
             <i className="fas fa-arrow-left" />
           </span>
@@ -24,9 +24,9 @@ const BottomNav: React.FunctionComponent<IBottomNavProps> = ({ previous, next })
         </Link>
       )}
     </div>
-    <div className="column">
+    <div className="column has-text-right">
       {next && (
-        <Link to={next.slug} className="bottomnav-next is-small" style={{ textAlign: 'left' }}>
+        <Link to={next.slug} className="bottomnav-next is-small">
           <span style={{ paddingRight: '1em' }}>{next.label}</span>
           <span className="icon" title={next.label}>
             <i className="fas fa-arrow-right" />

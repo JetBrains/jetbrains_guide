@@ -6,6 +6,29 @@ technologies: []
 topics: ['navigation', 'navigationbar', 'speedsearch']
 author: 'pauleveritt'
 subtitle: 'Narrow and select from a long folder listing Navigation Bar by typing a speed search.'
+series:
+  title: 'Using the Navigation Bar'
+  position: 4
+  total: 6
+  previous:
+    label: 'Open File With Navigation Bar'
+    slug: '/tips/navbar-open-file/'
+  next:  
+    label: 'Create New File With Navigation Bar'
+    slug: '/tips/navbar-create-file/'
+  all: 
+    - label: 'First Activate Navigation Bar'
+      slug: '/tips/navbar-activate/'
+    - label: 'Navigate Files With Navigation Bar'
+      slug: '/tips/navbar-navigate-files/'
+    - label: 'Open File With Navigation Bar'
+      slug: '/tips/navbar-open-file/'
+    - label: 'Narrow Navigation Bar With Speed Search'
+      slug: '/tips/navbar-speed-search/'
+    - label: 'Create New File With Navigation Bar'
+      slug: '/tips/navbar-create-file/'
+    - label: 'Find in Path With Navigation Bar'
+      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Speed Search in Tool Windows'
     href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
@@ -28,8 +51,6 @@ leadin: |
     punctuation, file extensions...whatever it takes to filter down the list.
 
 ---
-
-Fourth in a six-part series on the Navigation Bar. *Previous:* [Open File With Navigation Bar](../navbar-open-file) | *Next:* [Create New File With Navigation Bar](../navbar-create-file) 
 
 We've discussed getting into the flow by reducing UI clutter and being 
 keyboard-focused. We're using the Navigation Bar on-demand to get to targets 
