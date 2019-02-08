@@ -8,16 +8,16 @@ author: 'pauleveritt'
 subtitle: 'Narrow and select from a long folder listing Navigation Bar by typing a speed search.'
 series:
   title: 'Using the Navigation Bar'
-  position: 4
+  position: 5
   total: 6
   previous:
-    label: 'Open File With Navigation Bar'
-    slug: '/tips/navbar-open-file/'
-  next:  
     label: 'Create New File With Navigation Bar'
     slug: '/tips/navbar-create-file/'
+  next:  
+    label: 'Find in Path With Navigation Bar'
+    slug: '/tips/navbar-find-in-path/'
   all: 
-    - label: 'First Activate Navigation Bar'
+    - label: 'Activate Navigation Bar'
       slug: '/tips/navbar-activate/'
     - label: 'Navigate Files With Navigation Bar'
       slug: '/tips/navbar-navigate-files/'

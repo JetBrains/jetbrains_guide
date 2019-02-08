@@ -11,13 +11,13 @@ series:
   position: 4
   total: 6
   previous:
+    label: 'Open File With Navigation Bar'
+    slug: '/tips/navbar-open-file/'
+  next:  
     label: 'Narrow Navigation Bar With Speed Search'
     slug: '/tips/navbar-speed-search/'
-  next:  
-    label: 'Find in Path With Navigation Bar'
-    slug: '/tips/navbar-find-in-path/'
   all: 
-    - label: 'First Activate Navigation Bar'
+    - label: 'Activate Navigation Bar'
       slug: '/tips/navbar-activate/'
     - label: 'Navigate Files With Navigation Bar'
       slug: '/tips/navbar-navigate-files/'

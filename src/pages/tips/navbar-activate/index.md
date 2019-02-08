@@ -14,7 +14,7 @@ series:
     label: 'Navigate Files With Navigation Bar'
     slug: '/tips/navbar-navigate-files/'
   all: 
-    - label: 'First Activate Navigation Bar'
+    - label: 'Activate Navigation Bar'
       slug: '/tips/navbar-activate/'
     - label: 'Navigate Files With Navigation Bar'
       slug: '/tips/navbar-navigate-files/'

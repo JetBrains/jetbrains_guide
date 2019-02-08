@@ -11,13 +11,13 @@ series:
   position: 2
   total: 6
   previous:
-    label: 'First Activate Navigation Bar'
+    label: 'Activate Navigation Bar'
     slug: '/tips/navbar-activate/'
   next:  
     label: 'Open File With Navigation Bar'
     slug: '/tips/navbar-open-file/'
   all: 
-    - label: 'First Activate Navigation Bar'
+    - label: 'Activate Navigation Bar'
       slug: '/tips/navbar-activate/'
     - label: 'Navigate Files With Navigation Bar'
       slug: '/tips/navbar-navigate-files/'

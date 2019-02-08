@@ -11,10 +11,10 @@ series:
   position: 6
   total: 6
   previous:
-    label: 'Create New File With Navigation Bar'
-    slug: '/tips/navbar-create-file/'
+    label: 'Narrow Navigation Bar With Speed Search'
+    slug: '/tips/navbar-speed-search/'
   all: 
-    - label: 'First Activate Navigation Bar'
+    - label: 'Activate Navigation Bar'
       slug: '/tips/navbar-activate/'
     - label: 'Navigate Files With Navigation Bar'
       slug: '/tips/navbar-navigate-files/'
