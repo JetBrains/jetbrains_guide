@@ -26,17 +26,17 @@ class NavbarBrand extends React.Component<INavbarBrandProps> {
         <Link className="navbar-item bio-navbar-brand" to={`/`}>
           <img src={logo} className="bio-navbar-logo-image" alt={logo_alt} height="28" />
         </Link>
-        <Link className="navbar-item is-hidden-desktop bio-navbar-brand-github" to={github_url} target="_blank">
-          <span className="icon" style={{ color: '#333' }}>
+        <a className="navbar-item is-hidden-desktop bio-navbar-brand-github" href={github_url} target="_blank">
+          <span className="icon" style={{ color: 'lightgray' }}>
             <i className="fab fa-lg fa-github-alt" />
           </span>
-        </Link>
+        </a>
 
-        <Link className="navbar-item is-hidden-desktop bio-navbar-brand-twitter" to={twitter_url} target="_blank">
+        <a className="navbar-item is-hidden-desktop bio-navbar-brand-twitter" href={twitter_url} target="_blank">
           <span className="icon" style={{ color: '#55acee' }}>
             <i className="fab fa-lg fa-twitter" />
           </span>
-        </Link>
+        </a>
 
         <div id="navbarBurger" className="navbar-burger burger" onClick={this.toggleBurger}>
           <span />

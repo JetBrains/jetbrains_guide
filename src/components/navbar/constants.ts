@@ -6,9 +6,9 @@ import { INavbarStartProps } from './NavbarStart';
 import { INavbarSubMenuProps } from './NavbarSubMenu';
 
 export const BRAND: INavbarBrandProps = {
-  github_url: '/github',
+  github_url: 'https://github.com/jetbrains/pycharm_guide',
   logo_alt: 'Logo',
-  twitter_url: 'https://github.com/jetbrains/pycharm_guide'
+  twitter_url: 'https://twitter.com/pycharm'
 };
 
 export const LINKS = [
