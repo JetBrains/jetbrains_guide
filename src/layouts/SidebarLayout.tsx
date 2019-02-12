@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import Heading from '../components/Heading';
-import BaseLayout from './BaseLayout';
+import BaseLayout, { ITwitterCard } from './BaseLayout';
 
 import './index.scss';
 
@@ -14,15 +14,16 @@ export interface ISidebarLayoutProps {
     sidebar?: ReactNode;
     main: ReactNode;
     bottomNav?: ReactNode;
+    twitterCard?: ITwitterCard;
   };
 }
 
 const SidebarLayout: React.FunctionComponent<ISidebarLayoutProps> = ({
   title,
   subtitle,
-  children: { topNav, main, bottomNav, sidebar }
+  children: { topNav, main, bottomNav, sidebar, twitterCard }
 }) => (
-  <BaseLayout title={title}>
+  <BaseLayout title={title} twitterCard={twitterCard}>
     <main className="bd-main bulmaio-body">
       <div className="bd-side-background" />
       <div className="bd-main-container container">

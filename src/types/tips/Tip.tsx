@@ -10,6 +10,7 @@ import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
 
 import VideoPlayer from '../../components/VideoPlayer';
+import { ITwitterCard } from '../../layouts/BaseLayout';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import BottomNav from '../tutorials/BottomNav';
 
@@ -126,6 +127,11 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   ) : null;
 
   const bottomNav = series ? <BottomNav previous={series.previous} next={series.next} /> : null;
+  const twitterCard: ITwitterCard = {
+    title: tip.title,
+    description: tip.subtitle,
+    imageUrl: 'http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg'
+  };
 
   return (
     <SidebarLayout title={tip.title} subtitle={tip.subtitle}>
@@ -133,6 +139,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
         topNav,
         bottomNav,
         sidebar,
+        twitterCard,
         main: (
           <div style={{ marginBottom: '3rem' }}>
             <div className="columns">

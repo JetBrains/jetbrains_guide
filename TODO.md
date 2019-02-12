@@ -4,28 +4,16 @@
 
 ## Next
 
+- Land the Twitter Card
+
+- "Full Video" button by "Learn More" in tips  
+
 - Change the author filename and label from `pauleveritt` to `pwe`
-
-- Content improvements
-
-    - Re-do videos as 1080p 60fps
-    
-    - Change from callout to ghosting
-    
-    - Have the long video match the "In Depth"
-    
-    - Change the `leadin` YAML to not have another heading
-    
-    - Short tip titles and tweet-worthy subtitles
-    
-    - Switch thumbnails to different aspect ratio
 
 - Get rid of the `excerpt`, `id` and other unused fields in 
   GraphQL queries
-
+  
 ## Soon
-
-- Land the Twitter Player Card
 
 - Switch "On This Page" to use GraphQL table of contents
 
@@ -35,22 +23,15 @@
 
 - Change category "label" to just use the filename
 
-- Refactor layout components to not repeat so much
-
-- Clean up all unused bio class names
-
-- Get the Twitter <head> metadata to allow just posting the link 
-in Sprout and not have to upload the video meaning Twitter Cards
-
 - Get "news" working
 
 - Tests
 
+## Later
+
 - Convert navbar et al. to be driven by settings in gatsby-config
 
 - Put credits to open source packages a la Made With
-
-## Later
 
 - Handle YAML in frontmatter better e.g. use plugin
 
@@ -81,6 +62,9 @@ in Sprout and not have to upload the video meaning Twitter Cards
 - Documents with no topics/technologies in frontmatter
 
 - Corpus with no frontmatter with topic or technology
+
+- Clean up all unused bio class names
+
 
 ## Done
 
@@ -229,3 +213,6 @@ sourceNodes event
 - Get the fontawesome icon displayed when looking at at a single topic
 
 - Add a temporary "Series" capability to tips
+
+- Refactor layout components to not repeat so much
+
