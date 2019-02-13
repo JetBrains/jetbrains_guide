@@ -4,8 +4,6 @@
 
 ## Next
 
-- Land the Twitter Card
-
 - Change the author filename and label from `pauleveritt` to `pwe`
 
 - Get rid of the `excerpt`, `id` and other unused fields in 
@@ -212,4 +210,6 @@ sourceNodes event
 - Refactor layout components to not repeat so much
 
 - "Full Video" button by "Learn More" in tips  
+
+- Land the Twitter Card
 
