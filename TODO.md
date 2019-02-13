@@ -65,7 +65,6 @@
 
 - Clean up all unused bio class names
 
-
 ## Done
 
 - Get Bulma and SASS running
@@ -215,4 +214,6 @@ sourceNodes event
 - Add a temporary "Series" capability to tips
 
 - Refactor layout components to not repeat so much
+
+- "Full Video" button by "Learn More" in tips  
 
