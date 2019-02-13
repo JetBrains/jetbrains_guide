@@ -11,7 +11,6 @@ export default ListingWrapper(ImageLayoutListing, comparator);
 export const query = graphql`
   query($path: String!) {
     resource: markdownRemark(fields: { slug: { eq: $path } }) {
-      excerpt(pruneLength: 250)
       html
       frontmatter {
         type
@@ -42,9 +41,7 @@ export const query = graphql`
     resources: allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           html
-          id
           fields {
             slug
           }

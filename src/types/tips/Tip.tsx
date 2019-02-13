@@ -212,9 +212,7 @@ export default ResourceWrapper(Tip);
 export const query = graphql`
   query($path: String!) {
     resource: markdownRemark(fields: { slug: { eq: $path } }) {
-      excerpt(pruneLength: 250)
       html
-      id
       fields {
         slug
       }

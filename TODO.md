@@ -4,9 +4,6 @@
 
 ## Next
 
-- Get rid of the `excerpt`, `id` and other unused fields in 
-  GraphQL queries
-  
 ## Soon
 
 - Pagination
@@ -212,3 +209,7 @@ sourceNodes event
 - Land the Twitter Card
 
 - Change the author filename from `pauleveritt` to `pwe`
+
+- Get rid of the `excerpt`, `id` and other unused fields in 
+  GraphQL queries
+  

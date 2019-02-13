@@ -4,7 +4,7 @@ import ListingWrapper from '../../components/ListingWrapper';
 import ResourceCard from '../../components/ResourceCard';
 import ReferenceLayout from '../../layouts/ReferenceLayout';
 
-interface ITipsProps {
+export interface ITipsProps {
   resources: any[];
 }
 

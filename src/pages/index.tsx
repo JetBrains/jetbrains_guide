@@ -1,9 +1,9 @@
 import { graphql, Link } from 'gatsby';
 import * as React from 'react';
-import { ITipsProps } from '../../tmp/tips/Tips';
 import VideoPlayer from '../components/VideoPlayer';
 import HomepageLayout from '../layouts/HomepageLayout';
 import { IVideoPlayer } from '../types/base_models';
+import { ITipEdges } from '../types/tips/models';
 // @ts-ignore
 import splash from './pycharm_splash.svg';
 
@@ -57,7 +57,11 @@ const TipItem: React.FunctionComponent<ITipItemProps> = ({ title, subtitle, href
   );
 };
 
-const IndexPage: React.FunctionComponent<ITipsProps> = ({ data: { tips } }) => {
+interface IIndexPageProps {
+  data: { tips: { edges: ITipEdges } };
+}
+
+const IndexPage: React.FunctionComponent<IIndexPageProps> = ({ data: { tips } }) => {
   const items = tips.edges.map((edge: any) => edge.node);
 
   return (
@@ -119,9 +123,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 250)
           html
-          id
           fields {
             slug
           }

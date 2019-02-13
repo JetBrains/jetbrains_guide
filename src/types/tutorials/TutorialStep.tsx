@@ -97,7 +97,6 @@ export default TutorialStepWrapper(TutorialStep);
 export const query = graphql`
   query($path: String!) {
     resource: markdownRemark(fields: { slug: { eq: $path } }) {
-      excerpt(pruneLength: 250)
       html
       id
       fields {
@@ -220,7 +219,6 @@ export const query = graphql`
 // export const query = graphql`
 //   query($slug: String!) {
 //     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       excerpt(pruneLength: 250)
 //       html
 //       id
 //       fields {
@@ -242,7 +240,6 @@ export const query = graphql`
 //           }
 //         }
 //         author {
-//           excerpt(pruneLength: 250)
 //           html
 //           id
 //           fields {
