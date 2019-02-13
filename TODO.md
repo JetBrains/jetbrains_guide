@@ -6,8 +6,6 @@
 
 - Land the Twitter Card
 
-- "Full Video" button by "Learn More" in tips  
-
 - Change the author filename and label from `pauleveritt` to `pwe`
 
 - Get rid of the `excerpt`, `id` and other unused fields in 
@@ -15,23 +13,27 @@
   
 ## Soon
 
-- Switch "On This Page" to use GraphQL table of contents
-
-- The pytest logo isn't square on the technology page
-
 - Pagination
 
-- Change category "label" to just use the filename
+- Markdown shortcodes for actions
 
 - Get "news" working
 
-- Tests
+- The pytest logo isn't square on the technology page
+
+- Put credits to open source packages a la Made With
+
+- Playlists
+
+- Search
 
 ## Later
 
-- Convert navbar et al. to be driven by settings in gatsby-config
+- Change category "label" to just use the filename
 
-- Put credits to open source packages a la Made With
+- Switch "On This Page" to use GraphQL table of contents
+
+- Convert navbar et al. to be driven by settings in gatsby-config
 
 - Handle YAML in frontmatter better e.g. use plugin
 
@@ -39,13 +41,7 @@
 
 - SEO with JSON-LD
 
-- Disqus
-
-- Playlists
-
-- Markdown shortcodes for actions
-
-- Search
+- Disqus or some other commenting system
 
 - Consider different fonts
 
