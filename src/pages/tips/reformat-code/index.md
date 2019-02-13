@@ -14,6 +14,7 @@ seealso:
   - title: 'Reformat and rearrange code'
     href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=EP_twi6rDOY'

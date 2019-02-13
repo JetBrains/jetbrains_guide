@@ -12,6 +12,7 @@ seealso:
   - title: 'Basic Completion'
     href: 'https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=jTG49IdhETw'

@@ -7,6 +7,7 @@ topics: ['editing']
 author: 'pauleveritt'
 subtitle: 'With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save.'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=rGms9nsfdTM'

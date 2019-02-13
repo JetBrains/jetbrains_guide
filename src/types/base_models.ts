@@ -22,6 +22,7 @@ export interface IBaseResourceFrontmatter extends IBaseFrontmatter {
   author: string;
   shortVideo?: any;
   thumbnail?: any;
+  cardThumbnail?: any;
 }
 
 export interface IBaseCategoryFrontmatter extends IBaseFrontmatter {

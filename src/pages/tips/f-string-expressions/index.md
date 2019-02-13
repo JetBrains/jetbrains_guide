@@ -7,6 +7,7 @@ topics: ["editing"]
 author: "pauleveritt"
 subtitle: "Bracket completion and syntax highlighting for f-string evaluated expressions."
 thumbnail: "./thumbnail.png"
+cardThumbnail: "./card.png"
 shortVideo:
     poster: "./poster_short.png"
     url: "https://www.youtube.com/watch?v=OCddA6pSUOk"

@@ -7,6 +7,7 @@ topics: ['navigation']
 author: 'pauleveritt'
 subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=LJJJBzZX7PM'

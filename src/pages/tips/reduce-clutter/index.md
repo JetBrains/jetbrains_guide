@@ -10,6 +10,7 @@ seealso:
   - title: 'Configuring Menus and Toolbars'
     href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=JkZ66NgI0r8'

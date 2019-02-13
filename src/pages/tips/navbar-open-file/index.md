@@ -35,6 +35,7 @@ seealso:
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=G1K1hIW4msM'
@@ -60,7 +61,7 @@ As shown previously, use the Navigation Bar to select a file:
 
 - Activate the Navigation Bar with 
 `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux, 
-`Alt-Up` macOS)
+`Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 

@@ -32,6 +32,7 @@ seealso:
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=xDvTpGSqKyo'

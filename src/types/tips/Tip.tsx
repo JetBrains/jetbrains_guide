@@ -130,7 +130,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   const twitterCard: ITwitterCard = {
     title: tip.title,
     description: tip.subtitle,
-    imageUrl: 'http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg'
+    imageUrl: `https://www.jetbrains.com/pycharm/guide${tip.cardThumbnail.publicURL}`
   };
 
   return (
@@ -215,6 +215,14 @@ export const query = graphql`
         technologies
         topics
         leadin
+        cardThumbnail {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         series {
           title
           position

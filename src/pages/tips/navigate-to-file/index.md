@@ -12,6 +12,7 @@ seealso:
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'

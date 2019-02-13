@@ -12,6 +12,7 @@ seealso:
   - title: 'Test Runner Tab'
     href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
 thumbnail: './thumbnail.png'
+cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
   url: 'https://www.youtube.com/watch?v=BWY9mNdX5R8'
