@@ -130,7 +130,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   const twitterCard: ITwitterCard = {
     title: tip.title,
     description: tip.subtitle,
-    imageUrl: `https://www.jetbrains.com/pycharm/guide${tip.cardThumbnail.publicURL}`
+    imageUrl: `https://www.jetbrains.com${tip.cardThumbnail.publicURL}`
   };
 
   return (
