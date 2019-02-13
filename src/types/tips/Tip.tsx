@@ -158,6 +158,18 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
                     >
                       Learn More
                     </ScrollLink>
+                    <ScrollLink
+                      activeClass="active"
+                      className="button is-light"
+                      to="full-video"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      style={{ width: 'auto', marginLeft: '0.5em' }}
+                    >
+                      Full Video
+                    </ScrollLink>
                   </div>
                 )}
               </div>
