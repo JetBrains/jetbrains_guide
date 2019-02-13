@@ -60,7 +60,7 @@ As shown previously, use the Navigation Bar to select a file:
 
 - Activate the Navigation Bar with 
 `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux, 
-`Alt-Up` macOS)
+`Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 

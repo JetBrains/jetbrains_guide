@@ -59,7 +59,7 @@ First, get to the target directory:
 
 - Activate the Navigation Bar with 
 `Navigate -> Jump to Navigation Bar` (`Alt-Home` Win/Linux, 
-`Alt-Up` macOS)
+`Cmd-Up` macOS)
 
 - Use the cursor keys to get to the target directory
 
