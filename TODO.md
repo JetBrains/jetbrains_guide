@@ -4,6 +4,8 @@
 
 ## Next
 
+- Track clicks on buttons such as Full Video
+
 ## Soon
 
 - Pagination
@@ -21,8 +23,6 @@
 - Search
 
 ## Later
-
-- Change category "label" to just use the filename
 
 - Switch "On This Page" to use GraphQL table of contents
 
