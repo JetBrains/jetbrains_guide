@@ -23,3 +23,12 @@
     margin-bottom: 2em;
   }
 }
+
+div.gatsby-highlight span.token.number {
+  display: inline;
+  font-size: inherit;
+  background-color: inherit;
+  min-width: inherit;
+  margin-right: inherit;
+  padding: inherit;
+}

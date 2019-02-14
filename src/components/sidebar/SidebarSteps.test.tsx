@@ -9,7 +9,7 @@ const sampleSteps: IStep[] = [
   },
   {
     label: 'Some Label 2',
-    target: '/some/step2/'
+    target: '/some/project_cleanup/'
   }
 ];
 
