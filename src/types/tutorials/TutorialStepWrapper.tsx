@@ -86,7 +86,7 @@ const TutorialStepWrapper = (Component: any) => ({
   const parentSlug = `${resolve(resourceNode.slug, '..')}/`;
   const parentTutorial = references.tutorials[parentSlug];
   const tutorial = {
-    title: 'Some Tutorial',
+    title: parentTutorial.title,
     slug: parentSlug,
     steps: parentTutorial.steps
       ? parentTutorial.steps.map(step => {
