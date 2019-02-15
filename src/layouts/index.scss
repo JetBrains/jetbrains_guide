@@ -32,3 +32,8 @@ div.gatsby-highlight span.token.number {
   margin-right: inherit;
   padding: inherit;
 }
+
+/* Images in Markdown are centered, fix to be left aligned */
+span.gatsby-resp-image-wrapper {
+  margin-left: inherit !important;
+}
