@@ -8,7 +8,7 @@ author: 'pauleveritt'
 subtitle: 'How to write React applications in TypeScript using TDD, highlighting features of the IDE'
 steps:
   - 'project_setup'
-  - 'step2'
+  - 'project_cleanup'
   - 'step3'
 thumbnail: './thumbnail.png'
 longVideo:
