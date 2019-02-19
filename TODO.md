@@ -2,19 +2,21 @@
 
 ## Now
 
-- "Series" navigation in tutorials
-
 ## Next
 
-- Drafts
-
 - Playlists
+
+- Get single implementatio covering TutorialStep-in-Tutorial and 
+  Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel
 
 ## Soon
 
 - Fix responsive issues on Tips reported by Dmitry 
 
 - Pagination
+
+- Drafts (at the moment we aren't linking to anything from the unused 
+  topics, so lowering priority)
 
 - Markdown shortcodes for actions
 
@@ -219,3 +221,5 @@ sourceNodes event
 - Get rid of the `excerpt`, `id` and other unused fields in 
   GraphQL queries
   
+- "Series" navigation in tutorials
+
