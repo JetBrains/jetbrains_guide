@@ -2,27 +2,33 @@
 
 ## Now
 
+- "Series" navigation in tutorials
+
 ## Next
 
-- Track clicks on buttons such as Full Video
+- Drafts
+
+- Playlists
 
 ## Soon
+
+- Fix responsive issues on Tips reported by Dmitry 
 
 - Pagination
 
 - Markdown shortcodes for actions
 
-- Get "news" working
-
 - The pytest logo isn't square on the technology page
 
 - Put credits to open source packages a la Made With
 
-- Playlists
-
 - Search
 
+- Track clicks on buttons such as Full Video
+
 ## Later
+
+- Get "news" working
 
 - Switch "On This Page" to use GraphQL table of contents
 
@@ -49,7 +55,7 @@
 - Avoid doing so many graphql queries per page (absence of joins)
 
 - Documents with no topics/technologies in frontmatter
-
+****
 - Corpus with no frontmatter with topic or technology
 
 - Clean up all unused bio class names

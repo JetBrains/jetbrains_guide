@@ -12,7 +12,7 @@ interface ITopNavProps {
   currentSlug: string;
 }
 
-const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug }) => {
+const TopNav2: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug }) => {
   // Get the previous and next, if any, based on currentSlug
   const currentSlugIndex = siblings.findIndex(s => s.slug === currentSlug);
 
@@ -86,4 +86,4 @@ const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug }) => {
   );
 };
 
-export default TopNav;
+export default TopNav2;

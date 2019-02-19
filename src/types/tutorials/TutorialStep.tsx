@@ -20,7 +20,6 @@ interface ITutorialStepProps {
 
 const TutorialStep: React.FunctionComponent<ITutorialStepProps> = ({ resource: tutorialstep, tutorial }) => {
   // Up, Previous, Next
-  const navUp = { label: tutorial.title, slug: tutorial.slug };
   const prevNext = getPrevNextBySlug(
     tutorial.steps.map((step: any) => {
       return { label: step.label, slug: step.slug };
@@ -30,7 +29,8 @@ const TutorialStep: React.FunctionComponent<ITutorialStepProps> = ({ resource: t
 
   const navPrevious = prevNext.previous;
   const navNext = prevNext.next;
-  const topNav = <TopNav up={navUp} previous={navPrevious} next={navNext} />;
+  const parent = { label: tutorial.title, slug: tutorial.slug };
+  const topNav = <TopNav parent={parent} siblings={tutorial.steps} currentSlug={tutorialstep.slug} />;
   const bottomNav = <BottomNav previous={navPrevious} next={navNext} />;
 
   // Video
