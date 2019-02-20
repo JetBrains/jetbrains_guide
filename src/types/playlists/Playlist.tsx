@@ -1,5 +1,8 @@
-import { graphql } from 'gatsby';
 import React from 'react';
+
+import { graphql } from 'gatsby';
+import { Router } from '@reach/router';
+
 import ResourceWrapper from '../../components/ResourceWrapper';
 
 interface IPlaylistProps {
@@ -9,9 +12,25 @@ interface IPlaylistProps {
 
 const Playlist: React.FunctionComponent<IPlaylistProps> = ({ resource: playlist, author }) => {
   return (
+    <Router>
+      <Page path={playlist.slug} playlist={playlist} author={author} />
+    </Router>
+  );
+};
+
+interface IPlaylistPageProps {
+  playlist: any;
+  author: any;
+  path: string;
+  page?: string;
+}
+
+const Page = ({ playlist, author, page = '1' }: IPlaylistPageProps) => {
+  return (
     <div>
       <h1>Hello {playlist.title}</h1>
       <p>From {author.title}</p>
+      <p>Page: {page}</p>
     </div>
   );
 };
