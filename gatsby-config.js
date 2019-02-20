@@ -77,6 +77,11 @@ module.exports = {
             listing: `src/types/authors/Authors.tsx`,
             item: `src/types/authors/Author.tsx`
           },
+          playlist: {
+            plural: `playlists`,
+            listing: `src/types/playlists/Playlists.tsx`,
+            item: `src/types/playlists/Playlist.tsx`
+          },
           technology: {
             plural: `technologies`,
             listing: `src/types/technologies/Technologies.tsx`,
