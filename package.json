@@ -26,6 +26,8 @@
     "@types/react-scroll": "^1.5.4",
     "@types/react-test-renderer": "^16.0.3",
     "@types/video.js": "^7.2.5",
+    "babel-jest": "^24.1.0",
+    "babel-preset-gatsby": "^0.1.8",
     "bulma": "^0.7.2",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
@@ -40,10 +42,12 @@
     "gatsby-plugin-typescript": "^2.0.2",
     "gatsby-remark-embed-snippet": "^3.1.2",
     "gatsby-remark-prismjs": "^3.1.2",
-    "gatsby-source-filesystem": "^2.0.10",
+    "gatsby-source-filesystem": "^2.0.22",
     "gatsby-transformer-remark": "^2.1.15",
     "gatsby-transformer-sharp": "^2.1.9",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.1.0",
+    "jest-dom": "^3.1.2",
     "lite-server": "^2.4.0",
     "node-sass": "^4.9.3",
     "prettier": "^1.15.3",
@@ -54,9 +58,11 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-scroll": "^1.7.10",
+    "react-test-renderer": "^16.8.3",
+    "react-testing-library": "^5.9.0",
     "remark": "^10.0.1",
     "remark-html": "^9.0.0",
-    "ts-jest": "^23.10.5",
+    "ts-jest": "^24.0.0",
     "ts-node": "^7.0.1",
     "tslint": "^5.12.0",
     "tslint-config-blvd": "^1.2.1",
@@ -71,33 +77,8 @@
     "gatsby-plugin-gtag": "^1.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-images": "^2.0.4",
+    "tsutils": "^3.8.0",
     "video.js": "^7.2.4",
     "videojs-youtube": "^2.6.0"
-  },
-  "jest": {
-    "globals": {
-      "__LINK_PREFIX__": "",
-      "__PREFIX_LINKS__": ""
-    },
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/templates/",
-      "/.cache"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
   }
 }
