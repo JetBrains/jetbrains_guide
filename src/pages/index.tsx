@@ -20,7 +20,6 @@ const TipItem: React.FunctionComponent<ITipItemProps> = ({ title, subtitle, href
   const shortVideoJsOptions = {
     controls: true,
     poster: shortVideo.poster.publicURL,
-    techOrder: ['youtube'],
     sources: [
       {
         src: shortVideo.url,

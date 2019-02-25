@@ -10,6 +10,7 @@ export default class VideoPlayerBase extends React.Component {
   private videoNode?: HTMLVideoElement;
 
   constructor(props: VideoPlayerPropsInferface) {
+    // Add in some default video props
     super(props);
     this.player = undefined;
     this.videoNode = undefined;

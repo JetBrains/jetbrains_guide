@@ -27,7 +27,6 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   const shortVideoJsOptions = {
     controls: true,
     poster: shortVideo.poster.publicURL,
-    techOrder: ['youtube'],
     sources: [
       {
         src: shortVideo.url,
@@ -41,7 +40,6 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
         poster: longVideo.poster.publicURL,
         height: 720,
         width: 1024,
-        techOrder: ['youtube'],
         sources: [
           {
             src: longVideo.url,

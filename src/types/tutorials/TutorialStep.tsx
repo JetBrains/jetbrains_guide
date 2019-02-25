@@ -40,9 +40,6 @@ const TutorialStep: React.FunctionComponent<ITutorialStepProps> = ({ resource: t
         controls: true,
         poster: longVideo.poster.publicURL,
         fluid: true,
-        // height: 720,
-        // width: 1024,
-        techOrder: ['youtube'],
         sources: [
           {
             src: longVideo.url,
