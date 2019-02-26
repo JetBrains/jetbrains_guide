@@ -26,7 +26,6 @@ const ResourceWrapper = (Component: any) => ({ data: { resource, authors }, loca
     ...resource.frontmatter,
     slug: resource.fields.slug,
     excerpt: resource.excerpt,
-    slug: resource.fields.slug,
     html: resource.html
   };
 
