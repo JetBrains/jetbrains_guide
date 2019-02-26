@@ -2,9 +2,9 @@
 
 ## Now
 
-## Next
-
 - Playlists
+
+## Next
 
 - Get single implementatio covering TutorialStep-in-Tutorial and 
   Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel

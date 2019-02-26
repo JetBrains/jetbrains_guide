@@ -24,6 +24,7 @@ const ResourceWrapper = (Component: any) => ({ data: { resource, authors }, loca
   const search = location.search ? location.search.substring(1) : null;
   const resourceNode = {
     ...resource.frontmatter,
+    slug: resource.fields.slug,
     excerpt: resource.excerpt,
     slug: resource.fields.slug,
     html: resource.html
