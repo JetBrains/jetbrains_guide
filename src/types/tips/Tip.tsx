@@ -1,6 +1,8 @@
 import { graphql, Link } from 'gatsby';
 import React from 'react';
 
+import { parse } from 'qs';
+
 import { Element, Link as ScrollLink } from 'react-scroll';
 import ResourceWrapper from '../../components/ResourceWrapper';
 import SeeAlso from '../../components/SeeAlso';
@@ -17,9 +19,15 @@ import BottomNav from '../tutorials/BottomNav';
 interface ITipProps {
   resource: any;
   author: any;
+  search?: string;
 }
 
-const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
+const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, search }) => {
+  let playlist;
+  if (search) {
+    const params = parse(search);
+    playlist = params.pl;
+  }
   const shortVideo = tip.shortVideo;
   const longVideo = tip.longVideo;
   const seealso = tip.seealso;
@@ -72,6 +80,11 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   const series = tip.series;
   const topNav = series ? (
     <div className="columns">
+      <div className="column">
+        {' '}
+        Playlist: {playlist} <Link to={`${tip.slug}?pl=A`}>A</Link>
+        <Link to={`${tip.slug}?pl=B`}>B</Link>
+      </div>
       <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
         {series.previous && (
           <Link to={series.previous.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.previous.label}>
@@ -85,7 +98,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
       <div className="column has-text-centered is-one-half is-full-mobile">
         <div>
           <div className="dropdown is-hoverable">
-            <div className="dropdown-trigger" style={{ width: '20rem' }}>
+            <div className="dropdown-trigger" style={{ width: '20rem' }}>v
               <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
                 <span>
                   Tip {series.position} of {series.total}
