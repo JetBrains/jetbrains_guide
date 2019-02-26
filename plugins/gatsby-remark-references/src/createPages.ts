@@ -45,18 +45,10 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
 
     const configType = configTypes[node.frontmatter.type];
 
-    // Playlists have client routes with the router
-    if (node.fields.type === 'playlist') {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve(configType.item)
-      });
-    } else {
-      createPage({
-        path: node.fields.slug,
-        component: path.resolve(configType.item)
-      });
-    }
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(configType.item)
+    });
   });
 };
 

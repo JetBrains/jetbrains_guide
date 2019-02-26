@@ -1,6 +1,9 @@
-import { IBaseCategoryFrontmatter, IBaseCategoryNode } from '../base_models';
+import { IBaseCategoryNode, IBaseResourceFrontmatter } from '../base_models';
 
-export interface IPlaylistFrontmatter extends IBaseCategoryFrontmatter {}
+export interface IPlaylistFrontmatter extends IBaseResourceFrontmatter {
+  label: string;
+  items: string[];
+}
 
 export interface IPlaylistNode extends IBaseCategoryNode {
   frontmatter: IPlaylistFrontmatter;
