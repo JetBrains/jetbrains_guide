@@ -11,17 +11,13 @@ import { IAuthorEdge, IAuthorEdges } from '../types/authors/models';
 import { IBaseResourceNode } from '../types/base_models';
 
 export interface IResourceWrapperProps {
-  location: {
-    search: string;
-  };
   data: {
     resource: IBaseResourceNode;
     authors: { edges: IAuthorEdges };
   };
 }
 
-const ResourceWrapper = (Component: any) => ({ data: { resource, authors }, location }: IResourceWrapperProps) => {
-  const search = location.search ? location.search.substring(1) : null;
+const ResourceWrapper = (Component: any) => ({ data: { resource, authors } }: IResourceWrapperProps) => {
   const resourceNode = {
     ...resource.frontmatter,
     slug: resource.fields.slug,
@@ -36,7 +32,7 @@ const ResourceWrapper = (Component: any) => ({ data: { resource, authors }, loca
         slug: authorEdge.node.fields.slug
       }
     : undefined;
-  return <Component resource={resourceNode} author={author} search={search} />;
+  return <Component resource={resourceNode} author={author} />;
 };
 
 export default ResourceWrapper;
