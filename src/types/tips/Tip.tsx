@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import { Element, Link as ScrollLink } from 'react-scroll';
@@ -14,6 +14,8 @@ import SidebarLayout from '../../layouts/SidebarLayout';
 import { IBaseResourceNode } from '../base_models';
 import { IPlaylistNode } from '../playlists/models';
 import BottomNav from '../tutorials/BottomNav';
+import TopNav from '../tutorials/TopNav';
+import { getPrevNextBySlug } from '../tutorials/utils';
 import TipWrapper from './TipWrapper';
 
 interface ITipProps {
@@ -73,62 +75,29 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
     </Sidebar>
   );
 
-  const series = tip.series;
-  const topNav = series ? (
-    <div className="columns">
-      <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
-        {series.previous && (
-          <Link to={series.previous.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.previous.label}>
-            <span className="icon">
-              <i className="fas fa-arrow-left" />
-            </span>
-            <span style={{ paddingLeft: '1em' }}>Previous</span>
-          </Link>
-        )}
-      </div>
-      <div className="column has-text-centered is-one-half is-full-mobile">
-        <div>
-          <div className="dropdown is-hoverable">
-            <div className="dropdown-trigger" style={{ width: '20rem' }}>
-              <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                <span>
-                  Tip {series.position} of {series.total}
-                </span>
-                <span className="icon is-small">
-                  <i className="fas fa-angle-down" aria-hidden="true" />
-                </span>
-              </button>
-            </div>
-            <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div className="dropdown-content">
-                <div className="dropdown-item">
-                  <strong className="is-size-5">{series.title}</strong>
-                </div>
-                <hr className="dropdown-divider" />
-                {series.all.map((step: any) => (
-                  <Link to={step.slug} className="dropdown-item" key={step.slug}>
-                    {step.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="column has-text-right is-one-quarter-desktop is-hidden-mobile">
-        {series.next && (
-          <Link to={series.next.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.next.label}>
-            <span style={{ paddingLeft: '1em' }}>Next</span>
-            <span className="icon">
-              <i className="fas fa-arrow-right" />
-            </span>
-          </Link>
-        )}
-      </div>
-    </div>
-  ) : null;
+  // Playlist support
+  let topNav;
+  let bottomNav;
+  if (playlist) {
+    const prevNext = getPrevNextBySlug(
+      playlistItems.map(item => {
+        return { label: item.frontmatter.title, slug: item.fields.slug };
+      }),
+      tip.slug
+    );
 
-  const bottomNav = series ? <BottomNav previous={series.previous} next={series.next} /> : null;
+    const navPrevious = prevNext.previous;
+    const navNext = prevNext.next;
+    const parent = playlist ? { label: playlist.frontmatter.title, slug: playlist.fields.slug } : null;
+    const siblings = playlistItems.map(item => {
+      return { label: item.frontmatter.title, slug: item.fields.slug };
+    });
+    topNav = parent ? (
+      <TopNav parent={parent} siblings={siblings} currentSlug={tip.slug} playlistLabel={playlist.frontmatter.label} kind="Item" />
+    ) : null;
+    bottomNav = <BottomNav previous={navPrevious} next={navNext} playlistLabel={playlist.frontmatter.label} />;
+  }
+
   const twitterCard: ITwitterCard = {
     title: tip.title,
     description: tip.subtitle,

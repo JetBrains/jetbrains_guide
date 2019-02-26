@@ -31,7 +31,7 @@ export interface ITipWrapperProps {
 
 const TipWrapper = (Component: any) => ({ data: { tip, authors, resources, playlists }, location }: ITipWrapperProps) => {
   const search = location.search ? parse(location.search.substring(1)) : null;
-  const playlistLabel = search.playlist;
+  const playlistLabel = search ? search.playlist : null;
 
   const tipNode = {
     ...tip.frontmatter,

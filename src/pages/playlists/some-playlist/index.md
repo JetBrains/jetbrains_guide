@@ -11,6 +11,9 @@ thumbnail: './thumbnail.png'
 cardThumbnail: './card.png'
 items:
     - /tips/back-and-forth/
+    - /tips/live-edit/
+    - /tips/disable-tabs/
+    - /tips/recent-files/
 ---
 
 This is a nice playlist.
