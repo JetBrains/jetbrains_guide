@@ -1,3 +1,9 @@
+/*
+
+Show all the playlists that the current item appears in
+
+ */
+
 import React from 'react';
 
 import { Link as ScrollLink } from 'react-scroll/modules';

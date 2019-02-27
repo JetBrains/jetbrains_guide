@@ -1,8 +1,8 @@
 ---
 type: 'playlist'
-label: A
+label: B
 date: 2019-02-04
-title: 'Some Playlist A'
+title: 'Some Playlist B'
 technologies: ['angular']
 topics: ['editing']
 author: 'pauleveritt'

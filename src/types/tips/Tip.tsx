@@ -4,6 +4,7 @@ import React from 'react';
 import { Element, Link as ScrollLink } from 'react-scroll';
 import SeeAlso from '../../components/SeeAlso';
 import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarPlaylists from '../../components/sidebar/SidebarAppearingPlaylists';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
@@ -26,7 +27,7 @@ interface ITipProps {
   appearingPlaylists?: IPlaylistEdges;
 }
 
-const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playlist, playlistItems }) => {
+const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playlist, playlistItems, appearingPlaylists }) => {
   const shortVideo = tip.shortVideo;
   const longVideo = tip.longVideo;
   const seealso = tip.seealso;
@@ -67,12 +68,19 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
     links.push({ label: 'Full Video', target: 'full-video' });
   }
 
+  const sidebarPlaylists = appearingPlaylists
+    ? appearingPlaylists.map(edge => {
+        return { label: edge.node.frontmatter.title, slug: edge.node.fields.slug };
+      })
+    : undefined;
+
   const sidebar = (
     <Sidebar>
       {author && <SidebarPublished date={tip.date} author={author} />}
       <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={tip.technologies} />
       <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={tip.topics} />
       <SidebarDoclinks links={links} />
+      {appearingPlaylists && appearingPlaylists.length > 1 && <SidebarPlaylists playlists={sidebarPlaylists} />}
     </Sidebar>
   );
 
