@@ -12,7 +12,7 @@ import VideoPlayer from '../../components/VideoPlayer';
 import { ITwitterCard } from '../../layouts/BaseLayout';
 import SidebarLayout from '../../layouts/SidebarLayout';
 import { IBaseResourceNode } from '../base_models';
-import { IPlaylistNode } from '../playlists/models';
+import { IPlaylistEdges, IPlaylistNode } from '../playlists/models';
 import BottomNav from '../tutorials/BottomNav';
 import TopNav from '../tutorials/TopNav';
 import { getPrevNextBySlug } from '../tutorials/utils';
@@ -22,7 +22,8 @@ interface ITipProps {
   resource: any;
   author: any;
   playlist?: IPlaylistNode;
-  playlistItems: IBaseResourceNode[];
+  playlistItems?: IBaseResourceNode[];
+  appearingPlaylists?: IPlaylistEdges;
 }
 
 const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playlist, playlistItems }) => {
@@ -78,7 +79,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
   // Playlist support
   let topNav;
   let bottomNav;
-  if (playlist) {
+  if (playlist && playlistItems) {
     const prevNext = getPrevNextBySlug(
       playlistItems.map(item => {
         return { label: item.frontmatter.title, slug: item.fields.slug };

@@ -49,24 +49,44 @@ const TipWrapper = (Component: any) => ({ data: { tip, authors, resources, playl
       }
     : undefined;
 
+  // PLAYLISTS
+
+  // We need all the playlists that this item (e.g. Tip) occurs in. If
+  // this item doesn't appear in any playlists, show the item standalone.
+  const appearingPlaylists = playlists.edges.filter(edge => edge.node.frontmatter.items.includes(tip.fields.slug));
+
+  // Choose a playlist to show this item in.
+  // - If the query string has a playlist, use that
+  // - Otherwise, get the first playlist this item appears in
+
   // If we have a playlist label from the query string or cookie,
   // grab the playlist and dereference its items
-  if (playlistLabel) {
-    const playlistEdge = playlists.edges.find(resource => {
-      const fm = resource.node.frontmatter;
-      return fm.label === playlistLabel;
-    });
+  const playlistEdge = playlistLabel
+    ? playlists.edges.find(resource => {
+        const fm = resource.node.frontmatter;
+        return fm.label === playlistLabel;
+      })
+    : appearingPlaylists[0];
 
-    if (playlistEdge) {
-      // Make a mapping of all resources, slug -> resource
-      const allResources: { [s: string]: IBaseResourceNode } = {};
-      resources.edges.map(edge => (allResources[edge.node.fields.slug] = edge.node));
+  if (playlistEdge) {
+    // Make a mapping of all resources, slug -> resource
+    const allResources: { [s: string]: IBaseResourceNode } = {};
+    resources.edges.map(edge => (allResources[edge.node.fields.slug] = edge.node));
 
-      // Flatten the playlist steps
-      const playlistNode = playlistEdge.node;
-      const playlistItems = playlistNode.frontmatter.items.map(itemSlug => allResources[itemSlug]);
-      return <Component resource={tipNode} author={author} playlist={playlistNode} playlistItems={playlistItems} />;
-    }
+    // Flatten the playlist steps
+    const playlistNode = playlistEdge.node;
+    const playlistItems = playlistNode.frontmatter.items.map(itemSlug => allResources[itemSlug]);
+
+    // Return constructed wrapped component
+    return (
+      <Component
+        resource={tipNode}
+        author={author}
+        playlist={playlistNode}
+        playlistItems={playlistItems}
+        appearingPlaylists={appearingPlaylists}
+      />
+    );
   }
 
   return <Component resource={tipNode} author={author} />;

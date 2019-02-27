@@ -38,7 +38,12 @@ const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug, playlis
       <div className="columns">
         <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
           {previous && (
-            <Link to={`${previous.slug}${playlistPrefix}`} className="topnav-previous button" style={{ border: 'none' }} title={previous.label}>
+            <Link
+              to={`${previous.slug}${playlistPrefix}`}
+              className="topnav-previous button"
+              style={{ border: 'none' }}
+              title={previous.label}
+            >
               <span className="icon">
                 <i className="fas fa-arrow-left" />
               </span>
