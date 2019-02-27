@@ -25,7 +25,7 @@ interface ITipProps {
   playlistItems: IBaseResourceNode[];
 }
 
-const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
+const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playlist, playlistItems }) => {
   const shortVideo = tip.shortVideo;
   const longVideo = tip.longVideo;
   const seealso = tip.seealso;

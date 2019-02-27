@@ -14,7 +14,7 @@ interface ITopNavProps {
   kind?: string;
 }
 
-const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug, playlistLabel, kind='Tip' }) => {
+const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug, playlistLabel, kind = 'Tip' }) => {
   // Get the previous and next, if any, based on currentSlug
   const currentSlugIndex = siblings.findIndex(s => s.slug === currentSlug);
   const previous = currentSlugIndex > 0 ? siblings[currentSlugIndex - 1] : null;
