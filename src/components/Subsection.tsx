@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
+import * as React from 'react';
 
 interface ITechnologyEntry {
   title: string;
@@ -23,6 +23,12 @@ interface IAuthorEntry {
   href: string;
   headshot: any;
 }
+interface IPlaylistEntry {
+  title: string;
+  subtitle?: string;
+  href: string;
+  thumbnail: any;
+}
 
 export const SubsectionAuthor: React.FunctionComponent<IAuthorEntry> = entry => (
   <Link className="bd-link" to={entry.href}>
@@ -30,6 +36,20 @@ export const SubsectionAuthor: React.FunctionComponent<IAuthorEntry> = entry => 
       <figure className="bd-link-figure">
         <div className="image is-rounded is-64x64">
           <Img className="bio-resourcecard-logo" fluid={entry.headshot.childImageSharp.fluid} />
+        </div>
+      </figure>
+      {entry.title}
+    </h2>
+    {entry.subtitle && <p className="bd-link-subtitle">{entry.subtitle}</p>}
+  </Link>
+);
+
+export const SubsectionPlaylist: React.FunctionComponent<IPlaylistEntry> = entry => (
+  <Link className="bd-link" to={entry.href}>
+    <h2 className="bd-link-name">
+      <figure className="bd-link-figure">
+        <div className="image is-64x64">
+          <Img className="bio-resourcecard-logo" fluid={entry.thumbnail.childImageSharp.fluid} />
         </div>
       </figure>
       {entry.title}

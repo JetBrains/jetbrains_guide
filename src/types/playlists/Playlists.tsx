@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { SubsectionTopic } from '../../components/Subsection';
+import { SubsectionPlaylist } from '../../components/Subsection';
 import ReferenceLayout from '../../layouts/ReferenceLayout';
 
 import { IPlaylistEdges } from './models';
@@ -27,13 +27,12 @@ const Playlists: React.FunctionComponent<IPlaylistsProps> = ({
             {items &&
               items.map(item => {
                 return (
-                  <SubsectionTopic
+                  <SubsectionPlaylist
                     key={item.fields.slug}
                     title={item.frontmatter.title}
                     subtitle={item.frontmatter.subtitle}
                     href={item.fields.slug}
-                    accent="primary"
-                    icon="foo-bar"
+                    thumbnail={item.frontmatter.thumbnail}
                   />
                 );
               })}
@@ -65,8 +64,13 @@ export const query = graphql`
             title
             subtitle
             date
-            logo {
+            thumbnail {
               publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }

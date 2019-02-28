@@ -1,41 +1,64 @@
-import React from 'react';
-
 import { graphql } from 'gatsby';
-import { Router } from '@reach/router';
-
-import ResourceWrapper from '../../components/ResourceWrapper';
+import React from 'react';
+import ResourceCard from '../../components/ResourceCard';
+import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarPublished from '../../components/sidebar/SidebarPublished';
+import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
+import SidebarLayout from '../../layouts/SidebarLayout';
+import PlaylistWrapper from './PlaylistWrapper';
 
 interface IPlaylistProps {
   resource: any;
   author: any;
+  playlistItems: any;
 }
 
-const Playlist: React.FunctionComponent<IPlaylistProps> = ({ resource: playlist, author }) => {
+const Playlist: React.FunctionComponent<IPlaylistProps> = ({ resource: playlist, author, playlistItems }) => {
+  const sidebar = (
+    <Sidebar>
+      {author && <SidebarPublished date={playlist.date} author={author} />}
+      <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={playlist.technologies} />
+      <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={playlist.topics} />
+    </Sidebar>
+  );
+
+  // @ts-ignore
   return (
-    <Router>
-      <Page path={playlist.slug} playlist={playlist} author={author} />
-    </Router>
+    <SidebarLayout title={playlist.title} subtitle={playlist.subtitle}>
+      {{
+        sidebar,
+        main: (
+          <>
+            {playlist.html ? (
+              <div className="columns">
+                <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: playlist.html }} />
+              </div>
+            ) : null}
+            {playlistItems && (
+              <div className="bio-tutorial-steps-listing">
+                {playlistItems.map((resource: any) => {
+                  return (
+                    <ResourceCard
+                      key={resource.slug}
+                      title={resource.title}
+                      subtitle={resource.subtitle}
+                      slug={`${resource.slug}?playlist=${playlist.label}`}
+                      thumbnail={resource.thumbnail}
+                      technologies={resource.technologies}
+                      topics={resource.topics}
+                    />
+                  );
+                })}
+              </div>
+            )}
+          </>
+        )
+      }}
+    </SidebarLayout>
   );
 };
 
-interface IPlaylistPageProps {
-  playlist: any;
-  author: any;
-  path: string;
-  page?: string;
-}
-
-const Page = ({ playlist, author, page = '1' }: IPlaylistPageProps) => {
-  return (
-    <div>
-      <h1>Hello {playlist.title}</h1>
-      <p>From {author.title}</p>
-      <p>Page: {page}</p>
-    </div>
-  );
-};
-
-export default ResourceWrapper(Playlist);
+export default PlaylistWrapper(Playlist);
 
 export const query = graphql`
   query($path: String!) {
@@ -49,6 +72,7 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         title
         subtitle
+        items
         label
         author
         technologies
@@ -76,6 +100,31 @@ export const query = graphql`
           all {
             label
             slug
+          }
+        }
+      }
+    }
+
+    resources: allMarkdownRemark(filter: { frontmatter: { type: { eq: "tip" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            subtitle
+            author
+            technologies
+            topics
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
