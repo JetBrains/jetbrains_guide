@@ -75,10 +75,6 @@ const TutorialWrapper = (Component: any) => ({
     flattenedTutorialSteps[edge.node.fields.slug] = edge.node;
   });
 
-  // Flatten the tutorialsteps
-  // const stepSlugs = resource.frontmatter.steps;
-  // const tutorialSteps = stepSlugs;
-
   const flattenedResources: IResourceCardProps[] = resourceNode.steps.map(step => {
     const fullStepSlug = join(resource.fields.slug, step, '/');
     const node = flattenedTutorialSteps[fullStepSlug];

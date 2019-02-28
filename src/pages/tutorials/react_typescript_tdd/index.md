@@ -16,7 +16,7 @@ longVideo:
   url: 'https://www.youtube.com/watch?v=9HWkImburic'
 ---
 
-React is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
+ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
 and thus increasingly supported.
 
 The two together? Not as much. Given that they both change quickly, its

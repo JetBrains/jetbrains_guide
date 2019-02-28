@@ -49,6 +49,7 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         title
         subtitle
+        label
         author
         technologies
         topics
