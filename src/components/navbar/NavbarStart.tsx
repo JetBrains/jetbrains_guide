@@ -16,6 +16,13 @@ const NavbarStart: React.FunctionComponent<INavbarStartProps> = () => (
       <span className="bulmaio-menu-label">Tips</span>
     </Link>
 
+    <Link className={'navbar-item bd-navbar-item-documentation'} to={`/playlists`}>
+      <span className={'icon has-text-warning'}>
+        <i className={'fas fa-list'} />
+      </span>
+      <span className="bulmaio-menu-label">Playlists</span>
+    </Link>
+
     <Link className={'navbar-item bd-navbar-item-documentation'} to={`/technologies`}>
       <span className={'icon has-text-danger'}>
         <i className={'fas fa-project-diagram'} />
