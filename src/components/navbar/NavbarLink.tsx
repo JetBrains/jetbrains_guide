@@ -7,7 +7,7 @@ export interface INavbarLinkProps {
 }
 
 const NavbarLink: React.FunctionComponent<INavbarLinkProps> = ({ href, color, icon }) => (
-  <a className="navbar-item is-hidden-touch is-hidden-desktop-only" href={href} target="_blank">
+  <a className="navbar-item is-hidden-touch" href={href} target="_blank">
     <span className="icon" style={{ color: `#${color}` }}>
       <i className={`fab fa-lg fa-${icon}`} />
     </span>
