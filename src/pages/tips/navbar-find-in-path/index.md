@@ -6,26 +6,6 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Use keyboard and Navigation Bar to find files under a path.'
-series:
-  title: 'Using the Navigation Bar'
-  position: 6
-  total: 6
-  previous:
-    label: 'Narrow Navigation Bar With Speed Search'
-    slug: '/tips/navbar-speed-search/'
-  all: 
-    - label: 'Activate Navigation Bar'
-      slug: '/tips/navbar-activate/'
-    - label: 'Navigate Files With Navigation Bar'
-      slug: '/tips/navbar-navigate-files/'
-    - label: 'Open File With Navigation Bar'
-      slug: '/tips/navbar-open-file/'
-    - label: 'Create New File With Navigation Bar'
-      slug: '/tips/navbar-create-file/'
-    - label: 'Narrow Navigation Bar With Speed Search'
-      slug: '/tips/navbar-speed-search/'
-    - label: 'Find in Path With Navigation Bar'
-      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Finding and replacing text in a project'
     href: 'https://www.jetbrains.com/help/pycharm/finding-and-replacing-text-in-project.html'

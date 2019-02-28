@@ -85,23 +85,6 @@ export const query = graphql`
             }
           }
         }
-        series {
-          title
-          position
-          total
-          previous {
-            label
-            slug
-          }
-          next {
-            label
-            slug
-          }
-          all {
-            label
-            slug
-          }
-        }
       }
     }
 
