@@ -2,22 +2,6 @@
 
 ## Now
 
-- Playlists
-
-    - Listed in menu
-    
-    - Pick first playlist if nothing in query string
-    
-    - Sidebar showing other playlists this item appears in
-    
-    - Make a real listing in Playlist.tsx
-    
-    - List the playlists in Playlists.tsx
-    
-    - Add into menu
-    
-    - Remove "series" from code/data
-
 ## Next
 
 - Get single implementation covering TutorialStep-in-Tutorial and 
@@ -239,4 +223,20 @@ sourceNodes event
   GraphQL queries
   
 - "Series" navigation in tutorials
+
+- Playlists
+
+    - Listed in menu
+    
+    - Pick first playlist if nothing in query string
+    
+    - Sidebar showing other playlists this item appears in
+    
+    - Make a real listing in Playlist.tsx
+    
+    - List the playlists in Playlists.tsx
+    
+    - Add into menu
+    
+    - Remove "series" from code/data
 

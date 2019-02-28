@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "pycharm-guide"
+    "staging": "pycharm-guide-staging",
+    "production": "pycharm-guide"
   }
 }

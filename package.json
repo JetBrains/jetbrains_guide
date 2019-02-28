@@ -14,7 +14,8 @@
     "build": "gatsby build --prefix-paths",
     "start": "gatsby develop",
     "serve": "lite-server",
-    "deploy": "firebase deploy"
+    "staging": "firebase deploy -P staging",
+    "production": "firebase deploy -P production"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.18",
