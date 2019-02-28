@@ -20,6 +20,7 @@ export interface IResourceWrapperProps {
 const ResourceWrapper = (Component: any) => ({ data: { resource, authors } }: IResourceWrapperProps) => {
   const resourceNode = {
     ...resource.frontmatter,
+    slug: resource.fields.slug,
     excerpt: resource.excerpt,
     html: resource.html
   };

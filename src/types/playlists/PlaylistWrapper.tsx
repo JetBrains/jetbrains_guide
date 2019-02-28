@@ -6,30 +6,29 @@ resource objects. Mainly to get author information.
 
  */
 
-import { join } from 'path';
 import React from 'react';
 import { IListingCategoryItem } from '../../components/ListingWrapper';
 import { IResourceCardProps } from '../../components/ResourceCard';
 import { IAuthorEdge, IAuthorEdges } from '../authors/models';
+import { IBaseResourceEdges, IBaseResourceNode } from '../base_models';
 import { ITechnologyEdges } from '../technologies/models';
 import { ITopicEdges } from '../topics/models';
-import { ITutorialNode, ITutorialStepEdges, ITutorialStepNode } from './models';
+import { IPlaylistNode } from './models';
 
-export interface ITutorialWrapperProps {
+export interface IPlaylistWrapperProps {
   data: {
-    resource: ITutorialNode;
-    tutorialsteps: { edges: ITutorialStepEdges };
+    resource: IPlaylistNode;
+    resources: { edges: IBaseResourceEdges };
     authors: { edges: IAuthorEdges };
     technologies: { edges: ITechnologyEdges };
     topics: { edges: ITopicEdges };
   };
 }
 
-const TutorialWrapper = (Component: any) => ({
-  data: { resource, tutorialsteps, authors, technologies, topics }
-}: ITutorialWrapperProps) => {
+const PlaylistWrapper = (Component: any) => ({ data: { resource, authors, technologies, topics, resources } }: IPlaylistWrapperProps) => {
   const resourceNode = {
     ...resource.frontmatter,
+    slug: resource.fields.slug,
     excerpt: resource.excerpt,
     html: resource.html
   };
@@ -47,7 +46,7 @@ const TutorialWrapper = (Component: any) => ({
     authors: {},
     technologies: {},
     topics: {},
-    tutorialsteps: {}
+    playlistitems: {}
   };
 
   authors.edges.map(edge => {
@@ -57,6 +56,7 @@ const TutorialWrapper = (Component: any) => ({
       headshot: edge.node.frontmatter.headshot
     };
   });
+
   technologies.edges.map(edge => {
     references.technologies[edge.node.frontmatter.label] = {
       label: edge.node.frontmatter.label,
@@ -70,14 +70,13 @@ const TutorialWrapper = (Component: any) => ({
     };
   });
 
-  const flattenedTutorialSteps: { [s: string]: ITutorialStepNode } = {};
-  tutorialsteps.edges.map(edge => {
-    flattenedTutorialSteps[edge.node.fields.slug] = edge.node;
+  const flattenedPlaylistItems: { [s: string]: IBaseResourceNode } = {};
+  resources.edges.map(edge => {
+    flattenedPlaylistItems[edge.node.fields.slug] = edge.node;
   });
 
-  const flattenedResources: IResourceCardProps[] = resourceNode.steps.map(step => {
-    const fullStepSlug = join(resource.fields.slug, step, '/');
-    const node = flattenedTutorialSteps[fullStepSlug];
+  const flattenedResources: IResourceCardProps[] = resourceNode.items.map(itemSlug => {
+    const node = flattenedPlaylistItems[itemSlug];
     return {
       title: node.frontmatter.title,
       subtitle: node.frontmatter.subtitle,
@@ -89,7 +88,7 @@ const TutorialWrapper = (Component: any) => ({
     };
   });
 
-  return <Component resource={resourceNode} author={author} tutorialSteps={flattenedResources} />;
+  return <Component resource={resourceNode} author={author} playlistItems={flattenedResources} />;
 };
 
-export default TutorialWrapper;
+export default PlaylistWrapper;

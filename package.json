@@ -72,10 +72,12 @@
     "typescript": "^3.1.1"
   },
   "dependencies": {
+    "@types/qs": "^6.5.1",
     "bulma-steps-component": "^0.5.3",
     "gatsby-plugin-gtag": "^1.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.6",
     "gatsby-remark-images": "^2.0.4",
+    "qs": "^6.6.0",
     "tsutils": "^3.8.0",
     "video.js": "^7.2.4",
     "videojs-youtube": "^2.6.0"

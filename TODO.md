@@ -2,11 +2,25 @@
 
 ## Now
 
-## Next
-
 - Playlists
 
-- Get single implementatio covering TutorialStep-in-Tutorial and 
+    - Listed in menu
+    
+    - Pick first playlist if nothing in query string
+    
+    - Sidebar showing other playlists this item appears in
+    
+    - Make a real listing in Playlist.tsx
+    
+    - List the playlists in Playlists.tsx
+    
+    - Add into menu
+    
+    - Remove "series" from code/data
+
+## Next
+
+- Get single implementation covering TutorialStep-in-Tutorial and 
   Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel
 
 ## Soon
@@ -29,6 +43,9 @@
 - Track clicks on buttons such as Full Video
 
 ## Later
+
+- Do canonical URLs in <meta> if there are multiple paths to same 
+resource
 
 - Get "news" working
 

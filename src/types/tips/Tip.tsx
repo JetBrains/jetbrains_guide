@@ -1,10 +1,10 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
 
 import { Element, Link as ScrollLink } from 'react-scroll';
-import ResourceWrapper from '../../components/ResourceWrapper';
 import SeeAlso from '../../components/SeeAlso';
 import Sidebar from '../../components/sidebar/Sidebar';
+import SidebarPlaylists from '../../components/sidebar/SidebarAppearingPlaylists';
 import SidebarDoclinks, { IDoclink } from '../../components/sidebar/SidebarDoclinks';
 import SidebarPublished from '../../components/sidebar/SidebarPublished';
 import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGroup';
@@ -12,14 +12,22 @@ import SidebarReferenceGroup from '../../components/sidebar/SidebarReferencesGro
 import VideoPlayer from '../../components/VideoPlayer';
 import { ITwitterCard } from '../../layouts/BaseLayout';
 import SidebarLayout from '../../layouts/SidebarLayout';
+import { IBaseResourceNode } from '../base_models';
+import { IPlaylistEdges, IPlaylistNode } from '../playlists/models';
 import BottomNav from '../tutorials/BottomNav';
+import TopNav from '../tutorials/TopNav';
+import { getPrevNextBySlug } from '../tutorials/utils';
+import TipWrapper from './TipWrapper';
 
 interface ITipProps {
   resource: any;
   author: any;
+  playlist?: IPlaylistNode;
+  playlistItems?: IBaseResourceNode[];
+  appearingPlaylists?: IPlaylistEdges;
 }
 
-const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
+const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playlist, playlistItems, appearingPlaylists }) => {
   const shortVideo = tip.shortVideo;
   const longVideo = tip.longVideo;
   const seealso = tip.seealso;
@@ -60,71 +68,45 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
     links.push({ label: 'Full Video', target: 'full-video' });
   }
 
+  const sidebarPlaylists = appearingPlaylists
+    ? appearingPlaylists.map(edge => {
+        return { label: edge.node.frontmatter.title, slug: edge.node.fields.slug };
+      })
+    : undefined;
+
   const sidebar = (
     <Sidebar>
       {author && <SidebarPublished date={tip.date} author={author} />}
       <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={tip.technologies} />
       <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={tip.topics} />
       <SidebarDoclinks links={links} />
+      {appearingPlaylists && appearingPlaylists.length > 1 && <SidebarPlaylists playlists={sidebarPlaylists} />}
     </Sidebar>
   );
 
-  const series = tip.series;
-  const topNav = series ? (
-    <div className="columns">
-      <div className="column has-text-left is-one-quarter-desktop is-hidden-mobile">
-        {series.previous && (
-          <Link to={series.previous.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.previous.label}>
-            <span className="icon">
-              <i className="fas fa-arrow-left" />
-            </span>
-            <span style={{ paddingLeft: '1em' }}>Previous</span>
-          </Link>
-        )}
-      </div>
-      <div className="column has-text-centered is-one-half is-full-mobile">
-        <div>
-          <div className="dropdown is-hoverable">
-            <div className="dropdown-trigger" style={{ width: '20rem' }}>
-              <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
-                <span>
-                  Tip {series.position} of {series.total}
-                </span>
-                <span className="icon is-small">
-                  <i className="fas fa-angle-down" aria-hidden="true" />
-                </span>
-              </button>
-            </div>
-            <div className="dropdown-menu" id="dropdown-menu2" role="menu">
-              <div className="dropdown-content">
-                <div className="dropdown-item">
-                  <strong className="is-size-5">{series.title}</strong>
-                </div>
-                <hr className="dropdown-divider" />
-                {series.all.map((step: any) => (
-                  <Link to={step.slug} className="dropdown-item" key={step.slug}>
-                    {step.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="column has-text-right is-one-quarter-desktop is-hidden-mobile">
-        {series.next && (
-          <Link to={series.next.slug} className="topnav-previous button" style={{ border: 'none' }} title={series.next.label}>
-            <span style={{ paddingLeft: '1em' }}>Next</span>
-            <span className="icon">
-              <i className="fas fa-arrow-right" />
-            </span>
-          </Link>
-        )}
-      </div>
-    </div>
-  ) : null;
+  // Playlist support
+  let topNav;
+  let bottomNav;
+  if (playlist && playlistItems) {
+    const prevNext = getPrevNextBySlug(
+      playlistItems.map(item => {
+        return { label: item.frontmatter.title, slug: item.fields.slug };
+      }),
+      tip.slug
+    );
 
-  const bottomNav = series ? <BottomNav previous={series.previous} next={series.next} /> : null;
+    const navPrevious = prevNext.previous;
+    const navNext = prevNext.next;
+    const parent = playlist ? { label: playlist.frontmatter.title, slug: playlist.fields.slug } : null;
+    const siblings = playlistItems.map(item => {
+      return { label: item.frontmatter.title, slug: item.fields.slug };
+    });
+    topNav = parent ? (
+      <TopNav parent={parent} siblings={siblings} currentSlug={tip.slug} playlistLabel={playlist.frontmatter.label} kind="Item" />
+    ) : null;
+    bottomNav = <BottomNav previous={navPrevious} next={navNext} playlistLabel={playlist.frontmatter.label} />;
+  }
+
   const twitterCard: ITwitterCard = {
     title: tip.title,
     description: tip.subtitle,
@@ -205,11 +187,11 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author }) => {
   );
 };
 
-export default ResourceWrapper(Tip);
+export default TipWrapper(Tip);
 
 export const query = graphql`
   query($path: String!) {
-    resource: markdownRemark(fields: { slug: { eq: $path } }) {
+    tip: markdownRemark(fields: { slug: { eq: $path } }) {
       html
       fields {
         slug
@@ -229,23 +211,6 @@ export const query = graphql`
             fluid(maxWidth: 1000) {
               ...GatsbyImageSharpFluid
             }
-          }
-        }
-        series {
-          title
-          position
-          total
-          previous {
-            label
-            slug
-          }
-          next {
-            label
-            slug
-          }
-          all {
-            label
-            slug
           }
         }
         seealso {
@@ -294,6 +259,50 @@ export const query = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    resources: allMarkdownRemark {
+      edges {
+        node {
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            type
+            date(formatString: "MMMM Do, YYYY")
+            title
+            subtitle
+            author
+            technologies
+            topics
+            thumbnail {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    playlists: allMarkdownRemark(filter: { frontmatter: { type: { eq: "playlist" } } }) {
+      edges {
+        node {
+          html
+          fields {
+            slug
+          }
+          frontmatter {
+            label
+            title
+            items
           }
         }
       }

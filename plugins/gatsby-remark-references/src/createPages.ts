@@ -8,13 +8,7 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
 
   // First do the "listing" pages for each type
   Object.values(configTypes).map((ct: any) => {
-    if (
-      ct.plural === 'authors' ||
-      ct.plural === 'technologies' ||
-      ct.plural === 'topics' ||
-      ct.plural === 'tips' ||
-      ct.plural === 'tutorials'
-    ) {
+    if (ct.plural) {
       createPage({
         path: `/${ct.plural}`,
         component: path.resolve(ct.listing)
@@ -50,6 +44,7 @@ const createPages: GatsbyCreatePages = async ({ graphql, boundActionCreators }, 
     // specified in the setup
 
     const configType = configTypes[node.frontmatter.type];
+
     createPage({
       path: node.fields.slug,
       component: path.resolve(configType.item)

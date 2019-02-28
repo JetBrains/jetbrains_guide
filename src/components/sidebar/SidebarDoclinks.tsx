@@ -1,3 +1,9 @@
+/*
+
+Show all the playlists that the current item appears in
+
+ */
+
 import React from 'react';
 
 import { Link as ScrollLink } from 'react-scroll/modules';
@@ -11,7 +17,7 @@ export interface ISidebarDoclinksProps {
   links: IDoclink[];
 }
 
-const Doclink: React.FunctionComponent<IDoclink> = ({ label, target }) => (
+const Doclink: React.FC<IDoclink> = ({ label, target }) => (
   <li>
     <ScrollLink activeClass="active" to={target} spy={true} smooth={true} offset={0} duration={500} style={{ width: 'auto' }}>
       {label}
@@ -19,7 +25,7 @@ const Doclink: React.FunctionComponent<IDoclink> = ({ label, target }) => (
   </li>
 );
 
-const SidebarDoclinks: React.FunctionComponent<ISidebarDoclinksProps> = ({ links }) => {
+const SidebarDoclinks: React.FC<ISidebarDoclinksProps> = ({ links }) => {
   return (
     <div className="bio-page-sidebar-references-group" style={{ marginTop: '1rem' }}>
       {links.length > 0 && (

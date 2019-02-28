@@ -6,29 +6,6 @@ technologies: []
 topics: ['navigation', 'navigationbar']
 author: 'pauleveritt'
 subtitle: 'Move around your project tree and select files, from your keyboard, with the Navigation Bar.'
-series:
-  title: 'Using the Navigation Bar'
-  position: 2
-  total: 6
-  previous:
-    label: 'Activate Navigation Bar'
-    slug: '/tips/navbar-activate/'
-  next:  
-    label: 'Open File With Navigation Bar'
-    slug: '/tips/navbar-open-file/'
-  all: 
-    - label: 'Activate Navigation Bar'
-      slug: '/tips/navbar-activate/'
-    - label: 'Navigate Files With Navigation Bar'
-      slug: '/tips/navbar-navigate-files/'
-    - label: 'Open File With Navigation Bar'
-      slug: '/tips/navbar-open-file/'
-    - label: 'Create New File With Navigation Bar'
-      slug: '/tips/navbar-create-file/'
-    - label: 'Narrow Navigation Bar With Speed Search'
-      slug: '/tips/navbar-speed-search/'
-    - label: 'Find in Path With Navigation Bar'
-      slug: '/tips/navbar-find-in-path/'
 seealso:
   - title: 'Navigation bar'
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
