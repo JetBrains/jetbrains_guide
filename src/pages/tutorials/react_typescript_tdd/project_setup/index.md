@@ -73,7 +73,7 @@ scripts. You'll get a run window at the bottom with a UI for showing
 output and restarting. Alternatively, open `package.json` and click the
 green play icon in the gutter by the run scripts:
 
-![Running the npm start script](screenshots/starting.png)
+![Running the npm start script](./screenshots/starting.png)
 
 What scripts does `create-react-app` generate in `package.json`? Here 
 is the full file:
@@ -104,7 +104,7 @@ Running this is easy in PyCharm Professional: just click on `build` in the
 npm tool window. This generates a `build` directory in your project root 
 with the production output of you project. 
 
-![Generating a production build](screenshots/building.png)
+![Generating a production build](./screenshots/building.png)
 
 As an optimization, right-click on the new ``build``
 directory and ``Mark Directory As | Excluded``. This prevents the IDE from
