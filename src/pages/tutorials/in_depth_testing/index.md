@@ -11,15 +11,14 @@ steps:
 thumbnail: './thumbnail.png'
 ---
 
-ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
-and thus increasingly supported.
+With PyCharm you can test your Python applications
+using one of your favorite testing frameworks:
+- Python unittests
+- pytest
+- Python nosetests
+- Python doctests
+- Tox
+- TwistedTrial
+You can run tests in parallel on several CPUs to optimize execution of your pytest tests.
 
-The two together? Not as much. Given that they both change quickly, its
-hard to find accurate learning materials.
-
-React+TypeScript, with PyCharm? That three-part combination is the topic
-of this series. We'll show a little about a lot. Meaning, the key steps
-to getting productive, in PyCharm, for React projects using TypeScript. Along
-the way we'll show test-driven development and emphasize tips-and-tricks in
-the IDE.
 
