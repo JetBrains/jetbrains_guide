@@ -1,15 +1,14 @@
 ---
 type: 'tutorial'
-date: 2017-07-07
+date: 2019-03-01
 title: 'In-Depth Testing'
 technologies: ['pytest']
 topics: ['testing', 'python', 'ide']
-author: 'pauleveritt'
+author: 'allaredko'
 subtitle: 'How to test your applications in PyCharm:'
+steps:
+  - 'project_cleanup'
 thumbnail: './thumbnail.png'
-longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
 ---
 
 ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
