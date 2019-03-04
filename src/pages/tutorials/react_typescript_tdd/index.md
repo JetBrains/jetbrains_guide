@@ -9,7 +9,7 @@ subtitle: 'How to write React applications in TypeScript using TDD, highlighting
 steps:
   - 'project_setup'
   - 'project_cleanup'
-  - 'step3'
+  - 'testing'
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
