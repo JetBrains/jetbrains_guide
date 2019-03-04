@@ -1,53 +1,37 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { SubsectionPlaylist } from '../../components/Subsection';
 import ReferenceLayout from '../../layouts/ReferenceLayout';
+import ResourceCard from '../../components/ResourceCard';
+import ListingWrapper from '../../components/ListingWrapper';
 
-import { IPlaylistEdges } from './models';
-
-interface IPlaylistsProps {
-  data: {
-    allMarkdownRemark: {
-      edges: IPlaylistEdges;
-    };
-  };
+export interface IPlaylistsProps {
+  resources: any[];
 }
 
-const Playlists: React.FunctionComponent<IPlaylistsProps> = ({
-  data: {
-    allMarkdownRemark: { edges: technologyEdges }
-  }
-}) => {
-  const items = technologyEdges.map(edge => edge.node);
+const Playlists: React.FunctionComponent<IPlaylistsProps> = ({ resources }) => {
   return (
-    <ReferenceLayout title={'Playlists'} subtitle={'Resources organized by programming technologies'}>
+    <ReferenceLayout title="Playlists" subtitle="Curated collections of resources">
       {{
         listing: (
-          <nav className="bd-links bio-resourcecards">
-            {items &&
-              items.map(item => {
-                return (
-                  <SubsectionPlaylist
-                    key={item.fields.slug}
-                    title={item.frontmatter.title}
-                    subtitle={item.frontmatter.subtitle}
-                    href={item.fields.slug}
-                    thumbnail={item.frontmatter.thumbnail}
-                  />
-                );
+          <div>
+            {resources &&
+              resources.map(r => {
+                return <ResourceCard key={r.slug} {...r} />;
               })}
-          </nav>
+          </div>
         )
       }}
     </ReferenceLayout>
   );
 };
 
-export default Playlists;
+const comparator = () => true;
+
+export default ListingWrapper(Playlists, comparator);
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
+    resources: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { frontmatter: { type: { eq: "playlist" } } }
       limit: 1000
@@ -63,7 +47,9 @@ export const query = graphql`
             label
             title
             subtitle
-            date
+            technologies
+            topics
+            date(formatString: "MMMM Do, YYYY")
             thumbnail {
               publicURL
               childImageSharp {
@@ -72,6 +58,54 @@ export const query = graphql`
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    authors: allMarkdownRemark(filter: { frontmatter: { type: { eq: "author" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            label
+            headshot {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    technologies: allMarkdownRemark(filter: { frontmatter: { type: { eq: "technology" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            label
+          }
+        }
+      }
+    }
+
+    topics: allMarkdownRemark(filter: { frontmatter: { type: { eq: "topic" } } }) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            label
           }
         }
       }

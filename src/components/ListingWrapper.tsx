@@ -1,7 +1,7 @@
 /*
 
-HOC to wrap the listings, extracting and flattening the 
-page query data into a references map and well-structured 
+HOC to wrap the listings, extracting and flattening the
+page query data into a references map and well-structured
 resource and resources objects.
 
  */
