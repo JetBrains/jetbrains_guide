@@ -7,9 +7,18 @@ topics: ['testing']
 author: 'pauleveritt'
 subtitle: 'How to write React applications in TypeScript using TDD, highlighting features of the IDE'
 steps:
-  - 'project_setup'
-  - 'project_cleanup'
-  - 'testing'
+  - project_setup
+  - project_cleanup
+  - testing
+  - nodejs_debugging
+  - chrome_debugging
+  - tsx_es6
+  - functional_components
+  - props
+  - class_props
+  - class_state
+  - rich_events_and_testing
+  - presentation_components
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
