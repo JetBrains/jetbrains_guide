@@ -1,7 +1,7 @@
 ---
 type: 'tutorialstep'
 date: 2017-07-07
-title: 'Sharing Component Props Using Type Information'
+title: 'Sharing Props Using Type Information'
 technologies: ['react', 'typescript']
 topics: []
 author: 'pauleveritt'

@@ -19,8 +19,10 @@ a *class* component for our `App`, because classes allow the full range of
 React capabilities (local state, lifecycle methods, etc.). But React
 encourages
 [stateless functional components (SFCs)](https://reactjs.org/docs/components-and-props.html)
-for simple, presentational components. Let's convert our `App` component
-to a TypeScript-driven SFC using TDD along the way.
+for simple, presentational components. 
+
+Let's convert our `App` component to a TypeScript-driven SFC using TDD 
+along the way.
 
 ## Prep
 
@@ -38,8 +40,8 @@ Finally, let's return our `App` to a simpler form by removing the field
 and handlers, which will gradually add back in:
 
 ```typescript
-class App extends React.Component {
-    public render() {
+class App extends Component {
+  render() {
         return (
             <div>
                 <h1>Hello React</h1>
@@ -95,7 +97,9 @@ a test.
 We're using Enzyme's `shallow` renderer, which doesn't go into subcomponents.
 For that, let's use Enzyme's
 [mount method](http://airbnb.io/enzyme/docs/api/mount.html) which does a
-full rendering including children. Add a new test:
+full rendering including children. 
+
+Add a new test:
 
 ```typescript
 it('renders the app and the heading', () => {
@@ -111,8 +115,8 @@ import.
 We can now change our `App` component to use the `Heading` component:
 
 ```typescript
-class App extends React.Component {
-    public render() {
+class App extends Component {
+    render() {
         return (
             <div>
                 <Heading/>
@@ -122,7 +126,9 @@ class App extends React.Component {
 }
 ```
 
-Our tests still run because the new child component emitted the same result
+Note that the IDE does the autocompletion on `<Heading/>`.
+
+Our tests still pass because the new child component emitted the same result
 as the previous inline `<h1>`.
 
 ## Single Responsibility Principle
@@ -136,7 +142,7 @@ Let's move the heading to its own file. Cut and paste the SFC into
 `Heading.tsx`:
 
 ```typescript
-import * as React from 'react';
+import React from 'react';
 
 const Heading = () => <h1>Hello React</h1>;
 
@@ -152,24 +158,26 @@ Let's extract the `renders the heading` test into `Heading.test.tsx`:
 
 ```typescript
 import { shallow } from 'enzyme';
-import * as React from 'react';
+import React from 'react';
 import Heading from './Heading';
 
 it('renders the heading', () => {
     const wrapper = shallow(<Heading/>);
-    expect(wrapper.find('h1').text()).toBe('Hello React');
+    expect(wrapper.find('h1').text())
+        .toBe('Hello React');
 });
 ```
 
 Remember to use `Alt-Enter` to clean up missing imports, including the
-missing `React` import.
+missing `React` import if needed.
 
 Back in `App.tsx` we have an error on `<Heading/>`. It's no longer
 locally defined. We need to import it. Click on the symbol and use
 `Alt-Enter` to let the IDE generate the import for you.
 
 Finally, `App.test.tsx` had an unused -- and broken -- import of
-`Heading` from `App.tsx`. Let's remove it.
+`Heading` from `App.tsx`. Let's remove it. You can let the IDE clean 
+up your imports with `Optimize Imports` (`Ctrl-Alt-O` Win/Linux/macOS.)
 
 Our three tests across 2 test files pass again. We've successfully extracted
 our component.

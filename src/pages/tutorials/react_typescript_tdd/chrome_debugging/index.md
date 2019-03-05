@@ -1,11 +1,11 @@
 ---
 type: 'tutorialstep'
 date: 2017-07-07
-title: 'Debugging TSX With Chrome'
+title: Debugging TSX With Chrome
 technologies: ['react']
 topics: []
 author: 'pauleveritt'
-subtitle: 'Sometimes you need to debug in the browser, such as for JSX rendering and events. Use the IDE to remote control Chrome during debugging.'
+subtitle: Sometimes you need to debug in the browser. Use the IDE to remote control Chrome during debugging.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
@@ -13,7 +13,7 @@ longVideo:
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), 
-the testing and debugging under NodeJS is very productive. There are times, 
+ testing and debugging under NodeJS is very productive. There are times, 
 though, where you need a browser environment. Fortunately, PyCharm 
 Professional can remote-control the browser's execution, letting you stay 
 inside the IDE.
@@ -29,16 +29,20 @@ for launching the Chrome browser. Add a new run configuration of type
 `JavaScript Debug` and supply a `Name:` such as `App`. As we
 saw in the first section, the webpack development server runs on port
 3000, so provide the run configuration a `URL:` of
-`http://localhost:3000`.
+`http://localhost:3000`. Finally, choose Chrome in the `Browser:` field .
 
 Click `Ok` then run this configuration. Presuming that your npm `start`
 is still running, you should see a browser launched.
 
+Finish up by closing that new browser window.
+
 ## Browser Debug
 
+TODO Isn't working
+
 Now it's time to debug in the browser. Put a breakpoint inside the
-`label` method. Then, run the config, but this time, click the `Debug`
-button.
+`label` method. Then, re-run the `JavaScript Debug` configuration you just 
+made, but this time, click the `Debug` button.
 
 Chrome should pop up, but with nothing displayed, and a strange yellow
 `Paused in debugger` message. The IDE should, as it did in the previous
@@ -58,5 +62,3 @@ object.
 
 To clean up, click the red button to stop the debugger, close Chrome, and
 clear the breakpoint.
-
-## See Also

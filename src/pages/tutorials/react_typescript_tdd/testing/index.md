@@ -17,8 +17,8 @@ We briefly saw the [Jest](../../../technologies/jest) test runner in
 dive into testing.
 
 In this tutorial step we start the process of test driven development. After
-this step, we'll develop first in our Jest tests. Then, only at the end, we
-will look at the app in the browser.
+this step, we'll develop first in our Jest tests. Then, only at the end of 
+development, we will look at the app in the browser.
 
 ## Code
 
@@ -29,14 +29,14 @@ The finished code for this tutorial step is
 
 Previously we ran our Jest tests as a generic npm run script, in the IDE's
 npm run tool window. However, PyCharm Professional has a dedicated run
-configuration type for Jest. It's a fantastic way to do development. Let's
-switch to using that.
+configuration type for Jest. It's a fantastic, visual way to do testing. 
+Let's switch to using that.
 
 Select `Run | Edit Configurations`, click `+`, and click on `Jest`.
 Supply a `Name:` of something like `unit tests`. The only real field
 you need to supply is `Jest options:`. For that, enter
 `--watchAll`. This tells Jest to continuously run and re-run tests when a 
-file has changed (thus speeding up test running.)
+file has changed (thus speeding up testing.)
 
 ![Custom run configuration type for Jest](./screenshots/run_config.png)
 
@@ -48,7 +48,7 @@ window which will make test-driven development (TDD) much more productive.
 
 Let's see a little testing in action. Open `src/App.test.tsx`. We're going to
 show the cycle of fail-fix in action. Define two contants, then compare
-them with a simple Jest (actually, Jasmine) assertion:
+them with a simple Jest assertion:
 
 ```typescript
 it('renders without crashing', () => {
@@ -63,60 +63,65 @@ it('renders without crashing', () => {
 
 When you save this, Jest re-runs your tests, and does so quite fast. Our
 tests fail, and the IDE's tool window presents the test results in a very
-convenient manner. For example, you can jump directly to the line of the
+convenient UI. For example, you can jump directly to the line of the
 failing test.
 
 ![Jest tool window shows which tests fail](./screenshots/failed_test.png)
 
-Fix the test by changing `expected` to `1` then save. The Jest watcher
-spots the change, re-runs the test very quickly, and shows that all tests
-pass.
+If the file isn't open, the IDE will open it and scroll to the line of 
+code.
+
+Let's fix the test by changing `expected` to `1` then save. The Jest 
+watcher spots the change, re-runs the test very quickly, and shows that 
+all tests pass.
 
 ## TDD Basics
 
 JavaScript development is usually a bunch of switching between the editor,
-the browser, the browser console, and a terminal window with the build tools
+the browser, the browser console, and a terminal window, with the build tools
 displaying messages. Let's use a better flow. Let's stay in the IDE and focus
 on our code, and observe our code through tests instead of a browser reload.
 
-First, let's get our code and our tests side-by-side. Press `Ctrl-Alt-A` and
-type in `Split Vertically`. This gives us a left and right side editor. On
-the left, open `App.tsx`. We can now see `class App` alongside our tests.
-If you need more room, close the Project tool window.
+First, let's get our code and our tests side-by-side. Use 
+`Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and 
+type in `Split Vertically`. This gives us a left and right side editor without 
+needing tabs. On the left, open `App.tsx`. We can now see `class App` alongside 
+our tests. If you need more room, close the Project tool window.
 
 ![Component and test side-by-side](./screenshots/side_by_side.png)
-
-We often want to jump between our code and our test. The IDE makes this
-easy. `Cmd-Shift-T` moves the cursor between code and test.
 
 ## A Real Test
 
 We currently have a test which makes a document, tells React to render our
 component-under-test into it, and then...well, nothing really.
-[create-react-app](../../../technologies/cra) 
-generates a test whose only purpose is to see if it
-can render. Let's look inside the rendered result and test its correctness.
+[create-react-app](../../../technologies/cra)  generates a test whose only 
+purpose is to see if it can render. Let's look inside the rendered result 
+and test its correctness.
 
-To do so, we're going to install , a utility for
-React that makes testing feel like jQuery assertions. Open the IDE's
-`Terminal` tool and install [Enzyme](../../../technologies/enzyme) and its TypeScript typings:
+To do so, we're going to install [Enzyme](../../../technologies/enzyme), a 
+utility for React that makes testing feel like jQuery assertions. Open the IDE's
+`Terminal` tool and install Enzyme and its TypeScript typings:
 
 ```bash
 $ npm install -D enzyme enzyme-adapter-react-16 react-addons-test-utils \
   @types/enzyme @types/enzyme-adapter-react-16
 ```
 
-We need to tell Jest to use a configured Enzyme. Add this file at
+As [explained in the CRA docs](https://facebook.github.io/create-react-app/docs/running-tests#src-setuptestsjs), 
+we need to tell Jest to use a configured Enzyme. Add this file at
 `src/setupTests.ts`:
 
 ```typescript
-import * as Enzyme from 'enzyme'
-import * as Adapter from 'enzyme-adapter-react-16'
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
-Enzyme.configure({
-    adapter: new Adapter(),
-});
+configure({adapter: new Adapter()});
+
+export default undefined;
 ```
+
+*Note: Does that default export look weird? Explanation is in the docs link 
+above.*
 
 Restart the Jest run tool window to pickup this setup file. Then, edit
 `src/App.test.tsx` to include a second test:
@@ -175,3 +180,8 @@ without looking at a browser.
 - https://www.codementor.io/vijayst/unit-testing-react-components-jest-or-enzyme-du1087lh8
 
 - https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter
+
+## TODO
+
+- Discuss how to make right-click run test work by changing the 
+  run config templates

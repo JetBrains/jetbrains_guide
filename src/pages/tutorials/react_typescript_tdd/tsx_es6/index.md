@@ -5,7 +5,7 @@ title: 'TSX and ES6'
 technologies: ['react']
 topics: []
 author: 'pauleveritt'
-subtitle: 'Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both..'
+subtitle: 'Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both.'
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
@@ -49,9 +49,9 @@ it('renders the heading', () => {
 Also, our component in `App.tsx`:
 
 ```typescript
-import * as React from 'react';
+import React, { Component } from 'react';
 
-class App extends React.Component {
+class App extends Component {
     public render() {
         return (
             <div>
@@ -64,7 +64,7 @@ class App extends React.Component {
 export default App;
 ```
 
-Make sure the test runner is still running and watching. You can, though,
+Make sure the test runner is still running and watching. Let's also 
 shutdown the `start` task. We don't need it regenerating the bundle and
 updating the browser, duplicating what's happening in the Jest process.
 
@@ -73,15 +73,15 @@ Our two tests pass. Let's see some ES6 and TSX.
 ## Classes and Fields
 
 As you can see, this component is using React's support for ES6 classes.
-Our `App` component extends `React.Component` which has a constructor that
-initializes a bunch of stuff. We'll see functional components later.
+Our `App` component extends `React.Component`. We'll see functional 
+components later.
 
 Let's do another approach at extracting the hardwired string from the
 `<h1>`. The `render` method can, of course, have scope. Let's define the
 label there:
 
 ```typescript
-public render() {
+render() {
     const label = 'Hello React';
     return (
         <div>
@@ -91,16 +91,16 @@ public render() {
 }
 ```
 
-The `const` is used because we never intend to re-assign the label. Our
+`const` is used because we never intend to re-assign the label. Our
 tests pass, so this change worked fine.
 
 We can also move the `label` up to the class label as a field:
 
 ```typescript
-class App extends React.Component {
-    public label = 'Hello React'
+class App extends Component {
+    label = 'Hello React';
 
-    public render() {
+    render() {
         return (
             <div>
                 <h1>{this.label}</h1>
@@ -122,8 +122,8 @@ doesn't work until an arrow function saves the day.
 
 We'll first do an inline click handler that displays a static string. Note
 that JSX (and thus, TSX) map certain HTML attributes into first-class names,
-such as `onClick` and `className`, in its grammar, thus letting us
-assign an expression (with `{}`) instead of a string:
+such as `onClick` and `className`. They do this in their grammar, thus 
+letting us assign an expression (with `{}`) instead of a string:
 
 ```jsx
 <h1 onClick={alert('Hello World')}>{this.label}</h1>
@@ -131,11 +131,37 @@ assign an expression (with `{}`) instead of a string:
 
 Note that the IDE was smart about autocompleting these special attributes.
 
-But this fails. Why? The expression is immediately evaluated, rather than
-run when the event is fired. We need a way to assign something that will be
-executed *later*, when the event is fired.
+Our test runner, though, says:
 
-Arrow functions to the rescue! Try this instead:
+```Error: Not implemented: window.alert```
+
+That's understandable. We're in a NodeJS environment using JSDOM as a fake 
+browser and JSDOM doesn't implement `window.alert`. Let's use a `console.log` 
+instead:
+
+```jsx
+<h1 onClick={alert('Hello World')}>{this.label}</h1>
+```
+
+TypeScript, though, is mad. It says:
+
+```
+  Type error: Type 'void' is not assignable to type 
+  '((event: MouseEvent<HTMLHeadingElement, MouseEvent>) => void) | undefined'
+```
+
+What is causing this? The `console.log` expression is immediately 
+evaluated, rather than run when the event is fired. `console.log` doesn't 
+return anything, meaning a `void` is assigned to `onClick`. TypeScript 
+knows that's the wrong type, and says so.
+
+See, TypeScript is good for something. (wink)
+
+We need a way to assign something that will be executed *later*, when the 
+event is fired, instead of getting executed immediately.
+
+Arrow functions to the rescue! Try this instead, also switching back 
+to `alert`:
 
 ```jsx
 <h1 onClick={() => alert('Hello World')}>{this.label}</h1>
@@ -147,46 +173,25 @@ needs no arguments. (It's actually passed an event, which we'll use in later
 steps.) The function body is one line, so we don't need curly braces for a
 block.
 
-This is actually valid TypeScript, and would compile and run, but our picky
-style linter complains. In React, defining functions on the fly is expensive
-(when you're doing hundreds in a loop) and the TSLint community decided to
-frown on that by default. We can override the default, though. Edit
-`tslint.json` to contain:
-
-```json
-{
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "linterOptions": {
-    "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*.ts"
-    ]
-  },
-  "rules": {
-    "jsx-no-lambda": false
-  }
-}
-```
-
-Restart your `start` script to get the linter to pick up the change.
+Let's check in the browser for the alert, so restart your `start` script.
 Everything compiles fine and clicking on the `<h1>` in the browser produces
 an alert.
 
 ## Move To a Method
 
-Inline handlers aren't so smart, as they aren't easily testable. Plus, bossy
-TSLint doesn't like them (for performance reasons.) Let's move the handler to
-a component method:
+Inline handlers aren't so smart, as they aren't easily testable and smart 
+folks say there's a slight performance it on re-render. Let's move the 
+handler to a component method:
 
 ```typescript
-    class App extends React.Component {
-        public label = 'Hello React'
+    class App extends Component {
+        label = 'Hello React'
 
-        public handleClick () {
+        handleClick () {
             alert('Hello World');
         }
 
-        public render() {
+        render() {
             return (
                 <div>
                     <h1 onClick={this.handleClick}>{this.label}</h1>
@@ -199,16 +204,20 @@ a component method:
 We referenced `this.handleClick` but we didn't call it. React will call it
 later, when we actually click.
 
-Clicking on the heading works well, so let's remove the
-`"jsx-no-lambda": false` rule from `tslint.conf` and restart the
-`start` script.
-
 Let's have the alert display the label by changing it to
-`alert(this.label);`. Uh-oh. Clicking on the heading produces a mile-long
-traceback in the JavaScript console. The traceback mentions
-`HTMLUnknownElement`. And that's the problem: the `this` in the
-`handleClick` method isn't the component instance, it is event. This is a
-chronic problem in React programming, causing the `.bind` syntax.
+`alert(this.label)`:
+
+```typescript
+handleClick() {
+    alert(this.label);
+}
+```
+
+Uh-oh. Clicking on the heading produces a mile-long traceback in the 
+JavaScript console. The traceback mentions `HTMLUnknownElement`. And 
+that's the problem: the `this` in the `handleClick` method isn't the 
+*component instance*, it is the *event*. This is a chronic problem in React 
+programming, one which lead to the `.bind` syntax.
 
 Arrow functions, though, get the correct `this`. We could change the handler
 to the following:
@@ -217,19 +226,28 @@ to the following:
 <h1 onClick={() => this.handleClick}>{this.label}</h1>
 ```
 
-...but we're back to the bossy TSLint complaint. Instead, we can bind the
-arrow function to the component:
+...but we're back to the frowned-up pattern of arrow functions in event 
+handlers. Instead, we can bind the arrow function to the component:
 
 ```typescript
-public handleClick = () => {
+handleClick = () => {
     alert(this.label);
-}
+};
 ```
 
 Look at that freaky approach! Instead of a method, we are binding a dynamic
-function to a class property. (Discussion below about the downsides.)
+function to a class property. One easy way to spot it: the use of a semicolon, 
+which is used after fields but not methods. 
 
-## JSX
+With our heading back to:
+
+```jsx
+<h1 onClick={this.handleClick}>{this.label}</h1>
+```
+
+...our alert works in the browser again.
+
+## JSX/TSX
 
 React brought innovation to the concept of templating languages by extending
 JavaScript itself. Your templating is mixed directly into your JavaScript
@@ -244,10 +262,12 @@ the React App template, automatically sets the
 
 The easiest way to see TSX in action? Go to your `<h1>` and try to add
 `class=""`. TypeScript itself has JSX/TSX support in the compiler and
-gives a compiler error::
+gives a compiler error:
 
+```
   Property 'class' does not exist on type
   'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'.
+```
 
 Also, the IDE refuses to autocomplete on `class`. It does, though,
 autocomplete on `className`, the JSX/TSX equivalent.
@@ -275,8 +295,8 @@ the `label` field again, then do `Ctrl-T`. Choose `Rename` and type
 if there are changes in other files, a window shows you and asks if you want
 to do the refactoring.
 
-The operation is done in one editor transaction. If you want to change your
-mind, `Undo` will find all the changes in all files and restore to the
+The operation is done in a *single* editor transaction. If you want to change 
+your mind, `Undo` will find all the changes in all files and restore to the
 previous value.
 
 ## Note About Arrow Functions
@@ -293,9 +313,3 @@ binding in React and similar systems.
 - https://reactarmory.com/answers/when-to-use-arrow-functions
 
 - https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1
-
-TODO
-
-- When discussing how to shut up the linter, do a better job of explaining
-  why, or remove it
-

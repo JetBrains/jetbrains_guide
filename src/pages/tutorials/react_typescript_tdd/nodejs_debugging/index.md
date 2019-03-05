@@ -5,7 +5,7 @@ title: 'Debugging During Testing With NodeJS'
 technologies: ['nodejs', 'jest']
 topics: []
 author: 'pauleveritt'
-subtitle: 'Work smart by developing with a visual debugger. This lesson shows debugging tests directly in the IDE under the NodeJS debugger.'
+subtitle: 'Use the visual debugger in the IDE for smarter TDD.'
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
@@ -33,26 +33,31 @@ it('renders without crashing', () => {
 });
 ```
 
-Also, TSLint is complaining about sorting of our imports. Put your cursor
-on the import of `shallow`, hit `Alt-Enter`, and tell the IDE to fix the
-error.
-
 ## Hello Parameter
 
-We will start by using TDD to make our component's greeting a bit more
+Let's use TDD to make our component's greeting a bit more
 dynamic. Start in the side-by-side mode described in the previous section,
 with both `App.tsx` and `App.test.tsx` open.
 
-First, add a method to the `App` class:
+First, add a method to the `App` class, above the `render` method:
 
 ```jsx
-public label() {
+label() {
     return 'Hello React';
 }
 ```
 
-Then, change the `<h1>` to use the output of this method, using
-autocompletion for the method name:
+The IDE gives us two warnings:
+
+- The method can be static
+
+- The method is unused
+
+We'll ignore both of those, as development below will change both 
+warnings.
+
+Then, in `render`, change the `<h1>` to use the output of this method, 
+using autocompletion for the method name:
 
 ```jsx
 <h1>{this.label()}</h1>
@@ -63,13 +68,13 @@ rendering itself. But we also didn't test the method. Let's do that now by
 adding a test in `App.test.tsx`:
 
 ```typescript
-    it('generates a label', () => {
-        const a = new App({});
-        expect(a.label()).toBe('Hello React');
-    });
+it('generates a label', () => {
+    const a = new App({});
+    expect(a.label()).toBe('Hello React');
+});
 ```
 
-In this test we don't need a component with TSX and a fake DOM etc. Its a
+In this test we don't need a component with TSX and a fake DOM etc. It's a
 TypeScript method that returns a string. To conform to the `React.Component`
 constructor signature, we pass in an empty object as props. Note how the IDE
 gave us a placeholder reminder.
@@ -80,11 +85,13 @@ behavior we expect. The `generates a label` test needs its last line
 changed to:
 
 ```typescript
-expect(a.label('React'))
-    .toBe('Hello REACT');
+expect(a.label('React')).toBe('Hello REACT');
 ```
 
-Our tests now break so we need to implement this feature. The `<h1>`, like
+While we're at it, change the `renders a heading` test to loo k for 
+`REACT` instead of `React`.
+
+Our tests now fail, thus we need to implement this feature. The `<h1>`, like
 the test, needs to pass in a value:
 
 ```typescript
@@ -95,7 +102,7 @@ Now it's just a matter of changing the method to accept an argument, then
 uppercasing the return value:
 
 ```typescript
-public label(name) {
+label(name) {
     return `Hello ${name.toUpperCase()}`;
 }
 ```
@@ -107,7 +114,7 @@ With that, our tests pass, but the TypeScript compiler is angry: the `name`
 argument doesn't have a supplied type. Let's fix that:
 
 ```typescript
-public label(name: string) {
+label(name: string) {
     return `Hello ${name.toUpperCase()}`;
 }
 ```
@@ -129,6 +136,8 @@ test-writing, it helps you "fail faster". Meaning, when paired with a smart
 IDE, it moves the failure directly under your eyeballs, in the most immediate
 location...the place where you typed it. Moreover, it provides very specific
 error messages.
+
+TODO Debugging is no longer working
 
 Let's go ahead and debug this. Click in the gutter beside that line to set
 a breakpoint. Then right-click on the test in the tool window and run it
