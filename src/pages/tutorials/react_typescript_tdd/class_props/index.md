@@ -45,10 +45,10 @@ It has several failures. For now, just click on `shallow` and hit
 Now create a file `Counter.tsx`. We'll make it very simple to start:
 
 ```typescript
-import * as React from 'react';
+import React, { Component } from 'react';
 
-class Counter extends React.Component {
-    public render() {
+class Counter extends Component {
+    render() {
         return (
             <div className="counter">
                 <label>Count</label>
@@ -70,10 +70,14 @@ Not a bad first step.
 
 ## Pass In a Prop
 
-As we did in the [Sharing Component Props Using Type Information](../props/), we'll do our
-work first in the test. We'll write a failing test, then fix our "wrapper"
-component, then fix the actual implementation. Also, we'll presume that the
-component has a default label.
+As we did in the [Sharing Component Props Using Type Information](../props/), 
+we'll use a consistent process:
+
+- Work first in the test by writing a *failing* test
+
+- Then fix the `Counter` presentation component
+
+- Then fix the wrapper component that uses the `Counter`
 
 Thus, let's add a test for the case of passing in a label:
 
@@ -94,31 +98,31 @@ Let's now work on the implementation. Classes handle props with defaults a
 little differently:
 
 ```typescript
-class Counter extends React.Component<{ label?: string }> {
-    public static defaultProps = {
+class Counter extends Component<{ label?: string }> {
+    static defaultProps = {
         label: 'Count'
     };
 ```
     
-Remember the `?` means an optional field in the interface. Now make the
+Remember, the `?` means an optional field in the interface. Now make the
 `<label>` dynamic:
 
 ```jsx
- <label>{this.props.label}</label>
+<label>{this.props.label}</label>
 ```
 
 When you save `Counter.tsx`, your tests will now pass.
 
 As we saw in the previous step, it's nicer to put the props type information
-into its own interface. Let's extract that into `ICounterProps`:
+into its own interface. Let's use `Ctrl-T -> Interface` that into `ICounterProps`:
 
 ```typescript
 interface ICounterProps {
     label?: string;
 }
 
-class Counter extends React.Component<ICounterProps> {
-    public static defaultProps = {
+class Counter extends Component<ICounterProps> {
+    static defaultProps = {
         label: 'Count'
     };
 ```
@@ -128,10 +132,10 @@ class Counter extends React.Component<ICounterProps> {
 We have a `<Counter/>` prop that takes an optional label. Tests pass. Let's
 now use it in our app and view it in the browser.
 
-Open `App.tsx` and change the TSX that is returned:
+Open `App.tsx` and change the TSX that in `render`:
 
 ```typescript
-public render() {
+render() {
     return (
         <div>
             <Heading/>
@@ -151,24 +155,18 @@ All of our tests still pass. Let's change the
 label in the new `<Counter/>` child component:
 
 ```typescript
-    it('renders the app and the heading', () => {
-        const wrapper = mount(<App/>);
-        expect(wrapper.find('h1').text())
-            .toBe('Hello React');
-        expect(wrapper.find('.counter label').text())
-            .toBe('Current');
-    });
+it('renders the app and the heading', () => {
+    const wrapper = mount(<App/>);
+    expect(wrapper.find('h1').text())
+        .toBe('Hello React');
+    expect(wrapper.find('.counter label').text())
+        .toBe('Current');
+});
 ```
 
-Let's restart the `start` script and look at the UI in the browser. We
+Now restart the `start` script and look at the UI in the browser. We
 should now see `Current 1` in the UI.
 
 While this step didn't do too much that was new -- after all, we had optional
 props and interfaces in the previous step, with functions -- it paves the
 way for stateful components.
-
-## See Also
-
-TODO
-
-- Change `{ label?: string }` extraction to use refactoring

@@ -38,10 +38,14 @@ construction to the following:
 const wrapper = shallow(<Heading recipient={'World'}/>);
 ```
 
-Our tests still pass but the IDE tells us TypeScript doesn't compile::
+Our tests still pass but the IDE tells us TypeScript doesn't compile:
 
-  Error:(6, 38) TS2559: Type '{ recipient: string; }' has no properties in
-  common with type 'IntrinsicAttributes & { children?: ReactNode; }'.
+```
+    Error:(6, 30) TS2322: Type '{ recipient: string; }' is not assignable 
+    to type 'IntrinsicAttributes & { children?: ReactNode; }'.
+    Property 'recipient' does not exist on type 'IntrinsicAttributes 
+    & { children?: ReactNode; }'.
+```
 
 Our test provided an object `{ recipient: string; }` as props but the
 component's TypeScript definition didn't accept that. Let's change the props to
@@ -60,7 +64,7 @@ Doing type information inline is clunky. Let's use a TypeScript interface
 to define our type information:
 
 ```typescript
-interface IHeadingProps {
+export interface IHeadingProps {
     recipient: string
 }
 
@@ -71,14 +75,7 @@ One useful tip: the IDE can do the extraction for you. Put the cursor in the
 the `{recipient: string}` object and do `Ctrl-T | Interface` then type
 in the name.
 
-*Note*
-
-*The React TypeScript community has gone back and forth on `I`
-as a prefix. At the time of this writing, TSLint had added a
-default rule that warns if an interface name fails to start
-with an `I`.*
-
-Our component isn't using this prop. The most obvious solution: grab the
+Our component isn't using this prop yet. The most obvious solution: grab the
 `props`:
 
 ```typescript
@@ -88,13 +85,13 @@ const Heading: React.FC<IHeadingProps> = (props) =>
 
 Good news, our tests fail, as expected! Let's fix just the test in
 `Heading.test.tsx` by having it expect the value `toBe('Hello World')`.
-When that test is updated, that test will pass. We'll get to the failing
-`App.test.tsx` tests in a moment.
+When that test is updated, the `renders the heading` test will pass. 
+We'll get to the failing `App.test.tsx` tests in a moment.
 
 It can be cumbersome to type `props.` in front of every prop. ES6 has some
 called object destructuring which lets you "unpack" an object and bring into
-scope just the value you want. As a side benefit, it makes it clear at the
-entry point what that arrow function wants.
+scope *just the value* you want. As a side benefit, it makes it clear at the
+entry point what that arrow function requires.
 
 Let's switch to object destructuring, and since our line is getting long,
 use a block:
@@ -121,10 +118,12 @@ const Heading: React.FC<IHeadingProps> = ({recipient = 'React'}) => {
 ```
 
 Yay, all our tests pass! But if you revisit `App.tsx` you'll see that
-TypeScript isn't happy about `<Heading/>`::
+TypeScript isn't happy about `<Heading/>`:
 
-  Type '{}' is not assignable to type 'IHeadingProps'.
-    Property 'recipient' is missing in type '{}'.
+```
+Error:(8, 18) TS2741: Property 'recipient' is missing in type '{}' 
+but required in type 'IHeadingProps'.
+```
 
 That defeats the purpose of a default value. Good news: TypeScript thought of
 that and lets you mark an interface field as optional using a question mark.
@@ -151,16 +150,9 @@ We now have a child component that is passed in an optional value, with a
 default, and an enforceable contract saying it must be a string. We did all
 of this with simple idioms from TypeScript and ES6.
 
-And guess what? We never looked at the browser. If you'd like, first up the
+And guess what? We never looked at the browser. If you'd like, fire up the
 `start` run configuration and take a look at the browser to confirm it's
 still working. Make sure to turn off `start` when done.
-
-*Note*
-
-*The use of SFCs is encouraged, especially for leaf nodes with no
-state. But beware: putting them in a listing with thousands of items
-can be a performance killer, as each function is recreated on every
-render, which might be 60 times per second.*
 
 ## See Also
 
