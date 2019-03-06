@@ -17,48 +17,56 @@ components, aka dumb components, are created by the bushel and managed by
 container components, aka smart components. The container maintains state,
 logic, and passes things into the presentation component.
 
-Our Counter component is, as originally intended. Let's make it a
-presentation component by moving the state up to the container (App) and
-the incrementing logic as well.
+Our Counter component is, as originally intended, a *class component* with 
+state. Let's make it a *presentation component* by moving the state up to 
+the container (App), as well as the incrementing logic.
 
 ## Counter State
 
-We'll start by removing state from the counter. Instead, the count is
-passed in as a prop. Also, the dumb child component will no longer decide
+We'll start by removing state from the Counter component. Instead, the count 
+is passed in as a prop. Also, the dumb child component will no longer decide
 the starting value, so remove `start` from the interface:
 
 ```typescript{4}
 interface ICounterProps {
     label?: string
-    count: number
+    count: number;
 }
 ```
 
 As soon as we do that, the universe starts breaking. TypeScript yells at us
 in every one of our tests, as our `<Counter/>` component is not passing in
-a required prop.
+a required prop.  Too bad, TypeScript, you'll have to wait. 
 
-Too bad, TypeScript, you'll have to wait. Next, let's change our `Counter`
-component to not have local state. We mentioned in
+Next, let's change our `Counter` component to not have local state. We 
+mentioned in 
 [Functional React Components in TypeScript](../functional_components/) 
-that stateless presentation components
-are best done with stateless functional components. Let's change
-`<Counter/>` to an SFC::
+that stateless presentation components are best done with stateless functional 
+components. Let's change `<Counter/>` to an SFC:
 
-    const Counter: React.FC<ICounterProps> = (
-        {label = 'Count', count}
-    ) => {
-        return (
-            <div
-                className="counter"
-                // onClick={handleClick}
-            >
-                <label>{label}</label>
-                <span>{count}</span>
-            </div>
+```typescript{}
+const Counter: React.FC<ICounterProps> = (
+    {label = 'Count', count}
+) => {
+    return (
+        <div
+            className="counter"
+            // onClick={handleClick}
+        >
+            <label>{label}</label>
+            <span>{count}</span>
+        </div>
 
-        )
-    }
+    )
+};
+```
+
+*Note: The IDE has a refactoring that will convert a React class 
+component to a functional componet and vice-versa. Very useful.*
+
+Change `Component` in the `import` to `FC`. Or, let the IDE do the cleanup 
+for you: `Alt-Enter` to generate the import and `Optimize Imports` 
+(`Ctrl-Alt-O` Win/Linux/macOS).
 
 Note that we commented out, for now, the click handler. We can also delete
 the `ICounterState` interface as it is no longer needed.
@@ -68,22 +76,20 @@ Let's fix the first two tests, to see if we are in the ballpark:
 ```typescript{2, 8}
 it('should render a counter', () => {
     const wrapper = shallow(<Counter count={0}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Count');
+
+    expect(wrapper.find('.counter label').text()).toBe('Count');
 });
 
 it('should render a counter with custom label', () => {
     const wrapper = shallow(<Counter label={'Current'} count={0}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+    expect(wrapper.find('.counter label').text()).toBe('Current');
 });
 ```
 
 These two tests now pass.
 
-Since the `<Counter/>` component no longer controls the starting value,
-you can remove the
-`should default start at zero` and
+Since the `<Counter/>` component will longer control the starting value,
+you can remove the `should default start at zero` and
 `should custom start at another value` tests from `Counter.test.tsx`.
 
 ## Passing In Click Function
@@ -92,41 +98,43 @@ The child component is no longer responsible for the count value. It's passed
 in from the parent, which keeps track of the state. So how do we handle
 clicks?
 
-It sounds weird, but...in the same way. We're going to pass in an arrow
-function from the parent. Meaning, the parent contains all the logic for what
+It sounds weird, but...in the same way. We're going to *pass in an arrow
+function from the parent*. Meaning, the parent contains all the logic for what
 happens when there is a click. All the child needs to know is "when the click
-event comes in, call the function that was passed to me as a prop".
+event comes in, call the function that was passed to me as a prop."
 
 Here goes. First, since this click handler function will come in as a prop,
 we need to change `ICounterProps` to model it:
 
-```typescript
+```typescript{}
 interface ICounterProps {
-    label?: string
-    count: number
-    onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void
+    label?: string;
+    count: number;
+    onCounterIncrease: (event: React.MouseEvent<HTMLElement>) => void;
 }
 ```
 
 Now *that's* an interface, baby. It captures quite a bit of the contract.
 
 Next, use ES6 object destructuring to "unpack" that from the props into the
-local scope, then refer to that prop in the `onClick` handler::
+local scope, then refer to that prop in the `onClick` handler:
 
-    const Counter: React.FC<ICounterProps> = (
-        {label = 'Count', count, onCounterIncrease}
-    ) => {
-        return (
-            <div
-                className="counter"
-                onClick={onCounterIncrease}
-            >
-                <label>{label}</label>
-                <span>{count}</span>
-            </div>
+```typescript{}
+const Counter: FC<ICounterProps> = (
+    {label = 'Count', count, onCounterIncrease}
+) => {
+    return (
+        <div
+            className="counter"
+            onClick={onCounterIncrease}
+        >
+            <label>{label}</label>
+            <span>{count}</span>
+        </div>
 
-        )
-    }
+    )
+}
+```
 
 Note that the IDE, as you did the unpacking, knew how to autocomplete
 `onCounterIncrease`.
@@ -135,7 +143,7 @@ Our tests, though, are having compiler trouble again. We broke the component
 contract, because `onCounterIncrease` is a mandatory prop. It's easy to
 shut up this test, because we aren't testing click handling:
 
-```typescript
+```typescript{}
 const handler = jest.fn();
 const wrapper = shallow(<Counter count={1} onCounterIncrease={handler}/>);
 ```
@@ -145,21 +153,19 @@ function which we passed in as a prop.
 
 Do this for both tests:
 
-```typescript
+```typescript{}
 it('should render a counter', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={0}
                                      onCounterIncrease={handler}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Count');
+    expect(wrapper.find('.counter label').text()).toBe('Count');
 });
 
 it('should render a counter with custom label', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter label={'Current'} count={0}
                                      onCounterIncrease={handler}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+    expect(wrapper.find('.counter label').text()).toBe('Current');
 });
 ```
 
@@ -170,7 +176,7 @@ that.
 
 Let's change the third test:
 
-```typescript
+```typescript{}
 it('should call the handler on click', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={1} onCounterIncrease={handler}/>);
@@ -179,10 +185,11 @@ it('should call the handler on click', () => {
 });
 ```
 
-We're simply ensuring that clicking the value calls the callback. We could
-delete the last test, as it isn't the responsibility of the `<Counter/>`
-to handle the click. All the logic is in container, not the presentation
-component.
+We're simply ensuring that clicking the value calls the callback. 
+
+We *could* delete the last test, as it isn't the responsibility of the 
+`<Counter/>` to handle the click. All the logic is in container, not the 
+presentation component.
 
 ## Dumb Component Gets a Little Smarter
 
@@ -192,20 +199,20 @@ called the callback? That's a better division of responsibilities. The
 container would then be truly UI-less for this functionality.
 
 First, let's change the contract. Our callback will be called *not* with the
-raw event, but with a boolean for the shift information:
+raw event, but with a *boolean* for the shift information:
 
-```typescript
+```typescript{}
 interface ICounterProps {
-    label?: string
-    count: number
-    onCounterIncrease: (isShift: boolean) => void
+    label?: string;
+    count: number;
+    onCounterIncrease: (isShift: boolean) => void;
 }
 ```
 
 Our SFC gains a local arrow function which does the extraction and calling::
 
-```typescript
-const Counter: React.FC<ICounterProps> = (
+```typescript{}
+const Counter: FC<ICounterProps> = (
     {label = 'Count', count, onCounterIncrease}
 ) => {
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -221,13 +228,13 @@ const Counter: React.FC<ICounterProps> = (
         </div>
 
     )
-}
+};
 ```
 
 Our third test can now change, to see if our "spy" was called with a boolean
 instead of an event object:
 
-```typescript
+```typescript{}
 it('should call the handler on click', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={0} onCounterIncrease={handler}/>);
@@ -237,7 +244,7 @@ it('should call the handler on click', () => {
 ```
 
 The fourth test, for shift, can be deleted. It's simply a variation of this
-test.
+test. And with that, our tests in `Counter.test.tsx` are passing.
 
 ## Updating the Container
 
@@ -245,10 +252,12 @@ We now have a `<Counter/>` presentation component that passes tests. But
 we've shifted some responsibility to the parent. Let's do the updates. Start
 by opening `App.tsx` and `App.test.tsx` side-by-side.
 
-First, this `<App/>` component will now have some state. Make an interface
-for it:
+First, this `<App/>` component will now have some state. We need an 
+interface for the counter's state. We just so happen to have one left 
+behind in `Counter.tsx`. *Remove the interface* from that file and paste it 
+into `App.tsx`:
 
-```typescript
+```typescript{}
 interface ICounterState {
     count: number
 }
@@ -257,8 +266,8 @@ interface ICounterState {
 Change the class setup to use this, with a constructor that sets up the
 initial state:
 
-```typescript
-class App extends React.Component<object, ICounterState> {
+```typescript{}
+class App extends Component<object, ICounterState> {
     constructor(props: {}) {
         super(props);
         this.state = {
@@ -268,11 +277,11 @@ class App extends React.Component<object, ICounterState> {
 ```
 
 Now it's time for the action. Let's make a method that updates the state.
-This will be the handler that's passed into `<Counter/>`. We first try it
-as a normal method:
+This method will be the handler that's passed into `<Counter/>`. We first 
+try it as a normal method:
 
-```typescript
-public increment(isShift: boolean) {
+```typescript{}
+increment(isShift: boolean) {
     const inc: number = isShift ? 10 : 1;
     this.setState({count: this.state.count + inc});
 }
@@ -282,8 +291,8 @@ But this is going to have the same problem discussed previously: `this` is
 bound to the event, not the component. As before, we solve this by converting
 the method to an arrow function class property:
 
-```typescript
-public increment = (isShift: boolean) => {
+```typescript{}
+increment = (isShift: boolean) => {
     const inc: number = isShift ? 10 : 1;
     this.setState({count: this.state.count + inc});
 }
@@ -291,8 +300,8 @@ public increment = (isShift: boolean) => {
 
 With this in place, we can now update the `render` function:
 
-```typescript
-public render() {
+```typescript{}
+render() {
     return (
         <div>
             <Heading/>
@@ -315,9 +324,9 @@ And with that, our tests pass again. However, we have dropped any testing to
 see whether the state actually updated. The responsibility is spread a bit
 between the two components.
 
-Let's first write tests in `App.test.tsx` for the increment function:
+Let's first add tests in `App.test.tsx` for the increment function:
 
-```typescript
+```typescript{}
 it('updates state when increment is called without shift', () => {
     const wrapper = shallow(<App/>);
     const instance = wrapper.instance() as App;
@@ -335,14 +344,18 @@ it('updates state when increment is called with shift', () => {
 });
 ```
 
+`shallow` needs importing so use the IDE's `Alt-Enter` to generate the 
+import from `enzyme`.
+
 We used Enzyme's `instance()` method to grab the component instead of the
 DOM-like node. We then called `increment` and checked to see if the parent's
 state increased appropriately.
 
 Those tests pass, which is a good sign. We need though to test the
-parent-child connection. For this we'll go back to Enzyme's `mount`:
+parent-child connection. For this we'll go back to Enzyme's `mount` and 
+add these two tests:
 
-```typescript
+```typescript{}
 it('updates the count by 1 via the counter component', () => {
     const wrapper = mount(<App/>);
     wrapper.find('.counter').simulate('click', {shiftKey: false});
@@ -376,10 +389,3 @@ experience.
 ## See Also
 
 - https://www.codementor.io/vijayst/unit-testing-react-components-jest-or-enzyme-du1087lh8
-
-TODO
-
-- Use the refactoring to convert the function
-
-- And make a reason to use extract component
-

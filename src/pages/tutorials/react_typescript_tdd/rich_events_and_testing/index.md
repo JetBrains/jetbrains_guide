@@ -5,7 +5,7 @@ title: 'Rich Events and Testing'
 technologies: ['react', 'typescript', 'jest']
 topics: []
 author: 'pauleveritt'
-subtitle: 'Add event more handling to a stateful class component by writing tests during development.'
+subtitle: 'Add event handling to a stateful class component by writing tests during development.'
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
@@ -33,21 +33,23 @@ Let's start with a failing test that clicks on the div and checks if the
 number is updated. In `Counter.test.tsx`, clone the first test and change
 it as follows:
 
-```typescript
+```typescript{}
 it('should increment the count by one', () => {
     const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter span').text())
-        .toBe('1');
+    expect(wrapper.find('.counter span').text()).toBe('0');
     wrapper.find('.counter').simulate('click');
-    expect(wrapper.find('.counter span').text())
-        .toBe('2');
+    expect(wrapper.find('.counter span').text()).toBe('1');
 });
 ```
 
 This test makes a component instance, checks its initial value, pretends to
 click using `simulate`, then checks the final value.
 
-It fails. Which is good!
+`simulate`, what's that? It's the big idea in this tutorial step. You can 
+pretend to click, or dispatch other DOM events, even without a real 
+browser or "mouse". JSDOM can "simulate" the event.
+
+This new test fails: the number didn't increment. Which is good!
 
 ![Test Failure](./screenshots/screen1.png)
 
@@ -71,16 +73,17 @@ a click handler:
 </div>
 ```
 
-That doesn't work. Instead, we'll do the
-correction that section suggests: make a public method and refer to it in
-the handler:
+Our test passes. But that's putting some logic into the component, plus 
+we discussed that arrow functions inside the `render` can have performance 
+impacts. Let's move it out into a click handler, which also makes that 
+behavior easier to test in isolation:
 
-```typescript
-public handleClick = () => {
+```typescript{}
+handleClick = () => {
     this.setState({count: this.state.count + 1});
-}
+};
 
-public render() {
+render() {
     return (
         <div
             className="counter"
@@ -92,21 +95,6 @@ public render() {
 }
 ```
 
-With this in place, let's now fix our test to expect starting at zero:
-
-```typescript{4,7}
-    it('should increment the count by one', () => {
-        const wrapper = shallow(<Counter/>);
-            expect(wrapper.find('.counter span').text())
-                .toBe('0');
-            wrapper.find('.counter').simulate('click');
-            expect(wrapper.find('.counter span').text())
-                .toBe('1');
-    });
-```
-
-Awesome, our tests now all pass.
-
 ## Advance By Ten with Shift-Click
 
 Let's add one more feature: if you click with the Shift key pressed, you
@@ -116,52 +104,58 @@ benefit from TypeScript.
 The `handleClick` arrow function actually gets an event passed, which
 we aren't using. Let's add it in:
 
-```typescript
-public handleClick = (event) => {
+```typescript{}
+handleClick = (event) => {
     this.setState({count: this.state.count + 1});
-}
+};
 ```
 
 This works but TypeScript gives a compiler error. Our `tsconfig.json`
 disallows implicit `any`. That's easy enough to solve:
 
-```typescript
-public handleClick = (event: any) => {
+```typescript{}
+handleClick = (event: any) => {
     this.setState({count: this.state.count + 1});
-}
+};
 ```
 
 But that's cheating. What type is that event? It's a `MouseEvent`. Let's
 put the correct typing on the argument:
 
-```typescript
-public handleClick = (event: React.MouseEvent<HTMLElement>) => {
+```typescript{}
+handleClick = (event: React.MouseEvent<HTMLElement>) => {
     this.setState({count: this.state.count + 1});
-}
+};
 ```
 
 Ugh, that's a lot of keystrokes. Is it worth it? Let's show why. First, in
 `handleClick`, let's determine the value to increment by, first as a mistake:
 
 ```typescript{2,3}
-public handleClick = (event: React.MouseEvent<HTMLElement>) => {
+handleClick = (event: React.MouseEvent<HTMLElement>) => {
     const inc = 10 ? event.shiftKey : 1;
     this.setState({count: this.state.count + inc});
 }
 ```
 
-TypeScript told us that we were adding a boolean to a number. Let's set
-the type of `inc` explicitly, instead of inferring it. Our first fix:
+TypeScript told us that we were trying to add a boolean to a number. Let's 
+set the type of `inc` explicitly, instead of inferring it. Our first fix:
 
-```typescript
+```typescript{}
 const inc: number = 10 ? event.shiftKey : 1;
 ```
 
-That's closer. TypeScript now moves the error to the correct line. We
-see that we have the order wrong on the ternary...a frequent, maddening
-error. Here's the correct version:
+That's closer. TypeScript now moves the error to the correct line:
 
-```typescript
+```
+Error:(28, 31) TS2365: Operator '+' cannot be applied to types 
+'number' and 'boolean | 1'.
+```
+
+We see that we have the order wrong on the ternary...a frequent, maddening, 
+easy-to-miss error. Here's the correct version:
+
+```typescript{}
 const inc: number = event.shiftKey ? 10 : 1;
 ```
 
@@ -169,23 +163,19 @@ Our click-handler test now fails, though. It needs a fake event object passed
 into `handleClick`, with `shiftKey` in the object. Let's fix that test,
 then clone to cover the with-shift case:
 
-```typescript{5, 14}
+```typescript{}
 it('should increment the count by one', () => {
     const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter span').text())
-        .toBe('0');
+    expect(wrapper.find('.counter span').text()).toBe('0');
     wrapper.find('.counter').simulate('click', {shiftKey: false});
-    expect(wrapper.find('.counter span').text())
-        .toBe('1');
+    expect(wrapper.find('.counter span').text()).toBe('1');
 });
 
 it('should shift-click increment the count by ten', () => {
     const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter span').text())
-        .toBe('0');
+    expect(wrapper.find('.counter span').text()).toBe('0');
     wrapper.find('.counter').simulate('click', {shiftKey: true});
-    expect(wrapper.find('.counter span').text())
-        .toBe('10');
+    expect(wrapper.find('.counter span').text()).toBe('10');
 });
 ```
 
