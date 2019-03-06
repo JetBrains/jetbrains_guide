@@ -4,7 +4,7 @@ date: 2017-07-07
 label: 'nodejs'
 title: 'Node.js'
 subtitle: 'JavaScript outside of the browser, on the command-line or server-side'
-logo: 'https://nodejs.org/'
+logo: './nodejs-icon.svg'
 website: 'https://reactjs.org'
 ---
 
