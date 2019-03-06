@@ -15,7 +15,8 @@
     "start": "gatsby develop",
     "serve": "lite-server",
     "staging": "firebase deploy -P staging",
-    "production": "firebase deploy -P production"
+    "production": "firebase deploy -P production",
+    "clean": "node rimraf-standalone.js .cache/* public/*"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.18",
