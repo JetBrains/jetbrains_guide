@@ -8,8 +8,8 @@ author: 'pauleveritt'
 subtitle: 'Create a React+TypeScript project with the create-react-app scaffolding tool'
 thumbnail: './thumbnail.png'
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  poster: './poster.png'
+  url: 'https://www.youtube.com/watch?v=SNAS74qKzXQ'
 ---
 
 React has become very popular, as has TypeScript. But it can be difficult to
@@ -47,8 +47,8 @@ yet support passing the `--typescript` flag.*
 
 You now have a working React+TypeScript project, toolchain, and hello-world
 style app. It's actually quite an achievement. Assembling all of this, and
-*keeping* it assembled, is an incredible effort. `create-react-app` have 
-shifted that off your shoulders, onto theirs. Trust me, it's a big deal.
+*keeping* it assembled, is an incredible effort. `create-react-app` has 
+shifted that off your shoulders, onto their's. Trust me, it's a big deal.
 
 ## Show Me a Page
 

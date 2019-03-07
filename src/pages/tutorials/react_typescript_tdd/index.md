@@ -28,7 +28,7 @@ longVideo:
 ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
 and thus increasingly supported.
 
-The two together? Not as much. Given that they both change quickly, its
+The two together? Not as much. Given that they both change quickly, it's
 hard to find accurate learning materials.
 
 React+TypeScript, with PyCharm? That three-part combination is the topic

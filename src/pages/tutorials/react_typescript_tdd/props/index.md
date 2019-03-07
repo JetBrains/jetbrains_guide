@@ -34,7 +34,7 @@ recipient to say hello to. This value will come in as a prop. For example,
 As usual, let's start in our tests. In `Heading.test.tsx`, change our wrapper
 construction to the following:
 
-```typescript
+```typescript{}
 const wrapper = shallow(<Heading recipient={'World'}/>);
 ```
 
@@ -51,8 +51,8 @@ Our test provided an object `{ recipient: string; }` as props but the
 component's TypeScript definition didn't accept that. Let's change the props to
 allow `recipient` as a string. In `Heading.tsx`:
 
-```typescript
-const Heading: React.FC<{recipient: string}> = () => <h1>Hello React</h1>;
+```typescript{}
+const Heading: FC<{recipient: string}> = () => <h1>Hello React</h1>;
 ```
 
 The `React.FC` type is a generic which accepts props as the first
@@ -63,12 +63,12 @@ for our props inline and the error went away: TypeScript now knows that a
 Doing type information inline is clunky. Let's use a TypeScript interface
 to define our type information:
 
-```typescript
+```typescript{}
 export interface IHeadingProps {
     recipient: string
 }
 
-const Heading: React.FC<IHeadingProps> = () => <h1>Hello React</h1>;
+const Heading: FC<IHeadingProps> = () => <h1>Hello React</h1>;
 ```
 
 One useful tip: the IDE can do the extraction for you. Put the cursor in the
@@ -78,8 +78,8 @@ in the name.
 Our component isn't using this prop yet. The most obvious solution: grab the
 `props`:
 
-```typescript
-const Heading: React.FC<IHeadingProps> = (props) =>
+```typescript{}
+const Heading: FC<IHeadingProps> = (props) =>
     <h1>Hello {props.recipient}</h1>;
 ```
 
@@ -96,8 +96,8 @@ entry point what that arrow function requires.
 Let's switch to object destructuring, and since our line is getting long,
 use a block:
 
-```typescript
-const Heading: React.FC<IHeadingProps> = ({recipient}) => {
+```typescript{}
+const Heading: FC<IHeadingProps> = ({recipient}) => {
     return <h1>Hello {recipient}</h1>;
 }
 ```
@@ -111,8 +111,8 @@ We can shut up the the `App.test.tsx` tests by having a default recipient.
 We'll use ES6 object destructuring's syntax for setting a value when the
 destructured object doesn't have that key:
 
-```typescript
-const Heading: React.FC<IHeadingProps> = ({recipient = 'React'}) => {
+```typescript{}
+const Heading: FC<IHeadingProps> = ({recipient = 'React'}) => {
     return <h1>Hello {recipient}</h1>;
 }
 ```
@@ -129,7 +129,7 @@ That defeats the purpose of a default value. Good news: TypeScript thought of
 that and lets you mark an interface field as optional using a question mark.
 Back in `Heading.tsx`:
 
-```typescript
+```typescript{}
 interface IHeadingProps {
     recipient?: string
 }
@@ -138,7 +138,7 @@ interface IHeadingProps {
 Our tests pass *and* TypeScript is happy. But we forgot to write a test for
 the default value. Let's add this to `Heading.test.tsx`:
 
-```typescript
+```typescript{}
 it('renders the default heading', () => {
     const wrapper = shallow(<Heading/>);
     expect(wrapper.find('h1').text())

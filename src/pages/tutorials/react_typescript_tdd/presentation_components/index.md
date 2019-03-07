@@ -45,7 +45,7 @@ that stateless presentation components are best done with stateless functional
 components. Let's change `<Counter/>` to an SFC:
 
 ```typescript{}
-const Counter: React.FC<ICounterProps> = (
+const Counter: FC<ICounterProps> = (
     {label = 'Count', count}
 ) => {
     return (

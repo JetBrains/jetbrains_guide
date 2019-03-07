@@ -31,7 +31,7 @@ fixes the test.
 
 Make a new file called `Counter.test.tsx` with this test:
 
-```typescript
+```typescript{}
 it('should render a counter', () => {
     const wrapper = shallow(<Counter/>);
     expect(wrapper.find('.counter label').text())
@@ -44,7 +44,7 @@ It has several failures. For now, just click on `shallow` and hit
 
 Now create a file `Counter.tsx`. We'll make it very simple to start:
 
-```typescript
+```typescript{}
 import React, { Component } from 'react';
 
 class Counter extends Component {
@@ -81,7 +81,7 @@ we'll use a consistent process:
 
 Thus, let's add a test for the case of passing in a label:
 
-```typescript
+```typescript{}
 it('should render a counter with custom label', () => {
     const wrapper = shallow(<Counter label={'Current'}/>);
     expect(wrapper.find('.counter label').text())
@@ -97,7 +97,7 @@ with a very specific mouseover message.
 Let's now work on the implementation. Classes handle props with defaults a
 little differently:
 
-```typescript
+```typescript{}
 class Counter extends Component<{ label?: string }> {
     static defaultProps = {
         label: 'Count'
@@ -116,7 +116,7 @@ When you save `Counter.tsx`, your tests will now pass.
 As we saw in the previous step, it's nicer to put the props type information
 into its own interface. Let's use `Ctrl-T -> Interface` that into `ICounterProps`:
 
-```typescript
+```typescript{}
 interface ICounterProps {
     label?: string;
 }
@@ -134,7 +134,7 @@ now use it in our app and view it in the browser.
 
 Open `App.tsx` and change the TSX that in `render`:
 
-```typescript
+```typescript{}
 render() {
     return (
         <div>
@@ -154,7 +154,7 @@ All of our tests still pass. Let's change the
 `renders the app and the heading` test in`App.test.tsx` to look for the
 label in the new `<Counter/>` child component:
 
-```typescript
+```typescript{}
 it('renders the app and the heading', () => {
     const wrapper = mount(<App/>);
     expect(wrapper.find('h1').text())

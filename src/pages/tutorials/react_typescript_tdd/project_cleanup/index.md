@@ -8,8 +8,8 @@ author: 'pauleveritt'
 subtitle: 'Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.'
 thumbnail: './thumbnail.png'
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  poster: './poster.png'
+  url: 'https://www.youtube.com/watch?v=llJFMwH7LP4'
 ---
 
 In our [previous step](../project_setup/) we generated a project then 
@@ -114,7 +114,7 @@ hadn't imported React yet.
 
 Simulate this by changing the first line to the following:
 
-```typescript
+```typescript{}
 import { Component } from 'react';
 ```
 

@@ -28,7 +28,7 @@ little bit.
 
 Let's change `App.test.tsx` back to two simple tests:
 
-```typescript
+```typescript{}
 import { shallow } from 'enzyme';
 import React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -48,7 +48,7 @@ it('renders the heading', () => {
 
 Also, our component in `App.tsx`:
 
-```typescript
+```typescript{}
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -80,7 +80,7 @@ Let's do another approach at extracting the hardwired string from the
 `<h1>`. The `render` method can, of course, have scope. Let's define the
 label there:
 
-```typescript
+```typescript{}
 render() {
     const label = 'Hello React';
     return (
@@ -96,7 +96,7 @@ tests pass, so this change worked fine.
 
 We can also move the `label` up to the class label as a field:
 
-```typescript
+```typescript{}
 class App extends Component {
     label = 'Hello React';
 
@@ -183,7 +183,7 @@ Inline handlers aren't so smart, as they aren't easily testable and smart
 folks say there's a slight performance it on re-render. Let's move the 
 handler to a component method:
 
-```typescript
+```typescript{}
     class App extends Component {
         label = 'Hello React'
 
@@ -207,7 +207,7 @@ later, when we actually click.
 Let's have the alert display the label by changing it to
 `alert(this.label)`:
 
-```typescript
+```typescript{}
 handleClick() {
     alert(this.label);
 }
@@ -229,7 +229,7 @@ to the following:
 ...but we're back to the frowned-up pattern of arrow functions in event 
 handlers. Instead, we can bind the arrow function to the component:
 
-```typescript
+```typescript{}
 handleClick = () => {
     alert(this.label);
 };
