@@ -7,7 +7,7 @@ topics: ['testing', 'python', 'ide']
 author: 'allaredko'
 subtitle: 'How to test your applications in PyCharm:'
 steps:
-  - 'project_cleanup'
+  - 'prepare_your_project'
 thumbnail: './thumbnail.png'
 ---
 
