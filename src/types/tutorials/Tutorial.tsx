@@ -31,7 +31,7 @@ const Tutorial: React.FunctionComponent<ITutorialProps> = ({ resource: tutorial,
           <>
             {tutorial.html ? (
               <div className="columns">
-                <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
+                <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: tutorial.html }} />
               </div>
             ) : null}
             <StepsListing steps={tutorialSteps} />

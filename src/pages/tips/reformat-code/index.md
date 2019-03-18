@@ -3,7 +3,7 @@ type: 'tip'
 date: 2018-12-01
 title: 'Reformat Code'
 technologies: []
-topics: ['python']
+topics: ['editing']
 author: 'pauleveritt'
 subtitle: 'Tell PyCharm to clean up indentation and other code style in your file.'
 seealso:

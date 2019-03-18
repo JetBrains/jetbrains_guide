@@ -165,7 +165,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>
                 <div className="columns">
-                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+                  <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
                 </div>
               </Element>
             )}

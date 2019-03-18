@@ -3,7 +3,7 @@ type: 'tip'
 date: 2018-12-02
 title: 'Optimize Imports'
 technologies: []
-topics: ['python']
+topics: ['editing', 'python']
 author: 'pauleveritt'
 subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports.'
 seealso:
