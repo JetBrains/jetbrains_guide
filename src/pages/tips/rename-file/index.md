@@ -13,12 +13,12 @@ thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  url: 'https://www.youtube.com/watch?v=ES03Kbf0Aio'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  url: 'https://www.youtube.com/watch?v=NXB5pk1F0_k'
 leadin: |
-    *Rename files with assurance*    
+    *Rename files with peace of mind.*    
 
     Changed your name about what you named a file but terrified of all 
     the places it might be used? You might not remember, but the IDE does. 

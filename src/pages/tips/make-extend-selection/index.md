@@ -17,7 +17,7 @@ thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=uCemBmzxzGY'
+  url: 'https://www.youtube.com/watch?v=cktFGEXPGks'
 longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=pm12i4WL-yc'

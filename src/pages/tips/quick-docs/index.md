@@ -1,43 +1,48 @@
 ---
 type: 'tip'
 date: 2019-03-11
-title: 'View Parameter Info'
+title: 'Quick Documentation'
 technologies: []
 topics: ['editing']
 author: 'pauleveritt'
-subtitle: Quickly see function arguments and argument types
+subtitle: View arguments and documentation without interrupting your flow.
 seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups'
   - title: Viewing Inline Documentation
     href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
 thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  url: 'https://www.youtube.com/watch?v=OVbA8RC0Csk'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  url: 'https://www.youtube.com/watch?v=EQ03Xo64kZQ'
 leadin: |
-    *See what's needed in a function, as you type, without disruption.*    
+    *Want to learn what a symbol is about, without going to a browser?*    
 
-    Have a function with lots of arguments? `Parameter Info` gives just 
-    the basics without using lots of real estate.
+    The IDE knows the symbol, its argument names/types/defaults, the 
+    docstring. Let it give you a non-interrupting window, letting you get 
+    back to work.
 
 ---
 
-Some functions or classes -- well, let's admit it, they are kind of chatty. 
-They require lots of arguments, have lots of optional keyword arguments, 
-some with default values.
+We frequently encounter code that we're not sure about. Other people's 
+code. Heck, even our code. Sometimes we just want the arguments for a 
+function. Other times we want to know positional versus keyword args. 
+Or the types of the arguments. Or their default values. Or a nice 
+rendered docstring.
 
-So you stop, go look at the function, and come back to what you're doing.
+PyCharm has several facilities for showing you documentation about a 
+symbol.
 
-There's a better way. With your cursor in the parentheses, invoke 
-`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS.) You get a tiny 
-popup with the positional and keyword arguments, along with any default 
-values. Bold is used to mark the current spot in the parameter list that 
-your cursor is at.
+First, `Quick Documentation` (`Ctrl-P` Win/Linux, `F1` macOS) brings 
+non-obtrusive inline popup showing all that information, with a hyperlink 
+where you can navigate to the definition. Press it again and the popup 
+turns into a tool window which updates for each symbol that you land on. 
+Always there, always helping...until you want to hide it, like any other 
+IDE tool window.
 
-You can invoke this before you type any parameters, after you've typed 
-a few, or later if you come back to make a change.
+Want the full docs in a browser, but don't want to hunt around to find 
+it? For many popular packages, `External Documentation` 
+(`Shift-F1` Win/Linux/macOS) brings up a browser on the documentation 
+page for that symbol.

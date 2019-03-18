@@ -15,7 +15,7 @@ longVideo:
   poster: './poster_long.png'
   url: 'https://www.youtube.com/watch?v=uvEj0bt75XM'
 leadin: |
-    *Use a Quick Fix to generate instance attribute assignment*    
+    *Use a Quick Fix to generate instance attribute assignment.*    
 
     Put your cursor on a constructor argument, hit `Alt-Enter`, 
     and let the IDE generate the line for assigning to `self`.

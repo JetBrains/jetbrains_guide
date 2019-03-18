@@ -1,55 +1,43 @@
 ---
 type: 'tip'
-date: 2019-03-09
-title: 'Add Line After/Before'
+date: 2019-03-11
+title: 'View Parameter Info'
 technologies: []
 topics: ['editing']
 author: 'pauleveritt'
-subtitle: 'Smart-add a line, from the middle of a line, after or before the current line.'
+subtitle: Quickly see function arguments and argument types.
 seealso:
-- title: Adding, Deleting and Moving Code Elements
-  href: 'https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html'
+  - title: Use quick pop-ups
+    href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups'
+  - title: Viewing Inline Documentation
+    href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
 thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  url: 'https://www.youtube.com/watch?v=t3MfWwXmATg'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  url: 'https://www.youtube.com/watch?v=BWTahh-ZzZo'
 leadin: |
-    *Language-aware line adding, no muss no fuss.*    
+    *See what's needed in a function, as you type, without disruption.*    
 
-    It seems like a simple thing but many forget about it. You 
-    want a new line, so you first move to the end of the current 
-    line and press Enter. A line above? Worse. There's a better way.
+    Have a function with lots of arguments? `Parameter Info` gives just 
+    the basics without using lots of real estate.
+
 ---
 
-It's easy to overlook, but we frequently add a line of code while in the 
-middle of another line. Perhaps we were fixing something and want to 
-proceed to the next line. Perhaps we were on an import and want another 
-import on the line above.
+Some functions or classes -- well, let's admit it, they are kind of chatty. 
+They require lots of arguments, have lots of optional keyword arguments, 
+some with default values.
 
-It's tempting, for adding a line after, to treat this as a two-step process:
+So you stop, go look at the function, and come back to what you were doing.
 
-- Go to the end of the line (ugh, sometimes with the mouse)
+There's a better way. With your cursor in the parentheses, invoke 
+`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS.) You get a tiny 
+popup with the positional and keyword arguments, along with any default 
+values. Bold is used to mark the current spot in the parameter list that 
+your cursor is at.
 
-- Press enter
-
-Adding a line above is worse:
-
-- Go to the beginning of the line
-
-- Press enter to make space above
-
-- Press `Up` to go to that new, empty line
-
-- Perhaps press tab a few times to get the indentation right
-
-Instead, use `Start New Line` (`Shift-Enter` Win/Linux/macOS). With your 
-cursor anywhere in the current line -- where you are just finishing an 
-edit -- you can then get an empty next line, with correct indentation.
-
-For a line above, use 
-`Start New Line Before Current` (`` Win/Linux, `` macOS.) You get a new line, 
-indented appropriately for the language and context.
+You can invoke this before you type any parameters, after you've typed 
+a few, or later if you come back to make a change.
