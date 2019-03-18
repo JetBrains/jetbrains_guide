@@ -1,6 +1,6 @@
 ---
 type: 'tip'
-date: 2019-03-09
+date: 2019-03-18
 title: 'Adding Fields In a Constructor'
 technologies: []
 topics: ['editing']
@@ -10,10 +10,10 @@ thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  url: 'https://www.youtube.com/watch?v=JBMFA3lYSqY'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  url: 'https://www.youtube.com/watch?v=uvEj0bt75XM'
 leadin: |
     *Use a Quick Fix to generate instance attribute assignment*    
 

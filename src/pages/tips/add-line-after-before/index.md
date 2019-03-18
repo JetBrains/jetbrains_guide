@@ -13,10 +13,10 @@ thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=ErYQ-uxHc9s'
+  url: 'https://www.youtube.com/watch?v=2WZciTCsLCk'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=CcbPFd1R4j4'
+  url: 'https://www.youtube.com/watch?v=gx_xsh6j-JA'
 leadin: |
     *Language-aware line adding, no muss no fuss.*    
 

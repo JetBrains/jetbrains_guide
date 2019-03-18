@@ -46,8 +46,7 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
     ? {
         controls: true,
         poster: longVideo.poster.publicURL,
-        height: 720,
-        width: 1024,
+        fill: true,
         sources: [
           {
             src: longVideo.url,
