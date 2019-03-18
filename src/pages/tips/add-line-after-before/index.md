@@ -13,10 +13,10 @@ thumbnail: './thumbnail.png'
 cardThumbnail: "./card.png"
 shortVideo:
   poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  url: 'https://www.youtube.com/watch?v=ErYQ-uxHc9s'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  url: 'https://www.youtube.com/watch?v=CcbPFd1R4j4'
 leadin: |
     *Language-aware line adding, no muss no fuss.*    
 
@@ -51,5 +51,6 @@ cursor anywhere in the current line -- where you are just finishing an
 edit -- you can then get an empty next line, with correct indentation.
 
 For a line above, use 
-`Start New Line Before Current` (`` Win/Linux, `` macOS.) You get a new line, 
-indented appropriately for the language and context.
+`Start New Line Before Current` (`Ctrl-Alt-Enter` Win/Linux, 
+`Alt-Cmd-Enter` macOS.) You get a new line, indented appropriately for the 
+language and context.
