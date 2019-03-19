@@ -9,7 +9,7 @@ subtitle: 'Use the visual debugger in the IDE for smarter TDD.'
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=Z83Y6ie3N4Y'
 ---
 
 In the [previous step](../testing/) we used testing as a way to
@@ -19,6 +19,11 @@ Sometimes our code has problems that require investigation with a debugger.
 For React, that usually means a trip to the browser to set a breakpoint and
 use the Chrome developer tools. Let's show how the IDE's debugger, combined
 with TDD, can make this investigation far more productive.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/nodejs_debugging/).
 
 ## Cleanup
 
@@ -75,9 +80,9 @@ it('generates a label', () => {
 ```
 
 In this test we don't need a component with TSX and a fake DOM etc. It's a
-TypeScript method that returns a string. To conform to the `React.Component`
-constructor signature, we pass in an empty object as props. Note how the IDE
-gave us a placeholder reminder.
+TypeScript method that returns a string. Nice! To conform to the 
+`React.Component` constructor signature, we pass in an empty object as 
+props. Note how the IDE gave us a placeholder reminder.
 
 Let's make the method slightly dynamic by passing in a name for the label,
 then converting that name to uppercase. First, change our tests to the
@@ -88,11 +93,14 @@ changed to:
 expect(a.label('React')).toBe('Hello REACT');
 ```
 
-While we're at it, change the `renders a heading` test to loo k for 
+While we're at it, change the `renders a heading` test to look for 
 `REACT` instead of `React`.
 
-Our tests now fail, thus we need to implement this feature. The `<h1>`, like
-the test, needs to pass in a value:
+Our tests now fail, thus we need to implement this feature. Moreso, 
+the TypeScript compiler is helping us "fail faster", telling us we broke 
+the contract, even before the test runs. Nice squared!
+
+The `<h1>`, like the test, needs to pass in a value:
 
 ```typescript{}
     <h1>{this.label('React')}</h1>
@@ -137,18 +145,24 @@ IDE, it moves the failure directly under your eyeballs, in the most immediate
 location...the place where you typed it. Moreover, it provides very specific
 error messages.
 
-TODO Debugging is no longer working
-
 Let's go ahead and debug this. Click in the gutter beside that line to set
 a breakpoint. Then right-click on the test in the tool window and run it
 under the debugger. Execution stops on that line. We can then step into our
 method call.
 
+![Set Breakpoint](./screenshots/set_breakpoint.png)
+
 Execution stops in our method. We can inspect the local values and see that
 `name` is `42`.
 
+![Stop At Breakpoint](./screenshots/stop_at_breakpoint.png)
+
 We can now poke and prod our code interactively, in the execution context
-where it fails. This is a very productive development cycle: write tests,
+where it fails. 
+
+![Evaluate Expression](./screenshots/evaluate_expression.png)
+
+This is a very productive development cycle: write tests,
 when stuck, use the debugger. No flailing around with `console.log` in a
 browser's dev tools window.
 
@@ -163,3 +177,6 @@ Let's clean up:
 - Change the test's label argument from `42` back to `React`
 
 - Re-open the Run Tool window
+
+As a note, in this step, the only two files that changed were 
+`App.tsx` and `App.test.tsx`.
