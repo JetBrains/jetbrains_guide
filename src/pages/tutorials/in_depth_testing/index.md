@@ -21,6 +21,4 @@ using one of your favorite testing frameworks:
 - TwistedTrial
 You can run tests in parallel on several CPUs to optimize execution of your pytest tests.
 
-This tutorial contains the following steps:
-
 
