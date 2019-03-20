@@ -20,9 +20,6 @@ steps:
   - rich_events_and_testing
   - presentation_components
 thumbnail: './thumbnail.png'
-longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
 ---
 
 ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 
