@@ -9,7 +9,7 @@ subtitle: 'Add event handling to a stateful class component by writing tests dur
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=2gvjVVEtkfc'
 ---
 
 Our counter component has local state, but doesn't respond to clicks. We
@@ -26,6 +26,11 @@ Like in previous steps, start with the following setup:
 - Start the `Jest` run configuration
 
 - Stop the `start` run configuration
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
 
 ## First Failing Test
 
@@ -51,8 +56,6 @@ browser or "mouse". JSDOM can "simulate" the event.
 
 This new test fails: the number didn't increment. Which is good!
 
-![Test Failure](./screenshots/screen1.png)
-
 What's really good: that was dead simple. In one line we automated doing a
 click and checking the result. Much more pleasurable than switching to the
 browser and clicking everything in your app to see if your change works
@@ -65,7 +68,7 @@ a click handler:
 
 ```jsx
 <div
-    className="counter"
+    className="counter" 
     onClick={() => this.setState({count: this.state.count + 1})}
 >
     <label>{this.props.label}</label>
@@ -111,7 +114,11 @@ handleClick = (event) => {
 ```
 
 This works but TypeScript gives a compiler error. Our `tsconfig.json`
-disallows implicit `any`. That's easy enough to solve:
+disallows implicit `any`. 
+
+![Implicit Any](./screenshots/implicit_any.png)
+
+That's easy enough to solve:
 
 ```typescript{}
 handleClick = (event: any) => {
@@ -133,7 +140,9 @@ Ugh, that's a lot of keystrokes. Is it worth it? Let's show why. First, in
 
 ```typescript{2,3}
 handleClick = (event: React.MouseEvent<HTMLElement>) => {
+
     const inc = 10 ? event.shiftKey : 1;
+
     this.setState({count: this.state.count + inc});
 }
 ```
@@ -153,7 +162,11 @@ Error:(28, 31) TS2365: Operator '+' cannot be applied to types
 ```
 
 We see that we have the order wrong on the ternary...a frequent, maddening, 
-easy-to-miss error. Here's the correct version:
+easy-to-miss error. 
+
+![Wrong Ternary](./screenshots/wrong_ternary.png)
+
+Here's the correct version:
 
 ```typescript{}
 const inc: number = event.shiftKey ? 10 : 1;

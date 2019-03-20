@@ -9,7 +9,7 @@ subtitle: 'React builds UIs as a tree of components. See how to make stateless f
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=a18tqVkZUZc'
 ---
 
 Functional programming has become quite popular, with React being one of
@@ -21,8 +21,13 @@ encourages
 [stateless functional components (SFCs)](https://reactjs.org/docs/components-and-props.html)
 for simple, presentational components. 
 
-Let's convert our `App` component to a TypeScript-driven SFC using TDD 
+Let's extract our heading into a TypeScript-driven SFC, using TDD 
 along the way.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/functional_components).
 
 ## Prep
 
@@ -128,6 +133,8 @@ class App extends Component {
 
 Note that the IDE does the autocompletion on `<Heading/>`.
 
+![Autocomplete](./screenshots/autocomplete.png)
+
 Our tests still pass because the new child component emitted the same result
 as the previous inline `<h1>`.
 
@@ -197,6 +204,8 @@ Let's do so. Back in `Heading.tsx`:
 ```typescript{}
 const Heading: FC = () => <h1>Hello React</h1>;
 ```
+
+Remember to add `FC` to the imports from React.
 
 All we did at this point was provide some type information for `Heading`.
 We'll add much more to this later, starting with the next section.

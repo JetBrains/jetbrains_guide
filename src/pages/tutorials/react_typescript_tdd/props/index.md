@@ -9,7 +9,7 @@ subtitle: 'Use type information to make using properties into a productive workf
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=4MRwN1WgKF0'
 ---
 
 Components and subcomponents are the zen of React. Information is shared
@@ -24,6 +24,11 @@ We'll start from the ending of
 [the previous step](../functional_components/). Remember, we're
 doing TDD, so let's have `Heading.tsx` and `Heading.test.tsx` open
 side-by-side, with the Jest run configuration running.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/props).
 
 ## Hello Recipient
 
@@ -46,6 +51,8 @@ Our tests still pass but the IDE tells us TypeScript doesn't compile:
     Property 'recipient' does not exist on type 'IntrinsicAttributes 
     & { children?: ReactNode; }'.
 ```
+
+![Compiler Error](./screenshots/compiler_error.png)
 
 Our test provided an object `{ recipient: string; }` as props but the
 component's TypeScript definition didn't accept that. Let's change the props to
@@ -74,6 +81,8 @@ const Heading: FC<IHeadingProps> = () => <h1>Hello React</h1>;
 One useful tip: the IDE can do the extraction for you. Put the cursor in the
 the `{recipient: string}` object and do `Ctrl-T | Interface` then type
 in the name.
+
+![Extract Interface](./screenshots/extract_interface.png)
 
 Our component isn't using this prop yet. The most obvious solution: grab the
 `props`:

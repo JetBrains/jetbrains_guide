@@ -9,7 +9,7 @@ subtitle: 'Using React and TypeScript means good JSX and ES6 support in the IDE.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=bFheD5JBjBI'
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.
@@ -20,6 +20,13 @@ JSX, React's sorta-templating system, but with TypeScript semantics.
 
 We glazed over the ES6 and JSX (that is, TSX) in previous steps. Let's take
 more of a look.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/tsx_es6/).
+
+
 
 ## Cleanup
 
@@ -65,8 +72,7 @@ export default App;
 ```
 
 Make sure the test runner is still running and watching. Let's also 
-shutdown the `start` task. We don't need it regenerating the bundle and
-updating the browser, duplicating what's happening in the Jest process.
+*keep* the `start` task as we'll use it later in this step.
 
 Our two tests pass. Let's see some ES6 and TSX.
 
@@ -129,26 +135,14 @@ letting us assign an expression (with `{}`) instead of a string:
 <h1 onClick={alert('Hello World')}>{this.label}</h1>
 ```
 
-Note that the IDE was smart about autocompleting these special attributes.
-
-Our test runner, though, says:
-
-```Error: Not implemented: window.alert```
-
-That's understandable. We're in a NodeJS environment using JSDOM as a fake 
-browser and JSDOM doesn't implement `window.alert`. Let's use a `console.log` 
-instead:
-
-```jsx
-<h1 onClick={alert('Hello World')}>{this.label}</h1>
-```
-
-TypeScript, though, is mad. It says:
+The TypeScript compiler, though, doesn't like this.
 
 ```
   Type error: Type 'void' is not assignable to type 
   '((event: MouseEvent<HTMLHeadingElement, MouseEvent>) => void) | undefined'
 ```
+
+![TypeScript Compiler Error](./screenshots/typescript_error.png)
 
 What is causing this? The `console.log` expression is immediately 
 evaluated, rather than run when the event is fired. `console.log` doesn't 
@@ -173,9 +167,9 @@ needs no arguments. (It's actually passed an event, which we'll use in later
 steps.) The function body is one line, so we don't need curly braces for a
 block.
 
-Let's check in the browser for the alert, so restart your `start` script.
-Everything compiles fine and clicking on the `<h1>` in the browser produces
-an alert.
+Let's check in the browser for the alert, so restart your `start` script if 
+needed. Everything compiles fine and clicking on the `<h1>` in the browser 
+produces an alert.
 
 ## Move To a Method
 
@@ -214,10 +208,14 @@ handleClick() {
 ```
 
 Uh-oh. Clicking on the heading produces a mile-long traceback in the 
-JavaScript console. The traceback mentions `HTMLUnknownElement`. And 
-that's the problem: the `this` in the `handleClick` method isn't the 
-*component instance*, it is the *event*. This is a chronic problem in React 
-programming, one which lead to the `.bind` syntax.
+JavaScript console. 
+
+![Browser Traceback](./screenshots/browser_exception.png)
+
+The traceback mentions `HTMLUnknownElement`. And that's the problem: 
+the `this` in the `handleClick` method isn't the *component instance*, 
+it is the *event*. This is a chronic problem in React programming, one 
+which lead to the `.bind` syntax.
 
 Arrow functions, though, get the correct `this`. We could change the handler
 to the following:
@@ -271,6 +269,8 @@ gives a compiler error:
 
 Also, the IDE refuses to autocomplete on `class`. It does, though,
 autocomplete on `className`, the JSX/TSX equivalent.
+
+![Autocomplete](./screenshots/autocomplete.png)
 
 Accepting the autocomplete shows that the IDE fills in `{}` for an
 attribute value instead of double-quotes. What's the difference? A

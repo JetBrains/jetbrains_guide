@@ -9,7 +9,7 @@ subtitle: 'Make a very simple class component with local counter state, then mak
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=CTPfG3FpDwk'
 ---
 
 In [Class Components With Props](../class_props/) we made a child component 
@@ -23,6 +23,12 @@ that internally keeps a count of clicks.
 This step, though, will be just the minimum: no actual clicking to update
 state, for example. We will stick to introducing component state and
 modeling it in TypeScript.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/class_state).
+
 
 ## Always Start With a Test
 
@@ -39,7 +45,7 @@ in the right-hand tab. Also, stop the `start` process if it is running
 and make sure the `Jest` run config is running.
 
 Here's a `Counter.test.tsx` test to show that the counter starts at zero,
-which fails, because we have a static `<span>1</span>`:
+which *fails*, because we have a static `<span>1</span>`:
 
 ```typescript{}
 it('should default start at zero', () => {
@@ -108,13 +114,16 @@ in an optional prop for the starting value. First, the test in
 ```typescript{}
 it('should custom start at another value', () => {
     const wrapper = shallow(<Counter label={'Current'} start={10}/>);
-    expect(wrapper.find('.counter span').text()).toBe('0');
+    expect(wrapper.find('.counter span').text()).toBe('10');
 });
 ```
 
 As before, our test fails, but before that, our IDE warns us that we have
-violated the `<Counter/>` contract. We'll fix the interface in
-`Counter.tsx`:
+violated the `<Counter/>` contract. 
+
+![No Start Prop Allowed](./screenshots/no_start.png)
+
+We'll fix the interface in `Counter.tsx`:
 
 ```typescript{3}
 interface ICounterProps {
@@ -153,6 +162,8 @@ When we do this, though, TypeScript gets mad:
 Error:(21, 13) TS2322: Type 'number | undefined' is not assignable 
 to type 'number'. Type 'undefined' is not assignable to type 'number'.
 ``` 
+
+![Undefined Not A Number](./screenshots/undefined_not_number.png)
  
 We said the `start` property was optional, by putting a `?` in the 
 interface field. As the compiler error explains, this means it can be 

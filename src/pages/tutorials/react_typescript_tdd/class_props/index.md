@@ -9,7 +9,7 @@ subtitle: 'Make a simple class component with a single prop, again with a TypeSc
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=FTzKEWboixM'
 ---
 
 In the previous step we made a "dumb" presentational component with one
@@ -22,6 +22,11 @@ click count, with the current count value stored in local component state.
 The `<Counter/>` component will be passed in some props. In this step,
 we'll show component props -- as done with a function in the previous
 step -- for class-based components. We'll do state in the next step.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/class_props).
 
 ## First a Test
 
@@ -70,7 +75,7 @@ Not a bad first step.
 
 ## Pass In a Prop
 
-As we did in the [Sharing Component Props Using Type Information](../props/), 
+As we did in [Sharing Component Props Using Type Information](../props/), 
 we'll use a consistent process:
 
 - Work first in the test by writing a *failing* test
@@ -151,7 +156,7 @@ you accepted the completion, it generated the import? Also, the IDE helped
 on the available props and the types for those props.
 
 All of our tests still pass. Let's change the
-`renders the app and the heading` test in`App.test.tsx` to look for the
+`renders the app and the heading` test in `App.test.tsx` to look for the
 label in the new `<Counter/>` child component:
 
 ```typescript{}

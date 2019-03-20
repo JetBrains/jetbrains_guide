@@ -9,11 +9,11 @@ subtitle: Sometimes you need to debug in the browser. Use the IDE to remote cont
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  url: 'https://www.youtube.com/watch?v=Nj5gFH4vBZ4'
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), 
- testing and debugging under NodeJS is very productive. There are times, 
+testing and debugging under NodeJS is very productive. There are times, 
 though, where you need a browser environment. Fortunately, PyCharm 
 Professional can remote-control the browser's execution, letting you stay 
 inside the IDE.
@@ -24,29 +24,36 @@ debugger.
 
 ## Make a Run Configuration
 
+First, fire up your `npm` script for `start` if it isn't running.
+
+![Run npm start](./screenshots/run_start.png)
+
 For this we'll need a different kind of run configuration, one tailored
 for launching the Chrome browser. Add a new run configuration of type
 `JavaScript Debug` and supply a `Name:` such as `App`. As we
 saw in the first section, the webpack development server runs on port
 3000, so provide the run configuration a `URL:` of
-`http://localhost:3000`. Finally, choose Chrome in the `Browser:` field .
+`http://localhost:3000`. Finally, choose Chrome in the `Browser:` field.
+
+![JavaScript Debug Run Configuration](./screenshots/run_configuration.png)
 
 Click `Ok` then run this configuration. Presuming that your npm `start`
-is still running, you should see a browser launched.
+is *still running*, you should see a browser launched.
+
+![Run npm start Browser](./screenshots/run_start_browser.png)
 
 Finish up by closing that new browser window.
 
 ## Browser Debug
 
-TODO Isn't working
-
 Now it's time to debug in the browser. Put a breakpoint inside the
 `label` method. Then, re-run the `JavaScript Debug` configuration you just 
 made, but this time, click the `Debug` button.
 
-Chrome should pop up, but with nothing displayed, and a strange yellow
-`Paused in debugger` message. The IDE should, as it did in the previous
-lesson, stop execution on the line of the breakpoint.
+Chrome should pop up. Reload the URL and focus shifts to the IDE, with 
+execution stopped on the line of the breakpoint.
+
+![Stop At Breakpoint](./screenshots/stop_execution.png)
 
 You can do the same debugging tasks as before:
 
@@ -62,3 +69,5 @@ object.
 
 To clean up, click the red button to stop the debugger, close Chrome, and
 clear the breakpoint.
+
+As a note, none of the files changed in this step.
