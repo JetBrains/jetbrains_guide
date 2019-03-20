@@ -8,8 +8,8 @@ author: 'pauleveritt'
 subtitle: 'Create a React+TypeScript project with the create-react-app scaffolding tool'
 thumbnail: './thumbnail.png'
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  poster: './poster.png'
+  url: 'https://www.youtube.com/watch?v=SNAS74qKzXQ'
 ---
 
 React has become very popular, as has TypeScript. But it can be difficult to
@@ -47,8 +47,8 @@ yet support passing the `--typescript` flag.*
 
 You now have a working React+TypeScript project, toolchain, and hello-world
 style app. It's actually quite an achievement. Assembling all of this, and
-*keeping* it assembled, is an incredible effort. `create-react-app` have 
-shifted that off your shoulders, onto theirs. Trust me, it's a big deal.
+*keeping* it assembled, is an incredible effort. `create-react-app` has 
+shifted that off your shoulders, onto their's. Trust me, it's a big deal.
 
 ## Show Me a Page
 
@@ -73,7 +73,7 @@ scripts. You'll get a run window at the bottom with a UI for showing
 output and restarting. Alternatively, open `package.json` and click the
 green play icon in the gutter by the run scripts:
 
-![Running the npm start script](screenshots/starting.png)
+![Running the npm start script](./screenshots/starting.png)
 
 What scripts does `create-react-app` generate in `package.json`? Here 
 is the full file:
@@ -104,7 +104,7 @@ Running this is easy in PyCharm Professional: just click on `build` in the
 npm tool window. This generates a `build` directory in your project root 
 with the production output of you project. 
 
-![Generating a production build](screenshots/building.png)
+![Generating a production build](./screenshots/building.png)
 
 As an optimization, right-click on the new ``build``
 directory and ``Mark Directory As | Excluded``. This prevents the IDE from

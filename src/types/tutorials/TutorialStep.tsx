@@ -30,7 +30,7 @@ const TutorialStep: React.FunctionComponent<ITutorialStepProps> = ({ resource: t
   const navPrevious = prevNext.previous;
   const navNext = prevNext.next;
   const parent = { label: tutorial.title, slug: tutorial.slug };
-  const topNav = <TopNav parent={parent} siblings={tutorial.steps} currentSlug={tutorialstep.slug} />;
+  const topNav = <TopNav parent={parent} siblings={tutorial.steps} currentSlug={tutorialstep.slug} kind="Step" />;
   const bottomNav = <BottomNav previous={navPrevious} next={navNext} />;
 
   // Video
