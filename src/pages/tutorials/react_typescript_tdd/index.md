@@ -1,6 +1,6 @@
 ---
 type: 'tutorial'
-date: 2017-07-07
+date: 2018-10-07
 title: 'React, TypeScript, and TDD'
 technologies: ['typescript', 'jest', 'react']
 topics: ['testing']
