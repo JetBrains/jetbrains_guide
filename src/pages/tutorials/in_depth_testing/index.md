@@ -8,6 +8,8 @@ author: 'allaredko'
 subtitle: 'How to test your applications in PyCharm:'
 steps:
   - 'prepare_your_project'
+  - 'create_test'
+  
 thumbnail: './thumbnail.png'
 ---
 
