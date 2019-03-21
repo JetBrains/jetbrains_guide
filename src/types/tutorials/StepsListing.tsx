@@ -9,6 +9,7 @@ const StepsListing: React.FunctionComponent<IStepsListingProps> = ({ steps }) =>
   return (
     steps && (
       <div className="bio-tutorial-steps-listing">
+        <h3 className="is-size-3" style={{marginBottom: '1rem'}}>Steps</h3>
         {steps.map(step => {
           return (
             <ResourceCard
