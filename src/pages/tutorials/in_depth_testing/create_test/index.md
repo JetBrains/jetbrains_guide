@@ -12,8 +12,16 @@ thumbnail: './thumbnail.png'
 In this step, you can create and run your first test.
 
 **Powerful Shortcuts**: 
-- `Double Shift` to Search Everywhere
--  `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open Settings/Preferences
+-  `Shift-Ctrl-T` (Win/Linux) or `Shift-Command-T` (macOS) to navigate to the test and its subject
+
+```python
+from unittest import TestCase
+
+
+class TestCar(TestCase):
+    def test_accelerate(self):
+        self.fail()
+```
 
 
 
