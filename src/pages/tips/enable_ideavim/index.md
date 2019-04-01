@@ -1,11 +1,10 @@
-
 ---
 type: 'tip'
 date: 2019-03-25
 title: 'Enable vim keybindings with IdeaVim plugin'
 technologies: []
-topics: ['vim']
-author: 'imbilltucker'
+topics: ['editing']
+author: 'wht'
 subtitle: 'Use the same keybindings from vim with a PlugIn'
 seealso:
   - title: 'Using Vim Editor Emulation in Pycharm (IdeaVim)'
@@ -14,6 +13,16 @@ seealso:
     href: 'https://plugins.jetbrains.com/plugin/7906-emacs-'
 thumbnail: './thumbnail.png'
 cardThumbnail: './card.png'
+shortVideo:
+  poster: './thumbail.png'
+  url: 'https://www.youtube.com/watch?v=Wto7hdfx-Sg'
+longVideo:
+  poster: './thumbail.png'
+  url: 'https://www.youtube.com/watch?v=xIzqtXSbRpM'
+leadin: |
+  *Want to use your muscle memory from Vim?  You can!*
+
+    All the keybindings you remember from vim, plus it's configurable to use PyCharm specific functionality.   You can pick and choose which keybindings you prefer.
 
 ---
 Vim keybindings for PyCharm are available, and configurable.  If you are
