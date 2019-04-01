@@ -2,8 +2,8 @@
 type: 'author'
 label: 'wht'
 title: 'Bill Tucker'
-subtitle: 'PyCharm Developer Advocate at JetBrains'
-headshot: './headshot.jpg'
+subtitle: 'Vim expositor at large'
+headshot: './headshot.png'
 date: 2019-03-25
 ---
 
