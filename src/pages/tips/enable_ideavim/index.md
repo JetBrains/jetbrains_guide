@@ -34,7 +34,7 @@ A file, .ideavimrc, provides a configuration method just like a .vimrc
 configuration file so keybindings can be adjusted and vim leader keys remapped.
 (Haven't you wanted to turn that vim error-bell off?)
 
-Just create a .ideavimrc file (TODO: check for differences on windows)
+Just create a .ideavimrc file (even in windows!)
 with the following:
 
 ```vimscript
