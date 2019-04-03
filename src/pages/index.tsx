@@ -61,7 +61,10 @@ interface IIndexPageProps {
 }
 
 const IndexPage: React.FunctionComponent<IIndexPageProps> = ({ data: { tips } }) => {
-  const items = tips.edges.map((edge: any) => edge.node);
+  const items = tips.edges
+    .map((edge: any) => edge.node)
+    .filter((node: any) => node.frontmatter.shortVideo)
+  ;
 
   return (
     <HomepageLayout title="Home Page">

@@ -9,18 +9,10 @@ const AboutPage: React.FunctionComponent = () => (
           <h1>Welcome to the PyCharm Guide</h1>
           <p>
             The PyCharm Guide collects lots of PyCharm resources -- blog posts, videos, tip tweets, articles, and more -- from inside and
-            outside of JetBrains, into a convenient, interlinked, attractive site.
+            outside of JetBrains, into a convenient, interlinked, attractive site. All done as a
+            community-oriented open source project.
           </p>
 
-          <article className="message is-info">
-            <div className="message-header">
-              <p>Note</p>
-            </div>
-            <div className="message-body">
-              The Guide is still in "soft launch", used only for tips. We're not yet explaining how to contribute. Both of these are coming
-              near the end of the year.
-            </div>
-          </article>
 
           <h2>Why The Guide?</h2>
           <p>Lots of resources, why another?</p>
@@ -33,6 +25,21 @@ const AboutPage: React.FunctionComponent = () => (
               different flavors of videos (snippet, full with audio)
             </li>
           </ul>
+          <h2>Where Does It Live?</h2>
+          <p>The content and software for the Guide is in a <a href="https://github.com/JetBrains/pycharm_guide">GitHub repository</a> in
+            the <a href="https://github.com/JetBrains">JetBrains organization</a>,
+            under the Apache 2.0 license. The site software
+            (Gatsby), Markdown pages, images, example code, etc. are in there.</p>
+          <p>The site itself is deployed to a Firebase Hosting site (for now) and
+            proxied into <a href="https://www.jetbrains.com/pycharm/guide/">https://www.jetbrains.com/pycharm/guide/</a>.</p>
+          <h2>How Can I Contribute?</h2>
+          <p>We'd love contributors. You can do something as small as tweet us about your
+            ideas, or go a little further and file a ticket.</p>
+          <p>But we'd really like authors. Got some little tip that you'd really like
+            to share with others? File a ticket and we can do it for you (and give you
+            attribution.) Or follow the instructions in the <a href="https://github.com/JetBrains/pycharm_guide/blob/master/README.md">README</a> to
+            submit a PR with some material.</p>
+
         </div>
       </div>
     </div>
