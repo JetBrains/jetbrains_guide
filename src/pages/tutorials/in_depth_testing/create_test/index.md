@@ -50,7 +50,13 @@ class TestCar(TestCase):
     def test_accelerate(self):
         car.accelerate()
         assert car.speed == 55
+
+    def test_accelerate_fail(self):
+        car.accelerate()
+        assert car.speed == 59
 ```
 
-This test checks if `speed` equals 55 after the `accelerate` function is executed, which according to 
-the `Car.py` code should be true.
+This test checks if `speed` equals 55 after the `accelerate` function is executed.
+
+# Navigate to Test or Test Subject
+TODO
