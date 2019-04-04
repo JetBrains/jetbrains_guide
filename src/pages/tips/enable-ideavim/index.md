@@ -30,8 +30,7 @@ A file, `.ideavimrc`, provides a configuration method just like a .vimrc
 configuration file so keybindings can be adjusted and vim leader keys
 remapped.  (Haven't you wanted to turn that vim error-bell off?)
 
-Just create a .ideavimrc file (TODO: check for differences on windows) with
-the following:
+Just create a .ideavimrc file (even in windows!) with the following:
 
 ```vimscript
 set visualbell
@@ -45,9 +44,10 @@ functionality without having to worry about which clipboard you are
 accessing:
 
 ```vimscript
-map <leader>a :action $SelectAll<CR> map <leader>c
-:action $Copy<CR> map <leader>v :action $Paste<CR> map <leader>x
-:action $Cut<CR>
+map <leader>a :action $SelectAll<CR>
+map <leader>c :action $Copy<CR>
+map <leader>v :action $Paste<CR>
+map <leader>x :action $Cut<CR>
 
 ```
 
