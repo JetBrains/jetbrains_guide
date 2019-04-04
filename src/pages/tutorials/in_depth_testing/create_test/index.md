@@ -60,8 +60,44 @@ the `Car.py` code should be true.
 
 1. The easiest way to execute the test is to press `Shift-10` (Win/Linux) or `Ctrl-R` (macOS).
 The **Run** tool window opens and shows the test execution status:
-![Create test dialog](screenshots/test_run_test.png) 
+![Run test](screenshots/test_run_test.png) 
 
+Although the very first test is quite simple, you can obtain the detailed information about the 
+test run. The **Test run toolbar** has many helpful features. For time being, look at the two of them:
 
+![Export test](screenshots/test_export_button.png)
+Export test results to an HTML, XML, or custom format.
+
+![Import test](screenshots/test_import_button.png)
+Import test results: you can download any previous test run results from the drop-down list or
+from the file.
+
+2. Let us modify the `TestCar` class and add the `test_accelerate_fail` function:
+
+```python
+from unittest import TestCase
+from Car import Car
+car = Car(50)
+ 
+ 
+class TestCar(TestCase):
+    def test_accelerate(self):
+        car.accelerate()
+        assert car.speed == 55
+
+    def test_accelerate_fail(self):
+        car.accelerate()
+        assert car.speed == 59
+``` 
+
+Now press `Shift-Ctrl-T` (Win/Linux) or `Shift-Command-T` (macOS) again and the test will fail
+as expected.
+
+![Failed test](screenshots/test_run_test_fail.png)
+
+To run each test function separately, you can opt to an alternative way for executing tests and
+scripts in PyCharm - clicking the corresponding **Run** icon in the left gutter of the **Editor**
+
+ ![Run test using the icon in the left gutter](screenshots/test_run_menu.png)
 
 
