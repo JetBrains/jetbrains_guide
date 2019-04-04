@@ -9,6 +9,7 @@ subtitle: 'How to test your applications in PyCharm:'
 steps:
   - 'prepare_your_project'
   - 'create_test'
+  - 'run_test'
   
 thumbnail: './thumbnail.png'
 ---
