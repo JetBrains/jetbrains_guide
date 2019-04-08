@@ -13,6 +13,7 @@ In this step, you learn how to run tests and evaluate the execution results.
 
 **Powerful Shortcuts**: 
 -  `Shift-10` (Win/Linux) or `Ctrl-R` (macOS) to execute a test.
+-  `Ctrl-F5` (Windows) or `Cmd-R` (macOS) to rerun all failed tests
 
 **How you can run the test**
 - Shortcuts
@@ -20,7 +21,7 @@ In this step, you learn how to run tests and evaluate the execution results.
 - Context menu in the test code
 - Context menu in the test tree of the **Test runner** tab 
 
-# Run the test
+# Execute a test suite
 
 The easiest way to execute the test is to press `Shift-10` (Win/Linux) or `Ctrl-R` (macOS).
 The **Run** tool window opens and shows the test execution status:
@@ -28,15 +29,32 @@ The **Run** tool window opens and shows the test execution status:
 ![Failed test](screenshots/test_run_test_fail.png)
 
 Although the very first test is quite simple, you can obtain the detailed information about the 
-test execution in the **Test Runner** tab. One of two tests fails. The assertion error is reported for 
-`car.speed == 15`.
+test execution in the **Test Runner** tab of the **Run** window. 
 
-Examine the **Test Runner** tab of the **Run** window.
 It has two toolbars to perform various actions with tests:
  - The <a href="https://www.jetbrains.com/help/pycharm/test-runner-tab.html#runToolbar" target="_blank">Run toolbar</a> 
- the left (vertical) toolbar that enables
+ the left (vertical) toolbar that enables you to rerun tests or setup an auto-rerun mode.
  - The <a href="https://www.jetbrains.com/help/pycharm/test-runner-tab.html#testingToolbar" target="_blank">Testing toolbar</a>
-  the top (horizontal) toolbar that  
+  the top (horizontal) toolbar that enables you to monitor the tests and analyze results 
+  
+The left-hand pane shows the tree view of all tests:
+- The root node represents the test selected to run.
+- The nested nodes represent the hierarchy of test suites and test cases.
+- The leaf nodes represent the individual tests.
+The status of each test is indicated by an icon. One of two tests fails. 
+
+The output pane shows the output of the current test suit. The assertion error is reported for 
+`car.speed == 15`.  
+
+# View differences
+
+Note that because you use the `assertEqual` function in your tests, the test runner provides the 
+ability to compare the actual and expected values of the variable being asserted.
+Click the **Click to see difference** link to preview the variable values in the **Difference viewer**
+
+![Compare variable values in the Difference viewer](screenshots/test_view_differences.png)
+
+# Rerun the failed test
 
 Now modify the `test_brake` function to pass the test:
 
@@ -44,17 +62,26 @@ Now modify the `test_brake` function to pass the test:
 def test_brake(self):    
     car.speed = 10
     car.brake()
-    assert car.speed == 5
+    self.assertEqual(car.speed, 5)
 ```
-This change should make the test successful. There is no need to rerun all tests in the `TestCar` class.
-To run each test function separately, you can opt to an alternative way for executing tests and
-scripts in PyCharm - clicking the corresponding **Run** icon in the left gutter of the **Editor**
+This change should make the test successful. You can press `Ctrl-F5` (Windows) or `Cmd-R` (macOS)
+to rerun the tests. However, there is no need to rerun all tests in the `TestCar` class.
+To run each test function separately, you can either use the context menu for a particular test 
+in the test suite tree or click the corresponding **Run** icon in the left gutter of the **Editor**.
 
  ![Run test using the icon in the left gutter](screenshots/test_run_menu.png)
 
 The **Test runner** tab shows that the test passed without any assertion errors. 
+Because this time you have executed only the `test_brake` test, the **Test Runner** shows only 
+specific execution details. 
 
 ![Run test](screenshots/test_run_test.png)
 
 # Rerun tests automatically
-TODO
+
+PyCharm lets you rerun any test automatically.
+
+![Rerun tests automatically](screenshots/test_rerun_icon.png)
+
+Just click the **Rerun** button on the **Run** toolbar and each time the source code has been changed,
+ the test will be rerun automatically 

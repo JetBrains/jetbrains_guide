@@ -51,7 +51,7 @@ class TestCar(TestCase):
     def test_accelerate(self):
         car.speed = 50
         car.accelerate()
-        assert car.speed == 55
+        self.assertEqual(car.speed, 55)
 ```
 
 This test checks if `speed` equals 55 after the `accelerate` function is executed.
@@ -73,12 +73,12 @@ class TestCar(TestCase):
     def test_accelerate(self):
         car.speed = 50
         car.accelerate()
-        assert car.speed == 55
+        self.assertEqual(car.speed, 55)
         
     def test_brake(self):
         car.speed = 10
         car.brake()
-        assert car.speed == 15
+        self.assertEqual(car.speed, 15)
 ```
 
 6. To verify that the `test_brake` function tests the `Car.brake` function, let's jump to the test subject.

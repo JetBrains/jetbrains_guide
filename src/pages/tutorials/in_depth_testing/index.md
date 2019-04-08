@@ -16,8 +16,11 @@ thumbnail: './thumbnail.png'
 
 With PyCharm you can test your Python applications
 using one of your favorite testing frameworks:
-- Python unittests
-- pytest
+- Create test
+- Run test on demand and automatically
+- Parametrize tests, use sets of testing data
+- Implement test scenarios
+- 
 - Python nosetests
 - Python doctests
 - Tox
