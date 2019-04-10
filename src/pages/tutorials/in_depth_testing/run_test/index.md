@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2019-03-01
 title: 'Run tests'
-technologies: ['pytest']
+technologies: []
 topics: ['testing', 'python', 'ide']
 author: 'allaredko'
 subtitle: 'Run tests and evaluate test results in the test runner tool window'
@@ -84,4 +84,17 @@ PyCharm lets you rerun any test automatically.
 ![Rerun tests automatically](screenshots/test_rerun_icon.png)
 
 Just click the **Rerun** button on the **Run** toolbar and each time the source code has been changed,
- the test will be rerun automatically 
+ the test will be rerun automatically. Use the **Set AutoTest Delay** options available in **Settings**
+ of the <a href="https://www.jetbrains.com/help/pycharm/test-runner-tab.html#testingToolbar" target="_blank">Testing toolbar</a> to
+ set a specific time interval in seconds for restarting test after the test code change.
+ 
+# Debug a failed test
+
+When something goes wrong with the test, you can always opt to debugging. The quickest way to debug a failed test
+is to pres `Shift` and click the **Rerun Failed Tests** button on the <a href="https://www.jetbrains.com/help/pycharm/test-runner-tab.html#runToolbar" target="_blank">Run toolbar</a>.
+Then select **Debug** and the debugging starts.
+
+![Rerun tests automatically](screenshots/test_debug.png)
+
+At this point, you've learned how to create, run, and evaluate tests in the PyCharm IDE. Proceed with the tutorial
+to learn more complicated but helpful concepts and techniques.
