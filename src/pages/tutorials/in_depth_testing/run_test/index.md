@@ -43,7 +43,7 @@ The left-hand pane shows the tree view of all tests:
 - The leaf nodes represent the individual tests.
 The status of each test is indicated by an icon. One of two tests fails. 
 
-The output pane shows the output of the current test suit. The assertion error is reported for 
+The output pane shows the output of the current test suit. You can see the assertion error reported for 
 `car.speed == 15`.  
 
 # View differences

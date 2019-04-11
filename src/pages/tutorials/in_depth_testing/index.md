@@ -11,6 +11,7 @@ steps:
   - 'create_test'
   - 'run_test'
   - 'implement_test_scenario'
+  - 'configure_test'
   
 thumbnail: './thumbnail.png'
 ---

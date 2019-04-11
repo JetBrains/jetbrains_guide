@@ -21,7 +21,7 @@ In the previous steps of this tutorial, you test the `Car.py` application using 
 testing framework.
 It is time to explore additional capabilities provided by PyCharm for the _pytest_ framework.
 Pytest supports Behavior-Driven Development (BDD) through the pytest-bdd package.
-The scenario that defines the behavior is recorded using the 
+You record the scenario that defines the behavior using the 
 <a href="https://docs.cucumber.io/gherkin/reference/" target="_blank">Gherkin language</a>.
 
 # Enable pytest and pytest-bdd
@@ -63,7 +63,7 @@ So if any of your project implies creating a lot of
 test scenarios using Gherkin files, you know where you can customize the code template to better meet your project 
 requirements.  
 
-3. Modify the default Gherkin template in the  `scenario.feature` file and add the following code:
+3. Modify the default Gherkin template in the `scenario.feature` file and add the following code:
 
 ```gherkin
 Feature: Speed
