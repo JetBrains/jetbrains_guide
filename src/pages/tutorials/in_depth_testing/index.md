@@ -12,6 +12,8 @@ steps:
   - 'run_test'
   - 'implement_test_scenario'
   - 'configure_test'
+  - 'test_on_different_python_versions'
+  - 'obtain_coverage_statistics'
   
 thumbnail: './thumbnail.png'
 ---
