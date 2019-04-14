@@ -53,14 +53,14 @@ In this dialog, you can preview the percent of code covered by test in `Car.py`,
 which is now 62%.
 
 For more detailed visualization, press Alt-Ctrl-F6` (Win/Linux) or `Alt-Command-F6` (macOS), 
-then specify `Car.py` as the target script. In the left gutter, green color indicates
-the code line that are covered with tests, and red indicates the lines that are not 
+then specify `Car.py` as the target script. In the left gutter, the green color indicates
+the code lines that are covered with tests, and the red color indicates the lines that are not 
 covered yet.
 
 ![Code coverage of the car.py file](screenshots/test_coverage_gutter.png)
 
  This visualization might be particularly helpful when you need to decide, 
- which parts of your code need new tests.
+ which parts of your code need more tests.
  
  You can alter the colors in the **Settings/Preferences** dialog. Select  **Editor | Color Scheme | 
  General**, expand the **Line Coverage** item in the list of settings, and specify
@@ -68,14 +68,14 @@ covered yet.
  
  # Generate report
  
- Sometimes you need to meet customer's requirements for the certain percent of 
+ Sometimes you need to meet customer's requirements and provide the certain percentage of 
  code coverage. The quick way to summarize the related information is to 
- generate the report and hand-off to the customer or publish on the target server.
+ generate the report and hand-off it to the customer or publish on the target server.
 
 To create a Coverage report, select **Tools | Generate Coverage Report** from the main 
 menu or click the corresponding icon on the **Coverage** tool window toolbar.
  
  ![Creating coverage report](screenshots/test_create_coverage_report.png) 
 
-For your conveniencem click the **Open generated HTML in browser** to immediately
+For your convenience, click the **Open generated HTML in browser** to immediately
 open the report in the browser. 

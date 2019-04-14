@@ -19,15 +19,17 @@ thumbnail: './thumbnail.png'
 ---
 
 With PyCharm you can test your Python applications
-using one of your favorite testing frameworks:
+using your favorite testing frameworks in a visual 
+and friendly environment. The IDE takes care of the 
+all key testing operations. 
+
+With this tutorial you will
+
 - Create tests
 - Run tests on demand and automatically
-- Parametrize tests, use sets of testing data
+- Parametrize tests
+- Run tests in parallel
 - Implement test scenarios
 - Configure tests
 - Test for different Python versions
-- Obtain statistics with Coverage
-
-You can run tests in parallel on several CPUs to optimize execution of your pytest tests.
-
-
+- Obtain code coverage statistics

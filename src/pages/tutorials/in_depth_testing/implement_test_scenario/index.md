@@ -13,15 +13,15 @@ In this step, you can implement test scenarios using the pytest testing framewor
 package. 
 
 **Powerful Shortcuts**: 
-- `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open the **Settings/Preferences** dialog
-- `Alt-Insert` (Windows) or `Cmd-N` (macOS) to create a new file
+- `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open the **Settings/Preferences** dialog.
+- `Alt-Insert` (Windows) or `Cmd-N` (macOS) to create a new file.
 - `Alt-Enter` (Windows and macOS) to open the list of the available intention actions.
 
 In the previous steps of this tutorial, you test the `Car.py` application using the _Unittest_
 testing framework.
 It is time to explore additional capabilities provided by PyCharm for the _pytest_ framework.
 Pytest supports Behavior-Driven Development (BDD) through the pytest-bdd package.
-You record the scenario that defines the behavior using the 
+You can record the scenario that defines the behavior using the 
 <a href="https://docs.cucumber.io/gherkin/reference/" target="_blank">Gherkin language</a>.
 
 # Enable pytest and pytest-bdd
@@ -139,9 +139,9 @@ def fail(my_car):
     assert not my_car.speed_validate()
 ```
   
-Note that PyCharm auto completion works for pytest _fixture_ created in this test code.  Let us examine the test.
+Note that PyCharm auto-completion works for pytest _fixture_ created in this test code.  Let us examine the test.
 It checks `speed == 50` for the "Valid speed" scenario and `speed == 200` for the "Invalid speed" scenario.
-All should work find. Let us run the test suite by using one of the favourite ways.
+All should work fine. Let us run the test suite by using one of the favourite ways.
 
 Strangely enough, the tests failed.
 

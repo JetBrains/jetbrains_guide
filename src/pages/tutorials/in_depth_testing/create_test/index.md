@@ -16,7 +16,7 @@ In this step, you can create your first test, run it, and evaluate the test run 
 
 # Create a Test
 
-Once you selected the testing framework, PyCharm takes care of test generating so that you can 
+Once you selected the testing framework, PyCharm takes care of test generating, so that you can 
 create your tests almost automatically:
 
 1. In the **Editor**, place the caret on the function of `Car.py` you want to test. Then press 
@@ -56,12 +56,11 @@ class TestCar(TestCase):
 
 This test checks if `speed` equals 55 after the `accelerate` function is executed.
 Note that when you start typing `car.`, PyCharm provides the completion list with the 
-available parameter and functions of the `Car` class.
+available parameters and functions of the `Car` class.
 
 ![Code completion](screenshots/test_code_completion.png)
 
-5. Now enhance the test a bit and create yet another function to test the `brake` function of the 
-`Car.py` application.
+5. Now enhance the test a bit and create yet another function to test the `brake` function.
 
 ```python
 from unittest import TestCase

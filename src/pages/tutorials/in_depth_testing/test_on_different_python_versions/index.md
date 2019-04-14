@@ -22,7 +22,7 @@ run it on the predefined set of Python versions with the help of the `tox` packa
 
 # Enable tox in your project
 
-1. First, ensure that the `tox` pacakge is installed for your project. Press `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open the **Settings/Preferences** dialog. Then select 
+1. First, ensure that the `tox` package is installed for your project. Press `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open the **Settings/Preferences** dialog. Then select 
 **Project &lt;project name&gt; | Project interpreter**.
 
 2. Inspect the list of the installed packages. If there is no `tox` package installed, 

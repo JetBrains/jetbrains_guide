@@ -9,13 +9,13 @@ subtitle: 'Set up your application to test and select the dedicated test runner 
 thumbnail: './thumbnail.png'
 ---
 
-In this step, you can setup your project and select the dedicated test runner.
-Whatever you do in PyCharm, you do it in a project. So, first of all let's create the
+In this step, you can set up your project and select the dedicated test runner.
+Whatever you do in PyCharm, you do it in a project. So, first of all create the
 dedicated project, then add your application, and select how it will be tested.
 
 **Powerful Shortcuts**: 
-- `Double Shift` to Search Everywhere
--  `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open Settings/Preferences
+- `Double Shift` to Search Everywhere.
+-  `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open Settings/Preferences.
 
 # Create a Project
 
@@ -34,12 +34,12 @@ default virtual environment settings or setup a new one.
     ![Newly created project in PyCharm](screenshots/test_new_project_created.png)
     
     Mind the shortcuts that PyCharm prompts. In particular, the very first one, 
-    **Search Everywhere** is an universal start for you when you're not sure about the
+    **Search Everywhere** is a universal start for you when you're not sure about the
     next step. This `Double Shift` magic helps you perform any action or find any 
     element of your application.
 4. Select the project root in the project tree (in this example, **In-Depth-Testing**)
 and just double press the `Shift` key. Begin typing "Python" in the search field and 
-the you should see the **Python File** action to create a new Python file.     
+then you should see the **Python File** action to create a new Python file.     
 
     ![Add a Python file](screenshots/test_search_everywhere.png)
     
@@ -47,7 +47,7 @@ the you should see the **Python File** action to create a new Python file.
    (In our example, `Car.py`). 
    Similarly, you can create a new file by selecting **File | New...** from the 
    main menu or by right clicking the project root and selecting **Python File**.
-5. Now that you have added a Python file to your project, add the following code to it:
+5. Add the following code to the `Car.py` file:
 ```python
 class Car:
 
@@ -98,7 +98,7 @@ if __name__ == '__main__':
         my_car.step()
         my_car.say_state()
 ```         
-6. You have the project and you have the application to test. Let's decide *how* we will test `Car.py`.
+6. You have the project, and you have the application to test. Let's decide *how* we will test `Car.py`.
 You have already learned the magic shortcut to any action in PyCharm. There is another quite helpful
 shortcut to open the project Settings (Windows/Linux)/Preferences (masOS), a series of various options to 
 work with the IDE. Press `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` to open this dialog. Then in the search field, 
@@ -108,11 +108,11 @@ start typing "testing". The **Python Integrated Tools** is what we're looking fo
 
     Inspect the **Testing** area on that page. You might notice that **Unittest** is the default testing framework.
 It means each time you run a test, it will be executed by this framework. The default test runner also 
-defines the way PyCharm create tests for your application. Choose which testing framework to start with 
+defines the way PyCharm create tests for your application. Choose a testing framework to start with 
 and click **OK** to save the settings.
 
 7. The finishing touch for this step is to create a directory in your project tree that is dedicated 
-for the tests. Select the project root, than again you have three options: right-click the root and select
+for the tests. Select the project root, then again you have three options: right-click the root and select
 **New | Directory**, select **File | New** from the main menu, or use double press the `Shift` key and type 
 "Directory" to find the action. 
 Name the newly created directory `tests`. 
