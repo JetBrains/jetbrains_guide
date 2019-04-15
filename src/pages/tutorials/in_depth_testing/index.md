@@ -5,7 +5,7 @@ title: 'In-Depth Testing'
 technologies: ['pytest']
 topics: ['testing', 'python', 'ide']
 author: 'allaredko'
-subtitle: 'How to test your applications in PyCharm:'
+subtitle: 'How to test your applications in PyCharm'
 steps:
   - 'prepare_your_project'
   - 'create_test'
@@ -23,7 +23,7 @@ using your favorite testing frameworks in a visual
 and friendly environment. The IDE takes care of the 
 all key testing operations. 
 
-With this tutorial you will
+With this tutorial you will:
 
 - Create tests
 - Run tests on demand and automatically
