@@ -11,7 +11,7 @@ thumbnail: './thumbnail.png'
 
 In this step, you learn how to run tests and evaluate the execution results.
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 -  `Ctrl-Shift-F10` (Win/Linux) or `Shift-Ctrl-R` (macOS) to execute a test.
 -  `Ctrl-F5` (Windows) or `Cmd-R` (macOS) to rerun all failed tests.
 

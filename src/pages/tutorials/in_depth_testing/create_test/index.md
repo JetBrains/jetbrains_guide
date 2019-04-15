@@ -11,10 +11,10 @@ thumbnail: './thumbnail.png'
 
 In this step, you can create your first test, run it, and evaluate the test run results.
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 -  `Shift-Ctrl-T` (Win/Linux) or `Shift-Command-T` (macOS) to navigate to the test and its subject.
 
-# Create a Test
+# Create a test
 
 Once you selected the testing framework, PyCharm takes care of test generating, so that you can 
 create your tests almost automatically:

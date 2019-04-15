@@ -12,7 +12,7 @@ thumbnail: './thumbnail.png'
 In this step, you can implement test scenarios using the pytest testing framework and pytest-bdd 
 package. 
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 - `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open the **Settings/Preferences** dialog.
 - `Alt-Insert` (Windows) or `Cmd-N` (macOS) to create a new file.
 - `Alt-Enter` (Windows and macOS) to open the list of the available intention actions.

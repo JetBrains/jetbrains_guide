@@ -1,7 +1,7 @@
 ---
 type: 'tutorialstep'
 date: 2019-03-01
-title: 'Obtain Coverage statistics'
+title: 'Obtain code coverage statistics'
 technologies: ['pytest']
 topics: ['testing', 'python', 'ide']
 author: 'allaredko'

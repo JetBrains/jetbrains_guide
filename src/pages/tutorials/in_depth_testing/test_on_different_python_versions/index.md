@@ -11,7 +11,7 @@ thumbnail: './thumbnail.png'
 
 In this step, you run all your test suites on several interpreters.
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 -  `Ctrl-Shift-F10` (Win/Linux) or `Ctrl-R` (macOS) to run the `tox.ini` file.
 
 By this moment, we execute test for the `Car.py` application using the interpreter
@@ -74,7 +74,7 @@ file as is.
 # Run all tests with tox
 
 Now, you're ready to execute the `tox.ini` file. 
-YOu can either select the file in the **Project** tool window and use the context menu.
+You can either select the file in the **Project** tool window and use the context menu.
 Alternatively, you can press `Ctrl-Shift-F10` (Win/Linux) or `Ctrl-R` (macOS).
 
 Then preview the **Test runner** tab in the **Run** tool window.

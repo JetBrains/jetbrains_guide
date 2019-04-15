@@ -13,11 +13,11 @@ In this step, you can set up your project and select the dedicated test runner.
 Whatever you do in PyCharm, you do it in a project. So, first of all create the
 dedicated project, then add your application, and select how it will be tested.
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 - `Double Shift` to Search Everywhere.
 -  `Ctrl-Alt-S` (Win/Linux) or `Cmd-,` (macOS) to open Settings/Preferences.
 
-# Create a Project
+# Create a project
 
 1. Run your PyCharm installation. Depending on your previous work, you have two
 options:

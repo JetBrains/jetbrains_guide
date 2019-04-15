@@ -11,7 +11,7 @@ thumbnail: './thumbnail.png'
 
 In this step, you will edit a temporary Run/Debug configuration to enable running tests on multiple CPUs.
 
-**Powerful Shortcuts**: 
+**Powerful shortcuts**: 
 -  `Shift-Alt-F10` (Windows) or `Ctrl-Alt-R` (macOS) to run and edit Run/Debug configurations. 
 
 When you perform run, debug, or test operations with PyCharm, you always start a corresponding process based on 
