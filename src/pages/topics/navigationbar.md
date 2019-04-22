@@ -3,7 +3,7 @@ type: 'topic'
 date: 2017-07-07
 label: 'navigationbar'
 title: 'Navigation Bar'
-subtitle: 'Breadcrumbs-style navigation tool, permanent or on-demand'
+subtitle: 'Breadcrumbs-style navigation tool, permanent or on-demand.'
 accent: 'primary'
 icon: 'fas fa-bezier-curve'
 seealso:

@@ -3,7 +3,7 @@ type: "topic"
 date: 2017-07-07
 label: "ide"
 title: "IDE"
-subtitle: "Resources related to IDE functionality independent of language"
+subtitle: "Resources related to IDE functionality independent of language."
 accent: "primary"
 icon: "fas fa-edit"
 seealso:

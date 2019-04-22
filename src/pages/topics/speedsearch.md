@@ -3,7 +3,7 @@ type: 'topic'
 date: 2017-07-07
 label: 'speedsearch'
 title: 'Speed Search'
-subtitle: 'Quickly find an item in a long list by typing to narrow'
+subtitle: 'Quickly find an item in a long list by typing to narrow.'
 accent: 'primary'
 icon: 'fas fa-search-location'
 seealso:
