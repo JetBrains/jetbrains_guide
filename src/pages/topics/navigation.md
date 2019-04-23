@@ -3,7 +3,7 @@ type: 'topic'
 date: 2017-07-07
 label: 'navigation'
 title: 'Navigation'
-subtitle: 'Productive ways to move around in your project'
+subtitle: 'Productive ways to move around in your project.'
 accent: 'primary'
 icon: 'fas fa-bezier-curve'
 seealso:

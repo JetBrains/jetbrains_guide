@@ -3,7 +3,7 @@ type: "topic"
 date: 2018-12-01
 label: "testing"
 title: "Testing"
-subtitle: "Test driven development with PyCharm's visual testing"
+subtitle: "Test driven development with PyCharm's visual testing."
 accent: "primary"
 icon: "fas fa-chart-bar"
 seealso:

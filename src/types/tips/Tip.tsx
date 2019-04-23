@@ -32,29 +32,29 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
   const longVideo = tip.longVideo;
   const seealso = tip.seealso;
   const leadin = tip.leadin;
-  const shortVideoJsOptions = {
-    controls: true,
-    poster: shortVideo.poster.publicURL,
-    sources: [
-      {
-        src: shortVideo.url,
-        type: 'video/youtube'
-      }
-    ]
-  };
+  const shortVideoJsOptions = shortVideo ?
+    {
+      controls: true,
+      poster: shortVideo.poster.publicURL,
+      sources: [
+        {
+          src: shortVideo.url,
+          type: 'video/youtube'
+        }
+      ]
+    } : null;
   const longVideoJsOptions = longVideo
     ? {
-        controls: true,
-        poster: longVideo.poster.publicURL,
-        height: 720,
-        width: 1024,
-        sources: [
-          {
-            src: longVideo.url,
-            type: 'video/youtube'
-          }
-        ]
-      }
+      controls: true,
+      poster: longVideo.poster.publicURL,
+      fill: true,
+      sources: [
+        {
+          src: longVideo.url,
+          type: 'video/youtube'
+        }
+      ]
+    }
     : null;
 
   const links: IDoclink[] = [];
@@ -70,17 +70,17 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
 
   const sidebarPlaylists = appearingPlaylists
     ? appearingPlaylists.map(edge => {
-        return { label: edge.node.frontmatter.title, slug: edge.node.fields.slug };
-      })
+      return { label: edge.node.frontmatter.title, slug: edge.node.fields.slug };
+    })
     : undefined;
 
   const sidebar = (
     <Sidebar>
-      {author && <SidebarPublished date={tip.date} author={author} />}
-      <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={tip.technologies} />
-      <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={tip.topics} />
-      <SidebarDoclinks links={links} />
-      {appearingPlaylists && appearingPlaylists.length > 1 && <SidebarPlaylists playlists={sidebarPlaylists} />}
+      {author && <SidebarPublished date={tip.date} author={author}/>}
+      <SidebarReferenceGroup reftype={`technologies`} accent={`danger`} references={tip.technologies}/>
+      <SidebarReferenceGroup reftype={`topics`} accent={`success`} references={tip.topics}/>
+      <SidebarDoclinks links={links}/>
+      {appearingPlaylists && appearingPlaylists.length > 1 && <SidebarPlaylists playlists={sidebarPlaylists}/>}
     </Sidebar>
   );
 
@@ -102,9 +102,9 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
       return { label: item.frontmatter.title, slug: item.fields.slug };
     });
     topNav = parent ? (
-      <TopNav parent={parent} siblings={siblings} currentSlug={tip.slug} playlistLabel={playlist.frontmatter.label} kind="Item" />
+      <TopNav parent={parent} siblings={siblings} currentSlug={tip.slug} playlistLabel={playlist.frontmatter.label} kind="Item"/>
     ) : null;
-    bottomNav = <BottomNav previous={navPrevious} next={navNext} playlistLabel={playlist.frontmatter.label} />;
+    bottomNav = <BottomNav previous={navPrevious} next={navNext} playlistLabel={playlist.frontmatter.label}/>;
   }
 
   const twitterCard: ITwitterCard = {
@@ -123,15 +123,17 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
         main: (
           <div style={{ marginBottom: '3rem' }}>
             <div className="columns">
-              <div className="column is-three-fifths">
-                <VideoPlayer {...shortVideoJsOptions} />
-              </div>
+              {shortVideo && (
+                <div className="column is-three-fifths">
+                  <VideoPlayer {...shortVideoJsOptions} />
+                </div>
+              )}
               <div
-                className="column is-two-fifths content"
+                className="column content"
                 style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
               >
-                <div dangerouslySetInnerHTML={{ __html: leadin }} />
-                {tip.html && (
+                <div dangerouslySetInnerHTML={{ __html: leadin }}/>
+                {tip.html && shortVideo && (
                   <div>
                     <ScrollLink
                       activeClass="active"
@@ -145,18 +147,20 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
                     >
                       Learn More
                     </ScrollLink>
-                    <ScrollLink
-                      activeClass="active"
-                      className="button is-light"
-                      to="full-video"
-                      spy={true}
-                      smooth={true}
-                      offset={0}
-                      duration={500}
-                      style={{ width: 'auto', marginLeft: '0.5em' }}
-                    >
-                      Full Video
-                    </ScrollLink>
+                    {longVideo && (
+                      <ScrollLink
+                        activeClass="active"
+                        className="button is-light"
+                        to="full-video"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={500}
+                        style={{ width: 'auto', marginLeft: '0.5em' }}
+                      >
+                        Full Video
+                      </ScrollLink>
+                    )}
                   </div>
                 )}
               </div>
@@ -165,13 +169,13 @@ const Tip: React.FunctionComponent<ITipProps> = ({ resource: tip, author, playli
               <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
                 <header className="is-size-3 is-bold">In Depth</header>
                 <div className="columns">
-                  <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }} />
+                  <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: tip.html }}/>
                 </div>
               </Element>
             )}
             {seealso && (
               <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
-                <SeeAlso items={seealso} />
+                <SeeAlso items={seealso}/>
               </Element>
             )}
             {longVideoJsOptions && (

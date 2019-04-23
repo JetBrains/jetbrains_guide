@@ -22,7 +22,7 @@ const TopNav: React.FC<ITopNavProps> = ({ parent, siblings, currentSlug, playlis
 
   const playlistPrefix = playlistLabel ? `?playlist=${playlistLabel}` : '';
   return (
-    <div>
+    <div style={{ marginBottom: '1em' }}>
       <div style={{ textAlign: 'center', marginBottom: '0.5em' }}>
         {parent && (
           <Link to={`${parent.slug}`} className="topnav-previous button is-size-7" style={{ border: 'none' }} title={parent.label}>

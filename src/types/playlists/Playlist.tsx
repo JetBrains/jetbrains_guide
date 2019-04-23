@@ -31,7 +31,7 @@ const Playlist: React.FunctionComponent<IPlaylistProps> = ({ resource: playlist,
           <>
             {playlist.html ? (
               <div className="columns">
-                <div className="column is-10-desktop content" dangerouslySetInnerHTML={{ __html: playlist.html }} />
+                <div className="column is-11-desktop content" dangerouslySetInnerHTML={{ __html: playlist.html }} />
               </div>
             ) : null}
             {playlistItems && (

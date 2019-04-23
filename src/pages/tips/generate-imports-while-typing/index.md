@@ -3,7 +3,7 @@ type: 'tip'
 date: 2018-12-03
 title: 'Generate Imports While Typing'
 technologies: []
-topics: ['python']
+topics: ['editing', 'python']
 author: 'pauleveritt'
 subtitle: 'Avoid interruption by letting PyCharm generate your imports as you type.'
 seealso:

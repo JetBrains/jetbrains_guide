@@ -36,7 +36,7 @@ Everything is clicking. Perhaps you want to focus on just one test:
   them
 
 PyCharm makes it easy to select just one test to run. In fact, there
-several ways to do it:
+are several ways to do it:
 
 - With the cursor anywhere in the test you want to focus on, right-click
   and choose to run that in the test runner

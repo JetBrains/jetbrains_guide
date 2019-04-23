@@ -16,6 +16,13 @@ const NavbarStart: React.FunctionComponent<INavbarStartProps> = () => (
       <span className="bulmaio-menu-label">Tips</span>
     </Link>
 
+    <Link className={'navbar-item bd-navbar-item-documentation'} to={`/tutorials`}>
+      <span className={'icon has-text-info'}>
+        <i className={'fas fa-tasks'} />
+      </span>
+      <span className="bulmaio-menu-label">Tutorials</span>
+    </Link>
+
     <Link className={'navbar-item bd-navbar-item-documentation'} to={`/playlists`}>
       <span className={'icon has-text-warning'}>
         <i className={'fas fa-list'} />
@@ -37,16 +44,20 @@ const NavbarStart: React.FunctionComponent<INavbarStartProps> = () => (
       <span className="bulmaio-menu-label">Topics</span>
     </Link>
 
-    <Link className={'navbar-item bd-navbar-item-documentation'} to={`/authors`}>
-      <span className={'icon has-text-info'}>
-        <i className={'fas fa-users'} />
-      </span>
-      <span className="bulmaio-menu-label">Authors</span>
-    </Link>
 
     <div className="navbar-item has-dropdown is-hoverable">
       <span className="navbar-link bio-dropdown-main">More</span>
       <div id="moreDropdown" className="navbar-dropdown">
+        <Link className="navbar-item " to={`/authors`}>
+          <span>
+            <span className={'icon has-text-success'}>
+              <i className={'fas fa-users'} />
+            </span>
+            <strong>Authors</strong>
+            <br />
+            <span className="bio-dropdown-description">Resource listing organized by author</span>
+          </span>
+        </Link>
         <Link className="navbar-item " to={`/about`}>
           <span>
             <span className={'icon has-text-success'}>

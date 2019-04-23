@@ -3,7 +3,7 @@ type: 'playlist'
 label: A
 date: 2019-02-04
 title: 'Navigation Bar Intro'
-technologies: []
+technologies: ['pytest']
 topics: ['navigation','navigationbar']
 author: 'pauleveritt'
 subtitle: 'Move around files with keyboard, without wasting screen UI space'

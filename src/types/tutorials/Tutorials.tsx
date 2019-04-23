@@ -6,24 +6,13 @@ import ListingWrapper from '../../components/ListingWrapper';
 import ReferenceLayout from '../../layouts/ReferenceLayout';
 import ResourceCard from '../../components/ResourceCard';
 
-// export interface ITutorialProps {
-//   data: {
-//     tutorials: {
-//       edges: ITutorialEdges;
-//     };
-//     technologies: {
-//       edges: ITechnologyEdges;
-//     };
-//   };
-// }
-
 interface ITutorialsProps {
   resources: any[];
 }
 
 const Tutorials: React.FunctionComponent<ITutorialsProps> = ({ resources }) => {
   return (
-    <ReferenceLayout title="Tutorials" subtitle="Resources organized by programming technologies">
+    <ReferenceLayout title="Tutorials" subtitle="Learn specific technologies with multi-step lessons using code, text, and videos.">
       {{
         listing: (
           <div>

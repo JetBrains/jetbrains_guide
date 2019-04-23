@@ -3,7 +3,7 @@ type: 'topic'
 date: 2018-12-01
 label: 'python'
 title: 'Python'
-subtitle: 'Work productively when coding Python'
+subtitle: 'Work productively when coding Python.'
 accent: 'primary'
 icon: 'fab fa-python'
 seealso:
