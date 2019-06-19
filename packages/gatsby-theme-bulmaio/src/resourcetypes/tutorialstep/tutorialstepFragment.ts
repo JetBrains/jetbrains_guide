@@ -11,6 +11,9 @@ export const tutorialstepFragment = graphql`
         title
         subtitle
         date(formatString: "MMMM Do, YYYY")
+        longVideo {
+          ...VideoFragment
+        }
         ...ResourceCardAuthorFragment
         ...ResourceCardTechnologyFragment
         ...ResourceCardTopicFragment
