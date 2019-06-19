@@ -7,7 +7,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "node rimraf-standalone.js site/.cache/* site/public/*",
+    "clean": "node rimraf-standalone.js sites/pycharm-guide/.cache/* sites/pycharm-guide/public/*",
     "develop": "yarn workspace sites/pycharm-guide develop"
   },
   "dependencies": {}

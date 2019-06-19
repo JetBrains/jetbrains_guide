@@ -60,7 +60,6 @@ const createReferences = (graphql: any, createPage: any, references: CreateRefer
       });
     });
   });
-
 };
 
 export default createReferences;
