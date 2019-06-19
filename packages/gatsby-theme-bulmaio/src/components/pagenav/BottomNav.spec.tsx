@@ -1,0 +1,17 @@
+import React from 'react';
+import { render } from 'react-testing-library';
+import 'jest-dom/extend-expect';
+
+import BottomNav, { BottomNavProps } from './BottomNav';
+
+export const DUMMY_PROPS: BottomNavProps = {
+  previous: { slug: 'slug1', label: 'label1' },
+  next: { slug: 'slug3', label: 'label3' },
+  playlistLabel: 'playlistLabel1'
+};
+
+test('BottomNav', () => {
+  const { getByText } = render(<BottomNav {...DUMMY_PROPS}/>);
+  expect(getByText('label1')).toBeTruthy();
+  expect(getByText('label3')).toBeTruthy();
+});

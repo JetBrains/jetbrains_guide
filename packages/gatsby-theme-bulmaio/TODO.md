@@ -1,0 +1,1 @@
+- Make logo and favicon configurable (perhaps by passing them in as render props)

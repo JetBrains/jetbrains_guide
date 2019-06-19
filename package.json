@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-site",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "sites/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "node rimraf-standalone.js site/.cache/* site/public/*",
+    "develop": "yarn workspace sites/pycharm-guide develop"
+  },
+  "dependencies": {}
+}

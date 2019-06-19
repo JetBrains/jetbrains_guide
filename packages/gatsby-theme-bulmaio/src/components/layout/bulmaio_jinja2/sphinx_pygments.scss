@@ -1,0 +1,105 @@
+
+.bd-content .section .highlight-python table.highlighttable {
+  width: auto;
+
+  pre {
+    overflow: auto;
+    overflow-y: hidden; /* fixes display issues on Chrome browsers */
+  }
+
+  span.pre {
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+
+  td.linenos pre {
+    padding: 5px 0;
+    border: 0;
+    background-color: transparent;
+    color: #aaa;
+  }
+
+  td.linenos pre {
+    padding: 5px 0;
+    border: 0;
+    background-color: transparent;
+    color: #aaa;
+  }
+
+  table.highlighttable {
+    margin-left: 0.5em;
+  }
+
+  table.highlighttable td {
+    padding: 0 0.5em 0 0.5em;
+  }
+
+  div.code-block-caption {
+    padding: 2px 5px;
+    font-size: small;
+  }
+
+  div.code-block-caption code {
+    background-color: transparent;
+  }
+
+  div.code-block-caption + div > div.highlight > pre {
+    margin-top: 0;
+  }
+
+  div.code-block-caption span.caption-number {
+    padding: 0.1em 0.3em;
+    font-style: italic;
+  }
+
+  div.code-block-caption span.caption-text {
+  }
+
+  div.literal-block-wrapper {
+    padding: 1em 1em 0;
+  }
+
+  div.literal-block-wrapper div.highlight {
+    margin: 0;
+  }
+
+  code.descname {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  code.descclassname {
+    background-color: transparent;
+  }
+
+  code.xref, a code {
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+    background-color: transparent;
+  }
+
+  .viewcode-link {
+    float: right;
+  }
+
+  .viewcode-back {
+    float: right;
+    font-family: sans-serif;
+  }
+
+  div.viewcode-block:target {
+    margin: -1px -10px;
+    padding: 0 10px;
+  }
+
+  td.code {
+    width: 100%;
+  }
+}
+

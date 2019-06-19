@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "../../../../../node_modules/bulma/bulma";
+@import "../../../../../node_modules/bulma-o-steps/bulma-steps";
+
+@import "bulmaio/bulmaio";
+
+@import "./bulmaio_jinja2/article_card";
+@import "./bulmaio_jinja2/breadcrumb";
+@import "./bulmaio_jinja2/content";
+
+.bio-page-sidebar {
+  font-size: $size-small;
+
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+
+  .bio-page-sidenav-published-heading li {
+    padding: 0.5em 0.75em;
+  }
+
+  .menu-label {
+    margin-bottom: 2em;
+  }
+}
+
+div.gatsby-highlight span.token.number {
+  display: inline;
+  font-size: inherit;
+  background-color: inherit;
+  min-width: inherit;
+  margin-right: inherit;
+  padding: inherit;
+}
+
+/* Images in Markdown are centered, fix to be left aligned */
+span.gatsby-resp-image-wrapper {
+  margin-left: inherit !important;
+}

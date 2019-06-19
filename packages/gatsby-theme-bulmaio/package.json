@@ -1,0 +1,87 @@
+{
+  "name": "gatsby-theme-bulmaio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -w"
+  },
+  "dependencies": {
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.1.11",
+    "bulma": "^0.7.4",
+    "bulma-o-steps": "^1.0.9",
+    "gatsby": "2.9.6",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-typescript": "^2.0.13",
+    "identity-obj-proxy": "^3.0.0",
+    "qs": "^6.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-scroll": "^1.7.11",
+    "video.js": "^7.2.4",
+    "videojs-youtube": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/qs": "^6.5.3",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-helmet": "^5.0.8",
+    "@types/react-scroll": "^1.5.4",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/video.js": "^7.2.10",
+    "jest-dom": "^3.4.0",
+    "node-sass": "^4.12.0",
+    "@testing-library/react": "^8.0.1",
+    "react-test-renderer": "^16.8.6",
+    "source-map-support": "^0.5.12",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setup-jest.js"
+    ],
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(tsx?|jsx?)$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gatsby)/)"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "testPathIgnorePatterns": [
+      "node_modules",
+      ".cache"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "moduleNameMapper": {
+      "typeface-*": "identity-obj-proxy",
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file.js"
+    },
+    "collectCoverage": false,
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ]
+  },
+  "peerDependencies": {
+    "gatsby": "^2.4.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
