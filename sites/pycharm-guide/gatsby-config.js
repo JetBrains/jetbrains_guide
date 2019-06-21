@@ -31,8 +31,9 @@ module.exports = {
       },
       navbar: {
         brand: {
-          githubUrl: 'xxxgithub',
-          twitterUrl: 'xxxtwitter'
+          githubUrl: 'https://github.com/jetbrains/pycharm_guide',
+          twitterUrl: 'https://twitter.com/pycharm',
+          twitterAccount: '@PyCharm'
         },
         start: {
           items: [

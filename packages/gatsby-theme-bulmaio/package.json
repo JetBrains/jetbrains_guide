@@ -13,7 +13,6 @@
     "bulma": "^0.7.4",
     "bulma-o-steps": "^1.0.9",
     "gatsby": "2.9.6",
-    "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-typescript": "^2.0.13",
     "identity-obj-proxy": "^3.0.0",

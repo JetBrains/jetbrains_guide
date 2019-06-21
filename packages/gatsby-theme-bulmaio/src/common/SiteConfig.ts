@@ -17,6 +17,7 @@ export default interface SiteConfig {
           brand: {
             githubUrl: string;
             twitterUrl: string;
+            twitterAccount: string;
           },
           start: NavbarStartProps,
           end: NavbarEndProps

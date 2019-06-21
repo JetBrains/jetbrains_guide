@@ -8,6 +8,10 @@ export const tipFragment = graphql`
       }
       frontmatter {
         title
+        subtitle
+        cardThumbnail {
+            publicURL
+        }
         date(formatString: "MMMM Do, YYYY")
         shortVideo {
           ...VideoFragment
