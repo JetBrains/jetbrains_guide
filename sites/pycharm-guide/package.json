@@ -19,6 +19,7 @@
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.20",
     "gatsby-transformer-yaml": "^2.1.12",
+    "gatsby-plugin-gtag": "^1.0.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
