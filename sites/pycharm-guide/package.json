@@ -43,9 +43,12 @@
     "typescript": "^3.0.3"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
+    "clean": "node ../../rimraf-standalone.js .cache/* public/*",
     "develop": "gatsby develop",
-    "test": "jest"
+    "test": "jest",
+    "staging": "firebase deploy -P staging",
+    "production": "firebase deploy -P production"
   },
   "jest": {
     "setupFilesAfterEnv": [

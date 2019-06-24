@@ -168,7 +168,7 @@ export const Tip: React.FC<TipProps> = (
     const twitterCardPage: TwitterCardPage = {
         title: frontmatter.title,
         description: frontmatter.subtitle,
-        image: frontmatter.cardThumbnail.publicURL
+        image: `https://www.jetbrains.com${frontmatter.cardThumbnail.publicURL}`
     };
     return (
         <SidebarLayout pageTitle={frontmatter.title} twitterCardPage={twitterCardPage}>

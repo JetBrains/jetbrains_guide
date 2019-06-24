@@ -120,6 +120,7 @@ module.exports = {
       }
     }
   },
+  pathPrefix: '/pycharm/guide',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
