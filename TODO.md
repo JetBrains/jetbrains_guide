@@ -4,9 +4,6 @@
 
 ## Next
 
-- Get single implementation covering TutorialStep-in-Tutorial and 
-  Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel
-
 ## Soon
 
 - Fix responsive issues on Tips reported by Dmitry 
@@ -239,4 +236,7 @@ sourceNodes event
     - Add into menu
     
     - Remove "series" from code/data
+
+- Get single implementation covering TutorialStep-in-Tutorial and 
+  Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel
 
