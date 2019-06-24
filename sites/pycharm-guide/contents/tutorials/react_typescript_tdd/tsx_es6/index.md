@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'TSX and ES6'
-technologies: ['react']
+technologies: [react]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both.'
@@ -36,8 +36,8 @@ little bit.
 Let's change `App.test.tsx` back to two simple tests:
 
 ```typescript{}
-import { shallow } from 'enzyme';
-import React from 'react';
+import { shallow } from enzyme;
+import React from react;
 import * as ReactDOM from 'react-dom';
 import App from './App';
 
@@ -56,7 +56,7 @@ it('renders the heading', () => {
 Also, our component in `App.tsx`:
 
 ```typescript{}
-import React, { Component } from 'react';
+import React, { Component } from react;
 
 class App extends Component {
     public render() {

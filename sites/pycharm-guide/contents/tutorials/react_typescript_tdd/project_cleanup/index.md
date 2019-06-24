@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2019-02-02
 title: 'Project Cleanup'
-technologies: ['react']
+technologies: [react]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.'
@@ -115,7 +115,7 @@ hadn't imported React yet.
 Simulate this by changing the first line to the following:
 
 ```typescript{}
-import { Component } from 'react';
+import { Component } from react;
 ```
 
 The IDE tells you about the error, with a red squiggly on the usage of

@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Rich Events and Testing'
-technologies: ['react', 'typescript', 'jest']
+technologies: [react, typescript, jest]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Add event handling to a stateful class component by writing tests during development.'

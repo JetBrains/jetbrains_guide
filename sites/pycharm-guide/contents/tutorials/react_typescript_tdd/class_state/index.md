@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Model Class State With TypeScript Interfaces'
-technologies: ['react', 'typescript', 'jest']
+technologies: [react, typescript, jest]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Make a very simple class component with local counter state, then make an interface for that state.'

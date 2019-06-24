@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2019-02-01
 title: 'Project Setup'
-technologies: ['cra', 'jest', 'typescript']
+technologies: ['cra', jest, typescript]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Create a React+TypeScript project with the create-react-app scaffolding tool.'

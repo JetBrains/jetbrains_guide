@@ -1,9 +1,9 @@
 ---
-type: 'tutorial'
+type: tutorial
 date: 2018-10-07
-title: 'React, TypeScript, and TDD'
-technologies: ['typescript', 'jest', 'react']
-topics: ['testing']
+title: React, TypeScript, and TDD
+technologies: [typescript, jest, react]
+topics: [testing]
 author: 'pauleveritt'
 subtitle: 'How to write React applications in TypeScript using TDD, highlighting features of the IDE'
 tutorialItems:

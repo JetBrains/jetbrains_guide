@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Class Components With Props'
-technologies: ['react', 'typescript']
+technologies: [react, typescript]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Make a simple class component with a single prop, again with a TypeScript interface describing the props.'
@@ -50,7 +50,7 @@ It has several failures. For now, just click on `shallow` and hit
 Now create a file `Counter.tsx`. We'll make it very simple to start:
 
 ```typescript{}
-import React, { Component } from 'react';
+import React, { Component } from react;
 
 class Counter extends Component {
     render() {

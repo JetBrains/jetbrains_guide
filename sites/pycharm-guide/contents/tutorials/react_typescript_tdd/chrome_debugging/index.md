@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: Debugging TSX With Chrome
-technologies: ['react']
+technologies: [react]
 topics: []
 author: 'pauleveritt'
 subtitle: Sometimes you need to debug in the browser. Use the IDE to remote control Chrome during debugging.

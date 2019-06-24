@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Functional React Components in TypeScript'
-technologies: ['react', 'typescript']
+technologies: [react, typescript]
 topics: []
 author: 'pauleveritt'
 subtitle: 'React builds UIs as a tree of components. See how to make stateless functional component correctly with TypeScript.'
@@ -149,7 +149,7 @@ Let's move the heading to its own file. Cut and paste the SFC into
 `Heading.tsx`:
 
 ```typescript{}
-import React from 'react';
+import React from react;
 
 const Heading = () => <h1>Hello React</h1>;
 
@@ -164,8 +164,8 @@ default export, which is the current pattern for ES6 module structuring.
 Let's extract the `renders the heading` test into `Heading.test.tsx`:
 
 ```typescript{}
-import { shallow } from 'enzyme';
-import React from 'react';
+import { shallow } from enzyme;
+import React from react;
 import Heading from './Heading';
 
 it('renders the heading', () => {

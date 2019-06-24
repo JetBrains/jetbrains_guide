@@ -2,7 +2,7 @@
 type: 'tutorialstep'
 date: 2017-07-07
 title: 'Testing'
-technologies: ['react', 'jest', 'enzyme']
+technologies: [react, jest, enzyme]
 topics: []
 author: 'pauleveritt'
 subtitle: 'Test-first development with Jest and Enzyme integrated into the IDE.'
@@ -112,7 +112,7 @@ we need to tell Jest to use a configured Enzyme. Add this file at
 `src/setupTests.ts`:
 
 ```typescript{}
-import { configure } from 'enzyme';
+import { configure } from enzyme;
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
