@@ -46,6 +46,8 @@ resource
 
 ## Someday
 
+- Try to speed up image generation to improve build times
+
 - Allow tutorials with .tsx etc. instead of the parallel structure of `content`
 
 - Some concept of draft
