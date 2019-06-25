@@ -13,14 +13,14 @@ seealso:
     href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#extend_selection  
   - title: Shrinking selection
     href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection  
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cktFGEXPGks'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=cktFGEXPGks
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=pm12i4WL-yc'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=pm12i4WL-yc
 leadin: |
     *Want to select code and remain keyboard-centric?*
 

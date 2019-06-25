@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=cYMbEP0oY0s'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=cYMbEP0oY0s
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=GqXrr9d3uQk'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=GqXrr9d3uQk
 leadin: |
   *Opening files doesn't have to mean the Project Tool or mouse.*
 

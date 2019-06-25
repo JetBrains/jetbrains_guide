@@ -6,10 +6,10 @@ technologies: [react, jest, enzyme]
 topics: []
 author: pauleveritt
 subtitle: Test-first development with Jest and Enzyme integrated into the IDE.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster.png'
-  url: 'https://www.youtube.com/watch?v=jPLWfyYFKuA'
+  poster: ./poster.png
+  url: https://www.youtube.com/watch?v=jPLWfyYFKuA
 ---
 
 We briefly saw the [Jest](../../../technologies/jest) test runner in 

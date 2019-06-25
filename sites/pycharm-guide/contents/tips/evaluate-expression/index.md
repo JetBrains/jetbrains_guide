@@ -9,14 +9,14 @@ subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: Evaluating Expressions
     href: 'https://www.jetbrains.com/help/pycharm/evaluating-expressions.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=9WjQmiMxch4'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=9WjQmiMxch4
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=t5mIrhIZBmc'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=t5mIrhIZBmc
 leadin: |
     *Get the right answer in the right context, easily, no typing.*    
 

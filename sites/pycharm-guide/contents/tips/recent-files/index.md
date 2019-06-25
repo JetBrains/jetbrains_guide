@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html'
   - title: 'Speed Search in Tool Windows'
     href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=zvtNVldsj4I'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=zvtNVldsj4I
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=bepgM6KMQpw'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=bepgM6KMQpw
 leadin: |
   *Want the easiest way to jump between files?*
 

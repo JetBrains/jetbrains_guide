@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html'
   - title: 'No Tabs in IntelliJ IDEA'
     href: 'https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=nBF9tT787B0'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=nBF9tT787B0
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=9HWkImburic'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=9HWkImburic
 leadin: |
   *Want a cleaner UI with less noise to juggle in your head?*
 

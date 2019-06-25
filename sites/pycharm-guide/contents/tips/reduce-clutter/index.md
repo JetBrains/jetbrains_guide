@@ -9,14 +9,14 @@ subtitle: 'Save space by turning off various toolbars and Project Tool.'
 seealso:
   - title: 'Configuring Menus and Toolbars'
     href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=JkZ66NgI0r8'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=JkZ66NgI0r8
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=wDYJx-mkPpw'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=wDYJx-mkPpw
 leadin: |
   *You don't have to use all those tools. Let's turn them off.*
 

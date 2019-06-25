@@ -6,10 +6,10 @@ technologies: [react, typescript, jest]
 topics: []
 author: pauleveritt
 subtitle: Follow the React pattern of container/presentation components by refactoring the code and tests.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=FuV0R_n2whg'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=FuV0R_n2whg
 ---
 
 React encourages a separation of concerns. UI components, aka presentation

@@ -9,14 +9,14 @@ subtitle: Browse your package.json scripts and run in a dedicated tool window.
 seealso:
   - title: Running and debugging scripts from the npm tool window
     href: 'https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=FiADQjW532s'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=FiADQjW532s
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=l4LRzsOIrcE'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=l4LRzsOIrcE
 leadin: |
     *Use npm scripts, visually.*    
 

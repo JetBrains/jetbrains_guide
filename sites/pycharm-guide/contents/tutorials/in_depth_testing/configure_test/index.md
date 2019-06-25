@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing, python, ide]
 author: ar
 subtitle: Use Run/Debug configurations to set up startup properties for your test.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you will edit a temporary Run/Debug configuration to enable running tests on multiple CPUs.

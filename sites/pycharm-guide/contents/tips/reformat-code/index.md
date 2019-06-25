@@ -13,14 +13,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/code-style-python.html'
   - title: 'Reformat and rearrange code'
     href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=EP_twi6rDOY'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=EP_twi6rDOY
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=mpJH60TNLLE'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=mpJH60TNLLE
 leadin: |
   *If re-indenting your code or fixing long lines doesn't 
   sound fun, let PyCharm do it for you.*

@@ -9,14 +9,14 @@ subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
   - title: Breakpoint properties
     href: 'https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=hlffBFXtb6g'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=hlffBFXtb6g
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=HfJxsw3yfus'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=HfJxsw3yfus
 leadin: |
     *Stop stepping.*    
 

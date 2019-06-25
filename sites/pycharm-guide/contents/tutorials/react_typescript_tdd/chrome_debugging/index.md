@@ -6,10 +6,10 @@ technologies: [react]
 topics: []
 author: pauleveritt
 subtitle: Sometimes you need to debug in the browser. Use the IDE to remote control Chrome during debugging.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=Nj5gFH4vBZ4'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=Nj5gFH4vBZ4
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), 

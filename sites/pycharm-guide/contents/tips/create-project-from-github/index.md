@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub'
   - title: PyCharm Help for GitHub
     href: 'https://www.jetbrains.com/help/pycharm/github.html'  
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=uTKt4Ur4zuk'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=uTKt4Ur4zuk
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=pr4lXMOTNOY'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=pr4lXMOTNOY
 leadin: |
     *From repo to project in no time.*    
 

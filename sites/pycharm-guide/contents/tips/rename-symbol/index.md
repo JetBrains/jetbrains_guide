@@ -9,14 +9,14 @@ subtitle: 'Change a variable name, class name, or other symbol, across the proje
 seealso:
 - title: Renaming a symbol
   href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=RV8ZP_UoXhE'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=RV8ZP_UoXhE
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=Qa7rLYyUnco'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=Qa7rLYyUnco
 leadin: |
     *Refactor names like a ninja.*    
 

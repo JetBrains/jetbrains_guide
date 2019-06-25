@@ -6,14 +6,14 @@ technologies: []
 topics: [navigation]
 author: pauleveritt
 subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=LJJJBzZX7PM'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=LJJJBzZX7PM
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=ceQpWBVOFjE'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=ceQpWBVOFjE
 leadin: |
   *Want a fast way to open IDE tool windows without memorizing 
   shortcuts?*

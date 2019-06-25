@@ -9,14 +9,14 @@ subtitle: View arguments and documentation without interrupting your flow.
 seealso:
   - title: Viewing Inline Documentation
     href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=OVbA8RC0Csk'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=OVbA8RC0Csk
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=EQ03Xo64kZQ'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=EQ03Xo64kZQ
 leadin: |
     *Want to learn what a symbol is about, without going to a browser?*    
 

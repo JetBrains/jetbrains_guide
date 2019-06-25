@@ -6,10 +6,10 @@ technologies: [nodejs, jest]
 topics: []
 author: pauleveritt
 subtitle: Use the visual debugger in the IDE for smarter TDD.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=Z83Y6ie3N4Y'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=Z83Y6ie3N4Y
 ---
 
 In the [previous step](../testing/) we used testing as a way to

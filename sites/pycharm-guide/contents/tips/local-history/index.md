@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml'
   - title: Retention period for Local History
     href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'  
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=7R1AtB42-BE'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=7R1AtB42-BE
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=ow4S-SieFeQ'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=ow4S-SieFeQ
 leadin: |
     *Movies aren't the only things with time machines.*    
 

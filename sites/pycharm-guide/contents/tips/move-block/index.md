@@ -9,14 +9,14 @@ subtitle: 'Use the keyboard to move a line or selection up or down in your file.
 seealso:
 - title: Adding, Deleting and Moving Code Elements
   href: https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=0Rqp7M_u5tE'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=0Rqp7M_u5tE
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=TxlOhgpiKhY'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=TxlOhgpiKhY
 leadin: |
     *Move lines and blocks, up or down, using the keyboard.*    
 

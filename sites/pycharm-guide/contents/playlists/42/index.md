@@ -7,7 +7,7 @@ technologies: [pytest]
 topics: ['editing','navigation', ide, 'debugging', 'javascript', 'running', 'vcs', 'web']
 author: pauleveritt
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
     - /tips/find-action/

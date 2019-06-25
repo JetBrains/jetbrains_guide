@@ -13,14 +13,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
   - title: Navigating Tips and Tricks
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=X3_dfC_P3tM'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=X3_dfC_P3tM
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=one9a9CAeCg'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=one9a9CAeCg
 leadin: |
     *Need a fast way to find files in a path, without disrupting your flow?*
   

@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html'
   - title: 'Creating and Optimizing Imports'
     href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=6uOgL_AmSnc'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=6uOgL_AmSnc
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=69lj4lxL8Wk'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=69lj4lxL8Wk
 leadin: |
   *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
 

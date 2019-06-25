@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html'
   - title: Configuring Code Coverage Measurement
     href: 'https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=hdJFr7UMPgI'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=hdJFr7UMPgI
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=IgtXFHwCgZM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=IgtXFHwCgZM
 leadin: |
     *Visual coverage to the rescue.*    
 

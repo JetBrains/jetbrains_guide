@@ -6,7 +6,7 @@ technologies: []
 topics: [testing, python, ide]
 author: ar
 subtitle: Create a test and navigate between the test and its subject.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you can create your first test, run it, and evaluate the test run results.

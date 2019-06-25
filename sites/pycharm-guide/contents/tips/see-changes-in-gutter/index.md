@@ -9,14 +9,14 @@ subtitle: Quickly spot which parts of your file have changed since the last comm
 seealso:
   - title: Tracking changes to a file in the editor
     href: 'https://www.jetbrains.com/help/pycharm/viewing-changes-information.html?section=Windows%20or%20Linux#local_changes'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=YxFtsFUMb1Y'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=YxFtsFUMb1Y
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=3eFDyZ1q5LM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=3eFDyZ1q5LM
 leadin: |
     *Visually scan to see a file's changes.*    
 

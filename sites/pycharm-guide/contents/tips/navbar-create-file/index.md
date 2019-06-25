@@ -13,14 +13,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=2cQiP34Xqro'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=2cQiP34Xqro
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2Sl0P_4qmkw'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=2Sl0P_4qmkw
 leadin: |
     *Want to create files without interrupting your flow?*
 

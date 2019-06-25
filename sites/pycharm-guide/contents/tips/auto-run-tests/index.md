@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically'
   - title: Test Runner Tab
     href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=VNNEXUl_FWM'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=VNNEXUl_FWM
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=OVwfIaCYZm4'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=OVwfIaCYZm4
 leadin: |
     *Hands-free TDD mode.*    
 

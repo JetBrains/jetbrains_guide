@@ -6,10 +6,10 @@ technologies: [react, typescript]
 topics: []
 author: pauleveritt
 subtitle: Make a simple class component with a single prop, again with a TypeScript interface describing the props.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=FTzKEWboixM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=FTzKEWboixM
 ---
 
 In the previous step we made a "dumb" presentational component with one

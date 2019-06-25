@@ -6,14 +6,14 @@ technologies: []
 topics: [editing]
 author: pauleveritt
 subtitle: 'Let your IDE add constructor arguments to your instance.'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=JBMFA3lYSqY'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=JBMFA3lYSqY
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=uvEj0bt75XM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=uvEj0bt75XM
 leadin: |
     *Use a Quick Fix to generate instance attribute assignment.*    
 

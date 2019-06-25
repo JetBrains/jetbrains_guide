@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=vQTYCuBd9u4'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=vQTYCuBd9u4
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=1iI8r6fg62I'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=1iI8r6fg62I
 leadin: |
     *The no-distraction way to move around your project tree.*
 

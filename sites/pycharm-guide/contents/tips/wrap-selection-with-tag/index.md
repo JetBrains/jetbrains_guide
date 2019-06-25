@@ -9,14 +9,14 @@ subtitle: Use the keyboard to put a wrapper tag around a selection of code.
 seealso:
   - title: Surround code fragments
     href: 'https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=rj7g7SNPQas'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=rj7g7SNPQas
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=RsD-ioLrLwo'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=RsD-ioLrLwo
 leadin: |
     *HTML tag surrounding, the easy way.*    
 

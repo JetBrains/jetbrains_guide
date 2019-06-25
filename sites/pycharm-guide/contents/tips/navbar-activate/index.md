@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
   - title: Navigating Tips and Tricks
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=xDvTpGSqKyo'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=xDvTpGSqKyo
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=uD1s8eF6lvU'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=uD1s8eF6lvU
 leadin: |
   *The no-distraction way to work with your files.*
   

@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#quick_popups'
   - title: Viewing Inline Documentation
     href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=t3MfWwXmATg'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=t3MfWwXmATg
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=BWTahh-ZzZo'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=BWTahh-ZzZo
 leadin: |
     *See what's needed in a function, as you type, without disruption.*    
 

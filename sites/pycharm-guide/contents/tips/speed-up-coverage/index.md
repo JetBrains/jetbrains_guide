@@ -9,14 +9,14 @@ subtitle: Speed up your "visual coverage" with a config file and correct working
 seealso:
   - title: Coverage configuration files
     href: 'https://coverage.readthedocs.io/en/coverage-4.2/config.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=PaQ5xTGFE1k'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=PaQ5xTGFE1k
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=8OOHj6W_kM0'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=8OOHj6W_kM0
 leadin: |
     *Coverage is good, fast coverage is better.*    
 

@@ -9,14 +9,14 @@ subtitle: Change the wording in your last commit message, after you committed.
 seealso:
   - title: Edit a commit message
     href: 'https://www.jetbrains.com/help/pycharm/edit-project-history.html#reword-commit'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=rO9h0Ssffac'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=rO9h0Ssffac
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=H4zxILWWnD8'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=H4zxILWWnD8
 leadin: |
     *Fix that message.*    
 

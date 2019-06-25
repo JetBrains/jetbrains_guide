@@ -9,14 +9,14 @@ subtitle: 'Easily navigate back to where you were, or where you went.'
 seealso:
   - title: 'Navigate to Navigated Items'
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html'
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=Wto7hdfx-Sg'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=Wto7hdfx-Sg
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=xIzqtXSbRpM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=xIzqtXSbRpM
 leadin: |
   *Diving into a codepath and want to get retrace your steps?*
 

@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window'
   - title: Tabs and split windows
     href: https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=-yiOTOK1xVY'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=-yiOTOK1xVY
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=C06izEnVYOc'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=C06izEnVYOc
 leadin: |
     *Get into TDD focus with side-by-side editors.*    
 

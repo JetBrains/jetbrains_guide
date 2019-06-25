@@ -9,14 +9,14 @@ subtitle: Easily and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit
     href: 'https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=okmwq-oa2zY'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=okmwq-oa2zY
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=NFS0bh4fowA'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=NFS0bh4fowA
 leadin: |
     *Oops, I committed again.*    
 

@@ -9,14 +9,14 @@ subtitle: 'Smart-add a line, from the middle of a line, after or before the curr
 seealso:
 - title: Adding, Deleting and Moving Code Elements
   href: 'https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=aPufd3UPEHU'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=aPufd3UPEHU
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=gx_xsh6j-JA'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=gx_xsh6j-JA
 leadin: |
     *Language-aware line adding, no muss no fuss.*    
 

@@ -6,10 +6,10 @@ technologies: [react]
 topics: []
 author: pauleveritt
 subtitle: Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster.png'
-  url: 'https://www.youtube.com/watch?v=llJFMwH7LP4'
+  poster: ./poster.png
+  url: https://www.youtube.com/watch?v=llJFMwH7LP4
 ---
 
 In our [previous step](../project_setup/) we generated a project then 

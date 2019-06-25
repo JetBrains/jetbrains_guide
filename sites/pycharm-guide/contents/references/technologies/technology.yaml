@@ -36,8 +36,8 @@
 - label: enzyme
   title: Enzyme
   subtitle: JavaScript testing utilities for React
-  logo: './jest.svg'
-  website: 'https://github.com/airbnb/enzyme'
+  logo: ./jest.svg
+  website: https://github.com/airbnb/enzyme
   body: |
     Enzyme is a JavaScript Testing utility for React that makes it easier to
     assert, manipulate, and traverse your React Components' output.
@@ -48,8 +48,8 @@
 - label: jest
   title: Jest
   subtitle: Fast, productive testing courtesy of the React project.
-  logo: './jest.svg'
-  website: 'https://facebook.github.io/jest/'
+  logo: ./jest.svg
+  website: https://facebook.github.io/jest/
   body: |
     Complete and easy to set-up JavaScript testing solution. Works out of the box
     for any React project.
@@ -57,8 +57,8 @@
 - label: nodejs
   title: Node.js
   subtitle: JavaScript outside of the browser, on the command-line or server-side
-  logo: './nodejs-icon.svg'
-  website: 'https://reactjs.org'
+  logo: ./nodejs-icon.svg
+  website: https://reactjs.org
   body: |
     Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It
     forms the basis for modern frontend development, with tools written in
@@ -67,8 +67,8 @@
 - label: pytest
   title: pytest
   subtitle: Mature full-featured Python testing tool that helps you write better programs
-  logo: './pytest.png'
-  website: 'https://docs.pytest.org/en/latest/'
+  logo: ./pytest.png
+  website: https://docs.pytest.org/en/latest/
   body: |
     Python has a long history with testing and different testing frameworks. Over the
     last decade, pytest has become the most popular, mature, and extensible Python
@@ -77,8 +77,8 @@
 - label: react
   title: React
   subtitle: A JavaScript library for building user interfaces
-  logo: './react-original.svg'
-  website: 'https://reactjs.org'
+  logo: ./react-original.svg
+  website: https://reactjs.org
   body: |
     React makes it painless to create interactive UIs. Design simple views for
     each state in your application, and React will efficiently update and
@@ -87,8 +87,8 @@
 - label: typescript
   title: TypeScript
   subtitle: A typed superset of JavaScript which compiles to plain JavaScript
-  logo:  './typescript-original.svg'
-  website: 'https://www.typescriptlang.org'
+  logo:  ./typescript-original.svg
+  website: https://www.typescriptlang.org
   body: |
     TypeScript starts from the same syntax and semantics that millions of
     JavaScript developers know today. Use existing JavaScript code, incorporate

@@ -6,7 +6,7 @@ technologies: []
 topics: [testing, python, ide]
 author: ar
 subtitle: Set up your application to test and select the dedicated test runner in the project settings.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you can set up your project and select the dedicated test runner.

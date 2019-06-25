@@ -6,10 +6,10 @@ technologies: [react, typescript, jest]
 topics: []
 author: pauleveritt
 subtitle: Make a very simple class component with local counter state, then make an interface for that state.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=CTPfG3FpDwk'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=CTPfG3FpDwk
 ---
 
 In [Class Components With Props](../class_props/) we made a child component 

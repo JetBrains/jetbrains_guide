@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing, python, ide]
 author: ar
 subtitle: How to test your applications in PyCharm
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/in_depth_testing/prepare_your_project
   - /tutorials/in_depth_testing/create_test

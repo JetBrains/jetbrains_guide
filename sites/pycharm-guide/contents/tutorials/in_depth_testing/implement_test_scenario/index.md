@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing, python, ide]
 author: ar
 subtitle: Create a test scenario using the Gherkin language.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you can implement test scenarios using the pytest testing framework and pytest-bdd 

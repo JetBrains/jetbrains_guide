@@ -6,10 +6,10 @@ technologies: [react, typescript, jest]
 topics: []
 author: pauleveritt
 subtitle: Add event handling to a stateful class component by writing tests during development.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2gvjVVEtkfc'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=2gvjVVEtkfc
 ---
 
 Our counter component has local state, but doesn't respond to clicks. We

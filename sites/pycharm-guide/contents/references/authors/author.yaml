@@ -1,7 +1,7 @@
 - label: pauleveritt
   title: Paul Everitt
   subtitle: PyCharm Developer Advocate at JetBrains
-  thumbnail: './pauleveritt.jpg'
+  thumbnail: ./pauleveritt.jpg
   body: |
     Paul is the PyCharm Developer Advocate at JetBrains. Before that, Paul
     was a co-founder of Zope Corporation, taking the first open source
@@ -12,7 +12,7 @@
 - label: wht
   title: Bill Tucker
   subtitle: Vim expositor at large
-  thumbnail: './wht.png'
+  thumbnail: ./wht.png
   body: |
     How do you know someone uses vim?
 
@@ -22,6 +22,6 @@
 - label: ar
   title: Alla Redko
   subtitle: Technical writer in PyCharm
-  thumbnail: './ar.jpg'
+  thumbnail: ./ar.jpg
   body: |
     Technical writer in PyCharm.

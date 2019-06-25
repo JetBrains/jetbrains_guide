@@ -9,14 +9,14 @@ subtitle: Drag-and-drop a .sqlite database file onto the Database tool to create
 seealso:
   - title: Connecting to a database
     href: 'https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=-xBE-Dm3HWE'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=-xBE-Dm3HWE
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=XsD4eP_iiRk'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=XsD4eP_iiRk
 leadin: |
     *Working with a local SQLite database, the easy way.*    
 

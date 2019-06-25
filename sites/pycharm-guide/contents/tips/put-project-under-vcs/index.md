@@ -9,14 +9,14 @@ subtitle: The fastest way to register a new project directory under local versio
 seealso:
   - title: Enable Version Control Integration Dialog
     href: 'https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=jlpfzJZ7RZM'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=jlpfzJZ7RZM
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=dfwxbItS6lE'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=dfwxbItS6lE
 leadin: |
     *Work safely via VCS, via keyboard.*    
 

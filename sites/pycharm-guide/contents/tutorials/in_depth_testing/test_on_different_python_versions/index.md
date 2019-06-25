@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing, python, ide]
 author: ar
 subtitle: Learn how to run your tests for different Python interpreters using the tox package
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you run all your test suites on several interpreters.

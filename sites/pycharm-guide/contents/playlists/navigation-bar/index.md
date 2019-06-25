@@ -7,7 +7,7 @@ technologies: ['pytest']
 topics: ['navigation','navigationbar']
 author: pauleveritt
 subtitle: 'Move around files with keyboard, without wasting screen UI space'
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
     - /tips/navbar-activate/

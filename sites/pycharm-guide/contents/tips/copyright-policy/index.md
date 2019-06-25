@@ -7,7 +7,7 @@ topics: ["ide"]
 author: "pauleveritt"
 subtitle: "Use the copyright tool to manage a copyright statement across project files."
 thumbnail: "./thumbnail.png"
-cardThumbnail: "./card.png"
+cardThumbnail: ./card.png
 seealso:
     - title: "Copyright in PyCharm Help"
       href: "https://www.jetbrains.com/help/pycharm/copyright.html"  

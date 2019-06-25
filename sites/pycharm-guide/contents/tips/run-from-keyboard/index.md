@@ -9,14 +9,14 @@ subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - title: Running
     href: 'https://www.jetbrains.com/help/pycharm/running-code.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=dGOuR1RXlIk'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=dGOuR1RXlIk
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=yeU1npO7L20'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=yeU1npO7L20
 leadin: |
     *Run one of your configurations, without the keyboard.*    
 

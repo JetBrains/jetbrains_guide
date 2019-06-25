@@ -13,14 +13,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips'
   - title: Navigation in Source Code
     href: 'https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=Wto7hdfx-Sg'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=Wto7hdfx-Sg
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=xIzqtXSbRpM'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=xIzqtXSbRpM
 leadin: |
   *The best way to move around the code in your project.*
 

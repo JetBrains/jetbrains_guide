@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/angular.html'
   - title: 'WebStorm Blog Post Announcing Improvements'
     href: 'https://blog.jetbrains.com/webstorm/2018/09/webstorm-2018-3-eap-3/'
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=YhCMWZfQP-w'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=YhCMWZfQP-w
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=JUmIiZpazic'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=JUmIiZpazic
 leadin: |
   *Angular template autocomplete gives tons of choices. Which one is best?*
 

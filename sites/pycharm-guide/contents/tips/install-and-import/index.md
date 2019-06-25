@@ -9,14 +9,14 @@ subtitle: 'While typing a symbol, let PyCharm install it and generate the import
 seealso:
   - title: 'Creating and Optimizing Imports'
     href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=rMUIDc3sSpw'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=rMUIDc3sSpw
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=Vq7IBjmqanI'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=Vq7IBjmqanI
 leadin: |
   *Type the symbol, let your IDE install the package and write the import.*
 

@@ -6,10 +6,10 @@ technologies: [cra, jest, typescript]
 topics: []
 author: pauleveritt
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster.png'
-  url: 'https://www.youtube.com/watch?v=SNAS74qKzXQ'
+  poster: ./poster.png
+  url: https://www.youtube.com/watch?v=SNAS74qKzXQ
 ---
 
 React has become very popular, as has TypeScript. But it can be difficult to

@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
   - title: 'Basic Completion'
     href: 'https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=jTG49IdhETw'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=jTG49IdhETw
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=N4gm5mEZ1R8'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=N4gm5mEZ1R8
 leadin: |
   *Tired of stopping your coding to go write an import?*
 

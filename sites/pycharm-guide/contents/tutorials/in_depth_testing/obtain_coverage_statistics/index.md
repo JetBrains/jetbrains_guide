@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing, python, ide]
 author: ar
 subtitle: Enable coverage for you test project.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you obtain and evaluate coverage data for your project.

@@ -9,14 +9,14 @@ subtitle: Unselect files or changed regions within files during the commit proce
 seealso:
   - title: Commit part of a file
     href: 'https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html?section=Windows%20or%20Linux#partial_commit'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=xo_tzr6q29o'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=xo_tzr6q29o
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=2dfhBkZ87oQ'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=2dfhBkZ87oQ
 leadin: |
     *Time to commit but not everything is ready?*    
 

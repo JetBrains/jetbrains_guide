@@ -9,14 +9,14 @@ subtitle: Skip memorizing keyboard shortcuts and speed search for actions instea
 seealso:
   - title: Navigating to Action
     href: https://www.jetbrains.com/help/pycharm/2017.3/navigating-to-action.html#Navigate_to_Action.xml
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=iTJi6IojKms'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=iTJi6IojKms
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=4LLfxqlAcfI'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=4LLfxqlAcfI
 leadin: |
   *Actions, keyboard, speed search.*
 

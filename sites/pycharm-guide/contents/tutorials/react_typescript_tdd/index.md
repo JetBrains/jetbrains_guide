@@ -19,7 +19,7 @@ tutorialItems:
   - /tutorials/react_typescript_tdd/class_state/
   - /tutorials/react_typescript_tdd/rich_events_and_testing/
   - /tutorials/react_typescript_tdd/presentation_components/
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 

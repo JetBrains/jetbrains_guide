@@ -11,14 +11,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
   - title: 'Test Runner Tab'
     href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=BWY9mNdX5R8'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=BWY9mNdX5R8
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=DXtL_GDiqzs'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=DXtL_GDiqzs
 leadin: |
   *Get into TDD flow by focusing on one test.*
   

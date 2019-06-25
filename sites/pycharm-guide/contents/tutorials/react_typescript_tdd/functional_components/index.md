@@ -6,10 +6,10 @@ technologies: [react, typescript]
 topics: []
 author: pauleveritt
 subtitle: React builds UIs as a tree of components. See how to make stateless functional component correctly with TypeScript.
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=a18tqVkZUZc'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=a18tqVkZUZc
 ---
 
 Functional programming has become quite popular, with React being one of

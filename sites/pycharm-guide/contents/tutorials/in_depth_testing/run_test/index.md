@@ -6,7 +6,7 @@ technologies: []
 topics: [testing, python, ide]
 author: ar
 subtitle: Run tests and evaluate test results in the test runner tool window
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 ---
 
 In this step, you learn how to run tests and evaluate the execution results.

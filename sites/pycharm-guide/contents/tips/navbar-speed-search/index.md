@@ -13,14 +13,14 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
   - title: 'Navigating Tips and Tricks'
     href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
-thumbnail: './thumbnail.png'
-cardThumbnail: "./card.png"
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 shortVideo:
-  poster: './poster_short.png'
-  url: 'https://www.youtube.com/watch?v=PRPGmkGrMGI'
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=PRPGmkGrMGI
 longVideo:
-  poster: './poster_long.png'
-  url: 'https://www.youtube.com/watch?v=lr1IX8qAqdU'
+  poster: ./poster_long.png
+  url: https://www.youtube.com/watch?v=lr1IX8qAqdU
 leadin: |
     *Want to quickly select a file in a directory, without the mouse?*
 

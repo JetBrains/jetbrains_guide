@@ -11,7 +11,7 @@ seealso:
     href: 'https://www.jetbrains.com/help/pycharm/using-product-as-the-vim-editor.html'
   - title: 'Use emacs keybindings'
     href: 'https://plugins.jetbrains.com/plugin/7906-emacs-'
-thumbnail: './thumbnail.png'
+thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 leadin: |
   *Want to use your muscle memory from Vim?  You can!*
