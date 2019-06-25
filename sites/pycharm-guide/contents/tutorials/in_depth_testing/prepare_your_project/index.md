@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Prepare your project'
+title: Prepare your project
 technologies: []
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Set up your application to test and select the dedicated test runner in the project settings.'
+topics: [testing, python, ide]
+author: ar
+subtitle: Set up your application to test and select the dedicated test runner in the project settings.
 thumbnail: './thumbnail.png'
 ---
 

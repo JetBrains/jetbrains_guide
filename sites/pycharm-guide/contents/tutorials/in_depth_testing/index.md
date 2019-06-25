@@ -1,11 +1,11 @@
 ---
-type: 'tutorial'
+type: tutorial
 date: 2019-03-01
-title: 'In-Depth Testing'
-technologies: ['pytest']
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'How to test your applications in PyCharm'
+title: In-Depth Testing
+technologies: [pytest]
+topics: [testing, python, ide]
+author: ar
+subtitle: How to test your applications in PyCharm
 thumbnail: './thumbnail.png'
 tutorialItems:
   - /tutorials/in_depth_testing/prepare_your_project

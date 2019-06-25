@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2017-07-07
-title: 'Testing'
+title: Testing
 technologies: [react, jest, enzyme]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Test-first development with Jest and Enzyme integrated into the IDE.'
+author: pauleveritt
+subtitle: Test-first development with Jest and Enzyme integrated into the IDE.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster.png'

@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Obtain code coverage statistics'
-technologies: ['pytest']
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Enable coverage for you test project.'
+title: Obtain code coverage statistics
+technologies: [pytest]
+topics: [testing, python, ide]
+author: ar
+subtitle: Enable coverage for you test project.
 thumbnail: './thumbnail.png'
 ---
 

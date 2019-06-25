@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Implement a test scenario'
-technologies: ['pytest']
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Create a test scenario using the Gherkin language.'
+title: Implement a test scenario
+technologies: [pytest]
+topics: [testing, python, ide]
+author: ar
+subtitle: Create a test scenario using the Gherkin language.
 thumbnail: './thumbnail.png'
 ---
 

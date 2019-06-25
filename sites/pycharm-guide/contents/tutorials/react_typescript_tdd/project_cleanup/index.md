@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-02-02
-title: 'Project Cleanup'
+title: Project Cleanup
 technologies: [react]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.'
+author: pauleveritt
+subtitle: Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster.png'

@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Create a test'
+title: Create a test
 technologies: []
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Create a test and navigate between the test and its subject.'
+topics: [testing, python, ide]
+author: ar
+subtitle: Create a test and navigate between the test and its subject.
 thumbnail: './thumbnail.png'
 ---
 

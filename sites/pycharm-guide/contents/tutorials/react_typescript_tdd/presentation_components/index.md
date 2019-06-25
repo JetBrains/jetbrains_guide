@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2017-07-07
-title: 'Presentation and Container Components'
+title: Presentation and Container Components
 technologies: [react, typescript, jest]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Follow the React pattern of container/presentation components by refactoring the code and tests.'
+author: pauleveritt
+subtitle: Follow the React pattern of container/presentation components by refactoring the code and tests.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'

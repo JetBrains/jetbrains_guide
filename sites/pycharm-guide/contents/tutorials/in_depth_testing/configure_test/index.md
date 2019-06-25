@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Configure tests'
-technologies: ['pytest']
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Use Run/Debug configurations to set up startup properties for your test.'
+title: Configure tests
+technologies: [pytest]
+topics: [testing, python, ide]
+author: ar
+subtitle: Use Run/Debug configurations to set up startup properties for your test.
 thumbnail: './thumbnail.png'
 ---
 

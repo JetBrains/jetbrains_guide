@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2017-07-07
-title: 'Class Components With Props'
+title: Class Components With Props
 technologies: [react, typescript]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Make a simple class component with a single prop, again with a TypeScript interface describing the props.'
+author: pauleveritt
+subtitle: Make a simple class component with a single prop, again with a TypeScript interface describing the props.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'

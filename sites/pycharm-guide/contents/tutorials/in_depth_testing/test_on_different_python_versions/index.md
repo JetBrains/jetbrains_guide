@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Test on different Python versions'
-technologies: ['pytest']
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Learn how to run your tests for different Python interpreters using the tox package'
+title: Test on different Python versions
+technologies: [pytest]
+topics: [testing, python, ide]
+author: ar
+subtitle: Learn how to run your tests for different Python interpreters using the tox package
 thumbnail: './thumbnail.png'
 ---
 

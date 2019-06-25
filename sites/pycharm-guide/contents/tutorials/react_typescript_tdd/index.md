@@ -4,8 +4,8 @@ date: 2018-10-07
 title: React, TypeScript, and TDD
 technologies: [typescript, jest, react]
 topics: [testing]
-author: 'pauleveritt'
-subtitle: 'How to write React applications in TypeScript using TDD, highlighting features of the IDE'
+author: pauleveritt
+subtitle: How to write React applications in TypeScript using TDD, highlighting features of the IDE
 tutorialItems:
   - /tutorials/react_typescript_tdd/project_setup/
   - /tutorials/react_typescript_tdd/project_cleanup/

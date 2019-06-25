@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2017-07-07
-title: 'TSX and ES6'
+title: TSX and ES6
 technologies: [react]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both.'
+author: pauleveritt
+subtitle: Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'

@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2017-07-07
-title: 'Debugging During Testing With NodeJS'
-technologies: ['nodejs', jest]
+title: Debugging During Testing With NodeJS
+technologies: [nodejs, jest]
 topics: []
-author: 'pauleveritt'
-subtitle: 'Use the visual debugger in the IDE for smarter TDD.'
+author: pauleveritt
+subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: './thumbnail.png'
 longVideo:
   poster: './poster_long.png'

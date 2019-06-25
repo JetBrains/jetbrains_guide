@@ -1,11 +1,11 @@
 ---
-type: 'tutorialstep'
+type: tutorialstep
 date: 2019-03-01
-title: 'Run tests'
+title: Run tests
 technologies: []
-topics: [testing, python, 'ide']
-author: 'allaredko'
-subtitle: 'Run tests and evaluate test results in the test runner tool window'
+topics: [testing, python, ide]
+author: ar
+subtitle: Run tests and evaluate test results in the test runner tool window
 thumbnail: './thumbnail.png'
 ---
 

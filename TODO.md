@@ -4,6 +4,8 @@
 
 ## Next
 
+- Author pages should show tips and tutorials (but not tutorial steps)
+
 ## Soon
 
 - Fix responsive issues on Tips reported by Dmitry 
