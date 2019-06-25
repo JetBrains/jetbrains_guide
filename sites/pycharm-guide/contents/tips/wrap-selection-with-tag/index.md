@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Wrap Selection With Tag
 technologies: []
 topics: [web, ]
-author: pauleveritt
+author: pwe
 subtitle: Use the keyboard to put a wrapper tag around a selection of code.
 seealso:
   - title: Surround code fragments

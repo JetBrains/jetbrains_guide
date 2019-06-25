@@ -4,7 +4,7 @@ date: 2017-07-07
 title: Presentation and Container Components
 technologies: [react, typescript, jest]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: Follow the React pattern of container/presentation components by refactoring the code and tests.
 thumbnail: ./thumbnail.png
 longVideo:

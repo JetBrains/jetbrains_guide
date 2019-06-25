@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Split Screen Without Tabs
 technologies: []
 topics: [editing, testing]
-author: pauleveritt
+author: pwe
 subtitle: Get your code and tests side-by-side without resorting to tabs.
 seealso:
   - title: Splitting and unsplitting editor window

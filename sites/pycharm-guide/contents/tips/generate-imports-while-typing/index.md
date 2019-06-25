@@ -4,7 +4,7 @@ date: 2018-12-03
 title: 'Generate Imports While Typing'
 technologies: []
 topics: [editing, python]
-author: pauleveritt
+author: pwe
 subtitle: 'Avoid interruption by letting PyCharm generate your imports as you type.'
 seealso:
   - title: 'Creating and Optimizing Imports'

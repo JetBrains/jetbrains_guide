@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Only Commit Some Changes
 technologies: []
 topics: [vcs]
-author: pauleveritt
+author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file

@@ -4,7 +4,7 @@ date: 2019-03-11
 title: 'Move Block Up/Down Using Keyboard'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Use the keyboard to move a line or selection up or down in your file.'
 seealso:
 - title: Adding, Deleting and Moving Code Elements

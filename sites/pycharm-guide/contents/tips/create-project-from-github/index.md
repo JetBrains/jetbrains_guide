@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Create a Project from GitHub
 technologies: []
 topics: [vcs]
-author: pauleveritt
+author: pwe
 subtitle: Let PyCharm do the work to clone and setup a project hosted on GitHub.
 seealso:
   - title: Check out a project

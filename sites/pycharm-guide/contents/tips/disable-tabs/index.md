@@ -4,7 +4,7 @@ date: 2018-11-04
 title: 'Disable Tabs'
 technologies: []
 topics: [ide]
-author: pauleveritt
+author: pwe
 subtitle: 'Save space and stay keyboard-centric by turning off the tabs.'
 seealso:
   - title: 'Managing Editor Tabs'

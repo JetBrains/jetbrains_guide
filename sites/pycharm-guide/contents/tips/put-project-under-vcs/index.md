@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Put New Project Under Version Control
 technologies: []
 topics: [vcs]
-author: pauleveritt
+author: pwe
 subtitle: The fastest way to register a new project directory under local version control.
 seealso:
   - title: Enable Version Control Integration Dialog

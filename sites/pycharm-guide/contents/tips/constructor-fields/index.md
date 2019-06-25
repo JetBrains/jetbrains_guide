@@ -4,7 +4,7 @@ date: 2019-03-18
 title: 'Adding Fields In a Constructor'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Let your IDE add constructor arguments to your instance.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

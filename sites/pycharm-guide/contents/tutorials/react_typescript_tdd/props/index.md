@@ -4,7 +4,7 @@ date: 2017-07-07
 title: Sharing Props Using Type Information
 technologies: [react, typescript]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: Use type information to make using properties into a productive workflow.
 thumbnail: ./thumbnail.png
 longVideo:

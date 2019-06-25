@@ -4,7 +4,7 @@ date: 2017-07-07
 title: TSX and ES6
 technologies: [react]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: Using React and TypeScript means good JSX and ES6 support in the IDE. This section shows some useful features from both.
 thumbnail: ./thumbnail.png
 longVideo:

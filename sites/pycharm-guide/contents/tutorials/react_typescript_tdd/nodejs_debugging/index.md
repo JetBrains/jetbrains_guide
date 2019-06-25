@@ -4,7 +4,7 @@ date: 2017-07-07
 title: Debugging During Testing With NodeJS
 technologies: [nodejs, jest]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
 longVideo:

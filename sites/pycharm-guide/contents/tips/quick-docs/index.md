@@ -4,7 +4,7 @@ date: 2019-03-11
 title: 'Quick Documentation'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: View arguments and documentation without interrupting your flow.
 seealso:
   - title: Viewing Inline Documentation

@@ -4,7 +4,7 @@ date: 2019-02-01
 title: Project Setup
 technologies: [cra, jest, typescript]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
 thumbnail: ./thumbnail.png
 longVideo:

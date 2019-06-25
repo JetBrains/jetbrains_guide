@@ -4,7 +4,7 @@ date: 2018-12-05
 title: 'Run Single Test'
 technologies: [pytest]
 topics: [testing]
-author: pauleveritt
+author: pwe
 subtitle: 'Speed up testing by focusing on one test.'
 seealso:
   - title: 'Performing Tests'

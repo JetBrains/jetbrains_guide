@@ -4,7 +4,7 @@ date: 2018-11-06
 title: One Import Per Line Preference
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: Tell PyCharm to put each import on a separate line when it cleans up your imports.
 seealso:
   - title: Code Style Preferences for Python Imports

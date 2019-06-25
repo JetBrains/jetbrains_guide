@@ -4,7 +4,7 @@ date: 2019-03-11
 title: View Parameter Info
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: Quickly see function arguments and argument types.
 seealso:
   - title: Use quick pop-ups

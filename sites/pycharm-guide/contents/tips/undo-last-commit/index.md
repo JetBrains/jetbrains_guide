@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Undo Last Commit
 technologies: []
 topics: [vcs,]
-author: pauleveritt
+author: pwe
 subtitle: Easily and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit

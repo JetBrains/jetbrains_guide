@@ -4,7 +4,7 @@ date: 2018-12-01
 title: 'Reformat Code'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Tell PyCharm to clean up indentation and other code style in your file.'
 seealso:
   - title: 'Reformatting Source Code'

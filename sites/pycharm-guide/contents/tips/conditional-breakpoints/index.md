@@ -4,7 +4,7 @@ date: 2019-04-15
 title: Conditional Breakpoints
 technologies: []
 topics: [debugging]
-author: pauleveritt
+author: pwe
 subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
   - title: Breakpoint properties

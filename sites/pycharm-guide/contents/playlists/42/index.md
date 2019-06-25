@@ -5,7 +5,7 @@ date: 2019-04-30
 title: 42 Tips and Tricks
 technologies: [pytest]
 topics: ['editing','navigation', ide, 'debugging', 'javascript', 'running', 'vcs', 'web']
-author: pauleveritt
+author: pwe
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'

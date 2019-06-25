@@ -4,7 +4,7 @@ date: 2019-03-10
 title: Make and Extend Selection Using Keyboard
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: Use the keyboard to select blocks of code then extend/shrink the selection.
 seealso:
   - title: Selecting with navigation keys

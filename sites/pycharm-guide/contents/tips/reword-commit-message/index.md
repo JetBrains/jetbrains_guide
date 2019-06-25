@@ -4,7 +4,7 @@ date: 2019-04-22
 title: Reword Commit Message
 technologies: []
 topics: [vcs]
-author: pauleveritt
+author: pwe
 subtitle: Change the wording in your last commit message, after you committed.
 seealso:
   - title: Edit a commit message

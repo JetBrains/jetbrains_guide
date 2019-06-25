@@ -5,7 +5,7 @@ date: 2019-02-04
 title: 'Navigation Bar Intro'
 technologies: ['pytest']
 topics: ['navigation','navigationbar']
-author: pauleveritt
+author: pwe
 subtitle: 'Move around files with keyboard, without wasting screen UI space'
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'

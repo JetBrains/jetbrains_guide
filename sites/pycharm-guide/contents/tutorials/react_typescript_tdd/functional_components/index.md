@@ -4,7 +4,7 @@ date: 2017-07-07
 title: Functional React Components in TypeScript
 technologies: [react, typescript]
 topics: []
-author: pauleveritt
+author: pwe
 subtitle: React builds UIs as a tree of components. See how to make stateless functional component correctly with TypeScript.
 thumbnail: ./thumbnail.png
 longVideo:

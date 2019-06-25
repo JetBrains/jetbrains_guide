@@ -4,7 +4,7 @@ date: 2018-11-04
 title: 'Better Autocomplete Results in Angular Templates'
 technologies: [angular]
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Narrow the universe of Angular template completions to those that matter.'
 seealso:
   - title: 'PyCharm Help for Angular'

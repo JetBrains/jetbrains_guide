@@ -4,7 +4,7 @@ date: 2018-11-09
 title: 'Navigate Cursor Position Back and Forth'
 technologies: []
 topics: [navigation]
-author: pauleveritt
+author: pwe
 subtitle: 'Easily navigate back to where you were, or where you went.'
 seealso:
   - title: 'Navigate to Navigated Items'

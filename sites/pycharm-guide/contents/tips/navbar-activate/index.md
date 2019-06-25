@@ -4,7 +4,7 @@ date: 2019-01-20
 title: Activate Navigation Bar
 technologies: []
 topics: [navigation, navigationbar]
-author: pauleveritt
+author: pwe
 subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
 seealso:
   - title: Navigation bar

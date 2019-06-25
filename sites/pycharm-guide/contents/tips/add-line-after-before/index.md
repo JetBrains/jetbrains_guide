@@ -4,7 +4,7 @@ date: 2019-03-09
 title: Add Line After/Before
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Smart-add a line, from the middle of a line, after or before the current line.'
 seealso:
 - title: Adding, Deleting and Moving Code Elements

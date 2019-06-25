@@ -4,7 +4,7 @@ date: 2019-04-15
 title: 'Run From Keyboard'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - title: Running

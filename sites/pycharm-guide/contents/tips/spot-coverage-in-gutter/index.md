@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Spot Coverage Gaps Using the Gutter
 technologies: []
 topics: [testing]
-author: pauleveritt
+author: pwe
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
   - title: Viewing Code Coverage Results

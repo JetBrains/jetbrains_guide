@@ -4,7 +4,7 @@ date: 2019-03-12
 title: 'Rename Symbol'
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: 'Change a variable name, class name, or other symbol, across the project.'
 seealso:
 - title: Renaming a symbol

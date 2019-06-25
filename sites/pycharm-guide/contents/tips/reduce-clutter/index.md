@@ -4,7 +4,7 @@ date: 2018-11-04
 title: 'Reduce Clutter by Disabling Tools'
 technologies: []
 topics: [ide]
-author: pauleveritt
+author: pwe
 subtitle: 'Save space by turning off various toolbars and Project Tool.'
 seealso:
   - title: 'Configuring Menus and Toolbars'

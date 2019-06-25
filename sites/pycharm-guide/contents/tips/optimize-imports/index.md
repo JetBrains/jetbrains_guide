@@ -4,7 +4,7 @@ date: 2018-12-02
 title: 'Optimize Imports'
 technologies: []
 topics: [editing, python]
-author: pauleveritt
+author: pwe
 subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports.'
 seealso:
   - title: 'Optimizing Imports'

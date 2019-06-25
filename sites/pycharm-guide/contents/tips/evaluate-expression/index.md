@@ -4,7 +4,7 @@ date: 2019-04-15
 title: Evaluate Expression During Debugging
 technologies: []
 topics: [debugging]
-author: pauleveritt
+author: pwe
 subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: Evaluating Expressions

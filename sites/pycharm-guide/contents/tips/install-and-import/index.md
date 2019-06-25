@@ -4,7 +4,7 @@ date: 2018-12-04
 title: 'Install and import'
 technologies: []
 topics: [python]
-author: pauleveritt
+author: pwe
 subtitle: 'While typing a symbol, let PyCharm install it and generate the import.'
 seealso:
   - title: 'Creating and Optimizing Imports'

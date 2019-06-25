@@ -4,7 +4,7 @@ date: 2018-11-08
 title: Navigate to Symbol
 technologies: []
 topics: [navigation]
-author: pauleveritt
+author: pwe
 subtitle: Navigate your project by code, not files.
 seealso:
   - title: Navigating by Name

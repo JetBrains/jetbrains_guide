@@ -4,7 +4,7 @@ date: 2018-11-07
 title: LiveEdit HTML and CSS
 technologies: []
 topics: [editing]
-author: pauleveritt
+author: pwe
 subtitle: With the LiveEdit plugin, open HTML and CSS in Chrome, over HTTP, and see updates as you save.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

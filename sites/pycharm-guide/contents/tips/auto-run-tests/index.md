@@ -4,7 +4,7 @@ date: 2019-04-15
 title: Auto-Run Tests
 technologies: []
 topics: [testing]
-author: pauleveritt
+author: pwe
 subtitle: Get into testing mode by telling PyCharm to automatically re-run tests as you type.
 seealso:
   - title: Running tests automatically

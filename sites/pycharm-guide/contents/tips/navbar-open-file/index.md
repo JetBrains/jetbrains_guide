@@ -4,7 +4,7 @@ date: 2019-01-22
 title: 'Open File With Navigation Bar'
 technologies: []
 topics: [navigation, navigationbar]
-author: pauleveritt
+author: pwe
 subtitle: 'Open a file somewhere in the project tree using the keyboard and Navigation Bar.'
 seealso:
   - title: 'Navigation bar'
