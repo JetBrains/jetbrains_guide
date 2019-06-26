@@ -1,10 +1,10 @@
-const fs = require(`fs`)
+const fs = require(`fs`);
 
 // Read the type defs from a file in this site's directory,
 // then hand that file to the plugin
 const typeDefs = fs.readFileSync(`typedefs.graphql`, {
     encoding: `utf-8`
-})
+});
 
 module.exports = {
     __experimentalThemes: [
@@ -136,11 +136,7 @@ module.exports = {
                 trackingId: `UA-47631155-3`
             },
         },
-        `gatsby-transformer-remark`,
         'gatsby-plugin-sass',
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
-        'gatsby-plugin-typescript',
-        `gatsby-transformer-yaml`
+        'gatsby-plugin-typescript'
     ]
 };

@@ -52,6 +52,8 @@ Our tests still pass but the IDE tells us TypeScript doesn't compile:
     & { children?: ReactNode; }'.
 ```
 
+Here is the screenshot:
+
 ![Compiler Error](./screenshots/compiler_error.png)
 
 Our test provided an object `{ recipient: string; }` as props but the
