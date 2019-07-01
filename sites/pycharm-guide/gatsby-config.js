@@ -137,6 +137,32 @@ module.exports = {
             },
         },
         'gatsby-plugin-sass',
-        'gatsby-plugin-typescript'
+        'gatsby-plugin-typescript',
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 590
+                        }
+                    },
+                    {
+                        resolve: 'gatsby-remark-embed-snippet',
+                        options: {
+                            directory: `${__dirname}/demos/`
+                        }
+                    },
+                    {
+                        resolve: `gatsby-remark-prismjs`,
+                        options: {
+                            classPrefix: 'language-'
+                        }
+                    },
+                    `gatsby-remark-copy-linked-files`
+                ]
+            }
+        }
     ]
 };
