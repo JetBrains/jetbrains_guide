@@ -38,3 +38,15 @@ div.gatsby-highlight span.token.number {
 span.gatsby-resp-image-wrapper {
   margin-left: inherit !important;
 }
+
+// Gatsby per-line highlighting based on
+// https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
