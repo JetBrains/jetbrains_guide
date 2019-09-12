@@ -38,22 +38,22 @@
     "react-scroll": "^1.7.11",
     "remark": "^10.0.1",
     "remark-html": "^9.0.0",
-    "video.js": "^7.2.4",
+    "video.js": "^7.6.5",
     "videojs-youtube": "^2.6.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
     "@testing-library/react": "^8.0.1",
-    "@types/node": "^12.7.5",
     "@types/jest": "^24.0.13",
-    "identity-obj-proxy": "^3.0.0",
+    "@types/node": "^12.7.5",
     "@types/qs": "^6.5.3",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@types/react-scroll": "^1.5.4",
     "@types/react-test-renderer": "^16.8.1",
-    "@types/video.js": "^7.2.10",
-    "jest-dom": "^3.4.0",
+    "@types/video.js": "^7.2.14",
+    "identity-obj-proxy": "^3.0.0",
     "node-sass": "^4.12.0",
     "react-test-renderer": "^16.8.6",
     "source-map-support": "^0.5.12",
@@ -97,6 +97,5 @@
       "html"
     ]
   },
-  "peerDependencies": {
-  }
+  "peerDependencies": {}
 }
