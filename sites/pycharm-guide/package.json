@@ -13,21 +13,6 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "@types/node": "^11.10.0",
-    "@types/react": "^16.4.14",
-    "@types/react-dom": "^16.0.7",
-    "@types/react-helmet": "^5.0.5",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.1.0",
-    "jest-dom": "^3.0.0",
-    "prettier": "^1.11.1",
-    "react-testing-library": "^6.0.0",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.9.1",
-    "tslint-config-prettier": "^1.10.0",
-    "tslint-config-standard": "^8.0.1",
-    "typescript": "^3.0.3"
   },
   "scripts": {
     "build": "gatsby build --prefix-paths",

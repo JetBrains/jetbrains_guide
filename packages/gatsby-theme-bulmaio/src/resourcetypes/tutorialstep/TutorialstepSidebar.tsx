@@ -31,8 +31,8 @@ export const TutorialstepSidebar: React.FC<TutorialstepSidebarProps> = (
     date: frontmatter.date,
     author: frontmatter.author
   };
-  const technologies = frontmatter.technologies.map(t => t.label);
-  const topics = frontmatter.topics.map(t => t.label);
+  const technologies = frontmatter.technologies ? frontmatter.technologies.map(t => t.label) : [];
+  const topics = frontmatter.topics ? frontmatter.topics.map(t => t.label) : [];
   return (
     <Sidebar>
       <SidebarPublished {...published}/>

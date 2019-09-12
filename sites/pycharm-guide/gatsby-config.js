@@ -27,7 +27,7 @@ module.exports = {
     siteMetadata: {
         theme: {
             helmet: {
-                siteTitle: 'gatsby-theme-bulmaio Demo'
+                siteTitle: 'PyCharm Guide'
             },
             navbar: {
                 brand: {

@@ -37,8 +37,8 @@ export const TipSidebar: React.FC<TipSidebarProps> = (
     date: frontmatter.date,
     author: frontmatter.author
   };
-  const technologies = frontmatter.technologies.map(t => t.label);
-  const topics = frontmatter.topics.map(t => t.label);
+  const technologies = frontmatter.technologies ? frontmatter.technologies.map(t => t.label) : [];
+  const topics = frontmatter.topics ? frontmatter.topics.map(t => t.label) : [];
   const links: Doclink[] = [];
   if (html) {
     links.push({ label: 'In Depth', target: 'in-depth' });

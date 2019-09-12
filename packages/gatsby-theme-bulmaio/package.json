@@ -15,7 +15,7 @@
     "gatsby": "2.15.14",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-gtag": "^1.0.11",
-    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-offline": "3.0.6",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.2.1",
@@ -43,7 +43,9 @@
   },
   "devDependencies": {
     "@testing-library/react": "^8.0.1",
+    "@types/node": "^12.7.5",
     "@types/jest": "^24.0.13",
+    "identity-obj-proxy": "^3.0.0",
     "@types/qs": "^6.5.3",
     "@types/react": "^16.8.17",
     "@types/react-dom": "^16.8.4",
@@ -96,8 +98,5 @@
     ]
   },
   "peerDependencies": {
-    "gatsby": "^2.4.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   }
 }
