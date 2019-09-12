@@ -7,11 +7,14 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspace pycharm-guide build",
-    "clean": "yarn workspace pycharm-guide clean",
-    "develop": "yarn workspace pycharm-guide develop",
+    "pc:develop": "yarn workspace pycharm-guide develop",
+    "pc:build": "yarn workspace pycharm-guide build",
+    "pc:clean": "yarn workspace pycharm-guide clean",
     "staging": "yarn workspace pycharm-guide staging",
-    "production": "yarn workspace pycharm-guide production"
+    "production": "yarn workspace pycharm-guide production",
+    "go:develop": "yarn workspace goland-guide develop",
+    "go:build": "yarn workspace goland-guide build",
+    "go:clean": "yarn workspace goland-guide clean"
   },
   "dependencies": {}
 }

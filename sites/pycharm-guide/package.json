@@ -18,8 +18,8 @@
     "clean": "node ../../rimraf-standalone.js .cache/* public/*",
     "develop": "gatsby develop",
     "test": "jest",
-    "staging": "firebase deploy -P staging",
-    "production": "firebase deploy -P production"
+    "staging": "cd ..;firebase deploy -P staging",
+    "production": "cd ../firebase deploy -P production"
   },
   "jest": {
     "setupFilesAfterEnv": [
