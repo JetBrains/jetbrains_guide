@@ -1,6 +1,6 @@
-# PyCharm Guide
+# JetBrains Guide
 
-The JetBrains guide is a collection of resources for learning JetBrains IDEs. 
+The JetBrains Guide is a collection of resources for learning JetBrains IDEs. 
 Similar to an "Awesome PyCharm" but richer in content and formatting. The 
 Guide is intended as an open source project.
 
@@ -14,9 +14,11 @@ Guide is intended as an open source project.
 
 # Installation
 
+- Clone this repo and cd to the directory
+
 - `yarn`
 
-- `yarn pc:develop` (or `yarn go:develop`)
+- `yarn run pc:develop` (or `yarn run go:develop`)
 
 - Start authoring
 
@@ -24,7 +26,7 @@ Guide is intended as an open source project.
 
 # Re-building and Deploying
 
-To make a production build, run one of the build scripts, such as `yarn pc:build`. 
+To make a production build, run one of the build scripts, such as `yarn run pc:build`. 
 This generates output in `public/pycharm/guide` (which is actually a symlink to the shared, cross-site, parent directory.)
 
 Thus, make sure to do a symlink from, for example, `sites/pycharm-guide/public` to `sites/pycharm/guide`
@@ -40,7 +42,7 @@ a build there using `npm run staging`.
 
 # Gatsby Cache Misfires
 
-When you run `yarn pc:develop` and edit, Gatsby does an incremental rebuild 
+When you run `yarn run pc:develop` and edit, Gatsby does an incremental rebuild 
 and reloads your browser. It's all very fast and very productive.
 
 Except when it isn't. Due to a bug in how the mark things as outdated, 
@@ -51,13 +53,13 @@ build.
 
 To address this:
 
-- Shut down the run process for `yarn pc:develop`
+- Shut down the run process for `yarn run pc:develop`
 
-- Run `yarn pc:clean`
+- Run `yarn run pc:clean`
 
-- Re-start `yarn pc:develop`
+- Re-start `yarn run pc:develop`
 
-- If doing a production build, re-do `yarn pc:build`
+- If doing a production build, re-do `yarn run pc:build`
 
 This is a drag, because full builds are slow.
 
