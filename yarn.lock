@@ -1506,7 +1506,7 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@types/video.js@^7.2.10":
+"@types/video.js@^7.2.14":
   version "7.2.14"
   resolved "https://registry.yarnpkg.com/@types/video.js/-/video.js-7.2.14.tgz#81131b231ffe2c32920d98ee8a41aecb59d8a64b"
   integrity sha512-c/LT8VQ0wKfFzxBOEyGnsLowpK+haa6Y+0f+WtjNe6iaCZClNMwIisjcY91+dw14TnwIpgVH1ML2mo9tgHYyUw==

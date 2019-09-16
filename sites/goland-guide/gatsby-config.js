@@ -12,14 +12,12 @@ module.exports = {
             resolve: 'gatsby-theme-bulmaio', options: {
                 typeDefs,
                 references: {
-                    author: {plural: 'Authors', layout: 'LogoListing'},
                     technology: {plural: 'Technologies', layout: 'LogoListing'},
                     topic: {plural: 'Topics', layout: 'LogoListing'}
                 },
                 resources: {
                     tip: {plural: 'Tips'},
-                    playlist: {plural: 'Playlists'},
-                    tutorial: {plural: 'Tutorials'}
+                    playlist: {plural: 'Playlists'}
                 }
             }
         }
@@ -45,13 +43,6 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'info',
-                            cssClass: 'documentation',
-                            href: '/tutorials/',
-                            label: 'Tutorials',
-                            icon: 'fas fa-tasks'
-                        },
-                        {
                             accent: 'warning',
                             cssClass: 'documentation',
                             href: '/playlists/',
@@ -71,13 +62,6 @@ module.exports = {
                             href: '/topics/',
                             label: 'Topics',
                             icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
-                            href: '/authors/',
-                            label: 'Authors',
-                            icon: 'fas fa-users'
                         },
                         {
                             label: 'More...',

@@ -16,8 +16,8 @@ const IndexPage: React.FC = () => {
                    style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
             <div className="hero-body">
               <div className="container">
-                <h1 className="title">PyCharm Guide</h1>
-                <h2 className="subtitle">Well-organized collection of learning resources for PyCharm</h2>
+                <h1 className="title">GoLand Guide</h1>
+                <h2 className="subtitle">Well-organized collection of learning resources for GoLand</h2>
               </div>
             </div>
           </section>
