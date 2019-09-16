@@ -12,6 +12,7 @@ module.exports = {
             resolve: 'gatsby-theme-bulmaio', options: {
                 typeDefs,
                 references: {
+                    author: {plural: 'Authors', layout: 'LogoListing'},
                     technology: {plural: 'Technologies', layout: 'LogoListing'},
                     topic: {plural: 'Topics', layout: 'LogoListing'}
                 },
