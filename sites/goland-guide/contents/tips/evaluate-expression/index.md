@@ -4,11 +4,11 @@ date: 2019-04-15
 title: Evaluate Expression During Debugging
 technologies: []
 topics: [debugging]
-author: pwe
+author: dlsniper
 subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: Evaluating Expressions
-    href: 'https://www.jetbrains.com/help/pycharm/evaluating-expressions.html'
+    href: 'https://www.jetbrains.com/help/go/evaluating-expressions.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

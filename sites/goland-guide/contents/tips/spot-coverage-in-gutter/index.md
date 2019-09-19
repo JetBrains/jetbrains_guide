@@ -4,13 +4,13 @@ date: 2019-04-17
 title: Spot Coverage Gaps Using the Gutter
 technologies: []
 topics: [testing]
-author: pwe
+author: dlsniper
 subtitle: Let the IDE help you spot coverage gaps in your testing.
 seealso:
   - title: Viewing Code Coverage Results
-    href: 'https://www.jetbrains.com/help/pycharm/viewing-code-coverage-results.html'
+    href: 'https://www.jetbrains.com/help/go/viewing-code-coverage-results.html'
   - title: Configuring Code Coverage Measurement
-    href: 'https://www.jetbrains.com/help/pycharm/configuring-code-coverage-measurement.html'
+    href: 'https://www.jetbrains.com/help/go/configuring-code-coverage-measurement.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -29,15 +29,15 @@ leadin: |
 ---
 
 *Note: Code coverage is a 
-[PyCharm Professional feature](https://www.jetbrains.com/pycharm/features/editions_comparison_matrix.html).*
+[GoLand Professional feature](https://www.jetbrains.com/go/features/editions_comparison_matrix.html).*
 
 Writing tests for your code is good, but how do you know when you've done 
 enough testing? "Code coverage", via the 
 [coverage package](https://pypi.org/project/coverage/), combines your tests 
 and the execution of your code to see and report what spots get hit.
 
-PyCharm makes this easy to set up. You just run the `Run with Coverage` action, 
-for example by clicking the button in the toolbar, and PyCharm runs your tests 
+GoLand makes this easy to set up. You just run the `Run with Coverage` action, 
+for example by clicking the button in the toolbar, and GoLand runs your tests 
 with the bundled `coverage.py` (or you can use a `coverage` that is installed 
 in your project interpreter.)
 

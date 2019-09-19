@@ -4,13 +4,13 @@ date: 2019-04-17
 title: Split Screen Without Tabs
 technologies: []
 topics: [editing, testing]
-author: pwe
+author: dlsniper
 subtitle: Get your code and tests side-by-side without resorting to tabs.
 seealso:
   - title: Splitting and unsplitting editor window
-    href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window'
+    href: 'https://www.jetbrains.com/help/go/managing-editor-tabs.html#splitting-and-unsplitting-editor-window'
   - title: Tabs and split windows
-    href: https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
+    href: https://www.jetbrains.com/help/go/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -35,7 +35,7 @@ You can still split screens without tabs. Simply use the `Split Vertically`
 action (no default keybinding so use `Find Action`) and you'll get two frames. 
 Then open your to-be-tested code on the left and test code on the right.
 
-By default, PyCharm visual test runner tool window is at the bottom. This gives a 
+By default, GoLand visual test runner tool window is at the bottom. This gives a 
 familiar "TDD" (test-driven development) visual orientation: left for code, right 
 for test, bottom for results. (Although on wide monitors, docking the test tool 
 window on the right might make more sense.)

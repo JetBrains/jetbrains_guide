@@ -4,11 +4,11 @@ date: 2018-11-04
 title: 'Disable Tabs'
 technologies: []
 topics: [ide]
-author: pwe
+author: dlsniper
 subtitle: 'Save space and stay keyboard-centric by turning off the tabs.'
 seealso:
   - title: 'Managing Editor Tabs'
-    href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html'
+    href: 'https://www.jetbrains.com/help/go/managing-editor-tabs.html'
   - title: 'No Tabs in IntelliJ IDEA'
     href: 'https://hadihariri.com/2014/06/24/no-tabs-in-intellij-idea/'
 thumbnail: ./thumbnail.png
@@ -30,7 +30,7 @@ leadin: |
   towards a more-focused, keyboard-centric workflow.
 ---
 
-People love tabs. It's the default way in PyCharm to jump around
+People love tabs. It's the default way in GoLand to jump around
 between the few files you are working on for a task.
 
 But tabs have downsides:

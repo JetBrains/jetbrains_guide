@@ -4,15 +4,15 @@ date: 2019-01-23
 title: 'Narrow Navigation Bar With Speed Search'
 technologies: []
 topics: [navigation, navigationbar, speedsearch]
-author: pwe
+author: dlsniper
 subtitle: 'Narrow and select from a long folder listing Navigation Bar by typing a speed search.'
 seealso:
   - title: 'Speed Search in Tool Windows'
-    href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
+    href: 'https://www.jetbrains.com/help/go/speed-search-in-the-tool-windows.html'
   - title: 'Navigation bar'
-    href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - title: 'Navigating Tips and Tricks'
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

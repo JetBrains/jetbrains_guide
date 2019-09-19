@@ -4,11 +4,11 @@ date: 2018-11-04
 title: 'Reduce Clutter by Disabling Tools'
 technologies: []
 topics: [ide]
-author: pwe
+author: dlsniper
 subtitle: 'Save space by turning off various toolbars and Project Tool.'
 seealso:
   - title: 'Configuring Menus and Toolbars'
-    href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
+    href: 'https://www.jetbrains.com/help/go/configuring-menus-and-toolbars.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -20,7 +20,7 @@ longVideo:
 leadin: |
   *You don't have to use all those tools. Let's turn them off.*
 
-  By default, PyCharm has lots of features visible and available. 
+  By default, GoLand has lots of features visible and available. 
   As you learn your way around, you want to give more space to 
   the editor and focus on your coding.
 

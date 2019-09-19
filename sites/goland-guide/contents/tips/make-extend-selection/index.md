@@ -4,15 +4,15 @@ date: 2019-03-10
 title: Make and Extend Selection Using Keyboard
 technologies: []
 topics: [editing]
-author: pwe
+author: dlsniper
 subtitle: Use the keyboard to select blocks of code then extend/shrink the selection.
 seealso:
   - title: Selecting with navigation keys
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#select_with_navigation_keys
+    href: https://www.jetbrains.com/help/go/selecting-text-in-the-editor.html#select_with_navigation_keys
   - title: Extending selection
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#extend_selection  
+    href: https://www.jetbrains.com/help/go/selecting-text-in-the-editor.html#extend_selection  
   - title: Shrinking selection
-    href: https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection  
+    href: https://www.jetbrains.com/help/go/selecting-text-in-the-editor.html#shrink_selection  
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -24,7 +24,7 @@ longVideo:
 leadin: |
     *Want to select code and remain keyboard-centric?*
 
-    PyCharm has actions and keybindings to quickly select code, 
+    GoLand has actions and keybindings to quickly select code, 
     semantically, through scopes and across languages. Extend 
     and shrink selections with ease. 
 
@@ -51,5 +51,5 @@ shrink the selection.
 
 Without using the mouse.
 
-Finally, PyCharm also [supports multiselection](https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#multiselection) 
+Finally, GoLand also [supports multiselection](https://www.jetbrains.com/help/go/selecting-text-in-the-editor.html#multiselection) 
 aka multiple carets. 

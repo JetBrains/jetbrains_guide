@@ -4,11 +4,11 @@ date: 2019-04-17
 title: Run npm Scripts from package.json
 technologies: []
 topics: [javascript, web]
-author: pwe
+author: dlsniper
 subtitle: Browse your package.json scripts and run in a dedicated tool window. 
 seealso:
   - title: Running and debugging scripts from the npm tool window
-    href: 'https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window'
+    href: 'https://www.jetbrains.com/help/go/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -30,7 +30,7 @@ Modern web development means NodeJS tools which mean a `package.json` file.
 This file sometimes has helper scripts under the `scripts` key. Running 
 these perform various project operations such as `build`.
 
-PyCharm Professional makes it easy to browse and run these. There are 
+GoLand Professional makes it easy to browse and run these. There are 
 several different paths to opening the `npm` tool window:
 
 - Right-click on `package.json` and choose `Show npm scripts`

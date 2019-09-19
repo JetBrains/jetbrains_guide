@@ -4,13 +4,13 @@ date: 2019-04-17
 title: Use Local History to Avoid Disaster
 technologies: []
 topics: [vcs]
-author: pwe
+author: dlsniper
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
 seealso:
   - title: Local History
-    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml'
+    href: 'https://www.jetbrains.com/help/go/local-history.html#local_history.xml'
   - title: Retention period for Local History
-    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'  
+    href: 'https://www.jetbrains.com/help/go/local-history.html#retention'  
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -50,7 +50,7 @@ including deletions and can thus revert a delete by right-clicking on the
 change that did the delete.
 
 By default changes are retained for 5 days, but 
-[this is configurable](https://www.jetbrains.com/help/pycharm/local-history.html#retention).
+[this is configurable](https://www.jetbrains.com/help/go/local-history.html#retention).
 
 `Local History` has more features, such as applying labels to simulate 
 branches and generating patches. It isn't a replacement for a VCS, but it is 

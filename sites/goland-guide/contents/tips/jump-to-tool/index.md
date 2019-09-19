@@ -4,7 +4,7 @@ date: 2018-11-07
 title: 'Use Recent Files to Open Tool Window'
 technologies: []
 topics: [navigation]
-author: pwe
+author: dlsniper
 subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
@@ -18,7 +18,7 @@ leadin: |
   *Want a fast way to open IDE tool windows without memorizing 
   shortcuts?*
   
-  Get to PyCharm tool windows from the Recent Files popup. Now that you 
+  Get to GoLand tool windows from the Recent Files popup. Now that you 
   know ``Recent Files``, put it to use for getting  to the tools windows 
   such as ``Project`` and ``Version Control``.
 ---

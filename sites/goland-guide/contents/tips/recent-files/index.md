@@ -4,13 +4,13 @@ date: 2018-11-04
 title: 'Jump to Recent File'
 technologies: []
 topics: [navigation, speedsearch]
-author: pwe
+author: dlsniper
 subtitle: 'Use Recent Files to quickly jump to last-visited file.'
 seealso:
   - title: 'Navigating to Recent File'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-recent-file.html'
   - title: 'Speed Search in Tool Windows'
-    href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
+    href: 'https://www.jetbrains.com/help/go/speed-search-in-the-tool-windows.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -48,7 +48,7 @@ flip back and forth.
 If your file is further down the `Recent Files` list, you can use
 your mouse (bad) or keyboard arrows (better) to move the selection
 before pressing enter. But there's a much better way:
-[speed search](https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html).
+[speed search](https://www.jetbrains.com/help/go/speed-search-in-the-tool-windows.html).
 After pressing `Ctrl-E`, just start typing and the list filters. The
 typed expression can be parts of filenames, include parts of parent
 directory names, etc.

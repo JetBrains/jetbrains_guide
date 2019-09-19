@@ -4,13 +4,13 @@ date: 2019-01-21
 title: 'Navigate Files With Navigation Bar'
 technologies: []
 topics: [navigation, navigationbar]
-author: pwe
+author: dlsniper
 subtitle: 'Move around your project tree and select files, from your keyboard, with the Navigation Bar.'
 seealso:
   - title: 'Navigation bar'
-    href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - title: 'Navigating Tips and Tricks'
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

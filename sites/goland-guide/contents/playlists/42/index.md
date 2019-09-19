@@ -1,11 +1,11 @@
 ---
 type: playlist
 label: A
-date: 2019-04-30
+date: 2019-09-19
 title: 42 Tips and Tricks
-technologies: [pytest]
-topics: ['editing','navigation', ide, 'debugging', 'javascript', 'running', 'vcs', 'web']
-author: pwe
+technologies: [go test]
+topics: ['editing', 'navigation', ide, 'debugging', 'javascript', 'running', 'vcs', 'web']
+author: dlsniper
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
@@ -58,4 +58,4 @@ Development is about focus and flow. Learning your tool helps you get
 into the flow and stay there.
 
 This playlist shows a variety of IDE tips and tricks from across the 
-major usages of PyCharm.
+major usages of GoLand.

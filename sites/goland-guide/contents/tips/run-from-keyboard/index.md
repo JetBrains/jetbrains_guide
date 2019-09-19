@@ -4,11 +4,11 @@ date: 2019-04-15
 title: 'Run From Keyboard'
 technologies: []
 topics: [editing]
-author: pwe
+author: dlsniper
 subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - title: Running
-    href: 'https://www.jetbrains.com/help/pycharm/running-code.html'
+    href: 'https://www.jetbrains.com/help/go/running-code.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

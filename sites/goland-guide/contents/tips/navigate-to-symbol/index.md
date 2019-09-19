@@ -4,15 +4,15 @@ date: 2018-11-08
 title: Navigate to Symbol
 technologies: []
 topics: [navigation]
-author: pwe
+author: dlsniper
 subtitle: Navigate your project by code, not files.
 seealso:
   - title: Navigating by Name
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#tips'
   - title: Navigation in Source Code
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html'
+    href: 'https://www.jetbrains.com/help/go/navigation-in-source-code.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -45,7 +45,7 @@ macOS) quickly, without disruption, get to where you want to go.
 When the popup appears, start speed typing to get to the symbol, using
 the "camel hump" syntax universal to speed searching.
 
-Once you select your choice, PyCharm not only opens the file but
+Once you select your choice, GoLand not only opens the file but
 puts the cursor on the spot of the declaration of the symbol.
 
 Remember, this isn't just for Python symbols. This matches in JS, CSS,

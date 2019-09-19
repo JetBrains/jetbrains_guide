@@ -4,11 +4,11 @@ date: 2019-04-17
 title: Only Commit Some Changes
 technologies: []
 topics: [vcs]
-author: pwe
+author: dlsniper
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: 'https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html?section=Windows%20or%20Linux#partial_commit'
+    href: 'https://www.jetbrains.com/help/go/commit-and-push-changes.html?section=Windows%20or%20Linux#partial_commit'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

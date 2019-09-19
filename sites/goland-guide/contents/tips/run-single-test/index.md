@@ -2,15 +2,15 @@
 type: tip
 date: 2018-12-05
 title: 'Run Single Test'
-technologies: [pytest]
+technologies: [go test]
 topics: [testing]
-author: pwe
+author: dlsniper
 subtitle: 'Speed up testing by focusing on one test.'
 seealso:
   - title: 'Performing Tests'
-    href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
+    href: 'https://www.jetbrains.com/help/go/performing-tests.html'
   - title: 'Test Runner Tab'
-    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
+    href: 'https://www.jetbrains.com/help/go/test-runner-tab.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -22,7 +22,7 @@ longVideo:
 leadin: |
   *Get into TDD flow by focusing on one test.*
   
-  Want to focus your testing on just one test? PyCharm has 
+  Want to focus your testing on just one test? GoLand has 
   many ways to tell the test runner and UI: "Just this."
 ---
 
@@ -35,7 +35,7 @@ Everything is clicking. Perhaps you want to focus on just one test:
 - Some of your other tests are broken, or your current code breaks
   them
 
-PyCharm makes it easy to select just one test to run. In fact, there
+GoLand makes it easy to select just one test to run. In fact, there
 are several ways to do it:
 
 - With the cursor anywhere in the test you want to focus on, right-click
@@ -48,7 +48,7 @@ The definition of "one test" is also flexible: one test function/method,
 an entire test class, an entire test file, or a directory. All can be
 right-clicked to focus on those tests.
 
-What happens when you run one test? PyCharm creates a _temporary_ run
+What happens when you run one test? GoLand creates a _temporary_ run
 configuration, focused on just that test. This run configuration is
 based off the template run configurations, so if you want to put an
 environment variable on all your pytest single-tests configs, edit the

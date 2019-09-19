@@ -4,11 +4,11 @@ date: 2018-11-09
 title: 'Navigate Cursor Position Back and Forth'
 technologies: []
 topics: [navigation]
-author: pwe
+author: dlsniper
 subtitle: 'Easily navigate back to where you were, or where you went.'
 seealso:
   - title: 'Navigate to Navigated Items'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-navigated-items.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
@@ -39,7 +39,7 @@ macOS) quickly, without disruption, get to where you want to go.
 When the popup appears, start speed typing to get to the symbol, using
 the "camel hump" syntax universal to speed searching.
 
-Once you select your choice, PyCharm not only opens the file but
+Once you select your choice, GoLand not only opens the file but
 puts the cursor on the spot of the declaration of the symbol.
 
 Remember, this isn't just for Python symbols. This matches in JS, CSS,

@@ -4,11 +4,11 @@ date: 2019-04-15
 title: Conditional Breakpoints
 technologies: []
 topics: [debugging]
-author: pwe
+author: dlsniper
 subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
   - title: Breakpoint properties
-    href: 'https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties'
+    href: 'https://www.jetbrains.com/help/go/using-breakpoints.html#breakpoint-properties'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -39,12 +39,12 @@ gets called 100 times before the function argument value under suspicion
 is passed in.
 
 Set a breakpoint on the line, then right-click on the breakpoint. You get 
-a dialog to edit the properties of a breakpoint. Meaning, PyCharm breakpoints 
+a dialog to edit the properties of a breakpoint. Meaning, GoLand breakpoints 
 are richer than just a red circle.
 
 In the `Condition` box, type in an expression, such as `age > 90`, that 
 must be true for the breakpoint to be triggered. You can use any variable 
-in scope at that line, and PyCharm autocomplete works in that box.
+in scope at that line, and GoLand autocomplete works in that box.
 
 When you then debug your code, that line will be passed over *until* the 
 condition is met. When true, the debugger stops on that line, just like 

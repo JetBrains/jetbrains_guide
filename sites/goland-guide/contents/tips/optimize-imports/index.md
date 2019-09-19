@@ -4,13 +4,13 @@ date: 2018-12-02
 title: 'Optimize Imports'
 technologies: []
 topics: [editing, python]
-author: pwe
+author: dlsniper
 subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports.'
 seealso:
   - title: 'Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html'
+    href: 'https://www.jetbrains.com/help/GoLand-edu/optimizing-imports.html'
   - title: 'Creating and Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
+    href: 'https://www.jetbrains.com/help/go/creating-and-optimizing-imports.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -22,13 +22,13 @@ longVideo:
 leadin: |
   *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
 
-  PyCharm's ``Optimize Imports`` action is every Python developer's 
+  GoLand's ``Optimize Imports`` action is every Python developer's 
   second-best friend. Along with ``Reformat Code``, keeping your 
   code quality tools happy is a piece of cake.
 ---
 
-PyCharm automates many "gardening" tasks when writing Python code. Managing your
-imports is one of them: with the `Optimize Imports` action, PyCharm cleans
+GoLand automates many "gardening" tasks when writing Python code. Managing your
+imports is one of them: with the `Optimize Imports` action, GoLand cleans
 up your imports, using your import style preferences.
 
 For example, Python's
@@ -37,10 +37,10 @@ might complain that you have an unused imports, your imports aren't sorted withi
 a group, and you have two top-level imports on the same line. Also, you might
 set in a project that you'd like to always split imports from the same source.
 
-PyCharm can clean all of that up using `Optimize Imports`, which cleans up your
+GoLand can clean all of that up using `Optimize Imports`, which cleans up your
 imports based on settings you can save. This action can be run on a single
 file or across _all files in a project_. Also, the `Commit` dialog box has
 a checkbox to run it in the `Before Commit` section.
 
-Finally, PyCharm Professional applies all of this to imports in other languages
+Finally, GoLand Professional applies all of this to imports in other languages
 such as JavaScript and TypeScript.
