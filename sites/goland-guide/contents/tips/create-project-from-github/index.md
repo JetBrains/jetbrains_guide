@@ -4,13 +4,13 @@ date: 2019-04-17
 title: Create a Project from GitHub
 technologies: []
 topics: [vcs]
-author: pwe
-subtitle: Let PyCharm do the work to clone and setup a project hosted on GitHub.
+author: dlsniper
+subtitle: Let GoLand do the work to clone and setup a project hosted on GitHub.
 seealso:
   - title: Check out a project
-    href: 'https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub'
-  - title: PyCharm Help for GitHub
-    href: 'https://www.jetbrains.com/help/pycharm/github.html'  
+    href: 'https://www.jetbrains.com/help/go/manage-projects-hosted-on-github.html#clone-from-GitHub'
+  - title: GoLand Help for GitHub
+    href: 'https://www.jetbrains.com/help/go/github.html'  
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -23,7 +23,7 @@ leadin: |
     *From repo to project in no time.*    
 
     You need to evaluate a project. You need to get a fork. You're always  
-    getting code. Let PyCharm do the clone and make the project.
+    getting code. Let GoLand do the clone and make the project.
 ---
 
 We all consume a lot of code. Alas, it's a number of steps to get all that 
@@ -32,7 +32,7 @@ code from GH, into a directory, and opened in the IDE.
 Let the IDE help out. If you have your GitHub credentials in your preferences, 
 a few easy steps in the IDE will get you going.
 
-First, in the PyCharm menu, choose `VCS | Checkout from Version Control | Git `. 
+First, in the GoLand menu, choose `VCS | Checkout from Version Control | Git `. 
 You can also skip the keyboard by invoking `Find Action` and speed searching for 
 `ch ve`.
 

@@ -4,11 +4,11 @@ date: 2019-04-17
 title: Undo Last Commit
 technologies: []
 topics: [vcs,]
-author: pwe
+author: dlsniper
 subtitle: Easily and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit
-    href: 'https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit'
+    href: 'https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -26,13 +26,13 @@ leadin: |
 ---
 
 We get into the flow, moving fast, committing fast, then... uh-oh, we committed 
-too soon. Usually two seconds after clicking `Commit`. Fortunately PyCharm makes 
+too soon. Usually two seconds after clicking `Commit`. Fortunately GoLand makes 
 it easy to undo the commit if it hasn't yet been pushed.
 
 Go to the `Version Control` tool window and click on the `Log` tab. Then 
 right-click on the commit and choose `Undo` from the context menu.
 
-The changes in that commit need to go "somewhere." In PyCharm, that 
+The changes in that commit need to go "somewhere." In GoLand, that 
 "somewhere" is called a changelist. You can send that commit's changes to 
 a new changelist (by default, one labeled with the commit message) or to 
 the `Default Changelist`. Then click `Undo`.

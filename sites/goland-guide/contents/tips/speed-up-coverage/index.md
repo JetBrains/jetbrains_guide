@@ -4,7 +4,7 @@ date: 2019-04-18
 title: Speed Up Coverage with Configuration File
 technologies: []
 topics: [testing]
-author: pwe
+author: dlsniper
 subtitle: Speed up your "visual coverage" with a config file and correct working directory.
 seealso:
   - title: Coverage configuration files
@@ -38,7 +38,7 @@ This is done with a
 [`.coveragerc` configuration file](https://coverage.readthedocs.io/en/coverage-4.2/config.html), 
 which has lots of options.
 
-PyCharm though is finicky about this, hence this tip:
+GoLand though is finicky about this, hence this tip:
 
 - Put your `.coveragerc` file in your project root
 

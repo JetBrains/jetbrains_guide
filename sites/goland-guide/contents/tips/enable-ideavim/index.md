@@ -7,8 +7,8 @@ topics: [editing]
 author: 'wht'
 subtitle: 'Use the same keybindings from vim with a PlugIn'
 seealso:
-  - title: 'Using Vim Editor Emulation in Pycharm (IdeaVim)'
-    href: 'https://www.jetbrains.com/help/pycharm/using-product-as-the-vim-editor.html'
+  - title: 'Using Vim Editor Emulation in GoLand (IdeaVim)'
+    href: 'https://www.jetbrains.com/help/go/using-product-as-the-vim-editor.html'
   - title: 'Use emacs keybindings'
     href: 'https://plugins.jetbrains.com/plugin/7906-emacs-'
 thumbnail: ./thumbnail.png
@@ -17,14 +17,14 @@ leadin: |
   *Want to use your muscle memory from Vim?  You can!*
 
     All the keybindings you remember from vim, plus it's configurable to use
-    PyCharm specific functionality.   You can pick and choose which
+    GoLand specific functionality.   You can pick and choose which
     keybindings you prefer.
 
 ---
-Vim keybindings for PyCharm are available, and configurable.  If you are
+Vim keybindings for GoLand are available, and configurable.  If you are
 comfortable navigating with vim, you don't have to be uncomfortable in
-PyCharm.  The keybindings can even be shared with some keybindings applying
-to vim, and some to the native PyCharm keybindings.
+GoLand.  The keybindings can even be shared with some keybindings applying
+to vim, and some to the native GoLand keybindings.
 
 A file, `.ideavimrc`, provides a configuration method just like a .vimrc
 configuration file so keybindings can be adjusted and vim leader keys

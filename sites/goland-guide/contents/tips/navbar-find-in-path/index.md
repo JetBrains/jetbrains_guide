@@ -4,15 +4,15 @@ date: 2019-01-25
 title: Find In Path With Navigation Bar
 technologies: []
 topics: [navigation, navigationbar]
-author: pwe
+author: dlsniper
 subtitle: Use keyboard and Navigation Bar to find files under a path.
 seealso:
   - title: Finding and replacing text in a project
-    href: 'https://www.jetbrains.com/help/pycharm/finding-and-replacing-text-in-project.html'
+    href: 'https://www.jetbrains.com/help/go/finding-and-replacing-text-in-project.html'
   - title: Navigation bar
-    href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - title: Navigating Tips and Tricks
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+    href: 'https://www.jetbrains.com/help/go/navigation-bar.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -31,7 +31,7 @@ module.exports = {
             navbar: {
                 brand: {
                     githubUrl: 'https://github.com/jetbrains/pycharm_guide',
-                    twitterUrl: 'https://twitter.com/golandide',
+                    twitterUrl: 'https://twitter.com/GoLandIDE',
                     twitterAccount: '@GoLandIDE'
                 },
                 start: {
@@ -94,7 +94,7 @@ module.exports = {
                         },
                         {
                             color: '55acee',
-                            href: 'https://twitter.com/golandide',
+                            href: 'https://twitter.com/GoLandIDE',
                             icon: 'twitter'
                         }
                     ]

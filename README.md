@@ -14,15 +14,30 @@ Guide is intended as an open source project.
 
 # Installation
 
+To setup a local development copy of this project, follow the steps below.
+
+If you prefer Docker, then see the Docker section below.
+
 - Clone this repo and cd to the directory
-
 - `yarn`
-
 - `yarn run pc:develop` (or `yarn run go:develop`)
-
 - Start authoring
-
 - Connect to `http://localhost:8000/`
+
+## Using Docker
+
+This project supports Docker containers as well. To use it, perform the following steps:
+
+- Clone this repository
+- Open it with any JetBrains IDE
+- Use the `GoLand Guide` or `PyCharm Guide` run configurations
+
+This will create a Docker container for either `goland-guide` or `pycharm-guide`, and mount the project as a volume inside the container.
+
+All the dependencies will be created on your machine but `Gatsby` itself and all other nodejs related tools will be in the container.
+
+**NOTE:** Currently there a bug prevents correctly sharing the volume configuration via the Run Configurations, see [IDEA-222853](https://youtrack.jetbrains.com/issue/IDEA-222853).
+To overcome this, you'll need to change the configuration to point the project directory on your computer.
 
 # Re-building and Deploying
 

@@ -1,6 +1,6 @@
 - label: editing
   title: Editing
-  subtitle: Learning resources when writing code in PyCharm's editor
+  subtitle: Learning resources when writing code in GoLand's editor
   accent: primary
   icon: fas fa-user-edit
   body: |
@@ -8,21 +8,21 @@
 
     ## See Also
 
-    - [PyCharm Editor](https://www.jetbrains.com/help/pycharm/editor-guided-tour.html)
+    - [GoLand Editor](https://www.jetbrains.com/help/go/editor-guided-tour.html)
 
 - label: database
   title: Database
-  subtitle: Integrated visual database tool for PyCharm
+  subtitle: Integrated visual database tool for GoLand
   accent: primary
   icon: fas fa-database
   body: |
-    Many projects work with relational databases and PyCharm Professional makes
+    Many projects work with relational databases and GoLand Professional makes
     this a first-class part of the workflow by integrating
     [DataGrip](https://www.jetbrains.com/datagrip/), our SQL IDE.
 
     ## See Also
 
-    - [PyCharm Help for Database](https://www.jetbrains.com/help/pycharm/settings-tools-database.html#Settings_Tools_Database.xml)
+    - [GoLand Help for Database](https://www.jetbrains.com/help/go/settings-tools-database.html#Settings_Tools_Database.xml)
 
 - label: debugging
   title: Debugging
@@ -30,11 +30,11 @@
   accent: primary
   icon: fas fa-bug
   body: |
-    PyCharm's top feature is its powerful, visual debugger. Useful for finding
+    GoLand's top feature is its powerful, visual debugger. Useful for finding
     problems in your code and poking and exploring code execution.
 
     ## See Also:
-    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html)
+    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
 
 - label: ide
   title: IDE
@@ -42,7 +42,7 @@
   accent: primary
   icon: fas fa-edit
   body: |
-    PyCharm is built atop IntelliJ IDEA, our platform for building IDEs.
+    GoLand is built atop IntelliJ IDEA, our platform for building IDEs.
     It thus shares functionality with all our IDE tools.
 
 - label: javascript
@@ -51,13 +51,13 @@
   accent: primary
   icon: fab fa-js-square
   body: |
-    PyCharm Professional has powerful JavaScript features based on its inclusion
+    GoLand Professional has powerful JavaScript features based on its inclusion
     of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end Web and
     NodeJS IDE.
 
     ## See Also
 
-    - [JavaScript](https://www.jetbrains.com/help/pycharm/javascript-specific-guidelines.html#JavaScript-Specific_Guidelines.xml)
+    - [JavaScript](https://www.jetbrains.com/help/go/javascript-specific-guidelines.html#JavaScript-Specific_Guidelines.xml)
 
 - label: navigation
   title: Navigation
@@ -65,12 +65,12 @@
   accent: primary
   icon: fas fa-bezier-curve
   body: |
-    PyCharm is built atop IntelliJ IDEA, our platform for building IDEs.
+    GoLand is built atop IntelliJ IDEA, our platform for building IDEs.
     It thus shares functionality with all our IDE tools.
 
     ## See Also
-    - [Navigating Through the Source Code](https://www.jetbrains.com/help/pycharm/navigating-through-the-source-code.html)
-    - [Navigation Shortcuts](https://www.jetbrains.com/help/pycharm/navigation-in-source-code.html)
+    - [Navigating Through the Source Code](https://www.jetbrains.com/help/go/navigating-through-the-source-code.html)
+    - [Navigation Shortcuts](https://www.jetbrains.com/help/go/navigation-in-source-code.html)
 
 - label: navigationbar
   title: Navigation Bar
@@ -83,8 +83,8 @@
     open files for editing.
 
     ## See Also
-    - [Using the Navigation Bar](https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html)
-    - [Navigation bar](https://www.jetbrains.com/help/pycharm/navigation-bar.html)
+    - [Using the Navigation Bar](https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html)
+    - [Navigation bar](https://www.jetbrains.com/help/go/navigation-bar.html)
 
 - label: python
   title: Python
@@ -92,12 +92,12 @@
   accent: primary
   icon: fab fa-python
   body: |
-    PyCharm is focused on productive Python development, with many IDE
+    GoLand is focused on productive Python development, with many IDE
     facilities specific to the Python language.
 
     ## See Also
-    - [Python Help Topic](https://www.jetbrains.com/help/pycharm/python.html)
-    - [Python Code Insight](https://www.jetbrains.com/help/pycharm/python-code-insight.html)
+    - [Python Help Topic](https://www.jetbrains.com/help/go/python.html)
+    - [Python Code Insight](https://www.jetbrains.com/help/go/python-code-insight.html)
 
 - label: running
   title: Running
@@ -105,12 +105,12 @@
   accent: primary
   icon: fas fa-play
   body: |
-    Writing Python code means running Python code and PyCharm brings the IDE
+    Writing Python code means running Python code and GoLand brings the IDE
     experience to this primary activity. Code executes in our visual run tool
     window, driven by configurations you can edit.
 
     ## See Also
-    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/pycharm/run-debug-configuration.html)
+    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
 
 - label: speedsearch
   title: Speed Search
@@ -136,20 +136,20 @@
     period to mean file extension
 
     ## See Also
-    - [Speed Search in Tool Windows](https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html)
+    - [Speed Search in Tool Windows](https://www.jetbrains.com/help/go/speed-search-in-the-tool-windows.html)
 
 - label: testing
   title: Testing
-  subtitle: Test driven development with PyCharm's visual testing.
+  subtitle: Test driven development with GoLand's visual testing.
   accent: primary
   icon: fas fa-chart-bar
   body: |
     Testing and test-driven development is an important part of professional
-    coding. PyCharm's "Visual Testing" puts a friendly GUI on writing and
+    coding. GoLand's "Visual Testing" puts a friendly GUI on writing and
     running Python tests.
 
     ## See Also
-    - [PyCharm Help for Testing](https://www.jetbrains.com/help/pycharm/testing.html#Testing.xml)
+    - [GoLand Help for Testing](https://www.jetbrains.com/help/go/testing.html#Testing.xml)
 
 - label: vcs
   title: Version Control
@@ -158,11 +158,11 @@
   icon: fas fa-code-branch
   body: |
     Working with version control systems (VCS) such as Git, Mercurial, and others
-    is an integral part of development. PyCharm puts a common abstraction atop
+    is an integral part of development. GoLand puts a common abstraction atop
     each system, then puts a visual face on all your VCS activities.
 
     ## See Also
-    - [Version control with PyCharm](https://www.jetbrains.com/help/pycharm/version-control-integration.html?section=Windows%20or%20Linux)
+    - [Version control with GoLand](https://www.jetbrains.com/help/go/version-control-integration.html?section=Windows%20or%20Linux)
 
 - label: web
   title: Web
@@ -170,9 +170,9 @@
   accent: primary
   icon: fas fa-globe
   body: |
-    PyCharm Professional has powerful web development features based on
+    GoLand Professional has powerful web development features based on
     its inclusion of [WebStorm](https://www.jetbrains.com/webstorm/), a
     high-end Web and NodeJS IDE.
 
     ## See Also
-    - [PyCharm Help for HTML](https://www.jetbrains.com/help/pycharm/editing-html-files.html#Editing_HTML_Files.xml)
+    - [GoLand Help for HTML](https://www.jetbrains.com/help/go/editing-html-files.html#Editing_HTML_Files.xml)

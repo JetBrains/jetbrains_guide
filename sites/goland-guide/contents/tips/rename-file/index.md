@@ -4,11 +4,11 @@ date: 2019-03-12
 title: 'Rename a File and Its References'
 technologies: []
 topics: [editing]
-author: pwe
+author: dlsniper
 subtitle: 'Change your mind on a file name and the IDE makes all the changes for you.'
 seealso:
 - title: Renaming a file or directory
-  href: https://www.jetbrains.com/help/pycharm/rename-refactorings.html
+  href: https://www.jetbrains.com/help/go/rename-refactorings.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

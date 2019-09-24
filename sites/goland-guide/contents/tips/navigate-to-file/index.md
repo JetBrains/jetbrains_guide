@@ -4,13 +4,13 @@ date: 2018-11-07
 title: 'Navigate to File'
 technologies: []
 topics: [navigation]
-author: pwe
+author: dlsniper
 subtitle: 'Jump to a file without using the Project Tool and your mouse.'
 seealso:
   - title: 'Navigating by File'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#9a8d021a'
   - title: 'Navigating Tips and Tricks'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-class-file-or-symbol-by-name.html#tips'
+    href: 'https://www.jetbrains.com/help/go/navigating-to-class-file-or-symbol-by-name.html#tips'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

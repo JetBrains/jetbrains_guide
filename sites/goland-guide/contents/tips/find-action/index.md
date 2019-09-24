@@ -4,11 +4,11 @@ date: 2018-11-01
 title: 'Find Action'
 technologies: []
 topics: [navigation]
-author: pwe
+author: dlsniper
 subtitle: Skip memorizing keyboard shortcuts and speed search for actions instead.
 seealso:
   - title: Navigating to Action
-    href: https://www.jetbrains.com/help/pycharm/2017.3/navigating-to-action.html#Navigate_to_Action.xml
+    href: https://www.jetbrains.com/help/go/2017.3/navigating-to-action.html#Navigate_to_Action.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

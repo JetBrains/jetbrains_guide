@@ -4,13 +4,13 @@ date: 2019-04-15
 title: Auto-Run Tests
 technologies: []
 topics: [testing]
-author: pwe
-subtitle: Get into testing mode by telling PyCharm to automatically re-run tests as you type.
+author: dlsniper
+subtitle: Get into testing mode by telling GoLand to automatically re-run tests as you type.
 seealso:
   - title: Running tests automatically
-    href: 'https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically'
+    href: 'https://www.jetbrains.com/help/go/testing-your-first-python-application.html#run-test-automatically'
   - title: Test Runner Tab
-    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml'
+    href: 'https://www.jetbrains.com/help/go/test-runner-tab.html#Test_Runner_Tab.xml'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -22,7 +22,7 @@ longVideo:
 leadin: |
     *Hands-free TDD mode.*    
 
-    Test-driven development (TDD) means always run your tests. PyCharm 
+    Test-driven development (TDD) means always run your tests. GoLand 
     makes that easy
 
 ---
@@ -31,11 +31,11 @@ TDD, or test-driven development, means "always be testing." In fact, the
 best way to do this is to put your tests on autopilot.
 
 Some test frameworks have a mode to "watch" your tests and code, detect 
-changes, and re-run tests. But PyCharm makes this even easier, with a button 
+changes, and re-run tests. But GoLand makes this even easier, with a button 
 and action.
 
 Simply click the `Toggle auto-run` in the test tool window, then run your tests 
-once. From that point, any time "things change", PyCharm will re-run whatever 
+once. From that point, any time "things change", GoLand will re-run whatever 
 tests are currently in that test tool window tab.
 
 It's a very convenient workflow. In fact, since the IDE automatically saves 

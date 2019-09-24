@@ -4,11 +4,11 @@ date: 2019-04-17
 title: Put New Project Under Version Control
 technologies: []
 topics: [vcs]
-author: pwe
+author: dlsniper
 subtitle: The fastest way to register a new project directory under local version control.
 seealso:
   - title: Enable Version Control Integration Dialog
-    href: 'https://www.jetbrains.com/help/pycharm/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml'
+    href: 'https://www.jetbrains.com/help/go/enable-version-control-integration-dialog.html#Enable_Version_Control_Integration_Dialog.xml'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

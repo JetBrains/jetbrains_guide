@@ -4,11 +4,11 @@ date: 2019-03-12
 title: 'Rename Symbol'
 technologies: []
 topics: [editing]
-author: pwe
+author: dlsniper
 subtitle: 'Change a variable name, class name, or other symbol, across the project.'
 seealso:
 - title: Renaming a symbol
-  href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
+  href: 'https://www.jetbrains.com/help/go/rename-refactorings.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -33,7 +33,7 @@ The IDE knows where it is used. Even better, it knows the difference between
 usage in your project vs. finding it in a dependency, and best of all, usage 
 as a symbol vs. just some letters in a string.
 
-What if the same symbol name is used in two Python modules? Yep, PyCharm 
+What if the same symbol name is used in two Python modules? Yep, GoLand 
 can tell the difference and only rename to the appropriate the symbol from 
 that module.
 

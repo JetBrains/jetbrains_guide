@@ -4,11 +4,11 @@ date: 2019-03-11
 title: 'Quick Documentation'
 technologies: []
 topics: [editing]
-author: pwe
+author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.
 seealso:
   - title: Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
+    href: 'https://www.jetbrains.com/help/go/inline-documentation.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -32,7 +32,7 @@ function. Other times we want to know positional versus keyword args.
 Or the types of the arguments. Or their default values. Or a nice 
 rendered docstring.
 
-PyCharm has several facilities for showing you documentation about a 
+GoLand has several facilities for showing you documentation about a 
 symbol.
 
 First, `Quick Documentation` (`Ctrl-P` Win/Linux, `F1` macOS) brings 
