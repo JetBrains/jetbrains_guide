@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-03-11
+date: 2019-10-07
 title: View Parameter Info
 technologies: []
 topics: [editing]
@@ -9,8 +9,6 @@ subtitle: Quickly see function arguments and argument types.
 seealso:
   - title: Use quick pop-ups
     href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
-  - title: Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/go/inline-documentation.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -27,14 +25,12 @@ leadin: |
 
 ---
 
-Some functions or classes -- well, let's admit it, they are kind of chatty. 
-They require lots of arguments, have lots of optional keyword arguments, 
-some with default values.
+Some functions or structs -- well, let's admit it, can require lots of arguments.
 
 So you stop, go look at the function, and come back to what you were doing.
 
 There's a better way. With your cursor in the parentheses, invoke 
-`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS.) You get a tiny 
+`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS). You get a tiny 
 popup with the positional and keyword arguments, along with any default 
 values. Bold is used to mark the current spot in the parameter list that 
 your cursor is at.

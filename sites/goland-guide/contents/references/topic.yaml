@@ -1,3 +1,15 @@
+- label: completion
+  title: Completion
+  subtitle: Learning resources when using completion in GoLand
+  accent: primary
+  icon: fas fa-user-edit
+  body: |
+    Completion is what makes IDEs stand-out from basic text editors.
+
+    ## See Also
+
+    - [GoLand Code Completion](https://www.jetbrains.com/help/go/auto-completing-code.html)
+
 - label: editing
   title: Editing
   subtitle: Learning resources when writing code in GoLand's editor
@@ -86,18 +98,18 @@
     - [Using the Navigation Bar](https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html)
     - [Navigation bar](https://www.jetbrains.com/help/go/navigation-bar.html)
 
-- label: python
-  title: Python
-  subtitle: Work productively when coding Python.
+- label: go
+  title: Go
+  subtitle: Work productively when coding Go.
   accent: primary
   icon: fab fa-python
   body: |
-    GoLand is focused on productive Python development, with many IDE
-    facilities specific to the Python language.
+    GoLand is focused on productive Go development, with many IDE
+    facilities specific to the Go language.
 
     ## See Also
-    - [Python Help Topic](https://www.jetbrains.com/help/go/python.html)
-    - [Python Code Insight](https://www.jetbrains.com/help/go/python-code-insight.html)
+    - [Go Help Topic](https://www.jetbrains.com/help/go/python.html)
+    - [Go Code Insight](https://www.jetbrains.com/help/go/python-code-insight.html)
 
 - label: running
   title: Running
@@ -170,7 +182,7 @@
   accent: primary
   icon: fas fa-globe
   body: |
-    GoLand Professional has powerful web development features based on
+    GoLand has powerful web development features based on
     its inclusion of [WebStorm](https://www.jetbrains.com/webstorm/), a
     high-end Web and NodeJS IDE.
 

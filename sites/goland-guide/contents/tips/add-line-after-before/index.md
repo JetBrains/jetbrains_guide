@@ -2,8 +2,8 @@
 type: tip
 date: 2019-03-09
 title: Add Line After/Before
-technologies: []
-topics: [editing]
+technologies: ['go']
+topics: ['editing']
 author: dlsniper
 subtitle: 'Smart-add a line, from the middle of a line, after or before the current line.'
 seealso:
