@@ -5,8 +5,11 @@
     <scripts>
       <script value="go:develop" />
     </scripts>
+    <arguments value="-H 0.0.0.0" />
     <node-interpreter value="project" />
-    <envs />
+    <envs>
+      <env name="NODE_DEBUG" value="1" />
+    </envs>
     <method v="2" />
   </configuration>
 </component>

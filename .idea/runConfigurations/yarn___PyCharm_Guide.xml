@@ -5,6 +5,7 @@
     <scripts>
       <script value="pc:develop" />
     </scripts>
+    <arguments value="-H 0.0.0.0" />
     <node-interpreter value="project" />
     <envs />
     <method v="2" />
