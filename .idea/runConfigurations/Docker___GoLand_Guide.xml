@@ -1,17 +1,17 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="PyCharm Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+  <configuration default="false" name="Docker - GoLand Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
     <deployment type="dockerfile">
       <settings>
         <option name="buildCliOptions" value="" />
-        <option name="command" value="/jetbrains_guide/guide.sh run pc:develop" />
-        <option name="containerName" value="pycharm-guide" />
+        <option name="command" value="/jetbrains_guide/guide.sh run go:develop" />
+        <option name="containerName" value="goland-guide" />
         <option name="entrypoint" value="" />
-        <option name="imageTag" value="pycharm-guide" />
+        <option name="imageTag" value="goland-guide" />
         <option name="portBindings">
           <list>
             <DockerPortBindingImpl>
               <option name="containerPort" value="8000" />
-              <option name="hostPort" value="18000" />
+              <option name="hostPort" value="18001" />
             </DockerPortBindingImpl>
           </list>
         </option>

@@ -64,8 +64,8 @@
     forms the basis for modern frontend development, with tools written in
     JavaScript that perform most of the work for rich frontend app development.
 
-- label: pytest
-  title: pytest
+- label: test
+  title: test
   subtitle: Mature full-featured Python testing tool that helps you write better programs
   logo: ./pytest.png
   website: https://docs.pytest.org/en/latest/
@@ -93,3 +93,31 @@
     TypeScript starts from the same syntax and semantics that millions of
     JavaScript developers know today. Use existing JavaScript code, incorporate
     popular JavaScript libraries, and call TypeScript code from JavaScript.
+
+- label: go
+  title: Go
+  subtitle: A typed superset of JavaScript which compiles to plain JavaScript
+  logo:  ./typescript-original.svg
+  website: https://www.typescriptlang.org
+  body: |
+    TypeScript starts from the same syntax and semantics that millions of
+    JavaScript developers know today. Use existing JavaScript code, incorporate
+    popular JavaScript libraries, and call TypeScript code from JavaScript.
+
+- label: editing
+  title: Editing
+  subtitle: Editing code takes a good portion of our time as programmers so it should be easy to do
+  accent: primary
+  icon: fas fa-globe
+  body: |
+    When we are not reading code, we usually edit it. This means that our editing sessions must be as painless and productive as possible.
+
+- label: completion
+  title: Completion
+  subtitle: Code completion is an essential part of an IDE and an indispensable tool from any developers toolbox
+  accent: primary
+  icon: fas fa-globe
+  body: |
+    GoLand as many features that can assist you while developing.
+
+    However, Code Completion is among the most used of all existing features and one should master it to become a productive professional.

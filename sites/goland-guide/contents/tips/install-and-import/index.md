@@ -3,7 +3,7 @@ type: tip
 date: 2018-12-04
 title: 'Install and import'
 technologies: []
-topics: [python]
+topics: [go]
 author: dlsniper
 subtitle: 'While typing a symbol, let GoLand install it and generate the import.'
 seealso:
