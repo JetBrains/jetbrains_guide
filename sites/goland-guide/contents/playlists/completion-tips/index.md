@@ -1,12 +1,12 @@
 ---
 type: playlist
 label: A
-date: 2019-09-19
+date: 2019-10-07
 title: Completion Tips & Tricks
 technologies: [go]
 topics: ['editing']
 author: dlsniper
-subtitle: 'Code completion is one of the greatest benefits of using an IDE:: it reduces the number of things that you need to memorize and helps avoid typos and other common mistakes.'
+subtitle: Know everything there is to know about Code Completion. 
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
@@ -15,18 +15,18 @@ playlistItems:
     - /tips/cyclic-expand-word/
     - /tips/method-like-completion-for-functions/
     - /tips/postfix-completion/
-
----
     - /tips/live-templates/
     - /tips/complete-current-statement/
     - /tips/partial-match-completion/
+    - /tips/parameter-info/
     - /tips/completion-for-non-imported-go-modules/
     - /tips/code-completion-in-evaluate-expression-and-watches/
     - /tips/code-completion-in-run-configurations/
     - /tips/completion-with-the-tab-key/
     - /tips/code-completion-in-language-injections/
     - /tips/exclude-from-imports-and-completion/
-    - /tips/parameter-info/
+
+---
 
 Code completion is one of the greatest benefits of using an IDE: it
 reduces the number of things that you need to memorize and helps avoid
