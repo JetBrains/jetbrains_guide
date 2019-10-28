@@ -105,7 +105,7 @@ module.exports = {
             }
         }
     },
-    pathPrefix: '/goland/guide',
+    pathPrefix: '/go/guide',
     plugins: [
         {
             resolve: `gatsby-source-filesystem`,
