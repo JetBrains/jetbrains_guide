@@ -25,7 +25,7 @@ step, we generate the project then open it in the IDE.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/project_setup).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/demos/tutorials/react_typescript_tdd/project_setup).
 
 ## Project Creation
 

@@ -23,7 +23,7 @@ development, we will look at the app in the browser.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/pycharm_guide/tree/master/demos/tutorials/react_typescript_tdd/testing).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/demos/tutorials/react_typescript_tdd/testing).
 
 ## Pretty Jest
 
