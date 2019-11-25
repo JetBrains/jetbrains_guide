@@ -1,3 +1,7 @@
 sites/public
 hosting*cache
 sites/*-guide/public
+
+node_modules
+.cache
+sites/*/public

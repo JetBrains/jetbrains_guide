@@ -28,8 +28,8 @@ export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
     date: frontmatter.date,
     author: frontmatter.author
   };
-  const technologies = frontmatter.technologies.map(t => t.label);
-  const topics = frontmatter.topics.map(t => t.label);
+  const technologies = frontmatter.technologies ? frontmatter.technologies.map(t => t.label) : [];
+  const topics = frontmatter.topics ? frontmatter.topics.map(t => t.label) : [];
   return (
     <Sidebar>
       <SidebarPublished {...published}/>

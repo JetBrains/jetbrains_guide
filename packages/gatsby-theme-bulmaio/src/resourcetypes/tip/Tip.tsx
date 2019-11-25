@@ -101,7 +101,7 @@ export const Tip: React.FC<TipProps> = (
             <div className="columns">
                 {shortVideo && <ShortVideo video={
                     {
-                        posterURL: shortVideo.poster.publicURL,
+                        posterURL: shortVideo.poster ? shortVideo.poster.publicURL : "",
                         youtubeURL: shortVideo.url
                     }}/>
                 }
@@ -168,7 +168,7 @@ export const Tip: React.FC<TipProps> = (
     const twitterCardPage: TwitterCardPage = {
         title: frontmatter.title,
         description: frontmatter.subtitle,
-        image: `https://www.jetbrains.com${frontmatter.cardThumbnail.publicURL}`
+        image: frontmatter.cardThumbnail ? `https://www.jetbrains.com${frontmatter.cardThumbnail.publicURL}` : ""
     };
     return (
         <SidebarLayout pageTitle={frontmatter.title} twitterCardPage={twitterCardPage}>

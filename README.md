@@ -1,6 +1,6 @@
-# PyCharm Guide
+# JetBrains Guide
 
-The PyCharm guide is a collection of resources for learning PyCharm. 
+The JetBrains Guide is a collection of resources for learning JetBrains IDEs. 
 Similar to an "Awesome PyCharm" but richer in content and formatting. The 
 Guide is intended as an open source project.
 
@@ -14,26 +14,42 @@ Guide is intended as an open source project.
 
 # Installation
 
-- `npm install`
+To setup a local development copy of this project, follow the steps below.
 
-- `npm run start`
+If you prefer Docker, then see the Docker section below.
 
+- Clone this repo and cd to the directory
+- `yarn`
+- `yarn run pc:develop` (or `yarn run go:develop`)
 - Start authoring
-
 - Connect to `http://localhost:8000/`
+
+## Using Docker
+
+This project supports Docker containers as well. To use it, perform the following steps:
+
+- Clone this repository
+- Open it with any JetBrains IDE
+- Use the `GoLand Guide` or `PyCharm Guide` run configurations
+
+This will create a Docker container for either `goland-guide` or `pycharm-guide`, and mount the project as a volume inside the container.
+
+All the dependencies will be created on your machine but `Gatsby` itself and all other nodejs related tools will be in the container.
+
+**NOTE:** Currently there a bug prevents correctly sharing the volume configuration via the Run Configurations, see [IDEA-222853](https://youtrack.jetbrains.com/issue/IDEA-222853).
+To overcome this, you'll need to change the configuration to point the project directory on your computer.
 
 # Re-building and Deploying
 
-To make a production build, run `npm run build`. This generates output in 
-`public/`.
+To make a production build, run one of the build scripts, such as `yarn run pc:build`. 
+This generates output in `public/pycharm/guide` (which is actually a symlink to the shared, cross-site, parent directory.)
 
-The content is hosted in Firebase Hosting and proxied at 
+Thus, make sure to do a symlink from, for example, `sites/pycharm-guide/public` to `sites/pycharm/guide`
+
+The content is *for the moment* hosted in Firebase Hosting and proxied at, for example,  
 `https://www.jetbrains.com/pycharm/guide/`. Running `npm run production` 
 takes the content from `deploy` and uploads it to Firebase Hosting at 
 `http://pycharm-guide.firebaseapp.com/pycharm/guide/`.
-
-*Note: `deploy/pycharm/guide` is a symlink to `public/`. This lets us 
-the production hosting under `/pycharm/guide`.*
 
 We also have use of a staging URL at 
 `http://pycharm-guide-staging.firebaseapp.com/pycharm/guide/`. You can push 
@@ -41,7 +57,7 @@ a build there using `npm run staging`.
 
 # Gatsby Cache Misfires
 
-When you run `npm run start` and edit, Gatsby does an incremental rebuild 
+When you run `yarn run pc:develop` and edit, Gatsby does an incremental rebuild 
 and reloads your browser. It's all very fast and very productive.
 
 Except when it isn't. Due to a bug in how the mark things as outdated, 
@@ -52,18 +68,19 @@ build.
 
 To address this:
 
-- Shut down `npm run start`
+- Shut down the run process for `yarn run pc:develop`
 
-- Run `npm run clean`
+- Run `yarn run pc:clean`
 
-- Then either start up `npm run start` or proceed to do a build with 
-  `npm run build`
+- Re-start `yarn run pc:develop`
+
+- If doing a production build, re-do `yarn run pc:build`
 
 This is a drag, because full builds are slow.
 
 # Authoring
 
-With that in place, let's talk authoring. If you want to write a tip.
+With that in place, let's talk authoring.
 
 ## Tips
 
@@ -176,22 +193,10 @@ screenshots, and possibly videos on each step.
 you can't put it in the tutorial step folder. Gatsby will think that's a 
 page in the site.*
 
-# Workflow
+# Development
 
-Normal GitHub workflow:
+- In the IDE, mark these directories as excluded: `.cache`, `.firebase`, `public`
 
-- Report issues in the issue tracker
+- The fastest way to run things: open the top-level `package.json` and click the green play button beside the script you are interested in
 
-- Contribute via forks and PRs
-
-# TODO
-
-Things to document.
-
-- Mark as excluded: .cache, .firebase, deploy, public
-
-- Explain the need for both deploy and public
-
-- How I do my running (npm scripts, pin tab)
-
-- Make symlinks in sites/goland-guide for public directory (if building)
+- I also pin some of those run tabs, to switch between them quickly

@@ -1,0 +1,16 @@
+- label: dlsniper
+  title: Florin Pățan
+  subtitle: GoLand Developer Advocate at JetBrains
+  thumbnail: ./dlsniper.jpg
+  body: |
+    Florin is the GoLand Developer Advocate at JetBrains.
+
+- label: wht
+  title: Bill Tucker
+  subtitle: Vim expositor at large
+  thumbnail: ./wht.png
+  body: |
+    How do you know someone uses vim?
+
+    They will tell you.  And Bill Tucker is no exception.
+    He even uses vim in PyCharm.
