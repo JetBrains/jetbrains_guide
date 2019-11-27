@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Complete Current Statement
 technologies: [go]
 topics: [completion editing]
@@ -13,17 +13,17 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/dIcgOvG-kKY
 leadin: |
     Quickly add required trailing commas for any composite literals or place
     the caret at the next typing position.
+    
+    GoLand can complete statements and add required trailing commas for any 
+    composite literals (like struct, slice, etc.), and even place caret in a 
+    position where you can just start typing the next statement.
+    
+    *How to use*
+    
+    To invoke this action, press *⌘⇧↩* on Mac or *Ctrl + Shift + Enter* on Windows /Linux.
 
 ---
-
-GoLand can complete statements and add required trailing commas for any 
-composite literals (like struct, slice, etc.), and even place caret in a 
-position where you can just start typing the next statement.
-
-*How to use*
-
-To invoke this action, press *⌘⇧↩* on Mac or *Ctrl + Shift + Enter* on Windows /Linux.

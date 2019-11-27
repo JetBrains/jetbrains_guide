@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Partial Match Completion
 technologies: [go]
 topics: [completion editing]
@@ -13,18 +13,18 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/sQB8lqM_vsw
 leadin: |
     GoLand provides completion suggestions when you typed only a part of a 
     word (any part, even characters from somewhere in the middle).
+    
+    Also, case-insensitive [CamelHump](http://en.wikipedia.org/wiki/CamelCase)
+    completion is supported, so you can just type the capital letters along with a
+    number of subsequent characters. For example, type *ReWrCl* to get 
+    *io.ReadWriteCloser*.
+    
+    **How to use**
+    
+    Works automatically, you don’t have to do anything.
 
 ---
-
-Also, case-insensitive [CamelHump](http://en.wikipedia.org/wiki/CamelCase)
-completion is supported, so you can just type the capital letters along with a
-number of subsequent characters. For example, type *ReWrCl* to get 
-*io.ReadWriteCloser*.
-
-**How to use**
-
-Works automatically, you don’t have to do anything.

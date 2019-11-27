@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Code Completion in Language Injections
 technologies: [go]
 topics: [completion editing]
@@ -13,16 +13,16 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/MwfGxw1KUqc
 leadin: |
     GoLand provides code completion and analysis in injected strings for SQL and 
     databases statements, JavaScript, CSS, HTML, XML, and RegExp, etc.
+    
+    How to use
+    
+    Place the cursor within the literal (between the quotation marks) and press 
+    *⌥⏎* on macOS or *Alt+Enter* on Windows/Linux, select *Inject language or 
+    reference*, choose which one of supported injection language you want to use and 
+    start typing, auto-completion will appear instantly.
 
 ---
-
-How to use
-
-Place the cursor within the literal (between the quotation marks) and press 
-*⌥⏎* on macOS or *Alt+Enter* on Windows/Linux, select *Inject language or 
-reference*, choose which one of supported injection language you want to use and 
-start typing, auto-completion will appear instantly.

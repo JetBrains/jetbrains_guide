@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: View Parameter Info
 technologies: []
 topics: [editing]
@@ -13,27 +13,25 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=t3MfWwXmATg
-longVideo:
-  poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=BWTahh-ZzZo
+  url: https://youtu.be/UipWhWwBNTc
 leadin: |
     *See what's needed in a function, as you type, without disruption.*    
 
     Have a function with lots of arguments? `Parameter Info` gives just 
     the basics without using lots of real estate.
 
+    Some functions or structs -- well, let's admit it, can require lots of arguments.
+
+    So you stop, go look at the function, and come back to what you were doing.
+
+    There's a better way. With your cursor in the parentheses, invoke
+    `Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS). You get a tiny
+    popup with the positional and keyword arguments, along with any default
+    values. Bold is used to mark the current spot in the parameter list that
+    your cursor is at.
+
+    You can invoke this before you type any parameters, after you've typed
+    a few, or later if you come back to make a change.
+
 ---
 
-Some functions or structs -- well, let's admit it, can require lots of arguments.
-
-So you stop, go look at the function, and come back to what you were doing.
-
-There's a better way. With your cursor in the parentheses, invoke 
-`Parameter Info` (`Ctrl-P` Win/Linux, `Cmd-P` macOS). You get a tiny 
-popup with the positional and keyword arguments, along with any default 
-values. Bold is used to mark the current spot in the parameter list that 
-your cursor is at.
-
-You can invoke this before you type any parameters, after you've typed 
-a few, or later if you come back to make a change.

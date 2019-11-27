@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=iTJi6IojKms
+  url: https://www.youtube.com/watch?v=DRQcJ1q_nu8
 longVideo:
   poster: ./poster_long.png
   url: https://www.youtube.com/watch?v=4LLfxqlAcfI

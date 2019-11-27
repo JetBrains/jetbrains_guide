@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Completion for non-imported Go Modules
 technologies: [go]
 topics: [completion editing]
@@ -13,16 +13,16 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/lSH_YvGB_iE
 leadin: |
     GoLand provides code completion suggestions for all modules in the modules 
     cache as you type.
+    
+    Even if a module has never been imported and used in your project, GoLand is 
+    still aware of it and will take care of you.
+    
+    How to use
+    
+    Completion will work automatically as you start typing a package name.
 
 ---
-
-Even if a module has never been imported and used in your project, GoLand is 
-still aware of it and will take care of you.
-
-How to use
-
-Completion will work automatically as you start typing a package name.

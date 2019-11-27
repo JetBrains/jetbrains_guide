@@ -1,9 +1,29 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="GoCommentStart" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="GoExportedElementShouldHaveComment" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="GoShadowedVar" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
-    <inspection_tool class="GoUnnecessarilyExportedIdentifiers" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="DotEnvDuplicateKeyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HCLBlockConflictingProperties" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="HCLBlockMissingProperty" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HCLDeprecatedElement" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="HCLSimplifyExpression" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="HCLUnknownBlockType" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HILConvertToHCL" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="HILMissingSelfInContext" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="HILOperationTypesMismatch" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="HILUnknownResourceType" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="HILUnresolvedReference" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="SassScssResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedPlaceholderSelector" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SassScssUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TFBlockNameValidness" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFDuplicatedBlockProperty" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFDuplicatedOutput" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFDuplicatedProvider" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFDuplicatedVariable" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFIncorrectVariableType" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFMissingModule" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="TFNoInterpolationsAllowed" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="TFVARSIncorrectElement" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>
