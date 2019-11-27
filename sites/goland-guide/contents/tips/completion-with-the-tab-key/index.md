@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Completion with the Tab key
 technologies: [go]
 topics: [completion editing]
@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/jYk_WLlCZuw
 leadin: |
     If used instead of *Enter* to accept a suggestion from list, it overwrites 
     the identifier at the caret.

@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Method-like completion for functions
 technologies: [go]
 topics: [completion editing]
@@ -13,19 +13,22 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/LYWxktyyxDU
 leadin: |
-    *Method-like completion for functions allows you to search for functions based on their first parameter*
+    **Method-like completion for functions** allows you to search for functions
+     based on their first parameter.
+    
+    Imagine you are new to Go and want to split a string.
+    
+    You know that there must be a function for that, most likely it’s
+    called 'Split' and accepts a string as the first argument,
+    but you don’t know the exact name of the function and its package.
+    
+    Here's where method-like completion comes in handy, offering you
+    a list of all suitable functions, automatically importing it upon selection.
+    
+    How to use:
+    
+    Hold down the Ctrl key and press Space twice.
 
 ---
-
-Imagine you are new to Go and want to split a string.
-You know that there must be a function for that, most likely it’s
-called 'Split' and accepts a string as the first argument,
-but you don’t know the exact name of the function and its package.
-Here’s where method-like completion comes in handy, offering you
-a list of all suitable functions, automatically importing it upon selection.
-
-How to use:
-
-Hold down the Ctrl key and press Space twice.

@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Code completion in Evaluate Expression and Watches
 technologies: [go]
 topics: [completion editing]
@@ -13,15 +13,15 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://youtu.be/4mArF_piMfg
 leadin: |
     You got it right, debugger also has code completion! GoLand provides 
     suggestions list when you evaluate the state of your application in a 
     debugging session.
+    
+    How to use
+    
+    As you start typing in the Evaluate Expression or Watchers dialogs, code 
+    completion will appear immediately.
 
 ---
-
-How to use
-
-As you start typing in the Evaluate Expression or Watchers dialogs, code 
-completion will appear immediately.
