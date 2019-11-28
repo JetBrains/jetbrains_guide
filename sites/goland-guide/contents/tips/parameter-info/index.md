@@ -2,7 +2,7 @@
 type: tip
 date: 2019-11-27
 title: View Parameter Info
-technologies: []
+technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: Quickly see function arguments and argument types.
