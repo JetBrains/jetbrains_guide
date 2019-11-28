@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/LYWxktyyxDU
+  url: https://youtu.be/9BNnvlV_8X0
 leadin: |
     **Method-like completion for functions** allows you to search for functions
      based on their first parameter.

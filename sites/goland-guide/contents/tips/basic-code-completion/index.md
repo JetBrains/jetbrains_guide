@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/_h3yRP3bbDk
+  url: https://youtu.be/cYZASKCFLUo
 leadin: |
     **Basic completion** provides a list of _all symbols_ available at the current caret position.
     

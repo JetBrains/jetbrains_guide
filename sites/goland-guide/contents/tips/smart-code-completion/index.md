@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/OpqzpVwG-tY
+  url: https://youtu.be/5P9yj5s-f8s
 leadin: |
     **Smart code completion** narrows down the matches to quickly give you a
      list of useful values.

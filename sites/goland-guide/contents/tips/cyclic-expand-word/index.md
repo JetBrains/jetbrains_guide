@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/QIOrT2AVxaA
+  url: https://youtu.be/1gBWO6Y-Kso
 leadin: |
     **Cyclic Expand Word** helps you complete any word any from the current
     open files

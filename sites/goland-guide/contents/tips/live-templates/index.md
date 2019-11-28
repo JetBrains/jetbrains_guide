@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Ax9bTePML5Q
+  url: https://youtu.be/hRfAr4yxY10
 leadin: |
     **Live Templates** are great for reducing the time you spend writing
     frequently used portions of code, like variable and loop declarations, 

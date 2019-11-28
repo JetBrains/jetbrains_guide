@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/UipWhWwBNTc
+  url: https://youtu.be/zZLDRtF2Ut8
 leadin: |
     *See what's needed in a function, as you type, without disruption.*    
 

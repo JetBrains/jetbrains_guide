@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/jYk_WLlCZuw
+  url: https://youtu.be/DlcYgZxKWqk
 leadin: |
     If used instead of *Enter* to accept a suggestion from list, it overwrites 
     the identifier at the caret.

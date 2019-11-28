@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/2Zdfy2d2HO8
+  url: https://youtu.be/v-ieZgbwK0c
 leadin: |
     Exclude undesired imports from being automatically imported or added to
      completion list.

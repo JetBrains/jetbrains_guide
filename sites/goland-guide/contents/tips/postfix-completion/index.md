@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/T3jJbhAc7p8
+  url: https://youtu.be/H9uSVFelEUA
 leadin: |
     **Postfix Completion** lets you transform an expression into another one
     , based on the postfix you specify after the dot, the current context, and the expression type.
