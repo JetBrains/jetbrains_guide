@@ -30,7 +30,7 @@ module.exports = {
             },
             navbar: {
                 brand: {
-                    githubUrl: 'https://github.com/jetbrains/pycharm_guide',
+                    githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
                     twitterUrl: 'https://twitter.com/GoLandIDE',
                     twitterAccount: '@GoLandIDE'
                 },

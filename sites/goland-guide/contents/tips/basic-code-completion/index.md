@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Basic Code Completion
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Code completion that helps you getting the job done
 thumbnail: ./thumbnail.png

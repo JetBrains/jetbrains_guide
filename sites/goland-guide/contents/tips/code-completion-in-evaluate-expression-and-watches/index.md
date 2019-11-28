@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Code completion in Evaluate Expression and Watches
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: The debugger also has code completion capabilities.
 thumbnail: ./thumbnail.png

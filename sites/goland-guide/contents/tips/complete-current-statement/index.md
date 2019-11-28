@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Complete Current Statement
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Add required trailing commas for any composite literals
 thumbnail: ./thumbnail.png

@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Live Templates
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Add your own completion items via code snippets
 thumbnail: ./thumbnail.png

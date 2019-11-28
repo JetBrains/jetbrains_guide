@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Completion for non-imported Go Modules
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Import a module even if it was imported or used in your project
 thumbnail: ./thumbnail.png

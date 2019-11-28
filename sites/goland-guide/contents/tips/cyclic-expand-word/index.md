@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Cyclic Expand Word a.k.a. Hippie Completion
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Complete any word any from the current open files.
 thumbnail: ./thumbnail.png

@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Code Completion in Language Injections
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: See how to use code completion inside strings and other places
 thumbnail: ./thumbnail.png

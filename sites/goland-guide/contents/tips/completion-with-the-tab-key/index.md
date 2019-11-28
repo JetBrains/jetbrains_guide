@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Completion with the Tab key
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: A small, but handy feature that makes it a little easier to complete symbol names.
 thumbnail: ./thumbnail.png

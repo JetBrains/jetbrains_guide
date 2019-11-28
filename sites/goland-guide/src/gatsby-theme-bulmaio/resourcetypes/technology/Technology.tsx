@@ -11,13 +11,15 @@ export interface TechnologyProps {
       title: string;
       subtitle?: string;
       body?: string;
-      logo: {
+      logo?: {
         publicURL: string
       }
       resources: ListedResources;
     }
   }
 }
+
+const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/go-6.svg';
 
 export const Technology: React.FC<TechnologyProps> = (
   { data: { technology } }
@@ -27,7 +29,7 @@ export const Technology: React.FC<TechnologyProps> = (
       {{
         figure: (
           <div className="image is-rounded is-96x96">
-            <img className="bio-resourcecard-logo" src={technology.logo ? technology.logo.publicURL : ""} alt="Logo"/>
+            <img className="bio-resourcecard-logo img" src={technology.logo ? technology.logo.publicURL : DEFAULT_LOGO} alt="Logo"/>
           </div>
         ),
         listing: (

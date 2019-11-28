@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Exclude items from auto-imports and completion
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Exclude certain paths from auto-import and completion
 thumbnail: ./thumbnail.png

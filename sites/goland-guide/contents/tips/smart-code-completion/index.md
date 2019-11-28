@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Smart Code Completion
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: The king of code completion in GoLand.
 thumbnail: ./thumbnail.png
