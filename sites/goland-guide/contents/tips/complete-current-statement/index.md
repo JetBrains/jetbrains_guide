@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: Add required trailing commas for any composite literals
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/dsokGASiSNg
+  url: https://www.youtube.com/watch?v=dsokGASiSNg&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     Quickly add required trailing commas for any composite literals or place
     the caret at the next typing position.

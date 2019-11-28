@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: The king of code completion in GoLand.
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/5P9yj5s-f8s
+  url: https://www.youtube.com/watch?v=5P9yj5s-f8s&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Smart code completion** narrows down the matches to quickly give you a
      list of useful values.

@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing running]
 author: dlsniper
 subtitle: Run configurations also have code completion capabilities.
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/CcDjN7o6mkQ
+  url: https://www.youtube.com/watch?v=CcDjN7o6mkQ&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     When you’re editing Run/Debug Configurations, code completion will 
     automatically appear to help you, for example, type a package name.

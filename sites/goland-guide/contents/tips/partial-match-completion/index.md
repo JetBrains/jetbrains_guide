@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: Complete anything by typing just parts of the identifier
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/8z-_pJO5cIM
+  url: https://www.youtube.com/watch?v=8z-_pJO5cIM&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     GoLand provides completion suggestions when you typed only a part of a 
     word (any part, even characters from somewhere in the middle).

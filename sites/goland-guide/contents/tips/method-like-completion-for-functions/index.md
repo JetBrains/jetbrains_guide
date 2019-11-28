@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: Completion for searching for functions that accept parameters of a certain type.
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/9BNnvlV_8X0
+  url: https://www.youtube.com/watch?v=9BNnvlV_8X0&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Method-like completion for functions** allows you to search for functions
      based on their first parameter.

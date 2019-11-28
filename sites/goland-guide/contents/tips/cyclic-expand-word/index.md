@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: Complete any word any from the current open files.
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/1gBWO6Y-Kso
+  url: https://www.youtube.com/watch?v=1gBWO6Y-Kso&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Cyclic Expand Word** helps you complete any word any from the current
     open files

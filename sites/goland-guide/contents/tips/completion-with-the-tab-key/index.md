@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: A small, but handy feature that makes it a little easier to complete symbol names.
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/DlcYgZxKWqk
+  url: https://www.youtube.com/watch?v=DlcYgZxKWqk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     If used instead of *Enter* to accept a suggestion from list, it overwrites 
     the identifier at the caret.

@@ -6,14 +6,11 @@ technologies: [go]
 topics: [completion editing]
 author: dlsniper
 subtitle: See how to use code completion inside strings and other places
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/JUoejnuOIXs
+  url: https://www.youtube.com/watch?v=JUoejnuOIXs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     GoLand provides code completion and analysis in injected strings for SQL and 
     databases statements, JavaScript, CSS, HTML, XML, and RegExp, etc.
