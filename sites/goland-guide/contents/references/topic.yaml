@@ -40,7 +40,7 @@
   accent: primary
   icon: fas fa-play
   body: |
-    Writing Python code means running Python code and GoLand brings the IDE
+    Writing Go code means running Go code and GoLand brings the IDE
     experience to this primary activity. Code executes in our visual run tool
     window, driven by configurations you can edit.
 
