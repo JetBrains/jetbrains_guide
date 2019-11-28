@@ -3,7 +3,7 @@ type: tip
 date: 2019-04-15
 title: Evaluate Expression During Debugging
 technologies: []
-topics: [debugging]
+topics: [debugging completion]
 author: dlsniper
 subtitle: Select your code and execute it, in the right context.
 seealso:
