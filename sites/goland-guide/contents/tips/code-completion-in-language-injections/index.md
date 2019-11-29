@@ -15,11 +15,11 @@ leadin: |
     GoLand provides code completion and analysis in injected strings for SQL and 
     databases statements, JavaScript, CSS, HTML, XML, and RegExp, etc.
     
-    How to use
+    **How to use:**
     
     Place the cursor within the literal (between the quotation marks) and press 
-    *⌥⏎* on macOS or *Alt+Enter* on Windows/Linux, select *Inject language or 
-    reference*, choose which one of supported injection language you want to use and 
+    _⌥+⏎_ on macOS or _Alt+Enter_ on Windows/Linux, select _Inject language or 
+    reference_, choose which one of supported injection language you want to use and 
     start typing, auto-completion will appear instantly.
 
 ---

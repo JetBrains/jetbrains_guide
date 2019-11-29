@@ -21,7 +21,7 @@ leadin: |
 
 What if you are in a file and you quickly want to jump to a certain definition? You 
 could invoke the Find feature, which would work, as long as you remember the type of 
-that element. But what if you don't, or what if it's a new code base that’s not yet 
+that element. But what if you don't, or what if it's a new code base that's not yet
 familiar to you, then the File Structure popup window has your back.
 
 Use Ctrl+F12 and a window with all the elements defined in the current file will 

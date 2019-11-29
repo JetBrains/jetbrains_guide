@@ -17,12 +17,12 @@ leadin: |
     or test functions.
 
     Of course, you can edit, rename, turn off, or remove any of the predefined
-    Live Templates, but what about adding your own? That is quite a interesting
+    _Live Templates_, but what about adding your own? That is quite a interesting
     topic that we will cover in the upcoming articles about GoLand features.
 
-    How to use
+    **How to use:**
 
-    Open *Settings/Preferences | Editor | Live Templates * to see the full list
+    Open _Settings/Preferences | Editor | Live Templates_ to see the full list
     of already supported templates. Learn, play, and again, enjoy!
 
 ---

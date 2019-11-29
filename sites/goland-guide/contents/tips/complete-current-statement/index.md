@@ -19,8 +19,8 @@ leadin: |
     composite literals (like struct, slice, etc.), and even place caret in a 
     position where you can just start typing the next statement.
     
-    *How to use*
+    **How to use:**
     
-    To invoke this action, press *⌘⇧↩* on Mac or *Ctrl + Shift + Enter* on Windows /Linux.
+    To invoke this action, press _⌘+⇧+↩_ on Mac or _Ctrl+Shift+Enter_ on Windows /Linux.
 
 ---

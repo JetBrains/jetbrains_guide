@@ -19,7 +19,7 @@ leadin: |
 
 ---
 
-Since you’ll likely be opening files, lots of them, during an editing session how 
+Since you'll likely be opening files, lots of them, during an editing session how
 can you quickly switch between them? The Switcher, Ctrl+Tab, is here to help you. 
 
 You can use it to quickly switch between the previous file and the current one using 

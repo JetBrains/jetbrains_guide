@@ -18,8 +18,8 @@ leadin: |
     Even if a module has never been imported and used in your project, GoLand is 
     still aware of it and will take care of you.
     
-    How to use
-    
+    **How to use:**
+
     Completion will work automatically as you start typing a package name.
 
 ---

@@ -17,15 +17,15 @@ leadin: |
     
     Imagine you are new to Go and want to split a string.
     
-    You know that there must be a function for that, most likely it’s
-    called 'Split' and accepts a string as the first argument,
-    but you don’t know the exact name of the function and its package.
+    You know that there must be a function for that, most likely it's
+    called `Split` and accepts a string as the first argument,
+    but you don't know the exact name of the function and its package.
     
     Here's where method-like completion comes in handy, offering you
     a list of all suitable functions, automatically importing it upon selection.
     
-    How to use:
-    
-    Hold down the Ctrl key and press Space twice.
+    **How to use:**
+
+    Hold down the _Ctrl_ key and press _Space_ twice.
 
 ---

@@ -17,11 +17,11 @@ leadin: |
     
     Also, case-insensitive [CamelHump](http://en.wikipedia.org/wiki/CamelCase)
     completion is supported, so you can just type the capital letters along with a
-    number of subsequent characters. For example, type *ReWrCl* to get 
-    *io.ReadWriteCloser*.
+    number of subsequent characters. For example, type _ReWrCl_ to get 
+    _io.ReadWriteCloser_.
     
     **How to use**
     
-    Works automatically, you don’t have to do anything.
+    Works automatically, you don't have to do anything.
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2019-11-27
-title: Code completion in Evaluate Expression and Watches
+title: Code completion in Evaluate Expression, Watches or Conditional Breakpoints
 technologies: [go]
 topics: [completion, editing]
 author: dlsniper
@@ -16,9 +16,9 @@ leadin: |
     suggestions list when you evaluate the state of your application in a 
     debugging session.
     
-    How to use
-    
-    As you start typing in the Evaluate Expression or Watchers dialogs, code 
+    **How to use:**
+
+    As you start typing in the _Evaluate Expression_, _Watches_ or _Conditional Breakpoints_ dialogs, code 
     completion will appear immediately.
 
 ---
