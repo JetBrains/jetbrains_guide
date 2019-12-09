@@ -24,7 +24,7 @@ more of a look.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/demos/tutorials/tsx_es6/).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/tsx_es6/).
 
 
 

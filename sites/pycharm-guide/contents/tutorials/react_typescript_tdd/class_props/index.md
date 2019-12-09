@@ -26,7 +26,7 @@ step -- for class-based components. We'll do state in the next step.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/demos/tutorials/react_typescript_tdd/class_props).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
 ## First a Test
 

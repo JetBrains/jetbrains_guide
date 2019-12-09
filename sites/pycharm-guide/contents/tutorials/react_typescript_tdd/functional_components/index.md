@@ -27,7 +27,7 @@ along the way.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/demos/tutorials/react_typescript_tdd/functional_components).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/functional_components).
 
 ## Prep
 
