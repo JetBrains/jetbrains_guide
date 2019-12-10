@@ -116,12 +116,7 @@ import { configure } from enzyme;
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({adapter: new Adapter()});
-
-export default undefined;
 ```
-
-*Note: Does that default export look weird? Explanation is in the docs link 
-above.*
 
 Restart the Jest run tool window to pickup this setup file. Then, edit
 `src/App.test.tsx` to include a second test:

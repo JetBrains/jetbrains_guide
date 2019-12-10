@@ -37,7 +37,7 @@ Let's change `App.test.tsx` back to two simple tests:
 
 ```typescript{}
 import { shallow } from enzyme;
-import React from react;
+import React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';
 
