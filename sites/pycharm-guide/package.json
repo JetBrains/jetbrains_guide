@@ -19,7 +19,7 @@
     "develop": "gatsby develop",
     "test": "jest",
     "staging": "cd ..;firebase deploy -P staging",
-    "production": "cd ../firebase deploy -P production"
+    "production": "cd ..;firebase deploy -P production"
   },
   "jest": {
     "setupFilesAfterEnv": [

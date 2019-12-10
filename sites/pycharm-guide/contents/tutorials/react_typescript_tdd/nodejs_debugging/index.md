@@ -23,7 +23,7 @@ with TDD, can make this investigation far more productive.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/nodejs_debugging/).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
 ## Cleanup
 
