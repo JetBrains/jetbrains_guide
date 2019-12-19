@@ -1,25 +1,23 @@
 ---
 type: tip
-date: 2019-10-07
+date: 2019-11-27
 title: Exclude items from auto-imports and completion
 technologies: [go]
-topics: [completion editing]
+topics: [completion, editing]
 author: dlsniper
 subtitle: Exclude certain paths from auto-import and completion
-seealso:
-  - title: Use quick pop-ups
-    href: 'https://www.jetbrains.com/help/go/basic-editing-procedures.html#quick_popups'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Jp1PTUfUcj8
+  url: https://www.youtube.com/watch?v=v-ieZgbwK0c&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
-    Exclude undesired imports fr
+    Exclude undesired imports from being automatically imported or added to
+     completion list.
+     
+     **How to use:**
+
+    In _Settings/Preferences | Go | Imports_ you can add as many as you want import 
+     statements that will be excluded from code completion and auto-import.
 
 ---
-
-How to use
-
-In *Settings/Preferences | Go | Imports* you can add as many as you want import 
-statements that will be excluded from code completion and auto-import.

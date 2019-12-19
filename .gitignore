@@ -5,3 +5,4 @@ sites/*-guide/public
 node_modules
 .cache
 sites/*/public
+/.idea/deployment.xml

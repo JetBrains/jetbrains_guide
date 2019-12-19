@@ -1,10 +1,10 @@
 ---
 type: playlist
-label: A
-date: 2019-10-07
+label: code-completion
+date: 2019-11-27
 title: Completion Tips & Tricks
 technologies: [go]
-topics: ['editing']
+topics: [completion, editing, running, debugging]
 author: dlsniper
 subtitle: Know everything there is to know about Code Completion. 
 thumbnail: ./thumbnail.png
@@ -27,6 +27,7 @@ playlistItems:
     - /tips/exclude-from-imports-and-completion/
 
 ---
+
 
 Code completion is one of the greatest benefits of using an IDE: it
 reduces the number of things that you need to memorize and helps avoid

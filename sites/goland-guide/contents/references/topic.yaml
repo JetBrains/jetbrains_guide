@@ -22,20 +22,6 @@
 
     - [GoLand Editor](https://www.jetbrains.com/help/go/editor-guided-tour.html)
 
-- label: database
-  title: Database
-  subtitle: Integrated visual database tool for GoLand
-  accent: primary
-  icon: fas fa-database
-  body: |
-    Many projects work with relational databases and GoLand Professional makes
-    this a first-class part of the workflow by integrating
-    [DataGrip](https://www.jetbrains.com/datagrip/), our SQL IDE.
-
-    ## See Also
-
-    - [GoLand Help for Database](https://www.jetbrains.com/help/go/settings-tools-database.html#Settings_Tools_Database.xml)
-
 - label: debugging
   title: Debugging
   subtitle: Investigate errors and trace code execution with our visual debugger.
@@ -48,143 +34,16 @@
     ## See Also:
     - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
 
-- label: ide
-  title: IDE
-  subtitle: Resources related to IDE functionality independent of language.
-  accent: primary
-  icon: fas fa-edit
-  body: |
-    GoLand is built atop IntelliJ IDEA, our platform for building IDEs.
-    It thus shares functionality with all our IDE tools.
-
-- label: javascript
-  title: javascript
-  subtitle: Support for server and browser JavaScript via WebStorm.
-  accent: primary
-  icon: fab fa-js-square
-  body: |
-    GoLand Professional has powerful JavaScript features based on its inclusion
-    of [WebStorm](https://www.jetbrains.com/webstorm/), a high-end Web and
-    NodeJS IDE.
-
-    ## See Also
-
-    - [JavaScript](https://www.jetbrains.com/help/go/javascript-specific-guidelines.html#JavaScript-Specific_Guidelines.xml)
-
-- label: navigation
-  title: Navigation
-  subtitle: Productive ways to move around in your project.
-  accent: primary
-  icon: fas fa-bezier-curve
-  body: |
-    GoLand is built atop IntelliJ IDEA, our platform for building IDEs.
-    It thus shares functionality with all our IDE tools.
-
-    ## See Also
-    - [Navigating Through the Source Code](https://www.jetbrains.com/help/go/navigating-through-the-source-code.html)
-    - [Navigation Shortcuts](https://www.jetbrains.com/help/go/navigation-in-source-code.html)
-
-- label: navigationbar
-  title: Navigation Bar
-  subtitle: Breadcrumbs-style navigation tool, permanent or on-demand.
-  accent: primary
-  icon: fas fa-bezier-curve
-  body: |
-    The Navigation Bar is a quick alternative to the Project Tool Window. On
-    the left-hand side of the bar, you can navigate through the project and
-    open files for editing.
-
-    ## See Also
-    - [Using the Navigation Bar](https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html)
-    - [Navigation bar](https://www.jetbrains.com/help/go/navigation-bar.html)
-
-- label: go
-  title: Go
-  subtitle: Work productively when coding Go.
-  accent: primary
-  icon: fab fa-python
-  body: |
-    GoLand is focused on productive Go development, with many IDE
-    facilities specific to the Go language.
-
-    ## See Also
-    - [Go Help Topic](https://www.jetbrains.com/help/go/python.html)
-    - [Go Code Insight](https://www.jetbrains.com/help/go/python-code-insight.html)
-
 - label: running
   title: Running
   subtitle: Run your code in our configurable, visual run tool.
   accent: primary
   icon: fas fa-play
   body: |
-    Writing Python code means running Python code and GoLand brings the IDE
+    Writing Go code means running Go code and GoLand brings the IDE
     experience to this primary activity. Code executes in our visual run tool
     window, driven by configurations you can edit.
 
     ## See Also
     - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
 
-- label: speedsearch
-  title: Speed Search
-  subtitle: Quickly find an item in a long list by typing to narrow.
-  accent: primary
-  icon: fas fa-search-location
-  body: |
-    Want to quickly find a choice in a long list? Whether it's a file in the
-    project tool, a symbol in `Find Symbol`, an action in `Search Everywhere`,
-    or a choice in `File | New`, speed search makes it fast and simple...without
-    using the mouse.
-
-    Filter by:
-
-    - Typing a letter, causing the list to narrow
-
-    - Typing another letter...if you now match only one choice, it's selected
-    and you can press enter
-
-    - Press space and type the letter of another word in the option
-
-    - Use punctuation such as forward-slash to mean directory separator and
-    period to mean file extension
-
-    ## See Also
-    - [Speed Search in Tool Windows](https://www.jetbrains.com/help/go/speed-search-in-the-tool-windows.html)
-
-- label: testing
-  title: Testing
-  subtitle: Test driven development with GoLand's visual testing.
-  accent: primary
-  icon: fas fa-chart-bar
-  body: |
-    Testing and test-driven development is an important part of professional
-    coding. GoLand's "Visual Testing" puts a friendly GUI on writing and
-    running Python tests.
-
-    ## See Also
-    - [GoLand Help for Testing](https://www.jetbrains.com/help/go/testing.html#Testing.xml)
-
-- label: vcs
-  title: Version Control
-  subtitle: Integrated, visual version control across your project.
-  accent: primary
-  icon: fas fa-code-branch
-  body: |
-    Working with version control systems (VCS) such as Git, Mercurial, and others
-    is an integral part of development. GoLand puts a common abstraction atop
-    each system, then puts a visual face on all your VCS activities.
-
-    ## See Also
-    - [Version control with GoLand](https://www.jetbrains.com/help/go/version-control-integration.html?section=Windows%20or%20Linux)
-
-- label: web
-  title: Web
-  subtitle: IDE support for HTML, CSS, and other web technologies.
-  accent: primary
-  icon: fas fa-globe
-  body: |
-    GoLand has powerful web development features based on
-    its inclusion of [WebStorm](https://www.jetbrains.com/webstorm/), a
-    high-end Web and NodeJS IDE.
-
-    ## See Also
-    - [GoLand Help for HTML](https://www.jetbrains.com/help/go/editing-html-files.html#Editing_HTML_Files.xml)
