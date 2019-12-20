@@ -1,6 +1,7 @@
 module.exports = {
     plugins: [
         `gatsby-transformer-sharp`,
+        `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-typescript`,
         `gatsby-plugin-offline`,
