@@ -1,0 +1,49 @@
+- label: completion
+  title: Completion
+  subtitle: Learning resources when using completion in GoLand
+  accent: primary
+  icon: fas fa-user-edit
+  body: |
+    Completion is what makes IDEs stand-out from basic text editors.
+
+    ## See Also
+
+    - [GoLand Code Completion](https://www.jetbrains.com/help/go/auto-completing-code.html)
+
+- label: editing
+  title: Editing
+  subtitle: Learning resources when writing code in GoLand's editor
+  accent: primary
+  icon: fas fa-user-edit
+  body: |
+    Editing code is the primary activity in an IDE.
+
+    ## See Also
+
+    - [GoLand Editor](https://www.jetbrains.com/help/go/editor-guided-tour.html)
+
+- label: debugging
+  title: Debugging
+  subtitle: Investigate errors and trace code execution with our visual debugger.
+  accent: primary
+  icon: fas fa-bug
+  body: |
+    GoLand's top feature is its powerful, visual debugger. Useful for finding
+    problems in your code and poking and exploring code execution.
+
+    ## See Also:
+    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
+
+- label: running
+  title: Running
+  subtitle: Run your code in our configurable, visual run tool.
+  accent: primary
+  icon: fas fa-play
+  body: |
+    Writing Go code means running Go code and GoLand brings the IDE
+    experience to this primary activity. Code executes in our visual run tool
+    window, driven by configurations you can edit.
+
+    ## See Also
+    - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/go/run-debug-configuration.html)
+
