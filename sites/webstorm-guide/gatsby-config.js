@@ -44,13 +44,6 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'warning',
-                            cssClass: 'documentation',
-                            href: '/playlists/',
-                            label: 'Playlists',
-                            icon: 'fas fa-list'
-                        },
-                        {
                             accent: 'danger',
                             cssClass: 'documentation',
                             href: '/technologies/',
@@ -65,7 +58,7 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
-                            label: 'More...',
+                            label: 'Skip',
                             items: [
                                 {
                                     href: '/authors/',
@@ -83,7 +76,7 @@ module.exports = {
                         {
                             accent: 'light',
                             href: 'https://www.jetbrains.com/webstorm/download/',
-                            label: 'Get WebStorm'
+                            label: 'Skip'
                         }
                     ],
                     links: [
