@@ -1,6 +1,6 @@
 {
   "name": "dotnet-guide",
-  "description": "Gatsby-driven compendium of GoLand learning resources",
+  "description": "Gatsby-driven compendium of .NET tools learning resources",
   "version": "1.0.0",
   "author": "Maarten Balliauw <maarten@jetbrains.com>",
   "keywords": [
