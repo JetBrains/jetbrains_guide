@@ -1,0 +1,61 @@
+- label: teams
+  title: Teams
+  subtitle: Learning resources for working with teams functionality.
+  accent: primary
+  icon: fas fa-users
+  body: |
+    Everything your company needs to ensure open work and transparent collaboration: the teams, locations,
+    member profiles, roles and permissions, calendars, meetings, vacations, and blogs – all in one place.
+
+    ## See Also
+    - [Teams features](https://www.jetbrains.com/space/features/teams.html)
+    - [Teams and Members](https://www.jetbrains.com/help/space/teams-and-members.html)
+
+- label: chats
+  title: Chats
+  subtitle: Learning resources for efficient communication in Space chats.
+  accent: primary
+  icon: fas fa-comments
+  body: |
+    Collaborate in Chats: get personalized notifications, reply and react from chats, perform code reviews,
+    track issues, share articles, enjoy smart grouping of channels and feeds, and integrate with your favorite apps.
+
+    ## See Also
+    - [Chats features](https://www.jetbrains.com/space/features/chats.html)
+    - [Text Messaging and Notifications](https://www.jetbrains.com/help/space/chats.html)
+
+- label: work
+  title: Work
+  subtitle: Learning resources for managing work and checklists in Space.
+  accent: primary
+  icon: fas fa-boxes
+  body: |
+    Plan, manage, and execute your work on the project as a team, optimizing the whole workflow and collaboration process.
+
+    ## See Also
+    - [Work features](https://www.jetbrains.com/space/features/work.html)
+
+- label: projects
+  title: Projects
+  subtitle: Learning resources for project work in Space.
+  accent: primary
+  icon: fas fa-project-diagram
+  body: |
+    Commit code and explore changes. Review code, create merge requests. Automate your workflows and CI/CD pipelines.
+    Store and manage package repositories. Connect JetBrains IDEs to Space.
+
+    ## See Also
+    - [Projects features](https://www.jetbrains.com/space/features/projects.html)
+    - [Plan, commit, review](https://www.jetbrains.com/help/space/projects.html)
+
+- label: packages
+  title: Packages
+  subtitle: Learning resources for working with packages.
+  accent: primary
+  icon: fas fa-box-open
+  body: |
+    Packages is a package repository manager built into JetBrains Space. Create your own repositories and use them
+    for publishing and sharing packages of various types: Docker/OCI images, .jar and .pom files, and others.
+
+    ## See Also
+    - [Packages](https://www.jetbrains.com/help/space/packages.html)
