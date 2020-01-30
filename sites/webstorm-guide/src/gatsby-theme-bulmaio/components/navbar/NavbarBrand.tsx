@@ -33,7 +33,7 @@ class NavbarBrand extends React.Component<NavbarBrandProps> {
                     style={{ maxHeight: '4rem' }}
                   />
         </Link>
-        <Link  className="navbar-item bio-navbar-brand" to={`/`}>
+        <Link  className="navbar-item bio-navbar-brand" to={`/`} style={{paddingRight: '3rem'}}>
           WebStorm Guide
         </Link>
 
