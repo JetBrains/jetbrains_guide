@@ -31,7 +31,7 @@ module.exports = {
             },
             navbar: {
                 brand: {
-                    githubUrl: 'https://github.com/jetbrains/pycharm_guide',
+                    githubUrl: 'https://github.com/jetbrains/jetbrains_guide',
                     twitterUrl: 'https://twitter.com/pycharm',
                     twitterAccount: '@PyCharm'
                 },
@@ -104,7 +104,7 @@ module.exports = {
                     links: [
                         {
                             color: 'light',
-                            href: 'https://github.com/jetbrains/pycharm_guide',
+                            href: 'https://github.com/jetbrains/jetbrains_guide',
                             icon: 'github'
                         },
                         {
