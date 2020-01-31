@@ -13,13 +13,11 @@ module.exports = {
                 typeDefs,
                 references: {
                     author: {plural: 'Authors', layout: 'LogoListing'},
-                    technology: {plural: 'Technologies', layout: 'LogoListing'},
                     topic: {plural: 'Topics', layout: 'LogoListing'}
                 },
                 resources: {
                     tip: {plural: 'Tips'},
-                    playlist: {plural: 'Playlists'},
-                    tutorial: {plural: 'Tutorials'}
+                    playlist: {plural: 'Playlists'}
                 }
             }
         }
@@ -27,13 +25,13 @@ module.exports = {
     siteMetadata: {
         theme: {
             helmet: {
-                siteTitle: 'PyCharm Guide'
+                siteTitle: 'Space Guide'
             },
             navbar: {
                 brand: {
-                    githubUrl: 'https://github.com/jetbrains/jetbrains_guide',
-                    twitterUrl: 'https://twitter.com/pycharm',
-                    twitterAccount: '@PyCharm'
+                    githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
+                    twitterUrl: 'https://twitter.com/JetBrains_Space',
+                    twitterAccount: '@JetBrains_Space'
                 },
                 start: {
                     items: [
@@ -45,13 +43,6 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'info',
-                            cssClass: 'documentation',
-                            href: '/tutorials/',
-                            label: 'Tutorials',
-                            icon: 'fas fa-tasks'
-                        },
-                        {
                             accent: 'warning',
                             cssClass: 'documentation',
                             href: '/playlists/',
@@ -61,23 +52,9 @@ module.exports = {
                         {
                             accent: 'danger',
                             cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
                             href: '/topics/',
                             label: 'Topics',
                             icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
-                            href: '/authors/',
-                            label: 'Authors',
-                            icon: 'fas fa-users'
                         },
                         {
                             label: 'More...',
@@ -97,8 +74,8 @@ module.exports = {
                     buttons: [
                         {
                             accent: 'light',
-                            href: 'https://www.jetbrains.com/pycharm/download/',
-                            label: 'Get PyCharm'
+                            href: 'https://www.jetbrains.com/space/',
+                            label: 'Try Space'
                         }
                     ],
                     links: [
@@ -109,7 +86,7 @@ module.exports = {
                         },
                         {
                             color: '55acee',
-                            href: 'https://twitter.com/pycharm',
+                            href: 'https://twitter.com/JetBrains_Space',
                             icon: 'twitter'
                         }
                     ]
@@ -120,7 +97,7 @@ module.exports = {
             }
         }
     },
-    pathPrefix: '/pycharm/guide',
+    pathPrefix: '/go/guide',
     plugins: [
         {
             resolve: `gatsby-source-filesystem`,
@@ -132,6 +109,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-gtag`,
             options: {
+                // TODO maartenba - Google Analytics
                 // your google analytics tracking id
                 trackingId: `UA-47631155-3`
             },

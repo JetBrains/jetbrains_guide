@@ -89,7 +89,7 @@ module.exports = {
                     links: [
                         {
                             color: 'light',
-                            href: 'https://github.com/jetbrains/pycharm_guide',
+                            href: 'https://github.com/jetbrains/jetbrains_guide',
                             icon: 'github'
                         },
                         {
@@ -101,7 +101,7 @@ module.exports = {
                 }
             },
             footer: {
-                copyright: 'Copyright © 2000–2019 JetBrains s.r.o.'
+                copyright: 'Copyright © 2000–2020 JetBrains s.r.o.'
             }
         }
     },
