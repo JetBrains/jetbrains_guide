@@ -10,7 +10,7 @@ export interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ brand, start, end }) => (
-  <nav id="navbar" className="navbar is-spaced is-black">
+  <nav id="navbar" className="navbar is-spaced is-dark">
     <div className="container">
       <NavbarBrand {...brand}/>
       <div id="navMenuIndex" className="navbar-menu">
