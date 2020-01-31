@@ -1,8 +1,7 @@
-import { Link } from 'gatsby';
 import * as React from 'react';
 // @ts-ignore
 import './NavBrand.scss';
-import Logo from '../logo/Logo';
+import NavbarBrandLogo from './NavbarBrandLogo';
 
 export interface NavbarBrandProps {
   githubUrl: string;
@@ -24,9 +23,7 @@ class NavbarBrand extends React.Component<NavbarBrandProps> {
     const { githubUrl, twitterUrl } = this.props;
     return (
       <div className="navbar-brand">
-        <Link  data-testid={`navbarbrand-logo`} className="navbar-item bio-navbar-brand" to={`/`}>
-          {Logo}
-        </Link>
+        <NavbarBrandLogo/>
         <a data-testid={`navbarbrand-github`} className="navbar-item is-hidden-desktop bio-navbar-brand-github" href={githubUrl} target="_blank">
           <span className="icon">
             <i className="fab fa-lg fa-github-alt"/>

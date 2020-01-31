@@ -21,7 +21,10 @@
     "go:clean": "yarn workspace goland-guide clean",
     "space:develop": "yarn workspace space-guide develop",
     "space:build": "yarn workspace space-guide build",
-    "space:clean": "yarn workspace space-guide clean"
+    "space:clean": "yarn workspace space-guide clean",
+    "dotnet:develop": "yarn workspace dotnet-guide develop",
+    "dotnet:build": "yarn workspace dotnet-guide build",
+    "dotnet:clean": "yarn workspace dotnet-guide clean"
   },
   "dependencies": {}
 }
