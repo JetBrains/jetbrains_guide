@@ -1,0 +1,43 @@
+---
+type: tip
+date: 2020-02-05
+title: Use Local History to Avoid Disaster
+technologies: [go]
+topics: [vcs]
+author: dlsniper
+subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
+seealso:
+  - title: Local History
+    href: 'https://www.jetbrains.com/help/go/local-history.html'
+  - title: Retention period for Local History
+    href: 'https://www.jetbrains.com/help/go/local-history.html#retention'  
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+shortVideo:
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=HL0iFL27Emw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=27
+leadin: |
+    Have you ever done some editing, had something working, then after a little more
+    editing, things have stopped working? Or you accidentally deleted all the work you
+    did that day (or week), because of a wrong command?
+    
+    Then _Local History_ will come to the rescue.
+    
+    You can invoke it at any time by using the _Local History_ command either via
+    _Search Everywhere_, or by right-clicking on the folder/file.
+    
+    **Pro tip:**
+    
+    You can also see the difference between different points in time, and you can put
+    labels on known points in time to make sure you can always return to a safe state.
+    
+    **Pro tip:**
+    
+    Labels get automatically added when tests pass, for example.
+    
+    **Pro tip:**
+    
+    By default, changes are retained for 5 days, but 
+    [this is configurable](https://www.jetbrains.com/help/go/local-history.html#retention).
+
+---
