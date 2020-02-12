@@ -2,7 +2,7 @@
 type: tip
 date: 2020-02-12
 title: Favorite projects
-topics: [teams, personal, projects]
+topics: [teams, personal, projects, code]
 author: maartenba
 subtitle: Favorite often-used projects and pin them to the sidebar.
 thumbnail: ./thumbnail.png

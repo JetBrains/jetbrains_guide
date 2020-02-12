@@ -3,7 +3,7 @@ type: playlist
 label: communication-tips
 date: 2020-01-29
 title: Communication Tips & Tricks
-topics: [teams, work, chats]
+topics: [teams, work, chats, code]
 author: maartenba
 subtitle: Tips & Tricks to communicate more efficiently using JetBrains Space
 thumbnail: ./thumbnail.png

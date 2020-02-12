@@ -3,7 +3,7 @@ type: playlist
 label: productivity-tips
 date: 2020-02-12
 title: Productivity Tips & Tricks
-topics: [teams, work, chats, packages, personal, projects]
+topics: [teams, work, chats, packages, personal, projects, code]
 author: maartenba
 subtitle: Tips & Tricks to speed up working with JetBrains Space
 thumbnail: ./thumbnail.png
