@@ -12,10 +12,11 @@ playlistItems:
     - /tips/desktop-share-link/
     - /tips/pin-chats-and-threads/
     - /tips/project-favorites-sidebar/
+    - /tips/packages-details-and-versions/
 
 ---
 
 
-There are so many ways to work with JetBrains Space. How can we be more productive? What's the quickest way to navigate around and find the things we need?
+There are many ways to work with JetBrains Space. How can we be more productive? What's the quickest way to navigate around and find the things we need?
 
 Learn all about it in the Productivity Tips & Tricks.

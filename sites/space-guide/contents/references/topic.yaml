@@ -59,6 +59,8 @@
 
     ## See Also
     - [Packages](https://www.jetbrains.com/help/space/packages.html)
+    - [Container registries (Docker)](https://www.jetbrains.com/help/space/container-registry.html)
+    - [Maven repository (Maven, Gradle, SBT)](https://www.jetbrains.com/help/space/maven-repository.html)
 
 - label: code
   title: Code and repositories
