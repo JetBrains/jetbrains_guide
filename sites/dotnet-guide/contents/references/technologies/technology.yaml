@@ -1,8 +1,7 @@
 - label: .net
   title: .NET
   subtitle: Free. Cross-platform. Open source. A developer platform for building apps.
-  logo:
-    publicURL: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png"
+  logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png"
   website: https://get.dot.net
   body: |
     .NET is a free, cross-platform and open source developer platform for building apps.
@@ -10,8 +9,7 @@
 - label: csharp
   title: C#
   subtitle: Main language for writing code in .NET.
-  logo:
-    publicURL: "https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png"
+  logo: "https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png"
   website: https://get.dot.net
   body: |
     C# is the main language for writing code in .NET.
