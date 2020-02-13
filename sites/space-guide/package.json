@@ -15,7 +15,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "gatsby build --prefix-paths",
-    "clean": "node ../../rimraf-standalone.js .cache/* public/*",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
     "test": "jest",
     "staging": "cd ..;firebase deploy -P staging",
