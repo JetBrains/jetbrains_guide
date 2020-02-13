@@ -18,6 +18,7 @@ type Frontmatter {
   date: Date @dateformat(formatString: "YYYY-MM-DD")
   thumbnail: File @fileByRelativePath
   cardThumbnail: File @fileByRelativePath
+  animatedGif: File @fileByRelativePath
   shortVideo: Video
   longVideo: Video
   leadin: String

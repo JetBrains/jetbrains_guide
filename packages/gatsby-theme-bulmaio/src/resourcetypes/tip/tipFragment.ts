@@ -13,6 +13,9 @@ export const tipFragment = graphql`
             publicURL
         }
         date(formatString: "MMMM Do, YYYY")
+        animatedGif {
+            publicURL
+        }
         shortVideo {
           ...VideoFragment
         }
