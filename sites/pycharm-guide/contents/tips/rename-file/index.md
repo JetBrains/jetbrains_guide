@@ -20,7 +20,7 @@ longVideo:
 leadin: |
     *Rename files with peace of mind.*    
 
-    Changed your name about what you named a file but terrified of all 
+    Changed your mind about what you named a file but terrified of all 
     the places it might be used? You might not remember, but the IDE does. 
     Let the Rename Refactoring do the work, safely and quickly.
 
