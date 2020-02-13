@@ -1,6 +1,8 @@
-- label: go
-  title: Go
-  subtitle: Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
-  website: https://golang.org
+- label: angular
+  title: Angular
+  subtitle: Modern web frontends
+  logo: ./angularjs-original.svg
+  website: https://www.angular.io
   body: |
-    Go is an open source project developed by a team at Google and many contributors from the open source community.
+    One framework, mobile and desktop. Develop across all platforms
+    with speed and performance.
