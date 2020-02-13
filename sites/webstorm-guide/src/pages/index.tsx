@@ -30,10 +30,17 @@ const IndexPage: React.FC = () => {
         main: (
           <section className="section has-background-light">
             <div className="container">
-              <h1 className="title">Recent Items</h1>
+              <h1 className="title">Learn something new quickly</h1>
               <div className="columns">
                 <div className="column is-four-fifths-desktop">
-                  xxx
+                  To start learning, simply jump to the section you find most relevant available within two broader categories:
+                  <ul>
+                    <li><strong>Technologies</strong>: learning resources organized by languages, libraries, and frameworks.</li>
+                    <li><strong>Topics</strong>: tips and tricks organized by a specific topic, e.g. debugging or code editing.</li>
+                  </ul>
+                  <p>If you’ve got an idea how to make this guide better or want to share your feedback with us, go to
+                    the About page to find out how you can do that.</p>
+
                 </div>
               </div>
             </div>
