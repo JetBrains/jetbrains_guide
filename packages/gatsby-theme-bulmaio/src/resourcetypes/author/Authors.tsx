@@ -38,7 +38,7 @@ export const Authors = () => {
 `
     );
   return (
-    <ReferenceLayout pageTitle={'Authors'} subtitle={'Resources organized by author'}>
+    <ReferenceLayout pageTitle={'Authors'} subtitle={'Resources organized by author.'}>
       {{
         listing: (
           <nav className="bd-links bio-resourcecards">
