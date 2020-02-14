@@ -1,6 +1,9 @@
 import React from 'react';
 import {Element, Link as ScrollLink} from 'react-scroll';
 
+const GifPlayer = require('react-gif-player');
+import '../../../../../node_modules/react-gif-player/src/GifPlayer.scss';
+
 import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
 import {SeeAlso, SeeAlsos} from 'gatsby-theme-bulmaio/src/components/seealso';
 import {getPlaylist} from 'gatsby-theme-bulmaio/src/components/pagenav/common';
@@ -14,7 +17,7 @@ import {ResourceCardAuthorProps} from 'gatsby-theme-bulmaio/src/components/resou
 import {ResourceCardTechnologies} from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
 import {ResourceCardTopics} from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import {TipSidebar} from './TipsSidebar';
-import {TwitterCardPage} from "../../components/layout/MasterLayout";
+import {TwitterCardPage} from '../../components/layout/MasterLayout';
 
 export interface TipProps {
     location: {
@@ -33,6 +36,13 @@ export interface TipProps {
                     publicURL: string
                 }
                 date: string;
+                animatedGif?: {
+                    file: {
+                        publicURL: string
+                    }
+                    width: number
+                    height: number
+                };
                 shortVideo?: Video;
                 longVideo?: Video;
                 leadin: string;
@@ -84,6 +94,7 @@ export const Tip: React.FC<TipProps> = (
     }
 
     // Videos
+    const animatedGif = frontmatter.animatedGif;
     const shortVideo = frontmatter.shortVideo;
     const longVideo = frontmatter.longVideo;
 
@@ -99,9 +110,12 @@ export const Tip: React.FC<TipProps> = (
     const main = (
         <div style={{marginBottom: '3rem'}}>
             <div className="columns">
+                {animatedGif &&
+                    <GifPlayer alt={`Player`} gif={animatedGif.file.publicURL} width={animatedGif.width} height={animatedGif.height}/>
+                }
                 {shortVideo && <ShortVideo video={
                     {
-                        posterURL: shortVideo.poster ? shortVideo.poster.publicURL : "",
+                        posterURL: shortVideo.poster ? shortVideo.poster.publicURL : '',
                         youtubeURL: shortVideo.url
                     }}/>
                 }
@@ -168,7 +182,7 @@ export const Tip: React.FC<TipProps> = (
     const twitterCardPage: TwitterCardPage = {
         title: frontmatter.title,
         description: frontmatter.subtitle,
-        image: frontmatter.cardThumbnail ? `https://www.jetbrains.com${frontmatter.cardThumbnail.publicURL}` : ""
+        image: frontmatter.cardThumbnail ? `https://www.jetbrains.com${frontmatter.cardThumbnail.publicURL}` : ''
     };
     return (
         <SidebarLayout pageTitle={frontmatter.title} twitterCardPage={twitterCardPage}>
