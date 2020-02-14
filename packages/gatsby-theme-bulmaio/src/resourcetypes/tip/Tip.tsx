@@ -34,7 +34,11 @@ export interface TipProps {
                 }
                 date: string;
                 animatedGif?: {
-                    publicURL: string
+                    file: {
+                        publicURL: string
+                    }
+                    width: number
+                    height: number
                 };
                 shortVideo?: Video;
                 longVideo?: Video;
@@ -87,6 +91,7 @@ export const Tip: React.FC<TipProps> = (
     }
 
     // Videos
+    const animatedGif = frontmatter.animatedGif;
     const shortVideo = frontmatter.shortVideo;
     const longVideo = frontmatter.longVideo;
 
@@ -102,6 +107,10 @@ export const Tip: React.FC<TipProps> = (
     const main = (
         <div style={{marginBottom: '3rem'}}>
             <div className="columns">
+                {animatedGif &&
+                <img alt={`Recording`} className="bio-resourcecard-logo" src={animatedGif.file.publicURL}
+                     width={animatedGif.width} height={animatedGif.height}/>
+                }
                 {shortVideo && <ShortVideo video={
                     {
                         posterURL: shortVideo.poster ? shortVideo.poster.publicURL : '',
