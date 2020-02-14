@@ -3,7 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/sites/public" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/public" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide/.cache" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
