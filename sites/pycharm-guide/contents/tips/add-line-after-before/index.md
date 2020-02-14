@@ -11,10 +11,9 @@ seealso:
   href: 'https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif: 
-  file: './parsed_expressions.gif'
-  width: 600
-  height: 400
+shortVideo:
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=aPufd3UPEHU
 longVideo:
   poster: ./poster_long.png
   url: https://www.youtube.com/watch?v=gx_xsh6j-JA

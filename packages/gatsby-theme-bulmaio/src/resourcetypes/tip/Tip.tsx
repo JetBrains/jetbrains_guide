@@ -1,6 +1,9 @@
 import React from 'react';
 import {Element, Link as ScrollLink} from 'react-scroll';
 
+const GifPlayer = require('react-gif-player');
+import '../../../../../node_modules/react-gif-player/src/GifPlayer.scss';
+
 import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
 import {SeeAlso, SeeAlsos} from 'gatsby-theme-bulmaio/src/components/seealso';
 import {getPlaylist} from 'gatsby-theme-bulmaio/src/components/pagenav/common';
@@ -108,8 +111,7 @@ export const Tip: React.FC<TipProps> = (
         <div style={{marginBottom: '3rem'}}>
             <div className="columns">
                 {animatedGif &&
-                <img alt={`Recording`} className="bio-resourcecard-logo" src={animatedGif.file.publicURL}
-                     width={animatedGif.width} height={animatedGif.height}/>
+                    <GifPlayer alt={`Player`} gif={animatedGif.file.publicURL} width={animatedGif.width} height={animatedGif.height}/>
                 }
                 {shortVideo && <ShortVideo video={
                     {

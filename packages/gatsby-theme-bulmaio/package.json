@@ -34,6 +34,7 @@
     "qs": "^6.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-gif-player": "^0.4.2",
     "react-helmet": "^5.2.1",
     "react-scroll": "^1.7.11",
     "remark": "^10.0.1",
