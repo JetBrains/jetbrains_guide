@@ -33,7 +33,7 @@ export const Topics = () => {
 `
     );
   return (
-    <ReferenceLayout pageTitle={'Topics'} subtitle={'Resources organized by programming topic'}>
+    <ReferenceLayout pageTitle={'Topics'} subtitle={'Explore all available resources organized by a programming topic.'}>
       {{
         listing: (
           <nav className="bd-links bio-resourcecards">

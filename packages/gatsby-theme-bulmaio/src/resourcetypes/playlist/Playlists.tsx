@@ -15,7 +15,7 @@ export const Playlists: React.FC = () => {
 `
   );
   return (
-    <ReferenceLayout pageTitle="Playlists" subtitle="Curated collections of resources">
+    <ReferenceLayout pageTitle="Playlists" subtitle="Curated, ordered collections of resources you can go through in a sitting.">
       {{
         listing: (
           <div>
