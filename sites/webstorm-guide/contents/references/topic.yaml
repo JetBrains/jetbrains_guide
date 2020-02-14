@@ -1,11 +1,11 @@
-- label: completion
-  title: Completion
-  subtitle: Learning resources when using completion in GoLand
+- label: editing
+  title: Editing
+  subtitle: Learning resources when writing code in PyCharm's editor
   accent: primary
   icon: fas fa-user-edit
   body: |
-    Completion is what makes IDEs stand-out from basic text editors.
+    Editing code is the primary activity in an IDE.
 
     ## See Also
 
-    - [GoLand Code Completion](https://www.jetbrains.com/help/go/auto-completing-code.html)
+    - [PyCharm Editor](https://www.jetbrains.com/help/pycharm/editor-guided-tour.html)
