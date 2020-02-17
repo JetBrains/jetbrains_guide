@@ -3,7 +3,7 @@ type: tip
 date: 2019-11-27
 title: Code completion in Evaluate Expression, Watches or Conditional Breakpoints
 technologies: [go]
-topics: [completion, editing]
+topics: [completion, debugging, editing]
 author: dlsniper
 subtitle: The debugger also has code completion capabilities.
 thumbnail: ./thumbnail.png
