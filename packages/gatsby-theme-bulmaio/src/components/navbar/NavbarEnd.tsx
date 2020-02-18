@@ -10,7 +10,7 @@ export interface NavbarEndProps {
 const NavbarEnd: React.FC<NavbarEndProps> = ({ links, buttons }) => (
   <div className="navbar-end">
     {links && links.map(link => <NavbarLink key={link.href} {...link} />)}
-    {buttons && buttons.map(button => <NavbarButton key={button.href} {...button} />)}
+    {buttons && buttons.filter(button => button.label != 'Skip').map(button => <NavbarButton key={button.href} {...button} />)}
   </div>
 );
 

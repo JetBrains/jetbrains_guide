@@ -9,7 +9,7 @@ export interface NavbarStartProps {
 const NavbarStart: React.FC<NavbarStartProps> = ({ items }) => {
   return (
     <div className="navbar-start">
-      {items.map(item => {
+      {items.filter(item => item.label != 'Skip').map(item => {
           // @ts-ignore
           if (item.items && item.items.length > 0) {
             // Submenu

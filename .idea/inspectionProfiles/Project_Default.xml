@@ -2,6 +2,11 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="DotEnvDuplicateKeyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="134" name="JavaScript" />
+      </Languages>
+    </inspection_tool>
     <inspection_tool class="HCLBlockConflictingProperties" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="HCLBlockMissingProperty" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="HCLDeprecatedElement" enabled="false" level="WEAK WARNING" enabled_by_default="false" />

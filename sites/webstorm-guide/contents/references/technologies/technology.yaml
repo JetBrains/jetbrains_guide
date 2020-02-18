@@ -1,0 +1,23 @@
+- label: angular
+  title: Angular
+  subtitle: Modern web frontends
+  logo: ./angularjs-original.svg
+  website: https://www.angular.io
+  body: |
+    One framework, mobile and desktop. Develop across all platforms
+    with speed and performance.
+
+- label: emmet
+  title: Emmet
+  subtitle: Shorthand system for HTML and CSS generation
+  logo: ./emmet.svg
+  website: https://emmet.io
+  body: |
+    Emmet is a web-developer’s toolkit that can greatly improve your
+    HTML & CSS workflow. It uses tags and symbols to generate nested
+    content.
+
+    ## See Also
+
+    [Emmet Support](https://www.jetbrains.com/help/pycharm/using-zen-coding-support.html)
+    in PyCharm Help

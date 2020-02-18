@@ -2,6 +2,12 @@ type MarkdownRemark implements Node @dontinfer {
   frontmatter: Frontmatter
 }
 
+type AnimatedGif {
+    file: File @fileByRelativePath
+    width: Int
+    height: Int
+}
+
 type Video {
     poster: File @fileByRelativePath
     url: String
@@ -18,6 +24,7 @@ type Frontmatter {
   date: Date @dateformat(formatString: "YYYY-MM-DD")
   thumbnail: File @fileByRelativePath
   cardThumbnail: File @fileByRelativePath
+  animatedGif: AnimatedGif
   shortVideo: Video
   longVideo: Video
   leadin: String
