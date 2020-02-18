@@ -16,8 +16,8 @@ shortVideo:
   url: https://www.youtube.com/watch?v=jLYhkvvPJ0M&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=9
 leadin: |
     Since you'll likely be opening files, lots of them, during an editing session how
-    can you quickly switch between them? The _Switcher_, _Ctrl+Tab_ on Windows/Linux or
-    _Shift + Tab_ on macOS, is here to help you. 
+    can you quickly switch between them? The _Switcher_, _Ctrl + Tab_ on Windows/Linux or
+    _^ + Tab_ on macOS, is here to help you. 
     
     You can use it to quickly switch between the previous file and the current one using 
     the shortcut.
@@ -25,7 +25,7 @@ leadin: |
     **Pro tip:**
     
     Alternatively, use the shortcut but then hold _Ctrl_ on Windows/Linux or _Shift_ on macOS,
-    and you will be able to use _Ctrl + Tab_ on Windows/Linux or _Shift + Tab_ on macOS again
+    and you will be able to use _Ctrl + Tab_ on Windows/Linux or _^ + Tab_ on macOS again
     to move forward through the list of options, or press _Shift + Tab_ and move backward.
 
 ---

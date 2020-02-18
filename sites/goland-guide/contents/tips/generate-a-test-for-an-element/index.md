@@ -14,7 +14,7 @@ shortVideo:
 leadin: |
     GoLand offers the option to quickly generate a test.
     
-    Invoke with _Ctrl + Shift + T_ on Windows/Linux, _Cmd + Shift + T_ on macOS,
+    Invoke with _Ctrl + Shift + T_ on Windows/Linux, _Cmd + ⇧ + T_ on macOS,
     and select generate test from the popup.
     
     You can choose to test a function/method, the whole file, or the whole package.
