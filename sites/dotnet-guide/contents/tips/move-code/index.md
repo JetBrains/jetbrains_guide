@@ -8,9 +8,10 @@ author: matkoch
 subtitle: Move code the smart way!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./preview.png
-  url: ./31-move-code.gif
+animatedGif:
+  file: './31-move-code.gif'
+  height: 400
+  width: 500
 leadin: |
     Move code the smart way!
     
