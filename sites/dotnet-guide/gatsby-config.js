@@ -110,7 +110,7 @@ module.exports = {
             }
         }
     },
-    pathPrefix: '/go/guide',
+    pathPrefix: '/dotnet/guide',
     plugins: [
         {
             resolve: `gatsby-source-filesystem`,
