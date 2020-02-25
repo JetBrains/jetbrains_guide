@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/T6YuBs1QR2g
+  url: https://youtu.be/c1O3BvpKedQ
 leadin: |
     **Ask questions and discuss code in Git repositories**
     

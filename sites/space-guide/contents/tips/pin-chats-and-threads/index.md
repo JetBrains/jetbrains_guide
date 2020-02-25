@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/ihbJ7TKAazk
+  url: https://youtu.be/AmVa4D-jiqE
 leadin: |
     **Make switching conversations easy!**
     

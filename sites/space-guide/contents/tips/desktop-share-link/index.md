@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/qcSetEEMdJA
+  url: https://youtu.be/4yLxRke_kTw
 leadin: |
     **Share a link to the current page from the Space Desktop apps!**
     

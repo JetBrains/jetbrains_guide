@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/bLfPwzZuhdA
+  url: https://youtu.be/548PCobD6oY
 leadin: |
     **Announce an event, provide context & get RSVPs**
     

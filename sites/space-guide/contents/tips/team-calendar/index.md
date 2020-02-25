@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/pbzi2aFEhGo
+  url: https://youtu.be/ybieMbO7vuc
 leadin: |
     **Who's around?**
     

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/1rY_-C4xi54
+  url: https://youtu.be/TaWvvQzvwpU
 leadin: |
     **Navigate to projects much faster!**
     
