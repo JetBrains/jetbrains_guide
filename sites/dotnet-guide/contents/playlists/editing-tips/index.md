@@ -10,8 +10,8 @@ subtitle: Know everything there is to know about editing code.
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
-    - /tips/initialize-members/
     - /tips/move-code/
+    - /tips/create-variable/
 
 ---
 
