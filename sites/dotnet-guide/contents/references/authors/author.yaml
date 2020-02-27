@@ -11,3 +11,10 @@
   thumbnail: ./matkoch.jpg
   body: |
     Matthias is a Developer Advocate at JetBrains.
+
+- label: khalidabuhakmeh
+  title: Khalid Abuhakmeh
+  subtitle: Developer Advocate at JetBrains
+  thumbnail: ./khalidabuhakmeh.jpg
+  body: |
+    Khalid is a Developer Advocate at JetBrains.
