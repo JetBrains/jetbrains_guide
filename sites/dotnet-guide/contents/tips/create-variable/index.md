@@ -1,6 +1,6 @@
 ---
 type: tip
-date: 2020-01-29
+date: 2020-02-27
 title: Introducing Variables
 technologies: [.net]
 topics: [inspections, editing]
@@ -13,5 +13,10 @@ animatedGif:
   width: 500
 leadin: |
     We could make a one-liner program, but should we? Several of our introduce variable refactorings help keeping your code base more readable. Don't forget to use meaningful names! 🏷
+    
+    ### See Also
+    - [Introducing variables with deconstruction](https://blog.jetbrains.com/dotnet/2018/04/26/introduce-variable-iterate-merge-back-deconstruction/)
+    - [Introduce Variable refactoring](https://www.jetbrains.com/help/rider/Refactorings__Introduce_Variable.html)
+    - [Introduce Variable for Substring refactoring](https://www.jetbrains.com/help/rider/Refactorings__Introduce_Variable_for_Substring.html)
     
 ---
