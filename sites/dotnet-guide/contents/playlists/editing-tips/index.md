@@ -12,6 +12,7 @@ cardThumbnail: './card.png'
 playlistItems:
     - /tips/initialize-members/
     - /tips/move-code/
+    - /tips/collection-iteration/
 
 ---
 
