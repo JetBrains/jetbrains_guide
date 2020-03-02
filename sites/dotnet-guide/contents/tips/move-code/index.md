@@ -19,4 +19,7 @@ leadin: |
     
     Move move move! 👇😌👆
  
+    ### See Also
+    - [Re-arrange code elements](https://www.jetbrains.com/help/resharper/Coding_Assistance__Moving_Code_Elements.html)
+    - [Extend/shrink selection](https://www.jetbrains.com/help/resharper/Coding_Assistance__Extend_Shrink_Selection.html)
 ---
