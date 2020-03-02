@@ -2,7 +2,7 @@
 type: tip
 date: 2020-01-29
 title: C# 8 Support
-technologies: [.net]
+technologies: [.net, csharp]
 topics: [inspections, editing, completion]
 author: matkoch
 subtitle: Master all the C# 8 language features!

@@ -2,7 +2,7 @@
 type: tip
 date: 2020-01-29
 title: Formatting code in columns
-technologies: [.net]
+technologies: [.net, csharp]
 topics: [editing]
 author: matkoch
 subtitle: Easily read common code in column-style layout!

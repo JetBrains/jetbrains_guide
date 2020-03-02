@@ -2,7 +2,7 @@
 type: tip
 date: 2020-01-29
 title: Search Anywhere
-technologies: [.net]
+technologies: [.net, csharp]
 topics: [navigation, editing]
 author: matkoch
 subtitle: Start typing anywhere to search!
