@@ -12,6 +12,8 @@ playlistItems:
     - /tips/targeted-blog-posts/
     - /tips/blog-post-events/
     - /tips/pin-chats-and-threads/
+    - /tips/project-responsibilities/
+    - /tips/team-location-chats/
     - /tips/team-calendar/
 
 ---

@@ -122,7 +122,6 @@ module.exports = {
         {
             resolve: `gatsby-plugin-gtag`,
             options: {
-                // TODO maartenba - Google Analytics
                 // your google analytics tracking id
                 trackingId: `UA-47631155-3`
             },
