@@ -1,17 +1,17 @@
 ---
 type: tip
 date: 2020-01-29
-title: VCS Operations Quicklist
+title: Tool Window Management
 technologies: [.net]
 topics: [inspections, editing]
 author: matkoch
-subtitle: Start typing anywhere to search!
+subtitle: Little helpers always at the right size!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    🏷 Meet our VCS Operations #quicklist to efficiently manage and discover your changes, branches, and local history! 👣 As always, start typing to filter your results 🔬 Also, have you heard about workspaces? 🤔
+    🤨 Do you frequently find yourself resizing tool windows like for VCS or the terminal? 🙆🏽‍♀️ We got you covered with the "Undock view mode" and "Maximize/restore tool window" shortcut 🤓 Try it now!️️
     
 ---

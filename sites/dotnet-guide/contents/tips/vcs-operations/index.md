@@ -5,7 +5,7 @@ title: VCS Operations Quicklist
 technologies: [.net]
 topics: [vcs]
 author: matkoch
-subtitle: Start typing anywhere to search!
+subtitle: Your next VCS action at hand!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:

@@ -14,15 +14,15 @@ animatedGif:
 leadin: |
     👾 Rider meets @unity3d 🎮
     
-    🗂 Unity explorer view
-    💻 Less editor switches
-    🕹 Play-mode controls
-    🚦 Test execution
-    🔥 Show hot paths
-    🐞 Unity specific inspections
-    🔍 Find/refactor references in assets
-    🏎 Faster code
-    💪 Code faster
-    📓 Searchable log view
+    - 🗂 Unity explorer view
+    - 💻 Less editor switches
+    - 🕹 Play-mode controls
+    - 🚦 Test execution
+    - 🔥 Show hot paths
+    - 🐞 Unity specific inspections
+    - 🔍 Find/refactor references in assets
+    - 🏎 Faster code
+    - 💪 Code faster
+    - 📓 Searchable log view
     
 ---
