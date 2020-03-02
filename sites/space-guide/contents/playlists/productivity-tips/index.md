@@ -11,6 +11,7 @@ cardThumbnail: './card.png'
 playlistItems:
     - /tips/desktop-share-link/
     - /tips/pin-chats-and-threads/
+    - /tips/team-location-chats/
     - /tips/project-favorites-sidebar/
     - /tips/packages-details-and-versions/
 
