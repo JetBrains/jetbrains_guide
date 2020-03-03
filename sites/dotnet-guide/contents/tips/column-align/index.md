@@ -12,7 +12,9 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    Ad-hoc or everywhere? Our formatter engine is powerful enough to let you make the decisions 💁‍♀️ Aligning in columns improves readability a lot with DTOs, game code and probably also somewhere in your code base 🙋‍♂️
+    **Ad-hoc formatting or everywhere?** 📐
+    
+    Our formatter engine is powerful enough to let you make the decisions 💁‍♀️ Aligning in columns improves readability a lot with DTOs, game code and probably also somewhere in your code base 🙋‍♂️
     
     ### See Also
     - ["Formatting" on the JetBrains .NET blog](https://blog.jetbrains.com/dotnet/?s=formatting)

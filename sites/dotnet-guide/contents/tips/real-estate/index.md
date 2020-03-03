@@ -12,8 +12,11 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    💡 Dealing with collection-like objects is easy if you have live/postfix #templates at your finger tips. Which one is your favorite? ⭐️
+    **Where is my code?** 🧐
+    
+    More and more tool windows stealing our beloved editor real-estate. Use the _Hide all tool windows_ action to quickly hide and restore the currently shown tool windows. Another great alternative is our _Distraction Free_ mode! 🧠
     
     ### See Also
     - [Rider - Working with Tool Windows](https://www.jetbrains.com/help/rider/Tool_Windows.html)
+    - [Rider - Viewing modes](https://www.jetbrains.com/help/rider/IDE_Viewing_Modes.html)
 ---

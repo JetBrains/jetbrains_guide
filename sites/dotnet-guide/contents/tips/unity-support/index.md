@@ -12,7 +12,9 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    👾 Rider meets @unity3d 🎮
+    👾 **Rider meets Unity3D** 🎮
+    
+    With its first-class support, Rider is the perfect choice to work with Unity. Some of bits you'll love are:
     
     - 🗂 Unity explorer view
     - 💻 Less editor switches

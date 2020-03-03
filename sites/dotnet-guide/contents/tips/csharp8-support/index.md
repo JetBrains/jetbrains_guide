@@ -12,7 +12,9 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    How do these C# 8 language features work again? 🤔 Just use a single action (Alt-Enter) to change your whole codebase to use them 🤓 Should we mention it works on Windows, macOS and Linux?! 😉❤️
+    **How do these C# 8 language features work again?** 🤔
+    
+    Just use a single action (Alt-Enter) to change your whole codebase to use them 🤓 Should we mention it works on Windows, macOS and Linux?! 😉❤️
     
     ### See Also
     - [Indices, Ranges, and Null-coalescing Assignments](https://blog.jetbrains.com/dotnet/2019/04/24/indices-ranges-null-coalescing-assignments-look-new-language-features-c-8/)

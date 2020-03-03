@@ -12,7 +12,9 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    🤨 Do you frequently find yourself resizing tool windows like for VCS or the terminal? 🙆🏽‍♀️ We got you covered with the "Undock view mode" and "Maximize/restore tool window" shortcut 🤓 Try it now!️️
+    **Too little space to work with?** 🤨
+    
+    Do you frequently find yourself resizing tool windows like for VCS or the terminal? 🙆🏽‍♀️ We got you covered with the _Undock_ view mode and _Maximize/restore tool window_ action 🤓 Try it now!️️
     
     ### See Also
     - [Rider - Working with Tool Windows](https://www.jetbrains.com/help/rider/Tool_Windows.html)

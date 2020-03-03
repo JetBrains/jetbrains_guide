@@ -12,7 +12,9 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    💬 Code inspections help to detect code smells 🐽 formatting and cleanup settings to structure it consistently ☝️ Make sure to share those settings in the team-shared layer to always keep your code base shiny! ☀️🌈
+    **Working in a team or at different places?** 👥 💬
+
+    Code inspections help to detect code smells 🐽 formatting and cleanup settings to structure it consistently ☝️ Make sure to share those settings in the team-shared layer to always keep your code base shiny! ☀️🌈
     
     ### See Also
     - [ReSharper - Manage and Share settings](https://www.jetbrains.com/help/resharper/Sharing_Configuration_Options.html)

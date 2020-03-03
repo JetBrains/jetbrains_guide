@@ -12,8 +12,11 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    💡 Dealing with collection-like objects is easy if you have live/postfix templates at your finger tips. Which one is your favorite? ⭐️
+    **Get your hands some rest!** 😌
+
+    Dealing with collection-like objects is easy if you have live and postfix templates at your finger tips. Which one is your favorite? ⭐️
     
     ### See Also
-    - [Postfix templates](https://www.jetbrains.com/help/resharper/Postfix_Templates.html)
+    - [Postfix Templates](https://www.jetbrains.com/help/resharper/Postfix_Templates.html)
+    - [Live Templates](https://www.jetbrains.com/help/rider/Using_Live_Templates.html)
 ---
