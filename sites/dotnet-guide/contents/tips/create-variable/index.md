@@ -12,7 +12,7 @@ animatedGif:
   file: './02-create-variable.gif'
   width: 500
 leadin: |
-    Struggling with long lines of code? 🙇‍♀️
+    **Struggling with long lines of code?** 🙇‍♀️
     
     Several of our refactorings help to introduce variables to keep your code base more readable. Don't forget to use meaningful names! 🏷
     
