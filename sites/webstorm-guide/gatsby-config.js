@@ -40,7 +40,7 @@ module.exports = {
                             accent: 'success',
                             cssClass: 'documentation',
                             href: '/tips/',
-                            label: 'Tips',
+                            label: 'All Tips',
                             icon: 'fas fa-play-circle'
                         },
                         {
