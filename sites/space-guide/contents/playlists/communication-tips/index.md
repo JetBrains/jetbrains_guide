@@ -15,6 +15,7 @@ playlistItems:
     - /tips/project-responsibilities/
     - /tips/team-location-chats/
     - /tips/team-calendar/
+    - /tips/team-descriptions/
 
 ---
 
