@@ -9,7 +9,7 @@ subtitle: Quickly surround a selection with rich markup using the Emmet system.
 seealso:
 - title: Wrap with Abbreviation on Emmet site
   href: https://docs.emmet.io/actions/wrap-with-abbreviation/
-- title: Emmet Support﻿in WebStorm Help
+- title: Emmet Support in WebStorm Help
   href: 'https://www.jetbrains.com/help/webstorm/using-zen-coding-support.html'
 - title: Emmet Cheat Sheet
   href: 'https://docs.emmet.io/cheat-sheet/'
@@ -20,5 +20,5 @@ animatedGif:
   width: 600
   height: 400
 leadin: |
-  Press **Cmd/Ctrl+Alt+J** and select *Emmet* to surround a block of code with an Emmet template. 
+  Press *Cmd/Ctrl+Alt+J* and select *Emmet* to surround a block of code with an Emmet template. 
   This also allows you to wrap individual lines if you’re using * in the abbreviation.

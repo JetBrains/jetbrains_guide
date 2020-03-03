@@ -17,5 +17,5 @@ animatedGif:
   height: 400
 leadin: |
   To quickly sort lines alphabetically, select them in the editor and choose 
-  **Edit | Sort Lines** from the main menu. Alternatively, you can 
-  run this action using the **Find Action** command **(Cmd/Ctrl+Shift+A)**.
+  *Edit | Sort Lines* from the main menu. Alternatively, you can 
+  run this action using the *Find Action* command *(Cmd/Ctrl+Shift+A)*.

@@ -21,3 +21,13 @@
 
     [Emmet Support](https://www.jetbrains.com/help/pycharm/using-zen-coding-support.html)
     in PyCharm Help
+
+- label: javascript
+  title: JavaScript
+  logo: ./javascript-original.svg
+  website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  body: |
+    JavaScript is a lightweight, interpreted, modern language used primarily in
+    web browsers but increasingly in other environments such as server applications.
+
+
