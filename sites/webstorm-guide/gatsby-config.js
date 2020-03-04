@@ -58,6 +58,13 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
+                            accent: 'info',
+                            cssClass: 'documentation',
+                            href: '/about/',
+                            label: 'About',
+                            icon: 'fas fa-file'
+                        },
+                        {
                             label: 'Skip',
                             items: [
                                 {
