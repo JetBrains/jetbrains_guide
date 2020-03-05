@@ -12,7 +12,9 @@ animatedGif:
   file: './02-create-variable.gif'
   width: 500
 leadin: |
-    We could make a one-liner program, but should we? Several of our introduce variable refactorings help keeping your code base more readable. Don't forget to use meaningful names! 🏷
+    **Struggling with long lines of code?** 🙇‍♀️
+    
+    Several of our refactorings help to introduce variables to keep your code base more readable. Don't forget to use meaningful names! 🏷
     
     ### See Also
     - [Introducing variables with deconstruction](https://blog.jetbrains.com/dotnet/2018/04/26/introduce-variable-iterate-merge-back-deconstruction/)
