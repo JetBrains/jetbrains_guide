@@ -1,7 +1,7 @@
 import React from 'react';
 import HomepageLayout from 'gatsby-theme-bulmaio/src/components/layout/HomepageLayout';
 // @ts-ignore
-import splash from './splash.svg';
+import splash from './webstorm-beam.svg';
 
 const dataUri = `url("${splash}") center center`;
 
@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
       {{
         hero: (
           <section className="hero is-medium"
-                   style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
+                   style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className="hero-body">
               <div className="container">
                 <h1 className="title">WebStorm Guide</h1>
