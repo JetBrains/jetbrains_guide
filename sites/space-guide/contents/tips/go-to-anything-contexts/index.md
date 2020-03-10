@@ -15,7 +15,7 @@ leadin: |
     
     Go to Anything (<kbd>Ctrl+K</kbd> / <kbd>Cmd+K</kbd> on macOS) lets us find and navigate to everything. We can provide it with context...
     
-    Do we want to search for a team? Append "team". A chat, perhaps? Append "chat". Looking for a project? Append "project".
+    Want to search for a team? Append "team". A chat, perhaps? Append "chat". Looking for a project? Append "project".
     
     Press <kbd>tab</kbd> and search within the previous result. Within a project context, we can search for issues, checklists, code reviews and repositories. In a repository, we can search for files.
 
