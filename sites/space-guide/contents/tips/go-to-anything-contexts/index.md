@@ -2,7 +2,7 @@
 type: tip
 date: 2020-03-10
 title: Go to Anything - Contexts
-topics: [teams, work, chats, packages, personal, projects, code]
+topics: [teams, work, chats, personal, projects]
 author: maartenba
 subtitle: Search contextually with Go to Anything, and quickly find your way around Space!
 thumbnail: ./thumbnail.png

@@ -2,7 +2,7 @@
 type: tip
 date: 2020-03-10
 title: Go to Anything - Hierarchy
-topics: [teams, work, chats, packages, personal, projects, code]
+topics: [teams, work, chats, personal, projects]
 author: maartenba
 subtitle: Navigate Space hierarchy and quickly find preferences, chats, repositories, and more
 thumbnail: ./thumbnail.png

@@ -2,7 +2,7 @@
 type: tip
 date: 2020-03-10
 title: Go to Anything - Basics
-topics: [teams, work, chats, packages, personal, projects, code]
+topics: [teams, work, chats, personal, projects]
 author: maartenba
 subtitle: Use Go to Anything and search for people, teams, projects, chat, repositories, code, ...
 thumbnail: ./thumbnail.png

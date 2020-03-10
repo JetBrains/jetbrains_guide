@@ -3,7 +3,7 @@ type: playlist
 label: go-to-anything-tips
 date: 2020-03-10
 title: Go to Anything Tips & Tricks
-topics: [teams, work, chats, packages, personal, projects, code]
+topics: [teams, work, chats, personal, projects]
 author: maartenba
 subtitle: Tips & Tricks to search and navigate within JetBrains Space
 thumbnail: ./thumbnail.png
