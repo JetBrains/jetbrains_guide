@@ -11,6 +11,9 @@ cardThumbnail: './card.png'
 playlistItems:
     - /tips/desktop-share-link/
     - /tips/pin-chats-and-threads/
+    - /tips/go-to-anything-basics/
+    - /tips/go-to-anything-contexts/
+    - /tips/go-to-anything-hierarchy/
     - /tips/team-location-chats/
     - /tips/project-favorites-sidebar/
     - /tips/issues-tag-hierarchies/
