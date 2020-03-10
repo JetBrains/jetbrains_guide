@@ -19,6 +19,6 @@ leadin: |
     
     Press <kbd>tab</kbd> and search within the previous result. Within a project context, we can search for issues, checklists, code reviews and repositories. In a repository, we can search for files.
 
-    [More Go to Anything tips...](/space/guide/tips/go-to-anything-tips)
+    [More Go to Anything tips...](/space/guide/playlists/go-to-anything-tips/)
     
 ---

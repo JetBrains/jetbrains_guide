@@ -17,6 +17,6 @@ leadin: |
     
     We can navigate to preferences, find chats, projects, repositories. And remember, <kbd>tab</kbd> may let us search within the current context.
     
-    [More Go to Anything tips...](/space/guide/tips/go-to-anything-tips)
+    [More Go to Anything tips...](/space/guide/playlists/go-to-anything-tips/)
     
 ---

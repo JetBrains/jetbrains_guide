@@ -17,6 +17,6 @@ leadin: |
     
     Go to Anything lets us search for people, teams, projects, repositories, code, and many more things. Go to Anything lets us search, and provides hints on what we can do - navigate to a user profile, open a chat, ...
     
-    [More Go to Anything tips...](/space/guide/tips/go-to-anything-tips)
+    [More Go to Anything tips...](/space/guide/playlists/go-to-anything-tips/)
     
 ---
