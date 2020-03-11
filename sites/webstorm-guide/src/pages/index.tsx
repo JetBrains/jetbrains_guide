@@ -30,9 +30,9 @@ const IndexPage: React.FC = () => {
         main: (
           <section className="section has-background-light">
             <div className="container">
-              <h1 className="title">Learn something new quickly</h1>
+              <h1 className="title">Learn Something New Quickly</h1>
               <div>
-                <div>
+                <div className="is-size-5">
                   To start learning, simply jump to the section you find most interesting from two broad categories:
                 </div>
 
@@ -40,11 +40,13 @@ const IndexPage: React.FC = () => {
                   <div className="columns">
                     <div className="column">
                       <h1 className="is-size-4">Technologies</h1>
-                      <p>Go through handy tips and tricks grouped by language, library, and framework.</p>
+                      <p className="is-size-5">Go through handy tips and tricks grouped by language, library, and
+                        framework.</p>
                     </div>
                     <div className="column">
                       <h1 className="is-size-4">Topics</h1>
-                      <p>Explore a collection of tips organized by topic, such as debugging or code editing.</p>
+                      <p className="is-size-5">Explore a collection of tips organized by topic, such as debugging or
+                        code editing.</p>
                     </div>
                   </div>
                 </div>

@@ -7,7 +7,7 @@ topics: [editing]
 author: pwe
 subtitle: Use the Grazie plugin to check grammar in regular text.
 seealso:
-- title: Meet Grazie, the ultimate spelling, grammar, and style checker for IntelliJ IDEA
+- title: Meet Grazie, the ultimate spelling, grammar, and style checker
   href: https://blog.jetbrains.com/idea/2019/11/meet-grazie-the-ultimate-spelling-grammar-and-style-checker-for-intellij-idea/
 - title: Grazie plugin
   href: https://plugins.jetbrains.com/plugin/12175-grazie

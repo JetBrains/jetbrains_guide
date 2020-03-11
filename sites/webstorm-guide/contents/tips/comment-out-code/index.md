@@ -7,7 +7,7 @@ topics: [editing]
 author: pwe
 subtitle: Quickly comment/uncomment blocks and lines.
 seealso:
-- title: Lines of code
+- title: Manipulating lines of code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#editor_lines_code_blocks
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

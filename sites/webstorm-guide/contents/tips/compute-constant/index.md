@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2020-03-02
-title: Compute Constants
+title: Compute Constant Values
 technologies: [javascript]
 topics: [editing]
 author: pwe

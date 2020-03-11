@@ -9,17 +9,9 @@ const AboutPage: React.FC = () => {
   return (
     <SiteLayout pageTitle={pageTitle}>
       <main className="bd-main bulmaio-body">
-        <div className="bd-main-container container">
-          <header className="bd-header" style={{marginBottom: 0}}>
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <div className="bd-header-titles">
-                    <h1 className="title">{pageTitle}</h1>
-                  </div>
-                </div>
-              </div>
-            </article>
+        <div className="bd-main-container container" style={{marginBottom: "2rem"}}>
+          <header className="bd-header" style={{ marginBottom: 0, minHeight: "6rem" }}>
+            <h1 className="title">{pageTitle}</h1>
           </header>
 
           <div className="columns">
@@ -51,7 +43,7 @@ const AboutPage: React.FC = () => {
                   <p>The WebStorm Guide comprises pieces of information organized into two categories: Topics and
                     Technologies.
                     Let’s take a look at each.</p>
-                  <h3>Category 1: Technologies</h3>
+                  <h4>Category 1: Technologies</h4>
                   <p>Let’s imagine that you’ve found a tip about WebStorm’s powerful React support and caught yourself
                     thinking,
                     “I didn’t know that, I wonder what other React productivity boosters I’ve missed?” If that sounds
@@ -60,7 +52,7 @@ const AboutPage: React.FC = () => {
                     organized
                     into
                     groups of specific technologies, such as popular frameworks, libraries, and the like.</p>
-                  <h3>Category 2: Topics</h3>
+                  <h4>Category 2: Topics</h4>
                   <p>Sometimes you come across a useful tip on how to do a specific job in the IDE, such as how to add a
                     conditional breakpoint when debugging, and you want to dive deeper into that topic. To help you do
                     that,

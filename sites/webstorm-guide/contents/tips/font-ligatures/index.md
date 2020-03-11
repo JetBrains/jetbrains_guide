@@ -7,7 +7,7 @@ topics: [editing]
 author: pwe
 subtitle: Use ligatures if your font supports it.
 seealso:
-- title: Font
+- title: How to configure font
   href: https://www.jetbrains.com/help/webstorm/settings-editor-font.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

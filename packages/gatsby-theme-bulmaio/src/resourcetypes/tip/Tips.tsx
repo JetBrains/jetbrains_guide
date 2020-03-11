@@ -15,7 +15,7 @@ export const Tips: React.FC = () => {
 `
   );
   return (
-    <ReferenceLayout pageTitle="Tips" subtitle="Visual, standalone, bite-sized learning organized into different categories.">
+    <ReferenceLayout pageTitle="Tips" subtitle="Visual, standalone, bite-sized learning resources organized into different categories.">
       {{
         listing: (
           <div>

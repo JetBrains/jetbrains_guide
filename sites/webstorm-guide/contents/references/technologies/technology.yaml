@@ -1,11 +1,10 @@
 - label: angular
   title: Angular
-  subtitle: Modern web frontends
+  subtitle: Web framework for building mobile and desktop applications
   logo: ./angularjs-original.svg
   website: https://www.angular.io
   body: |
-    One framework, mobile and desktop. Develop across all platforms
-    with speed and performance.
+    Angular is a popular web framework for building mobile and desktop applications.
 
 - label: emmet
   title: Emmet
@@ -17,17 +16,13 @@
     HTML & CSS workflow. It uses tags and symbols to generate nested
     content.
 
-    ## See Also
-
-    [Emmet Support](https://www.jetbrains.com/help/pycharm/using-zen-coding-support.html)
-    in PyCharm Help
 
 - label: javascript
   title: JavaScript
+  subtitle: Popular programming language that conforms to the ECMAScript specification
   logo: ./javascript-original.svg
   website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
   body: |
-    JavaScript is a lightweight, interpreted, modern language used primarily in
-    web browsers but increasingly in other environments such as server applications.
+    JavaScript is a lightweight, interpreted, programming language used primarily in web browsers but increasingly in other environments such as server applications.
 
 

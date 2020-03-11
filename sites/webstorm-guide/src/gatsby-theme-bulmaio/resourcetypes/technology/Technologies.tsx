@@ -37,7 +37,7 @@ export const Technologies = () => {
 `
     );
   return (
-    <ReferenceLayout pageTitle={'Technologies'} subtitle={'Resources organized by programming technologies'}>
+    <ReferenceLayout pageTitle={'Technologies'} subtitle={'Resources organized by programming technologies.'}>
       {{
         listing: (
           <nav className="bd-links bio-resourcecards">

@@ -5,7 +5,7 @@ title: Surround With Emmet
 technologies: [emmet]
 topics: [editing]
 author: pwe
-subtitle: Quickly surround a selection with rich markup using the Emmet system.
+subtitle: Quickly surround a selection with rich markup using the Emmet toolkit.
 seealso:
 - title: Wrap with Abbreviation on Emmet site
   href: https://docs.emmet.io/actions/wrap-with-abbreviation/

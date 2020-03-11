@@ -5,7 +5,7 @@ title: Quickly Look Up Parameters
 technologies: [javascript]
 topics: [editing]
 author: pwe
-subtitle: Help when completing function parameters.
+subtitle: Get help when completing function parameters.
 seealso:
 - title: Working with source code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html
