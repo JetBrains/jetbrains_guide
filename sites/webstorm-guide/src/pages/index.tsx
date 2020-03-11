@@ -2,6 +2,7 @@ import React from 'react';
 import HomepageLayout from 'gatsby-theme-bulmaio/src/components/layout/HomepageLayout';
 // @ts-ignore
 import splash from './webstorm-beam.svg';
+import { Link } from 'gatsby';
 
 const dataUri = `url("${splash}") center center`;
 
@@ -39,14 +40,35 @@ const IndexPage: React.FC = () => {
                 <div className="container" style={{ marginTop: '2rem' }}>
                   <div className="columns">
                     <div className="column">
-                      <h1 className="is-size-4">Technologies</h1>
-                      <p className="is-size-5">Go through handy tips and tricks grouped by language, library, and
-                        framework.</p>
+                      <div className="card">
+                        <div className="card-content">
+                          <div className="media">
+                            <div className="media-content">
+                              <Link to={`/technologies`}><h1 className="is-size-4">Technologies</h1></Link>
+                            </div>
+                          </div>
+                          <div className="content">
+                            <p className="is-size-5">Go through handy tips and tricks grouped by language, library, and
+                              framework.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div className="column">
-                      <h1 className="is-size-4">Topics</h1>
-                      <p className="is-size-5">Explore a collection of tips organized by topic, such as debugging or
-                        code editing.</p>
+                      <div className="card">
+                        <div className="card-content">
+                          <div className="media">
+                            <div className="media-content">
+                              <Link to={`/topics`}><h1 className="is-size-4">Topics</h1></Link>
+                            </div>
+                          </div>
+                          <div className="content">
+                            <p className="is-size-5">Explore a collection of tips organized by topic, such as debugging
+                              or
+                              code editing.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
