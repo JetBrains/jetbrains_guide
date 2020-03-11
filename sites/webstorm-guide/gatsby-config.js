@@ -55,10 +55,10 @@ module.exports = {
                             cssClass: 'documentation',
                             href: '/topics/',
                             label: 'Topics',
-                            icon: 'fas fa-project-diagram'
+                            icon: 'fas fa-book-open'
                         },
                         {
-                            accent: 'info',
+                            accent: 'warning',
                             cssClass: 'documentation',
                             href: '/about/',
                             label: 'About',
