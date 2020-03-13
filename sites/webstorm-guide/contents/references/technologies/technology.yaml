@@ -19,10 +19,35 @@
 
 - label: javascript
   title: JavaScript
-  subtitle: Popular programming language that conforms to the ECMAScript specification
+  subtitle: Popular programming language that conforms to ECMAScript
   logo: ./javascript-original.svg
   website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
   body: |
     JavaScript is a lightweight, interpreted, programming language used primarily in web browsers but increasingly in other environments such as server applications.
+
+
+- label: html
+  title: HTML
+  subtitle: Standard markup language for creating web pages
+  logo: html5-plain.svg
+  website: https://developer.mozilla.org/en-US/docs/Web/HTML
+  body: |
+    HTML is the standard markup language for documents designed to be displayed in a web browser.
+
+- label: css
+  title: CSS
+  subtitle: Mechanism for adding style to web pages
+  logo: css3-original.svg
+  website: https://developer.mozilla.org/en-US/docs/Web/CSS
+  body: |
+    CSS is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+
+- label: jest
+  title: Jest
+  subtitle: JavaScript testing framework with a focus on simplicity
+  logo: jest.svg
+  website: https://facebook.github.io/jest/
+  body: |
+    Jest is a JavaScript testing framework with a focus on simplicity. It works with projects using Babel, TypeScript, Node, React, Angular, and Vue.
 
 

@@ -5,3 +5,35 @@
   icon: fas fa-user-edit
   body: |
     Editing code is the primary activity in an IDE.
+
+- label: navigation
+  title: Navigation
+  subtitle: See how to find your way through a project
+  accent: primary
+  icon: fas
+  body: |
+    With WebStorm, you can get around your code faster regardless of how large your projects are.
+
+- label: running
+  title: Running
+  subtitle: Run your code in our configurable, visual run tool
+  accent: primary
+  icon: fas
+  body: |
+
+
+- label: debugging
+  title: Debugging
+  subtitle: Learn how to run a program step by step and identify problems in it
+  accent: primary
+  icon: fas
+  body: |
+    Use the IDE to run and debug all kinds of JavaScript applications right where your code is.
+
+- label: testing
+  title: Testing
+  subtitle: Review some tips on how to streamline the testing workflow
+  accent: primary
+  icon: fas
+  body: |
+    Test-driven development has become an important part of professional coding. With WebStorm, you can make it easier and more enjoyable.

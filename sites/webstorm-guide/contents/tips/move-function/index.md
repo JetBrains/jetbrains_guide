@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2020-03-02
-title: Move Function To File
+title: Move Function to File
 technologies: [javascript]
 topics: [editing]
 author: pwe

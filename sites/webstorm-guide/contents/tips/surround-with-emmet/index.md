@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2020-02-14
-title: Surround With Emmet
+title: Surround with Emmet
 technologies: [emmet]
 topics: [editing]
 author: pwe
