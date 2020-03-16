@@ -14,9 +14,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   Clean code is nice, and so is clean grammar! Install the *Grazie* plugin 
   which can help you avoid mistakes when adding comments, commit messages, 

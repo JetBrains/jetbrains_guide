@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   Instead of manually converting a function to a variable holding an arrow function, let WebStorm 
   do that for you: press *Alt+Enter* on the name in the function definition and select the 

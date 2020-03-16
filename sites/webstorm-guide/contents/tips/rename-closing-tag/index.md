@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   Whenever you edit an opening tag in HTML, WebStorm will rename the corresponding 
   closing tag for you. This functionality is enabled by default and can be managed 

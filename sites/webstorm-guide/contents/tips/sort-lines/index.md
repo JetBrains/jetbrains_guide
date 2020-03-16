@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   To quickly sort lines alphabetically, select them in the editor and choose 
   *Edit | Sort Lines* from the main menu. Alternatively, you can 

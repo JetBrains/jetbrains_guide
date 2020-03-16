@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   Need to add `.length` and `.size` properties to some objects in your code? WebStorm 
   won’t let you mix those properties up. 

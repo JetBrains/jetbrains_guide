@@ -14,9 +14,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   Want to move a function to a separate file? 
   You can use the *Move function* quick fix (*Alt+Enter*) that creates a new file named after this function. 

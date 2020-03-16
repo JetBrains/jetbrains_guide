@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.jpeg'
+  file: ./tip.jpeg
   width: 600
-  height: 400
+  height: 265
 leadin: |
   If the font you're using supports ligatures, you can turn them on 
   in *Preferences/Settings | Editor | Font*. 

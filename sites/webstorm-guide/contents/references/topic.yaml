@@ -14,16 +14,8 @@
   body: |
     With WebStorm, you can get around your code faster regardless of how large your projects are.
 
-- label: running
-  title: Running
-  subtitle: Run your code in our configurable, visual run tool
-  accent: primary
-  icon: fas
-  body: |
-
-
-- label: debugging
-  title: Debugging
+- label: running-debugging
+  title: Running and Debugging
   subtitle: Learn how to run a program step by step and identify problems in it
   accent: primary
   icon: fas

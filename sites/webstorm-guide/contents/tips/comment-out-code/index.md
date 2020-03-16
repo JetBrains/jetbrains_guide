@@ -12,9 +12,9 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './tip.gif'
+  file: ./tip.gif
   width: 600
-  height: 400
+  height: 300
 leadin: |
   In WebStorm, you can comment and uncomment blocks of code with *Cmd+Shift+/* 
   on macOS and *Ctrl+Shift+/* on Windows/Linux. To do the same for lines, 
