@@ -16,7 +16,7 @@ export const RecentItems: React.FC = () => {
   return (
     <section className="section has-background-light">
       <div className="container">
-        <h1 className="title">Recent Items</h1>
+        <h1 className="title">Recent Tips</h1>
         <div className="columns">
           <div className="column is-four-fifths-desktop bio-resourcecards">
             {makeResources(resources)}

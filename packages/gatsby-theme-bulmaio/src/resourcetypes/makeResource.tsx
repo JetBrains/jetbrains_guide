@@ -11,7 +11,9 @@ import ResourceCard, { ResourceCardProps } from 'gatsby-theme-bulmaio/src/compon
 
 const makeResources = (resources: ListedResources): React.ReactNode[] => {
   if (resources) {
-    return resources.map(resource => {
+    return resources
+        .filter(resource => resource.frontmatter.type === 'tip')
+        .map(resource => {
       const fm = resource.frontmatter;
       // Let's make a resource card
       const card: ResourceCardProps = {
