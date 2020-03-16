@@ -73,6 +73,13 @@ module.exports = {
                                     icon: 'fas fa-users',
                                     accent: 'success',
                                     description: 'Resource listing organized by author'
+                                },
+                                {
+                                    href: '/about/',
+                                    label: 'About',
+                                    icon: 'fas fa-file',
+                                    accent: 'info',
+                                    description: 'About'
                                 }
                             ]
                         }
