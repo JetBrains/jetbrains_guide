@@ -11,6 +11,7 @@ export interface ListedResource {
     slug: string;
   }
   frontmatter: {
+    type: string;
     title: string;
     subtitle?: string;
     date: string;
