@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Struggling with long lines of code?** 🙇‍♀️
 
-    Existing expressions can easily be assigned to a new variable using the _Introduce Variable_ refactoring. We can either select the expression and invoke **Refactor | Introduce Variable** or type `.var` at the end of the expression to invoke the related _postfix template_. The refactoring also takes repeated occurrences of our expression into account to **reduce code duplication**.
+    Existing expressions can easily be assigned to a new variable using the **Introduce Variable** refactoring. We can either select the expression and invoke **Refactor | Introduce Variable** or type `.var` at the end of the expression to invoke the related **postfix template**. The refactoring also takes repeated occurrences of our expression into account to **reduce code duplication**.
 
     Inlining variables is equally easy using the **Refactor | Inline Variable**.
 

@@ -12,9 +12,13 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    **Meet our VCS Operations quicklist!** 🏷
-    
-    This helps to efficiently manage and discover your changes, branches, and local history! 👣 As always, start typing to filter your results 🔬 Also, have you heard about workspaces? 🤔
+    **Meet the VCS Operations Quicklist** 🏷
+
+    Switching branches, committing changes, viewing file history, or comparing revisions. With the VCS Operations quicklist, those actions are both, **systematically listed and easy to reach**. Furthermore, the quicklist supports _just typing_ to filter results, and shows indicators for branches to see incoming and outgoing changes.
+
+    A little cream topping is the automatic restore of **workspaces** whenever we switch a branch. This ensures that we get our previous environment back, including opened files, favorites, breakpoints, and more.
+
+    By the way, quicklists can be customized! 🤫
 
     ## See Also
     - [Version Control Integration](https://www.jetbrains.com/help/rider/Version_Control_Integration.html)
