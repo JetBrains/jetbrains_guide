@@ -13,6 +13,35 @@ module.exports = {
                 maxWidth: 1080
             }
         },
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                createLinkInHead: true,
+                query: `
+                    {
+                      site {
+                        pathPrefix
+                      }
+            
+                      allSitePage {
+                        nodes {
+                          path
+                        }
+                      }
+                  }`,
+                resolveSiteUrl: ({site, allSitePage}) => {
+                    return 'https://www.jetbrains.com'
+                },
+                serialize: ({ site, allSitePage }) =>
+                    allSitePage.nodes.map(node => {
+                        return {
+                            url: `https://www.jetbrains.com${node.path}`,
+                            changefreq: `daily`,
+                            priority: 0.8,
+                        }
+                    })
+            }
+        }
     ]
 };
 
