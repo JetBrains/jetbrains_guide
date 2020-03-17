@@ -7,12 +7,12 @@ topics: [editing]
 author: pwe
 subtitle: Look through PHP, Python, and other files in WebStorm.
 seealso:
-- title: 
-  href: 
+- title: What's new in WebStorm 2019.2
+  href: https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2/#code_editing
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.png
   width: 600
   height: 300
 leadin: |
