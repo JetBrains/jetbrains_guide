@@ -44,4 +44,4 @@ How to move between the left and right "Split Vertically" frames? The
 `Go To Next Splitter` action (`Alt-Tab` Win/Linux/macOS) is a convenient keybinding. 
 Since these are the two files you are switching between editing, our old friend the 
 `Recent Files` action (`Ctrl-E` Win/Linux, `Cmd-E` macOS) is a nice, already-memorized 
-key sequence.
+key sequence. 
