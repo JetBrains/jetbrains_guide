@@ -45,7 +45,7 @@ export const Tutorial: React.FC<TutorialProps> = (
       ) : null}
       {tutorialItems && (
         <div className="bio-tutorial-steps-listing">
-          {makeResources(tutorialItems)}
+          {makeResources(tutorialItems, '*')}
         </div>
       )}
 

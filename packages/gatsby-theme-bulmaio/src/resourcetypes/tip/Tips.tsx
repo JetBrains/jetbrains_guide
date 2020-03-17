@@ -19,7 +19,7 @@ export const Tips: React.FC = () => {
       {{
         listing: (
           <div>
-            {makeResources(resources)}
+            {makeResources(resources, 'tip')}
           </div>
         )
       }}
