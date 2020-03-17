@@ -4,7 +4,7 @@ date: 2020-03-02
 title: Rename Closing Tag
 technologies: [html]
 topics: [editing]
-author: pwe
+author: er
 subtitle: Let the IDE mirror changes to a tag name.
 seealso:
 - title: Smart Keys

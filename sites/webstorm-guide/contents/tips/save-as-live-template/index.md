@@ -5,7 +5,7 @@ title: Create Reusable Code Snippets
 subtitle: Save time by reusing blocks of code with custom code snippets.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Using and creating code snippets
   href: https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/

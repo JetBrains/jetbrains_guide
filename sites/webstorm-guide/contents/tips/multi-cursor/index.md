@@ -5,7 +5,7 @@ title: Editing Code with Multiple Cursors
 subtitle: Use multiple cursors to make changes to your code faster.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Multiple cursors in WebStorm
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#multiple_cursor

@@ -5,7 +5,7 @@ title: Renaming Files
 subtitle: Rename a file to make it match the name of a class.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Refactoring source code
   href: https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#

@@ -5,7 +5,7 @@ title: Test Regular Expressions in the IDE
 subtitle: WebStorm helps test regular expressions on the fly.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Tips and tricks for working with regular expressions
   href: https://www.jetbrains.com/help/webstorm/regular-expression-syntax-reference.html#tips-tricks

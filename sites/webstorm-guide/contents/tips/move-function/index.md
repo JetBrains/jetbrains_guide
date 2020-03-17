@@ -4,7 +4,7 @@ date: 2020-03-02
 title: Move Function to File
 technologies: [javascript]
 topics: [editing]
-author: pwe
+author: er
 subtitle: Extract a function into a separate file.
 seealso:
 - title: Refactoring code

@@ -4,7 +4,7 @@ date: 2020-03-02
 title: Grammar Checking with Grazie
 technologies: []
 topics: [editing, customizing]
-author: pwe
+author: er
 subtitle: Use the Grazie plugin to check grammar in regular text.
 seealso:
 - title: Meet Grazie, the ultimate spelling, grammar, and style checker

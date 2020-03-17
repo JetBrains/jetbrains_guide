@@ -4,7 +4,7 @@ date: 2020-02-14
 title: Surround with Emmet
 technologies: [emmet]
 topics: [editing]
-author: pwe
+author: er
 subtitle: Quickly surround a selection with rich markup using the Emmet toolkit.
 seealso:
 - title: Wrap with Abbreviation on Emmet site

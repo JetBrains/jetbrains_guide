@@ -4,7 +4,7 @@ date: 2020-03-02
 title: Convert to Arrow Function
 technologies: [javascript]
 topics: [editing]
-author: pwe
+author: er
 subtitle: Quickly convert a function to a variable holding an arrow function.
 seealso:
 - title: 10 WebStorm Shortcuts You Need to Know

@@ -5,7 +5,7 @@ title: Review Errors in Code
 subtitle: WebStorm shows all errors and warnings in your file.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Getting started with WebStorm
   href: https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html

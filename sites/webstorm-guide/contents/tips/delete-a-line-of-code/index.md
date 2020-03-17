@@ -5,7 +5,7 @@ title: Deleting Lines
 subtitle: Delete a line of code without using the mouse.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Manipulating lines of code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#editor_lines_code_blocks

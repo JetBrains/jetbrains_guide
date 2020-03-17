@@ -5,7 +5,7 @@ title: Adding <script> Tag
 subtitle: Get help when adding the script element.
 technologies: []
 topics: [html]
-author: pwe
+author: er
 seealso:
 - title: Using code editor
   href: https://www.jetbrains.com/help/webstorm/using-code-editor.html

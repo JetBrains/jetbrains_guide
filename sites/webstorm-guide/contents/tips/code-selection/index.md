@@ -5,7 +5,7 @@ title: Select Code Fragment
 subtitle: Select a code fragment without a single click.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Working with source code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#

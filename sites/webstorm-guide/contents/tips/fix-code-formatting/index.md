@@ -4,7 +4,7 @@ date: 2020-03-16
 title: Fix Code Formatting
 technologies: []
 topics: []
-author: pwe
+author: er
 subtitle: Learn how to fix code formatting on the fly.
 seealso:
 - title: How to reformat and rearrange code

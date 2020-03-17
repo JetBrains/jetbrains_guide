@@ -5,7 +5,7 @@ title: Preview Images
 subtitle: Preview images on the go from the Project view.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Settings for images in WebStorm
   href: https://www.jetbrains.com/help/webstorm/settings-images.html

@@ -5,7 +5,7 @@ title: Optimize Imports
 subtitle: Quickly remove any unused imports and more.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Creating and optimizing imports in WebStorm
   href: https://www.jetbrains.com/help/webstorm/creating-and-optimizing-imports.html

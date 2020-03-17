@@ -5,7 +5,7 @@ title: File Structure Overview
 subtitle: Get a high-level view of the structure of a specific file.
 technologies: []
 topics: [navigation]
-author: pwe
+author: er
 seealso:
 - title: Source code navigation
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html

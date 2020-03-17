@@ -5,7 +5,7 @@ title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.
 technologies: [javascript, typescript]
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Postfix completion in WebStorm
   href: https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html

@@ -5,7 +5,7 @@ title: Transform Existing Expression into Another One
 subtitle: Quickly transform an existing expression into another one using Tab.
 technologies: []
 topics: [editing]
-author: pwe
+author: er
 seealso:
 - title: Postfix completion in WebStorm
   href: https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html

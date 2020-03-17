@@ -4,7 +4,7 @@ date: 2020-03-16
 title: Get Completion for Libraries from CDN
 technologies: [css]
 topics: [editing]
-author: pwe
+author: er
 subtitle: Find out how to get completion suggestions for libraries like Bootstrap.
 seealso:
 - title: What's new in WebStorm 2019.3
