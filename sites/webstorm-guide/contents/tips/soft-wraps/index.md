@@ -12,7 +12,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.jpeg
   width: 600
   height: 300
 leadin: |

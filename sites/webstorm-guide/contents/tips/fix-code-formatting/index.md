@@ -3,7 +3,7 @@ type: tip
 date: 2020-03-16
 title: Fix Code Formatting
 technologies: []
-topics: []
+topics: [editing]
 author: er
 subtitle: Learn how to fix code formatting on the fly.
 seealso:

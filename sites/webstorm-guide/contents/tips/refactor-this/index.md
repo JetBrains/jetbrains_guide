@@ -14,7 +14,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: ./tip.gif
+  file: ./tip.png
   width: 600
   height: 315
 leadin: |
