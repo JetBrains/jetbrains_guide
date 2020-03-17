@@ -44,13 +44,6 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'warning',
-                            cssClass: 'documentation',
-                            href: '/playlists/',
-                            label: 'Playlists',
-                            icon: 'fas fa-list'
-                        },
-                        {
                             accent: 'danger',
                             cssClass: 'documentation',
                             href: '/technologies/',
@@ -65,6 +58,13 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
+                            accent: 'info',
+                            cssClass: 'documentation',
+                            href: '/about/',
+                            label: 'About',
+                            icon: 'fas fa-file'
+                        },
+                        {
                             label: 'More...',
                             items: [
                                 {
@@ -73,13 +73,6 @@ module.exports = {
                                     icon: 'fas fa-users',
                                     accent: 'success',
                                     description: 'Resource listing organized by author'
-                                },
-                                {
-                                    href: '/about/',
-                                    label: 'About',
-                                    icon: 'fas fa-file',
-                                    accent: 'info',
-                                    description: 'About'
                                 }
                             ]
                         }
