@@ -38,7 +38,7 @@ export const Author: React.FC<AuthorProps> = (
         ),
         listing: (
           <div>
-            {makeResources(author.resources)}
+            {makeResources(author.resources, '*')}
           </div>
         )
       }}

@@ -47,7 +47,7 @@ export const Playlist: React.FC<PlaylistProps> = (
       ) : null}
       {playlistItems && (
         <div className="bio-tutorial-steps-listing">
-          {makeResources(playlistItems)}
+          {makeResources(playlistItems, 'tip')}
         </div>
       )}
 
