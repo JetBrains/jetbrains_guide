@@ -13,6 +13,13 @@ module.exports = {
             }
         },
         {
+            resolve: 'gatsby-plugin-google-tagmanager',
+            options: {
+                id: 'GTM-5P98',
+                defaultDataLayer: {platform: 'gatsby'},
+            },
+        },
+        {
             resolve: `gatsby-plugin-sitemap`,
             options: {
                 createLinkInHead: true,
@@ -31,7 +38,7 @@ module.exports = {
                 resolveSiteUrl: ({site, allSitePage}) => {
                     return 'https://www.jetbrains.com'
                 },
-                serialize: ({ site, allSitePage }) =>
+                serialize: ({site, allSitePage}) =>
                     allSitePage.nodes.map(node => {
                         return {
                             url: `https://www.jetbrains.com${node.path}`,
@@ -42,5 +49,5 @@ module.exports = {
             }
         }
     ]
-};
+}
 
