@@ -129,13 +129,6 @@ module.exports = {
                 path: `${__dirname}/contents`
             }
         },
-        {
-            resolve: `gatsby-plugin-gtag`,
-            options: {
-                // your google analytics tracking id
-                trackingId: `UA-47631155-3`
-            },
-        },
         'gatsby-plugin-sass',
         'gatsby-plugin-typescript',
         {
