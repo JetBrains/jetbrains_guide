@@ -3,7 +3,7 @@ type: tip
 date: 2020-03-18
 title: Generate a Django Dependency Diagram
 technologies: [django]
-topics:
+topics: []
 author: ni
 subtitle: Get a better understanding of your django models using a Dependency Diagram
 seealso:
@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/Tc1n43evD_8
+  url: https://youtu.be/L5yoe0ZCrnc
 leadin: |
     *PyCharm can generate a dependency diagram for your django models*    
 
