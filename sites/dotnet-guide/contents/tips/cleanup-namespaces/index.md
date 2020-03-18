@@ -16,7 +16,7 @@ leadin: |
 
     We're just about to commit our changes and then realize that we have some code smells or dead code left 😵 But there is nothing to worry about! Rider's integrated **side-by-side diff viewer** allows to fix them right from where we are and even in bulk!
 
-    The magic of having VCS support in an IDE! 🥰
+    Feel the magic of having VCS support in an IDE! 🥰
 
     ### See Also
     - [Introduction to code analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
