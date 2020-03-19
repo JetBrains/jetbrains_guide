@@ -12,6 +12,7 @@ playlistItems:
     - /tips/go-to-anything-basics/
     - /tips/go-to-anything-contexts/
     - /tips/go-to-anything-hierarchy/
+    - /tips/go-to-anything-create-new/
 
 ---
 
