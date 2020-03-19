@@ -9,8 +9,8 @@ const AboutPage: React.FC = () => {
   return (
     <SiteLayout pageTitle={pageTitle}>
       <main className="bd-main bulmaio-body">
-        <div className="bd-main-container container" style={{marginBottom: "2rem"}}>
-          <header className="bd-header" style={{ marginBottom: 0, minHeight: "6rem" }}>
+        <div className="bd-main-container container" style={{ marginBottom: '2rem' }}>
+          <header className="bd-header" style={{ marginBottom: 0, minHeight: '6rem' }}>
             <h1 className="title">{pageTitle}</h1>
           </header>
 
@@ -24,21 +24,9 @@ const AboutPage: React.FC = () => {
                     href="https://blog.jetbrains.com/webstorm/">product
                     blog</a>. Plus, the <a
                     href="https://www.jetbrains.com/help/webstorm/meet-webstorm.html">documentation</a> is
-                    always there to
-                    help. However, wouldn’t it be better if you had everything you needed to learn in one place?</p>
-                  <p>We have created the WebStorm Guide, a collection of bite-sized visual resources, organized to help
-                    spark
-                    your
-                    learning. We hope it helps you get into the flow and excel at what you do.</p>
-                  <h2>First: Why Use Tips</h2>
-                  <p>People don’t always have a lot of time to dedicate to learning. We decided to try a new format for
-                    the
-                    WebStorm Guide that wouldn’t require too much time to be effective and to help you get better at
-                    what you
-                    do.
-                    We’ve taken the tips we had on Twitter, expanded them with extra information, and added links to
-                    related
-                    resources – all to help you save time on learning.</p>
+                    always there to help. For visual learners, we have created the WebStorm Guide: a collection of
+                    bite-sized visual resources, organized to help spark your learning. We hope it helps you get into
+                    the flow and excel at what you do.</p>
                   <h2>Using the Guide</h2>
                   <p>The WebStorm Guide comprises pieces of information organized into two categories: Topics and
                     Technologies.
