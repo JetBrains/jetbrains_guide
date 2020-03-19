@@ -57,6 +57,13 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
+                            accent: 'info',
+                            cssClass: 'documentation',
+                            href: '/about/',
+                            label: 'About',
+                            icon: 'fas fa-file'
+                        },
+                        {
                             label: 'More...',
                             items: [
                                 {
@@ -105,13 +112,6 @@ module.exports = {
                 name: `contents`,
                 path: `${__dirname}/contents`
             }
-        },
-        {
-            resolve: `gatsby-plugin-gtag`,
-            options: {
-                // your google analytics tracking id
-                trackingId: `UA-47631155-3`
-            },
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-typescript',

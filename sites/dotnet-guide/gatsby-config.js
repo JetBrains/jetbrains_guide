@@ -44,13 +44,6 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'warning',
-                            cssClass: 'documentation',
-                            href: '/playlists/',
-                            label: 'Playlists',
-                            icon: 'fas fa-list'
-                        },
-                        {
                             accent: 'danger',
                             cssClass: 'documentation',
                             href: '/technologies/',
@@ -63,6 +56,13 @@ module.exports = {
                             href: '/topics/',
                             label: 'Topics',
                             icon: 'fas fa-project-diagram'
+                        },
+                        {
+                            accent: 'info',
+                            cssClass: 'documentation',
+                            href: '/about/',
+                            label: 'About',
+                            icon: 'fas fa-file'
                         },
                         {
                             label: 'More...',
@@ -118,13 +118,6 @@ module.exports = {
                 name: `contents`,
                 path: `${__dirname}/contents`
             }
-        },
-        {
-            resolve: `gatsby-plugin-gtag`,
-            options: {
-                // your google analytics tracking id
-                trackingId: `UA-47631155-3`
-            },
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-typescript',

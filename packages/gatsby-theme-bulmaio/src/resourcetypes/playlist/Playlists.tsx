@@ -19,7 +19,7 @@ export const Playlists: React.FC = () => {
       {{
         listing: (
           <div>
-            {makeResources(resources)}
+            {makeResources(resources, 'playlist')}
           </div>
         )
       }}

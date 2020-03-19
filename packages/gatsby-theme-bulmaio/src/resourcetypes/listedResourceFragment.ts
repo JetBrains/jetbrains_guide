@@ -6,6 +6,7 @@ export const listedResourceFragment = graphql`
       slug
     }
     frontmatter {
+      type
       title
       subtitle
       date

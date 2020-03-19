@@ -9,9 +9,13 @@ import { ListedResources } from 'gatsby-theme-bulmaio/src/resourcetypes';
 import React from 'react';
 import ResourceCard, { ResourceCardProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/ResourceCard';
 
-const makeResources = (resources: ListedResources): React.ReactNode[] => {
+type ResourceType = 'tip' | 'playlist' | '*';
+
+const makeResources = (resources: ListedResources, resourceType: ResourceType = 'tip'): React.ReactNode[] => {
   if (resources) {
-    return resources.map(resource => {
+    return resources
+        .filter(resource => resourceType === '*' || resource.frontmatter.type === resourceType)
+        .map(resource => {
       const fm = resource.frontmatter;
       // Let's make a resource card
       const card: ResourceCardProps = {
