@@ -11,7 +11,7 @@ shortVideo:
   poster: ./preview.png
   url: https://youtu.be/vzKoTFtHvxk
 leadin: |
-    **Go to Anything as a shortcut to create things!**
+    **Go to Anything - a shortcut to create things!**
     
     With **Go to Anything** (<kbd>Ctrl+K</kbd> / <kbd>Cmd+K</kbd> on macOS), we can find our way around Space. But we can also use it to create new things!
     
