@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Tool Window Management
 technologies: [.net]
+products: [rider]
 topics: [ide]
 author: matkoch
 subtitle: Little helpers always at the right size!

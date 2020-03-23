@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Iterating Collections
 technologies: [.net]
+products: [rider, resharper]
 topics: [completion, editing]
 author: matkoch
 subtitle: There's no faster way to iterate!

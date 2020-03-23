@@ -4,6 +4,7 @@ label: editing-tips
 date: 2020-01-29
 title: Editing Tips & Tricks
 technologies: [.net]
+products: [rider, resharper]
 topics: [completion, editing, inspections, ide]
 author: maartenba
 subtitle: Know everything there is to know about editing code. 

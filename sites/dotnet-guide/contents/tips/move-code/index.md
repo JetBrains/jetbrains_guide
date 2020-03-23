@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Move Code
 technologies: [.net]
+products: [rider, resharper]
 topics: [editing, completion]
 author: matkoch
 subtitle: Move code the smart way!

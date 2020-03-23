@@ -3,6 +3,7 @@ type: tip
 date: 2020-02-27
 title: Introducing Variables
 technologies: [.net]
+products: [rider, resharper]
 topics: [inspections, editing]
 author: matkoch
 subtitle: Introduce variables the way you like!

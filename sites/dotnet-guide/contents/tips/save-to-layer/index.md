@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Settings Layers
 technologies: [.net]
+products: [rider, resharper]
 topics: [ide, editing]
 author: matkoch
 subtitle: Save settings to the scope you need them!

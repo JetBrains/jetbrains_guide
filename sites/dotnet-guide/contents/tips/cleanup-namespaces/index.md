@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Cleanup Namespaces
 technologies: [.net]
+products: [rider, resharper]
 topics: [inspections, editing]
 author: matkoch
 subtitle: Fix all unused namespaces right from where you are!

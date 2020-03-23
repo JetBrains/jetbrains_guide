@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: JSON schema support
 technologies: [.net]
+products: [rider]
 topics: [inspections, editing]
 author: matkoch
 subtitle: The best way to work with JSON and YAML files!

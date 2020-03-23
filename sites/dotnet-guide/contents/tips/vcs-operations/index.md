@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: VCS Operations Quicklist
 technologies: [.net]
+products: [rider]
 topics: [vcs, ide]
 author: matkoch
 subtitle: Your next VCS action at hand!

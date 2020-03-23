@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Unity Support
 technologies: [.net]
+products: [rider]
 topics: [editing, running, debugging, gaming]
 author: matkoch
 subtitle: Write smarter C# for Unity!
