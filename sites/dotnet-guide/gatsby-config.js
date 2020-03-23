@@ -102,12 +102,12 @@ module.exports = {
                         {
                             color: '55acee',
                             href: 'https://twitter.com/ReSharper',
-                            icon: 'twitter'
+                            icon: 'custom-resharper'
                         },
                         {
                             color: '55acee',
                             href: 'https://twitter.com/JetBrainsRider',
-                            icon: 'twitter'
+                            icon: 'custom-rider'
                         }
                     ]
                 }
