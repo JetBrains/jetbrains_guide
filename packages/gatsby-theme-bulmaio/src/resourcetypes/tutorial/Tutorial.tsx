@@ -3,6 +3,7 @@ import React from 'react';
 import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
+import { ResourceCardProducts } from "gatsby-theme-bulmaio/src/components/resourcecard/product";
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { TutorialSidebar } from './TutorialSidebar';
 import makeResources from '../makeResource';
@@ -17,6 +18,7 @@ export interface TutorialProps {
         subtitle: string;
         author: ResourceCardAuthorProps;
         technologies: ResourceCardTechnologies;
+        products: ResourceCardProducts;
         topics: ResourceCardTopics;
         tutorialItems: any[];
       }
