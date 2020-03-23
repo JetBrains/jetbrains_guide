@@ -8,6 +8,8 @@ import { ResourceCardAuthor, ResourceCardAuthorProps } from './author/ResourceCa
 // noinspection TypeScriptPreferShortImport
 import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './technology/ResourceCardTechnologies';
 // noinspection TypeScriptPreferShortImport
+import { ResourceCardProducts, ResourceCardProductsProps } from './product/ResourceCardProducts';
+// noinspection TypeScriptPreferShortImport
 import { ResourceCardTopics, ResourceCardTopicsProps } from './topic/ResourceCardTopics';
 // noinspection TypeScriptPreferShortImport
 import { ResourceCardDate, ResourceCardDateProps } from './date/ResourceCardDate';
@@ -20,12 +22,13 @@ export interface ResourceCardProps {
   media: ResourceCardMediaProps,
   author?: ResourceCardAuthorProps,
   technologies: ResourceCardTechnologiesProps,
+  products: ResourceCardProductsProps,
   topics: ResourceCardTopicsProps,
   date: ResourceCardDateProps
 }
 
 const ResourceCard: React.FC<ResourceCardProps> = (
-  { logo, thumbnail, media, author, technologies, topics, date }
+  { logo, thumbnail, media, author, technologies, products, topics, date }
 ) => {
 
   return (
@@ -43,6 +46,7 @@ const ResourceCard: React.FC<ResourceCardProps> = (
             <div className="level-left">
               {author && <ResourceCardAuthor {...author}/>}
               {technologies.items && technologies.items.length > 0 && <ResourceCardTechnologies {...technologies}/>}
+              {products.items && products.items.length > 0 && <ResourceCardProducts {...products}/>}
               {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics}/>}
             </div>
             {date && <ResourceCardDate {...date}/>}

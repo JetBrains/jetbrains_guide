@@ -12,6 +12,7 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
+import { ResourceCardProducts } from "../../components/resourcecard/product";
 import { ResourceCardTopics } from '../../components/resourcecard/topic';
 import { InPlaylists } from '../../components/playlists';
 import { Video } from '../../components/video';
@@ -22,6 +23,7 @@ export interface TipSidebarProps {
     date: string;
     author: ResourceCardAuthorProps;
     technologies: ResourceCardTechnologies;
+    products: ResourceCardProducts;
     topics: ResourceCardTopics;
   };
   html?: string;
@@ -38,6 +40,7 @@ export const TipSidebar: React.FC<TipSidebarProps> = (
     author: frontmatter.author
   };
   const technologies = frontmatter.technologies ? frontmatter.technologies.map(t => t.label) : [];
+  const products = frontmatter.products ? frontmatter.products.map(t => t.label) : [];
   const topics = frontmatter.topics ? frontmatter.topics.map(t => t.label) : [];
   const links: Doclink[] = [];
   if (html) {
@@ -60,6 +63,7 @@ export const TipSidebar: React.FC<TipSidebarProps> = (
     <Sidebar>
       <SidebarPublished {...published}/>
       <SidebarReferencesGroup reftype={`technologies`} accent={`danger`} references={technologies}/>
+      <SidebarReferencesGroup reftype={`products`} accent={`info`} references={products}/>
       <SidebarReferencesGroup reftype={`topics`} accent={`success`} references={topics}/>
       <SidebarDoclinks links={links}/>
       <SidebarPlaylists {...thesePlaylists}/>

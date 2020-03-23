@@ -25,6 +25,9 @@ const makeResources = (resources: ListedResources, resourceType: ResourceType = 
         technologies: {
           items: fm.technologies
         },
+        products: {
+          items: fm.products
+        },
         topics: { items: fm.topics },
         date: { date: fm.date }
       };
