@@ -16,6 +16,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
   url: https://youtu.be/L5yoe0ZCrnc
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/kSVTDGZ_JjI
 leadin: |
     *Quickly jump to your Django Application from settings.INSTALLED_APPS*    
 

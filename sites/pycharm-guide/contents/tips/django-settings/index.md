@@ -16,6 +16,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
   url: https://youtu.be/Tc1n43evD_8
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/_wfy-jN1lCk  
 leadin: |
     *PyCharm can autocomplete, even inside a Django string.*    
 
