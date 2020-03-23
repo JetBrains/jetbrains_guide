@@ -20,7 +20,7 @@ export const Tutorials: React.FC = () => {
             {{
                 listing: (
                     <div>
-                        {makeResources(resources)}
+                        {makeResources(resources, '*')}
                     </div>
                 )
             }}

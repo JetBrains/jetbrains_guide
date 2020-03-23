@@ -31,7 +31,7 @@ export const Topic: React.FC<TopicProps> = (
         ),
         listing: (
           <div>
-            {makeResources(topic.resources)}
+            {makeResources(topic.resources, '*')}
           </div>
         )
       }}

@@ -34,6 +34,7 @@ type Frontmatter {
   seealso: [SeeAlso]
   author: AuthorYaml @link(by: "label")
   technologies: [TechnologyYaml] @link(by: "label")
+  products: [ProductYaml] @link(by: "label")
   topics: [TopicYaml] @link(by: "label")
 }
 
@@ -54,6 +55,16 @@ type TechnologyYaml implements Node @dontInfer {
   body: String
   logo: File @fileByRelativePath
   resources: [MarkdownRemark] @link(by: "frontmatter.technologies.label", from: "label")
+}
+
+type ProductYaml implements Node @dontInfer {
+  label: String!
+  title: String!
+  subtitle: String
+  website: String
+  body: String
+  logo: File @fileByRelativePath
+  resources: [MarkdownRemark] @link(by: "frontmatter.products.label", from: "label")
 }
 
 type TopicYaml implements Node @dontInfer {

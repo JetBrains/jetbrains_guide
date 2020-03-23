@@ -34,7 +34,7 @@ export const Technology: React.FC<TechnologyProps> = (
         ),
         listing: (
           <div>
-            {makeResources(technology.resources)}
+            {makeResources(technology.resources, '*')}
           </div>
         )
       }}

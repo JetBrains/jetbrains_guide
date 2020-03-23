@@ -4,6 +4,7 @@ import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLay
 import { SeeAlsos } from 'gatsby-theme-bulmaio/src/components/seealso';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
+import { ResourceCardProducts } from "gatsby-theme-bulmaio/src/components/resourcecard/product";
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { PlaylistSidebar } from './PlaylistSidebar';
 import makeResources from '../makeResource';
@@ -19,6 +20,7 @@ export interface PlaylistProps {
         seealso?: SeeAlsos;
         author: ResourceCardAuthorProps;
         technologies: ResourceCardTechnologies;
+        products: ResourceCardProducts;
         topics: ResourceCardTopics;
         playlistItems: any[];
       }
@@ -47,7 +49,7 @@ export const Playlist: React.FC<PlaylistProps> = (
       ) : null}
       {playlistItems && (
         <div className="bio-tutorial-steps-listing">
-          {makeResources(playlistItems)}
+          {makeResources(playlistItems, 'tip')}
         </div>
       )}
 

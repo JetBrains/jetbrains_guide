@@ -78,6 +78,14 @@ const resolvers = ({ createResolvers }: any) => {
         }
       }
     },
+    ProductYaml: {
+      slug: {
+        type: `String!`,
+        resolve(source: any, args: any, context: any, info: any) {
+          return `/products/${source.label}/`;
+        }
+      }
+    },
     TopicYaml: {
       slug: {
         type: `String!`,

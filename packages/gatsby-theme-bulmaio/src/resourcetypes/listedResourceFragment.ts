@@ -21,6 +21,7 @@ export const listedResourceFragment = graphql`
       ...SeeAlsoFragment
       ...ResourceCardAuthorFragment
       ...ResourceCardTechnologyFragment
+      ...ResourceCardProductFragment
       ...ResourceCardTopicFragment
     }
   }

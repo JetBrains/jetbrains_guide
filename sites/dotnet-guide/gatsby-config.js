@@ -14,6 +14,7 @@ module.exports = {
                 references: {
                     author: {plural: 'Authors', layout: 'LogoListing'},
                     technology: {plural: 'Technologies', layout: 'LogoListing'},
+                    product: {plural: 'Products', layout: 'LogoListing'},
                     topic: {plural: 'Topics', layout: 'LogoListing'}
                 },
                 resources: {
@@ -44,19 +45,19 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'warning',
+                            accent: 'info',
                             cssClass: 'documentation',
-                            href: '/playlists/',
-                            label: 'Playlists',
-                            icon: 'fas fa-list'
+                            href: '/products/',
+                            label: 'Products',
+                            icon: 'fas fa-tasks'
                         },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
-                        },
+                        // {
+                        //     accent: 'danger',
+                        //     cssClass: 'documentation',
+                        //     href: '/technologies/',
+                        //     label: 'Technologies',
+                        //     icon: 'fas fa-project-diagram'
+                        // },
                         {
                             accent: 'danger',
                             cssClass: 'documentation',
@@ -65,21 +66,28 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
+                            accent: 'info',
+                            cssClass: 'documentation',
+                            href: '/about/',
+                            label: 'About',
+                            icon: 'fas fa-file'
+                        },
+                        {
                             label: 'More...',
                             items: [
+                                {
+                                    href: '/technologies/',
+                                    label: 'Technologies',
+                                    icon: 'fas fa-project-diagram',
+                                    accent: 'danger',
+                                    description: 'Resource listing organized by technology'
+                                },
                                 {
                                     href: '/authors/',
                                     label: 'Authors',
                                     icon: 'fas fa-users',
                                     accent: 'success',
                                     description: 'Resource listing organized by author'
-                                },
-                                {
-                                    href: '/about/',
-                                    label: 'About',
-                                    icon: 'fas fa-file',
-                                    accent: 'info',
-                                    description: 'About'
                                 }
                             ]
                         }
@@ -125,13 +133,6 @@ module.exports = {
                 name: `contents`,
                 path: `${__dirname}/contents`
             }
-        },
-        {
-            resolve: `gatsby-plugin-gtag`,
-            options: {
-                // your google analytics tracking id
-                trackingId: `UA-47631155-3`
-            },
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-typescript',
