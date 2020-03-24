@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2020-03-19
-title: Navigate to Django app from INSTALLED_APP list
+title: Navigate to Django App from INSTALLED_APP List
 technologies: [django]
 topics: [navigation]
 author: ni
@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/L5yoe0ZCrnc
+  url: https://youtu.be/yf85AfMDZaw
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/kSVTDGZ_JjI

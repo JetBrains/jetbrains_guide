@@ -1,7 +1,7 @@
 ---
 type: tip
 date: 2019-03-18
-title: 'Adding Fields In a Constructor'
+title: Adding Fields In a Constructor
 technologies: []
 topics: [editing]
 author: pwe

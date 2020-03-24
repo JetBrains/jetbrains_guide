@@ -2,7 +2,7 @@
 type: tip
 date: 2019-04-17
 title: Wrap Selection With Tag
-technologies: []
+technologies: [emmet]
 topics: [web, ]
 author: pwe
 subtitle: Use the keyboard to put a wrapper tag around a selection of code.
