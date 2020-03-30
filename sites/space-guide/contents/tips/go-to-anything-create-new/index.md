@@ -15,7 +15,7 @@ leadin: |
     
     With **Go to Anything** (<kbd>Ctrl+K</kbd> / <kbd>Cmd+K</kbd> on macOS), we can find our way around Space. But we can also use it to create new things!
     
-    **Type `new` and append what you want to create.** Go to Anything can help us create absences, articles, projects, members, invitations, meetings, and so on, without the need to context-switch.
+    **Type `new` and append what you want to create.** Depending on our privileges, we can create absences, articles, projects, meetings, new members and invitations - without the need to context-switch.
     
     Create new things from wherever you are in Space!
 
