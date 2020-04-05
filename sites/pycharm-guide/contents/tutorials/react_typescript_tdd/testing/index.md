@@ -162,21 +162,12 @@ without looking at a browser.
 
 ## See Also
 
-- https://www.jetbrains.com/help/webstorm/running-unit-tests-on-jest.html
+- [Running Unit Tests on Jest](https://www.jetbrains.com/help/webstorm/running-unit-tests-on-jest.html)
 
-- https://www.jetbrains.com/help/webstorm/run-debug-configuration-jest.html
+- [Run/Debug Configurations for Jest](https://www.jetbrains.com/help/webstorm/run-debug-configuration-jest.html)
 
-- https://blog.jetbrains.com/webstorm/tag/jest/
+- [WebStorm Help Topics for Jest](https://blog.jetbrains.com/webstorm/tag/jest/)
 
-- https://medium.com/kevin-salters-blog/testing-react-with-enzyme-fbfc30190e70
+- [Testing React with Enzyme](https://medium.com/kevin-salters-blog/testing-react-with-enzyme-fbfc30190e70)
 
-- https://javascriptplayground.com/introduction-to-react-tests-enzyme/
-
-- https://www.codementor.io/vijayst/unit-testing-react-components-jest-or-enzyme-du1087lh8
-
-- https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter
-
-## TODO
-
-- Discuss how to make right-click run test work by changing the 
-  run config templates
+- [Introduction to React Testing](https://javascriptplayground.com/introduction-to-react-tests-enzyme/)
