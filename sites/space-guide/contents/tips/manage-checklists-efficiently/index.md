@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/2c6ekeSrHno
+  url: https://youtu.be/vpVHZTQi8kU
 leadin: |
     **Use keyboard shortcuts to manage checklists efficiently!**
     
