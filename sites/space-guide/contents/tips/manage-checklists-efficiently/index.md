@@ -15,7 +15,7 @@ leadin: |
     
     Project checklists help your team manage the project, by setting goals & deliverables. They provide a straightforward list of tracking tasks without much detail, helping with high-level planning. Items can be checked off as soon as they are completed.
     
-    While editing checklists, use keyboard shortcuts to create new items, edit existing items, indent & unindent items, and move items around. Checklists are at your fingertips!
+    When editing checklists, use keyboard shortcuts to **create new items, edit existing items, indent & unindent items, and move items around**. Checklists are at your fingertips!
     
     Click the `?` icon in a checklist to get an overview of available keyboard shortcuts.
     
