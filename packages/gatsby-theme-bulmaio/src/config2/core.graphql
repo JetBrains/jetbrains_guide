@@ -1,0 +1,19 @@
+interface Resource @nodeInterface {
+    author: Author
+    body: String!
+    id: ID!
+    parent: Node
+    slug: String!
+    title: String!
+    topics: [Topic]
+}
+
+interface Reference @nodeInterface {
+    id: ID!
+    label: String!
+    slug: String!
+    title: String!
+    body: String!
+    parent: Node
+    resources: [Resource]
+}

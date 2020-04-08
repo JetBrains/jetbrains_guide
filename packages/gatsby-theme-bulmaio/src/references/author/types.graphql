@@ -1,0 +1,9 @@
+type Author implements Node & Reference {
+    id: ID!
+    label: String!
+    slug: String!
+    title: String!
+    body: String! @parentBody
+    parent: Node
+    resources: [Resource] @link(by: "author.label", from: "label")
+}

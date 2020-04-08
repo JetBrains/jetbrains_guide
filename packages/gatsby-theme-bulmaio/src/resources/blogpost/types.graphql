@@ -1,0 +1,10 @@
+type BlogPost implements Node & Resource {
+    id: ID!
+    slug: String!
+    title: String!
+    body: String! @parentBody
+    parent: Node
+    author: Author @link(by: "label")
+    topics: [Topic] @link(by: "label")
+    poster: String @defaultString(value: "XXXYYY")
+}

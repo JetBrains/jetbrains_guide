@@ -10,3 +10,7 @@ exports.onCreateNode = require('./src/config/createNode');
 exports.createPages = require('./src/config/createPages');
 exports.sourceNodes = require('./src/config/sourceNodes');
 exports.createResolvers = require('./src/config/createResolvers');
+
+// New-style
+const { setupSchemaCustomizations } = require('./src/config2/schemaCustomizations')
+exports.createSchemaCustomization = setupSchemaCustomizations

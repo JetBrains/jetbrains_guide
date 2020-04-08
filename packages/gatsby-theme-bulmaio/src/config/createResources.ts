@@ -52,7 +52,9 @@ const createResources = async (graphql: any, createPage: any, resources: CreateR
   }
 
   // Now go through all the resources and generate the page for each
-  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }: any) => {
+  allMarkdown.data.allMarkdownRemark.edges
+    .filter(({node}: any) => !node.fields.slug.includes('blogpost'))  // TODO newstyle
+    .forEach(({ node }: any) => {
     // Get the type metadata for this page's type and use the template
     // specified in the setup
 
