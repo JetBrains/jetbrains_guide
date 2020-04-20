@@ -16,10 +16,10 @@ playlistItems:
     - /tips/cleanup-namespaces/
     - /tips/collection-iteration/
     - /tips/column-align/
-    - /tips/create-variable/
     - /tips/csharp8-support/
     - /tips/json-schema/
-    - /tips/move-code/
+    - /tips/expand-shrink-selection/
+    - /tips/occurrence-selection/
 
 ---
 
