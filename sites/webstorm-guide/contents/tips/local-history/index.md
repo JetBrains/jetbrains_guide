@@ -11,10 +11,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/local-history.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 300
+screenshot: ./tip.png
 leadin: |
   Ever been in a situation where you accidentally deleted the code you’d been 
   working on for a while? With *Local History*, you can quickly get it back: 

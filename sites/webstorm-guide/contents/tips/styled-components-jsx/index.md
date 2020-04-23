@@ -11,10 +11,7 @@ seealso:
   href: https://plugins.jetbrains.com/webstorm
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 256
+screenshot: ./tip.png
 leadin: |
   Need to build apps with Next.js and use styled+jsx? Install the 
   [Styled Components and Styled JSX](https://plugins.jetbrains.com/plugin/9997-styled-components--styled-jsx) 

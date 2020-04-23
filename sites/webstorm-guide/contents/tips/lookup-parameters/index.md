@@ -13,10 +13,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/documentation-tool-window.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 301
+screenshot: ./tip.png
 leadin: |
   Need to quickly look up the names of parameters in methods and functions? Place the caret 
   anywhere within the call of a method or function and press *Cmd+P/Ctrl+P*. 
