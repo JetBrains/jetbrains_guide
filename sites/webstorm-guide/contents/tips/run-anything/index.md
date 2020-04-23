@@ -3,7 +3,7 @@ type: tip
 date: 2020-04-22
 title: Run Tools and Configurations from One Place
 technologies: []
-topics: [running, debugging]
+topics: [running-debugging]
 author: er
 subtitle: Use a single action to run configurations, tools, and open recent projects.
 seealso:

@@ -3,7 +3,7 @@ type: tip
 date: 2020-04-22
 title: Create Conditional Breakpoints
 technologies: []
-topics: [debugging]
+topics: [running-debugging]
 author: er
 subtitle: Add a condition to a breakpoint when debugging.
 seealso:
