@@ -12,10 +12,10 @@ import { InPlaylists } from 'gatsby-theme-bulmaio/src/components/playlists';
 import { LongVideo, ShortVideo, Video } from 'gatsby-theme-bulmaio/src/components/video';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
+import { ResourceCardProducts } from "gatsby-theme-bulmaio/src/components/resourcecard/product";
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { TipSidebar } from './TipsSidebar';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -50,6 +50,7 @@ export interface TipProps {
         seealso?: SeeAlsos;
         author: ResourceCardAuthorProps;
         technologies: ResourceCardTechnologies;
+        products: ResourceCardProducts;
         topics: ResourceCardTopics;
       }
       inPlaylists: InPlaylists

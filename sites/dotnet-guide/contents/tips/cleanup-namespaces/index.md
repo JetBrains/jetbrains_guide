@@ -3,19 +3,22 @@ type: tip
 date: 2020-01-29
 title: Cleanup Namespaces
 technologies: [.net]
+products: [rider, resharper]
 topics: [inspections, editing]
 author: matkoch
 subtitle: Fix all unused namespaces right from where you are!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./13-cleanup-namespaces.png
-  url: ./13-cleanup-namespaces.png
+animatedGif:
+  file: './13-cleanup-namespaces.png'
+  width: 500
 leadin: |
-    Ship it... but wait! Before you do, check for remaining code issues in the Side-by-Side diff viewer.
-    
-    Quick-fixes are at your service, too! For instance, fix all unused namespaces right from where you are! 🎯
-    
+    **You know that feeling, right?** 😣
+
+    We're just about to commit our changes and then realize that we have some code smells or dead code left 😵 But there is nothing to worry about! Rider's integrated **side-by-side diff viewer** allows to fix them right from where we are and even in bulk!
+
+    Feel the magic of having VCS support in an IDE! 🥰
+
     ### See Also
     - [Introduction to code analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
     - [Solution-wide analysis in Rider](https://blog.jetbrains.com/dotnet/2018/05/21/solution-wide-analysis-rider/)

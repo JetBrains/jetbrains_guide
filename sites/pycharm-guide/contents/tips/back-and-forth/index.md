@@ -13,10 +13,10 @@ thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=Wto7hdfx-Sg
+  url: https://youtu.be/XDnqj0I2Bu8
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=xIzqtXSbRpM
+  url: https://youtu.be/df_TPOMCQh4
 leadin: |
   *Diving into a codepath and want to get retrace your steps?*
 

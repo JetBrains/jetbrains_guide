@@ -14,6 +14,7 @@ module.exports = {
                 references: {
                     author: {plural: 'Authors', layout: 'LogoListing'},
                     technology: {plural: 'Technologies', layout: 'LogoListing'},
+                    product: {plural: 'Products', layout: 'LogoListing'},
                     topic: {plural: 'Topics', layout: 'LogoListing'}
                 },
                 resources: {
@@ -44,12 +45,19 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'danger',
+                            accent: 'info',
                             cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
+                            href: '/products/',
+                            label: 'Products',
+                            icon: 'fas fa-tasks'
                         },
+                        // {
+                        //     accent: 'danger',
+                        //     cssClass: 'documentation',
+                        //     href: '/technologies/',
+                        //     label: 'Technologies',
+                        //     icon: 'fas fa-project-diagram'
+                        // },
                         {
                             accent: 'danger',
                             cssClass: 'documentation',
@@ -67,6 +75,13 @@ module.exports = {
                         {
                             label: 'More...',
                             items: [
+                                {
+                                    href: '/technologies/',
+                                    label: 'Technologies',
+                                    icon: 'fas fa-project-diagram',
+                                    accent: 'danger',
+                                    description: 'Resource listing organized by technology'
+                                },
                                 {
                                     href: '/authors/',
                                     label: 'Authors',
@@ -95,12 +110,12 @@ module.exports = {
                         {
                             color: '55acee',
                             href: 'https://twitter.com/ReSharper',
-                            icon: 'twitter'
+                            icon: 'custom-resharper'
                         },
                         {
                             color: '55acee',
                             href: 'https://twitter.com/JetBrainsRider',
-                            icon: 'twitter'
+                            icon: 'custom-rider'
                         }
                     ]
                 }

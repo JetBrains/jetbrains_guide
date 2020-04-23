@@ -17,6 +17,7 @@ playlistItems:
     - /tips/team-location-chats/
     - /tips/project-favorites-sidebar/
     - /tips/issues-tag-hierarchies/
+    - /tips/manage-checklists-efficiently/
     - /tips/linking-issues-checklists/
     - /tips/packages-details-and-versions/
 

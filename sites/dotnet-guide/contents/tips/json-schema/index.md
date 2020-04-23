@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: JSON schema support
 technologies: [.net]
+products: [rider]
 topics: [inspections, editing]
 author: matkoch
 subtitle: The best way to work with JSON and YAML files!
@@ -12,10 +13,14 @@ animatedGif:
   file: './guide.gif'
   width: 500
 leadin: |
-    **Who doesn't love to write YAML?!** 😄
+    **Want to love JSON and YAML again?!** 😄
 
-    Did you know Rider has [@WebStormIDE](https://twitter.com/WebStormIDE) integrated? 🔩 Another powerful IDE for web development that brings some excellent JSON schema support to the table! 🙇‍♀️🙇‍♂️ We wish you a happy JSON and YAML time!
-    
+    Rider has WebStorm included. Our powerful IDE for all things web-related. This means we can benefit from its excellent JSON schema support, which serves us with **code completion and schema verification** in both JSON and YAML files.
+
+    Most of the times, schemas are detected automatically, but they can also be manually selected from the status bar. In JSON files we can also specify the `$schema` top-level property.
+
+    We wish you a happy JSON and YAML time! 🙇‍♀️🙇‍♂️
+
     ### See Also
     - [Work effectively with JSON using Rider](https://blog.jetbrains.com/dotnet/2019/07/22/work-effectively-json-using-rider/)
     - [Rider - JSON Schema web help](https://www.jetbrains.com/help/rider/Settings_Languages_JSON_Schema.html)
