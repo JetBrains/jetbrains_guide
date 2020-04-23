@@ -4,7 +4,7 @@ date: 2020-03-10
 title: Linking issues and checklists
 topics: [work, projects, issues, teams]
 author: maartenba
-subtitle: Use checklists for high-level planning, issues for details
+subtitle: Use checklists for high-level planning, issues for details.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

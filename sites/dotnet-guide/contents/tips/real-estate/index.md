@@ -3,6 +3,7 @@ type: tip
 date: 2020-01-29
 title: Hiding all tool windows
 technologies: [.net]
+products: [rider]
 topics: [ide]
 author: matkoch
 subtitle: Focus on your code!
