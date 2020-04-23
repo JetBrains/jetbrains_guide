@@ -6,7 +6,7 @@
     "declaration": false,
     "importHelpers": true,
     "jsx": "react",
-    "lib": ["dom", "es2015", "es2017"],
+    "lib": ["dom", "es2015", "es2017", "es2019"],
     "module": "commonjs",
     "noEmitHelpers": false,
     "noImplicitAny": true,
