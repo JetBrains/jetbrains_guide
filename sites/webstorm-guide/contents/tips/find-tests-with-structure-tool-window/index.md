@@ -10,7 +10,7 @@ seealso:
 - title: Testing JavaScript
   href: https://www.jetbrains.com/help/webstorm/unit-testing-javascript.html
 - title: Testing with Jest in WebStorm
-  https://blog.jetbrains.com/webstorm/2018/10/testing-with-jest-in-webstorm/
+  href: https://blog.jetbrains.com/webstorm/2018/10/testing-with-jest-in-webstorm/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:

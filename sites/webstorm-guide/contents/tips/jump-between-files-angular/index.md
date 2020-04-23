@@ -10,9 +10,9 @@ seealso:
 - title: Working with Angular projects in WebStorm
   href: https://www.jetbrains.com/help/webstorm/angular.html
 - title: What's new in WebStorm for Angular
-  https://blog.angular.io/whats-new-in-webstorm-for-angular-acd804b84ec9
+  href: https://blog.angular.io/whats-new-in-webstorm-for-angular-acd804b84ec9
 - title: Debugging Angular apps created with Angular CLI
-  https://blog.jetbrains.com/webstorm/2017/01/debugging-angular-apps/
+  href: https://blog.jetbrains.com/webstorm/2017/01/debugging-angular-apps/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
