@@ -12,14 +12,16 @@ import { InPlaylists } from 'gatsby-theme-bulmaio/src/components/playlists';
 import { LongVideo, ShortVideo, Video } from 'gatsby-theme-bulmaio/src/components/video';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
-import { ResourceCardProducts } from "gatsby-theme-bulmaio/src/components/resourcecard/product";
+import { ResourceCardProducts } from 'gatsby-theme-bulmaio/src/components/resourcecard/product';
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { TipSidebar } from './TipsSidebar';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import Img from 'gatsby-image';
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
-)
+);
+
 export interface TipProps {
   location: {
     search: string;
@@ -35,7 +37,7 @@ export interface TipProps {
         subtitle: string;
         cardThumbnail: {
           publicURL: string
-        }
+        };
         date: string;
         animatedGif?: {
           file: {
@@ -43,6 +45,12 @@ export interface TipProps {
           }
           width: number
           height: number
+        };
+        screenshot?: {
+          publicURL: string;
+          childImageSharp: {
+            fixed: any;
+          }
         };
         shortVideo?: Video;
         longVideo?: Video;
@@ -57,7 +65,6 @@ export interface TipProps {
     }
   }
 }
-
 
 export const Tip: React.FC<TipProps> = (
   { location, data: { resource: { html, fields, frontmatter, inPlaylists } } }
@@ -97,8 +104,9 @@ export const Tip: React.FC<TipProps> = (
   }
 
   // Videos
-  const isSSR = typeof window === "undefined";
+  const isSSR = typeof window === 'undefined';
   const animatedGif = frontmatter.animatedGif;
+  const screenshot = frontmatter.screenshot;
   const shortVideo = frontmatter.shortVideo;
   const longVideo = frontmatter.longVideo;
 
@@ -114,10 +122,13 @@ export const Tip: React.FC<TipProps> = (
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">
-        {!isSSR && (
-          <React.Suspense fallback={<div/>}>
-            <ClientSideOnlyPlayer animatedGif={animatedGif}/>
+        {!isSSR && animatedGif && (
+          <React.Suspense fallback={<div />}>
+            <ClientSideOnlyPlayer animatedGif={animatedGif} />
           </React.Suspense>
+        )}
+        {screenshot && (
+          <Img alt="Tip Screenshot" fixed={screenshot.childImageSharp.fixed} />
         )}
         {shortVideo && <ShortVideo video={
           {

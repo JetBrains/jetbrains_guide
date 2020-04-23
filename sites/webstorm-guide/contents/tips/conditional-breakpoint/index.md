@@ -13,9 +13,6 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/debugging-code.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 300
+screenshot: ./tip.png
 leadin: |
   Right-click on a breakpoint to configure its behavior: for instance, you can add a condition so that the execution will only be stopped when that condition is met.

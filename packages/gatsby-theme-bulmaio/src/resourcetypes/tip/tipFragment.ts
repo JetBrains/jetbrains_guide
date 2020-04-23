@@ -20,6 +20,13 @@ export const tipFragment = graphql`
             width
             height
         }
+        screenshot {
+          childImageSharp {
+            fixed(width: 600) {
+            ...GatsbyImageSharpFixed
+            }
+          }  
+        }
         shortVideo {
           ...VideoFragment
         }
