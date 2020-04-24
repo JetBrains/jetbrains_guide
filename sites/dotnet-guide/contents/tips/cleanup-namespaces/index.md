@@ -9,9 +9,7 @@ author: matkoch
 subtitle: Fix all unused namespaces right from where you are!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: './13-cleanup-namespaces.png'
-  width: 500
+screenshot: './13-cleanup-namespaces.png'
 leadin: |
     **You know that feeling, right?** 😣
 
