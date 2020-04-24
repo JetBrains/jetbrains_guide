@@ -25,6 +25,7 @@ type Frontmatter {
   thumbnail: File @fileByRelativePath
   cardThumbnail: File @fileByRelativePath
   animatedGif: AnimatedGif
+  screenshot: File @fileByRelativePath
   shortVideo: Video
   longVideo: Video
   leadin: String
