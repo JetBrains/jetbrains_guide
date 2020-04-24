@@ -15,9 +15,6 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2017/01/debugging-angular-apps/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.jpeg
-  width: 600
-  height: 300
+screenshot: ./tip.jpeg
 leadin: |
   With *Ctrl+Cmd+Up* on macOS or *Ctrl+Alt+Home* on Windows and Linux, you can quickly jump between the Angular component's template, test, style and TypeScript files.

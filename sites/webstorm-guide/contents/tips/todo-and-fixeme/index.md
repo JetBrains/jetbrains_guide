@@ -11,10 +11,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/using-todo.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.gif
-  width: 600
-  height: 300
+screenshot: ./tip.png
 leadin: |
   Want to remind yourself to do or fix something in your code? Add a *TODO* or 
   *Fixme* comment.

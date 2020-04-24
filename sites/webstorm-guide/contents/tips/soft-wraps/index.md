@@ -11,10 +11,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/settings-editor-general.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.jpeg
-  width: 600
-  height: 300
+screenshot: ./tip.jpeg
 leadin: |
   Want to enable soft wraps in all *.html* or all *.md* files? You can 
   now configure soft wraps for specific file types in *Preferences/Settings | Editor | General*.
