@@ -13,7 +13,7 @@ export interface BlogPostProps {
 
 const BlogPost: FunctionComponent<BlogPostProps> = ({
                                                       data: {
-                                                        blogPost: { author, body, title, topics }
+                                                        blogPost: { author2, body, title, topics2 }
                                                       }
                                                     }: BlogPostProps) => {
 
@@ -24,11 +24,11 @@ const BlogPost: FunctionComponent<BlogPostProps> = ({
       <MDXRenderer>{body}</MDXRenderer>
       <h2>Author</h2>
       <p>
-        <Link to={author.slug}>{author.title}</Link>
+        <Link to={author2.slug}>{author2.title}</Link>
       </p>
       <h2>Topics</h2>
       <ul>
-        {topics.map(topic => (
+        {topics2.map(topic => (
           <li key={topic.slug}>
             <Link to={topic.slug}>{topic.title}</Link>
           </li>

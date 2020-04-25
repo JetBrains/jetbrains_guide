@@ -1,5 +1,5 @@
 interface Resource @nodeInterface {
-    author: Author
+    author2: Author2
     body: String!
     id: ID!
     parent: Node

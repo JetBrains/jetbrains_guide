@@ -5,19 +5,19 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
 import { Resource } from '../../resources/models';
 
-export interface Author extends Resource {
+export interface Author2 extends Resource {
   resources: Resource[]
 }
 
 export interface AuthorProps {
   data: {
-    author: Author
+    author2: Author2
   }
 }
 
 const Author: FunctionComponent<AuthorProps> = ({
                                                   data: {
-                                                    author: { title, body, resources }
+                                                    author2: { title, body, resources }
                                                   }
                                                 }: AuthorProps) => {
   const sidebar = <div />;
@@ -49,7 +49,7 @@ export default Author;
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
-    author(slug: { eq: $slug }) {
+    author2(slug: { eq: $slug }) {
     slug
     title
     body

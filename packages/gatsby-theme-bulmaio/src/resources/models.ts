@@ -1,8 +1,8 @@
-import { AuthorReference } from '../references/author/models'
+import { Author2Reference } from '../references/author2/models'
 import { Topic2Reference } from '../references/topic2/models'
 
 export interface Resource {
-  author: AuthorReference
+  author2: Author2Reference
   body: string
   id: string
   parent: Resource

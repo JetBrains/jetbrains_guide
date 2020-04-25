@@ -6,15 +6,15 @@ import { PageContext } from '../../components/models';
 
 export interface AuthorIndexProps {
   data: {
-    allAuthor: {
+    allAuthor2: {
       nodes: { title: string; slug: string; body: string }[]
     }
   },
   pageContext: PageContext
 }
 
-const AllAuthor: FunctionComponent<AuthorIndexProps> = ({
-                                                          data: { allAuthor },
+const AllAuthor2: FunctionComponent<AuthorIndexProps> = ({
+                                                          data: { allAuthor2 },
                                                           pageContext: { numPages }
                                                         }: AuthorIndexProps) => {
   return (
@@ -23,7 +23,7 @@ const AllAuthor: FunctionComponent<AuthorIndexProps> = ({
         listing: (
           <>
             <ul>
-              {allAuthor.nodes.map(node => (
+              {allAuthor2.nodes.map(node => (
                 <li key={node.slug}>
                   <Link to={node.slug}>{node.title}</Link>
                 </li>
@@ -46,12 +46,12 @@ const AllAuthor: FunctionComponent<AuthorIndexProps> = ({
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllAuthor;
+export default AllAuthor2;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query {
-    allAuthor {
+    allAuthor2 {
       nodes {
         title
         slug
