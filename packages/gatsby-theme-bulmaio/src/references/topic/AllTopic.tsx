@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { graphql, Link } from 'gatsby'
-import Layout from '../../components/Layout'
+import Layout from '../../components2/Layout'
 import { TopicReference } from './models'
 
 export interface TopicIndexProps {

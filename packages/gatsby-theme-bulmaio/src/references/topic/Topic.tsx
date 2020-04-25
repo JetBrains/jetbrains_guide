@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
-import { graphql, Link } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import React, { FunctionComponent } from 'react';
+import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import Layout from '../../components/Layout'
-import { TopicReference } from './models'
+import Layout from '../../components2/Layout';
+import { TopicReference } from './models';
 
 export interface TopicProps {
   data: {
@@ -12,10 +12,10 @@ export interface TopicProps {
 }
 
 const Topic: FunctionComponent<TopicProps> = ({
-  data: {
-    topic: { title, body, resources }
-  }
-}: TopicProps) => {
+                                                data: {
+                                                  topic: { title, body, resources }
+                                                }
+                                              }: TopicProps) => {
   return (
     <Layout>
       <div style={{ margin: '3em' }}>
@@ -31,11 +31,11 @@ const Topic: FunctionComponent<TopicProps> = ({
         </ul>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 // noinspection JSUnusedGlobalSymbols
-export default Topic
+export default Topic;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
@@ -44,4 +44,4 @@ export const query = graphql`
       ...ReferenceInfo
     }
   }
-`
+`;
