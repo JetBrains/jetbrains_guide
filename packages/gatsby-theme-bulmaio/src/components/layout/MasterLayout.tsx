@@ -89,7 +89,7 @@ export const query = graphql`
       slug
       title
     }
-    topics {
+    topics2 {
       slug
       title
     }

@@ -1,5 +1,5 @@
 import { AuthorReference } from '../references/author/models'
-import { TopicReference } from '../references/topic/models'
+import { Topic2Reference } from '../references/topic2/models'
 
 export interface Resource {
   author: AuthorReference
@@ -8,5 +8,5 @@ export interface Resource {
   parent: Resource
   slug: string
   title: string
-  topics: TopicReference[]
+  topics2: Topic2Reference[]
 }

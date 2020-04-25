@@ -3,7 +3,7 @@ import path from 'path';
 
 export const referenceTypes = {
   Author: { plural: 'Authors', pathname: 'authors' },
-  Topic: { plural: 'Topics', pathname: 'topics' }
+  Topic2: { plural: 'Topics2', pathname: 'topics2' }
 };
 
 async function createListing(graphql: any, createPage: any, referenceType: string, metadata: any) {
@@ -71,7 +71,7 @@ export const referencesCreatePages = async (graphql: any, actions: any) => {
 
 export const referencesSchemaCustomizations = (createTypes: any) => {
   // Load the GQL files for reference types
-  const gqlFiles = ['author', 'topic'];
+  const gqlFiles = ['author', 'topic2'];
   gqlFiles.forEach((referencetype: string) => {
     const fullFn = path.join(__dirname, `./${referencetype}/types.graphql`);
     const referenceTypes = readFileSync(`${fullFn}`, {

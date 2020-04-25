@@ -5,6 +5,6 @@ type BlogPost implements Node & Resource {
     body: String! @parentBody
     parent: Node
     author: Author @link(by: "label")
-    topics: [Topic] @link(by: "label")
+    topics2: [Topic2] @link(by: "label")
     poster: String @defaultString(value: "XXXYYY")
 }

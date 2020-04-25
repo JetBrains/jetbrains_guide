@@ -3,17 +3,17 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
-import { TopicReference } from './models';
+import { Topic2Reference } from './models';
 
 export interface TopicProps {
   data: {
-    topic: TopicReference
+    topic2: Topic2Reference
   }
 }
 
-const Topic: FunctionComponent<TopicProps> = ({
+const Topic2: FunctionComponent<TopicProps> = ({
                                                 data: {
-                                                  topic: { title, body, resources }
+                                                  topic2: { title, body, resources }
                                                 }
                                               }: TopicProps) => {
   const sidebar = <div />;
@@ -39,12 +39,12 @@ const Topic: FunctionComponent<TopicProps> = ({
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Topic;
+export default Topic2;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
-    topic(slug: { eq: $slug }) {
+    topic2(slug: { eq: $slug }) {
       ...ReferenceInfo
     }
   }

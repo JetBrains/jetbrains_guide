@@ -1,27 +1,27 @@
 import React, { FunctionComponent } from 'react';
 import { graphql, Link } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { TopicReference } from './models';
+import { Topic2Reference } from './models';
 import { PageContext } from '../../components/models';
 
 export interface TopicIndexProps {
   data: {
-    allTopic: {
-      nodes: TopicReference[]
+    allTopic2: {
+      nodes: Topic2Reference[]
     }
   },
   pageContext: PageContext
 }
 
-const AllTopic: FunctionComponent<TopicIndexProps> = ({
-                                                        data: { allTopic },
+const AllTopic2: FunctionComponent<TopicIndexProps> = ({
+                                                        data: { allTopic2 },
                                                         pageContext: { numPages }
                                                       }: TopicIndexProps
 ) => {
   const listing = (
     <>
       <ul>
-        {allTopic.nodes.map(node => (
+        {allTopic2.nodes.map(node => (
           <li key={node.slug}>
             <Link to={node.slug}>{node.title}</Link>
           </li>
@@ -47,12 +47,12 @@ const AllTopic: FunctionComponent<TopicIndexProps> = ({
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllTopic;
+export default AllTopic2;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query {
-    allTopic {
+    allTopic2 {
       nodes {
         title
         slug

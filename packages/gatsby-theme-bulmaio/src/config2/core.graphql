@@ -5,7 +5,7 @@ interface Resource @nodeInterface {
     parent: Node
     slug: String!
     title: String!
-    topics: [Topic]
+    topics2: [Topic2]
 }
 
 interface Reference @nodeInterface {
