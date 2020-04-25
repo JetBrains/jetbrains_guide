@@ -2,7 +2,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 const remark = require('remark');
 const remarkHTML = require('remark-html');
 
-const createNode = async ({ node, getNode, actions }: any) => {
+const createNode = async (actions: any, getNode: any, node: any) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode });

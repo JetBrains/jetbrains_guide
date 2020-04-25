@@ -1,3 +1,4 @@
+// noinspection JSUnresolvedFunction
 require('source-map-support').install()
 require('ts-node').register({
   compilerOptions: {
@@ -6,8 +7,8 @@ require('ts-node').register({
   }
 })
 
-exports.onCreateNode = require('./src/config/createNode')
 exports.createPages = require('./src/config/createPages')
+exports.onCreateNode = require('./src/config/createNode')
 exports.sourceNodes = require('./src/config/sourceNodes')
 exports.createResolvers = require('./src/config/createResolvers')
 
@@ -15,8 +16,30 @@ exports.createResolvers = require('./src/config/createResolvers')
 const { setupSchemaCustomizations } = require('./src/config2/schemaCustomizations')
 exports.createSchemaCustomization = setupSchemaCustomizations
 
-const { setupCreatePages } = require('./src/config2/createPages')
-exports.createPages = setupCreatePages
+const onCreatePages = async ({ actions, graphql }, pluginOptions) => {
+  const oldCreatePages = require('./src/config/createPages')
+  const { setupCreatePages } = require('./src/config2/createPages')
 
-const { setupCreateNode } = require('./src/config2/createNode')
-exports.onCreateNode = setupCreateNode
+  oldCreatePages(actions, graphql, pluginOptions)
+  await setupCreatePages(actions, graphql)
+}
+
+exports.createPages = onCreatePages
+
+const onCreateNode = async ({
+  actions, getNode, node,
+  createNodeId, createContentDigest,
+}) => {
+  const oldCreateNode = require('./src/config/createNode')
+  const { setupCreateNode } = require('./src/config2/createNode')
+
+  await oldCreateNode(actions, getNode, node)
+  await setupCreateNode(actions,
+    getNode,
+    node,
+    createNodeId,
+    createContentDigest
+  )
+}
+
+exports.onCreateNode = onCreateNode

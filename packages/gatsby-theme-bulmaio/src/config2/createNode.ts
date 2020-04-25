@@ -31,13 +31,13 @@ const getResourceType = (node: any, parent: any) => {
   if (plural) return pluralMapping[plural];
 };
 
-exports.setupCreateNode = async function onCreateNode({
-                                                        actions,
-                                                        node,
-                                                        getNode,
-                                                        createNodeId,
-                                                        createContentDigest
-                                                      }: any) {
+exports.setupCreateNode = async function onCreateNode(
+  actions: any,
+  getNode: any,
+  node: any,
+  createNodeId: any,
+  createContentDigest: any
+) {
   const { createNode, createParentChildLink } = actions;
 
   const parent = getNode(node.parent);
