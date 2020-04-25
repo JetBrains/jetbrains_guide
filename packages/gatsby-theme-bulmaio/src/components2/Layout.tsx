@@ -1,14 +1,10 @@
 import React, { FunctionComponent } from 'react';
 import { graphql } from 'gatsby';
 
-import Header from './Header/Header';
-
-const Layout: FunctionComponent = ({ children }) => {
+const Layout: FunctionComponent = () => {
 
   return (
     <>
-      <Header />
-      <div>{children}</div>
     </>
   );
 };
