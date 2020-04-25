@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql, Link } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { TopicReference } from './models';
-import { PageContext } from '../../components2/models';
+import { PageContext } from '../../components/models';
 
 export interface TopicIndexProps {
   data: {

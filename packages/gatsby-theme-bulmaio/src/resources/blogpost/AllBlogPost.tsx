@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { BlogPostResource } from './models';
-import { PageContext } from '../../components2/models';
+import { PageContext } from '../../components/models';
 
 export interface AllBlogPostProps {
   data: {
