@@ -25,7 +25,7 @@ async function createListing(graphql: any, createPage: any, referenceType: strin
     createPage({
       path: i === 0 ? `/${metadata.pathname}/` : `/${metadata.pathname}/${i + 1}`,
       component: path.resolve(
-        `./src/references/${referenceType.toLowerCase()}/All${referenceType}.tsx`
+        path.join(__dirname, `${referenceType.toLowerCase()}/All${referenceType}.tsx`)
       ),
       context: {
         limit: entriesPerPage,
@@ -57,7 +57,7 @@ export const referencesCreatePages = async (graphql: any, actions: any) => {
   `);
 
   allReferences.data.allReference.nodes.forEach((node: any) => {
-    const componentFile = `./src/references/${node.__typename.toLowerCase()}/${node.__typename}.tsx`;
+    const componentFile = path.join(__dirname, `${node.__typename.toLowerCase()}/${node.__typename}.tsx`);
 
     createPage({
       path: node.slug,

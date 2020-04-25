@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { graphql, Link } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import Layout from '../../components/Layout'
+import Layout from '../../components2/Layout'
 import { Resource } from '../../resources/models'
 
 export interface Author extends Resource {
