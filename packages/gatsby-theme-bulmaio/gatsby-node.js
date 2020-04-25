@@ -20,8 +20,8 @@ const onCreatePages = async ({ actions, graphql }, pluginOptions) => {
   const oldCreatePages = require('./src/config/createPages')
   const { setupCreatePages } = require('./src/config2/createPages')
 
-  oldCreatePages(actions, graphql, pluginOptions)
-  await setupCreatePages(actions, graphql)
+  // oldCreatePages(actions, graphql, pluginOptions)
+  // await setupCreatePages(actions, graphql)
 }
 
 exports.createPages = onCreatePages
@@ -29,6 +29,7 @@ exports.createPages = onCreatePages
 const onCreateNode = async ({
   actions, getNode, node,
   createNodeId, createContentDigest,
+  reporter,
 }) => {
   const oldCreateNode = require('./src/config/createNode')
   const { setupCreateNode } = require('./src/config2/createNode')
@@ -38,7 +39,8 @@ const onCreateNode = async ({
     getNode,
     node,
     createNodeId,
-    createContentDigest
+    createContentDigest,
+    reporter
   )
 }
 

@@ -8,6 +8,8 @@
     "build": "tsc -w"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.5.9",
+    "@mdx-js/react": "^1.5.9",
     "babel-jest": "^24.8.0",
     "babel-preset-gatsby": "^0.1.11",
     "bulma": "^0.7.4",
@@ -15,6 +17,7 @@
     "gatsby": "2.15.14",
     "gatsby-image": "^2.2.36",
     "gatsby-plugin-google-tagmanager": "^2.1.27",
+    "gatsby-plugin-mdx": "^1.1.11",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "2.2.1",

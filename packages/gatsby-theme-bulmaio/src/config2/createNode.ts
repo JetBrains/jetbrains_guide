@@ -36,12 +36,14 @@ exports.setupCreateNode = async function onCreateNode(
   getNode: any,
   node: any,
   createNodeId: any,
-  createContentDigest: any
+  createContentDigest: any,
+  reporter: any,
 ) {
   const { createNode, createParentChildLink } = actions;
 
   const parent = getNode(node.parent);
   if (node.internal.type === `Mdx` && parent && parent.name === 'index') {
+    reporter.info('\n\n #####  We are in ################\n\n')
     const resourceType = getResourceType(node, parent);
 
     // Bail out if we don't figure out a content type
