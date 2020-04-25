@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
-import { graphql, Link } from 'gatsby'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
+import React, { FunctionComponent } from 'react';
+import { graphql, Link } from 'gatsby';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import Layout from '../../components2/Layout'
-import { Resource } from '../../resources/models'
+import Layout from '../../components2/Layout';
+import { Resource } from '../../resources/models';
 
 export interface Author extends Resource {
   resources: Resource[]
@@ -16,10 +16,10 @@ export interface AuthorProps {
 }
 
 const Author: FunctionComponent<AuthorProps> = ({
-  data: {
-    author: { title, body, resources }
-  }
-}: AuthorProps) => {
+                                                  data: {
+                                                    author: { title, body, resources }
+                                                  }
+                                                }: AuthorProps) => {
   return (
     <Layout>
       <div style={{ margin: '3em' }}>
@@ -39,16 +39,22 @@ const Author: FunctionComponent<AuthorProps> = ({
         )}
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Author
+export default Author;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
     author(slug: { eq: $slug }) {
-      ...ReferenceInfo
+    slug
+    title
+    body
+    resources {
+      slug
+      title
+    }
     }
   }
-`
+`;
