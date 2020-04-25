@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import 'rbx/index.css'
 import Header from './Header/Header'
 import { GlobalProps } from './Header/Global'
 
