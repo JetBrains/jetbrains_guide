@@ -93,6 +93,10 @@ export const query = graphql`
       slug
       title
     }
+    technologies2 {
+      slug
+      title
+    }
   }
   fragment ReferenceInfo on Reference {
     slug

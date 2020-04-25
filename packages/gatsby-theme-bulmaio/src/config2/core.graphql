@@ -6,6 +6,7 @@ interface Resource @nodeInterface {
     slug: String!
     title: String!
     topics2: [Topic2]
+    technologies2: [Technology2]
 }
 
 interface Reference @nodeInterface {

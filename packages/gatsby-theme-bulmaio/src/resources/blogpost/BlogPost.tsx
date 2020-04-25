@@ -13,19 +13,27 @@ export interface BlogPostProps {
 
 const BlogPost: FunctionComponent<BlogPostProps> = ({
                                                       data: {
-                                                        blogPost: { author2, body, title, topics2 }
+                                                        blogPost: { author2, body, title, technologies2, topics2 }
                                                       }
                                                     }: BlogPostProps) => {
 
   const sidebar = <div/>;
   const main = (
-    <div style={{ margin: '3em' }}>
+    <div style={{ margin: '3em' }} className={'content'}>
       <h1>{title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
       <h2>Author</h2>
       <p>
         <Link to={author2.slug}>{author2.title}</Link>
       </p>
+      <h2>Technologies</h2>
+      <ul>
+        {technologies2.map(technology => (
+          <li key={technology.slug}>
+            <Link to={technology.slug}>{technology.title}</Link>
+          </li>
+        ))}
+      </ul>
       <h2>Topics</h2>
       <ul>
         {topics2.map(topic => (
