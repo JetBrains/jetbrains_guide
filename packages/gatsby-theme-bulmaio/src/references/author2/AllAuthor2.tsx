@@ -62,7 +62,6 @@ const AllAuthor2: FC = () => {
         )
       }}
     </ReferenceLayout>
-
   );
 };
 
