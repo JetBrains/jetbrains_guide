@@ -1,63 +1,70 @@
-import React, { FunctionComponent } from 'react';
-import { graphql, Link } from 'gatsby';
+import React, { FC } from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { PageContext } from '../../components/models';
+import { Thumbnail } from '../../models';
+import SubsectionAuthor from '../../components/subsections/SubsectionAuthor';
 
-export interface AuthorIndexProps {
-  data: {
-    allAuthor2: {
-      nodes: { title: string; slug: string; body: string }[]
-    }
-  },
-  pageContext: PageContext
+interface AuthorsProps {
+  allAuthor2: {
+    nodes: {
+      label: string;
+      title: string;
+      subtitle?: string;
+      thumbnail: Thumbnail;
+    }[]
+  }
 }
 
-const AllAuthor2: FunctionComponent<AuthorIndexProps> = (
-  {
-    data: { allAuthor2 },
-    pageContext: { numPages }
-  }: AuthorIndexProps) => {
+const AllAuthor2: FC = () => {
+
+  const
+    { allAuthor2: { nodes } }: AuthorsProps = useStaticQuery(
+      graphql`
+  query {
+    allAuthor2(sort: {fields: [title]}, limit: 1000) {
+      nodes {
+        label
+        title
+        subtitle
+        slug
+        thumbnail {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
+    );
   return (
-    <ReferenceLayout pageTitle="Authors" subtitle="Resources organized by author.">
+    <ReferenceLayout pageTitle={'Authors'} subtitle={'Resources organized by author.'}>
       {{
         listing: (
-          <>
-            <ul>
-              {allAuthor2.nodes.map(node => (
-                <li key={node.slug}>
-                  <Link to={node.slug}>{node.title}</Link>
-                </li>
-              ))}
-            </ul>
-            {Array.from({ length: numPages }, (_, i) => (
-              <Link
-                key={`pagination-number${i + 1}`}
-                to={`/authors/${i === 0 ? '' : i + 1}`}
-                style={{ paddingRight: '1em' }}
-              >
-                {i + 1}
-              </Link>
-            ))}
-          </>
+          <nav className="bd-links bio-resourcecards">
+            {nodes &&
+            nodes.map(node => {
+              return (
+                <SubsectionAuthor
+                  key={node.label}
+                  title={node.title}
+                  subtitle={node.subtitle}
+                  href={`/authors/${node.label}/`}
+                  thumbnail={node.thumbnail}
+                />
+              );
+            })}
+          </nav>
         )
       }}
     </ReferenceLayout>
+
   );
 };
 
 // noinspection JSUnusedGlobalSymbols
 export default AllAuthor2;
-
-// noinspection JSUnusedGlobalSymbols
-export const query = graphql`
-  query {
-    allAuthor2 {
-      nodes {
-        title
-        slug
-        body
-      }
-    }
-  }
-`;
