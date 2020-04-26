@@ -2,6 +2,8 @@ type BlogPost implements Node & Resource {
     id: ID!
     slug: String!
     title: String!
+    subtitle: String
+    thumbnail: File @fileByRelativePath
     body: String! @parentBody
     parent: Node
     author2: Author2 @link(by: "label")

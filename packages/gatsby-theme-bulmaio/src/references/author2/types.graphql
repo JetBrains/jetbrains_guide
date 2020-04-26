@@ -3,6 +3,8 @@ type Author2 implements Node & Reference {
     label: String!
     slug: String!
     title: String!
+    subtitle: String
+    thumbnail: File @fileByRelativePath
     body: String! @parentBody
     parent: Node
     resources: [Resource] @link(by: "author2.label", from: "label")

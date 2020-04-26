@@ -1,46 +1,58 @@
-import React, { FunctionComponent } from 'react';
-import { graphql, Link } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
-import { Resource } from '../../resources/models';
-
-export interface Author2 extends Resource {
-  resources: Resource[]
-}
+import React, { FC } from 'react';
+import { graphql } from 'gatsby';
+import { ListedResources } from '../../resources/models';
+import Img from 'gatsby-image';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
+import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
 
 export interface AuthorProps {
   data: {
-    author2: Author2
+    author2: {
+      label: string;
+      title: string;
+      subtitle?: string;
+      body?: string;
+      thumbnail: {
+        publicURL: string;
+        childImageSharp: {
+          fluid: any;
+        }
+      }
+      resources: ListedResources;
+    }
   }
 }
 
-const Author: FunctionComponent<AuthorProps> = ({
-                                                  data: {
-                                                    author2: { title, body, resources }
-                                                  }
-                                                }: AuthorProps) => {
-  const sidebar = <div />;
-  const main = <div style={{ margin: '3em' }}>
-    <h1>{title}</h1>
-    <MDXRenderer>{body}</MDXRenderer>
-    {resources && (
-      <div>
-        <h2>Resources</h2>
-        <ul>
-          {resources.map(resource => (
-            <li key={resource.slug}>
-              <Link to={resource.slug}>{resource.title}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    )}
-  </div>;
-  return (
-    <SidebarLayout pageTitle={title}>
-      {{ sidebar, main }}
-    </SidebarLayout>
+const Author: FC<AuthorProps> = (
+  {
+    data: {
+      author2: { title, subtitle, body, thumbnail, resources }
+    }
+  }: AuthorProps) => {
+  return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+      {{
+        figure: (
+          <div className="image is-rounded is-96x96">
+            <Img className="bio-resourcecard-logo" fluid={thumbnail.childImageSharp.fluid} />
+          </div>
+        ),
+        listing: (
+          <div>
+            {resources.map(resource => (
+              <ResourceCard
+                key={resource.slug}
+                thumbnail={resource.thumbnail}
+                media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+                technologies={{ items: resource.technologies2 }}
+                topics={{ items: resource.topics2 }}
+                date={{ date: resource.date }}
+              />
+            ))
+            }
+          </div>
+        )
+      }}
+    </ReferenceLayout2>
   );
 };
 
@@ -50,13 +62,50 @@ export default Author;
 export const query = graphql`
   query($slug: String!) {
     author2(slug: { eq: $slug }) {
-    slug
-    title
-    body
-    resources {
-      slug
+      label      
       title
-    }
+      subtitle
+      body
+      thumbnail {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }      
+      }
+      resources {
+        slug
+        title
+        subtitle
+        date(formatString: "MMMM Do, YYYY")
+        thumbnail {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }      
+        }
+        author2 {
+          slug
+          title
+          thumbnail {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 1000) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+        technologies2 {
+          label
+          slug
+        }
+        topics2 {
+          label
+          slug
+        }      
+      }
     }
   }
 `;

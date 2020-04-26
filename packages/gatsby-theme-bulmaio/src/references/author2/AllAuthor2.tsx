@@ -13,12 +13,13 @@ export interface AuthorIndexProps {
   pageContext: PageContext
 }
 
-const AllAuthor2: FunctionComponent<AuthorIndexProps> = ({
-                                                          data: { allAuthor2 },
-                                                          pageContext: { numPages }
-                                                        }: AuthorIndexProps) => {
+const AllAuthor2: FunctionComponent<AuthorIndexProps> = (
+  {
+    data: { allAuthor2 },
+    pageContext: { numPages }
+  }: AuthorIndexProps) => {
   return (
-    <ReferenceLayout pageTitle="Authors" subtitle="Contributors to the Guide">
+    <ReferenceLayout pageTitle="Authors" subtitle="Resources organized by author.">
       {{
         listing: (
           <>

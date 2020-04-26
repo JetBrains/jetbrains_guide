@@ -3,6 +3,7 @@ type Technology2 implements Node & Reference {
     label: String!
     slug: String!
     title: String!
+    subtitle: String
     body: String! @parentBody
     parent: Node
     resources: [Resource] @link(by: "technologies2.label", from: "label")

@@ -1,10 +1,13 @@
 interface Resource @nodeInterface {
     author2: Author2
     body: String!
+    date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!
     parent: Node
     slug: String!
     title: String!
+    subtitle: String
+    thumbnail: File @fileByRelativePath
     topics2: [Topic2]
     technologies2: [Technology2]
 }
@@ -14,6 +17,7 @@ interface Reference @nodeInterface {
     label: String!
     slug: String!
     title: String!
+    subtitle: String
     body: String!
     parent: Node
     resources: [Resource]
