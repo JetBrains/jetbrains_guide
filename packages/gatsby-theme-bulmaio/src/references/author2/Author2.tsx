@@ -56,9 +56,9 @@ const Author: FC<AuthorProps> = (
   );
 };
 
+// noinspection JSUnusedGlobalSymbols
 export default Author;
 
-// noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
     author2(slug: { eq: $slug }) {
@@ -74,37 +74,7 @@ export const query = graphql`
         }      
       }
       resources {
-        slug
-        title
-        subtitle
-        date(formatString: "MMMM Do, YYYY")
-        thumbnail {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }      
-        }
-        author2 {
-          slug
-          title
-          thumbnail {
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        technologies2 {
-          label
-          slug
-        }
-        topics2 {
-          label
-          slug
-        }      
+        ...ListedResourceFragment2
       }
     }
   }
