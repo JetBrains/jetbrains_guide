@@ -1,51 +1,75 @@
-import React, { FunctionComponent } from 'react';
-import { graphql, Link } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
-import { Technology2Reference } from './models';
+import React, { FC } from 'react';
+import { graphql } from 'gatsby';
+import { ListedResources } from '../../resources/models';
+import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
 
 export interface TechnologyProps {
   data: {
-    technology2: Technology2Reference
+    technology2: {
+      label: string;
+      title: string;
+      subtitle?: string;
+      body?: string;
+      logo: {
+        publicURL: string;
+      }
+      resources: ListedResources;
+    }
   }
 }
 
-const Technology2: FunctionComponent<TechnologyProps> = ({
-                                                           data: {
-                                                             technology2: { title, body, resources }
-                                                           }
-                                                         }: TechnologyProps) => {
-  const sidebar = <div />;
-  const main = (
-    <div style={{ margin: '3em' }}>
-      <h1>{title}</h1>
-      <MDXRenderer>{body}</MDXRenderer>
-      <h2>Resources</h2>
-      <ul>
-        {resources.map(resource => (
-          <li key={resource.slug}>
-            <Link to={resource.slug}>{resource.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-  return (
-    <SidebarLayout pageTitle={title}>
-      {{ sidebar, main }}
-    </SidebarLayout>
+const Technology2: FC<TechnologyProps> = (
+  {
+    data: {
+      technology2: { title, subtitle, body, logo, resources }
+    }
+  }: TechnologyProps) => {
+  console.log(444, logo.publicURL)
+  return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+      {{
+        figure: (
+          <div className="image is-rounded is-96x96">
+            <img className="bio-resourcecard-logo" src={logo.publicURL} alt="Logo"/>
+          </div>
+        ),
+        listing: (
+          <div>
+            {resources.map(resource => (
+              <ResourceCard
+                key={resource.slug}
+                thumbnail={resource.thumbnail}
+                media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+                technologies={{ items: resource.technologies2 }}
+                topics={{ items: resource.topics2 }}
+                date={{ date: resource.date }}
+                author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+              />
+            ))
+            }
+          </div>
+        )
+      }}
+    </ReferenceLayout2>
   );
 };
 
 // noinspection JSUnusedGlobalSymbols
 export default Technology2;
 
-// noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
     technology2(slug: { eq: $slug }) {
-      ...ReferenceInfo
+      label      
+      title
+      subtitle
+      body
+      logo {
+        publicURL     
+      }
+      resources {
+        ...ListedResourceFragment2
+      }
     }
   }
 `;
