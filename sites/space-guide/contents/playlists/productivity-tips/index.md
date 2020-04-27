@@ -16,6 +16,7 @@ playlistItems:
     - /tips/go-to-anything-hierarchy/
     - /tips/team-location-chats/
     - /tips/project-favorites-sidebar/
+    - /tips/private-projects/
     - /tips/issues-tag-hierarchies/
     - /tips/issues-custom-status/
     - /tips/manage-checklists-efficiently/
