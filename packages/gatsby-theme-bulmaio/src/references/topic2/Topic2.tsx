@@ -53,8 +53,6 @@ export const query = graphql`
   query($slug: String!) {
     topic2(slug: { eq: $slug }) {
       ...ListedTopic2Fragment
-      accent
-      icon
       resources {
         ...ListedResourceFragment2
       }

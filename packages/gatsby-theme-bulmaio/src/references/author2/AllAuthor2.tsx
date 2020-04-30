@@ -34,7 +34,6 @@ const AllAuthor2: FC<AllAuthor2Props> = (
             technologies={{ items: resource.technologies2 }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
-            author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
           />
         )
       )}
