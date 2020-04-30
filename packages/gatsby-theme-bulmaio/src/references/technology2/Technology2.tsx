@@ -25,12 +25,11 @@ const Technology2: FC<TechnologyProps> = (
       technology2: { title, subtitle, body, logo, resources }
     }
   }: TechnologyProps) => {
-  console.log(444, logo.publicURL)
   return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
           <div className="image is-rounded is-96x96">
-            <img className="bio-resourcecard-logo" src={logo.publicURL} alt="Logo"/>
+            <img className="bio-resourcecard-logo" src={logo.publicURL} alt="Logo" />
           </div>
         ),
         listing: (
@@ -60,13 +59,7 @@ export default Technology2;
 export const query = graphql`
   query($slug: String!) {
     technology2(slug: { eq: $slug }) {
-      label      
-      title
-      subtitle
-      body
-      logo {
-        publicURL     
-      }
+      ...ListedTechnology2Fragment
       resources {
         ...ListedResourceFragment2
       }
