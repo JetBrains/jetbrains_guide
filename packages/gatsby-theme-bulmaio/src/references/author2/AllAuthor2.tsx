@@ -1,64 +1,57 @@
 import React, { FC } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { Thumbnail } from '../../models';
-import SubsectionAuthor from '../../components/subsections/SubsectionAuthor';
+import { ListedResources } from '../../resources/models';
+import { PageContext } from '../../components/models';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
+import Pagination from '../../components2/Pagination';
 
-interface AuthorsProps {
-  allAuthor2: {
-    nodes: {
-      label: string;
-      title: string;
-      subtitle?: string;
-      thumbnail: Thumbnail;
-    }[]
-  }
-}
-
-const AllAuthor2: FC = () => {
-
-  const
-    { allAuthor2: { nodes } }: AuthorsProps = useStaticQuery(
-      graphql`
-  query {
-    allAuthor2(sort: {fields: [title]}, limit: 1000) {
-      nodes {
-        label
-        title
-        subtitle
-        slug
-        thumbnail {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
+interface AllAuthor2Props {
+  data: {
+    allAuthor2: {
+      nodes: ListedResources
     }
   }
-`
-    );
+  pageContext: PageContext
+}
+
+const PAGE_TITLE = 'Authors';
+const SUBTITLE = 'Resources organized by author.';
+
+const AllAuthor2: FC<AllAuthor2Props> = (
+  {
+    data: { allAuthor2: { nodes } },
+    pageContext: { numPages }
+  }) => {
+  const listing = (
+    <div>
+      {nodes && nodes.map(resource => (
+          <ResourceCard
+            key={resource.slug}
+            thumbnail={resource.thumbnail}
+            media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+            technologies={{ items: resource.technologies2 }}
+            topics={{ items: resource.topics2 }}
+            date={{ date: resource.date }}
+            author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+          />
+        )
+      )}
+    </div>
+  );
+
   return (
-    <ReferenceLayout pageTitle={'Authors'} subtitle={'Resources organized by author.'}>
+    <ReferenceLayout
+      pageTitle={PAGE_TITLE}
+      subtitle={SUBTITLE}
+    >
       {{
         listing: (
-          <nav className="bd-links bio-resourcecards">
-            {nodes &&
-            nodes.map(node => {
-              return (
-                <SubsectionAuthor
-                  key={node.label}
-                  title={node.title}
-                  subtitle={node.subtitle}
-                  href={`/authors/${node.label}/`}
-                  thumbnail={node.thumbnail}
-                />
-              );
-            })}
-          </nav>
+          <>
+            {listing}
+            <Pagination numPages={numPages} prefix={'author2s'} />
+          </>
         )
       }}
     </ReferenceLayout>
@@ -67,3 +60,13 @@ const AllAuthor2: FC = () => {
 
 // noinspection JSUnusedGlobalSymbols
 export default AllAuthor2;
+
+export const query = graphql`
+  query($skip: Int!, $limit: Int!) {
+    allAuthor2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+      nodes {
+        ...ListedAuthor2Fragment
+      }
+    }
+  }
+`;

@@ -34,7 +34,7 @@ const Technology2: FC<TechnologyProps> = (
                 technologies={{ items: resource.technologies2 }}
                 topics={{ items: resource.topics2 }}
                 date={{ date: resource.date }}
-                author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+                author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
               />
             ))
             }

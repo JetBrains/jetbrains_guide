@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
@@ -16,7 +16,10 @@ interface AllTip2Props {
   pageContext: PageContext
 }
 
-const AllTip2: FunctionComponent<AllTip2Props> = (
+const PAGE_TITLE = 'Tips';
+const SUBTITLE = 'Visual, standalone, bite-sized learning resources organized into different categories.';
+
+const AllTip2: FC<AllTip2Props> = (
   {
     data: { allTip2: { nodes } },
     pageContext: { numPages }
@@ -38,8 +41,10 @@ const AllTip2: FunctionComponent<AllTip2Props> = (
     </div>
   );
   return (
-    <ReferenceLayout pageTitle="Tips"
-                     subtitle="Visual, standalone, bite-sized learning resources organized into different categories.">
+    <ReferenceLayout
+      pageTitle={PAGE_TITLE}
+      subtitle={SUBTITLE}
+    >
       {{
         listing: (
           <>
