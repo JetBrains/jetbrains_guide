@@ -56,7 +56,6 @@ const Tip2: FunctionComponent<Tip2Props> = (
 // noinspection JSUnusedGlobalSymbols
 export default Tip2;
 
-// noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
     tip2(slug: { eq: $slug }) {

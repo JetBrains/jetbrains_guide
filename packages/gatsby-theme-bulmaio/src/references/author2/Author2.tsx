@@ -1,25 +1,13 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { ListedResources } from '../../resources/models';
 import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
+import { Author2Reference } from './models';
 
 export interface AuthorProps {
   data: {
-    author2: {
-      label: string;
-      title: string;
-      subtitle?: string;
-      body?: string;
-      thumbnail: {
-        publicURL: string;
-        childImageSharp: {
-          fluid: any;
-        }
-      }
-      resources: ListedResources;
-    }
+    author2: Author2Reference
   }
 }
 
@@ -28,7 +16,8 @@ const Author: FC<AuthorProps> = (
     data: {
       author2: { title, subtitle, body, thumbnail, resources }
     }
-  }: AuthorProps) => {
+  }) => {
+
   return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
@@ -62,17 +51,7 @@ export default Author;
 export const query = graphql`
   query($slug: String!) {
     author2(slug: { eq: $slug }) {
-      label      
-      title
-      subtitle
-      body
-      thumbnail {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }      
-      }
+      ...ListedAuthor2Fragment
       resources {
         ...ListedResourceFragment2
       }
