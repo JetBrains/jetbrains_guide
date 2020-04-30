@@ -2,13 +2,14 @@ import React, { FunctionComponent } from 'react';
 import { graphql, Link } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { Tip2Resource } from './models';
 import { PageContext } from '../../components/models';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
+import { ListedResources } from '../models';
 
-export interface AllTip2Props {
+interface AllTip2Props {
   data: {
     allTip2: {
-      nodes: Tip2Resource[]
+      nodes: ListedResources
     }
   }
   pageContext: PageContext
@@ -16,30 +17,46 @@ export interface AllTip2Props {
 
 const AllTip2: FunctionComponent<AllTip2Props> = (
   {
-    data: { allTip2 },
+    data: { allTip2: { nodes } },
     pageContext: { numPages }
   }) => {
+  const listing = (
+    <div>
+      {nodes && nodes.map(resource => (
+          <ResourceCard
+            key={resource.slug}
+            thumbnail={resource.thumbnail}
+            media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+            technologies={{ items: resource.technologies2 }}
+            topics={{ items: resource.topics2 }}
+            date={{ date: resource.date }}
+            author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+          />
+        )
+      )}
+    </div>
+  );
+  const pagination = (
+    <div>
+      {Array.from({ length: numPages }, (_, i) => (
+        <Link
+          key={`pagination-number${i + 1}`}
+          to={`/tip2s/${i === 0 ? '' : i + 1}`}
+          style={{ paddingRight: '1em' }}
+        >
+          {i + 1}
+        </Link>
+      ))}
+    </div>
+  );
   return (
-    <ReferenceLayout pageTitle="Tips" subtitle="Visual, standalone, bite-sized learning resources organized into different categories.">
+    <ReferenceLayout pageTitle="Tips"
+                     subtitle="Visual, standalone, bite-sized learning resources organized into different categories.">
       {{
         listing: (
           <>
-            <ul>
-              {allTip2.nodes.map(node => (
-                <li key={node.slug}>
-                  <Link to={node.slug}>{node.title}</Link>
-                </li>
-              ))}
-            </ul>
-            {Array.from({ length: numPages }, (_, i) => (
-              <Link
-                key={`pagination-number${i + 1}`}
-                to={`/tip2s/${i === 0 ? '' : i + 1}`}
-                style={{ paddingRight: '1em' }}
-              >
-                {i + 1}
-              </Link>
-            ))}
+            {listing}
+            {pagination}
           </>
         )
       }}
@@ -55,9 +72,19 @@ export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allTip2(limit: $limit, skip: $skip) {
       nodes {
-        title
+        label
         slug
-        body
+        title
+        subtitle
+        slug
+        thumbnail {
+          publicURL
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
