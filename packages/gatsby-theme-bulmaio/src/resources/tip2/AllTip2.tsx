@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import { ListedResources } from '../models';
+import Pagination from '../../components2/Pagination';
 
 interface AllTip2Props {
   data: {
@@ -36,19 +37,6 @@ const AllTip2: FunctionComponent<AllTip2Props> = (
       )}
     </div>
   );
-  const pagination = (
-    <div>
-      {Array.from({ length: numPages }, (_, i) => (
-        <Link
-          key={`pagination-number${i + 1}`}
-          to={`/tip2s/${i === 0 ? '' : i + 1}`}
-          style={{ paddingRight: '1em' }}
-        >
-          {i + 1}
-        </Link>
-      ))}
-    </div>
-  );
   return (
     <ReferenceLayout pageTitle="Tips"
                      subtitle="Visual, standalone, bite-sized learning resources organized into different categories.">
@@ -56,7 +44,7 @@ const AllTip2: FunctionComponent<AllTip2Props> = (
         listing: (
           <>
             {listing}
-            {pagination}
+            <Pagination numPages={numPages} prefix={'tip2s'} />
           </>
         )
       }}

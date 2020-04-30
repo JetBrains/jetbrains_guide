@@ -1,81 +1,56 @@
 import React, { FC } from 'react';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { PageContext } from '../../components/models';
 import SubsectionTechnology from '../../components/subsections/SubsectionTechnology';
+import Pagination from '../../components2/Pagination';
+import { Technology2Reference } from './models';
 
 interface TechnologiesProps {
-  pageContext: PageContext
-}
-
-interface TechnologiesNodes {
-  allTechnology2: {
-    nodes: {
-      label: string;
-      slug: string;
-      title: string;
-      subtitle?: string;
-      logo: { publicURL: string };
-    }[]
+  data: {
+    allTechnology2: {
+      nodes: Technology2Reference[]
+    }
   }
   pageContext: PageContext
 }
 
 const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
+const PAGE_TITLE = 'Technologies';
+const SUBTITLE = 'Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.';
 
-const AllTechnology2: FC<TechnologiesProps> = ({ pageContext }) => {
-  const
-    { allTechnology2: { nodes } }: TechnologiesNodes = useStaticQuery(
-      graphql`
-  query {
-    allTechnology2(sort: {fields: [title]}, limit: 1000) {
-      nodes {
-        label
-        slug
-        title
-        subtitle
-        slug
-        logo {
-          publicURL
-        }
-      }
-    }
-  }
-`
-    );
+const AllTechnology2: FC<TechnologiesProps> = (
+  {
+    data: { allTechnology2: { nodes } },
+    pageContext: { numPages }
+  }) => {
+  const listing = nodes && (
+    <nav className="bd-links bio-resourcecards">
+      {nodes &&
+      nodes.map(node => {
+        const logo = node.logo ? node.logo.publicURL : DEFAULT_LOGO;
+        return (
+          <SubsectionTechnology
+            key={node.label}
+            title={node.title}
+            subtitle={node.subtitle}
+            href={node.slug}
+            logo={logo}
+          />
+        );
+      })}
+    </nav>
+  );
   return (
-    <ReferenceLayout pageTitle={'Technologies'}
-                     subtitle={'Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.'}>
+    <ReferenceLayout
+      pageTitle={PAGE_TITLE}
+      subtitle={SUBTITLE}
+    >
       {{
         listing: (
           <>
-            <nav className="bd-links bio-resourcecards">
-              {nodes &&
-              nodes.map(node => {
-                let logo = DEFAULT_LOGO;
-                if (node.logo) {
-                  logo = node.logo.publicURL;
-                }
-                return (
-                  <SubsectionTechnology
-                    key={node.label}
-                    title={node.title}
-                    subtitle={node.subtitle}
-                    href={node.slug}
-                    logo={logo}
-                  />
-                );
-              })}
-            </nav>
-            {Array.from({ length: pageContext.numPages }, (_, i) => (
-              <Link
-                key={`pagination-number${i + 1}`}
-                to={`/technologies2/${i === 0 ? '' : i + 1}`}
-                style={{ paddingRight: '1em' }}
-              >
-                {i + 1}
-              </Link>
-            ))}
+            {listing}
+            <Pagination numPages={numPages} prefix={'technologies2'} />
           </>
         )
       }}
@@ -88,12 +63,10 @@ export default AllTechnology2;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
-  query {
-    allTechnology2 {
+  query($skip: Int!, $limit: Int!) {
+    allTechnology2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        title
-        slug
-        body
+        ...ListedTechnology2Fragment
       }
     }
   }
