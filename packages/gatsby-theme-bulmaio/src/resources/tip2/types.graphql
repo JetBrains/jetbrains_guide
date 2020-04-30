@@ -1,0 +1,13 @@
+type Tip2 implements Node & Resource {
+    id: ID!
+    slug: String!
+    title: String!
+    subtitle: String
+    thumbnail: File @fileByRelativePath
+    body: String! @parentBody
+    parent: Node
+    author2: Author2 @link(by: "label")
+    technologies2: [Technology2] @link(by: "label")
+    topics2: [Topic2] @link(by: "label")
+    poster: String @defaultString(value: "XXXYYY")
+}
