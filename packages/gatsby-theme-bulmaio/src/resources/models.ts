@@ -29,7 +29,7 @@ export interface ListedResource {
   title: string;
   subtitle?: string;
   date: string;
-  author?: ResourceCardAuthorProps;
+  author2: ResourceCardAuthorProps;
   technologies2: ResourceCardTechnologies;
   topics2: ResourceCardTopics;
   thumbnail: Thumbnail

@@ -4,13 +4,13 @@ import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import { ListedResources } from '../models';
 import Pagination from '../../components2/Pagination';
+import { Tip2Resource } from './models';
 
 interface AllTip2Props {
   data: {
     allTip2: {
-      nodes: ListedResources
+      nodes: Tip2Resource[]
     }
   }
   pageContext: PageContext
@@ -34,7 +34,7 @@ const AllTip2: FC<AllTip2Props> = (
             technologies={{ items: resource.technologies2 }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
-            author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+            author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
           />
         )
       )}
@@ -63,21 +63,9 @@ export default AllTip2;
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTip2(limit: $limit, skip: $skip) {
+    allTip2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        label
-        slug
-        title
-        subtitle
-        slug
-        thumbnail {
-          publicURL
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        ...ListedTip2Fragment
       }
     }
   }
