@@ -1,9 +1,8 @@
-import React, { FunctionComponent } from 'react';
-import { graphql, Link } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
+import React, { FC } from 'react';
+import { graphql } from 'gatsby';
 import { Topic2Reference } from './models';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
+import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
 
 export interface TopicProps {
   data: {
@@ -11,41 +10,54 @@ export interface TopicProps {
   }
 }
 
-const Topic2: FunctionComponent<TopicProps> = ({
-                                                data: {
-                                                  topic2: { title, body, resources }
-                                                }
-                                              }: TopicProps) => {
-  const sidebar = <div />;
-  const main = (
-    <div style={{ margin: '3em' }}>
-      <h1>{title}</h1>
-      <MDXRenderer>{body}</MDXRenderer>
-      <h2>Resources</h2>
-      <ul>
-        {resources.map(resource => (
-          <li key={resource.slug}>
-            <Link to={resource.slug}>{resource.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+const Topic2: FC<TopicProps> = (
+  {
+    data: {
+      topic2: { title, subtitle, body, accent, icon, resources }
+    }
+  }
+) => {
   return (
-    <SidebarLayout pageTitle={title}>
-      {{ sidebar, main }}
-    </SidebarLayout>
+    <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+      {{
+        figure: (
+          <span className={`icon is-large has-text-${accent}`}>
+            <i className={`${icon} fa-3x`} />
+          </span>
+        ),
+        listing: (
+          <div>
+            {resources.map(resource => (
+              <ResourceCard
+                key={resource.slug}
+                thumbnail={resource.thumbnail}
+                media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle? resource.subtitle : '' }}
+                technologies={{ items: resource.technologies2 }}
+                topics={{ items: resource.topics2 }}
+                date={{ date: resource.date }}
+                author={{ thumbnail: resource.thumbnail, slug: resource.slug, title: resource.title }}
+              />
+            ))
+            }
+          </div>
+        )
+      }}
+    </ReferenceLayout2>
   );
 };
 
 // noinspection JSUnusedGlobalSymbols
 export default Topic2;
 
-// noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($slug: String!) {
     topic2(slug: { eq: $slug }) {
-      ...ReferenceInfo
+      ...ListedTopic2Fragment
+      accent
+      icon
+      resources {
+        ...ListedResourceFragment2
+      }
     }
   }
 `;

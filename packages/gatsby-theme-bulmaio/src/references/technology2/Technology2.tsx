@@ -1,21 +1,12 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { ListedResources } from '../../resources/models';
 import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
+import { Technology2Reference } from './models';
 
 export interface TechnologyProps {
   data: {
-    technology2: {
-      label: string;
-      title: string;
-      subtitle?: string;
-      body?: string;
-      logo: {
-        publicURL: string;
-      }
-      resources: ListedResources;
-    }
+    technology2: Technology2Reference
   }
 }
 
@@ -25,7 +16,8 @@ const Technology2: FC<TechnologyProps> = (
       technology2: { title, subtitle, body, logo, resources }
     }
   }: TechnologyProps) => {
-  return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+  return (
+    <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
           <div className="image is-rounded is-96x96">

@@ -4,6 +4,8 @@ type Topic2 implements Node & Reference {
     slug: String!
     title: String!
     subtitle: String
+    accent: String
+    icon: String
     body: String! @parentBody
     parent: Node
     resources: [Resource] @link(by: "topics2.label", from: "label")

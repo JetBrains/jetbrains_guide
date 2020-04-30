@@ -23,7 +23,8 @@ const AllTechnology2: FC<TechnologiesProps> = (
   {
     data: { allTechnology2: { nodes } },
     pageContext: { numPages }
-  }) => {
+  }
+) => {
   const listing = nodes && (
     <nav className="bd-links bio-resourcecards">
       {nodes &&
@@ -61,7 +62,6 @@ const AllTechnology2: FC<TechnologiesProps> = (
 // noinspection JSUnusedGlobalSymbols
 export default AllTechnology2;
 
-// noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
     allTechnology2(limit: $limit, skip: $skip, sort: {fields: [title]}) {

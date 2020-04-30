@@ -14,7 +14,10 @@ export interface Resource {
   id: string
   parent: Resource
   slug: string
+  date: string;
   title: string
+  subtitle?: string;
+  thumbnail: Thumbnail
   technologies2: Technology2Reference[]
   topics2: Topic2Reference[]
 }
