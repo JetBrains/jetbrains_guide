@@ -9,12 +9,7 @@ export const listedAuthor2Fragment = graphql`
     subtitle
     slug
     thumbnail {
-      publicURL
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...ThumbnailFragment
     }
   }
 `;

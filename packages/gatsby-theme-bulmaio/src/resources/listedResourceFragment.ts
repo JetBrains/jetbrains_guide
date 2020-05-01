@@ -7,22 +7,13 @@ export const query = graphql`
     subtitle
     date(formatString: "MMMM Do, YYYY")
     thumbnail {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }      
+      ...ThumbnailFragment
     }
     author2 {
       slug
       title
       thumbnail {
-        publicURL
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...ThumbnailFragment
       }
     }
     technologies2 {

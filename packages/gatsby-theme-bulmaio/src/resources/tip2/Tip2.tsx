@@ -20,7 +20,7 @@ const Tip2: FC<TipProps> = (
     <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
-          <div className="image is-rounded is-96x96">
+          <div className="image is-96x96">
             <Img className="bio-resourcecard-logo" fluid={thumbnail.childImageSharp.fluid} />
           </div>
         ),

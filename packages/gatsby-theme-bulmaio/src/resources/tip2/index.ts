@@ -10,23 +10,13 @@ export const listedTip2Fragment = graphql`
     slug
     date(formatString: "MMMM Do, YYYY")
     thumbnail {
-      publicURL
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+      ...ThumbnailFragment
     }
     author2 {
       slug
       title
       thumbnail {
-        publicURL
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+        ...ThumbnailFragment
       }
     }
   }
