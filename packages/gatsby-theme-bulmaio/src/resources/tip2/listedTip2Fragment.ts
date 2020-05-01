@@ -12,11 +12,7 @@ export const query = graphql`
       ...ThumbnailFragment
     }
     author2 {
-      slug
-      title
-      thumbnail {
-        ...ThumbnailFragment
-      }
+      ...ListedAuthor2Fragment
     }
   }
 `;
