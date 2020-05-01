@@ -10,4 +10,10 @@ type Tip2 implements Node & Resource {
     technologies2: [Technology2] @link(by: "label")
     topics2: [Topic2] @link(by: "label")
     poster: String @defaultString(value: "XXXYYY")
+    cardThumbnail: File @fileByRelativePath
+    animatedGif: AnimatedGif
+    shortVideo: Video
+    longVideo: Video
+    leadin: String
+    seealso: [SeeAlso]
 }

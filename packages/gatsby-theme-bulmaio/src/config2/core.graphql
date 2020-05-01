@@ -22,3 +22,19 @@ interface Reference @nodeInterface {
     parent: Node
     resources: [Resource]
 }
+
+type AnimatedGif {
+    file: File @fileByRelativePath
+    width: Int
+    height: Int
+}
+
+type Video {
+    poster: File @fileByRelativePath
+    url: String
+}
+
+type SeeAlso {
+    title: String!
+    href: String!
+}
