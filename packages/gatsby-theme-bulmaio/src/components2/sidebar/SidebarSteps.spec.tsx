@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import SidebarSteps, { SidebarStepsProps, Step } from './SidebarSteps';
 
@@ -14,6 +13,6 @@ export const DUMMY_STEPS: SidebarStepsProps = {
 };
 
 test('SidebarSteps', () => {
-  const { getByText } = render(<SidebarSteps {...DUMMY_STEPS}/>);
+  const { getByText } = render(<SidebarSteps {...DUMMY_STEPS} />);
   expect(getByText(DUMMY_STEP1.label)).toBeTruthy();
 });

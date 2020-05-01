@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import SidebarStep, { SidebarStepProps } from './SidebarStep';
 
@@ -13,7 +12,7 @@ export const DUMMY_STEP: SidebarStepProps = {
 
 test('SidebarStep', () => {
   const { label, target, marker } = DUMMY_STEP;
-  const { getByText, getByTestId } = render(<SidebarStep {...DUMMY_STEP}/>);
+  const { getByText, getByTestId } = render(<SidebarStep {...DUMMY_STEP} />);
   expect(getByText(label)).toBeTruthy();
   expect(getByText(marker.toString())).toHaveClass('is-info');
   expect(getByTestId('ss-link')).toHaveAttribute('href', target);
