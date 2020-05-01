@@ -19,8 +19,6 @@ test('SeeAlso', async () => {
 
   const { getByText } = render(<SeeAlso {...seeAlsoProps} />);
   expect(getByText('See Also').tagName).toBe('HEADER');
-  const first = getByText('First');
-  expect(first.getAttribute('href')).toBe('first');
-  const second = getByText('Second');
-  expect(second.getAttribute('href')).toBe('second');
+  expect(getByText('First')).toHaveAttribute('href', 'first');
+  expect(getByText('Second')).toHaveAttribute('href', 'second');
 });
