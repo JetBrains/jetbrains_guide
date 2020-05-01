@@ -14,5 +14,11 @@ export const query = graphql`
     author2 {
       ...ListedAuthor2Fragment
     }
+    technologies2 {
+      ...ListedTechnology2Fragment
+    }
+    topics2 {
+      ...ListedTopic2Fragment
+    }    
   }
 `;

@@ -40,7 +40,36 @@ export default Tip2;
 export const query = graphql`
   query($slug: String!) {
     tip2(slug: { eq: $slug }) {
-      ...ListedTip2Fragment
+      label
+      slug
+      title
+      subtitle
+      slug
+      date(formatString: "MMMM Do, YYYY")
+      author2 {
+        ...ListedAuthor2Fragment
+      }
+      cardThumbnail {
+        publicURL
+      }
+      date(formatString: "MMMM Do, YYYY")
+      animatedGif {
+        file {
+            publicURL
+        }
+        width
+        height
+      }
+      shortVideo {
+        ...VideoFragment
+      }
+      longVideo {
+        ...VideoFragment
+      }
+      leadin
+      author2 {
+        ...ListedAuthor2Fragment
+      }      
     }
   }
 `;
