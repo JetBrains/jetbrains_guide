@@ -1,4 +1,21 @@
-import { Resource } from '../models'
+import { Resource } from '../models';
+import { Video } from '../../components/video';
+import { SeeAlsos } from '../../components/seealso';
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface Tip2Resource extends Resource {}
+export interface Tip2Resource extends Resource {
+  cardThumbnail: {
+    publicURL: string
+  }
+  date: string;
+  animatedGif?: {
+    file: {
+      publicURL: string
+    }
+    width: number
+    height: number
+  };
+  shortVideo?: Video;
+  longVideo?: Video;
+  leadin: string;
+  seealso?: SeeAlsos;
+}

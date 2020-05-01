@@ -2,9 +2,14 @@ import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import { Tip2Resource } from './models';
 import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
-import Img from 'gatsby-image';
+// @ts-ignore
+// noinspection ES6UnusedImports
+import { SeeAlso } from '../../components2/seealso';
 
 export interface TipProps {
+  location: {
+    search: string;
+  };
   data: {
     tip2: Tip2Resource
   }
@@ -12,16 +17,17 @@ export interface TipProps {
 
 const Tip2: FC<TipProps> = (
   {
+    location,
     data: {
-      tip2: { author2, body, title, subtitle, thumbnail, technologies2, topics2 }
+      tip2
     }
   }) => {
   return (
-    <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+    <ReferenceLayout2 pageTitle={'title'} subtitle={'subtitle'} bodyHtml={'body'}>
       {{
         figure: (
           <div className="image is-96x96">
-            <Img className="bio-resourcecard-logo" fluid={thumbnail.childImageSharp.fluid} />
+            xxx
           </div>
         ),
         listing: (
