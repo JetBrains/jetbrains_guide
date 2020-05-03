@@ -13,27 +13,23 @@ import { Video } from '../../components/video';
 import { SeeAlsos } from '../../components/seealso';
 
 export interface TipSidebarProps {
-  frontmatter: {
-    date: string;
-    author: ResourceCardAuthorProps;
-    technologies: ResourceCardTechnologies;
-    topics: ResourceCardTopics;
-  };
-  html?: string;
+  date: string;
+  author: ResourceCardAuthorProps;
+  technologies: ResourceCardTechnologies;
+  topics: ResourceCardTopics;
+  body?: string;
   seealso?: SeeAlsos;
   longVideo?: Video;
   inPlaylists: InPlaylists;
 }
 
-export const TipSidebar: React.FC<TipSidebarProps> = (
-  { frontmatter, html, seealso, longVideo, inPlaylists }
+export const Tip2Sidebar: React.FC<TipSidebarProps> = (
+  { date, author, technologies, topics, html, seealso, longVideo, inPlaylists }
 ) => {
   const published: SidebarPublishedProps = {
-    date: frontmatter.date,
-    author: frontmatter.author
+    date: date,
+    author: author
   };
-  const technologies = frontmatter.technologies ? frontmatter.technologies.map(t => t.label) : [];
-  const topics = frontmatter.topics ? frontmatter.topics.map(t => t.label) : [];
   const links: Doclink[] = [];
   if (html) {
     links.push({ label: 'In Depth', target: 'in-depth' });
@@ -54,8 +50,16 @@ export const TipSidebar: React.FC<TipSidebarProps> = (
   return (
     <Sidebar>
       <SidebarPublished {...published} />
-      <SidebarReferencesGroup reftype={`technologies`} accent={`danger`} references={technologies} />
-      <SidebarReferencesGroup reftype={`topics`} accent={`success`} references={topics} />
+      <SidebarReferencesGroup
+        reftype={`technologies`}
+        accent={`danger`}
+        references={technologies ? technologies.map(t => t.label) : []}
+      />
+      <SidebarReferencesGroup
+        reftype={`topics`}
+        accent={`success`}
+        references={topics ? topics.map(t => t.label) : []}
+      />
       <SidebarDoclinks links={links} />
       <SidebarPlaylists {...thesePlaylists} />
     </Sidebar>

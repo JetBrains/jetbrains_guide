@@ -6,6 +6,7 @@ import { Tip2Resource } from './models';
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import { Tip2Sidebar } from '../../components2/tipsidebar/Tip2Sidebar';
 
 export interface TipProps {
   location: {
@@ -24,11 +25,25 @@ const Tip2: FC<TipProps> = (
     }
   }) => {
 
+  // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
     title: tip2.title,
     description: tip2.subtitle ? tip2.subtitle : '',
     image: tip2.cardThumbnail ? `https://www.jetbrains.com${tip2.cardThumbnail.publicURL}` : ''
   };
+
+  // ##### Sidebars
+  const sidebar = <Tip2Sidebar
+    date={tip2.date}
+    author={tip2.author2}
+    technologies={tip2.technologies2}
+    topics={tip2.topics2}
+    body={tip2.body}
+    seealso={tip2.seealso}
+    longVideo={tip2.longVideo}
+    inPlaylists={[]}
+  />;
+
 
   const main = <div>xx</div>
   return (
@@ -39,27 +54,11 @@ const Tip2: FC<TipProps> = (
       {{
         // topNav,
         // bottomNav,
-        // sidebar,
+        sidebar,
         main
       }}
     </SidebarLayout>
   )
-  // return (
-  //   <ReferenceLayout2 pageTitle={'title'} subtitle={'subtitle'} bodyHtml={'body'}>
-  //     {{
-  //       figure: (
-  //         <div className="image is-96x96">
-  //           xxx
-  //         </div>
-  //       ),
-  //       listing: (
-  //         <div>
-  //           Hello
-  //         </div>
-  //       )
-  //     }}
-  //   </ReferenceLayout2>
-  // );
 };
 
 // noinspection JSUnusedGlobalSymbols
