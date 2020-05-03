@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import { Topic2Reference } from './models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
+import ReferenceLayout2 from '../../components2/ReferenceLayout2';
 
 export interface TopicProps {
   data: {

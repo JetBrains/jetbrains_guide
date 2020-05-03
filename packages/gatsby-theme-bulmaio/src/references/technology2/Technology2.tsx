@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
+import ReferenceLayout2 from '../../components2/ReferenceLayout2';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import { Technology2Reference } from './models';
 

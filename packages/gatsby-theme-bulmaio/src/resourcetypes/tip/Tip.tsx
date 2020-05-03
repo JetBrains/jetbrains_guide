@@ -1,7 +1,6 @@
 import React from 'react';
 import { Element, Link as ScrollLink } from 'react-scroll';
 
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
 import { SeeAlso, SeeAlsos } from 'gatsby-theme-bulmaio/src/components/seealso';
 import { getPlaylist } from 'gatsby-theme-bulmaio/src/components/pagenav/common';
 import getPrevNextBySlug from 'gatsby-theme-bulmaio/src/components/pagenav/getPrevNextBySlug';
@@ -15,6 +14,7 @@ import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/re
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { TipSidebar } from './TipsSidebar';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import SidebarLayout from '../../components/layout/SidebarLayout';
 
 
 const ClientSideOnlyPlayer = React.lazy(() =>

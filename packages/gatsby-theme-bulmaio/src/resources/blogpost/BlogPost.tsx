@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
+import SidebarLayout from '../../components/layout/SidebarLayout';
 import { BlogPostResource } from './models';
 
 export interface BlogPostProps {

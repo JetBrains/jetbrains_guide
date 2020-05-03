@@ -5,7 +5,7 @@ A variation of the MasterLayout which makes lists entries.
  */
 
 import React from 'react';
-import SiteLayout from './SiteLayout';
+import SiteLayout from '../components/layout/SiteLayout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 interface ReferenceLayoutProps {

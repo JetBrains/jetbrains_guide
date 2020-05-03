@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import ReferenceLayout2 from '../../components/layout/ReferenceLayout2';
+import ReferenceLayout2 from '../../components2/ReferenceLayout2';
 import { Author2Reference } from './models';
 
 export interface AuthorProps {

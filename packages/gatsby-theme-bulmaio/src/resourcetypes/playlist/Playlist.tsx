@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SidebarLayout from 'gatsby-theme-bulmaio/src/components/layout/SidebarLayout';
+import SidebarLayout from '../../components/layout/SidebarLayout';
 import { SeeAlsos } from 'gatsby-theme-bulmaio/src/components/seealso';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
