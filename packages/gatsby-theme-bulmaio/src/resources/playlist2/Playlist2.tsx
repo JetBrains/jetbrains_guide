@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Tip2Resource } from './models';
+import { Playlist2Resource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
@@ -16,45 +16,45 @@ const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
 );
 
-export interface TipProps {
+export interface PlaylistProps {
   location: {
     search: string;
   };
   data: {
-    tip2: Tip2Resource
+    playlist2: Playlist2Resource
   }
 }
 
-const Tip2: FC<TipProps> = (
+const Playlist2: FC<PlaylistProps> = (
   {
     location,
     data: {
-      tip2
+      playlist2
     }
   }) => {
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
-    title: tip2.title,
-    description: tip2.subtitle ? tip2.subtitle : '',
-    image: tip2.cardThumbnail ? `https://www.jetbrains.com${tip2.cardThumbnail.publicURL}` : ''
+    title: playlist2.title,
+    description: playlist2.subtitle ? playlist2.subtitle : '',
+    image: playlist2.cardThumbnail ? `https://www.jetbrains.com${playlist2.cardThumbnail.publicURL}` : ''
   };
 
   // Videos
   const isSSR = typeof window === 'undefined';
-  const animatedGif = tip2.animatedGif;
-  const shortVideo = tip2.shortVideo;
-  const longVideo = tip2.longVideo;
+  const animatedGif = playlist2.animatedGif;
+  const shortVideo = playlist2.shortVideo;
+  const longVideo = playlist2.longVideo;
 
   // ##### Sidebars
   const sidebar = <Tip2Sidebar
-    date={tip2.date}
-    author={tip2.author2}
-    technologies={tip2.technologies2}
-    topics={tip2.topics2}
-    body={tip2.body}
-    seealso={tip2.seealso}
-    longVideo={tip2.longVideo}
+    date={playlist2.date}
+    author={playlist2.author2}
+    technologies={playlist2.technologies2}
+    topics={playlist2.topics2}
+    body={playlist2.body}
+    seealso={playlist2.seealso}
+    longVideo={playlist2.longVideo}
     inPlaylists={[]}
   />;
 
@@ -76,9 +76,9 @@ const Tip2: FC<TipProps> = (
           className="column content"
           style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
         >
-          <div dangerouslySetInnerHTML={{ __html: tip2.leadin }} />
+          <div dangerouslySetInnerHTML={{ __html: playlist2.leadin }} />
           <div>
-            {tip2.body && (
+            {playlist2.body && (
               <ScrollLink
                 activeClass="active"
                 className="button is-light"
@@ -109,19 +109,19 @@ const Tip2: FC<TipProps> = (
           </div>
         </div>
       </div>
-      {tip2.body && (
+      {playlist2.body && (
         <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
           <header className="is-size-3 is-bold">In Depth</header>
           <div className="columns">
             <div className="column is-11-desktop content">
-              <MDXRenderer>{tip2.body}</MDXRenderer>
+              <MDXRenderer>{playlist2.body}</MDXRenderer>
             </div>
           </div>
         </Element>
       )}
-      {tip2.seealso && (
+      {playlist2.seealso && (
         <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
-          <SeeAlso items={tip2.seealso} />
+          <SeeAlso items={playlist2.seealso} />
         </Element>
       )}
       {longVideo && (
@@ -136,8 +136,8 @@ const Tip2: FC<TipProps> = (
   );
   return (
     <SidebarLayout
-      pageTitle={tip2.title}
-      subtitle={tip2.subtitle}
+      pageTitle={playlist2.title}
+      subtitle={playlist2.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
         // topNav,
@@ -150,11 +150,11 @@ const Tip2: FC<TipProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Tip2;
+export default Playlist2;
 
 export const query = graphql`
   query($slug: String!) {
-    tip2(slug: { eq: $slug }) {
+    playlist2(slug: { eq: $slug }) {
       label
       slug
       title
