@@ -6,6 +6,9 @@ import { Playlist2Resource } from './models';
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import { PlaylistSidebar2 } from './PlaylistSidebar2';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import ResourceCard from '../../components/resourcecard/ResourceCard';
 
 export interface PlaylistProps {
   location: {
@@ -31,11 +34,50 @@ const Playlist2: FC<PlaylistProps> = (
     image: playlist2.cardThumbnail ? `https://www.jetbrains.com${playlist2.cardThumbnail.publicURL}` : ''
   };
 
-  const main = (
-    <div style={{ marginBottom: '3rem' }}>
-      xewewe
+  // #### Sidebar
+  const sidebar = <PlaylistSidebar2
+    author={playlist2.author2}
+    date={playlist2.date}
+    technologies={playlist2.technologies2}
+    topics={playlist2.topics2}
+  />;
+
+  // Listing
+  const listing = (
+    <div>
+      {playlist2.playlistItems && playlist2.playlistItems.map(resource => (
+          <ResourceCard
+            key={resource.slug}
+            thumbnail={resource.thumbnail}
+            media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+            technologies={{ items: resource.technologies2 }}
+            topics={{ items: resource.topics2 }}
+            date={{ date: resource.date }}
+            author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
+          />
+        )
+      )}
     </div>
   );
+
+  const main = (
+    <>
+      {playlist2.body ? (
+        <div className="columns">
+          <div className="column is-11-desktop content">
+            <MDXRenderer>{playlist2.body}</MDXRenderer>
+          </div>
+        </div>
+      ) : null}
+      {listing && (
+        <div className="bio-tutorial-steps-listing">
+          {listing}
+        </div>
+      )}
+
+    </>
+  );
+
   return (
     <SidebarLayout
       pageTitle={playlist2.title}
@@ -44,7 +86,7 @@ const Playlist2: FC<PlaylistProps> = (
       {{
         // topNav,
         // bottomNav,
-        // sidebar,
+        sidebar,
         main
       }}
     </SidebarLayout>
@@ -64,6 +106,9 @@ export const query = graphql`
       slug
       body
       date(formatString: "MMMM Do, YYYY")
+      playlistItems {
+        ...ListedResourceFragment2
+      }
       author2 {
         ...ListedAuthor2Fragment
       }

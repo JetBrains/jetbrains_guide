@@ -24,6 +24,7 @@ const AllTip2: FC<AllTip2Props> = (
     data: { allTip2: { nodes } },
     pageContext: { numPages }
   }) => {
+
   const listing = (
     <div>
       {nodes && nodes.map(resource => (
@@ -40,6 +41,7 @@ const AllTip2: FC<AllTip2Props> = (
       )}
     </div>
   );
+
   return (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
