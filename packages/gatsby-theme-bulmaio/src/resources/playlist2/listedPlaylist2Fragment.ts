@@ -11,6 +11,12 @@ export const query = graphql`
     thumbnail {
       ...ThumbnailFragment
     }
+    cardThumbnail {
+      ...ThumbnailFragment
+    }
+    playlistItems {
+        ...ListedResourceFragment2
+    }
     author2 {
       ...ListedAuthor2Fragment
     }

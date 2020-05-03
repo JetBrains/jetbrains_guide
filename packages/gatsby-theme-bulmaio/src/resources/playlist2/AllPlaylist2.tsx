@@ -49,7 +49,7 @@ const AllPlaylist2: FC<AllPlaylist2Props> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'Playlist2s'} />
+            <Pagination numPages={numPages} prefix={'playlists2'} />
           </>
         )
       }}

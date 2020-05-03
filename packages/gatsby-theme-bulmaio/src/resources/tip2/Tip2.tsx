@@ -174,7 +174,6 @@ export const query = graphql`
       cardThumbnail {
         publicURL
       }
-      date(formatString: "MMMM Do, YYYY")
       animatedGif {
         file {
             publicURL
