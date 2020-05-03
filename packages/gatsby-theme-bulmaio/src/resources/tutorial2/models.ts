@@ -5,5 +5,5 @@ export interface Tutorial2Resource extends Resource {
   label: string
   date: string
   cardThumbnail: Thumbnail
-  playlistItems: ListedResources
+  tutorialItems: ListedResources
 }

@@ -45,7 +45,7 @@ const Tutorial2: FC<TutorialProps> = (
   // Listing
   const listing = (
     <div>
-      {tutorial2.playlistItems && tutorial2.playlistItems.map(resource => (
+      {tutorial2.tutorialItems && tutorial2.tutorialItems.map(resource => (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
@@ -105,7 +105,7 @@ export const query = graphql`
       slug
       body
       date(formatString: "MMMM Do, YYYY")
-      playlistItems {
+      tutorialItems {
         ...ListedResourceFragment2
       }
       author2 {

@@ -13,7 +13,7 @@ export const query = graphql`
     cardThumbnail {
       ...ThumbnailFragment
     }
-    playlistItems {
+    tutorialItems {
         ...ListedResourceFragment2
     }
     author2 {

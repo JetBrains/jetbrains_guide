@@ -5,7 +5,7 @@ type Tutorial2 implements Node & Resource {
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!
     parent: Node
-    playlistItems: [Resource] @link(by: "slug")
+    tutorialItems: [Resource] @link(by: "slug")
     slug: String!
     subtitle: String
     technologies2: [Technology2] @link(by: "label")
