@@ -49,6 +49,9 @@ const onCreateResolvers = async ({
   createResolvers
 }) => {
   const oldCreateResolvers = require('./src/config/createResolvers');
+  const { setupCreateResolvers } = require('./src/config2/createResolvers');
+
   await oldCreateResolvers(createResolvers);
+  await setupCreateResolvers(createResolvers);
 };
 exports.createResolvers = onCreateResolvers;

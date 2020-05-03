@@ -1,5 +1,6 @@
 import { readFileSync } from 'fs';
 import path from 'path';
+import { tip2CreateResolvers } from './tip2/createResolvers';
 
 export const resourceTypes = {
   BlogPost: { plural: 'Blog Posts', pathname: 'blogposts' },
@@ -80,4 +81,8 @@ export const resourcesSchemaCustomizations = (createTypes: any) => {
     });
     createTypes(resourceTypes);
   });
+};
+
+export const resourcesCreateResolvers = async (createResolvers: any) => {
+  await tip2CreateResolvers(createResolvers);
 };
