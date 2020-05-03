@@ -1,6 +1,6 @@
 import {  resolve } from 'path';
 
-const resolvers = ({ createResolvers }: any) => {
+const resolvers = (createResolvers: any) => {
   createResolvers({
     MarkdownRemark: {
       inPlaylists: {

@@ -33,6 +33,10 @@ const Tip2: FC<TipProps> = (
     }
   }) => {
 
+  // #### TOPNAV/BOTTOMNAV The topNav/bottomNav when playlists are involved
+  // let bottomNav;
+  // let topNav;
+
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
     title: tip2.title,
