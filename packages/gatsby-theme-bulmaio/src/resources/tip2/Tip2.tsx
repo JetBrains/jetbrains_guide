@@ -7,6 +7,7 @@ import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
 import { Tip2Sidebar } from '../../components2/tipsidebar/Tip2Sidebar';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 export interface TipProps {
   location: {
@@ -44,8 +45,13 @@ const Tip2: FC<TipProps> = (
     inPlaylists={[]}
   />;
 
+  console.log(392933, tip2.body)
 
-  const main = <div>xx</div>
+  const main = (
+    <div className="bd-content content">
+      <MDXRenderer>{tip2.body}</MDXRenderer>
+    </div>
+  )
   return (
     <SidebarLayout
       pageTitle={tip2.title}
@@ -72,6 +78,7 @@ export const query = graphql`
       title
       subtitle
       slug
+      body
       date(formatString: "MMMM Do, YYYY")
       author2 {
         ...ListedAuthor2Fragment
