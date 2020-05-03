@@ -1,19 +1,20 @@
 type Tip2 implements Node & Resource {
-    id: ID!
-    slug: String!
-    title: String!
-    subtitle: String
-    thumbnail: File @fileByRelativePath
-    body: String! @parentBody
-    parent: Node
-    author2: Author2 @link(by: "label")
-    technologies2: [Technology2] @link(by: "label")
-    topics2: [Topic2] @link(by: "label")
-    poster: String @defaultString(value: "XXXYYY")
-    cardThumbnail: File @fileByRelativePath
     animatedGif: AnimatedGif
-    shortVideo: Video
-    longVideo: Video
+    author2: Author2 @link(by: "label")
+    body: String! @parentBody
+    cardThumbnail: File @fileByRelativePath
+    date: Date @dateformat(formatString: "YYYY-MM-DD")
+    id: ID!
     leadin: String
+    longVideo: Video
+    parent: Node
+    poster: String @defaultString(value: "XXXYYY")
     seealso: [SeeAlso]
+    shortVideo: Video
+    slug: String!
+    subtitle: String
+    technologies2: [Technology2] @link(by: "label")
+    thumbnail: File @fileByRelativePath
+    title: String!
+    topics2: [Topic2] @link(by: "label")
 }

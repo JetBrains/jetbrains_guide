@@ -1,21 +1,9 @@
 import { Resource } from '../models';
-import { Video } from '../../components/video';
-import { SeeAlsos } from '../../components/seealso';
+import { Thumbnail } from '../../models';
+
 
 export interface Playlist2Resource extends Resource {
-  cardThumbnail: {
-    publicURL: string
-  }
+  label: string
   date: string;
-  animatedGif?: {
-    file: {
-      publicURL: string
-    }
-    width: number
-    height: number
-  };
-  shortVideo?: Video;
-  longVideo?: Video;
-  leadin: string;
-  seealso?: SeeAlsos;
+  cardThumbnail: Thumbnail;
 }
