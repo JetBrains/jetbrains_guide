@@ -1,16 +1,11 @@
 type Playlist2 implements Node & Resource {
-    animatedGif: AnimatedGif
     author2: Author2 @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!
-    leadin: String
-    longVideo: Video
     parent: Node
-    poster: String @defaultString(value: "XXXYYY")
-    seealso: [SeeAlso]
-    shortVideo: Video
+    playlistItems: [Resource] @link(by: "slug")
     slug: String!
     subtitle: String
     technologies2: [Technology2] @link(by: "label")
