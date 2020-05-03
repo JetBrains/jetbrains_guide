@@ -1,71 +1,58 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Playlist2Resource } from './models';
+import { TutorialStep2Resource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { PlaylistSidebar2 } from './PlaylistSidebar2';
+import { TutorialSidebar2 } from './TutorialSidebar2';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import ResourceCard from '../../components/resourcecard/ResourceCard';
 
-export interface PlaylistProps {
+export interface TutorialProps {
   location: {
     search: string;
   };
   data: {
-    playlist2: Playlist2Resource
+    tutorialStep2: TutorialStep2Resource
   }
 }
 
-const Playlist2: FC<PlaylistProps> = (
+const TutorialStep2: FC<TutorialProps> = (
   {
     location,
     data: {
-      playlist2
+      tutorialStep2
     }
   }) => {
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
-    title: playlist2.title,
-    description: playlist2.subtitle ? playlist2.subtitle : '',
-    image: playlist2.cardThumbnail ? `https://www.jetbrains.com${playlist2.cardThumbnail.publicURL}` : ''
+    title: tutorialStep2.title,
+    description: tutorialStep2.subtitle ? tutorialStep2.subtitle : '',
+    image: tutorialStep2.cardThumbnail ? `https://www.jetbrains.com${tutorialStep2.cardThumbnail.publicURL}` : ''
   };
 
   // #### Sidebar
-  const sidebar = <PlaylistSidebar2
-    author={playlist2.author2}
-    date={playlist2.date}
-    technologies={playlist2.technologies2}
-    topics={playlist2.topics2}
+  const sidebar = <TutorialSidebar2
+    author={tutorialStep2.author2}
+    date={tutorialStep2.date}
+    technologies={tutorialStep2.technologies2}
+    topics={tutorialStep2.topics2}
   />;
 
   // Listing
   const listing = (
     <div>
-      {playlist2.playlistItems && playlist2.playlistItems.map(resource => (
-          <ResourceCard
-            key={resource.slug}
-            thumbnail={resource.thumbnail}
-            media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
-            technologies={{ items: resource.technologies2 }}
-            topics={{ items: resource.topics2 }}
-            date={{ date: resource.date }}
-            author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
-          />
-        )
-      )}
-    </div>
+xx    </div>
   );
 
   const main = (
     <>
-      {playlist2.body ? (
+      {tutorialStep2.body ? (
         <div className="columns">
           <div className="column is-11-desktop content">
-            <MDXRenderer>{playlist2.body}</MDXRenderer>
+            <MDXRenderer>{tutorialStep2.body}</MDXRenderer>
           </div>
         </div>
       ) : null}
@@ -80,8 +67,8 @@ const Playlist2: FC<PlaylistProps> = (
 
   return (
     <SidebarLayout
-      pageTitle={playlist2.title}
-      subtitle={playlist2.subtitle}
+      pageTitle={tutorialStep2.title}
+      subtitle={tutorialStep2.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
         // topNav,
@@ -94,21 +81,17 @@ const Playlist2: FC<PlaylistProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Playlist2;
+export default TutorialStep2;
 
 export const query = graphql`
   query($slug: String!) {
-    playlist2(slug: { eq: $slug }) {
-      label
+    tutorialStep2(slug: { eq: $slug }) {
       slug
       title
       subtitle
       slug
       body
       date(formatString: "MMMM Do, YYYY")
-      playlistItems {
-        ...ListedResourceFragment2
-      }
       author2 {
         ...ListedAuthor2Fragment
       }

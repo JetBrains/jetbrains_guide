@@ -227,9 +227,6 @@ export const query = graphql`
         ...VideoFragment
       }
       leadin
-      author2 {
-        ...ListedAuthor2Fragment
-      }      
     }
   }
 `;

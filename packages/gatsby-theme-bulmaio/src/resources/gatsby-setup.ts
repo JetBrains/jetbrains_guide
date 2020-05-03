@@ -6,6 +6,7 @@ export const resourceTypes = {
   BlogPost: { plural: 'Blog Posts', pathname: 'blogposts' },
   Playlist2: { plural: 'Playlists', pathname: 'playlists2' },
   Tutorial2: { plural: 'Tutorials', pathname: 'tutorials2' },
+  TutorialStep2: { plural: 'Tutorial Steps', pathname: 'tutorialsteps2' },
   Tip2: { plural: 'Tip2s', pathname: 'tip2s' }
 };
 
@@ -43,9 +44,12 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
   const { createPage } = actions;
 
   // Do the cover pages for each resource type, e.g. all blogpost
-  Object.entries(resourceTypes).forEach(([resourceType, metadata]) => {
-    createListing(graphql, createPage, resourceType, metadata);
-  });
+  Object.entries(resourceTypes)
+    .forEach(([resourceType, metadata]) => {
+      if (resourceType != 'TutorialStep2') {
+        createListing(graphql, createPage, resourceType, metadata);
+      }
+    });
 
   // Now each resource
   const allResources = await graphql(`
@@ -74,7 +78,7 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
 
 export const resourcesSchemaCustomizations = (createTypes: any) => {
   // Load the GQL files for resource types
-  const gqlFiles = ['blogpost', 'playlist2', 'tutorial2', 'tip2'];
+  const gqlFiles = ['blogpost', 'playlist2', 'tutorial2', 'tutorialstep2', 'tip2'];
   gqlFiles.forEach((resourcetype: string) => {
     const fullFn = path.join(__dirname, `./${resourcetype}/types.graphql`);
     const resourceTypes = readFileSync(`${fullFn}`, {
