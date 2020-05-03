@@ -11,6 +11,10 @@ import { LongVideo, ShortVideo } from '../../components/video';
 import { Link as ScrollLink } from 'react-scroll/modules';
 import { Element } from 'react-scroll';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { getPlaylist } from '../../components2/pagenav/common';
+import getPrevNextBySlug from '../../components2/pagenav/getPrevNextBySlug';
+import BottomNav from '../../components2/pagenav/BottomNav';
+import TopNav from '../../components2/pagenav/TopNav';
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -34,8 +38,36 @@ const Tip2: FC<TipProps> = (
   }) => {
 
   // #### TOPNAV/BOTTOMNAV The topNav/bottomNav when playlists are involved
-  // let bottomNav;
-  // let topNav;
+  let bottomNav;
+  let topNav;
+  const currentPlaylist = getPlaylist(location, tip2.inPlaylists);
+  if (currentPlaylist) {
+    // Now get prev/next
+    const currentPlaylistItems = currentPlaylist.playlistItems;
+    if (currentPlaylistItems) {
+      const { previous, next } = getPrevNextBySlug(
+        currentPlaylistItems.map(
+          cpi => ({ slug: cpi.slug, label: cpi.title })
+        ),
+        tip2.slug
+      );
+
+      bottomNav = <BottomNav previous={previous} next={next} playlistLabel={currentPlaylist.label} />;
+
+      // Topnav wants some more
+      const parent = currentPlaylist ? {
+        label: currentPlaylist.title,
+        slug: currentPlaylist.slug
+      } : null;
+      const siblings = currentPlaylistItems.map(item => {
+        return { label: item.title, slug: item.slug };
+      });
+      topNav = parent ? (
+        <TopNav parent={parent} siblings={siblings} currentSlug={tip2.slug}
+                playlistLabel={currentPlaylist.label} kind="Item" />
+      ) : null;
+    }
+  }
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
@@ -144,8 +176,8 @@ const Tip2: FC<TipProps> = (
       subtitle={tip2.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
-        // topNav,
-        // bottomNav,
+        topNav,
+        bottomNav,
         sidebar,
         main
       }}
@@ -166,6 +198,9 @@ export const query = graphql`
       slug
       body
       date(formatString: "MMMM Do, YYYY")
+      inPlaylists {
+         ...ListedPlaylist2Fragment
+      }
       author2 {
         ...ListedAuthor2Fragment
       }

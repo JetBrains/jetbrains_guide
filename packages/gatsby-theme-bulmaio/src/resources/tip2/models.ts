@@ -1,6 +1,7 @@
 import { Resource } from '../models';
 import { Video } from '../../components/video';
 import { SeeAlsos } from '../../components/seealso';
+import { InPlaylists } from '../../components2/playlists';
 
 export interface Tip2Resource extends Resource {
   cardThumbnail: {
@@ -18,4 +19,5 @@ export interface Tip2Resource extends Resource {
   longVideo?: Video;
   leadin: string;
   seealso?: SeeAlsos;
+  inPlaylists: InPlaylists
 }

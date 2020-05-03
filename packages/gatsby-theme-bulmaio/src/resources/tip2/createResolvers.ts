@@ -2,7 +2,7 @@ export const tip2CreateResolvers = async (createResolvers: any) => {
   createResolvers({
     Tip2: {
       inPlaylists: {
-        type: ['Tip2'],
+        type: ['Playlist2'],
         async resolve(source: any, args: any, context: any, info: any) {
           const thisSlug: string = source.slug;
           // noinspection UnnecessaryLocalVariableJS
