@@ -24,14 +24,22 @@ export interface TipSidebarProps {
 }
 
 export const Tip2Sidebar: React.FC<TipSidebarProps> = (
-  { date, author, technologies, topics, html, seealso, longVideo, inPlaylists }
+  { date,
+    author,
+    technologies,
+    topics,
+    body,
+    seealso,
+    longVideo,
+    inPlaylists
+  }
 ) => {
   const published: SidebarPublishedProps = {
     date: date,
     author: author
   };
   const links: Doclink[] = [];
-  if (html) {
+  if (body) {
     links.push({ label: 'In Depth', target: 'in-depth' });
   }
   if (seealso) {
@@ -47,6 +55,7 @@ export const Tip2Sidebar: React.FC<TipSidebarProps> = (
         return { title: playlist.frontmatter.title, href: playlist.fields.slug };
       })
   };
+
   return (
     <Sidebar>
       <SidebarPublished {...published} />
