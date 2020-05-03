@@ -1,11 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { resourcesCreateResolvers } from '../resources/gatsby-setup';
 
-export interface ResolversProps {
-  createResolvers: any
-}
-
 // noinspection JSUnusedLocalSymbols
-export const setupCreateResolvers = async ({ createResolvers }: ResolversProps) => {
+export const setupCreateResolvers = async (createResolvers: any) => {
   await resourcesCreateResolvers(createResolvers);
 };
