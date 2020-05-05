@@ -92,6 +92,12 @@ export const query = graphql`
       slug
       body
       date(formatString: "MMMM Do, YYYY")
+      longVideo {
+        ...VideoFragment
+      }
+      inTutorial {
+         ...ListedTutorial2Fragment
+      }   
       author2 {
         ...ListedAuthor2Fragment
       }

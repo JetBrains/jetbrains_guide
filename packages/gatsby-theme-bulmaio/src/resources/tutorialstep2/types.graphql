@@ -4,6 +4,7 @@ type TutorialStep2 implements Node & Resource {
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!
+    longVideo: Video
     parent: Node
     slug: String!
     subtitle: String
