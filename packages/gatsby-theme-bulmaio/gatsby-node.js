@@ -7,11 +7,11 @@ require('ts-node').register({
   }
 });
 
-const { setupSchemaCustomizations } = require('./src/config2/schemaCustomizations');
+const { setupSchemaCustomizations } = require('./src/config/schemaCustomizations');
 exports.createSchemaCustomization = setupSchemaCustomizations;
 
 const onCreatePages = async ({ actions, graphql }) => {
-  const { setupCreatePages } = require('./src/config2/createPages');
+  const { setupCreatePages } = require('./src/config/createPages');
   await setupCreatePages(actions, graphql);
 };
 
@@ -22,7 +22,7 @@ const onCreateNode = async ({
   createNodeId, createContentDigest,
   reporter,
 }) => {
-  const { setupCreateNode } = require('./src/config2/createNode');
+  const { setupCreateNode } = require('./src/config/createNode');
   await setupCreateNode(actions,
     getNode,
     node,
@@ -37,7 +37,7 @@ exports.onCreateNode = onCreateNode;
 const onCreateResolvers = async ({
   createResolvers
 }) => {
-  const { setupCreateResolvers } = require('./src/config2/createResolvers');
+  const { setupCreateResolvers } = require('./src/config/createResolvers');
   await setupCreateResolvers(createResolvers);
 };
 exports.createResolvers = onCreateResolvers;
