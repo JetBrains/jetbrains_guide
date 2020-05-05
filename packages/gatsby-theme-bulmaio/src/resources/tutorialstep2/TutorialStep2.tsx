@@ -6,8 +6,10 @@ import { TutorialStep2Resource } from './models';
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { TutorialSidebar2 } from './TutorialSidebar2';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { Step } from '../../components/sidebar/SidebarSteps';
+import { Tutorial2Resource } from '../tutorial2/models';
+import { TutorialStep2Sidebar } from './TutorialStep2Sidebar';
 
 export interface TutorialProps {
   location: {
@@ -33,10 +35,21 @@ const TutorialStep2: FC<TutorialProps> = (
     image: tutorialStep2.cardThumbnail ? `https://www.jetbrains.com${tutorialStep2.cardThumbnail.publicURL}` : ''
   };
 
+  // #### Sidebar steps
+  const tutorial: Tutorial2Resource = tutorialStep2.inTutorial;
+  const steps: Step[] = tutorial.tutorialItems.map((item: any) => (
+    {
+      label: item.title,
+      href: item.slug
+    }
+  ));
+
   // #### Sidebar
-  const sidebar = <TutorialSidebar2
+  const sidebar = <TutorialStep2Sidebar
     author={tutorialStep2.author2}
     date={tutorialStep2.date}
+    slug={tutorialStep2.slug}
+    steps={steps}
     technologies={tutorialStep2.technologies2}
     topics={tutorialStep2.topics2}
   />;
@@ -44,7 +57,7 @@ const TutorialStep2: FC<TutorialProps> = (
   // Listing
   const listing = (
     <div>
-xx    </div>
+      xx </div>
   );
 
   const main = (
