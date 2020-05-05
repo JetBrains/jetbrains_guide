@@ -8,6 +8,7 @@ export interface Tip2Resource extends Resource {
     publicURL: string
   }
   date: string;
+  hasBody?: boolean;
   animatedGif?: {
     file: {
       publicURL: string

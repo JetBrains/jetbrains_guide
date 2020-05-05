@@ -4,6 +4,7 @@ type Tip2 implements Node & Resource {
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")
+    hasBody: Boolean
     id: ID!
     leadin: String
     longVideo: Video

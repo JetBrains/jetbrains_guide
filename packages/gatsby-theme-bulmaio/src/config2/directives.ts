@@ -25,6 +25,22 @@ export const defaultString = (createFieldExtension: any) => {
   })
 }
 
+
+export const nullArray = (createFieldExtension: any) => {
+  // If an array-oriented schema field provides a null, return an
+  // empty list instead
+  createFieldExtension({
+    name: `nullArray`,
+    extend() {
+      return {
+        async resolve(source: any, args: any, context: any, info: any) {
+          const fieldValue = await context.defaultFieldResolver(source, args, context, info)
+          return fieldValue || []
+        }
+      }
+    }
+  })
+}
 export const parentBody = (createFieldExtension: any) => {
   createFieldExtension({
     name: `parentBody`,

@@ -88,12 +88,13 @@ const Tip2: FC<TipProps> = (
     author={tip2.author2}
     technologies={tip2.technologies2}
     topics={tip2.topics2}
-    body={tip2.body}
+    body={tip2.hasBody ? tip2.body : undefined}
     seealso={tip2.seealso}
     longVideo={tip2.longVideo}
     inPlaylists={[]}
   />;
 
+  console.log(349449, tip2.hasBody)
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">
@@ -114,7 +115,7 @@ const Tip2: FC<TipProps> = (
         >
           <div dangerouslySetInnerHTML={{ __html: tip2.leadin }} />
           <div>
-            {tip2.body && (
+            {tip2.hasBody && (
               <ScrollLink
                 activeClass="active"
                 className="button is-light"
@@ -145,7 +146,7 @@ const Tip2: FC<TipProps> = (
           </div>
         </div>
       </div>
-      {tip2.body && (
+      {tip2.hasBody && (
         <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
           <header className="is-size-3 is-bold">In Depth</header>
           <div className="columns">
@@ -196,6 +197,7 @@ export const query = graphql`
       title
       subtitle
       slug
+      hasBody
       body
       date(formatString: "MMMM Do, YYYY")
       inPlaylists {

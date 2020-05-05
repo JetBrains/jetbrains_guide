@@ -5,7 +5,7 @@ Handlers for gatsby-node.js createSchemaCustomization
  */
 import * as fs from 'fs';
 import * as path from 'path';
-import { defaultString, parentBody } from './directives';
+import { defaultString, nullArray, parentBody } from './directives';
 
 import { resourcesSchemaCustomizations } from '../resources/gatsby-setup';
 import { referencesSchemaCustomizations } from '../references/gatsby-setup'
@@ -19,6 +19,7 @@ exports.setupSchemaCustomizations = ({ actions }: SchemaCustomizationProps) => {
 
   // Extensions
   defaultString(createFieldExtension);
+  nullArray(createFieldExtension);
   parentBody(createFieldExtension);
 
   // Load the GQL files for core interfaces and types

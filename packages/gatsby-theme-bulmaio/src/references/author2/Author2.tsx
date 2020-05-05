@@ -17,7 +17,7 @@ const Author: FC<AuthorProps> = (
       author2: { title, subtitle, body, thumbnail, resources }
     }
   }) => {
-
+console.log(23233333, resources)
   return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
@@ -27,7 +27,7 @@ const Author: FC<AuthorProps> = (
         ),
         listing: (
           <div>
-            {resources.map(resource => (
+            {resources && resources.map(resource => (
               <ResourceCard
                 key={resource.slug}
                 thumbnail={resource.thumbnail}
