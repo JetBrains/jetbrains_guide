@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Transform Existing Expression into Another One
 subtitle: Quickly transform an existing expression into another one using Tab.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: Postfix completion in WebStorm
   href: https://www.jetbrains.com/help/webstorm/settings-postfix-completion.html

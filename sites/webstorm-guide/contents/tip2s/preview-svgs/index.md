@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Preview Images
 subtitle: Preview images on the go from the Project view.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: Settings for images in WebStorm
   href: https://www.jetbrains.com/help/webstorm/settings-images.html

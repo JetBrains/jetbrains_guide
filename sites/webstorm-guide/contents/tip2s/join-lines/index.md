@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Putting Several Lines Together
 subtitle: Quickly join lines or blocks of code.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: Manipulating lines of code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#editor_lines_code_blocks

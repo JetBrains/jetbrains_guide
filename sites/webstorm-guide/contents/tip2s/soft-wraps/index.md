@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Enabling Soft Wraps
 subtitle: Wrap lines to eliminate the need of scrolling horizontally in order to see overly long lines.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: WebStorm settings
   href: https://www.jetbrains.com/help/webstorm/settings-editor-general.html

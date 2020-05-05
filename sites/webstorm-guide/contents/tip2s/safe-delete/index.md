@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Deleting File Safely
 subtitle: Learn how to delete a file safely.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: Refactoring source code
   href: https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#

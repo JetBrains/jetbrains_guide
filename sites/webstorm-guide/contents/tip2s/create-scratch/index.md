@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Working with Scratch Files
 subtitle: Create scratches to make notes or work with code outside of the project context.
-technologies: []
-topics: [editing]
-author: er
+technologies2: []
+topics2: [editing]
+author2: er
 seealso:
 - title: How to use scratches
   href: https://www.jetbrains.com/help/webstorm/scratches.html

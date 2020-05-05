@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: Complete Current Statement
 subtitle: Add braces and move the cursor with one keystroke.
-technologies: [javascript, typescript]
-topics: [editing]
-author: er
+technologies2: [javascript, typescript]
+topics2: [editing]
+author2: er
 seealso:
 - title: Autocompleting code
   href: https://www.jetbrains.com/help/webstorm/auto-completing-code.html#

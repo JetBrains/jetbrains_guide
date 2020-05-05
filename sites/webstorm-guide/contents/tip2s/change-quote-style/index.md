@@ -1,10 +1,9 @@
 ---
-type: tip
 date: 2020-03-16
 title: Change Quote Style for CSS
-technologies: [css]
-topics: [editing]
-author: er
+technologies2: [css]
+topics2: [editing]
+author2: er
 subtitle: Configure whether double or single quotes should be used.
 seealso:
 - title: Configuring formatting options for CSS files

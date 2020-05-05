@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2020-03-16
 title: File Structure Overview
 subtitle: Get a high-level view of the structure of a specific file.
-technologies: []
-topics: [navigation]
-author: er
+technologies2: []
+topics2: [navigation]
+author2: er
 seealso:
 - title: Source code navigation
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html

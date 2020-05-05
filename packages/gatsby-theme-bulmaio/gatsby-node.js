@@ -16,10 +16,10 @@ const { setupSchemaCustomizations } = require('./src/config2/schemaCustomization
 exports.createSchemaCustomization = setupSchemaCustomizations;
 
 const onCreatePages = async ({ actions, graphql }, pluginOptions) => {
-  const oldCreatePages = require('./src/config/createPages');
+  // const oldCreatePages = require('./src/config/createPages');
   const { setupCreatePages } = require('./src/config2/createPages');
 
-  oldCreatePages(actions, graphql, pluginOptions);
+  // oldCreatePages(actions, graphql, pluginOptions);
   await setupCreatePages(actions, graphql);
 };
 

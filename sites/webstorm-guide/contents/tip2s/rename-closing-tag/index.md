@@ -1,10 +1,9 @@
 ---
-type: tip
 date: 2020-03-02
 title: Rename Closing Tag
-technologies: [html]
-topics: [editing]
-author: er
+technologies2: [html]
+topics2: [editing]
+author2: er
 subtitle: Let the IDE mirror changes to a tag name.
 seealso:
 - title: Smart Keys
