@@ -7,6 +7,6 @@ export interface TutorialStep2Resource extends Resource {
   label: string
   date: string
   cardThumbnail: Thumbnail
-  shortVideo?: Video
+  longVideo?: Video
   inTutorial: Tutorial2Resource
 }

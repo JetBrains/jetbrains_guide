@@ -5,11 +5,13 @@ import { TutorialStep2Resource } from './models';
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
-import { TwitterCardPage } from '../../components/layout/MasterLayout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Step } from '../../components/sidebar/SidebarSteps';
-import { Tutorial2Resource } from '../tutorial2/models';
 import { TutorialStep2Sidebar } from './TutorialStep2Sidebar';
+import getPrevNextBySlug from '../../components2/pagenav/getPrevNextBySlug';
+import BottomNav from '../../components/pagenav/BottomNav';
+import TopNav from '../../components/pagenav/TopNav';
+import VideoPlayer from '../../components/video/VideoPlayer';
 
 export interface TutorialProps {
   location: {
@@ -28,16 +30,50 @@ const TutorialStep2: FC<TutorialProps> = (
     }
   }) => {
 
-  // ##### Twitter Card support
-  const twitterCardPage: TwitterCardPage = {
-    title: tutorialStep2.title,
-    description: tutorialStep2.subtitle ? tutorialStep2.subtitle : '',
-    image: tutorialStep2.cardThumbnail ? `https://www.jetbrains.com${tutorialStep2.cardThumbnail.publicURL}` : ''
-  };
+  let bottomNav;
+  let topNav;
+
+  // Top/Bottom Nav
+  const inTutorial = tutorialStep2.inTutorial;
+  const tutorialItems = inTutorial.tutorialItems;
+  if (tutorialItems) {
+    const { previous, next } = getPrevNextBySlug(
+      tutorialItems.map(
+        (cpi: any) => ({ slug: cpi.slug, label: cpi.title })
+      ),
+      tutorialStep2.slug
+    );
+
+    bottomNav = <BottomNav previous={previous} next={next} playlistLabel={inTutorial.label} />;
+
+    const parent = {
+      label: inTutorial.title,
+      slug: inTutorial.slug
+    };
+    const siblings = tutorialItems.map((item: any) => {
+      return { label: item.title, slug: item.slug };
+    });
+    topNav =
+      <TopNav parent={parent} siblings={siblings} currentSlug={tutorialStep2.slug}
+              playlistLabel={inTutorial.label} kind="Item" />;
+  }
+
+  // Video
+  const { longVideo } = tutorialStep2;
+  const videoOptions = longVideo ? {
+    controls: true,
+    poster: longVideo.poster.publicURL,
+    fill: true,
+    sources: [
+      {
+        src: longVideo.url,
+        type: 'video/youtube'
+      }
+    ]
+  } : null;
 
   // #### Sidebar steps
-  const tutorial: Tutorial2Resource = tutorialStep2.inTutorial;
-  const steps: Step[] = tutorial.tutorialItems.map((item: any) => (
+  const steps: Step[] = inTutorial.tutorialItems.map((item: any) => (
     {
       label: item.title,
       href: item.slug
@@ -54,14 +90,14 @@ const TutorialStep2: FC<TutorialProps> = (
     topics={tutorialStep2.topics2}
   />;
 
-  // Listing
-  const listing = (
-    <div>
-      xx </div>
-  );
-
+  // Main
   const main = (
     <>
+      {longVideo && (
+        <div style={{ marginBottom: '2rem' }}>
+          <VideoPlayer {...videoOptions} />
+        </div>
+      )}
       {tutorialStep2.body ? (
         <div className="columns">
           <div className="column is-11-desktop content">
@@ -69,12 +105,6 @@ const TutorialStep2: FC<TutorialProps> = (
           </div>
         </div>
       ) : null}
-      {listing && (
-        <div className="bio-tutorial-steps-listing">
-          {listing}
-        </div>
-      )}
-
     </>
   );
 
@@ -82,10 +112,10 @@ const TutorialStep2: FC<TutorialProps> = (
     <SidebarLayout
       pageTitle={tutorialStep2.title}
       subtitle={tutorialStep2.subtitle}
-      twitterCardPage={twitterCardPage}>
+    >
       {{
-        // topNav,
-        // bottomNav,
+        topNav,
+        bottomNav,
         sidebar,
         main
       }}
