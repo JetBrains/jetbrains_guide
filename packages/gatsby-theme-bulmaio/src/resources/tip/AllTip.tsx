@@ -5,12 +5,12 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components2/Pagination';
-import { Tip2Resource } from './models';
+import { TipResource } from './models';
 
-interface AllTip2Props {
+interface AllTipProps {
   data: {
-    allTip2: {
-      nodes: Tip2Resource[]
+    allTip: {
+      nodes: TipResource[]
     }
   }
   pageContext: PageContext
@@ -19,9 +19,9 @@ interface AllTip2Props {
 const PAGE_TITLE = 'Tips';
 const SUBTITLE = 'Visual, standalone, bite-sized learning resources organized into different categories.';
 
-const AllTip2: FC<AllTip2Props> = (
+const AllTip: FC<AllTipProps> = (
   {
-    data: { allTip2: { nodes } },
+    data: { allTip: { nodes } },
     pageContext: { numPages }
   }) => {
 
@@ -51,7 +51,7 @@ const AllTip2: FC<AllTip2Props> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'tip2s'} />
+            <Pagination numPages={numPages} prefix={'tips'} />
           </>
         )
       }}
@@ -60,14 +60,14 @@ const AllTip2: FC<AllTip2Props> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllTip2;
+export default AllTip;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTip2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTip(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedTip2Fragment
+        ...ListedTipFragment
       }
     }
   }

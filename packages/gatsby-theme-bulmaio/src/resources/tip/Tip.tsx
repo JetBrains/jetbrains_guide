@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Tip2Resource } from './models';
+import { TipResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { Tip2Sidebar } from '../../components2/tipsidebar/Tip2Sidebar';
+import { TipSidebar } from '../../components2/tipsidebar/TipSidebar';
 import { LongVideo, ShortVideo } from '../../components/video';
 import { Link as ScrollLink } from 'react-scroll/modules';
 import { Element } from 'react-scroll';
@@ -25,22 +25,22 @@ export interface TipProps {
     search: string;
   };
   data: {
-    tip2: Tip2Resource
+    tip: TipResource
   }
 }
 
-const Tip2: FC<TipProps> = (
+const Tip: FC<TipProps> = (
   {
     location,
     data: {
-      tip2
+      tip
     }
   }) => {
 
   // #### TOPNAV/BOTTOMNAV The topNav/bottomNav when playlists are involved
   let bottomNav;
   let topNav;
-  const currentPlaylist = getPlaylist(location, tip2.inPlaylists);
+  const currentPlaylist = getPlaylist(location, tip.inPlaylists);
   if (currentPlaylist) {
     // Now get prev/next
     const currentPlaylistItems = currentPlaylist.playlistItems;
@@ -49,7 +49,7 @@ const Tip2: FC<TipProps> = (
         currentPlaylistItems.map(
           cpi => ({ slug: cpi.slug, label: cpi.title })
         ),
-        tip2.slug
+        tip.slug
       );
 
       bottomNav = <BottomNav previous={previous} next={next} playlistLabel={currentPlaylist.label} />;
@@ -63,7 +63,7 @@ const Tip2: FC<TipProps> = (
         return { label: item.title, slug: item.slug };
       });
       topNav = parent ? (
-        <TopNav parent={parent} siblings={siblings} currentSlug={tip2.slug}
+        <TopNav parent={parent} siblings={siblings} currentSlug={tip.slug}
                 playlistLabel={currentPlaylist.label} kind="Item" />
       ) : null;
     }
@@ -71,30 +71,30 @@ const Tip2: FC<TipProps> = (
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
-    title: tip2.title,
-    description: tip2.subtitle ? tip2.subtitle : '',
-    image: tip2.cardThumbnail ? `https://www.jetbrains.com${tip2.cardThumbnail.publicURL}` : ''
+    title: tip.title,
+    description: tip.subtitle ? tip.subtitle : '',
+    image: tip.cardThumbnail ? `https://www.jetbrains.com${tip.cardThumbnail.publicURL}` : ''
   };
 
   // Videos
   const isSSR = typeof window === 'undefined';
-  const animatedGif = tip2.animatedGif;
-  const shortVideo = tip2.shortVideo;
-  const longVideo = tip2.longVideo;
+  const animatedGif = tip.animatedGif;
+  const shortVideo = tip.shortVideo;
+  const longVideo = tip.longVideo;
 
   // ##### Sidebars
-  const sidebar = <Tip2Sidebar
-    date={tip2.date}
-    author={tip2.author}
-    technologies={tip2.technologies}
-    topics={tip2.topics}
-    body={tip2.hasBody ? tip2.body : undefined}
-    seealso={tip2.seealso}
-    longVideo={tip2.longVideo}
+  const sidebar = <TipSidebar
+    date={tip.date}
+    author={tip.author}
+    technologies={tip.technologies}
+    topics={tip.topics}
+    body={tip.hasBody ? tip.body : undefined}
+    seealso={tip.seealso}
+    longVideo={tip.longVideo}
     inPlaylists={[]}
   />;
 
-  console.log(349449, tip2.hasBody)
+  console.log(349449, tip.hasBody)
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">
@@ -113,9 +113,9 @@ const Tip2: FC<TipProps> = (
           className="column content"
           style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
         >
-          <div dangerouslySetInnerHTML={{ __html: tip2.leadin }} />
+          <div dangerouslySetInnerHTML={{ __html: tip.leadin }} />
           <div>
-            {tip2.hasBody && (
+            {tip.hasBody && (
               <ScrollLink
                 activeClass="active"
                 className="button is-light"
@@ -146,19 +146,19 @@ const Tip2: FC<TipProps> = (
           </div>
         </div>
       </div>
-      {tip2.hasBody && (
+      {tip.hasBody && (
         <Element name="in-depth" className="element" style={{ marginTop: '1rem' }}>
           <header className="is-size-3 is-bold">In Depth</header>
           <div className="columns">
             <div className="column is-11-desktop content">
-              <MDXRenderer>{tip2.body}</MDXRenderer>
+              <MDXRenderer>{tip.body}</MDXRenderer>
             </div>
           </div>
         </Element>
       )}
-      {tip2.seealso && (
+      {tip.seealso && (
         <Element name="see-also" className="element" style={{ marginTop: '1rem' }}>
-          <SeeAlso items={tip2.seealso} />
+          <SeeAlso items={tip.seealso} />
         </Element>
       )}
       {longVideo && (
@@ -173,8 +173,8 @@ const Tip2: FC<TipProps> = (
   );
   return (
     <SidebarLayout
-      pageTitle={tip2.title}
-      subtitle={tip2.subtitle}
+      pageTitle={tip.title}
+      subtitle={tip.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
         topNav,
@@ -187,11 +187,11 @@ const Tip2: FC<TipProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Tip2;
+export default Tip;
 
 export const query = graphql`
   query($slug: String!) {
-    tip2(slug: { eq: $slug }) {
+    tip(slug: { eq: $slug }) {
       label
       slug
       title

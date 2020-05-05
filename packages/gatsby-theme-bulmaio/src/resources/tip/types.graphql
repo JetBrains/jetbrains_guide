@@ -1,4 +1,4 @@
-type Tip2 implements Node & Resource {
+type Tip implements Node & Resource {
     animatedGif: AnimatedGif
     author: Author @link(by: "label")
     body: String! @parentBody

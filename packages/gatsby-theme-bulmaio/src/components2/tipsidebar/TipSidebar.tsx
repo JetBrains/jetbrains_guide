@@ -23,7 +23,7 @@ export interface TipSidebarProps {
   inPlaylists: InPlaylists;
 }
 
-export const Tip2Sidebar: React.FC<TipSidebarProps> = (
+export const TipSidebar: React.FC<TipSidebarProps> = (
   { date,
     author,
     technologies,

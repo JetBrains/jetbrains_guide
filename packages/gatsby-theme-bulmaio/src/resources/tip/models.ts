@@ -3,7 +3,7 @@ import { Video } from '../../components/video';
 import { SeeAlsos } from '../../components2/seealso';
 import { InPlaylists } from '../../components2/playlists';
 
-export interface Tip2Resource extends Resource {
+export interface TipResource extends Resource {
   cardThumbnail: {
     publicURL: string
   }

@@ -1,6 +1,6 @@
-export const tip2CreateResolvers = async (createResolvers: any) => {
+export const tipCreateResolvers = async (createResolvers: any) => {
   createResolvers({
-    Tip2: {
+    Tip: {
       inPlaylists: {
         type: ['Playlist2'],
         async resolve(source: any, args: any, context: any, info: any) {

@@ -1,13 +1,13 @@
 import { readFileSync } from 'fs';
 import path from 'path';
-import { tip2CreateResolvers } from './tip2/createResolvers';
+import { tipCreateResolvers } from './tip/createResolvers';
 import { tutorialStep2CreateResolvers } from './tutorialstep2/createResolvers';
 
 export const resourceTypes = {
   Playlist2: { plural: 'Playlists', pathname: 'playlists2' },
   Tutorial2: { plural: 'Tutorials', pathname: 'tutorials2' },
   TutorialStep2: { plural: 'Tutorial Steps', pathname: 'tutorialsteps2' },
-  Tip2: { plural: 'Tip2s', pathname: 'tip2s' }
+  Tip: { plural: 'Tips', pathname: 'tips' }
 };
 
 async function createListing(graphql: any, createPage: any, resourceType: string, metadata: any) {
@@ -78,7 +78,7 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
 
 export const resourcesSchemaCustomizations = (createTypes: any) => {
   // Load the GQL files for resource types
-  const gqlFiles = ['playlist2', 'tutorial2', 'tutorialstep2', 'tip2'];
+  const gqlFiles = ['playlist2', 'tutorial2', 'tutorialstep2', 'tip'];
   gqlFiles.forEach((resourcetype: string) => {
     const fullFn = path.join(__dirname, `./${resourcetype}/types.graphql`);
     const resourceTypes = readFileSync(`${fullFn}`, {
@@ -89,6 +89,6 @@ export const resourcesSchemaCustomizations = (createTypes: any) => {
 };
 
 export const resourcesCreateResolvers = async (createResolvers: any) => {
-  await tip2CreateResolvers(createResolvers);
+  await tipCreateResolvers(createResolvers);
   await tutorialStep2CreateResolvers(createResolvers);
 };
