@@ -4,7 +4,6 @@ import { tip2CreateResolvers } from './tip2/createResolvers';
 import { tutorialStep2CreateResolvers } from './tutorialstep2/createResolvers';
 
 export const resourceTypes = {
-  BlogPost: { plural: 'Blog Posts', pathname: 'blogposts' },
   Playlist2: { plural: 'Playlists', pathname: 'playlists2' },
   Tutorial2: { plural: 'Tutorials', pathname: 'tutorials2' },
   TutorialStep2: { plural: 'Tutorial Steps', pathname: 'tutorialsteps2' },
@@ -79,7 +78,7 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
 
 export const resourcesSchemaCustomizations = (createTypes: any) => {
   // Load the GQL files for resource types
-  const gqlFiles = ['blogpost', 'playlist2', 'tutorial2', 'tutorialstep2', 'tip2'];
+  const gqlFiles = ['playlist2', 'tutorial2', 'tutorialstep2', 'tip2'];
   gqlFiles.forEach((resourcetype: string) => {
     const fullFn = path.join(__dirname, `./${resourcetype}/types.graphql`);
     const resourceTypes = readFileSync(`${fullFn}`, {
