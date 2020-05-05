@@ -3,7 +3,7 @@ date: 2020-03-16
 title: See Information about Packages
 subtitle: Check the description and the latest version of a package in package.json.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: npm and Yarn

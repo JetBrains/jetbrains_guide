@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Adding <script> Tag
 subtitle: Get help when adding the script element.
 technologies: [html]
-topics2: []
+topics: []
 author: er
 seealso:
 - title: Using code editor

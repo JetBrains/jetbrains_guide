@@ -17,5 +17,5 @@ type Tip2 implements Node & Resource {
     technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath
     title: String!
-    topics2: [Topic2] @link(by: "label")
+    topics: [Topic] @link(by: "label")
 }

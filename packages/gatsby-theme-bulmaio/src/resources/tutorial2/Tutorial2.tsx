@@ -39,7 +39,7 @@ const Tutorial2: FC<TutorialProps> = (
     author={tutorial2.author}
     date={tutorial2.date}
     technologies={tutorial2.technologies}
-    topics={tutorial2.topics2}
+    topics={tutorial2.topics}
   />;
 
   // Listing
@@ -51,7 +51,7 @@ const Tutorial2: FC<TutorialProps> = (
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             technologies={{ items: resource.technologies }}
-            topics={{ items: resource.topics2 }}
+            topics={{ items: resource.topics }}
             date={{ date: resource.date }}
             author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
           />
@@ -114,8 +114,8 @@ export const query = graphql`
       technologies {
         ...ListedTechnologyFragment
       }
-      topics2 {
-        ...ListedTopic2Fragment
+      topics {
+        ...ListedTopicFragment
       }      
       cardThumbnail {
         publicURL

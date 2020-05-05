@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Test Regular Expressions in the IDE
 subtitle: WebStorm helps test regular expressions on the fly.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Tips and tricks for working with regular expressions

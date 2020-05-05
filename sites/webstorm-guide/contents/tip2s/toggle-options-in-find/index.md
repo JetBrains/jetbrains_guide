@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Find Any Action
 subtitle: Use the popup to quickly find a specific action or toggle some configuration options.
 technologies: []
-topics2: [navigation]
+topics: [navigation]
 author: er
 seealso:
 - title: How to search for a target

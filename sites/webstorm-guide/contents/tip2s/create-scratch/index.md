@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Working with Scratch Files
 subtitle: Create scratches to make notes or work with code outside of the project context.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: How to use scratches

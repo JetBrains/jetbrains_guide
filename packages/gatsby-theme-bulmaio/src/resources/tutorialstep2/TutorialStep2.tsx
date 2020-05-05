@@ -87,7 +87,7 @@ const TutorialStep2: FC<TutorialProps> = (
     slug={tutorialStep2.slug}
     steps={steps}
     technologies={tutorialStep2.technologies}
-    topics={tutorialStep2.topics2}
+    topics={tutorialStep2.topics}
   />;
 
   // Main
@@ -147,8 +147,8 @@ export const query = graphql`
       technologies {
         ...ListedTechnologyFragment
       }
-      topics2 {
-        ...ListedTopic2Fragment
+      topics {
+        ...ListedTopicFragment
       }      
       cardThumbnail {
         publicURL

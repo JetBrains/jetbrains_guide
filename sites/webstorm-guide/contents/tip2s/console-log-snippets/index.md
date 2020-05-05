@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.
 technologies: [javascript, typescript]
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Postfix completion in WebStorm

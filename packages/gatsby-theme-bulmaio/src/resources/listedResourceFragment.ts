@@ -20,7 +20,7 @@ export const query = graphql`
       label
       slug
     }
-    topics2 {
+    topics {
       label
       slug
     }      

@@ -2,7 +2,7 @@
 date: 2020-03-02
 title: Avoid Property Mixup
 technologies: [javascript]
-topics2: [editing]
+topics: [editing]
 author: er
 subtitle: WebStorm helps avoid mixing up properties.
 seealso:

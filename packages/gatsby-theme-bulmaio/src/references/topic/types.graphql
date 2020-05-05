@@ -1,4 +1,4 @@
-type Topic2 implements Node & Reference {
+type Topic implements Node & Reference {
     id: ID!
     label: String!
     slug: String!
@@ -8,5 +8,5 @@ type Topic2 implements Node & Reference {
     icon: String
     body: String! @parentBody
     parent: Node
-    resources: [Resource] @link(by: "topics2.label", from: "label")
+    resources: [Resource] @link(by: "topics.label", from: "label")
 }

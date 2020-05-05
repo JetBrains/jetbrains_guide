@@ -2,7 +2,7 @@
 date: 2020-03-02
 title: Grammar Checking with Grazie
 technologies: []
-topics2: [editing, customizing]
+topics: [editing, customizing]
 author: er
 subtitle: Use the Grazie plugin to check grammar in regular text.
 seealso:

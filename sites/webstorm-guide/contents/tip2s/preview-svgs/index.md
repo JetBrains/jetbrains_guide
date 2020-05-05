@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Preview Images
 subtitle: Preview images on the go from the Project view.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Settings for images in WebStorm

@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Create Reusable Code Snippets
 subtitle: Save time by reusing blocks of code with custom code snippets.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Using and creating code snippets

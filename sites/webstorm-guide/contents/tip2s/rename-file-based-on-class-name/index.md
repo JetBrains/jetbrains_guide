@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Renaming Files
 subtitle: Rename a file to make it match the name of a class.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Refactoring source code

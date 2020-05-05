@@ -23,8 +23,8 @@ export const query = graphql`
     technologies {
       ...ListedTechnologyFragment
     }
-    topics2 {
-      ...ListedTopic2Fragment
+    topics {
+      ...ListedTopicFragment
     }    
   }
 `;

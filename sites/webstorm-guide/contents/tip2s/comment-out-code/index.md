@@ -2,7 +2,7 @@
 date: 2020-03-02
 title: Comment Out Code
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 subtitle: Quickly comment/uncomment blocks and lines.
 seealso:

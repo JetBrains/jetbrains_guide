@@ -2,7 +2,7 @@
 date: 2020-02-14
 title: Quickly Sort Lines
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 subtitle: Sort lines of code in your editor alphabetically.
 seealso:

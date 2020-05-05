@@ -1,19 +1,19 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Topic2Reference } from './models';
+import { TopicReference } from './models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout2 from '../../components2/ReferenceLayout2';
 
 export interface TopicProps {
   data: {
-    topic2: Topic2Reference
+    topic: TopicReference
   }
 }
 
-const Topic2: FC<TopicProps> = (
+const Topic: FC<TopicProps> = (
   {
     data: {
-      topic2: { title, subtitle, body, accent, icon, resources }
+      topic: { title, subtitle, body, accent, icon, resources }
     }
   }
 ) => {
@@ -33,7 +33,7 @@ const Topic2: FC<TopicProps> = (
                 thumbnail={resource.thumbnail}
                 media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle? resource.subtitle : '' }}
                 technologies={{ items: resource.technologies }}
-                topics={{ items: resource.topics2 }}
+                topics={{ items: resource.topics }}
                 date={{ date: resource.date }}
                 author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
               />
@@ -47,12 +47,12 @@ const Topic2: FC<TopicProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Topic2;
+export default Topic;
 
 export const query = graphql`
   query($slug: String!) {
-    topic2(slug: { eq: $slug }) {
-      ...ListedTopic2Fragment
+    topic(slug: { eq: $slug }) {
+      ...ListedTopicFragment
       resources {
         ...ListedResourceFragment2
       }

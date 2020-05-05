@@ -87,7 +87,7 @@ const Tip2: FC<TipProps> = (
     date={tip2.date}
     author={tip2.author}
     technologies={tip2.technologies}
-    topics={tip2.topics2}
+    topics={tip2.topics}
     body={tip2.hasBody ? tip2.body : undefined}
     seealso={tip2.seealso}
     longVideo={tip2.longVideo}
@@ -209,8 +209,8 @@ export const query = graphql`
       technologies {
         ...ListedTechnologyFragment
       }
-      topics2 {
-        ...ListedTopic2Fragment
+      topics {
+        ...ListedTopicFragment
       }      
       cardThumbnail {
         publicURL

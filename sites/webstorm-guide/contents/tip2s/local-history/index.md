@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Restore Changes with Ease
 subtitle: Use Local History to quickly restore what's needed.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Local History in WebStorm

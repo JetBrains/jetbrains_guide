@@ -3,7 +3,7 @@ date: 2020-03-16
 title: See All Available Refactorings in One Place
 subtitle: Use the Refactor This popup to look up all refactorings available in the current context.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Refactoring source code

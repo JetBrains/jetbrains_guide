@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Deleting File Safely
 subtitle: Learn how to delete a file safely.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Refactoring source code

@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { Topic2Reference } from './models';
+import { TopicReference } from './models';
 import { PageContext } from '../../components/models';
 import SubsectionTopic from '../../components/subsections/SubsectionTopic';
 import Pagination from '../../components2/Pagination';
 
 export interface TopicIndexProps {
   data: {
-    allTopic2: {
-      nodes: Topic2Reference[]
+    allTopic: {
+      nodes: TopicReference[]
     }
   },
   pageContext: PageContext
@@ -18,9 +18,9 @@ export interface TopicIndexProps {
 const PAGE_TITLE = 'Topics';
 const SUBTITLE = 'Explore all available resources organized by a programming topic.';
 
-const AllTopic2: FC<TopicIndexProps> = (
+const AllTopic: FC<TopicIndexProps> = (
   {
-    data: { allTopic2: { nodes } },
+    data: { allTopic: { nodes } },
     pageContext: { numPages }
   }
 ) => {
@@ -49,7 +49,7 @@ const AllTopic2: FC<TopicIndexProps> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'topics2'} />
+            <Pagination numPages={numPages} prefix={'topics'} />
           </>
         )
       }}
@@ -58,13 +58,13 @@ const AllTopic2: FC<TopicIndexProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllTopic2;
+export default AllTopic;
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTopic2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTopic(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedTopic2Fragment
+        ...ListedTopicFragment
       }
     }
   }

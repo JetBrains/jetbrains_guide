@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Putting Several Lines Together
 subtitle: Quickly join lines or blocks of code.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Manipulating lines of code

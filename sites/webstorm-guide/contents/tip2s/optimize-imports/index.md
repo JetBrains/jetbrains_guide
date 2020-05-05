@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Optimize Imports
 subtitle: Quickly remove any unused imports and more.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Creating and optimizing imports in WebStorm

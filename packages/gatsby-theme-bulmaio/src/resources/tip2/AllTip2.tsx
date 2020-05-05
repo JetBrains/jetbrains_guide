@@ -33,7 +33,7 @@ const AllTip2: FC<AllTip2Props> = (
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             technologies={{ items: resource.technologies }}
-            topics={{ items: resource.topics2 }}
+            topics={{ items: resource.topics }}
             date={{ date: resource.date }}
             author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
           />

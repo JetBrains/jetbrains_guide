@@ -8,7 +8,7 @@ interface Resource @nodeInterface {
     title: String!
     subtitle: String
     thumbnail: File @fileByRelativePath
-    topics2: [Topic2]
+    topics: [Topic]
     technologies: [Technology]
 }
 

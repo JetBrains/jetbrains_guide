@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Review Errors in Code
 subtitle: WebStorm shows all errors and warnings in your file.
 technologies: []
-topics2: [editing]
+topics: [editing]
 author: er
 seealso:
 - title: Getting started with WebStorm

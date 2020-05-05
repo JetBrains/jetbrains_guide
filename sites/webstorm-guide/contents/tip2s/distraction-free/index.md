@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Make Your Work Environment Distraction Free
 subtitle: Switch to the distraction-free mode to focus on coding.
 technologies: []
-topics2: [customizing]
+topics: [customizing]
 author: er
 seealso:
 - title: Viewing modes in WebStorm
