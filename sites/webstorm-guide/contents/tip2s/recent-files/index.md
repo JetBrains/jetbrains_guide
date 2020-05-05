@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Using Recent Files for Navigation
 subtitle: Reopen a file you've just closed or go to a specific tool window.
-technologies2: []
+technologies: []
 topics2: [navigation]
 author: er
 seealso:

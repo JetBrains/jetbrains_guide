@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Make Your Work Environment Distraction Free
 subtitle: Switch to the distraction-free mode to focus on coding.
-technologies2: []
+technologies: []
 topics2: [customizing]
 author: er
 seealso:

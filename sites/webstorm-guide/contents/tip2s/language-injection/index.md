@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Using Language Injections
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 subtitle: Swiftly inject a piece of code in a different language.

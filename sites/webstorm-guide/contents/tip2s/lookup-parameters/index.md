@@ -1,7 +1,7 @@
 ---
 date: 2020-03-02
 title: Quickly Look Up Parameters
-technologies2: [javascript]
+technologies: [javascript]
 topics2: [editing]
 author: er
 subtitle: Get help when completing function parameters.

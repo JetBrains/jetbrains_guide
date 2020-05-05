@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Using Code Snippets
 subtitle: Learn how to work with built-in code snippets in WebStorm.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

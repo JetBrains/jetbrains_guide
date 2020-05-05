@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Editing Code with Multiple Cursors
 subtitle: Use multiple cursors to make changes to your code faster.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

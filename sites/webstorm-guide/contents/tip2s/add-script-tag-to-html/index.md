@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Adding <script> Tag
 subtitle: Get help when adding the script element.
-technologies2: [html]
+technologies: [html]
 topics2: []
 author: er
 seealso:

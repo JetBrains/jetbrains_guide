@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Fix Code Formatting
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 subtitle: Learn how to fix code formatting on the fly.

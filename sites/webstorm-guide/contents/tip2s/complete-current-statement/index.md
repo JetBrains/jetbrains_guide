@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Complete Current Statement
 subtitle: Add braces and move the cursor with one keystroke.
-technologies2: [javascript, typescript]
+technologies: [javascript, typescript]
 topics2: [editing]
 author: er
 seealso:

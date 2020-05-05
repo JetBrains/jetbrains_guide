@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Make Fields Private or Public
 subtitle: Use a quick fix to quickly make a field public or private.
-technologies2: [javascript, typescript]
+technologies: [javascript, typescript]
 topics2: []
 author: er
 seealso:

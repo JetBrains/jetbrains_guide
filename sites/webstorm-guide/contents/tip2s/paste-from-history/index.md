@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Paste Recent Items
 subtitle: Access your clipboard history and add any items from there to your code.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

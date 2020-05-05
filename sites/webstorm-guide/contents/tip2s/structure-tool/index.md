@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: File Structure Overview
 subtitle: Get a high-level view of the structure of a specific file.
-technologies2: []
+technologies: []
 topics2: [navigation]
 author: er
 seealso:

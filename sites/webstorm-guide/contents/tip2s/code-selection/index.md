@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Select Code Fragment
 subtitle: Select a code fragment without a single click.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

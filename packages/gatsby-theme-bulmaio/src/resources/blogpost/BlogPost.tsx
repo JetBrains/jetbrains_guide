@@ -13,7 +13,7 @@ export interface BlogPostProps {
 
 const BlogPost: FunctionComponent<BlogPostProps> = ({
                                                       data: {
-                                                        blogPost: { author, body, title, technologies2, topics2 }
+                                                        blogPost: { author, body, title, technologies, topics2 }
                                                       }
                                                     }: BlogPostProps) => {
 
@@ -28,7 +28,7 @@ const BlogPost: FunctionComponent<BlogPostProps> = ({
       </p>
       <h2>Technologies</h2>
       <ul>
-        {technologies2.map(technology => (
+        {technologies.map(technology => (
           <li key={technology.slug}>
             <Link to={technology.slug}>{technology.title}</Link>
           </li>

@@ -93,7 +93,7 @@ export const query = graphql`
       slug
       title
     }
-    technologies2 {
+    technologies {
       slug
       title
     }

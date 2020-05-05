@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Adding Imports Automatically
-technologies2: [javascript, typescript]
+technologies: [javascript, typescript]
 topics2: []
 author: er
 subtitle: WebStorm helps add an import even if you're using default exports.

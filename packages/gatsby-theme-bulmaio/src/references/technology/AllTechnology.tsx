@@ -4,12 +4,12 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { PageContext } from '../../components/models';
 import SubsectionTechnology from '../../components/subsections/SubsectionTechnology';
 import Pagination from '../../components2/Pagination';
-import { Technology2Reference } from './models';
+import { TechnologyReference } from './models';
 
 interface TechnologiesProps {
   data: {
-    allTechnology2: {
-      nodes: Technology2Reference[]
+    allTechnology: {
+      nodes: TechnologyReference[]
     }
   }
   pageContext: PageContext
@@ -19,9 +19,9 @@ const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
 const PAGE_TITLE = 'Technologies';
 const SUBTITLE = 'Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.';
 
-const AllTechnology2: FC<TechnologiesProps> = (
+const AllTechnology: FC<TechnologiesProps> = (
   {
-    data: { allTechnology2: { nodes } },
+    data: { allTechnology: { nodes } },
     pageContext: { numPages }
   }
 ) => {
@@ -51,7 +51,7 @@ const AllTechnology2: FC<TechnologiesProps> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'technologies2'} />
+            <Pagination numPages={numPages} prefix={'technologies'} />
           </>
         )
       }}
@@ -60,13 +60,13 @@ const AllTechnology2: FC<TechnologiesProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllTechnology2;
+export default AllTechnology;
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTechnology2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTechnology(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedTechnology2Fragment
+        ...ListedTechnologyFragment
       }
     }
   }

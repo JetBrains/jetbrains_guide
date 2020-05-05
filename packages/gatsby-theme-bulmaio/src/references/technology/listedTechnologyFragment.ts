@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
 export const query = graphql`
-  fragment ListedTechnology2Fragment on Technology2 {
+  fragment ListedTechnologyFragment on Technology {
     label
     slug
     title

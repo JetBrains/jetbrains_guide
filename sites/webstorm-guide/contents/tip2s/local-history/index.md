@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Restore Changes with Ease
 subtitle: Use Local History to quickly restore what's needed.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

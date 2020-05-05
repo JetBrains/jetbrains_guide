@@ -1,4 +1,4 @@
-type Technology2 implements Node & Reference {
+type Technology implements Node & Reference {
     id: ID!
     label: String!
     slug: String!
@@ -8,5 +8,5 @@ type Technology2 implements Node & Reference {
     logo: File @fileByRelativePath
     body: String! @parentBody
     parent: Node
-    resources: [Resource] @link(by: "technologies2.label", from: "label")
+    resources: [Resource] @link(by: "technologies.label", from: "label")
 }

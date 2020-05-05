@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.
-technologies2: [javascript, typescript]
+technologies: [javascript, typescript]
 topics2: [editing]
 author: er
 seealso:

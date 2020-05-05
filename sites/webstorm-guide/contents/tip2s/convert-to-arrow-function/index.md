@@ -1,7 +1,7 @@
 ---
 date: 2020-03-02
 title: Convert to Arrow Function
-technologies2: [javascript]
+technologies: [javascript]
 topics2: [editing]
 author: er
 subtitle: Quickly convert a function to a variable holding an arrow function.

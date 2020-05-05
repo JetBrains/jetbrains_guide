@@ -86,7 +86,7 @@ const TutorialStep2: FC<TutorialProps> = (
     date={tutorialStep2.date}
     slug={tutorialStep2.slug}
     steps={steps}
-    technologies={tutorialStep2.technologies2}
+    technologies={tutorialStep2.technologies}
     topics={tutorialStep2.topics2}
   />;
 
@@ -144,8 +144,8 @@ export const query = graphql`
       author {
         ...ListedAuthorFragment
       }
-      technologies2 {
-        ...ListedTechnology2Fragment
+      technologies {
+        ...ListedTechnologyFragment
       }
       topics2 {
         ...ListedTopic2Fragment

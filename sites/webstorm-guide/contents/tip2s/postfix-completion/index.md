@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Transform Existing Expression into Another One
 subtitle: Quickly transform an existing expression into another one using Tab.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

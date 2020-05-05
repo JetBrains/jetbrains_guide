@@ -8,7 +8,7 @@ type Playlist2 implements Node & Resource {
     playlistItems: [Resource] @link(by: "slug")
     slug: String!
     subtitle: String
-    technologies2: [Technology2] @link(by: "label")
+    technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath
     title: String!
     topics2: [Topic2] @link(by: "label")

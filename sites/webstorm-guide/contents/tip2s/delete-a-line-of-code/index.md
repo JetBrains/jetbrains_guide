@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Deleting Lines
 subtitle: Delete a line of code without using the mouse.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

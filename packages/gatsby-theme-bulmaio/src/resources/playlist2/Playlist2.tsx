@@ -38,7 +38,7 @@ const Playlist2: FC<PlaylistProps> = (
   const sidebar = <PlaylistSidebar2
     author={playlist2.author}
     date={playlist2.date}
-    technologies={playlist2.technologies2}
+    technologies={playlist2.technologies}
     topics={playlist2.topics2}
   />;
 
@@ -50,7 +50,7 @@ const Playlist2: FC<PlaylistProps> = (
             key={resource.slug}
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
-            technologies={{ items: resource.technologies2 }}
+            technologies={{ items: resource.technologies }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
             author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
@@ -112,8 +112,8 @@ export const query = graphql`
       author {
         ...ListedAuthorFragment
       }
-      technologies2 {
-        ...ListedTechnology2Fragment
+      technologies {
+        ...ListedTechnologyFragment
       }
       topics2 {
         ...ListedTopic2Fragment

@@ -1,7 +1,7 @@
 ---
 date: 2020-02-14
 title: Surround with Emmet
-technologies2: [emmet]
+technologies: [emmet]
 topics2: [editing]
 author: er
 subtitle: Quickly surround a selection with rich markup using the Emmet toolkit.

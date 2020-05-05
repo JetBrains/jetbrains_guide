@@ -1,6 +1,6 @@
 import { AuthorReference } from '../references/author/models';
 import { Topic2Reference } from '../references/topic2/models';
-import { Technology2Reference } from '../references/technology2/models';
+import { TechnologyReference } from '../references/technology/models';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { Thumbnail } from 'gatsby-theme-bulmaio/src/models';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
@@ -18,7 +18,7 @@ export interface Resource {
   title: string
   subtitle?: string;
   thumbnail: Thumbnail
-  technologies2: Technology2Reference[]
+  technologies: TechnologyReference[]
   topics2: Topic2Reference[]
 }
 
@@ -30,7 +30,7 @@ export interface ListedResource {
   subtitle?: string;
   date: string;
   author: ResourceCardAuthorProps;
-  technologies2: ResourceCardTechnologies;
+  technologies: ResourceCardTechnologies;
   topics2: ResourceCardTopics;
   thumbnail: Thumbnail
 }

@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Deleting File Safely
 subtitle: Learn how to delete a file safely.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

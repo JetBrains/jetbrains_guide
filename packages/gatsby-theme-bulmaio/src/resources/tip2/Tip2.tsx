@@ -86,7 +86,7 @@ const Tip2: FC<TipProps> = (
   const sidebar = <Tip2Sidebar
     date={tip2.date}
     author={tip2.author}
-    technologies={tip2.technologies2}
+    technologies={tip2.technologies}
     topics={tip2.topics2}
     body={tip2.hasBody ? tip2.body : undefined}
     seealso={tip2.seealso}
@@ -206,8 +206,8 @@ export const query = graphql`
       author {
         ...ListedAuthorFragment
       }
-      technologies2 {
-        ...ListedTechnology2Fragment
+      technologies {
+        ...ListedTechnologyFragment
       }
       topics2 {
         ...ListedTopic2Fragment

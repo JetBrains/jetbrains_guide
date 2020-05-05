@@ -31,7 +31,7 @@ const AllAuthor: FC<AllAuthorProps> = (
             key={resource.slug}
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
-            technologies={{ items: resource.technologies2 }}
+            technologies={{ items: resource.technologies }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
           />

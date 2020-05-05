@@ -2,7 +2,7 @@
 date: 2020-03-16
 title: Enabling Soft Wraps
 subtitle: Wrap lines to eliminate the need of scrolling horizontally in order to see overly long lines.
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 seealso:

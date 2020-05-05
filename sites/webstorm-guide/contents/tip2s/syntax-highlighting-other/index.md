@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Syntax Highlighting for Other Languages
-technologies2: []
+technologies: []
 topics2: [editing]
 author: er
 subtitle: Look through PHP, Python, and other files in WebStorm.

@@ -1,7 +1,7 @@
 ---
 date: 2020-03-02
 title: Rename Closing Tag
-technologies2: [html]
+technologies: [html]
 topics2: [editing]
 author: er
 subtitle: Let the IDE mirror changes to a tag name.
