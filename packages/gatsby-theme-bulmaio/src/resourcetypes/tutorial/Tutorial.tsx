@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SidebarLayout from 'src/components/layout/SidebarLayout';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { TutorialSidebar } from './TutorialSidebar';
 import makeResources from '../makeResource';
+import SidebarLayout from '../../components/layout/SidebarLayout';
 
 export interface TutorialProps {
   data: {

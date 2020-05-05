@@ -1,6 +1,5 @@
 import React from 'react';
 
-import SidebarLayout from 'src/components/layout/SidebarLayout';
 import {ResourceCardAuthorProps} from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import {ResourceCardTechnologies} from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
 import {ResourceCardTopics} from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
@@ -12,6 +11,7 @@ import {Step} from '../../components/sidebar/SidebarSteps';
 
 import {Video} from "../../components/video";
 import VideoPlayer from "../../components/video/VideoPlayer";
+import SidebarLayout from '../../components/layout/SidebarLayout';
 
 export interface TutorialstepProps {
     data: {
