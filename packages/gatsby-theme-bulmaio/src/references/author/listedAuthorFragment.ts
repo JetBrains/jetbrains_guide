@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
 export const query = graphql`
-  fragment ListedAuthor2Fragment on Author2 {
+  fragment ListedAuthorFragment on Author {
     label
     slug
     title

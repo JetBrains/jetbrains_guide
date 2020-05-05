@@ -34,7 +34,7 @@ const AllPlaylist2: FC<AllPlaylist2Props> = (
             technologies={{ items: resource.technologies2 }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
-            author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
+            author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
           />
         )
       )}

@@ -12,8 +12,8 @@ export const query = graphql`
     thumbnail {
       ...ThumbnailFragment
     }
-    author2 {
-      ...ListedAuthor2Fragment
+    author {
+      ...ListedAuthorFragment
     }
     technologies2 {
       ...ListedTechnology2Fragment

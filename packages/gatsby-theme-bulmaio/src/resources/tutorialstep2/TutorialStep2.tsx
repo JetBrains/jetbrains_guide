@@ -82,7 +82,7 @@ const TutorialStep2: FC<TutorialProps> = (
 
   // #### Sidebar
   const sidebar = <TutorialStep2Sidebar
-    author={tutorialStep2.author2}
+    author={tutorialStep2.author}
     date={tutorialStep2.date}
     slug={tutorialStep2.slug}
     steps={steps}
@@ -141,8 +141,8 @@ export const query = graphql`
       inTutorial {
          ...ListedTutorial2Fragment
       }   
-      author2 {
-        ...ListedAuthor2Fragment
+      author {
+        ...ListedAuthorFragment
       }
       technologies2 {
         ...ListedTechnology2Fragment

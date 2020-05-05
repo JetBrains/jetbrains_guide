@@ -1,5 +1,5 @@
 type Playlist2 implements Node & Resource {
-    author2: Author2 @link(by: "label")
+    author: Author @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")

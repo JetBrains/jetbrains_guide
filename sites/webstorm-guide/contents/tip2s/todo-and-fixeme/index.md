@@ -4,7 +4,7 @@ title: Add Reminders to Fix Something
 subtitle: Add a TODO or Fixme comment to remind yourself of fixing something in your code.
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: TODO comments in WebStorm
   href: https://www.jetbrains.com/help/webstorm/using-todo.html

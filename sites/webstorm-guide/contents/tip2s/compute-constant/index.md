@@ -3,7 +3,7 @@ date: 2020-03-02
 title: Compute Constant Values
 technologies2: [javascript]
 topics2: [editing]
-author2: er
+author: er
 subtitle: Let WebStorm do math for you.
 seealso:
 - title: 10 WebStorm Shortcuts You Need to Know

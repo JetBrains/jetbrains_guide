@@ -4,7 +4,7 @@ title: Make Your Work Environment Distraction Free
 subtitle: Switch to the distraction-free mode to focus on coding.
 technologies2: []
 topics2: [customizing]
-author2: er
+author: er
 seealso:
 - title: Viewing modes in WebStorm
   href: https://www.jetbrains.com/help/webstorm/ide-viewing-modes.html#

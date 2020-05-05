@@ -4,7 +4,7 @@ title: Deleting File Safely
 subtitle: Learn how to delete a file safely.
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: Refactoring source code
   href: https://www.jetbrains.com/help/webstorm/refactoring-source-code.html#

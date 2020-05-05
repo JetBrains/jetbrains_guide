@@ -4,7 +4,7 @@ title: Using Code Snippets
 subtitle: Learn how to work with built-in code snippets in WebStorm.
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: Using and creating code snippets
   href: https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/

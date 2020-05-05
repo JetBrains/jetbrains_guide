@@ -3,7 +3,7 @@ date: 2020-03-02
 title: Enable Font Ligatures
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 subtitle: Use ligatures if your font supports it.
 seealso:
 - title: How to configure font

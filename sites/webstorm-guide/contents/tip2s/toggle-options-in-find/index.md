@@ -4,7 +4,7 @@ title: Find Any Action
 subtitle: Use the popup to quickly find a specific action or toggle some configuration options.
 technologies2: []
 topics2: [navigation]
-author2: er
+author: er
 seealso:
 - title: How to search for a target
   href: https://www.jetbrains.com/help/webstorm/searching-everywhere.html

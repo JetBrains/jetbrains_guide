@@ -7,9 +7,9 @@ import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components2/Pagination';
 
-interface AllAuthor2Props {
+interface AllAuthorProps {
   data: {
-    allAuthor2: {
+    allAuthor: {
       nodes: ListedResources
     }
   }
@@ -19,9 +19,9 @@ interface AllAuthor2Props {
 const PAGE_TITLE = 'Authors';
 const SUBTITLE = 'Resources organized by author.';
 
-const AllAuthor2: FC<AllAuthor2Props> = (
+const AllAuthor: FC<AllAuthorProps> = (
   {
-    data: { allAuthor2: { nodes } },
+    data: { allAuthor: { nodes } },
     pageContext: { numPages }
   }) => {
   const listing = (
@@ -49,7 +49,7 @@ const AllAuthor2: FC<AllAuthor2Props> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'author2s'} />
+            <Pagination numPages={numPages} prefix={'authors'} />
           </>
         )
       }}
@@ -58,13 +58,13 @@ const AllAuthor2: FC<AllAuthor2Props> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllAuthor2;
+export default AllAuthor;
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allAuthor2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allAuthor(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedAuthor2Fragment
+        ...ListedAuthorFragment
       }
     }
   }

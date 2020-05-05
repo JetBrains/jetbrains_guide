@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Using Language Injections
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 subtitle: Swiftly inject a piece of code in a different language.
 seealso:
 - title: How to use language injections in WebStorm 

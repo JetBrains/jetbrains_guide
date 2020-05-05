@@ -4,7 +4,7 @@ title: Using Recent Locations for Navigation
 subtitle: Preview the part of code and files you've recently edited and get back to them quickly.
 technologies2: []
 topics2: [navigation]
-author2: er
+author: er
 seealso:
 - title: Source code navigation
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html

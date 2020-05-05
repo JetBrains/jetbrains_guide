@@ -4,7 +4,7 @@ title: Paste Recent Items
 subtitle: Access your clipboard history and add any items from there to your code.
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: Copying and pasting code
   href: https://www.jetbrains.com/help/webstorm/working-with-source-code.html#copy_paste

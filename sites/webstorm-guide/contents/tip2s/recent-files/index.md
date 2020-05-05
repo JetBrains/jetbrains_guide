@@ -4,7 +4,7 @@ title: Using Recent Files for Navigation
 subtitle: Reopen a file you've just closed or go to a specific tool window.
 technologies2: []
 topics2: [navigation]
-author2: er
+author: er
 seealso:
 - title: Source code navigation
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html

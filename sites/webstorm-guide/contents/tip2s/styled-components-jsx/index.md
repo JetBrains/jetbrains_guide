@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Get Support for styled-components and styled-jsx
 technologies2: []
 topics2: [editing, customizing]
-author2: er
+author: er
 subtitle: Install the plugin to get coding assistance for styled-components and styled-jsx.
 seealso:
 - title: WebStorm plugins

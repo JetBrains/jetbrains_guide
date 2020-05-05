@@ -1,5 +1,5 @@
 interface Resource @nodeInterface {
-    author2: Author2
+    author: Author
     body: String!
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!

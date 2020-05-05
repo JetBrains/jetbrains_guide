@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Moving Lines in JSON
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 subtitle: Get help with commas when moving lines up and down in JSON.
 seealso:
 - title: Working with JSON in WebStorm

@@ -4,7 +4,7 @@ title: Restore Changes with Ease
 subtitle: Use Local History to quickly restore what's needed.
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: Local History in WebStorm
   href: https://www.jetbrains.com/help/webstorm/local-history.html

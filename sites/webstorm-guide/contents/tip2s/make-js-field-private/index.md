@@ -4,7 +4,7 @@ title: Make Fields Private or Public
 subtitle: Use a quick fix to quickly make a field public or private.
 technologies2: [javascript, typescript]
 topics2: []
-author2: er
+author: er
 seealso:
 - title: 10 WebStorm shortcuts you need to know
   href: https://blog.jetbrains.com/webstorm/2015/06/10-webstorm-shortcuts-you-need-to-know/

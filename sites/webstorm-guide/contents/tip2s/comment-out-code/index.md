@@ -3,7 +3,7 @@ date: 2020-03-02
 title: Comment Out Code
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 subtitle: Quickly comment/uncomment blocks and lines.
 seealso:
 - title: Manipulating lines of code

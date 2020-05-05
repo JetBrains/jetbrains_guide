@@ -13,7 +13,7 @@ export interface BlogPostProps {
 
 const BlogPost: FunctionComponent<BlogPostProps> = ({
                                                       data: {
-                                                        blogPost: { author2, body, title, technologies2, topics2 }
+                                                        blogPost: { author, body, title, technologies2, topics2 }
                                                       }
                                                     }: BlogPostProps) => {
 
@@ -24,7 +24,7 @@ const BlogPost: FunctionComponent<BlogPostProps> = ({
       <MDXRenderer>{body}</MDXRenderer>
       <h2>Author</h2>
       <p>
-        <Link to={author2.slug}>{author2.title}</Link>
+        <Link to={author.slug}>{author.title}</Link>
       </p>
       <h2>Technologies</h2>
       <ul>

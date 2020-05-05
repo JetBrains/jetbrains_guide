@@ -3,18 +3,18 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout2 from '../../components2/ReferenceLayout2';
-import { Author2Reference } from './models';
+import { AuthorReference } from './models';
 
 export interface AuthorProps {
   data: {
-    author2: Author2Reference
+    author: AuthorReference
   }
 }
 
 const Author: FC<AuthorProps> = (
   {
     data: {
-      author2: { title, subtitle, body, thumbnail, resources }
+      author: { title, subtitle, body, thumbnail, resources }
     }
   }) => {
 console.log(23233333, resources)
@@ -50,8 +50,8 @@ export default Author;
 
 export const query = graphql`
   query($slug: String!) {
-    author2(slug: { eq: $slug }) {
-      ...ListedAuthor2Fragment
+    author(slug: { eq: $slug }) {
+      ...ListedAuthorFragment
       resources {
         ...ListedResourceFragment2
       }

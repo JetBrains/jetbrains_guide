@@ -36,7 +36,7 @@ const Tutorial2: FC<TutorialProps> = (
 
   // #### Sidebar
   const sidebar = <TutorialSidebar2
-    author={tutorial2.author2}
+    author={tutorial2.author}
     date={tutorial2.date}
     technologies={tutorial2.technologies2}
     topics={tutorial2.topics2}
@@ -53,7 +53,7 @@ const Tutorial2: FC<TutorialProps> = (
             technologies={{ items: resource.technologies2 }}
             topics={{ items: resource.topics2 }}
             date={{ date: resource.date }}
-            author={{ thumbnail: resource.author2.thumbnail, slug: resource.author2.slug, title: resource.author2.title }}
+            author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}
           />
         )
       )}
@@ -108,8 +108,8 @@ export const query = graphql`
       tutorialItems {
         ...ListedResourceFragment2
       }
-      author2 {
-        ...ListedAuthor2Fragment
+      author {
+        ...ListedAuthorFragment
       }
       technologies2 {
         ...ListedTechnology2Fragment
@@ -120,8 +120,8 @@ export const query = graphql`
       cardThumbnail {
         publicURL
       }
-      author2 {
-        ...ListedAuthor2Fragment
+      author {
+        ...ListedAuthorFragment
       }      
     }
   }

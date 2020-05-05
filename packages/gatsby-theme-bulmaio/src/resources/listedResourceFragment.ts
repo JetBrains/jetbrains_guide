@@ -9,7 +9,7 @@ export const query = graphql`
     thumbnail {
       ...ThumbnailFragment
     }
-    author2 {
+    author {
       slug
       title
       thumbnail {

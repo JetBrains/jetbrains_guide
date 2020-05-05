@@ -3,7 +3,7 @@ date: 2020-03-16
 title: Fix Code Formatting
 technologies2: []
 topics2: [editing]
-author2: er
+author: er
 subtitle: Learn how to fix code formatting on the fly.
 seealso:
 - title: How to reformat and rearrange code

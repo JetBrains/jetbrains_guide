@@ -85,7 +85,7 @@ export const query = graphql`
     slug
     title
     body
-    author2 {
+    author {
       slug
       title
     }

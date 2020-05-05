@@ -1,6 +1,6 @@
 type Tip2 implements Node & Resource {
     animatedGif: AnimatedGif
-    author2: Author2 @link(by: "label")
+    author: Author @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")

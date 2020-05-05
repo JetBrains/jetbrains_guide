@@ -4,7 +4,7 @@ title: Complete Current Statement
 subtitle: Add braces and move the cursor with one keystroke.
 technologies2: [javascript, typescript]
 topics2: [editing]
-author2: er
+author: er
 seealso:
 - title: Autocompleting code
   href: https://www.jetbrains.com/help/webstorm/auto-completing-code.html#

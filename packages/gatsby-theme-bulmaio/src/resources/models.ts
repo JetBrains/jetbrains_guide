@@ -1,4 +1,4 @@
-import { Author2Reference } from '../references/author2/models';
+import { AuthorReference } from '../references/author/models';
 import { Topic2Reference } from '../references/topic2/models';
 import { Technology2Reference } from '../references/technology2/models';
 import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
@@ -9,7 +9,7 @@ import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resource
 /* Various models used throughout the site*/
 
 export interface Resource {
-  author2: Author2Reference
+  author: AuthorReference
   body: string
   id: string
   parent: Resource
@@ -29,7 +29,7 @@ export interface ListedResource {
   title: string;
   subtitle?: string;
   date: string;
-  author2: ResourceCardAuthorProps;
+  author: ResourceCardAuthorProps;
   technologies2: ResourceCardTechnologies;
   topics2: ResourceCardTopics;
   thumbnail: Thumbnail
