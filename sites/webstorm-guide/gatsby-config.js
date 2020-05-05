@@ -1,19 +1,4 @@
 module.exports = {
-    // __experimentalThemes: [
-    //     {
-    //         resolve: 'gatsby-theme-bulmaio', options: {
-    //             references: {
-    //                 author: {plural: 'Authors', layout: 'LogoListing'},
-    //                 technology: {plural: 'Technologies', layout: 'LogoListing'},
-    //                 topic: {plural: 'Topics', layout: 'LogoListing'}
-    //             },
-    //             resources: {
-    //                 tip: {plural: 'Tips'},
-    //                 playlist: {plural: 'Playlists'}
-    //             }
-    //         }
-    //     }
-    // ],
     siteMetadata: {
         theme: {
             helmet: {
