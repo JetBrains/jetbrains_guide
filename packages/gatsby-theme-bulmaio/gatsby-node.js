@@ -7,19 +7,11 @@ require('ts-node').register({
   }
 });
 
-exports.createPages = require('./src/config/createPages');
-exports.onCreateNode = require('./src/config/createNode');
-exports.sourceNodes = require('./src/config/sourceNodes');
-
-// New-style
 const { setupSchemaCustomizations } = require('./src/config2/schemaCustomizations');
 exports.createSchemaCustomization = setupSchemaCustomizations;
 
-const onCreatePages = async ({ actions, graphql }, pluginOptions) => {
-  // const oldCreatePages = require('./src/config/createPages');
+const onCreatePages = async ({ actions, graphql }) => {
   const { setupCreatePages } = require('./src/config2/createPages');
-
-  // oldCreatePages(actions, graphql, pluginOptions);
   await setupCreatePages(actions, graphql);
 };
 
@@ -30,10 +22,7 @@ const onCreateNode = async ({
   createNodeId, createContentDigest,
   reporter,
 }) => {
-  const oldCreateNode = require('./src/config/createNode');
   const { setupCreateNode } = require('./src/config2/createNode');
-
-  await oldCreateNode(actions, getNode, node);
   await setupCreateNode(actions,
     getNode,
     node,
@@ -48,10 +37,7 @@ exports.onCreateNode = onCreateNode;
 const onCreateResolvers = async ({
   createResolvers
 }) => {
-  const oldCreateResolvers = require('./src/config/createResolvers');
   const { setupCreateResolvers } = require('./src/config2/createResolvers');
-
-  await oldCreateResolvers(createResolvers);
   await setupCreateResolvers(createResolvers);
 };
 exports.createResolvers = onCreateResolvers;

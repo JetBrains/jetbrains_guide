@@ -9,8 +9,8 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Step } from '../../components/sidebar/SidebarSteps';
 import { TutorialStep2Sidebar } from './TutorialStep2Sidebar';
 import getPrevNextBySlug from '../../components2/pagenav/getPrevNextBySlug';
-import BottomNav from '../../components/pagenav/BottomNav';
-import TopNav from '../../components/pagenav/TopNav';
+import BottomNav from '../../components2/pagenav/BottomNav';
+import TopNav from '../../components2/pagenav/TopNav';
 import VideoPlayer from '../../components/video/VideoPlayer';
 
 export interface TutorialProps {

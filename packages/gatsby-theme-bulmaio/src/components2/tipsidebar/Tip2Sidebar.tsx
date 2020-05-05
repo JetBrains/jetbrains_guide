@@ -8,9 +8,9 @@ import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGr
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
 import { ResourceCardTopics } from '../../components/resourcecard/topic';
-import { InPlaylists } from '../../components/playlists';
+import { InPlaylists } from '../playlists';
 import { Video } from '../../components/video';
-import { SeeAlsos } from '../../components/seealso';
+import { SeeAlsos } from '../seealso';
 
 export interface TipSidebarProps {
   date: string;
@@ -52,7 +52,7 @@ export const Tip2Sidebar: React.FC<TipSidebarProps> = (
   const thesePlaylists: SidebarPlaylistsProps = {
     playlists: inPlaylists.map(
       (playlist) => {
-        return { title: playlist.frontmatter.title, href: playlist.fields.slug };
+        return { title: playlist.title, href: playlist.slug };
       })
   };
 
