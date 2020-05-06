@@ -6,7 +6,7 @@ export const query = graphql`
     slug
     title
     subtitle
-    slug
+    body
     thumbnail {
       ...ThumbnailFragment
     }

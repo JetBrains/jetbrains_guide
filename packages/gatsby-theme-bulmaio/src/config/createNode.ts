@@ -1,5 +1,8 @@
 import path from 'path';
 
+const remark = require('remark');
+const remarkHTML = require('remark-html');
+
 import { createFilePath } from 'gatsby-source-filesystem';
 import { referenceTypes } from '../references/gatsby-setup';
 import { resourceTypes } from '../resources/gatsby-setup';
@@ -67,6 +70,15 @@ exports.setupCreateNode = async function onCreateNode(
         content: JSON.stringify(fieldData)
       }
     };
+
+    // Convert leadin to Markdown output
+    if (resourceNode.leadin) {
+      const markdown = resourceNode.leadin;
+      resourceNode.leadin = remark()
+        .use(remarkHTML)
+        .processSync(markdown)
+        .toString();
+    }
 
     resourceNode.fileAbsolutePath = node.absolutePath;
     createNode(resourceNode);

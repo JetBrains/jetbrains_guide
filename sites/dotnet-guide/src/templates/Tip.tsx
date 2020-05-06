@@ -1,5 +1,5 @@
-import { Tip } from 'gatsby-theme-bulmaio/src/resourcetypes/tip';
 import { graphql } from 'gatsby';
+import Tip from 'gatsby-theme-bulmaio/src/resources/tip/Tip';
 
 export default Tip;
 

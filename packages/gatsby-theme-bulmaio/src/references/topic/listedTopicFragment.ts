@@ -6,8 +6,8 @@ export const query = graphql`
     slug
     title
     subtitle
-    slug
     accent
     icon
+    body
   }
 `;
