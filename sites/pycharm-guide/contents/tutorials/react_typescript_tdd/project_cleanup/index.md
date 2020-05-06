@@ -1,5 +1,5 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2019-02-02
 title: Project Cleanup
 technologies: [react]

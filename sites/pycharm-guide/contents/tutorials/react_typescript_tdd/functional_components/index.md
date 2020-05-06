@@ -1,5 +1,5 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2017-07-07
 title: Functional React Components in TypeScript
 technologies: [react, typescript]

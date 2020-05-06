@@ -1,5 +1,5 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2017-07-07
 title: Presentation and Container Components
 technologies: [react, typescript, jest]

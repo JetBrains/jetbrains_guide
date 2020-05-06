@@ -17,7 +17,6 @@ const Topic: FC<TopicProps> = (
     }
   }
 ) => {
-  console.log(7778, body)
   return (
     <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
