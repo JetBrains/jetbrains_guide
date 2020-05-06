@@ -5,12 +5,12 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components2/Pagination';
-import { Playlist2Resource } from './models';
+import { PlaylistResource } from './models';
 
-interface AllPlaylist2Props {
+interface AllPlaylistProps {
   data: {
-    allPlaylist2: {
-      nodes: Playlist2Resource[]
+    allPlaylist: {
+      nodes: PlaylistResource[]
     }
   }
   pageContext: PageContext
@@ -19,9 +19,9 @@ interface AllPlaylist2Props {
 const PAGE_TITLE = 'Playlists';
 const SUBTITLE = 'Curated, ordered collections of resources you can go through in a sitting.';
 
-const AllPlaylist2: FC<AllPlaylist2Props> = (
+const AllPlaylist: FC<AllPlaylistProps> = (
   {
-    data: { allPlaylist2: { nodes } },
+    data: { allPlaylist: { nodes } },
     pageContext: { numPages }
   }) => {
   const listing = (
@@ -58,14 +58,14 @@ const AllPlaylist2: FC<AllPlaylist2Props> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllPlaylist2;
+export default AllPlaylist;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allPlaylist2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allPlaylist(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedPlaylist2Fragment
+        ...ListedPlaylistFragment
       }
     }
   }

@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Playlist2Resource } from './models';
+import { PlaylistResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { PlaylistSidebar2 } from './PlaylistSidebar2';
+import { PlaylistSidebar } from './PlaylistSidebar';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 
@@ -15,37 +15,37 @@ export interface PlaylistProps {
     search: string;
   };
   data: {
-    playlist2: Playlist2Resource
+    playlist: PlaylistResource
   }
 }
 
-const Playlist2: FC<PlaylistProps> = (
+const Playlist: FC<PlaylistProps> = (
   {
     location,
     data: {
-      playlist2
+      playlist
     }
   }) => {
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
-    title: playlist2.title,
-    description: playlist2.subtitle ? playlist2.subtitle : '',
-    image: playlist2.cardThumbnail ? `https://www.jetbrains.com${playlist2.cardThumbnail.publicURL}` : ''
+    title: playlist.title,
+    description: playlist.subtitle ? playlist.subtitle : '',
+    image: playlist.cardThumbnail ? `https://www.jetbrains.com${playlist.cardThumbnail.publicURL}` : ''
   };
 
   // #### Sidebar
-  const sidebar = <PlaylistSidebar2
-    author={playlist2.author}
-    date={playlist2.date}
-    technologies={playlist2.technologies}
-    topics={playlist2.topics}
+  const sidebar = <PlaylistSidebar
+    author={playlist.author}
+    date={playlist.date}
+    technologies={playlist.technologies}
+    topics={playlist.topics}
   />;
 
   // Listing
   const listing = (
     <div>
-      {playlist2.playlistItems && playlist2.playlistItems.map(resource => (
+      {playlist.playlistItems && playlist.playlistItems.map(resource => (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
@@ -62,10 +62,10 @@ const Playlist2: FC<PlaylistProps> = (
 
   const main = (
     <>
-      {playlist2.body ? (
+      {playlist.body ? (
         <div className="columns">
           <div className="column is-11-desktop content">
-            <MDXRenderer>{playlist2.body}</MDXRenderer>
+            <MDXRenderer>{playlist.body}</MDXRenderer>
           </div>
         </div>
       ) : null}
@@ -80,8 +80,8 @@ const Playlist2: FC<PlaylistProps> = (
 
   return (
     <SidebarLayout
-      pageTitle={playlist2.title}
-      subtitle={playlist2.subtitle}
+      pageTitle={playlist.title}
+      subtitle={playlist.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
         // topNav,
@@ -94,11 +94,11 @@ const Playlist2: FC<PlaylistProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Playlist2;
+export default Playlist;
 
 export const query = graphql`
   query($slug: String!) {
-    playlist2(slug: { eq: $slug }) {
+    playlist(slug: { eq: $slug }) {
       label
       slug
       title

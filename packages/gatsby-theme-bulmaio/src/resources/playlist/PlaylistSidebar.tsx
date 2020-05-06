@@ -13,7 +13,7 @@ export interface PlaylistSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const PlaylistSidebar2: React.FC<PlaylistSidebarProps> = (
+export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
   { author, date, technologies, topics }
 ) => {
   const published: SidebarPublishedProps = {

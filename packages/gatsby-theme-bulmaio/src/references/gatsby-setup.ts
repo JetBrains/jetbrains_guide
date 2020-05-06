@@ -20,7 +20,7 @@ async function createListing(graphql: any, createPage: any, referenceType: strin
     }
   `);
   const allResults = allResultsData.data[allType].nodes;
-  const entriesPerPage = 2;
+  const entriesPerPage = 200000;  // TODO Lower me
   const numPages = Math.ceil(allResults.length / entriesPerPage);
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({

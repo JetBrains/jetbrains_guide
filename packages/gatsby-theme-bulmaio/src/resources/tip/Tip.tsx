@@ -201,7 +201,7 @@ export const query = graphql`
       body
       date(formatString: "MMMM Do, YYYY")
       inPlaylists {
-         ...ListedPlaylist2Fragment
+         ...ListedPlaylistFragment
       }
       author {
         ...ListedAuthorFragment

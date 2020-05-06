@@ -1,4 +1,4 @@
-type Playlist2 implements Node & Resource {
+type Playlist implements Node & Resource {
     author: Author @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath
