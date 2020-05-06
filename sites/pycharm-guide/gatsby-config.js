@@ -48,13 +48,6 @@ module.exports = {
                             icon: 'fas fa-project-diagram'
                         },
                         {
-                            accent: 'danger',
-                            cssClass: 'documentation',
-                            href: '/authors/',
-                            label: 'Authors',
-                            icon: 'fas fa-users'
-                        },
-                        {
                             label: 'More...',
                             items: [
                                 {
