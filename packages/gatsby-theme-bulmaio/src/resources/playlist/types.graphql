@@ -4,6 +4,7 @@ type Playlist implements Node & Resource {
     cardThumbnail: File @fileByRelativePath
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     id: ID!
+    label: String!
     parent: Node
     playlistItems: [Resource] @link(by: "slug")
     slug: String!

@@ -6,7 +6,6 @@ export const query = graphql`
     slug
     title
     subtitle
-    slug
     date(formatString: "MMMM Do, YYYY")
     thumbnail {
       ...ThumbnailFragment

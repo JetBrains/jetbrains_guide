@@ -53,7 +53,10 @@ exports.setupCreateNode = async function onCreateNode(
     const fieldData = { ...node.frontmatter };
 
     const slug = createFilePath({ node, getNode });
-    const label = parent.relativeDirectory.split(path.sep).slice(-1)[0];
+
+    // If the frontmatter has a label, use it, otherwise infer it
+    // from the parent directory
+    const label = fieldData['label'] ? fieldData['label'] : parent.relativeDirectory.split(path.sep).slice(-1)[0];
     const resourceNode = {
       ...fieldData,
       id: createNodeId(`${node.id} >>> ${resourceType}`),
