@@ -1,16 +1,16 @@
 import { resolve } from 'path';
 
-export const tutorialStep2CreateResolvers = async (createResolvers: any) => {
+export const tutorialStepCreateResolvers = async (createResolvers: any) => {
   // noinspection JSUnusedLocalSymbols
   createResolvers({
-    TutorialStep2: {
+    TutorialStep: {
       inTutorial: {
-        type: 'Tutorial2',
+        type: 'Tutorial',
         async resolve(source: any, args: any, context: any, info: any) {
           const thisSlug: string = source.slug;
           const parentSlug = `${resolve(thisSlug, '..')}/`;
           // noinspection UnnecessaryLocalVariableJS
-          const parentNode = context.nodeModel.getAllNodes({ type: `Tutorial2` })
+          const parentNode = context.nodeModel.getAllNodes({ type: `Tutorial` })
             .find((node: any) => node.slug === parentSlug);
           return parentNode;
         }

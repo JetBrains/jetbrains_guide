@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import { Tutorial2Resource } from './models';
+import { TutorialResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
 import { SeeAlso } from '../../components2/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { TutorialSidebar2 } from './TutorialSidebar2';
+import { TutorialSidebar } from './TutorialSidebar';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 
@@ -15,37 +15,37 @@ export interface TutorialProps {
     search: string;
   };
   data: {
-    tutorial2: Tutorial2Resource
+    tutorial: TutorialResource
   }
 }
 
-const Tutorial2: FC<TutorialProps> = (
+const Tutorial: FC<TutorialProps> = (
   {
     location,
     data: {
-      tutorial2
+      tutorial
     }
   }) => {
 
   // ##### Twitter Card support
   const twitterCardPage: TwitterCardPage = {
-    title: tutorial2.title,
-    description: tutorial2.subtitle ? tutorial2.subtitle : '',
-    image: tutorial2.cardThumbnail ? `https://www.jetbrains.com${tutorial2.cardThumbnail.publicURL}` : ''
+    title: tutorial.title,
+    description: tutorial.subtitle ? tutorial.subtitle : '',
+    image: tutorial.cardThumbnail ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}` : ''
   };
 
   // #### Sidebar
-  const sidebar = <TutorialSidebar2
-    author={tutorial2.author}
-    date={tutorial2.date}
-    technologies={tutorial2.technologies}
-    topics={tutorial2.topics}
+  const sidebar = <TutorialSidebar
+    author={tutorial.author}
+    date={tutorial.date}
+    technologies={tutorial.technologies}
+    topics={tutorial.topics}
   />;
 
   // Listing
   const listing = (
     <div>
-      {tutorial2.tutorialItems && tutorial2.tutorialItems.map(resource => (
+      {tutorial.tutorialItems && tutorial.tutorialItems.map(resource => (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
@@ -62,10 +62,10 @@ const Tutorial2: FC<TutorialProps> = (
 
   const main = (
     <>
-      {tutorial2.body ? (
+      {tutorial.body ? (
         <div className="columns">
           <div className="column is-11-desktop content">
-            <MDXRenderer>{tutorial2.body}</MDXRenderer>
+            <MDXRenderer>{tutorial.body}</MDXRenderer>
           </div>
         </div>
       ) : null}
@@ -80,8 +80,8 @@ const Tutorial2: FC<TutorialProps> = (
 
   return (
     <SidebarLayout
-      pageTitle={tutorial2.title}
-      subtitle={tutorial2.subtitle}
+      pageTitle={tutorial.title}
+      subtitle={tutorial.subtitle}
       twitterCardPage={twitterCardPage}>
       {{
         // topNav,
@@ -94,11 +94,11 @@ const Tutorial2: FC<TutorialProps> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default Tutorial2;
+export default Tutorial;
 
 export const query = graphql`
   query($slug: String!) {
-    tutorial2(slug: { eq: $slug }) {
+    tutorial(slug: { eq: $slug }) {
       slug
       title
       subtitle

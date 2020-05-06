@@ -13,7 +13,7 @@ export interface TutorialSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const TutorialSidebar2: React.FC<TutorialSidebarProps> = (
+export const TutorialSidebar: React.FC<TutorialSidebarProps> = (
   { author, date, technologies, topics }
 ) => {
   const published: SidebarPublishedProps = {

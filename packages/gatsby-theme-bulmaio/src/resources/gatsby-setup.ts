@@ -1,12 +1,12 @@
 import { readFileSync } from 'fs';
 import path from 'path';
 import { tipCreateResolvers } from './tip/createResolvers';
-import { tutorialStep2CreateResolvers } from './tutorialstep2/createResolvers';
+import { tutorialStepCreateResolvers } from './tutorialstep/createResolvers';
 
 export const resourceTypes = {
   Playlist: { plural: 'Playlists', pathname: 'playlists' },
-  Tutorial2: { plural: 'Tutorials', pathname: 'tutorials2' },
-  TutorialStep2: { plural: 'Tutorial Steps', pathname: 'tutorialsteps2' },
+  Tutorial: { plural: 'Tutorials', pathname: 'tutorials' },
+  TutorialStep: { plural: 'Tutorial Steps', pathname: 'tutorialsteps' },
   Tip: { plural: 'Tips', pathname: 'tips' }
 };
 
@@ -46,7 +46,7 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
   // Do the cover pages for each resource type, e.g. all blogpost
   Object.entries(resourceTypes)
     .forEach(([resourceType, metadata]) => {
-      if (resourceType != 'TutorialStep2') {
+      if (resourceType != 'TutorialStep') {
         createListing(graphql, createPage, resourceType, metadata);
       }
     });
@@ -78,7 +78,7 @@ export const resourcesCreatePages = async (graphql: any, actions: any) => {
 
 export const resourcesSchemaCustomizations = (createTypes: any) => {
   // Load the GQL files for resource types
-  const gqlFiles = ['playlist', 'tutorial2', 'tutorialstep2', 'tip'];
+  const gqlFiles = ['playlist', 'tutorial', 'tutorialstep', 'tip'];
   gqlFiles.forEach((resourcetype: string) => {
     const fullFn = path.join(__dirname, `./${resourcetype}/types.graphql`);
     const resourceTypes = readFileSync(`${fullFn}`, {
@@ -90,5 +90,5 @@ export const resourcesSchemaCustomizations = (createTypes: any) => {
 
 export const resourcesCreateResolvers = async (createResolvers: any) => {
   await tipCreateResolvers(createResolvers);
-  await tutorialStep2CreateResolvers(createResolvers);
+  await tutorialStepCreateResolvers(createResolvers);
 };

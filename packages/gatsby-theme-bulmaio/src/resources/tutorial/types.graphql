@@ -1,4 +1,4 @@
-type Tutorial2 implements Node & Resource {
+type Tutorial implements Node & Resource {
     author: Author @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath

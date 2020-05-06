@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
 export const query = graphql`
-  fragment ListedTutorialStep2Fragment on TutorialStep2 {
+  fragment ListedTutorialFragment on Tutorial {
     slug
     title
     subtitle
@@ -12,6 +12,9 @@ export const query = graphql`
     }
     cardThumbnail {
       ...ThumbnailFragment
+    }
+    tutorialItems {
+        ...ListedResourceFragment2
     }
     author {
       ...ListedAuthorFragment

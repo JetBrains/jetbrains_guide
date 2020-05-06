@@ -16,7 +16,7 @@ export interface TutorialstepSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const TutorialStep2Sidebar: React.FC<TutorialstepSidebarProps> = (
+export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = (
   { author, date, slug, technologies, topics, steps }
 ) => {
   const published: SidebarPublishedProps = {

@@ -5,12 +5,12 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components2/Pagination';
-import { Tutorial2Resource } from './models';
+import { TutorialResource } from './models';
 
-interface AllTutorial2Props {
+interface AllTutorialProps {
   data: {
-    allTutorial2: {
-      nodes: Tutorial2Resource[]
+    allTutorial: {
+      nodes: TutorialResource[]
     }
   }
   pageContext: PageContext
@@ -19,9 +19,9 @@ interface AllTutorial2Props {
 const PAGE_TITLE = 'Tutorials';
 const SUBTITLE = 'Learn how to work with technologies using detailed, multi-step lessons accompanied by code samples, instructions, and videos.';
 
-const AllTutorial2: FC<AllTutorial2Props> = (
+const AllTutorial: FC<AllTutorialProps> = (
   {
-    data: { allTutorial2: { nodes } },
+    data: { allTutorial: { nodes } },
     pageContext: { numPages }
   }) => {
   const listing = (
@@ -58,14 +58,14 @@ const AllTutorial2: FC<AllTutorial2Props> = (
 };
 
 // noinspection JSUnusedGlobalSymbols
-export default AllTutorial2;
+export default AllTutorial;
 
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTutorial2(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTutorial(limit: $limit, skip: $skip, sort: {fields: [title]}) {
       nodes {
-        ...ListedTutorial2Fragment
+        ...ListedTutorialFragment
       }
     }
   }
