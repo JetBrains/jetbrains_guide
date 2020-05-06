@@ -6,6 +6,7 @@ A variation of the MasterLayout which makes lists entries.
 
 import React from 'react';
 import SiteLayout from './SiteLayout';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 interface ReferenceLayoutProps {
   pageTitle: string;
@@ -46,7 +47,9 @@ const ReferenceLayout: React.FC<ReferenceLayoutProps> = (
           {bodyHtml && (
             <div className="columns">
               <div className="column is-three-quarters-desktop">
-                <div className="bd-content content" dangerouslySetInnerHTML={{ __html: bodyHtml }}/>
+                <div className="bd-content content">
+                  <MDXRenderer>{bodyHtml}</MDXRenderer>
+                </div>
               </div>
             </div>
           )}

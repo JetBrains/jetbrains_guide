@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import { TopicReference } from './models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import ReferenceLayout2 from '../../components2/ReferenceLayout2';
+import ReferenceLayout from '../../components/layout/ReferenceLayout';
 
 export interface TopicProps {
   data: {
@@ -18,7 +18,7 @@ const Topic: FC<TopicProps> = (
   }
 ) => {
   return (
-    <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+    <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
           <span className={`icon is-large has-text-${accent}`}>
@@ -42,7 +42,7 @@ const Topic: FC<TopicProps> = (
           </div>
         )
       }}
-    </ReferenceLayout2>
+    </ReferenceLayout>
   );
 };
 

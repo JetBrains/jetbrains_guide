@@ -3,14 +3,14 @@ import { graphql } from 'gatsby';
 import { TutorialStepResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
-import { SeeAlso } from '../../components2/seealso';
+import { SeeAlso } from '../../components/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { Step } from '../../components/sidebar/SidebarSteps';
 import { TutorialStepSidebar } from './TutorialStepSidebar';
-import getPrevNextBySlug from '../../components2/pagenav/getPrevNextBySlug';
-import BottomNav from '../../components2/pagenav/BottomNav';
-import TopNav from '../../components2/pagenav/TopNav';
+import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
+import BottomNav from '../../components/pagenav/BottomNav';
+import TopNav from '../../components/pagenav/TopNav';
 import VideoPlayer from '../../components/video/VideoPlayer';
 
 export interface TutorialProps {

@@ -5,7 +5,7 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { ListedResources } from '../../resources/models';
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import Pagination from '../../components2/Pagination';
+import Pagination from '../../components/Pagination';
 
 interface AllAuthorProps {
   data: {

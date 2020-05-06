@@ -1,7 +1,7 @@
 import { Resource } from '../models';
 import { Video } from '../../components/video';
-import { SeeAlsos } from '../../components2/seealso';
-import { InPlaylists } from '../../components2/playlists';
+import { SeeAlsos } from '../../components/seealso';
+import { InPlaylists } from '../../components/playlists';
 
 export interface TipResource extends Resource {
   cardThumbnail: {

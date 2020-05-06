@@ -3,18 +3,18 @@ import { graphql } from 'gatsby';
 import { TipResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
-import { SeeAlso } from '../../components2/seealso';
+import { SeeAlso } from '../../components/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
-import { TipSidebar } from '../../components2/tipsidebar/TipSidebar';
+import { TipSidebar } from '../../components/tipsidebar/TipSidebar';
 import { LongVideo, ShortVideo } from '../../components/video';
 import { Link as ScrollLink } from 'react-scroll/modules';
 import { Element } from 'react-scroll';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { getPlaylist } from '../../components2/pagenav/common';
-import getPrevNextBySlug from '../../components2/pagenav/getPrevNextBySlug';
-import BottomNav from '../../components2/pagenav/BottomNav';
-import TopNav from '../../components2/pagenav/TopNav';
+import { getPlaylist } from '../../components/pagenav/common';
+import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
+import BottomNav from '../../components/pagenav/BottomNav';
+import TopNav from '../../components/pagenav/TopNav';
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -94,7 +94,6 @@ const Tip: FC<TipProps> = (
     inPlaylists={[]}
   />;
 
-  console.log(349449, tip.hasBody)
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">

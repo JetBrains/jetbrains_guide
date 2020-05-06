@@ -1,15 +1,15 @@
 import * as React from 'react';
 
-import SidebarPublished, { SidebarPublishedProps } from '../../components/sidebar/SidebarPublished';
-import SidebarDoclinks, { Doclink } from '../../components/sidebar/SidebarDoclinks';
-import SidebarPlaylists, { SidebarPlaylistsProps } from '../../components/sidebar/SidebarPlaylists';
-import Sidebar from '../../components/sidebar/Sidebar';
-import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
-import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
-import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
-import { ResourceCardTopics } from '../../components/resourcecard/topic';
+import SidebarPublished, { SidebarPublishedProps } from '../sidebar/SidebarPublished';
+import SidebarDoclinks, { Doclink } from '../sidebar/SidebarDoclinks';
+import SidebarPlaylists, { SidebarPlaylistsProps } from '../sidebar/SidebarPlaylists';
+import Sidebar from '../sidebar/Sidebar';
+import SidebarReferencesGroup from '../sidebar/SidebarReferencesGroup';
+import { ResourceCardAuthorProps } from '../resourcecard/author';
+import { ResourceCardTechnologies } from '../resourcecard/technology';
+import { ResourceCardTopics } from '../resourcecard/topic';
 import { InPlaylists } from '../playlists';
-import { Video } from '../../components/video';
+import { Video } from '../video';
 import { SeeAlsos } from '../seealso';
 
 export interface TipSidebarProps {

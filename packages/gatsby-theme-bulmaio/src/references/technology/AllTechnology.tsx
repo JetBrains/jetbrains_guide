@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { PageContext } from '../../components/models';
 import SubsectionTechnology from '../../components/subsections/SubsectionTechnology';
-import Pagination from '../../components2/Pagination';
+import Pagination from '../../components/Pagination';
 import { TechnologyReference } from './models';
 
 interface TechnologiesProps {

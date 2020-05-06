@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import ReferenceLayout2 from '../../components2/ReferenceLayout2';
+import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import { AuthorReference } from './models';
 
 export interface AuthorProps {
@@ -17,8 +17,7 @@ const Author: FC<AuthorProps> = (
       author: { title, subtitle, body, thumbnail, resources }
     }
   }) => {
-console.log(23233333, resources)
-  return (<ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+  return (<ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
           <div className="image is-rounded is-96x96">
@@ -41,7 +40,7 @@ console.log(23233333, resources)
           </div>
         )
       }}
-    </ReferenceLayout2>
+    </ReferenceLayout>
   );
 };
 

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
-import ReferenceLayout2 from '../../components2/ReferenceLayout2';
+import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import { TechnologyReference } from './models';
 
@@ -17,7 +17,7 @@ const Technology: FC<TechnologyProps> = (
     }
   }: TechnologyProps) => {
   return (
-    <ReferenceLayout2 pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+    <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
         figure: (
           <div className="image is-rounded is-96x96">
@@ -41,7 +41,7 @@ const Technology: FC<TechnologyProps> = (
           </div>
         )
       }}
-    </ReferenceLayout2>
+    </ReferenceLayout>
   );
 };
 

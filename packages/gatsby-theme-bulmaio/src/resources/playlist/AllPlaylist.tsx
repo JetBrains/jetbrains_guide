@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import Pagination from '../../components2/Pagination';
+import Pagination from '../../components/Pagination';
 import { PlaylistResource } from './models';
 
 interface AllPlaylistProps {

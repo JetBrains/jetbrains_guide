@@ -4,7 +4,7 @@ import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/Referenc
 import { TopicReference } from './models';
 import { PageContext } from '../../components/models';
 import SubsectionTopic from '../../components/subsections/SubsectionTopic';
-import Pagination from '../../components2/Pagination';
+import Pagination from '../../components/Pagination';
 
 export interface TopicIndexProps {
   data: {

@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { TutorialResource } from './models';
 // @ts-ignore
 // noinspection ES6UnusedImports
-import { SeeAlso } from '../../components2/seealso';
+import { SeeAlso } from '../../components/seealso';
 import SidebarLayout from '../../components/layout/SidebarLayout';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
 import { TutorialSidebar } from './TutorialSidebar';
