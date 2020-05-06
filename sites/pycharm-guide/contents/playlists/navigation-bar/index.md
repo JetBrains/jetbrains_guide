@@ -1,12 +1,13 @@
 ---
+label: B
 date: 2019-02-04
-title: 'Navigation Bar Intro'
-technologies: ['pytest']
-topics: ['navigation','navigationbar']
+title: Navigation Bar Intro
+technologies: [pytest]
+topics: [navigation, navigationbar]
 author: pwe
-subtitle: 'Move around files with keyboard, without wasting screen UI space'
+subtitle: Move around files with keyboard, without wasting screen UI space
 thumbnail: ./thumbnail.png
-cardThumbnail: './card.png'
+cardThumbnail: ./card.png
 playlistItems:
     - /tips/navbar-activate/
     - /tips/navbar-navigate-files/
