@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2019-01-22
-title: 'Open File With Navigation Bar'
+title: Open File With Navigation Bar
 technologies: []
 topics: [navigation, navigationbar]
 author: pwe
-subtitle: 'Open a file somewhere in the project tree using the keyboard and Navigation Bar.'
+subtitle: Open a file somewhere in the project tree using the keyboard and Navigation Bar.
 seealso:
-  - title: 'Navigation bar'
-    href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
-  - title: 'Navigating Tips and Tricks'
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+  - title: Navigation bar
+    href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
+  - title: Navigating Tips and Tricks
+    href: https://www.jetbrains.com/help/pycharm/navigation-bar.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

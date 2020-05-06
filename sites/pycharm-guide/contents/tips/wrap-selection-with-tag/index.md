@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Wrap Selection With Tag
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Use the keyboard to put a wrapper tag around a selection of code.
 seealso:
   - title: Surround code fragments
-    href: 'https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml'
+    href: https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

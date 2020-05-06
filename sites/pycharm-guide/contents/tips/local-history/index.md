@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Use Local History to Avoid Disaster
 technologies: []
@@ -8,9 +7,9 @@ author: pwe
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
 seealso:
   - title: Local History
-    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml'
+    href: https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml
   - title: Retention period for Local History
-    href: 'https://www.jetbrains.com/help/pycharm/local-history.html#retention'  
+    href: https://www.jetbrains.com/help/pycharm/local-history.html#retention  
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

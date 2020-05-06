@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-22
 title: Reword Commit Message
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Change the wording in your last commit message, after you committed.
 seealso:
   - title: Edit a commit message
-    href: 'https://www.jetbrains.com/help/pycharm/edit-project-history.html#reword-commit'
+    href: https://www.jetbrains.com/help/pycharm/edit-project-history.html#reword-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

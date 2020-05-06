@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Create a Project from GitHub
 technologies: []
@@ -8,9 +7,9 @@ author: pwe
 subtitle: Let PyCharm do the work to clone and setup a project hosted on GitHub.
 seealso:
   - title: Check out a project
-    href: 'https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub'
+    href: https://www.jetbrains.com/help/pycharm/manage-projects-hosted-on-github.html#clone-from-GitHub
   - title: PyCharm Help for GitHub
-    href: 'https://www.jetbrains.com/help/pycharm/github.html'  
+    href: https://www.jetbrains.com/help/pycharm/github.html  
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -1,14 +1,13 @@
 ---
-type: tip
 date: 2018-12-04
-title: 'Install and import'
+title: Install and import
 technologies: []
 topics: [python]
 author: pwe
-subtitle: 'While typing a symbol, let PyCharm install it and generate the import.'
+subtitle: While typing a symbol, let PyCharm install it and generate the import.
 seealso:
-  - title: 'Creating and Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
+  - title: Creating and Optimizing Imports
+    href: https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

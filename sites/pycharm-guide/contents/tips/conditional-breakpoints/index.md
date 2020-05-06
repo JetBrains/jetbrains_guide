@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-15
 title: Conditional Breakpoints
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Speed up your debugging by stopping execution only when you want to.
 seealso:
   - title: Breakpoint properties
-    href: 'https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties'
+    href: https://www.jetbrains.com/help/pycharm/using-breakpoints.html#breakpoint-properties
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

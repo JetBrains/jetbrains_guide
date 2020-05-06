@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Split Screen Without Tabs
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Get your code and tests side-by-side without resorting to tabs.
 seealso:
   - title: Splitting and unsplitting editor window
-    href: 'https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window'
+    href: https://www.jetbrains.com/help/pycharm/managing-editor-tabs.html#splitting-and-unsplitting-editor-window
   - title: Tabs and split windows
     href: https://www.jetbrains.com/help/pycharm/migrating-from-text-editors.html#tabs_split_windows
 thumbnail: ./thumbnail.png

@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2018-12-05
-title: 'Run Single Test'
+title: Run Single Test
 technologies: [pytest]
 topics: [testing]
 author: pwe
-subtitle: 'Speed up testing by focusing on one test.'
+subtitle: Speed up testing by focusing on one test.
 seealso:
-  - title: 'Performing Tests'
-    href: 'https://www.jetbrains.com/help/pycharm/performing-tests.html'
-  - title: 'Test Runner Tab'
-    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html'
+  - title: Performing Tests
+    href: https://www.jetbrains.com/help/pycharm/performing-tests.html
+  - title: Test Runner Tab
+    href: https://www.jetbrains.com/help/pycharm/test-runner-tab.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

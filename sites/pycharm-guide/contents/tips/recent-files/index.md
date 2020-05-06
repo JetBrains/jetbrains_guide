@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2018-11-04
-title: 'Jump to Recent File'
+title: Jump to Recent File
 technologies: []
 topics: [navigation, speedsearch]
 author: pwe
-subtitle: 'Use Recent Files to quickly jump to last-visited file.'
+subtitle: Use Recent Files to quickly jump to last-visited file.
 seealso:
-  - title: 'Navigating to Recent File'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html'
-  - title: 'Speed Search in Tool Windows'
-    href: 'https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html'
+  - title: Navigating to Recent File
+    href: https://www.jetbrains.com/help/pycharm/navigating-to-recent-file.html
+  - title: Speed Search in Tool Windows
+    href: https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

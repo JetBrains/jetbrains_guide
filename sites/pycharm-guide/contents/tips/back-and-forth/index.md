@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2018-11-09
-title: 'Navigate Cursor Position Back and Forth'
+title: Navigate Cursor Position Back and Forth
 technologies: []
 topics: [navigation]
 author: pwe
-subtitle: 'Easily navigate back to where you were, or where you went.'
+subtitle: Easily navigate back to where you were, or where you went.
 seealso:
-  - title: 'Navigate to Navigated Items'
-    href: 'https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html'
+  - title: Navigate to Navigated Items
+    href: https://www.jetbrains.com/help/pycharm/navigating-to-navigated-items.html
 thumbnail: ./thumbnail.png
-cardThumbnail: './card.png'
+cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=Wto7hdfx-Sg

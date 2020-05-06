@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-15
 title: Evaluate Expression During Debugging
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Select your code and execute it, in the right context.
 seealso:
   - title: Evaluating Expressions
-    href: 'https://www.jetbrains.com/help/pycharm/evaluating-expressions.html'
+    href: https://www.jetbrains.com/help/pycharm/evaluating-expressions.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

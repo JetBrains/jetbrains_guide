@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-18
 title: Speed Up Coverage with Configuration File
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Speed up your "visual coverage" with a config file and correct working directory.
 seealso:
   - title: Coverage configuration files
-    href: 'https://coverage.readthedocs.io/en/coverage-4.2/config.html'
+    href: https://coverage.readthedocs.io/en/coverage-4.2/config.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

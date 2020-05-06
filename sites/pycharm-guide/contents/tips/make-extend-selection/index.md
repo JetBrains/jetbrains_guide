@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-03-10
 title: Make and Extend Selection Using Keyboard
 technologies: []

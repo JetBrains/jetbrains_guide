@@ -1,6 +1,4 @@
 ---
-type: playlist
-label: A
 date: 2019-04-30
 title: 42 Tips and Tricks
 technologies: [pytest]

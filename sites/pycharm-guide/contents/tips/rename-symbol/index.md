@@ -1,14 +1,13 @@
 ---
-type: tip
 date: 2019-03-12
-title: 'Rename Symbol'
+title: Rename Symbol
 technologies: []
 topics: [editing]
 author: pwe
-subtitle: 'Change a variable name, class name, or other symbol, across the project.'
+subtitle: Change a variable name, class name, or other symbol, across the project.
 seealso:
 - title: Renaming a symbol
-  href: 'https://www.jetbrains.com/help/pycharm/rename-refactorings.html'
+  href: https://www.jetbrains.com/help/pycharm/rename-refactorings.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -1,18 +1,17 @@
 ---
-type: tip
 date: 2019-03-25
-title: 'Enable vim keybindings with IdeaVim plugin'
+title: Enable vim keybindings with IdeaVim plugin
 technologies: []
 topics: [editing]
-author: 'wht'
-subtitle: 'Use the same keybindings from vim with a PlugIn'
+author: wht
+subtitle: Use the same keybindings from vim with a PlugIn
 seealso:
-  - title: 'Using Vim Editor Emulation in Pycharm (IdeaVim)'
-    href: 'https://www.jetbrains.com/help/pycharm/using-product-as-the-vim-editor.html'
-  - title: 'Use emacs keybindings'
-    href: 'https://plugins.jetbrains.com/plugin/7906-emacs-'
+  - title: Using Vim Editor Emulation in Pycharm (IdeaVim)
+    href: https://www.jetbrains.com/help/pycharm/using-product-as-the-vim-editor.html
+  - title: Use emacs keybindings
+    href: https://plugins.jetbrains.com/plugin/7906-emacs-
 thumbnail: ./thumbnail.png
-cardThumbnail: './card.png'
+cardThumbnail: ./card.png
 leadin: |
   *Want to use your muscle memory from Vim?  You can!*
 
@@ -51,5 +50,5 @@ map <leader>x :action $Cut<CR>
 
 ```
 
-To see a index of supported commands in the IdeaVim Plug-in, click [here](https://github.com/JetBrains/ideavim/blob/master/src/com/maddyhome/idea/vim/package-info.java)
+To see an index of supported commands in the IdeaVim Plug-in, click [here](https://github.com/JetBrains/ideavim/blob/master/src/com/maddyhome/idea/vim/package-info.java)
 

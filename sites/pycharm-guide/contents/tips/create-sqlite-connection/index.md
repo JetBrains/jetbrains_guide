@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Create SQLite Database Connection By Drag-and-Drop
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Drag-and-drop a .sqlite database file onto the Database tool to create a connection.
 seealso:
   - title: Connecting to a database
-    href: 'https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite'
+    href: https://www.jetbrains.com/help/pycharm/connecting-to-a-database.html#connect-to-sqlite
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

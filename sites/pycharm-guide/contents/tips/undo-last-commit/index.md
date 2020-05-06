@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Undo Last Commit
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Easily and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit
-    href: 'https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit'
+    href: https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

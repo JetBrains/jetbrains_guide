@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: See VCS Changed Lines In Gutter
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Quickly spot which parts of your file have changed since the last commit.
 seealso:
   - title: Tracking changes to a file in the editor
-    href: 'https://www.jetbrains.com/help/pycharm/viewing-changes-information.html?section=Windows%20or%20Linux#local_changes'
+    href: https://www.jetbrains.com/help/pycharm/viewing-changes-information.html?section=Windows%20or%20Linux#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

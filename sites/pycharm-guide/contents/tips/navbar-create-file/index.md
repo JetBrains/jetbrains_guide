@@ -1,18 +1,17 @@
 ---
-type: tip
 date: 2019-01-24
-title: 'Create New File With Navigation Bar'
+title: Create New File With Navigation Bar
 technologies: []
 topics: [navigation, navigationbar]
 author: pwe
-subtitle: 'Activate the Navigation Bar and create a new file somewhere in the project tree.'
+subtitle: Activate the Navigation Bar and create a new file somewhere in the project tree.
 seealso:
-  - title: 'Creating Files from Templates'
-    href: 'https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html'
-  - title: 'Navigation bar'
-    href: 'https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html'
-  - title: 'Navigating Tips and Tricks'
-    href: 'https://www.jetbrains.com/help/pycharm/navigation-bar.html'
+  - title: Creating Files from Templates
+    href: https://www.jetbrains.com/help/pycharm/creating-files-from-templates.html
+  - title: Navigation bar
+    href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
+  - title: Navigating Tips and Tricks
+    href: https://www.jetbrains.com/help/pycharm/navigation-bar.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

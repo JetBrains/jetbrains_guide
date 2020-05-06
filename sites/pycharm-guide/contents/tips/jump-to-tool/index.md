@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2018-11-07
-title: 'Use Recent Files to Open Tool Window'
+title: Use Recent Files to Open Tool Window
 technologies: []
 topics: [navigation]
 author: pwe
-subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
+subtitle: From the Recent Files popup, open one of the IDE tool windows.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -1,11 +1,10 @@
 ---
-type: tip
 date: 2019-03-11
-title: 'Move Block Up/Down Using Keyboard'
+title: Move Block Up/Down Using Keyboard
 technologies: []
 topics: [editing]
 author: pwe
-subtitle: 'Use the keyboard to move a line or selection up or down in your file.'
+subtitle: Use the keyboard to move a line or selection up or down in your file.
 seealso:
 - title: Adding, Deleting and Moving Code Elements
   href: https://www.jetbrains.com/help/pycharm/adding-deleting-and-moving-lines.html
