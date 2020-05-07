@@ -14,6 +14,8 @@ Guide is intended as an open source project.
 
 # Installation
 
+*Note: As of April 2020, you need NodeJS 12. Later versions (14, etc.) won't work.*
+
 To setup a local development copy of this project, follow the steps below.
 
 If you prefer Docker, then see the Docker section below.
