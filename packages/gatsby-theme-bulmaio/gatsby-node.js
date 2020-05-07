@@ -41,3 +41,49 @@ const onCreateResolvers = async ({
   await setupCreateResolvers(createResolvers);
 };
 exports.createResolvers = onCreateResolvers;
+
+exports.onPreExtractQueries = async ({ getNodesByType, reporter }) => {
+  let hasMissing = false
+  const markdownNodes = getNodesByType("MarkdownRemark")
+
+  const authorLabels = new Set(await getNodesByType("Author")
+    .map(author => author.label))
+
+  const technologyLabels = new Set(await getNodesByType("Technology")
+    .map(technology => technology.label))
+
+  const topicLabels = new Set(await getNodesByType("Topic")
+    .map(topic => topic.label))
+
+  markdownNodes.forEach(markdownNode => {
+
+    // ### 1. Check for missing authors
+    // First get the known list of all author labels
+    const author = markdownNode.frontmatter.author
+    if (!authorLabels.has(author)) {
+      reporter.warn(`GUIDE: Missing author ${author} on resource "${markdownNode.frontmatter.title}"`)
+      hasMissing = true
+    }
+
+    // ### 2. Check for missing technologies
+    // First get the known list of all author labels
+    markdownNode.frontmatter.technologies.forEach(technology => {
+      if (!technologyLabels.has(technology)) {
+        reporter.warn(`GUIDE: Missing technology ${technology} on resource "${markdownNode.frontmatter.title}"`)
+        hasMissing = true
+      }
+    })
+
+    // ### 3. Check for missing authors
+    // First get the known list of all author labels
+    markdownNode.frontmatter.topics.forEach(topic => {
+      if (!topicLabels.has(topic)) {
+        reporter.warn(`GUIDE: Missing topic ${topic} on resource "${markdownNode.frontmatter.title}"`)
+        hasMissing = true
+      }
+    })
+  })
+
+  // ### Bail out if something missing
+  if (hasMissing) throw `GUIDE: Missing references found in resources`
+}
