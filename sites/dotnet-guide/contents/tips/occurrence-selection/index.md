@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Where we go, we don’t need _Find & Replace_!** 🛹⚡️
 
-    Using actions for occurrence selection is a powerful way to transform and manipulate all kinds of texts. We start by making a selection for our text. With every call to `Add Selection for Next Occurrence` we get another multicaret that can be moved around, insert and delete text, expand or shrink its individual selection, or toggle the casing of its text. This is exactly what we need if we have to fix only a couple of similar invocations or change the format of our data! 🎭📐
+    Using actions for occurrence selection is a powerful way to transform and manipulate all kinds of texts. We start by making a selection for our text. With every call<!--more--> to `Add Selection for Next Occurrence` we get another multicaret that can be moved around, insert and delete text, expand or shrink its individual selection, or toggle the casing of its text. This is exactly what we need if we have to fix only a couple of similar invocations or change the format of our data! 🎭📐
 
     Remember to always use meaningful names! 🏷
     Invoking `Unselect Occurrence` removes the previously added selection; `Select All Occurrences` scans the whole document for occurrences and selects them.

@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Meet the VCS Operations Quicklist** 🏷
 
-    Switching branches, committing changes, viewing file history, or comparing revisions. With the VCS Operations quicklist, those actions are both, **systematically listed and easy to reach**. Furthermore, the quicklist supports _just typing_ to filter results, and shows indicators for branches to see incoming and outgoing changes.
+    Switching branches, committing changes, viewing file history, or comparing revisions. With the VCS Operations quicklist, those actions are both, **systematically listed and easy to reach**. Furthermore<!--more-->, the quicklist supports _just typing_ to filter results, and shows indicators for branches to see incoming and outgoing changes.
 
     A little cream topping is the automatic restore of **workspaces** whenever we switch a branch. This ensures that we get our previous environment back, including opened files, favorites, breakpoints, and more.
 
