@@ -19,6 +19,7 @@ export interface TutorialProps {
   }
 }
 
+// noinspection JSUnusedLocalSymbols
 const Tutorial: FC<TutorialProps> = (
   {
     location,
@@ -112,6 +113,9 @@ export const query = graphql`
       }
       author {
         ...ListedAuthorFragment
+      }
+      products {
+        ...ListedProductFragment
       }
       technologies {
         ...ListedTechnologyFragment
