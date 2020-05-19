@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-01-29
 title: Settings Layers
 technologies: [.net]
