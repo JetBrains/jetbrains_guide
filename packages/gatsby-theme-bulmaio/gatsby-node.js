@@ -57,28 +57,30 @@ exports.onPreExtractQueries = async ({ getNodesByType, reporter }) => {
 
   markdownNodes.forEach(markdownNode => {
 
+    const fm = markdownNode.frontmatter;
+
     // ### 1. Check for missing authors
     // First get the known list of all author labels
-    const author = markdownNode.frontmatter.author
+    const author = fm.author
     if (!authorLabels.has(author)) {
-      reporter.warn(`GUIDE: Missing author ${author} on resource "${markdownNode.frontmatter.title}"`)
+      reporter.warn(`GUIDE: Missing author ${author} on resource "${fm.title}"`)
       hasMissing = true
     }
 
     // ### 2. Check for missing technologies
     // First get the known list of all author labels
-    markdownNode.frontmatter.technologies.forEach(technology => {
+    fm.technologies && fm.technologies.forEach(technology => {
       if (!technologyLabels.has(technology)) {
-        reporter.warn(`GUIDE: Missing technology ${technology} on resource "${markdownNode.frontmatter.title}"`)
+        reporter.warn(`GUIDE: Missing technology ${technology} on resource "${fm.title}"`)
         hasMissing = true
       }
     })
 
     // ### 3. Check for missing authors
     // First get the known list of all author labels
-    markdownNode.frontmatter.topics.forEach(topic => {
+    fm.topics && fm.topics.forEach(topic => {
       if (!topicLabels.has(topic)) {
-        reporter.warn(`GUIDE: Missing topic ${topic} on resource "${markdownNode.frontmatter.title}"`)
+        reporter.warn(`GUIDE: Missing topic ${topic} on resource "${fm.title}"`)
         hasMissing = true
       }
     })
