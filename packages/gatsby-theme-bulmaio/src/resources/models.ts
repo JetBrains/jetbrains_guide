@@ -8,7 +8,7 @@ import { ResourceCardAuthorProps } from '../components/resourcecard/author/Resou
 import { ResourceCardTechnologies } from '../components/resourcecard/technology/ResourceCardTechnologies';
 import { ResourceCardTopics } from '../components/resourcecard/topic/ResourceCardTopics';
 
-/* Various models used throughout the site*/
+/* Various models used throughout the site */
 
 export interface Resource {
   author: AuthorReference
@@ -40,4 +40,3 @@ export interface ListedResource {
 }
 
 export type ListedResources = ListedResource[];
-// export type ListedResourcesQuery = { resources: ListedResources }
