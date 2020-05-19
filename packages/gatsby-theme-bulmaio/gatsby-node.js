@@ -43,49 +43,53 @@ const onCreateResolvers = async ({
 exports.createResolvers = onCreateResolvers;
 
 exports.onPreExtractQueries = async ({ getNodesByType, reporter }) => {
-  // let hasMissing = false
-  // const markdownNodes = getNodesByType("MarkdownRemark")
-  //
-  // const authorLabels = new Set(await getNodesByType("Author")
-  //   .map(author => author.label))
-  //
-  // const technologyLabels = new Set(await getNodesByType("Technology")
-  //   .map(technology => technology.label))
-  //
-  // const topicLabels = new Set(await getNodesByType("Topic")
-  //   .map(topic => topic.label))
-  //
-  // markdownNodes.forEach(markdownNode => {
-  //
-  //   const fm = markdownNode.frontmatter;
-  //
-  //   // ### 1. Check for missing authors
-  //   // First get the known list of all author labels
-  //   const author = fm.author
-  //   if (!authorLabels.has(author)) {
-  //     reporter.warn(`GUIDE: Missing author ${author} on resource "${fm.title}"`)
-  //     hasMissing = true
-  //   }
-  //
-  //   // ### 2. Check for missing technologies
-  //   // First get the known list of all author labels
-  //   fm.technologies && fm.technologies.forEach(technology => {
-  //     if (!technologyLabels.has(technology)) {
-  //       reporter.warn(`GUIDE: Missing technology ${technology} on resource "${fm.title}"`)
-  //       hasMissing = true
-  //     }
-  //   })
-  //
-  //   // ### 3. Check for missing authors
-  //   // First get the known list of all author labels
-  //   fm.topics && fm.topics.forEach(topic => {
-  //     if (!topicLabels.has(topic)) {
-  //       reporter.warn(`GUIDE: Missing topic ${topic} on resource "${fm.title}"`)
-  //       hasMissing = true
-  //     }
-  //   })
-  // })
-  //
-  // // ### Bail out if something missing
-  // if (hasMissing) throw `GUIDE: Missing references found in resources`
-}
+  let hasMissing = false;
+  const markdownNodes = getNodesByType('MarkdownRemark');
+
+  const authorLabels = new Set(await getNodesByType('Author')
+    .map(author => author.label));
+
+  const technologyLabels = new Set(await getNodesByType('Technology')
+    .map(technology => technology.label));
+
+  const topicLabels = new Set(await getNodesByType('Topic')
+    .map(topic => topic.label));
+
+  markdownNodes.forEach(markdownNode => {
+
+    const fm = markdownNode.frontmatter;
+
+    // TODO 2.1 Fix resource/reference interface sharing
+    if (fm.author) {
+
+      // ### 1. Check for missing authors
+      // First get the known list of all author labels
+      const author = fm.author;
+      if (!authorLabels.has(author)) {
+        reporter.warn(`GUIDE: Missing author ${author} on resource "${fm.title}"`);
+        hasMissing = true;
+      }
+
+      // ### 2. Check for missing technologies
+      // First get the known list of all author labels
+      fm.technologies && fm.technologies.forEach(technology => {
+        if (!technologyLabels.has(technology)) {
+          reporter.warn(`GUIDE: Missing technology ${technology} on resource "${fm.title}"`);
+          hasMissing = true;
+        }
+      });
+
+      // ### 3. Check for missing authors
+      // First get the known list of all author labels
+      fm.topics && fm.topics.forEach(topic => {
+        if (!topicLabels.has(topic)) {
+          reporter.warn(`GUIDE: Missing topic ${topic} on resource "${fm.title}"`);
+          hasMissing = true;
+        }
+      });
+    }
+  });
+
+  // ### Bail out if something missing
+  if (hasMissing) throw `GUIDE: Missing references found in resources`;
+};
