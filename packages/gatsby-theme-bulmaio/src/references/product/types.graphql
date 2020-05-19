@@ -1,0 +1,12 @@
+type Product implements Node & Reference {
+    id: ID!
+    label: String!
+    slug: String!
+    title: String!
+    subtitle: String
+    website: String
+    logo: File @fileByRelativePath
+    body: String! @parentBody
+    parent: Node
+    resources: [Resource] @link(by: "products.label", from: "label")
+}
