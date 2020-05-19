@@ -54,7 +54,7 @@ export const query = graphql`
     topic(slug: { eq: $slug }) {
       ...ListedTopicFragment
       resources {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
     }
   }

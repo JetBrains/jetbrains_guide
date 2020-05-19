@@ -109,7 +109,7 @@ export const query = graphql`
       body
       date(formatString: "YYYY-MM-DD")
       tutorialItems {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
       author {
         ...ListedAuthorFragment

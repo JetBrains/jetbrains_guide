@@ -53,7 +53,7 @@ export const query = graphql`
     technology(slug: { eq: $slug }) {
       ...ListedTechnologyFragment
       resources {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
     }
   }

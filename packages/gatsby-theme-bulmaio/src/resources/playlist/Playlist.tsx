@@ -110,7 +110,7 @@ export const query = graphql`
       body
       date(formatString: "YYYY-MM-DD")
       playlistItems {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
       author {
         ...ListedAuthorFragment

@@ -9,7 +9,7 @@ export const RecentItems: React.FC = () => {
     query {
       allResource(sort: {fields: [date, title], order: [DESC, ASC]}, limit: 1000) {
         nodes {
-          ...ListedResourceFragment2
+          ...ListedResourceFragment
         }
       }
     }

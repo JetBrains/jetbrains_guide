@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
 export const query = graphql`
-  fragment ListedResourceFragment2 on Resource {
+  fragment ListedResourceFragment on Resource {
     slug
     title
     subtitle

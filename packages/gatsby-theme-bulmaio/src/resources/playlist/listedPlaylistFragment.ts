@@ -14,7 +14,7 @@ export const query = graphql`
       ...ThumbnailFragment
     }
     playlistItems {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
     }
     author {
       ...ListedAuthorFragment

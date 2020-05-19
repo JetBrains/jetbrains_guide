@@ -52,7 +52,7 @@ export const query = graphql`
     author(slug: { eq: $slug }) {
       ...ListedAuthorFragment
       resources {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
     }
   }

@@ -59,7 +59,7 @@ export const query = graphql`
     product(slug: { eq: $slug }) {
       ...ListedProductFragment
       resources {
-        ...ListedResourceFragment2
+        ...ListedResourceFragment
       }
     }
   }
