@@ -5,16 +5,18 @@ import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGr
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
 import { ResourceCardTopics } from '../../components/resourcecard/topic';
+import { ResourceCardProducts } from '../../components/resourcecard/product';
 
 export interface PlaylistSidebarProps {
   author: ResourceCardAuthorProps;
   date: string;
+  products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
 }
 
 export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
-  { author, date, technologies, topics }
+  { author, date, products, technologies, topics }
 ) => {
   const published: SidebarPublishedProps = {
     date: date,
@@ -27,6 +29,11 @@ export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
         reftype={`technologies`}
         accent={`danger`}
         references={technologies ? technologies.map(t => t.label) : []}
+      />
+      <SidebarReferencesGroup
+        reftype={`products`}
+        accent={`info`}
+        references={products ? products.map(t => t.label) : []}
       />
       <SidebarReferencesGroup
         reftype={`topics`} accent={`success`}

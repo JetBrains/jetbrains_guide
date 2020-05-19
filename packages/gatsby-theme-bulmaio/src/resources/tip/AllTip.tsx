@@ -32,6 +32,7 @@ const AllTip: FC<AllTipProps> = (
             key={resource.slug}
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+            products={{ items: resource.products }}
             technologies={{ items: resource.technologies }}
             topics={{ items: resource.topics }}
             date={{ date: resource.date }}

@@ -16,6 +16,7 @@ const Product: FC<ProductProps> = (
       product: { title, subtitle, body, logo, resources }
     }
   }: ProductProps) => {
+  console.log(222, resources[0].products)
   return (
     <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
       {{
@@ -31,6 +32,7 @@ const Product: FC<ProductProps> = (
                 key={resource.slug}
                 thumbnail={resource.thumbnail}
                 media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+                products={{ items: resource.products }}
                 technologies={{ items: resource.technologies }}
                 topics={{ items: resource.topics }}
                 date={{ date: resource.date }}

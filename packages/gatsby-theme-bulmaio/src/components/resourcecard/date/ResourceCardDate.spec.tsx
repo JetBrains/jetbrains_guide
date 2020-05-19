@@ -1,9 +1,6 @@
 import React from 'react';
-import { cleanup, render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 import { ResourceCardDate, ResourceCardDateProps } from './ResourceCardDate';
-
-afterEach(cleanup);
 
 export const DUMMY_RCD: ResourceCardDateProps = {
   date: 'date1'

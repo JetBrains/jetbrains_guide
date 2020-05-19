@@ -11,10 +11,12 @@ import { ResourceCardTopics } from '../resourcecard/topic';
 import { InPlaylists } from '../playlists';
 import { Video } from '../video';
 import { SeeAlsos } from '../seealso';
+import { ResourceCardProducts } from '../resourcecard/product';
 
 export interface TipSidebarProps {
   date: string;
   author: ResourceCardAuthorProps;
+  products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
   body?: string;
@@ -24,8 +26,10 @@ export interface TipSidebarProps {
 }
 
 export const TipSidebar: React.FC<TipSidebarProps> = (
-  { date,
+  {
+    date,
     author,
+    products,
     technologies,
     topics,
     body,
@@ -63,6 +67,11 @@ export const TipSidebar: React.FC<TipSidebarProps> = (
         reftype={`technologies`}
         accent={`danger`}
         references={technologies ? technologies.map(t => t.label) : []}
+      />
+      <SidebarReferencesGroup
+        reftype={`products`}
+        accent={`info`}
+        references={products ? products.map(t => t.label) : []}
       />
       <SidebarReferencesGroup
         reftype={`topics`}

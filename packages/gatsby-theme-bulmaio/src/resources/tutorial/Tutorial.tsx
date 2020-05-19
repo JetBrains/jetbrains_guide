@@ -38,11 +38,12 @@ const Tutorial: FC<TutorialProps> = (
   const sidebar = <TutorialSidebar
     author={tutorial.author}
     date={tutorial.date}
+    products={tutorial.products}
     technologies={tutorial.technologies}
     topics={tutorial.topics}
   />;
 
-  // Listing
+  // Listing`
   const listing = (
     <div>
       {tutorial.tutorialItems && tutorial.tutorialItems.map(resource => (
@@ -50,6 +51,7 @@ const Tutorial: FC<TutorialProps> = (
             key={resource.slug}
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+            products={{ items: resource.products }}
             technologies={{ items: resource.technologies }}
             topics={{ items: resource.topics }}
             date={{ date: resource.date }}

@@ -86,6 +86,7 @@ const TutorialStep: FC<TutorialProps> = (
     date={tutorialStep.date}
     slug={tutorialStep.slug}
     steps={steps}
+    products={tutorialStep.products}
     technologies={tutorialStep.technologies}
     topics={tutorialStep.topics}
   />;

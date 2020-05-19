@@ -16,6 +16,9 @@ export const query = graphql`
     author {
       ...ListedAuthorFragment
     }
+    products {
+      ...ListedProductFragment
+    }
     technologies {
       ...ListedTechnologyFragment
     }

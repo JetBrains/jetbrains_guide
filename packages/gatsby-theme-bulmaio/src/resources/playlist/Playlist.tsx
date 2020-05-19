@@ -38,6 +38,7 @@ const Playlist: FC<PlaylistProps> = (
   const sidebar = <PlaylistSidebar
     author={playlist.author}
     date={playlist.date}
+    products={playlist.products}
     technologies={playlist.technologies}
     topics={playlist.topics}
   />;
@@ -111,6 +112,9 @@ export const query = graphql`
       }
       author {
         ...ListedAuthorFragment
+      }
+      products {
+        ...ListedProductFragment
       }
       technologies {
         ...ListedTechnologyFragment

@@ -86,6 +86,7 @@ const Tip: FC<TipProps> = (
   const sidebar = <TipSidebar
     date={tip.date}
     author={tip.author}
+    products={tip.products}
     technologies={tip.technologies}
     topics={tip.topics}
     body={tip.hasBody ? tip.body : undefined}
@@ -204,6 +205,9 @@ export const query = graphql`
       }
       author {
         ...ListedAuthorFragment
+      }
+      products {
+        ...ListedProductFragment
       }
       technologies {
         ...ListedTechnologyFragment

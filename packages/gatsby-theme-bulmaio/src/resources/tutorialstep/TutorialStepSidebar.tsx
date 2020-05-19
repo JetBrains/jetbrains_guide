@@ -6,18 +6,20 @@ import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
 import { ResourceCardTopics } from '../../components/resourcecard/topic';
 import SidebarSteps from '../../components/sidebar/SidebarSteps';
+import { ResourceCardProducts } from '../../components/resourcecard/product';
 
 export interface TutorialstepSidebarProps {
   author: ResourceCardAuthorProps;
   date: string;
   slug: string;
   steps: any[];
+  products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
 }
 
 export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = (
-  { author, date, slug, technologies, topics, steps }
+  { author, date, slug, products, technologies, topics, steps }
 ) => {
   const published: SidebarPublishedProps = {
     date: date,
@@ -30,6 +32,11 @@ export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = (
         reftype={`technologies`}
         accent={`danger`}
         references={technologies ? technologies.map(t => t.label) : []}
+      />
+      <SidebarReferencesGroup
+        reftype={`products`}
+        accent={`info`}
+        references={products ? products.map(t => t.label) : []}
       />
       <SidebarReferencesGroup
         reftype={`topics`}

@@ -1,51 +1,47 @@
 import React from 'react';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardLogo, ResourceCardLogoProps } from './logo/ResourceCardLogo';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardMedia, ResourceCardMediaProps } from './media/ResourceCardMedia';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardAuthor, ResourceCardAuthorProps } from './author/ResourceCardAuthor';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './technology/ResourceCardTechnologies';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardTopics, ResourceCardTopicsProps } from './topic/ResourceCardTopics';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardDate, ResourceCardDateProps } from './date/ResourceCardDate';
-// noinspection TypeScriptPreferShortImport
-import { ResourceCardThumbnail, ResourceCardThumbnailProps } from './thumbnail/ResourceCardThumbnail';
+import { ResourceCardLogo, ResourceCardLogoProps } from './logo';
+import { ResourceCardMedia, ResourceCardMediaProps } from './media';
+import { ResourceCardAuthor, ResourceCardAuthorProps } from './author';
+import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './technology';
+import { ResourceCardTopics, ResourceCardTopicsProps } from './topic';
+import { ResourceCardDate, ResourceCardDateProps } from './date';
+import { ResourceCardThumbnail, ResourceCardThumbnailProps } from './thumbnail';
+import { ResourceCardProducts, ResourceCardProductsProps } from './product';
 
 export interface ResourceCardProps {
   logo?: ResourceCardLogoProps,
   thumbnail?: ResourceCardThumbnailProps,
   media: ResourceCardMediaProps,
   author?: ResourceCardAuthorProps,
+  products?: ResourceCardProductsProps,
   technologies: ResourceCardTechnologiesProps,
   topics: ResourceCardTopicsProps,
   date: ResourceCardDateProps
 }
 
 const ResourceCard: React.FC<ResourceCardProps> = (
-  { logo, thumbnail, media, author, technologies, topics, date }
+  { logo, thumbnail, media, author, products, technologies, topics, date }
 ) => {
 
   return (
     <div className="bio-resourcecard box">
       <article className="media">
         <div className="media-left">
-          {logo && <ResourceCardLogo {...logo}/>}
+          {logo && <ResourceCardLogo {...logo} />}
           {thumbnail && (
-            <ResourceCardThumbnail childImageSharp={thumbnail.childImageSharp}/>
+            <ResourceCardThumbnail childImageSharp={thumbnail.childImageSharp} />
           )}
         </div>
         <div className="media-content">
-          <ResourceCardMedia {...media}/>
+          <ResourceCardMedia {...media} />
           <nav className="level is-mobile">
             <div className="level-left">
-              {author && <ResourceCardAuthor {...author}/>}
-              {technologies.items && technologies.items.length > 0 && <ResourceCardTechnologies {...technologies}/>}
-              {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics}/>}
+              {author && <ResourceCardAuthor {...author} />}
+              {products && products.items && products.items.length > 0 && <ResourceCardProducts {...products} />}
+              {technologies.items && technologies.items.length > 0 && <ResourceCardTechnologies {...technologies} />}
+              {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics} />}
             </div>
-            {date && <ResourceCardDate {...date}/>}
+            {date && <ResourceCardDate {...date} />}
           </nav>
         </div>
       </article>

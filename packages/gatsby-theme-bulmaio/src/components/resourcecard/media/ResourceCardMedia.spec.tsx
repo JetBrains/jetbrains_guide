@@ -1,20 +1,17 @@
 import React from 'react';
-import { cleanup, render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import { ResourceCardMedia, ResourceCardMediaProps } from './ResourceCardMedia';
 
-afterEach(cleanup);
-
 export const DUMMY_RCM: ResourceCardMediaProps = {
   href: '/href1',
-  title: 'title1'
+  title: 'rcmtitle1'
 };
 
 export const DUMMY_RCM2: ResourceCardMediaProps = {
   href: '/href1',
-  title: 'title1',
-  subtitle: 'subtitle1'
+  title: 'rcmtitle1',
+  subtitle: 'subrcmtitle1'
 };
 
 describe('ResourceCardMedia', () => {

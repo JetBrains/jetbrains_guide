@@ -5,6 +5,8 @@ import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/res
 import { Thumbnail } from 'gatsby-theme-bulmaio/src/models';
 import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
 import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
+import { ProductReference } from '../references/product/models';
+import { ResourceCardProducts } from '../components/resourcecard/product';
 
 /* Various models used throughout the site*/
 
@@ -18,6 +20,7 @@ export interface Resource {
   title: string
   subtitle?: string;
   thumbnail: Thumbnail
+  products: ProductReference[]
   technologies: TechnologyReference[]
   topics: TopicReference[]
 }
@@ -30,6 +33,7 @@ export interface ListedResource {
   subtitle?: string;
   date: string;
   author: ResourceCardAuthorProps;
+  products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
   thumbnail: Thumbnail

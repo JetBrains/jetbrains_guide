@@ -16,6 +16,10 @@ export const query = graphql`
         ...ThumbnailFragment
       }
     }
+    products {
+      label
+      slug
+    }
     technologies {
       label
       slug
