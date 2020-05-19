@@ -14,6 +14,7 @@ type Tip implements Node & Resource {
     shortVideo: Video
     slug: String!
     subtitle: String
+    products: [Product] @link(by: "label")
     technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath
     title: String!

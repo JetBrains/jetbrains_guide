@@ -8,6 +8,7 @@ type Tutorial implements Node & Resource {
     tutorialItems: [Resource] @link(by: "slug")
     slug: String!
     subtitle: String
+    products: [Product] @link(by: "label")
     technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath
     title: String!
