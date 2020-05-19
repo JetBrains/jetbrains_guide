@@ -4,6 +4,7 @@ label: editing-tips
 date: 2020-01-29
 title: Editing Tips & Tricks
 technologies: [.net]
+products: [rider, resharper]
 topics: [completion, editing, inspections, ide]
 author: maartenba
 subtitle: Know everything there is to know about editing code. 
@@ -15,10 +16,10 @@ playlistItems:
     - /tips/cleanup-namespaces/
     - /tips/collection-iteration/
     - /tips/column-align/
-    - /tips/create-variable/
     - /tips/csharp8-support/
     - /tips/json-schema/
-    - /tips/move-code/
+    - /tips/expand-shrink-selection/
+    - /tips/occurrence-selection/
 
 ---
 
