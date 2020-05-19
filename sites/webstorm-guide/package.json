@@ -17,9 +17,7 @@
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "test": "jest",
-    "staging": "cd ..;firebase deploy -P staging",
-    "production": "cd ../firebase deploy -P production"
+    "test": "jest"
   },
   "jest": {
     "setupFilesAfterEnv": [
