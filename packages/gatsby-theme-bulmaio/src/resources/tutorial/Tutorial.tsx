@@ -107,7 +107,7 @@ export const query = graphql`
       subtitle
       slug
       body
-      date(formatString: "MMMM Do, YYYY")
+      date(formatString: "YYYY-MM-DD")
       tutorialItems {
         ...ListedResourceFragment2
       }

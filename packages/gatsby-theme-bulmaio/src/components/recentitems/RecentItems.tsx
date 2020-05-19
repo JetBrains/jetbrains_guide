@@ -1,31 +1,48 @@
 import React from 'react';
-// import { ListedResourcesQuery } from '../../resourcetypes';
-// import { graphql, useStaticQuery } from 'gatsby';
-// import makeResources from '../../resourcetypes/makeResource';
+import { graphql, useStaticQuery } from 'gatsby';
+import { ListedResources } from '../../resources/models';
+import ResourceCard from '../resourcecard/ResourceCard';
 
 export const RecentItems: React.FC = () => {
-  // TODO G2
-  return <div/>
+  const { allResource } = useStaticQuery(
+    graphql`
+    query {
+      allResource(sort: {fields: [date, title], order: [DESC, ASC]}, limit: 1000) {
+        nodes {
+          ...ListedResourceFragment2
+        }
+      }
+    }
+`
+  );
+  const nodes: ListedResources = allResource.nodes;
+  return (
+    <section className="section has-background-light">
+      <div className="container">
+        <h1 className="title">Recent Tips</h1>
+        <div className="columns">
+          <div className="column is-four-fifths-desktop bio-resourcecards">
+            {nodes && nodes.map(resource => (
+                <ResourceCard
+                  key={resource.slug}
+                  thumbnail={resource.thumbnail}
+                  media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
+                  products={{ items: resource.products }}
+                  technologies={{ items: resource.technologies }}
+                  topics={{ items: resource.topics }}
+                  date={{ date: resource.date }}
+                  author={{
+                    thumbnail: resource.author.thumbnail,
+                    slug: resource.author.slug,
+                    title: resource.author.title
+                  }}
+                />
+              )
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 
-//   const { resources }: ListedResourcesQuery = useStaticQuery(
-//     graphql`
-// {
-//   resources: allResourcesByType {
-//     ...ListedResourceFragment
-//   }
-// }
-// `
-//   );
-//   return (
-//     <section className="section has-background-light">
-//       <div className="container">
-//         <h1 className="title">Recent Tips</h1>
-//         <div className="columns">
-//           <div className="column is-four-fifths-desktop bio-resourcecards">
-//             {makeResources(resources, 'tip')}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
 };

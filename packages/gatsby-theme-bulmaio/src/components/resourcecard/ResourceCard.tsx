@@ -1,12 +1,12 @@
 import React from 'react';
-import { ResourceCardLogo, ResourceCardLogoProps } from './logo';
-import { ResourceCardMedia, ResourceCardMediaProps } from './media';
-import { ResourceCardAuthor, ResourceCardAuthorProps } from './author';
-import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './technology';
-import { ResourceCardTopics, ResourceCardTopicsProps } from './topic';
-import { ResourceCardDate, ResourceCardDateProps } from './date';
-import { ResourceCardThumbnail, ResourceCardThumbnailProps } from './thumbnail';
-import { ResourceCardProducts, ResourceCardProductsProps } from './product';
+import { ResourceCardLogo, ResourceCardLogoProps } from './logo/ResourceCardLogo';
+import { ResourceCardMedia, ResourceCardMediaProps } from './media/ResourceCardMedia';
+import { ResourceCardAuthor, ResourceCardAuthorProps } from './author/ResourceCardAuthor';
+import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './technology/ResourceCardTechnologies';
+import { ResourceCardTopics, ResourceCardTopicsProps } from './topic/ResourceCardTopics';
+import { ResourceCardDate, ResourceCardDateProps } from './date/ResourceCardDate';
+import { ResourceCardThumbnail, ResourceCardThumbnailProps } from './thumbnail/ResourceCardThumbnail';
+import { ResourceCardProducts, ResourceCardProductsProps } from './product/ResourceCardProducts';
 
 export interface ResourceCardProps {
   logo?: ResourceCardLogoProps,

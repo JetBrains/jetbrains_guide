@@ -2,10 +2,10 @@ import React from 'react';
 import SidebarPublished, { SidebarPublishedProps } from '../../components/sidebar/SidebarPublished';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
-import { ResourceCardAuthorProps } from '../../components/resourcecard/author';
-import { ResourceCardTechnologies } from '../../components/resourcecard/technology';
-import { ResourceCardTopics } from '../../components/resourcecard/topic';
-import { ResourceCardProducts } from '../../components/resourcecard/product';
+import { ResourceCardAuthorProps } from '../../components/resourcecard/author/ResourceCardAuthor';
+import { ResourceCardTechnologies } from '../../components/resourcecard/technology/ResourceCardTechnologies';
+import { ResourceCardTopics } from '../../components/resourcecard/topic/ResourceCardTopics';
+import { ResourceCardProducts } from '../../components/resourcecard/product/ResourceCardProducts';
 
 export interface TutorialSidebarProps {
   author: ResourceCardAuthorProps;

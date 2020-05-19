@@ -204,7 +204,7 @@ export const query = graphql`
       slug
       hasBody
       body
-      date(formatString: "MMMM Do, YYYY")
+      date(formatString: "YYYY-MM-DD")
       inPlaylists {
          ...ListedPlaylistFragment
       }

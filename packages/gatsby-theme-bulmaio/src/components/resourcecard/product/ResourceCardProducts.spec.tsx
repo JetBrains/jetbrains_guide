@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ResourceCardProducts, ResourceCardProductsProps } from './ResourceCardProduts';
+import { ResourceCardProducts, ResourceCardProductsProps } from './ResourceCardProducts';
 import { render } from '@testing-library/react';
 
 export const DUMMY_RCPR: ResourceCardProductsProps = {

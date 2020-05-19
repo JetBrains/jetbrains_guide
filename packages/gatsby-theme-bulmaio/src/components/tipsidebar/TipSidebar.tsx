@@ -5,13 +5,13 @@ import SidebarDoclinks, { Doclink } from '../sidebar/SidebarDoclinks';
 import SidebarPlaylists, { SidebarPlaylistsProps } from '../sidebar/SidebarPlaylists';
 import Sidebar from '../sidebar/Sidebar';
 import SidebarReferencesGroup from '../sidebar/SidebarReferencesGroup';
-import { ResourceCardAuthorProps } from '../resourcecard/author';
-import { ResourceCardTechnologies } from '../resourcecard/technology';
-import { ResourceCardTopics } from '../resourcecard/topic';
+import { ResourceCardAuthorProps } from '../resourcecard/author/ResourceCardAuthor';
+import { ResourceCardTechnologies } from '../resourcecard/technology/ResourceCardTechnologies';
+import { ResourceCardTopics } from '../resourcecard/topic/ResourceCardTopics';
 import { InPlaylists } from '../playlists';
 import { Video } from '../video';
 import { SeeAlsos } from '../seealso';
-import { ResourceCardProducts } from '../resourcecard/product';
+import { ResourceCardProducts } from '../resourcecard/product/ResourceCardProducts';
 
 export interface TipSidebarProps {
   date: string;

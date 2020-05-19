@@ -1,12 +1,12 @@
 import { AuthorReference } from '../references/author/models';
 import { TopicReference } from '../references/topic/models';
 import { TechnologyReference } from '../references/technology/models';
-import { ResourceCardAuthorProps } from 'gatsby-theme-bulmaio/src/components/resourcecard/author';
 import { Thumbnail } from 'gatsby-theme-bulmaio/src/models';
-import { ResourceCardTechnologies } from 'gatsby-theme-bulmaio/src/components/resourcecard/technology';
-import { ResourceCardTopics } from 'gatsby-theme-bulmaio/src/components/resourcecard/topic';
 import { ProductReference } from '../references/product/models';
-import { ResourceCardProducts } from '../components/resourcecard/product';
+import { ResourceCardProducts } from '../components/resourcecard/product/ResourceCardProducts';
+import { ResourceCardAuthorProps } from '../components/resourcecard/author/ResourceCardAuthor';
+import { ResourceCardTechnologies } from '../components/resourcecard/technology/ResourceCardTechnologies';
+import { ResourceCardTopics } from '../components/resourcecard/topic/ResourceCardTopics';
 
 /* Various models used throughout the site*/
 
