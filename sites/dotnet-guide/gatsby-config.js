@@ -20,11 +20,11 @@ module.exports = {
                             icon: 'fas fa-play-circle'
                         },
                         {
-                            accent: 'danger',
+                            accent: 'info',
                             cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
+                            href: '/products/',
+                            label: 'Products',
+                            icon: 'fas fa-tasks'
                         },
                         {
                             accent: 'danger',
@@ -43,6 +43,13 @@ module.exports = {
                         {
                             label: 'More...',
                             items: [
+                                {
+                                    href: '/technologies/',
+                                    label: 'Technologies',
+                                    icon: 'fas fa-project-diagram',
+                                    accent: 'danger',
+                                    description: 'Resource listing organized by technology'
+                                },
                                 {
                                     href: '/authors/',
                                     label: 'Authors',

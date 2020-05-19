@@ -4,8 +4,8 @@ import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
 import { ListedResources } from '../../resources/models';
 import { PageContext } from '../../components/models';
-import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components/Pagination';
+import SubsectionAuthor from '../../components/subsections/SubsectionAuthor';
 
 interface AllAuthorProps {
   data: {
@@ -25,19 +25,18 @@ const AllAuthor: FC<AllAuthorProps> = (
     pageContext: { numPages }
   }) => {
   const listing = (
-    <div>
+    <nav className="bd-links bio-resourcecards">
       {nodes && nodes.map(resource => (
-          <ResourceCard
+          <SubsectionAuthor
             key={resource.slug}
+            title={resource.title}
+            subtitle={resource.subtitle}
             thumbnail={resource.thumbnail}
-            media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
-            technologies={{ items: resource.technologies }}
-            topics={{ items: resource.topics }}
-            date={{ date: resource.date }}
+            href={resource.slug}
           />
         )
       )}
-    </div>
+    </nav>
   );
 
   return (
