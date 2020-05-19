@@ -15,6 +15,7 @@ import { getPlaylist } from '../../components/pagenav/common';
 import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
 import BottomNav from '../../components/pagenav/BottomNav';
 import TopNav from '../../components/pagenav/TopNav';
+import Img from 'gatsby-image';
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -79,6 +80,7 @@ const Tip: FC<TipProps> = (
   // Videos
   const isSSR = typeof window === 'undefined';
   const animatedGif = tip.animatedGif;
+  const screenshot = tip.screenshot;
   const shortVideo = tip.shortVideo;
   const longVideo = tip.longVideo;
 
@@ -98,10 +100,13 @@ const Tip: FC<TipProps> = (
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">
-        {!isSSR && (
+        {!isSSR && animatedGif && (
           <React.Suspense fallback={<div />}>
             <ClientSideOnlyPlayer animatedGif={animatedGif} />
           </React.Suspense>
+        )}
+        {screenshot && (
+          <Img alt="Tip Screenshot" fixed={screenshot.childImageSharp.fixed} />
         )}
         {shortVideo && <ShortVideo video={
           {
@@ -224,6 +229,13 @@ export const query = graphql`
         }
         width
         height
+      }
+      screenshot {
+        childImageSharp {
+          fixed(width: 600) {
+          ...GatsbyImageSharpFixed
+          }
+        }  
       }
       shortVideo {
         ...VideoFragment

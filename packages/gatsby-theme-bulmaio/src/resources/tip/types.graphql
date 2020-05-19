@@ -1,5 +1,6 @@
 type Tip implements Node & Resource {
     animatedGif: AnimatedGif
+    screenshot: File @fileByRelativePath
     author: Author @link(by: "label")
     body: String! @parentBody
     cardThumbnail: File @fileByRelativePath

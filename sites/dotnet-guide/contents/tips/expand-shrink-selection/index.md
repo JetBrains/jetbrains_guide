@@ -9,7 +9,7 @@ subtitle: One more chance to leave your mouse aside!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './guide.gif'
+  file: ./guide.gif
   width: 500
 leadin: |
     **Fiddling around trying to get the right selection?** 😭
