@@ -10,10 +10,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 301
+screenshot: ./tip.png
 leadin: |
   With the *Recent Locations popup (Cmd/Ctrl+Shift+E)*, you can preview 
   the part of code and files you’ve recently opened in the editor and 

@@ -308,8 +308,6 @@ binding in React and similar systems.
 
 ## See Also
 
-- MS TypeScript pages for ES6 and React/JSX
+- [When should I use Arrow Functions?](https://reactarmory.com/answers/when-to-use-arrow-functions)
 
-- https://reactarmory.com/answers/when-to-use-arrow-functions
-
-- https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1
+- [Arrow Functions in Class Properties Might Not Be As Great As We Think](https://medium.com/@charpeni/arrow-functions-in-class-properties-might-not-be-as-great-as-we-think-3b3551c440b1)

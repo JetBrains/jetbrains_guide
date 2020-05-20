@@ -7,7 +7,7 @@ author: pwe
 subtitle: Speed up your "visual coverage" with a config file and correct working directory.
 seealso:
   - title: Coverage configuration files
-    href: https://coverage.readthedocs.io/en/coverage-4.2/config.html
+    href: https://coverage.readthedocs.io/en/coverage-5.0.4/config.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -34,7 +34,7 @@ your virtual environment's dependencies, your project's `tests` directory
 itself, `.tox` directories, etc. You'll also get more accurate percentages.
 
 This is done with a 
-[`.coveragerc` configuration file](https://coverage.readthedocs.io/en/coverage-4.2/config.html), 
+[`.coveragerc` configuration file](https://coverage.readthedocs.io/en/coverage-5.0.4/config.html), 
 which has lots of options.
 
 PyCharm though is finicky about this, hence this tip:

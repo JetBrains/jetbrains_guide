@@ -12,10 +12,7 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 300
+screenshot: ./tip.png
 leadin: |
   With the *Optimize imports action (Ctrl+Alt+O)*, you can quickly remove any unused imports, merge 
   imports from the same module, and optionally sort the import statements.

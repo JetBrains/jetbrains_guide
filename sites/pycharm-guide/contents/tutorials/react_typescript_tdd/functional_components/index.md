@@ -212,4 +212,4 @@ We'll add much more to this later, starting with the next section.
 
 ## See Also
 
-- http://airbnb.io/enzyme/docs/api/ReactWrapper/mount.html
+- [Mounting components](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/mount.html)

@@ -162,4 +162,4 @@ still working. Make sure to turn off `start` when done.
 
 ## See Also
 
-- https://mikebridge.github.io/articles/getting-started-typescript-react-2/
+- [TypeScript and React, Part 2](https://mikebridge.github.io/articles/getting-started-typescript-react-2/)

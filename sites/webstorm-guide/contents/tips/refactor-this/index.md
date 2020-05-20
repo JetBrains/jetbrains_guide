@@ -12,10 +12,7 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2015/06/10-webstorm-shortcuts-you-need-to-know/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.png
-  width: 600
-  height: 315
+screenshot: ./tip.png
 leadin: |
   With the *Refactor* This popup, you don’t need to memorize all the refactorings 
   WebStorm has, or their shortcuts: press *Ctrl+T* on macOS or *Ctrl+Alt+Shift+T* 

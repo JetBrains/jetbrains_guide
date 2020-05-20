@@ -10,10 +10,7 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/settings-editor-font.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-animatedGif:
-  file: ./tip.jpeg
-  width: 600
-  height: 265
+screenshot: ./tip.jpeg
 leadin: |
   If the font you're using supports ligatures, you can turn them on 
   in *Preferences/Settings | Editor | Font*. 
