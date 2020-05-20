@@ -10,6 +10,9 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        remarkPlugins: [
+          require('remark-external-links')
+        ]
       },
     },
     {
@@ -42,7 +45,7 @@ module.exports = {
                       }
                   }`,
         resolveSiteUrl: ({ site, allSitePage }) => {
-          return 'https://www.jetbrains.com'
+          return 'https://www.jetbrains.com';
         },
         serialize: ({ site, allSitePage }) =>
           allSitePage.nodes.map(node => {
@@ -50,10 +53,10 @@ module.exports = {
               url: `https://www.jetbrains.com${node.path}`,
               changefreq: `daily`,
               priority: 0.8,
-            }
+            };
           })
       }
     }
   ]
-}
+};
 
