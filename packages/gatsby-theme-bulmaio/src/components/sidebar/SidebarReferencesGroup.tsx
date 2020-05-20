@@ -23,7 +23,7 @@ const SidebarReferencesGroup: React.FC<SidebarReferencesGroupProps> = (
             {references.map(reference => (
               <Link
                 data-testid={`srg-link`}
-                to={`/${reftype}/${reference}`}
+                to={`/${reftype}/${reference}/`}
                 key={reference}
                 style={{ display: 'inline-block', margin: '0 0.2rem' }}
                 className="bio-page-sidebar-references-href"
