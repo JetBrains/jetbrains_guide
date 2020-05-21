@@ -1,5 +1,4 @@
 ---
-type: playlist
 label: go-to-anything-tips
 date: 2020-03-10
 title: Go to Anything Tips & Tricks

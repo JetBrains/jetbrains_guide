@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-03
 title: Team descriptions
 topics: [teams]

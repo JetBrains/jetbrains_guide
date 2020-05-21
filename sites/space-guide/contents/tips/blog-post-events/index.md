@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-01-29
 title: Attach events to blog posts
 topics: [teams, work]

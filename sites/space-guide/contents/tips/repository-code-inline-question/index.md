@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-12
 title: Chat about code
 topics: [projects, work, chats]

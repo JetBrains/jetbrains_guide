@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-12
 title: Explore package details
 topics: [projects, packages, work]

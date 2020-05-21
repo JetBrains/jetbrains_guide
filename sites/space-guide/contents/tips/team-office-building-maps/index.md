@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-12
 title: Office building floor plans
 topics: [teams]
