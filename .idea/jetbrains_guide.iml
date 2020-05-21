@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/public" />

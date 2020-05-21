@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-07
 title: LiveEdit HTML and CSS
 technologies: []
@@ -19,7 +18,7 @@ leadin: |
 
   Install the LiveEdit plugin and easily view HTML and CSS, including changes.
 
-  The LiveEdit plugin for GoLand Professional (not bundled) is easy 
+  The LiveEdit plugin for GoLand Professional (not bundled) is easy
   to install and gives a great editing experience for HTML and CSS.
 ---
 

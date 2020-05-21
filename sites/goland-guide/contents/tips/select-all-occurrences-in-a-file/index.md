@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-05
 title: Select all occurrences in a file 
 technologies: [go]

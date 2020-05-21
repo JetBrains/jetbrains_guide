@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-12-04
 title: 'Install and import'
 technologies: []
@@ -20,7 +19,7 @@ longVideo:
 leadin: |
   *Type the symbol, let your IDE install the package and write the import.*
 
-  IDEs are great at janitorial work. GoLand can generate your import for you, even 
+  IDEs are great at janitorial work. GoLand can generate your import for you, even
   when you haven't installed the  package.
 ---
 

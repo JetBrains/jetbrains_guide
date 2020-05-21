@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-04
 title: 'Better Autocomplete Results in Angular Templates'
 technologies: [angular]
@@ -22,8 +21,8 @@ longVideo:
 leadin: |
   *Angular template autocomplete gives tons of choices. Which one is best?*
 
-  There's a difference between mediocre autocomplete and "you read my mind." 
-  GoLand Professional's inclusion of WebStorm inherits its ongoing efforts 
+  There's a difference between mediocre autocomplete and "you read my mind."
+  GoLand Professional's inclusion of WebStorm inherits its ongoing efforts
   to provide helpful autocompletion.
 ---
 

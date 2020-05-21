@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-04
 title: 'Disable Tabs'
 technologies: []
@@ -22,11 +21,11 @@ longVideo:
 leadin: |
   *Want a cleaner UI with less noise to juggle in your head?*
 
-  There are better choices for moving between files than tabs. 
+  There are better choices for moving between files than tabs.
   Let's turn them off.
 
-  Tabs are a great way to focus on the few files for a task. But 
-  they have some downsides. Try disabling your tabs as a first step 
+  Tabs are a great way to focus on the few files for a task. But
+  they have some downsides. Try disabling your tabs as a first step
   towards a more-focused, keyboard-centric workflow.
 ---
 

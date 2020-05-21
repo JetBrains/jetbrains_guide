@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-12-02
 title: 'Optimize Imports'
 technologies: []
@@ -22,8 +21,8 @@ longVideo:
 leadin: |
   *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
 
-  GoLand's ``Optimize Imports`` action is every Python developer's 
-  second-best friend. Along with ``Reformat Code``, keeping your 
+  GoLand's ``Optimize Imports`` action is every Python developer's
+  second-best friend. Along with ``Reformat Code``, keeping your
   code quality tools happy is a piece of cake.
 ---
 

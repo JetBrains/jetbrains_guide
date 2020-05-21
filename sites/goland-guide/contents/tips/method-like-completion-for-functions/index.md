@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-11-27
 title: Method-like completion for functions
 technologies: [go]

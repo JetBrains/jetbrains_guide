@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-04
 title: 'Reduce Clutter by Disabling Tools'
 technologies: []
@@ -20,11 +19,11 @@ longVideo:
 leadin: |
   *You don't have to use all those tools. Let's turn them off.*
 
-  By default, GoLand has lots of features visible and available. 
-  As you learn your way around, you want to give more space to 
+  By default, GoLand has lots of features visible and available.
+  As you learn your way around, you want to give more space to
   the editor and focus on your coding.
 
-  In this tip we disable a number of default toolbars and then 
+  In this tip we disable a number of default toolbars and then
   hide the file browser.
 ---
 

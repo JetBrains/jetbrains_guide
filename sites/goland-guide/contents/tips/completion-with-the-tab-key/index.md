@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-11-27
 title: Completion with the Tab key
 technologies: [go]

@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-11-27
 title: Complete Current Statement
 technologies: [go]

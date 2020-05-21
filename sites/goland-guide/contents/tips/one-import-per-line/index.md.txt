@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-06
 title: One Import Per Line Preference
 technologies: []
@@ -24,8 +23,8 @@ longVideo:
 leadin: |
   *Don't waste time manually putting imports one-per-line. Let your tool do it.*
 
-  Switching between files...we all do this, all the time. Use the ``Recent Files`` 
-  action to quickly jump between the files you are working on. Moral of the story? 
+  Switching between files...we all do this, all the time. Use the ``Recent Files``
+  action to quickly jump between the files you are working on. Moral of the story?
   Let GoLand be your janitor.
 ---
 

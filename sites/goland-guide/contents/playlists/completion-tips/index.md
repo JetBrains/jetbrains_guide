@@ -1,5 +1,4 @@
 ---
-type: playlist
 label: code-completion
 date: 2019-11-27
 title: Completion Tips & Tricks
