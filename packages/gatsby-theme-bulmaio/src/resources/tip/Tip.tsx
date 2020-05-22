@@ -205,6 +205,10 @@ export const query = graphql`
       hasBody
       body
       date(formatString: "YYYY-MM-DD")
+      seealso {
+        title
+        href
+      }  
       inPlaylists {
          ...ListedPlaylistFragment
       }
