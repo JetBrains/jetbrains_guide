@@ -1,7 +1,6 @@
 ---
-type: tip
 date: 2018-11-01
-title: 'Find Action'
+title: Find Action
 technologies: []
 topics: [navigation]
 author: pwe

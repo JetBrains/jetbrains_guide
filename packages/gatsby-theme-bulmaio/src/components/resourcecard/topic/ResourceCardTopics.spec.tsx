@@ -1,14 +1,12 @@
 import React from 'react';
-import { cleanup, render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import { ResourceCardTopics, ResourceCardTopicsProps } from './ResourceCardTopics';
 
-afterEach(cleanup);
 
 export const DUMMY_RCTO: ResourceCardTopicsProps = {
   items: [
-    { label: 'label1', slug: '/slug1' }
+    { label: 'rctolabel1', slug: '/rctoslug1' }
   ]
 };
 
@@ -20,7 +18,7 @@ describe('ResourceCardTopics', () => {
 
   it('renders items', () => {
     const { getByText } = render(<ResourceCardTopics {...DUMMY_RCTO}/>);
-    const link = getByText('label1');
-    expect(link).toHaveAttribute('href', '/slug1');
+    const link = getByText('rctolabel1');
+    expect(link).toHaveAttribute('href', '/rctoslug1');
   });
 });

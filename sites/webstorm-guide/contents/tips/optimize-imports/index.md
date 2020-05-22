@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Optimize Imports
 subtitle: Quickly remove any unused imports and more.

@@ -1,31 +1,94 @@
-const { createFilePath } = require(`gatsby-source-filesystem`);
+import path from 'path';
+
 const remark = require('remark');
 const remarkHTML = require('remark-html');
 
-const createNode = async ({ node, getNode, actions }: any) => {
-  const { createNodeField } = actions;
-  if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode });
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug
-    });
+import { createFilePath } from 'gatsby-source-filesystem';
+import { referenceTypes } from '../references/gatsby-setup';
+import { resourceTypes } from '../resources/gatsby-setup';
+
+const bothTypes = { ...resourceTypes, ...referenceTypes };
+const pluralMapping = Object.fromEntries(
+  Object.entries(bothTypes).map(([k, v]) => {
+    return [v.pathname, k];
+  })
+);
+
+const getResourceType = (node: any, parent: any) => {
+  // Base the resource type on precedence
+  // 1. Explicit resource type in frontmatter
+  if (node.frontmatter.type) {
+    return node.frontmatter.type;
   }
 
-  // Clean up some resource nodes
-  if (node.frontmatter) {
-    const fm = node.frontmatter;
-    if (fm.leadin) {
-      const markdown = fm.leadin;
-      fm.leadin = remark()
+  // 2. Reverse-walk all the ancestors in path, looking for a segment
+  // that matches a key in the pluralMapping
+  // Could be faster and more accurate, does not bail out when
+  // it first matches
+  const reversedPath = parent.relativePath.split(path.sep).reverse();
+  const plural = reversedPath.find((segment: string) => {
+    return Object.keys(pluralMapping).find(rt => {
+      return rt === segment;
+    });
+  });
+  if (plural) return pluralMapping[plural];
+};
+
+exports.setupCreateNode = async function onCreateNode(
+  actions: any,
+  getNode: any,
+  node: any,
+  createNodeId: any,
+  createContentDigest: any,
+  reporter: any,
+) {
+  const { createNode, createParentChildLink } = actions;
+
+  const parent = getNode(node.parent);
+  if (node.internal.type === `Mdx` && parent && parent.name === 'index') {
+    const resourceType = getResourceType(node, parent);
+
+    // Bail out if we don't figure out a content type
+    if (!resourceType) return;
+    const fieldData = { ...node.frontmatter };
+
+    const slug = createFilePath({ node, getNode });
+
+    // If the frontmatter has a label, use it, otherwise infer it
+    // from the parent directory
+    const label = fieldData['label'] ? fieldData['label'] : parent.relativeDirectory.split(path.sep).slice(-1)[0];
+    const resourceNode = {
+      ...fieldData,
+      id: createNodeId(`${node.id} >>> ${resourceType}`),
+      slug,
+      // TODO Dang, label winds up on everything, even if the
+      //    type doesn't ask for it. Perhaps later we'll split
+      //    resource and reference into separate create steps.
+      label,
+      parent: node.id,
+      children: [],
+      internal: {
+        type: resourceType,
+        contentDigest: createContentDigest(fieldData),
+        content: JSON.stringify(fieldData)
+      }
+    };
+
+    // Convert leadin to Markdown output
+    if (resourceNode.leadin) {
+      const markdown = resourceNode.leadin;
+      resourceNode.leadin = remark()
         .use(remarkHTML)
         .processSync(markdown)
         .toString();
     }
+
+    resourceNode.fileAbsolutePath = node.absolutePath;
+    createNode(resourceNode);
+    createParentChildLink({
+      parent: node,
+      child: resourceNode
+    });
+    return resourceNode;
   }
-
-  return node;
 };
-
-module.exports = createNode;

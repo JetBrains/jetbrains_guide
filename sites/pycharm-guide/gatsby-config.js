@@ -1,29 +1,4 @@
-const fs = require(`fs`)
-
-// Read the type defs from a file in this site's directory,
-// then hand that file to the plugin
-const typeDefs = fs.readFileSync(`typedefs.graphql`, {
-    encoding: `utf-8`
-})
-
 module.exports = {
-    __experimentalThemes: [
-        {
-            resolve: 'gatsby-theme-bulmaio', options: {
-                typeDefs,
-                references: {
-                    author: {plural: 'Authors', layout: 'LogoListing'},
-                    technology: {plural: 'Technologies', layout: 'LogoListing'},
-                    topic: {plural: 'Topics', layout: 'LogoListing'}
-                },
-                resources: {
-                    tip: {plural: 'Tips'},
-                    playlist: {plural: 'Playlists'},
-                    tutorial: {plural: 'Tutorials'}
-                }
-            }
-        }
-    ],
     siteMetadata: {
         theme: {
             helmet: {
@@ -71,13 +46,6 @@ module.exports = {
                             href: '/topics/',
                             label: 'Topics',
                             icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
-                            href: '/authors/',
-                            label: 'Authors',
-                            icon: 'fas fa-users'
                         },
                         {
                             label: 'More...',
@@ -131,17 +99,11 @@ module.exports = {
         },
         'gatsby-plugin-sass',
         'gatsby-plugin-typescript',
+        'gatsby-theme-bulmaio',
         {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
-                    {
-                        resolve: 'gatsby-remark-external-links',
-                        options: {
-                            target: '_self',
-                            rel: 'nofollow'
-                        }
-                    },
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
@@ -165,4 +127,4 @@ module.exports = {
             }
         }
     ]
-}
+};

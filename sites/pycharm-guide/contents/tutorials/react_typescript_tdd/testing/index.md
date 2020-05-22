@@ -1,8 +1,8 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2017-07-07
 title: Testing
-technologies: [react, jest, enzyme]
+technologies: [react, jest]
 topics: []
 author: pwe
 subtitle: Test-first development with Jest and Enzyme integrated into the IDE.

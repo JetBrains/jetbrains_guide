@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-04-22
 title: Spot Missing Declarations
 technologies: [angular]

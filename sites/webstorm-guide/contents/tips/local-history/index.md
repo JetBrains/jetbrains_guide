@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Restore Changes with Ease
 subtitle: Use Local History to quickly restore what's needed.

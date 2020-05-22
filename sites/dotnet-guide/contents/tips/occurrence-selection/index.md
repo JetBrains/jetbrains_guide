@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-27
 title: Occurrence Selection
 technologies: [.net]

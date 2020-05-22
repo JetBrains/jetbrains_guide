@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-10
 title: Favorite projects and sidebar customization
 topics: [teams, personal, projects, code]

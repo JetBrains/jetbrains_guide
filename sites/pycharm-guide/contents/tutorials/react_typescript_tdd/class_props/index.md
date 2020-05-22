@@ -1,5 +1,5 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2017-07-07
 title: Class Components With Props
 technologies: [react, typescript]

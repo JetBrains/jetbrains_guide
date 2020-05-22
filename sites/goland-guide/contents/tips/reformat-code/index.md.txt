@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-12-01
 title: 'Reformat Code'
 technologies: []
@@ -22,10 +21,10 @@ longVideo:
   poster: ./poster_long.png
   url: https://www.youtube.com/watch?v=mpJH60TNLLE
 leadin: |
-  *If re-indenting your code or fixing long lines doesn't 
+  *If re-indenting your code or fixing long lines doesn't
   sound fun, let GoLand do it for you.*
 
-  If there's one action that you'll do constantly, it's this one: 
+  If there's one action that you'll do constantly, it's this one:
   ``Reformat Code`` makes it a piece of cake to fix style warnings.
 ---
 

@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-27
 title: Expand/Shrink Selection
 technologies: [.net]
@@ -10,7 +9,7 @@ subtitle: One more chance to leave your mouse aside!
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 animatedGif:
-  file: './guide.gif'
+  file: ./guide.gif
   width: 500
 leadin: |
     **Fiddling around trying to get the right selection?** 😭

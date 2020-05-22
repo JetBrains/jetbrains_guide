@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-18
 title: Speed Up Coverage with Configuration File
 technologies: []

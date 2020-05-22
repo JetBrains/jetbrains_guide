@@ -1,14 +1,13 @@
 ---
-type: tip
 date: 2018-11-04
-title: 'Reduce Clutter by Disabling Tools'
+title: Reduce Clutter by Disabling Tools
 technologies: []
 topics: [ide]
 author: pwe
-subtitle: 'Save space by turning off various toolbars and Project Tool.'
+subtitle: Save space by turning off various toolbars and Project Tool.
 seealso:
-  - title: 'Configuring Menus and Toolbars'
-    href: 'https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html'
+  - title: Configuring Menus and Toolbars
+    href: https://www.jetbrains.com/help/pycharm/configuring-menus-and-toolbars.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

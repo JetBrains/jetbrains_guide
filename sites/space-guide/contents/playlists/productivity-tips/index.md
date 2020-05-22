@@ -1,5 +1,4 @@
 ---
-type: playlist
 label: productivity-tips
 date: 2020-02-12
 title: Productivity Tips & Tricks

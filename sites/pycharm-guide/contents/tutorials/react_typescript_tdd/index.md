@@ -1,11 +1,11 @@
 ---
-type: tutorial
 date: 2018-10-07
 title: React, TypeScript, and TDD
 technologies: [typescript, jest, react]
 topics: [testing]
 author: pwe
 subtitle: How to write React applications in TypeScript using TDD, highlighting features of the IDE
+thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/react_typescript_tdd/project_setup/
   - /tutorials/react_typescript_tdd/project_cleanup/
@@ -19,7 +19,6 @@ tutorialItems:
   - /tutorials/react_typescript_tdd/class_state/
   - /tutorials/react_typescript_tdd/rich_events_and_testing/
   - /tutorials/react_typescript_tdd/presentation_components/
-thumbnail: ./thumbnail.png
 ---
 
 ReactJS is wildly popular and thus wildly supported. TypeScript is increasingly popular, 

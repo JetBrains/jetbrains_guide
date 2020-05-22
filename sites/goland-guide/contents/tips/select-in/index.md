@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-05
 title: Select in
 technologies: [go]

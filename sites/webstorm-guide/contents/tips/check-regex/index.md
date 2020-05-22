@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Test Regular Expressions in the IDE
 subtitle: WebStorm helps test regular expressions on the fly.

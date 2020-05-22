@@ -1,14 +1,13 @@
 ---
-type: tip
 date: 2019-03-11
-title: 'Quick Documentation'
+title: Quick Documentation
 technologies: []
 topics: [editing]
 author: pwe
 subtitle: View arguments and documentation without interrupting your flow.
 seealso:
   - title: Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/pycharm/inline-documentation.html'
+    href: https://www.jetbrains.com/help/pycharm/inline-documentation.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

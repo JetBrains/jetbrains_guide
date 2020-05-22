@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-10
 title: Go to Anything - Hierarchy
 topics: [teams, work, chats, personal, projects]

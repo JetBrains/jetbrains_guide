@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-09
 title: 'Navigate Cursor Position Back and Forth'
 technologies: []
@@ -20,10 +19,10 @@ longVideo:
 leadin: |
   *Diving into a codepath and want to get retrace your steps?*
 
-  Sometimes you dive into a codepath and can't find your way back.  Dive 
-  with confidence, letting the IDE remember your cursor position. Backwards 
+  Sometimes you dive into a codepath and can't find your way back.  Dive
+  with confidence, letting the IDE remember your cursor position. Backwards
   *and* forwards.
-  
+
 ---
 
 Decades of old habits make us think of files, with their deeply-nested

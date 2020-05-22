@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Complete Current Statement
 subtitle: Add braces and move the cursor with one keystroke.

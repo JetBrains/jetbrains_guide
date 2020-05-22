@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-15
 title: Auto-Run Tests
 technologies: []
@@ -8,9 +7,9 @@ author: pwe
 subtitle: Get into testing mode by telling PyCharm to automatically re-run tests as you type.
 seealso:
   - title: Running tests automatically
-    href: 'https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically'
+    href: https://www.jetbrains.com/help/pycharm/testing-your-first-python-application.html#run-test-automatically
   - title: Test Runner Tab
-    href: 'https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml'
+    href: https://www.jetbrains.com/help/pycharm/test-runner-tab.html#Test_Runner_Tab.xml
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

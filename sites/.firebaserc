@@ -1,6 +1,0 @@
-{
-  "projects": {
-    "staging": "pycharm-guide-staging",
-    "production": "pycharm-guide"
-  }
-}

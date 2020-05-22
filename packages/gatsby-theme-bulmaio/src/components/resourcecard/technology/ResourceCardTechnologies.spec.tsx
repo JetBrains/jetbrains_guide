@@ -1,14 +1,11 @@
 import React from 'react';
-import { cleanup, render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import { ResourceCardTechnologies, ResourceCardTechnologiesProps } from './ResourceCardTechnologies';
 
-afterEach(cleanup);
-
 export const DUMMY_RCTE: ResourceCardTechnologiesProps = {
   items: [
-    { label: 'label1', slug: '/slug1' }
+    { label: 'rctelabel1', slug: '/rcteslug1' }
   ]
 };
 
@@ -20,7 +17,7 @@ describe('ResourceCardTechnologies', () => {
 
   it('renders items', () => {
     const { getByText } = render(<ResourceCardTechnologies {...DUMMY_RCTE}/>);
-    const link = getByText('label1');
-    expect(link).toHaveAttribute('href', '/slug1');
+    const link = getByText('rctelabel1');
+    expect(link).toHaveAttribute('href', '/rcteslug1');
   });
 });

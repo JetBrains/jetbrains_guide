@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Change Quote Style for CSS
 technologies: [css]

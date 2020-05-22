@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Preview Images
 subtitle: Preview images on the go from the Project view.

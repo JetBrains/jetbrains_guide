@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Review Errors in Code
 subtitle: WebStorm shows all errors and warnings in your file.

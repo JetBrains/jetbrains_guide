@@ -1,15 +1,11 @@
 export interface InPlaylist {
-  fields: {
-    slug: string
+  slug: string
+  label: string;
+  title: string;
+  thumbnail: {
+    publicURL: string
   }
-  frontmatter: {
-    label: string;
-    title: string;
-    thumbnail: {
-      publicURL: string
-    }
-    playlistItems?: any[]
-  }
+  playlistItems?: any[]
 }
 
 export type InPlaylists = InPlaylist[];

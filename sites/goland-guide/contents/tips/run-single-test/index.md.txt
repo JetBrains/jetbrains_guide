@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-12-05
 title: 'Run Single Test'
 technologies: [go test]
@@ -21,8 +20,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=DXtL_GDiqzs
 leadin: |
   *Get into TDD flow by focusing on one test.*
-  
-  Want to focus your testing on just one test? GoLand has 
+
+  Want to focus your testing on just one test? GoLand has
   many ways to tell the test runner and UI: "Just this."
 ---
 

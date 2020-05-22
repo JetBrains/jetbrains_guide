@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-02
 title: Enable Font Ligatures
 technologies: []

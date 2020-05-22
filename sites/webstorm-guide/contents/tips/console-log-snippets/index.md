@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.

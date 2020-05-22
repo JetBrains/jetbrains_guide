@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 
-export const seeAlsoFragment = graphql`
-  fragment SeeAlsoFragment on Frontmatter {
+export const seeAlsoFragment2 = graphql`
+  fragment SeeAlsoFragment2 on Tip {
     seealso {
       title
       href

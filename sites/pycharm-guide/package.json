@@ -8,7 +8,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "2.15.14",
+    "gatsby": "2.21.16",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -17,9 +17,7 @@
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "test": "jest",
-    "staging": "cd ..;firebase deploy -P staging",
-    "production": "cd ..;firebase deploy -P production"
+    "test": "jest"
   },
   "jest": {
     "setupFilesAfterEnv": [

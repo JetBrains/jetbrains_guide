@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Using Recent Locations for Navigation
 subtitle: Preview the part of code and files you've recently edited and get back to them quickly.

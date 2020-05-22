@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-04-22
 title: Jump between Files
 technologies: [angular]

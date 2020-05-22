@@ -1,26 +1,23 @@
 import React from 'react';
-import { cleanup, render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
 
 import { ResourceCardProducts, ResourceCardProductsProps } from './ResourceCardProducts';
-
-afterEach(cleanup);
+import { render } from '@testing-library/react';
 
 export const DUMMY_RCPR: ResourceCardProductsProps = {
   items: [
-    { label: 'label1', slug: '/slug1' }
+    { label: 'productlabel1', slug: '/productslug1' }
   ]
 };
 
-describe('ResourceCardTechnologies', () => {
+describe('ResourceCardProducts', () => {
   it('renders nothing with empty input', () => {
-    const { queryByTestId } = render(<ResourceCardProducts items={[]}/>);
-    expect(queryByTestId('rcpr-key')).toBeNull();
+    const { queryByTestId } = render(<ResourceCardProducts items={[]} />);
+    expect(queryByTestId('rcte-key')).toBeNull();
   });
 
   it('renders items', () => {
-    const { getByText } = render(<ResourceCardProducts {...DUMMY_RCPR}/>);
-    const link = getByText('label1');
-    expect(link).toHaveAttribute('href', '/slug1');
+    const { getByText } = render(<ResourceCardProducts {...DUMMY_RCPR} />);
+    const link = getByText('productlabel1');
+    expect(link).toHaveAttribute('href', '/productslug1');
   });
 });

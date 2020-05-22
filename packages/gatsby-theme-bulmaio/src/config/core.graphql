@@ -1,0 +1,41 @@
+interface Resource @nodeInterface {
+    author: Author
+    body: String!
+    date: Date @dateformat(formatString: "YYYY-MM-DD")
+    id: ID!
+    parent: Node
+    slug: String!
+    title: String!
+    subtitle: String
+    thumbnail: File @fileByRelativePath
+    topics: [Topic]
+    products: [Product]
+    technologies: [Technology]
+}
+
+interface Reference @nodeInterface {
+    id: ID!
+    label: String!
+    slug: String!
+    title: String!
+    subtitle: String
+    body: String!
+    parent: Node
+    resources: [Resource]
+}
+
+type AnimatedGif {
+    file: File @fileByRelativePath
+    width: Int
+    height: Int
+}
+
+type Video {
+    poster: File @fileByRelativePath
+    url: String
+}
+
+type SeeAlso {
+    title: String!
+    href: String!
+}

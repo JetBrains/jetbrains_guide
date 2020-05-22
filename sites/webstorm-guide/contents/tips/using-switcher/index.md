@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Using Switcher for Navigation
 subtitle: Swiftly jump to the last opened file or open a tool window using the popup.

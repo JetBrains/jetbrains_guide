@@ -1,18 +1,17 @@
 ---
-type: tip
 date: 2018-12-01
-title: 'Reformat Code'
+title: Reformat Code
 technologies: []
 topics: [editing]
 author: pwe
-subtitle: 'Tell PyCharm to clean up indentation and other code style in your file.'
+subtitle: Tell PyCharm to clean up indentation and other code style in your file.
 seealso:
-  - title: 'Reformatting Source Code'
-    href: 'https://www.jetbrains.com/help/pycharm/reformatting-source-code.html'
-  - title: 'Code Style - Python'
-    href: 'https://www.jetbrains.com/help/pycharm/code-style-python.html'
-  - title: 'Reformat and rearrange code'
-    href: 'https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code'
+  - title: Reformatting Source Code
+    href: https://www.jetbrains.com/help/pycharm/reformatting-source-code.html
+  - title: Code Style - Python
+    href: https://www.jetbrains.com/help/pycharm/code-style-python.html
+  - title: Reformat and rearrange code
+    href: https://www.jetbrains.com/help/pycharm/basic-editing-procedures.html#reformat_rearrange_code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

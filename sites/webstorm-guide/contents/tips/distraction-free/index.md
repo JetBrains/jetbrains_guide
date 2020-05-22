@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Make Your Work Environment Distraction Free
 subtitle: Switch to the distraction-free mode to focus on coding.

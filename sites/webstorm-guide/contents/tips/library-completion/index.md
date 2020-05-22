@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Get Completion for Libraries from CDN
 technologies: [css]

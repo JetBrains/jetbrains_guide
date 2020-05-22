@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: See Information about Packages
 subtitle: Check the description and the latest version of a package in package.json.

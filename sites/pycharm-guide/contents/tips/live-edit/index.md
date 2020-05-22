@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-07
 title: LiveEdit HTML and CSS
 technologies: []

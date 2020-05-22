@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Deleting Lines
 subtitle: Delete a line of code without using the mouse.

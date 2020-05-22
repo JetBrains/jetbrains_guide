@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2018-12-03
-title: 'Generate Imports While Typing'
+title: Generate Imports While Typing
 technologies: []
 topics: [editing, python]
 author: pwe
-subtitle: 'Avoid interruption by letting PyCharm generate your imports as you type.'
+subtitle: Avoid interruption by letting PyCharm generate your imports as you type.
 seealso:
-  - title: 'Creating and Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
-  - title: 'Basic Completion'
-    href: 'https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion'
+  - title: Creating and Optimizing Imports
+    href: https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
+  - title: Basic Completion
+    href: https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

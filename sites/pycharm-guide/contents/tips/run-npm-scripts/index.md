@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2019-04-17
 title: Run npm Scripts from package.json
 technologies: []
@@ -8,7 +7,7 @@ author: pwe
 subtitle: Browse your package.json scripts and run in a dedicated tool window. 
 seealso:
   - title: Running and debugging scripts from the npm tool window
-    href: 'https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window'
+    href: https://www.jetbrains.com/help/pycharm/installing-and-removing-external-software-using-node-package-manager.html#ws_npm_run_debug_scripts_from_npm_tool_window
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

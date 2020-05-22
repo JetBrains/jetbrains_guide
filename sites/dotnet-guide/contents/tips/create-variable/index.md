@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-27
 title: Introducing Variables
 technologies: [.net]

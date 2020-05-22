@@ -1,16 +1,15 @@
 ---
-type: tip
 date: 2018-12-02
-title: 'Optimize Imports'
+title: Optimize Imports
 technologies: []
 topics: [editing, python]
 author: pwe
-subtitle: 'Automate the organizing and cleaning up of your Python imports with Optimize Imports.'
+subtitle: Automate the organizing and cleaning up of your Python imports with Optimize Imports.
 seealso:
-  - title: 'Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html'
-  - title: 'Creating and Optimizing Imports'
-    href: 'https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html'
+  - title: Optimizing Imports
+    href: https://www.jetbrains.com/help/pycharm-edu/optimizing-imports.html
+  - title: Creating and Optimizing Imports
+    href: https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

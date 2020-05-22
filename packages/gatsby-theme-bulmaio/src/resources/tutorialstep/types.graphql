@@ -1,0 +1,16 @@
+type TutorialStep implements Node & Resource {
+    author: Author @link(by: "label")
+    body: String! @parentBody
+    cardThumbnail: File @fileByRelativePath
+    date: Date @dateformat(formatString: "YYYY-MM-DD")
+    id: ID!
+    longVideo: Video
+    parent: Node
+    slug: String!
+    subtitle: String
+    products: [Product] @link(by: "label")
+    technologies: [Technology] @link(by: "label")
+    thumbnail: File @fileByRelativePath
+    title: String!
+    topics: [Topic] @link(by: "label")
+}

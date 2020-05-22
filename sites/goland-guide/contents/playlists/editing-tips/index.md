@@ -1,5 +1,4 @@
 ---
-type: playlist
 label: A
 date: 2020-02-05
 title: Editing Tips & Tricks

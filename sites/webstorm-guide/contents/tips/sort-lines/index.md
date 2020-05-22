@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-02-14
 title: Quickly Sort Lines
 technologies: []

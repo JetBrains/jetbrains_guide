@@ -1,15 +1,7 @@
-import createReferences from './createReferences';
-import createResources from './createResources';
-import { GatsbyCreatePages } from './types';
+import { resourcesCreatePages } from '../resources/gatsby-setup'
+import { referencesCreatePages } from '../references/gatsby-setup'
 
-const createPages: GatsbyCreatePages = async ({ actions, graphql }: any, pluginOptions: any) => {
-  const { createPage } = actions;
-  const { references, resources } = pluginOptions;
-
-  // Generate the references pages
-  createReferences(graphql, createPage, references);
-  createResources(graphql, createPage, resources);
-
-};
-
-module.exports = createPages;
+export const setupCreatePages = async (actions: any, graphql: any) => {
+  await resourcesCreatePages(graphql, actions)
+  await referencesCreatePages(graphql, actions)
+}

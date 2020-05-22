@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-06
 title: One Import Per Line Preference
 technologies: []
@@ -8,11 +7,11 @@ author: pwe
 subtitle: Tell PyCharm to put each import on a separate line when it cleans up your imports.
 seealso:
   - title: Code Style Preferences for Python Imports
-    href: 'https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports'
+    href: https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports
   - title: Optimize Imports
-    href: 'https://www.jetbrains.com/help/pycharm/2018.3/creating-and-optimizing-imports.html#optimize-imports-in-project'
+    href: https://www.jetbrains.com/help/pycharm/2018.3/creating-and-optimizing-imports.html#optimize-imports-in-project
   - title: YouTrack Feature Ticket for One-Per-Line
-    href: 'https://youtrack.jetbrains.com/issue/PY-20100'
+    href: https://youtrack.jetbrains.com/issue/PY-20100
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

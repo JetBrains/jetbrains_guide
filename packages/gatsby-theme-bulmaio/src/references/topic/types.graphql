@@ -1,0 +1,12 @@
+type Topic implements Node & Reference {
+    id: ID!
+    label: String!
+    slug: String!
+    title: String!
+    subtitle: String
+    accent: String
+    icon: String
+    body: String! @parentBody
+    parent: Node
+    resources: [Resource] @link(by: "topics.label", from: "label")
+}

@@ -1,5 +1,4 @@
 ---
-type: playlist
 label: communication-tips
 date: 2020-01-29
 title: Communication Tips & Tricks

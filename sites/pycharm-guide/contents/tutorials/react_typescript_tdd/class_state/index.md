@@ -1,5 +1,5 @@
 ---
-type: tutorialstep
+type: TutorialStep
 date: 2017-07-07
 title: Model Class State With TypeScript Interfaces
 technologies: [react, typescript, jest]

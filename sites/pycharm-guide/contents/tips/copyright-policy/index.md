@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2018-11-08
 title: Managing Copyright Policy
 technologies: []

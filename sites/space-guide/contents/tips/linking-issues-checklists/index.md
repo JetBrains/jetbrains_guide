@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-10
 title: Linking issues and checklists
 topics: [work, projects, issues, teams]

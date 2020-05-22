@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Find Any Action
 subtitle: Use the popup to quickly find a specific action or toggle some configuration options.

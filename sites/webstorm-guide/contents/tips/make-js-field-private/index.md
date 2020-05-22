@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Make Fields Private or Public
 subtitle: Use a quick fix to quickly make a field public or private.

@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-16
 title: Create Reusable Code Snippets
 subtitle: Save time by reusing blocks of code with custom code snippets.
