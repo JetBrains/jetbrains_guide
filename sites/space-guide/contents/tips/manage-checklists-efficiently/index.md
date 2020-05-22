@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-04-07
 title: Manage checklists efficiently
 topics: [work, projects, issues, teams]

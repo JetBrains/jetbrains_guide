@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-04-24
 title: Customize issue status
 topics: [work, projects, issues, teams]

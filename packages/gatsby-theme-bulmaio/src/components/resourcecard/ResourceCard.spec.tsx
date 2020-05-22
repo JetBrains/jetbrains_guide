@@ -5,7 +5,6 @@ import { DUMMY_RCM, DUMMY_RCM2 } from './media/ResourceCardMedia.spec';
 import { DUMMY_RCA } from './author/ResourceCardAuthor.spec';
 import { DUMMY_RCPR } from './product/ResourceCardProducts.spec';
 import { DUMMY_RCTE } from './technology/ResourceCardTechnologies.spec';
-import { DUMMY_RCPR } from './product/ResourceCardProducts.spec';
 import { DUMMY_RCTO } from './topic/ResourceCardTopics.spec';
 import { DUMMY_RCD } from './date/ResourceCardDate.spec';
 import { DUMMY_RCTH } from './thumbnail/ResourceCardThumbnail.spec';
@@ -17,7 +16,6 @@ export const DUMMY_RC: ResourceCardProps = {
   author: DUMMY_RCA,
   products: DUMMY_RCPR,
   technologies: DUMMY_RCTE,
-  products: DUMMY_RCPR,
   topics: DUMMY_RCTO,
   date: DUMMY_RCD
 };
@@ -49,10 +47,6 @@ describe('ResourceCard', () => {
     // Technologies
     const technologies = getByText('rctelabel1');
     expect(technologies).toHaveAttribute('href', '/rcteslug1');
-
-    // Products
-    const products = getByText('label1');
-    expect(products).toHaveAttribute('href', '/slug1');
 
     // Topics
     const topics = getByText('rctolabel1');

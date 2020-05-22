@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-04-27
 title: Private projects
 topics: [projects, work, personal]

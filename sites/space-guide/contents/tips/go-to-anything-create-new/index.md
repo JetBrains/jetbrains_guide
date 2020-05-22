@@ -1,5 +1,4 @@
 ---
-type: tip
 date: 2020-03-19
 title: Go to Anything - Create new things!
 topics: [teams, work, chats, personal, projects]
