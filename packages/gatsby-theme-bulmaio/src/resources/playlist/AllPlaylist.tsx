@@ -49,7 +49,7 @@ const AllPlaylist: FC<AllPlaylistProps> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'playlists2'} />
+            <Pagination numPages={numPages} prefix={'playlists'} />
           </>
         )
       }}
@@ -63,7 +63,14 @@ export default AllPlaylist;
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allPlaylist(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allPlaylist(
+      limit: $limit, 
+      skip: $skip, 
+      sort: {
+        fields: [date]
+        order: DESC
+      }
+    ) {
       nodes {
         ...ListedPlaylistFragment
       }

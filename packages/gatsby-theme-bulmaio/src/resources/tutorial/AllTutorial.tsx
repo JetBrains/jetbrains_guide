@@ -49,7 +49,7 @@ const AllTutorial: FC<AllTutorialProps> = (
         listing: (
           <>
             {listing}
-            <Pagination numPages={numPages} prefix={'tutorials2'} />
+            <Pagination numPages={numPages} prefix={'tutorials'} />
           </>
         )
       }}
@@ -63,7 +63,14 @@ export default AllTutorial;
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTutorial(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTutorial(
+      limit: $limit, 
+      skip: $skip, 
+      sort: {
+        fields: [date]
+        order: DESC
+      }
+    ) {
       nodes {
         ...ListedTutorialFragment
       }

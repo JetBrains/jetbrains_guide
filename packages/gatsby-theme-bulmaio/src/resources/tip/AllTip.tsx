@@ -66,7 +66,14 @@ export default AllTip;
 // noinspection JSUnusedGlobalSymbols
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allTip(limit: $limit, skip: $skip, sort: {fields: [title]}) {
+    allTip(
+      limit: $limit, 
+      skip: $skip, 
+      sort: {
+        fields: [date]
+        order: DESC
+      }
+    ) {
       nodes {
         ...ListedTipFragment
       }
