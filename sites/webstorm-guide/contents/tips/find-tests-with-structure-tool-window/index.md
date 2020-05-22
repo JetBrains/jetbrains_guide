@@ -17,4 +17,4 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  To find a test you need in a huge test file, you can open the *Structure* view (*Cmd/Ctrl+7*) and start typing the test name. Press *Cmd+Down* on macOS or *F4* on Windows and Linux to jump back to the code.
+  To find a test you need in a huge test file, you can open the *Structure* view (*Cmd+7/Alt+7*) and start typing the test name. Press *Cmd+Down* on macOS or *F4* on Windows and Linux to jump back to the code.

@@ -13,4 +13,4 @@ cardThumbnail: ./card.png
 screenshot: ./tip.jpeg
 leadin: |
   Want to enable soft wraps in all *.html* or all *.md* files? You can 
-  now configure soft wraps for specific file types in *Preferences/Settings | Editor | General*.
+  configure soft wraps for specific file types in *Preferences/Settings | Editor | General*.
