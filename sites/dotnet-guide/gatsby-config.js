@@ -26,14 +26,14 @@ module.exports = {
               label: 'Products',
               icon: 'fas fa-box-open'
             },
-            // TODO Khalid - uncomment when adding tutorials
-            // {
-            //   accent: 'info',
-            //   cssClass: 'documentation',
-            //   href: '/tutorials/',
-            //   label: 'Tutorials',
-            //   icon: 'fas fa-tasks'
-            // },
+            //TODO Khalid - uncomment when adding tutorials
+            {
+              accent: 'info',
+              cssClass: 'documentation',
+              href: '/tutorials/',
+              label: 'Tutorials',
+              icon: 'fas fa-tasks'
+            },
             {
               accent: 'danger',
               cssClass: 'documentation',
