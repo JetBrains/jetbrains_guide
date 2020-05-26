@@ -26,7 +26,5 @@ By changing the registration of our dependencies, we can dramatically alter the 
 
 - [Microsoft Docs Startup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup)
 - [Dependency Injection](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection)
-- [JetBrains Rider](https://jetbrains.com/rider)
-- [JetBrains](https://jetbrains.com/)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
 - [.NET](https://dot.net/)

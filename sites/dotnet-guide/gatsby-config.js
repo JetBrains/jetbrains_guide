@@ -26,7 +26,6 @@ module.exports = {
               label: 'Products',
               icon: 'fas fa-box-open'
             },
-            //TODO Khalid - uncomment when adding tutorials
             {
               accent: 'info',
               cssClass: 'documentation',

@@ -15,7 +15,7 @@ tutorialItems:
 ---
 
 ASP.NET is the heart of web applications in the .NET ecosystem. ASP.NET is the foundation
-to web frameworks like Razor Pagers, ASP.NET MVC, Microservices, and more.
+to web frameworks like Razor Pages, ASP.NET MVC, Microservices, and more.
 
 These videos will give us an overview of a solution and go over the tent poles of an ASP.NET project. 
 

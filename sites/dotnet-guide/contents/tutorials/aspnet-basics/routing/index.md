@@ -26,7 +26,5 @@ Routing is essential to building any non-trivial web application. The advent of 
 ### See Also
 
 - [Microsoft Docs Routing](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing)
-- [JetBrains Rider](https://jetbrains.com/rider)
-- [JetBrains](https://jetbrains.com/)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
 - [.NET](https://dot.net/)

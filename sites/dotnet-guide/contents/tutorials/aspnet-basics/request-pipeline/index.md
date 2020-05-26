@@ -27,7 +27,5 @@ ASP.NET Core has pre-packaged middleware, and open-source contributions designed
 
 - [Microsoft Docs Startup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-3.1)
 - [Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1)
-- [JetBrains Rider](https://jetbrains.com/rider)
-- [JetBrains](https://jetbrains.com/)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
 - [.NET](https://dot.net/)

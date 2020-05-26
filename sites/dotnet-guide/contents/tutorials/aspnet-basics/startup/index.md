@@ -20,7 +20,7 @@ The first notable method in the Startup class is the constructor, which receives
 
 The next is `ConfigureServices`, which accepts an `IServiceCollection` interface. This method allows us to register dependencies and frameworks. In this project, we have added the Razor Pages framework.
 
-Finally, we have the Configure method, which takes two parameters: IApplicationBuilder and IWebHostEnvironment. This method helps us shape our runtime request pipeline from requiring a secure connection, serving static files, and handling request routing.
+Finally, we have the Configure method, which takes two parameters: `IApplicationBuilder` and `IWebHostEnvironment`. This method helps us shape our runtime request pipeline from requiring a secure connection, serving static files, and handling request routing.
 
 As ASP.NET developers, we'll often come back to this file as our application needs evolve.
 
