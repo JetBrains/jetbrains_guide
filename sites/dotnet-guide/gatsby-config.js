@@ -24,6 +24,13 @@ module.exports = {
               cssClass: 'documentation',
               href: '/products/',
               label: 'Products',
+              icon: 'fas fa-box-open'
+            },
+            {
+              accent: 'info',
+              cssClass: 'documentation',
+              href: '/tutorials/',
+              label: 'Tutorials',
               icon: 'fas fa-tasks'
             },
             {
