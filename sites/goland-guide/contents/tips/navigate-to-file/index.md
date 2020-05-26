@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=OqhN6eNsiVg&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=8
+  url: https://www.youtube.com/watch?v=OqhN6eNsiVg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=7&t=0s
 leadin: |
       The _Navigate to file_ feature, _Ctrl + Shift + N_ on Windows/Linux, _⌘ + ⇧ + O_ on macOS,
       allows us to search for a file by name, even if we know only part of it.

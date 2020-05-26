@@ -1,5 +1,5 @@
 ---
-label: A
+label: editing-tips
 date: 2020-02-05
 title: Editing Tips & Tricks
 technologies: [go]

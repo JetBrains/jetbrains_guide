@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=n_Zf9GQ4ueE&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=10
+  url: https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
 leadin: |
   Press _Ctrl + E_ on Windows/Linux, _⌘ + E_ on macOS, to bring up the _Recent Files_ tool window.
   

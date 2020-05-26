@@ -11,3 +11,4 @@ sites/*/public
 .idea/
 package-lock.json
 /deploy/
+yarn-error.log

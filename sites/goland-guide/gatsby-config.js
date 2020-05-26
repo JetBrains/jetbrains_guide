@@ -58,7 +58,7 @@ module.exports = {
                                     label: 'About',
                                     icon: 'fas fa-file',
                                     accent: 'info',
-                                    description: 'About the PyCharm Guide'
+                                    description: 'About the GoLand Guide'
                                 }
                             ]
                         }
