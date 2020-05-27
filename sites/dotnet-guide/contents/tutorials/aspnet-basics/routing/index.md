@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-05-22
+date: 2020-05-27
 title: ASP.NET Routing
 technologies: [asp.net]
 products: [rider]
