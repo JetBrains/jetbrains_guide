@@ -1,5 +1,3 @@
-import path from 'path';
-
 const remark = require('remark');
 const remarkHTML = require('remark-html');
 
@@ -25,7 +23,7 @@ const getResourceType = (node: any, parent: any) => {
   // that matches a key in the pluralMapping
   // Could be faster and more accurate, does not bail out when
   // it first matches
-  const reversedPath = parent.relativePath.split(path.sep).reverse();
+  const reversedPath = parent.relativePath.split('/').reverse();
   const plural = reversedPath.find((segment: string) => {
     return Object.keys(pluralMapping).find(rt => {
       return rt === segment;
@@ -56,7 +54,7 @@ exports.setupCreateNode = async function onCreateNode(
 
     // If the frontmatter has a label, use it, otherwise infer it
     // from the parent directory
-    const label = fieldData['label'] ? fieldData['label'] : parent.relativeDirectory.split(path.sep).slice(-1)[0];
+    const label = fieldData['label'] ? fieldData['label'] : parent.relativeDirectory.split('/').slice(-1)[0];
     const resourceNode = {
       ...fieldData,
       id: createNodeId(`${node.id} >>> ${resourceType}`),
