@@ -21,7 +21,7 @@
           <list>
             <DockerVolumeBindingImpl>
               <option name="containerPath" value="/jetbrains_guide" />
-              <option name="hostPath" value="D:\GoLandProjects\jetbrains_guide\" />
+              <option name="hostPath" value="$PROJECT_DIR$" />
             </DockerVolumeBindingImpl>
           </list>
         </option>

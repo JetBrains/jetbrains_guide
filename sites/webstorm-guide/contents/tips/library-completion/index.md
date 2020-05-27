@@ -8,6 +8,8 @@ subtitle: Find out how to get completion suggestions for libraries like Bootstra
 seealso:
 - title: What's new in WebStorm 2019.3
   href: https://blog.jetbrains.com/webstorm/2019/11/webstorm-2019-3/#html_and_style_sheets
+- title: Bootstrap Cheat Sheet
+  href: https://websitesetup.org/bootstrap-cheat-sheet/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png

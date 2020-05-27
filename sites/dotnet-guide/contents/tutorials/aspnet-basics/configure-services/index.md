@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-05-22
+date: 2020-05-27
 title: Dependency Injection and ConfigureServices
 technologies: [asp.net]
 products: [rider]
