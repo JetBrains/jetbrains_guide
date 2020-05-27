@@ -6,7 +6,7 @@ const logo = require('./jetbrains-simple.svg');
 const NavbarBrandLogo: FC = () => (
   <>
     <a data-testid={`navbarbrand-logo`} className="navbar-item bio-navbar-brand"
-       href={`https://www.jetbrains.com/webstorm/`}>
+       href={`https://www.jetbrains.com/pycharm/`}>
       <img
         src={logo}
         alt={`JetBrains Logo`}
