@@ -1,7 +1,10 @@
 import React from 'react';
+// @ts-ignore
+import splash from './splash.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
 
+const dataUri = `url("${splash}") center center`;
 const AboutPage: React.FC = () => {
 
     const pageTitle = `About`
@@ -10,7 +13,8 @@ const AboutPage: React.FC = () => {
         <SiteLayout pageTitle={pageTitle}>
             <main className="bd-main bulmaio-body">
                 <div className="bd-main-container container">
-                    <header className="bd-header">
+                    <header className="bd-header"
+                            style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
                         <article className="media">
                             <div className="media-content">
                                 <div className="content">

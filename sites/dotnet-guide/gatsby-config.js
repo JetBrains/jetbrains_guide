@@ -48,7 +48,21 @@ module.exports = {
               icon: 'fas fa-file'
             },
             {
-              label: 'More...',
+              accent: 'danger',
+              cssClass: 'documentation',
+              href: '/technologies/',
+              label: 'Technologies',
+              icon: 'fas fa-project-diagram'
+            },
+            {
+              accent: 'success',
+              cssClass: 'documentation',
+              href: '/authors/',
+              label: 'Authors',
+              icon: 'fas fa-users'
+            },
+            {
+              label: 'Skip', // hides the "More..." section
               items: [
                 {
                   href: '/technologies/',
@@ -73,25 +87,25 @@ module.exports = {
             {
               accent: 'light',
               href: 'https://www.jetbrains.com/dotnet/promo/tools/',
-              label: 'Get JetBrains .NET tools'
+              label: 'Get JetBrains .NET Tools'
             }
           ],
           links: [
             {
               color: 'light',
-              href: 'https://github.com/jetbrains/jetbrains_guide',
+              href: 'https://github.com/jetbrains/jetbrains_guide/',
               icon: 'github'
             },
-            {
-              color: '55acee',
-              href: 'https://twitter.com/ReSharper',
-              icon: 'custom-resharper'
-            },
-            {
-              color: '55acee',
-              href: 'https://twitter.com/JetBrainsRider',
-              icon: 'custom-rider'
-            }
+            // {
+            //   color: '55acee',
+            //   href: 'https://www.jetbrains.com/resharper/',
+            //   icon: 'custom-resharper'
+            // },
+            // {
+            //   color: '55acee',
+            //   href: 'https://www.jetbrains.com/rider/',
+            //   icon: 'custom-rider'
+            // }
           ]
         }
       },
