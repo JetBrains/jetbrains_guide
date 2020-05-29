@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import { posix } from 'path';
 
 export const tutorialStepCreateResolvers = async (createResolvers: any) => {
   // noinspection JSUnusedLocalSymbols
@@ -8,7 +8,7 @@ export const tutorialStepCreateResolvers = async (createResolvers: any) => {
         type: 'Tutorial',
         async resolve(source: any, args: any, context: any, info: any) {
           const thisSlug: string = source.slug;
-          const parentSlug = `${resolve(thisSlug, '..')}/`;
+          const parentSlug = `${posix.resolve(thisSlug, '..')}/`;
           // noinspection UnnecessaryLocalVariableJS
           const parentNode = context.nodeModel.getAllNodes({ type: `Tutorial` })
             .find((node: any) => node.slug === parentSlug);
@@ -18,4 +18,3 @@ export const tutorialStepCreateResolvers = async (createResolvers: any) => {
     }
   });
 };
-
