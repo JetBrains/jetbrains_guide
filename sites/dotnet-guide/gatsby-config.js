@@ -73,23 +73,23 @@ module.exports = {
             {
               accent: 'light',
               href: 'https://www.jetbrains.com/dotnet/promo/tools/',
-              label: 'Get JetBrains .NET tools'
+              label: 'Skip'
             }
           ],
           links: [
             {
               color: 'light',
-              href: 'https://github.com/jetbrains/jetbrains_guide',
+              href: 'https://github.com/jetbrains/jetbrains_guide/',
               icon: 'github'
             },
             {
               color: '55acee',
-              href: 'https://twitter.com/ReSharper',
+              href: 'https://www.jetbrains.com/resharper/',
               icon: 'custom-resharper'
             },
             {
               color: '55acee',
-              href: 'https://twitter.com/JetBrainsRider',
+              href: 'https://www.jetbrains.com/rider/',
               icon: 'custom-rider'
             }
           ]

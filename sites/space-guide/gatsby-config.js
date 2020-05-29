@@ -6,8 +6,8 @@ module.exports = {
             },
             navbar: {
                 brand: {
-                    githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
-                    twitterUrl: 'https://twitter.com/JetBrains_Space',
+                    githubUrl: 'https://github.com/JetBrains/jetbrains_guide/',
+                    twitterUrl: 'https://twitter.com/JetBrains_Space/',
                     twitterAccount: '@JetBrains_Space'
                 },
                 start: {
@@ -65,12 +65,12 @@ module.exports = {
                     links: [
                         {
                             color: 'light',
-                            href: 'https://github.com/jetbrains/jetbrains_guide',
+                            href: 'https://github.com/jetbrains/jetbrains_guide/',
                             icon: 'github'
                         },
                         {
                             color: '55acee',
-                            href: 'https://twitter.com/JetBrains_Space',
+                            href: 'https://twitter.com/JetBrains_Space/',
                             icon: 'twitter'
                         }
                     ]

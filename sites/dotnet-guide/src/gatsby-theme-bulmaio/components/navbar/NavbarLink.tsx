@@ -8,7 +8,7 @@ export interface NavbarLinkProps {
 
 const NavbarLink: React.FC<NavbarLinkProps> = ({ href, color, icon }) => {
   if (icon === 'github')
-    return (<span>Twitter&nbsp;</span>);
+    return ('');
   let myIcon = 'fab fa-lg fa-' + icon;
   let myStyle = {};
   if (icon.startsWith('custom-')) {
