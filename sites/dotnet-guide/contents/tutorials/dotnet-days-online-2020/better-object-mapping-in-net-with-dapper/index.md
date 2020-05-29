@@ -9,7 +9,7 @@ author: maartenba
 subtitle: Kevin Griffin
 thumbnail: ./thumbnail.png
 longVideo: 
-    poster: ./poster.png
+    poster: ./thumbnail.png
     url: https://youtu.be/glhRrF49M-Q
 ---
 

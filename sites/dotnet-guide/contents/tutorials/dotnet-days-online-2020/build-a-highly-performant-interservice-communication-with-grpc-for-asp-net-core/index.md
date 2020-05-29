@@ -9,7 +9,7 @@ author: maartenba
 subtitle: Riccardo Terrell
 thumbnail: ./thumbnail.png
 longVideo: 
-    poster: ./poster.png
+    poster: ./thumbnail.png
     url: https://youtu.be/uD-5v2Qd5Go
 ---
 
