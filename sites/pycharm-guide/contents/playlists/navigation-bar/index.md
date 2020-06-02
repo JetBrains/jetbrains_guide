@@ -1,5 +1,5 @@
 ---
-label: A
+label: B
 date: 2019-02-04
 title: Navigation Bar Intro
 technologies: [pytest]

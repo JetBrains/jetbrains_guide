@@ -19,7 +19,8 @@ describe('InPlaylists Common', () => {
     expect(result.slug).toBe(playlists[0].slug);
   });
 
-  it('should get first playlist from wrong location', () => {
+  it('should NOT get first playlist from wrong location', () => {
+    // This is a change of behavior. Don't guess at playlists.
     const location = { search: '?playlist=XXX' };
     const playlists: InPlaylists = [
       {
@@ -40,10 +41,18 @@ describe('InPlaylists Common', () => {
       }];
     const result = getPlaylist(location, playlists);
     // @ts-ignore
-    expect(result.slug).toBe(playlists[0].slug);
+    expect(result).toBeUndefined();
   });
 
-  it('should get null when no playlists', () => {
+  it('should get null when no playlist specified', () => {
+    const location = { search: '?' };
+    const playlists: InPlaylists = [];
+    const result = getPlaylist(location, playlists);
+    // @ts-ignore
+    expect(result).toBeUndefined();
+  });
+
+  it('should get null when no playlist found', () => {
     const location = { search: '?playlist=A' };
     const playlists: InPlaylists = [];
     const result = getPlaylist(location, playlists);

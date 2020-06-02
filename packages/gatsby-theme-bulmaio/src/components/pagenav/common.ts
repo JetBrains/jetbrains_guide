@@ -7,7 +7,7 @@ export function getPlaylist(location: { search: string }, playlists: InPlaylists
     const playlistLabel = search ? search.playlist : null;
 
     const result = playlists.find(pl => pl.label === playlistLabel);
-    return result ? result : playlists[0];
+    return result;
   }
 }
 
