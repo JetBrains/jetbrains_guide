@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=uTKt4Ur4zuk
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=pr4lXMOTNOY
+  url: https://www.youtube.com/watch?v=ukbvdF5wqPQ
 leadin: |
     *From repo to project in no time.*    
 

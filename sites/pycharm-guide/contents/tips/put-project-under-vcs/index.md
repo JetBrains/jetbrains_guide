@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=jlpfzJZ7RZM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=dfwxbItS6lE
+  url: https://youtu.be/36RFkThiZug
 leadin: |
     *Work safely via VCS, via keyboard.*    
 

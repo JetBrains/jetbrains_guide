@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=rMUIDc3sSpw
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=Vq7IBjmqanI
+  url: https://youtu.be/ulT1LSWFqqE
 leadin: |
   *Type the symbol, let your IDE install the package and write the import.*
 

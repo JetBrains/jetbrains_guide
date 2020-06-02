@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=9WjQmiMxch4
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=t5mIrhIZBmc
+  url: https://youtu.be/U2sAgysf1Hc
 leadin: |
     *Get the right answer in the right context, easily, no typing.*    
 

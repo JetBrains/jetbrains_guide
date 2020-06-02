@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=vQTYCuBd9u4
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=1iI8r6fg62I
+  url: https://youtu.be/i9l5YuDgJOw
 leadin: |
     *The no-distraction way to move around your project tree.*
 

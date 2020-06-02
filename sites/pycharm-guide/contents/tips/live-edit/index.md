@@ -12,7 +12,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=rGms9nsfdTM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=EYwXD6vAACg
+  url: https://youtu.be/xf90Ko64hRc
 leadin: |
   *Tired of starting a server a reloading your browser to see file changes?*
 

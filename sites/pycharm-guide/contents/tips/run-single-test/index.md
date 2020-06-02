@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=BWY9mNdX5R8
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=DXtL_GDiqzs
+  url: https://youtu.be/-3SS0s-Y420
 leadin: |
   *Get into TDD flow by focusing on one test.*
   

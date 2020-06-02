@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=EvKXVp4BXGk
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=X43p3MBx9i8
+  url: https://youtu.be/XB4SnJ4XmUs
 leadin: |
   *Don't waste time manually putting imports one-per-line. Let your tool do it.*
 

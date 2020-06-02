@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=2cQiP34Xqro
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=2Sl0P_4qmkw
+  url: https://youtu.be/h6s20RMLIXk
 leadin: |
     *Want to create files without interrupting your flow?*
 

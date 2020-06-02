@@ -12,7 +12,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=LJJJBzZX7PM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=ceQpWBVOFjE
+  url: https://youtu.be/ITV0HRKYnXI
 leadin: |
   *Want a fast way to open IDE tool windows without memorizing 
   shortcuts?*

@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=nBF9tT787B0
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=9HWkImburic
+  url: https://youtu.be/k7P__ZhUv-g
 leadin: |
   *Want a cleaner UI with less noise to juggle in your head?*
 

@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=FiADQjW532s
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=l4LRzsOIrcE
+  url: https://youtu.be/Nv5vO2loJ_c
 leadin: |
     *Use npm scripts, visually.*    
 
@@ -23,8 +23,8 @@ leadin: |
     IDE help with a tool window to browse them and a dedicated tool 
     window to run them.
 
----
 
+---
 Modern web development means NodeJS tools which mean a `package.json` file. 
 This file sometimes has helper scripts under the `scripts` key. Running 
 these perform various project operations such as `build`.

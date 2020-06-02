@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=Wto7hdfx-Sg
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=xIzqtXSbRpM
+  url: https://youtu.be/1QoP0U8xg98
 leadin: |
   *The best way to move around the code in your project.*
 

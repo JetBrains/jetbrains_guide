@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=cYMbEP0oY0s
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=GqXrr9d3uQk
+  url: https://youtu.be/0NFMM143Y5w
 leadin: |
   *Opening files doesn't have to mean the Project Tool or mouse.*
 

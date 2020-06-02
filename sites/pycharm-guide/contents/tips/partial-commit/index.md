@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=xo_tzr6q29o
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=2dfhBkZ87oQ
+  url: https://youtu.be/NQ-q361wD9Q
 leadin: |
     *Time to commit but not everything is ready?*    
 

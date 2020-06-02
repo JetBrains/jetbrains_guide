@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=t3MfWwXmATg
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=BWTahh-ZzZo
+  url: https://youtu.be/hfWhDwp7zz8
 leadin: |
     *See what's needed in a function, as you type, without disruption.*    
 

@@ -15,7 +15,7 @@ shortVideo:
   url: https://youtu.be/XDnqj0I2Bu8
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/df_TPOMCQh4
+  url: https://youtu.be/_i2gYYfC9H0
 leadin: |
   *Diving into a codepath and want to get retrace your steps?*
 

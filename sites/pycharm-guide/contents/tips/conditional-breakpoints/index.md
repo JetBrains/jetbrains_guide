@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=hlffBFXtb6g
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=HfJxsw3yfus
+  url: https://youtu.be/aIlXb2QpxXc
 leadin: |
     *Stop stepping.*    
 

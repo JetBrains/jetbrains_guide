@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=G1K1hIW4msM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=46KIWSORWAE
+  url: https://youtu.be/JQE95x7t4aU
 leadin: |
     *Need a fast, no-distraction way to open a file in your project tree?*
 

@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=6uOgL_AmSnc
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=69lj4lxL8Wk
+  url: https://youtu.be/lNm5ISUZqCE
 leadin: |
   *Unsorted imports. Unused imports. No problem -- Optimize Imports.*
 

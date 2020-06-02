@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=PaQ5xTGFE1k
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=8OOHj6W_kM0
+  url: https://www.youtube.com/watch?v=OCH_gPfrvzw
 leadin: |
     *Coverage is good, fast coverage is better.*    
 

@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=xDvTpGSqKyo
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=uD1s8eF6lvU
+  url: https://youtu.be/-uyCSK6gvp4
 leadin: |
   *The no-distraction way to work with your files.*
   

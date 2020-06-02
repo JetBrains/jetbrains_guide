@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=dGOuR1RXlIk
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=yeU1npO7L20
+  url: https://youtu.be/oSEMKeUVjlE
 leadin: |
     *Run one of your configurations, without the keyboard.*    
 

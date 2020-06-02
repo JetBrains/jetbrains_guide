@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=aPufd3UPEHU
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=gx_xsh6j-JA
+  url: https://youtu.be/pHmv6RzKrDk
 leadin: |
     *Language-aware line adding, no muss no fuss.*    
 

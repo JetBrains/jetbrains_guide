@@ -12,7 +12,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=JBMFA3lYSqY
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=uvEj0bt75XM
+  url: https://youtu.be/cJ0tP9kxoYk
 leadin: |
     *Use a Quick Fix to generate instance attribute assignment.*    
 

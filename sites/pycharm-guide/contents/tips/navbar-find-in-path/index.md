@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=X3_dfC_P3tM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=one9a9CAeCg
+  url: https://youtu.be/AlFEEDMpW8c
 leadin: |
     *Need a fast way to find files in a path, without disrupting your flow?*
   

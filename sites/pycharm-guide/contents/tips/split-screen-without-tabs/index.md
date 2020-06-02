@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=-yiOTOK1xVY
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=C06izEnVYOc
+  url: https://youtu.be/VcqbOtn1s0w
 leadin: |
     *Get into TDD focus with side-by-side editors.*    
 

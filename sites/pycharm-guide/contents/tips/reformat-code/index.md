@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=EP_twi6rDOY
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=mpJH60TNLLE
+  url: https://youtu.be/0WfDm3KQ-Cw
 leadin: |
   *If re-indenting your code or fixing long lines doesn't 
   sound fun, let PyCharm do it for you.*

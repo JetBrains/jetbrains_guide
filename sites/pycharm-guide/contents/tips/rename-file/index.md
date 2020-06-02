@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=ES03Kbf0Aio
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=NXB5pk1F0_k
+  url: https://youtu.be/IqPm9RYTNBM
 leadin: |
     *Rename files with peace of mind.*    
 

@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=hdJFr7UMPgI
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=IgtXFHwCgZM
+  url: https://youtu.be/HQ_bqOBXZ5w
 leadin: |
     *Visual coverage to the rescue.*    
 

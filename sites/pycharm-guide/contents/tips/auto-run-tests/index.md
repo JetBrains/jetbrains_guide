@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=VNNEXUl_FWM
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=OVwfIaCYZm4
+  url: https://youtu.be/4kHncS_gPX0
 leadin: |
     *Hands-free TDD mode.*    
 

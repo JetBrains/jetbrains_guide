@@ -17,7 +17,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=7R1AtB42-BE
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=ow4S-SieFeQ
+  url: https://youtu.be/hoCkDQCfjwM
 leadin: |
     *Movies aren't the only things with time machines.*    
 

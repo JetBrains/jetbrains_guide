@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=OVbA8RC0Csk
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=EQ03Xo64kZQ
+  url: https://youtu.be/etvFP6kXsmo
 leadin: |
     *Want to learn what a symbol is about, without going to a browser?*    
 

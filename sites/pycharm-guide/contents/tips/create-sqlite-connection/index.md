@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=-xBE-Dm3HWE
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=XsD4eP_iiRk
+  url: https://youtu.be/U2sAgysf1Hc
 leadin: |
     *Working with a local SQLite database, the easy way.*    
 

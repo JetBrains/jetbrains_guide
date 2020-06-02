@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=cktFGEXPGks
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=pm12i4WL-yc
+  url: https://youtu.be/mvZg7TaRjCM
 leadin: |
     *Want to select code and remain keyboard-centric?*
 

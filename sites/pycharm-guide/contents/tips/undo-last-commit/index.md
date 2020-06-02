@@ -15,7 +15,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=okmwq-oa2zY
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=NFS0bh4fowA
+  url: https://youtu.be/R5L5fZi_ldg
 leadin: |
     *Oops, I committed again.*    
 
