@@ -23,7 +23,7 @@
     "sourceMap": false,
     "strictNullChecks": true,
     "target": "esnext",
-    "outDir": "src/.."
+    "outDir": "$$ts-jest"
 
   },
   "exclude": [
