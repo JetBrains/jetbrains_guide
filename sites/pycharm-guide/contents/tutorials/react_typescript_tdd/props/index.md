@@ -9,7 +9,7 @@ subtitle: Use type information to make using properties into a productive workfl
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=4MRwN1WgKF0
+  url: https://www.youtube.com/watch?v=n5diXAr-Sco
 ---
 
 Components and subcomponents are the zen of React. Information is shared

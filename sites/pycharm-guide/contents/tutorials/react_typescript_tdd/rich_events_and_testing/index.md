@@ -9,7 +9,7 @@ subtitle: Add event handling to a stateful class component by writing tests duri
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=2gvjVVEtkfc
+  url: https://www.youtube.com/watch?v=lBTHzBYxqUA
 ---
 
 Our counter component has local state, but doesn't respond to clicks. We

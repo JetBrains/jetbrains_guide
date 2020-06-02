@@ -9,7 +9,7 @@ subtitle: Make a simple class component with a single prop, again with a TypeScr
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=FTzKEWboixM
+  url: https://www.youtube.com/watch?v=MkgbUcJ25GY
 ---
 
 In the previous step we made a "dumb" presentational component with one

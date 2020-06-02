@@ -9,7 +9,7 @@ subtitle: Make a very simple class component with local counter state, then make
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=CTPfG3FpDwk
+  url: https://www.youtube.com/watch?v=Eo3w3URqWp0
 ---
 
 In [Class Components With Props](../class_props/) we made a child component 

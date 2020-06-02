@@ -9,7 +9,7 @@ subtitle: Follow the React pattern of container/presentation components by refac
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=FuV0R_n2whg
+  url: https://www.youtube.com/watch?v=vn6zTYYrrNo
 ---
 
 React encourages a separation of concerns. UI components, aka presentation

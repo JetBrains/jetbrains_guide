@@ -9,7 +9,7 @@ subtitle: Clean out some unneeded code from the default app, tweak some configur
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster.png
-  url: https://www.youtube.com/watch?v=llJFMwH7LP4
+  url: https://www.youtube.com/watch?v=y5yCPtEKPgo
 ---
 
 In our [previous step](../project_setup/) we generated a project then 

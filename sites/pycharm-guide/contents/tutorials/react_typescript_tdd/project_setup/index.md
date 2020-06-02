@@ -9,7 +9,7 @@ subtitle: Create a React+TypeScript project with the create-react-app scaffoldin
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster.png
-  url: https://www.youtube.com/watch?v=SNAS74qKzXQ
+  url: https://www.youtube.com/watch?v=ZP2dCeESF5A
 ---
 
 React has become very popular, as has TypeScript. But it can be difficult to

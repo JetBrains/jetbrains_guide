@@ -9,7 +9,7 @@ subtitle: Sometimes you need to debug in the browser. Use the IDE to remote cont
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=Nj5gFH4vBZ4
+  url: https://www.youtube.com/watch?v=3kcSwWowASU
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), 
