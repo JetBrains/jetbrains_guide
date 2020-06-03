@@ -10,6 +10,7 @@ cardThumbnail: './card.png'
 playlistItems:
     - /tips/desktop-share-link/
     - /tips/pin-chats-and-threads/
+    - /tips/todo-list/
     - /tips/go-to-anything-basics/
     - /tips/go-to-anything-contexts/
     - /tips/go-to-anything-hierarchy/
