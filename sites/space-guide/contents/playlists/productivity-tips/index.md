@@ -14,6 +14,7 @@ playlistItems:
     - /tips/go-to-anything-basics/
     - /tips/go-to-anything-contexts/
     - /tips/go-to-anything-hierarchy/
+    - /tips/keyboard-shortcuts/
     - /tips/team-location-chats/
     - /tips/project-favorites-sidebar/
     - /tips/private-projects/
