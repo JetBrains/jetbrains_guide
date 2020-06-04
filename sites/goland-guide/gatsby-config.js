@@ -116,12 +116,6 @@ module.exports = {
                             directory: `${__dirname}/demos/`
                         }
                     },
-                    {
-                        resolve: `gatsby-remark-prismjs`,
-                        options: {
-                            classPrefix: 'language-'
-                        }
-                    },
                     `gatsby-remark-copy-linked-files`
                 ]
             }
