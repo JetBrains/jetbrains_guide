@@ -1,5 +1,27 @@
 @charset "utf-8";
-@import "../../../../../node_modules/bulma/bulma";
+
+// Pick and choose what we want from Bulma. Specifically, leave
+// out the tags as it conflicts with Prism.
+@import "../../../../../node_modules/bulma/sass/utilities/_all";
+@import "../../../../../node_modules/bulma/sass/base/_all";
+@import "../../../../../node_modules/bulma/sass/elements/box.sass";
+@import "../../../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../../../node_modules/bulma/sass/elements/container.sass";
+@import "../../../../../node_modules/bulma/sass/elements/content.sass";
+@import "../../../../../node_modules/bulma/sass/elements/icon.sass";
+@import "../../../../../node_modules/bulma/sass/elements/image.sass";
+@import "../../../../../node_modules/bulma/sass/elements/notification.sass";
+@import "../../../../../node_modules/bulma/sass/elements/progress.sass";
+//@import "../../../../../node_modules/bulma/sass/elements/tag.sass";
+@import "../../../../../node_modules/bulma/sass/elements/title.sass";
+
+@import "../../../../../node_modules/bulma/sass/elements/other.sass";
+
+@import "../../../../../node_modules/bulma/sass/form/_all";
+@import "../../../../../node_modules/bulma/sass/components/_all";
+@import "../../../../../node_modules/bulma/sass/grid/_all";
+@import "../../../../../node_modules/bulma/sass/layout/_all";
+
 @import "../../../../../node_modules/bulma-o-steps/bulma-steps";
 
 @import "bulmaio/bulmaio";
@@ -25,28 +47,29 @@
   }
 }
 
-div.gatsby-highlight span.token.number {
-  display: inline;
-  font-size: inherit;
-  background-color: inherit;
-  min-width: inherit;
-  margin-right: inherit;
-  padding: inherit;
-}
-
-/* Images in Markdown are centered, fix to be left aligned */
-span.gatsby-resp-image-wrapper {
-  margin-left: inherit !important;
-}
-
-// Gatsby per-line highlighting based on
-// https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs
-.gatsby-highlight-code-line {
-  background-color: #feb;
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.25em solid #f99;
-}
+//
+//div.gatsby-highlight span.token.number {
+//  display: inline;
+//  font-size: inherit;
+//  background-color: inherit;
+//  min-width: inherit;
+//  margin-right: inherit;
+//  padding: inherit;
+//}
+//
+///* Images in Markdown are centered, fix to be left aligned */
+//span.gatsby-resp-image-wrapper {
+//  margin-left: inherit !important;
+//}
+//
+//// Gatsby per-line highlighting based on
+//// https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs
+//.gatsby-highlight-code-line {
+//  background-color: #feb;
+//  display: block;
+//  margin-right: -1em;
+//  margin-left: -1em;
+//  padding-right: 1em;
+//  padding-left: 0.75em;
+//  border-left: 0.25em solid #f99;
+//}
