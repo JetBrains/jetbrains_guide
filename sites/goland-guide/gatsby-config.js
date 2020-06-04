@@ -106,6 +106,12 @@ module.exports = {
                 extensions: [`.mdx`, `.md`],
                 gatsbyRemarkPlugins: [
                     {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 590
+                        }
+                    },
+                    {
                         resolve: `gatsby-remark-embed-snippet`,
                         options: {
                             directory: `${__dirname}/demos/`

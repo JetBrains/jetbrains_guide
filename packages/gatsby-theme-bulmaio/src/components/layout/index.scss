@@ -15,7 +15,7 @@
 //@import "../../../../../node_modules/bulma/sass/elements/tag.sass";
 @import "../../../../../node_modules/bulma/sass/elements/title.sass";
 
-@import "../../../../../node_modules/bulma/sass/elements/other.sass";
+//@import "../../../../../node_modules/bulma/sass/elements/other.sass";
 
 @import "../../../../../node_modules/bulma/sass/form/_all";
 @import "../../../../../node_modules/bulma/sass/components/_all";
@@ -47,29 +47,41 @@
   }
 }
 
-//
-//div.gatsby-highlight span.token.number {
-//  display: inline;
-//  font-size: inherit;
-//  background-color: inherit;
-//  min-width: inherit;
-//  margin-right: inherit;
-//  padding: inherit;
-//}
-//
-///* Images in Markdown are centered, fix to be left aligned */
-//span.gatsby-resp-image-wrapper {
-//  margin-left: inherit !important;
-//}
-//
-//// Gatsby per-line highlighting based on
-//// https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs
-//.gatsby-highlight-code-line {
-//  background-color: #feb;
-//  display: block;
-//  margin-right: -1em;
-//  margin-left: -1em;
-//  padding-right: 1em;
-//  padding-left: 0.75em;
-//  border-left: 0.25em solid #f99;
-//}
+/* Images in Markdown are centered, fix to be left aligned */
+span.gatsby-resp-image-wrapper {
+  margin-left: inherit !important;
+}
+
+.block {
+  @extend %block
+}
+
+.delete {
+  @extend %delete
+}
+
+.heading {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.highlight {
+  @extend %block;
+  font-weight: $weight-normal;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+
+  pre {
+    overflow: auto;
+    max-width: 100%;
+  }
+}
+
+
+.loader {
+  @extend %loader;
+}
