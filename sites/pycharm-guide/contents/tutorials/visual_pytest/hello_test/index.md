@@ -29,9 +29,9 @@ PyCharm should spot that you created a `tests` directory, so accept its defaults
 
 TODO Screenshot
 
-PyCharm will propose two files to add to VCS: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_players.py`.
+PyCharm will propose two files to add to VCS: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
 Click `Add` to accept this.
-PyCharm then opens the new tests file at `tests/test_players.py`:
+PyCharm then opens the new tests file at `tests/test_player.py`:
 
 `embed:tutorials/visual_pytest/hello_test/test_player01.py`
 

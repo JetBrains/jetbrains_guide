@@ -12,30 +12,29 @@ longVideo:
   url: https://www.youtube.com/watch?v=gerOp85XHXM
 ---
 
-Players have parents. Pro tip for youth sports: families are complicated
-now. It's not just "parent" but "guardian". Let's make a module for
-a `Guardian` class.
-
-This time let's do it with a bit of test-driven development (TDD) and
-show how to get PyCharm into a good "flow" for TDD.
+Players have parents, also known as guardians. 
+Let's make a module for a `Guardian` class.
+This time let's do it with a bit of test-driven development (TDD) and show how to get PyCharm into a good "flow" for TDD.
 
 # Starter Tests
 
-First, create `laxleague/guardian.py` with an empty class:
+First, create `src/laxleague/guardian.py` with an empty class:
 
 `embed:tutorials/visual_pytest/tdd_flow/guardian01.py`
 
 Why do we make an empty placeholder class? 
 To let PyCharm generate the import in our test.
 
-Let's do that part now. Create `tests/test_guardian.py` with the
-`test_import` "get me into the flow" test we just saw:
+Let's do that part now.
+Use `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS) as explained in the last step to help generate `tests/test_guardian.py`.
+Enter a `test_construction` test to "get me into the flow", letting PyCharm generate the import:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian01.py`
 
 Run the test by right-clicking in the editor *outside any block* and choosing to run it with `pytest` (bigger target area than the tab.)
 
-Yay, the test passes. Not a major victory, but allows us to start inching forward:
+Yay, the test passes. 
+Not a major victory, but allows us to start inching forward:
 
 ![Test Passes](./guardian_passes_import.png)
 
@@ -54,7 +53,7 @@ The run tool window is on the bottom (though on wide monitors I put it on the ri
 
 There, that has a nice feel to it. 
 
-Now that our code is setup, let's get our test running to "the flow".
+Now that our code is setup, let's get our test running "in the flow".
 Right-click on the `tests` folder and choose `Run 'pytest in tests'` to get a temporary run configuration for *all tests* in the project. 
 
 One more thing: let's have all our tests run, automatically, as we type. 
@@ -77,26 +76,29 @@ Let's write a failing test, then fix the implementation.
 
 # The Guardian
 
-Our `Guardian` needs a constructor that takes and stores `first_name`
-and a `last_name`. Add a new test to `tests/test_guardian.py`:
+Our `Guardian` needs a constructor that takes and stores `first_name` and a `last_name`.
+Add a new test to `tests/test_guardian.py`:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian02.py`
+
+Notice that PyCharm warns you when the two arguments are missing, and on hover, gives a nice message:
+
+TODO Screenshot
 
 After two seconds, even without saving, our tests show as broken:
 
 ![Broken Tests](./two_seconds_later_broken.png)
 
-Of course it breaks: `Guardian` has no constructor. 
+Of course it breaks: `Guardian` has no `__init__.py` constructor. 
 Since it is the *code* we are writing tests for, the mistake is conveniently right there in our left tab. 
 No need to think. 
-Change `laxleague/guardian.py` to store the names:
+Change `laxleague/guardian.py` to implement storing names on instances:
 
 `embed:tutorials/visual_pytest/tdd_flow/guardian.py`
 
 As you are writing this, let PyCharm help you:
 
-- First, use autocomplete to finish `__init__` and put your cursor in the
-  right spot.
+- First, use autocomplete to finish `__init__` and put your cursor in the right spot.
 
 - Next, when you type your constructor arguments, use `Alt-Enter` and
   choose `Add field 'first_name' to Guardian`. PyCharm will generate the
@@ -120,25 +122,28 @@ As you type `first_name` you can see PyCharm offering you the autocomplete.
 This is because PyCharm inferred the type of `Guardian`, thus speeding up your TDD.
 
 Oops, we had poor style on that. 
-In my projects, I prefer a testing conventions for asserts with expected on the left, meaning `expected == actual`. 
+In my projects, I prefer a testing convention for asserts with expected on the left, meaning `expected == actual`. 
+While [Guido declined to designate a winner](https://mail.python.org/pipermail/python-dev/2010-December/106954.html), it seems [Kent Beck did](https://sourceforge.net/p/junit/mailman/message/3338997/), and Brian Okken's examples also use that.
+
 We need to flip that, but good news: PyCharm excels at such janitorial work. 
-Click on the double-equal, hit `Alt-Enter`, and choose `Flip '=='`.
+Click on the double-equal, hit `Alt-Enter`, and choose `Flip '=='`:
+
+TODO Screenshot
+
+In fact, PyCharm will [obey a style](https://youtrack.jetbrains.com/issue/PY-27267) set by a project.
+Create a `pytest.ini` file at the root:
+
+`embed:tutorials/visual_pytest/tdd_flow/pytest.ini`
 
 ## Note
 
-If you're don't have PyCharm configured to use a font with ligatures such as Fira Code, you're missing out. 
+If you're don't have PyCharm configured to use a font with ligatures such as JetBrains Mono or Fira Code, you're missing out. 
 The double-equals symbol in this case is really slick-looking.
 
-Let's write a test for last name, causing `test_guardian.py` to finish like the following:
+Let's write a test for last name, causing `test_guardian.py` to finish like the following -- including the expected/actual ordering:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian.py`
 
 One last point: PyCharm's tool window for testing shows passing tests by default. 
 If you don't want to see them, and focus on failing tests instead, click on the `Show Passed` icon to the right of the green play button.
-
-## TODO Ilya
-
-- Emphasize the IDE warns you about missing parameters as you construct an instance
-
-- Perhaps mention expected vs. actual and flipping https://youtrack.jetbrains.com/issue/PY-27267
 

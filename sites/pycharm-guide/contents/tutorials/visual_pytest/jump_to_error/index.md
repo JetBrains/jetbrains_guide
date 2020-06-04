@@ -93,7 +93,7 @@ We used the type `list` in this case. We'll explain more in a moment.
 Our simple `add_guardian` method does the trick and now our tests pass.
 Pretend for a moment that we made a typo. Do the following:
 
-- Open `guardians.py` in that tab
+- Open `guardian.py` in that tab
 
 - Change the last line to `self.guardiansxxx.append(guardian)`
 
