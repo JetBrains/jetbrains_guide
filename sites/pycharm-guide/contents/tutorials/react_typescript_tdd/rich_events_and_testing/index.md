@@ -140,9 +140,7 @@ Ugh, that's a lot of keystrokes. Is it worth it? Let's show why. First, in
 
 ```typescript {2,3}
 handleClick = (event: React.MouseEvent<HTMLElement>) => {
-
     const inc = 10 ? event.shiftKey : 1;
-
     this.setState({count: this.state.count + inc});
 }
 ```

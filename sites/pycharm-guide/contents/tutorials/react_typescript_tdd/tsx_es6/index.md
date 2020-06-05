@@ -35,7 +35,7 @@ little bit.
 
 Let's change `App.test.tsx` back to two simple tests:
 
-```typescript
+```typescript {3}
 import { shallow } from enzyme;
 import React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -141,6 +141,8 @@ The TypeScript compiler, though, doesn't like this.
 Type error: Type 'void' is not assignable to type 
 '((event: MouseEvent<HTMLHeadingElement, MouseEvent>) => void) | undefined'
 ```
+
+As shown in the IDE:
 
 ![TypeScript Compiler Error](./screenshots/typescript_error.png)
 

@@ -1,15 +1,25 @@
 import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
+// @ts-ignore
+import rangeParser from 'parse-numeric-range';
+
 import vsDark from 'prism-react-renderer/themes/vsDark';
 
-// @ts-ignore
-const isHighlightedLine = (line: any, mark: string = '// highlight-next-line') =>
-  line?.some((prevLine: any) => {
-    return prevLine?.content === mark;
-  });
-
-export default ({ children, className }: any) => {
+const calculateLinesToHighlight = (meta: any) => {
+  const RE = /{([\d,-]+)}/
+  if (RE.test(meta)) {
+    // @ts-ignore
+    const strlineNumbers = RE.exec(meta)[1]
+    const lineNumbers = rangeParser(strlineNumbers)
+    return (index: any) => (lineNumbers.includes(index + 1))
+  } else {
+    return () => false
+  }
+}
+export default ({ children, className, metastring }: any) => {
   const language = className ? className.replace(/language-/, '') || '' : '';
+  const shouldHighlightLine = calculateLinesToHighlight(metastring)
+
   return (
     <Highlight
       {...defaultProps}
@@ -18,24 +28,17 @@ export default ({ children, className }: any) => {
       theme={vsDark}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className + ' content'} style={{ ...style, fontSize: 'large' }}>
-          {tokens.map((line, i) => {
-            const lineProps = getLineProps({ line, key: i });
-            const classNameArr = [lineProps.className];
-            if (isHighlightedLine(line)) {
-              return null;
-            }
-
-            if (isHighlightedLine(tokens?.[i - 1])) {
-              classNameArr.push(`${lineProps.className} gatsby-highlight-code-line`);
-            }
+        <pre className={className + ` content`} style={{ ...style, fontSize: 'large' }}>
+          {tokens.map((line, index) => {
+            const lineProps = getLineProps({ line, key: index })
+            if (shouldHighlightLine(index)) { lineProps.className = `${lineProps.className} highlight-line` }
             return (
-              <div key={i} {...getLineProps({ line, key: i })}>
+              <div key={index} {...lineProps}>
                 {line.map((token, key) => (
-                  <span key={key} {...getTokenProps({ token, key })} />
+                  <span key={key}{...getTokenProps({ token, key })} />
                 ))}
               </div>
-            );
+            )
           })}
         </pre>
       )}

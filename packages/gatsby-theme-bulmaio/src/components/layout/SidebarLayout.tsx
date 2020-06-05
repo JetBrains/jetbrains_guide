@@ -14,7 +14,7 @@ import { TwitterCardPage } from './MasterLayout';
 import CodeBlock from '../../common/CodeBlock';
 
 const components = {
-  pre: (props: any) => <div {...props} />,
+  pre: (props: any) => <div {...props} style={{marginBottom: '1rem'}}/>,
   code: CodeBlock,
 };
 

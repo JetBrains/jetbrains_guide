@@ -72,7 +72,7 @@ the `ICounterState` interface as it is no longer needed.
 
 Let's fix the first two tests, to see if we are in the ballpark:
 
-```typescript {2, 8}
+```typescript {2,8}
 it('should render a counter', () => {
     const wrapper = shallow(<Counter count={0}/>);
 
