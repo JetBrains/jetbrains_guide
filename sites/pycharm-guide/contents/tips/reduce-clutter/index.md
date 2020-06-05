@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-11-04
 title: Reduce Clutter by Disabling Tools
 technologies: []

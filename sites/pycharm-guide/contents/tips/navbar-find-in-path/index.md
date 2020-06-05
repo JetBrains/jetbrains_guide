@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-25
 title: Find In Path With Navigation Bar
 technologies: []

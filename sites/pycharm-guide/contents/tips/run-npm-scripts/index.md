@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-04-17
 title: Run npm Scripts from package.json
 technologies: []

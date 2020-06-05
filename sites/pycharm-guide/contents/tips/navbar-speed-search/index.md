@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-23
 title: Narrow Navigation Bar With Speed Search
 technologies: []

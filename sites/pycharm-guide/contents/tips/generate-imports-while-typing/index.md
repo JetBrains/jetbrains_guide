@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-12-03
 title: Generate Imports While Typing
 technologies: []

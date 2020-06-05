@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-12-04
 title: Install and import
 technologies: []
