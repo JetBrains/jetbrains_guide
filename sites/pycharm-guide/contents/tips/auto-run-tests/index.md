@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-04-15
 title: Auto-Run Tests
 technologies: []

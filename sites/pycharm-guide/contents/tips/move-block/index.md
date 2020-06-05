@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-03-11
 title: Move Block Up/Down Using Keyboard
 technologies: []
@@ -29,7 +30,7 @@ kinda fast, but there's a better way that doesn't temporarily remove the
 code from your file.
 
 Make a selection ([without using the mouse](../make-extend-selection/)) 
-and use `` (`Shift-Alt-Up/Down` Win/Linux, `Alt-Shift-Up/Down` macOS) 
+and use (`Shift-Alt-Up/Down` Win/Linux, `Alt-Shift-Up/Down` macOS) 
 to move that selection to the target line. The selection gets dragged 
 along, in view.
 

@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-03-25
 title: Enable vim keybindings with IdeaVim plugin
 technologies: []

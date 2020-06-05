@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-11-04
 title: Better Autocomplete Results in Angular Templates
 technologies: [angular]

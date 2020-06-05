@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-11-08
 title: Navigate to Symbol
 technologies: []

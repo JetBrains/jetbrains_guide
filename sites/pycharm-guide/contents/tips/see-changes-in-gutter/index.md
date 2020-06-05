@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-04-17
 title: See VCS Changed Lines In Gutter
 technologies: []

@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-03-11
 title: View Parameter Info
 technologies: []
