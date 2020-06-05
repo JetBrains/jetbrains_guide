@@ -1,5 +1,6 @@
 import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
+import vsDark from 'prism-react-renderer/themes/vsDark';
 
 // @ts-ignore
 const isHighlightedLine = (line: any, mark: string = '// highlight-next-line') =>
@@ -8,16 +9,16 @@ const isHighlightedLine = (line: any, mark: string = '// highlight-next-line') =
   });
 
 export default ({ children, className }: any) => {
-  const language = className.replace(/language-/, '') || '';
+  const language = className ? className.replace(/language-/, '') || '' : '';
   return (
     <Highlight
       {...defaultProps}
       code={children}
       language={language}
-      theme={undefined}
+      theme={vsDark}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <pre className={className + ' content'} style={{ ...style }}>
+        <pre className={className + ' content'} style={{ ...style, fontSize: 'large' }}>
           {tokens.map((line, i) => {
             const lineProps = getLineProps({ line, key: i });
             const classNameArr = [lineProps.className];
