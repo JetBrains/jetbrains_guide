@@ -47,7 +47,7 @@ and make sure the `Jest` run config is running.
 Here's a `Counter.test.tsx` test to show that the counter starts at zero,
 which *fails*, because we have a static `<span>1</span>`:
 
-```typescript{}
+```typescript
 it('should default start at zero', () => {
     const wrapper = shallow(<Counter label={'Current'}/>);
     expect(wrapper.find('.counter span').text()).toBe('0');
@@ -66,7 +66,7 @@ interface ICounterState {
 Now the class definition and constructor can setup state, which we'll use
 in the `render` method:
 
-```typescript{}
+```typescript
 class Counter extends Component<ICounterProps, ICounterState> {
     static defaultProps = {
         label: 'Count'
@@ -111,7 +111,7 @@ Sometimes we want a counter that starts somewhere besides zero. Let's pass
 in an optional prop for the starting value. First, the test in
 `Counter.test.tsx`:
 
-```typescript{}
+```typescript
 it('should custom start at another value', () => {
     const wrapper = shallow(<Counter label={'Current'} start={10}/>);
     expect(wrapper.find('.counter span').text()).toBe('10');
@@ -125,40 +125,37 @@ violated the `<Counter/>` contract.
 
 We'll fix the interface in `Counter.tsx`:
 
-```typescript{3}
+```typescript {3}
 interface ICounterProps {
     label?: string;
     start?: number;
-
 }
 ```
 
 Then, add it to the `defaultProps`:
 
-```typescript{3}
+```typescript {3}
 static defaultProps = {
     label: 'Count',
     start: 0
-
 };
 ```
 
 Finally, change the component *state* to get its initial value from the
 component *props*:
 
-```typescript{4}
+```typescript {4}
 constructor(props: ICounterProps) {
     super(props);
     this.state = {
         count: props.start
-
     };
 }
 ```
 
 When we do this, though, TypeScript gets mad:
  
-```
+```shell script
 Error:(21, 13) TS2322: Type 'number | undefined' is not assignable 
 to type 'number'. Type 'undefined' is not assignable to type 'number'.
 ``` 
@@ -176,12 +173,11 @@ Sometimes you know better than the compiler. At the point of assignment,
 make an "I'm sure" assignment -- a *definite* assignment -- by suffixing the
 value with an exclamation:
 
-```typescript{4}
+```typescript {4}
 constructor(props: ICounterProps) {
     super(props);
     this.state = {
         count: props.start!
-        
     };
 }
 ```
@@ -189,7 +185,7 @@ constructor(props: ICounterProps) {
 Alas, as of this writing, ESLint has a parser error on this. Instead, 
 let's put a type guard around the assignment of the prop to the state:
 
-```typescript{}
+```typescript
 constructor(props: ICounterProps) {
     super(props);
     const count: number = props.start ? props.start : 0;
@@ -208,7 +204,7 @@ parent component, first through testing, then by looking in the browser.
 First up, we open `App.test.tsx` and add a single line to test the
 initial counter value:
 
-```typescript{5}
+```typescript {5}
 it('renders the app and the heading', () => {
     const wrapper = mount(<App/>);
     expect(wrapper.find('h1').text()).toBe('Hello React');

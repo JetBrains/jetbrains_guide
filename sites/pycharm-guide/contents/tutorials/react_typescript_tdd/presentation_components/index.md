@@ -27,7 +27,7 @@ We'll start by removing state from the Counter component. Instead, the count
 is passed in as a prop. Also, the dumb child component will no longer decide
 the starting value, so remove `start` from the interface:
 
-```typescript{4}
+```typescript {4}
 interface ICounterProps {
     label?: string
     count: number;
@@ -44,7 +44,7 @@ mentioned in
 that stateless presentation components are best done with stateless functional 
 components. Let's change `<Counter/>` to an SFC:
 
-```typescript{}
+```typescript
 const Counter: FC<ICounterProps> = (
     {label = 'Count', count}
 ) => {
@@ -56,7 +56,6 @@ const Counter: FC<ICounterProps> = (
             <label>{label}</label>
             <span>{count}</span>
         </div>
-
     )
 };
 ```
@@ -73,7 +72,7 @@ the `ICounterState` interface as it is no longer needed.
 
 Let's fix the first two tests, to see if we are in the ballpark:
 
-```typescript{2, 8}
+```typescript {2, 8}
 it('should render a counter', () => {
     const wrapper = shallow(<Counter count={0}/>);
 
@@ -106,7 +105,7 @@ event comes in, call the function that was passed to me as a prop."
 Here goes. First, since this click handler function will come in as a prop,
 we need to change `ICounterProps` to model it:
 
-```typescript{}
+```typescript
 interface ICounterProps {
     label?: string;
     count: number;
@@ -119,7 +118,7 @@ Now *that's* an interface, baby. It captures quite a bit of the contract.
 Next, use ES6 object destructuring to "unpack" that from the props into the
 local scope, then refer to that prop in the `onClick` handler:
 
-```typescript{}
+```typescript
 const Counter: FC<ICounterProps> = (
     {label = 'Count', count, onCounterIncrease}
 ) => {
@@ -131,7 +130,6 @@ const Counter: FC<ICounterProps> = (
             <label>{label}</label>
             <span>{count}</span>
         </div>
-
     )
 }
 ```
@@ -153,7 +151,7 @@ function which we passed in as a prop.
 
 Do this for both tests:
 
-```typescript{}
+```typescript
 it('should render a counter', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={0}
@@ -176,7 +174,7 @@ that.
 
 Let's change the third test:
 
-```typescript{}
+```typescript
 it('should call the handler on click', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={1} onCounterIncrease={handler}/>);
@@ -201,7 +199,7 @@ container would then be truly UI-less for this functionality.
 First, let's change the contract. Our callback will be called *not* with the
 raw event, but with a *boolean* for the shift information:
 
-```typescript{}
+```typescript
 interface ICounterProps {
     label?: string;
     count: number;
@@ -211,7 +209,7 @@ interface ICounterProps {
 
 Our SFC gains a local arrow function which does the extraction and calling::
 
-```typescript{}
+```typescript
 const Counter: FC<ICounterProps> = (
     {label = 'Count', count, onCounterIncrease}
 ) => {
@@ -226,7 +224,6 @@ const Counter: FC<ICounterProps> = (
             <label>{label}</label>
             <span>{count}</span>
         </div>
-
     )
 };
 ```
@@ -234,7 +231,7 @@ const Counter: FC<ICounterProps> = (
 Our third test can now change, to see if our "spy" was called with a boolean
 instead of an event object:
 
-```typescript{}
+```typescript
 it('should call the handler on click', () => {
     const handler = jest.fn();
     const wrapper = shallow(<Counter count={0} onCounterIncrease={handler}/>);
@@ -257,7 +254,7 @@ interface for the counter's state. We just so happen to have one left
 behind in `Counter.tsx`. *Remove the interface* from that file and paste it 
 into `App.tsx`:
 
-```typescript{}
+```typescript
 interface ICounterState {
     count: number
 }
@@ -266,7 +263,7 @@ interface ICounterState {
 Change the class setup to use this, with a constructor that sets up the
 initial state:
 
-```typescript{}
+```typescript
 class App extends Component<object, ICounterState> {
     constructor(props: {}) {
         super(props);
@@ -280,7 +277,7 @@ Now it's time for the action. Let's make a method that updates the state.
 This method will be the handler that's passed into `<Counter/>`. We first 
 try it as a normal method:
 
-```typescript{}
+```typescript
 increment(isShift: boolean) {
     const inc: number = isShift ? 10 : 1;
     this.setState({count: this.state.count + inc});
@@ -291,7 +288,7 @@ But this is going to have the same problem discussed previously: `this` is
 bound to the event, not the component. As before, we solve this by converting
 the method to an arrow function class property:
 
-```typescript{}
+```typescript
 increment = (isShift: boolean) => {
     const inc: number = isShift ? 10 : 1;
     this.setState({count: this.state.count + inc});
@@ -300,7 +297,7 @@ increment = (isShift: boolean) => {
 
 With this in place, we can now update the `render` function:
 
-```typescript{}
+```typescript
 render() {
     return (
         <div>
@@ -326,7 +323,7 @@ between the two components.
 
 Let's first add tests in `App.test.tsx` for the increment function:
 
-```typescript{}
+```typescript
 it('updates state when increment is called without shift', () => {
     const wrapper = shallow(<App/>);
     const instance = wrapper.instance() as App;
@@ -355,7 +352,7 @@ Those tests pass, which is a good sign. We need though to test the
 parent-child connection. For this we'll go back to Enzyme's `mount` and 
 add these two tests:
 
-```typescript{}
+```typescript
 it('updates the count by 1 via the counter component', () => {
     const wrapper = mount(<App/>);
     wrapper.find('.counter').simulate('click', {shiftKey: false});

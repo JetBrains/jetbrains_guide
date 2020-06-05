@@ -35,7 +35,7 @@ little bit.
 
 Let's change `App.test.tsx` back to two simple tests:
 
-```typescript{}
+```typescript
 import { shallow } from enzyme;
 import React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -55,7 +55,7 @@ it('renders the heading', () => {
 
 Also, our component in `App.tsx`:
 
-```typescript{}
+```typescript
 import React, { Component } from react;
 
 class App extends Component {
@@ -86,7 +86,7 @@ Let's do another approach at extracting the hardwired string from the
 `<h1>`. The `render` method can, of course, have scope. Let's define the
 label there:
 
-```typescript{}
+```typescript
 render() {
     const label = 'Hello React';
     return (
@@ -102,7 +102,7 @@ tests pass, so this change worked fine.
 
 We can also move the `label` up to the class label as a field:
 
-```typescript{}
+```typescript
 class App extends Component {
     label = 'Hello React';
 
@@ -137,9 +137,9 @@ letting us assign an expression (with `{}`) instead of a string:
 
 The TypeScript compiler, though, doesn't like this.
 
-```
-  Type error: Type 'void' is not assignable to type 
-  '((event: MouseEvent<HTMLHeadingElement, MouseEvent>) => void) | undefined'
+```shell script
+Type error: Type 'void' is not assignable to type 
+'((event: MouseEvent<HTMLHeadingElement, MouseEvent>) => void) | undefined'
 ```
 
 ![TypeScript Compiler Error](./screenshots/typescript_error.png)
@@ -177,22 +177,22 @@ Inline handlers aren't so smart, as they aren't easily testable and smart
 folks say there's a slight performance it on re-render. Let's move the 
 handler to a component method:
 
-```typescript{}
-    class App extends Component {
-        label = 'Hello React'
+```typescript
+class App extends Component {
+    label = 'Hello React'
 
-        handleClick () {
-            alert('Hello World');
-        }
-
-        render() {
-            return (
-                <div>
-                    <h1 onClick={this.handleClick}>{this.label}</h1>
-                </div>
-            );
-        }
+    handleClick () {
+        alert('Hello World');
     }
+
+    render() {
+        return (
+            <div>
+                <h1 onClick={this.handleClick}>{this.label}</h1>
+            </div>
+        );
+    }
+}
 ```
 
 We referenced `this.handleClick` but we didn't call it. React will call it
@@ -201,7 +201,7 @@ later, when we actually click.
 Let's have the alert display the label by changing it to
 `alert(this.label)`:
 
-```typescript{}
+```typescript
 handleClick() {
     alert(this.label);
 }
@@ -227,7 +227,7 @@ to the following:
 ...but we're back to the frowned-up pattern of arrow functions in event 
 handlers. Instead, we can bind the arrow function to the component:
 
-```typescript{}
+```typescript
 handleClick = () => {
     alert(this.label);
 };
@@ -262,9 +262,9 @@ The easiest way to see TSX in action? Go to your `<h1>` and try to add
 `class=""`. TypeScript itself has JSX/TSX support in the compiler and
 gives a compiler error:
 
-```
-  Property 'class' does not exist on type
-  'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'.
+```shell script
+Property 'class' does not exist on type
+'DetailedHTMLProps<HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>'.
 ```
 
 Also, the IDE refuses to autocomplete on `class`. It does, though,

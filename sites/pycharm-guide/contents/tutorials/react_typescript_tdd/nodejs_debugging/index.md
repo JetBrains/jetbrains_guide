@@ -30,7 +30,7 @@ The finished code for this tutorial step is
 First, let's remove some unused code from our first test,
 `renders without crashing`. Delete the last 3 lines and leave it as:
 
-```typescript{}
+```typescript
 it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App/>, div);
@@ -72,7 +72,7 @@ We didn't write a test first. That's sort of ok: we didn't change the
 rendering itself. But we also didn't test the method. Let's do that now by
 adding a test in `App.test.tsx`:
 
-```typescript{}
+```typescript
 it('generates a label', () => {
     const a = new App({});
     expect(a.label()).toBe('Hello React');
@@ -89,7 +89,7 @@ then converting that name to uppercase. First, change our tests to the
 behavior we expect. The `generates a label` test needs its last line
 changed to:
 
-```typescript{}
+```typescript
 expect(a.label('React')).toBe('Hello REACT');
 ```
 
@@ -102,14 +102,14 @@ the contract, even before the test runs. Nice squared!
 
 The `<h1>`, like the test, needs to pass in a value:
 
-```typescript{}
+```typescript
     <h1>{this.label('React')}</h1>
 ```
 
 Now it's just a matter of changing the method to accept an argument, then
 uppercasing the return value:
 
-```typescript{}
+```typescript
 label(name) {
     return `Hello ${name.toUpperCase()}`;
 }
@@ -121,7 +121,7 @@ to an ES6 template string (the backticks.)
 With that, our tests pass, but the TypeScript compiler is angry: the `name`
 argument doesn't have a supplied type. Let's fix that:
 
-```typescript{}
+```typescript
 label(name: string) {
     return `Hello ${name.toUpperCase()}`;
 }

@@ -50,7 +50,7 @@ Let's see a little testing in action. Open `src/App.test.tsx`. We're going to
 show the cycle of fail-fix in action. Define two contants, then compare
 them with a simple Jest assertion:
 
-```typescript{}
+```typescript
 it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<App/>, div);
@@ -111,7 +111,7 @@ As [explained in the CRA docs](https://facebook.github.io/create-react-app/docs/
 we need to tell Jest to use a configured Enzyme. Add this file at
 `src/setupTests.ts`:
 
-```typescript{}
+```typescript
 import { configure } from enzyme;
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -121,7 +121,7 @@ configure({adapter: new Adapter()});
 Restart the Jest run tool window to pickup this setup file. Then, edit
 `src/App.test.tsx` to include a second test:
 
-```typescript{}
+```typescript
 it('renders the heading', () => {
     const wrapper = shallow(<App/>);
     expect(wrapper.find('h1').text()).toBe('Hello React');
@@ -139,7 +139,7 @@ it back and save, and the tests pass.
 To see real TDD, you write the test first. Add a third test in
 `src/App.test.tsx`:
 
-```typescript{}
+```typescript
 it('renders the paragraph', () => {
     const wrapper = shallow(<App/>);
     expect(wrapper.find('p').text()).toBe('Nice TDD');
