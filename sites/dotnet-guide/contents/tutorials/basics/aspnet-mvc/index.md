@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
-date: 2020-05-27
+date: 2020-06-05
 title: Basics of ASP.NET MVC
 technologies: [asp.net]
 products: [rider]
 topics: [web]
 author: khalidabuhakmeh
-subtitle: A complete MVC endpoint with routes, models, views, and controllers.
+subtitle: A complete MVC pipeline with routes, models, views, and controllers.
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
