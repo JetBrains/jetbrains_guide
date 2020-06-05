@@ -6,7 +6,7 @@ A variation of the MasterLayout which makes a sidebar.
 
 import React from 'react';
 // @ts-ignore
-import { MDXProvider } from "@mdx-js/react";
+import { MDXProvider } from '@mdx-js/react';
 
 import SiteLayout from './SiteLayout';
 import Heading from '../heading/Heading';
@@ -14,8 +14,8 @@ import { TwitterCardPage } from './MasterLayout';
 import CodeBlock from '../../common/CodeBlock';
 
 const components = {
-  pre: (props: any) => <div {...props}/>,
-    code: CodeBlock,
+  pre: (props: any) => <div {...props} />,
+  code: CodeBlock,
 };
 
 interface SidebarLayoutProps {
@@ -39,7 +39,9 @@ const SidebarLayout: React.FC<SidebarLayoutProps> = (
 
   }) => {
   return (
-    <MDXProvider components={components}>
+    <MDXProvider
+      components={components}
+    >
       <SiteLayout pageTitle={pageTitle} twitterCardPage={twitterCardPage}>
         <main className="bd-main bulmaio-body">
           <div className="bd-side-background" />

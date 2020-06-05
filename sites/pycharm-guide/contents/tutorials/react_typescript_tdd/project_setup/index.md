@@ -135,13 +135,12 @@ Double-click the `test` entry in the `npm` tool window to try again:
 The tests auto-run as you edit, updating much faster once first loaded. To
 see this in action, open `src/App.test.tsx` and add a line to the test:
 
-```typescript{5}
+```typescript
     it('renders without crashing', () => {
       const div = document.createElement('div');
       ReactDOM.render(<App />, div);
       ReactDOM.unmountComponentAtNode(div);
       expect(1).toBe(2);
-      
     });
 ```
 
