@@ -9,11 +9,9 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/basics/aspnet-mvc/
   - /tutorials/basics/razor-pages/
+  - /tutorials/basics/entity-framework-core/
+  - /tutorials/basics/ado-net/
+  - /tutorials/basics/dapper/
 ---
 
 In this series of videos, we explore the absolute basics of technologies in .NET. From web technologies to data access mechanisms. These videos display the bare minimum anyone needs to get started with tech, and videos range from 1 to 3 minutes in length.
-
-
-- /tutorials/basics/entity-framework-core/
-- /tutorials/basics/ado-net/
-- /tutorials/basics/dapper/
