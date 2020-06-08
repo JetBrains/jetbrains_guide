@@ -14,4 +14,4 @@ tutorialItems:
   - /tutorials/basics/dapper/
 ---
 
-In this series of videos, we explore the absolute basics of technologies in .NET. From web technologies to data access mechanisms. These videos display the bare minimum anyone needs to get started with tech, and videos range from 1 to 3 minutes in length.
+In **The Basics** series, we'll explore several .NET technologies with a bare-minimum set of knowledge required to be productive. In **1 to 3 minute videos**, we'll go from an idea (💡) to a working example (🎉), showing that we don't have to be an expert to be a effective.
