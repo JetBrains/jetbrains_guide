@@ -23,9 +23,8 @@ In this step we tackle that problem by combining two great features: visual *tes
 Let's imagine we were working on our `test_primary_guardian` test and did something like this:
 
 ```python
-def test_primary_guardian():
-    p = Player('Tatiana', 'Jones')
-    assert p.primary_guardian
+def test_primary_guardian(player_one):
+    assert player_one.primary_guardian
 ```
 
 It raises an error:
@@ -43,10 +42,9 @@ Alas, the humble `print` statement.
 You thus reach for the "easiest" (wrong!) tool:
 
 ```python
-def test_primary_guardian():
-    p = Player('Tatiana', 'Jones')
-    print(p.guardians)
-    assert p.primary_guardian
+def test_primary_guardian(player_one):
+    print(player_one.guardians)
+    assert player_one.primary_guardian
 ```
 
 Your tests run, but...nada.
@@ -54,17 +52,20 @@ Your tests run, but...nada.
 Besides, you've now changed your *code* as part of investigating a problem.
 Not smart.
 
-You could learn how to generate output in `pytest`, but that would be the same issue -- writing debugging statements into your code which you might accidentally check in.
+You could learn how to generate console output in `pytest`, but that would be the same issue -- writing debugging statements into your code which you might accidentally check in.
 
 The debugger was meant for this. 
 Fortunately PyCharm has a great "visual" debugger, tightly integrated with "visual testing."
 Let's use that.
 
-# Breakpoint, Step, Cha-Cha-Cha
+# Breakpoint, Step...Cha-Cha-Cha
 
 Remove the `print` statement and instead, click in the gutter beside the first line in that test function.
+This adds a red circle to indicate a breakpoint:
 
-Let's now run that *one* test, but under the debugger, which will then run `pytest`.
+TODO Screenshot
+
+Let's now run that *one* test, but under the debugger, which itself will then run `pytest`.
 Click the green triangle in the gutter to the left of `test_primary_guardian` and choose `Debug 'pytest for test_play...'.
 This brings up a new tool window in the bottom, running the debugger:
 
@@ -90,3 +91,5 @@ You can even overwrite the value of a variable in the scope or create new variab
 You're currently poking around in the code for the test, but perhaps you want to poke around in the implementation.
 Click the `Step Into` button and the debugger will put you on the `return self.guardians[0]` line in the `primary_guardian` method.
 
+With this we quickly see what is the problem.
+The debugger is a fantastic tool when doing TDD -- not just when you have a problem, but whenever you want to explore.

@@ -13,6 +13,7 @@ tutorialItems:
   - /tutorials/visual_pytest/tdd_flow/
   - /tutorials/visual_pytest/jump_to_error/
   - /tutorials/visual_pytest/skipping_tests/
+  - /tutorials/visual_pytest/fixtures/
   - /tutorials/visual_pytest/debugging_during_testing/
   - /tutorials/visual_pytest/testing_exceptions/
 ---
