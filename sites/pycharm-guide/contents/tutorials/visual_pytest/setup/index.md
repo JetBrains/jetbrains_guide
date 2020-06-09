@@ -12,7 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=XRaox0aH6y0
 ---
 
-PyCharm has projects and Python does as well.
+Python has projects and PyCharm does as well.
 In this tutorial step, let's make both, with a virtual environment, and set the project up to use `pytest`.
 
 # New Project
@@ -34,12 +34,16 @@ After clicking `Create`, tell PyCharm to open the project in a new window.
 Why?
 Most Python packages put their tests *outside* of their source directories, to avoid accidentally shipping the tests (among other reasons.)
 The tests thus need to import the package that you code is in, and that means a Python package.
-Fortunately this is [all explained quite well](https://blog.godatadriven.com/setup-py) in the `pytest` docs.
+Fortunately this is [all explained quite well](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code) in the `pytest` docs.
 
 We first need a `setup.py` file at the top of our new project.
 Add the following:
 
 `embed:tutorials/visual_pytest/setup/setup.py`
+
+Our source will now go in a `src/laxleague` directory so make sure to create it:
+
+TODO Screenshot of making the directory
 
 Now go to PyCharm's Terminal tool and type in the following:
 

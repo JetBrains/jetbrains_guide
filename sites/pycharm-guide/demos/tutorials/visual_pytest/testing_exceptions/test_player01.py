@@ -52,7 +52,6 @@ def test_primary_guardian():
     assert g1 == p.primary_guardian
 
 
-# highlight-start
 def test_no_primary_guardian():
     p = Player('Tatiana', 'Jones')
     with pytest.raises(IndexError) as exc:

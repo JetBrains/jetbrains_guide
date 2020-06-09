@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Iterable  # highlight-line
+from typing import List, Iterable
 
 from laxleague.guardian import Guardian
 
@@ -15,6 +15,5 @@ class Player:
     def add_guardian(self, guardian: Guardian):
         self.guardians.append(guardian)
 
-    # highlight-next-line
     def add_guardians(self, guardians: Iterable[Guardian]):
         self.guardians.extend(guardians)

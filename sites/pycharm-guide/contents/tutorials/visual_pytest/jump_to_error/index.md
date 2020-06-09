@@ -83,7 +83,6 @@ Let's fix this in a new `player.py`:
 
 `embed:tutorials/visual_pytest/jump_to_error/player02.py`
 
-
 This dataclass adds a new dataclass field named `guardians`. 
 It is a little different: as Python's [mutable default values](https://docs.python.org/3/library/dataclasses.html#mutable-default-values) docs explain, Python class attributes can't default to a list. Python
 dataclasses fix this with a dataclass `field` function which can assign a factory to construct the default value.

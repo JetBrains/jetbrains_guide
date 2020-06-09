@@ -64,9 +64,9 @@ This tool window is customized for visualizing tests and their results:
 The test runner tool window lists the tests (organized by hierarchy) on the left and the test output on the right. 
 It also has buttons for operations (e.g. re-run tests) and configuration (e.g. only show passing tests.)
 
-Let's change the assertion to make the test fail and re-run the tests:
+Let's change the assertion to make the test pass and re-run the tests:
 
-`embed:tutorials/visual_pytest/hello_test/test_player.py`
+`embed:tutorials/visual_pytest/hello_test/test_player02.py`
 
 In the tool window, click the green arrow to re-run your tests. 
 The results look much different now:
@@ -93,6 +93,7 @@ Right-click in a test function or file.
 - *Right-click*. Context menu in editor, tab, tool window, project tool folder.
 
 - *Permanent run configuration*.
+
 All of the approaches above create *temporary* run configurations. 
 I also make permanent run configurations for my top-level folders under `tests` such as `unit`.
 
@@ -125,7 +126,7 @@ Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete *and* add the imp
 
 # Running
 
-Let's run everything in the file (currently one test) by right-clicking in the editor and choosing `Run 'pytest in test_player.py'`.
+Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing `Run 'pytest in test_player.py'`.
 
 PyCharm opens a tool window with the visual output of the test.
 Our test passes again:

@@ -15,6 +15,5 @@ class Player:
     def add_guardian(self, guardian: Guardian):
         self.guardians.append(guardian)
 
-    # highlight-range{1-2}
     def add_guardians(self, guardians: List[Guardian]):
         self.guardians.extend(guardians)

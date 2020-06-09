@@ -22,7 +22,6 @@ def test_add_guardian():
     assert [g] == p.guardians
 
 
-# highlight-start
 def test_add_guardians():
     p = Player('Tatiana', 'Jones')
 

@@ -18,7 +18,6 @@ class Player:
     def add_guardians(self, guardians: Iterable[Guardian]):
         self.guardians.extend(guardians)
 
-    # highlight-range{1-3}
     @property
     def primary_guardian(self):
         return self.guardians[0]

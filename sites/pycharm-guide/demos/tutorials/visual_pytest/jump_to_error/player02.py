@@ -7,8 +7,7 @@ class Player:
 
     first_name: str
     last_name: str
-    guardians: list = field(default_factory=list)  # highlight-line
+    guardians: list = field(default_factory=list)
 
-    # highlight-range{1-2}
     def add_guardian(self, guardian):
         self.guardians.append(guardian)

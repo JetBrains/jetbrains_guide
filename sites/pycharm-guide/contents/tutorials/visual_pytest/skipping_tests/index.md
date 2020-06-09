@@ -86,8 +86,3 @@ Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test no
 
 The `pytest.mark.skip` facility, with related `skipIf` and `xFail`, have a broad set of uses.
 As you mature in test writing, start to include other people, and have tests that execute in different environments, you'll put them to good use.
-
-## TODO
-
-- Show ignored https://stackoverflow.com/questions/44723881/how-to-ignore-some-unittest-test-in-pycharm-2017-1
-

@@ -52,5 +52,4 @@ def test_primary_guardian():
 
 def test_no_primary_guardian():
     p = Player('Tatiana', 'Jones')
-    # highlight-next-line
     assert p.primary_guardian is None

@@ -23,9 +23,7 @@ First, create `src/laxleague/guardian.py` with an empty class:
 `embed:tutorials/visual_pytest/tdd_flow/guardian01.py`
 
 Why do we make an empty placeholder class? 
-To let PyCharm generate the import in our test.
-
-Let's do that part now.
+To let PyCharm generate the test for us.
 Use `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS) as explained in the last step to help generate `tests/test_guardian.py`.
 Enter a `test_construction` test to "get me into the flow", letting PyCharm generate the import:
 
