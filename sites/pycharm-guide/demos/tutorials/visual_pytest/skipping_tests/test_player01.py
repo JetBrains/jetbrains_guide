@@ -1,11 +1,5 @@
-import pytest
-
 from laxleague.guardian import Guardian
 from laxleague.player import Player
-
-
-def test_import():
-    assert Player
 
 
 def test_construction():

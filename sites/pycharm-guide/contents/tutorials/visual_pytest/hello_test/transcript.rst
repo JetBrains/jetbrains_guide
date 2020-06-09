@@ -38,7 +38,7 @@ Then in the body, assert that doing so returns something truthy, just as a simpl
 
     * Change the test name to ``test_construction``
     * Delete "True"
-    * Type ``Pla`` and Ctrl-Ctrl
+    * Type ``Pla`` and Ctrl-Space | Ctrl-Space
     * Add ``()``
 
 When we re-run the tests, our single test passes.

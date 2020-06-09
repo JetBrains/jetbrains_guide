@@ -1,5 +1,5 @@
-from laxleague.player import Player
+from laxleague.players import Player
 
 
-def test_import():
-    assert Player
+def test_construction():
+    assert Player()

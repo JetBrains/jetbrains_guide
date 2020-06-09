@@ -23,7 +23,7 @@ We'll let PyCharm generate our test file and test for us, as well as add it to V
 As before, we make a construction test as a sanity check, letting PyCharm generate the import for us:
 
     * Change to ``test_construction``
-    * Change True to ``Gua`` and Ctrl-Ctrl
+    * Change True to ``Gua`` and Ctrl-Space | Ctrl-Space
 
 This time we will run all the tests in the ``tests`` folder:
 

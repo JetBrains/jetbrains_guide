@@ -13,7 +13,7 @@ First a refactor. Instead of a constructor, we change to:
 - ...with dataclass fields:
 
     * Alt-Cmd-O ``Guardian`` to go to the Guardian symbol
-    * Add ``@datac`` Ctrl-Ctrl
+    * Add ``@datac`` Ctrl-Space | Ctrl-Space
     * Delete constructor with Alt-Up
     * Add fields
 
@@ -30,7 +30,7 @@ Open the ``test_player.py`` file and the ``player.py`` file, then do the same:
 
     * Click in right, Cmd-E, ``t_g``
     * Click in left, Cmd-E, ``pl``
-    * Add ``@datac`` Ctrl-Ctrl
+    * Add ``@datac`` Ctrl-Space | Ctrl-Space
     * Delete constructor with Alt-Up
     * Add fields
 

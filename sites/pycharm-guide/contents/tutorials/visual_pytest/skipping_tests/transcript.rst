@@ -22,7 +22,7 @@ As expected the test fails. We're busy on something else and want to
 skip running this test. Import pytest and add the ``skip`` marker [pause],
 providing some text as an optional reason:
 
-    * ``@pyte`` Ctrl-Ctrl
+    * ``@pyte`` Ctrl-Space | Ctrl-Space
     * ``.ma`` tab
     * ``.sk`` tab
     * ``(reason='Have not yet implemented method')``
@@ -62,7 +62,7 @@ different kinds of sequences. The warning disappears:
 
     * Click in add_guardians at end of ``List``
     * Alt-Delete
-    * ``Itera`` Ctrl-Ctrl
+    * ``Itera`` Ctrl-Space | Ctrl-Space
     * Accept first selection (from typing)
 
 Now a second feature: denoting a *primary* guardian, meaning, the first
