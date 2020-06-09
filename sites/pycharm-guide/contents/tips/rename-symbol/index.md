@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-03-12
 title: Rename Symbol
 technologies: []

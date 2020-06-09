@@ -44,7 +44,7 @@ in [Testing](../testing/).
 Finally, let's return our `App` to a simpler form by removing the field
 and handlers, which will gradually add back in:
 
-```typescript{}
+```typescript
 class App extends Component {
   render() {
         return (
@@ -71,7 +71,7 @@ refactoring in this step.
 First, change the second test to import a non-existing `Heading`
 component:
 
-```typescript{}
+```typescript
 it('renders the heading', () => {
     const wrapper = shallow(<Heading/>);
     expect(wrapper.find('h1').text())
@@ -89,7 +89,7 @@ export const Heading = () => <h1>Hello React</h1>;
 Back in our test, click on `<Heading/>` and type `Alt-Enter`. Your import
 line is updated to:
 
-```typescript{}
+```typescript
 import App, { Heading } from './App';
 ```
 
@@ -106,7 +106,7 @@ full rendering including children.
 
 Add a new test:
 
-```typescript{}
+```typescript
 it('renders the app and the heading', () => {
     const wrapper = mount(<App/>);
     expect(wrapper.find('h1').text())
@@ -119,7 +119,7 @@ import.
 
 We can now change our `App` component to use the `Heading` component:
 
-```typescript{}
+```typescript
 class App extends Component {
     render() {
         return (
@@ -148,7 +148,7 @@ heading. This frequently extends to files as well: one component per file.
 Let's move the heading to its own file. Cut and paste the SFC into
 `Heading.tsx`:
 
-```typescript{}
+```typescript
 import React from react;
 
 const Heading = () => <h1>Hello React</h1>;
@@ -163,7 +163,7 @@ default export, which is the current pattern for ES6 module structuring.
 
 Let's extract the `renders the heading` test into `Heading.test.tsx`:
 
-```typescript{}
+```typescript
 import { shallow } from enzyme;
 import React from react;
 import Heading from './Heading';
@@ -201,7 +201,7 @@ type that you can put on the component to say "this is a React SFC".
 
 Let's do so. Back in `Heading.tsx`:
 
-```typescript{}
+```typescript
 const Heading: FC = () => <h1>Hello React</h1>;
 ```
 

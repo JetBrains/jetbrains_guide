@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-12-02
 title: Optimize Imports
 technologies: []

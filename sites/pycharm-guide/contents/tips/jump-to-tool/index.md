@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-11-07
 title: Use Recent Files to Open Tool Window
 technologies: []

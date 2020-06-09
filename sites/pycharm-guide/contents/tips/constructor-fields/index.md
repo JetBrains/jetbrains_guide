@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-03-18
 title: Adding Fields In a Constructor
 technologies: []

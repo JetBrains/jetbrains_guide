@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-22
 title: Open File With Navigation Bar
 technologies: []

@@ -114,7 +114,7 @@ hadn't imported React yet.
 
 Simulate this by changing the first line to the following:
 
-```typescript{}
+```typescript
 import { Component } from react;
 ```
 

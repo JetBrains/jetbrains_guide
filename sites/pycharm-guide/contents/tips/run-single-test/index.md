@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-12-05
 title: Run Single Test
 technologies: [pytest]

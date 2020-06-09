@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-20
 title: Activate Navigation Bar
 technologies: []

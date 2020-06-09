@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-21
 title: Navigate Files With Navigation Bar
 technologies: []

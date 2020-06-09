@@ -38,7 +38,7 @@ Let's start with a failing test that clicks on the div and checks if the
 number is updated. In `Counter.test.tsx`, clone the first test and change
 it as follows:
 
-```typescript{}
+```typescript
 it('should increment the count by one', () => {
     const wrapper = shallow(<Counter/>);
     expect(wrapper.find('.counter span').text()).toBe('0');
@@ -81,7 +81,7 @@ we discussed that arrow functions inside the `render` can have performance
 impacts. Let's move it out into a click handler, which also makes that 
 behavior easier to test in isolation:
 
-```typescript{}
+```typescript
 handleClick = () => {
     this.setState({count: this.state.count + 1});
 };
@@ -107,7 +107,7 @@ benefit from TypeScript.
 The `handleClick` arrow function actually gets an event passed, which
 we aren't using. Let's add it in:
 
-```typescript{}
+```typescript
 handleClick = (event) => {
     this.setState({count: this.state.count + 1});
 };
@@ -120,7 +120,7 @@ disallows implicit `any`.
 
 That's easy enough to solve:
 
-```typescript{}
+```typescript
 handleClick = (event: any) => {
     this.setState({count: this.state.count + 1});
 };
@@ -129,7 +129,7 @@ handleClick = (event: any) => {
 But that's cheating. What type is that event? It's a `MouseEvent`. Let's
 put the correct typing on the argument:
 
-```typescript{}
+```typescript
 handleClick = (event: React.MouseEvent<HTMLElement>) => {
     this.setState({count: this.state.count + 1});
 };
@@ -138,11 +138,9 @@ handleClick = (event: React.MouseEvent<HTMLElement>) => {
 Ugh, that's a lot of keystrokes. Is it worth it? Let's show why. First, in
 `handleClick`, let's determine the value to increment by, first as a mistake:
 
-```typescript{2,3}
+```typescript {2,3}
 handleClick = (event: React.MouseEvent<HTMLElement>) => {
-
     const inc = 10 ? event.shiftKey : 1;
-
     this.setState({count: this.state.count + inc});
 }
 ```
@@ -150,13 +148,13 @@ handleClick = (event: React.MouseEvent<HTMLElement>) => {
 TypeScript told us that we were trying to add a boolean to a number. Let's 
 set the type of `inc` explicitly, instead of inferring it. Our first fix:
 
-```typescript{}
+```typescript
 const inc: number = 10 ? event.shiftKey : 1;
 ```
 
 That's closer. TypeScript now moves the error to the correct line:
 
-```
+```shell script
 Error:(28, 31) TS2365: Operator '+' cannot be applied to types 
 'number' and 'boolean | 1'.
 ```
@@ -168,7 +166,7 @@ easy-to-miss error.
 
 Here's the correct version:
 
-```typescript{}
+```typescript
 const inc: number = event.shiftKey ? 10 : 1;
 ```
 
@@ -176,7 +174,7 @@ Our click-handler test now fails, though. It needs a fake event object passed
 into `handleClick`, with `shiftKey` in the object. Let's fix that test,
 then clone to cover the with-shift case:
 
-```typescript{}
+```typescript
 it('should increment the count by one', () => {
     const wrapper = shallow(<Counter/>);
     expect(wrapper.find('.counter span').text()).toBe('0');

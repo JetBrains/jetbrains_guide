@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-01-24
 title: Create New File With Navigation Bar
 technologies: []

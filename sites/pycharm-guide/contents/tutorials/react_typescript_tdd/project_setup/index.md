@@ -36,8 +36,7 @@ use the `npx` command introduced in npm 5.2 to get a package and install
 a command, without having to globally install a package. Thus, to 
 use `create-react-app` to make a TypeScript project:
 
-```bash
-
+```shell script
 $ npx create-react-app my-app --typescript
 ```
 
@@ -57,9 +56,8 @@ it easy to discover commands that are common to a project. The most common?
 Starting the dev server, which compiles the universe, serves a page over
 HTTP, and helpfully opens your browser:
 
-```bash
-
-    $ npm run-script start
+```shell script
+$ npm run-script start
 ```
 
 This dev server is watching for changes. If you edit a file, it will
@@ -91,9 +89,8 @@ That's great for development, but for production, we need files on disk,
 shrunk as small as possible. There's a lot of complexity behind this, but
 `create-react-app` has hidden it behind an npm script:
 
-```bash
-
-    $ npm run-script build
+```shell script
+$ npm run-script build
 ```
 
 This generates output into a `build` directory. The output is
@@ -118,31 +115,28 @@ are also wired for testing: dependencies, configuration files, and sample
 tests. We'll see more later, but for now, let's run the tests. 
 Unsurprisingly, it's similar to the above:
 
-```bash
-
-    $ npm run-script test
+```shell script
+$ npm run-script test
 ```
 
 This uses the [jest](../../../technologies/jest) test runner.
 
 Double-click the `test` entry in the `npm` tool window to try again:
 
-```bash
-
-    $ npm run-script test
+```shell script
+$ npm run-script test
 ```
 
 The tests auto-run as you edit, updating much faster once first loaded. To
 see this in action, open `src/App.test.tsx` and add a line to the test:
 
-```typescript{5}
-    it('renders without crashing', () => {
-      const div = document.createElement('div');
-      ReactDOM.render(<App />, div);
-      ReactDOM.unmountComponentAtNode(div);
-      expect(1).toBe(2);
-      
-    });
+```typescript {5}
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
+  expect(1).toBe(2);
+});
 ```
 
 When you save this, the test runner output tells you about the test failure.

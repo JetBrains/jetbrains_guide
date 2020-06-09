@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2018-11-04
 title: Jump to Recent File
 technologies: []

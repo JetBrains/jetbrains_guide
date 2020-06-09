@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-04-15
 title: Conditional Breakpoints
 technologies: []
@@ -28,7 +29,7 @@ leadin: |
 Debugging? Super-useful. Visual debugging? Super-super-useful. Stepping 
 through a loop until the end, when your problem surfaces? Not so much.
 
-xTake a step forward on your debugging zen with *conditional* breakpoints. 
+Take a step forward on your debugging zen with *conditional* breakpoints. 
 
 Let's say you have a problem on a line in your code and you want to stop 
 there and see what's happening. But the problem doesn't occur the first 

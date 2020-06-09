@@ -127,6 +127,26 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-theme-bulmaio',
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590
+            }
+          },
+          {
+            resolve: `gatsby-remark-embed-snippet`,
+            options: {
+              directory: `${__dirname}/demos/`
+            },
+          },
+        ]
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -140,12 +160,6 @@ module.exports = {
             resolve: 'gatsby-remark-embed-snippet',
             options: {
               directory: `${__dirname}/demos/`
-            }
-          },
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: 'language-'
             }
           },
           `gatsby-remark-copy-linked-files`

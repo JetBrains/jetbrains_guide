@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2019-04-17
 title: Only Commit Some Changes
 technologies: []

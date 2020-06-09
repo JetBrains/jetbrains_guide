@@ -45,7 +45,6 @@ npm run develop
 - gatsby-plugin-typography
 - gatsby-remark-copy-linked-files
 - gatsby-remark-images
-- gatsby-remark-prismjs
 - gatsby-remark-smartypants
 - gatsby-source-filesystem
 - gatsby-transformer-sharp
