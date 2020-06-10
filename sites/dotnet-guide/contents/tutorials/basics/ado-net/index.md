@@ -10,14 +10,14 @@ subtitle: Working with databases using DbConnection, DbCommand, and DbDataReader
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-#   url: TODO: Upload video    
+    url: https://youtu.be/BxCrzUIm5kU
 ---
 
 ADO.NET is a data service for .NET developers. In the older version of the .NET framework, Microsoft packaged it along with other libraries. More recently, the ADO.NET libraries ship in NuGet packages, with `System.Data.SqlClient` being specifically for SQL Server access. ADO.NET is a low-level interface to our data storage of choice, and its use depends heavily on our understanding of SQL.
 
-ADO.NET has three commonly used objects that developers will deal with: `DbConnection`, `DbCommand`, and `DbDataReader`. The SQL Server implementations of these classes are `SqlConnection`, `SqlCommand`, and `SqlDataReader`. 
+There are three commonly used objects in ADO.NET that developers will deal with: `DbConnection`, `DbCommand`, and `DbDataReader`. The SQL Server implementations of these classes are `SqlConnection`, `SqlCommand`, and `SqlDataReader`. 
 
-ADO.NET code always starts with an open database connection. The class allows us to pass commands and read results from a database. We can perform operations through the `DbCommand` implementation. With `SqlCommand`, we can run text, stored procedures, and table direct queries. When executing a SQL query, we can read any results via a `DbDataReader`. Mapping the results to our C# models is our responsibility, and can be tedious.
+Data access code with ADO.NET always starts with an open database connection. The class allows us to pass commands and read results from a database. We can perform operations through the `DbCommand` implementation. With `SqlCommand`, we can run text, stored procedures, and table direct queries. When executing a SQL query, we can read any results via a `DbDataReader`. Mapping the results to our C# models is our responsibility, and can be tedious.
 
 ADO.NET assumes very little for us, and it is the lowest level approach to data access available to .NET developers. For straightforward scenarios, ADO.NET is a capable and enjoyable method for data access. We may want to consider other approaches when our use cases become more involved or find reusable patterns emerging in our code base.
 

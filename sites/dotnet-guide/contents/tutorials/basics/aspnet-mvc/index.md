@@ -10,7 +10,7 @@ subtitle: A complete MVC pipeline with routes, models, views, and controllers.
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-#   url: TODO: Upload video    
+    url: https://youtu.be/7IniT0P13_I
 ---
 
 In an ASP.NET MVC application, we have three crucial components: Model, View, Controller. The pattern is popular across many other ecosystems, and ASP.NET MVC is a particular flavor developed for .NET developers. 
@@ -28,7 +28,7 @@ Finally, we can create the `Create` endpoint in our `WidgetsController`. We need
 
 We also need to update our `IndexModel` to display the results of our `Name` on our original `Index` view.
 
-Running our sample, we can retrieve our index view, fill in our form, submit our data, and display the result in our HTML view. We've stepped through the basics of creating a request/response path in ASP.NET MVC. From here, may folks should have a decent foundation to build a functional ASP.NET MVC application.
+Running our sample, we can retrieve our index view, fill in our form, submit our data, and display the result in our HTML view. We've stepped through the basics of creating a request/response path in ASP.NET MVC. From here, many folks should have a decent foundation to build a functional ASP.NET MVC application.
 
 ### Code Snippets
 

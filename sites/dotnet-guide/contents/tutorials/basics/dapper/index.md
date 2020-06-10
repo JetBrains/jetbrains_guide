@@ -10,7 +10,7 @@ subtitle: Working with databases using Open Source
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-#   url: TODO: Upload video    
+    url: https://youtu.be/vdd3l_cPsA4    
 ---
 
 Somewhere between an Object Relational Mapper (ORM) and ADO.NET sits a niche many developers have begun to embrace. MicroORMs provide some of the best features of ORMs but without the drawbacks associated with object tracking. Some of these features include connection management, object mapping, and the use of SQL. In the .NET space, Dapper is the most popular of these MicroORM offerings.
