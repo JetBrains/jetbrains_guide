@@ -14,7 +14,7 @@ longVideo:
 
 Sometimes you want to overhaul a chunk of code and don't want to stare at a broken test. 
 You could comment it out. 
-But pytest provides an easier (and more feature-ful) alternative for skipping tests.
+But `pytest` provides an easier (and more feature-ful) alternative for skipping tests.
 
 We'll show this in action while implementing:
 
@@ -25,11 +25,22 @@ We'll show this in action while implementing:
 # Bulk Guardians
 
 Players usually have more than one Guardian.
-When you have a list of guardians, you might prefer a different method that lets you add them all at once.
+When you have a list of Guardians, you might prefer a different method that lets you add them all at once.
 
 Let's implement this in TDD fashion, by first writing a `test_add_guardians` test in `test_player.py` that fails:
 
-`embed:tutorials/visual_pytest/skipping_tests/test_player01.py`
+```python
+def test_add_guardians():
+    p = Player('Tatiana', 'Jones')
+    # Add one guardian
+    g1 = Guardian('Mary', 'Jones')
+    p.add_guardian(g1)
+    # Later, add some more
+    g2 = Guardian('Joanie', 'Johnson')
+    g3 = Guardian('Jerry', 'Johnson')
+    p.add_guardians([g2, g3])
+    assert [g1, g2, g3] == p.guardians
+```
 
 We don't have a method `add_guardians` and so the test fails.
 Perhaps we are busy on something else and we'd like `pytest` to not yell at us, but we don't want to comment out or (worse) delete the test.
@@ -58,9 +69,23 @@ Eager readers might have spotted a type hinting flaw: our code breaks the [Be li
 
 That is, our new method wants a `List`. 
 When really, it will take a Python "iterable".
+
+For example, our test passes in a *list* of guardians. It's immutable. 
+Might as well change it to be a tuple:
+
+```
+    p.add_guardians((g2, g3))
+```
+
+Doing so breaks Python type checking:
+
+TODO Screenshot
+
 Let's change our `add_guardians` to accept any kind of `Iterable`:
 
 `embed:tutorials/visual_pytest/skipping_tests/player02.py`
+
+Tests still pass and type checking now passes.
 
 # Primary Guardian
 
@@ -69,16 +94,26 @@ For the second feature, let's use the same process: write a failing test, tempor
 Our feature will work like this: whichever guardian is added first is the primary guardian.
 In `test_player.py` we add `test_primary_guardian`, with the mark already in place:
 
-`embed:tutorials/visual_pytest/skipping_tests/test_player03.py`
+```python
+@pytest.mark.skip
+def test_primary_guardian():
+    p = Player('Tatiana', 'Jones')
+    # Add one guardian
+    g1 = Guardian('Mary', 'Jones')
+    p.add_guardian(g1)
+    # Later, add some more
+    g2 = Guardian('Joanie', 'Johnson')
+    g3 = Guardian('Jerry', 'Johnson')
+    p.add_guardians((g2, g3))
+    assert g1 == p.primary_guardian
+```
 
 Now time for the implementation.
 We're doing this as a Python "property", so add the following in `player.py`:
 
 `embed:tutorials/visual_pytest/skipping_tests/player.py`
 
-### Tip
-
-Use the `property` LiveTemplate in PyCharm to speed up the generation of a property. 
+*Tip: Use the `property` LiveTemplate in PyCharm to speed up the generation of a property.* 
 
 Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
 

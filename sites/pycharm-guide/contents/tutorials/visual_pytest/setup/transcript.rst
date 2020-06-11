@@ -2,25 +2,32 @@
 Transcript
 ==========
 
-- PyCharm Community Edition
-- Set the IDE with an out-of-the-box Darcula look
-- Big font
-- Presentation assistant
-- Tabs on top
+    * PyCharm Community Edition
+    * Set the IDE with an out-of-the-box Darcula look
+    * Big font
+    * Presentation assistant
+    * Tabs on top
 
 Python has projects.
 So does PyCharm.
 
-Create a project from the welcome screen.
+Let's create a project from the welcome screen.
+
 PyCharm has good support for virtual environments.
 Accept the defaults, click ``Create``, and you now have an empty Python project.
+
+    * Create New Project
+    * `/Users/pauleveritt/PyCharmProjects/laxleague`
+    * Indicate venv
+    * Click Create
 
 Making a proper Python package means creating a ``setup.py`` at the project root.
 Call the ``setup`` function, which we import from ``setuptools``, with arguments for:
 
 - The name of the project
 - Any extras that might be installed, for example for tests
-- Then two arguments that let us follow good pytest practices by storing the source code in a directory named *differntly* than our package.
+- Then two arguments that let us follow good pytest practices by storing the source
+code in a directory named *differently* than our package.
 
     * Type setup then use Alt-Enter to generate import
     * Type the extras_require

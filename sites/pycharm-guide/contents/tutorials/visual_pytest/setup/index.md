@@ -20,7 +20,7 @@ In this tutorial step, let's make both, with a virtual environment, and set the 
 We'll let the IDE guide us through the process. 
 First, we use `File -> New Project` to make a new project, in a directory:
 
-TODO Screenshot of New Project dialog
+![New Project Dialog](./new_project_dialog.png)
 
 Make sure `Project Interpreter` is setup to configure a new virtual environment.
 Expand the triangle if needed to set this up.
@@ -32,6 +32,7 @@ After clicking `Create`, tell PyCharm to open the project in a new window.
 [Python packaging](https://packaging.python.org/tutorials/packaging-projects/) is, alas, a thorny topic, and we're going to make you do it for this tutorial.
 
 Why?
+
 Most Python packages put their tests *outside* of their source directories, to avoid accidentally shipping the tests (among other reasons.)
 The tests thus need to import the package that you code is in, and that means a Python package.
 Fortunately this is [all explained quite well](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code) in the `pytest` docs.
@@ -41,35 +42,31 @@ Add the following:
 
 `embed:tutorials/visual_pytest/setup/setup.py`
 
-Our source will now go in a `src/laxleague` directory so make sure to create it:
+Our source will now go in a `src/laxleague` directory so make sure to create it.
 
-TODO Screenshot of making the directory
+Why the use of `src`?  It's a [general consensus best practice](https://hynek.me/articles/testing-packaging/) that avoids nasty surprises if you share your code or use it elsewhere.
+Our `setup.py` has the `packages` and `packages_dir` keys added in support of putting our code under `src`.
 
 Now go to PyCharm's Terminal tool and type in the following:
 
 ```shell script
 $ pip install -e .[tests]
 ```
-
 This has two effects:
 
-- It makes this project an "editable install" by creating a directory named `laxleague.egg-info`
+- It makes this project an "editable install" by creating a directory named `src/laxleague.egg-info`
 
 - `pytest` is installed into the project's virtual environment
+
+Apologies for this `setup.py` hocus-pocus.
+Python has a sordid history on this, though it is getting better.
 
 # Give Me Some Source
 
 But we don't have any source code yet. 
-Let's make a directory `src/laxleague` as a sibling of `setup.py`, then put a file at `src/laxleague/player.py` in there containing an empty `Player` class:
+Let's put a file at `src/laxleague/player.py` containing an empty `Player` class:
 
 `embed:tutorials/visual_pytest/setup/player.py`
-
-Why the use of `src`? 
-It's a [general consensus best practice](https://hynek.me/articles/testing-packaging/) that avoids nasty surprises if you share your code or use it elsewhere.
-Our `setup.py` has the `packages` and `packages_dir` keys added in support of putting our code under `src`.
-
-Apologies for this `setup.py` hocus-pocus.
-Python has a sordid history on this, though it is getting better.
 
 # Configure Testing
 
@@ -79,15 +76,13 @@ We added `pytest` after making the environment, so we need to configure it ourse
 
 Go to `Settings -> Tools -> Python Integrated Tools` and change `Default test runner:` to `pytest`:
 
-![Python Integrated Tools](./integrated_tools.png)
+![Python Integrated Tools](./python_integrated_tools.png)
 
 Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using `File | New Projects Settings | Settings/Preferences for New Projects`:
-
-TODO Screenshot
 
 Finally, make a top-level directory called `tests`.
 This mimics the [pytest good practices](https://docs.pytest.org/en/latest/goodpractices.html#tests-outside-application-code).
 
 When done, your directory structure should look like this:
 
-![Directory Structure](./directory_structure.png)
+![Directory Structure](./directory.png)

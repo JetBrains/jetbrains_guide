@@ -61,7 +61,7 @@ Let's use that.
 # Breakpoint, Step...Cha-Cha-Cha
 
 Remove the `print` statement and instead, click in the gutter beside the first line in that test function.
-This adds a red circle to indicate a breakpoint:
+This adds a red circle to indicate a breakpoint at `assert player_one.primary_guardian`:
 
 TODO Screenshot
 
@@ -71,16 +71,15 @@ This brings up a new tool window in the bottom, running the debugger:
 
 TODO screenshot
 
-Our test execution has stopped on the line that makes a `Player`.
-Press the `Step Over` button to go to the next line.
-Our `Variables` pane now shows that `p` exists in the scope and we can take a look at it:
+Our test execution has stopped on the line with the assertion.
+Our `Variables` pane shows that `player_one` exists in the scope and we can take a look at it:
 
-TODO Screenshot of expanded p variable with expanded p.guardians
+TODO Screenshot of expanded player_one variable with expanded player_one.guardians
 
 Aha, that's the problem! 
-But let's say we still couldn't spot it. We want to poke around interactively.
+But let's say we *still* couldn't spot it. We want to poke around interactively.
 
-Highlight `p.primary_guardian` in the next line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`.
+Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`.
 When you click the `Evaluate` button, you see the output:
 
 TODO Screenshot
@@ -89,7 +88,10 @@ You can now poke around interactively in the state at that point by typing in th
 You can even overwrite the value of a variable in the scope or create new variables.
 
 You're currently poking around in the code for the test, but perhaps you want to poke around in the implementation.
-Click the `Step Into` button and the debugger will put you on the `return self.guardians[0]` line in the `primary_guardian` method.
+Click the `Step Into` button and the debugger will put you on the `return self.guardians[0]` line in the `primary_guardian` property/method.
 
-With this we quickly see what is the problem.
+With this we quickly see what is the problem: there is no item zero in `self.guardians`.
+Finish up by removing the `assert player_one.primary_guardian` line and clearing the breakpoint by clicking on the red circle.
+Close the debugger tool window by clicking on its `(x)`.
+
 The debugger is a fantastic tool when doing TDD -- not just when you have a problem, but whenever you want to explore.

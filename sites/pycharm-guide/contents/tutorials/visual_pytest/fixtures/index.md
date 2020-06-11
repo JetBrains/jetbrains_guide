@@ -113,7 +113,7 @@ This is even more important with all the places that pytest can look for fixture
 
 Navigation is a big win, for the same reason.
 `Cmd-Click` (macOS) on a fixture name and PyCharm jumps to the fixture definition. 
-Same applies for `Hover` which reveals type information.
+Same applies for hover which reveals type information.
 `F1` on the fixture shows an inline popup with more information about the fixture.
 Finally, you can `Refactor | Rename` to change the fixture's name and usages.
 

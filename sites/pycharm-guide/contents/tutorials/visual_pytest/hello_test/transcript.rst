@@ -17,6 +17,8 @@ Accept the defaults and we now have a file, added to VCS, with a test, in the ``
 
 PyCharm also created a Python ``__init__.py`` file in ``tests``, matching another pytest best practice.
 
+    * Emphasize ``tests/__init__.py``
+
 Let's run all the tests in this file. Right-click in the middle and select ``Run pytest``.
 If you don't see the pytest menu entry, make sure you setup pytest as the test runner, described in the previous video.
 

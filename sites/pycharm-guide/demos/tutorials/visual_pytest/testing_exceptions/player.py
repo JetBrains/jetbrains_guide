@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import List, Iterable, Optional
 
 from laxleague.guardian import Guardian
 
@@ -15,7 +15,7 @@ class Player:
     def add_guardian(self, guardian: Guardian):
         self.guardians.append(guardian)
 
-    def add_guardians(self, guardians: List[Guardian]):
+    def add_guardians(self, guardians: Iterable[Guardian]):
         self.guardians.extend(guardians)
 
     @property

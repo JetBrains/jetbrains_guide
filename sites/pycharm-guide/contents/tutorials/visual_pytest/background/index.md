@@ -35,7 +35,7 @@ In my experience, it's quite a (dare I say) joyful way to code.
 
 Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
 Have a crazy itch you want to scratch?
-Tests let you know what promises that "next big thing" broke, thus giving you freedom to break things.
+Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
 
 # The `pytest` testing framework
 

@@ -29,10 +29,10 @@ approach to first contact with Python testing:
 
 - Visual testing using PyCharm
 
-- Driven by the popular pytest framework
+- Driven by the popular [pytest framework](https://docs.pytest.org/en/latest/)
 
 - Real-world scenario during the live building of a simple Python application
 
 - Shows how PyCharm can help you get into testing and development "flow"
 
-*Note: We'll be using PyCharm Community Edition for all the steps in this tutorial except "Coverage".*
+*Note: We'll be using PyCharm Community Edition for all the steps in this tutorial.*

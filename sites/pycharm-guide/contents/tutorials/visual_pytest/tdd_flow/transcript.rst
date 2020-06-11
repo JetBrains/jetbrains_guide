@@ -14,11 +14,10 @@ Players have guardians, so add a ``guardians.py`` file containing another placeh
     * Create file ``guardians.py``
     * ``class Guardian: pass``
 
-We'll let PyCharm generate our test file and test for us, as well as add it to VCS.
+We'll again let PyCharm generate our test file and test for us:
 
     * Cmd-Shift-T
     * Enter
-    * Add to VCS
 
 As before, we make a construction test as a sanity check, letting PyCharm generate the import for us:
 

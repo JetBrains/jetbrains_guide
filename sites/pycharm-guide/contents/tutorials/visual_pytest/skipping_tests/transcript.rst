@@ -8,13 +8,17 @@ Skipping tests during a code overhaul is good practice. Let's show this.
 
 We'll use TDD to implement a new feature: adding multiple Guardians to a
 Player at once. We get into "TDD mode", with code on the left, tests on
-the right. Before starting, as a sanity check, run your tests:
+the right. We change the existing test to mean "singular":
 
     * Open ``players.py``
     * Split vertically
-    * Run test_player.py tests
+    * Change 'test_guardians' to singular
 
-Add a new test for adding multiple guardians. The test adds one Guardian,
+Before starting, as a sanity check, run your tests:
+
+    * Run all tests
+
+Add a new test for adding multiple guardians. The new test adds one Guardian,
 then adds a sequence of two more guardians, using a new API. The assertion
 checks that all 3 guardians are there.
 
@@ -31,9 +35,9 @@ The test runner now indicates 1 test was ignored:
 
     * Indicate the ignored notification
 
-We return to working on this. Add a new method ``add_guardians``. It
-takes a List of Guardians as the first argument. The method combines
-the new list into the instance's existing list:
+We return to working on this. Add a new method ``add_guardians`` by cloning
+the existing method. It takes a List of Guardians as the first argument. The
+method combines the new list into the instance's existing list:
 
     * Alt-Tab to go to class Player
     * ``guardians: ``
@@ -53,7 +57,7 @@ slightly better as a tuple [pause]. The tests still pass [pause],
 but the IDE warns us we violated the contract, which calls
 specifically for a List:
 
-    * Alt-Enter to change ``add_guardians`` args to tuple
+    * Alt-Enter back to test to change ``add_guardians`` args to tuple
     * Indicate the tests pass
     * Mouseover the warning
 
@@ -89,5 +93,5 @@ In the Player class, we will add a Python property that holds this logic. The
     * ``    return self.guardians[0]``
 
 When we go to the test and remove the ``skip``, the tests run, and the
-implementation works. Even with the flaw that we will detect and correct
+implementation works. Even with a flaw that we will detect and correct
 in a future tutorial step.

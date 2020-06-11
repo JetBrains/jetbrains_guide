@@ -42,7 +42,8 @@ Now we change our `Player` class:
 
 `embed:tutorials/visual_pytest/jump_to_error/player01.py`
 
-We also need to add a construction test to `test_player.py`:
+Our `test_player` test fails. 
+We also need to update the construction test in `test_player.py`:
 
 `embed:tutorials/visual_pytest/jump_to_error/test_player01.py`
 
@@ -65,21 +66,19 @@ Let's start with a test in `test_player.py`:
 
 `embed:tutorials/visual_pytest/jump_to_error/test_player.py`
 
-This fails:
-
-TODO Add screenshot of test failures.
-
 We first need to ensure, in `test_construction`, that we have an empty list for `player.guardians`. 
 Then, in the new test `test_add_guardian`, we make both a player *and* a guardian, add the guardian to the player, and test the result. 
 This means we also import `Guardian` in this test.
 
-Our second two tests fail, obviously:
+Both tests fail:
 
 - We don't yet have `guardians` as a field on our `Player` dataclass
 
 - We don't have a method `add_guardians`.
 
-Let's fix this in a new `player.py`:
+TODO Add screenshot of test failures.
+
+Let's fix this by implementing the feature in `player.py`:
 
 `embed:tutorials/visual_pytest/jump_to_error/player02.py`
 
@@ -89,16 +88,16 @@ dataclasses fix this with a dataclass `field` function which can assign a factor
 
 We used the type `list` in this case. We'll explain more in a moment.
 
-Our simple `add_guardian` method does the trick and now our tests pass.
+Our new field and the simple `add_guardian` method does the trick: now our tests pass.
 Pretend for a moment that we made a typo. Do the following:
+
+- Change the last line of `players.py` to `self.guardiansxxx.append(guardian)`
 
 - Open `guardian.py` in that tab
 
-- Change the last line to `self.guardiansxxx.append(guardian)`
-
 - Watch the tests fail with a traceback
 
-- Click on the error link for `player.py:13: AttributeError`
+- Click on the error link for `player.py:12: AttributeError`
 
 - PyCharm re-opens the file, on the line of the error
 

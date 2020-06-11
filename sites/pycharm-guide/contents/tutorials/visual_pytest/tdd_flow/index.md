@@ -25,16 +25,21 @@ First, create `src/laxleague/guardian.py` with an empty class:
 Why do we make an empty placeholder class? 
 To let PyCharm generate the test for us.
 Use `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS) as explained in the last step to help generate `tests/test_guardian.py`.
-Enter a `test_construction` test to "get me into the flow", letting PyCharm generate the import:
+
+In that file, change the first test to `test_construction` to "get me into the flow", letting PyCharm generate the import:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian01.py`
 
 Run the test by right-clicking in the editor *outside any block* and choosing to run it with `pytest` (bigger target area than the tab.)
 
-Yay, the test passes. 
-Not a major victory, but allows us to start inching forward:
+Yay, the test passes.
+Let's switch to running *all* of our tests.
+In the project tool window, right-click on `tests` and choose `Run 'pytest in tests'`.
+The test runner now shows a tab with `pytest in tests`, with 2 tests passing:  
 
-![Test Passes](./guardian_passes_import.png)
+TODO Screenshot
+
+Not a major victory, but allows us to start inching forward:
 
 # TDD Flow
 
@@ -44,24 +49,25 @@ I like both visible, with my code on the left and the tests on the right.
 
 Invoke `Find Action` with Cmd-Shift-A and search for `Split Vertically`.
 On the left, open `guardian.py` and on the right, make sure `test_guardian.py` is still open. 
-While we're at it, collapse the project tool window.
-The run tool window is on the bottom (though on wide monitors I put it on the right):
+While we're at it, collapse the project tool window, turn off the toolbars and navigation bars, and tabs.
 
-![TDD Layout](./tdd_layout.png)
+The run tool window stays on the bottom (though on wide monitors I put it on the right):
+
+TODO Screenshot
 
 There, that has a nice feel to it. 
+Room to focus.
 
 Now that our code is setup, let's get our test running "in the flow".
-Right-click on the `tests` folder and choose `Run 'pytest in tests'` to get a temporary run configuration for *all tests* in the project. 
-
-One more thing: let's have all our tests run, automatically, as we type. 
+Let's have our tests run, automatically, as we type. 
 PyCharm makes this easy and visually convenient -- it even integrates with your desktop notification system when tests are finished running and PyCharm isn't visible.
 
 In the tool window for the test output, click on the `Toggle auto-test` icon, two icons below the green run arrow. 
+
+TODO Screenshot
+
 With autorun enabled, next click the big green run arrow again.
 Now, all your tests run *automatically* two seconds (configurable) after you stop typing.
-
-![Toggle Autotest](./toggle_autotest.png)
 
 One final point: you don't have to save changes to your code or tests.
 PyCharm has an auto-save virtual filesystem thingy.
@@ -75,17 +81,17 @@ Let's write a failing test, then fix the implementation.
 # The Guardian
 
 Our `Guardian` needs a constructor that takes and stores `first_name` and a `last_name`.
-Add a new test to `tests/test_guardian.py`:
+Change the first test in `tests/test_guardian.py`:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian02.py`
 
-Notice that PyCharm warns you when the two arguments are missing, and on hover, gives a nice message:
+Notice that PyCharm warns you (on hovering) with 'Unexpected argument' when we supply arguments:
 
 TODO Screenshot
 
 After two seconds, even without saving, our tests show as broken:
 
-![Broken Tests](./two_seconds_later_broken.png)
+TODO Screenshot
 
 Of course it breaks: `Guardian` has no `__init__.py` constructor. 
 Since it is the *code* we are writing tests for, the mistake is conveniently right there in our left tab. 
@@ -123,6 +129,11 @@ Oops, we had poor style on that.
 In my projects, I prefer a testing convention for asserts with expected on the left, meaning `expected == actual`. 
 While [Guido declined to designate a winner](https://mail.python.org/pipermail/python-dev/2010-December/106954.html), it seems [Kent Beck did](https://sourceforge.net/p/junit/mailman/message/3338997/), and Brian Okken's examples also use that.
 
+You can see this problem by changing the expected value of 'Mary' to a value of 'Expected'.
+PyCharm's test output now shows expected vs. actual, and `Expected` is in the wrong place:
+
+TODO Screenshot
+
 We need to flip that, but good news: PyCharm excels at such janitorial work. 
 Click on the double-equal, hit `Alt-Enter`, and choose `Flip '=='`:
 
@@ -133,11 +144,6 @@ Create a `pytest.ini` file at the root:
 
 `embed:tutorials/visual_pytest/tdd_flow/pytest.ini`
 
-## Note
-
-If you're don't have PyCharm configured to use a font with ligatures such as JetBrains Mono or Fira Code, you're missing out. 
-The double-equals symbol in this case is really slick-looking.
-
 Let's write a test for last name, causing `test_guardian.py` to finish like the following -- including the expected/actual ordering:
 
 `embed:tutorials/visual_pytest/tdd_flow/test_guardian.py`
@@ -145,3 +151,4 @@ Let's write a test for last name, causing `test_guardian.py` to finish like the 
 One last point: PyCharm's tool window for testing shows passing tests by default. 
 If you don't want to see them, and focus on failing tests instead, click on the `Show Passed` icon to the right of the green play button.
 
+TODO Screenshot

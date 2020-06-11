@@ -35,7 +35,7 @@ Open the ``test_player.py`` file and the ``player.py`` file, then do the same:
     * Add fields
 
 We spoke previously about failing faster. The switch to dataclasses gives this: if
-I pass a byte-string by accident, my tooling warns me, even though the tests pass:
+I pass a byte-string by accident, my tooling warns me, even before the tests run:
 
     * Change last_name in test to b'Jones'
     * Show the warning
@@ -68,9 +68,7 @@ we're already off to another file and test:
     * Alt-Tab
     * Cmd-E ``test_guar``
 
-When the test runs, it fails. We can navigate to the failing line in the
-test, re-opening the file if needed. We can also navigate to the line with
-the exception:
+When the test runs, it fails. We can navigate to the line with the exception:
 
     * Click on failing test
     * Click in the left window
@@ -79,22 +77,23 @@ the exception:
 Fix the problem and the tests pass again.
 
 TDD helped us "fail faster" but we can use type hints for even earlier
-detection. What if we accidentally added a Player as a Guardian?
+detection. What if we accidentally added a Player as a Guardian? We can
+prevent that by first changing the field's type hint to be a List [pause]
+of Guardian instances [pause]. Then, change our method to say it must
+receive a Guardian:
 
-    * Change the test to add the player
+    * Change field
+    * Change argument
 
-Let's make it clear that only guardians can be added. Change the field's
-type hint to be a List [pause] of Guardian instances [pause]. Then,
-change our method to say it must receive a Guardian:
+Now in our test, if we try to add a Player instead of a Guardian, our IDE
+"fails faster" with a warning, before running or even writing our test.
 
-    * Alt-Tab
-    * Change to guardians: List[Guardian]
-    * Change method argument to guardian: Guardian
+    * Change to pass in p
+    * Mouse over
+    * Let the tests run
 
-This type hinting now shows an IDE error, even before the asserts are written,
-much less run. We can fix our error:
+We fix the error. The IDE is happy and the tests then pass.
 
-    * Alt-Tab
-    * Mouse-over the error
-    * Change to guardian
+    * Change to g
+    * Let the tests run
 

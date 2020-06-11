@@ -29,13 +29,13 @@ PyCharm should spot that you created a `tests` directory, so accept its defaults
 
 TODO Screenshot
 
-PyCharm will propose two files to add to VCS: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
-Click `Add` to accept this.
-PyCharm then opens the new tests file at `tests/test_player.py`:
+PyCharm will add two files to `tests`: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
+PyCharm then opens the new test file at `tests/test_player.py`:
 
 `embed:tutorials/visual_pytest/hello_test/test_player01.py`
 
-As mentioned in the previous step, `pytest` recommends tests outside the source code directory, explaining why PyCharm chose `tests` as the location.
+As mentioned in the previous step, `pytest` recommends placing your tests outside the source code directory.
+This explains why PyCharm chose `tests` as the location.
 
 This Python `pytest` file has one function, `test_player`. 
 In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpractices.html#conventions-for-python-test-discovery) by default in filenames starting with `test_` and functions/methods with that same prefix.
@@ -43,11 +43,11 @@ In `pytest`, tests [are discovered](https://docs.pytest.org/en/latest/goodpracti
 # Running Your Test
 
 Now that we have a test -- albeit simple -- let's see what it looks like to *run* it. 
-Right-click in the middle of the editor and choose `Run 'pytest in test_player.py'`.
+Right-click in the middle of the editor and choose `Run 'pytest in test_player.py'`:
 
 ![Run Tests via Context Menu](./context_menu.png)
 
-Yay, our first tests run. 
+Yay, our first test runs -- and fails! 
 Sure, small victory -- but small victories can help get us into the TDD flow.
 
 ## Warning
@@ -59,19 +59,19 @@ It should configure automatically, though, if your environment has `pytest` when
 PyCharm opens a new run tool window in the bottom of the screen.
 This tool window is customized for visualizing tests and their results:
 
-![Run Tests Tool Window](./tool_window.png)
+TODO Screenshot
 
 The test runner tool window lists the tests (organized by hierarchy) on the left and the test output on the right. 
 It also has buttons for operations (e.g. re-run tests) and configuration (e.g. only show passing tests.)
 
-Let's change the assertion to make the test pass and re-run the tests:
+Let's change the assertion to make the test pass:
 
 `embed:tutorials/visual_pytest/hello_test/test_player02.py`
 
 In the tool window, click the green arrow to re-run your tests. 
 The results look much different now:
 
-![Failing Tests](./failing.png)
+TODO Screenshot
 
 # Many Ways to Run Tests
 
@@ -93,14 +93,13 @@ Right-click in a test function or file.
 - *Right-click*. Context menu in editor, tab, tool window, project tool folder.
 
 - *Permanent run configuration*.
-
 All of the approaches above create *temporary* run configurations. 
-I also make permanent run configurations for my top-level folders under `tests` such as `unit`.
+I also make *permanent* run configurations for my top-level folders under `tests` such as `unit`.
 
 # Test the Construction of an Instance
 
 Lacrosse teams have, of course, players. 
-We are first implementing a `Player` class and write tests as we implement features.
+We are first implementing a `Player` class and writing tests as we implement features.
 This is known as "test-driven development" (TDD).
 
 We previously made a placeholder file at `src/laxleague/player.py`.
@@ -124,11 +123,9 @@ Remember that PyCharm can help you [generate the import of `Player` as you type]
 You don't need to stop your flow, go to the top, and write the import. 
 Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete *and* add the import line at the top, in the correctly-sorted location, combined with any existing import of the module.
 
-# Running
+# Re-Running
 
 Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing `Run 'pytest in test_player.py'`.
-
-PyCharm opens a tool window with the visual output of the test.
 Our test passes again:
 
-![Test Passes](./test_passes.png)
+TODO Screenshot
