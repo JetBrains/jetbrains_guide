@@ -42,7 +42,11 @@ I pass a byte-string by accident, my tooling warns me, even before the tests run
 
 The verdict: TDD + IDE + type hints equals "fail faster"
 
-To implement players-with-guardians using TDD, we start with a new, failing test.
+To implement players-with-guardians using TDD, we start with failing tests.
+
+First, in our construction test, we assert that a newly-created player has an empty list of guardians.
+
+Next, we make a new test, adding guardians to this list of a player's guardians.
 This test makes a Guardian [pause], then makes a Player [pause], then tries to
 add the Guardian to the Player [pause], finishing with an assertion:
 

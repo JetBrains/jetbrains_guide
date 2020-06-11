@@ -51,7 +51,7 @@ Now let's get some extra benefit from dataclasses and type annotations.
 In the test, try passing in `Player('Tatiana', b'Jones')`, with a byte-string by accident. 
 The dataclass only allows `str` as values for `last_name` and PyCharm very visually makes this clear, just as you type it.
 
-TODO Screenshot of warning for type
+![Type Warning](./type_warning.png)
 
 Verdict: TDD + (IDE + type hinting) == "fail faster."
 
@@ -76,7 +76,7 @@ Both tests fail:
 
 - We don't have a method `add_guardians`.
 
-TODO Add screenshot of test failures.
+![Test Failures](./test_failures.png)
 
 Let's fix this by implementing the feature in `player.py`:
 
@@ -102,6 +102,8 @@ Pretend for a moment that we made a typo. Do the following:
 - PyCharm re-opens the file, on the line of the error
 
 - Remove the `xxx`
+
+![Jump To Error](./jump_to_error.png)
 
 When writing code under testing, you will *constantly* make mistakes and generate exceptions. 
 PyCharm's handy exception links let you jump right to the error.
@@ -152,15 +154,10 @@ def add_guardian(self, guardian: Guardian):
     self.guardians.append(guardian)
 ```
 
-To see how this helps us "fail faster", imagine we are writing `test_construction` and we thought `p.guardians` was a dictionary:
+To see how this helps us "fail faster", imagine tried to add a Player as a Guardian. 
+Our IDE warns us with a perfect message:
 
-TODO screenshot of PyCharm warning on `assert [] == p.guardians.keys()`
-
-Rather than wait to run the test and decipher the diff, our IDE immediately warns us with the very-specific reason of the problem.
-
-Or, imagine we thought `add_guardian` took a string identifier for looking up a guardian. Our IDE also warns us with a perfect message:
-
-TODO Screenshot of `p.add_guardian('mary-jones')`
+![Warning Wrong Type](./warning_wrong_type.png)
 
 In this latter case, the code would have stored the string. 
 Type annotations, combined with the immediate feedback in the IDE, helped us "fail faster", as we type.
