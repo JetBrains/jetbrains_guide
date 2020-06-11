@@ -21,13 +21,13 @@ We want to make and run a test for our `Player` class before we do too much impl
 PyCharm can help us make the test.
 Click somewhere in the `Player` and invoke `Navigate | Go To Test` (`Ctrl-Shift-T` Win/Linux, `Shift-Cmd-T` macOS):
 
-TODO Screenshot
+![Invoke Navigate To Test](./invoke_navigate_to_test.png)
 
 Tell it to create a new test.
 You will then get a dialog asking for more information.
 PyCharm should spot that you created a `tests` directory, so accept its defaults and click `OK`:
 
-TODO Screenshot
+![Navigate To Test](./navigate_to_test.png)
 
 PyCharm will add two files to `tests`: an empty `tests/__init__.py` (which can be helpful to `pytest` later) and `tests/test_player.py`.
 PyCharm then opens the new test file at `tests/test_player.py`:
@@ -59,7 +59,8 @@ It should configure automatically, though, if your environment has `pytest` when
 PyCharm opens a new run tool window in the bottom of the screen.
 This tool window is customized for visualizing tests and their results:
 
-TODO Screenshot
+![Failing Tests](./tests_tool_window_fail.png)
+
 
 The test runner tool window lists the tests (organized by hierarchy) on the left and the test output on the right. 
 It also has buttons for operations (e.g. re-run tests) and configuration (e.g. only show passing tests.)
@@ -71,7 +72,7 @@ Let's change the assertion to make the test pass:
 In the tool window, click the green arrow to re-run your tests. 
 The results look much different now:
 
-TODO Screenshot
+![Passing Tests](./tests_tool_window_pass.png)
 
 # Many Ways to Run Tests
 
@@ -128,4 +129,4 @@ Instead, type `Pla` and hit `Ctrl-Space-Space` to autocomplete *and* add the imp
 Let's run everything in the file (currently one test) by again right-clicking in the editor and choosing `Run 'pytest in test_player.py'`.
 Our test passes again:
 
-TODO Screenshot
+![Final Test Run](./final_test_run.png)

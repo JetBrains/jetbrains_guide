@@ -37,7 +37,7 @@ Let's switch to running *all* of our tests.
 In the project tool window, right-click on `tests` and choose `Run 'pytest in tests'`.
 The test runner now shows a tab with `pytest in tests`, with 2 tests passing:  
 
-TODO Screenshot
+![All Tests](./all_tests.png)
 
 Not a major victory, but allows us to start inching forward:
 
@@ -53,7 +53,7 @@ While we're at it, collapse the project tool window, turn off the toolbars and n
 
 The run tool window stays on the bottom (though on wide monitors I put it on the right):
 
-TODO Screenshot
+![TDD Layout](./tdd_layout.png)
 
 There, that has a nice feel to it. 
 Room to focus.
@@ -64,7 +64,7 @@ PyCharm makes this easy and visually convenient -- it even integrates with your 
 
 In the tool window for the test output, click on the `Toggle auto-test` icon, two icons below the green run arrow. 
 
-TODO Screenshot
+![Toggle Auto Run](./toggle_auto_run.png)
 
 With autorun enabled, next click the big green run arrow again.
 Now, all your tests run *automatically* two seconds (configurable) after you stop typing.
@@ -87,11 +87,11 @@ Change the first test in `tests/test_guardian.py`:
 
 Notice that PyCharm warns you (on hovering) with 'Unexpected argument' when we supply arguments:
 
-TODO Screenshot
+![Unexpected Argument Warning](./unexpected_argument.png)
 
 After two seconds, even without saving, our tests show as broken:
 
-TODO Screenshot
+![Failing Tests](./test_fails.png)
 
 Of course it breaks: `Guardian` has no `__init__.py` constructor. 
 Since it is the *code* we are writing tests for, the mistake is conveniently right there in our left tab. 
@@ -130,14 +130,12 @@ In my projects, I prefer a testing convention for asserts with expected on the l
 While [Guido declined to designate a winner](https://mail.python.org/pipermail/python-dev/2010-December/106954.html), it seems [Kent Beck did](https://sourceforge.net/p/junit/mailman/message/3338997/), and Brian Okken's examples also use that.
 
 You can see this problem by changing the expected value of 'Mary' to a value of 'Expected'.
-PyCharm's test output now shows expected vs. actual, and `Expected` is in the wrong place:
-
-TODO Screenshot
+PyCharm's test output now shows expected vs. actual, and `Expected` is in the wrong place.
 
 We need to flip that, but good news: PyCharm excels at such janitorial work. 
 Click on the double-equal, hit `Alt-Enter`, and choose `Flip '=='`:
 
-TODO Screenshot
+![Flip Arguments](./flip_arguments.png)
 
 In fact, PyCharm will [obey a style](https://youtrack.jetbrains.com/issue/PY-27267) set by a project.
 Create a `pytest.ini` file at the root:
@@ -150,5 +148,3 @@ Let's write a test for last name, causing `test_guardian.py` to finish like the 
 
 One last point: PyCharm's tool window for testing shows passing tests by default. 
 If you don't want to see them, and focus on failing tests instead, click on the `Show Passed` icon to the right of the green play button.
-
-TODO Screenshot
