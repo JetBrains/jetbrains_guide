@@ -13,7 +13,7 @@ Let's run all our tests just to ensure things are clean:
 
 Fixtures are decorators from pytest, which needs an import. This decorator
 registers the function name as a fixture. For us, player_one will construct
-and return a Player instance.
+and return a Player instance, providing type hinting along the way.
 
     * Generate pytest.fixture
     * def player_one() -> Player:
@@ -36,11 +36,11 @@ an inline definition of the sample Player instance with the injected fixture.
 [pause] Once done, all of our tests pass.
 
 Let's now make a fixture for the guardians. Since we use several, we'll make
-a fixture that returns a tuple of guardians, using the same 3 definitions
-we had previously.
+a fixture which creates 3 guardians the 3 guardians we used previously,
+then returns a tuple of them. We also supply type hinting:
 
     * Decorator
-    * def guardians() -> Tuple[Guardian]:
+    * def guardians() -> Tuple[Guardian, ...]:
     * Paste the other 3
     * return g1, g2, g3
 
@@ -51,8 +51,11 @@ Now we apply this to ``test_guardian``. Same routine: use a decorator
 to declare a fixture, then a function with the name, by default, used as
 the fixture name.
 
+We then use this fixture in our tests, as an injected argument, which replaces
+the local definition of a guardian.
+
     * Cmd-E, t_p
-    * def guardians() -> Tuple[Guardian]:
+    * def guardians() -> Tuple[Guardian, ...]:
     * Paste the rest
 
 Something looks wrong. Fixtures eliminate repetition, but we just
@@ -67,6 +70,9 @@ this into a ``conftest.py`` file:
     * Reformat Code
 
 This file can be in the current directory or any directory up to ``tests``.
+Once copied over, we'll have some missing imports, which we can ask the IDE
+to help us clean up. We now have our test data -- that is, our fixtures --
+separate from our tests.
 
 Back in our Guardian tests, the file is a lot simpler and the tests run fine:
 

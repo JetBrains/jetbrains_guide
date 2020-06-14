@@ -56,3 +56,5 @@ While we're at it, let's put a return type on `primary_guardian`:
 `embed:tutorials/visual_pytest/testing_exceptions/player.py`
 
 Python type hinting uses `Optional` when the value might be `None`.
+
+Our tests now pass which means we did the refactoring safely.

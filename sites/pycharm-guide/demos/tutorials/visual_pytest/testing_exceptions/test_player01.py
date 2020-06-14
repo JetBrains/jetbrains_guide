@@ -19,8 +19,6 @@ def test_add_guardians(player_one, guardians):
 
 
 def test_primary_guardian(player_one, guardians):
-    print(player_one.guardians)
-    assert player_one.primary_guardian
     player_one.add_guardian(guardians[0])
     player_one.add_guardians((guardians[1], guardians[2]))
     assert guardians[0] == player_one.primary_guardian

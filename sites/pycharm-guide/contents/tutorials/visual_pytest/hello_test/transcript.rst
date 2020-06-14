@@ -7,7 +7,7 @@ Transcript
 Let's write and run our first test.
 
 Open ``player.py`` and click in the ``Player`` class.
-L PyCharm write our test for us by using ``Navigate | Go To Test``.
+Let PyCharm write our test for us by using ``Navigate | Go To Test``.
 Accept the defaults and we now have a file, added to VCS, with a test, in the ``tests`` directory.
 
     * Shift-Cmd-T

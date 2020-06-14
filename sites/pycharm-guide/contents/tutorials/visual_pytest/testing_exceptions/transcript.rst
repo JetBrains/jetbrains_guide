@@ -6,10 +6,13 @@ Transcript
 
 Sometimes we expect to have an exception and want to test it. pytest supports this.
 
-Start with a new test for the case we just saw: no primary guardian yet
-assigned to player_one. pytest has a ``raises`` context manager. Tell it
-to expect an IndexError and assign the exception to a variable named
-``exc``. We can then write an assertion, testing if that exception
+We begin by cleaning up from debugging and re-running our tests, to ensure we
+are in a good state.
+
+Let's start with a new test for the flaw we hinted at earlier: accessing primary
+guardian when no guardians have been assigned. pytest has a ``raises`` context
+manager. Tell it to expect an IndexError and assign the exception to a variable
+named ``exc``. We can then write an assertion, testing if that exception
 value matches what we expect.
 
     * def test_no_primary_guardian(player_one):
@@ -25,9 +28,9 @@ Let's refactor to detect this case and return None instead. First, change the te
 
 The test fails, which means we're doing TDD.
 
-In the implementation, change the property to detect an empty list and
-return None instead. We will add type hinting to the return value while we're
-at it.
+In the implementation, add type hinting for the return type, saying it can be
+either a Guardian or None, using Python's `Optional` generic type. Then change
+the property to detect an empty list and return None instead.
 
     * return self.guardians[0] if self.guardians else None
     * -> Optional[Guardian]

@@ -97,7 +97,6 @@ const Tip: FC<TipProps> = (
     inPlaylists={[]}
   />;
 
-  console.log(333)
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">

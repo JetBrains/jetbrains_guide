@@ -65,7 +65,7 @@ def player_one() -> Player:
 
 
 @pytest.fixture
-def guardians() -> Tuple[Guardian]:
+def guardians() -> Tuple[Guardian, ...]:
     g1 = Guardian('Mary', 'Jones')
     g2 = Guardian('Joanie', 'Johnson')
     g3 = Guardian('Jerry', 'Johnson')
@@ -114,8 +114,13 @@ This is even more important with all the places that pytest can look for fixture
 Navigation is a big win, for the same reason.
 `Cmd-Click` (macOS) on a fixture name and PyCharm jumps to the fixture definition. 
 Same applies for hover which reveals type information.
+
+![Hover For Type Information](./hover.png)
+
 `F1` on the fixture shows an inline popup with more information about the fixture.
 Finally, you can `Refactor | Rename` to change the fixture's name and usages.
+
+![Refactor Rename](./refactor_rename.png)
 
 This is all driven by PyCharm's type inferencing, which means we can autocomplete and give warnings in the test body, based on the structure of the fixture.
 In practice, this is a key part of "fail faster", meaning, find a problem before running (or even writing) a test.
