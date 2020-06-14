@@ -9,7 +9,7 @@ subtitle: Make a PyCharm project and virtual environment with dependencies, then
 thumbnail: ../thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=XRaox0aH6y0
+  url: https://youtu.be/mLYTP41H8U0
 ---
 
 Python has projects and PyCharm does as well.

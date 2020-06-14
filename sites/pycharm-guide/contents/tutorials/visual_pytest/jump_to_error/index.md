@@ -9,7 +9,7 @@ subtitle: Writing code means writing broken code. Click a link in a traceback to
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ../poster_long.png
-  url: https://www.youtube.com/watch?v=bFheD5JBjBI
+  url: https://youtu.be/U2ex-V51-PY
 ---
 
 Since we have `Guardian` now, let's hook it up to allow adding a `Guardian` to a `Player`.
