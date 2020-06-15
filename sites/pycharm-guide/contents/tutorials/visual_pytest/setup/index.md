@@ -6,7 +6,7 @@ technologies: [pytest]
 topics: [testing]
 author: pwe
 subtitle: Make a PyCharm project and virtual environment with dependencies, then configure PyCharm to use pytest.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/mLYTP41H8U0

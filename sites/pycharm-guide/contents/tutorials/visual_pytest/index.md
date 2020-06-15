@@ -36,3 +36,4 @@ approach to first contact with Python testing:
 - Shows how PyCharm can help you get into testing and development "flow"
 
 *Note: We'll be using PyCharm Community Edition for all the steps in this tutorial.*
+x

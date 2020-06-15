@@ -6,10 +6,10 @@ technologies: [pytest]
 topics: [testing]
 author: pwe
 subtitle: Write tests which ensure exceptions are raised when expected.
-thumbnail: ../thumbnail.png
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: ../poster_long.png
-  url: https://www.youtube.com/watch?v=bFheD5JBjBI
+  poster: ./poster_long.png
+  url: https://youtu.be/eBO2FmoeLKw
 ---
 
 In the previous step we showed how to debug a problem.
@@ -38,7 +38,7 @@ You test will *fail* if the exception is not raised.
 The context manager optionally lets you add `as exc` to then do some asserts after the block, about the nature of the exception value.
 
 # Return `None` Instead
-
+x
 Perhaps we decide that raising an exception isn't a good pattern.
 Instead, we want to detect if `self.guardians` is empty, and if so, return `None`.
 
