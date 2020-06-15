@@ -41,13 +41,6 @@ module.exports = {
               icon: 'fas fa-project-diagram'
             },
             {
-              accent: 'info',
-              cssClass: 'documentation',
-              href: '/about/',
-              label: 'About',
-              icon: 'fas fa-file'
-            },
-            {
               accent: 'danger',
               cssClass: 'documentation',
               href: '/technologies/',
@@ -60,6 +53,13 @@ module.exports = {
               href: '/authors/',
               label: 'Authors',
               icon: 'fas fa-users'
+            },
+            {
+              accent: 'info',
+              cssClass: 'documentation',
+              href: '/about/',
+              label: 'About',
+              icon: 'fas fa-file'
             },
             {
               label: 'Skip', // hides the "More..." section
