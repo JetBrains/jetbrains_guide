@@ -11,7 +11,7 @@ longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/lidTnXTFssM
 ---
-xx
+
 Each test recreates `Player` and `Guardian` instances, which is repetitive and distracts from the test's purpose.
 [pytest fixtures](https://docs.pytest.org/en/latest/fixture.html) give a rich infrastructure for your test data. 
 
