@@ -21,7 +21,7 @@ there are two essential shortcuts that help you achieve anything in Rider! They 
 * <kbd>Shift, Shift</kbd>, which brings up [**Search Everywhere**](https://www.jetbrains.com/help/rider/Searching_Everywhere.html). From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 * <kbd>Alt+Enter</kbd>, which brings up a contextual menu with all actions that apply.
 
-Windows, menu's and pop-ups will show more keyboard shortcut hints, so you can learn them along the way.
+Windows, menus and pop-ups will show more keyboard shortcut hints, so you can learn them along the way.
 
 In case you are looking for a full overview, use these cheat sheets to master your Rider keyboard scheme of choice:
 
