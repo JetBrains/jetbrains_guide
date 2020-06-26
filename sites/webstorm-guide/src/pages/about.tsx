@@ -1,6 +1,6 @@
 import React from 'react';
 // @ts-ignore
-import splash from './splash.svg';
+import splash from './webstorm-beam.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
 
