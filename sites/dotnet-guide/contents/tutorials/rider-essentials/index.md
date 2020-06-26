@@ -7,9 +7,6 @@ products: [rider]
 author: maartenba
 subtitle: Our developer advocates show their favourite tips and tricks, uncovering how they work with Rider.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/BxCrzUIm5kU
 tutorialItems:
   - /tutorials/rider-essentials/introduction/
   - /tutorials/rider-essentials/shortcuts-editing-completion/
