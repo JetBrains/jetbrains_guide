@@ -17,7 +17,7 @@ declare global {
 
 interface SearchResult extends lunr.Index.Result {
     readonly title: string
-    readonly path: string
+    readonly slug: string
 }
 
 const search = (query: string): readonly SearchResult[] => {
@@ -53,8 +53,8 @@ export const Search = ({ limit }: LunrSearchProps) => {
                 <ul /*css={styles.list}*/>
                     {results.slice(0, limit).map((result, index) => (
                         <li key={index} /*css={styles.item}*/>
-                            <Link /*css={styles.link}*/ to={result.path}>
-                                {result.title} p: {result.path}
+                            <Link /*css={styles.link}*/ to={result.slug}>
+                                {result.title} p: {result.slug}
                             </Link>
                         </li>
                     ))}
