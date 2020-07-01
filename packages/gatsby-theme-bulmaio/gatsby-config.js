@@ -63,6 +63,16 @@ module.exports = {
             subtitle: node => node.subtitle,
             slug: node => node.slug,
           },
+          Tutorial: {
+            title: node => node.title,
+            subtitle: node => node.subtitle,
+            slug: node => node.slug,
+          },
+          TutorialStep: {
+            title: node => node.title,
+            subtitle: node => node.subtitle,
+            slug: node => node.slug,
+          },
           // Mdx: {
           //   title: node => node.frontmatter.title,
           //   subtitle: node => node.frontmatter.subtitle,
