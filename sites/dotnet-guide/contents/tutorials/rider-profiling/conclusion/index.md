@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2020-07-06
-title: Conclusion
+title: Conclusion - Profiling in Rider
 technologies: [.net, csharp]
 topics: [ide, profiling]
 products: [rider]
@@ -10,7 +10,7 @@ subtitle: What have we learned? Profiling, profiler modes, optimizing code, DPA,
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/3_41Xp6qTwU
+    url: https://youtu.be/2C6Nx7jJegg
 ---
 
 ### Optimizing Application Performance with Rider
@@ -31,7 +31,7 @@ provide accurate call numbers, but don't provide reliable call timings.
 A good profiling workflow is cyclic: start with a baseline profiling session, make incremental changes, and analyze performance
 improvements (or regressions) as you go.
 
-Dynamic Program Analysis (or DPA) profiles your code automatically, every time it runs. It gives you feedback around memory
+Dynamic Program Analysis (or DPA) analyzes your code automatically, every time it runs. It gives you feedback around memory
 usage and allocations, and shows the call stacks where most memory allocation is happening. The Heap Allocations viewer
 may help you figure out where hidden allocations and boxing occur in code.
 

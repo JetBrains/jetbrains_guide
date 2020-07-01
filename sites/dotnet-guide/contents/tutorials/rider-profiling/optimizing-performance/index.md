@@ -10,7 +10,7 @@ subtitle: Let's try to optimize the Sudoku solver by profiling, and then optimiz
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/BsBQgElfJ9o
+    url: https://youtu.be/P__B5MII4h8
 ---
 
 ### Measure Performance with Sampling
@@ -48,8 +48,8 @@ at some point, which may mean your application gets suspended for a short period
 application performance will suffer from cleaning up many objects continuously.
 
 You can find garbage collection times and filters when profiling with Timeline mode, but using a memory profiler may be
-required. In Rider, [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites)
-may help. We will explore DPA in the next step.
+required. Another tool available in Rider is [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites).
+We will explore DPA in the next step.
 
 ### See Also
 

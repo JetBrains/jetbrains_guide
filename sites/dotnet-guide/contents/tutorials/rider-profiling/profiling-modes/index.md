@@ -10,7 +10,7 @@ subtitle: What are the differences between Sampling, Tracing, Line-by-Line, and 
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/EfLAWTdwbMw
+    url: https://youtu.be/6dD74hFW82s
 ---
 
 ### Sampling, Tracing, Line-by-Line, and Timeline

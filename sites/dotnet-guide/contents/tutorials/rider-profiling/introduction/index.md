@@ -10,7 +10,7 @@ subtitle: Let's run a first profiling session on a Sudoku solver sample applicat
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/4h7CdIq0bF4
+    url: https://youtu.be/-1riV47hdqw
 ---
 
 ### Sudoku Solver
@@ -35,7 +35,7 @@ Internally, it iterates over every cell of a puzzle board, tries all combination
 ```
 
 A simple puzzle is solved in less than a second, more complex ones can take 10 to 20 seconds. In this tutorial, you will see
-if this can be optimized.
+if this can be optimized, and how.
 
 ### Profiling in Rider
 

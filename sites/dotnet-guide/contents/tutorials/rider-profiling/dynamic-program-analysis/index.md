@@ -1,16 +1,16 @@
 ---
 type: TutorialStep
 date: 2020-07-06
-title: Dynamic Program Analysis
+title: Dynamic Program Analysis (DPA)
 technologies: [.net, csharp]
 topics: [ide, profiling]
 products: [rider]
 author: maartenba
-subtitle: Rider automatically profiles your applications, all the time! Let's look at Dynamic Program Analysis (DPA).
+subtitle: Rider automatically analyzes memory of your applications, all the time!
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/rV1Xq3PU9Qw
+    url: https://youtu.be/u-SrE8kQBI0
 ---
 
 ### Dynamic Program Analysis (DPA)
@@ -18,8 +18,9 @@ longVideo:
 It's a good idea to regularly do exploratory profiling of your applications. That takes time, and as a result,
 profiling is often only done after an application starts misbehaving, in production. 
 
-Dynamic Program Analysis (or DPA) is an automatic memory profiler that runs in the background of Rider. It checks your
-application for various memory allocation issues, such as closures and allocations to large and small object heaps (LOH and SOH).
+Dynamic Program Analysis (or DPA) performs automatic analysis of memory and allocations, and runs in the background of Rider.
+It checks your application for various memory allocation issues, such as closures and allocations to large and small object
+heaps (LOH and SOH).
 
 Allocation data is collected automatically, with almost zero overhead, making DPA a useful tool to catch memory
 issues before pushing an application to production.
@@ -30,9 +31,9 @@ In the previous step, we concluded that the constructor of `Cell` is on the hot 
 memory traffic overall. If you run the Sudoku solver, Dynamic Program Analysis will detect several issues. The top issue
 is excessive allocation of the `Cell` type indeed!
 
-Unfortunately, optimizing the issue with `Cell` would take us too far in rewriting various bits of code for this screencast.
-You can make `Cell` a `struct` instead of a `class`, as described [here](https://blog.jetbrains.com/dotnet/2020/03/31/auto-detect-memory-issues-app-dynamic-program-analysis-rider-2020-1/).
-This will move `Cell` from the heap to the stack, and reduce allocations.
+Optimizing the issue with `Cell` can be done by making it a `struct` instead of a `class`, as described [here](https://blog.jetbrains.com/dotnet/2020/03/31/auto-detect-memory-issues-app-dynamic-program-analysis-rider-2020-1/).
+This will move `Cell` from the heap to the stack, and reduce the need for garbage collection. Since all `Cell` are short-lived
+and don't take up much memory per instance, it's safe to move these to the stack.
 
 ### Optimize Closures using DPA
 
