@@ -1,3 +1,5 @@
+import {createFilePath} from "gatsby-source-filesystem";
+
 module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
@@ -36,6 +38,36 @@ module.exports = {
         id: 'GTM-5P98',
         defaultDataLayer: { platform: 'gatsby' },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-lunr',
+      options: {
+        languages: [
+          {
+            name: 'en',
+            filterNodes: node => node.frontmatter,
+            customEntries: [ ]
+          }
+        ],
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'subtitle', store: true, attributes: { boost: 10 } },
+          { name: 'path', store: true },
+          { name: 'content' },
+          { name: 'topics' },
+          { name: 'technologies' }
+        ],
+        resolvers: {
+          Mdx: {
+            title: node => node.frontmatter.title,
+            subtitle: node => node.frontmatter.subtitle,
+            path: node => node.path, // THIS SHIT DOES NOT RESOLVE
+            content: node => node.rawMarkdownBody,
+            topics: node => node.frontmatter.topics ? node.frontmatter.topics.join(" ") : "",
+            technologies: node => node.frontmatter.technologies ? node.frontmatter.technologies.join(" ") : ""
+          }
+        }
+      }
     },
     {
       resolve: `gatsby-plugin-sitemap`,

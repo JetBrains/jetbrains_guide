@@ -910,6 +910,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.4.3":
+  version "7.10.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.4.tgz#a6724f1a6b8d2f6ea5236dbfe58c7d7ea9c5eb99"
+  integrity sha512-UpTN5yUJr9b4EX2CnGNWIvER7Ab83ibv0pcvvHc4UOdrBI5jb8bj+32cCwPX6xu0mt2daFNjYhoi+X7beH0RSw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.9.6.tgz#7a5f82c6fa29959b12f708213be6de8ec0b79338"
@@ -1839,6 +1846,11 @@
   version "4.14.150"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.150.tgz#649fe44684c3f1fcb6164d943c5a61977e8cf0bd"
   integrity sha512-kMNLM5JBcasgYscD9x/Gvr6lTAv2NVgsKtet/hm93qMyf/D1pt+7jeEZklKJKxMVmXjxbRVQQGfqDSfipYCO6w==
+
+"@types/lunr@^2.1.6":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/lunr/-/lunr-2.3.3.tgz#ec985618fd2712c010f8edab4f1ae7784ad7c583"
+  integrity sha512-09sXZZVsB3Ib41U0fC+O1O+4UOZT1bl/e+/QubPxpqDWHNEchvx/DEb1KJMOwq6K3MTNzZFoNSzVdR++o1DVnw==
 
 "@types/mdast@^3.0.3":
   version "3.0.3"
@@ -6703,6 +6715,15 @@ gatsby-plugin-google-tagmanager@^2.3.1:
   dependencies:
     "@babel/runtime" "^7.9.6"
 
+gatsby-plugin-lunr@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-lunr/-/gatsby-plugin-lunr-1.5.2.tgz#eaeba70b85294827e031070c9bad70a93226e509"
+  integrity sha512-L+W8Jb7io824oxBGP973/7N9uv5YUhWpjRdteWDfWzku2S3vzlunoKVz5h4kMXezWDZDV2g8YsfWFNor7Gg5QQ==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
+    lunr "^2.3.6"
+    lunr-languages "^1.1.0"
+
 gatsby-plugin-mdx@^1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.9.tgz#ea7868fc766c762e54c7edabe9130257d26ee3c0"
@@ -10139,6 +10160,16 @@ lru-cache@^5.1.1:
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
   dependencies:
     yallist "^3.0.2"
+
+lunr-languages@^1.1.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/lunr-languages/-/lunr-languages-1.4.0.tgz#42abb12aa81447d1ece5aa35676adcdf40a3e8a8"
+  integrity sha512-YWfZDExJN/MJEVE/DbM4AuVRLsqeHi+q3wmECMsWjGIOkd5mr9DUNos7fv8f5do9VLRMYXIzFjn+N4+KPI9pQA==
+
+lunr@^2.3.6:
+  version "2.3.8"
+  resolved "https://registry.yarnpkg.com/lunr/-/lunr-2.3.8.tgz#a8b89c31f30b5a044b97d2d28e2da191b6ba2072"
+  integrity sha512-oxMeX/Y35PNFuZoHp+jUj5OSEmLCaIH4KTFJh7a93cHBoFmpw2IoPs22VIz7vyO2YUnx2Tn9dzIwO2P/4quIRg==
 
 m3u8-parser@4.4.0:
   version "4.4.0"
