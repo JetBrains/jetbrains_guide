@@ -52,6 +52,7 @@ module.exports = {
           { name: 'title', store: true, attributes: { boost: 20 } },
           { name: 'subtitle', store: true, attributes: { boost: 10 } },
           { name: 'slug', store: true },
+          {name: 'type', store: true },
           // { name: 'content' }
           // Let's skip references
           // { name: 'topics' },
@@ -62,16 +63,19 @@ module.exports = {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            type: () => 'tip',
           },
           Tutorial: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            type: () => 'tutorial',
           },
           TutorialStep: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            type: () => 'tutorialstep',
           },
           // Mdx: {
           //   title: node => node.frontmatter.title,
