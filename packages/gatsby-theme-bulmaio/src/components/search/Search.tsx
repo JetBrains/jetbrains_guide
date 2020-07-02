@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import lunr from 'lunr';
+import SearchResult from "./SearchResult";
 
 declare global {
   interface Window {
@@ -17,7 +18,9 @@ declare global {
 
 interface SearchResult extends lunr.Index.Result {
   readonly title: string
+  readonly subtitle: string
   readonly slug: string
+  readonly content: string
 }
 
 const search = (query: string): readonly SearchResult[] => {
@@ -61,7 +64,7 @@ export const Search = ({ limit }: LunrSearchProps) => {
                     {results.length === 1 ? 'result' : 'results'}.</p>
                   {results.slice(0, limit).map((result, index) => (
                     <Link key={index} to={result.slug} className="panel-block is-active">
-                      {result.title}
+                      <SearchResult title={result.title} subtitle={result.subtitle} />
                     </Link>
                   ))}
                 </>

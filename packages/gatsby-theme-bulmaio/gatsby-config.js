@@ -53,11 +53,7 @@ module.exports = {
           { name: 'subtitle', store: true, attributes: { boost: 10 } },
           { name: 'slug', store: true },
           { name: 'type', store: true },
-          { name: 'content' }, // TODO: Should we store content and display it? I think indexing is enough here.
-          // { name: 'content' }
-          // Let's skip references
-          // { name: 'topics' },
-          // { name: 'technologies' }
+          { name: 'content', store: true }, // TODO: Should we store content and display it? I think indexing is enough here.
         ],
         resolvers: {
           Tip: {
