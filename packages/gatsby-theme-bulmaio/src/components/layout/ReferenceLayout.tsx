@@ -7,7 +7,6 @@ A variation of the MasterLayout which makes lists entries.
 import React from 'react';
 import SiteLayout from './SiteLayout';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { Search } from '../search/Search';
 
 interface ReferenceLayoutProps {
   pageTitle: string;
@@ -31,7 +30,6 @@ const ReferenceLayout: React.FC<ReferenceLayoutProps> = (
     <SiteLayout pageTitle={pageTitle}>
       <main className="bd-main bulmaio-body">
         <div className="bd-main-container container">
-          <Search limit={10} />
           <header className="bd-header">
             <article className="media">
               {figure && <figure className="media-left">{figure}</figure>}

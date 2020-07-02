@@ -39,7 +39,7 @@ export const Search = ({ limit }: LunrSearchProps) => {
 
   return (
     <div /*css={styles.wrapper}*/>
-      <div className="container" style={{ marginTop: '2rem' }}>
+      <div className="container">
         <div className="columns">
           <div className="column is-6 is-offset-2 has-text-centered">
             <nav className={`panel ${ isActive ? '': 'is-shadowless' }`}>
