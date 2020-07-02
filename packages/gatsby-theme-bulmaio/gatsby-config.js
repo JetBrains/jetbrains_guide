@@ -52,7 +52,8 @@ module.exports = {
           { name: 'title', store: true, attributes: { boost: 20 } },
           { name: 'subtitle', store: true, attributes: { boost: 10 } },
           { name: 'slug', store: true },
-          {name: 'type', store: true },
+          { name: 'type', store: true },
+          { name: 'content' }, // TODO: Should we store content and display it? I think indexing is enough here.
           // { name: 'content' }
           // Let's skip references
           // { name: 'topics' },
@@ -63,18 +64,21 @@ module.exports = {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
             type: () => 'tip',
           },
           Tutorial: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
             type: () => 'tutorial',
           },
           TutorialStep: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
+            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
             type: () => 'tutorialstep',
           },
           // Mdx: {

@@ -81,7 +81,14 @@ exports.setupCreateNode = async function onCreateNode(
         .toString();
     }
 
-    resourceNode.fileAbsolutePath = node.absolutePath;
+    // Add body so we can index it in search
+    resourceNode.bodyWithoutFrontMatter = remark()
+        .use(remarkHTML)
+        .processSync(node.rawBody.replace(/^---[\s\S]+?---/, ''))
+        .toString()
+        .trim();
+
+    resourceNode.fileAbsolutePath = node.fileAbsolutePath;
     createNode(resourceNode);
     createParentChildLink({
       parent: node,
