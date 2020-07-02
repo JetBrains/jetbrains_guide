@@ -42,7 +42,7 @@ export const Search = ({ limit }: LunrSearchProps) => {
       <div className="container" style={{ marginTop: '2rem' }}>
         <div className="columns">
           <div className="column is-6 is-offset-2 has-text-centered">
-            <nav className="panel">
+            <nav className={`panel ${ isActive ? '': 'is-shadowless' }`}>
               <div className="panel-block">
                 <p className="control has-icons-left">
                   <input className="input" type="text" placeholder="Search"
@@ -60,14 +60,22 @@ export const Search = ({ limit }: LunrSearchProps) => {
               </div>
               {isActive ? (
                 <>
-                  <p>Showing {limit ? `${Math.min(limit, results.length)} of` : null} {results.length}{' '}
-                    {results.length === 1 ? 'result' : 'results'}.</p>
                   {results.slice(0, limit).map((result, index) => (
                     <Link key={index} to={result.slug} className="panel-block is-active">
                       <SearchResult title={result.title} subtitle={result.subtitle} />
                     </Link>
                   ))}
                 </>
+              ) : null}
+              {isActive ? (
+                  <div className="panel-block">
+                    {results.length ? (
+                        <p>Showing {limit ? `${Math.min(limit, results.length)} of` : null} {results.length}{' '}
+                          {results.length === 1 ? 'result' : 'results'}.</p>
+                    ) : (
+                        <p>No results have been found.</p>
+                    )}
+                  </div>
               ) : null}
             </nav>
           </div>
