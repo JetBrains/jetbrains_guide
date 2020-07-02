@@ -24,5 +24,7 @@
     "dotnet:build": "yarn workspace dotnet-guide build",
     "dotnet:clean": "yarn workspace dotnet-guide clean"
   },
-  "dependencies": {}
+  "dependencies": {
+    "yarn": "^1.22.4"
+  }
 }
