@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import lunr from 'lunr';
-import SearchResult from "./SearchResult";
+import SearchResult from './SearchResult';
 
 declare global {
   interface Window {
@@ -38,49 +38,41 @@ export const Search = ({ limit }: LunrSearchProps) => {
   const [isActive, setActive] = useState(false);
 
   return (
-    <div /*css={styles.wrapper}*/>
-      <div className="container">
-        <div className="columns">
-          <div className="column is-6 is-offset-2 has-text-centered">
-            <nav className={`panel ${ isActive ? '': 'is-shadowless' }`}>
-              <div className="panel-block">
-                <p className="control has-icons-left">
-                  <input className="input" type="text" placeholder="Search"
-                         value={query}
-                         onChange={(event) => {
-                           setQuery(event.target.value);
-                           setResults(search(`${event.target.value}`));
-                           setActive(event.target.value.length > 0);
-                         }}
-                  />
-                  <span className="icon is-left">
-                    <i className="fas fa-search" aria-hidden="true" />
-                  </span>
-                </p>
-              </div>
-              {isActive ? (
-                <>
-                  {results.slice(0, limit).map((result, index) => (
-                    <Link key={index} to={result.slug} className="panel-block is-active">
-                      <SearchResult title={result.title} subtitle={result.subtitle} />
-                    </Link>
-                  ))}
-                </>
-              ) : null}
-              {isActive ? (
-                  <div className="panel-block">
-                    {results.length ? (
-                        <p>Showing {limit ? `${Math.min(limit, results.length)} of` : null} {results.length}{' '}
-                          {results.length === 1 ? 'result' : 'results'}.</p>
-                    ) : (
-                        <p>No results have been found.</p>
-                    )}
-                  </div>
-              ) : null}
-            </nav>
-          </div>
-        </div>
+    <nav className={`panel ${isActive ? '' : 'is-shadowless'}`}>
+      <div className="panel-block has-text-centered ">
+        <p className="control has-icons-left">
+          <input className="input" type="text" placeholder="Search"
+                 value={query}
+                 onChange={(event) => {
+                   setQuery(event.target.value);
+                   setResults(search(`${event.target.value}`));
+                   setActive(event.target.value.length > 0);
+                 }}
+          />
+          <span className="icon is-left">
+            <i className="fas fa-search" aria-hidden="true" />
+          </span>
+        </p>
       </div>
-    </div>
+      {isActive ? (
+        <>
+          {results.slice(0, limit).map((result, index) => (
+            <Link key={index} to={result.slug} className="panel-block is-active">
+              <SearchResult title={result.title} subtitle={result.subtitle} />
+            </Link>
+          ))}
+        </>
+      ) : null}
+      {isActive ? (
+        <div className="panel-block">
+          {results.length ? (
+            <p>Showing {limit ? `${Math.min(limit, results.length)} of` : null} {results.length}{' '}
+              {results.length === 1 ? 'result' : 'results'}.</p>
+          ) : (
+            <p>No results have been found.</p>
+          )}
+        </div>
+      ) : null}
+    </nav>
   );
 };

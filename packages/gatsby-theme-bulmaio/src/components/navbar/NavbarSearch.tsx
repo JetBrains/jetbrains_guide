@@ -2,6 +2,8 @@ import * as React from 'react';
 import { useState } from 'react';
 import { Search } from '../search/Search';
 
+import './NavbarSearch.scss';
+
 export interface NavbarSearchProps {
 }
 
@@ -18,7 +20,7 @@ const NavbarSearch: React.FC<NavbarSearchProps> = () => {
   // );
 
   return (
-    <div className="navbar-item">
+    <div className="navbar-item navbar-search">
       <div className="control">
         <div className={'dropdown is-right' + (!isSearchVisible ? '' : ' is-active')}>
           <div className="dropdown-trigger">
