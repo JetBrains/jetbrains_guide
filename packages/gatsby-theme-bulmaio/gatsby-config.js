@@ -53,38 +53,30 @@ module.exports = {
           { name: 'subtitle', store: true, attributes: { boost: 10 } },
           { name: 'slug', store: true },
           { name: 'type', store: true },
-          { name: 'content', store: true }, // TODO: Should we store content and display it? I think indexing is enough here.
+          { name: 'excerpt', store: true }
         ],
         resolvers: {
           Tip: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
-            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
             type: () => 'tip',
           },
           Tutorial: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
-            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
             type: () => 'tutorial',
           },
           TutorialStep: {
             title: node => node.title,
             subtitle: node => node.subtitle,
             slug: node => node.slug,
-            content: node => node.bodyWithoutFrontMatter ? node.bodyWithoutFrontMatter : node.leadin,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
             type: () => 'tutorialstep',
-          },
-          // Mdx: {
-          //   title: node => node.frontmatter.title,
-          //   subtitle: node => node.frontmatter.subtitle,
-          //   // slug: node => node.fields.slug,
-          //   content: node => node.rawMarkdownBody,
-          //   // topics: node => node.frontmatter.topics ? node.frontmatter.topics.join(" ") : "",
-          //   // technologies: node => node.frontmatter.technologies ? node.frontmatter.technologies.join(" ") : ""
-          // }
+          }
         }
       }
     },

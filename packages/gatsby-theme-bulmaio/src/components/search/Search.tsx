@@ -20,7 +20,7 @@ interface SearchResult extends lunr.Index.Result {
   readonly title: string
   readonly subtitle: string
   readonly slug: string
-  readonly content: string
+  readonly excerpt: string
 }
 
 const search = (query: string): readonly SearchResult[] => {
