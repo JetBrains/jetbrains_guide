@@ -47,7 +47,7 @@ export const Search = ({ limit }: LunrSearchProps) => {
                          onChange={(event) => {
                            setQuery(event.target.value);
                            setResults(search(`${event.target.value}`));
-                           setActive(true);
+                           setActive(event.target.value.length > 0);
                          }}
                   />
                   <span className="icon is-left">
