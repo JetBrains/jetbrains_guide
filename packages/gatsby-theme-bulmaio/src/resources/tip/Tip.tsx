@@ -97,6 +97,9 @@ const Tip: FC<TipProps> = (
     inPlaylists={[]}
   />;
 
+  console.log(tip.leadin)
+  console.log(tip.body)
+
   const main = (
     <div style={{ marginBottom: '3rem' }}>
       <div className="columns">
@@ -118,7 +121,9 @@ const Tip: FC<TipProps> = (
           className="column content"
           style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'column' }}
         >
-          <div dangerouslySetInnerHTML={{ __html: tip.leadin }} />
+          <div>
+            <MDXRenderer>{tip.leadin}</MDXRenderer>
+          </div>
           <div>
             {tip.hasBody && (
               <ScrollLink

@@ -12,10 +12,12 @@ import SiteLayout from './SiteLayout';
 import Heading from '../heading/Heading';
 import { TwitterCardPage } from './MasterLayout';
 import CodeBlock from '../../common/CodeBlock';
+import Action from "../Actions";
 
 const components = {
   pre: (props: any) => <div {...props} style={{marginBottom: '1rem'}}/>,
   code: CodeBlock,
+  Action: Action,
 };
 
 interface SidebarLayoutProps {
