@@ -10,7 +10,7 @@ subtitle: Using the Azure plugin in Rider, and working with Azure Functions.
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/9zxUywlFXmY
 ---
 
 ### Cloud Support

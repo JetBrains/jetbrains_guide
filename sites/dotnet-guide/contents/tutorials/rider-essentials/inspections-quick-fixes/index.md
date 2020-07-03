@@ -10,7 +10,7 @@ subtitle: Dive into inspections and quick-fixes, nullability inspections, the He
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/Cqvxrj9aq_E
 ---
 
 ### Inspections, Quick-Fixes and Context Actions

@@ -10,7 +10,7 @@ subtitle: Learn how to safely refactor code, without breaking the build.
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/kGXj_LY2pU4
 ---
 
 ### Refactoring your Code
@@ -24,7 +24,7 @@ action. It shows all refactorings available in the current context.
 
 Some [refactorings can be applied without invoking any commands](https://www.jetbrains.com/help/rider/Refactorings__Inplace_Refactorings.html).
 If Rider detects that a code change could be an intention to refactor the code, the **Refactor This** action appears on
-the eft-hand side of the editor. You can use this action to apply the refactoring solution-wide.
+the left-hand side of the editor. You can use this action to apply the refactoring solution-wide.
 
 ### See Also
 

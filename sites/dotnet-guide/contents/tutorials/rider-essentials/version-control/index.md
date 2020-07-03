@@ -10,7 +10,7 @@ subtitle: Working with Git, commit code, rebase and switch branches. Let's explo
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/_fTwymtpg78
 ---
 
 ### Commit Changes

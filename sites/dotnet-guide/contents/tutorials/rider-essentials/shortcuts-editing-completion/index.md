@@ -10,7 +10,7 @@ subtitle: Where to start? Let's learn the two most important shortcuts, editing,
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/ztQ9ez1bFNg
 ---
 
 ### Keyboard Shortcuts

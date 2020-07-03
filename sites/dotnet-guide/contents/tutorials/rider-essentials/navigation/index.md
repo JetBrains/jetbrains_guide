@@ -10,7 +10,7 @@ subtitle: How to navigate around a code base? Let's look at some easy ways of do
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/yZ_KkSBJD7g
 ---
 
 ### Navigating Code in Rider

@@ -10,7 +10,7 @@ subtitle: Examine the runtime behavior of your application, identify problematic
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://youtu.be/TODO
+    url: https://youtu.be/F3yN9HirSQo
 ---
 
 ### Step through Code, Inspect what is Going On
