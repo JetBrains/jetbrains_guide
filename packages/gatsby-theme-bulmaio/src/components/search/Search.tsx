@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
-import { useVisible } from 'react-hooks-visible'
+import { useVisible } from 'react-hooks-visible';
 import lunr from 'lunr';
 import SearchResult from './SearchResult';
 
@@ -35,7 +35,7 @@ interface LunrSearchProps {
 
 export const Search: React.FC<LunrSearchProps> = ({ limit }: LunrSearchProps) => {
   const ref = useRef(null);
-  const [searchInputRef, searchInputVisible] = useVisible((vi) => vi >= 1);
+  const [searchInputRef, searchInputVisible] = useVisible((vi: any) => vi >= 1);
 
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<readonly SearchResult[]>([]);
