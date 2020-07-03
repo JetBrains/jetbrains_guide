@@ -14,6 +14,7 @@ tutorialItems:
   - /tutorials/rider-essentials/navigation/
   - /tutorials/rider-essentials/refactoring/
   - /tutorials/rider-essentials/debugging/
+  - /tutorials/rider-essentials/version-control/
   - /tutorials/rider-essentials/look-and-feel/
   - /tutorials/rider-essentials/unit-testing/
   - /tutorials/rider-essentials/nuget/

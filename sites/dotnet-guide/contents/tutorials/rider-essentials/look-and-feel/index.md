@@ -5,7 +5,7 @@ title: Customize the Look and Feel of Rider
 technologies: [.net, csharp]
 topics: [ide, inspections]
 products: [rider]
-author: maartenba
+author: matkoch
 subtitle: Customize the look and feel of Rider, and make the editor work the way you want.
 thumbnail: ./thumbnail.png
 longVideo: 
