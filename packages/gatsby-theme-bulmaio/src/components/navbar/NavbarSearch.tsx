@@ -35,7 +35,7 @@ const NavbarSearch : React.FC<NavbarSearchProps> = () => {
   return (
     <div className="navbar-item navbar-search">
       <div className="control" ref={ref}>
-        <div className={'dropdown is-right' + (!isSearchVisible ? '' : ' is-active')}>
+        <div className={'dropdown ' + (!isSearchVisible ? '' : ' is-active')}>
           <div className="dropdown-trigger">
             <button className="button is-black" aria-haspopup="true" aria-controls="search-menu"
                     onClick={() => {
