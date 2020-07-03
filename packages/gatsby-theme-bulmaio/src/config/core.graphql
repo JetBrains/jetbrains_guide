@@ -7,6 +7,7 @@ interface Resource @nodeInterface {
     slug: String!
     title: String!
     subtitle: String
+    excerpt: String
     thumbnail: File @fileByRelativePath
     topics: [Topic]
     products: [Product]

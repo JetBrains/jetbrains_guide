@@ -8,6 +8,7 @@ type TutorialStep implements Node & Resource {
     parent: Node
     slug: String!
     subtitle: String
+    excerpt: String
     products: [Product] @link(by: "label")
     technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath

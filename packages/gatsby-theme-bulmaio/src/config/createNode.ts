@@ -1,5 +1,6 @@
 const remark = require('remark');
 const remarkHTML = require('remark-html');
+const remarkPlainText = require('remark-plain-text');
 
 import { createFilePath } from 'gatsby-source-filesystem';
 import { referenceTypes } from '../references/gatsby-setup';
@@ -81,7 +82,15 @@ exports.setupCreateNode = async function onCreateNode(
         .toString();
     }
 
-    resourceNode.fileAbsolutePath = node.absolutePath;
+    // Add excerpt so we can index it in search
+    resourceNode.excerpt = remark()
+        .use(remarkPlainText)
+        .processSync(node.rawBody.replace(/^---[\s\S]+?---/, ''))
+        .toString()
+        .trim()
+        .substr(0, 1600);
+
+    resourceNode.fileAbsolutePath = node.fileAbsolutePath;
     createNode(resourceNode);
     createParentChildLink({
       parent: node,

@@ -11,18 +11,19 @@ import { ResourceCardTopics } from '../components/resourcecard/topic/ResourceCar
 /* Various models used throughout the site */
 
 export interface Resource {
-  author: AuthorReference
-  body: string
-  id: string
-  parent: Resource
-  slug: string
+  author: AuthorReference;
+  body: string;
+  id: string;
+  parent: Resource;
+  slug: string;
   date: string;
-  title: string
+  title: string;
   subtitle?: string;
-  thumbnail: Thumbnail
-  products: ProductReference[]
-  technologies: TechnologyReference[]
-  topics: TopicReference[]
+  excerpt?: string;
+  thumbnail: Thumbnail;
+  products: ProductReference[];
+  technologies: TechnologyReference[];
+  topics: TopicReference[];
 }
 
 export interface ListedResource {
