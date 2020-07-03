@@ -42,10 +42,7 @@ module.exports = {
       options: {
         languages: [
           {
-            name: 'en',
-            // Let's skip these
-            // filterNodes: node => node.frontmatter,
-            // customEntries: [ ]
+            name: 'en'
           }
         ],
         fields: [

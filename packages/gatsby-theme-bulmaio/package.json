@@ -43,6 +43,7 @@
     "react-gif-player": "^0.4.2",
     "react-helmet": "^5.2.1",
     "react-scroll": "^1.7.16",
+    "react-hooks-visible": "^1.1.1",
     "remark": "^12.0.0",
     "remark-external-links": "^6.0.0",
     "remark-html": "^11.0.2",

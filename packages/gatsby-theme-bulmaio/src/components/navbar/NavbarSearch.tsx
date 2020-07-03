@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Search } from '../search/Search';
 
 import './NavbarSearch.scss';
@@ -7,25 +7,40 @@ import './NavbarSearch.scss';
 export interface NavbarSearchProps {
 }
 
-const NavbarSearch: React.FC<NavbarSearchProps> = () => {
+const NavbarSearch : React.FC<NavbarSearchProps> = () => {
+  const ref = useRef(null);
+
   const [isSearchVisible, setSearchVisible] = useState(false);
 
-  // noinspection JSUnusedLocalSymbols
-  // const orig = (
-  //   <div className="navbar-end">
-  //     {links && links.map(link => <NavbarLink key={link.href} {...link} />)}
-  //     {buttons && buttons.filter(button => button.label != 'Skip').map(button => <NavbarButton
-  //       key={button.href} {...button} />)}
-  //   </div>
-  // );
+  useEffect(() => {
+    const clickListener  = (e: MouseEvent) => {
+      if (!(ref.current! as any).contains(e.target))
+        setSearchVisible(false);
+    };
+
+    const escapeListener = (e: KeyboardEvent) => {
+      if (e.key === 'Escape')
+        setSearchVisible(false);
+      };
+
+    document.addEventListener("mousedown", clickListener );
+    document.addEventListener('keyup', escapeListener);
+
+    return () => {
+      document.removeEventListener("mousedown", clickListener );
+      document.removeEventListener('keyup', escapeListener);
+    };
+  }, [ref.current]);
 
   return (
     <div className="navbar-item navbar-search">
-      <div className="control">
+      <div className="control" ref={ref}>
         <div className={'dropdown is-right' + (!isSearchVisible ? '' : ' is-active')}>
           <div className="dropdown-trigger">
             <button className="button is-black" aria-haspopup="true" aria-controls="search-menu"
-                    onClick={() => setSearchVisible(!isSearchVisible)}>
+                    onClick={() => {
+                      setSearchVisible(!isSearchVisible);
+                    }}>
               <span className="icon">
                 <i className="fas fa-search" aria-hidden="true" />
               </span>

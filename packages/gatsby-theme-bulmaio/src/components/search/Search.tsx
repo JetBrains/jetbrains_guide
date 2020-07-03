@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'gatsby';
+import { useVisible } from 'react-hooks-visible'
 import lunr from 'lunr';
 import SearchResult from './SearchResult';
 
@@ -32,16 +33,24 @@ interface LunrSearchProps {
   readonly limit?: number
 }
 
-export const Search = ({ limit }: LunrSearchProps) => {
+export const Search: React.FC<LunrSearchProps> = ({ limit }: LunrSearchProps) => {
+  const ref = useRef(null);
+  const [searchInputRef, searchInputVisible] = useVisible((vi) => vi >= 1);
+
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<readonly SearchResult[]>([]);
   const [isActive, setActive] = useState(false);
 
+  useEffect(() => {
+    if (searchInputVisible)
+      (searchInputRef.current! as any).focus();
+  }, [searchInputVisible]);
+
   return (
-    <nav className={`panel ${isActive ? '' : 'is-shadowless'}`}>
+    <nav ref={ref}  className={`panel ${isActive ? '' : 'is-shadowless'}`}>
       <div className="panel-block has-text-centered ">
         <p className="control has-icons-left">
-          <input className="input" type="text" placeholder="Search"
+          <input ref={searchInputRef} className="input" type="text" placeholder="Search" autoFocus={true}
                  value={query}
                  onChange={(event) => {
                    setQuery(event.target.value);
