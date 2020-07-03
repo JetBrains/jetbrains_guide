@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-06-05
+date: 2020-07-15
 title: Shortcuts, Editing, and Completion in Rider
 technologies: [.net, csharp]
 topics: [completion, editing, inspections, navigation]
@@ -18,7 +18,7 @@ longVideo:
 Rider has many keyboard shortcuts, and they all depend on which operating system you are using. Don't be overwhelmed,
 there are two essential shortcuts that help you achieve anything in Rider! They work cross-platform, and across all JetBrains IDE's:
 
-* <kbd>Shift, Shift</kbd>, which brings up [**Search Everywhere**](https://www.jetbrains.com/help/rider/Searching_Everywhere.html). From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
+* <kbd>Shift, Shift</kbd>, which brings up <b><a href="https://www.jetbrains.com/help/rider/Searching_Everywhere.html">Search Everywhere</a></b>. From here, you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 * <kbd>Alt+Enter</kbd>, which brings up a contextual menu with all actions that apply.
 
 Windows, menus and pop-ups will show more keyboard shortcut hints, so you can learn them along the way.

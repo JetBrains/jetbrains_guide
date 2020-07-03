@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-06-05
+date: 2020-07-15
 title: Cloud (Azure) in Rider
 technologies: [.net, csharp]
 topics: [web, debugging]

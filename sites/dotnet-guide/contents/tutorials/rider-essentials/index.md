@@ -1,5 +1,5 @@
 ---
-date: 2020-06-26
+date: 2020-07-15
 title: Rider Essentials
 technologies: [.net]
 topics: [ide]

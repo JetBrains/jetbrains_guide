@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-06-05
+date: 2020-07-15
 title: Refactoring code in Rider
 technologies: [.net, csharp]
 topics: [refactoring]
