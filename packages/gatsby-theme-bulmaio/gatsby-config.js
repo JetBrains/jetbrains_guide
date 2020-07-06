@@ -49,8 +49,8 @@ module.exports = {
           { name: 'title', store: true, attributes: { boost: 20 } },
           { name: 'subtitle', store: true, attributes: { boost: 10 } },
           { name: 'slug', store: true },
-          { name: 'type', store: true },
-          { name: 'excerpt', store: true }
+          { name: 'type', store: false },
+          { name: 'excerpt', store: false }
         ],
         resolvers: {
           Tip: {
