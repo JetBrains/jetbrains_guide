@@ -1,6 +1,6 @@
 ---
 title: Web Development
-subtitle: Working with web technologies
+subtitle: Working with web technologies.
 accent: primary
 icon: fas fa-globe
 ---
