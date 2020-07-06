@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import { ProductReference } from './models';
+import { Resource } from '../../resources/models';
 
 export interface ProductProps {
   data: {
@@ -27,7 +28,17 @@ const Product: FC<ProductProps> = (
         ),
         listing: (
           <div>
-            {resources && resources.map(resource => (
+            {resources && resources
+              .sort((r1: Resource, r2: Resource) => {
+                if (r1.title < r2.title) {
+                  return -1;
+                }
+                if (r1.title > r2.title) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map(resource => (
               <ResourceCard
                 key={resource.slug}
                 thumbnail={resource.thumbnail}
