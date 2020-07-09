@@ -12,6 +12,7 @@ import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
 import BottomNav from '../../components/pagenav/BottomNav';
 import TopNav from '../../components/pagenav/TopNav';
 import VideoPlayer from '../../components/video/VideoPlayer';
+import {TwitterCardPage} from "../../components/layout/MasterLayout";
 
 export interface TutorialProps {
   location: {
@@ -73,6 +74,17 @@ const TutorialStep: FC<TutorialProps> = (
     ]
   } : null;
 
+  // ##### Twitter Card support
+  const twitterCardPage: TwitterCardPage = {
+    title: tutorialStep.title,
+    description: tutorialStep.subtitle ? tutorialStep.subtitle : '',
+    image: tutorialStep.cardThumbnail
+        ? `https://www.jetbrains.com${tutorialStep.cardThumbnail.publicURL}`
+        : tutorialStep.thumbnail
+            ? `https://www.jetbrains.com${tutorialStep.thumbnail.publicURL}`
+            : ''
+  };
+
   // #### Sidebar steps
   const steps: Step[] = inTutorial.tutorialItems.map((item: any) => (
     {
@@ -114,7 +126,7 @@ const TutorialStep: FC<TutorialProps> = (
     <SidebarLayout
       pageTitle={tutorialStep.title}
       subtitle={tutorialStep.subtitle}
-    >
+      twitterCardPage={twitterCardPage}>
       {{
         topNav,
         bottomNav,
@@ -154,7 +166,10 @@ export const query = graphql`
       }
       topics {
         ...ListedTopicFragment
-      }      
+      }            
+      thumbnail {
+        publicURL
+      } 
       cardThumbnail {
         publicURL
       }

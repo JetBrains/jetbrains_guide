@@ -32,7 +32,11 @@ const Tutorial: FC<TutorialProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: tutorial.title,
     description: tutorial.subtitle ? tutorial.subtitle : '',
-    image: tutorial.cardThumbnail ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}` : ''
+    image: tutorial.cardThumbnail
+        ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}`
+        : tutorial.thumbnail
+            ? `https://www.jetbrains.com${tutorial.thumbnail.publicURL}`
+            : ''
   };
 
   // #### Sidebar
@@ -122,7 +126,10 @@ export const query = graphql`
       }
       topics {
         ...ListedTopicFragment
-      }      
+      }
+      thumbnail {
+        publicURL
+      }    
       cardThumbnail {
         publicURL
       }
