@@ -77,7 +77,7 @@ module.exports = {
                 }
             },
             footer: {
-                copyright: 'Copyright © 2000–2020 JetBrains s.r.o.'
+                copyright: 'Copyright © 2000–2020 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.'
             }
         }
     },
