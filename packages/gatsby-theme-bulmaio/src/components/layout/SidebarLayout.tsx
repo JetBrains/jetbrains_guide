@@ -12,7 +12,7 @@ import SiteLayout from './SiteLayout';
 import Heading from '../heading/Heading';
 import { TwitterCardPage } from './MasterLayout';
 import CodeBlock from '../../common/CodeBlock';
-import Action from "../Actions";
+import Action from "../action/Action";
 
 const components = {
   pre: (props: any) => <div {...props} style={{marginBottom: '1rem'}}/>,

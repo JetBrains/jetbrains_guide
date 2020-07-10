@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@types/jest}" />
+    <file url="file://$PROJECT_DIR$" libraries="{jetbrains_guide/node_modules}" />
+    <file url="file://$PROJECT_DIR$/packages/gatsby-theme-bulmaio" libraries="{jetbrains_guide/packages/gatsby-theme-bulmaio/node_modules}" />
+    <file url="file://$PROJECT_DIR$/sites/dotnet-guide" libraries="{jetbrains_guide/sites/dotnet-guide/node_modules}" />
+    <file url="file://$PROJECT_DIR$/sites/goland-guide" libraries="{jetbrains_guide/sites/goland-guide/node_modules}" />
+    <file url="file://$PROJECT_DIR$/sites/pycharm-guide" libraries="{jetbrains_guide/sites/pycharm-guide/node_modules}" />
+    <file url="file://$PROJECT_DIR$/sites/space-guide" libraries="{jetbrains_guide/sites/space-guide/node_modules}" />
+    <file url="file://$PROJECT_DIR$/sites/webstorm-guide" libraries="{jetbrains_guide/sites/webstorm-guide/node_modules}" />
+    <file url="PROJECT" libraries="{@types/jest, jetbrains_guide/node_modules, jetbrains_guide/packages/gatsby-theme-bulmaio/node_modules, jetbrains_guide/sites/dotnet-guide/node_modules, jetbrains_guide/sites/goland-guide/node_modules, jetbrains_guide/sites/pycharm-guide/node_modules, jetbrains_guide/sites/space-guide/node_modules, jetbrains_guide/sites/webstorm-guide/node_modules}" />
   </component>
 </project>

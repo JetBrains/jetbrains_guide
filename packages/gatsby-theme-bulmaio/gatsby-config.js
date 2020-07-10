@@ -7,6 +7,7 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-transformer-yaml`,
     'gatsby-plugin-sass',
+    'gatsby-plugin-mdx-frontmatter',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

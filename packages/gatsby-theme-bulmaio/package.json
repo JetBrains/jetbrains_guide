@@ -19,6 +19,7 @@
     "gatsby-plugin-google-tagmanager": "^2.3.1",
     "gatsby-plugin-lunr": "^1.5.2",
     "gatsby-plugin-mdx": "^1.2.9",
+    "gatsby-plugin-mdx-frontmatter": "^0.0.2",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-sass": "^2.3.1",

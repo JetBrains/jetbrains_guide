@@ -6724,6 +6724,11 @@ gatsby-plugin-lunr@^1.5.2:
     lunr "^2.3.6"
     lunr-languages "^1.1.0"
 
+gatsby-plugin-mdx-frontmatter@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx-frontmatter/-/gatsby-plugin-mdx-frontmatter-0.0.2.tgz#5db9d83bc356b2fcd3b360314f79bbf6a2bbb57a"
+  integrity sha512-nGDVNP7gLRnwyRP3rvt27R327GpeY3Ve3OVjiCmrdgkg6ApWCDMlY1XFfuY4iZDJwZXiuhmqrRZUPY5rV5xPJQ==
+
 gatsby-plugin-mdx@^1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.9.tgz#ea7868fc766c762e54c7edabe9130257d26ee3c0"

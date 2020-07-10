@@ -7,7 +7,7 @@ type Tip implements Node & Resource {
     date: Date @dateformat(formatString: "YYYY-MM-DD")
     hasBody: Boolean
     id: ID!
-    leadin: String
+    leadin: String @mdx
     longVideo: Video
     parent: Node
     poster: String @defaultString(value: "XXXYYY")
