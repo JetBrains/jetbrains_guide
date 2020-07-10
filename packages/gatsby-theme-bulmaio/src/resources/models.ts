@@ -37,7 +37,7 @@ export interface ListedResource {
   products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
-  thumbnail: Thumbnail
+  thumbnail: Thumbnail;
 }
 
 export type ListedResources = ListedResource[];

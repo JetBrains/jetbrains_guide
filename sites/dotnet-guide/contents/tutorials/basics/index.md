@@ -14,4 +14,4 @@ tutorialItems:
   - /tutorials/basics/dapper/
 ---
 
-In **The Basics** series, we'll explore several .NET technologies with a bare-minimum set of knowledge required to be productive. In **1 to 3 minute videos**, we'll go from an idea (💡) to a working example (🎉), showing that we don't have to be an expert to be a effective.
+In **The Basics** series, we'll explore several .NET technologies with a bare-minimum set of knowledge required to be productive. In **1 to 3 minute videos**, we'll go from an idea (💡) to a working example (🎉), showing that we don't have to be an expert to be effective.

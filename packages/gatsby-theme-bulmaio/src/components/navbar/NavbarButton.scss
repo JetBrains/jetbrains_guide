@@ -1,0 +1,10 @@
+@media (max-width: 1023px) {
+  .navbar-end {
+    .button.is-fullwidth-mobile {
+      display: flex;
+      width: calc(100% - 2 * calc(0.75em - 1px));
+      margin-left: calc(0.75em - 1px);
+      margin-right: calc(0.75em - 1px);
+    }
+  }
+}

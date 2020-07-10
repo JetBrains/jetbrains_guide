@@ -74,7 +74,11 @@ const Tip: FC<TipProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: tip.title,
     description: tip.subtitle ? tip.subtitle : '',
-    image: tip.cardThumbnail ? `https://www.jetbrains.com${tip.cardThumbnail.publicURL}` : ''
+    image: tip.cardThumbnail
+        ? `https://www.jetbrains.com${tip.cardThumbnail.publicURL}`
+        : tip.thumbnail
+            ? `https://www.jetbrains.com${tip.thumbnail.publicURL}`
+            : ''
   };
 
   // Videos
@@ -224,6 +228,9 @@ export const query = graphql`
       topics {
         ...ListedTopicFragment
       }      
+      thumbnail {
+        publicURL
+      }
       cardThumbnail {
         publicURL
       }

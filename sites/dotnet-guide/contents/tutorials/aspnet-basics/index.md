@@ -4,7 +4,7 @@ title: Getting Started With ASP.NET
 technologies: [asp.net]
 topics: [web, ide]
 author: khalidabuhakmeh
-subtitle: A set of short videos to understand the basic landscape of an ASP.NET Application
+subtitle: A set of short videos to understand the basic landscape of an ASP.NET Application.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/aspnet-basics/get-started-aspnet/
