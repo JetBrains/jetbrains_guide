@@ -23,6 +23,10 @@ Finally, we can utilize Razor Pages, which uses a conventional folder structure 
 
 Routing is essential to building any non-trivial web application. The advent of endpoints in ASP.NET Core means we get access to route values at all times in our request pipeline, making the task of handling requests and returning responses much simpler. How we register endpoints is up to us, and we have a useful set of options.
 
+### What's Next?
+
+Now that you have seen the basics of ASP.NET, [The Basics Series](../../basics/) will broaden your view of different .NET technologies.
+
 ### See Also
 
 - [Microsoft Docs Routing](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing)

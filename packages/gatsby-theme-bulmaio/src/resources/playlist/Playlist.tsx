@@ -32,7 +32,11 @@ const Playlist: FC<PlaylistProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: playlist.title,
     description: playlist.subtitle ? playlist.subtitle : '',
-    image: playlist.cardThumbnail ? `https://www.jetbrains.com${playlist.cardThumbnail.publicURL}` : ''
+    image: playlist.cardThumbnail
+        ? `https://www.jetbrains.com${playlist.cardThumbnail.publicURL}`
+        : playlist.thumbnail
+            ? `https://www.jetbrains.com${playlist.thumbnail.publicURL}`
+            : ''
   };
 
   // #### Sidebar
@@ -126,7 +130,10 @@ export const query = graphql`
       }
       topics {
         ...ListedTopicFragment
-      }      
+      }
+      thumbnail {
+        publicURL
+      }  
       cardThumbnail {
         publicURL
       }

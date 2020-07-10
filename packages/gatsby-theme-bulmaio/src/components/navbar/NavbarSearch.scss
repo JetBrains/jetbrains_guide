@@ -1,0 +1,29 @@
+@media (max-width: 1023px) {
+  .navbar-search {
+    .dropdown {
+      .dropdown-menu { // .is-right
+        left: 0 !important;
+        right: auto !important;
+      }
+    }
+  }
+
+  #search-menu {
+    min-width: 90vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-search {
+    .dropdown {
+      .dropdown-menu { // .is-right
+        left: auto !important;
+        right: 0 !important;
+      }
+    }
+  }
+
+  #search-menu {
+    min-width: 40rem;
+  }
+}

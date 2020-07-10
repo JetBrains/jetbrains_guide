@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import { AuthorReference } from './models';
+import { Resource } from '../../resources/models';
 
 export interface AuthorProps {
   data: {
@@ -26,7 +27,17 @@ const Author: FC<AuthorProps> = (
         ),
         listing: (
           <div>
-            {resources && resources.map(resource => (
+            {resources && resources
+              .sort((r1: Resource, r2: Resource) => {
+                if (r1.title < r2.title) {
+                  return -1;
+                }
+                if (r1.title > r2.title) {
+                  return 1;
+                }
+                return 0;
+              })
+              .map(resource => (
               <ResourceCard
                 key={resource.slug}
                 thumbnail={resource.thumbnail}

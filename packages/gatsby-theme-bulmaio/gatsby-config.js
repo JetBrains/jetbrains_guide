@@ -38,6 +38,46 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-lunr',
+      options: {
+        languages: [
+          {
+            name: 'en'
+          }
+        ],
+        fields: [
+          { name: 'title', store: true, attributes: { boost: 20 } },
+          { name: 'subtitle', store: true, attributes: { boost: 10 } },
+          { name: 'slug', store: true },
+          { name: 'type', store: false },
+          { name: 'excerpt', store: false }
+        ],
+        resolvers: {
+          Tip: {
+            title: node => node.title,
+            subtitle: node => node.subtitle,
+            slug: node => node.slug,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
+            type: () => 'tip',
+          },
+          Tutorial: {
+            title: node => node.title,
+            subtitle: node => node.subtitle,
+            slug: node => node.slug,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
+            type: () => 'tutorial',
+          },
+          TutorialStep: {
+            title: node => node.title,
+            subtitle: node => node.subtitle,
+            slug: node => node.slug,
+            excerpt: node => node.excerpt ? node.excerpt : node.leadin,
+            type: () => 'tutorialstep',
+          }
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         createLinkInHead: true,
