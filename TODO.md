@@ -249,4 +249,3 @@ sourceNodes event
 
 - Get single implementation covering TutorialStep-in-Tutorial and 
   Tip-In-Playlist for TopNav, BottomNav, and SidebarPanel
-
