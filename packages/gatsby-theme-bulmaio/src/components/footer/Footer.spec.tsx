@@ -5,7 +5,7 @@ import 'jest-dom/extend-expect';
 import Footer, { FooterProps } from './Footer';
 
 export const DUMMY_FOOTER: FooterProps = {
-  copyright: 'copyright1'
+  copyright: 'copyright2'
 };
 
 test('Footer', () => {
