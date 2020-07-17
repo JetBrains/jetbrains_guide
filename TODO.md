@@ -65,7 +65,9 @@ resource
 - Avoid doing so many graphql queries per page (absence of joins)
 
 - Documents with no topics/technologies in frontmatter
+
 ****
+
 - Corpus with no frontmatter with topic or technology
 
 - Clean up all unused bio class names
