@@ -5,11 +5,12 @@ import 'jest-dom/extend-expect';
 import Footer, { FooterProps } from './Footer';
 
 export const DUMMY_FOOTER: FooterProps = {
-  copyright: 'copyright2'
+      copyright: 'copyright2'
 };
 
 test('Footer', () => {
-  const { getByText } = render(<Footer {...DUMMY_FOOTER}/>);
-  const copyright = getByText(DUMMY_FOOTER.copyright);
-  expect(copyright).toBeTruthy();
+  const { getByText } = render(
+      <Footer {...DUMMY_FOOTER}/>);
+      const copyright = getByText(DUMMY_FOOTER.copyright);
+        expect(copyright).toBeTruthy();
 });
