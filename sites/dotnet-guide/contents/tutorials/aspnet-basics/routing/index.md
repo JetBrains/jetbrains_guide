@@ -10,7 +10,7 @@ subtitle: Defining endpoints and URI path handlers
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://www.youtube.com/watch?v=7wOOrnLxuy4
+    url: https://www.youtube.com/watch?v=Or8k6gXBV7E
 ---
 
 Routing allows our ASP.NET applications to handle requests targeted at specific handlers. In ASP.NET Core 3, we saw the introduction of endpoints with different options of registration. All endpoints share two common qualities: a URI pattern and an HTTP method. URI patterns allow us to have constants, placeholders, and constraints to limit request matches. HTTP methods will enable us to restrict our handlers to HTTP methods like GET, POST, and PUT.
