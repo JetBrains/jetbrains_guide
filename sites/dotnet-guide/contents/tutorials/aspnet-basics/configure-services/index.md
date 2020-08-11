@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-05-27
 title: Dependency Injection and ConfigureServices
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [web]
 author: khalidabuhakmeh
 subtitle: Registering ASP.NET services and instances

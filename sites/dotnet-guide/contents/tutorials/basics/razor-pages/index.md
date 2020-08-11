@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-06-05
 title: Basics of Razor Pages
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [web]
 author: khalidabuhakmeh
 subtitle: A complete Razor Pages pipeline.

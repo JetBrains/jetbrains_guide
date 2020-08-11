@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-06-05
 title: Basics of Dapper
 technologies: [.net]
-products: [rider]
+products: [rider,resharper]
 topics: [data]
 author: khalidabuhakmeh
 subtitle: Working with databases using Open Source

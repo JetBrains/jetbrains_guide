@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-05-27
 title: Startup Class Walkthrough
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [ide, web]
 author: khalidabuhakmeh
 subtitle: The beginning of all ASP.NET applications

@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-05-27
 title: Request Pipeline
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [ide, web]
 author: khalidabuhakmeh
 subtitle: Configuring our HTTP handlers in Startup

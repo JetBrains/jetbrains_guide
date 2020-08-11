@@ -3,6 +3,7 @@ date: 2020-06-05
 title: The Basics Series
 technologies: [asp.net, .net, csharp]
 topics: [web, data]
+products: [rider,resharper]
 author: khalidabuhakmeh
 subtitle: A set of short basic walkthroughs of different .NET technologies
 thumbnail: ./thumbnail.png

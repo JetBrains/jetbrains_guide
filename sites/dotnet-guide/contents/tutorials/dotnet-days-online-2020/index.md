@@ -3,6 +3,7 @@ date: 2020-05-13
 title: JetBrains .NET Days Online 2020
 technologies: [.net]
 topics: [web, ide]
+products: [rider,resharper]
 author: maartenba
 subtitle: Session recordings of JetBrains .NET Days Online 2020.
 thumbnail: ./thumbnail.png

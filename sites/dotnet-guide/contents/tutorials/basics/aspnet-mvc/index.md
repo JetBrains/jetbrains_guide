@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-06-05
 title: Basics of ASP.NET MVC
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [web]
 author: khalidabuhakmeh
 subtitle: A complete MVC pipeline with routes, models, views, and controllers.

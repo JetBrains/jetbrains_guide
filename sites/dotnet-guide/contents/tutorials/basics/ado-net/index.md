@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-06-05
 title: Basics of ADO.NET
 technologies: [.net]
-products: [rider]
+products: [rider,resharper]
 topics: [data]
 author: khalidabuhakmeh
 subtitle: Working with databases using DbConnection, DbCommand, and DbDataReader

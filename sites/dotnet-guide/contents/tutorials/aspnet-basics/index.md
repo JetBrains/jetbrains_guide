@@ -3,6 +3,7 @@ date: 2020-05-27
 title: Getting Started With ASP.NET
 technologies: [asp.net]
 topics: [web, ide]
+products: [rider,resharper]
 author: khalidabuhakmeh
 subtitle: A set of short videos to understand the basic landscape of an ASP.NET Application.
 thumbnail: ./thumbnail.png

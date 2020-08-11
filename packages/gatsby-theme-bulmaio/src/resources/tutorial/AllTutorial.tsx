@@ -32,6 +32,7 @@ const AllTutorial: FC<AllTutorialProps> = (
             thumbnail={resource.thumbnail}
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             technologies={{ items: resource.technologies }}
+            products={{ items: resource.products }}
             topics={{ items: resource.topics }}
             date={{ date: resource.date }}
             author={{ thumbnail: resource.author.thumbnail, slug: resource.author.slug, title: resource.author.title }}

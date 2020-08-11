@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2020-05-27
 title: Start A New ASP.NET Web Application
 technologies: [asp.net]
-products: [rider]
+products: [rider,resharper]
 topics: [ide, web]
 author: khalidabuhakmeh
 subtitle: Starting an ASP.NET Project in under a few minutes
