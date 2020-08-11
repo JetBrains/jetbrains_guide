@@ -15,7 +15,7 @@ animatedGif:
 leadin: |
     **Move code the smart way! 👈🙃👉**
 
-     Instead of cutting and pasting lines, and breaking code, let's move things semantically: First we put our caret on the code intended to be moved.<!-- more --> Then, we use **Code | Move Statement Up/Down** to rearrange it. Despite the refactoring name, this also works for methods, properties and other members. Placing the caret at the closing brace of a block statement, like `if` or `while`, even lets us expand and shrink the scope.
+     Instead of cutting and pasting lines, and breaking code, let's move things semantically: First we put our caret on the code intended to be moved.<!--more--> Then, we use **Code | Move Statement Up/Down** to rearrange it. Despite the refactoring name, this also works for methods, properties and other members. Placing the caret at the closing brace of a block statement, like `if` or `while`, even lets us expand and shrink the scope.
 
      We can also reorder parameters of signatures. Again, we just place our caret on a particular parameter, and use **Code | Move Element Left/Right** to specify its new position. Note that if our method already has usages, we might consider using the **Change Signature** refactoring instead, which would update the argument order.
 

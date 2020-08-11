@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Too little space to work with?** 🤨
 
-    If you find yourself frequently resizing tool windows like for VCS or the terminal, then you should try one of the following:
+    If you find yourself frequently resizing tool windows like for VCS or the terminal, then you should try one of the following<!--more-->:
 
     - With the **Undock** view mode a tool window will automatically hide as soon as it loses focus.
     - Using the **Maximize/restore tool window** action will put the active tool window at maximum available space, and will restore to the previous size on the second call.

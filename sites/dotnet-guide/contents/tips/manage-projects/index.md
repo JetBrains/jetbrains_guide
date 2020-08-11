@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Too many projects to deal with?** 😱
 
-    As developers, the appeal of technology draws us to work on many projects, sometimes a few too many. It can be overwhelming to find the project we were working on completing. Luckily, with Rider, we can organize our projects into categories that make sense to us.
+    As developers, the appeal of technology draws us to work on many projects, sometimes a few too many. It can be overwhelming to find the project we were working on completing. Luckily<!--more-->, with Rider, we can organize our projects into categories that make sense to us.
 
     From the Welcome screen, we can right-click the projects pane. From the context menu, we can create a **New Project Group** naming it whatever we want. Finally, we can right-click our projects and move them into the newly created category. 
     

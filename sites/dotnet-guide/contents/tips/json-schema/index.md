@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Want to love JSON and YAML again?!** 😄
 
-    Rider has WebStorm included. Our powerful IDE for all things web-related. This means we can benefit from its excellent JSON schema support, which serves us with **code completion and schema verification** in both JSON and YAML files.
+    Rider has WebStorm included. Our powerful IDE for all things web-related. This means we can benefit from its excellent JSON schema support, which<!--more--> serves us with **code completion and schema verification** in both JSON and YAML files.
 
     Most of the times, schemas are detected automatically, but they can also be manually selected from the status bar. In JSON files we can also specify the `$schema` top-level property.
 

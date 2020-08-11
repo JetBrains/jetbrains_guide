@@ -15,7 +15,7 @@ leadin: |
 
     👾 **Rider meets Unity3D** 🎮
 
-    Two of the most outstanding reasons for using Rider as a Unity developer:
+    Two of the most outstanding reasons for using Rider as a Unity developer<!--more-->:
     - **Reduced context switches** between your IDE and the Unity editor. Rider duplicates many of the frequently accessed Unity editor parts so that you don't find yourself tabbing through applications. This includes the explorer view, play-mode controls, test execution/visualization and more.
     - **Deep knowledge about Unity engine code** to help improving game performance. Rider continuously receives new code inspections that detect common mistakes specifically for the Unity platform. Refactorings and symbol searches even consider non-C# references, like in YAML files. Indicators tell us about hot paths in our code and the built-in profiler helps nailing down bottlenecks.
 

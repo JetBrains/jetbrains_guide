@@ -12,7 +12,7 @@ screenshot: './13-cleanup-namespaces.png'
 leadin: |
     **You know that feeling, right?** 😣
 
-    We're just about to commit our changes and then realize that we have some code smells or dead code left 😵 But there is nothing to worry about! Rider's integrated **side-by-side diff viewer** allows to fix them right from where we are and even in bulk!
+    We're just about to commit our changes and then realize that we have some code smells or dead code left 😵 But there is nothing to worry about! Rider's integrated **side-by-side diff viewer** allows to<!--more--> fix them right from where we are and even in bulk!
 
     Feel the magic of having VCS support in an IDE! 🥰
 

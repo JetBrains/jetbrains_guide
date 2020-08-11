@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     🔍 **Are you looking for something?** 🤷🏻‍♂️
 
-    Most of the UI elements are searchable by just starting to type the search term. This includes the solution explorer, recent files popup, find usages window and many more. Using the arrow keys we can navigate through the filtered result set.
+    Most of the UI elements are searchable by just starting to type the search term. This includes the solution explorer, recent files popup, find usages window and many more.<!--more--> Using the arrow keys we can navigate through the filtered result set.
 
     Try it next time!️️️ 🕵🏻‍♀️
 

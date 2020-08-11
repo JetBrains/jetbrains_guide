@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **How do these C# 8 features work again?** 🤔
 
-    Learning new language constructs with Rider is just a matter of hitting **Alt-Enter**. Convert a `switch` statement to `switch` expression? Alt-Enter! Prefer compound assignments instead of simple assignments? Alt-Enter! Make use of `IAsyncDisposable` and `using` declarations? You know what – Alt-Enter! 🙃
+    Learning new language constructs with Rider is just a matter of hitting **Alt-Enter**. Convert a `switch` statement to `switch` expression? Alt-Enter! Prefer compound assignments<!--more--> instead of simple assignments? Alt-Enter! Make use of `IAsyncDisposable` and `using` declarations? You know what – Alt-Enter! 🙃
 
     Note that most **quick-fixes can be applied in scopes**, for instance in the current method, type, file, or even for the whole solution.
 

@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Working in a team or at different places?** 👥 🖥
 
-    Whenever we change settings, we can decide where they should be persisted. There are **3 layers by default**: local machine, solution team-shared, and solution personal. Settings like code formatting or code inspections are particularly suitable to be saved in the team-shared layer and committed to the repository. Doing so ensures that our code is always consistently structured and allows our CI to use `inspectcode.exe` to create an **insightful report** for existing code smells.
+    Whenever we change settings, we can decide where they should be persisted. There are **3 layers by default**: local machine, solution team-shared, and solution personal.<!--more--> Settings like code formatting or code inspections are particularly suitable to be saved in the team-shared layer and committed to the repository. Doing so ensures that our code is always consistently structured and allows our CI to use `inspectcode.exe` to create an **insightful report** for existing code smells.
 
     Let's keep our code base shiny! ☀️🌈
 

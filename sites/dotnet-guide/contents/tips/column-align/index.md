@@ -14,7 +14,7 @@ animatedGif:
 leadin: |
     **Ad-hoc formatting or everywhere?** 📐
 
-    Aligning properties in columns can greatly improve readability for DTOs or vector data types. We can also align binary expressions, invocations and many more constructs. However, often we don't want to apply such formatting across our whole code base, but in very particular cases. Using **formatter comments**, we can format our code just for a specific scope:
+    Aligning properties in columns can greatly improve readability for DTOs or vector data types. We can also align binary expressions, invocations and many more constructs. However<!--more-->, often we don't want to apply such formatting across our whole code base, but in very particular cases. Using **formatter comments**, we can format our code just for a specific scope:
 
     ```
     public class PersonDto

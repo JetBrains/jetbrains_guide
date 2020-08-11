@@ -26,3 +26,30 @@ leadin: |
     - [Local History](https://www.jetbrains.com/help/rider/local_history.html)
     - [Work with Context](https://www.jetbrains.com/help/idea/managing-tasks-and-context.html#work-with-context)
 ---
+
+sdfpskdfpokspdofksdpfk
+
+```html
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @Model.Name</h1>
+</div>
+
+<form method="post" asp-page="Index">
+  <div class="form-group">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" placeholder="Enter Name" autocomplete="off" />    
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
+- [Microsoft Docs ASP.NET Razor pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1&tabs=visual-studio)
+- [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
+- [.NET](https://dot.net/)
+
