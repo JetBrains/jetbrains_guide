@@ -10,7 +10,9 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/settings-editor-general.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.jpeg
+animatedGif:
+  file: ./tip.gif
+  width: 600
+  height: 300
 leadin: |
-  Want to enable soft wraps in all *.html* or all *.md* files? You can 
-  configure soft wraps for specific file types in *Preferences/Settings | Editor | General*.
+  Enable soft wraps for the file types that tend to have lots of long lines (*Preferences/Settings | Editor | General > Soft-wrap files*). With the soft wrapping on, the IDE will display those lines wrapped in the editor without adding line breaks.
