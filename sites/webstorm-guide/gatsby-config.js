@@ -59,7 +59,7 @@ module.exports = {
             {
               accent: 'light',
               href: 'https://www.jetbrains.com/webstorm/download/',
-              label: 'Skip'
+              label: 'Get WebStorm'
             }
           ],
           links: [
