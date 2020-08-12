@@ -3,7 +3,7 @@ hasBody: true
 date: 2019-04-22
 title: Reword Commit Message
 technologies: []
-topics: [vcs]
+topics: [vcs, coverage, database, debugging, editing, ide, javascript, navigation, navigationbar, python, running]
 author: pwe
 subtitle: Change the wording in your last commit message, after you committed.
 seealso:
