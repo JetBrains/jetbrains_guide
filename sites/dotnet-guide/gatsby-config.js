@@ -1,5 +1,8 @@
 module.exports = {
   siteMetadata: {
+    title: '.NET Guide',
+    description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
+    siteUrl: 'https://www.jetbrains.com/dotnet/guide/', // Used by feed
     theme: {
       helmet: {
         siteTitle: '.NET Guide'
