@@ -14,7 +14,8 @@ export function getOS() {
     return 'winlin';
   }
   // Otherwise, sniff the userAgent and return the platform
-  return 'mac';
+  const ua =  window['navigator'].userAgent;
+  return ua.indexOf("Mac") != -1 ? 'mac' : 'winlin';
 }
 
 export interface ActionEntry {
