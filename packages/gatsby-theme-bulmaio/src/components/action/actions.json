@@ -1,0 +1,12 @@
+{
+  "FindInPath": {
+    "description": "Find In Path",
+    "winlin": "Ctrl+Shift+F",
+    "mac": "Cmd+Shift+F"
+  },
+  "FindAction": {
+    "description": "Find Action",
+    "winlin": "Ctrl+Shift+Foo",
+    "mac": "Alt+Cmd+O"
+  }
+}

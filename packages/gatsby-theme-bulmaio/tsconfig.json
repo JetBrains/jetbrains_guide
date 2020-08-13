@@ -20,6 +20,7 @@
     "noUnusedParameters": false,
     "preserveConstEnums": true,
     "removeComments": true,
+    "resolveJsonModule": true,
     "sourceMap": false,
     "strictNullChecks": true,
     "target": "esnext",
