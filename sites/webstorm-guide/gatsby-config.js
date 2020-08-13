@@ -1,5 +1,9 @@
 module.exports = {
   siteMetadata: {
+    // Used by feed
+    title: 'WebStorm Guide',
+    description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
+    siteUrl: 'https://www.jetbrains.com/webstorm/guide/',
     theme: {
       helmet: {
         siteTitle: 'WebStorm Guide'
