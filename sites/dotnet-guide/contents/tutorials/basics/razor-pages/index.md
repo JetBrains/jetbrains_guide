@@ -33,7 +33,7 @@ All snippets are included in their final form. They exclude namespaces, as those
 
 The following view is located under `/Pages/Index.cshtml`.
 
-```html
+```text
 @page
 @model IndexModel
 @{
