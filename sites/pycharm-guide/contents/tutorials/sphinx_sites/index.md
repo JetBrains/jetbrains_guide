@@ -45,8 +45,6 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
 - Show how easy it is to switch to Markdown, and what kind of power you then get
 
 - Cover Sphinx's "special sauce": the data model of doctrees and references that change "pile of pages" into an interconnected site
-<<<<<<< HEAD
-=======
 
 ## Outline
 
@@ -118,4 +116,3 @@ Now that we've introduced some features, let's revisit this.
 - Extensions
 - Internals
 
->>>>>>> 49401428 (Draft an outline)
