@@ -31,32 +31,92 @@ Each maps to a tutorial section with a video, a writeup, and working code.
 
 - Five minute overview video showing everything in the tutorial
 - Get people oriented with the who/what/why
+- You can use .md and .rst
+
 
 ## Setup
 
 - A simple directory with requirements.txt containing Sphinx, MyST, livereload
-- Run sphinx-quickstart
+- Run sphinx-quickstart from command line
+    - Explain generated files and dirs, including empty    
+- `make html` and right-click to open `_build\html\index.html` in browser
 - Edit `conf.py` to mystify (ha, that's funny)
+    - `extensions = ["myst_parser"]`
+- Make `page1.md` and link into toctree
 - A simple `livereload` runner for easier authoring
+- Clean up and simplify
+    - conf.py
+    - index.md
 
 ## Simple Page
 
 - Basic markdown rules
+    - Implements [CommonMark](https://commonmark.org)
+    - Bold, Italics, pre, quoted text
+    - Lists
+    - Links
+    - Headings (and what that means)
 - Add an image and show image support
+    - Show that it got copied to the _build/html/_images
+    - Mention the expanded, non-CommonMark support
 
 ## More Pages
 
 - Introduce some of the rst/sphinx integration
-- How linking works
-    - Warning when missing
-    - Get the title from the target
+- [Image](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#syntax-images)
 - toctree
+    - Convert index.rst -> index.md
+        ```
+      .. toctree::
+       :maxdepth: 2
+       :caption: Contents:
+    
+      # Indices and tables
+    
+    * :ref:`genindex`
+    * :ref:`modindex`
+    * :ref:`search`
+      ```
 - code-block and literalinclude
 
-## Documentation
+## Linking
+
+- How linking works
+    - Warning when missing
+- Get the title from the target
+- Link to a heading
+- Other kinds of links
+    - ref
+- Previous/Next
+
+
+## Sidebar: How MyST Works
+
+## Extended MyST Syntax
+
+- We saw some examples in "More Pages"
+- Let's give a canonical tour
+- Frontmatter YAML becomes docinfo
+- Directive
+    - These are extension points
+    - Use [caption example](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#parameterizing-directives)
+- Math
+- Line comment
+- Code fence
+- Role
+    - These are [extension points](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#roles-an-in-line-extension-point)
+    - Example from there
+- Target
+- Link
+- eval-rst
+- Admonition special syntax
+
+
+## Use for Documentation
 
 - Make a module at root
 - Autodoc
+- Impact of markdown
 
 ## Intersphinx
 
@@ -92,3 +152,9 @@ Now that we've introduced some features, let's revisit this.
 - Extensions
 - Internals
 
+# Notes
+
+- Emphasize at the top that we are building a site, not documenting a project
+
+    - Don't make docs dir
+    
