@@ -1,6 +1,10 @@
 ---
 type: TutorialStep
+<<<<<<< HEAD
 date: 2021-04-16
+=======
+date: 20202-09-10
+>>>>>>> 3577574f (Move outline to individual pages.)
 title: Linking Between Sites with Intersphinx
 technologies: []
 topics: []

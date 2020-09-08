@@ -5,7 +5,7 @@ technologies: [sphinx]
 topics: []
 author: pwe
 subtitle: Sphinx is great for docs. But it's also great for information-rich websites. With MyST, you can use Markdown with Sphinx.
-thumbnail: ./python-logo.png
+thumbnail: thumbnail.jpeg
 tutorialItems:
   - /tutorials/sphinx_sites/setup/
   - /tutorials/sphinx_sites/basic_formatting/
@@ -40,7 +40,7 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
 
 ## Goals
 
-- Quickly get oriented with Sphinx for static sites, beyond just documentation
+- Quickly get oriented with Sphinx for static sites
 
 - Show how easy it is to switch to Markdown, and what kind of power you then get
 

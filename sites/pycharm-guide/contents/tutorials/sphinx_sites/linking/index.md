@@ -6,7 +6,7 @@ technologies: []
 topics: []
 author: pwe
 subtitle: Sphinx turns links into structure, which turns out to be very valuable.
-thumbnail: ../python-logo.png
+thumbnail: ./thumbnail.png
 ---
 
 Websites have links, of course, and static site generators can generate those links for you.
