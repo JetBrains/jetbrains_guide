@@ -35,6 +35,7 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
         - and thus, not filename when you rename or re-arrange
     - Linking into code
     - Linking between sites
+    - Other formats
     - Other "knowledge base" kinds of features
 - You can use .md and .rst
 
