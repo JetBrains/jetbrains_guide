@@ -271,5 +271,7 @@ Then replace its contents with the following:
 
 `embed:tutorials/sphinx_sites/setup/index.md`
 
-You might need to restart your `livereload` script.
+Two specific notes: `Contents` needs to be in quotes and the `toctree` options need to be de-dented.
+Also, you might need to restart your `livereload` script.
+
 If all goes well, you won't notice anything different in your browser, and you are now running a Sphinx site using Markdown.
