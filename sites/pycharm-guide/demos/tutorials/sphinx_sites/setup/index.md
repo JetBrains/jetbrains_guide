@@ -1,4 +1,4 @@
-# Welcome to My Site
+# Welcome to sphinx_sites
 
 ```{toctree}
 :maxdepth: 2
