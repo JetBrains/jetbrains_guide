@@ -76,7 +76,7 @@ We can see that the string **"Hello World!"** is hard-coded in our application. 
 
 Our first step is to create a new resource file. We can start by creating a folder named `Resources` at the root of our console application. Within the folder, let's make a new file called `Program.resx`. Naming files based on the elements we're localizing is an excellent practice to get into the habit of doing. It becomes essential as our application grows in size and complexity.
 
-![a resource file](1-resource-file.png)
+![A resource file](1-resource-file.png)
 
 In our editor, we'll notice that our `"Hello, World!"` string know shows a hint. Using Rider, we can now move this value to our newly created resource file using the "Quick Fix" menu.
 
