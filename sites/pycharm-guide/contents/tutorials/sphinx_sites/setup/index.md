@@ -1,35 +1,82 @@
 ---
 type: TutorialStep
-date: 20202-09-10
+date: 2020-09-10
 title: Sphinx Setup
 technologies: [sphinx]
 topics: []
 author: pwe
 subtitle: Make a project and virtual environment with dependencies, then make a simple Sphinx site.
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
 Sphinx can be added to an existing Python application or library to provide documentation.
 But it can also be used as the project itself -- for example, a website.
-In this tutorial step we start a new website as a new Python project, using Sphinx.
+In this tutorial step we start a new *website* as a new Python project, using Sphinx.
 
 # New Project
 
 Let's start from...well, the beginning: an empty directory, into which we will slowly build a website.
 
-- New directory
-- Optional VCS
-    - git init
-- Virtual environment
-- Open in editor
-- requirements.txt with Sphinx
-- pip install
-- Confirm sphinx-build
+First, let's make a new directory and change into it:
+
+```bash
+$ mkdir sphinx_site
+$ cd sphinx_site
+```
+
+*Note: We're using macOS/Linux/WSL command shell syntax in this tutorial.*
+
+Projects should work with a [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for isolation.
+Real Python has a [nice primer on virtual environments](https://realpython.com/python-virtual-environments-a-primer/) with the why, what, and how.
+Let's make a new virtual environment, stored inside our project in the `.venv` directory.
+We'll then "activate" it, which changes our command path to first look in this virtual environment's `bin`:
+
+```bash
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+```
+
+`pip` is Python's package installer. 
+It's always good to update your `pip`.
+Note that in the following, thanks to the `source` line above, our shell is using `python3` from the virtual environment directory:
+
+```bash
+$ pip install --upgrade pip
+```
+
+Our blank, new project is now ready for a Sphinx installation.
+
+## Installing Sphinx
+
+Open this project directory in your favorite editor.
+We'll install our packages by editing a new `requirements.txt` file, to store our dependency listing.
+For now, put the following line in it:
+
+```
+sphinx
+```
+ 
+We can now, using our activated shell, use `pip` to install our dependencies:
+
+```bash
+$ pip install -r requirements.txt
+```
+
+Sphinx has a number of dependenices itself, so this might take a while to get all the packages.
+When done, let's confirm that Sphinx is installed:
+
+```bash
+$ ls .venv/bin/sphinx-quickstart
+```
+
+Sphinx has a number of commands (implemented in Python.)
+These are added to your virtual environments `bin` directory.
+If you see `sphinx-quickstart`, your in good shape.
 
 # Make a Sphinx Site
 
 We're all set up...time to make a site.
-Sphinx ships with a site generator command called `sphinx-quickstart` which is now in the `bin` directory of your virtual environment.
+Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/master/usage/quickstart.html) called `sphinx-quickstart` which is now in the `bin` directory of your virtual environment.
 
 Let's run it and answer some questions, accepting most of the defaults:
 
@@ -83,14 +130,16 @@ Our directory now has a number of items:
 
 - Empty directories for `_build` (generated files), `_static` (custom site assets), and `_templates` (custom templates).
 
-*Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored.
+*Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored.*
 
-We are actually ready to build our site.
+## Building (and Rebuilding)
+
+We are ready to build our site.
 On macOS or Linux, run `make html` to generate the `html` "builder".
 (As `sphinx-quickstart` noted at the end, Sphinx supports different builders for different kinds of output.)
 
 Uh oh, our `.venv` was picked up as part of our site!
-Easy fix, and one that introduces the Sphinx configuration file.
+Easy fix, and one that introduces the [Sphinx configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html).
 Open `conf.py` and make a change to `exclude_patterns`, adding `.venv` at the end:
 
 ```python
@@ -126,7 +175,7 @@ The `-b html` option chooses the `html` builder.
 The `.` says the current directory is has the Sphinx sources and the `conf.py`.
 Finally, the last argument says to write the `html` output to the `_build/html` build directory.
 
-We can pass another option, saying to do a full build instead of incremental:
+We can pass another option, saying to do a *full* build instead of incremental:
 
 ```bash
 $ sphinx-build -b html -E . _build/html
@@ -141,7 +190,7 @@ updating environment: [new config] 1 added, 0 changed, 0 removed
 # `livereload` Server
 
 Other static site generators (SSGs) have nice authoring servers: you type in some stuff, a build happens, and the browser reloads automatically.
-That helps during a tutorial, so let's do something similar for Python with the `livereload` package.
+That helps during a tutorial, so let's do something similar for Python with the [livereload package](https://pypi.org/project/livereload/).
 
 First, install `livereload` into your virtual environment.
 We'll do so by adding it to `requirements.txt`.
@@ -219,12 +268,10 @@ extensions = [
 ]
 ```
 
-With this in place, stop and restart our `.venv/bin/python run_livereload.py` from above.
-
 Our site can now speak both RST and Markdown!
 Let's add a `page1.md` file alongside `index.rst`:
 
-```markdown
+```
 # Page 1
 
 Hello, Page 1.
@@ -247,7 +294,7 @@ Sphinx works by linking files into the "toctree", so edit the `toctree` directiv
    page1
 ```
 
-*Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing.
+*Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing.*
 
 Our browser now shows a link to `Page 1`:
 

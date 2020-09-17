@@ -1,8 +1,32 @@
-# Static Sites With Sphinx and Markdown
+---
+date: 2020-09-10
+title: Static Sites With Sphinx and Markdown
+technologies: [sphinx]
+topics: []
+author: pwe
+subtitle: Sphinx is great for docs. But it's also great for richly information-rich websites. With MyST, you can use Markdown with Sphinx.
+thumbnail: ./python-logo.png
+tutorialItems:
+  - /tutorials/sphinx_sites/setup/
+  - /tutorials/sphinx_sites/simple_page/
+  - /tutorials/sphinx_sites/more_pages/
+  - /tutorials/sphinx_sites/linking/
+  - /tutorials/sphinx_sites/documentation/
+  - /tutorials/sphinx_sites/intersphinx/
+  - /tutorials/sphinx_sites/customizing/
+  - /tutorials/sphinx_sites/website/
+  - /tutorials/sphinx_sites/non_html/
+  - /tutorials/sphinx_sites/deploy/
+---
 
-Everybody knows Sphinx for documenting project, Python and otherwise.
-But not everybody thinks of Sphinx for the rest of a site.
-With the arrival of full Markdown support via MyST, and with static site generators having a renaissance, it's time to give Sphinx a second look.
+Everybody knows [Sphinx](https://www.sphinx-doc.org/en/master/) for documenting projects, Python and otherwise.
+But few think of Sphinx for the *rest* of a website.
+Why?
+Because Sphinx traditionally mean authoring with [reStructuredText (RST)](https://docutils.sourceforge.io/rst.html) instead of Markdown.
+While RST is very powerful, it's a bit quirky, and nowhere near the popularity of Markdown.
+
+But with the arrival of full Markdown support via [MyST](https://myst-parser.readthedocs.io/en/latest/), and with static site generators having a renaissance, it's time to give Sphinx a second look.
+Sphinx is an "information-rich" static site generator, with rich linking and many other features to author.
 
 This tutorial shows authoring Sphinx sites using Markdown and what it has to offer versus other approaches.
 
@@ -23,7 +47,7 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
 - Cover Sphinx's "special sauce": the data model of doctrees and references that change "pile of pages" into an interconnected site
 
 
-### Intro Video
+## Intro Video
 
 - Five minute overview video showing everything in the tutorial
 - Get people oriented with the who/what/why
@@ -39,27 +63,6 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
     - Other "knowledge base" kinds of features
 - You can use .md and .rst
 
+## TODO
 
-
-## Setup
-
-## Simple Page
-
-## More Pages
-
-## Linking
-
-## Use for Documentation
-
-## Intersphinx
-
-## Customizing
-
-## Homepage and Blog
-
-
-## Non-HTML
-
-## Deploy to RTD
-
-## Why Sphinx?
+- Add (somewhere) something about internal heading contents in a document

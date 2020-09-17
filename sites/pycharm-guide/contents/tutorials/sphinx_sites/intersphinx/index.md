@@ -6,7 +6,7 @@ technologies: []
 topics: []
 author: pwe
 subtitle: TODO
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
 - One of those amazing, Sphinx-only things

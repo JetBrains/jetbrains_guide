@@ -6,7 +6,7 @@ technologies: []
 topics: []
 author: pwe
 subtitle: TODO
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 - How linking works
     - Warning when missing
@@ -18,6 +18,8 @@ thumbnail: ./thumbnail.png
     - Warning on a bad target
     - Or, use the Markdown syntax `[my text](header_target)`
 - Link to a heading
+    - By default has a "permalink" and is part of the toctree
+    - With `sphinx.ext.autosectionlabel` extension, can []
     - Notice that Sphinx puts little on-hover icons
     - Put in `(a_heading)=` above the heading
     - Use `{ref}`
