@@ -4,7 +4,7 @@ date: 2020-06-05
 title: Localizing ASP.NET Applications
 technologies: [.net, asp.net]
 products: [rider,resharper]
-topics: [data]
+topics: [data,web,editing,inspections]
 author: khalidabuhakmeh
 subtitle: Working with Cultures, Resources, & ASP.NET
 thumbnail: ./thumbnail.png
@@ -255,7 +255,6 @@ Some of the resource utilized to write this tutorial are listed below:
 - .NET Core tutorials - https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/
 - Microsoft Documentation - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1
 - Alan Edwardes - https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/)
-
 
 
 
