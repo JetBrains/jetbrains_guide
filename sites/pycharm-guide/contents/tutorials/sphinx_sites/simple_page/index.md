@@ -6,12 +6,12 @@ technologies: [sphinx]
 topics: []
 author: pwe
 subtitle: Markdown is a simple formatting language. Let's see it in use in Sphinx.
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
-Unlike Sphinx's original reStructuredText, Markdown is pretty simple.
-But even that simplicity has some cool impact when used in Sphinx.
-Let's look at basic formatting and images.
+Unlike Python's original [reStructuredText](https://docutils.sourceforge.io/rst.html), Markdown is pretty simple.
+But even that simplicity has some cool benefits when used in Sphinx.
+Let's look at basic formatting and images in Markdown, and how it connects to Sphinx.
 
 ## Background
 
@@ -25,7 +25,7 @@ Let's visit our `http://127.0.0.1:5500/page1.html` URL in the browser and edit o
 
 As you'd expect, bold and italics works fine. Add the following line:
 
-```markdown
+```
 I am *italics* and I am **bold**.
 ``` 
 
@@ -33,18 +33,11 @@ In your browser you should see this new paragraph with `<em>` and `<strong>` for
 
 Preformatted text -- aka inline `<code>` and block `<pre>` -- also work as expected:
 
-```
-Some `valid code` inline but also in a block:
-
-```markdown
-Preformatted text
-in here.
-```
-```
+`embed:tutorials/sphinx_sites/_snippets/snippet1.txt`
 
 Indentation also works as as "quoted" text:
 
-```markdown
+```
 > This text
 > is indented.
 >> And this is indented more.
@@ -52,7 +45,7 @@ Indentation also works as as "quoted" text:
 
 Both bulleted and numbered lists:
 
-```markdown
+```
 - A
 - Bulleted
 - List
@@ -65,28 +58,28 @@ Both bulleted and numbered lists:
 Want to link to the Python home page?
 Links follow the regular Markdown syntax:
 
-```markdown
+```
 The [Python homepage](https://www.python.org/).
 ```
 
 You can also link to other pages in your site:
 
-```markdown
+```
 This site's [homepage](./index)
 ```
 
 Want a sneak-peak at the awesomeness in the next section?
-Give this a try, and if you're a non-Sphinx Markdown person, ask yourself how `Welcome to Sphinx Sites` got in there:
+Give this a try, and if you're a non-Sphinx Markdown person, ask yourself how `Welcome to Sphinx Sites` got in the built page:
 
-```markdown
+```
 This site's [](./index)
 ```
 
-tl;dr Sphinx has some rich interlinking facilities.
+Lesson: Sphinx has some rich interlinking facilities.
 
 One last CommonMark syntax to cover...headings:
 
-```markdown
+```
 ## Subheading
 
 Subheading text.
@@ -98,23 +91,30 @@ More subheading text.
 
 ## Images
 
-Let's get the Python logo from `https://www.python.org/static/img/python-logo.png` loaded into our page.
+Let's get the Python logo from `https://www.python.org/static/community_logos/python-logo.png` loaded into our page.
 We'll use the standard Markdown image support to point to a URL:
 
-```markdown
-![Python Logo](https://wiki.python.org/wiki/europython/img/python-logo.gif)
+```
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 ```
 
 While this works well, perhaps we want it served locally.
-Download that URL to a file named `python-logo.gif`, in the same directory as `page1.md`, and add the following:
+Download that URL to a file named `python-logo.png`, in the same directory as `page1.md`, and add the following:
 
 Hmm, interesting!
 As part of the standard Markdown syntax, Sphinx copied that image to the build directory and inserted a `src` pointing to its build URL.
-That URL, in this case, is `http://127.0.0.1:5500/_images/python-logo.gif`.
+That URL, in this case, is `http://127.0.0.1:5500/_images/python-logo.png`.
 
 Sphinx -- meaning RST -- has a more powerful image directive with options beyond just "alt".
 This is available in the [Optional MyST Syntax](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html), specifically the [expanded image support](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#syntax-images).
-Specificall, you can control the image height, width, alignment, and more.
+Specifically, you can control the image height, width, alignment, and more.
+
+What, then, are [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)?
+These are reStructuredText extensions that take optional parameters and return some content -- HTML for the HTML builder, etc.
+They also have semantic meaning in the document.
+
+Directives are blocks.
+For inline extensions, RST provides [roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) which do some of the same things.
 
 ## What's The Meaning Of It All?
 

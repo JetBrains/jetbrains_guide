@@ -303,7 +303,7 @@ If your page doesn't update, it's because Sphinx isn't rebuilding on changes to 
 Edit `index.md` and save, and you'll see the sidebar updated with the value of `project`.
 =======
 subtitle: TODO
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
 - Simple customizing

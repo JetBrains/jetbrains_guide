@@ -25,9 +25,9 @@ in here.
 
 The [Python homepage](https://www.python.org/).
 
-This site's [homepage](./index)
+This site's [homepage](index)
 
-This site's [](./index)
+This site's [](index)
 
 ## Subheading
 
@@ -37,7 +37,7 @@ Subheading text.
 
 More subheading text.
 
-![Python Logo](https://wiki.python.org/wiki/europython/img/python-logo.gif)
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png)
 
-![Local Python Logo](./python-logo.gif)
+![Local Python Logo](python-logo.png)
 

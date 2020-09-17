@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "sites/pycharm-guide/deploy",
+    "public": "deploy",
     "ignore": [
       "firebase.json",
       "**/.*",

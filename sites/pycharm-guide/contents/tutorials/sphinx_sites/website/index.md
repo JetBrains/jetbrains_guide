@@ -6,7 +6,7 @@ technologies: []
 topics: []
 author: pwe
 subtitle: TODO
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
 More than just a docs site, show some other things you do when building a full site.

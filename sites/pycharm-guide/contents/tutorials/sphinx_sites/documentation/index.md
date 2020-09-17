@@ -310,7 +310,7 @@ technologies: []
 topics: []
 author: pwe
 subtitle: TODO
-thumbnail: ./thumbnail.png
+thumbnail: ../python-logo.png
 ---
 
 - code-block
