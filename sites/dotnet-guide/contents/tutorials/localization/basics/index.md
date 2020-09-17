@@ -109,7 +109,7 @@ Let's get to some German. In the **Localization Manager**, we need to click the 
 
 Let's type **German** or **de**, the culture code, and hit **OK**. The **Localization Manager** now has a **German** column. Let's add a translation of **"Hallo Welt"**.
 
-![add new culture in localization manager](5-add-new-culture.png)
+![Add new culture in localization manager](5-add-new-culture.png)
 
 We'll also notice that we now have a new resource file named `Program.de.resx` in the solution explorer. The naming of files based on culture is a necessary mechanism for selecting the correct culture.
 
