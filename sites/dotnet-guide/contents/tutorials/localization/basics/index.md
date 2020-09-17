@@ -105,7 +105,7 @@ namespace HelloWorld
 
 Let's get to some German. In the **Localization Manager**, we need to click the plus (+) symbol located over the left-hand pane. It is to the left of the phrase **"Group by"**. Clicking the icon, we see a dialog box with a text input. 
 
-![localization manager](4-localization-manager.png)
+![Localization manager shows all resource strings and lets you edit them](4-localization-manager.png)
 
 Let's type **German** or **de**, the culture code, and hit **OK**. The **Localization Manager** now has a **German** column. Let's add a translation of **"Hallo Welt"**.
 
