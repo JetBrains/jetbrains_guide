@@ -113,7 +113,7 @@ Let's type **German** or **de**, the culture code, and hit **OK**. The **Localiz
 
 We'll also notice that we now have a new resource file named `Program.de.resx` in the solution explorer. The naming of files based on culture is a necessary mechanism for selecting the correct culture.
 
-![add german culture](6-german-culture.png)
+![Add German culture](6-german-culture.png)
 
 Great! We're so close to the end. Let's start changing the culture in our `Program`. Our generated interface has a `Culture` static property that we'll set using a new `CultureInfo` instance with a value of **"de"**.
 
