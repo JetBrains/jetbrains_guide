@@ -25,7 +25,7 @@ The [`CultureInfo` class](https://docs.microsoft.com/en-us/dotnet/api/system.glo
 
 > The information includes the names for the culture, the writing system, the calendar used, the sort order of strings, and formatting for dates and numbers. [-- Microsoft](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo)
 
-Using a unique culture can dramatically impact a user's experience, and we should always store our information in an invariant culture format to avoid conversion issues.
+Using a unique culture can dramatically impact a user's experience, and we should always store our information in [the invariant culture format](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netcore-3.1) to avoid conversion issues.
 
 ## Resource Files
 
@@ -37,7 +37,7 @@ The first essential element of localization is the resource file, commonly recog
 </data>
 ```
 
-Resource values are usually `string` values, but there are no restrictions on what we can store in our resource files. We can choose to store images and any other serializable data in a `resx` file. The .NET compilation process embeds our resources into our final assembly artifacts using a `ResXFileCodeGenerator` custom tool.
+Resource values are usually `string` values, but there are no restrictions on what we can store in our resource files. We can choose to store images and any other serializable data in a `resx` file. The .NET compilation process embeds our resources into our final assembly artifacts using a `ResXFileCodeGenerator` custom tool. When creating resource files in Rider and Visual Studio with ReSharper, the tool will be automatically set and run when changes to the resource file are detected.
 
 ## Resource Manager
 
