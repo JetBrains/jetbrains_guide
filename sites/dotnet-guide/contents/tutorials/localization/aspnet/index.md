@@ -52,7 +52,7 @@ We follow up on the call to add localization by configuring the `RequestLocaliza
 We should take note of a few critical elements:
 
 1. We set the default culture to `en-US`.
-1. We are choosing to support `en-Us` (US English), `de-DE` (German), and `ja-JP` (Japanese) cultures.
+1. We are choosing to support `en-US` (US English), `de-DE` (German), and `ja-JP` (Japanese) cultures.
 1. We remove the `AcceptLanguageHeaderRequestCultureProvider`. This provider sets the culture based on the client's HTTP locale via a header value. In this project, we'll be letting the user choose their culture.
 
 Finally, we add view localization to the services collection.
@@ -255,7 +255,6 @@ Some of the resource utilized to write this tutorial are listed below:
 - .NET Core tutorials - https://dotnetcoretutorials.com/2017/06/22/request-culture-asp-net-core/
 - Microsoft Documentation - https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-3.1
 - Alan Edwardes - https://alanedwardes.com/blog/posts/country-code-to-flag-emoji-csharp/)
-
 
 
 
