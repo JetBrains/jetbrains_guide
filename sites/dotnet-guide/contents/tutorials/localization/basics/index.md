@@ -4,7 +4,7 @@ date: 2020-06-05
 title: Localization Basics
 technologies: [.net]
 products: [rider,resharper]
-topics: [data]
+topics: [data,editing,inspections]
 author: khalidabuhakmeh
 subtitle: Working with Cultures, Resources, & Apps
 thumbnail: ./thumbnail.png
