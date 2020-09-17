@@ -80,7 +80,7 @@ Our first step is to create a new resource file. We can start by creating a fold
 
 In our editor, we'll notice that our `"Hello, World!"` string know shows a hint. Using Rider, we can now move this value to our newly created resource file using the "Quick Fix" menu.
 
-![move to resource quick fix](2-quick-fix.png)
+![Move to resource analyzer sees a string that can be moved to a resource and provides a quick fix](2-quick-fix.png)
 
 We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager. 
 
