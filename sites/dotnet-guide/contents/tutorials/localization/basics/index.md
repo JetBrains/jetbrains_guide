@@ -84,7 +84,7 @@ In our editor, we'll notice that our `"Hello, World!"` string know shows a hint.
 
 We'll see a **"Move to Resource"** dialog to set the options for our new resource value item. Let's change the name to `HelloWorld` to be more in line with C# idioms. When done, we should see our value in Rider's Localization Manager. 
 
-![move to resource dialog](3-move-to-resource-dialog.png)
+![Move to resource dialog helps store a string in a resource file](3-move-to-resource-dialog.png)
 
 We can also see that our `Program` class is accessing our value using the generated interface.
 
