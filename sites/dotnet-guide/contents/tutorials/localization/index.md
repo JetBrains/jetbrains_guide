@@ -2,7 +2,7 @@
 date: 2020-09-10
 title: .NET Localization
 technologies: [asp.net, .net, csharp]
-topics: [web, data]
+topics: [web, data, editing]
 products: [rider,resharper]
 author: khalidabuhakmeh
 subtitle: Localization and the art of reaching more users
