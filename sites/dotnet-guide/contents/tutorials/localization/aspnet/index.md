@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-06-05
+date: 2020-09-29
 title: Localizing ASP.NET Applications
 technologies: [.net, asp.net]
 products: [rider,resharper]
