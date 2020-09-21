@@ -1,5 +1,5 @@
 ---
-date: 2020-09-10
+date: 2020-09-29
 title: .NET Localization
 technologies: [asp.net, .net, csharp]
 topics: [web, data, editing]
