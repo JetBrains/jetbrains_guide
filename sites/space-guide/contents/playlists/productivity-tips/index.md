@@ -23,6 +23,7 @@ playlistItems:
     - /tips/manage-checklists-efficiently/
     - /tips/linking-issues-checklists/
     - /tips/packages-details-and-versions/
+    - /tips/automation-subscribe-notifications/
 
 ---
 
