@@ -34,14 +34,7 @@ Let's take a look at the first of several ways that Markdown syntax is *optional
 
 Let's make a bigger logo, centered, with a CSS class:
 
-```
-``{image} python-logo.gif
-:alt: Python Logo
-:class: bg-primary
-:width: 600px
-:align: center
-``
-```
+`embed:tutorials/sphinx_sites/_snippets/snippet1a.txt`
 
 Want a `<figure>`, with and image and rich text for a caption?
 This is supported in reStructuredText, so MyST [also provides a way to include figures](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#markdown-figures) in Markdown.
@@ -56,7 +49,7 @@ Then add some Markdown to `page1.txt`:
 
 ```
 :::{figure,myclass} logo-target
-<img src="python-logo.gif" alt="Python Logo" class="bg-primary" width="300px">
+<img src="python-logo.png" alt="Python Logo" class="bg-primary" width="300px">
 
 This is a caption in **Markdown**
 :::
