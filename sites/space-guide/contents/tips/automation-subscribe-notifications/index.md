@@ -8,7 +8,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/LlNGsDFvqpc
+  url: https://youtu.be/QZeTpb-3ST8
 leadin: |
     **Who broke the build?**
     
