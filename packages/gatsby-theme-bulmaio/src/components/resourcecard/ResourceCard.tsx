@@ -33,33 +33,27 @@ const ResourceCard: React.FC<ResourceCardProps> = (
                     )}
                 </div>
                 <div className="media-content is-clipped">
-                    <ResourceCardMedia {...media} />
-                    <div className="columns is-vcentered">
-                        <div className="column is-narrow">
-                            {author && <ResourceCardAuthor {...author} />}
-                        </div>
-                        <div className="column">
-                            {products && products.items && products.items.length > 0 &&
-                        <ResourceCardProducts {...products} />}
-                            {technologies.items && technologies.items.length > 0 &&
-                            <ResourceCardTechnologies {...technologies} />}
-                            {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics} />}
-                        </div>
-                        <div className="column is-narrow">{date && <ResourceCardDate {...date} />}</div>
+                    <div className="content">
+                        <ResourceCardMedia {...media} />
+
+                        <nav className="level">
+                            <div className="level-left">
+                                <div className="level-item">
+                                    {author && <ResourceCardAuthor {...author} />}
+                                </div>
+                                <div className="level-item tags">
+                                    {products && products.items && products.items.length > 0 && <ResourceCardProducts {...products} />}
+                                    {technologies.items && technologies.items.length > 0 && <ResourceCardTechnologies {...technologies} />}
+                                    {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics} />}
+                                </div>
+                            </div>
+                            <div className="level-right">
+                                <div className="level-item">
+                                    {date && <ResourceCardDate {...date} />}
+                                </div>
+                            </div>
+                        </nav>
                     </div>
-                    <nav className="level is-mobile" style={{display: 'none'}}>
-                        <div className="level-left is-clipped">
-                            {author && <ResourceCardAuthor {...author} />}
-                            {products && products.items && products.items.length > 0 &&
-                            <ResourceCardProducts {...products} />}
-                            {technologies.items && technologies.items.length > 0 &&
-                            <ResourceCardTechnologies {...technologies} />}
-                            {topics.items && topics.items.length > 0 && <ResourceCardTopics {...topics} />}
-                        </div>
-                        <div className="level-right">
-                            {date && <ResourceCardDate {...date} />}
-                        </div>
-                    </nav>
                 </div>
             </article>
         </div>
