@@ -1,25 +1,20 @@
 ---
-date: 2019-11-27
+date: 2020-03-16
 title: Complete Current Statement
+subtitle: Add curly braces and move the cursor with a single keystroke.
 technologies: [go]
-topics: [completion, editing]
-author: dlsniper
-subtitle: Add required trailing commas for any composite literals
+topics: [editing]
+author: er
+seealso:
+- title: Autocompleting code
+  href: https://blog.jetbrains.com/go/2019/01/17/code-completion-in-goland/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-shortVideo:
-  poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=dsokGASiSNg&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+animatedGif:
+  file: ./tip.gif
+  width: 600
+  height: 300
 leadin: |
-    Quickly add required trailing commas for any composite literals or place
-    the caret at the next typing position.
-    
-    GoLand can complete statements and add required trailing commas for any 
-    composite literals (like struct, slice, etc.), and even place caret in a 
-    position where you can just start typing the next statement.
-    
-    **How to use:**
-    
-    To invoke this action, press _⌘+⇧+↩_ on Mac or _Ctrl+Shift+Enter_ on Windows /Linux.
+  After typing parentheses, trigger the Complete Current Statement action (⇧ ⌘ ↩︎  on macOS and ⇧ ⌃ ↩︎ on Windows and Linux) to add curly braces and move the cursor down to the beginning of the next row.
 
 ---
