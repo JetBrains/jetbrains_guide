@@ -18,14 +18,12 @@ export const ResourceCardTopics: React.FC<ResourceCardTopicsProps> = (
 ) => (
   <>
     {items.map(topic => (
-      <span data-testid={`rcto-key`} className="level-item bio-common-card-references" key={topic.slug}>
-        <div className="tags">
+      <span data-testid={`rcto-key`} className="bio-common-card-references" key={topic.slug}>
           <span className="tag is-rounded">
             <Link to={topic.slug} className="has-text-primary">
               {topic.label}
             </Link>
-          </span>
-        </div>
+        </span>
       </span>
     ))}
   </>
