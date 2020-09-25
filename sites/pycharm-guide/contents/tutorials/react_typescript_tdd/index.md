@@ -33,3 +33,35 @@ to getting productive, in PyCharm, for React projects using TypeScript. Along
 the way we'll show test-driven development and emphasize tips-and-tricks in
 the IDE.
 
+## Project Setup
+
+- Add a screenshot of using the IDE to create, instead of npx
+
+- `npm start` instead of `npm run-script start`
+
+- "Welcome to React" is no longer there, instead, edit the <p>
+
+- Before "PyCharm Professional puts"...remind them to stop the terminal server
+
+- Update the contents of package.json
+
+- Remove the "mark build as excluded" as WebStorm does it automatically
+    * Though perhaps the other IDEs don't?
+    
+- Upper-case "jest" in the link
+
+- Mention to cancel the test runner before launching in tool window
+
+- Update the `it` to match the new tests
+
+- Change `toBe` to be `toEqual`
+
+- Change reference to Jest and Enzyme tutorial section title
+
+## Project Cleanup
+
+- Perhaps split out linting and formatting into its own section
+
+- "ESLint is enabled" in the status message
+
+
