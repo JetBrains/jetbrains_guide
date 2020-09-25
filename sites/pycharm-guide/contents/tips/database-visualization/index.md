@@ -4,7 +4,7 @@ title: Database Visualization
 technologies: [django]
 topics: [database]
 author: mm
-subtitle: visualize the structure of a database with diagrams
+subtitle: Visualize the structure of a database with diagrams
 seealso:
 - title: DataGrip Create Diagrams
   href: https://www.jetbrains.com/help/datagrip/creating-diagrams.html
