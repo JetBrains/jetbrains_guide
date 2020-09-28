@@ -59,6 +59,7 @@ const MasterLayout: React.FC<MasterLayoutProps> = (
         <meta charSet={`utf-8`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv={`X-UA-Compatible`} />
+        {twitterCard && <meta name="description" content={twitterCard.page.description}/>}
         {twitterCard && <meta name={`twitter:card`} content={`summary_large_image`} />}
         {twitterCard && <meta name={`twitter:site`} content={twitterCard.site.siteName} />}
         {twitterCard && <meta name={`twitter:creator`} content={twitterCard.site.creator} />}
