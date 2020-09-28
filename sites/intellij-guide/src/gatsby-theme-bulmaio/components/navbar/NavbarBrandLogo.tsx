@@ -18,7 +18,7 @@ const NavbarBrandLogo: FC = () => (
     </a>
     <Link className="navbar-item bio-navbar-brand" to={`/`}
           style={{ marginRight: '1rem' }}>
-      IntelliJ Guide
+      IntelliJ IDEA Guide
     </Link>
   </>
 );

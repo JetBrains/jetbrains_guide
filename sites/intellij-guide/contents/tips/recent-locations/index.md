@@ -1,10 +1,10 @@
 ---
 date: 2020-03-16
-title: Using Recent Locations for Navigation
+title: Helen & Trish were here - Using Recent Locations for Navigation
 subtitle: Preview the part of code and files you've recently edited and get back to them quickly.
 technologies: [html]
 topics: [navigation]
-author: er
+author: hs
 seealso:
 - title: Source code navigation
   href: https://www.jetbrains.com/help/webstorm/navigating-through-the-source-code.html

@@ -5,4 +5,4 @@ accent: primary
 icon: fas fa-bezier-curve
 ---
 
-With IntelliJ, you can get around your code faster regardless of how large your projects are.
+With IntelliJ IDEA, you can get around your code faster regardless of how large your projects are.

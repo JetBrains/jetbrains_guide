@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
             <div className="column is-three-quarters-desktop">
               <div className="bd-content content">
                 <div className="content">
-                  <h1>About the IntelliJ Guide</h1>
+                  <h1>About the IntelliJ IDEA guide</h1>
                 </div>
               </div>
             </div>

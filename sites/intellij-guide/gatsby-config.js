@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
     // Used by feed
-    title: 'IntelliJ Guide',
+    title: 'IntelliJ IDEA Guide',
     description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
     siteUrl: 'https://www.jetbrains.com/intellij/guide/',
     theme: {
       helmet: {
-        siteTitle: 'IntelliJ Guide'
+        siteTitle: 'IntelliJ IDEA Guide'
       },
       navbar: {
         brand: {
