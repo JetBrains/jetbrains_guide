@@ -12,142 +12,126 @@ longVideo:
   url: https://www.youtube.com/watch?v=ZP2dCeESF5A
 ---
 
-React has become very popular, as has TypeScript. But it can be difficult to
-keep your tools and build configurations up-to-date. Many frameworks have
-recently built CLI (command-line interface) tools that make those decisions
-for you, using best practices. They'll generate a project with the right
-choices then update those choices as things evolve.
+React has become very popular, as has TypeScript. 
+But it can be difficult to keep your tools and build configurations up-to-date. 
+Many frameworks have CLI (command-line interface) tools that make those decisions for you, using best practices.
+They'll generate a project with the right choices, then update those choices as things evolve.
 
-React's [create-react-app](../../../technologies/cra) takes care of 
-this, and it recently added support for TypeScript. In this tutorial 
-step, we generate the project then open it in the IDE.
+React's [create-react-app](../../../technologies/cra) takes care of this, including for TypeScript projects. 
+In this tutorial step, we will generate a React+TypeScript project then open it in the IDE.
 
 ## Code
 
 The finished code for this tutorial step is 
 [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/project_setup).
 
+TODO Change to final URL location
+
 ## Project Creation
 
-Before anything can happen, you have to install NodeJS on your system.
+Before starting, make sure to install [NodeJS](../../../technologies/nodejs) on your system.
 
-As shown [in the docs](https://levelup.gitconnected.com/typescript-and-react-using-create-react-app-a-step-by-step-guide-to-setting-up-your-first-app-6deda70843a4), 
-use the `npx` command introduced in npm 5.2 to get a package and install 
-a command, without having to globally install a package. Thus, to 
-use `create-react-app` to make a TypeScript project:
+As shown [in the create-react-app docs](https://create-react-app.dev/docs/adding-typescript/), use the `npx` command introduced in npm 5.2 to get a package and install a command, without having to globally install a package. 
+Thus, to use `create-react-app` to make a TypeScript project:
 
 ```shell script
 $ npx create-react-app my-app --typescript
 ```
 
-*Note: PyCharm Professional has a UI for generating React projects 
-from `create-react-app`, but at the time of this writing, it doesn't 
-yet support passing the `--typescript` flag.*
+If you are using a JetBrains IDE that includes [WebStorm](https://www.jetbrains.com/webstorm/), you can use a nice UI for new projects:
 
-You now have a working React+TypeScript project, toolchain, and hello-world
-style app. It's actually quite an achievement. Assembling all of this, and
-*keeping* it assembled, is an incredible effort. `create-react-app` has 
-shifted that off your shoulders, onto their's. Trust me, it's a big deal.
+TODO Screenshot of New Project -> React App
+
+You now have a working React+TypeScript project, toolchain, and hello-world style app. 
+It's actually quite an achievement.
+Assembling all of this, and *keeping* it assembled, is an incredible effort. 
+`create-react-app` has shifted that off your shoulders, onto their shoulders. 
 
 ## Show Me a Page
 
-Let's see this React+TypeScript page in our browser. npm scripts make
-it easy to discover commands that are common to a project. The most common?
-Starting the dev server, which compiles the universe, serves a page over
-HTTP, and helpfully opens your browser:
+Let's see this React+TypeScript app in our browser. 
+``npm`` scripts make it easy to discover commands that are common to a project. 
+The most common?
+Starting the dev server, which compiles the universe, serves a page over HTTP, and helpfully opens your browser:
 
 ```shell script
-$ npm run-script start
+$ npm start
 ```
 
-This dev server is watching for changes. If you edit a file, it will
-regenerate the universe and tell the page to reload. Open `src/App.tsx`
-and change `Welcome to React` to `Welcome to React TypeScript`, then
-save. Your terminal shows a recompile and your browser updates.
+This dev server is now watching for changes. 
+If you edit a file, it will regenerate the universe and tell the browser to reload the page. 
+Open `src/App.tsx` and change `save to reload` to `save to reload the page`, then save. 
+Your terminal shows a recompile and your browser updates.
 
-PyCharm Professional puts a nice UI on this. Click on the `npm` tool icon
-(usually on the left) and double click `start` in the listing of run
-scripts. You'll get a run window at the bottom with a UI for showing
-output and restarting. Alternatively, open `package.json` and click the
-green play icon in the gutter by the run scripts:
+In the terminal, `Ctrl-C` to stop the dev server.
+Let's take a look at how the IDE can put a nice friendly face on running `npm` scripts.
+
+We will first use the `npm` tool window. 
+Click on the `npm` tool icon (usually on the left) and double click `start` in the listing of run scripts. 
+You'll get a run window at the bottom with a UI for showing output and restarting. 
+
+TODO Screenshot
+
+Alternatively, open the top-level `package.json` that was generated by `create-react-app`. 
+Here's what the scaffold provided -- note the `scripts` section:
+
+`embed:tutorials/react_typescript_tdd/project_setup/package-example.json`
+
+Let's run the `start` script from here, instead of the `npm` tool window.
+First, close the currently-running tool window and dev server, then close the `npm` tool that is listing the available scripts.
+Now click the green play icon in the gutter by the `start` run script:
 
 ![Running the npm start script](./screenshots/starting.png)
 
-What scripts does `create-react-app` generate in `package.json`? Here 
-is the full file:
-
-`embed:tutorials/react_typescript_tdd/project_setup/package.json`
-
-As you can see, it's quite compact. The genius of `create-react-app` 
-lies in moving a bunch of configuration to files it manages in its 
-packages. You can then upgrade those packages and gain new/fixed 
-wiring of all the JavaScript build tools.
+As you can see, the generated `package.json` is quite compact. 
+The genius of `create-react-app` lies in moving a bunch of "What the hell is this?" configuration files, into *its* packages.
+Thus, *they* own those decisions and complexity. 
+You can then upgrade those packages and gain new/fixed wiring of all the JavaScript build tools.
 
 ## Production Build
 
-That's great for development, but for production, we need files on disk,
-shrunk as small as possible. There's a lot of complexity behind this, but
-`create-react-app` has hidden it behind an npm script:
+That's great for development, but for production, we need files on disk, shrunk as small as possible. 
+There's a lot of complexity behind this, but `create-react-app` has hidden it behind an npm script:
 
 ```shell script
 $ npm run-script build
 ```
 
-This generates output into a `build` directory. The output is
-self-contained, including even an `index.html` file. You can copy it to a
-static hosting site as-is.
+This generates output into a `build` directory.
+The output is self-contained, even including an `index.html` file. 
+Thus, you can copy the site to a static hosting site, as-is.
 
-Running this is easy in PyCharm Professional: just click on `build` in the
-npm tool window. This generates a `build` directory in your project root 
-with the production output of you project. 
+Running this in the IDE's UI is easy: just click on `build` in the `npm` tool window, or better still, use the gutter icon in `package.json`:
 
 ![Generating a production build](./screenshots/building.png)
 
-As an optimization, right-click on the new ``build``
-directory and ``Mark Directory As | Excluded``. This prevents the IDE from
-indexing the contents of that directory, which you don't need during
-development.
+TODO Change this to use `package.json` gutter
+
+The IDE should mark the new `build` directory as "excluded" giving it a different color in the folder listing.
+If not, right-click on the new ``build`` directory and ``Mark Directory As | Excluded``. 
+This prevents the IDE from indexing the contents of that directory.
 
 ## This Is Only a Test
 
-Projects generated from [create-react-app](../../../technologies/cra) 
-are also wired for testing: dependencies, configuration files, and sample 
-tests. We'll see more later, but for now, let's run the tests. 
+Projects generated from `create-react-app` are also wired up for testing: dependencies, configuration files, and sample tests. We'll see more later, but for now, let's run the tests. 
 Unsurprisingly, it's similar to the above:
 
 ```shell script
 $ npm run-script test
 ```
 
-This uses the [jest](../../../technologies/jest) test runner.
+`create-react-app` uses the [Jest test framework](../../../technologies/jest) along with helpers from [Testing Library](https://testing-library.com).
+Jest runs when source or test files change, so make a small edit `src/App.tsx` to remove the `the page` that we added.
+You'll see that the tests re-run and pass:
 
-Double-click the `test` entry in the `npm` tool window to try again:
+TODO Screenshot
 
-```shell script
-$ npm run-script test
-```
-
-The tests auto-run as you edit, updating much faster once first loaded. To
-see this in action, open `src/App.test.tsx` and add a line to the test:
-
-```typescript {5}
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-  expect(1).toBe(2);
-});
-```
-
-When you save this, the test runner output tells you about the test failure.
-Change the `2` to a `1` and save, and the tests pass.
-
-As with the other run scripts, you can double-click to run the npm scripts
-in an IDE tool window in PyCharm Professional. But that's the less-interesting
-way to do it. We'll show in [Unit Testing with Jest and Enzyme](../testing/) 
-the more-PyCharmic way.
+We can also run this `npm` script in the IDE.
+`Ctrl-C` to stop the test runner in the terminal, then back in `package.json`, click the green play icon in the gutter beside `test`.
 
 ![Running the npm test script while editing a test](screenshots/testing.png)
+
+TODO Update screenshot
 
 ## Conclusion
 
@@ -156,5 +140,5 @@ React+TypeScript project, with all the tooling configured. We also gave a
 brief tour of driving this in the IDE.
 
 In our next step we'll clean up some of the generated app, fix some of the
-tooling, and take a look a little more at how TypeScript with a smart IDE
+tooling, and take a look a little more at how TypeScript, along with a smart IDE,
 helps your productivity.

@@ -65,7 +65,7 @@ In `App.tsx`, let's do some steps to make a simpler starting point for the
 rest of the series. First, remove all the markup in the `render` method 
 and replace it:
 
-```jsx
+```javascript
   render() {
     return (
         <div>

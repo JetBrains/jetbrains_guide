@@ -150,7 +150,7 @@ Good news, it fails! TDD starts with a failing test. You then implement what
 you expect to pass. Change your `App` component in `src/App.tsx` to have
 this markup:
 
-```html
+```
 <div>
     <h1>Hello React</h1>
     <p>Nice TDD</p>
