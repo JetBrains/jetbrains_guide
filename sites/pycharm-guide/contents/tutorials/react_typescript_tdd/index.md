@@ -32,14 +32,3 @@ of this series. We'll show a little about a lot. Meaning, the key steps
 to getting productive, in PyCharm, for React projects using TypeScript. Along
 the way we'll show test-driven development and emphasize tips-and-tricks in
 the IDE.
-
-## Testing
-
-- Our test current fails
-- Right-click to run it
-- Show the run config that was created automatically
-- Fix the test:
-  - `getByText(/hello react/i)`
-  - Remove the expect fail at end
-- Add a run config manually, All Tests, which has --watchAll
-- Remove enzyme
