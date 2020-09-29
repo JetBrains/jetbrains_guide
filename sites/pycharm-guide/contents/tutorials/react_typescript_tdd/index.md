@@ -33,26 +33,6 @@ to getting productive, in PyCharm, for React projects using TypeScript. Along
 the way we'll show test-driven development and emphasize tips-and-tricks in
 the IDE.
 
-## Project Cleanup
-
-- Linting
-  - Get rid of tslint
-  - Mention ESLint is bundled in CRA and detected  
-  - "ESLint is enabled" in the status message
-  - Mention prettier
-
-### Clean Up, Clean Up
-- Change code sample to match function instead of method
-  
-### More IDE Goodies
-
-- Make this be about index.tsx
-- Reformat code to start
-- Delete `from App import './App'`
-- Note the double quotes
-  - Fix it and set the preference
-  - Perhaps in an ESLint rule
-
 ## Testing
 
 - Our test current fails
