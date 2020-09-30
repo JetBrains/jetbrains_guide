@@ -1,25 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { shallow } from 'enzyme';
+import React from "react";
+import { render } from "@testing-library/react";
+import App, { label } from "./App";
 
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App/>, div);
-    ReactDOM.unmountComponentAtNode(div);
+test("renders hello react", () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/hello react/i);
+  expect(linkElement).toBeInTheDocument();
 });
 
-it('renders the heading', () => {
-    const wrapper = shallow(<App/>);
-    expect(wrapper.find('h1').text()).toBe('Hello REACT');
-});
-
-it('renders the paragraph', () => {
-    const wrapper = shallow(<App/>);
-    expect(wrapper.find('p').text()).toBe('Nice TDD');
-});
-
-it('generates a label', () => {
-    const a = new App({});
-    expect(a.label('React')).toEqual('Hello REACT');
+test("generates a label", () => {
+  const result = label("React");
+  expect(result).toEqual("Hello REACT");
 });

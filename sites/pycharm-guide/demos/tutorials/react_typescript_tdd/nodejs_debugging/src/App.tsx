@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class App extends Component {
+export function label(name: string) {
+  return `Hello ${name.toUpperCase()}`;
+}
 
-    label(name: string) {
-        return `Hello ${name.toUpperCase()}`;
-    }
-
-    render() {
-        return (
-            <div>
-                <h1>{this.label('React')}</h1>
-                <p>Nice TDD</p>
-            </div>
-        );
-    }
+function App() {
+  return (
+    <div>
+      <h1>{label("React")}</h1>
+    </div>
+  );
 }
 
 export default App;

@@ -12,159 +12,152 @@ longVideo:
   url: https://www.youtube.com/watch?v=yVaTqKqWT20
 ---
 
-In the [previous step](../testing/) we used testing as a way to
-develop our component without switching to a browser.
+In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.
 
-Sometimes our code has problems that require investigation with a debugger.
-For React, that usually means a trip to the browser to set a breakpoint and
-use the Chrome developer tools. Let's show how the IDE's debugger, combined
-with TDD, can make this investigation far more productive.
+Sometimes, though, our code has problems that require investigation with a debugger.
+For React, that usually means a trip to the browser to set a breakpoint and use the Chrome developer tools. 
+Let's show how the IDE's debugger, combined with TDD, can make this investigation far more productive.
 
 ## Code
 
 The finished code for this tutorial step is 
 [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
+TODO Update repo
+
 ## Cleanup
 
-First, let's remove some unused code from our first test,
-`renders without crashing`. Delete the last 3 lines and leave it as:
+Let's start by getting the test code reloaded into our brain by updating the test name to match the changed `getByText`:
 
 ```typescript
-it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<App/>, div);
-    ReactDOM.unmountComponentAtNode(div);
+test("renders hello react", () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/hello react/i);
+  expect(linkElement).toBeInTheDocument();
 });
 ```
 
 ## Hello Parameter
 
-Let's use TDD to make our component's greeting a bit more
-dynamic. Start in the side-by-side mode described in the previous section,
-with both `App.tsx` and `App.test.tsx` open.
+We will use TDD to make our component's greeting a bit more dynamic. 
+Start in the side-by-side mode described in the previous section, with both `App.tsx` and `App.test.tsx` open.
 
-First, add a method to the `App` class, above the `render` method:
+First, add a function in `App.tsx`, above the `App` function:
 
-```jsx
-label() {
-    return 'Hello React';
+```javascript
+export function label() {
+  return "Hello React";
 }
 ```
 
-The IDE gives us two warnings:
+The IDE gives us a warning: the function is unused.
 
-- The method can be static
-
-- The method is unused
-
-We'll ignore both of those, as development below will change both 
-warnings.
-
-Then, in `render`, change the `<h1>` to use the output of this method, 
-using autocompletion for the method name:
-
-```jsx
-<h1>{this.label()}</h1>
-```
-
-We didn't write a test first. That's sort of ok: we didn't change the
-rendering itself. But we also didn't test the method. Let's do that now by
-adding a test in `App.test.tsx`:
+Then, in `App`, change the `<h1>` to use the output of this function, using autocompletion for the function name:
 
 ```typescript
-it('generates a label', () => {
-    const a = new App({});
-    expect(a.label()).toBe('Hello React');
+<h1>{label()}</h1>
+```
+
+We didn't write a test first.
+That's sort of ok: we didn't change the rendering itself. 
+But we also didn't test the `label` function. 
+Let's do that now by adding a test in `App.test.tsx`:
+
+```typescript
+test("generates a label", () => {
+  const result = label();
+  expect(result).toEqual("Hello React");
 });
 ```
 
-In this test we don't need a component with TSX and a fake DOM etc. It's a
-TypeScript method that returns a string. Nice! To conform to the 
-`React.Component` constructor signature, we pass in an empty object as 
-props. Note how the IDE gave us a placeholder reminder.
+In this test we don't need a component with TSX and a fake DOM etc.
+It's a plain-old TypeScript function that returns a string. 
+Nice! 
 
-Let's make the method slightly dynamic by passing in a name for the label,
-then converting that name to uppercase. First, change our tests to the
-behavior we expect. The `generates a label` test needs its last line
-changed to:
+Let's make the function slightly dynamic by passing in a name for the label, then converting that name to uppercase. 
+First, change our tests to the behavior we expect -- that is, use TDD!
+The `generates a label` test needs its lines changed to:
 
 ```typescript
-expect(a.label('React')).toBe('Hello REACT');
+test("generates a label", () => {
+  const result = label("React");
+  expect(result).toEqual("Hello REACT");
+});
 ```
 
-While we're at it, change the `renders a heading` test to look for 
-`REACT` instead of `React`.
-
-Our tests now fail, thus we need to implement this feature. Moreso, 
-the TypeScript compiler is helping us "fail faster", telling us we broke 
-the contract, even before the test runs. Nice squared!
-
+Our test now fails, thus we need to implement this feature.
 The `<h1>`, like the test, needs to pass in a value:
 
 ```typescript
-    <h1>{this.label('React')}</h1>
+<h1>{label("React")}</h1>
 ```
 
-Now it's just a matter of changing the method to accept an argument, then
-uppercasing the return value:
+Now it's just a matter of changing the function to accept an argument, then uppercasing the return value:
 
 ```typescript
-label(name) {
-    return `Hello ${name.toUpperCase()}`;
+export function label(name) {
+  return `Hello ${name.toUpperCase()}`;
 }
 ```
 
-Note that the IDE has a quick fix, via `Alt-Enter`, to convert the string
-to an ES6 template string (the backticks.)
+Note that the IDE has a quick fix, via `Alt-Enter`, to convert the string to an ES6 template string (the backticks.)
 
-With that, our tests pass, but the TypeScript compiler is angry: the `name`
-argument doesn't have a supplied type. Let's fix that:
+With that, our tests pass, but the TypeScript compiler is angry: the `name` argument doesn't have a supplied type. 
+Let's fix that:
 
 ```typescript
-label(name: string) {
-    return `Hello ${name.toUpperCase()}`;
+export function label(name: string) {
+  return `Hello ${name.toUpperCase()}`;
 }
 ```
 
-No surprise: the IDE has an `Alt-Enter` quick fix for this -- in this
-case, `Infer parameter types from usage`.
+No surprise: the IDE has an `Alt-Enter` quick fix for this -- in this case, `Infer parameter types from usage`.
 
 ## Stop at Breakpoint
 
-Let's see debugging in action. Imagine we pass in a number and we can't
-figure out why our method is failing.
+Let's see debugging in action.
+Imagine we pass in a number and we can't figure out why our function is failing.
 
-Let's do so. In the last `generates a label` test, change the argument to
-`a.label(42)`.
+Let's do so.
+In the last `generates a label` test, change the `result` to `const result = label("React");`.
 
-First, note that TypeScript told our test that the supplied value was not
-assignable to a string. This is the *beauty* of TypeScript. Especially in
-test-writing, it helps you "fail faster". Meaning, when paired with a smart
-IDE, it moves the failure directly under your eyeballs, in the most immediate
-location...the place where you typed it. Moreover, it provides very specific
-error messages.
+First, note that TypeScript warned that the supplied value was not assignable to a string:
 
-Let's go ahead and debug this. Click in the gutter beside that line to set
-a breakpoint. Then right-click on the test in the tool window and run it
-under the debugger. Execution stops on that line. We can then step into our
-method call.
+TODO Screenshot
+
+This is the *beauty* of TypeScript. 
+Especially in test-writing, it helps you "fail faster".
+Meaning, when paired with a smart IDE, it moves the failure directly under your eyeballs, in the most immediate location...the place where you typed it.
+Moreover, it provides very specific error messages.
+
+Let's go ahead and debug this.
+See the red squiggly under `label`?
+Hover over it and you will get an inline panel showing more information:
+
+TODO Screenshot
+
+One of the options provided by this inline panel: `Debug 'generates a label'`.
+This does several things:
+
+- Set a breakpoint on that line
+- Run the test under the debugger
+- When debugging finishes, the IDE removes the breakpoint
+
+Click the `Step Into` button in the debugger to step into our function call.
 
 ![Set Breakpoint](./screenshots/set_breakpoint.png)
 
-Execution stops in our method. We can inspect the local values and see that
-`name` is `42`.
+Execution stops in our function.
+We can inspect the local values and see that `name` is `42`.
 
 ![Stop At Breakpoint](./screenshots/stop_at_breakpoint.png)
 
-We can now poke and prod our code interactively, in the execution context
-where it fails. 
+We can now poke and prod our code interactively, in the execution context where it fails. 
 
 ![Evaluate Expression](./screenshots/evaluate_expression.png)
 
-This is a very productive development cycle: write tests,
-when stuck, use the debugger. No flailing around with `console.log` in a
-browser's dev tools window.
+This is a very productive development cycle: write tests, when stuck, use the debugger. 
+No flailing around with `console.log` in a browser's dev tools window.
 
 Let's clean up:
 
@@ -172,11 +165,8 @@ Let's clean up:
 
 - Close the Debugger tool tab window
 
-- Click the red circle to clear the breakpoint
-
-- Change the test's label argument from `42` back to `React`
+- Change the test's label argument from `42` back to `"React"` and save
 
 - Re-open the Run Tool window
 
-As a note, in this step, the only two files that changed were 
-`App.tsx` and `App.test.tsx`.
+As a note, in this step, the only two files that changed were `App.tsx` and `App.test.tsx`.
