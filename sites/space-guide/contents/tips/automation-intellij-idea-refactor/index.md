@@ -12,7 +12,7 @@ shortVideo:
 leadin: |
     **Space Automation scripts are Kotlin!**
     
-    That `.space.kts` file in your repository describes automation jobs... and it's Kotlin! Install the [Space plugin](https://plugins.jetbrains.com/plugin/13362-space) into your JetBrains IDE, and enjoy the power of code compltion, syntax highlighting, and more!.
+    That `.space.kts` file in your repository describes automation jobs... and it's Kotlin! Install the [Space plugin](https://plugins.jetbrains.com/plugin/13362-space) into your JetBrains IDE, and enjoy the power of code completion, syntax highlighting, and more!
     
     As an example, you can move common logic into functions. Need to send a chat message after build completes? Write a function for it, or use the [*Extract method*](https://www.jetbrains.com/help/idea/extract-method.html) refactoring to move existing script code into a separate function.
         
