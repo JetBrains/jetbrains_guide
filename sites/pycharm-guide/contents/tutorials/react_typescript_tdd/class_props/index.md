@@ -35,49 +35,55 @@ TODO Update code
 This tutorial series shows class-based component development using testing instead of a browser. 
 Let's write a broken test first, then do the implementation which fixes the test.
 
-Make a new file called `Counter.test.tsx` with this test:
+Make a new file called `Counter.test.tsx` with this test, to ensure we have a label and a current count:
 
 ```typescript
-it('should render a counter', () => {
-    const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Count');
+import React from "react";
+import { render } from "@testing-library/react";
+
+test("should render a label and counter", () => {
+  const { getByLabelText, getByRole } = render(<Counter />);
+  const label = getByLabelText("Count");
+  expect(label).toBeInTheDocument();
+  const counter = getByRole("counter");
+  expect(counter).toBeInTheDocument();
 });
 ```
 
-It has several failures. For now, just click on `shallow` and hit
-`Alt-Enter` to generate that import.
+The test fails, but even more quickly, TypeScript immediately tells you that you are missing an import.
+Good, we're doing TDD!
 
-Now create a file `Counter.tsx`. We'll make it very simple to start:
+Now create a file `Counter.tsx`. We'll make it a very simple class to start:
 
 ```typescript
-import React, { Component } from react;
+import React, { Component } from "react";
 
-class Counter extends Component {
-    render() {
-        return (
-            <div className="counter">
-                <label>Count</label>
-                <span>1</span>
-            </div>
-        );
-    }
+export class Counter extends Component {
+  render() {
+    return (
+      <div>
+        <label htmlFor="counter">Count</label>
+        <span id="counter" role="counter">
+          1
+        </span>
+      </div>
+    );
+  }
 }
-
-export default Counter;
 ```
 
-Back in our test, click on `<Counter/>` and hit `Alt-Enter`. Your import
-is generated, but there's still an error: React isn't imported. Repeat the
-`Alt-Enter` to generate the React import. Save the file and see that your
-test passes.
+Note that `for` in JSX is mapped to `htmlFor` -- like `class` to `className`, to prevent a collision with the JavaScript symbol of the same name.
+
+Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import. 
+Save the file and see that your test passes:
+
+TODO Screenshot
 
 Not a bad first step.
 
 ## Pass In a Prop
 
-As we did in [Sharing Component Props Using Type Information](../props/), 
-we'll use a consistent process:
+As we did in the previous step, we'll use a consistent process:
 
 - Work first in the test by writing a *failing* test
 
@@ -88,55 +94,66 @@ we'll use a consistent process:
 Thus, let's add a test for the case of passing in a label:
 
 ```typescript
-it('should render a counter with custom label', () => {
-    const wrapper = shallow(<Counter label={'Current'}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+test("should render a counter with custom label", () => {
+  const { getByLabelText } = render(<Counter label={`Current`} />);
+  const label = getByLabelText("Count");
+  expect(label).toBeInTheDocument();
 });
 ```
 
-The test fails, which is good. What's even better -- TypeScript helped us
-"fail faster". Before running the test, it told us we broke the contract
-saying no properties were expected. Even better, our IDE visually warned us
-with a very specific mouseover message.
+The test fails, which is good -- the label is still `Count`, not `Current`. 
+What's even better -- TypeScript helped us "fail faster". 
+Before running the test, it told us we broke the contract saying no properties were expected. 
+Even better, our IDE visually warned us with a red squiggly.
 
-Let's now work on the implementation. Classes handle props with defaults a
-little differently:
-
-```typescript
-class Counter extends Component<{ label?: string }> {
-    static defaultProps = {
-        label: 'Count'
-    };
-```
-    
-Remember, the `?` means an optional field in the interface. Now make the
-`<label>` dynamic:
-
-```jsx
-<label>{this.props.label}</label>
-```
-
-When you save `Counter.tsx`, your tests will now pass.
-
-As we saw in the previous step, it's nicer to put the props type information
-into its own interface. Let's use `Ctrl-T -> Interface` that into `ICounterProps`:
+Let's now work on the implementation.
+Classes handle props with defaults a little differently:
 
 ```typescript
-interface ICounterProps {
-    label?: string;
+export class Counter extends Component<{ label?: string }> {
 }
-
-class Counter extends Component<ICounterProps> {
-    static defaultProps = {
-        label: 'Count'
-    };
 ```
+
+`Component` is a "generic" type, with 0, 1, or 2 parameters in between the `<>`.
+We have one parameter...for the shape of the props.
+As we did in the previous step, let's move the *inline* prop definition to a standalone, exported type:
+
+```typescript
+export type CounterProps = { label?: string };
+
+export class Counter extends Component<CounterProps> {
+}
+```
+
+The type definition says `label` can be optional.
+Can we define a default prop value, as we did for functions?
+Yes, and [a clever approach](https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/default_props/) using destructuring and defaults comes into play:
+ 
+```typescript
+export class Counter extends Component<CounterProps> {
+  render() {
+    const { label = "Count" } = this.props;
+    return (
+      <div>
+        <label htmlFor="counter">{label}</label>
+        <span id="counter" role="counter">
+          1
+        </span>
+      </div>
+    );
+  }
+}
+``` 
+
+Inside `render` we made a local `const` for the `label` value.
+Its value was "destructured" from the props, and when not in props, was given a default value.
+With this...our test passes!
 
 ## Wire Into UI
 
-We have a `<Counter/>` prop that takes an optional label. Tests pass. Let's
-now use it in our app and view it in the browser.
+We have a `<Counter/>` component that takes an optional label.
+Tests pass.
+Let's now use it in our app and, at long last, view it in the browser.
 
 Open `App.tsx` and change the TSX that in `render`:
 
@@ -151,28 +168,24 @@ render() {
 }
 ```
 
-Did you notice the autocompletion by the IDE, which knew there was a component
-with a name starting with those letters, somewhere in the project? And when
-you accepted the completion, it generated the import? Also, the IDE helped
-on the available props and the types for those props.
+Did you notice the autocompletion by the IDE, which knew there was a component with a name starting with those letters, somewhere in the project? 
+And when you accepted the completion, it generated the import?
+Also, the IDE helped on the available props and the types for those props.
 
-All of our tests still pass. Let's change the
-`renders the app and the heading` test in `App.test.tsx` to look for the
-label in the new `<Counter/>` child component:
+All of our tests still pass.
+Let's change the `renders hello react` test in `App.test.tsx` to look for the label in the new `<Counter/>` child component:
 
 ```typescript
-it('renders the app and the heading', () => {
-    const wrapper = mount(<App/>);
-    expect(wrapper.find('h1').text())
-        .toBe('Hello React');
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+test("renders hello react", () => {
+  const { getByLabelText, getByText } = render(<App />);
+  const linkElement = getByText(/hello react/i);
+  expect(linkElement).toBeInTheDocument();
+  const label = getByLabelText("Current");
+  expect(label).toBeInTheDocument();
 });
 ```
 
-Now restart the `start` script and look at the UI in the browser. We
-should now see `Current 1` in the UI.
+Now restart the `start` script and look at the UI in the browser.
+We should now see `Current1` in the UI.
 
-While this step didn't do too much that was new -- after all, we had optional
-props and interfaces in the previous step, with functions -- it paves the
-way for stateful components.
+While this step didn't do too much that was new -- after all, we had optional props and interfaces in the previous step, with functions -- it paves the way for stateful components.

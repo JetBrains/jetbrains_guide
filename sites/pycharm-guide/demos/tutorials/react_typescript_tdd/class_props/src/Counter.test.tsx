@@ -1,15 +1,17 @@
-import {shallow} from "enzyme";
-import Counter from "./Counter";
-import * as React from "react";
+import React from "react";
+import { render } from "@testing-library/react";
+import { Counter } from "./Counter";
 
-it('should render a counter', () => {
-    const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Count');
+test("should render a label and counter", () => {
+  const { getByLabelText, getByRole } = render(<Counter />);
+  const label = getByLabelText("Count");
+  expect(label).toBeInTheDocument();
+  const counter = getByRole("counter");
+  expect(counter).toBeInTheDocument();
 });
 
-it('should render a counter with custom label', () => {
-    const wrapper = shallow(<Counter label={'Current'}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+test("should render a counter with custom label", () => {
+  const { getByLabelText } = render(<Counter label={`Current`} />);
+  const label = getByLabelText("Current");
+  expect(label).toBeInTheDocument();
 });

@@ -1,22 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-interface ICounterProps {
-    label?: string;
+export type CounterProps = { label?: string };
+
+export class Counter extends Component<CounterProps> {
+  render() {
+    const { label = "Count" } = this.props;
+    return (
+      <div>
+        <label htmlFor="counter">{label}</label>
+        <span id="counter" role="counter">
+          1
+        </span>
+      </div>
+    );
+  }
 }
-
-class Counter extends Component<ICounterProps> {
-    static defaultProps = {
-        label: 'Count'
-    };
-
-    render() {
-        return (
-            <div className="counter">
-                <label>{this.props.label}</label>
-                <span>1</span>
-            </div>
-        );
-    }
-}
-
-export default Counter;
