@@ -13,8 +13,6 @@ tutorialItems:
   - /tutorials/react_typescript_tdd/nodejs_debugging/
   - /tutorials/react_typescript_tdd/chrome_debugging/
   - /tutorials/react_typescript_tdd/tsx_es6/
-  - /tutorials/react_typescript_tdd/functional_components/
-  - /tutorials/react_typescript_tdd/props/
   - /tutorials/react_typescript_tdd/class_props/
   - /tutorials/react_typescript_tdd/class_state/
   - /tutorials/react_typescript_tdd/rich_events_and_testing/

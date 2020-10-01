@@ -1,19 +1,12 @@
-import React, {Component} from 'react';
+import React from "react";
+import { Heading } from "./Heading";
 
-class App extends Component {
-    label = 'Hello React';
-
-    handleClick = () => {
-        alert(this.label);
-    }
-
-    render() {
-        return (
-            <div>
-                <h1 onClick={this.handleClick}>{this.label}</h1>
-            </div>
-        );
-    }
+function App() {
+  return (
+    <div>
+      <Heading />
+    </div>
+  );
 }
 
 export default App;

@@ -12,27 +12,28 @@ longVideo:
   url: https://www.youtube.com/watch?v=MkgbUcJ25GY
 ---
 
-In the previous step we made a "dumb" presentational component with one
-property. In React, components can have properties and state. When they
-have state (or when they need access to React's lifecycle methods), we use
-a class-based component instead.
+In the previous step we made a "dumb" presentational component with one property.
+In React, components can have properties and state. 
+When they have state (or when they need access to React's lifecycle methods), we use a class-based component instead.
+In recent years, React has made these available to functional components as well.
 
-We're going to build a stateful counter component. Each click increments the
-click count, with the current count value stored in local component state.
-The `<Counter/>` component will be passed in some props. In this step,
-we'll show component props -- as done with a function in the previous
-step -- for class-based components. We'll do state in the next step.
+We're going to build a stateful counter component.
+Each click increments the click count, with the current count value stored in local component state.
+The `<Counter/>` component will be passed in some props. 
+In this step, we'll show component props -- as done with a function in the previous step -- for class-based components. 
+We'll do state in the next step, followed by event handlers.
 
 ## Code
 
 The finished code for this tutorial step is 
 [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
+TODO Update code
+
 ## First a Test
 
-This tutorial series shows component development using testing instead of a
-browser. Let's write a broken test first, then do the implementation which
-fixes the test.
+This tutorial series shows class-based component development using testing instead of a browser. 
+Let's write a broken test first, then do the implementation which fixes the test.
 
 Make a new file called `Counter.test.tsx` with this test:
 
