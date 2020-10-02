@@ -1,36 +1,32 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-interface ICounterProps {
-    label?: string;
-    start?: number;
-}
+export type CounterProps = {
+  label?: string;
+  start?: number;
+};
+const initialState = { count: 0 };
+export type CounterState = Readonly<typeof initialState>;
 
-interface ICounterState {
-    count: number;
-}
+export class Counter extends Component<CounterProps, CounterState> {
+  readonly state: CounterState = initialState;
 
-class Counter extends Component<ICounterProps, ICounterState> {
-    static defaultProps = {
-        label: 'Count',
-        start: 0
-    };
-
-    constructor (props: ICounterProps) {
-        super(props);
-        const count: number = props.start ? props.start : 0;
-        this.state = {
-            count: count
-        }
+  componentDidMount() {
+    if (this.props.start) {
+      this.setState({
+        count: this.props.start,
+      });
     }
+  }
 
-    render() {
-        return (
-            <div className="counter">
-                <label>{this.props.label}</label>
-                <span>{this.state.count}</span>
-            </div>
-        );
-    }
+  render() {
+    const { label = "Count" } = this.props;
+    return (
+      <div>
+        <label htmlFor="counter">{label}</label>
+        <span id="counter" role="counter">
+          {this.state.count}
+        </span>
+      </div>
+    );
+  }
 }
-
-export default Counter;

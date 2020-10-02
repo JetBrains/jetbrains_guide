@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2019-02-01
+date: 2020-10-15
 title: Project Setup
 technologies: [cra, jest, typescript]
 topics: []
