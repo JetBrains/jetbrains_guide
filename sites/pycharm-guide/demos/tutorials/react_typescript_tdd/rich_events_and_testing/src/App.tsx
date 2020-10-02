@@ -1,18 +1,14 @@
-import React, {Component} from 'react';
-import Heading from "./Heading";
-import Counter from "./Counter";
+import React from "react";
+import { Heading } from "./Heading";
+import { Counter } from "./Counter";
 
-
-class App extends Component {
-
-    render() {
-        return (
-            <div>
-                <Heading/>
-                <Counter label={`Current`}/>
-            </div>
-        );
-    }
+function App() {
+  return (
+    <div>
+      <Heading />
+      <Counter label={`Current`} />
+    </div>
+  );
 }
 
 export default App;

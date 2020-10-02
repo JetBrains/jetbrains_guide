@@ -1,9 +1,7 @@
-import React, {FC} from "react";
+import React from "react";
 
-interface IHeadingProps {
-    recipient?: string;
+type HeadingProps = { name?: string };
+
+export function Heading({ name = "React" }: HeadingProps) {
+  return <h1>Hello {name}</h1>;
 }
-
-const Heading: FC<IHeadingProps> = ({recipient = 'React'}) => <h1>Hello {recipient}</h1>;
-
-export default Heading;

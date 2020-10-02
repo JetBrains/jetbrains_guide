@@ -1,14 +1,15 @@
-import {shallow} from "enzyme";
 import React from "react";
-import Heading from "./Heading";
+import { render } from "@testing-library/react";
+import { Heading } from "./Heading";
 
-it('renders the heading', () => {
-    const wrapper = shallow(<Heading recipient={'World'}/>);
-    expect(wrapper.find('h1').text()).toBe('Hello World');
+test("renders heading", () => {
+  const { getByText } = render(<Heading />);
+  const linkElement = getByText(/hello react/i);
+  expect(linkElement).toBeInTheDocument();
 });
 
-it('renders the default heading', () => {
-   const wrapper = shallow(<Heading/>);
-   expect(wrapper.find('h1').text())
-       .toBe('Hello React');
+test("renders heading with argument", () => {
+  const { getByText } = render(<Heading name={`World`} />);
+  const linkElement = getByText(/hello world/i);
+  expect(linkElement).toBeInTheDocument();
 });

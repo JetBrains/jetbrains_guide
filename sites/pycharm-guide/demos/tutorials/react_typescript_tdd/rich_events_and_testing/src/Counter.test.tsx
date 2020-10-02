@@ -1,39 +1,46 @@
-import {shallow} from "enzyme";
-import Counter from "./Counter";
-import * as React from "react";
+import React from "react";
+import { render, fireEvent } from "@testing-library/react";
+import { Counter } from "./Counter";
+import userEvent from "@testing-library/user-event";
 
-it('should render a counter', () => {
-    const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Count');
+test("should render a label and counter", () => {
+  const { getByLabelText, getByRole } = render(<Counter />);
+  const label = getByLabelText("Count");
+  expect(label).toBeInTheDocument();
+  const counter = getByRole("counter");
+  expect(counter).toBeInTheDocument();
 });
 
-it('should render a counter with custom label', () => {
-    const wrapper = shallow(<Counter label={'Current'}/>);
-    expect(wrapper.find('.counter label').text())
-        .toBe('Current');
+test("should render a counter with custom label", () => {
+  const { getByLabelText } = render(<Counter label={`Current`} />);
+  const label = getByLabelText("Current");
+  expect(label).toBeInTheDocument();
 });
 
-it('should default start at zero', () => {
-    const wrapper = shallow(<Counter label={'Current'}/>);
-    expect(wrapper.find('.counter span').text()).toBe('0');
+test("should start at zero", () => {
+  const { getByRole } = render(<Counter />);
+  const counter = getByRole("counter");
+  expect(counter).toHaveTextContent("0");
 });
 
-it('should custom start at another value', () => {
-    const wrapper = shallow(<Counter label={'Current'} start={10}/>);
-    expect(wrapper.find('.counter span').text()).toBe('10');
+test("should start at another value", () => {
+  const { getByRole } = render(<Counter start={10} />);
+  const counter = getByRole("counter");
+  expect(counter).toHaveTextContent("10");
 });
 
-it('should increment the count by one', () => {
-    const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter span').text()).toBe('0');
-    wrapper.find('.counter').simulate('click', {shiftKey: false});
-    expect(wrapper.find('.counter span').text()).toBe('1');
+test("should increment the count by one", () => {
+  const { getByRole } = render(<Counter />);
+  const counter = getByRole("counter");
+  expect(counter).toHaveTextContent("0");
+  fireEvent.click(counter);
+  expect(counter).toHaveTextContent("1");
 });
 
-it('should increment the count by ten', () => {
-    const wrapper = shallow(<Counter/>);
-    expect(wrapper.find('.counter span').text()).toBe('0');
-    wrapper.find('.counter').simulate('click', {shiftKey: true});
-    expect(wrapper.find('.counter span').text()).toBe('10');
+test("should increment the count by ten", () => {
+  const { getByRole } = render(<Counter />);
+  const counter = getByRole("counter");
+  expect(counter).toHaveTextContent("0");
+  userEvent.click(counter, { shiftKey: true });
+  expect(counter).toHaveTextContent("10");
 });
