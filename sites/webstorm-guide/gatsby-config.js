@@ -24,6 +24,13 @@ module.exports = {
               icon: 'fas fa-play-circle'
             },
             {
+              accent: 'info',
+              cssClass: 'documentation',
+              href: '/tutorials/',
+              label: 'Tutorials',
+              icon: 'fas fa-tasks'
+            },
+            {
               accent: 'danger',
               cssClass: 'documentation',
               href: '/technologies/',
@@ -138,4 +145,4 @@ module.exports = {
       }
     }
   ]
-};
+}
