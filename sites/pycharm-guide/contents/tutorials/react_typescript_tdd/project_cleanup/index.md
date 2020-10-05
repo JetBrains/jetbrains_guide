@@ -37,11 +37,11 @@ If you ran it in the IDE, close that tool window (and click `Terminate` on the d
 
 With the IDE, reformatting code is simple.
 In fact, it's something you will do constantly. 
-You currently have `App.test.tsx` open.
+You currently have `App.tsx` open.
 Let's use the `Reformat Code` action (`Ctrl-Alt-L` Win/Linux, `Alt-Cmd-L` macOS) to set everything to proper indentation.
 
-Close that tab and go back to `App.tsx`. 
-Do the same `Reformat Code` operation there as well.
+Let's do the same for the `App.test.tsx` file.
+Open it and do the same `Reformat Code` operation there as well.
 
 ## Code Formatting with Prettier
 
@@ -66,7 +66,9 @@ $ npm install --save-dev --save-exact prettier
 
 Next, in the IDE's Settings/Preferences, visit `Languages and Frameworks | JavaScript | Prettier`, and use the `On code reformatting`.
 Note that you could, instead, select the checkbox to only run Prettier when saving files.
-Once finished, invoke `Reformat Code` action (`Ctrl-Alt-L` Win/Linux, `Alt-Cmd-L` macOS) again and you'll see a Prettier-default code format.
+
+Once finished, invoke `Reformat Code` action (`Ctrl-Alt-L` Win/Linux, `Alt-Cmd-L` macOS) again in both `App.test.tsx` and `App.tsx`.
+You'll see a Prettier-default code format: for example, single quotes changed to double quotes.
 
 ## Clean Up, Clean Up
 
@@ -88,8 +90,6 @@ Highlight the existing `div` to replace and enter `div>h1<enter>Hello React`:
 
 ![Use Emmet to generate HTML markup](./screenshots/emmet.png)
 
-TODO Update screenshot
-
 We have an ESLint `Unused import` error on line 2, which we can see by hovering over the gray squiggly line: `Unused import logo from "./logo.svg"`
 
 We could stop what we're doing, move to that line, and delete it. 
@@ -105,14 +105,13 @@ While you're at it:
 With the IDE, when you do a delete, you're actually doing a "Safe Delete", with the option to look for places in the project where you might have used it.
 Give it a try by starting the delete process on `index.css`. The IDE will warn you:
 
-![Safe Delete looks for usages and warns](./screenshots/safe_delete.png)
+![Safe Delete](./screenshots/safe_delete.png)
 
 ## More IDE Goodies
 
 We're talking about cleanup. Let's look at some other ways the IDE can do our janitorial work.
 
 Let's say you were in a file and were writing something like `function App` and hadn't imported React yet.
-
 Simulate this by changing the first line to the following -- meaning, remove the `React` import:
 
 ```typescript
@@ -123,14 +122,12 @@ The IDE tells you about the error, with a red squiggly on the `<div>` in the JSX
 
 ![Get warnings on missing imports](./screenshots/missing_import.png)
 
-TODO Update screenshot
-
-Click on it, then `Alt-Enter` and choose `Import default 'React' from module "react"`. 
+Click on the red squiggly, then `Alt-Enter` and choose `Import default 'React' from module "react"`. 
 The IDE generates the proper import:
 
 ![Let the IDE generate missing imports](./screenshots/add_import.png)
 
-TODO Update screenshot
+Once finished, invoke `Optimize Imports` (`Ctrl-Alt-O` for Win/Linux and macOS) to get rid of the `Component` import.
 
 Let's say I wanted to rename `App`. 
 Where is it being used? 
@@ -148,7 +145,7 @@ Bleh.
 Can't we let the IDE do it for me? 
 Click on `App` in `function App` and hit `Ctrl-T`, then choose `Rename` to Refactor Rename the function to `MyApp`:
 
-![Let the IDE rename symbols in all usages](./screenshots/refactor_rename.png)
+![Let the IDE rename symbols](./screenshots/refactor_rename.png)
 
 In the tool window showing you the consequences, choose `Do Refactor`.
 
