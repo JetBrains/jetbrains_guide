@@ -77,7 +77,7 @@ Note that `for` in JSX is mapped to `htmlFor` -- like `class` to `className`, to
 Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import. 
 Save the file and see that your test passes:
 
-TODO Screenshot
+![First Tests](./screenshots/first_tests.png)
 
 Not a bad first step.
 
@@ -96,7 +96,7 @@ Thus, let's add a test for the case of passing in a label:
 ```typescript
 test("should render a counter with custom label", () => {
   const { getByLabelText } = render(<Counter label={`Current`} />);
-  const label = getByLabelText("Count");
+  const label = getByLabelText("Current");
   expect(label).toBeInTheDocument();
 });
 ```
