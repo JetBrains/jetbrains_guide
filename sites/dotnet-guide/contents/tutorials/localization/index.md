@@ -12,4 +12,4 @@ tutorialItems:
   - /tutorials/localization/aspnet/  
 ---
 
-In this series short series, we'll explore localization in .NET. For those unfamiliar with the concept, localization is the process of matching an application's language and visuals to a specific culture. We'll see just how easy it is to take an existing .NET application and localize it.
+In this short series, we'll explore localization in .NET. For those unfamiliar with the concept, localization is the process of matching an application's language and visuals to a specific culture. We'll see just how easy it is to take an existing .NET application and localize it.
