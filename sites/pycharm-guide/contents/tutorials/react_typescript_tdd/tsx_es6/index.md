@@ -28,6 +28,8 @@ TODO Update code
 
 ## Cleanup
 
+First, make sure our `All Tests` run config is running and watching our coding.
+ 
 The previous steps made changes to the app to introduce topics.
 Let's clean up a little bit.
 
@@ -97,13 +99,13 @@ export function Heading() {
 As a note, since so much of React is about refactoring big components into small "presentation" components, the IDE can automate this.
 Instead of typing the above, we could just select `<h1>Hello React</h1>`, invoked Refactor, and chosen `Extract Component`.
 
-TODO Screenshot
+![Extract Component](./screenshots/extract_component.png)
 
 With this component in place, we can now go back to the test and import it.
 Instead of doing so manually, click on `<Heading />`, hit `Alt-Enter`, and choose `Add import statement`.
 When you save, the test re-runs, and now both tests pass:
 
-TODO Screenshot
+![Tests Pass](./screenshots/tests_pass.png)
 
 Note that our `App` component isn't yet using this.
 Change the `App` to call the component:
@@ -137,9 +139,12 @@ test("renders heading with argument", () => {
 
 Thanks to TypeScript and the IDE, we "failed faster": it immediately told us, with a red-squiggly, that we violated the contract.
 `Heading` doesn't take a `name` prop.
+
+![Red Squiggly](./screenshots/red_squiggly.png)
+
 Let's head to the `Heading` component and fix it:
 
-```typescript
+```typescript {1,2}
 export function Heading({ name }) {
   return <h1>Hello {name}</h1>;
 }
@@ -204,7 +209,7 @@ A better transition?
 Have a default value for parent components that don't provide the prop.
 Fortunately, ES6 introduced default values for arguments:
 
-```typescript
+```typescript {1}
 export function Heading({ name = "React" }: HeadingProps) {
   return <h1>Hello {name}</h1>;
 }
@@ -237,7 +242,7 @@ This is another frequent task which the IDE can automate.
 Click somewhere in `Heading`, open the Refactor menu, and select `Move`.
 You will get a dialog like this:
 
-TODO Screenshot
+![Move Members](./screenshots/move.png)
 
 Make sure to choose `HeadingProps` as part of the move, and optionally do a preview first.
 Once done, the IDE will make the following changes for you:
@@ -267,7 +272,7 @@ Next, `App.tsx` is much smaller:
 
 ```typescript
 import React from "react";
-import { Heading } from "./h";
+import { Heading } from "./Heading";
 
 function App() {
   return (
@@ -283,7 +288,7 @@ export default App;
 We have one more step we can take with "single responsibility principle": move the `Heading` tests to their own `Heading.test.tsx` file.
 When you do so, the test runner will now show two "suites" of tests, from `Heading.test.tsx` and `App.test.tsx`:
 
-TODO Screenshow
+![Two Suites](./screenshots/two_suites.png)
 
 ## JSX/TSX
 
@@ -307,9 +312,7 @@ Error:(6, 14) TS2322: Type '{ children: string[]; class: string; }' is not assig
 Also, the IDE refuses to autocomplete on `class`. 
 It does, though, autocomplete on `className`, the JSX/TSX equivalent:
 
-![Autocomplete](./screenshots/autocomplete.png)
-
-TODO Update
+![Autocomplete](./screenshots/class_name.png)
 
 Accepting the autocomplete shows that the IDE fills in `{}` for an attribute value instead of double-quotes. 
 What's the difference? 
