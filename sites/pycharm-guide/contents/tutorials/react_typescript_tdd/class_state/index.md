@@ -47,7 +47,7 @@ Here's a `Counter.test.tsx` test to show that the counter starts at zero, which 
 test("should start at zero", () => {
   const { getByRole } = render(<Counter />);
   const counter = getByRole("counter");
-  expect(counter).toHaveTextContent("1");
+  expect(counter).toHaveTextContent("0");
 });
 ```
 
@@ -104,14 +104,32 @@ You betcha!
 Let's introduce a *wee little bit* more complexity, to formalize type safety on "read only" state objects.
 
 First, we'll move the initial state out of the class, into a module-scope variable, then flag in the type definition that this is read-only.
+
+```typescript
+const initialState = { count: 0 };
+export type CounterState = Readonly<typeof initialState>;
+```
 The TypeScript [`readonly` modifier](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier) is like `public`, `private`, and `protected`.
 It tells the *compiler* (but not the runtime) to watch for code that tries to assign to the object.
 
-To use this `initialState` in our component, add the following class property:
+To use this `initialState` in our component, replace the previous class property:
 
 ```typescript {2}
 export class Counter extends Component<CounterProps, CounterState> {
   readonly state: CounterState = initialState;
+
+  render() {
+    const { label = "Count" } = this.props;
+    return (
+      <div>
+        <label htmlFor="counter">{label}</label>
+        <span id="counter" role="counter">
+          {this.state.count}
+        </span>
+      </div>
+    );
+  }
+}
 ```
 
 Our tests pass, so we're in good shape, and we've added type safety to detect a common React component mistake.
@@ -139,9 +157,7 @@ test("should start at another value", () => {
 As before, our test fails, but before that, our IDE warns us that we have violated the `<Counter />` contract. 
 In fact, we probably figured that out as we typed -- no autocompletion on a `start` prop for the component.
 
-![No Start Prop Allowed](./screenshots/no_start.png)
-
-TODO Update screenshot
+![No Start Prop Allowed](./screenshots/red_squiggly_start.png)
 
 We'll fix the type definition in `Counter.tsx` to allow this prop -- a number -- to be passed to the component:
 
@@ -175,7 +191,7 @@ We wrap up each step by wiring the standalone component changes into the parent 
 Our `App.test.tsx` currently tests the label but not the counter.
 Let's open `App.test.tsx` and add a test of the count value:
 
-```typescript 
+```typescript {2,7,8}
 test("renders hello react", () => {
   const { getByLabelText, getByText, getByRole } = render(<App />);
   const linkElement = getByText(/hello react/i);
