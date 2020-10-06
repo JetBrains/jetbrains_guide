@@ -75,7 +75,7 @@ Open `src/App.test.tsx`.
 We're going to show the cycle of fail-fix in action. 
 Define two constants, then compare them with a simple Jest assertion:
 
-```typescript
+```typescript {5,6,7}
 test("renders learn react link", () => {
   const { getByText } = render(<App />);
   const linkElement = getByText(/hello react/i);
