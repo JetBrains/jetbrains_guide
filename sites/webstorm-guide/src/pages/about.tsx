@@ -15,22 +15,13 @@ const AboutPage: React.FC = () => {
       <main className="bd-main bulmaio-body">
         <div className="bd-main-container container" style={{ marginBottom: '2rem' }}>
           <header className="bd-header" style={{ marginBottom: 0, minHeight: '6rem', background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
-            <h1 className="title">{pageTitle}</h1>
+
           </header>
 
           <div className="columns">
             <div className="column is-three-quarters-desktop">
               <div className="bd-content content">
                 <div className="content">
-                  <h1>About the WebStorm Guide</h1>
-                  <p>Our IDEs are powerful. What is the best way to learn how to harness that power?</p>
-                  <p>You can find useful information on <a href="https://twitter.com/WebStormIDE">Twitter</a> or our <a
-                    href="https://blog.jetbrains.com/webstorm/">product
-                    blog</a>. Plus, the <a
-                    href="https://www.jetbrains.com/help/webstorm/meet-webstorm.html">documentation</a> is
-                    always there to help. For visual learners, we have created the WebStorm Guide: a collection of
-                    bite-sized visual resources, organized to help spark your learning. We hope it helps you get into
-                    the flow and excel at what you do.</p>
                   <h2>Using the Guide</h2>
                   <p>The WebStorm Guide comprises pieces of information organized into two categories: Topics and
                     Technologies.

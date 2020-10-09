@@ -25,8 +25,8 @@ and thus increasingly supported.
 The two together? Not as much. Given that they both change quickly, it's
 hard to find accurate learning materials.
 
-React+TypeScript, with PyCharm? That three-part combination is the topic
-of this series. We'll show a little about a lot. Meaning, the key steps
-to getting productive, in PyCharm, for React projects using TypeScript. Along
-the way we'll show test-driven development and emphasize tips-and-tricks in
-the IDE.
+React+TypeScript, with JetBrains IDEs? 
+That three-part combination is the topic of this series. 
+We'll show a little about a lot.
+Meaning, the key steps to getting productive, in the IDE, for React projects using TypeScript. 
+Along the way we'll show test-driven development and emphasize tips-and-tricks in the IDE.
