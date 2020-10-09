@@ -8,64 +8,82 @@ const dataUri = `url("${splash}") center center`;
 
 const AboutPage: React.FC = () => {
 
-  const pageTitle = 'About the WebStorm Guide';
+    const pageTitle = 'About This Guide';
 
-  return (
-    <SiteLayout pageTitle={pageTitle}>
-      <main className="bd-main bulmaio-body">
-        <div className="bd-main-container container" style={{ marginBottom: '2rem' }}>
-          <header className="bd-header" style={{ marginBottom: 0, minHeight: '6rem', background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
+    return (
+        <SiteLayout pageTitle={pageTitle}>
+            <main className="bd-main bulmaio-body">
+                <div className="bd-main-container container" style={{marginBottom: '2rem'}}>
+                    <header className="bd-header"
+                            style={{background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500}}>
+                        <article className="media">
+                            <div className="media-content">
+                                <div className="content">
+                                    <div className="bd-header-titles">
+                                        <h1 className="title">{pageTitle}</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </header>
 
-          </header>
+                    <div className="columns">
+                        <div className="column is-three-quarters-desktop">
+                            <div className="bd-content content">
+                                <div className="content">
+                                    <p>
+                                        Have you ever found a tip about how to do a specific thing in a JetBrains IDE
+                                        faster and caught yourself thinking, “Wow, I didn’t know about that, I wonder
+                                        what other productivity boosters I’ve missed?”
+                                    </p>
+                                    <p>
+                                        You can find some information about such productivity boosters on <a
+                                        href="https://twitter.com/WebStormIDE">Twitter</a> or our <a
+                                        href="https://blog.jetbrains.com/webstorm/">product blog</a>. Plus, the <a
+                                        href="https://www.jetbrains.com/help/webstorm/meet-webstorm.html">documentation</a> is
+                                        always there to help. For those who
+                                        don’t have much time to learn but still want to get better at what they do,
+                                        we’ve created the WebStorm Guide. The Guide comprises a collection of bite-sized
+                                        visual resources, organized to help spark your learning.
+                                    </p>
+                                    <p>
+                                        Despite the name of the Guide, <strong>the information in it is also applicable
+                                        to other JetBrains IDEs</strong> that have JavaScript support, including PyCharm
+                                        Professional, GoLand, and IntelliJ IDEA Ultimate.
 
-          <div className="columns">
-            <div className="column is-three-quarters-desktop">
-              <div className="bd-content content">
-                <div className="content">
-                  <h2>Using the Guide</h2>
-                  <p>The WebStorm Guide comprises pieces of information organized into two categories: Topics and
-                    Technologies.
-                    Let’s take a look at each.</p>
-                  <h4>Category 1: Technologies</h4>
-                  <p>Let’s imagine that you’ve found a tip about WebStorm’s powerful React support and caught yourself
-                    thinking,
-                    “I didn’t know that, I wonder what other React productivity boosters I’ve missed?” If that sounds
-                    familiar,
-                    the Technologies section of the guide is what you are looking for. All the resources in it are
-                    organized
-                    into
-                    groups of specific technologies, such as popular frameworks, libraries, and the like.</p>
-                  <h4>Category 2: Topics</h4>
-                  <p>Sometimes you come across a useful tip on how to do a specific job in the IDE, such as how to add a
-                    conditional breakpoint when debugging, and you want to dive deeper into that topic. To help you do
-                    that,
-                    we’ve
-                    also grouped the resources by topic. Each topic has a brief explanation and a list of resources for
-                    that
-                    topic.</p>
-                  <h2>Sharing Feedback and Contributing</h2>
-                  <p>If you have any ideas about how to make this Guide better or want to share your feedback with us,
-                    feel free
-                    to fill out <a href="https://forms.gle/eenYd4sngtV4rQ3f7">this short survey</a>.</p>
-                  <p>The WebStorm Guide is also an open project, with <a
-                    href="https://github.com/JetBrains/jetbrains_guide">a
-                    repository in GitHub</a> that hosts all the content. We write
-                    all the content in Markdown and use GatsbyJS to render a static site. If you’d like to contribute to
-                    it,
-                    please refer to the <a
-                      href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a> for more
-                    information.
-                  </p>
+                                    </p>
+
+
+                                    <h2>Sharing Feedback and Contributing</h2>
+                                    <p>If you have any ideas about how to make this Guide better or want to share your
+                                        feedback with us, feel free to fill out <a
+                                            href="https://forms.gle/eenYd4sngtV4rQ3f7">this short survey</a>. If you
+                                        want to report an issue, you can do it <a
+                                            href="https://github.com/JetBrains/jetbrains_guide/issues">here</a
+                                        >.
+                                        .
+                                    </p>
+                                    <p>The WebStorm Guide is also an open project, with <a
+                                        href="https://github.com/JetBrains/jetbrains_guide">a
+                                        repository in GitHub</a> that hosts all the content. We write
+                                        all the content in Markdown and use Gatsby to render a static site.
+                                        <strong>We encourage you to contribute to the Guide if you have any
+                                            ideas!</strong>
+                                        Please refer to the <a
+                                            href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a> for
+                                        more information.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+            </main>
 
 
-    </SiteLayout>
-  );
+        </SiteLayout>
+    );
 };
 
 export default AboutPage;

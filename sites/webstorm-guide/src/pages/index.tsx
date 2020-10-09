@@ -16,14 +16,16 @@ const IndexPage: React.FC = () => {
                              style={{background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                         <div className="hero-body">
                             <div className="container">
-                                <h1 className="title">WebStorm Guide</h1>
+                                <h1 className="title">JavaScript and Beyond: Tips and Tricks for JetBrains IDEs</h1>
                                 <div className="columns">
                                     <div className="column is-two-thirds">
 
-                                        <p className="is-size-4">Find out how you can be more productive and write
-                                            high-quality code faster
-                                            with a series of tips and tricks, which we have carefully put together for
-                                            you.</p>
+                                        <p className="is-size-4">Using WebStorm or any other JetBrains IDE with
+                                            <a style={{paddingLeft: "0.3em"}} href="https://www.jetbrains.com/products.html#lang=js">JavaScript support</a>? Explore a collection
+                                            of learning
+                                            resources to increase your productivity and start making amazing JavaScript
+                                            apps
+                                            faster.</p>
                                     </div>
                                 </div>
                             </div>
@@ -33,12 +35,6 @@ const IndexPage: React.FC = () => {
                 main: (
                     <section className="section has-background-light">
                         <div className="container">
-
-                            <h1 className="title">JavaScript and Beyond: Tips and Tricks for JetBrains IDEs</h1>
-                            <p>Using WebStorm or any other JetBrains IDE with JavaScript support? Explore a collection
-                                of learning
-                                resources to increase your productivity and start making amazing JavaScript apps
-                                faster.</p>
 
                             <h1 className="title">Learn Something New Quickly</h1>
                             <div>
