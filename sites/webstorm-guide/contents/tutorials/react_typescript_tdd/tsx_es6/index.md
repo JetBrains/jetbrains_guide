@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Using React and TypeScript means good JSX and ES6+ support in the IDE. This section shows some useful features from both.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=uakDz9uSRMI
+  url: https://youtu.be/JXrZDUzkc2Q
 ---
 
 TypeScript is a JavaScript superset with a compiler that enforces the types.
@@ -22,9 +23,7 @@ more of a look.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
-
-TODO Update code
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
 
 ## Cleanup
 

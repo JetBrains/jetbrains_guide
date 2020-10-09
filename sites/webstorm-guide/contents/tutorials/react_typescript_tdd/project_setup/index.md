@@ -7,8 +7,9 @@ topics: []
 author: pwe
 subtitle: Create a React+TypeScript project with the create-react-app scaffolding tool.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
-  poster: ./poster.png
+  poster: ./poster_long.png
   url: https://www.youtube.com/watch?v=ZP2dCeESF5A
 ---
 
@@ -23,9 +24,7 @@ In this tutorial step, we will generate a React+TypeScript project then open it 
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/project_setup).
-
-TODO Change to final URL location
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_setup).
 
 ## Project Creation
 

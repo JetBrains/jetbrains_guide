@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Make a very simple class component with local counter state, then make a type definition for that state.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=Eo3w3URqWp0
+  url: https://youtu.be/21-VMTmiV8E
 ---
 
 In [Class Components With Props](../class_props/) we made a `Counter` child component using a class, with one property passed in. 
@@ -24,9 +25,7 @@ We will stick to introducing component state and modeling it in TypeScript.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/class_state).
-
-TODO Update repo
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
 ## Always Start With a Test
 

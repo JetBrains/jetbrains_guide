@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Clean out some unneeded code from the default app, tweak some configuration in the IDE, and tour a few more features.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
-  poster: ./poster.png
-  url: https://www.youtube.com/watch?v=y5yCPtEKPgo
+  poster: ./poster_long.png
+  url: https://youtu.be/b0KrB31hN5k
 ---
 
 In our [previous step](../project_setup/) we generated a project then 
@@ -25,9 +26,7 @@ Along the way we'll show some IDE features in action.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/project_cleanup).
-
-TODO Copy over the finished product
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_cleanup).
 
 ## Reformatting Code
 

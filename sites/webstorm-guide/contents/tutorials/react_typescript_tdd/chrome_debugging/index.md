@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Sometimes you need to debug in the browser. Use the IDE to remote control Chrome during debugging.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=3kcSwWowASU
+  url: https://youtu.be/dvmZi_DWu9I
 ---
 
 As discussed in [Debugging During Testing With NodeJS](../nodejs_debugging/), testing and debugging under NodeJS is very productive. 

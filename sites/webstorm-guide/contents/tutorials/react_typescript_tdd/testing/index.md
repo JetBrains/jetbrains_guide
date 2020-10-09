@@ -7,10 +7,12 @@ topics: []
 author: pwe
 subtitle: Test-first development with Jest in the IDE.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
-  poster: ./poster.png
-  url: https://www.youtube.com/watch?v=jPLWfyYFKuA
+  poster: ./poster_long.png
+  url: https://youtu.be/Y_TGIsFnvo4
 ---
+
 
 We briefly saw the [Jest](../../../technologies/jest) test runner in [Project Setup](../project_setup/). 
 We modified an existing test but didn't dive into testing.
@@ -22,7 +24,7 @@ Then, only at the end of development, we will look at the app in the browser.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/testing).
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/testing).
 
 ## Pretty Jest
 

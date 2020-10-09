@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Make a simple class component with a single prop, again with a TypeScript interface describing the props.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=MkgbUcJ25GY
+  url: https://youtu.be/g-0AVl_ldA0
 ---
 
 In the previous step we made a "dumb" presentational component with one property.
@@ -26,9 +27,7 @@ We'll do state in the next step, followed by event handlers.
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/class_props).
-
-TODO Update code
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
 ## First a Test
 

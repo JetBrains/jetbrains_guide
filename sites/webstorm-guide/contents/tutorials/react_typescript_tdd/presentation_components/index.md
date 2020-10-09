@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Follow the React pattern of container/presentation components by refactoring the code and tests.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=vn6zTYYrrNo
+  url: https://youtu.be/SnCGW6JUo4E
 ---
 
 React encourages a separation of concerns.
@@ -18,6 +19,11 @@ The container maintains state, logic, and passes things into the presentation co
 
 Our Counter component is, as originally intended, a *class component* with state.
 Let's make it a *presentation component* by moving the state up to the container (App), as well as the incrementing logic.
+
+## Code
+
+The finished code for this tutorial step is 
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
 
 ## Counter State
 

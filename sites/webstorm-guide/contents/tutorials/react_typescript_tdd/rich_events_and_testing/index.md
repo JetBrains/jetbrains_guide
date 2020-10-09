@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Add event handling to a stateful class component by first writing tests during development.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=lBTHzBYxqUA
+  url: https://youtu.be/OO7OmA5UlQM
 ---
 
 Our counter component has local state, but doesn't respond to clicks.
@@ -30,9 +31,7 @@ As in previous steps, start with the following setup:
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
-
-TODO Update code
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
 
 ## First Failing Test
 

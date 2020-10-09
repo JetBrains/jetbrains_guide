@@ -7,9 +7,10 @@ topics: []
 author: pwe
 subtitle: Use the visual debugger in the IDE for smarter TDD.
 thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=yVaTqKqWT20
+  url: https://youtu.be/r1kwXZnO8gw
 ---
 
 In the [previous step](../testing/) we used testing as a way to develop our component without switching to a browser.
@@ -21,9 +22,7 @@ Instead, let's show how the IDE's *debugger*, combined with TDD, can make this i
 ## Code
 
 The finished code for this tutorial step is 
-[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/pycharm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
-
-TODO Update repo
+[in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
 ## Cleanup
 
