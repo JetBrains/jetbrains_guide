@@ -1,10 +1,10 @@
 ---
 date: 2020-10-05
-title: 'Find Usages'
+title: Find Usages
 technologies: []
 topics: [navigation]
 author: hs
-subtitle: 'Use Find Usages to search for references in your code base.'
+subtitle: Use Find Usages to search for references in your code base.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
