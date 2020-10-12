@@ -1,5 +1,5 @@
 ---
-date: 2018-10-07
+date: 2020-10-12
 title: React, TypeScript, and TDD
 technologies: [typescript, jest, react]
 topics: [testing]

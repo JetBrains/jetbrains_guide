@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-15
+date: 2020-10-12
 title: Debugging During Testing With NodeJS
 technologies: [nodejs, jest]
 topics: []

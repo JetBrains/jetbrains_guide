@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-15
+date: 2020-10-12
 title: Class Components With State
 technologies: [react, typescript, jest]
 topics: []

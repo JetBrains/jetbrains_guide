@@ -61,13 +61,13 @@ const AboutPage: React.FC = () => {
                                         want to report an issue, you can do it <a
                                             href="https://github.com/JetBrains/jetbrains_guide/issues">here</a
                                         >.
-                                        .
+
                                     </p>
                                     <p>The WebStorm Guide is also an open project, with <a
                                         href="https://github.com/JetBrains/jetbrains_guide">a
                                         repository in GitHub</a> that hosts all the content. We write
                                         all the content in Markdown and use Gatsby to render a static site.
-                                        <strong>We encourage you to contribute to the Guide if you have any
+                                        <strong style={{paddingLeft: "0.2rem", paddingRight: "0.2rem"}}>We encourage you to contribute to the Guide if you have any
                                             ideas!</strong>
                                         Please refer to the <a
                                             href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a> for

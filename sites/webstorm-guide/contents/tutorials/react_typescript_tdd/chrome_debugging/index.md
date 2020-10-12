@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-15
+date: 2020-10-12
 title: Debugging TSX With Chrome
 technologies: [react]
 topics: []

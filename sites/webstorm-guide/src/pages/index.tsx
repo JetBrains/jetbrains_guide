@@ -85,7 +85,7 @@ const IndexPage: React.FC = () => {
                                                 <div className="card-content">
                                                     <div className="media">
                                                         <div className="media-content">
-                                                            <Link to={`/topics`}><h1
+                                                            <Link to={`/tutorials`}><h1
                                                                 className="is-size-4">Tutorials</h1></Link>
                                                         </div>
                                                     </div>
