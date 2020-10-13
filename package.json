@@ -22,7 +22,10 @@
     "space:clean": "yarn workspace space-guide clean",
     "dotnet:develop": "yarn workspace dotnet-guide develop",
     "dotnet:build": "yarn workspace dotnet-guide build",
-    "dotnet:clean": "yarn workspace dotnet-guide clean"
+    "dotnet:clean": "yarn workspace dotnet-guide clean",
+    "intellij:develop": "yarn workspace intellij-guide develop",
+    "intellij:build": "yarn workspace intellij-guide build",
+    "intellij:clean": "yarn workspace intellij-guide clean"
   },
   "dependencies": {
     "yarn": "^1.22.4"
