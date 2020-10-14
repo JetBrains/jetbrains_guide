@@ -8,7 +8,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./preview.png
-  url: https://youtu.be/RZGMacGhocs
+  url: https://youtu.be/Zd4klWP5lt4
 leadin: |
     **Run all the things!**
     
@@ -19,7 +19,7 @@ leadin: |
     In a container, you can run:
     * Shell scripts, using `shellScript { }`
     * Kotlin code, using `kotlinScript { }`
-    * Container commands, such as `exec()` and `args()`
+    * Container commands, such as `entrypoint()` and `args()`
     * Language- and framework-specific commands, that can run Gradle, .NET or Docker image builds
     
     Many [examples can be found here](https://www.jetbrains.com/help/space/automation-faq.html).
