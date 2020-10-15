@@ -1,7 +1,7 @@
 ---
 date: 2020-03-16
 title: Complete Current Statement
-subtitle: Add braces and move the cursor with one keystroke.
+subtitle: Add curly braces and move the cursor with a single keystroke.
 technologies: [javascript, typescript]
 topics: [editing]
 author: er
@@ -15,6 +15,6 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Use the Complete Current Statement functionality (*Shift+Cmd+Enter* on macOS and *Shift+Ctrl+Enter* on 
-  Windows and Linux) to add curly braces and move the cursor with one keystroke.
+  After typing parentheses, trigger the Complete Current Statement action (⇧ ⌘ ↩︎  on macOS and ⇧ ⌃ ↩︎ on Windows and Linux) to add curly braces and move the cursor down to the beginning of the next row.
 
+---
