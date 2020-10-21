@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/g-0AVl_ldA0
+  url: https://youtu.be/HYmoeUF9ZH0
 ---
 
 In the previous step we made a "dumb" presentational component with one property.
