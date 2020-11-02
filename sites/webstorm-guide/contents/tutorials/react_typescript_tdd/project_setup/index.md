@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=ZP2dCeESF5A
+  url: https://youtu.be/wm8WdAB64gw
 ---
 
 React has become very popular, as has TypeScript. 
