@@ -1,26 +1,31 @@
 ---
+date: 2020-11-06
+title: Developing Serverless APIs using AWS Toolkit
+technologies: [AWS Toolkit]
+topics: [aws]
+author: mm
+subtitle: run build deploy as easy to maintain serverless functions in PyCharm
+thumbnail: ./thumbnail.png
+tutorialItems:
+  - /tutorials/intro-aws/background/
+  - /tutorials/intro-aws/setup/
+  - /tutorials/intro-aws/project-structure/
+  - /tutorials/intro-aws/invoke-local/
+  - /tutorials/intro-aws/atlas/
+  - /tutorials/intro-aws/crud/
+  - /tutorials/intro-aws/testing/
+  - /tutorials/intro-aws/deploying/
+  - /tutorials/intro-aws/cleanup/
+---
 
-### Introduction
-- Brief intro about AWS SAM
+AWS Lambda lets you run code without provisioning or managing servers.
+ Is it similar when it comes to PyCharm which helps developers to build, ship and 
+ deploy serverless functions.
 
-### Installation
-- AWS CLI & AWS SAM CLI
-- Setting up AWS credentials
+This  tutorial helps on understanding how we can easily
+ write serverless functions and easily deploy through PyCharm.
 
-### AWS Toolkit : PyCharm Plugin
-- Intro about the plugin
 
-### Creating a new Serverless Application Project in PyCharm
+*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial. 
+Also we require free tier access of MongoDB Atlas.*
 
-### Exploring the project structure
-- focusing lambda handler(app.py) and template.yaml file
-
-### Running Lambda function locally in Docker Container
-
-### Creating APIs (CRUD)
-- Writing APIs (GET|POST|PUT|DELETE)
-- Using MongoDB Atlas for Database
-
-### Protecting APIs through API Key
-
-### Reference Materials
