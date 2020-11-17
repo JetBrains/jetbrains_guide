@@ -13,12 +13,12 @@ const IndexPage: React.FC = () => {
       {{
         hero: (
           <section className="hero is-medium"
-                   style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+                   style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', color:"white"}}>
             <div className="hero-body">
               <div className="container">
-                <h1 className="title">IntelliJ IDEA Guide</h1>
+                <h1 className="title" style={{color:"white"}}>IntelliJ IDEA Guide</h1>
                 <div className="columns">
-                  <div className="column is-two-thirds">
+                  <div className="column is-two-thirds" >
 
                     <p className="is-size-4">Find out how you can be more productive and write high-quality code faster
                       with a series of tips and tricks, which we have carefully put together for you.</p>
