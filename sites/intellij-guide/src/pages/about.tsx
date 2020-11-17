@@ -1,6 +1,6 @@
 import React from 'react';
 // @ts-ignore
-import splash from './webstorm-beam.svg';
+import splash from './intellij-idea-beam.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
 
@@ -8,7 +8,7 @@ const dataUri = `url("${splash}") center center`;
 
 const AboutPage: React.FC = () => {
 
-  const pageTitle = 'About the IntelliJ Guide';
+  const pageTitle = 'About the IntelliJ IDEA Guide';
 
   return (
     <SiteLayout pageTitle={pageTitle}>

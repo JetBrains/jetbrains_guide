@@ -1,7 +1,7 @@
 import React from 'react';
 import HomepageLayout from 'gatsby-theme-bulmaio/src/components/layout/HomepageLayout';
 // @ts-ignore
-import splash from './webstorm-beam.svg';
+import splash from './intellij-idea-beam.svg';
 import { Link } from 'gatsby';
 
 const dataUri = `url("${splash}") center center`;
@@ -16,7 +16,7 @@ const IndexPage: React.FC = () => {
                    style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
             <div className="hero-body">
               <div className="container">
-                <h1 className="title">IntelliJ Guide</h1>
+                <h1 className="title">IntelliJ IDEA Guide</h1>
                 <div className="columns">
                   <div className="column is-two-thirds">
 
