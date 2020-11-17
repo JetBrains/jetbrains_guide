@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://www.youtube.com/watch?v=bcqK8awmwyE
+  url: https://youtu.be/08A0t0KyKCA
 leadin: |
   Press _Ctrl + F7_ on Windows/Linux, _⌥ + F7_ on macOS, to bring up the _Find Usages_ tool window.
   
