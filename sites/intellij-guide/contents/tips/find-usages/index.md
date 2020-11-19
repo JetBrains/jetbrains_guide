@@ -1,7 +1,7 @@
 ---
 date: 2020-10-05
 title: Find Usages
-technologies: []
+technologies: [java]
 topics: [navigation]
 author: hs
 subtitle: Use Find Usages to search for references in your code base.

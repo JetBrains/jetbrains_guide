@@ -1,6 +1,6 @@
 ---
 date: 2020-11-18
-title: Search Everywhere
+title: Word Wrap
 technologies: [java]
 topics: [navigation]
 author: hs
@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/c2i2n3wIbKU  
+  url: https://youtu.be/HzGxmuVnGPQ  
 leadin: |
   Press _Shift_ twice on macOS, Windows and Linux to bring up the Search Everywhere dialog.
   
