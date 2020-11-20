@@ -13,7 +13,7 @@ longVideo:
     url: https://youtu.be/todo
 ---
 
-Testing is an important part of development, and WebStorm makes this fun and productive by bringing test writing and running into the IDE.
+Testing is an important part of web development, and the WebStorm features in Rider make this fun and productive by bringing test writing and running into the IDE.
 
 This project has one file of code and one file for tests. In the running section and debugging section, we showed executing a file with a context menu. Let’s do the same, and run this test code under this project’s test runner, Jest.
 
