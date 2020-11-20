@@ -15,7 +15,7 @@ longVideo:
 
 Rider is packed full of features that can help you write better code, faster. Let’s look at some of the most essential ones.
 
-First up is code completion. It shows you **context-aware suggestions** as you type and completes keywords and symbols from language APIs and project dependencies. To add these suggestions, you can use <kbd>Enter</kbd>, or press <kbd>Tab</kbd> to replace an existing item.
+First up is code completion. Rider shows you **context-aware suggestions** as you type and completes keywords and symbols from language APIs and project dependencies. To add these suggestions, you can use <kbd>Enter</kbd>, or press <kbd>Tab</kbd> to replace an existing item.
 
 The IDE also makes it easy to keep your code error-free. For example, you’ll see green squiggly lines under typos. Hover over the highlighted issue to learn more about it. In the popup that appears, you’ll see a short description of the problem and a quick-fix for it if available.
 
