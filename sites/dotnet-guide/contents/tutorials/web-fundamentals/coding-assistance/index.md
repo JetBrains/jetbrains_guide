@@ -26,7 +26,7 @@ What if you want to **look up the documentation for a symbol**? There’s no nee
 
 Rider is great at cutting the amount of routine work you have to do. For example, you can **quickly convert a regular function to an arrow function**. Press <kbd>Alt+Enter</kbd> on the `function` keyword and select the corresponding intention.
 
-There are plenty of such intentions available! You can learn them gradually – click on the light bulb whenever you see it in the editor and see what the IDE has to offer. Or take a look at the full list of intentions in the settings, which you can reach from the intention.
+There are plenty of intentions available! You can learn them gradually – click on the light bulb whenever you see it in the editor and see what the IDE has to offer. Or take a look at the full list of intentions in the settings, which you can reach from the intention.
 Intentions are available for every language supported by Rider - C#, F#, VB.NET, JavaScript, TypeScript, HTML, CSS, SQL, and many, many more.
 
 Now, imagine you’ve got some badly formatted code, with lots of little problems all over the place. You may be tempted to fix them all manually, but there are much better things you could be doing instead! Explore our web help [for examples of how you can format full files](https://www.jetbrains.com/help/rider/Code_Formatting_Style.html) or just selected parts of your code.
