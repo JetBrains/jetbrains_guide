@@ -13,7 +13,7 @@ longVideo:
     url: https://youtu.be/todo
 ---
 
-Sometimes code has bugs, and you need to debug it. For JavaScript code, our IDEs bundle WebStorm’s debugger. Let’s take a look at its key features.
+Even the best codebases have bugs. For JavaScript developers, our IDEs bundle WebStorm’s debugger. Let’s take a look at its key features.
 
 Let’s open an HTML page using the IDE. From the context menu in the **Solution** tool window, choose **Debug**.
 In HTML files, this creates and selects a JavaScript Run/Debug configuration, which is a **JavaScript Debug** configuration type. It points to our project’s `index.html` page. The configuration uses Chrome as the browser.
