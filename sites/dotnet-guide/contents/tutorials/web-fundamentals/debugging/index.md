@@ -16,7 +16,7 @@ longVideo:
 Even the best codebases have bugs. For JavaScript developers, our IDEs bundle WebStorm’s debugger. Let’s take a look at its key features.
 
 Let’s open an HTML page using the IDE. From the context menu in the **Solution** tool window, choose **Debug**.
-In HTML files, this creates and selects a JavaScript Run/Debug configuration, which is a **JavaScript Debug** configuration type. It points to our project’s `index.html` page. The configuration uses Chrome as the browser.
+In HTML files, this creates and selects a JavaScript Run/Debug configuration, which is a **JavaScript Debug** configuration type. The run configuration points to our project’s `index.html` page, with Chrome as the browser.
 
 JavaScript files can be debugged under the NodeJS debugger instead of Chrome. Use the context menu again, but for a JavaScript file. Choose Debug to start debugging, and see a new Run/Debug Configuration created. If we edit the new configuration, we see it is of type NodeJS.
 
