@@ -22,7 +22,7 @@ The IDE also makes it easy to keep your code error-free. For example, you’ll s
 To see the full list of all the available actions in the current context, press <kbd>Alt+Enter</kbd>.
 From here, you can **choose the action you want to apply and press <kbd>Enter</kbd> to perform it**.
 
-What if you want to **look up the documentation for a symbol**? There’s no need to go to MDN for that! Just hover over that symbol or focus on it and press <kbd>F1</kbd>, and the IDE will show you the relevant documentation.
+What if you want to **look up the documentation for a symbol**? There’s no need to go to [MDN](https://developer.mozilla.org) for that! Just hover over that symbol or focus on it and press <kbd>F1</kbd>, and the IDE will show you the relevant documentation.
 
 Rider is great at cutting the amount of routine work you have to do. For example, you can **quickly convert a regular function to an arrow function**. Press <kbd>Alt+Enter</kbd> on the `function` keyword and select the corresponding intention.
 
