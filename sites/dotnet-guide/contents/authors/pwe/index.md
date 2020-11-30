@@ -4,7 +4,7 @@ subtitle: PyCharm Developer Advocate at JetBrains
 thumbnail: ./pwe.jpg
 ---
 
-Paul is the PyCharm Developer Advocate at JetBrains. Before that, Paul
+Paul is a member of the PyCharm Developer Advocates at JetBrains. Before that, Paul
 was a co-founder of Zope Corporation, taking the first open source
 application server through $14M of funding. Paul has bootstrapped both
 the Python Software Foundation and the Plone Foundation. Prior to that,
