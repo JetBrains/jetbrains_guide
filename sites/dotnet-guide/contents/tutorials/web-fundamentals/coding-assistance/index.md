@@ -38,4 +38,4 @@ Imports are another thing you no longer have to worry about. Let’s say we have
 - [Rider - Creating and Editing Code](https://www.jetbrains.com/help/rider/Creating_and_Editing_Code.html)
 - [WebStorm Guide - Editing](https://www.jetbrains.com/webstorm/guide/topics/editing/)
 - [Rider Essentials tutorial](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/)
-- [Sample code](https://TODO_PAUL) used throughout this tutorial.
+- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.

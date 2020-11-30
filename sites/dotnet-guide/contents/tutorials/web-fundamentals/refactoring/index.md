@@ -28,7 +28,7 @@ Let’s try performing another action that Rider can help you with: extracting a
 
 ### See Also
 
-- [Sample code](https://TODO_PAUL) used throughout this tutorial.
+- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Refactoring](https://www.jetbrains.com/dotnet/guide/topics/refactoring/)
 - [WebStorm Guide - Refactoring](https://www.jetbrains.com/webstorm/guide/topics/refactoring/)
 - [Inplace Refactorings](https://www.jetbrains.com/help/rider/Refactorings__Inplace_Refactorings.html#change_signature)

@@ -20,7 +20,7 @@ You can download these tools separately, but it's not required - they are alread
 The **Web Fundamentals in Rider** tutorial covers front-end development in Rider, showing capabilities that are brought in by WebStorm.
 It covers navigation, coding assistance, refactoring, running, debugging and testing your web applications, with technologies like JavaScript and React.
 
-Tutorial steps make use of the [sample code](https://TODO_PAUL) that was created using `npx create-react-app`.
+Tutorial steps make use of the [sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) that was created using `npx create-react-app`.
 It can be cloned and opened in Rider as a folder-based solution.
 
 As a companion to this tutorial, make sure to check out [the WebStorm Guide](https://www.jetbrains.com/webstorm/guide/) for more tips, tricks and deep-dives into front-end topics!
@@ -29,4 +29,4 @@ As a companion to this tutorial, make sure to check out [the WebStorm Guide](htt
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/)
 - [WebStorm Guide](https://www.jetbrains.com/webstorm/guide/)
-- [Sample code](https://TODO_PAUL) used throughout this tutorial.
+- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.

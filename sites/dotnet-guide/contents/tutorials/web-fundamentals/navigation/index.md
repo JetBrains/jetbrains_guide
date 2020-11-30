@@ -15,7 +15,7 @@ longVideo:
 
 Rider provides loads of ways to navigate efficiently across your codebase, and the IDE itself. Let’s take a look at some of them.
 
-Use of the [sample code](https://TODO_PAUL) that was created using `npx create-react-app`, and open it in Rider.
+Use the [sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) that was created using `npx create-react-app`, and open it in Rider.
 
 I want to find the `App.js` file in it. I could open the **Solution** tool window and look for `App.js`, but if I had a large codebase, it would take longer than I want it to. Instead, I’m going to press <kbd>Shift+Shift</kbd> and look for that file using **Search Everywhere**.
 
@@ -37,7 +37,7 @@ The **Structure** tool window can be very handy for examining a file quickly. It
 
 ### See Also
 
-- [Sample code](https://TODO_PAUL) used throughout this tutorial.
+- [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [Rider - Navigate and Search](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html))
 - [Rider Essentials tutorial](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/)
 - [WebStorm Guide - Navigation](https://www.jetbrains.com/webstorm/guide/topics/navigation/)
