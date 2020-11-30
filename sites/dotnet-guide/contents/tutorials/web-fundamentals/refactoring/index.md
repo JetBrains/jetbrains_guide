@@ -10,7 +10,7 @@ subtitle: See how the IDE helps you safely refactor code, without breaking exist
 thumbnail: ./thumbnail.png
 longVideo:
     poster: ./poster.png
-    url: https://youtu.be/todo
+    url: https://youtu.be/h51GC702vv4
 ---
 
 Every so often, you might need to restructure your existing code without changing its behavior. You don’t want to do it manually –  life is too short. Let’s see how Rider helps.

@@ -10,7 +10,7 @@ subtitle: Find out how Rider helps you write better code, faster.
 thumbnail: ./thumbnail.png
 longVideo:
     poster: ./poster.png
-    url: https://youtu.be/todo
+    url: https://youtu.be/gX8KgyzC-_A
 ---
 
 Rider is packed full of features that can help you write better code, faster. Let’s look at some of the most essential ones.

@@ -10,7 +10,7 @@ subtitle: How can you find what you want? Let's look at navigating around a code
 thumbnail: ./thumbnail.png
 longVideo:
     poster: ./poster.png
-    url: https://youtu.be/todo
+    url: https://youtu.be/qd7OboZCW6E
 ---
 
 Rider provides loads of ways to navigate efficiently across your codebase, and the IDE itself. Let’s take a look at some of them.
@@ -38,6 +38,6 @@ The **Structure** tool window can be very handy for examining a file quickly. It
 ### See Also
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
-- [Rider - Navigate and Search](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html))
+- [Rider - Navigate and Search](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html)
 - [Rider Essentials tutorial](https://www.jetbrains.com/dotnet/guide/tutorials/rider-essentials/)
 - [WebStorm Guide - Navigation](https://www.jetbrains.com/webstorm/guide/topics/navigation/)

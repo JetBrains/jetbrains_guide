@@ -10,7 +10,7 @@ subtitle: Get started with testing. We will use Jest as an example.
 thumbnail: ./thumbnail.png
 longVideo:
     poster: ./poster.png
-    url: https://youtu.be/todo
+    url: https://youtu.be/HE0g3dOk6lU
 ---
 
 Testing is an important part of web development, and the WebStorm features in Rider make this fun and productive by bringing test writing and running into the IDE.
