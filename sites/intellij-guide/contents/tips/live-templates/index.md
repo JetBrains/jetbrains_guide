@@ -1,20 +1,19 @@
 ---
 date: 2020-10-05
-title: Create New Class
+title: Live Templates
 technologies: [java]
 topics: [editing]
 author: hs
-subtitle: Quickly add new classes to your project.
+subtitle: Use Live Templates to get IntelliJ IDEA to auto complete common code structures for you.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/E7Q0U_b5nz4
+  url: https://youtu.be/uc_WoMqFNKQ
 leadin: |
-  You can use _Ctrl + 1_ on Windows and Linux, or _Cmd + 1_ on macOS to open the Project Window and then use _Alt + Ins_ in Windows, or _Cmd + N_ on macOS to generate a new file.  
+  Live Templates reduce the amount of code you need to type for the more common code constructs. You can use _psvm_ or _main_ to create the main Java method, for example. There are lots of live templates including _fori_ for a for i loop and _nn_ for not null, plus many more.
   
   **Pro tip:**
   
-  These same shortcuts will help you in many places where you need to generate code, such as constructors, getters and setters, toString methods and adding arguments to methods when you need to refactor. 
-
+  You can also add your own Live Templates, please see https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html for more information.
 ---

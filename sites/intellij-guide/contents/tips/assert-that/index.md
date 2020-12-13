@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/ukGjQxga6Wg  
 leadin: | 
-  Use _Alt + Enter_ to import static methods into classes to improve the readability of your code.
+  Use _Option + Enter_ on macOS, and _Alt + Enter_ on Windows/Linux, to import static methods into classes to improve the readability of your code.
   
   **Pro tip:**
   

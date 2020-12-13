@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Mg3ZaKFv6H8
 leadin: |
-  Press Use _Ctrl + Shift + F12_ on Windows and Linux and _Shift + Command + F12_ on macOS to hide all the windows so you can focus on your code window. 
+  Press _Shift + Command + F12_ on macOS, or _Ctrl + Shift + F12_ on Windows/Linux, to hide all the windows so that you can focus on your code window. 
   
   **Pro tip:**
   

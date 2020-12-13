@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/TMD4QCStg3M
 leadin: |
-  Press _Ctrl + F7_ on Windows/Linux, _⌥ + F7_ on macOS, to bring up the _Find Usages_ tool window.
+  Press _Option + F7_ on macOS, or _Ctrl + F7_ on Windows/Linux, to bring up the **Find Usages** tool window.
   
   You can search a single file, your whole project, or customise the scope. 
 
