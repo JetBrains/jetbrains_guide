@@ -13,7 +13,5 @@ shortVideo:
 leadin: |
   You can use _Shift + F6_ to change the signature of a method and add a new boolean parameter to it. You can then select _Delegate via overloading method_ to complete the refactor.  
   
-  **Pro tip:**
-  
-  xxx
+
 ---

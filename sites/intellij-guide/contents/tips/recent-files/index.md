@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/QJEEtaTV-Yg
 leadin: |
-  Use _Ctrl + E_ on Windows and Linux, or _Cmd + E_ on macOS to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog. 
+  Use _Cmd + E_ on macOS, or _Ctrl + E_ on Windows/Linux, or  to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog. 
   
   **Pro tip:**
   

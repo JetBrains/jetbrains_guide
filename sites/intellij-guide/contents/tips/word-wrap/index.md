@@ -2,21 +2,16 @@
 date: 2020-11-18
 title: Word Wrap
 technologies: [java]
-topics: [navigation]
+topics: [editing]
 author: hs
-subtitle: Use Search Everywhere to search everything in IntelliJ IDEA
+subtitle: Use Wordwrap 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/HzGxmuVnGPQ  
 leadin: |
-  Press _Shift_ twice on macOS, Windows and Linux to bring up the Search Everywhere dialog.
-  
-  You can search across Classes, Files, Symbols and Actions. 
+  Highlight any word or statement and then type in quotes or brackets to surround it with those. 
 
-  **Pro tip:**
-  
-  You can also use forward slash to filter the results to a specific area, such as _/editor_.
-  
+
 ---

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/SMybwowAh1o
 leadin: |
-  Press ⌘⇧8 on macOS, or _Alt + Shift + Ins_ on Windows/Linux, to enable _Column Select Mode_.
+  Press _Command + Shift + 8 on macOS, or _Alt + Shift + Ins_ on Windows/Linux, to enable **Column Select Mode**.
   
   **Pro tip:**
   
