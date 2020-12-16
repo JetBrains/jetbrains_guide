@@ -31,8 +31,7 @@ const AboutPage: React.FC = () => {
                         <div className="column is-three-quarters-desktop">
                             <div className="bd-content content">
                                 <h2>Learn something new, quickly</h2>
-                                <p>JetBrains tools like <a href="https://jetbrains.com/dotnet/">ReSharper Ultimate</a> and <a href="https://jetbrains.com/rider/">Rider</a> are
-                                    powerful developer productivity tools. What is the best way to learn how to harness that power?</p>
+                                <p>JetBrains tools included in the <a href="https://www.jetbrains.com/dotnet/">dotUltimate pack</a> are powerful developer productivity tools. What is the best way to learn how to harness that power?</p>
                                 <p>You can find useful information on our Twitter accounts, <a href="https://twitter.com/ReSharper">@ReSharper</a> and
                                     <a href="https://twitter.com/JetBrainsRider">@JetBrainsRider</a>, or our <a
                                     href="https://blog.jetbrains.com/dotnet/">product blog</a>.
