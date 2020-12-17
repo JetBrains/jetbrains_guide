@@ -84,7 +84,7 @@ export const referencesSchemaCustomizations = (createTypes: any) => {
 };
 
 export const referenceResources = async (createResolvers: any) => {
-    // Crap, can't use an interface like Reference as the resolver
+    // Can't use an interface like Reference as the resolver
     // key, have to run this for each type.
     Object.keys(referenceTypes).forEach((thisReference: string) => {
         createResolvers({
