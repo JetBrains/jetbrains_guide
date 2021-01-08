@@ -1,8 +1,8 @@
 ---
 date: 2020-11-19
 title: Turn Editor Breadcrumbs On and Off
-technologies: [java]
-topics: [editing]
+technologies: [java, kotlin]
+topics: [interface]
 author: hs
 subtitle: Use Find Actions to quickly configure editor breadcrumbs. 
 thumbnail: ./thumbnail.png

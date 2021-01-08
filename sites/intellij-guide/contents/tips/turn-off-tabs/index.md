@@ -2,7 +2,7 @@
 date: 2020-11-18
 title: Turn off aspects of the editor
 technologies: [java]
-topics: [navigation]
+topics: [interface, navigation]
 author: hs
 subtitle: Configure the Editor in IntelliJ IDEA
 thumbnail: ./thumbnail.png

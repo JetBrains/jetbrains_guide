@@ -1,7 +1,7 @@
 ---
 date: 2020-12-13
 title: Find Next Word
-technologies: [java]
+technologies: [java, kotlin]
 topics: [editing]
 author: hs
 subtitle: Find next word and highlight all instances
