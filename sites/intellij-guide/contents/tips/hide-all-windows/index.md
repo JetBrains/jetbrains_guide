@@ -1,8 +1,8 @@
 ---
 date: 2020-11-19
 title: Hide all Windows
-technologies: [java]
-topics: [editing]
+technologies: [java, kotlin]
+topics: [interface]
 author: hs
 subtitle: Hide all the windows to increase your workspace. 
 thumbnail: ./thumbnail.png

@@ -1,7 +1,7 @@
 ---
 date: 2020-11-19
 title: Column Select Mode
-technologies: [java]
+technologies: [java, kotlin]
 topics: [editing]
 author: hs
 subtitle: Use column select mode to make changes to list formats

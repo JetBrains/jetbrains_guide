@@ -1,7 +1,7 @@
 ---
 date: 2020-11-19
 title: Change Method Signature
-technologies: [java]
+technologies: [java, kotlin]
 topics: [refactoring]
 author: hs
 subtitle: Change Method Signature
