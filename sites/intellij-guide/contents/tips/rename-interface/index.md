@@ -1,6 +1,6 @@
 ---
 date: 2020-10-05
-title: Rename Interface
+title: Rename an Interface
 technologies: [java]
 topics: [refactoring]
 author: hs
