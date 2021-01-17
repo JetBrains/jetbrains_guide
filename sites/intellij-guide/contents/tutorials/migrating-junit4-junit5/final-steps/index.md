@@ -9,7 +9,7 @@ subtitle: Final Steps
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?t=808
+  url: https://youtu.be/F8UTTTDtbH0?start=808
 ---
 
 ## Final Steps

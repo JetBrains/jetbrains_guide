@@ -9,7 +9,7 @@ subtitle: Writing nested tests
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?t=1031
+  url: https://youtu.be/we3zJE3hlWE?start=1031
 ---
 
 ## Grouping tests with @nested

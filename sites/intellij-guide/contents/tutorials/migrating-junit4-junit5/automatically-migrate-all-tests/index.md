@@ -9,7 +9,7 @@ subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?t=452
+  url: https://youtu.be/F8UTTTDtbH0?start=452
 ---
 
 ## Automatically Migrate all Tests

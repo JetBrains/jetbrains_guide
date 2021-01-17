@@ -9,7 +9,7 @@ subtitle: Using JUnit 5 Inspections to migrate
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?t=247
+  url: https://youtu.be/F8UTTTDtbH0?start=247
 ---
 
 ## Using [IntelliJ IDEA Inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) to Migrate All Tests
