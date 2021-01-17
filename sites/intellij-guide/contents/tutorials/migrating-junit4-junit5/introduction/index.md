@@ -17,7 +17,6 @@ This tutorial will cover the configuration changes you need to make (using Maven
 *Note: We'll be using IntelliJ IDEA Community Edition for all the steps in this tutorial.*
 
 ## Other Resources
-- [List of useful shortcuts](shortcuts.md)
 - [Original JetBrains Blog](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)
 - [IntelliJ IDEA 2017.3 Junit 5 Support](https://blog.jetbrains.com/idea/2017/11/intellij-idea-2017-3-junit-support/)
 - [List of JUnit inspections in IntelliJ IDEA](https://www.jetbrains.com/help/idea/list-of-java-inspections.html#junit)
