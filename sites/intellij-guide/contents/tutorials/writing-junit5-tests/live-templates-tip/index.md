@@ -9,7 +9,7 @@ subtitle: Use Live Templates to create tests faster
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?t=434
+  url: https://youtu.be/we3zJE3hlWE?start=434
 ---
 
 ## Live Templates Tip

@@ -9,7 +9,7 @@ subtitle: There are other approaches that you can consider for migration
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?t=771
+  url: https://youtu.be/F8UTTTDtbH0?start=771
 ---
 
 ## Other Approaches to Consider

@@ -9,7 +9,7 @@ subtitle: Writing your test assumptions
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?t=685
+  url: https://youtu.be/we3zJE3hlWE?start=685
 ---
 
 ## Writing Test Assumptions
