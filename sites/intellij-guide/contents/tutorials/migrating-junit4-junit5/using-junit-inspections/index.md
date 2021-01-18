@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Using inspections
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Using JUnit 5 Inspections to migrate

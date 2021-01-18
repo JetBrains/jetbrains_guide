@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Creating and running a test
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Getting a JUnit 5 Test running

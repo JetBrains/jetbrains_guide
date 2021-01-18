@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Shortcuts
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: A list of shortcuts used in the tutorial

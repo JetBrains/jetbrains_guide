@@ -1,7 +1,7 @@
 ---
 date: 2021-01-01
 title: Writing JUnit 5 Tests
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Writing JUnit 5 Tests

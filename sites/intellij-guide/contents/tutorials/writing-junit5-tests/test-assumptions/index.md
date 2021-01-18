@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Test Assumptions
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Writing your test assumptions

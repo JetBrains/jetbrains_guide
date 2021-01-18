@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Helpful Test Names for Display
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Making your code more readable
