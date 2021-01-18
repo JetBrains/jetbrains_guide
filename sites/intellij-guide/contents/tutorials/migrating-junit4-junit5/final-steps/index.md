@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Final Steps
-technologies: [java]
+technologies: [jav, junit]
 topics: [testing]
 author: hs
 subtitle: Final Steps

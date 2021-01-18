@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Adding dependencies
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Adding JUnit 5 Dependencies

@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Other approaches to consider
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: There are other approaches that you can consider for migration

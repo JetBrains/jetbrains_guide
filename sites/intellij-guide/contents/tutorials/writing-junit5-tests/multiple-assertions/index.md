@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Multiple Assertions
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Managing the situation where you have to check more than one assertion

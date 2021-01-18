@@ -1,7 +1,7 @@
 ---
 date: 2021-01-11
 title: Migrating JUnit 4 to JUnit 5
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Migrating your JUnit 4 test suite to JUnit 5

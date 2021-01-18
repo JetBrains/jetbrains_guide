@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Checking Exceptions
-technologies: [java]
+technologies: [java, junit]
 topics: [testing]
 author: hs
 subtitle: Testing that exceptions are correctly thrown
