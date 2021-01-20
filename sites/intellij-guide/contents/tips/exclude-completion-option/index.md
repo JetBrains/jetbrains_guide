@@ -1,7 +1,7 @@
 ---
 date: 2021-01-20
 title: Exclude a completion option
-technologies: [Java]
+technologies: [java]
 topics: [interface]
 author: hs
 subtitle: You can exclude completion options that are not relevant for your code
