@@ -4,7 +4,7 @@ title: Convert from Record
 technologies: [java]
 topics: [latest, editing]
 author: hs
-subtitle: You can create Java Records and then ask IntelliJ IDEA to conver them to code that is supported by earlier versions of Java.
+subtitle: You can create Java Records and then ask IntelliJ IDEA to convert them to code that is supported by earlier versions of Java.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
