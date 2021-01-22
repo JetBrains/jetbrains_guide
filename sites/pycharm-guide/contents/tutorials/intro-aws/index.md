@@ -13,6 +13,7 @@ tutorialItems:
   - /tutorials/intro-aws/invoke-local/
   - /tutorials/intro-aws/atlas/
   - /tutorials/intro-aws/crud/
+  - /tutorials/intro-aws/authentication/
   - /tutorials/intro-aws/testing/
   - /tutorials/intro-aws/deploying/
   - /tutorials/intro-aws/cleanup/

@@ -1,71 +1,114 @@
 ---
 type: TutorialStep
-date: 2020-11-06
-title: PyCharm Plugin & Project Setup
+date: 2021-01-22
+title: Project Setup
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: --
-thumbnail: ../thumbnail.png
+subtitle: Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm Plugin AWS Toolkit.
+thumbnail: ./thumbnail.png
 longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  poster: poster_long.png
+  url: https://youtu.be/o4LdbOjarC0
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+In this tutorial step, let's install all the required dependencies.
 
-Let's do some background on these points.
+# AWS CLI
+Let's start first by downloading the AWS Command-Line Interface from `aws.amazon.com/cli`. 
+As I am using a Windows machine, I will download the 64-bit installer. 
+You can follow the same website if you are using Mac or Linux.
 
-# Testing and TDD
+![AWS CLI](./aws_cli.png)
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+Before moving forward with AWS SAM, make sure you have installed below mentioned dependencies.
+  - AWS CLI 
+  - [Docker](https://www.docker.com/)
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+# AWS SAM (Serverless Application Model)
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
+![AWS SAM](./aws_sam.png)
 
-# The `pytest` testing framework
+According to Amazon, The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications.
+A serverless application is a combination of Lambda functions, 
+event sources, and other resources that work together to perform tasks.
+Note that a serverless application is more than just a 
+Lambda function—it can include additional resources such as APIs,
+databases, and event source mappings.
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
+You can download the setup file from `aws.amazon.com/serverless/sam` and follow the 
+same installation process like you did above for the CLI.
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+# AWS Toolkit
 
-# PyCharm and "Visual Testing"
+The AWS Toolkit for PyCharm is an open source plug-in for the PyCharm IDE
+that makes it easier to create, debug, and deploy Python applications on
+Amazon Web Services. The toolkit provides an integrated experience for 
+developing serverless applications, including assistance for getting 
+started, step-through debugging, and deploying from the IDE.
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+If you are interested to know more about the plugin
+then refer this [link](https://aws.amazon.com/pycharm/).
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
+To install the plugin follow the below steps.
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
+Go to `Settings -> Plugins` search `AWS Toolkit` and click on `Install`.
 
-# The Scenario
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
+![AWS Toolkit](./aws_toolkit.png)
 
-Enough preparation, let's get setup and get started.
+
+# AWS Management Console
+
+Before starting up the project make sure that you have an AWS Account. 
+As you may know, AWS provides a free tier for some of the services,
+up to 12 months. Also, there are some services which are even free 
+after 12 months, such as AWS Lambda, which provides 1 million free
+requests per month and 400,000 GB-seconds of compute time per month.
+
+To know more about AWS, please visit [aws.amazon.com](https://aws.amazon.com/)
+
+![AWS Management Console](./aws_management_console.png)
+
+
+# Identity & Access Management (IAM)
+
+Once you have created an account and successfully logged into AWS, then we 
+will goto IAM section. IAM stands for Identity & Access Management. IAM lets you manage access to AWS services and resources securely. 
+
+![IAM](./iam.png)
+
+
+When I click on users, basically it will show me the lists of users 
+residing in my account. As you can see, I have one user. I will click
+on that specific user to get more information.
+
+![IAM_USER](./iam_user.png)
+
+You can see below that user falls under a <strong>Group</strong>. 
+A group is a collection of IAM users. Groups let you specify permissions for multiple users and make it easier to manage.
+
+![IAM_USER_GROUP](./aws_iam_group.png)
+
+Over here I have provided full access to some of the AWS Services 
+because of the tutorial, but this definitely is not a good practice.
+You should always follow the concept of least privilege. 
+Okay, we are done with the Groups. Let’s move back to the Users. 
+
+I will click on the specific user. Now I will hover to <strong>Security Credentials.</strong>
+I am now going to click on create access key and it is 
+going to provide me access key ID and secret access key.
+
+![IAM_ACCESS_KEYS](./access_keys.png)
+
+
+I will copy the credentials and open Command Prompt or Terminal. I will type <strong>aws configure</strong>
+which will prompt me to enter <strong>aws access key id</strong> and <strong>secret access key</strong>.
+
+![IAM_ACCESS_KEYS_TERMINAL](./access_keys_terminal.png)
+
+
+Once done, you are finally set to access your AWS Services programmatically
+through the CLI. You have completed installing the system dependencies.
