@@ -6,7 +6,7 @@ technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
 subtitle: Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm Plugin AWS Toolkit.
-thumbnail: ./thumbnail.png
+thumbnail: ../thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/o4LdbOjarC0

@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/sites/pycharm-guide/contents/tutorials/intro-aws/background/transcript.rst" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (pyramid_layout)" project-jdk-type="Python SDK" />
 </project>
