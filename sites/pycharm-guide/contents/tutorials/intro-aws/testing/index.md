@@ -5,67 +5,94 @@ title: Testing
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: --
+subtitle: Unit Testing Lambda functions
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  url: https://youtu.be/NbXOiUjyMhI
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+In this tutorial we are going to work on Unit Tests.
 
-Let's do some background on these points.
+# Unit Testing
 
-# Testing and TDD
+According to Wikipedia : <em>Unit tests are automated tests written and run by software
+developers to ensure that a section of an application (known as the "unit") meets its 
+design and behaves as intended.</em>
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+I will be covering only one scenario that will help you understand how we can begin with
+unit testing. 
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+# Installing Requirements
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
+![testing_step_1](./steps/step1.png)
 
-# The `pytest` testing framework
+First, install the <strong>pytest</strong> package. 
+It's the most popular python testing framework, widely used by developers and QA engineers.
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+# Let's begin testing
 
-# PyCharm and "Visual Testing"
+I am going to start from scratch. Let me first delete the default <strong>test_handler.py</strong> file.
+I will create a db.py file under the testing_db package which will contain the same 
+database connection logic which I used earlier.
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+![testing_step_2](./steps/step2.png)
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
+Next, I create the <strong>test_handler.py</strong> file under the unit package where I will write the unit tests.
 
-# The Scenario
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
+![testing_step_3](./steps/step3.png)
+Now, I am going to import the necessary modules like <strong>json</strong> and <strong>pytest</strong>.
 
-Enough preparation, let's get setup and get started.
+
+
+![testing_step_4](./steps/step4.png)
+
+Next, I am going to setup <strong>pytest</strong> as my default test runner. 
+
+Go to `Settings -> Tools -> Python Integrated Tools` and set the default test runner to <strong>pytest</strong>.
+
+Let’s resume where we left and import the necessary modules.
+
+
+I am going to create a sample fixture, according to Wikipedia <em>"A software test fixture sets up
+a system for the software testing process by initializing it, thereby satisfying any
+preconditions the system may have."</em>
+
+![testing_step_5](./steps/step5.png)
+
+You can see in the above image, I will be passing a sample user information to run my test case.
+
+I will begin creating the <strong>TestRegistrationAPI</strong> class where I will be loading my fixture and passing it into the lambda handler.
+
+![testing_step_6](./steps/step6.png)
+
+
+Before running the test case, make sure to add escape characters in the sample
+fixture as shown in line 11 and 12. As you can see on the below image,
+every time I run the test case, I will receive a different email address. 
+This is just for creating randomness, nothing special.
+
+![testing_step_7](./steps/step7.png)
+
+In the <strong>teardown</strong> method I will be flushing only the last inserted object from the database.
+
+![testing_step_8](./steps/step8.png)
+
+Okay, now I am ready to test. I will right click on the file <strong>test_handler</strong> and then I will click on <strong>Run “pytest in test_handler”</strong>.
+
+![testing_step_9](./steps/step9.png)
+
+The test has begun. It will take a few minutes or less than that based on the acceptance criteria.
+
+
+![testing_step_10](./steps/step10.png)
+
+
+Awesome ! The test has been successfully passed. This was a basic glimpse of unit testing. 
+If you  are interested to know more about testing then refer to this interesting article [Visual Testing with pytest](https://www.jetbrains.com/pycharm/guide/tutorials/visual_pytest/)
+written by [Paul Everitt](https://www.jetbrains.com/pycharm/guide/authors/pwe/).
