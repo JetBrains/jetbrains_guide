@@ -5,67 +5,131 @@ title: Deploying Functions
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: --
+subtitle: Deploying Lambda APIs through Pycharm
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  url: https://youtu.be/mqNTLSOcSOw
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+In this tutorial we are going to deploy our functions in AWS and test it through Postman.
 
-Let's do some background on these points.
+# Beginning Launch in AWS
 
-# Testing and TDD
+![deploy_step_1](./steps/step1.png)
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+Before we start, I want to give some information, as you can see in the above image,
+I have chosen <strong>AdministratorAccess</strong> which provides complete access to
+all the AWS Resources. In my previous video, I used different policies, there is no
+problem in that, but recently there was information shared by AWS
+that AWS Lambda will deprecate two managed policies called <strong>"AWSLambdaFullAccess"</strong> 
+and <strong>"AWSLambdaReadOnlyAccess"</strong> on January 25, 2021.
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
+For this tutorial I have used <strong>AdministratorAccess</strong>, but to be honest
+its not recommended approach from point of security and access controls.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+* Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
 
-# The `pytest` testing framework
+PyCharm is already open, I will right click on the project <strong>ServerlessDemo</strong>, 
+then at the bottom I click on <strong>Deploy Serverless Application</strong>.
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
+![deploy_step_2](./steps/step2.png)
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
+I will provide the stack name as <strong>ServerlessDemoStack</strong>. This is required for the CloudFormation. 
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+Next, I will create an S3 bucket <strong>serverless-pycharm-demo</strong>, it will be created in the <strong>ap-south-1</strong> region.
 
-# PyCharm and "Visual Testing"
+![deploy_step_3](./steps/step3.png)
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+Make sure <strong>“Require confirmation before deploying”</strong> 
+and <strong>“build function inside a container”</strong> are both checked.
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
+Then finally I will click on <strong>Deploy</strong>. It will take some time to build and package the application.  
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
 
-# The Scenario
+![deploy_step_4](./steps/step4.png)
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
+Once the build & packaging process is complete, then I am going to click on <strong>Continue Deployment.</strong>
 
-Enough preparation, let's get setup and get started.
+
+![deploy_step_5](./steps/step5.png)
+
+You can see on the CloudFormation Console that the stack is getting created. 
+It will take a few minutes to complete. 
+
+Okay, the stack has been successfully deployed. I will open the AWS Management Console and search for <strong>API Gateway</strong>.
+
+![deploy_step_6](./steps/step6.png)
+
+Let me give you brief idea what is API Gateway. <em>Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.</em> 
+
+As you can see I am in the API Gateway Console, and it is displaying the <strong>ServerlessDemoStack</strong> which we created.
+
+You can see the list of APIs along-with their request Methods like GET, POST, PUT and DELETE.
+
+![deploy_step_7](./steps/step7.png)
+
+Next, I will click on <strong>Stages</strong> which you can see in the left sidebar. 
+You remember we created the stage name as <strong>Prod</strong> in the <strong>template.yaml</strong> file.
+
+
+![deploy_step_8](./steps/step8.png)
+
+
+You can see the <strong>Invoke URL</strong> in the above image, this the URL from which we are going to access our API, 
+I am going to copy the URL and paste it in Postman.
+
+
+Okay, let’s begin by testing the <strong>Login API</strong>. I am going to provide
+email and password. If the credentials are authenticated successfully then
+I will receive a [JWT](https://jwt.io/) token.
+
+![deploy_step_9](./steps/step9.png)
+
+As you can see I have been successfully authenticated and also I received a token in response.
+
+
+This token will be used subsequently in other operations to authorize the requests.
+
+I am going to retrieve list of users, for that I need to pass the token in the <strong>Authorization</strong> header,
+and the request method is got to be <strong>GET</strong>. 
+
+You can see I am able to retrieve all users. 
+
+
+![deploy_step_10](./steps/step10.png)
+
+
+Let me try to get information for a specific user. You can see that I am also receiving information for that particular user.
+
+![deploy_step_11](./steps/step11.png)
+
+Now, I am going to create a new user, and the request method is going to be <strong>POST</strong>. I will be providing all the necessary information, make sure to pass the token in the Authorization header.
+
+![deploy_step_12](./steps/step12.png)
+
+Okay, we have successfully created a new user. So, I am going to perform update operation on the same record.
+
+The method is going to be <strong>PUT</strong>. I will modify the first name and last name into lower case and change the email address from gmail to yahoo.
+
+![deploy_step_13](./steps/step13.png)
+
+The data has been successfully updated as you can see on the above image.
+
+Let’s move with the final API to delete records from the database.
+
+The method is going to be <strong>DELETE</strong>. I don’t need to pass anything in the body.
+
+You can see I received 204 HTTP Response that means the record has been successfully removed from the database.
+
+
+![deploy_step_14](./steps/step14.png)
+
+
+Finally, we have successfully performed all the operations starting from development to deployment in AWS and all this happened smoothly through PyCharm. 
+
+This tutorial is a jump-start for those who want to get started with AWS Lambda
+and create serverless APIs. I suggest following the AWS documentation, 
+to stay updated about their latest offerings, and the new improvements they
+are adding to their tech stack. 
