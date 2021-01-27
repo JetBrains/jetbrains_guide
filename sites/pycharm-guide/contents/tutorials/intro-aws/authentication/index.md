@@ -5,67 +5,54 @@ title: Securing APIs with JSON Web Tokens (JWT)
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: --
+subtitle: Adding Custom Authorizers in Lambda functions
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  url: https://youtu.be/Q6uZ2HHIYQM
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+For this tutorial we are going to protect our APIs from unauthorized access by 
+creating Lambda Authorizer, formerly known as CustomAuthorizer. 
+It is an API Gateway feature that uses a Lambda function to control access
+to your API.
 
-Let's do some background on these points.
 
-# Testing and TDD
+Interested to know more about custom authorizers, please visit [Configure a Lambda authorizer using the API Gateway console
+](https://docs.aws.amazon.com/apigateway/latest/developerguide/configure-api-gateway-lambda-authorization-with-console.html). 
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+# Custom Authorizers
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
+Okay, let me first remove the <strong>Authorizers</strong> which I have declared 
+in the <strong>template.yaml</strong> file. By the way, if you have observed from
+the beginning, we are using Authorizer as <strong>None</strong>, but we did not set up
+the Default Authorizer. If you try to deploy the functions it’s not going to work,
+and it would lead to an error because you haven’t set up the <strong>Authorizer</strong>. So, let’s begin.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+![auth_step_1](./steps/step1.png)
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
+Let me start by creating an <strong>authorizer</strong> package under <strong>user</strong>. I 
+will follow the usual process like creating <strong>app.py</strong> file
 
-# The `pytest` testing framework
+![auth_step_2](./steps/step2.png)
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
+I will be using an existing blueprint for the <strong>Authorization</strong> process.
+It’s already available in <strong>AWS Lambda</strong> under the <strong>Blueprints</strong>. I
+am going to copy this logic into my <strong>app.py</strong>
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
+![auth_step_3](./steps/step3.png)
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+Below, I am providing the final snippet of custom authorizer blueprint. 
 
-# PyCharm and "Visual Testing"
+The source code is available on Github at [https://github.com/mukulmantosh/ServerlessDemo](https://github.com/mukulmantosh/ServerlessDemo)
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+`embed:tutorials/intro-aws/authentication/auth.py`
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
+If you have observed the logic carefully, you will notice that I have slightly refactored the code according to my requirements.
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
 
-# The Scenario
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
 
-Enough preparation, let's get setup and get started.
+
+
+
