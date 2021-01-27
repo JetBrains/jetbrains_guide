@@ -27,6 +27,7 @@ This  tutorial helps on understanding how we can easily
  write serverless functions and easily deploy through PyCharm.
 
 
-*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial. 
-Also we require free tier access of MongoDB Atlas.*
+*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial, 
+we will also be using MongoDB database as our primary datastore for that we will be
+relying on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).*
 
