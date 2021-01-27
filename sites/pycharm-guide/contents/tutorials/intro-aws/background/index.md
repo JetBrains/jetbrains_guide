@@ -9,63 +9,91 @@ subtitle: Introduce Microservices, AWS SAM (Serverless Application Model)
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  url: https://youtu.be/caW7eLThBwQ
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+Hello everyone, Welcome to the part one of the AWS PyCharm tutorial Series. 
+Today I will be explaining in brief about micro-services architectures and different serverless frameworks.
 
-Let's do some background on these points.
 
-# Testing and TDD
+# Background
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+Before taking a deep dive into microservices, let's understand first 
+what is a monolithic architecture. In a traditional monolithic architecture,
+all processes are tightly coupled and run in a single service. 
+This means that if one process of the application experiences a spike in demand,
+then the entire architecture must be scaled. If any single service is not 
+functioning properly, then it's going to affect all the services.
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
+![microservices](./microservices.png)
+Image Source : Amazon Web Services (AWS)
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+The scenario is completely different when it comes to microservices. 
+In a microservice architecture, the services are: loosely coupled, managed by
+a small team, easily scalable, and the most important part if one the services
+goes down, then it won't affect the other services. If one of your services
+is built using Java then your other services can also be developed, 
+but using python, .net or ruby. Microservices Architectures don't follow a one
+size fits all approach and provide flexibility to the developers, 
+as there is no technology constrained.
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
+There are lots of benefits when it comes to microservices.
 
-# The `pytest` testing framework
+To know more about microservices I would recommend you to follow the link [aws.amazon.com/microservices](https://aws.amazon.com/microservices/)
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
+# AWS Lambda
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
+![aws_lambda](./aws_lambda.png)
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+So in this course we will be focusing on one of the products that AWS offers
+for creating serverless applications that is AWS Lambda, run code 
+without thinking about servers. Yes that is true. As a customer you don't need
+to manage any servers because those servers are being managed by AWS.
+AWS Lambda automatically scales your application by running code in 
+response to each trigger. You are not running your app for 24x7 anymore,
+and you'll be charged against the time that your functions were running.
 
-# PyCharm and "Visual Testing"
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+# AWS SAM (Serverless Application Model)
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
+![aws_sam](./aws_sam.png)
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
+For this tutorial we will be also using the AWS serverless application model.
+AWS (SAM) is an open source framework that you can use to build serverless
+applications on AWS. AWS SAM is based on AWS cloudformation which defines
+serverless applications with templates. Essentially a cloudformation template
+is now the same thing as an AWS SAM Template. AWS SAM shows developers what 
+objects they can use in a template to model a serverless application.
 
-# The Scenario
+For reference, you can visit [aws.amazon.com/serverless/sam](https://aws.amazon.com/serverless/sam/)
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
+# Serverless Frameworks
 
-Enough preparation, let's get setup and get started.
+There are many ways to create serverless applications and one of them is
+the serverless framework. It is an open source serverless framework which
+enables developers to deploy cloud applications on any faas (Function As A Service) provider.
+While the framework is open source, they also provide enterprise support.
+
+For reference, you can visit [serverless.com](https://www.serverless.com/)
+
+![serverless](./serverless.png)
+
+There is one more serverless framework called Chalice which is being offered by AWS.
+Chalice is a framework for writing serverless apps in python.
+It lets you quickly create and deploy applications that use AWS lambda. 
+It is highly inspired by flask. It uses a decorator based syntax used in
+frameworks such as Flask, Bottle and fastAPI. It has lots of features 
+and seamlessly integrates with AWS services.
+
+For reference, you can visit [aws.github.io/chalice/index](https://aws.github.io/chalice/index)
+
+
+![aws_chalice](./aws_chalice.png)
+
+
+
+
+
+
+
+
