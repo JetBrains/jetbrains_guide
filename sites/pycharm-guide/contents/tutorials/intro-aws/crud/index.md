@@ -5,67 +5,220 @@ title: Writing REST APIs
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: --
+subtitle: Beginning CRUD (Create, Read, Update, Delete) Operations
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/dAbpPklX7wo
+  url: https://youtu.be/3imrJukMeMQ
 ---
 
-"Visual Testing with `pytest`" means three things: the field of testing and test-driven development (TDD), `pytest` as a testing tool, and PyCharm as a visual frontend.
-But what do *those* three things mean, and what are we going to work on?
+Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
 
-Let's do some background on these points.
 
-# Testing and TDD
+# Create (C)
 
-Writing code is fun. 
-But writing good code is hard.
-Over the years, Python and the community have embraced the concept of [unit testing](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/) as a way to ensure that the code you write works correctly, now and in the future.
+We are going to create an <strong>Organization</strong> directory and as we know, 
+every organization has users or employees. Thus, we are going to perform four different operations
+like <strong>Create</strong>, <strong>Read</strong>, <strong>Update</strong>, <strong>Delete</strong>.
 
-But that's the "eat your vegetables" version.
-"Bleh, test writing."
-This leads to projects where tests are a chore done at the end to satisfy some mandate.
 
-There's another philosophy called "test-driven-development" (TDD) where you write your tests *as you write your code*. 
-In fact, you write *failing* tests *before* you write your code, giving you time to think about what the code should do.
-Then, as you gradually implement your feature in code, your tests start to pass, and you have a feeling of success.
-I confess, I'm a big believer in this mode of development.
-In my experience, it's quite a (dare I say) joyful way to code.
+Let me start creating the <strong>organizations</strong> directory, But before that let me delete the <strong>hello world</strong>.
 
-Not only do tests let you know your code works, now and in the future, they also let you experiment with confidence.
-Have a crazy itch you want to scratch?
-Tests let you know which promises that "next big thing" broke, thus giving you freedom to break things.
+![crud_step_1](./steps/step1.png)
 
-# The `pytest` testing framework
+I am going to place <strong>requirements.txt</strong> under organizations. 
+Basically it needs to be placed under the <strong>users</strong> directory. I just forgot to do that,
+but I have rectified in my upcoming video. Don’t worry you can find the entire 
+tutorial source code in [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
-What are tests and how do you run them? 
-In programming languages, you adopt a testing framework, in which you write code with certain instructions in them which then gets run by the framework.
-For Python, the current favorite is [pytest](../../../technologies/pytest).
+![crud_step_2](./steps/step2.png)
 
-As a mature ecosystem, `pytest` has lots of resources to help you get started. 
-RealPython has [a primer on testing in general](https://realpython.com/python-testing/) as well as (paid) [course on pytest](https://realpython.com/courses/test-driven-development-pytest/). 
-Brian Okken leads the pack with a [Python Testing with pytest](https://pragprog.com/book/bopytest/python-testing-with-pytest) book and a [Test&Code podcast]() on all things testing.
+Let me give you brief idea about the packages which I am using in this project. 
 
-The pace of progress in the `pytest` community can be overwhelming at times.
-Fortunately the maintainers take compatibility and bug-fixing seriously.
+`requests` package allows you to send HTTP requests using Python.
 
-# PyCharm and "Visual Testing"
+`ujson` is also known as ultra json and written purely in C. It is very fast compared to the standard json module.
 
-And on to the last part: PyCharm as a visual frontend to test writing and running.
-PyCharm has had [rich support for testing](https://www.jetbrains.com/help/pycharm/testing.html) for many, many years (lots of it shared with all of our IDEs) and [`pytest` support](https://www.jetbrains.com/help/pycharm/pytest.html) in particular for at least four years.
+`pymongo` & `dnspython` both are required dependencies for connecting to a MongoDB Database.
 
-The combination can be very helpful for beginners and productive for veterans.
-For beginners, testing can be daunting and cryptic.
-Having a visual UI to guide the way can be a lifesaver.
+`marshmallow`  module helps convert complex data types, such as objects, to and from native Python data types. This module is normally used with Flask but if you are coming from Django Rest Framework background you can compare it with serializers.
 
-For experienced TDD folks, getting into the zen of "visual testing" in PyCharm is a heck of an experience.
-Everything you need -- your code, your tests, your test runner output, your test coverage, and your VCS -- is in one, consistent, integrated experience.
-Speaking from experience, this is invaluable when getting into the "flow".
+`pyjwt` is a Python library which allows you to encode and decode JSON Web Tokens (JWT).  We will be using the JWT module in the Login & Refresh Token APIs.
 
-# The Scenario
+`argon2` is a cryptographic hashing algorithm, most recommended for password hashing. It is also the winner of the 2015 Password Hashing Competition, a community-organized open competition to select a next generation hashing algorithm. 
+It’s designed not to be easier to compute on custom hardware than it is to compute on an ordinary CPU.
 
-We are going to simulate writing a small project, encountering code and testing issues along the way, and show how to work on them.
-This scenario uses a youth sports league -- girls lacrosse, fastest sport on two feet -- to give features and requirements that we can implement as part of TDD.
 
-Enough preparation, let's get setup and get started.
+* Make sure to run `pip install -r requirements.txt`
+
+
+I will be creating different packages like (<strong>create</strong>,<strong>read</strong>, <strong>update</strong>, <strong>delete</strong>) under users.
+
+
+Under the <strong>create</strong> directory, I will create an <strong>app.py</strong> file and utils package 
+where I will be storing basic utilities like db connection and validator.
+
+Now, I am going to write the code for connecting to MongoDB, but before that let me open MongoDB Atlas and copy the connection string for Python driver.
+
+![crud_step_3](./steps/step3.png)
+
+I will be creating a <strong>MongoDBConnection</strong> Class. This class is actually a <strong>context manager</strong>, 
+as you may know Context managers allow you to allocate and release resources precisely when you want to. 
+The primary motivation behind context managers is resource management.
+
+As you can see observe the below code that we have used special methods `__enter__` and `__exit__`. 
+The enter method will help to establish connection with the database, and the exit method will take care to close the connection.
+
+
+`embed:tutorials/intro-aws/crud/db.py`
+
+
+Now I will open the <strong>validator.py</strong> file and start creating a schema using the <strong>marshmallow</strong> module.
+
+We won’t be storing plain-text passwords in the database. 
+You can see that we are using the <strong>encrypt</strong> function which returns the hashed value.
+
+`embed:tutorials/intro-aws/crud/create_validator.py`
+
+
+You can see how the schema looks similar to [<strong>DRF Serializers.</strong>](https://www.django-rest-framework.org/api-guide/serializers/) For post-processing 
+you can see we are using <strong>post_load</strong> decorator for encrypting our passwords as well validating email
+for their existence in the db.
+
+
+Now, I am going to open <strong>app.py</strong> where the main business logic resides.
+
+Let me first import the necessary modules. Next, I will define the <strong>lambda handler</strong>.
+
+![crud_step_4](./steps/step4.png)
+
+
+All the information will be coming under the <strong>event body</strong>. I need to parse the information using the <strong>json</strong> module.
+
+The <strong>UserRegistrationSchema</strong> will be validating and processing whether all the inputs provided are correct or not.
+If the validation fails, or there is a generic key error, then it will raise a bad request, 
+otherwise I will store the record in the registrations collection and return 201 HTTP response.
+
+Below code is the final snippet how the <strong>app.py</strong> is going to look like.
+
+`embed:tutorials/intro-aws/crud/create_app.py`
+
+Now, I am going to open the <strong>template.yaml</strong> file.
+
+I have a global timeout of 30 seconds, and set the memory size to 2GB, it's completely based on your preference.
+
+![crud_step_5](./steps/step5.png)
+
+
+After setting the memory limit, I am going to register the API.
+
+![crud_step_6](./steps/step6.png)
+
+<strong>Codeuri</strong> points to the directory where my code resides and <strong>Handler</strong> is combination of <strong>folder_name.file_name.function_name</strong>
+
+![crud_step_7](./steps/step7.png)
+
+Please make sure <strong>requirements.txt</strong> is placed under the <strong>user</strong> directory, otherwise the build will fail.
+
+We are now ready to test our application.  Let me copy a sample snippet from `event.json`. 
+I will be passing dummy information in the body to check whether my function is able to create a new user.
+
+![crud_step_8](./steps/step8.png)
+
+Okay, as you can see in the console, the user has been registered successfully. 
+
+![crud_step_9](./steps/step9.png)
+
+
+Let me verify the data is also present in MongoDB. 
+
+Yes, the record has been successfully inserted in our database and even the password is
+stored in encrypted format.
+
+
+![crud_step_10](./steps/step10.png)
+
+
+Finally, we can store the user information in our database. Let’s move and create an API
+which retrieves user’s lists from the database.
+
+
+# Read (R)
+
+I am going to create a <strong>read</strong> package under the user. 
+I will follow a similar kind of implementation as I did for the create operation.
+
+I am going to copy the <strong>db.py</strong> file from utils and place it under the <strong>read/utils</strong>.
+
+![crud_step_11](./steps/step11.png)
+
+
+Same as previous, I will create <strong>app.py</strong> where I will be defining my business logic.
+
+You can see on line <strong>7</strong> that I am trying to retrieve the id from path parameters. 
+The ID is referring to the primary key of a specific user.
+
+![crud_step_12](./steps/step12.png)
+
+
+The <strong>retrieve_info</strong> function will take <strong>object_id</strong> as an input. <strong>Object_id</strong>
+is referring to the ID which we receive from <strong>PathParameters</strong>, if object_id is present in the db we return information
+related to that specific user else we return all users list.
+
+This is how the final code going to look like.
+
+`embed:tutorials/intro-aws/crud/read_app.py`
+
+
+The implementation is done. Let’s move to <strong>template.yaml</strong> file and register our API.
+
+We will register two APIs. One is <strong>OrganizationUserRead</strong> and <strong>OrganizationUserReadById</strong>.
+
+![crud_step_13](./steps/step13.png)
+
+![crud_step_14](./steps/step14.png)
+
+You can see both the APIs are pointing to the same business logic. 
+In <strong>ReadById</strong>  we are passing <strong>Id</strong> as a 
+parameter for getting information for a particular user.
+
+Let’s test out the functionality. 
+I will click on <strong>Run</strong> and then <strong>Edit Configurations</strong>. 
+This is a GET API we don’t need to pass anything in the body. 
+
+![crud_step_15](./steps/step15.png)
+
+In Windows machine you will get a Docker prompt for file sharing, kindly accept it.
+
+As you can below in the console, we are receiving all users list.
+
+![crud_step_16](./steps/step16.png)
+
+
+Now, I will try to retrieve information for a specific user. Let me first go to 
+the <strong>registrations</strong> collection. 
+
+I will copy the <strong>_id</strong> for the user <strong>Mike Jones</strong>.
+
+![crud_step_17](./steps/step17.png)
+
+I will then paste the <strong>_id</strong> it in the <strong>pathParameters</strong>. I will click on Apply and then OK.
+
+![crud_step_18](./steps/step18.png)
+
+Before running tha app, I have found an issue which needs to be fixed otherwise our code is not going work.
+
+Open <strong>app.py</strong> goto line number <strong>45</strong> it should be <strong>“Id”</strong>, I should be uppercase.
+
+![crud_step_19](./steps/step19.png)
+
+
+Save it and let me try to run again.
+
+![crud_step_20](./steps/step20.png)
+
+
+It's working fine. We are getting information for user <strong>Mike Jones</strong>. 
+
+
+Finally, our API is able to retrieve information from the database. Let’s move and create an API which will be used to update records in our database.
