@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-11-06
+date: 2021-01-29
 title: Deploying Functions
 technologies: [AWS Toolkit]
 topics: [aws]

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-11-06
+date: 2021-01-29
 title: Testing
 technologies: [AWS Toolkit]
 topics: [aws]

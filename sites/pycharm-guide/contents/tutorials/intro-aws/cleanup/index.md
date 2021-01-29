@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-23
+date: 2021-01-29
 title: Cleanup
 technologies: [AWS Toolkit]
 topics: [aws]

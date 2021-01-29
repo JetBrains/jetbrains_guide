@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-22
+date: 2021-01-29
 title: Project Setup
 technologies: [AWS Toolkit]
 topics: [aws]

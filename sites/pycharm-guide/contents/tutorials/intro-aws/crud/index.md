@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-11-06
+date: 2021-01-29
 title: Writing REST APIs 
 technologies: [AWS Toolkit]
 topics: [aws]
@@ -14,6 +14,7 @@ longVideo:
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
 
+Source Code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
 # Create (C)
 
@@ -222,3 +223,95 @@ It's working fine. We are getting information for user <strong>Mike Jones</stron
 
 
 Finally, our API is able to retrieve information from the database. Let’s move and create an API which will be used to update records in our database.
+
+
+# Update (U)
+
+I am going to create an <strong>update</strong> package under the user. I will follow the same approach that I did before for create & read operations.
+
+
+As you can see over here at line <strong>10</strong> that we are again capturing <strong>Id</strong>. If the Id is
+present in the database we will move forward and update all the required fields else it will raise an error.
+
+![crud_step_21](./steps/step21.png)
+
+
+I will call the <strong>update_one</strong> operation, observe line number <strong>25</strong> which will search whether
+the ObjectId exists in the database if yes then it will set the new values. If the update is successful
+then it will return 200 HTTP Response.
+
+![crud_step_22](./steps/step22.png)
+
+
+This is how the final code for the update operation is going to look like.
+
+`embed:tutorials/intro-aws/crud/update_app.py`
+
+Let’s register the API in the <strong>template.yaml</strong> file. As this API is being used to update our records, 
+so the method is going to be <strong>PUT</strong>.
+
+![crud_step_23](./steps/step23.png)
+
+ 
+Now, let’s test the functionality. I will click on <strong>Run</strong> and then <strong>Edit Configurations</strong>.
+
+
+I will pass necessary information like <strong>id</strong> in path parameters and in the body I will send the 
+values for firstname, lastname and email which needs to be updated.
+
+![crud_step_24](./steps/step24.png)
+
+Apply the changes and try to run again.
+
+Finally, our data has been successfully updated. 
+
+![crud_step_25](./steps/step25.png)
+
+Let me refresh the <strong>registrations</strong> collection and verify whether data has been updated or not. 
+
+![crud_step_26](./steps/step26.png)
+
+Great ! The data has been updated.
+
+
+# Delete (D)
+
+Let’s now move to the final part where we are going to remove records from the database by creating a DeleteAPI.
+
+I am going to perform the same kind of operations that I did previously for other operations.
+
+
+You can see over here at line <strong>9</strong> that we are again capturing <strong>Id</strong>. 
+I will call the <strong>delete_one</strong> operation which will remove the object from the database.
+
+![crud_step_27](./steps/step27.png)
+
+We are performing a similar kind of operation what we did for the update.
+
+Okay, our implementation is done. This is how the final code is going to look like.
+
+`embed:tutorials/intro-aws/crud/delete_app.py`
+
+Let’s now register our API in <strong>template.yaml</strong> file and test out the functionality.
+
+I am going to remove the last row <strong>David Jones</strong> from the <strong>registrations</strong> collection.
+
+Click on <strong>Run</strong> and then <strong>Edit Configurations</strong>. 
+I will pass the <strong>id</strong> of David Jones in <strong>pathParameters</strong>.
+
+![crud_step_28](./steps/step28.png)
+
+I will apply the changes and try to run again.
+
+The data has been successfully deleted from the db. Let me refresh the collection and verify it.
+
+![crud_step_29](./steps/step29.png)
+
+Great ! the record has been removed.
+
+![crud_step_30](./steps/step30.png)
+
+We have successfully completed the entire CRUD (Create, Read, Update & Delete) APIs. In the upcoming tutorial
+we will be working on the Custom Authorizers to protect our APIs.
+
+
