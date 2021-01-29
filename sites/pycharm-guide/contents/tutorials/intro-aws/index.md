@@ -1,5 +1,5 @@
 ---
-date: 2020-11-06
+date: 2021-01-29
 title: Developing Serverless APIs using AWS Toolkit
 technologies: [AWS Toolkit]
 topics: [aws]
