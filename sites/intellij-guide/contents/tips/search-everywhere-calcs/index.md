@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/wMNFNB_4PvY   
 leadin: |
-  Type in your sum, and the result will appear at the top of the Search Everywhere dialog as "Result: "
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux) and then type in your sum. The result will appear at the top of the Search Everywhere dialog as "Result: "
   
 ---

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/c2i2n3wIbKU  
 leadin: |
-  Press _Shift_ twice on macOS, Windows, and Linux to bring up the Search Everywhere dialog.
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog.
   
   You can search across Classes, Files, Symbols and Actions. 
 

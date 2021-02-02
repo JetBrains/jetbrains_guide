@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/a6JD7alClDY
 leadin: |
-  Press _Shift + F6_ on macOS, Windows, and Linux, to rename anything in IntelliJ IDEA, including interfaces. Everything that uses that interface will also be renamed.
+  Press **⇧F6** (macOS), or **Shift+F6** (Windows/Linux), to rename anything in IntelliJ IDEA, including interfaces. Everything that uses that interface will also be renamed.
   
   **Pro tip:**
   

@@ -4,7 +4,7 @@ title: Add Breakpoint
 technologies: [kotlin]
 topics: [debugging]
 author: hs
-subtitle: Breakpoints can help you to debug exceptions
+subtitle: Easily add breakpoints from the run window
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

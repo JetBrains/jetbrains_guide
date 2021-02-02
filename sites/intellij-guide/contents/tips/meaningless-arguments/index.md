@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/mC0q408Dkcs
 leadin: |
-  You can use Option + Return on macOS or Alt + Return on Windows/Linux to show context actions for meaningless arguments. You can then remove the redundant code.
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for meaningless arguments. You can then remove the redundant code.
   
   **Pro tip:**
   

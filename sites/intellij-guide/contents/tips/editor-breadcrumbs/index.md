@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/2W0X0_nlpWo
 leadin: |
-  Press _Shift + Command + A_ on macOS, or _Ctrl + Shift + A_ on Windows/Linux, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want. 
+  Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) on Windows/Linux, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want. 
   
   **Pro tip:**
   

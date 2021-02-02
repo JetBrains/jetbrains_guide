@@ -9,9 +9,9 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/Z2fRhMZF4
+  url:  https://youtu.be/q-Z2fRhMZF4
 leadin: |
-  You can select some code by scope and then use Option + Cmd + T on macOS, or Ctrl + Alt + T on Windows/Linux to create an editor fold. These are useful to minimise some code while you're working in other areas of the class. You can always maximise them again later. 
+  You can select some code by scope and then use **⌥⌘T** (macOS), or **Ctrl+Alt+T** (Windows/Linux), to create an editor fold. These are useful to minimise some code while you're working in other areas of the class. You can always maximise them again later. 
   
 
 ---

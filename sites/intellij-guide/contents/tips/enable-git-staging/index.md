@@ -9,9 +9,9 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/2W0X0_nlpWo
+  url: https://youtu.be/a-7y6ATlplg
 leadin: |
-  You can use Find Actions which is **Command**+**Shift**+**A** on macOS, or **Ctrl**+**Shift**+**A** on Windows and Linus and then search for 'Git Staging' to enable Git Staging instead of IntelliJ IDEA Changelists. 
+  You can use Find Actions which is **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) and then search for 'Git Staging' to enable Git Staging instead of IntelliJ IDEA Changelists. 
   
  
 ---

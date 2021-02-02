@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/MnN2z3WSaN8
 leadin: |
-  You can use Option + Return on macOS or Alt + Return on Windows/Linux to show context actions for redundant condition statements. You can then remove the redundant code.
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for redundant condition statements. You can then remove the redundant code.
 
 ---

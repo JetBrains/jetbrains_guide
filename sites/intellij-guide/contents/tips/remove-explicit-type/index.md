@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/tYpgbYzHpDU
 leadin: |
-  In Kotlin, we can remove an explicit type specification with **⌥⏎** on macOS or **Alt**+**Return** on Windows/Linux.  
+  In Kotlin, we can remove an explicit type specification with **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux).  
   
 
 ---

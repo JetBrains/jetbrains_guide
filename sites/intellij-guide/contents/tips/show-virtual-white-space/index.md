@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/NueNJVo6zr4
 leadin: |
-  You can enable 'Show virtual space at the bottom of the file' so you can scroll past the end of the file and the last line of text will be at the top of the window. You can access this from Search Everywhere by pressing Shift twice, or from Editor > General in Settings/Preferences.
+  You can use Find Action with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), and then type in 'Show virtual space at the bottom of the file'. This allows you to scroll past the end of the file so that the last line of text will be at the top of the window.
 
 
 ---

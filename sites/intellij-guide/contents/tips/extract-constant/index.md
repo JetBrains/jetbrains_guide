@@ -4,14 +4,14 @@ title: Extract Constant
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: Extract something to a constant
+subtitle: Extract a value to a constant
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/uVj8uQ35EXM
 leadin: |
-  Highlight what you want to extract to a constant and press _Option + Command + C_ on macOS, or _Ctrl + Alt + C_ on Windows/Linux to extract it.
+  Highlight the value that you want to extract to a constant and press **⌥⌘C** (macOS), or **Ctrl+Alt+C** (Windows/Linux), to extract it.
 
   **Pro tip:**
   

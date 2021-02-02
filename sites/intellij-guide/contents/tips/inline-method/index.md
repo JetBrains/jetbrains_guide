@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/wSuqsDyX2nc
 leadin: |
-  Press _Option + Command + N_ on macOS, or _Ctrl + Alt + N_ on Windows/Linux, to inline a method. 
+  Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method. 
   
   **Pro tip:**
   

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/foKr1a9r250
 leadin: |
-  You can generate new code quickly with Cmd + N on macOS, or Alt + Ins on Windows/Linux. For example, you can generate commonly used methods for Java beans in this way. 
+  You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way. 
 
   **Pro tip:**
   

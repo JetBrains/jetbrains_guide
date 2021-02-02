@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/kIq4wD4RJEc   
 leadin: |
-  You can bring up the Search Everywhere dialog by pressing Shift twice and searching for what you want to find. Git commits are displayed in your search results at the bottom if there are any matches. 
+  You can bring up the Search Everywhere dialog with **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), and searching for what you want to find. Git commits are displayed in your search results at the bottom if there are any matches. 
   
 ---

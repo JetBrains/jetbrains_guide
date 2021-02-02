@@ -9,9 +9,9 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/QJEEtaTV-Yg
+  url: https://youtu.be/Ww2pLAGtWrA
 leadin: |
-  Press _Ctrl + Shift + R_ on macOS, or _Ctrl + Shift +F10_ on Windows/Linux, to run the file in its current context. 
+  Press **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux), to run the file in its current context. 
 
 
 ---

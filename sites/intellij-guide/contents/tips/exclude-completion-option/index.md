@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/hOCa2-q7W2w
 leadin: |
-  You can use Option + Return on macOS or Alt + Return on Windows/Linux to show context actions and exclude completion options that you don't want to be displayed in future.
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions and exclude completion options that you don't want to be displayed in future.
 
 ---

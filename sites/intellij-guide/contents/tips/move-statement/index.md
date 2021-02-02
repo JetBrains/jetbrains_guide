@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/TZdeOOhTHlc
 leadin: |
-  You can use _Shift + Command + Up Arrow_ on macOS, or _Ctrl + Shift + Up Arrow_ on Windows/Linux, to move a line up. To move a statement down replace the _Up Arrow_ with _Down Arrow_.   
+  You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a statement down use **⇧⌘↓** (macOS), or **Ctrl+Shift+Down Arrow** (Windows/Linux).   
   
   **Pro tip:**
   

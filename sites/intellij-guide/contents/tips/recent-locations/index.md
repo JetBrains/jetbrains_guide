@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Sk9mJel9KZM
 leadin: |
-  Press _Command + Shift + E_ on macOS, or _Ctrl + Shift + E_ on Windows/Linux to view your recent locations.
+  Press **⇧⌘E** (macOS), or **Shift+Ctrl+E** (Windows/Linux), to view your recent locations.
   
   **Pro tip:**
   
