@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/w2obnLCfQ0I  
 leadin: |
-  The New Project Wizard helps you to create projects with different build systems and frameworks. There's more information in our screencast here: https://www.youtube.com/watch?v=xmrFlqbTjp8  
+  The New Project Wizard helps you to create projects with different build systems and frameworks. There's more information in our screencast here: [linky](https://www.youtube.com/watch?v=xmrFlqbTjp8)  
 
   
 ---
