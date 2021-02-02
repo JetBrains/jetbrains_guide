@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/v4jiPTuAxPk
 leadin: |
-  You can use Option + Return on macOS, or Alt + Return on Windows/Linux, to show context actions for your selection and then edit the code style.
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for your selection and then edit the code style.
 
 ---

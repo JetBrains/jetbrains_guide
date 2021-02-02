@@ -4,14 +4,14 @@ title: Extract Field
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: Extract something to a field
+subtitle: Extract code to a field
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Ym6BM2VQuLM
 leadin: |
-  Highlight what you want to extract to a field and press _Option+Command+F_ on macOS and _Ctrl+Alt+F_ on Windows and Linux to extract it.
+  Highlight the code you want to extract to a field and press **⌥⌘F** (macOS), or **Ctrl+Alt+F** (Windows/Linux), to extract it.
 
   **Pro tip:**
   

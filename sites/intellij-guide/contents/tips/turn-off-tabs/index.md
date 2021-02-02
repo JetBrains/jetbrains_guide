@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/9n7cWADTvRo  
 leadin: |
-  Press _Cmd + Shift + A_ on macOS, or _Ctrl + Shift + A_ on Windows/Linux, or  to display **Find Actions** and then you can type _tab placement_, _navigation bar_, _tool windows_ to modify or disable these elements.
+  Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or  to display **Find Actions** and then you can type _tab placement_, _navigation bar_, _tool windows_ to modify or disable these elements.
 
   
 ---

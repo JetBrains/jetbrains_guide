@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/SXW6IpP_uB0
 leadin: |
-  You can use _Command + B_ on macOS, or _Ctrl + B_ on Windows/Linux, to navigate to an implementation.
+  You can use **⌘B** (macOS), or **Ctrl+B** (Windows/Linux), to navigate to an implementation.
   
   **Pro tip:**
   

@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/lfVFK6kuECg
 leadin: |
-  You can use Shift + Cmd + N on macOS or Ctrl + Alt + Shift + Ins to copy some selected text from a file into a new scratch file of the same type.
+  You can use **⇧⌘N** (macOS), or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to copy some selected text from a file into a new scratch file of the same type.
 
 ---

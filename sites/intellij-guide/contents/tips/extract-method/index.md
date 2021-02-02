@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/VwEK2_FohFw
 leadin: |
-  Highlight the code you want to extract to a method and press _Option + Command + M_ on macOS, or _Ctrl + Alt + M_ on Windows/Linux to extract it.
+  Highlight the code you want to extract to a method and press **⌥⌘M** (macOS), or **Ctrl+Alt+M** (Windows/Linux), to extract it.
 
   **Pro tip:**
   

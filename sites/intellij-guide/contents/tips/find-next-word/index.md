@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Y0LhKg2tJfQ
 leadin: |
-  Press _Command + G_ on macOS, or F3 on Windows/Linux, to move to the next occurrence of a word. 
+  Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word. 
 
   **Pro tip:**
   

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/cuIeDZhpvM0
 leadin: |
-  You can use _Shift + Command + T_ on macOS, or _Ctrl + Shift + T_ on Windows/ Linux, to navigate to a test class and back again.
+  You can use **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux), to navigate to a test class and back again.
    
 
 ---

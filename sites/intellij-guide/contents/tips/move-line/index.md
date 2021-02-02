@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/L_h8NJdYyj4
 leadin: |
-  Press _Option + Shift + Up Arrow_ on macOS, or _Alt + Shift + Up Arrow_ on Windows/Linux, to move a line up. To move a line down replace the _Up Arrow_ with _Down Arrow_.   
+  Press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a line down use **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux).   
   
   **Pro tip:**
   
