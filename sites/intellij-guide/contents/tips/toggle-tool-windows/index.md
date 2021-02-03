@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/QFjyuqjnmB4
 leadin: |
-  You can use **⌘** + each number in turn (macOS), or **Alt** + each number in turn (Windows/Linux), to toggle the Tool windows on, and off. See href = https//jb.gg/ucyzh8 for more information on the Tool windows.
+  You can use **⌘** + each number in turn (macOS), or **Alt** + each number in turn (Windows/Linux), to toggle the Tool windows on, and off. See [our documentation](https://www.jetbrains.com/help/idea/tool-windows.html) for more information on the Tool windows.
 
 
 ---
