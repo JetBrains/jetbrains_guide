@@ -15,6 +15,6 @@ leadin: |
   
   **Pro tip:**
   
-  You can use _Option + Shift + O_ on macOS, or _Alt + Shift + O_ on Windows/Linux, to expand the inlay hints to also consider Comments and Text.
+  You can use **⌥⇧O** (macOS), or **Alt+Shift+O** (Windows/Linux), to expand the inlay hints to also consider Comments and Text.
 
 ---

@@ -15,6 +15,6 @@ leadin: |
   
   **Pro tip:**
   
-  This shortcut does factor in scope. You cannot move a statement outside of the scope its contained within.
+  This shortcut factors in scope. You cannot move a statement outside of the scope its contained within.
 
 ---

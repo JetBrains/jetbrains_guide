@@ -15,5 +15,5 @@ leadin: |
 
   **Pro tip:**
   
-  Use _Control + Command + G_ on macOS, or _Ctrl + Alt + Shift + J_ on Windows and Linux, to select all occurrences of the same word. 
+  Use **⌃⌘G** (macOS), or **Ctrl+Alt+Shift+J** (Windows/Linux), to select all occurrences of the same word. 
 ---

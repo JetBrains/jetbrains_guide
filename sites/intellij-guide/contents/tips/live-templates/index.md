@@ -15,5 +15,5 @@ leadin: |
   
   **Pro tip:**
   
-  You can also add your own Live Templates, please see https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html for more information.
+  You can also add your own Live Templates, please see [Live Templates](https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html) for more information.
 ---

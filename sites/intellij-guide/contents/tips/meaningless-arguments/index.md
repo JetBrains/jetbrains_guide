@@ -12,8 +12,5 @@ shortVideo:
   url: https://youtu.be/mC0q408Dkcs
 leadin: |
   You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for meaningless arguments. You can then remove the redundant code.
-  
-  **Pro tip:**
-  
-  You can also add your own Live Templates, please see https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html for more information.
+
 ---
