@@ -68,7 +68,7 @@ The heart of this application is the **template.yaml** file.
 
 ![explore_step_3](./steps/step3.png)
 
-It looks similar to <strong>CloudFormation</strong>. 
+It looks similar to **CloudFormation**. 
 It’s basically an extension to the CloudFormation Template.
 If you have previously worked with CloudFormation then its
 basically known as <strong>Infrastructure as a Code</strong>. 
