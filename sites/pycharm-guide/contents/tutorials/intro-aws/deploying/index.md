@@ -26,7 +26,7 @@ that AWS Lambda will deprecate two managed policies called <strong>"AWSLambdaFul
 and <strong>"AWSLambdaReadOnlyAccess"</strong> on January 25, 2021.
 
 For this tutorial I have used <strong>AdministratorAccess</strong>, but to be honest
-its not recommended approach from point of security and access controls.
+it's not the recommended approach from point of security and access controls.
 
 * Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
