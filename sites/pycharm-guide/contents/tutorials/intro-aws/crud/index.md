@@ -207,7 +207,7 @@ I will then paste the <strong>_id</strong> it in the <strong>pathParameters</str
 
 ![crud_step_18](./steps/step18.png)
 
-Before running tha app, I have found an issue which needs to be fixed otherwise our code is not going work.
+Before running the app, I have found an issue which needs to be fixed otherwise our code is not going work.
 
 Open <strong>app.py</strong> goto line number <strong>45</strong> it should be <strong>“Id”</strong>, I should be uppercase.
 
