@@ -29,7 +29,7 @@ Let me start creating the <strong>organizations</strong> directory. But before t
 
 I am going to place <strong>requirements.txt</strong> under organizations. 
 Basically it needs to be placed under the <strong>users</strong> directory. I just forgot to do that,
-but I have rectified in my upcoming video. Don’t worry you can find the entire 
+but I have rectified in my upcoming video. Don’t worry, you can find the entire 
 tutorial source code in [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
 ![crud_step_2](./steps/step2.png)
