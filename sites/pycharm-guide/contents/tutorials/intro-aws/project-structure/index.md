@@ -92,7 +92,7 @@ something like **“description”**, **“template version”**. This is the gl
 
 We will be registering our APIs under this **Resources** section.
 
-There are two properties <strong>CodeUri</strong> and <strong>Handler</strong>. 
+There are two properties **CodeUri** and **Handler**. 
 CodeUri is the directory in the business-logic reside
 and Handler is the combination of file name and 
 function name (<strong>app.lambda_handler</strong>). 
