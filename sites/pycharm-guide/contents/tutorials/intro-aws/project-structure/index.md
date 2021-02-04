@@ -71,7 +71,7 @@ The heart of this application is the **template.yaml** file.
 It looks similar to **CloudFormation**. 
 It’s basically an extension to the CloudFormation Template.
 If you have previously worked with CloudFormation then its
-basically known as <strong>Infrastructure as a Code</strong>. 
+basically known as **Infrastructure as a Code**. 
 It is a tool from AWS that allows you to spin up resources
 quickly and everything is being managed via code. 
 If you don’t use AWS and you rely on different cloud vendors
