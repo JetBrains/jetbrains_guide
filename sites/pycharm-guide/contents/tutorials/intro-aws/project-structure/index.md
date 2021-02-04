@@ -27,7 +27,7 @@ I will be choosing the **AWS Serverless Application**.
 
 ![explore_step_1](./steps/step1.png)
 
-As you can see <strong>Location</strong> points to path of my codebase. 
+As you can see **Location** points to path of my codebase. 
 
 For this tutorial, I have chosen `E:\Jetbrains\ServerlessDemo` as my path. 
 
@@ -154,4 +154,3 @@ There are lots of properties over here which you can pass to your serverless fun
 
 You will feel intimidated at first but don’t worry we will be exploring step by step. In the upcoming tutorial I will show you how to run the Lambda function locally using 
 Docker Container.
-
