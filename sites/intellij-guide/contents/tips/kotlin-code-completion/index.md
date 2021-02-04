@@ -1,5 +1,5 @@
 ---
-date: 2021-25-01
+date: 2021-01-08
 title: Kotlin Code Completion
 technologies: [kotlin]
 topics: [editing]

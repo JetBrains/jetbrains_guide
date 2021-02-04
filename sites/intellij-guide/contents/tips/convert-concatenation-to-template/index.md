@@ -1,10 +1,10 @@
 ---
-date: 2021-25-01
+date: 2021-01-08
 title: Convert Concatenation To Template
 technologies: [kotlin]
 topics: [refactoring]
 author: hs
-subtitle: This can make the result much cleaner
+subtitle: Use quick intentions to convert to a template string
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

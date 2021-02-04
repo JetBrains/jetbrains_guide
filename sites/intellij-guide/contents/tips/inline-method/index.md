@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Inline a method
 technologies: [java]
 topics: [refactoring]
@@ -12,9 +12,7 @@ shortVideo:
   url: https://youtu.be/wSuqsDyX2nc
 leadin: |
   Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method. 
-  
-  **Pro tip:**
-  
-  You can inline methods, variables, fields and constants with the same shortcut.
+   
+  You can inline methods, variables, fields, and constants with the same shortcut.
 
 ---

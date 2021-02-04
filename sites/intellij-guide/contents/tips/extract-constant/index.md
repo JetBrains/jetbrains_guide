@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Extract Constant
 technologies: [java]
 topics: [refactoring]
@@ -12,8 +12,6 @@ shortVideo:
   url: https://youtu.be/uVj8uQ35EXM
 leadin: |
   Highlight the value that you want to extract to a constant and press **⌥⌘C** (macOS), or **Ctrl+Alt+C** (Windows/Linux), to extract it.
-
-  **Pro tip:**
-  
+ 
   Extracting constants can be useful in improving the readability of your code.   
 ---

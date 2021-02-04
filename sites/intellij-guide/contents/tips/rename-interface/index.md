@@ -1,10 +1,10 @@
 ---
-date: 2020-10-05
+date: 2021-01-08
 title: Rename an Interface
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: Rename an interface (or anything in IntelliJ IDEA)
+subtitle: Renaming in IntelliJ IDEA including comments and texts
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

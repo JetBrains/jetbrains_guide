@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Remove Unnecessary Condition
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: IntelliJ IDEA will let you know if a condition is not necessary because it's covered by further conditions.
+subtitle: Use quick intentions to remove redundant code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

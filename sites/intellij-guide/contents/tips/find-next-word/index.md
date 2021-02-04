@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Find Next Word
 technologies: [java, kotlin]
 topics: [editing]

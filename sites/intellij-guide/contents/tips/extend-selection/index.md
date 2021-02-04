@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Code Selection
 technologies: [java, kotlin]
 topics: [editing]
@@ -13,7 +13,5 @@ shortVideo:
 leadin: |
   Press **⌥↑** (macOS), or **Ctrl+W** (Windows/Linux), to extend your selection of code by scope. To reduce the scope, use **⌥↓** (macOS), or **Shift+Ctrl+W** (Windows/Linux).
 
-  **Pro tip:**
-  
   This can be useful for a visual representation of scope when moving blocks of code around.  
 ---

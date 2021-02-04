@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Refactor an Unreachable Statement
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: IntelliJ IDEA will tell you when you have unreachable statements so you can remove them
+subtitle: Use quick intentions to remove redundant code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

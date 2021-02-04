@@ -4,7 +4,7 @@ title: Highlight code and surround it with brackets or quotes
 technologies: [java]
 topics: [editing]
 author: hs
-subtitle: This can save you a lot of typing and tabbing to add closing brackets or quotes. 
+subtitle: Surround code with brackets and quotes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

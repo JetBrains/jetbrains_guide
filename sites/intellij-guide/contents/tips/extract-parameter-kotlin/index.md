@@ -12,8 +12,6 @@ shortVideo:
   url: https://youtu.be/qRruPW6h2vc
 leadin: |
   Highlight the code you want to extract to a field and press **⌥⌘P** (macOS), or **Ctrl+Alt+P** (Windows/Linux), to extract it.
-
-  **Pro tip:**
-  
+ 
   Extracting parameters can be useful in improving the readability of your code.
 ---

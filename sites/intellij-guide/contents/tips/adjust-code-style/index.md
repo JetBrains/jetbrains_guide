@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Adjust Code Style
 technologies: [java]
 topics: [editing]
 author: hs
-subtitle: Adjust the code style of the editor to suit your preferences
+subtitle: Use quick intentions to adjust your code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

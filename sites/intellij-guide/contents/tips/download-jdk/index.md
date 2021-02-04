@@ -1,5 +1,5 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Download a JDK
 technologies: [java]
 topics: [interface]
@@ -12,4 +12,5 @@ shortVideo:
   url: https://youtu.be/D-CGuIAANW0
 leadin: |
   You can use the New Project Wizard to configure existing JDKs, or download new ones from different vendors.
+
 ---

@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Extract Parameter
 technologies: [java]
 topics: [refactoring]
@@ -12,8 +12,6 @@ shortVideo:
   url: https://youtu.be/0qAxLdUS0Vo
 leadin: |
   Highlight the code you want to extract to a field and press **⌥⌘P** (macOS), or **Ctrl+Alt+P** (Windows/Linux), to extract it.
-
-  **Pro tip:**
-  
+ 
   Extracting parameters can be useful in improving the readability of your code.
 ---
