@@ -14,7 +14,7 @@ longVideo:
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
 
-Source Code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
+Source code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
 # Create (C)
 
@@ -23,13 +23,13 @@ every organization has users or employees. Thus, we are going to perform four di
 like <strong>Create</strong>, <strong>Read</strong>, <strong>Update</strong>, <strong>Delete</strong>.
 
 
-Let me start creating the <strong>organizations</strong> directory, But before that let me delete the <strong>hello world</strong>.
+Let me start creating the <strong>organizations</strong> directory. But before that let me delete the <strong>hello world</strong>.
 
 ![crud_step_1](./steps/step1.png)
 
 I am going to place <strong>requirements.txt</strong> under organizations. 
 Basically it needs to be placed under the <strong>users</strong> directory. I just forgot to do that,
-but I have rectified in my upcoming video. Don’t worry you can find the entire 
+but I have rectified in my upcoming video. Don’t worry, you can find the entire 
 tutorial source code in [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
 ![crud_step_2](./steps/step2.png)
@@ -67,7 +67,7 @@ I will be creating a <strong>MongoDBConnection</strong> Class. This class is act
 as you may know Context managers allow you to allocate and release resources precisely when you want to. 
 The primary motivation behind context managers is resource management.
 
-As you can see observe the below code that we have used special methods `__enter__` and `__exit__`. 
+As you can see in the below cod, we have used special methods `__enter__` and `__exit__`. 
 The enter method will help to establish connection with the database, and the exit method will take care to close the connection.
 
 
@@ -313,5 +313,3 @@ Great ! the record has been removed.
 
 We have successfully completed the entire CRUD (Create, Read, Update & Delete) APIs. In the upcoming tutorial
 we will be working on the Custom Authorizers to protect our APIs.
-
-
