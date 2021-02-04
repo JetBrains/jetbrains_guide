@@ -67,7 +67,7 @@ I will be creating a <strong>MongoDBConnection</strong> Class. This class is act
 as you may know Context managers allow you to allocate and release resources precisely when you want to. 
 The primary motivation behind context managers is resource management.
 
-As you can see in the below cod, we have used special methods `__enter__` and `__exit__`. 
+As you can see in the below code, we have used special methods `__enter__` and `__exit__`. 
 The enter method will help to establish connection with the database, and the exit method will take care to close the connection.
 
 
