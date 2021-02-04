@@ -93,6 +93,6 @@ The test has begun. It will take a few minutes or less than that based on the ac
 ![testing_step_10](./steps/step10.png)
 
 
-Awesome ! The test has been successfully passed. This was a basic glimpse of unit testing. 
+Awesome ! The test has successfully passed. This was a basic glimpse of unit testing. 
 If you  are interested to know more about testing then refer to this interesting tutorial [Visual Testing with pytest](../visual_pytest/)
 written by [Paul Everitt](../../authors/pwe/).
