@@ -40,7 +40,7 @@ There is something new added by the AWS plugin to the interface called **Package
 **Zip* is basically archiving and storing it into Amazon S3 
 and **Image** is storing the Docker Images in AWS ECR 
 also known as Amazon Elastic Container Registry. We are now good to go. I will click on **Create**, and we will 
-wait for few minutes for the project to get initialized.
+wait for a few minutes for the project to get initialized.
 
 
 # AWS Toolkit
