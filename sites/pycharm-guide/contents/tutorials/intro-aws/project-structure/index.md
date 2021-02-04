@@ -90,7 +90,7 @@ something like **“description”**, **“template version”**. This is the gl
 
 ![explore_step_5](./steps/step5.png)
 
-We will be registering our APIs under this <strong>Resources</strong> section.
+We will be registering our APIs under this **Resources** section.
 
 There are two properties <strong>CodeUri</strong> and <strong>Handler</strong>. 
 CodeUri is the directory in the business-logic reside
