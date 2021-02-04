@@ -93,7 +93,7 @@ As you can see I have been successfully authenticated and also I received a toke
 This token will be used subsequently in other operations to authorize the requests.
 
 I am going to retrieve list of users, for that I need to pass the token in the <strong>Authorization</strong> header,
-and the request method is got to be <strong>GET</strong>. 
+and the request method must be <strong>GET</strong>. 
 
 You can see I am able to retrieve all users. 
 
