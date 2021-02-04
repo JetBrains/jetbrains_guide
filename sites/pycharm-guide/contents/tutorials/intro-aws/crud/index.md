@@ -14,7 +14,7 @@ longVideo:
 
 Hello everyone, today I will be working on APIs basically focusing in CRUD operations.
 
-Source Code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
+Source code is available on [Github](https://github.com/mukulmantosh/ServerlessDemo).
 
 # Create (C)
 
@@ -313,5 +313,4 @@ Great ! the record has been removed.
 
 We have successfully completed the entire CRUD (Create, Read, Update & Delete) APIs. In the upcoming tutorial
 we will be working on the Custom Authorizers to protect our APIs.
-
 
