@@ -31,7 +31,7 @@ it's not the recommended approach from point of security and access controls.
 * Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
 
-PyCharm is already open, I will right click on the project <strong>ServerlessDemo</strong>, 
+PyCharm Professional is already open, I will right click on the project <strong>ServerlessDemo</strong>, 
 then at the bottom I click on <strong>Deploy Serverless Application</strong>.
 
 ![deploy_step_2](./steps/step2.png)

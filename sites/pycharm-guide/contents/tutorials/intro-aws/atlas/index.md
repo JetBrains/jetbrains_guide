@@ -5,14 +5,14 @@ title: Setting Up a Database in MongoDB Atlas
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Connecting PyCharm with MongoDB
+subtitle: Connecting PyCharm Professional with MongoDB
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/TfwDOKRiYQ4
 ---
 
-In this tutorial we are going create a MongoDB Cluster and connect through PyCharm.
+In this tutorial we are going create a MongoDB Cluster and connect through PyCharm Professional.
 
 # MongoDB Atlas
 
@@ -71,7 +71,7 @@ I am going to click on <strong>Connect</strong> and then will click on <strong>C
 and finally I will copy the <strong>connection string</strong>.
 
 
-# Connecting through PyCharm
+# Connecting through PyCharm Professional
 
 
 ![atlas_step_6](./steps/step6.png)
@@ -89,7 +89,7 @@ We will be updating all the information like user, database name, password and t
 After that I am going to click on <strong>Test Connection</strong> to check whether 
 I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
 
-We have successfully connected with the MongoDB Database through PyCharm. 
+We have successfully connected with the MongoDB Database through PyCharm Professional. 
 
 
 
