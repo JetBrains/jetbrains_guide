@@ -64,7 +64,7 @@ This is a small kind of blueprint or starter template.
 
 ![explore_step_2](./steps/step2.png)
 
-The heart of this application is <strong>template.yaml</strong> file.
+The heart of this application is the **template.yaml** file.
 
 ![explore_step_3](./steps/step3.png)
 
