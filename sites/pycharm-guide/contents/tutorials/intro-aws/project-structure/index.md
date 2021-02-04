@@ -38,7 +38,7 @@ You are free to use virtual environment of your choice. I am sticking to **virtu
 There is something new added by the AWS plugin to the interface called **Package Type** which provides two options: **Zip** & **Archive**.
 
 <strong>Zip</strong> is basically archiving and storing it into Amazon S3 
-and <strong>Image</strong> is storing the Docker Images in AWS ECR 
+and **Image** is storing the Docker Images in AWS ECR 
 also known as Amazon Elastic Container Registry. We are now good to go. I will click on <strong>Create</strong>, and we will 
 wait for few minutes for the project to get initialized.
 
