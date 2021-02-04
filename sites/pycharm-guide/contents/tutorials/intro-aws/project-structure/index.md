@@ -23,7 +23,7 @@ Let us start. I will click on the <strong>New Project</strong>.
 
 ![PYCHARM_NEW_UI](./pycharm_ui_interface.png)
 
-I will be choosing the <strong>AWS Serverless Application</strong>.
+I will be choosing the **AWS Serverless Application**.
 
 ![explore_step_1](./steps/step1.png)
 
@@ -154,5 +154,4 @@ There are lots of properties over here which you can pass to your serverless fun
 
 You will feel intimidated at first but don’t worry we will be exploring step by step. In the upcoming tutorial I will show you how to run the Lambda function locally using 
 Docker Container.
-
 
