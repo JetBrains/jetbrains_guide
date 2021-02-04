@@ -5,7 +5,7 @@ title: Deploying Functions
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Deploying Lambda APIs through Pycharm
+subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
