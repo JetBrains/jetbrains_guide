@@ -45,7 +45,7 @@ wait for a few minutes for the project to get initialized.
 
 # AWS Toolkit
 
-Before getting deep dive into the Project Layout 
+Before doing a deep dive into the Project Layout 
 I would suggest if you want to get more information
 about the AWS Toolkit please visit the website
 [aws.amazon.com/pycharm](https://aws.amazon.com/pycharm/) which is offered by AWS. 
