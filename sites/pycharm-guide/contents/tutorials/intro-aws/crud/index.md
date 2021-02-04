@@ -189,7 +189,7 @@ This is a GET API we don’t need to pass anything in the body.
 
 ![crud_step_15](./steps/step15.png)
 
-In Windows machine you will get a Docker prompt for file sharing, kindly accept it.
+On a Windows machine you will get a Docker prompt for file sharing, kindly accept it.
 
 As you can below in the console, we are receiving all users list.
 
