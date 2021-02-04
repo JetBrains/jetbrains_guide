@@ -5,7 +5,7 @@ title: Invoking Functions Locally
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Execute Lambda function inside a container through PyCharm
+subtitle: Execute Lambda function inside a container through PyCharm.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
