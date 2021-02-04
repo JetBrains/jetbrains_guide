@@ -75,7 +75,7 @@ basically known as **Infrastructure as a Code**.
 It is a tool from AWS that allows you to spin up resources
 quickly and everything is being managed via code. 
 If you don’t use AWS and you rely on different cloud vendors
-then you can use an open-source tool provided by HashiCorp called <strong>[Terraform](https://www.terraform.io/)</strong>. Terraform is an open-source 
+then you can use an open-source tool provided by HashiCorp called [Terraform](https://www.terraform.io/). Terraform is an open-source 
 infrastructure as code software tool that provides a consistent
 CLI workflow to manage hundreds of cloud services. The great 
 advantage of using Terraform is that you can use it with any cloud 
