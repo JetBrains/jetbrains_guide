@@ -21,7 +21,7 @@ You can follow the same website if you are using Mac or Linux.
 
 ![AWS CLI](./aws_cli.png)
 
-Before moving forward with AWS SAM, make sure you have installed below mentioned dependencies.
+Before moving forward with AWS SAM, make sure you have installed following dependencies.
   - AWS CLI 
   - [Docker](https://www.docker.com/)
 
@@ -30,11 +30,11 @@ Before moving forward with AWS SAM, make sure you have installed below mentioned
 
 ![AWS SAM](./aws_sam.png)
 
-According to Amazon, The AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications.
+According to Amazon, the AWS Serverless Application Model (SAM) is an open-source framework for building serverless applications.
 A serverless application is a combination of Lambda functions, 
 event sources, and other resources that work together to perform tasks.
 Note that a serverless application is more than just a 
-Lambda function—it can include additional resources such as APIs,
+Lambda function -— it can include additional resources such as APIs,
 databases, and event source mappings.
 
 You can download the setup file from `aws.amazon.com/serverless/sam` and follow the 
@@ -45,16 +45,17 @@ same installation process like you did above for the CLI.
 
 The AWS Toolkit for PyCharm is an open source plug-in for the PyCharm IDE
 that makes it easier to create, debug, and deploy Python applications on
-Amazon Web Services. The toolkit provides an integrated experience for 
-developing serverless applications, including assistance for getting 
-started, step-through debugging, and deploying from the IDE.
+Amazon Web Services. This plugin is developed by the Amazon AWS team.
+The toolkit provides an integrated experience for developing serverless applications,
+including assistance for getting started, step-through debugging, and deploying from the IDE.
 
-If you are interested to know more about the plugin
-then refer this [link](https://aws.amazon.com/pycharm/).
+To learn more about this plugin, refer to this link [AWS Toolkit for PyCharm](https://aws.amazon.com/pycharm/).
 
 To install the plugin follow the below steps.
 
-Go to `Settings -> Plugins` search `AWS Toolkit` and click on `Install`.
+ - Go to `Settings -> Plugins`
+ - Search `AWS Toolkit`
+ - Click on `Install`
 
 
 ![AWS Toolkit](./aws_toolkit.png)
@@ -87,25 +88,25 @@ on that specific user to get more information.
 
 ![IAM_USER](./iam_user.png)
 
-You can see below that user falls under a <strong>Group</strong>. 
+You can see below that user falls under a **Group**. 
 A group is a collection of IAM users. Groups let you specify permissions for multiple users and make it easier to manage.
 
 ![IAM_USER_GROUP](./aws_iam_group.png)
 
-Over here I have provided full access to some of the AWS Services 
-because of the tutorial, but this definitely is not a good practice.
-You should always follow the concept of least privilege. 
+Over here I have provided full access to some of the AWS services 
+because of the tutorial, but this is definitely not a good practice.
+You should always follow the principle of least privilege. 
 Okay, we are done with the Groups. Let’s move back to the Users. 
 
-I will click on the specific user. Now I will hover to <strong>Security Credentials.</strong>
-I am now going to click on create access key and it is 
-going to provide me access key ID and secret access key.
+I will click on the specific user. Now I will hover to **Security Credentials.**
+I am now going to click on `create access key`, and it is 
+going to provide me **access key id** and **secret access key**.
 
 ![IAM_ACCESS_KEYS](./access_keys.png)
 
 
-I will copy the credentials and open Command Prompt or Terminal. I will type <strong>aws configure</strong>
-which will prompt me to enter <strong>aws access key id</strong> and <strong>secret access key</strong>.
+I will copy the credentials and open Command Prompt or Terminal. I will type **aws configure**
+which will prompt me to enter **aws access key id** and **secret access key**.
 
 ![IAM_ACCESS_KEYS_TERMINAL](./access_keys_terminal.png)
 
