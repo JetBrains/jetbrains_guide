@@ -111,7 +111,7 @@ This is the sample response structure of the lambda function.
 
 ![explore_step_8](./steps/step8.png)
 
-So, in the lambda function you must observed something called <strong>events</strong> & <strong>context</strong>. 
+So, in the lambda function you might have seen something called **events** & **context**. 
 I will dig deeper into this.
 
 When Lambda runs your function, it passes a context object to the handler. 
