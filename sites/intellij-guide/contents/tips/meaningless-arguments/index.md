@@ -1,10 +1,10 @@
 ---
-date: 2021-01-20
+date: 2021-01-08
 title: Meaningless Arguments
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: IntelliJ IDEA will show you if you have arguments that do not mean anything so you can remove them
+subtitle: Use quick intentions to remove redundant code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -1,5 +1,5 @@
 ---
-date: 2020-11-18
+date: 2021-01-08
 title: Search Everywhere
 technologies: [java]
 topics: [navigation]
@@ -11,12 +11,8 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/c2i2n3wIbKU  
 leadin: |
-  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog.
-  
-  You can search across Classes, Files, Symbols and Actions. 
-
-  **Pro tip:**
-  
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can search across Classes, Files, Symbols and Actions. 
+ 
   You can also use forward slash to filter the results to a specific area, such as _/editor_.
   
 ---

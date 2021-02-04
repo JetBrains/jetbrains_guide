@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Toggle Tool Windows On and Off
 technologies: [java, kotlin]
 topics: [interface]
 author: hs
-subtitle: Toggle all 10 Tool Windows on and off quickly
+subtitle: Toggle Tool Windows to tailor your interface 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -1,10 +1,10 @@
 ---
-date: 2021-25-01
+date: 2021-01-08
 title: Convert to Expression Body
 technologies: [kotlin]
 topics: [refactoring]
 author: hs
-subtitle: Using expression body syntax 
+subtitle: Use quick intentions to convert to use expression body syntax 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

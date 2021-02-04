@@ -1,10 +1,10 @@
 ---
-date: 2020-10-05
+date: 2021-01-08
 title: Recent Locations
 technologies: [java]
 topics: [navigation]
 author: hs
-subtitle: Use Recent Locations to quickly navigate around the subset of the codebase that you're working in.
+subtitle: Quickly navigate around your recent locations in your code base
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -12,9 +12,7 @@ shortVideo:
   url: https://youtu.be/Sk9mJel9KZM
 leadin: |
   Press **⇧⌘E** (macOS), or **Shift+Ctrl+E** (Windows/Linux), to view your recent locations.
-  
-  **Pro tip:**
-  
+   
   You can filter the recent locations list to files that you've changed by using the same shortcut again.
 
 ---

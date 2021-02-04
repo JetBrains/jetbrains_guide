@@ -1,10 +1,10 @@
 ---
-date: 2020-11-19
+date: 2021-01-08
 title: Turn Editor Breadcrumbs On and Off
 technologies: [java, kotlin]
 topics: [interface]
 author: hs
-subtitle: Use Find Actions to quickly configure editor breadcrumbs. 
+subtitle: Editor breadcrumbs show you your file structure
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -12,9 +12,7 @@ shortVideo:
   url: https://youtu.be/2W0X0_nlpWo
 leadin: |
   Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) on Windows/Linux, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want. 
-  
-  **Pro tip:**
-  
+   
   You can hide the editor breadcrumbs completely to maximise editor space.
 
 ---

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/hHDsG-sdb3U
 leadin: |
-  When you run your code and get an unhandled exception in IntelliJ IDEA you can click _Create breakpoint_ in the Run window to debug it.   
+  When you run your code and get an unhandled exception, you can click _Create breakpoint_ in the Run window to debug it.   
   
 
 ---

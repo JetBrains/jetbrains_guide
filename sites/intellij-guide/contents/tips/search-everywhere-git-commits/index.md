@@ -4,7 +4,7 @@ title: Git Commits in Search Everywhere
 technologies: [java, kotlin]
 topics: [vcs, latest]
 author: hs
-subtitle: You can view your git commits in the Search Everywhere dialog
+subtitle: View your git commits in the Search Everywhere dialog
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

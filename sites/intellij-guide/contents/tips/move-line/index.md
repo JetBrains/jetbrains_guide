@@ -1,5 +1,5 @@
 ---
-date: 2020-10-05
+date: 2021-01-08
 title: Move Line
 technologies: [java]
 topics: [editing]
@@ -12,9 +12,7 @@ shortVideo:
   url: https://youtu.be/L_h8NJdYyj4
 leadin: |
   Press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a line down use **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux).   
-  
-  **Pro tip:**
-  
+   
   This shortcut does not factor in scope. You can move lines in and out of scope. 
 
 ---

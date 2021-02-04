@@ -1,5 +1,5 @@
 ---
-date: 2020-12-13
+date: 2021-01-08
 title: Extract Field
 technologies: [java]
 topics: [refactoring]
@@ -12,8 +12,6 @@ shortVideo:
   url: https://youtu.be/Ym6BM2VQuLM
 leadin: |
   Highlight the code you want to extract to a field and press **⌥⌘F** (macOS), or **Ctrl+Alt+F** (Windows/Linux), to extract it.
-
-  **Pro tip:**
-  
+ 
   Extracting fields can be useful in improving the readability of your code.
 ---

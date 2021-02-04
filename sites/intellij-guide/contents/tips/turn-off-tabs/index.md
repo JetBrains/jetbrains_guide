@@ -1,10 +1,10 @@
 ---
-date: 2020-11-18
-title: Turn off aspects of the editor
+date: 2021-01-08
+title: Configure Your Editor
 technologies: [java]
 topics: [interface, navigation]
 author: hs
-subtitle: Configure the Editor in IntelliJ IDEA
+subtitle: Setup the editor to suit your requirements
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

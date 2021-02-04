@@ -1,16 +1,16 @@
 ---
-date: 2021-01-20
-title: Copy to Scratch File
+date: 2021-01-08
+title: Copy to, or create a Scratch File
 technologies: [java]
 topics: [latest, editing]
 author: hs
-subtitle: Copy content from the editor straight into a scratch file
+subtitle: Scratch files persist across all versions of IntelliJ IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/lfVFK6kuECg
 leadin: |
-  You can use **⇧⌘N** (macOS), or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to copy some selected text from a file into a new scratch file of the same type.
+  You can use **⇧⌘N** (macOS), or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to create a new scratch file. If you have content selected then the new scratch file will contain that content. 
 
 ---

@@ -1,10 +1,10 @@
 ---
-date: 2021-25-01
+date: 2021-01-08
 title: Put Kotlin Arguments on Separate Lines
 technologies: [kotlin]
 topics: [editing]
 author: hs
-subtitle: Separate arguments to improve the readability of your code.
+subtitle: Use quick intentions to improve the readability of your code 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

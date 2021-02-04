@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Replace with var
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: Replace the left-hand side of an assignment with `var`
+subtitle: Use quick intentions to replace a local variable type with `var`
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

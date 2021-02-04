@@ -1,10 +1,10 @@
 ---
-date: 2021-20-01
+date: 2021-01-08
 title: Generate Code
 technologies: [java]
 topics: [refactoring]
 author: hs
-subtitle: Use the Generate menu to generate code quickly that you might need in standard Java applications
+subtitle: Helps you to generate commonly used code constructs 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -12,8 +12,6 @@ shortVideo:
   url: https://youtu.be/foKr1a9r250
 leadin: |
   You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way. 
-
-  **Pro tip:**
-  
+ 
   You can use the same shortcut to add a new parameter in the Change Signature dialog. 
 ---
