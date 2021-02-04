@@ -35,7 +35,7 @@ The runtime is going to be **Python3.8**, and we will be using the default SAM T
 
 You are free to use virtual environment of your choice. I am sticking to **virtualenv**.
 
-There is something new added to the Interface called <strong>Package Type</strong> which provides two options <strong>Zip</strong> & <strong>Archive</strong>.
+There is something new added by the AWS plugin to the interface called **Package Type** which provides two options: **Zip** & **Archive**.
 
 <strong>Zip</strong> is basically archiving and storing it into Amazon S3 
 and <strong>Image</strong> is storing the Docker Images in AWS ECR 
