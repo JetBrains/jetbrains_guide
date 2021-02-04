@@ -307,7 +307,7 @@ The data has been successfully deleted from the db. Let me refresh the collectio
 
 ![crud_step_29](./steps/step29.png)
 
-Great ! the record has been removed.
+Great! The record has been removed.
 
 ![crud_step_30](./steps/step30.png)
 
