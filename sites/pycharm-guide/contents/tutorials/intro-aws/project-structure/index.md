@@ -118,7 +118,7 @@ When Lambda runs your function, it passes a context object to the handler.
 This object provides methods and properties that provide information about 
 the invocation, function, and execution environment.
 
-As you can see on my screen this is a list of <strong>properties</strong> which you can pass
+As you can see on my screen this is a list of **properties** which you can pass
 in your lambda context. I will provide the link in the description if you want to go into more
 details about the Lambda Context.
 
