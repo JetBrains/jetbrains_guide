@@ -44,7 +44,7 @@ This event is going to be passed into our Lambda function.
 After that, I will click on <strong>SAM CLI</strong>, 
 make sure to check <strong>“Build function inside a container”.</strong>
 
-Click on Apply and then OK.
+Click on `Apply` and then `OK`.
 
 ![invoke_step_4](./steps/step4.png)
 
