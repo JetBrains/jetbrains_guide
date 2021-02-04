@@ -109,7 +109,7 @@ Now, I am going to create a new user, and the request method is going to be <str
 
 ![deploy_step_12](./steps/step12.png)
 
-Okay, we have successfully created a new user. So, I am going to perform update operation on the same record.
+Okay, we have successfully created a new user. So, I am going to perform an update operation on the same record.
 
 The method is going to be <strong>PUT</strong>. I will modify the first name and last name into lower case and change the email address from gmail to yahoo.
 
