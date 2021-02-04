@@ -222,7 +222,7 @@ Save it and let me try to run again.
 It's working fine. We are getting information for user <strong>Mike Jones</strong>. 
 
 
-Finally, our API is able to retrieve information from the database. Let’s move and create an API which will be used to update records in our database.
+Finally, our API is able to retrieve information from the database. Let’s move on and create an API which will be used to update records in our database.
 
 
 # Update (U)
