@@ -43,9 +43,8 @@ same installation process like you did above for the CLI.
 
 # AWS Toolkit
 
-The AWS Toolkit for PyCharm is an open source plug-in for the PyCharm IDE
-that makes it easier to create, debug, and deploy Python applications on
-Amazon Web Services. This plugin is developed by the Amazon AWS team.
+This plugin is developed by the Amazon AWS team. It is an open source plug-in for the PyCharm IDE
+that makes it easier to create, debug, and deploy python applications on Amazon Web Services. 
 The toolkit provides an integrated experience for developing serverless applications,
 including assistance for getting started, step-through debugging, and deploying from the IDE.
 
