@@ -123,7 +123,7 @@ in your lambda context. I will provide the link in the description if you want t
 details about the Lambda Context.
 
 
-Apart from context there is one more thing passed called as <strong>events</strong>.
+Apart from context there is one more thing passed called **events**.
 According to AWS an event is a JSON-formatted document that contains data for a 
 Lambda function to process. The Lambda runtime converts the event to an object and
 passes it to your function code. It is usually of the Python dict type. It can also
