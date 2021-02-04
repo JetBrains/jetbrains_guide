@@ -100,7 +100,7 @@ function name (**app.lambda_handler**).
 
 ![explore_step_6](./steps/step6.png)
 
-<strong>Lambda handler</strong> is nothing, but a pure python function. It takes a set of events and from
+**Lambda handler** is nothing but a pure python function. It takes a set of events and from
 that event you will be getting all information like the request body etc. 
 
 
