@@ -23,7 +23,7 @@ every organization has users or employees. Thus, we are going to perform four di
 like <strong>Create</strong>, <strong>Read</strong>, <strong>Update</strong>, <strong>Delete</strong>.
 
 
-Let me start creating the <strong>organizations</strong> directory, But before that let me delete the <strong>hello world</strong>.
+Let me start creating the <strong>organizations</strong> directory. But before that let me delete the <strong>hello world</strong>.
 
 ![crud_step_1](./steps/step1.png)
 
@@ -313,4 +313,3 @@ Great ! the record has been removed.
 
 We have successfully completed the entire CRUD (Create, Read, Update & Delete) APIs. In the upcoming tutorial
 we will be working on the Custom Authorizers to protect our APIs.
-
