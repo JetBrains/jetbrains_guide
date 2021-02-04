@@ -141,7 +141,7 @@ The sample shows how we are passing the request body.
 ![explore_step_10](./steps/step10.png)
 
 There is a **tests** directory. If you want to write some unit tests, your Lambda functions
-locally can use the same sample <strong>event.json</strong> file.
+locally can use the same sample **event.json** file.
 
 
 # Template Anatomy
