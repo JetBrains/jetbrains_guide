@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-01-29
-title: Setting up database in MongoDB Atlas
+title: Setting Up a Database in MongoDB Atlas
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
@@ -90,7 +90,6 @@ After that I am going to click on <strong>Test Connection</strong> to check whet
 I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
 
 We have successfully connected with the MongoDB Database through PyCharm. 
-
 
 
 

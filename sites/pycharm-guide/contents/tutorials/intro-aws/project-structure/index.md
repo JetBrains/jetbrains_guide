@@ -32,20 +32,20 @@ For this tutorial, I have chosen `E:\Jetbrains\ServerlessDemo` as my path.
 
 The runtime is going to be **Python3.8**, and we will be using the default SAM Template **AWS SAM Hello World**.
 
-You are free to use virtual environment of your choice. I am sticking to <strong>virtualenv</strong>
+You are free to use virtual environment of your choice. I am sticking to **virtualenv**.
 
-There is something new added to the Interface called <strong>Package Type</strong> which provides two options <strong>Zip</strong> & <strong>Archive</strong>.
+There is something new added by the AWS plugin to the interface called **Package Type** which provides two options: **Zip** & **Archive**.
 
-<strong>Zip</strong> is basically archiving and storing it into Amazon S3 
-and <strong>Image</strong> is storing the Docker Images in AWS ECR 
-also known as Amazon Elastic Container Registry. We are now good to go. I will click on <strong>Create</strong>, and we will 
-wait for few minutes for the project to get initialized.
+**Zip* is basically archiving and storing it into Amazon S3 
+and **Image** is storing the Docker Images in AWS ECR 
+also known as Amazon Elastic Container Registry. We are now good to go. I will click on **Create**, and we will 
+wait for a few minutes for the project to get initialized.
 
 
 # AWS Toolkit
 
-Before getting deep dive into the Project Layout 
-I would suggest if you want to get more information
+Before doing a deep dive into the Project Layout 
+if you want to get more information
 about the AWS Toolkit please visit the website
 [aws.amazon.com/pycharm](https://aws.amazon.com/pycharm/) which is offered by AWS. 
 This Toolkit is developed by AWS so over here you can see what
@@ -63,14 +63,14 @@ This is a small kind of blueprint or starter template.
 
 ![explore_step_2](./steps/step2.png)
 
-The heart of this application is <strong>template.yaml</strong> file.
+The heart of this application is the **template.yaml** file.
 
 ![explore_step_3](./steps/step3.png)
 
-It looks similar to <strong>CloudFormation</strong>. 
+It looks similar to **CloudFormation**. 
 It’s basically an extension to the CloudFormation Template.
 If you have previously worked with CloudFormation then its
-basically known as <strong>Infrastructure as a Code</strong>. 
+basically known as **Infrastructure as a Code**. 
 It is a tool from AWS that allows you to spin up resources
 quickly and everything is being managed via code. 
 If you don’t use AWS and you rely on different cloud vendors
@@ -122,7 +122,7 @@ in your lambda context. I will provide the link in the description if you want t
 details about the Lambda Context.
 
 
-Apart from context there is one more thing passed called as <strong>events</strong>.
+Apart from context there is one more thing passed called **events**.
 According to AWS an event is a JSON-formatted document that contains data for a 
 Lambda function to process. The Lambda runtime converts the event to an object and
 passes it to your function code. It is usually of the Python dict type. It can also
@@ -151,5 +151,5 @@ If you want to get into more details about Serverless Functions then there is so
 called <strong>[Template Anatomy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html)</strong> as you can see on my screen. Here you will get more information about what data we can pass to the SAM Template. 
 There are lots of properties over here which you can pass to your serverless functions. You can set the events, environments, handlers and even you can set the memory size. 
 
-You will feel intimidated at first but don’t worry we will be exploring step by step. In the upcoming tutorial I will show you how to run the Lambda function locally using 
+You will feel intimidated at first, but don’t worry, we will be exploring step by step. In the upcoming tutorial I will show you how to run the Lambda function locally using 
 Docker Container.

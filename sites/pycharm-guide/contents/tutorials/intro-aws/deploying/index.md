@@ -5,7 +5,7 @@ title: Deploying Functions
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Deploying Lambda APIs through Pycharm
+subtitle: Use PyCharm Professional to deploy your Lambda APIs.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -26,7 +26,7 @@ that AWS Lambda will deprecate two managed policies called <strong>"AWSLambdaFul
 and <strong>"AWSLambdaReadOnlyAccess"</strong> on January 25, 2021.
 
 For this tutorial I have used <strong>AdministratorAccess</strong>, but to be honest
-its not recommended approach from point of security and access controls.
+it's not the recommended approach from point of security and access controls.
 
 * Please follow the [Security best practices in IAM (Identity & Access Management)](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html).
 
@@ -93,7 +93,7 @@ As you can see I have been successfully authenticated and also I received a toke
 This token will be used subsequently in other operations to authorize the requests.
 
 I am going to retrieve list of users, for that I need to pass the token in the <strong>Authorization</strong> header,
-and the request method is got to be <strong>GET</strong>. 
+and the request method must be <strong>GET</strong>. 
 
 You can see I am able to retrieve all users. 
 
@@ -109,7 +109,7 @@ Now, I am going to create a new user, and the request method is going to be <str
 
 ![deploy_step_12](./steps/step12.png)
 
-Okay, we have successfully created a new user. So, I am going to perform update operation on the same record.
+Okay, we have successfully created a new user. So, I am going to perform an update operation on the same record.
 
 The method is going to be <strong>PUT</strong>. I will modify the first name and last name into lower case and change the email address from gmail to yahoo.
 
