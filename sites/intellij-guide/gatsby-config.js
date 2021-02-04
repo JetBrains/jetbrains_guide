@@ -69,7 +69,7 @@ module.exports = {
           buttons: [
             {
               accent: 'light',
-              href: 'https://www.jetbrains.com/idea/download/',
+              href: 'https://jb.gg/zws7og',
               label: 'Get IntelliJ IDEA'
             }
           ],
