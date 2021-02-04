@@ -85,7 +85,7 @@ provider.
 ![explore_step_4](./steps/step4.png)
 
 As you can see in the template over here there is 
-something like <strong>“description”</strong>, <strong>“template version”</strong>. This is the global information about your functions. All the functions will be getting time-out after 3 seconds. You can also define your memory requirements.
+something like **“description”**, **“template version”**. This is the global information about your functions. All the functions will be getting a time-out after 3 seconds. You can also define your memory requirements.
 
 
 ![explore_step_5](./steps/step5.png)
