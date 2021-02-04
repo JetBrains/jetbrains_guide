@@ -5,21 +5,21 @@ title: Invoking Functions Locally
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Execute Lambda function inside a container through PyCharm
+subtitle: Execute Lambda function inside a container through PyCharm.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/xEnKghx6fuk
 ---
 
-In this tutorial we are going to run our lambda functions inside a container.
+In this tutorial we are going to run our lambda functions inside a *local* container.
 
 # Docker
 
 ![invoke_step_1](./steps/step1.png)
 
 We are going to use Docker. Docker is an open platform for developing, shipping, and
-running applications. Docker enables you to separate your applications from your 
+running applications. Docker lets you separate your applications from your 
 infrastructure, so you can deliver software quickly. If you are using Windows then you can use
 something called <strong>Docker Desktop</strong>. 
 
