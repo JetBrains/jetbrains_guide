@@ -41,7 +41,7 @@ It will take a few minutes to provision the new cluster.
 ![atlas_step_3](./steps/step3.png)
 
 Once the database has been successfully created, 
-We need to create a <strong>Database User</strong> which will be authorized
+we need to create a <strong>Database User</strong> which will be authorized
 to connect to the database.
 
 
@@ -90,7 +90,6 @@ After that I am going to click on <strong>Test Connection</strong> to check whet
 I am able to establish connection to the DB or not, as you can see the connection was successful. I will click on Apply and then OK.
 
 We have successfully connected with the MongoDB Database through PyCharm. 
-
 
 
 
