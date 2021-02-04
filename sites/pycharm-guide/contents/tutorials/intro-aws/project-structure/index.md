@@ -18,8 +18,7 @@ In this tutorial step, we will be setting up the new project and exploring the p
 
 As you can see the latest PyCharm Interface as they are offering in <strong>2020.3</strong>
 
-Let us start. I will click on the <strong>New Project</strong>.
-
+Below we have the PyCharm Professional 2020.3 `New Project screen`. To start, I will click on the **New Project** button.
 
 ![PYCHARM_NEW_UI](./pycharm_ui_interface.png)
 
