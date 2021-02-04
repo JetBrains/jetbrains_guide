@@ -33,7 +33,7 @@ For this tutorial, I have chosen `E:\Jetbrains\ServerlessDemo` as my path.
 
 The runtime is going to be **Python3.8**, and we will be using the default SAM Template **AWS SAM Hello World**.
 
-You are free to use virtual environment of your choice. I am sticking to <strong>virtualenv</strong>
+You are free to use virtual environment of your choice. I am sticking to **virtualenv**.
 
 There is something new added to the Interface called <strong>Package Type</strong> which provides two options <strong>Zip</strong> & <strong>Archive</strong>.
 
