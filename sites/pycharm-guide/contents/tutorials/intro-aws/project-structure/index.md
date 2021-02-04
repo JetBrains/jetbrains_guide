@@ -95,7 +95,7 @@ We will be registering our APIs under this **Resources** section.
 There are two properties **CodeUri** and **Handler**. 
 CodeUri is the directory in the business-logic reside
 and Handler is the combination of file name and 
-function name (<strong>app.lambda_handler</strong>). 
+function name (**app.lambda_handler**). 
 
 
 ![explore_step_6](./steps/step6.png)
