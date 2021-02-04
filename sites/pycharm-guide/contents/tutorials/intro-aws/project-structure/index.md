@@ -31,7 +31,7 @@ As you can see **Location** points to path of my codebase.
 
 For this tutorial, I have chosen `E:\Jetbrains\ServerlessDemo` as my path. 
 
-The runtime is going to be <strong>Python3.8</strong>, and we will be using the default SAM Template <strong>AWS SAM Hello World</strong>.
+The runtime is going to be **Python3.8**, and we will be using the default SAM Template **AWS SAM Hello World**.
 
 You are free to use virtual environment of your choice. I am sticking to <strong>virtualenv</strong>
 
