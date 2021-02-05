@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Assert That Import
 technologies: [java]
-topics: [refactoring]
+topics: [refactoring, testing]
 author: hs
 subtitle: Use quick intentions to manage imports
 thumbnail: ./thumbnail.png
