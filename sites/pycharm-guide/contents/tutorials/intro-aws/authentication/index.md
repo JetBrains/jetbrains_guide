@@ -32,7 +32,7 @@ and it would lead to an error because you haven’t set up the <strong>Authorize
 ![auth_step_1](./steps/step1.png)
 
 Let me start by creating an <strong>authorizer</strong> package under <strong>user</strong>. I 
-will follow the usual process like creating <strong>app.py</strong> file
+will follow the usual process like creating a <strong>app.py</strong> file.
 
 ![auth_step_2](./steps/step2.png)
 
@@ -212,5 +212,4 @@ Okay, I am receiving a new token. Now, I am going to pass this token to the Refr
 I am receiving a new token. Both the functions are working Great !
 
 In the upcoming tutorial I will be writing Unit Tests to make sure our functions are working fine before deployment.
-
 
