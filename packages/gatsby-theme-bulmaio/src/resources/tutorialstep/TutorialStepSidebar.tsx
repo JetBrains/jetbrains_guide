@@ -5,8 +5,8 @@ import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGr
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author/ResourceCardAuthor';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology/ResourceCardTechnologies';
 import { ResourceCardTopics } from '../../components/resourcecard/topic/ResourceCardTopics';
-import SidebarSteps from '../../components/sidebar/SidebarSteps';
 import { ResourceCardProducts } from '../../components/resourcecard/product/ResourceCardProducts';
+import SidebarSteps from '../../components/sidebar/SidebarSteps';
 
 export interface TutorialstepSidebarProps {
   author: ResourceCardAuthorProps;
