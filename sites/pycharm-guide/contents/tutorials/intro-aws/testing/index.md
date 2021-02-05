@@ -5,7 +5,7 @@ title: Testing
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Unit Testing Lambda functions
+subtitle: Writing unit tests of our functions that we deploy to AWS Lambda, to ensure everything works.
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png

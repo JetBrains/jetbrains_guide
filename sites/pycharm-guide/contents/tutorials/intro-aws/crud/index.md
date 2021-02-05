@@ -141,7 +141,7 @@ stored in encrypted format.
 
 
 Finally, we can store the user information in our database. Let’s move and create an API
-which retrieves user’s lists from the database.
+which retrieves a list of users from the database.
 
 
 # Read (R)
