@@ -29,7 +29,7 @@ unit testing.
 ![testing_step_1](./steps/step1.png)
 
 First, install the <strong>pytest</strong> package. 
-It's the most popular python testing framework, widely used by developers and QA engineers.
+It's the most popular Python testing framework, widely used by developers and QA engineers.
 
 
 
