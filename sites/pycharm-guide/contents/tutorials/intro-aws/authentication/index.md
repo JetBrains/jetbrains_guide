@@ -18,7 +18,7 @@ It is an API Gateway feature that uses a Lambda function to control access
 to your API.
 
 
-Interested to know more about custom authorizers, please visit [Configure a Lambda authorizer using the API Gateway console
+Interested to know more about custom authorizers? Please visit [Configure a Lambda authorizer using the API Gateway console
 ](https://docs.aws.amazon.com/apigateway/latest/developerguide/configure-api-gateway-lambda-authorization-with-console.html). 
 
 # Custom Authorizers
@@ -212,6 +212,5 @@ Okay, I am receiving a new token. Now, I am going to pass this token to the Refr
 I am receiving a new token. Both the functions are working Great !
 
 In the upcoming tutorial I will be writing Unit Tests to make sure our functions are working fine before deployment.
-
 
 
