@@ -62,7 +62,7 @@ be denied.
 I won’t be going into too much detail as the blueprint code is already available in AWS Lambda. For reference, visit this [link](https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints).
 
 Let’s open the <strong>template.yaml</strong> where I am going to define the <strong>authorizer</strong> under <strong>Resources</strong>. 
-The identifier is going to be named as <strong>MyApi </strong>.
+The identifier is going to be named as <strong>MyApi</strong>.
 
 
 ![auth_step_5](./steps/step5.png)
