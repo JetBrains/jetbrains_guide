@@ -14,7 +14,7 @@ longVideo:
 
 In this tutorial step, we will be removing all the services used during the tutorial.
 
-* <em>If you are already aware how to remove resources from AWS then you can skip it.</em> (Optional)
+* *If you are already aware how to remove resources from AWS then you can skip it.* (Optional)
 
 # Cleanup
 

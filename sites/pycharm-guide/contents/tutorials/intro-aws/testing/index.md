@@ -16,9 +16,9 @@ In this tutorial we are going to work on Unit Tests.
 
 # Unit Testing
 
-According to Wikipedia : <em>Unit tests are automated tests written and run by software
+According to Wikipedia : *Unit tests are automated tests written and run by software
 developers to ensure that a section of an application (known as the "unit") meets its 
-design and behaves as intended.</em>
+design and behaves as intended.*
 
 I will be covering only one scenario that will help you understand how we can begin with
 unit testing. 
@@ -59,9 +59,9 @@ Go to `Settings -> Tools -> Python Integrated Tools` and set the default test ru
 Let’s resume where we left and import the necessary modules.
 
 
-I am going to create a sample fixture, according to Wikipedia <em>"A software test fixture sets up
+I am going to create a sample fixture, according to Wikipedia *"A software test fixture sets up
 a system for the software testing process by initializing it, thereby satisfying any
-preconditions the system may have."</em>
+preconditions the system may have."*
 
 ![testing_step_5](./steps/step5.png)
 

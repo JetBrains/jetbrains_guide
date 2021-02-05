@@ -62,7 +62,7 @@ Okay, the stack has been successfully deployed. I will open the AWS Management C
 
 ![deploy_step_6](./steps/step6.png)
 
-Let me give you brief idea what is API Gateway. <em>Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.</em> 
+Let me give you brief idea what is API Gateway. *Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.* 
 
 As you can see I am in the API Gateway Console, and it is displaying the **ServerlessDemoStack** which we created.
 
