@@ -28,33 +28,33 @@ unit testing.
 
 ![testing_step_1](./steps/step1.png)
 
-First, install the <strong>pytest</strong> package. 
+First, install the **pytest** package. 
 It's the most popular Python testing framework, widely used by developers and QA engineers.
 
 
 
 # Let's begin testing
 
-I am going to start from scratch. Let me first delete the default <strong>test_handler.py</strong> file.
+I am going to start from scratch. Let me first delete the default **test_handler.py** file.
 I will create a db.py file under the testing_db package which will contain the same 
 database connection logic which I used earlier.
 
 ![testing_step_2](./steps/step2.png)
 
 
-Next, I create the <strong>test_handler.py</strong> file under the unit package where I will write the unit tests.
+Next, I create the **test_handler.py** file under the unit package where I will write the unit tests.
 
 
 ![testing_step_3](./steps/step3.png)
-Now, I am going to import the necessary modules like <strong>json</strong> and <strong>pytest</strong>.
+Now, I am going to import the necessary modules like **json** and **pytest**.
 
 
 
 ![testing_step_4](./steps/step4.png)
 
-Next, I am going to setup <strong>pytest</strong> as my default test runner. 
+Next, I am going to setup **pytest** as my default test runner. 
 
-Go to `Settings -> Tools -> Python Integrated Tools` and set the default test runner to <strong>pytest</strong>.
+Go to `Settings -> Tools -> Python Integrated Tools` and set the default test runner to **pytest**.
 
 Let’s resume where we left and import the necessary modules.
 
@@ -67,7 +67,7 @@ preconditions the system may have."</em>
 
 You can see in the above image, I will be passing a sample user information to run my test case.
 
-I will begin creating the <strong>TestRegistrationAPI</strong> class where I will be loading my fixture and passing it into the lambda handler.
+I will begin creating the **TestRegistrationAPI** class where I will be loading my fixture and passing it into the lambda handler.
 
 ![testing_step_6](./steps/step6.png)
 
@@ -79,11 +79,11 @@ This is just for creating randomness, nothing special.
 
 ![testing_step_7](./steps/step7.png)
 
-In the <strong>teardown</strong> method I will be flushing only the last inserted object from the database.
+In the **teardown** method I will be flushing only the last inserted object from the database.
 
 ![testing_step_8](./steps/step8.png)
 
-Okay, now I am ready to test. I will right click on the file <strong>test_handler</strong> and then I will click on <strong>Run “pytest in test_handler”</strong>.
+Okay, now I am ready to test. I will right click on the file **test_handler** and then I will click on **Run “pytest in test_handler”**.
 
 ![testing_step_9](./steps/step9.png)
 

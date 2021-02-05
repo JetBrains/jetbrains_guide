@@ -21,34 +21,34 @@ In this tutorial we are going to run our lambda functions inside a *local* conta
 We are going to use Docker. Docker is an open platform for developing, shipping, and
 running applications. Docker lets you separate your applications from your 
 infrastructure, so you can deliver software quickly. If you are using Windows then you can use
-something called <strong>Docker Desktop</strong>. 
+something called **Docker Desktop**. 
 
 Just follow the official documentation for the installation process, and you will be good to go.
 
 
 # Configurations
 
-PyCharm Professional is already running. I will click on <strong>Run</strong> 
-then I will go to <strong>Edit Configurations</strong>.
+PyCharm Professional is already running. I will click on **Run** 
+then I will go to **Edit Configurations**.
 
 ![invoke_step_2](./steps/step2.png)
 
 
-Now, I need to choose <strong>Event Templates</strong>. 
-I am going to pick a template called <strong>“Hello World”</strong>. 
+Now, I need to choose **Event Templates**. 
+I am going to pick a template called **“Hello World”**. 
 This event is going to be passed into our Lambda function.
 
 ![invoke_step_3](./steps/step3.png)
 
 
-After that, I will click on <strong>SAM CLI</strong>, 
-make sure to check <strong>“Build function inside a container”.</strong>
+After that, I will click on **SAM CLI**, 
+make sure to check **“Build function inside a container”.**
 
 Click on `Apply` and then `OK`.
 
 ![invoke_step_4](./steps/step4.png)
 
-Then I will goto run and click on <strong>Run HelloWorld</strong> Function.
+Then I will goto run and click on **Run HelloWorld** Function.
 
 ![invoke_step_5](./steps/step5.png)
 

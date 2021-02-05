@@ -18,12 +18,12 @@ In this tutorial step, we will be removing all the services used during the tuto
 
 # Cleanup
 
-We will navigate to <strong>CloudFormation</strong> dashboard from AWS Management Console. 
+We will navigate to **CloudFormation** dashboard from AWS Management Console. 
 
-Next, we will delete <strong>ServerlessDemoStack</strong> which indeed 
+Next, we will delete **ServerlessDemoStack** which indeed 
 going to remove ( Lambda functions, API Gateway, Authorizers) etc. 
 
-But it's not going to remove the S3 Bucket. So, we have to remove it manually. I will be navigating to Amazon S3 and open the bucket <strong>serverless-pycharm-demo</strong>.
+But it's not going to remove the S3 Bucket. So, we have to remove it manually. I will be navigating to Amazon S3 and open the bucket **serverless-pycharm-demo**.
 First, I need to remove the existing objects otherwise it won’t allow me to delete the bucket. 
 
 
