@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Writing REST APIs 
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Beginning CRUD (Create, Read, Update, Delete) Operations
 thumbnail: ../thumbnail.png

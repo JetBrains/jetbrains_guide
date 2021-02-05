@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Setting Up a Database in MongoDB Atlas
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Connect MongoDB smoothly by connecting through Pycharm Professional to explore the database GUI.
 thumbnail: ../thumbnail.png

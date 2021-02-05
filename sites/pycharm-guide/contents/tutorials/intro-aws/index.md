@@ -1,8 +1,7 @@
 ---
 date: 2021-01-29
 title: Developing Serverless APIs using AWS Toolkit
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: run build deploy as easy to maintain serverless functions in PyCharm
 thumbnail: ./thumbnail.png

@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Cleanup
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Removing Resources from AWS Console
 thumbnail: ../thumbnail.png

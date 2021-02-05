@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Project Setup
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Install AWS SAM (Serverless Application Model), AWS CLI & finally PyCharm Plugin AWS Toolkit.
 thumbnail: ../thumbnail.png

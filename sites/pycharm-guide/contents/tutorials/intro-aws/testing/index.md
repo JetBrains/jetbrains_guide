@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Testing
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Writing unit tests of our functions that we deploy to AWS Lambda, to ensure everything works.
 thumbnail: ../thumbnail.png

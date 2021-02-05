@@ -2,8 +2,7 @@
 type: TutorialStep
 date: 2021-01-29
 title: Securing APIs with JSON Web Tokens (JWT)
-technologies: [AWS Toolkit]
-topics: [aws]
+technologies: [aws]topics: []
 author: mm
 subtitle: Adding Custom Authorizers in Lambda functions
 thumbnail: ../thumbnail.png
