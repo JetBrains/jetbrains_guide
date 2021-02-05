@@ -38,7 +38,7 @@ will follow the usual process like creating a <strong>app.py</strong> file.
 
 I will be using an existing blueprint for the <strong>Authorization</strong> process.
 It’s already available in <strong>AWS Lambda</strong> under the <strong>Blueprints</strong>. I
-am going to copy this logic into my <strong>app.py</strong>
+am going to copy this logic into my <strong>app.py</strong> file.
 
 ![auth_step_3](./steps/step3.png)
 
@@ -212,4 +212,3 @@ Okay, I am receiving a new token. Now, I am going to pass this token to the Refr
 I am receiving a new token. Both the functions are working Great !
 
 In the upcoming tutorial I will be writing Unit Tests to make sure our functions are working fine before deployment.
-
