@@ -84,7 +84,7 @@ for <strong>Amazon Resource Name</strong>.
 It’s a naming convention to identify a resource.
 
 
-As you can see the below image, <strong>JWTAuthFunction</strong> is going to process
+As you can see in the below image, <strong>JWTAuthFunction</strong> is going to process
 the authorization once we receive the tokens.  As usual, we are going to provide the
 handler, runtime etc. We are also using an environment variable 
 called <strong>SECRET_KEY</strong> for encoding and decoding of our JWT Tokens. 
