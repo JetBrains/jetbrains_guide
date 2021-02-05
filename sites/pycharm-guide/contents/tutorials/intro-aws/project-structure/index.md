@@ -5,7 +5,7 @@ title: Exploring Project Structure
 technologies: [AWS Toolkit]
 topics: [aws]
 author: mm
-subtitle: Setting up project in PyCharm Professional along-with installing plugin and exploring the project layout. 
+subtitle: Launching up project in PyCharm Professional, installing plugin and exploring the project layout. 
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
