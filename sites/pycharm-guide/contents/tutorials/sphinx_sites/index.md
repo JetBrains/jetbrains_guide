@@ -22,7 +22,7 @@ tutorialItems:
 Everybody knows [Sphinx](https://www.sphinx-doc.org/en/master/) for documenting projects, Python and otherwise.
 But few think of Sphinx for the *rest* of a website.
 Why?
-Because Sphinx traditionally mean authoring with [reStructuredText (RST)](https://docutils.sourceforge.io/rst.html) instead of Markdown.
+Because Sphinx traditionally means authoring with [reStructuredText (RST)](https://docutils.sourceforge.io/rst.html) instead of Markdown.
 While RST is very powerful, it's a bit quirky, and nowhere near the popularity of Markdown.
 
 But with the arrival of full Markdown support via [MyST](https://myst-parser.readthedocs.io/en/latest/), and with static site generators having a renaissance, it's time to give Sphinx a second look.
