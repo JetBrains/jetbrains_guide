@@ -42,7 +42,7 @@ am going to copy this logic into my <strong>app.py</strong> file.
 
 ![auth_step_3](./steps/step3.png)
 
-Below, I am providing the final snippet of custom authorizer blueprint. 
+Below, I am providing the final snippet of the custom authorizer blueprint. 
 
 The source code is available on Github at [https://github.com/mukulmantosh/ServerlessDemo](https://github.com/mukulmantosh/ServerlessDemo)
 
