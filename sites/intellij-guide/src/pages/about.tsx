@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
 
                 <p>We have also created the IntelliJ IDEA Guide, a collection of bite-sized visual resources, organized to help spark your learning. We hope it helps you get into the flow and excel at what you do.</p>
               <h2>Sharing Feedback and Contributing</h2>
-                  <p>The PyCharm Guide is also an open project, with <a href="https://github.com/JetBrains/jetbrains_guide">a repository in GitHub</a> that
+                  <p>The IntelliJ IDEA Guide is also an open project, with <a href="https://github.com/JetBrains/jetbrains_guide">a repository in GitHub</a> that
                       hosts all the content. We write all the content in Markdown and render a static site. If you'd like to contribute to it,
                       please refer to the <a href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a> for more information.
                   </p>
