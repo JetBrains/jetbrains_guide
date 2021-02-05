@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Navigate to Test
 technologies: [java]
-topics: [navigation]
+topics: [navigation, testing]
 author: hs
 subtitle: Go to your matching test class
 thumbnail: ./thumbnail.png
