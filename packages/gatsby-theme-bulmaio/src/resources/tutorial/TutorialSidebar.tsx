@@ -6,17 +6,19 @@ import { ResourceCardAuthorProps } from '../../components/resourcecard/author/Re
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology/ResourceCardTechnologies';
 import { ResourceCardTopics } from '../../components/resourcecard/topic/ResourceCardTopics';
 import { ResourceCardProducts } from '../../components/resourcecard/product/ResourceCardProducts';
+import SidebarSteps from "../../components/sidebar/SidebarSteps";
 
 export interface TutorialSidebarProps {
   author: ResourceCardAuthorProps;
   date: string;
+  steps: any[];
   products: ResourceCardProducts;
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
 }
 
 export const TutorialSidebar: React.FC<TutorialSidebarProps> = (
-  { author, date, products, technologies, topics }
+  { author, date, products, technologies, topics, steps }
 ) => {
   const published: SidebarPublishedProps = {
     date: date,
@@ -38,6 +40,8 @@ export const TutorialSidebar: React.FC<TutorialSidebarProps> = (
       <SidebarReferencesGroup
         reftype={`topics`} accent={`success`}
         references={topics ? topics.map(t => t.label) : []}
+      />
+      <SidebarSteps currentSlug="" steps={steps}
       />
     </Sidebar>
   );
