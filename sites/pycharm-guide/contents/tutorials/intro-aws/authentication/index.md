@@ -135,7 +135,7 @@ Below, I have provided the final code snippet how it is going to look like.
 
 As you can see the function <strong>create_access_token</strong> which is going to take
 the user information and encode it and return us back with a long 
-encrypted string. This token is only valid for 5minutes.
+encrypted string. This token is only valid for 5 minutes.
 
 Ok we are done with the tokens. Let’s move to the <strong>validator.py</strong> file.
 
