@@ -189,7 +189,7 @@ This is a GET API we don’t need to pass anything in the body.
 
 ![crud_step_15](./steps/step15.png)
 
-In Windows machine you will get a Docker prompt for file sharing, kindly accept it.
+On a Windows machine you will get a Docker prompt for file sharing, kindly accept it.
 
 As you can below in the console, we are receiving all users list.
 
@@ -207,7 +207,7 @@ I will then paste the <strong>_id</strong> it in the <strong>pathParameters</str
 
 ![crud_step_18](./steps/step18.png)
 
-Before running tha app, I have found an issue which needs to be fixed otherwise our code is not going work.
+Before running the app, I have found an issue which needs to be fixed otherwise our code is not going work.
 
 Open <strong>app.py</strong> goto line number <strong>45</strong> it should be <strong>“Id”</strong>, I should be uppercase.
 
@@ -222,7 +222,7 @@ Save it and let me try to run again.
 It's working fine. We are getting information for user <strong>Mike Jones</strong>. 
 
 
-Finally, our API is able to retrieve information from the database. Let’s move and create an API which will be used to update records in our database.
+Finally, our API is able to retrieve information from the database. Let’s move on and create an API which will be used to update records in our database.
 
 
 # Update (U)
@@ -307,7 +307,7 @@ The data has been successfully deleted from the db. Let me refresh the collectio
 
 ![crud_step_29](./steps/step29.png)
 
-Great ! the record has been removed.
+Great! The record has been removed.
 
 ![crud_step_30](./steps/step30.png)
 

@@ -18,7 +18,7 @@ It is an API Gateway feature that uses a Lambda function to control access
 to your API.
 
 
-Interested to know more about custom authorizers, please visit [Configure a Lambda authorizer using the API Gateway console
+Interested to know more about custom authorizers? Please visit [Configure a Lambda authorizer using the API Gateway console
 ](https://docs.aws.amazon.com/apigateway/latest/developerguide/configure-api-gateway-lambda-authorization-with-console.html). 
 
 # Custom Authorizers
@@ -32,17 +32,17 @@ and it would lead to an error because you haven’t set up the <strong>Authorize
 ![auth_step_1](./steps/step1.png)
 
 Let me start by creating an <strong>authorizer</strong> package under <strong>user</strong>. I 
-will follow the usual process like creating <strong>app.py</strong> file
+will follow the usual process like creating a <strong>app.py</strong> file.
 
 ![auth_step_2](./steps/step2.png)
 
 I will be using an existing blueprint for the <strong>Authorization</strong> process.
 It’s already available in <strong>AWS Lambda</strong> under the <strong>Blueprints</strong>. I
-am going to copy this logic into my <strong>app.py</strong>
+am going to copy this logic into my <strong>app.py</strong> file.
 
 ![auth_step_3](./steps/step3.png)
 
-Below, I am providing the final snippet of custom authorizer blueprint. 
+Below, I am providing the final snippet of the custom authorizer blueprint. 
 
 The source code is available on Github at [https://github.com/mukulmantosh/ServerlessDemo](https://github.com/mukulmantosh/ServerlessDemo)
 
@@ -62,7 +62,7 @@ be denied.
 I won’t be going into too much detail as the blueprint code is already available in AWS Lambda. For reference, visit this [link](https://github.com/awslabs/aws-apigateway-lambda-authorizer-blueprints).
 
 Let’s open the <strong>template.yaml</strong> where I am going to define the <strong>authorizer</strong> under <strong>Resources</strong>. 
-The identifier is going to be named as <strong>MyApi </strong>.
+The identifier is going to be named as <strong>MyApi</strong>.
 
 
 ![auth_step_5](./steps/step5.png)
@@ -84,7 +84,7 @@ for <strong>Amazon Resource Name</strong>.
 It’s a naming convention to identify a resource.
 
 
-As you can see the below image, <strong>JWTAuthFunction</strong> is going to process
+As you can see in the below image, <strong>JWTAuthFunction</strong> is going to process
 the authorization once we receive the tokens.  As usual, we are going to provide the
 handler, runtime etc. We are also using an environment variable 
 called <strong>SECRET_KEY</strong> for encoding and decoding of our JWT Tokens. 
@@ -135,7 +135,7 @@ Below, I have provided the final code snippet how it is going to look like.
 
 As you can see the function <strong>create_access_token</strong> which is going to take
 the user information and encode it and return us back with a long 
-encrypted string. This token is only valid for 5minutes.
+encrypted string. This token is only valid for 5 minutes.
 
 Ok we are done with the tokens. Let’s move to the <strong>validator.py</strong> file.
 
@@ -212,6 +212,3 @@ Okay, I am receiving a new token. Now, I am going to pass this token to the Refr
 I am receiving a new token. Both the functions are working Great !
 
 In the upcoming tutorial I will be writing Unit Tests to make sure our functions are working fine before deployment.
-
-
-
