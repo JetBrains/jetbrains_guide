@@ -1,6 +1,6 @@
 ---
 title: Debugging
-subtitle: You can debug your code to help you understand why exceptions are occurring and to better under how the data is flowing through your project. 
+subtitle: You can debug your code to help you understand why exceptions are occurring. 
 accent: primary
 icon: fas fa-bezier-curve
 ---

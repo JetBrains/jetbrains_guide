@@ -1,6 +1,6 @@
 ---
 title: Interface
-subtitle: Tips and tricks for modifying the IntelliJ IDEA interface 
+subtitle: Tips and tricks for modifying the IntelliJ IDEA interface.
 accent: primary
 icon: fas fa-bezier-curve
 ---

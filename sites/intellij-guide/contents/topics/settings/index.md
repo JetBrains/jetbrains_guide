@@ -1,6 +1,6 @@
 ---
 title: Settings
-subtitle: Different configurations for your projects
+subtitle: Different configurations for your projects.
 accent: primary
 icon: fas fa-bezier-curve
 ---

@@ -1,6 +1,6 @@
 ---
 title: Latest
-subtitle: See features that are new in the latest release of IntelliJ IDEA
+subtitle: See features that are new in the latest release of IntelliJ IDEA.
 accent: primary
 icon: fas fa-bezier-curve
 ---

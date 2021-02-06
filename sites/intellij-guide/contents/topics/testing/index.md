@@ -1,6 +1,6 @@
 ---
 title: Testing
-subtitle: Creating and running tests for your code
+subtitle: Creating and running tests for your code.
 accent: primary
 icon: fas fa-bezier-curve
 ---

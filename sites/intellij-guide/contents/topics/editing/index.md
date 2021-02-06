@@ -1,6 +1,6 @@
 ---
 title: Editing
-subtitle: Edit your code quickly and efficiently. 
+subtitle: Edit your code quickly and efficiently.
 accent: primary
 icon: fas fa-bezier-curve
 ---
