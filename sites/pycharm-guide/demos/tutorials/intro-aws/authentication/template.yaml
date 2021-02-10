@@ -1,0 +1,139 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  ServerlessDemo
+
+  Sample SAM Template for ServerlessDemo
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 2048
+    Environment:
+      Variables:
+        SECRET_KEY: secret-info
+
+Resources:
+  MyApi:
+    Type: 'AWS::Serverless::Api'
+    Properties:
+      StageName: Prod
+      Auth:
+        DefaultAuthorizer: JWTCustomAuthorizer
+        Authorizers:
+          JWTCustomAuthorizer:
+            FunctionArn: !GetAtt JWTAuthFunction.Arn
+
+  JWTAuthFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: authorizer.app.lambda_handler
+      Runtime: python3.8
+
+  OrganizationUserCreate:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: create.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        CompanyCreateUserPostAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user'
+            Method: POST
+            Auth:
+              Authorizer: NONE
+
+  OrganizationUserRead:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: read.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        CompanyUserGetAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user'
+            Method: GET
+
+
+  OrganizationUserReadById:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: read.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        CompanyUserGetByIdAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user/{Id}'
+            Method: GET
+
+
+  OrganizationUserUpdateById:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: update.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        CompanyUserUpdateByIdAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user/{Id}'
+            Method: PUT
+
+
+  OrganizationUserDeleteById:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: delete.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        CompanyUserDeleteByIdAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user/{Id}'
+            Method: DELETE
+
+  OrganizationUserLogin:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: login.app.lambda_handler
+      Runtime: python3.8
+      Events:
+        LoginAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user/login'
+            Method: POST
+            Auth:
+              Authorizer: NONE
+
+
+  OrganizationRefreshToken:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      CodeUri: organizations/user/
+      Handler: login.app.token_refresh
+      Runtime: python3.8
+      Events:
+        RefreshTokenAPI:
+          Type: Api
+          Properties:
+            RestApiId: !Ref MyApi
+            Path: '/user/refresh-token'
+            Method: POST
