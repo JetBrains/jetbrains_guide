@@ -115,7 +115,8 @@ const Tip: FC<TipProps> = (
         {shortVideo && <ShortVideo video={
           {
             posterURL: shortVideo.poster ? shortVideo.poster.publicURL : '',
-            youtubeURL: shortVideo.url
+            youtubeURL: shortVideo.url,
+            likeGIF: shortVideo.likeGIF ? shortVideo.likeGIF : false,
           }} />
         }
         <div
@@ -174,7 +175,8 @@ const Tip: FC<TipProps> = (
         <LongVideo video={
           {
             posterURL: longVideo.poster.publicURL,
-            youtubeURL: longVideo.url
+            youtubeURL: longVideo.url,
+            likeGIF: longVideo.likeGIF ? longVideo.likeGIF : false,
           }} />
       )}
 
