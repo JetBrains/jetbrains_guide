@@ -14,12 +14,11 @@ tutorialItems:
   - /tutorials/resharper-to-rider/unit-testing-for-resharper-users/
   - /tutorials/resharper-to-rider/visual-studio-rider-toolbar/
   - /tutorials/resharper-to-rider/nuget-package-management/
+  - /tutorials/resharper-to-rider/plugins-for-developers/
 ---
 
 Many of the same features we've all grown to love in [ReSharper](https://jetbrains.com/resharper) help power [JetBrains Rider's](https://jetbrains.com/rider) development experience. While most functionality is still present, it may take us a little effort to learn where everything is within a brand new development environment. In this guide, we'll look at some everyday functionality folks might find helpful when migrating from the combination of Visual Studio and ReSharper.
 
-- Plug-ins
-  
 - Source Control
 - Azure Integration
 - Working with IIS (Full)

@@ -43,13 +43,15 @@ For folks who like working within the `.csproj` file format, the NuGet tools bui
 
 While NuGet may be the primary source for packages for many of us, it is likely not the only source. Many development teams develop and share internal packages across teams; after all, sharing is caring. Rider's NuGet tool window will read local `nuget.config` files, along with allowing us to specify recurring feeds in the **Sources** tab. Within this tab, we can see when and where the NuGet tool will attempt to find a NuGet package and resolve it.
 
+![JetBrains Rider NuGet Tool Sources and Feeds](./6-rider-nuget-feeds.png)
+
 As we've seen, the Rider NuGet Tool Window is more than capable of managing existing NuGet dependencies and finding new OSS packages to help solve any problem. But there is still one more thing that differentiates Rider's NuGet tool from the one found in Visual Studio. That feature is **Type search**.  Using the `T:` prefix in our NuGet search bar will find all packages that contain a Type definition.
 
-![JetBrains Rider NuGet Tool Sources and Feeds](./6-rider-nuget-feeds.png)
+![JetBrains Rider NuGet Type lookup](./7-rider-type-lookup.png)
 
 This feature is also available in the editor. We can recall types from memory and then use a quick action to **Find the type on NuGet.org...*, allowing us to stay in the flow and continue writing code.
 
-![JetBrains Rider NuGet Type lookup](./7-rider-type-lookup.png)
+![JetBrains Rider NuGet Type lookup in editor](./8-rider-type-lookup-editor.png)
 
 When working with NuGet packages, Rider gives developers options, regardless of your workflow. Whether we want to perform some exhaustive research or know precisely what package we need, Rider is there to help.
 
