@@ -23,7 +23,7 @@ Having <kbd>Alt-Enter</kbd> makes it very easy to keep your hands on the keyboar
 
 ### Editing Code and Code Completion
 
-ReSharper can help you while writing code. Whatever your caret position may be, ReSharper has good selection of [code completion](https://www.jetbrains.com/help/resharper/Auto-Completing_Code.html) items for us!
+ReSharper can help you while writing code. Wherever your caret position may be, ReSharper has a good selection of [code completion](https://www.jetbrains.com/help/resharper/Auto-Completing_Code.html) items for us!
 
 For instance, in a class body, we would get all possible access modifiers, whereas in function bodies we get all control flow keywords, imported types, parameters and variables available in that particular scope. Through [double completion](https://www.jetbrains.com/help/resharper/Coding_Assistance__Code_Completion__Double.html) we can even filter the list to show only relevant items, for instance to show only items of type `bool`.
 
