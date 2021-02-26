@@ -41,7 +41,9 @@ ReSharper comes with severities pre-configured, but it's easy to change the seve
 Most of the inspections have a [configurable severity level](https://www.jetbrains.com/help/resharper/Code_Analysis__Configuring_Warnings.html#change_severity).
 
 Severities and several other settings can be [shared with your team using settings layers](https://www.jetbrains.com/help/resharper/Sharing_Configuration_Options.html).
+### Usage in Continuous Integration (CI)
 
+ReSharper's code analysis can also be used while practicing continuous integration. For that, the [ReSharper Command-Line Tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html) can be used. Specifically the `inspectcode` command, will create a report with all the discovered code issues as a simple XML report. Such a report can either be manually examined with XML APIs, or reported to [TeamCity](https://jetbrains.com/teamcity) to show as an additional report tab.
 ### See Also
 
 - [Code analysis](https://www.jetbrains.com/help/resharper/Code_Analysis__Index.html)
