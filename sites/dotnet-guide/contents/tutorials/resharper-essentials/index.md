@@ -20,6 +20,6 @@ tutorialItems:
 ---
 
 ReSharper is a plugin to Visual Studio that helps you write better code, faster.
-Join Rachel, Khalid, Matthias, Matt and Maarten, the JetBrains .NET developer advocates, and uncover the essential features and workflows in ReSharper.
+Join the JetBrains .NET developer advocates, and uncover the essential features and workflows in ReSharper.
 
 We will look at navigation in a code base, editing code, inspections and quick-fixes, refactoring, some additions to the Visual Studio debugger, unit testing, architecture tools and diagrams, the localization manager, and more!
