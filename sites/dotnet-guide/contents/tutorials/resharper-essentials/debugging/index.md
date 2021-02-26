@@ -10,7 +10,7 @@ subtitle: What is your code doing? Identify problematic code, and run code step-
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://TODO
+    url: https://youtu.be/ZIEiWWz60Z4
 ---
 
 ### A Better Debugging Experience

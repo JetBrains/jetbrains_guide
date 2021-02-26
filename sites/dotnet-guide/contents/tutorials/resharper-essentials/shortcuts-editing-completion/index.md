@@ -10,7 +10,7 @@ subtitle: Let's dive into the most important productivity shortcuts, editing, an
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://TODO
+    url: https://youtu.be/yvrheKkjOa4
 ---
 
 ### Get Going with ReSharper and <kbd>Alt-Enter</kbd>

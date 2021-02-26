@@ -10,7 +10,7 @@ subtitle: How to safely refactor code, without breaking the build? Let's have a 
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://TODO
+    url: https://youtu.be/vd9BvAPVmEI
 ---
 
 ### Refactoring

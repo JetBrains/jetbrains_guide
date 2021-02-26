@@ -10,12 +10,12 @@ subtitle: Introduction to the ReSharper Essentials series.
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://TODO
+    url: https://youtu.be/4APs6Vg5s4I
 ---
 
 ReSharper is a plugin to Visual Studio. It helps you write and refactor code, and analyzes your code to detect potential issues, resulting in a better code base overall.
 
-In the ReSharper Essentials series, Rachel, Khalid, Matthias, Matt and Maarten, the JetBrains .NET developer advocates, will go over the essential features and workflows in ReSharper.
+In the ReSharper Essentials series, Rachel, Khalid, Matthias, Matt, and Maarten, the JetBrains .NET developer advocates, will go over the essential features and workflows in ReSharper.
 
 We will see how you can get more out of your Visual Studio IDE with ReSharper.
 

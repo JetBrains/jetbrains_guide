@@ -10,7 +10,7 @@ subtitle: Run, debug and profile tests, do continuous testing, and inspect code 
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./poster.png
-    url: https://TODO
+    url: https://youtu.be/Y2u0K_tLmcU
 ---
 
 ### Testing our Code
