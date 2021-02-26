@@ -19,7 +19,7 @@ ReSharper warns you when there's a problem in your code at design time, so you s
 Many of these inspections come with associated quick-fixes - an automated way of solving the issue by pressing <kbd>Alt+Enter</kbd>.
 
 Inspections are shown in the editor, using different types of underlines. The type of underline depends on the severity of an inspection.
-They can be suggestions, informational, warnings and errors.
+They can be hints, suggestions, warnings, or errors. Certain inspections can also be plain informational and will use individual highlighting.
 
 ### Applying Quick-Fixes
 
