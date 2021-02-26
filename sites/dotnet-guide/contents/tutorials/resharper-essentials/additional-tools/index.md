@@ -37,7 +37,7 @@ It visualizes how types depend on one another. Using the context menu, you can a
 ReSharper's [Localization Manager](https://www.jetbrains.com/help/resharper/Resources__LocalizationManager.html) helps you localize applications.
 
 You can open the Localization Manager from the **ReSharper \| Windows \| Localization Manager** menu, or use **Go to Action** (<kbd>Ctrl+Shift+A</kbd> and search for *Localization Manager*).
-In the Localization Manager tool window, you can view and edit localizable resources in a single grid. You can add, edit and rename localizable strings. The grid view makes it easy to spot missing values that need translation.
+In the Localization Manager tool window, you can view and edit localizable resources in a single grid. You can add, edit, and rename localizable strings. The grid view makes it easy to spot missing values that need a translation.
 
 > **Tip:** Check the *[Localization Becomes easier with the Localization Manager in ReSharper](https://blog.jetbrains.com/dotnet/2019/12/09/localization-becomes-easier-localization-manager-resharper-2019-3/)* blog post for more background.
 
