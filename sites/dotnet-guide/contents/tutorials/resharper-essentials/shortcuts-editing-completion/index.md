@@ -19,7 +19,7 @@ As with any other new tool, it's very helpful to learn about its basic functiona
 
 After pressing <kbd>Alt-Enter</kbd>, we can start typing to find our desired action, which can include navigation methods, refactorings, or one of the several ReSharper tool windows. The list of actions always shows the assigned keyboard shortcut to help us learn faster.
 
-Having <kbd>Alt-Enter</kbd> makes it very easy to keep your hands on the keyboard at all time, so you can avoid having to switch between input devices all the time.
+Having <kbd>Alt-Enter</kbd> makes it very easy to keep your hands on the keyboard at all times, so you can avoid having to switch between input devices.
 
 ### Editing Code and Code Completion
 
