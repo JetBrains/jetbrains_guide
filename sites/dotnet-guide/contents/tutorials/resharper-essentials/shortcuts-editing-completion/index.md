@@ -31,7 +31,7 @@ Code completion also works for other languages and file formats, and even inside
 
 ### Generating Code
 
-ReSharper's code generation actions can create a lot of code for you! Constructors to initialize any set of type members, methods and properties required by an interface you're implementing, equality checks, formatting members, and more.
+ReSharper's code generation actions can generate otherwise tedious code for you! Constructors to initialize any set of type members, methods, and properties required by an interface you're implementing, equality checks, formatting members, and more.
 
 Using the <kbd>Alt+Insert</kbd> keyboard shortcut, you can generate type members, properties, equality member, properties with change notification when a class implements `INotifyPropertyChanged`, and more. Have a look at the [code generation options that come with ReSharper](https://www.jetbrains.com/help/resharper/Code_Generation__Index.html).
 
