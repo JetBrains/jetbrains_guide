@@ -46,7 +46,7 @@ Based on the current code style, or using [custom profiles](https://www.jetbrain
 
 ### File/Type Layout
 
-Code styles not only apply to syntax, they also apply to ordering of elements in a file or type. You can [configure how to reorder type members when cleaning up your code](https://www.jetbrains.com/help/resharper/Reference__Options__Languages__CSharp__Type_Members_Layout.html).
+Code styles not only apply to the syntax, but also apply to the order of elements in a file or type. You can [configure how to reorder type members when cleaning up your code](https://www.jetbrains.com/help/resharper/Reference__Options__Languages__CSharp__Type_Members_Layout.html).
 
 ### See Also
 
