@@ -25,7 +25,7 @@ Having <kbd>Alt-Enter</kbd> makes it very easy to keep your hands on the keyboar
 
 ReSharper can help you while writing code. Wherever your caret position may be, ReSharper has a good selection of [code completion](https://www.jetbrains.com/help/resharper/Auto-Completing_Code.html) items for us!
 
-For instance, in a class body, we would get all possible access modifiers, whereas in function bodies we get all control flow keywords, imported types, parameters and variables available in that particular scope. Through [double completion](https://www.jetbrains.com/help/resharper/Coding_Assistance__Code_Completion__Double.html) we can even filter the list to show only relevant items, for instance to show only items of type `bool`.
+For instance with [basic completion](https://www.jetbrains.com/help/resharper/Coding_Assistance__Code_Completion__Symbol.html), in a class body, we would get all possible access modifiers, whereas in function bodies we get all control flow keywords, imported types, parameters and variables available in that particular scope. Through [smart completion](https://www.jetbrains.com/help/resharper/Coding_Assistance__Code_Completion__Smart.html) we can even filter the list to show only relevant items, for instance to show only items of type `bool`.
 
 Code completion also works for other languages and file formats, and even inside strings! Using [language injections](https://www.jetbrains.com/help/resharper/Auto-Completing_Code.html), HTML, regular expressions, and JSON is highlighted in strings, and shows relevant tags, character classes, or property names when needed.
 
