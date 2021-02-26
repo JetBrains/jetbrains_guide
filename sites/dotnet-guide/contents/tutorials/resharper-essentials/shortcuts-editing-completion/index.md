@@ -15,7 +15,7 @@ longVideo:
 
 ### Get Going with ReSharper and <kbd>Alt-Enter</kbd>
 
-As with any other new tool, it's very helpful to learn about its basic functionality first. ReSharper makes this very easy by providing <kbd>Alt-Enter</kbd> as the single entry point to [find actions and options](https://www.jetbrains.com/help/resharper/Navigating_to_Action.html), or to [apply fixes](https://www.jetbrains.com/help/resharper/Code_Analysis__Quick-Fixes.html) to our code.
+As with any other new tool, it's very helpful to learn about its basic functionality first. ReSharper makes this very straightforward by providing <kbd>Alt-Enter</kbd> as the single entry point to [find actions and options](https://www.jetbrains.com/help/resharper/Navigating_to_Action.html), or to [apply fixes](https://www.jetbrains.com/help/resharper/Code_Analysis__Quick-Fixes.html) to our code.
 
 After pressing <kbd>Alt-Enter</kbd>, we can start typing to find our desired action, which can include navigation methods, refactorings, or one of the several ReSharper tool windows. The list of actions always shows the assigned keyboard shortcut to help us learn faster.
 
