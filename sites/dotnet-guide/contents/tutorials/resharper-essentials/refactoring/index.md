@@ -15,7 +15,7 @@ longVideo:
 
 ### Refactoring
 
-Refactoring is the process of restructuring code to improve it. The improvements may be making the code more readable, formatting the code, or organizing it better.
+Refactoring is the process of restructuring code to improve readability and future maintainability.
 
 ReSharper comes with a large set of automated solution-wide code refactorings that let you to rename, move, and safely delete symbols; introduce and inline fields, variables, or parameters, and carry out many more transformations painlessly - without breaking your code's logic!
 
