@@ -29,7 +29,7 @@ There's also an option to [configure formatting rules based on the selected code
 
 ### .editorconfig
 
-EditorConfig is a configuration file convention that is used to define and maintain consistent code styles between team members working on the same code, and between different editors and IDEs.
+[EditorConfig](https://editorconfig.org) is a configuration file convention that is used to define and maintain consistent code styles between team members working on the same code, and between different editors and IDEs.
 A mixed team of ReSharper and Rider users is definitely possible, and code styles will be consistent across the two!
 
 Style configuration is saved in files named `.editorconfig`, and can be shared easily by adding it to your Git repository (or other source control).
