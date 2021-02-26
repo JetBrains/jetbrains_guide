@@ -18,7 +18,7 @@ longVideo:
 Code that is formatted consistently is more readable, and more enjoyable to work with. But what is good formatting?
 How to use whitespaces and blank lines to arrange and separate code blocks, should you use tabs for indents (or spaces?), and many more questions typically arise in these discussions.
 
-ReSharper comes with formatting rules that can suit every  team. There are default formatting rules based on the default Visual Studio formatting options and numerous best practices. You can configure every detail of formatting rules, and enforce it in your code base.
+ReSharper comes with formatting rules that can suit every  team. There are default formatting rules based on the default Visual Studio formatting options and numerous best practices. You can configure every detail of formatting rules, and ReSharper will apply it for you, as you type, or when you invoke [Code Cleanup](https://www.jetbrains.com/help/resharper/Code_Cleanup__Index.html).
 
 Formatting rules are applied when ReSharper runs code completion and code generation, and when refactorings are performed. Formatting rules can also be applied to existing code.
 
