@@ -66,7 +66,7 @@ The popup menu lets you select whether you want to run, debug, profile, cover th
 
 ### Intermediate Language (IL) Viewer
 
-When compiling .NET languages, your source code will usually be compiled to [Intermediate Language, or IL](https://en.wikipedia.org/wiki/Common_Intermediate_Language). This IL code can be executed on a variety of platforms and CPU types.
+When compiling .NET languages, your source code will be compiled to [Intermediate Language, or IL](https://en.wikipedia.org/wiki/Common_Intermediate_Language). This IL code can be executed on a variety of platforms and CPU types.
 Thanks to the "Just In Time" compiler in the .NET runtime, IL is translated into native code that can be executed.
 
 Both ReSharper and dotPeek let you [explore (decompiled) IL instructions](https://www.jetbrains.com/help/resharper/Viewing_Intermediate_Language.html). It's good for learning!
