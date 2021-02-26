@@ -55,7 +55,7 @@ Some changes in a solution may need the entire project chain to be rebuilt, othe
 
 ### Run Configurations
 
-Visual Studio lets you either run the current project, or define multiple startup projects.
+Visual Studio lets you run the current project, or define multiple startup projects.
 More complex solutions often have multiple projects that can be run, and switching between them is cumbersome.
 
 ReSharper makes this easier with [Run Configurations](https://www.jetbrains.com/help/resharper/Run_Configurations.html).
