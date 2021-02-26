@@ -24,7 +24,7 @@ Formatting rules are applied when ReSharper runs code completion and code genera
 
 ### Format Selection from Alt+Enter
 
-When you select some code in the editor and uset he <kbd>Alt+Enter</kbd> shortcut, you can format that selected portion of code using the current code formatter configuration.
+When you select code in the editor and use the <kbd>Alt+Enter</kbd> shortcut, you can format that selected portion of code using the current code formatting configuration.
 There's also an option to [configure formatting rules based on the selected code](https://blog.jetbrains.com/dotnet/2017/11/29/configuring-code-formatting-code-selection-resharper/), so you can see the effect of code formatting rules on your own code and tweak it to your preference.
 
 ### .editorconfig
