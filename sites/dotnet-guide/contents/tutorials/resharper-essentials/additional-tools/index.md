@@ -78,7 +78,7 @@ When you hover an IL instruction, you can see what it does. For example, boxing 
 
 You can use profilers like dotMemory and dotTrace, or enable [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/resharper/Dynamic_Program_Analysis.html) in ReSharper to analyze at runtime.
 
-## Command Line Tools
+### Command Line Tools
 
 ReSharper is not only a Visual Studio extension!
 It ships as a set of standalone [command line tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html) that can run outside Visual Studio, for example on your continuous integration server. They also exist as tools for the dotnet CLI.
