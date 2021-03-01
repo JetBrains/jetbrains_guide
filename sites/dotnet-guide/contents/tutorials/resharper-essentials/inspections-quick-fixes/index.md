@@ -8,9 +8,9 @@ products: [resharper]
 author: matkoch
 subtitle: Helping you write better code, faster, and automatically fixes code issues.
 thumbnail: ./thumbnail.png
-longVideo: 
-    poster: ./poster.png
-    url: https://youtu.be/RgDGJ9H63n4
+longVideo:
+poster: ./poster.png
+url: https://youtu.be/RgDGJ9H63n4
 ---
 
 ### What are Inspections and Quick-Fixes?
@@ -41,10 +41,14 @@ ReSharper comes with severities pre-configured, but it's easy to change the seve
 Most of the inspections have a [configurable severity level](https://www.jetbrains.com/help/resharper/Code_Analysis__Configuring_Warnings.html#change_severity).
 
 Severities and several other settings can be [shared with your team using settings layers](https://www.jetbrains.com/help/resharper/Sharing_Configuration_Options.html).
+
 ### Usage in Continuous Integration (CI)
 
 ReSharper's code analysis can also be used while practicing continuous integration. For that, the [ReSharper Command-Line Tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html) can be used. Specifically the `inspectcode` command, will create a report with all the discovered code issues as a simple XML report. Such a report can either be manually examined with XML APIs, or reported to [TeamCity](https://jetbrains.com/teamcity) to show as an additional report tab.
+
 ### See Also
 
 - [Code analysis](https://www.jetbrains.com/help/resharper/Code_Analysis__Index.html)
 - [Quick-fixes for issues in code](https://www.jetbrains.com/help/resharper/Code_Analysis__Quick-Fixes.html)
+- [ReSharper Command-Line Tools – Cross-Platform and Global Tools](https://blog.jetbrains.com/dotnet/2020/07/16/resharper-command-line-tools-cross-platform-and-global-tools/)
+- [Establishing a zero-warning policy with ReSharper’s solution-wide analysis](https://blog.jetbrains.com/dotnet/2016/10/04/establishing-a-zero-warning-policy-with-resharpers-solution-wide-analysis/)
