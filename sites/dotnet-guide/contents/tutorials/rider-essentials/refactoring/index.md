@@ -15,7 +15,7 @@ longVideo:
 
 ### Refactoring your Code
 
-Rider comes with set of automated, solution-wide code refactorings that let you rename, move, and safely delete symbols;
+Rider comes with a set of automated, solution-wide code refactorings that let you rename, move, and safely delete symbols;
 introduce and inline fields, variables, or parameters, and carry out many more transformations painlessly. Refactorings
 are available for most of the supported languages in Rider.
 

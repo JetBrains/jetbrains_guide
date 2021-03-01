@@ -22,7 +22,7 @@ Code Analysis continuously looks at what we are doing and tries to determine wha
 individual statements and at your overall solution architecture. If it detects a potential issue, it will show a warning.
 It may show suggestions too, helping you improve code.
 
-Inspections can hep you with many things:
+Inspections can help you with many things:
 
 * [Spot errors before our application runs](https://blog.jetbrains.com/dotnet/2018/05/22/using-rider-spot-errors-application-runs/)
 * [Consistent code bases using Rider code analysis](https://blog.jetbrains.com/dotnet/2018/05/24/consistent-code-bases-using-rider-code-analysis/)
@@ -31,10 +31,10 @@ Inspections can hep you with many things:
 
 ### Learn Language Features - C#8 and Nullability
 
-How do you stay up-to-date and learn about new language features (such as those in C#8)?
+How do you stay up-to-date and learn about new language features (such as those in C# 8 and C# 9)?
 
-Rider comes with several Language Usage Opportunities inspections that teach new syntax and language updates. For C#8,
-Rider helps you migrate a code base to C#8 and [adopt nullable reference types](https://blog.jetbrains.com/dotnet/2020/04/20/nullable-reference-types-migration/).
+Rider comes with several Language Usage Opportunities inspections that teach new syntax and language updates. For C# 8,
+Rider helps you migrate a code base to C# 8 and [adopt nullable reference types](https://blog.jetbrains.com/dotnet/2020/04/20/nullable-reference-types-migration/).
 
 ### Plugins to Extend Rider Inspections
 
