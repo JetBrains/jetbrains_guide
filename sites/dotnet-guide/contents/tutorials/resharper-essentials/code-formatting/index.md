@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-03-04
+date: 2021-03-01
 title: Code Formatting
 technologies: [.net, csharp]
 topics: [editing,ide]

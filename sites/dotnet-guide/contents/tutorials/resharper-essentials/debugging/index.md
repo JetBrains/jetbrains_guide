@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-03-04
+date: 2021-03-01
 title: Debugging Applications with ReSharper
 technologies: [.net, csharp]
 topics: [debugging]
