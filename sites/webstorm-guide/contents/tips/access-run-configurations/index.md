@@ -4,7 +4,7 @@ title: Access Run Configurations Quickly
 subtitle: Learn a quick way to access run configurations.
 technologies: []
 topics: [running-debugging]
-author: pe
+author: er
 seealso:
 - title: Run applications in WebStorm
   href: https://www.jetbrains.com/help/webstorm/running-applications.html
