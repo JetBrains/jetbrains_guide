@@ -24,10 +24,10 @@ Let's get started!
 
 The welcome screen is the first thing all Rider users will see. Many of the same functions are available that a developer might see on the Visual Studio welcome screen, including:
 
-Starting a new project or solution
-Opening an existing solution
-Cloning a current solution from a source control system: GitHub, BitBucket, or GitLab.
-New Rider users can explore **Tutorials** from the welcome screen. Tutorials cover scenarios from **Editor Essentials**, **Run Configurations**, and **Debugging Basics**.
+- Starting a new project or solution
+- Opening an existing solution
+- Cloning a current solution from a source control system: GitHub, BitBucket, or GitLab.
+- New Rider users can explore **Tutorials** from the welcome screen. Tutorials cover scenarios from **Editor Essentials**, **Run Configurations**, and **Debugging Basics**.
 
 ## New Solutions
 
