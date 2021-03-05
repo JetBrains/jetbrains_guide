@@ -53,7 +53,7 @@ Most developers will be happy managing breakpoints in the editor using the `F9` 
 
 Within the Visual Studio UI, **autos**, **locals**, and **watches** are different windows. Within Rider, we can find all variables within the debugger tool window. In addition to seeing the values of variables within the debugger tool window, we can see current values right in the editor with what we call **debugging adornments**.
 
-[Check out our guide on debugging tips and tricks to learn more about debugging adornments along with other features.](/tutorials/rider-essentials/debugging/)
+[Check out our guide on debugging tips and tricks to learn more about debugging adornments along with other features.](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/debugging/)
 
 ### Immediate Window
 

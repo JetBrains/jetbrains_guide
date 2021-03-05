@@ -75,12 +75,12 @@ Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** wi
 
 The unit testing experiences between Rider and ReSharper are almost identical, and developers transitioning to Rider as their full-time IDE will find it enjoyably familiar. Rider supports many of the popular unit testing frameworks, so users should have no issues running their unit test runner of choice. Additionally, dotUltimate license holders get more as integrations with **dotCover**, **dotMemory**, **dotCover** and **dotTrace** take unit testing to a whole new level. Unit testing is a cornerstone of modern software development, and with Rider, it's never been more powerful.
 
-Speaking of a whole new level, [check out our tutorial series on unit testing in Rider](/tutorials/rider-essentials/unit-testing/). You'll learn about the power of **continuous testing** and **code coverage**.
+Speaking of a whole new level, [check out our tutorial series on unit testing in Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/). You'll learn about the power of **continuous testing** and **code coverage**.
 
 ### See Also
 
 - [JetBrains Rider](https://jetbrains.com/rider)
 - [JetBrains ReSharper](https://jetbrains.com/resharper)
-- [Unit Testing with Rider](/tutorials/rider-essentials/unit-testing/)
+- [Unit Testing with Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/)
 - [Getting Started With Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
 - [Unit Testing](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
