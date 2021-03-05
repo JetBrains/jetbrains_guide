@@ -62,11 +62,54 @@ We can now, using our activated shell, use `pip` to install our dependencies:
 $ pip install -r requirements.txt
 ```
 
-Sphinx has a number of dependenices itself, so this might take a while to get all the packages.
+Sphinx has a number of dependencies itself, so this might take a while to get all the packages.
 When done, let's confirm that Sphinx is installed:
 
 ```bash
 $ ls .venv/bin/sphinx-quickstart
+```
+
+You'll be asked a number of questions.
+Here are the answers to provide:
+
+```
+$ sphinx-quickstart 
+Welcome to the Sphinx 3.5.1 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Selected root path: .
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory "_build" within the root path, or you separate
+"source" and "build" directories within the root path.
+> Separate source and build directories (y/n) [n]: 
+
+The project name will occur in several places in the built documentation.
+> Project name: My Site
+> Author name(s): Me <me@example.com>
+> Project release []: 
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
+> Project language [en]: 
+
+Creating file /.../static_websites_sphinx_markdown/conf.py.
+Creating file /.../static_websites_sphinx_markdown/index.rst.
+Creating file /.../static_websites_sphinx_markdown/Makefile.
+Creating file /.../static_websites_sphinx_markdown/make.bat.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file /.../static_websites_sphinx_markdown/index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
 
 Sphinx has a number of commands (implemented in Python.)
@@ -78,7 +121,7 @@ If you see `sphinx-quickstart`, your in good shape.
 We're all set up...time to make a site.
 Sphinx ships with [a site generator command](https://www.sphinx-doc.org/en/master/usage/quickstart.html) called `sphinx-quickstart` which is now in the `bin` directory of your virtual environment.
 
-Let's run it and answer some questions, accepting most of the defaults:
+Let's run it and answer some questions, accepting most of the defaults (note that `...` is to hide my directory path):
 
 ```bash
 $ sphinx-quickstart 
@@ -107,20 +150,24 @@ For a list of supported codes, see
 https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
 > Project language [en]: 
 
-Creating file /Users/pauleveritt/projects/scratchpad/sphinx_sites/conf.py.
-Creating file /Users/pauleveritt/projects/scratchpad/sphinx_sites/index.rst.
-Creating file /Users/pauleveritt/projects/scratchpad/sphinx_sites/Makefile.
-Creating file /Users/pauleveritt/projects/scratchpad/sphinx_sites/make.bat.
+Creating file /.../sphinx_sites/conf.py.
+Creating file /.../sphinx_sites/index.rst.
+Creating file /.../sphinx_sites/Makefile.
+Creating file /.../sphinx_sites/make.bat.
 
 Finished: An initial directory structure has been created.
 
-You should now populate your master file /Users/pauleveritt/projects/scratchpad/sphinx_sites/index.rst and create other documentation
+You should now populate your master file /.../sphinx_sites/index.rst and create other documentation
 source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 ```
 
-Our directory now has a number of items:
+Here's how our directory looks after running this:
+
+TODO screenshot from disk
+
+About some of these directory items:
 
 - `conf.py` as the Sphinx configuration file
 
@@ -140,7 +187,7 @@ On macOS or Linux, run `make html` to generate the `html` "builder".
 
 Uh oh, our `.venv` was picked up as part of our site!
 Easy fix, and one that introduces the [Sphinx configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html).
-Open `conf.py` and make a change to `exclude_patterns`, adding `.venv` at the end:
+Open `conf.py` and make a change to `exclude_patterns`, adding `.venv` at the end of the list:
 
 ```python
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
@@ -154,6 +201,12 @@ $ make clean
 $ make html
 ```
 
+Run the build again:
+
+```bash$ make clean
+$ make html
+```
+
 Hmm, interesting, the output says:
 
 ```
@@ -163,37 +216,13 @@ building [html]: targets for 0 source files that are out of date
 That's because Sphinx keeps intermediate representations between runs to support incremental builds.
 `make clean` only removes the "build" artifacts -- in this case, `html` as it was the builder we used with `make html`.
 
-Let's see how to actually clean things up.
-`make html` is a thin layer over `sphinx-build`, just choosing some normal defaults.
-Let's run the equivalent `sphinx-build` command:
-
-```bash
-$ sphinx-build -b html . _build/html
-```
-
-The `-b html` option chooses the `html` builder.
-The `.` says the current directory is has the Sphinx sources and the `conf.py`.
-Finally, the last argument says to write the `html` output to the `_build/html` build directory.
-
-We can pass another option, saying to do a *full* build instead of incremental:
-
-```bash
-$ sphinx-build -b html -E . _build/html
-```
-
-The addition of the `-E` argument for `sphinx-build` now generates an output message:
-
-```
-updating environment: [new config] 1 added, 0 changed, 0 removed
-```
-
 # `livereload` Server
 
 Other static site generators (SSGs) have nice authoring servers: you type in some stuff, a build happens, and the browser reloads automatically.
 That helps during a tutorial, so let's do something similar for Python with the [livereload package](https://pypi.org/project/livereload/).
 
 First, install `livereload` into your virtual environment.
-We'll do so by adding it to `requirements.txt`.
+We'll do so by adding `livereload` to `requirements.txt`.
 Then run:
 
 ```bash
@@ -232,7 +261,7 @@ Hello World.
    :caption: Contents:
 ```
 
-When you save, Sphinx rebuilds and the browser reloads, showing your new paragraph.
+When you save, `livereload` tells Sphinx to rebuild and the browser to reload, showing your new paragraph.
 
 # Add Markdown
 
@@ -281,7 +310,7 @@ When you save this file, our "livereload" script runs Sphinx.
 But Sphinx is mad: it knows there is a file on disk which isn't included in the site:
 
 ```
-[E 200910 14:03:24 server:94] b"/Users/pauleveritt/projects/scratchpad/sphinx_sites/README.md: WARNING: document isn't included in any toctree"
+[E 200910 14:03:24 server:94] b"/.../sphinx_sites/README.md: WARNING: document isn't included in any toctree"
 ```
 
 Sphinx works by linking files into the "toctree", so edit the `toctree` directive in `index.rst` to include it in the table of contents for the root folder:
@@ -319,6 +348,6 @@ Then replace its contents with the following:
 `embed:tutorials/sphinx_sites/setup/index.md`
 
 Two specific notes: `Contents` needs to be in quotes and the `toctree` options need to be de-dented.
-Also, you might need to restart your `livereload` script.
+Also, you might need to restart your `livereload` script and/or reload your browser.
 
 If all goes well, you won't notice anything different in your browser, and you are now running a Sphinx site using Markdown.

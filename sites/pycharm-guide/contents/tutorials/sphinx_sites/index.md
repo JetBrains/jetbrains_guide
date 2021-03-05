@@ -11,6 +11,8 @@ tutorialItems:
   - /tutorials/sphinx_sites/simple_page/
   - /tutorials/sphinx_sites/more_pages/
   - /tutorials/sphinx_sites/linking/
+  - /tutorials/sphinx_sites/frontmatter/
+  - /tutorials/sphinx_sites/advanced/
   - /tutorials/sphinx_sites/documentation/
   - /tutorials/sphinx_sites/intersphinx/
   - /tutorials/sphinx_sites/customizing/

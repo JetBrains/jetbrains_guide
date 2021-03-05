@@ -1,10 +1,7 @@
-project = 'Sphinx Sites'
-copyright = '2020, Paul Everitt'
-author = 'Paul Everitt'
+project = 'My Site'
+copyright = '2021, Me <me@example.com>'
+author = 'Me <me@example.com>'
 extensions = [
     'myst_parser',
 ]
-templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
-html_static_path = ['_static']
-html_theme = 'alabaster'
