@@ -90,7 +90,3 @@ We've only begun to scratch the surface of what Rider database tools can do for 
 
 - [JetBrains Rider Database tools and SQL](https://jetbrains.com/help/rider/Relational_Databases.html)
 - [DataGrip Introduction](https://www.jetbrains.com/help/datagrip/meet-the-product.html)
-
-
- 
-
