@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-03-29
 title: Debugging For ReSharper Users
 technologies: [.net,csharp]
 products: [rider,resharper]
@@ -12,24 +12,24 @@ thumbnail: ./thumbnail.png
 
 As developers, we try our hardest to avoid introducing bugs and exceptions into our codebase. Unfortunately, regardless of the care we take, mistakes are inevitable. The debugging experience is a stand-out feature of the .NET platform, and it gets even better withing JetBrains Rider. Many of the same features ReSharper users have learned to enjoy are there in the Rider experience, along with some additional UI upgrades that we know our users love.
 
-## Main Toolbar and Play Button
+## Main Toolbar and Run Button
 
-One of the first changes developers will notice from Visual Studio is the **play** button's function in the main toolbar. In Visual Studio, the **play** will immediately initiate a debugging session. We may be used to running our applications with the debugger attached, but there are side-effects to getting in the habit of always running in debug mode:
+One of the first changes developers will notice from Visual Studio is the **Run** button in the main toolbar, shown as a _play_ icon. In Visual Studio, the **Run** button will immediately initiate a debugging session. We may be used to running our applications with the debugger attached, but there are side-effects to getting in the habit of always running in debug mode:
 
 - Our applications will operate slower due to debugging overhead.
 - We are running unoptimized code, never experiencing production code until further down the development lifecycle.
 - Utilize more resources during development than is necessary.
 
-In Rider, users will see a clear functional difference, as the **play** button will only start the current run configuration. To attach the debugger, we can either click the **debug** icon, use the **debug** shortcut, or attach the debugger to an existing process.
+In Rider, users will see a clear functional difference, as the **Run** button will only start the current run configuration. To attach the debugger, we can either click the **Debug** icon, use the **Debug** shortcut, or attach the debugger to an existing process.
 
 ## Debugging Shortcuts
 
 Many of the same debugging shortcuts are available in Rider, depending on the keymap developers chose during the JetBrains Rider's initial setup.
 
-- `F5`: Start a new debugging session or resume the current session.
-- `F9`: Set a breakpoint on the current line.
-- `F10`: Stepover current line.
-- `F11`: Step into current line.
+- <kbd>F5</kbd>: Start a new debugging session or resume the current session.
+- <kbd>F9</kbd>: Set a breakpoint on the current line.
+- <kbd>F10</kbd>: Step over current line.
+- <kbd>F11</kbd>: Step into current line.
 
 [There are more shortcuts around debugging, which you can read about in our official documentation](https://www.jetbrains.com/help/rider/Debugging_Code.html).
 

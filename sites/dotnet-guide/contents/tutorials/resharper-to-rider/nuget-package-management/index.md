@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-03-29
 title: NuGet Package Management
 technologies: [.net,csharp]
 products: [rider,resharper]
@@ -10,13 +10,13 @@ subtitle: Learn the basics of the Rider's NuGet Tool Window from a Visual Studio
 thumbnail: ./thumbnail.png
 ---
 
-We can find the greatest strength of every modern development stack in its community, more precisely, in its open-source offerings. For .NET Developers, we can access the breadth of community know-how through the NuGet package service. Visual Studio users will likely be familiar with the NuGet tool window, where developers can manage existing dependencies or add new ones.
+We can find the greatest strength of every modern development stack in its community. More precisely, in its open-source offerings. For .NET Developers, we can access the breadth of community know-how through NuGet. Visual Studio users will likely be familiar with the NuGet tool window, where developers can manage existing dependencies or add new ones.
 
 ![Visual Studio's NuGet Tool Window](./1-visual-studio-nuget-window.png)
 
 In Visual Studio's NuGet tool window, we can see the package's name, its authors, current version, license, and additional metadata to help the user understand more about the dependency. We can also manage the sources Visual Studio will use to search and download the packages.
 
-When we install a package, the NuGet process will update the appropriate project (.csproj) targets with our selected package's information.
+When we install a package, the NuGet process will update the appropriate project (`.csproj`) targets with our selected package's information.
 
 ![JetBrains Rider's NuGet Tool Window](./2-rider-nuget-tool-window.png)
 
@@ -33,7 +33,7 @@ We can add a package to the entire solution or selectively choose the projects t
 - Show License Page
 - Search Package with Google
 
-Our personal favorite is to use the **Open In AssemblyExplorer** action, downloading the package and loading it in Rider's world-class **AssemblyExplorer**. We can explore the contents of any package and be sure it matches our expectations.
+Our personal favorite is to use the **Open In Assembly Explorer** action, downloading the package and loading it in Rider's world-class **Assembly Explorer**. We can explore the contents of any package and be sure it matches our expectations.
 
 ![JetBrains Rider's Assembly Explorer with NuGet Package](./4-rider-assembly-explorer-nuget-package.png)
 

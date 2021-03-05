@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-03-29
 title: Plug-ins
 technologies: [.net,csharp]
 products: [rider,resharper]
@@ -14,19 +14,14 @@ The Visual Studio extension ecosystem is a rich one, and it is where productivit
 
 ![Visual Studio Extensions dialog](./1-visual-studio-extensions.png)
 
-ReSharper users will likely also have seen the **ReSharper Extensions** dialog, accessible under `Extensions > ReSharper > Extension Manager...`.
+ReSharper users will likely also have seen the **ReSharper Extensions** dialog, accessible under `Extensions \| ReSharper \| Extension Manager...`.
 
 ![Visual Studio ReSharper Extensions](./2-visual-studio-resharper-extensions.png)
 
-Let's talk about IDE plug-ins, as they are closest in concept to Visual Studio extensions. Rider's plug-ins are accessible via the **Plugins** section in **Settings**. Developers can find many of the ReSharper extensions in the JetBrains Marketplace. Since ReSharper is the engine that powers many of Rider's editor features, most of these plug-ins "just work".
+Let's talk about IDE plugins, as they are closest in concept to Visual Studio extensions. Rider's plugins are accessible via the **Plugins** section in **Settings**. Developers can find many of the ReSharper extensions in the JetBrains Marketplace. Since ReSharper is the engine that powers many of Rider's editor features, most of these plugins "just work".
 
 ![JetBrains Rider Plug-in Marketplace dialog](./3-jetbrains-rider-plug-in-dialog.png)
 
-A bonus for Rider users is we aren't limited to plug-ins that primarily target .NET development. Since Rider is part of the IntelliJ family of products, developers can benefit from plug-ins designed for IntelliJ IDEA, PyCharm, GoLand, RubyMine, WebStorm, and CLion. JetBrains ships many of the features in Rider as plug-ins deriving from other products.
+A bonus for Rider users is we aren't limited to plugins that primarily target .NET development. Since Rider is part of the IntelliJ family of products, developers can benefit from plugins designed for IntelliJ IDEA, PyCharm, GoLand, RubyMine, WebStorm, and CLion. JetBrains ships many of the features in Rider as plugins deriving from other products.
 
-The Plug-ins all developers will most likely be interested in include support for JavaScript frameworks, themes, language support, and editor productivity enhancements. The JetBrains Marketplace offers developers to explore and adopt plug-ins not available in the Visual Studio Extension ecosystem. Rider isn't only a .NET development environment; With the help of plug-ins, it's any development environment developers need it to be, and that's powerful.
-
-
-
-
-
+The plugins you most likely be interested in include support for JavaScript frameworks, themes, language support, and editor productivity enhancements. The JetBrains Marketplace offers developers to explore and adopt plug-ins not available in the Visual Studio Extension ecosystem. Rider isn't only a .NET development environment; with the help of plugins, it is any development environment developers need it to be. That's powerful!

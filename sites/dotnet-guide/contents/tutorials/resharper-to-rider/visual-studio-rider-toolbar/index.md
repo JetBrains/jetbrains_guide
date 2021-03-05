@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 
 Developers with a mouse-focused workflow will likely be very familiar with Visual Studio's toolbar. Here are the everyday actions found in Visual Studio's toolbar, listed from left to right:
 
-![visual studio default toolbar](./visual-studio-toolbar.png)
+![Visual Studio default toolbar](./visual-studio-toolbar.png)
 
 - Navigation buttons
 - New Project
@@ -41,7 +41,7 @@ When looking at Rider's toolbar, we'll notice it is a bit more sparse by default
 - Search Everywhere
 - IDE and Project Settings
 
-Developers moving from Visual Studio might want the **Back** and **Forwards** navigation buttons. Rider hides those actions by default but can we can add them back by going to `View > Appearance > Toolbar`, after which we'll get an additional set of actions:
+Developers moving from Visual Studio might want the **Back** and **Forwards** navigation buttons. Rider hides those actions by default but can we can add them back by going to `View \| Appearance \| Toolbar`, after which we'll get an additional set of actions:
 
 - Open
 - Save All

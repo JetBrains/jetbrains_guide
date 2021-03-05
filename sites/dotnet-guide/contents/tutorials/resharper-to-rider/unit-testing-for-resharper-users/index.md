@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-03-29
 title: Unit Testing For ReSharper Users
 technologies: [.net,csharp]
 products: [rider,resharper]
@@ -18,7 +18,7 @@ Let's get into it!
 
 ## General Overview
 
-Rider can run all your favorite unit testing frameworks like **[NUnit](https://nunit.org/)**, **[XUnit](https://xunit.net/)**, and **[MSTest](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)** by utilizing the [`Microsoft.NET.Test.Sdk`](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/16.9.0-preview-20210127-04) package. The presence of this package allows Rider to discover test fixtures and individual unit tests. Like ReSharper, Rider will denote discovered test structures in the gutter of a unit test file, except that Rider uses a different set of icons. Rider uses green **play** buttons, while Resharper uses **circle** icons.
+Rider can run all your favorite unit testing frameworks like **[NUnit](https://nunit.org/)**, **[XUnit](https://xunit.net/)**, and **[MSTest](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)** by utilizing the [`Microsoft.NET.Test.Sdk`](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/) package. The presence of this package allows Rider to discover test fixtures and individual unit tests. Like ReSharper, Rider will denote discovered test structures in the gutter of a unit test file, except that Rider uses a different set of icons. Rider uses green **Run** buttons, while Resharper uses unit test icons.
 
 ![Comparison between ReSharper and Rider unit testing icons](./editor-comparison.png)
 
@@ -34,7 +34,7 @@ Many of the same abilities are present across the **Unit Test Explorer** tool wi
 - Profile Unit Tests
 - Grouping/Filtering Options
 
-Rider supports a vertical view with many variants of running a test hidden under the **play** button's sub-menu.
+Rider supports a vertical view with many variants of running a test hidden under the **Run** button's sub-menu.
 
 ![Rider unit test tool window vertical action bar](./rider-vertical-runner-bar.png)
 
@@ -44,25 +44,24 @@ Whether you practice strict test-driven development or other forms of testing, t
 
 ```c#
 [Test]
- public void Test1()
- {
-   Assert.Pass();
- }
-```
+public void Test1()
+{
+  Assert.Pass();
+}
 
 Running the newly authored test in ReSharper will create a new unit test session and open the **Unit Test Sessions** tool window.
 
-![running unit tests with resharper and visual studio](./resharper-unit-tests.png)
+![Running unit tests with resharper and visual studio](./resharper-unit-tests.png)
 
 Running the same test in Rider will create a new unit test session tab within the **Unit Tests** tool window.
 
-![running unit tests with rider](./rider-run-unit-tests.png)
+![Running unit tests with rider](./rider-run-unit-tests.png)
 
 While the UI is slightly different between ReSharper and Rider, developers can find many of the same features by exploring the icons found in Rider's **Unit Tests** tool window.
 
 ## Debugging, Coverage, and Profiling
 
-User's with a **[dotUltimate license](https://jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://jetbrains.com/dotCover)**, **[dotMemory](https://jetbrains.com/dotMemory)**, and **[dotTrace](https://jetbrains.com/dotTrace)**.  All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
+Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://www.jetbrains.com/dotCover)**, **[dotMemory](https://www.jetbrains.com/dotMemory)**, and **[dotTrace](https://www.jetbrains.com/dotTrace)**.  All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
 
 - **Run**
 - **Debug**
