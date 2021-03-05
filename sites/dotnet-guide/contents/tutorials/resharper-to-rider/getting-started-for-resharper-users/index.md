@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-03-29
 title: Getting Started
 technologies: [.net,csharp]
 products: [rider,resharper]
