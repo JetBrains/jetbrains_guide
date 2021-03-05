@@ -10,7 +10,9 @@ subtitle: Learn to create and run your first solution in Rider
 thumbnail: ./thumbnail.png
 ---
 
-In this first step on your journey, migrating from Visual Studio + ReSharper to Rider, we'll walk through creating a new Console Application solution and running it in Rider. We'll explain elements along the way and compare them to what you may be familiar with as a Visual Studio user. We believe Visual Studio + ReSharper is an excellent development environment. This guide is for folks looking to explore the possibility of adopting Rider as their primary development environment.
+This guide is for folks looking to explore the possibility of adopting Rider as their primary development environment.
+
+In this first step on your journey, migrating from Visual Studio to Rider, we'll walk through creating a new Console Application solution and running it in Rider. We'll explain elements along the way and compare them to what you may be familiar with as a Visual Studio user.
 
 All developers can benefit from reading this quick start guide. Those who may have multiple environments across multiple operating systems will benefit the most, moving from Visual Studio + Resharper to JetBrains Rider. This guide will help developers get up and running; for more in-depth details, we suggest going to [the official JetBrains documentation](https://www.jetbrains.com/help/rider/Introduction.html) after reading this tutorial.
 
