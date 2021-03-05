@@ -14,7 +14,7 @@ For developers working with ASP.NET and ASP.NET Core, Internet Information Servi
 
 ## IIS Express
 
-Let's start with the more common IIS Express experience from Visual Studio and how it compares to Rider's experience. Beginning with a new ASP.NET Core web application, we can see our solution structure, which includes C# files, JSON setting files, and launch settings.
+Let's start with the more common IIS Express experience from Visual Studio, and how it compares to Rider's experience. Beginning with a new ASP.NET Core web application, we can see our solution structure, which includes C# files, JSON setting files, and launch settings.
 
 ![Basic ASP.NET Core web application in Visual Studio](./1-visual-studio-web-application.png)
 
