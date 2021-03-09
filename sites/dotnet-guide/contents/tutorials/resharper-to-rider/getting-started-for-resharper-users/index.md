@@ -18,6 +18,26 @@ All developers can benefit from reading this quick start guide, and if you have 
 
 Let's get started!
 
+## Settings And Personalization
+
+Your development environment says a lot about your personality. Choose between a zen-like and clutter-free experience, a data-rich user experience with quickly accessible data, or any experience in-between.
+
+When setting up your development environment, Rider will ask you to choose between two different themes: **Dark** and **Light**.  You can decide to change your preference at any time after the
+
+![Setup for dark and light themes](./1-setup-start-dark-light.png)
+
+Rider will display the themes that fit into the category of your choosing. For example, choosing **Light** will show the themes of **Rider Light**, **Visual Studio Light**, and **Default**.
+
+![Picking from the light themes in Rider](./2-setup-start.png)
+
+The next part of the setup allows you to choose your keymap. ReSharper users will be most familiar with the **Visual Studio** keymap, but take the time to review the shortcuts and pick the right one for you. Similar to the themes, you can change keymaps at any time.
+
+![Selecting the keymaps in Rider's setup](./3-keymaps-setup.png)
+
+If you would like to change your preferences at any point, use the **Settings** dialog to change values for **fonts**, **menus and toolbars**, **editor UI**, and much more. You also can **Restore Default settings** and go through the setup process again.
+
+![The Settings dialog in Rider](./4-settings-dialog.png)
+
 ## Welcome Screens
 
 ![Visual Studio and JetBrains Rider welcome screens](./1-welcome-screens.png)
