@@ -22,6 +22,6 @@ leadin: |
     
     The To-Do list is available from the sidebar, and can also be opened using the <kbd>G</kbd>, <kbd>D</kbd> keyboard shortcut.
 
-    [More about the To-Do List in Space...](https://www.jetbrains.com/help/space/To-Do-list.html)
+    [More about the To-Do List in Space...](https://www.jetbrains.com/help/space/to-do-list.html)
     
 ---

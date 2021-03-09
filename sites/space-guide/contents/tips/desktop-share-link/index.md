@@ -20,6 +20,6 @@ leadin: |
     Hovering over the Space icon on the left reveals actions to open the current page in the browser,
     and to copy a link to the current page so we can share it.
     
-    [More about mobile and desktop apps for Space...](https://www.jetbrains.com/help/space/mobile-and-desktop-apps.html)
+    [More about mobile and desktop apps for Space...](https://www.jetbrains.com/help/space/space-desktop-app.html)
     
 ---

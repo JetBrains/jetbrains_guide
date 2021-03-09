@@ -9,5 +9,5 @@ JetBrains Space provides tools and flows for individuals, such as a personal cal
 and various apps for mobile, desktop and IDE's.
 
 ## See Also
-- [Your personal environment](https://www.jetbrains.com/help/space/your-personal-environment.html)
+- [Your personal environment](https://www.jetbrains.com/help/space/your-profile.html)
 
