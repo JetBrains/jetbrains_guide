@@ -31,4 +31,5 @@
     // Container environment variables
     "containerEnv": {
       "GATSBY_TELEMETRY_DISABLED": "1"
-    },
+    }
+}
