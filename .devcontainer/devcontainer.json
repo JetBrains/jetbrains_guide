@@ -1,0 +1,34 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "12" }
+	},
+
+    // IDE settings
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+	},
+
+    // IDE extensions
+	"extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "yzhang.markdown-all-in-one"
+	],
+
+	// Gatsby runs on port 8000
+	"forwardPorts": [ 
+        8000 
+    ],
+
+	// Run commands after container is created
+	"postCreateCommand": "yarn install",
+
+	// User to run as. Remove to run as root. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "node",
+    
+    // Container environment variables
+    "containerEnv": {
+      "GATSBY_TELEMETRY_DISABLED": "1"
+    },
