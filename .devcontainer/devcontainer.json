@@ -7,7 +7,8 @@
 
     // IDE settings
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash",
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "telemetry.enableTelemetry": false
 	},
 
     // IDE extensions
@@ -19,7 +20,7 @@
 
 	// Gatsby runs on port 8000
 	"forwardPorts": [ 
-        8000 
+        8000
     ],
 
 	// Run commands after container is created
