@@ -21,3 +21,5 @@ tutorialItems:
 Many of the same features we've all grown to love in [ReSharper](https://www.jetbrains.com/resharper/) help power [JetBrains Rider's](https://www.jetbrains.com/rider/) development experience. While most functionality is still present, it may take us a little effort to learn where everything is within a brand new development environment.
 
 In this guide, we'll look at some everyday functionality folks might find helpful when migrating from Visual Studio, with or without ReSharper.
+
+We understand that you've likely spent most of your .NET development career working with Visual Studio and ReSharper. For the adventurous, start by opening existing solutions, looking through menus, and finding the Rider UI elements that feel familiar. Rider is compatible with most solutions, meaning it takes very little to no effort to get started.

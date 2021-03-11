@@ -14,6 +14,8 @@ This guide is for folks looking to explore the possibility of adopting Rider as 
 
 In this first step on your journey, migrating from Visual Studio to Rider, we'll walk through creating a new Console Application solution and running it in Rider. We'll explain elements along the way and compare them to what you may be familiar with as a Visual Studio user.
 
+We understand that you've likely spent most of your .NET development career working with Visual Studio and ReSharper. For the adventurous, start by opening existing solutions, looking through menus, and finding the Rider UI elements that feel familiar. Rider is compatible with most solutions, meaning it takes very little to no effort to get started.
+
 All developers can benefit from reading this quick start guide, and if you have used ReSharper before, you'll be at home quickly; as you'll see, there are many similarities. This guide covers common topics from a high-level perspective. For detailed information about any particular subject, we suggest going to [the official JetBrains documentation](https://www.jetbrains.com/help/rider/Introduction.html) for more in-depth details.
 
 Let's get started!
