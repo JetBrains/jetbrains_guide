@@ -9,5 +9,5 @@ Commit code and explore changes. Review code, create merge requests. Automate yo
 Store and manage package repositories. Connect JetBrains IDEs to Space.
 
 ## See Also
-- [Projects features](https://www.jetbrains.com/space/features/projects.html)
+- [Software Development Projects features](https://www.jetbrains.com/space/features/software-development.html)
 - [Plan, commit, review](https://www.jetbrains.com/help/space/projects.html)
