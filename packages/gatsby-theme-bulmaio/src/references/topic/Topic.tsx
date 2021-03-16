@@ -4,6 +4,7 @@ import {TopicReference} from './models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import {Resource} from '../../resources/models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 export interface TopicProps {
     data: {
@@ -18,9 +19,18 @@ const Topic: FC<TopicProps> = (
         }
     }
 ) => {
+
+    // ##### Twitter Card support
+    const twitterCardPage: TwitterCardPage = {
+        title: title,
+        description: title + (subtitle ? ' - ' + subtitle : ''),
+        image: ''
+    };
+
+    // ##### Resources
     const resources = referenceResources;
     return (
-        <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+        <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body} twitterCardPage={twitterCardPage}>
             {{
                 figure: (
                     <span className={`icon is-large has-text-${accent}`}>

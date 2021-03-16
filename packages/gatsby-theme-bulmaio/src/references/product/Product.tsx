@@ -4,6 +4,7 @@ import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import {ProductReference} from './models';
 import {Resource} from '../../resources/models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 export interface ProductProps {
     data: {
@@ -17,9 +18,20 @@ const Product: FC<ProductProps> = (
             product: {title, subtitle, body, logo, referenceResources}
         }
     }: ProductProps) => {
+
+    // ##### Twitter Card support
+    const twitterCardPage: TwitterCardPage = {
+        title: title,
+        description: title + (subtitle ? ' - ' + subtitle : ''),
+        image: logo
+            ? `https://www.jetbrains.com${logo.publicURL}`
+            : ''
+    };
+
+    // ##### Resources
     const resources = referenceResources;
     return (
-        <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+        <ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body} twitterCardPage={twitterCardPage}>
             {{
                 figure: (
                     <div className="image is-rounded is-96x96">

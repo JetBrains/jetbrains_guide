@@ -6,6 +6,7 @@ import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components/Pagination';
 import { TutorialResource } from './models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 interface AllTutorialProps {
   data: {
@@ -18,6 +19,12 @@ interface AllTutorialProps {
 
 const PAGE_TITLE = 'Tutorials';
 const SUBTITLE = 'Learn how to work with technologies using detailed, multi-step lessons accompanied by code samples, instructions, and videos.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllTutorial: FC<AllTutorialProps> = (
   {
@@ -45,6 +52,7 @@ const AllTutorial: FC<AllTutorialProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (

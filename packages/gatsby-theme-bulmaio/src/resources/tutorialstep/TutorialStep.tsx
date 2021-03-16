@@ -12,7 +12,7 @@ import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
 import BottomNav from '../../components/pagenav/BottomNav';
 import TopNav from '../../components/pagenav/TopNav';
 import VideoPlayer from '../../components/video/VideoPlayer';
-import {TwitterCardPage} from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 export interface TutorialProps {
   location: {

@@ -6,6 +6,7 @@ import { ListedResources } from '../../resources/models';
 import { PageContext } from '../../components/models';
 import Pagination from '../../components/Pagination';
 import SubsectionAuthor from '../../components/subsections/SubsectionAuthor';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 interface AllAuthorProps {
   data: {
@@ -18,6 +19,12 @@ interface AllAuthorProps {
 
 const PAGE_TITLE = 'Authors';
 const SUBTITLE = 'Resources organized by author.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllAuthor: FC<AllAuthorProps> = (
   {
@@ -43,6 +50,7 @@ const AllAuthor: FC<AllAuthorProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (

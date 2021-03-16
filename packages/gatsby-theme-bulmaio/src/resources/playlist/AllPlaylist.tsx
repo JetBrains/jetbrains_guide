@@ -6,6 +6,7 @@ import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components/Pagination';
 import { PlaylistResource } from './models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 interface AllPlaylistProps {
   data: {
@@ -18,6 +19,12 @@ interface AllPlaylistProps {
 
 const PAGE_TITLE = 'Playlists';
 const SUBTITLE = 'Curated, ordered collections of resources you can go through in a sitting.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllPlaylist: FC<AllPlaylistProps> = (
   {
@@ -44,6 +51,7 @@ const AllPlaylist: FC<AllPlaylistProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (

@@ -9,7 +9,6 @@ import { TwitterCardPage } from '../../components/layout/MasterLayout';
 import { TutorialSidebar } from './TutorialSidebar';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
-import {TutorialStepSidebar} from "../tutorialstep/TutorialStepSidebar";
 import {Step} from "../../components/sidebar/SidebarSteps";
 
 export interface TutorialProps {

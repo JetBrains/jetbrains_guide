@@ -5,6 +5,7 @@ import { TopicReference } from './models';
 import { PageContext } from '../../components/models';
 import SubsectionTopic from '../../components/subsections/SubsectionTopic';
 import Pagination from '../../components/Pagination';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 export interface TopicIndexProps {
   data: {
@@ -17,6 +18,12 @@ export interface TopicIndexProps {
 
 const PAGE_TITLE = 'Topics';
 const SUBTITLE = 'Explore all available resources organized by a programming topic.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllTopic: FC<TopicIndexProps> = (
   {
@@ -44,7 +51,9 @@ const AllTopic: FC<TopicIndexProps> = (
   return (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
-      subtitle={SUBTITLE}>
+      subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
+    >
       {{
         listing: (
           <>

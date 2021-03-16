@@ -5,6 +5,7 @@ import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import {AuthorReference} from './models';
 import {Resource} from '../../resources/models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 export interface AuthorProps {
     data: {
@@ -18,8 +19,19 @@ const Author: FC<AuthorProps> = (
             author: {title, subtitle, body, thumbnail, referenceResources}
         }
     }) => {
+
+    // ##### Twitter Card support
+    const twitterCardPage: TwitterCardPage = {
+        title: title,
+        description: 'Content by ' + title + (subtitle ? ' - ' + subtitle : ''),
+        image: thumbnail
+            ? `https://www.jetbrains.com${thumbnail.publicURL}`
+            : ''
+    };
+
+    // ##### Resources
     const resources = referenceResources;
-    return (<ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body}>
+    return (<ReferenceLayout pageTitle={title} subtitle={subtitle} bodyHtml={body} twitterCardPage={twitterCardPage}>
             {{
                 figure: (
                     <div className="image is-rounded is-96x96">

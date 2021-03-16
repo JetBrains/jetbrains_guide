@@ -6,6 +6,7 @@ import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components/Pagination';
 import { TipResource } from './models';
+import { TwitterCardPage } from "../../components/layout/MasterLayout";
 
 interface AllTipProps {
   data: {
@@ -18,6 +19,12 @@ interface AllTipProps {
 
 const PAGE_TITLE = 'Tips';
 const SUBTITLE = 'Visual, standalone, bite-sized learning resources organized into different categories.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllTip: FC<AllTipProps> = (
   {
@@ -47,6 +54,7 @@ const AllTip: FC<AllTipProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (
