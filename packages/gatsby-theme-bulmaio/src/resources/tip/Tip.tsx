@@ -15,7 +15,7 @@ import { getPlaylist } from '../../components/pagenav/common';
 import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
 import BottomNav from '../../components/pagenav/BottomNav';
 import TopNav from '../../components/pagenav/TopNav';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -110,7 +110,7 @@ const Tip: FC<TipProps> = (
           </React.Suspense>
         )}
         {screenshot && (
-          <Img alt="Tip Screenshot" fixed={screenshot.childImageSharp.fixed} />
+          <GatsbyImage image={screenshot.childImageSharp.gatsbyImageData} alt="Tip Screenshot" />
         )}
         {shortVideo && <ShortVideo video={
           {
@@ -198,63 +198,60 @@ const Tip: FC<TipProps> = (
 // noinspection JSUnusedGlobalSymbols
 export default Tip;
 
-export const query = graphql`
-  query($slug: String!) {
-    tip(slug: { eq: $slug }) {
-      label
-      slug
+export const query = graphql`query ($slug: String!) {
+  tip(slug: {eq: $slug}) {
+    label
+    slug
+    title
+    subtitle
+    slug
+    hasBody
+    body
+    date(formatString: "YYYY-MM-DD")
+    seealso {
       title
-      subtitle
-      slug
-      hasBody
-      body
-      date(formatString: "YYYY-MM-DD")
-      seealso {
-        title
-        href
-      }  
-      inPlaylists {
-         ...ListedPlaylistFragment
-      }
-      author {
-        ...ListedAuthorFragment
-      }
-      products {
-        ...ListedProductFragment
-      }
-      technologies {
-        ...ListedTechnologyFragment
-      }
-      topics {
-        ...ListedTopicFragment
-      }      
-      thumbnail {
-        publicURL
-      }
-      cardThumbnail {
-        publicURL
-      }
-      animatedGif {
-        file {
-            publicURL
-        }
-        width
-        height
-      }
-      screenshot {
-        childImageSharp {
-          fixed(width: 600) {
-          ...GatsbyImageSharpFixed
-          }
-        }  
-      }
-      shortVideo {
-        ...VideoFragment
-      }
-      longVideo {
-        ...VideoFragment
-      }
-      leadin
+      href
     }
+    inPlaylists {
+      ...ListedPlaylistFragment
+    }
+    author {
+      ...ListedAuthorFragment
+    }
+    products {
+      ...ListedProductFragment
+    }
+    technologies {
+      ...ListedTechnologyFragment
+    }
+    topics {
+      ...ListedTopicFragment
+    }
+    thumbnail {
+      publicURL
+    }
+    cardThumbnail {
+      publicURL
+    }
+    animatedGif {
+      file {
+        publicURL
+      }
+      width
+      height
+    }
+    screenshot {
+      childImageSharp {
+        gatsbyImageData(width: 600, layout: FIXED)
+      }
+    }
+    shortVideo {
+      ...VideoFragment
+    }
+    longVideo {
+      ...VideoFragment
+    }
+    leadin
   }
+}
 `;

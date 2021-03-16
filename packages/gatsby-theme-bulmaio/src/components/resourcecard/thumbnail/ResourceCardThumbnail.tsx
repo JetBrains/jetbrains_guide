@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export interface ResourceCardThumbnailProps {
   childImageSharp: {
@@ -12,7 +12,7 @@ export const ResourceCardThumbnail:React.FC<ResourceCardThumbnailProps> = (
 ) => {
   return (
     <figure className="image is-96x96">
-      <Img alt={`rcg-thumbnail`} fluid={childImageSharp.fluid}/>
+      <GatsbyImage image={childImageSharp.gatsbyImageData} alt={`rcg-thumbnail`} />
     </figure>
-  )
+  );
 };

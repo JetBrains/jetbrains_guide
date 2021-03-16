@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Link } from 'gatsby';
 import { Thumbnail } from '../../models';
 
@@ -23,7 +23,9 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
           <article className="media">
             <figure className="media-left">
               <div className="image is-rounded is-48x48">
-                <Img className="bio-resourcecard-logo" fluid={author.thumbnail.childImageSharp.fluid}/>
+                <GatsbyImage
+                  image={author.thumbnail.childImageSharp.gatsbyImageData}
+                  className="bio-resourcecard-logo" />
               </div>
             </figure>
             <div className="media-content">
@@ -36,7 +38,8 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
           </article>
         </li>
       </ul>
-    </div>);
+    </div>
+  );
 };
 
 export default SidebarPublished;

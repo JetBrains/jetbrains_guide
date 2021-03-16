@@ -56,7 +56,7 @@
     }
 
     .admonition-title {
-      @extend .is-size-3;
+      @extend .is-size-3 !optional;
     }
   }
 
