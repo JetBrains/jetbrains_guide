@@ -3,15 +3,23 @@ import React from 'react';
 import splash from './webstorm-beam.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
+import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/MasterLayout";
 
 const dataUri = `url("${splash}") center center`;
 
+const PAGE_TITLE = 'About This Guide';
+const SUBTITLE = 'About the WebStorm Guide';
+
+const twitterCardPage: TwitterCardPage = {
+    title: PAGE_TITLE,
+    description: SUBTITLE,
+    image: ''
+};
+
 const AboutPage: React.FC = () => {
 
-    const pageTitle = 'About This Guide';
-
     return (
-        <SiteLayout pageTitle={pageTitle}>
+        <SiteLayout pageTitle={PAGE_TITLE} twitterCardPage={twitterCardPage}>
             <main className="bd-main bulmaio-body">
                 <div className="bd-main-container container" style={{marginBottom: '2rem'}}>
                     <header className="bd-header"
@@ -20,7 +28,7 @@ const AboutPage: React.FC = () => {
                             <div className="media-content">
                                 <div className="content">
                                     <div className="bd-header-titles">
-                                        <h1 className="title">{pageTitle}</h1>
+                                        <h1 className="title">{PAGE_TITLE}</h1>
                                     </div>
                                 </div>
                             </div>

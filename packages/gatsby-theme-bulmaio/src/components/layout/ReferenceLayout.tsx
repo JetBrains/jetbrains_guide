@@ -7,6 +7,7 @@ A variation of the MasterLayout which makes lists entries.
 import React from 'react';
 import SiteLayout from './SiteLayout';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
+import {TwitterCardPage} from './MasterLayout';
 
 interface ReferenceLayoutProps {
     pageTitle: string;
@@ -16,6 +17,7 @@ interface ReferenceLayoutProps {
         figure?: React.ReactNode;
         listing: React.ReactNode;
     };
+    twitterCardPage?: TwitterCardPage;
 }
 
 const ReferenceLayout: React.FC<ReferenceLayoutProps> = (
@@ -23,11 +25,12 @@ const ReferenceLayout: React.FC<ReferenceLayoutProps> = (
         pageTitle,
         subtitle,
         bodyHtml,
-        children: {figure, listing}
+        children: {figure, listing},
+        twitterCardPage
 
     }) => {
     return (
-        <SiteLayout pageTitle={pageTitle}>
+        <SiteLayout pageTitle={pageTitle} twitterCardPage={twitterCardPage}>
             <main className="bd-main bulmaio-body">
                 <div className="bd-main-container container">
                     <div className="bd-duo">

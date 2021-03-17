@@ -5,6 +5,7 @@ import { PageContext } from '../../components/models';
 import Pagination from '../../components/Pagination';
 import { ProductReference } from './models';
 import SubsectionProduct from '../../components/subsections/SubsectionProduct';
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface ProductsProps {
   data: {
@@ -18,6 +19,12 @@ interface ProductsProps {
 const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
 const PAGE_TITLE = 'Products';
 const SUBTITLE = 'Jump to all available learning resources on specific products, such as libraries, languages, and frameworks.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllProduct: FC<ProductsProps> = (
   {
@@ -46,6 +53,7 @@ const AllProduct: FC<ProductsProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (

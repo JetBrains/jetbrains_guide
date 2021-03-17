@@ -3,19 +3,27 @@ import React from 'react';
 import splash from './intellij-idea-beam.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
+import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/MasterLayout";
 
 const dataUri = `url("${splash}") center center`;
 
+const PAGE_TITLE = 'About';
+const SUBTITLE = 'About the IntelliJ IDEA Guide';
+
+const twitterCardPage: TwitterCardPage = {
+    title: PAGE_TITLE,
+    description: SUBTITLE,
+    image: ''
+};
+
 const AboutPage: React.FC = () => {
 
-  const pageTitle = `About`
-
   return (
-    <SiteLayout pageTitle={pageTitle}>
+    <SiteLayout pageTitle={PAGE_TITLE} twitterCardPage={twitterCardPage}>
       <main className="bd-main bulmaio-body">
         <div className="bd-main-container container" style={{ marginBottom: '2rem' }}>
           <header className="bd-header" style={{ marginBottom: 0, minHeight: '6rem', background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 1500 }}>
-            <h1 className="title">{pageTitle}</h1>
+            <h1 className="title">{PAGE_TITLE}</h1>
           </header>
 
           <div className="columns">

@@ -5,6 +5,7 @@ import { PageContext } from '../../components/models';
 import SubsectionTechnology from '../../components/subsections/SubsectionTechnology';
 import Pagination from '../../components/Pagination';
 import { TechnologyReference } from './models';
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface TechnologiesProps {
   data: {
@@ -18,6 +19,12 @@ interface TechnologiesProps {
 const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
 const PAGE_TITLE = 'Technologies';
 const SUBTITLE = 'Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: SUBTITLE,
+  image: ''
+};
 
 const AllTechnology: FC<TechnologiesProps> = (
   {
@@ -46,6 +53,7 @@ const AllTechnology: FC<TechnologiesProps> = (
     <ReferenceLayout
       pageTitle={PAGE_TITLE}
       subtitle={SUBTITLE}
+      twitterCardPage={twitterCardPage}
     >
       {{
         listing: (
