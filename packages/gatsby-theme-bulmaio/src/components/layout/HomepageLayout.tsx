@@ -7,7 +7,7 @@ as children.
 
 import React from 'react';
 import SiteLayout from './SiteLayout';
-import {TwitterCardPage} from "./MasterLayout";
+import {TwitterCardPage} from './MasterLayout';
 
 interface HomepageLayoutProps {
   title: string;

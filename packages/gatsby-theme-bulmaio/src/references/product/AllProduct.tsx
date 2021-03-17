@@ -5,7 +5,7 @@ import { PageContext } from '../../components/models';
 import Pagination from '../../components/Pagination';
 import { ProductReference } from './models';
 import SubsectionProduct from '../../components/subsections/SubsectionProduct';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface ProductsProps {
   data: {

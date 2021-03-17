@@ -7,7 +7,7 @@ A variation of the MasterLayout which makes lists entries.
 import React from 'react';
 import SiteLayout from './SiteLayout';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
-import {TwitterCardPage} from "./MasterLayout";
+import {TwitterCardPage} from './MasterLayout';
 
 interface ReferenceLayoutProps {
     pageTitle: string;

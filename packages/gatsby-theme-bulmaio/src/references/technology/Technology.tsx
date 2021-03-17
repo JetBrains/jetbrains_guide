@@ -4,7 +4,7 @@ import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import {TechnologyReference} from './models';
 import {Resource} from '../../resources/models';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 export interface TechnologyProps {
     data: {

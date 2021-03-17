@@ -19,7 +19,7 @@ const twitterCardPage: TwitterCardPage = {
 const IndexPage: React.FC = () => {
 
   return (
-    <HomepageLayout title={`Home Page - ` + PAGE_TITLE} twitterCardPage={twitterCardPage}>
+    <HomepageLayout title={`Home Page`} twitterCardPage={twitterCardPage}>
       {{
         hero: (
           <section className="hero is-medium"

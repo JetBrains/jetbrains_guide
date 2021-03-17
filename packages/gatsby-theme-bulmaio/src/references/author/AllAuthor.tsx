@@ -6,7 +6,7 @@ import { ListedResources } from '../../resources/models';
 import { PageContext } from '../../components/models';
 import Pagination from '../../components/Pagination';
 import SubsectionAuthor from '../../components/subsections/SubsectionAuthor';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface AllAuthorProps {
   data: {

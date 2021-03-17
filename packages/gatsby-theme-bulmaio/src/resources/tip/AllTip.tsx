@@ -6,7 +6,7 @@ import { PageContext } from '../../components/models';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import Pagination from '../../components/Pagination';
 import { TipResource } from './models';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface AllTipProps {
   data: {

@@ -5,7 +5,7 @@ import { TopicReference } from './models';
 import { PageContext } from '../../components/models';
 import SubsectionTopic from '../../components/subsections/SubsectionTopic';
 import Pagination from '../../components/Pagination';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 export interface TopicIndexProps {
   data: {

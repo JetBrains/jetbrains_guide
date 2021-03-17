@@ -5,7 +5,7 @@ import { PageContext } from '../../components/models';
 import SubsectionTechnology from '../../components/subsections/SubsectionTechnology';
 import Pagination from '../../components/Pagination';
 import { TechnologyReference } from './models';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 interface TechnologiesProps {
   data: {

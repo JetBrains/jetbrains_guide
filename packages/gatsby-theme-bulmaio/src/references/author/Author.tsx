@@ -5,7 +5,7 @@ import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import {AuthorReference} from './models';
 import {Resource} from '../../resources/models';
-import { TwitterCardPage } from "../../components/layout/MasterLayout";
+import { TwitterCardPage } from '../../components/layout/MasterLayout';
 
 export interface AuthorProps {
     data: {
