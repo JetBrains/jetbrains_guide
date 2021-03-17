@@ -9,6 +9,23 @@ subtitle: TODO
 thumbnail: ../python-logo.png
 ---
 
+This tutorial is about using Sphinx for more than documentation.
+But sometimes you want code, inside your website.
+You can still do that when using Sphinx and Markdown, and the combination has both some treats and pitfalls.
+Let's take a look.
+
+## Code In A Document
+
+## Including Code From a File
+
+
+## Configuring `autodoc`
+
+## Documenting a Module
+
+## Referencing Symbols in Docs
+
+
 - code-block
     - Some Python code
     - Some JS

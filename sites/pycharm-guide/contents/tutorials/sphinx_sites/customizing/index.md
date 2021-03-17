@@ -46,3 +46,13 @@ thumbnail: ../python-logo.png
     - Add a `luv_sphinx.jinja2` sidebar via _templates
     - Register in sidebars
     - Make a change in a page's md, see reload
+
+- How to add very customized html page
+    - _templates/about.jinja2
+    - With `href="{{pathto('about')}}"`
+    - Add to luv_sphinx `<p><a href="{{ pathto('about')}}">About</a></p>`
+- ablog for blog integration
+    - Add to requirements.txt
+    - Add to extensions
+    - post and postlist
+    - Show some of the other features on the page
