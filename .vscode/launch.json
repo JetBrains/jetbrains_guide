@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - .NET Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "dotnet:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - GoLand Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "go:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - PyCharm Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "pc:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - Space Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "space:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - WebStorm Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "ws:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run - IntelliJ Guide",            
+            "runtimeExecutable": "yarn",
+            "cwd": "${workspaceFolder}",
+            "runtimeArgs": ["run", "intellij:develop", "--host=0.0.0.0"],
+            "noDebug": true,
+            "skipFiles": [ "<node_internals>/**"]
+        }
+    ]
+}

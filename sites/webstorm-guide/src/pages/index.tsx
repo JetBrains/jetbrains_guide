@@ -3,20 +3,30 @@ import HomepageLayout from 'gatsby-theme-bulmaio/src/components/layout/HomepageL
 // @ts-ignore
 import splash from './webstorm-beam.svg';
 import {Link} from 'gatsby';
+import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/MasterLayout";
 
 const dataUri = `url("${splash}") center center`;
+
+const PAGE_TITLE = 'JavaScript and Beyond: Tips and Tricks for JetBrains IDEs';
+const SUBTITLE = 'Learning resources';
+
+const twitterCardPage: TwitterCardPage = {
+    title: PAGE_TITLE,
+    description: PAGE_TITLE + ' - ' + SUBTITLE,
+    image: ''
+};
 
 const IndexPage: React.FC = () => {
 
     return (
-        <HomepageLayout title={`Home Page`}>
+        <HomepageLayout title={`Home Page`} twitterCardPage={twitterCardPage}>
             {{
                 hero: (
                     <section className="hero is-medium"
                              style={{background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
                         <div className="hero-body">
                             <div className="container">
-                                <h1 className="title">JavaScript and Beyond: Tips and Tricks for JetBrains IDEs</h1>
+                                <h1 className="title">{PAGE_TITLE}</h1>
                                 <div className="columns">
                                     <div className="column is-two-thirds">
 

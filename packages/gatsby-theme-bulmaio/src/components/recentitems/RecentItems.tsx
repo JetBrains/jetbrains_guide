@@ -19,7 +19,7 @@ export const RecentItems: React.FC = () => {
   return (
     <section className="section has-background-light">
       <div className="container">
-        <h1 className="title">Recent Tips</h1>
+        <h2 className="title">Recent Tips</h2>
         <div className="columns">
           <div className="column is-four-fifths-desktop bio-resourcecards">
             {nodes && nodes.map(resource => (

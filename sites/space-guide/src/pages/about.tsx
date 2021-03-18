@@ -3,14 +3,23 @@ import React from 'react';
 import splash from './splash.svg';
 
 import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
+import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/MasterLayout";
 
 const dataUri = `url("${splash}") center center`;
+
+const PAGE_TITLE = 'About';
+const SUBTITLE = 'About the Space Guide';
+
+const twitterCardPage: TwitterCardPage = {
+    title: PAGE_TITLE,
+    description: SUBTITLE,
+    image: ''
+};
+
 const AboutPage: React.FC = () => {
 
-    const pageTitle = `About`
-    const subtitle = `About the Space Guide`
     return (
-        <SiteLayout pageTitle={pageTitle}>
+        <SiteLayout pageTitle={PAGE_TITLE} twitterCardPage={twitterCardPage}>
             <main className="bd-main bulmaio-body">
                 <div className="bd-main-container container">
                     <header className="bd-header"
@@ -19,8 +28,8 @@ const AboutPage: React.FC = () => {
                             <div className="media-content">
                                 <div className="content">
                                     <div className="bd-header-titles">
-                                        <h1 className="title">{pageTitle}</h1>
-                                        {subtitle && <p className="subtitle is-4">{subtitle}</p>}
+                                        <h1 className="title">{PAGE_TITLE}</h1>
+                                        <p className="subtitle is-4">{SUBTITLE}</p>
                                     </div>
                                 </div>
                             </div>

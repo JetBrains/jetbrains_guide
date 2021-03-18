@@ -3,20 +3,30 @@ import HomepageLayout from 'gatsby-theme-bulmaio/src/components/layout/HomepageL
 // @ts-ignore
 import splash from './intellij-idea-beam.svg';
 import { Link } from 'gatsby';
+import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/MasterLayout";
 
 const dataUri = `url("${splash}") center center`;
+
+const PAGE_TITLE = 'IntelliJ IDEA Guide';
+const SUBTITLE = 'Learning resources for IntelliJ IDEA and related technologies.';
+
+const twitterCardPage: TwitterCardPage = {
+  title: PAGE_TITLE,
+  description: PAGE_TITLE + ' - ' + SUBTITLE,
+  image: ''
+};
 
 const IndexPage: React.FC = () => {
 
   return (
-    <HomepageLayout title={`Home Page`}>
+    <HomepageLayout title={`Home Page`} twitterCardPage={twitterCardPage}>
       {{
         hero: (
           <section className="hero is-medium"
                    style={{ background: dataUri, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', color:"white"}}>
             <div className="hero-body">
               <div className="container">
-                <h1 className="title" style={{color:"white"}}>IntelliJ IDEA Guide</h1>
+                <h1 className="title" style={{color:"white"}}>{PAGE_TITLE}</h1>
                 <div className="columns">
                   <div className="column is-two-thirds" >
 
