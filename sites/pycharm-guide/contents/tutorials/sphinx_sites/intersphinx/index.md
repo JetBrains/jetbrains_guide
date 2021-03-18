@@ -11,6 +11,8 @@ thumbnail: ../python-logo.png
 
 - One of those amazing, Sphinx-only things
 - Consume, publish, partition
+  
+## Setting Up
 - Show some of the configuration options
 - Where does it write its "inventory"
 
@@ -22,10 +24,13 @@ thumbnail: ../python-logo.png
     }
     myst_url_schemes = ["http", "https", ]
     ```
+
+## Linking to a Role  
+
 - `[Sphinx Roles](sphinx:ref-role)`
-- `[myst ref](myst:howto/autosectionlabel)`
-- {ref}`Myst Reference <myst:howto/autosectionlabel>`
 - Getting title from target instead of supplying explicitly
 - Look at the logs for missing targets
-- Roles vs. paths
-    - Both can use extracted titles
+
+## Linking to a Section
+- `[myst ref](myst:howto/autosectionlabel)`
+- {ref}`Myst Reference <myst:howto/autosectionlabel>`
