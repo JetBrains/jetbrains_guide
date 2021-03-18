@@ -1,6 +1,6 @@
 ---
-date: 2020-09-22
-title: Get notified when you break the build
+date: 2021-03-29
+title: Get notified when the build breaks
 topics: [automation, projects, work]
 author: maartenba
 subtitle: How do you know when an Automation job goes wrong? Subscribe to notifications!
@@ -10,7 +10,7 @@ shortVideo:
   poster: ./preview.png
   url: https://youtu.be/QZeTpb-3ST8
 leadin: |
-    **Who broke the build?**
+    **What broke the build?**
     
     In Space, you can see an overview of current and previous automation job executions. You can check details for each job, look at their status, and dive into the logs when needed.
     
