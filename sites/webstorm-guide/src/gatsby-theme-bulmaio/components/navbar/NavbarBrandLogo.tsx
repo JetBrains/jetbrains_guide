@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Link } from 'gatsby';
+// @ts-ignore
 import logo from './jetbrains-simple.svg';
 
 const NavbarBrandLogo: FC = () => (
