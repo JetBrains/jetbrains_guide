@@ -28,6 +28,10 @@ thumbnail: ../python-logo.png
 ## Linking to a Role  
 
 - `[Sphinx Roles](sphinx:ref-role)`
+
+```
+{rst:dir}`code-block` docs
+```  
 - Getting title from target instead of supplying explicitly
 - Look at the logs for missing targets
 
