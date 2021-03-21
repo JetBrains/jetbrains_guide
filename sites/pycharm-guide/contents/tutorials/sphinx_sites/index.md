@@ -18,6 +18,7 @@ tutorialItems:
   - /tutorials/sphinx_sites/deploy/
 ---
 
+
 Everybody knows [Sphinx](https://www.sphinx-doc.org/en/master/) for documenting projects, Python and otherwise.
 But few think of Sphinx for the *rest* of a website.
 Why?
@@ -65,3 +66,6 @@ This tutorial shows authoring Sphinx sites using Markdown and what it has to off
 ## TODO
 
 - Add (somewhere) something about internal heading contents in a document
+- Tip tweets
+  - Intersphinx, find roles
+  - Intersphinx, domain, role, ref, MyST
