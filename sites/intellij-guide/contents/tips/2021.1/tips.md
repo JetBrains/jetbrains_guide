@@ -6,6 +6,10 @@ IntelliJ IDEA can identify classes that are data holders and can be converted to
 
 #JDK16 #2021.1 #GettingToKnowIntelliJ
 
+If we decide that maybe a record should be a full Java class after all, we can get IntelliJ IDEA to automatically convert a record into a Java class.
+
+#JDK16 #2021.1 #GettingToKnowIntelliJ
+
 IntelliJ IDEA can find places in our code that can use pattern matching for instance. There were some changes to this feature in #JDK16 which are fully catered for in IntelliJ IDEA 2021.1.
 
 #JDK16 #2021.1 #GettingToKnowIntelliJ
@@ -102,15 +106,11 @@ Right click on a process in the profiler window to see the CPU and Memory use in
 
 #2021.1 #NewInIntelliJIDEA
 
-There's an improved colour scheme for UML diagrams if you're using a light theme. This should make the diagrams easier to read.
-
-#2021.1 #NewInIntelliJIDEA
-
 You can change the font weights for your code. In settings or preferences, Editor -> Font, choose a different weight for the main code, and for the bolder sections.
 
 #2021.1 #NewInIntelliJIDEA
 
-The plugin for our new team collaboration tool, @jetbrains_space is now bundled in IntelliJ IDEA 2021.1. Use "Get from VCS" to get a project that's hosted in Space - log in to the team instance, and then from here you'll see the repositories in your projects.
+The plugin for @jetbrains_space, a new team collaboration tool, is now bundled in IntelliJ IDEA 2021.1. Log in to the team instance to access your projects.
 
 #2021.1 #NewInIntelliJIDEA
 
