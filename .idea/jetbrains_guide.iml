@@ -11,6 +11,7 @@
       <excludeFolder url="file://$MODULE_DIR$/sites/space-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide/public" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/intellij-guide/public" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
