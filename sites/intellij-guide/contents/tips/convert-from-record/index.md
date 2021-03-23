@@ -1,5 +1,5 @@
 ---
-date: 2021-01-08
+date: 2021-03-23
 title: Convert from Record
 technologies: [java]
 topics: [editing]
@@ -11,6 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/byGjzMHqwcc
 leadin: |
-  IntelliJ IDEA 2020.3 has full support for Records meaning you can create them and convert them to a class and IntelliJ IDEA will create the requisite methods.
+  If we decide that maybe a record should be a full Java class, we can get IntelliJ IDEA to automatically convert a record into a Java class.
+
 
 ---
