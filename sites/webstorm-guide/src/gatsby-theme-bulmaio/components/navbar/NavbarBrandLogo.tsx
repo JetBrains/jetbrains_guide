@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Link } from 'gatsby';
-
-const logo = require('./jetbrains-simple.svg');
+// @ts-ignore
+import logo from './jetbrains-simple.svg';
 
 const NavbarBrandLogo: FC = () => (
   <>

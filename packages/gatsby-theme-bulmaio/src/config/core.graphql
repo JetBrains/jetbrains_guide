@@ -1,4 +1,4 @@
-interface Resource @nodeInterface {
+interface Resource implements Node {
     author: Author
     body: String!
     date: Date @dateformat(formatString: "YYYY-MM-DD")
@@ -15,7 +15,7 @@ interface Resource @nodeInterface {
     technologies: [Technology]
 }
 
-interface Reference @nodeInterface {
+interface Reference implements Node {
     id: ID!
     label: String!
     slug: String!

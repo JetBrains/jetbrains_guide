@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import {graphql} from 'gatsby';
-import Img from 'gatsby-image';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import {AuthorReference} from './models';
@@ -35,7 +34,7 @@ const Author: FC<AuthorProps> = (
             {{
                 figure: (
                     <div className="image is-rounded is-96x96">
-                        <Img className="bio-resourcecard-logo" fluid={thumbnail.childImageSharp.fluid}/>
+                        <img alt="" className="bio-resourcecard-logo" src={thumbnail.publicURL} />
                     </div>
                 ),
                 listing: (

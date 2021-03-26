@@ -48,6 +48,15 @@ This generates output in `public/pycharm/guide` (which is actually a symlink to 
 
 Thus, make sure to do a symlink from, for example, `sites/pycharm-guide/public` to `sites/pycharm/guide`
 
+The content is *for the moment* hosted in Firebase Hosting and proxied at, for example,  
+`https://www.jetbrains.com/pycharm/guide/`. Running `npm run production` 
+takes the content from `deploy` and uploads it to Firebase Hosting at 
+`http://pycharm-guide.firebaseapp.com/pycharm/guide/`.
+
+We also have use of a staging URL at 
+`http://pycharm-guide-staging.firebaseapp.com/pycharm/guide/`. You can push 
+a build there using `npm run staging`.
+
 # Gatsby Cache Misfires
 
 When you run `yarn run pc:develop` and edit, Gatsby does an incremental rebuild 

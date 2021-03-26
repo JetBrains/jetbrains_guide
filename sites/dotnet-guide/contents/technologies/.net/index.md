@@ -1,7 +1,7 @@
 ---
 title: .NET
 subtitle: Free. Cross-platform. Open source. A developer platform for building apps.
-logo: './Microsoft_.NET_logo.png'
+logo: ./Microsoft_.NET_logo.png
 website: https://get.dot.net
 ---
 

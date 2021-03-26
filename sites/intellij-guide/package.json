@@ -8,9 +8,9 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "2.22.11",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "gatsby": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {},
   "scripts": {
