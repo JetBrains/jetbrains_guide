@@ -25,6 +25,7 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
               <div className="image is-rounded is-48x48">
                 <GatsbyImage
                   image={author.thumbnail.childImageSharp.gatsbyImageData}
+                  alt=""
                   className="bio-resourcecard-logo" />
               </div>
             </figure>
