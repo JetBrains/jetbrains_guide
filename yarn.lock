@@ -6898,10 +6898,10 @@ gatsby-plugin-google-tagmanager@^3.1.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-image@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.1.1.tgz#b23789c105fda88196d846fc55e3fc290f1a99e5"
-  integrity sha512-8CIldGsS9ZQguVoIMNz3DAfU5GiQc1ez9hJTzlfqUusGbn8UdoVBnlVSVYWG0H0FKFnXuh+6ELksw6vvOGKS4g==
+gatsby-plugin-image@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.1.2.tgz#85fc4f5356bf29c2098c4371e5396e14a0ff632e"
+  integrity sha512-ijuCa/++l+J3lUuEQyDPu1CoQ9dMdjlmgXQIZZvo+ZK25FlWVvZn/tyyg/cFekqv+Ir1Dr8LnHHlxEKdvYkIrw==
   dependencies:
     "@babel/code-frame" "^7.12.13"
     "@babel/parser" "^7.12.5"
