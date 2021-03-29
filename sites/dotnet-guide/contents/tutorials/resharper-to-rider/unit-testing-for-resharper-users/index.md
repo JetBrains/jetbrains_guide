@@ -18,7 +18,7 @@ Let's get into it!
 
 ## General Overview
 
-Rider can run all your favorite unit testing frameworks like **[NUnit](https://nunit.org/)**, **[XUnit](https://xunit.net/)**, and **[MSTest](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)** by utilizing the [`Microsoft.NET.Test.Sdk`](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/) package. The presence of this package allows Rider to discover test fixtures and individual unit tests. Like ReSharper, Rider will denote discovered test structures in the gutter of a unit test file, except that Rider uses a different set of icons. Rider uses green **Run** buttons, while Resharper uses unit test icons.
+Rider can run all your favorite unit testing frameworks like **[NUnit](https://nunit.org/)**, **[XUnit](https://xunit.net/)**, and **[MSTest](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-mstest)** by utilizing the [`Microsoft.NET.Test.Sdk`](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/) package. The presence of this package allows Rider to discover test fixtures and individual unit tests. Like ReSharper, Rider will denote discovered test structures in the gutter of a unit test file, except that Rider uses a different set of icons. Rider uses green **Run** buttons, while ReSharper uses unit test icons.
 
 ![Comparison between ReSharper and Rider unit testing icons](./editor-comparison.png)
 

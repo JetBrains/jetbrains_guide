@@ -30,7 +30,7 @@ are file templates to create new function triggers, you can debug functions, and
  
 ### AWS Toolkit for Rider
 
-The AWS Toolkit for Rider is an open source plug-in for Rider. It's not covered in this tutorial, but there are many
+The AWS Toolkit for Rider is an open source plugin for Rider. It's not covered in this tutorial, but there are many
 examples on the [AWS Toolkit for Rider](https://aws.amazon.com/rider/) website.
 
 ### See Also

@@ -63,7 +63,7 @@ The immediate window is an essential experimentation tool for debugging sessions
 
 ## Conclusion
 
-As mentioned previously, debugging will likely be the most considerable difference for folks moving from Visual Studio + Resharper to Rider.  The Rider team has invested care and attention in fine-tuning the debugging experience for developers. Taking a few minutes to understand where debugging elements are can help save hundreds of hours during an application development lifecycle.
+As mentioned previously, debugging will likely be the most considerable difference for folks moving from Visual Studio + ReSharper to Rider.  The Rider team has invested care and attention in fine-tuning the debugging experience for developers. Taking a few minutes to understand where debugging elements are can help save hundreds of hours during an application development lifecycle.
 
 ### See Also
 

@@ -1,11 +1,11 @@
 ---
 date: 2021-03-29
-title: Moving from Visual Studio + Resharper to JetBrains Rider.
+title: Moving from Visual Studio to JetBrains Rider
 technologies: [.net]
 topics: [ide]
 products: [rider,resharper]
 author: khalidabuhakmeh
-subtitle: A jumpstart guide for Visual Studio + Resharper users.
+subtitle: A jumpstart guide for Visual Studio + ReSharper users wanting to try Rider.
 thumbnail: ./thumbnail.png
 tutorialItems: 
   - /tutorials/resharper-to-rider/getting-started-for-resharper-users/
