@@ -128,6 +128,9 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-theme-bulmaio',
     {
       resolve: `gatsby-plugin-mdx`,
