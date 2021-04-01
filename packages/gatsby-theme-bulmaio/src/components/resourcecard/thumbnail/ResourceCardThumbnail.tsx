@@ -13,8 +13,8 @@ export const ResourceCardThumbnail:React.FC<ResourceCardThumbnailProps> = (
       <img 
           src={thumbnail.childImageSharp.resized.src} 
           alt={`rcg-thumbnail`} 
-          width="96px"
-          height="96px"
+          width="96"
+          height="96"
           loading="lazy" />
     </figure>
   );

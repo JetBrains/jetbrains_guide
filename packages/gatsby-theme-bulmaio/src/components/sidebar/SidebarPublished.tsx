@@ -26,8 +26,8 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
                   src={author.thumbnail.childImageSharp.resized.src} 
                   alt=""
                   loading="lazy"
-                  width="48px"
-                  height="48px"
+                  width="48"
+                  height="48"
                   className="bio-resourcecard-logo" />
               </div>
             </figure>

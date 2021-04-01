@@ -20,8 +20,8 @@ const SubsectionAuthor: React.FC<SubsectionAuthorProps> = (
             src={thumbnail.childImageSharp.resized.src}  
             alt={`sa-thumbnail`}
             loading="lazy"
-            width="64px"
-            height="64px"
+            width="64"
+            height="64"
             className="bio-resourcecard-logo" />
         </div>
       </figure>
