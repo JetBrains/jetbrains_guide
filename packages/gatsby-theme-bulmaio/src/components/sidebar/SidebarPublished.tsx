@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Thumbnail } from '../../models';
+import { withPrefix } from 'gatsby'
 
 export interface SidebarPublishedProps {
   date: string;
@@ -23,7 +24,7 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
             <figure className="media-left">
               <div className="image is-rounded is-48x48">
                 <img
-                  src={author.thumbnail.childImageSharp.resized.src} 
+                  src={withPrefix(author.thumbnail.childImageSharp.resized.src)} 
                   alt=""
                   loading="lazy"
                   width="48"

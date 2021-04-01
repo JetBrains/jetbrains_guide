@@ -8,6 +8,7 @@ src/components/logo/Logo.tsx file.
  */
 
 import React from 'react';
+// imports like this are converted to base64 encoded strings
 // @ts-ignore
 import logo from './logo.png';
 

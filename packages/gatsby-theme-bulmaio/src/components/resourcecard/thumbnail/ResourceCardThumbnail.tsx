@@ -1,4 +1,5 @@
 import React from 'react';
+import { withPrefix } from 'gatsby'
 import {Thumbnail} from "../../../models";
 
 export interface ResourceCardThumbnailProps {
@@ -11,7 +12,7 @@ export const ResourceCardThumbnail:React.FC<ResourceCardThumbnailProps> = (
   return (
     <figure className="image is-96x96">
       <img 
-          src={thumbnail.childImageSharp.resized.src} 
+          src={withPrefix(thumbnail.childImageSharp.resized.src)} 
           alt={`rcg-thumbnail`} 
           width="96"
           height="96"

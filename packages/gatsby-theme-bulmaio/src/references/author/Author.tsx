@@ -5,6 +5,7 @@ import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import {AuthorReference} from './models';
 import {Resource} from '../../resources/models';
 import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import { withPrefix } from 'gatsby'
 
 export interface AuthorProps {
     data: {
@@ -39,7 +40,7 @@ const Author: FC<AuthorProps> = (
                             loading="lazy"
                             height="96"
                             width="96"
-                            src={thumbnail.childImageSharp.resized.src} />
+                            src={withPrefix(thumbnail.childImageSharp.resized.src)} />
                     </div>
                 ),
                 listing: (

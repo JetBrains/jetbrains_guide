@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Link} from 'gatsby';
+import {Link, withPrefix} from 'gatsby';
 import {Thumbnail} from '../../../models';
 
 export interface ResourceCardAuthorProps {
@@ -20,7 +20,7 @@ export const ResourceCardAuthor: React.FC<ResourceCardAuthorProps> = (
                     {thumbnail && thumbnail.childImageSharp && (
                         <div className="image is-rounded is-24x24">
                             <img
-                                src={thumbnail.childImageSharp.resized.src}
+                                src={withPrefix(thumbnail.childImageSharp.resized.src)}
                                 alt={`rca-fluid`}
                                 loading="lazy"
                                 width="24px"

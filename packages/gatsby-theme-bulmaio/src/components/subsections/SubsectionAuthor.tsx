@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { withPrefix } from 'gatsby'
 import { Thumbnail } from '../../models';
 
 export interface SubsectionAuthorProps {
@@ -17,7 +18,7 @@ const SubsectionAuthor: React.FC<SubsectionAuthorProps> = (
       <figure className="bd-link-figure">
         <div className="image is-rounded is-64x64">
           <img
-            src={thumbnail.childImageSharp.resized.src}  
+            src={withPrefix(thumbnail.childImageSharp.resized.src)}  
             alt={`sa-thumbnail`}
             loading="lazy"
             width="64"
