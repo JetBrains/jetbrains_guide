@@ -16,7 +16,6 @@ interface ProductsProps {
   pageContext: PageContext
 }
 
-const DEFAULT_LOGO = 'https://cdn.worldvectorlogo.com/logos/python-5.svg';
 const PAGE_TITLE = 'Products';
 const SUBTITLE = 'Jump to all available learning resources on specific products, such as libraries, languages, and frameworks.';
 
@@ -36,14 +35,13 @@ const AllProduct: FC<ProductsProps> = (
     <nav className="bd-links bio-resourcecards">
       {nodes &&
       nodes.map(node => {
-        const logo = node.logo ? node.logo.publicURL : DEFAULT_LOGO;
         return (
           <SubsectionProduct
             key={node.label}
             title={node.title}
             subtitle={node.subtitle}
             href={node.slug}
-            logo={logo}
+            logo={node.logo}
           />
         );
       })}

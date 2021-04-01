@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 subtitle: Popular programming language that conforms to ECMAScript
-logo: ./javascript-original.svg
+logo: ./javascript.png
 website: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 ---
 

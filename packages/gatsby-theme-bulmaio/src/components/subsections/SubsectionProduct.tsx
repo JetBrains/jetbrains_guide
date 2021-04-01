@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import {Link, withPrefix} from 'gatsby';
+import {Thumbnail} from "../../models";
 
 export interface SubsectionProductProps {
   title: string;
   subtitle?: string;
   href: string;
-  logo: string;
+  logo: Thumbnail;
 }
 
 const SubsectionProduct: React.FC<SubsectionProductProps> = ({title, subtitle, href, logo}) => (
@@ -15,7 +16,7 @@ const SubsectionProduct: React.FC<SubsectionProductProps> = ({title, subtitle, h
         <div className="image is-64x64">
           <img data-testid={`ste-logo`} 
                className="bio-resourcecard-logo" 
-               src={logo} 
+               src={withPrefix(logo.childImageSharp.resized.src)} 
                loading="lazy"
                alt="Logo" />
         </div>

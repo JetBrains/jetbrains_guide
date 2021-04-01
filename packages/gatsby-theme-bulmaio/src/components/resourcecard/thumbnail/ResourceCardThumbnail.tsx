@@ -1,6 +1,6 @@
 import React from 'react';
 import { withPrefix } from 'gatsby'
-import {Thumbnail} from "../../../models";
+import {Thumbnail} from "../../../models"
 
 export interface ResourceCardThumbnailProps {
   thumbnail: Thumbnail

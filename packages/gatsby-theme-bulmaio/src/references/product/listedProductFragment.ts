@@ -8,7 +8,7 @@ export const query = graphql`
     subtitle
     body
     logo {
-      publicURL
+      ...ThumbnailFragment
     }
   }
 `;
