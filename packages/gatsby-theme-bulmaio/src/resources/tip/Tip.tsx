@@ -15,7 +15,6 @@ import { getPlaylist } from '../../components/pagenav/common';
 import getPrevNextBySlug from '../../components/pagenav/getPrevNextBySlug';
 import BottomNav from '../../components/pagenav/BottomNav';
 import TopNav from '../../components/pagenav/TopNav';
-import { GatsbyImage } from "gatsby-plugin-image";
 
 const ClientSideOnlyPlayer = React.lazy(() =>
   import('../../components/video/GifPlayer')
@@ -110,7 +109,7 @@ const Tip: FC<TipProps> = (
           </React.Suspense>
         )}
         {screenshot && (
-          <GatsbyImage image={screenshot.childImageSharp.gatsbyImageData} alt="Tip Screenshot" />
+          <img src={screenshot.publicURL} alt="Tip Screenshot" loading="lazy" />
         )}
         {shortVideo && <ShortVideo video={
           {
@@ -230,10 +229,28 @@ export const query = graphql`query ($slug: String!) {
       ...ListedTopicFragment
     }
     thumbnail {
-      publicURL
+      publicURL,
+        childImageSharp {
+        resized: resize(width:96) {
+          src
+          width
+          height
+          originalName
+        },
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     cardThumbnail {
-      publicURL
+      publicURL,
+        childImageSharp {
+        resized: resize(width:96) {
+          src
+          width
+          height
+          originalName
+        },
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
     }
     animatedGif {
       file {

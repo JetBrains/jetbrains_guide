@@ -10,7 +10,13 @@ export const DUMMY_ST: SubsectionAuthorProps = {
   thumbnail: {
     publicURL: '/publicURL1',
     childImageSharp: {
-      fluid: { aspectRatio: 9, src: 'src', srcSet: 'src', sizes: '987' }
+      resized: {
+        src: "",
+        height: 1,
+        width: 1,
+        originalName: ""
+      },
+      gatsbyImageData: {}
     }
   }
 };

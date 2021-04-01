@@ -11,6 +11,10 @@ import React from 'react';
 // @ts-ignore
 import logo from './logo.png';
 
-const Logo: React.ReactNode = <img src={logo} className="bio-navbar-logo-image" alt={`Logo`} height="28"/>;
+const Logo: React.ReactNode = <img 
+    src={logo} 
+    className="bio-navbar-logo-image" alt={`Logo`}
+    width="28"
+    height="28"/>;
 
 export default Logo;

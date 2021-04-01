@@ -1,18 +1,21 @@
 import React from 'react';
-import { GatsbyImage } from "gatsby-plugin-image";
+import {Thumbnail} from "../../../models";
 
 export interface ResourceCardThumbnailProps {
-  childImageSharp: {
-    fluid: { aspectRatio: number, src: string, srcSet: string, sizes: string }
-  }
+  thumbnail: Thumbnail
 }
 
 export const ResourceCardThumbnail:React.FC<ResourceCardThumbnailProps> = (
-  {childImageSharp}
+  {thumbnail}
 ) => {
   return (
     <figure className="image is-96x96">
-      <GatsbyImage image={childImageSharp.gatsbyImageData} alt={`rcg-thumbnail`} />
+      <img 
+          src={thumbnail.childImageSharp.resized.src} 
+          alt={`rcg-thumbnail`} 
+          width="96px"
+          height="96px"
+          loading="lazy" />
     </figure>
   );
 };

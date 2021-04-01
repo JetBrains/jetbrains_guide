@@ -11,7 +11,13 @@ export const DUMMY_PROPS: SidebarPublishedProps = {
     thumbnail: {
       publicURL: '/publicURL1',
       childImageSharp: {
-        fluid: { aspectRatio: 9, src: 'src', srcSet: 'src', sizes: '9' }
+        resized: {
+          src: "",
+          height: 1,
+          width: 1,
+          originalName: ""
+        },
+        gatsbyImageData: {}
       }
     }
   }

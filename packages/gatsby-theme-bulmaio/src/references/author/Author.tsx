@@ -34,7 +34,12 @@ const Author: FC<AuthorProps> = (
             {{
                 figure: (
                     <div className="image is-rounded is-96x96">
-                        <img alt="" className="bio-resourcecard-logo" src={thumbnail.publicURL} />
+                        <img
+                            alt="" className="bio-resourcecard-logo" 
+                            loading="lazy"
+                            height="96"
+                            width="96"
+                            src={thumbnail.childImageSharp.resized.src} />
                     </div>
                 ),
                 listing: (

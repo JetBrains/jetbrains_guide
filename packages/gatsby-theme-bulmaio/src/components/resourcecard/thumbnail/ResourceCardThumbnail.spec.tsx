@@ -4,8 +4,19 @@ import { render } from '@testing-library/react';
 import {ResourceCardThumbnail, ResourceCardThumbnailProps } from './ResourceCardThumbnail';
 
 export const DUMMY_RCTH: ResourceCardThumbnailProps = {
-  childImageSharp: {
-    fluid: { aspectRatio: 9, src: 'src', srcSet: 'src', sizes: '987' }
+  thumbnail: {
+    publicURL: "",
+    childImageSharp : {
+      resized : {
+        originalName : "",
+        width : 1,
+        height : 1,
+        src : ""
+      },
+      gatsbyImageData : {
+        
+      }
+    }
   }
 };
 

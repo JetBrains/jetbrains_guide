@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { GatsbyImage } from "gatsby-plugin-image";
 import { Thumbnail } from '../../models';
 
 export interface SubsectionAuthorProps {
@@ -17,9 +16,12 @@ const SubsectionAuthor: React.FC<SubsectionAuthorProps> = (
     <h2 className="bd-link-name">
       <figure className="bd-link-figure">
         <div className="image is-rounded is-64x64">
-          <GatsbyImage
-            image={thumbnail.childImageSharp.gatsbyImageData}
+          <img
+            src={thumbnail.childImageSharp.resized.src}  
             alt={`sa-thumbnail`}
+            loading="lazy"
+            width="64px"
+            height="64px"
             className="bio-resourcecard-logo" />
         </div>
       </figure>

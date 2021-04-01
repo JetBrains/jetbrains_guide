@@ -5,12 +5,13 @@ import {ResourceCardAuthor, ResourceCardAuthorProps} from './author/ResourceCard
 import {ResourceCardTechnologies, ResourceCardTechnologiesProps} from './technology/ResourceCardTechnologies';
 import {ResourceCardTopics, ResourceCardTopicsProps} from './topic/ResourceCardTopics';
 import {ResourceCardDate, ResourceCardDateProps} from './date/ResourceCardDate';
-import {ResourceCardThumbnail, ResourceCardThumbnailProps} from './thumbnail/ResourceCardThumbnail';
+import {ResourceCardThumbnail } from './thumbnail/ResourceCardThumbnail';
 import {ResourceCardProducts, ResourceCardProductsProps} from './product/ResourceCardProducts';
+import {Thumbnail} from "../../models";
 
 export interface ResourceCardProps {
     logo?: ResourceCardLogoProps,
-    thumbnail?: ResourceCardThumbnailProps,
+    thumbnail?: Thumbnail,
     media: ResourceCardMediaProps,
     author?: ResourceCardAuthorProps,
     products?: ResourceCardProductsProps,
@@ -29,7 +30,7 @@ const ResourceCard: React.FC<ResourceCardProps> = (
                 <div className="media-left">
                     {logo && <ResourceCardLogo {...logo} />}
                     {thumbnail && (
-                        <ResourceCardThumbnail childImageSharp={thumbnail.childImageSharp}/>
+                        <ResourceCardThumbnail thumbnail={thumbnail}/>
                     )}
                 </div>
                 <div className="media-content is-clipped">

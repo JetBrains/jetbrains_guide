@@ -126,11 +126,3 @@ pre.prism-code div.token-line.highlight-line {
 .has-text-dark {
   color: #363636!important;
 }
-
-// Workaround for images not showing.
-// Proper fix is to add gatsby-plugin-image to gatsby-config.js, but then there's
-// https://github.com/gatsbyjs/gatsby/issues/30516
-// Once that GitHub issue gets a response, this may need to be revisited.
-.gatsby-image-wrapper > picture > img {
-  opacity: 1 !important;
-}
