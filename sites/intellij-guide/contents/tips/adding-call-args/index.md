@@ -13,5 +13,4 @@ shortVideo:
 leadin: |
   Kotlin has support for named parameters which IntelliJ IDEA can add automatically. We can use **⌥⏎** (macOS), or **Alt**+**Enter** (Windows/Linux), before the first parameter to add names to call arguments. You can use the same shortcut again before one argument to add names from that parameter position, or just for that parameter.  
   
-
 ---
