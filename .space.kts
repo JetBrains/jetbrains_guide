@@ -167,6 +167,10 @@ job("Build IntelliJ IDEA Guide") {
 }
 
 job("Docker - Content creators image") {
+    startOn {
+        gitPush { enabled = false } // manual build
+    }
+
     docker {
         build {
             context = "."

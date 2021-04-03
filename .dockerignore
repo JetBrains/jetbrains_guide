@@ -22,5 +22,12 @@
 **/secrets.dev.yaml
 **/values.dev.yaml
 .git/
+.idea/
 LICENSE
 README.md
+sites/*/contents/
+sites/*/.cache/
+sites/*/public/
+sites/*/node_modules/
+packages/*/node_modules/
+node_modules/

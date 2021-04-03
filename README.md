@@ -32,8 +32,6 @@ Want to create content? Awesome! We like content. Here's what you need to get st
 This will build and run a Docker container for the Guide you want to work with,
 and mount the `contents` folder of that Guide as a volume inside the container.
 
-> **Note:** The first time you run a specific Guide, this will take a while. Subsequent starts should be faster.
-
 For humans: if you launch `Docker - IntelliJ Guide`, you can work on any content in the
 `sites/intellij/guide/contents` directory of this repository.
 
@@ -51,6 +49,15 @@ When those are in place, you will have to:
 * Run `yarn run pc:develop` (where `pc` is the Guide you want to run, e.g. `dotnet`, `intellij`, and others)
 * Connect the browser to `http://localhost:8000/`
 * Start authoring, and see reloads in the browser
+
+If you want to try building a new Docker image for content creators,
+open a terminal in the root of this repository and run:
+
+```
+docker build . -f Dockerfile-ContentCreators -t registry.jetbrains.team/p/evan/guide-containers/guide-content-creators:latest
+```
+
+Once finished, you can run the Docker frun configurations to test out things.
 
 ## Authoring
 

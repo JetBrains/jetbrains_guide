@@ -1,7 +1,13 @@
+# This Dockerfile can be used to pre-generate a container image
+# with all required tools for content creators.
+#
+# Once published, it is used by the Dockerfile file
+# and the WebStorm run configurations.
+
 FROM node:14
+ENV CHOKIDAR_USEPOLLING=1
 ENV GATSBY_TELEMETRY_DISABLED=1
 ENV INTERNAL_STATUS_PORT=33949
-ENV CHOKIDAR_USEPOLLING=1
 EXPOSE 8000
 EXPOSE 33949
 
