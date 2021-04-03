@@ -165,3 +165,14 @@ job("Build IntelliJ IDEA Guide") {
         }
     }
 }
+
+job("Docker - Content creators image") {
+    docker {
+        build {
+            context = "."
+            file = "./Dockerfile-ContentCreators"
+            labels["vendor"] = "JetBrains"
+        }
+        push("registry.jetbrains.team/p/evan/guide-containers/guide-content-creators")
+    }
+}

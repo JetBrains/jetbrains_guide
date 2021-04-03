@@ -17,7 +17,6 @@
             </DockerPortBindingImpl>
           </list>
         </option>
-        <option name="commandLineOptions" value=" -v guide_npm_cache:/root/.npm -v guide_npm_modules_cache:/jetbrains_guide/node_modules" />
         <option name="sourceFilePath" value="Dockerfile" />
         <option name="volumeBindings">
           <list>
