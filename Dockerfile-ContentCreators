@@ -18,6 +18,7 @@ RUN gatsby telemetry --disable
 
 # Copy all files (except those in .dockerignore)
 COPY . .
+RUN chmod +x /jetbrains_guide/guide.sh
 RUN yarn
 
 # Override the entry point defined in the node container otherwise headaches will happen

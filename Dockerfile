@@ -11,6 +11,7 @@ EXPOSE 33949
 WORKDIR /jetbrains_guide/
 
 COPY ./guide.sh ./
+RUN chmod +x /jetbrains_guide/guide.sh
 
 # Override the entry point defined in the node container otherwise headaches will happen
 ENTRYPOINT []
