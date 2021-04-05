@@ -1,11 +1,17 @@
-FROM node:12.11.0-alpine
+# This Dockerfile can be used by content creators.
+#
+# It comes with all tools pre-installed. Use the
+# WebStorm run configurations to run it with the
+# correct volume mounts.
 
+FROM registry.jetbrains.team/p/evan/guide-containers/guide-content-creators:latest
 EXPOSE 8000
-
-RUN npm install --global gatsby-cli yarn
-RUN gatsby telemetry --disable
+EXPOSE 33949
 
 WORKDIR /jetbrains_guide/
+
+COPY ./guide.sh ./
+RUN chmod +x /jetbrains_guide/guide.sh
 
 # Override the entry point defined in the node container otherwise headaches will happen
 ENTRYPOINT []

@@ -9,7 +9,7 @@ job("Build PyCharm Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -37,7 +37,7 @@ job("Build GoLand Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -65,7 +65,7 @@ job("Build WebStorm Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -93,7 +93,7 @@ job("Build Space Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -121,7 +121,7 @@ job("Build .NET Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -149,7 +149,7 @@ job("Build IntelliJ IDEA Guide") {
         }
     }
     
-    container("node:12") {
+    container("node:14") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -163,5 +163,20 @@ job("Build IntelliJ IDEA Guide") {
                 yarn run intellij:build
             """
         }
+    }
+}
+
+job("Docker - Content creators image") {
+    startOn {
+        gitPush { enabled = false } // manual build
+    }
+
+    docker {
+        build {
+            context = "."
+            file = "./Dockerfile-ContentCreators"
+            labels["vendor"] = "JetBrains"
+        }
+        push("registry.jetbrains.team/p/evan/guide-containers/guide-content-creators")
     }
 }
