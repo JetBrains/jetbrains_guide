@@ -11,14 +11,14 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=taKlZlicpwM&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=19
 leadin: |
-    A question that often comes up when working with code is: where’s this element used?
+    The **Show usages** feature allows you to quickly answer the question "Where's this element used?"
     
-    GoLand has the _Find usages_ action, _Alt + F7_ on Windows/Linux, _⌥ + F7_ on macOS,
-    to help you out with that.
-    
-    What about not having a tool window for this, but rather a popup that you can quickly
-    use to navigate/filter or otherwise dismiss? That's where GoLand comes in with the
-    _Show usages_ feature, accessible via _Ctrl + Alt + F7_ on Windows/Linux,
-    _⌥ + ⌘ + F7_ on macOS.
+    It will open a pop-up that you can quickly
+    use to navigate/filter or otherwise dismiss with the results you are looking for.
+
+    **How to use:**
+
+    Press _Ctrl + Alt + F7 on Windows/Linux_,
+    _⌥ + ⌘ + F7 on macOS_.
 
 ---

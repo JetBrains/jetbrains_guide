@@ -22,7 +22,7 @@ leadin: |
 
     Want to create a file somewhere in your project tree, without the mouse?
     
-    Use the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + Up on macOS_, to get to a directory then use the keyboard
+    Use the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_, to get to a directory then use the keyboard
     to make and open a new file at the target, with _Alt + Insert on Windows/Linux_ or _⌘ + N on macOS_.
 
 ---

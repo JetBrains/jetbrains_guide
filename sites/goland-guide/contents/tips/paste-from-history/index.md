@@ -11,10 +11,10 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=0tf5TkASTFg&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=21
 leadin: |
-    GoLand keeps a (limited) history of everything you put in the clipboard.
-    
-    Anytime you want to paste one of your previously copied items,
-    press _Ctrl + Shift + V_ on Windows/Linux and _⌘ + ⇧ + V_ on macOS, to open
-    the _Choose Content to Paste_ popup window.
+    The **Paste from History** feature you to use the (limited) history of everything you put in the clipboard.
+
+    **How to use:**
+
+    Press _Ctrl + Shift + V on Windows/Linux_ and _⌘ + ⇧ + V on macOS_ to open pop-up window.
 
 ---

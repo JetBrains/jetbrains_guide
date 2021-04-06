@@ -4,7 +4,7 @@ title: 'Navigate Cursor Position Back and Forth'
 technologies: ['go']
 topics: [navigation]
 author: dlsniper
-subtitle: 'Easily navigate back to where you were, or where you went.'
+subtitle: 'Navigate back to where you were, or where you went.'
 seealso:
   - title: 'Navigate to Navigated Items'
     href: 'https://www.jetbrains.com/help/go/navigating-to-navigated-items.html'

@@ -22,12 +22,12 @@ leadin: |
     
     **How to use:**
 
-    Press _⌥+/_ on macOS or _Alt+/_ on Windows/Linux to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
+    Press _Alt+/_ on Windows/Linux or _⌥+/_ on macOS to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
     
-    Press _⌥+⇧/_ on macOS or _Shift+Alt+/_ on Windows/Linux for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
+    Press _Shift + Alt + /_ on Windows/Linux or _⌥ + ⇧ + /_ on macOS for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
     
     **Pro tip:**
     
-    Hold the _⌥_ on macOS or _Alt_ on Windows/Linux key down and keep pressing / until you get to the word you need.
+    Hold the _Alt on Windows/Linux_ or _⌥ on macOS_ key down and keep pressing / until you get to the word you need.
 
 ---

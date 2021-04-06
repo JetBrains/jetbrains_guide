@@ -11,14 +11,14 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=JUoejnuOIXs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
-    GoLand provides code completion and analysis in injected strings for SQL and 
-    databases statements, JavaScript, CSS, HTML, XML, and RegExp, etc.
+    GoLand provides code completion and analysis in injected strings for _SQL_ and 
+    _databases statements_, _JavaScript_, _CSS_, _HTML_, _XML_, and _RegExp_, etc.
     
     **How to use:**
     
-    Place the cursor within the literal (between the quotation marks) and press 
-    _⌥+⏎_ on macOS or _Alt+Enter_ on Windows/Linux, select _Inject language or 
-    reference_, choose which one of supported injection language you want to use and 
+    Place the cursor within the literal (_between_ the quotation marks) and press 
+    _Alt + Enter on Windows/Linux_ or _ ⌥ + ⏎ on macOS_, select **Inject language or reference**,
+    choose which one of supported injection language you want to use and 
     start typing, auto-completion will appear instantly.
 
 ---

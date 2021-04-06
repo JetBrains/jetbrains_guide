@@ -11,7 +11,11 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=DlcYgZxKWqk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
-    If used instead of *Enter* to accept a suggestion from list, it overwrites 
-    the identifier at the caret.
+    This will overwrite the identifier at the caret, making it easy to quickly
+    replace identifiers in code.
+
+    **How to use:**
+
+    Use the **Tab** key instead of *Enter* to accept a suggestion from list.
 
 ---

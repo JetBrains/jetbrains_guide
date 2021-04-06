@@ -11,8 +11,9 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=zNBATrPbkTI&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=25
 leadin: |
-    _Speed Typing_ is the ability to type anything in a list and have the results
-    filtered. You can then use the arrow keys to move through the list, or press
-    _Esc_ to dismiss the filter.
+    **Speed Typing** is the ability to type anything in a list and have the results
+    filtered.
+
+    You can then use the arrow keys to move through the list, or press _Esc_ to dismiss the filter.
 
 ---

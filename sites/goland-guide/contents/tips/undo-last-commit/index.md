@@ -2,9 +2,9 @@
 date: 2020-10-15
 title: Undo Last Commit
 technologies: []
-topics: [vcs,]
+topics: [vcs]
 author: dlsniper
-subtitle: Easily and visually recover from a commit-in-error.
+subtitle: Quickly and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit
     href: 'https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit'

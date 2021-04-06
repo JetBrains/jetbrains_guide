@@ -29,7 +29,6 @@ playlistItems:
     - /tips/show-usages/
     - /tips/compare-with-clipboard/
     - /tips/paste-from-history/
-    - /tips/adding-a-package-from-the-clipboard/
     - /tips/switch-to-the-editor/
     - /tips/hide-all-tool-windows/
     - /tips/speed-typing/

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=iJHwMXw79k0&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=23
 leadin: |
-    There are a lof (tool) windows opening or appearing when using the IDE. 
+    There are a lot of (tool) windows opening or appearing when using the IDE. 
     
     How can we quickly get back to the editor?
     

@@ -19,7 +19,7 @@ leadin: |
     number of subsequent characters. For example, type _ReWrCl_ to get 
     _io.ReadWriteCloser_.
     
-    **How to use**
+    **How to use:**
     
     Works automatically, you don't have to do anything.
 

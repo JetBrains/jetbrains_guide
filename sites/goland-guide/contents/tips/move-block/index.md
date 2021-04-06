@@ -19,7 +19,7 @@ leadin: |
     When you're in the flow, you want to re-arrange code fast.
     Use this tip to move code around without cut-and-paste.
 
-    _Move Statement Up_ with _Ctrl + Shift + Up on Windows/Linux_ or _⌘ + ⇧ + Up on macOS_.
+    _Move Statement Up_ with _Ctrl + Shift + ↑ on Windows/Linux_ or _⌘ + ⇧ + ↑ on macOS_.
     
-    _Move Statement Down_ with _Ctrl + Shift + Down on Windows/Linux_ or _⌘ + ⇧ + Down on macOS_.  
+    _Move Statement Down_ with _Ctrl + Shift + ↓ on Windows/Linux_ or _⌘ + ⇧ + ↓ on macOS_.  
 ---

@@ -11,8 +11,12 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=0ChuCzfdcSE&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=2
 leadin: |
-    GoLand offers the option to quickly implement an interface using the _Implement 
-    methods_ action, _Ctrl + I_ on Windows/Linux or _^ + I_ on macOS, and then select
+    GoLand offers the option to quickly implement an interface using the
+    _Implement methods_ action.
+
+    **How to use:**
+
+    _Ctrl + I on Windows/Linux_ or _^ + I on macOS_, (capital i on all shortcuts), and then select
     either to generate a new type or use an existing type from the current file.
     
 ---

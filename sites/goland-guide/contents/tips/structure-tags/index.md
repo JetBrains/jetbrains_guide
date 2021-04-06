@@ -11,6 +11,10 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=KaXklqjrT1U&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=3
 leadin: |
+    GoLand helps you add struct tags using custom live templates built into the IDE.
+
+    **How to use:**
+
     Adding tags to a structure can be done by starting to type either _json_ or _xml_
     after the field type.
 

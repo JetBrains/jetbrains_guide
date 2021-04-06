@@ -15,13 +15,12 @@ leadin: |
     frequently used portions of code, like variable and loop declarations, 
     or test functions.
 
-    Of course, you can edit, rename, turn off, or remove any of the predefined
-    _Live Templates_, but what about adding your own? That is quite a interesting
-    topic that we will cover in the upcoming articles about GoLand features.
+    You can edit, rename, turn off, or remove any of the predefined
+    _Live Templates_, and even add your own.
 
     **How to use:**
 
     Open _Settings/Preferences | Editor | Live Templates_ to see the full list
-    of already supported templates. Learn, play, and again, enjoy!
+    of already supported templates.
 
 ---

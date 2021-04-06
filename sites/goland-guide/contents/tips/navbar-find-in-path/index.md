@@ -23,7 +23,7 @@ leadin: |
     Closed the _Project Tool Window_ and need to find a file somewhere in the project
     tree?
     
-    Activate the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + Up on macOS_, navigate to the target, and use _Find
+    Activate the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_, navigate to the target, and use _Find
     in Path_, _Ctrl + Shift + F on Windows/Linux_ or _⌘ + ⇧ + F on macOS_, from the keyboard.
 
 ---

@@ -23,8 +23,8 @@ leadin: |
     GoLand has actions and keybindings to quickly select code,
     semantically, through scopes and across languages.
      
-    _Extend Selection_, with _Ctrl + W on Windows/Linux_ or _⌥ + Up on macOS_, to semantically select the code.
+    _Extend Selection_, with _Ctrl + W on Windows/Linux_ or _⌥ + ↑ on macOS_, to semantically select the code.
     
-    _Shrink Selection_ with ease using _Ctrl + Shift + W on Windows/Linux_ or _⌥ + Down on macOS_.
+    _Shrink Selection_ with ease using _Ctrl + Shift + W on Windows/Linux_ or _⌥ + ↓ on macOS_.
 
 ---
