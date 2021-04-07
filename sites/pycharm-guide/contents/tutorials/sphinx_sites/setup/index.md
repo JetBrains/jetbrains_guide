@@ -63,58 +63,15 @@ $ pip install -r requirements.txt
 ```
 
 Sphinx has a number of dependencies itself, so this might take a while to get all the packages.
-When done, let's confirm that Sphinx is installed:
+When done, let's confirm that Sphinx is installed by running the quick start to generate a site:
 
 ```bash
 $ ls .venv/bin/sphinx-quickstart
 ```
 
-You'll be asked a number of questions.
-Here are the answers to provide:
-
-```
-$ sphinx-quickstart 
-Welcome to the Sphinx 3.5.1 quickstart utility.
-
-Please enter values for the following settings (just press Enter to
-accept a default value, if one is given in brackets).
-
-Selected root path: .
-
-You have two options for placing the build directory for Sphinx output.
-Either, you use a directory "_build" within the root path, or you separate
-"source" and "build" directories within the root path.
-> Separate source and build directories (y/n) [n]: 
-
-The project name will occur in several places in the built documentation.
-> Project name: My Site
-> Author name(s): Me <me@example.com>
-> Project release []: 
-
-If the documents are to be written in a language other than English,
-you can select a language here by its language code. Sphinx will then
-translate text that it generates into that language.
-
-For a list of supported codes, see
-https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
-> Project language [en]: 
-
-Creating file /.../static_websites_sphinx_markdown/conf.py.
-Creating file /.../static_websites_sphinx_markdown/index.rst.
-Creating file /.../static_websites_sphinx_markdown/Makefile.
-Creating file /.../static_websites_sphinx_markdown/make.bat.
-
-Finished: An initial directory structure has been created.
-
-You should now populate your master file /.../static_websites_sphinx_markdown/index.rst and create other documentation
-source files. Use the Makefile to build the docs, like so:
-   make builder
-where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
-```
-
 Sphinx has a number of commands (implemented in Python.)
 These are added to your virtual environments `bin` directory.
-If you see `sphinx-quickstart`, your in good shape.
+If you see `sphinx-quickstart`, you are in good shape.
 
 # Make a Sphinx Site
 
@@ -169,13 +126,13 @@ TODO screenshot from disk
 
 About some of these directory items:
 
-- `conf.py` as the Sphinx configuration file
+- `conf.py` is the Sphinx configuration file
 
-- `index.rst` as the "home page" or document at the top of our site
+- `index.rst` is the "home page" or document at the top of our site
 
-- `Makefile` (and `make.bat` for Windows) as a simple command runner
+- `Makefile` (and `make.bat` for Windows) is a simple command runner
 
-- Empty directories for `_build` (generated files), `_static` (custom site assets), and `_templates` (custom templates).
+- Empty directories exist for `_build` (generated files), `_static` (custom site assets), and `_templates` (custom templates).
 
 *Note: If you are using an IDE such as PyCharm, mark the `_build` directory as ignored.*
 
@@ -214,7 +171,7 @@ building [html]: targets for 0 source files that are out of date
 ```
 
 That's because Sphinx keeps intermediate representations between runs to support incremental builds.
-`make clean` only removes the "build" artifacts -- in this case, `html` as it was the builder we used with `make html`.
+`make clean` removes the "build" artifacts -- in this case, `html` as it was the builder we used with `make html`.
 
 # `livereload` Server
 
@@ -261,14 +218,14 @@ Hello World.
    :caption: Contents:
 ```
 
-When you save, `livereload` tells Sphinx to rebuild and the browser to reload, showing your new paragraph.
+When you save, `livereload` tells Sphinx to rebuild and tells the browser to reload, showing your new paragraph.
 
 # Add Markdown
 
-"Ah, but that's, not Markdown, it's some alien Python "rst" thingy.
+"Ah, but that's not Markdown, it's some alien Python "rst" thingy.
 I want to write in Markdown!"
 
-Thanks to the wonderful work by [The Executable Book Project](https://executablebooks.org/en/latest/), Markdown a first-class citizen in Sphinx.
+Thanks to the wonderful work by [The Executable Book Project](https://executablebooks.org/en/latest/), Markdown is now a first-class citizen in Sphinx.
 What does that mean?
 You can do the normal lightweight Markdown things, but you can also tap into the power that Sphinx gives.
 Let's switch this site to use Markdown for writing documents.
@@ -310,10 +267,11 @@ When you save this file, our "livereload" script runs Sphinx.
 But Sphinx is mad: it knows there is a file on disk which isn't included in the site:
 
 ```
-[E 200910 14:03:24 server:94] b"/.../sphinx_sites/README.md: WARNING: document isn't included in any toctree"
+[E 200910 14:03:24 server:94] b"/.../sphinx_sites/README.md: WARNING: 
+document isn't included in any toctree"
 ```
 
-Sphinx works by linking files into the "toctree", so edit the `toctree` directive in `index.rst` to include it in the table of contents for the root folder:
+Sphinx works by linking files into the [toctree](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#table-of-contents), so edit the `toctree` directive in `index.rst` to include it in the table of contents for the root folder:
 
 ```
 .. toctree::
@@ -339,7 +297,7 @@ The configuration file has lots of comments and stuff not needed for the tutoria
 The configuration file has lots of comments and stuff not needed for the tutorial.
 Let's strip that baby down!
 
-`embed:tutorials/sphinx_sites/setup/run_livereload.py`
+`embed:tutorials/sphinx_sites/setup/conf.py`
 
 Next, let's convert the `index.rst` page away from RST (reStructuredText) to Markdown.
 Start by renaming the file to `index.md`.

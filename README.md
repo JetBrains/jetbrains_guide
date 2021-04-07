@@ -1,8 +1,7 @@
 # JetBrains Guide
 
 The JetBrains Guide is a collection of resources for learning JetBrains IDEs. 
-Similar to an "Awesome PyCharm" but richer in content and formatting. The 
-Guide is intended as an open source project.
+
 
 # Technology
 

@@ -29,13 +29,15 @@ As you'd expect, bold and italics works fine. Add the following line:
 I am *italics* and I am **bold**.
 ``` 
 
-In your browser you should see this new paragraph with `<em>` and `<strong>` formatting.
+In your browser you should see this new paragraph with `<em>` and `<strong>` formatting:
+
+TODO Screenshot
 
 Preformatted text -- aka inline `<code>` and block `<pre>` -- also work as expected:
 
 `embed:tutorials/sphinx_sites/_snippets/snippet1.txt`
 
-Indentation also works as as "quoted" text:
+Indentation also works as "quoted" text:
 
 ```
 > This text
@@ -43,7 +45,7 @@ Indentation also works as as "quoted" text:
 >> And this is indented more.
 ```
 
-Both bulleted and numbered lists:
+Both bulleted and numbered lists are supported:
 
 ```
 - A
@@ -68,14 +70,14 @@ You can also link to other pages in your site:
 This site's [homepage](./index)
 ```
 
-Want a sneak-peak at the awesomeness in the next section?
+Want a sneak-peak at the awesomeness in the next tutorial step?
 Give this a try, and if you're a non-Sphinx Markdown person, ask yourself how `Welcome to Sphinx Sites` got in the built page:
 
 ```
 This site's [](./index)
 ```
 
-Lesson: Sphinx has some rich interlinking facilities.
+Answer: Sphinx has some rich interlinking facilities.
 
 One last CommonMark syntax to cover...headings:
 
@@ -89,9 +91,13 @@ Subheading text.
 More subheading text.
 ```
 
+Let's see a screenshot with all of this Markdown content:
+
+TODO Screenshot
+
 ## Images
 
-Let's get the Python logo from `https://www.python.org/static/community_logos/python-logo.png` loaded into our page.
+Let's use the Python logo from `https://www.python.org/static/community_logos/python-logo.png` loaded into our page.
 We'll use the standard Markdown image support to point to a URL:
 
 ```
@@ -100,6 +106,10 @@ We'll use the standard Markdown image support to point to a URL:
 
 While this works well, perhaps we want it served locally.
 Download that URL to a file named `python-logo.png`, in the same directory as `page1.md`, and add the following:
+
+```markdown
+![Python Logo](python-logo.png)
+```
 
 Hmm, interesting!
 As part of the standard Markdown syntax, Sphinx copied that image to the build directory and inserted a `src` pointing to its build URL.
