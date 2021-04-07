@@ -25,7 +25,9 @@ Want to create content? Awesome! We like content. Here's what you need to get st
 
 * Clone this repository
 * Open it with any JetBrains IDE (we tested with [WebStorm](https://www.jetbrains.com/webstorm/))
-* Use any of the `Docker - *` run configurations to launch a specific Guide
+* Make sure Docker is running, and [Docker support is enabled in the IDE](https://www.jetbrains.com/help/webstorm/docker.html#enable_docker)
+* Run any of the `Docker - *` run configurations to launch a specific Guide (top toolbar, see [web help for more info](https://www.jetbrains.com/help/webstorm/running-applications.html))
+* Wait until the container is running and the console shows a URL (similar to `http://localhost:8000/`)
 * Connect the browser to `http://localhost:8000/`
 * Start authoring, and see reloads in the browser (after ~6 seconds)
 
