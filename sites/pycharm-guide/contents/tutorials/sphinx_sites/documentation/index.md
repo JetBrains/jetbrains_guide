@@ -20,7 +20,7 @@ It is quite common in Markdown to just embed a code snippet in a page.
 Markdown calls these "fenced code blocks" (or code fences, or code blocks) as they use a triple backtick enclosing symbol.
 
 Sphinx has a concept of [code-blocks](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block).
-We can use Markdown code fences to generate Sphinx code blocks:
+We can use Markdown code fences (triple backticks) to generate Sphinx code blocks:
 
 ~~~
 ```
@@ -39,12 +39,56 @@ Just put the language after the first triple-backtick, from the [list of languag
 ```
 ~~~
 
-Sphinx has a number of [options for code blocks](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block), including:
+Sphinx has a number of [options for code blocks](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#directive-code-block).
+This requires, though, the more explicit syntax that taps into code blocks:
 
-- Showing line numbers
-- Emphasizing certain lines with highlighting
-- Providing a caption
+~~~
+```{code-block} javascript
+ function hello(msg) {
+   return `Hello ${msg}`
+ }
+```
+~~~
 
+As mentioned in [More Pages](../more_pages/), this is a code fence, but with something in curly braces and something else after it.
+The stuff in the curly braces maps directly to a Sphinx/reST [directive](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html).
+
+You can show line numbers by passing options to the directive:
+
+~~~
+```{code-block} javascript
+:linenos:
+ function hello(msg) {
+   return `Hello ${msg}`
+ }
+```
+~~~
+
+Here is the YAML version of passing the arguments to the `code-block` directive:
+
+```{code-block} javascript
+---
+linenos: true
+---
+ function hello(msg) {
+   return `Hello ${msg}`
+ }
+```
+
+You can emphasize certain lines:
+
+~~~
+```{code-block} javascript
+---
+emphasize-lines: 2
+---
+ function hello(msg) {
+   return `Hello ${msg}`
+ }
+```
+~~~
+
+Sphinx code blocks have many useful options.
 
 ## Including Code From a File
 
@@ -189,6 +233,7 @@ As we can see in [our Python class](my_demo.MyDemo), Python is fun!
 
 Of course, same rules apply: you can let Sphinx generate the link text, using the title of the target:
 
+TODO Not True???
 ```markdown
 As we can see in [](my_demo.MyDemo), Python is fun!
 ```
