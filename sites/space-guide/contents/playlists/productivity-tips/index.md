@@ -1,6 +1,6 @@
 ---
 label: productivity-tips
-date: 2020-02-12
+date: 2021-03-29
 title: Productivity Tips & Tricks
 topics: [teams, work, chats, packages, personal, projects, code]
 author: maartenba
@@ -22,6 +22,7 @@ playlistItems:
     - /tips/issues-custom-status/
     - /tips/manage-checklists-efficiently/
     - /tips/linking-issues-checklists/
+    - /tips/code-review-intellij-plugin/
     - /tips/packages-details-and-versions/
     - /tips/automation-subscribe-notifications/
 
