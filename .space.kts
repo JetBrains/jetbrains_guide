@@ -168,10 +168,26 @@ job("Build IntelliJ IDEA Guide") {
 
 job("Docker - Content creators image") {
     startOn {
-        gitPush { enabled = false } // manual build
+        gitPush {
+            enabled = false // keep as manual build for now
+
+            branchFilter {
+                +"refs/heads/main"
+            }
+
+            pathFilter {
+                +"packages/**"
+                +"package.json"
+            }
+        }
     }
 
     docker {
+        resources {
+            cpu = 2.cpu
+            memory = 6.gb
+        }
+        
         build {
             context = "."
             file = "./Dockerfile-ContentCreators"
