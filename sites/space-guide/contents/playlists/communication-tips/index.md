@@ -1,6 +1,6 @@
 ---
 label: communication-tips
-date: 2020-01-29
+date: 2021-04-11
 title: Communication Tips & Tricks
 topics: [teams, work, chats, code]
 author: maartenba
@@ -8,6 +8,7 @@ subtitle: Tips & Tricks to communicate more efficiently using JetBrains Space
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
+    - /tips/chat-mentions/
     - /tips/targeted-blog-posts/
     - /tips/blog-post-events/
     - /tips/pin-chats-and-threads/
