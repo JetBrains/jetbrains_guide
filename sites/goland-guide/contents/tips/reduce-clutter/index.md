@@ -14,8 +14,6 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=Fwgc0rBenvc&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=3&t=0s
 leadin: |
-  *You don't have to use all those tools. Let's turn them off.*
-
   By default, GoLand has lots of features visible and available.
   As you learn your way around, you want to give more space to
   the editor and focus on your coding.
