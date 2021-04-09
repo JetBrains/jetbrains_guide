@@ -14,12 +14,12 @@ job("Build PyCharm Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
         
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run pc:build
             """
         }
@@ -42,12 +42,12 @@ job("Build GoLand Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
         
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run go:build
             """
         }
@@ -70,12 +70,12 @@ job("Build WebStorm Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
         
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run ws:build
             """
         }
@@ -98,12 +98,12 @@ job("Build Space Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
-        
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
+
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run space:build
             """
         }
@@ -126,12 +126,12 @@ job("Build .NET Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
-        
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
+
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run dotnet:build
             """
         }
@@ -154,12 +154,12 @@ job("Build IntelliJ IDEA Guide") {
             cpu = 2.cpu
             memory = 4.gb
         }
-        
+
+        env["GATSBY_TELEMETRY_DISABLED"] = "1";
+
         shellScript {
             content = """
-                npm install --global gatsby-cli yarn
                 yarn install
-                gatsby telemetry --disable
                 yarn run intellij:build
             """
         }
@@ -168,10 +168,26 @@ job("Build IntelliJ IDEA Guide") {
 
 job("Docker - Content creators image") {
     startOn {
-        gitPush { enabled = false } // manual build
+        gitPush {
+            enabled = false // keep as manual build for now
+
+            branchFilter {
+                +"refs/heads/main"
+            }
+
+            pathFilter {
+                +"packages/**"
+                +"package.json"
+            }
+        }
     }
 
     docker {
+        resources {
+            cpu = 2.cpu
+            memory = 6.gb
+        }
+        
         build {
             context = "."
             file = "./Dockerfile-ContentCreators"

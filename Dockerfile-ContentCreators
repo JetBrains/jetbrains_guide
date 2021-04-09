@@ -13,9 +13,6 @@ EXPOSE 33949
 
 WORKDIR /jetbrains_guide/
 
-RUN npm install --global gatsby-cli
-RUN gatsby telemetry --disable
-
 # Copy all files (except those in .dockerignore)
 COPY . .
 RUN chmod +x /jetbrains_guide/guide.sh
