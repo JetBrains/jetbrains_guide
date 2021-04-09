@@ -18,9 +18,6 @@ export interface TipResource extends Resource {
   };
   screenshot?: {
     publicURL: string;
-    childImageSharp: {
-      fixed: any;
-    }
   };
   shortVideo?: Video;
   longVideo?: Video;

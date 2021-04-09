@@ -109,7 +109,7 @@ const Tip: FC<TipProps> = (
           </React.Suspense>
         )}
         {screenshot && (
-          <img src={screenshot.publicURL} alt="Tip Screenshot" loading="lazy" />
+          <img src={screenshot.publicURL} alt="Tip Screenshot" width="600" loading="lazy" />
         )}
         {shortVideo && <ShortVideo video={
           {
@@ -260,6 +260,7 @@ export const query = graphql`query ($slug: String!) {
       height
     }
     screenshot {
+      publicURL,
       childImageSharp {
         gatsbyImageData(width: 600, layout: FIXED)
       }
