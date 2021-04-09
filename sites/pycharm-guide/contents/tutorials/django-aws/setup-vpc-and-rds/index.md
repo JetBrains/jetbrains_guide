@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-01-29
+date: 2021-04-09
 title: Setting up VPC and RDS in AWS
 technologies: [django]
 topics: [python]
