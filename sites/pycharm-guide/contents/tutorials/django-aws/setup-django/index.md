@@ -6,7 +6,7 @@ technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Create a virtual environment and install Python dependencies.
-thumbnail: ../thumbnail.png
+thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/2w3OHXLWfL4

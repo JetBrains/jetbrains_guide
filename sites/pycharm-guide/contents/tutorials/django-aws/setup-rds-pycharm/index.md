@@ -6,7 +6,7 @@ technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Connect Postgres with our Django Application.
-thumbnail: ../thumbnail.png
+thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/r90CNlorK78

@@ -6,7 +6,7 @@ technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Create a new app, define models, and explore the project's structure.
-thumbnail: ../thumbnail.png
+thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/OIOJk_KZe8g

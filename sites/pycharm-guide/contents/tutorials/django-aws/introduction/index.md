@@ -6,7 +6,7 @@ technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Introducing Django, a high-level python web framework.
-thumbnail: ../thumbnail.png
+thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/ze8ukid9owU

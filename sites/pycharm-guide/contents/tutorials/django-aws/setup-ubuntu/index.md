@@ -6,7 +6,7 @@ technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Configure security group and launch a new instance.
-thumbnail: ../thumbnail.png
+thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://youtu.be/mwIKy8JnJ7A
