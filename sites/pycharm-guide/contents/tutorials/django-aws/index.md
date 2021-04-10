@@ -14,6 +14,7 @@ tutorialItems:
   - /tutorials/django-aws/setup-rds-pycharm/
   - /tutorials/django-aws/project-explore/
   - /tutorials/django-aws/rest-api/
+  - /tutorials/django-aws/rest-api-jwt/
 
 
 ---
