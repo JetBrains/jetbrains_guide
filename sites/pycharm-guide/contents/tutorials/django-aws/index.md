@@ -12,6 +12,7 @@ tutorialItems:
   - /tutorials/django-aws/setup-ubuntu/
   - /tutorials/django-aws/setup-django/
   - /tutorials/django-aws/setup-rds-pycharm/
+  - /tutorials/django-aws/project-explore/
 
 
 ---
