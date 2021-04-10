@@ -1,5 +1,5 @@
 ---
-date: 2021-04-07
+date: 2021-04-09
 title: Developing Django Application using AWS
 technologies: [django,aws]
 topics: [python]
