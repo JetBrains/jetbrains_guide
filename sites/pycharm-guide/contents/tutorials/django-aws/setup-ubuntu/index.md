@@ -5,7 +5,7 @@ title: Setup Ubuntu Desktop in AWS using NICE DCV
 technologies: [django,aws]
 topics: [python]
 author: mm
-subtitle: 
+subtitle: Configure security group and launching new instance
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png

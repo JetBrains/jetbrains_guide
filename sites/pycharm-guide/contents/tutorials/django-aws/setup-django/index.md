@@ -1,101 +1,80 @@
 ---
 type: TutorialStep
-date: 2021-01-29
-title: Setting up Django in PyCharm
-technologies: [aws]topics: []
+date: 2021-04-09
+title: Creating a new Django Project in PyCharm
+technologies: [django,aws]
+topics: [python]
 author: mm
-subtitle: 
+subtitle: Installing virtual environment and python dependencies
 thumbnail: ../thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/caW7eLThBwQ
+  url: https://youtu.be/2w3OHXLWfL4
 ---
 
-Hello everyone, welcome to the part one of the AWS PyCharm tutorial series. 
-Today I will be explaining in brief about micro-services architecture and 
-different serverless frameworks.
+Hello everyone, welcome to the Django tutorial series. 
+In this tutorial, we are going to set up Django and run
+our first PyCharm Project.
 
 
-# Background
+# Installing Dependencies
 
-Before taking a deep dive into micro-services, let's understand first 
-what is a monolithic architecture. In a traditional monolithic architecture,
-all processes are tightly coupled and run in a single service. 
-This means that if one process of the application experiences a spike in demand,
-then the entire architecture must be scaled. If any single service is not 
-functioning properly, then it's going to affect all the services.
+As you can see the below image, we will be installing python dependencies 
+which is required for our django project.
 
-![microservices](./microservices.png)
-Image Source : Amazon Web Services (AWS)
-
-The scenario is completely different when it comes to micro-services. 
-In a micro-service architecture, the services are: loosely coupled, managed by
-a small team, easily scalable, and the most important part : if one the services
-goes down, then it won't affect the other services. 
-
-If one of your services is built using Java then your other services can
-also be developed, using python, .net or ruby. Micro-services architectures
-don't follow a one size fits all approach. Instead, they provide flexibility
-to the developers, as there is no technology constraint.
-
-There are lots of benefits when it comes to micro-services.
-
-To know more about micro-services I recommend reading [aws.amazon.com/microservices](https://aws.amazon.com/microservices/)
-
-# AWS Lambda
-
-![aws_lambda](./aws_lambda.png)
-
-In this course we will be focusing on one of the products that AWS offers
-for creating serverless applications : AWS Lambda, run code 
-without thinking about servers. Yes that is true. As a customer you don't need
-to manage any servers because those servers are being managed by AWS.
-AWS Lambda automatically scales your application by running code in 
-response to each trigger. You are not running your app for 24x7 anymore,
-and you'll be charged against the time that your functions were running.
+![python_dependencies](./steps/step1.png)
 
 
-# AWS SAM (Serverless Application Model)
+We will move forward installing the virtual environment after the system 
+dependencies have been successfully installed. 
 
-![aws_sam](./aws_sam.png)
+![python_dependencies_2](./steps/step2.png)
 
-For this tutorial we will be also using the AWS serverless application model.
-AWS (SAM) is an open source framework that you can use to build serverless
-applications on AWS. AWS SAM is based on [AWS CloudFormation](https://aws.amazon.com/cloudformation/)
-which defines serverless applications with templates. Essentially a 
-CloudFormation template is now the same thing as an AWS SAM Template. 
-AWS SAM shows developers what objects they can use in a template to model a
-serverless application.
-
-For reference, you can visit [aws.amazon.com/serverless/sam](https://aws.amazon.com/serverless/sam/)
-
-# Serverless Frameworks
-
-There are many ways to create serverless applications and one of them is
-the serverless framework. It is an open source serverless framework which
-enables developers to deploy cloud applications on any FaaS (Function As A Service) provider.
-While the framework is open source, they also provide enterprise support.
-
-For reference, you can visit [serverless.com](https://www.serverless.com/)
-
-![serverless](./serverless.png)
-
-There is one more serverless framework called Chalice which is being offered by AWS.
-Chalice is a framework for writing serverless apps in python.
-It lets you quickly create and deploy applications that use AWS Lambda. 
-It is highly inspired by flask. It uses a decorator-based syntax used in
-frameworks such as [Flask](https://flask.palletsprojects.com/en/1.1.x/), [Bottle](https://bottlepy.org/docs/dev/) and [FastAPI](https://fastapi.tiangolo.com/). It has lots of features 
-and seamlessly integrates with AWS services.
-
-For reference, you can visit [aws.github.io/chalice/index](https://aws.github.io/chalice/index)
+I am going to name the virtual environment as **DjangoEnv** and  **-p** flag
+stands for path to the python interpreter, as for now I will be using the
+default python interpreter, so I will mention it as **python3**. Ubuntu 20.04 LTS
+comes pre-installed with python 3.8
 
 
-![aws_chalice](./aws_chalice.png)
+I will open PyCharm and create my new project, I am going to name it **SampleDemo**.
+
+![python_dependencies_3](./steps/step3.png)
+
+Since I have already configured the environment, I will click on the
+**previously configured interpreter** where I will be providing the path to
+the virtual environment which I created earlier. PyCharm provides multiple 
+ways to set up the python interpreter.
+
+Everything looks good, I will click on **Create**.
 
 
+After the project has been successfully initialized, then I will move forward
+and change the appearance of the IDE.
+
+![pycharm_django_project_1](./steps/step4.png)
 
 
+I will click on **File** --> **Settings**. Under Appearance & Behavior I will
+change the theme from **Darcula** to **IntelliJ Light**.
+
+![pycharm_django_project_2](./steps/step5.png)
+
+We are now ready to start our development server. I will click on **Run** 
+and then **Run ‘SampleDemo’**
+
+![pycharm_django_project_3](./steps/step6.png)
+
+As you can see the application is running on **127.0.0.1** on port **8000**.
+
+![pycharm_django_project_4](./steps/step7.png)
 
 
+As you can see the below image, the django landing page has appeared, that means
+our installation process is successful.
 
+![pycharm_django_project_5](./steps/step8.png)
+
+
+In the upcoming tutorial, I will show to connect Django 
+with our Postgres RDS instance.
 

@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-04-09
 title: Introduction
-technologies: [django]
+technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Introduce Django, a high-level python web framework

@@ -1,7 +1,7 @@
 ---
 date: 2021-04-07
 title: Developing Django Application using AWS
-technologies: [django]
+technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Run, build, test and deploy Django Application in PyCharm using NICE DCV.
@@ -12,15 +12,7 @@ tutorialItems:
   - /tutorials/django-aws/setup-ubuntu/
   - /tutorials/django-aws/setup-django/
   - /tutorials/django-aws/setup-rds-pycharm/
-  - /tutorials/django-aws/project-explore/
-  - /tutorials/django-aws/rest-api/
-  - /tutorials/django-aws/protect-api-jwt/
-  - /tutorials/django-aws/sentry-django/
-  - /tutorials/django-aws/unit-tests/
-  - /tutorials/django-aws/bdd-tests/
-  - /tutorials/django-aws/docker-deploy/
-  - /tutorials/django-aws/docker-ecr-action/
-  - /tutorials/django-aws/cleanup/
+
 
 ---
 

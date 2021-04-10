@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-04-09
 title: Setting up VPC and RDS in AWS
-technologies: [django]
+technologies: [django,aws]
 topics: [python]
 author: mm
 subtitle: Setup VPC, Subnets, Route Tables, Internet Gateway and Relational Database
