@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Convert from Record
 technologies: [java]
-topics: [latest, editing]
+topics: [editing]
 author: hs
 subtitle: Use quick intentions to convert a record to a class
 thumbnail: ./thumbnail.png

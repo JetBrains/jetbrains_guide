@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Calculations in Search Everywhere
 technologies: [java, kotlin]
-topics: [tricks, latest]
+topics: [tricks]
 author: hs
 subtitle: Perform basic calculations with Search Everywhere
 thumbnail: ./thumbnail.png

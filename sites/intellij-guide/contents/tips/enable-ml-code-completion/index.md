@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Enable Machine Learning for Code Completion
 technologies: [java]
-topics: [settings, latest]
+topics: [settings]
 author: hs
 subtitle: Code completion may be enhanced with ML
 thumbnail: ./thumbnail.png

@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Git Commits in Search Everywhere
 technologies: [java, kotlin]
-topics: [vcs, latest]
+topics: [vcs]
 author: hs
 subtitle: View your git commits in the Search Everywhere dialog
 thumbnail: ./thumbnail.png
