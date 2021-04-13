@@ -68,12 +68,12 @@ module.exports = {
                     ],
                     links: [
                         {
-                            color: '55acee',
+                            color: 'FFFFFF',
                             href: 'https://blog.jetbrains.com/go',
                             icon: 'fa fa-blog'
                         },
                         {
-                            color: '55acee',
+                            color: 'FFFFFF',
                             href: 'https://www.jetbrains.com/help/go',
                             icon: 'fa fa-question'
                         },
