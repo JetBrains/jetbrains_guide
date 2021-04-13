@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Partial Match Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: Complete anything by typing just parts of the identifier
 thumbnail: ./thumbnail.png

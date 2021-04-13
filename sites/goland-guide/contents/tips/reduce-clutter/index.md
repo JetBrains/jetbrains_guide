@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Reduce Clutter by Disabling Tools'
 technologies: [go]
-topics: ['ide']
+topics: ['ui']
 author: dlsniper
 subtitle: 'Save space by turning off various toolbars and Project Tool.'
 seealso:

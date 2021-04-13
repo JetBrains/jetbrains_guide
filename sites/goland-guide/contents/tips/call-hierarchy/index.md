@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Call Hierarchy
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Analyze call trees for functions or methods 
 thumbnail: ./thumbnail.png

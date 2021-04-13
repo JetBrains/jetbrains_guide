@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Rename a File and Its References'
 technologies: [go]
-topics: [editing]
+topics: [refactoring]
 author: dlsniper
 subtitle: 'Change your mind on a file name, and the IDE makes all the changes for you.'
 seealso:

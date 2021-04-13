@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Structure popup
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: View the file or whole package structure and navigate to any element
 thumbnail: ./thumbnail.png

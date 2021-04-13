@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Postfix Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: Transform an expression into another one.
 thumbnail: ./thumbnail.png

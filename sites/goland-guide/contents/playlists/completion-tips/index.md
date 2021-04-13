@@ -3,7 +3,7 @@ label: code-completion
 date: 2019-11-27
 title: Completion Tips & Tricks
 technologies: [go]
-topics: [completion, editing, running, debugging]
+topics: []
 author: dlsniper
 subtitle: Know everything there is to know about Code Completion. 
 thumbnail: ./thumbnail.png

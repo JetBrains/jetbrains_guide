@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Split Screen Without Tabs
 technologies: [go]
-topics: [editing, testing]
+topics: [editing]
 author: dlsniper
 subtitle: Get your code and tests side-by-side without resorting to tabs.
 seealso:

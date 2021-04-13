@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Search Everywhere
 technologies: [go]
-topics: [navigation, ui, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Search anything in the whole IDE, from identifiers, to file names, to settings
 seealso:

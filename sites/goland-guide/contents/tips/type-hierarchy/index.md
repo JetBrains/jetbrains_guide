@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Type Hierarchy
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Discover what types implement an interface or what interfaces are implemented by a type 
 thumbnail: ./thumbnail.png

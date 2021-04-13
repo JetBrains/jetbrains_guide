@@ -3,7 +3,7 @@ label: editing-tips
 date: 2020-02-05
 title: Editing Tips & Tricks
 technologies: [go]
-topics: ['editing']
+topics: []
 author: dlsniper
 subtitle: Learn some of the most useful Editing features of GoLand. 
 thumbnail: ./thumbnail.png

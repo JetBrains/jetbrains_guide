@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Disable Tabs'
 technologies: ['go']
-topics: ['ide']
+topics: ['ui']
 author: dlsniper
 subtitle: 'Save space and stay keyboard-centric by turning off the tabs.'
 seealso:

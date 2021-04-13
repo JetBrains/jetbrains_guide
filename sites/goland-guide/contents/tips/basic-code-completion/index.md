@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Basic Code Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: Code completion that helps you get the job done
 thumbnail: ./thumbnail.png

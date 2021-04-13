@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Rename Symbol'
 technologies: []
-topics: [editing]
+topics: [refactoring]
 author: dlsniper
 subtitle: 'Change a variable name, class name, or other symbol, across the project.'
 seealso:

@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: View Parameter Info
 technologies: [go]
-topics: [completion, editing]
+topics: [editing]
 author: dlsniper
 subtitle: Quickly see function arguments and argument types.
 thumbnail: ./thumbnail.png

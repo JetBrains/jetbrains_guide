@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Recent Locations
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Jump back and forth between files using code snippets you've recently seen
 thumbnail: ./thumbnail.png

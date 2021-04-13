@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Show usages
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Quickly discover the usages of the element your cursor is at  
 thumbnail: ./thumbnail.png

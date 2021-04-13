@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Go to/from a test
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Navigate to and from a test subject like a method or function 
 thumbnail: ./thumbnail.png

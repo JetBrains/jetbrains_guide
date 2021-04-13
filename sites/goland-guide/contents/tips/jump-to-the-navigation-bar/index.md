@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Jump to the Navigation Bar
 technologies: [go]
-topics: [navigation, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Get an overview of your current location, and the project itself
 thumbnail: ./thumbnail.png
