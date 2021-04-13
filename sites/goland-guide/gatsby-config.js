@@ -34,26 +34,26 @@ module.exports = {
                             accent: 'danger',
                             cssClass: 'documentation',
                             href: '/topics/',
-                            label: 'Tags',
+                            label: 'Topics',
                             icon: 'fas fa-tags'
                         },
                         {
                             label: 'More...',
                             items: [
-                                {
-                                    href: '/authors/',
-                                    label: 'Authors',
-                                    icon: 'fas fa-users',
-                                    accent: 'success',
-                                    description: 'Resource listing organized by author'
-                                }/*,
-                                {
-                                    href: '/about/',
-                                    label: 'About',
-                                    icon: 'fas fa-file',
-                                    accent: 'info',
-                                    description: 'About the GoLand Guide'
-                                }*/
+                                // {
+                                //     href: '/authors/',
+                                //     label: 'Authors',
+                                //     icon: 'fas fa-users',
+                                //     accent: 'success',
+                                //     description: 'Resource listing organized by author'
+                                // },
+                                // {
+                                //     href: '/about/',
+                                //     label: 'About',
+                                //     icon: 'fas fa-file',
+                                //     accent: 'info',
+                                //     description: 'About the GoLand Guide'
+                                // }
                             ]
                         }
                     ]
