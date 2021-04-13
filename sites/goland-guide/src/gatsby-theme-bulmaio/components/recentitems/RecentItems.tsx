@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import { ListedResources } from '../../resources/models';
-import ResourceCard from '../resourcecard/ResourceCard';
+import { ListedResources } from 'gatsby-theme-bulmaio/src/resources/models';
+import ResourceCard from 'gatsby-theme-bulmaio/src/components/resourcecard/ResourceCard';
 
 export const RecentItems: React.FC = () => {
   const { allResource } = useStaticQuery(
@@ -39,6 +39,11 @@ export const RecentItems: React.FC = () => {
                 />
               )
             )}
+          </div>
+        </div>
+        <div className="columns is-centered">
+          <div className="column is-half">
+            <a href={"./tips/"}>More tips...</a>
           </div>
         </div>
       </div>

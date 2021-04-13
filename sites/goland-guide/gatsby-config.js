@@ -33,16 +33,9 @@ module.exports = {
                         {
                             accent: 'danger',
                             cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
                             href: '/topics/',
-                            label: 'Topics',
-                            icon: 'fas fa-project-diagram'
+                            label: 'Tags',
+                            icon: 'fas fa-tags'
                         },
                         {
                             label: 'More...',
@@ -53,14 +46,14 @@ module.exports = {
                                     icon: 'fas fa-users',
                                     accent: 'success',
                                     description: 'Resource listing organized by author'
-                                },
+                                }/*,
                                 {
                                     href: '/about/',
                                     label: 'About',
                                     icon: 'fas fa-file',
                                     accent: 'info',
                                     description: 'About the GoLand Guide'
-                                }
+                                }*/
                             ]
                         }
                     ]
@@ -75,14 +68,24 @@ module.exports = {
                     ],
                     links: [
                         {
+                            color: '55acee',
+                            href: 'https://blog.jetbrains.com/go',
+                            icon: 'fa fa-blog'
+                        },
+                        {
+                            color: '55acee',
+                            href: 'https://www.jetbrains.com/help/go',
+                            icon: 'fa fa-question'
+                        },
+                        {
                             color: 'light',
                             href: 'https://github.com/jetbrains/jetbrains_guide',
-                            icon: 'github'
+                            icon: 'fab fa-lg fa-github'
                         },
                         {
                             color: '55acee',
                             href: 'https://twitter.com/GoLandIDE',
-                            icon: 'twitter'
+                            icon: 'fab fa-lg fa-twitter'
                         }
                     ]
                 }

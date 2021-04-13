@@ -5,11 +5,11 @@ Mediate between the theme's layout and the local site's info.
  */
 
 import React from 'react';
-import MasterLayout, {HelmetProps, MasterLayoutProps, PageProps, TwitterCardPage} from './MasterLayout';
-import SiteConfig from '../../common/SiteConfig';
+import MasterLayout, {HelmetProps, MasterLayoutProps, PageProps, TwitterCardPage} from 'gatsby-theme-bulmaio/src/components/layout/MasterLayout';
+import SiteConfig from 'gatsby-theme-bulmaio/src/common/SiteConfig';
 import {graphql, useStaticQuery} from 'gatsby';
 import {NavbarProps} from 'gatsby-theme-bulmaio/src/components/navbar/Navbar';
-import {FooterProps} from '../footer/Footer';
+import {FooterProps} from 'gatsby-theme-bulmaio/src/components/footer/Footer';
 
 export interface SiteLayoutProps extends PageProps {
     twitterCardPage?: TwitterCardPage;
@@ -30,7 +30,6 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({children, pageTitle, twitterCard
                   githubUrl
                   twitterUrl
                   twitterAccount
-                  twitterCardFallbackImage
                 }
                 start {
                   items {
@@ -39,13 +38,6 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({children, pageTitle, twitterCard
                     href
                     label
                     icon
-                    items {
-                      accent
-                      description
-                      href
-                      icon
-                      label
-                    }
                   }                  
                 }
                 end {
@@ -80,16 +72,12 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({children, pageTitle, twitterCard
     // If this page wants a Twitter card, add the site-wide and page-specific
     // Twitter Card meta info
     if (twitterCardPage) {
-        const twitterCardImage = twitterCardPage.image
-            ? twitterCardPage.image
-            : navbar.brand.twitterCardFallbackImage;
-
         helmetProps.twitterCard = {
             site: {creator: navbar.brand.twitterAccount, siteName: navbar.brand.twitterAccount},
             page: {
                 title: pageTitle,
                 description: twitterCardPage.description,
-                image: twitterCardImage
+                image: twitterCardPage.image
             }
         }
     }

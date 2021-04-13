@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { graphql } from 'gatsby';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { TopicReference } from './models';
-import { PageContext } from '../../components/models';
-import SubsectionTopic from '../../components/subsections/SubsectionTopic';
-import Pagination from '../../components/Pagination';
-import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import { TopicReference } from 'gatsby-theme-bulmaio/src/references/topic/models';
+import { PageContext } from 'gatsby-theme-bulmaio/src/components/models';
+import SubsectionTopic from 'gatsby-theme-bulmaio/src/components/subsections/SubsectionTopic';
+import Pagination from 'gatsby-theme-bulmaio/src/components/Pagination';
+import { TwitterCardPage } from 'gatsby-theme-bulmaio/src/components/layout/MasterLayout';
 
 export interface TopicIndexProps {
   data: {
@@ -16,7 +16,7 @@ export interface TopicIndexProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Tags';
+const PAGE_TITLE = 'Topics';
 const SUBTITLE = 'Explore all available resources organized by a programming topic.';
 
 const twitterCardPage: TwitterCardPage = {

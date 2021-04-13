@@ -2,12 +2,12 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
 
-import Navbar from '../navbar';
+import Navbar from 'gatsby-theme-bulmaio/src/components/navbar';
 import Footer from '../footer';
 // @ts-ignore
 import './index.scss';
 import { FooterProps } from '../footer/Footer';
-import { NavbarProps } from '../navbar/Navbar';
+import { NavbarProps } from 'gatsby-theme-bulmaio/src/components/navbar/Navbar';
 import Favicon from '../favicon/Favicon';
 
 export interface TwitterCardSite {

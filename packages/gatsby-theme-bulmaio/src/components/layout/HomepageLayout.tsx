@@ -6,7 +6,7 @@ as children.
  */
 
 import React from 'react';
-import SiteLayout from './SiteLayout';
+import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
 import {TwitterCardPage} from './MasterLayout';
 
 interface HomepageLayoutProps {
