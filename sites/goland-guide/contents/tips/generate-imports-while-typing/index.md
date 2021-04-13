@@ -16,11 +16,10 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=-Y2D2ob2Yjo&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=17&t=0s
 leadin: |
-  *Tired of stopping your coding to go write an import?*
+    *Tired of stopping your coding to go write an import?*
 
-  Type what you want, let GoLand do the rest.
+    Type what you want, let GoLand do the rest.
 
-  You could scroll up, type your import, find where you were, and resume.
-  Instead, just type your symbol and let Go make the import. No
-  distractions.
+    You could scroll up, type your import, find where you were, and resume.
+    Instead, just type your symbol and let Go make the import. No distractions.
 ---

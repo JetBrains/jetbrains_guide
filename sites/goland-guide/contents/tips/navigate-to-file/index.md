@@ -4,7 +4,7 @@ title: Navigate to File
 technologies: [go]
 topics: [navigation]
 author: dlsniper
-subtitle: 'Jump to a file without using the Project Tool and your mouse'
+subtitle: 'Jump to a file without using the Project Tool Window and your mouse'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

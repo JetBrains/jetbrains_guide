@@ -16,10 +16,14 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=n0UwWfIVl18&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=30&t=0s
 leadin: |
-    *Visual coverage to the rescue.*
-
-    You know you need good tests. You know that means code coverage, but
-    it's fiddly to set up and not integrated into your flow. Meet
-    visual coverage.
+    GoLand offers a builtin feature to allow you to run the tests
+    in your project and display the coverage in a tool window as a
+    summary for a package (folder) and file, and for each file,
+    next to each line in the file.
+    
+    **How to use:**
+    Launch the test with **Coverage** support and then use the
+    **Coverage** tool window to navigate to packages/files and
+    see their coverage.
 
 ---

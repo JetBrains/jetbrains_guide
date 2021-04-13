@@ -16,10 +16,11 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=14vRaLytex4&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=28&t=0s
 leadin: |
-  *Get into TDD flow by focusing on one test.*
+    Want to focus your testing on just one test? Then you can
+    launch the test under the cursor using a shortcut.
 
-  Want to focus your testing on just one test? GoLand has
-  many ways to tell the test runner and UI: "Just this."
+    **How to use:**
 
-  Use the dedicated shortcut, _Ctrl + Shift + F10 on Windows/Linux_ or _^ + ⇧ + R on macOS_, to launch the test.
+    To launch the test under the cursor, invoke the test runner
+    via _Ctrl + Shift + F10 on Windows/Linux_ or _^ + ⇧ + R on macOS_.
 ---

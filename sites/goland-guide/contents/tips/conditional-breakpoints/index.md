@@ -16,7 +16,11 @@ shortVideo:
 leadin: |
     *Stop stepping.*
 
-    Have a breakpoint in a loop and find yourself clicking _Continue_
+    Have a breakpoint in a loop and find yourself clicking **Continue**
     repeatedly? Change your breakpoint to only stop when a condition is met.
+    
+    **How to use:**
 
+    Edit the breakpoint properties via _Ctrl + Shift + F8 on Windows/Linux_,
+    or _⇧ + ⌘ + F8 on macOS_, then type in the **Condition** you want.
 ---

@@ -19,6 +19,9 @@ leadin: |
     Stopped at a breakpoint and want to see a result, either typed in
     or from a line fragment?
     
-    _Evaluate Expression_, _Alt + F8 on Windows/Linux_ or _⌥ + F8 on macOS_, to the rescue.
+    **How to use:**
+    
+    Invoke **Evaluate Expression** via _Alt + F8 on Windows/Linux_ or
+    _⌥ + F8 on macOS_.
 
 ---

@@ -18,9 +18,11 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=2OYlMKWRUHU&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=15&t=0s
 leadin: |
-  *If re-indenting your code or fixing long lines doesn't
-  sound fun, let GoLand do it for you.*
+    **Reformat Code** makes it a piece of cake to fix style warnings
+    and make your code formatted like `gofmt` would.    
 
-  _Reformat Code_, _Ctrl + Alt + L on Windows/Linux_ or _⌘ + ⌥ + L on macOS_, makes it a piece of cake to fix style warnings and make your code formatted like gofmt would.
+    **How to use:**
+
+    Invoke **Reformat Code** via _Ctrl + Alt + L on Windows/Linux_ or _⌘ + ⌥ + L on macOS_.
 
 ---

@@ -14,10 +14,13 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=g0Pcqduuj-I&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=34&t=0s
 leadin: |
-    *Fix that message.*
+    *Fix that commit message.*
 
     It always happens: as soon as you click _Commit_, you spot the typo
-    in the message or remember a change. Use the VCS Log's _Reword_, _F2 on Windows/Linux/macOS_, to
-    fix it.
+    in the message or remember a change.
+    
+    **How to use:**
+    
+    Use the _VCS Log's_ **Reword**, _F2 on Windows/Linux/macOS_, to fix it.
 
 ---

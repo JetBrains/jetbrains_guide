@@ -14,11 +14,13 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=N3moVzfCYcw&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=21&t=0s
 leadin: |
-    *Refactor names like a ninja.*
+    *Refactor names quickly, across all project at once.*
 
-    Put your cursor on a symbol and refactor it. All usages in the
-    project change with it.
+    Put your cursor on a symbol and refactor it.
+    All usages in the project change with it.
     
-    Use _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_, to invoke the _Rename Refactoring_.
+    **How to use:**
+
+    Invoke the **Rename Refactoring** via _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_.
 
 ---

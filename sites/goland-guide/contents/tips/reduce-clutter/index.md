@@ -14,8 +14,8 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=Fwgc0rBenvc&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=3&t=0s
 leadin: |
-  By default, GoLand has lots of features visible and available.
-  As you learn your way around, you want to give more space to
-  the editor and focus on your coding.
-
+    Use **View | Appearance: Tool Window Bars** to toggle all the IDE
+    tool windows visibility.
+    
+    This helps you maximize your work space in the IDE.
 ---

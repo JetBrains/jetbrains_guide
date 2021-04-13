@@ -14,9 +14,7 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=JZo4V65FmK4&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=35&t=0s
 leadin: |
-    *Oops, I committed again.*
-
-    We always remember something just after a commit. Let the IDE help
-    you "uncommit" an un-pushed commit.
+    Let the IDE help you _uncommit_ an un-pushed commit by
+    using the **Undo Commit...** command.
 
 ---
