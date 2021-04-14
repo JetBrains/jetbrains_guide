@@ -12,5 +12,5 @@ longVideo:
   url: https://youtu.be/F8UTTTDtbH0?start=247
 ---
 
-## Loading the IDE Feature Trainer
-- 
+## IDE Feature Trainer Overview
+- This will cover where to find it, the modules and lessons within, that it's simply another project
