@@ -109,7 +109,7 @@ const Tip: FC<TipProps> = (
           </React.Suspense>
         )}
         {screenshot && (
-          <img src={screenshot.publicURL} alt="Tip Screenshot" width="600" loading="lazy" />
+          <img src={screenshot.publicURL} alt="Tip Screenshot" width="600" loading="lazy" style={{ objectFit: 'contain', objectPosition: 'top' }} />
         )}
         {shortVideo && <ShortVideo video={
           {
