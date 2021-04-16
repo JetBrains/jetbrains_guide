@@ -15,6 +15,7 @@ tutorialItems:
   - /tutorials/django-aws/project-explore/
   - /tutorials/django-aws/rest-api/
   - /tutorials/django-aws/rest-api-jwt/
+  - /tutorials/django-aws/sentry-integration/
 
 
 ---
