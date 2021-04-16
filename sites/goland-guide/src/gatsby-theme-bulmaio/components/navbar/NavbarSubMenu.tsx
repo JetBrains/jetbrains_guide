@@ -1,5 +1,6 @@
 import * as React from 'react';
-import NavbarSubItem, { NavbarSubItemProps } from './NavbarSubItem';
+// @ts-ignore
+import NavbarSubItem, { NavbarSubItemProps } from 'gatsby-theme-bulmaio/src/components/navbar/NavbarSubItem';
 
 export interface NavbarSubMenuProps {
   href?: string;
@@ -7,15 +8,6 @@ export interface NavbarSubMenuProps {
   items: NavbarSubItemProps[];
 }
 
-const NavbarSubMenu: React.FC<NavbarSubMenuProps> = ({ label, items }) => {
-  return (
-    <div className="navbar-item has-dropdown is-hoverable">
-      <span data-testid={`navbarsubmenu-label`} className="navbar-link bio-dropdown-main">{label}</span>
-      <div id="moreDropdown" className="navbar-dropdown">
-        {items && items.map(item => <NavbarSubItem {...item} key={item.href} />)}
-      </div>
-    </div>
-  )
-};
+const NavbarSubMenu: React.FC<NavbarSubMenuProps> = ({ label, items }) => <></>;
 
 export default NavbarSubMenu;
