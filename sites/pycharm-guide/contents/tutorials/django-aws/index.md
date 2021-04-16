@@ -16,6 +16,7 @@ tutorialItems:
   - /tutorials/django-aws/rest-api/
   - /tutorials/django-aws/rest-api-jwt/
   - /tutorials/django-aws/sentry-integration/
+  - /tutorials/django-aws/unit-tests/
 
 
 ---
