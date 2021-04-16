@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Code completion in Run Configurations
 technologies: [go]
-topics: [completion, running]
+topics: [completion]
 author: dlsniper
 subtitle: Run configurations also have code completion capabilities.
 thumbnail: ./thumbnail.png

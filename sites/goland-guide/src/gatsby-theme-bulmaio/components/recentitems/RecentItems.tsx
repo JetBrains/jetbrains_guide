@@ -41,10 +41,8 @@ export const RecentItems: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="columns is-centered">
-          <div className="column is-half">
-            <h2><a href={"./tips/"}>More tips...</a></h2>
-          </div>
+        <div>
+          <a className="button" href={"./tips/"}>More tips...</a>
         </div>
       </div>
     </section>

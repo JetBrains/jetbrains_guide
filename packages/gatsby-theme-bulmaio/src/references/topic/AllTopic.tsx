@@ -16,7 +16,7 @@ export interface TopicIndexProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Tags';
+const PAGE_TITLE = 'Topics';
 const SUBTITLE = 'Explore all available resources organized by a programming topic.';
 
 const twitterCardPage: TwitterCardPage = {
