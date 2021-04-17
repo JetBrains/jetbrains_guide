@@ -20,6 +20,7 @@ tutorialItems:
   - /tutorials/django-aws/bdd-behave/
   - /tutorials/django-aws/django-docker/
   - /tutorials/django-aws/github-actions/
+  - /tutorials/django-aws/cleanup/
 
 
 ---
