@@ -19,6 +19,7 @@ tutorialItems:
   - /tutorials/django-aws/unit-tests/
   - /tutorials/django-aws/bdd-behave/
   - /tutorials/django-aws/django-docker/
+  - /tutorials/django-aws/github-actions/
 
 
 ---
