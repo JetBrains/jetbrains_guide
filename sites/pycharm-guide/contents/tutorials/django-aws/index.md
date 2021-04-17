@@ -18,6 +18,7 @@ tutorialItems:
   - /tutorials/django-aws/sentry-integration/
   - /tutorials/django-aws/unit-tests/
   - /tutorials/django-aws/bdd-behave/
+  - /tutorials/django-aws/django-docker/
 
 
 ---
