@@ -1,33 +1,34 @@
 ---
 type: TutorialStep
-date: 20202-09-10
+date: 2021-04-16
 title: Linking Between Sites with Intersphinx
 technologies: []
 topics: []
 author: pwe
-subtitle: TODO
+subtitle: Rich structure and linking, between sites.
 thumbnail: ../python-logo.png
 ---
 
 Perhaps you've gotten the point by now: Sphinx extracts a lot of *structure* in your site.
-But what about other sites?
-Wouldn't it be great if linking to structure in another site was almost as easy as linking in your own site?
-Where if the path changed, or disappeared, you'd know?
-And you could just use the target's latest title as the link text?
+But what about *other* sites?
 
-Enter...[Intersphinx](https://docs.readthedocs.io/en/stable/guides/intersphinx.html) -- one of those amazing, Sphinx-only things that kind of blows your mind, is really useful, and you don't expect from other systems.
+Wouldn't it be great if linking to structure in another site was almost as easy as linking in your own site?
+If the path changed, or disappeared, then you'd know?
+And you could just use the target's current title as the link text?
+
+Enter...[Intersphinx](https://docs.readthedocs.io/en/stable/guides/intersphinx.html) -- one of those amazing, Sphinx-only things that kind of blows your mind, is really useful, and you don't expect it when coming from other systems.
 
 ## How It Works
 
-When you run Sphinx, it reads your source material, makes a tree of rich structure, then artifacts in a build directory.
+When you run Sphinx, it reads your source material, makes a tree of rich structure, then generates artifacts in a build directory.
 It also, though, generates an `objects.inv` file.
 What's that?
-It is a serialized "inventory" of the structure of your site, available at a URL in your published site.
+It is a serialized "inventory" of the structure of your site, written to the build directory, and available at a URL in your published site.
 
 Other sites can use your "structure" by enabling the Intersphinx extension and registering your site's URL with a prefix.
-Then, when you do your linking to structure -- documents, roles, classes -- in your site, they just use that prefix when linking.
+When they link to structure -- documents, roles, classes -- in their site, they just use that prefix in the link.
 
-As Sphinx is building, it fetches the inventory and adds it to the list of structure in your own site.
+As Sphinx is building, it fetches the remote inventory and adds it to the list of structure during building.
 If you link to a page in the remote site that doesn't exist, you'll get a warning, just like you do in local links.
 
 ## Setting Up
@@ -38,7 +39,7 @@ First, enable the extention:
 
 ```python
 extensions = [
-    'sphinx.ext.intersphinx',
+    "sphinx.ext.intersphinx",
     # And any other extension
 ]    
 ```
@@ -48,7 +49,7 @@ For example, let's use the documentation from Sphinx itself:
 
 ```python
 intersphinx_mapping = {
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
+    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
 }
 myst_url_schemes = ["http", "https", ]
 ```
@@ -85,17 +86,17 @@ But that's not automatic and not as integrated.
 It certainly won't help with the last bullet.
 And as a whole, it puts remote links outside the cool realm of Sphinx roles machinery.
 
-Instead, MyST gives us a syntax for doing a link when the other end is a Sphinx powered site.
-Once registered in `conf.py` as in the previous step, we can do our familiar linking:
-
-We can link to a document, such as the Sphinx page explaining roles:
+Instead, MyST gives us a syntax for doing a link when the other end is a Sphinx-powered site.
+Once registered in `conf.py` as in the previous step, we can do our familiar linking.
+First, we can link to a *document*, such as the Sphinx page explaining roles:
 
 ```markdown
 Let's talk about the power of [Sphinx roles](sphinx:usage/restructuredtext/roles).
 ```
 
-We can also link to roles. For example, that page has a "role" set using `.. _ref-role:` before the heading `Cross-referencing arbitrary locations`.
-This means `ref-role` is a role target for a link:
+We can also link to *roles* -- that is, places *within* a document. 
+For example, that page has a "role" set using `.. _ref-role:` before the heading `Cross-referencing arbitrary locations`.
+This means `ref-role` is a role *target* for a link:
 
 ```markdown
 Let's talk about the power of [Sphinx roles](sphinx:ref-role).
@@ -107,6 +108,8 @@ We can make it even cooler by letting the remote title be used as link text:
 ```markdown
 Let's talk about the power of [](sphinx:ref-role).
 ```
+
+Insanely-shorter and lower maintenance.
 
 ## Linking to Domains
 
@@ -121,7 +124,7 @@ Let's talk about the power of {rst:dir}`code-block`.
 ## Debugging
 
 This Intersphinx magic is, well, magical.
-It can misfire and cause frustrating.
+It can misfire and cause frustration.
 
 First and foremost, watch your Sphinx build output.
 If it finds a problem, it will likely give you a very precise answer.
