@@ -9,7 +9,7 @@ subtitle: Modules are logical groupings of lessons. Each lesson can be completed
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?start=247
+  url: https://youtu.be/NE02Z5wtBXI
 ---
 
 ## How can I work with modules and lessons?

@@ -7,6 +7,9 @@ topics: [interface]
 author: hs
 subtitle: The IDE Feature Trainer is a great way to learn about features, workflows and keyboard shortcuts in IntelliJ IDEA. You do not need to complete the modules or lessons in order, allowing you to fit your learning around your schedule.
 thumbnail: ./thumbnail.png
+longVideo:
+poster: ./poster_long.png
+url: https://youtu.be/DKqQKpGhTQM
 ---
 
 ## More Resources

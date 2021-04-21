@@ -9,7 +9,7 @@ subtitle: The IDE Feature Trainer is a bundled plugin that's available within In
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F8UTTTDtbH0?start=247
+  url: https://youtu.be/sKwjA4uhQfc
 ---
 
 ## IDE Feature Trainer Overview
