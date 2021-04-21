@@ -2,6 +2,7 @@
   <configuration default="false" name="Docker - WebStorm Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
     <deployment type="dockerfile">
       <settings>
+        <option name="buildCliOptions" value="--pull" />
         <option name="imageTag" value="webstorm-guide" />
         <option name="command" value="/jetbrains_guide/guide.sh run ws:develop" />
         <option name="containerName" value="webstorm-guide" />

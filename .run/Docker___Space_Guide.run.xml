@@ -2,7 +2,7 @@
   <configuration default="false" name="Docker - Space Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
     <deployment type="dockerfile">
       <settings>
-        <option name="buildCliOptions" value="" />
+        <option name="buildCliOptions" value="--pull" />
         <option name="command" value="/jetbrains_guide/guide.sh run space:develop" />
         <option name="containerName" value="space-guide" />
         <option name="entrypoint" value="" />

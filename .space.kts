@@ -21,7 +21,7 @@ job("Build PyCharm Guide") {
             content = """
                 yarn install
                 yarn run pc:build
-            """
+            """.trimIndent()
         }
     }
 }
@@ -49,7 +49,7 @@ job("Build GoLand Guide") {
             content = """
                 yarn install
                 yarn run go:build
-            """
+            """.trimIndent()
         }
     }
 }
@@ -77,7 +77,7 @@ job("Build WebStorm Guide") {
             content = """
                 yarn install
                 yarn run ws:build
-            """
+            """.trimIndent()
         }
     }
 }
@@ -105,7 +105,7 @@ job("Build Space Guide") {
             content = """
                 yarn install
                 yarn run space:build
-            """
+            """.trimIndent()
         }
     }
 }
@@ -133,7 +133,7 @@ job("Build .NET Guide") {
             content = """
                 yarn install
                 yarn run dotnet:build
-            """
+            """.trimIndent()
         }
     }
 }
@@ -161,7 +161,7 @@ job("Build IntelliJ IDEA Guide") {
             content = """
                 yarn install
                 yarn run intellij:build
-            """
+            """.trimIndent()
         }
     }
 }

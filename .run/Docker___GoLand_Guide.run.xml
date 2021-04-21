@@ -2,6 +2,7 @@
   <configuration default="false" name="Docker - GoLand Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
     <deployment type="dockerfile">
       <settings>
+        <option name="buildCliOptions" value="--pull" />
         <option name="imageTag" value="goland-guide" />
         <option name="command" value="/jetbrains_guide/guide.sh run go:develop" />
         <option name="containerName" value="goland-guide" />

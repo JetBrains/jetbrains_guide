@@ -2,7 +2,7 @@
   <configuration default="false" name="Docker - PyCharm Guide" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
     <deployment type="dockerfile">
       <settings>
-        <option name="buildCliOptions" value="" />
+        <option name="buildCliOptions" value="--pull" />
         <option name="command" value="/jetbrains_guide/guide.sh run pc:develop" />
         <option name="containerName" value="pycharm-guide" />
         <option name="entrypoint" value="" />
