@@ -9,7 +9,7 @@ subtitle: The IDE Feature Trainer is a great way to learn about features, workfl
 thumbnail: ./thumbnail.png
 longVideo:
 poster: ./poster_long.png
-url: https://youtu.be/DKqQKpGhTQM
+url: https://youtu.be/gs_MiITZf_o
 ---
 
 ## More Resources

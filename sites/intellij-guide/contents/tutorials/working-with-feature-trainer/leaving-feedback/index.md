@@ -9,7 +9,7 @@ subtitle: Feedback from you is really helpful for us and will enable us to provi
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/F7C2XaiTghc
+  url: https://youtu.be/Uxwi4ibDoHE
 ---
 
 ## We Want to Hear Your Feedback
