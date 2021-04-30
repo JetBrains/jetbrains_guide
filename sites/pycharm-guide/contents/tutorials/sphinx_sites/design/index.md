@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-04-16
-title: Custom Site Design
+title: Making a New Site Design
 technologies: []
 topics: []
 author: pwe
@@ -9,6 +9,7 @@ subtitle: Let's change the look on the website with new templates.
 thumbnail: ../python-logo.png
 ---
 
+```
 - Not complete (figures might be wrong), not perfect (no SCSS customizing)
 - Make a `page.html` that is static
   - h1
@@ -51,4 +52,4 @@ thumbnail: ../python-logo.png
     - meta and canonical stuff
     - favicon
     - Just read through basic/layout.html
-  
+```  

@@ -51,7 +51,7 @@ This requires, though, a [more explicit MyST syntax](https://myst-parser.readthe
 ```
 ~~~
 
-As mentioned in [More Pages](../more_pages/), this is a code fence, but with:
+As mentioned in [More Pages](../more_authoring/), this is a code fence, but with:
 
 - Something in curly braces and...
 - Something else after it.

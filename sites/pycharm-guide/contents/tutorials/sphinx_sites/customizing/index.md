@@ -5,7 +5,7 @@ title: Customizing Your Site
 technologies: []
 topics: []
 author: pwe
-subtitle: TODO
+subtitle: Adjust Sphinx knobs using the configuration file.
 thumbnail: ../python-logo.png
 ---
 
@@ -274,8 +274,3 @@ Next, we need to make a new file as the landing page, then register it
 - index.html with templating and Bulma
 - html_additional_pages = {'index': 'index.html'}
 - As a note, changes here don't seem to trigger incremental rebuild
-
-
-## Caveats
-
-Theme structure and age make most Sphinx sites look ugly.

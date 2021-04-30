@@ -12,3 +12,5 @@ sites/*/public
 package-lock.json
 /deploy/
 yarn-error.log
+sites/pycharm-guide/deploy
+/sites/pycharm-guide/firebase-debug.log

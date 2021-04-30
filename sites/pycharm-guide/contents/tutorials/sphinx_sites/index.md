@@ -9,11 +9,12 @@ thumbnail: ./python-logo.png
 tutorialItems:
   - /tutorials/sphinx_sites/setup/
   - /tutorials/sphinx_sites/basic_formatting/
-  - /tutorials/sphinx_sites/more_pages/
+  - /tutorials/sphinx_sites/more_authoring/
   - /tutorials/sphinx_sites/linking/
   - /tutorials/sphinx_sites/documentation/
   - /tutorials/sphinx_sites/intersphinx/
   - /tutorials/sphinx_sites/customizing/
+  - /tutorials/sphinx_sites/design/
   - /tutorials/sphinx_sites/advanced/
 ---
 

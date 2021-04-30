@@ -1,7 +1,7 @@
 {
   "port": 8087,
   "server": {
-    "baseDir": "deploy",
+    "baseDir": "sites/pycharm-guide/deploy",
     "directory": true
   }
 }

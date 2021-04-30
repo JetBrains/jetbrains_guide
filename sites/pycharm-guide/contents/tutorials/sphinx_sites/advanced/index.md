@@ -73,6 +73,10 @@ You can comment it out with leading `%` symbols:
 % :::
 ```
 
+## Blogging
+
+TODO
+
 ## PDF
 
 Multi-format output has long been one of Sphinx's killer features.
