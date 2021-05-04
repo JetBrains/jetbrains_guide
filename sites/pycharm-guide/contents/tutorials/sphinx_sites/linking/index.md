@@ -31,10 +31,7 @@ In Sphinx with RST, you would type in the *first* document:
 More information is available in :doc:`second`.
 ```
 
-Sphinx then generates the link:
-
-TODO Screenshot
-
+Sphinx then generates the link
 "Wait!" you say. 
 "There's no link text?"
 
@@ -114,7 +111,8 @@ Our investors are very proud to be involved with us.
 ```
 
 You don't really want to link to the document: you want to link to that *part* of the document.
-This is a job for [Sphinx roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-syntax) and you can use these with Markdown syntax:
+This is a job for [Sphinx roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#cross-referencing-syntax) and you can use these with Markdown syntax.
+Add the following in `index.md`:
 
 ```markdown
 You can also visit our {ref}`investors`.

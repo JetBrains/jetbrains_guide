@@ -14,7 +14,7 @@ Even for this simple case, though, Sphinx+MyST had some cool stuff to offer.
 
 So what about the features beyond basic Markdown formatting?
 
-Let's have fun, showing how MyST surfaces some of the really useful, really powerful features in Sphinx.
+Let's have fun, showing how MyST surfaces some really useful, really powerful features in Sphinx.
 As we go along, keep in mind...this all works when generating PDFs, ePub, and other formats.
 
 ## Images
@@ -51,19 +51,22 @@ The stuff in the curly braces maps to a Sphinx/reST [directive](https://www.sphi
 Directives can take *options*, which you see in the Sphinx-style colon-colon syntax.
 Finally, you can put a blank line and then anything else is considered the directive *body*.
 
-Want a `<figure>`, with and image and rich text for a caption?
+Want a `<figure>`, with an image and rich text for a caption?
 This is supported in reStructuredText, so MyST [also provides a way to include figures](https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#markdown-figures) in Markdown.
 First, add the following line to your `conf.py`:
 
 ```python
-myst_html_img_enable = True
-myst_figure_enable = True
+myst_enable_extensions = [
+    "colon_fence",
+]
 ```
 
 Then change the Markdown for the image to the following:
 
 ```
-:::{figure,myclass} logo-target
+:::{figure-md} logo-target
+:class: myclass
+
 <img src="python-logo.png" alt="Python Logo" class="bg-primary" width="300px">
 
 Python comes from the *Python Software Foundation*.
@@ -72,16 +75,16 @@ Python comes from the *Python Software Foundation*.
 
 Here's what it looks like on the page:
 
-TODO Screenshot
+![Figure Rendered](figure.png)
 
 But here's what it looks like in a Markdown-friendly tool:
 
-TODO Screenshot
+![Figure IDE](figure_ide.png)
 
-This is the reason for the triple-colon syntax: to allow the directive *body* in Markdown to render.
+This is the reason for the triple-colon syntax: to allow the directive *body* in Markdown to render in smart tooling.
 
 Lots going on here:
-- `myst_html_img_enable = True` allowed us to use an HTML `<img>` syntax while still parsing into a Sphinx "directive" renderable as PDF etc.
+- `myst_enable_extensions = ["colon_fence"]` allowed us to use an HTML `<img>` syntax while still parsing into a Sphinx "directive" renderable as PDF etc.
 - `myclass` put a CSS class on the figure
 - `logo-target` made a "role" for this figure, making it linkable as a Sphinx reference
 - The caption, obviously, has rich text
@@ -97,7 +100,7 @@ The logo is at {ref}`logo-target`.
 In your browser, click the left sidebar's `Sphinx Sites` link to go to the homepage.
 You'll now see a link to the figure, using the plaintext of the caption as the link text:
 
-TODO Screenshot
+![Link To Image Role](link_to_img_role.png)
 
 If you don't want the caption as the link text, you can use the MyST extended syntax:
 
@@ -147,8 +150,6 @@ Don't care about ordering and want the convenience of not having to list new pag
 Add that, then use glob patterns in one or more lines of the content.
 
 ~~~
-# Welcome to My Site
-
 ```{toctree}
 :maxdepth: 1
 :caption: "Contents:"
@@ -162,8 +163,6 @@ One last note: perhaps you dislike this option-style syntax and want a YAML, fro
 MyST [supports YAML for directive parsing](https://myst-parser.readthedocs.io/en/latest/api/directive.html?highlight=yaml#module-myst_parser.parse_directives).
 
 ~~~
-# Welcome to My Site
-
 ```{toctree}
 ---
 maxdepth: 1
@@ -205,7 +204,7 @@ some data science or something reasons.
 When rendered, you'll have a nice callout.
 For example, the HTML builder we are currently using, and the current theme, shows the note like this:
 
-TODO screenshot
+![Note Python](note_python.png)
 
 We could change that, though, to a *warning*, and provide some richer content.
 The admonition already has a link.
@@ -234,13 +233,13 @@ some data science or something reasons.
 :::
 ~~~
 
-To use this, you need to add `myst_admonition_enable = True` in your `conf.py` file.
+To use this, you need to turn on `colon_fence` in your `conf.py` file.
 As noted previously, this syntax lets Markdown editors render the admonition body:
 
-TODO Screenshot PyCharm
+![Colon Both](colon_both.png)
 
 To reiterate the point, this isn't *presentational*, it is *structural*.
-Thus, these admonitions render in PDF and the other Sphinx targets.
+Thus, these admonitions render both in PDF, and the other Sphinx targets.
 
 ## Downloads
 

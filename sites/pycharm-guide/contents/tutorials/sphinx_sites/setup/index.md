@@ -57,7 +57,7 @@ Our new, blank Python project is now ready for a Sphinx installation.
 
 Open this project directory in your favorite editor.
 We'll install our packages by creating a `requirements.txt` file, to store our dependency listing.
-For now, put the following line in it:
+For now, put the following line in this new file:
 
 ```
 sphinx
@@ -70,10 +70,11 @@ $ pip install -r requirements.txt
 ```
 
 Sphinx has a number of dependencies itself, so this might take a while to get all the packages.
-When done, let's confirm that Sphinx is installed by running the quick start to generate a site:
+When done, let's confirm that Sphinx is installed and on our path:
 
 ```bash
-$ ls .venv/bin/sphinx-quickstart
+$ which sphinx-quickstart
+[some path prefix].venv/bin/sphinx-quickstart
 ```
 
 Sphinx has a number of commands (implemented in Python.)
@@ -129,11 +130,15 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
 Here's how our directory looks after running this:
 
-TODO screenshot from disk
-
+```shell
+(.venv) schlockchain pauleveritt$ ls
+Makefile		_templates		make.bat
+_build			conf.py			requirements.txt
+_static			index.rst
+```
 About some of these directory items:
 
-- `conf.py` is the Sphinx configuration file
+- `conf.py` is the [Sphinx configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html)
 
 - `index.rst` is the "home page" or document at the top of our site
 
@@ -170,10 +175,12 @@ We'll then run `make html`:
 $ make clean
 $ make html
 ```
+This time, no complaints about the `.venv` virtual environment directory, as Sphinx now ignores it.
 
 Just for fun, let's run the build again:
 
-```bash$ make clean
+```bash
+$ make clean
 $ make html
 ```
 
@@ -199,28 +206,39 @@ sphinx
 livereload
 ```
 
-Then run:
+Then run `pip` which comes from our virtual environment because we did the `source` above:
 
 ```bash
-$ .venv/bin/pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 With the package now installed, create a file such as `run_livereload.py`, in the same directory as `conf.py`:
 
-`embed:tutorials/sphinx_sites/setup/run_livereload.py`
+```python
+from livereload import Server, shell
+
+if __name__ == '__main__':
+    server = Server()
+    server.watch('*.rst', shell('make html'), delay=1)
+    server.watch('*.md', shell('make html'), delay=1)
+    server.watch('*.py', shell('make html'), delay=1)
+    server.watch('_static/*', shell('make html'), delay=1)
+    server.watch('_templates/*', shell('make html'), delay=1)
+    server.serve(root='_build/html')
+```
 
 When you execute this Python script, it starts a local web server at a URL:
 
 ```bash
-$ .venv/bin/python ./run_livereload.py 
+$ python ./run_livereload.py 
 [I 200910 13:47:15 server:335] Serving on http://127.0.0.1:5500
 [I 200910 13:47:15 handlers:62] Start watching changes
 [I 200910 13:47:15 handlers:64] Start detecting changes
 ```
 
-If you go to that URL, you should see the site:
+If you go to the URL at `http://127.0.0.1:5500`, you should see the site:
 
-TODO Screenshot
+![Browsing First Page](setup01.png)
 
 Very good, we have a running (local) site!
 Let's show the benefit of `livereload`.
@@ -239,7 +257,7 @@ Welcome to the future.
 
 When you save, `livereload` tells Sphinx to rebuild, then tells the browser to reload, showing your new paragraph:
 
-TODO Screenshot
+![Updated Page](setup02.png)
 
 # Add Markdown
 
@@ -263,7 +281,7 @@ myst-parser
 With that in place, install it:
 
 ```bash
-$ .venv/bin/pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Since `MyST` is a Sphinx extension, we need to "mystify" (enable) it in `conf.py`, our Sphinx configuration file.
@@ -310,11 +328,11 @@ Sphinx works by linking files into the [toctree](https://www.sphinx-doc.org/en/m
 
 Our browser now shows a link to `About Us`:
 
-TODO screenshot
+![About Us Link](about_us_link.png)
 
 When we click on that link, we get a nicely formatted page, driven by Markdown.
 
-TODO screenshot
+![About Us](about_us.png)
 
 # Clean Up
 
@@ -341,8 +359,7 @@ Start by renaming the file to `index.md`.
 Then replace its contents with the following:
 
 ~~~
-Schlockchain Homepage
-=====================
+# Schlockchain Homepage
 
 Welcome to the future.
 

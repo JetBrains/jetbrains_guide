@@ -17,7 +17,7 @@ Let's look at basic formatting and images in Markdown, and how it connects to Sp
 
 "Markdown" is a [troubled word](https://arstechnica.com/information-technology/2014/10/markdown-throwdown-what-happens-when-foss-software-gets-corporate-backing/).
 It needed a spec, so the [CommonMark](https://commonmark.org) project arose.
-Sphinx, via the [MyST parser](https://myst-parser.readthedocs.io/en/latest/), implements the CommmonMark verion of Markdown -- with extensions atop that we'll discuss in the next section.
+Sphinx, via the [MyST parser](https://myst-parser.readthedocs.io/en/latest/), implements the CommmonMark verion of Markdown -- with extensions atop that which we'll discuss in the next section.
 
 ## Formatting
 
@@ -31,20 +31,17 @@ We are **bold** and *innovative*.
 
 In your browser you should see this new paragraph with `<strong>` and `<em>` formatting:
 
-TODO Screenshot
+![Character Styling](character_styling.png)
 
 Preformatted text -- aka inline `<code>` and block `<pre>` -- also work as expected:
 
 ~~~
 Our `def mega_chain` function works really well:
 
-```
-def mega_chain():
-    return 'mega'
-```
+    def mega_chain(): return
 ~~~
 
-Indentation also works as "quoted" text:
+Indentation with `>` also works as "quoted" text:
 
 ```markdown
 Investors say the best things about us:
@@ -56,17 +53,16 @@ Investors say the best things about us:
 Both bulleted and numbered lists are supported:
 
 ```markdown
-
 We have a patented algorithm:
 - Glacially slow
-- Which melt glaciers
+- Which melts glaciers
 
 ...and a roadmap to success:
 
 1. Start an LLC
-1. Get a Series A investment round
-1. Get a Series B investment round
-1. Continue
+2. Get a Series A investment round
+3. Get a Series B investment round
+4. Continue
 ```
 
 Want to link to the Python home page?
@@ -84,7 +80,7 @@ For a sexy carousel of stock photos, visit this site's [homepage](./index).
 ```
 
 Want a sneak-peak at the awesomeness in the next tutorial step?
-Give this a try, and if you're a non-Sphinx Markdown person, ask yourself how `Welcome to Sphinx Sites` got in the built page:
+Give this a try, and if you're a non-Sphinx Markdown person, ask yourself how `Welcome to Sphinx Sites` got into the built page:
 
 ```
 For a sexy carousel of stock photos, visit [](./index).
@@ -110,7 +106,7 @@ Upon advice of counsel.
 
 Let's see a screenshot with all of this Markdown content:
 
-TODO Screenshot
+![All Formatting](all_formatting.png)
 
 ## Images
 
@@ -123,10 +119,10 @@ We'll use the standard Markdown image support to point to a URL, adding this aft
 
 That paragraph now has an image after it, with `Python Logo` as the image's alt text:
 
-TODO Screenshot
+![Python Logo](logo.png)
 
 While this works well, perhaps we want it served locally.
-Download that URL to a file named `python-logo.png`, in the same directory as `about_s.md`:
+Download that URL to a file named `python-logo.png`, in the same directory as `about_us.md`:
 
 ```bash
 $ wget https://www.python.org/static/community_logos/python-logo.png
@@ -142,7 +138,7 @@ Hmm, *interesting*!
 
 As part of the standard Markdown syntax, Sphinx copied that image to the build directory at `_build/html/_images`:
 
-TODO Screenshot of Finder
+![Build Dir Images](build_dir_image.png)
 
 Sphinx then inserted a `src` pointing to this build URL.
 That URL, in this case, is `http://127.0.0.1:5500/_images/python-logo.png`.
