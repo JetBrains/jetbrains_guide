@@ -1,15 +1,3 @@
-Create a new record from the "New Java Class" dialog: type the name of the record and select the Record type. 
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
-IntelliJ IDEA can identify classes that are data holders and can be converted to records. The fields will be become record components, and the constructor and accessors will be removed. We can use the default implementations of equals, hashCode and toString on record by removing these methods.
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
-If we decide that maybe a record should be a full Java class after all, we can get IntelliJ IDEA to automatically convert a record into a Java class.
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
 IntelliJ IDEA can find places in our code that can use pattern matching for instance. There were some changes to this feature in #JDK16 which are fully catered for in IntelliJ IDEA 2021.1.
 
 #JDK16 #2021.1 #GettingToKnowIntelliJ
