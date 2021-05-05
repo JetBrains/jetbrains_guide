@@ -1,10 +1,3 @@
-IntelliJ IDEA can find places in our code that can use pattern matching for instance. There were some changes to this feature in #JDK16 which are fully catered for in IntelliJ IDEA 2021.1.
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
-IntelliJ IDEA shows deprecated methods that are marked for removal with a red strikethrough. #JDK16 has marked the wrapper class constructors for removal, so you'll see these with a red strikethrough in IntelliJ IDEA. IntelliJ IDEA can automatically replace these with a better approach.
-
-#JDK16 #GettingToKnowIntelliJ
 
 #JDK16 introduced some new methods on the Streams API. IntelliJ IDEA shows us places that can use the new methods and can automatically convert the code.
 
