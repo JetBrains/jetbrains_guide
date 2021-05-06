@@ -15,6 +15,12 @@ tutorialItems:
   - /tutorials/django-aws/project-explore/
   - /tutorials/django-aws/rest-api/
   - /tutorials/django-aws/rest-api-jwt/
+  - /tutorials/django-aws/sentry-integration/
+  - /tutorials/django-aws/unit-tests/
+  - /tutorials/django-aws/bdd-behave/
+  - /tutorials/django-aws/django-docker/
+  - /tutorials/django-aws/github-actions/
+  - /tutorials/django-aws/cleanup/
 
 
 ---
