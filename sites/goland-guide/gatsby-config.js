@@ -11,7 +11,8 @@ module.exports = {
                 brand: {
                     githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
                     twitterUrl: 'https://twitter.com/GoLandIDE',
-                    twitterAccount: '@GoLandIDE'
+                    twitterAccount: '@GoLandIDE',
+                    twitterCardFallbackImage: 'https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png'
                 },
                 start: {
                     items: [

@@ -12,7 +12,8 @@ module.exports = {
         brand: {
           githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
           twitterUrl: 'https://twitter.com/webstorm',
-          twitterAccount: '@WebStormIDE'
+          twitterAccount: '@WebStormIDE',
+          twitterCardFallbackImage: 'https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png'
         },
         start: {
           items: [

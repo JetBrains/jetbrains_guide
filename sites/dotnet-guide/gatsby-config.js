@@ -11,7 +11,8 @@ module.exports = {
         brand: {
           githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
           twitterUrl: 'https://twitter.com/ReSharper',
-          twitterAccount: '@ReSharper'
+          twitterAccount: '@ReSharper',
+          twitterCardFallbackImage: 'https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png'
         },
         start: {
           items: [
