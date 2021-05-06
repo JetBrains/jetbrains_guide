@@ -16,7 +16,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial step,
 we are going to set up Sentry, an application for monitoring and error tracking.
 
 Sentry automates exception handling for every programming language and platform, so you can observe and respond
-to issue up and down the stack: JavaScript, Python, PHP, Ruby, Java, and modern frontend frameworks 
+to any issues up and down the stack: JavaScript, Python, PHP, Ruby, Java, and modern frontend frameworks 
 and even the serverless frameworks.
 
 
@@ -64,10 +64,10 @@ Next I will copy the configuration into my **settings.py** file.
 
 ![sentry_django_settings](./steps/step7.png)
 
-Make sure when you deploy your application in production, make sure you pass the **dsn** value 
+When you deploy your application into production, make sure you pass the **dsn** value 
 also known as **Data Source Name(DSN)** through the environment variable.
 
-To set a uniform sample rate for all transactions use the **traces_sample_rate** option in your SDK
+To set a uniform sample rate for all transactions, set the **traces_sample_rate** option in your SDK
 config to a number between 0 and 1. (For example, to send 20% of transactions, 
 set traces_sample_rate to 0.2
 
@@ -76,7 +76,7 @@ information (such as user ids, usernames, cookies, authorization headers, IP add
 you set **send_default_pii** to True.
 
 
-Okay, we are all set, let's trigger some exceptions. According to the sentry documentation, I will 
+Okay, we are all set, let's trigger some exceptions. According to the Sentry documentation, I will 
 perform **ZeroDivisionError** in my application.
 
 # Firing our first event
@@ -94,7 +94,7 @@ I will be calling my API and in the result, it will raise an exception, and the 
 Let me verify in Sentry whether we have received the new event. 
 
 
-Yes, the error has logged in Sentry, and the best thing it’s displaying the entire traceback 
+Yes, the error has logged in Sentry, and the best thing is, it’s displaying the entire traceback 
 along-with the filename, and the line number where the exception was caught.
 
 ![sentry_event_1](./steps/step10.png)

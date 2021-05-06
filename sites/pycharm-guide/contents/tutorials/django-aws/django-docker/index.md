@@ -12,11 +12,13 @@ longVideo:
   url: https://youtu.be/q_cZO1WBWCw
 ---
 
-Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container. [Docker](https://www.docker.com/) is an open
-platform for developing, shipping, and running applications. Docker lets you separate your applications from your infrastructure, so you can deliver software quickly. With Docker, 
+Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to deploy our application inside a Docker Container. 
+
+[Docker](https://www.docker.com/) is an open
+platform for developing, shipping, and running applications. It lets you separate your applications from your infrastructure, so you can deliver software quickly. With Docker, 
 you can manage your infrastructure in the same way you manage your applications.
 
-When it comes to Docker, Testing or CI/CD pipelines these are subjects of their own, it requires a dedicated course to understand the topics and get into the depth of it.
+When it comes to Docker, testing, and CI/CD pipelines -- these are subjects of their own, each requiring a dedicated course to understand the topics and get into the depth of it.
 
 We will be doing a sneak peek into Docker, and I will show you how it makes our life easy.
 
@@ -75,7 +77,7 @@ Next, I will be performing certain operations like :
 
 # Docker Compose
 
-I will be creating a new file called ```docker-compose.yml``` file. According to Docker : [Compose](https://docs.docker.com/compose/) is a
+I will be creating a new file called ```docker-compose.yml``` file. According to Docker: [Compose](https://docs.docker.com/compose/) is a
 tool for defining and running multi-container Docker applications. With Compose, 
 you use a YAML file to configure your application's services. Then, with a single command, you create 
 and start all the services from your configuration.
@@ -127,7 +129,7 @@ volumes:
   postgres_data:
 ```
 
- - **nginx** : NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. [Igor Sysoev](https://en.wikipedia.org/wiki/Igor_Sysoev) originally wrote NGINX to solve the C10K problem, a term coined in 1999 to describe the difficulty that existing web servers experienced in handling large numbers (the 10K) of concurrent connections
+ - **nginx** : NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. [Igor Sysoev](https://en.wikipedia.org/wiki/Igor_Sysoev) originally wrote NGINX to solve the C10K problem, a term coined in 1999 to describe the difficulty that existing web servers experienced in handling large numbers (the 10K) of concurrent connections.
 
  - **web**: Under the web section we are going to run our Django application through Gunicorn. Gunicorn is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.  If you are using Django 3 then you can also go ahead with an ASGI server like Uvicorn which is based on uvloop and httptools, with an emphasis on speed.
 
@@ -141,7 +143,7 @@ can see on the compose file at line number 8, we are mapping between a local pat
 
 ![nginx_conf](./steps/step4.png)
 
-You can see the below configuration, nginx is going proxy request to upstream server 
+As shown in the configuration below, nginx is going proxy request to upstream server 
 running on port 5000 which is pointing to our backend app.
 
 ```
@@ -233,7 +235,7 @@ As we are using NGINX, that means it's running on default port 80. We don’t ne
 ![django_admin_docker](./steps/step11.png)
 
 Great ! Our application is successfully running inside a container. I hope you got a basic understanding of how we are running
-our application inside Docker. I know you must have a lot of doubts, but as I said in the beginning this is not a Docker Course. If you
+our application inside Docker. I know you must have a lot of doubts, but as I said in the beginning this is not a Docker course. If you
 want to know the ins and outs of Docker then I recommend checking out DevOps courses available on the 
 internet focusing on Docker & Kubernetes.
 

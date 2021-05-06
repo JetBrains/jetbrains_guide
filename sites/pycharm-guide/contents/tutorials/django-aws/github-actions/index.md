@@ -27,15 +27,15 @@ There are tons of alternative flavours you can try out.
 
 # Setup
 
-You can see I am already logged into my GitHub repository. 
+You can see I am already logged into my GitHub repository:
 
 ![github_logged_in](./steps/step1.png)
 
-Now, I am going to click on **Actions**. You can see on my screen.
+Now, I am going to click on **Actions**:
 
 ![github_actions_page](./steps/step2.png)
 
-There are a lot of integration workflows available in GitHub Actions, but we will be using a **manual workflow**.
+There are many integration workflows available in GitHub Actions, but we will be using a **manual workflow**.
 
 ![github_actions_page_2](./steps/step3.png)
 
@@ -45,15 +45,15 @@ We are not going to use this, instead I will be providing my own custom workflow
 
 First, the workflow is going to run on the latest version of Ubuntu, next comes the steps which are going to perform multiple operations like:
 
-- Step 1 : we will be configuring AWS Credentials, we need to set up an access key and secret access key in IAM.
-- Step 2 : we are going to log into our ECR.
-- Step 3 : we will checkout code, so our workflow can access it.
-- Step 4 : we will get the latest tag.
-- Step 5 : finally we are going to build, tag and push docker images in Amazon ECR.
+- Step 1: Configure AWS Credentials, we need to set up an access key and secret access key in IAM.
+- Step 2: Log into our ECR.
+- Step 3: Checkout code, so our workflow can access it.
+- Step 4: Get the latest tag.
+- Step 5: Build, tag and push docker images in Amazon ECR.
 
 ![github_action_custom_workflow](./steps/step4.png)
 
-This is how the **manual.yml** file going to look at the end.
+This is how the **manual.yml** file will look at the end.
 
 ```yaml
 name: Deploy image to AWS ECR
@@ -108,8 +108,8 @@ jobs:
 ```
 
 
-To work with ECR we need to browse **aws-actions**, which contains starter templates for multiple services and it 
-being maintained by AWS itself. 
+To work with ECR we need to browse **aws-actions**, which contains starter templates for multiple services.
+This action is maintained by AWS itself. 
 
 For our tutorial we need the [amazon-ecr-login](https://github.com/aws-actions/amazon-ecr-login) repository. To use this action
 we need to follow the steps provided in the **README** file.
@@ -160,7 +160,7 @@ Next, I will click on **Settings** → **Secrets**.
 
 Here I will be providing information related to my AWS access keys along-with ECR repository information. It’s much better to 
 use [GitHub Secrets](https://docs.github.com/en/actions/reference/encrypted-secrets) as they are encrypted, instead 
-of directly using it ass plaintext in the codebase.
+of directly using it as plaintext in the codebase.
 
 ![github-secrets-2](./steps/step13.png)
 
@@ -182,7 +182,7 @@ file in future in case you change your repository name.
 
 # Tagging
 
-We have done all the configuration. Now, I will create a new release and name it **1.0**
+We have done all the configuration. Now, I will create a new release and name it **1.0**.
 
 ![tag-first-version](./steps/step18.png)
 
@@ -253,7 +253,7 @@ Yes, the 1.0 tag is reflecting in the repository.
 
 
 I hope you now have the basic knowledge how to setup a workflow and initiate an automated 
-build & deployment process, if you stuck somewhere then follow the video. This is what actually happens in the real software world, but over there 
+build & deployment process. If you got stuck somewhere, then follow the video. This is what actually happens in the real software world, but over there 
 you will be interacting with complex workflows. 
 
 The main goal of this tutorial series was to provide you brief knowledge of what actually 
