@@ -5,7 +5,7 @@ to get it.
 
  */
 
-import { NavbarEndProps } from 'gatsby-theme-bulmaio/src/components/navbar/NavbarEnd';
+import { NavbarEndProps } from '../components/navbar/NavbarEnd';
 import { NavbarStartProps } from '../components/navbar/NavbarStart';
 
 export default interface SiteConfig {

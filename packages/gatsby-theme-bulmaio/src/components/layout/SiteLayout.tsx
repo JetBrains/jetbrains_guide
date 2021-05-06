@@ -8,7 +8,7 @@ import React from 'react';
 import MasterLayout, {HelmetProps, MasterLayoutProps, PageProps, TwitterCardPage} from './MasterLayout';
 import SiteConfig from '../../common/SiteConfig';
 import {graphql, useStaticQuery} from 'gatsby';
-import {NavbarProps} from 'gatsby-theme-bulmaio/src/components/navbar/Navbar';
+import {NavbarProps} from '../navbar/Navbar';
 import {FooterProps} from '../footer/Footer';
 
 export interface SiteLayoutProps extends PageProps {

@@ -8,7 +8,7 @@ import React from 'react';
 // @ts-ignore
 import { MDXProvider } from '@mdx-js/react';
 
-import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
+import SiteLayout from './SiteLayout';
 import Heading from '../heading/Heading';
 import { TwitterCardPage } from './MasterLayout';
 import CodeBlock from '../../common/CodeBlock';

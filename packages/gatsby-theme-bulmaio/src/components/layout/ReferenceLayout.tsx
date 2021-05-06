@@ -5,7 +5,7 @@ A variation of the MasterLayout which makes lists entries.
  */
 
 import React from 'react';
-import SiteLayout from 'gatsby-theme-bulmaio/src/components/layout/SiteLayout';
+import SiteLayout from './SiteLayout';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {TwitterCardPage} from './MasterLayout';
 
