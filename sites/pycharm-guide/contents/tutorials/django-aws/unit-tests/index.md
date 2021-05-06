@@ -14,7 +14,7 @@ longVideo:
 
 Hello everyone, welcome to the Django tutorial series. In this tutorial we are going to focus on Unit Tests.
 
-Unit testing ensures that all code meets quality standards before it's deployed. it saves time and money, 
+Unit testing ensures that all code meets quality standards before it's deployed. It saves time and money, 
 and helps developers write better code, more efficiently.
 
 
@@ -40,7 +40,7 @@ Next, I will create two more packages under tests and name it as integration and
 I will be setting up a new user in our **base_test.py** file which is going to be re-used by other test classes.
 
 
-You can see in our setUp method we are creating a new user by using the faker library. I haven’t used the email field, 
+You can see in our setUp method we are creating a new user by using the faker library. I haven’t used the email field: 
 it’s optional and in the tearDown method we will be removing the user object from the database.
 
 ![base_test](./steps/step3.png)
@@ -66,8 +66,8 @@ proceed with login that means a new user needs to be registered successfully in 
 we can perform a test in the Login API.
 
 
-Moving ahead, In the **setUp** method I will be calling the setUp method defined in our 
-base class through ```super()```. The super function is used to give access to methods
+Moving ahead, in the **setUp** method, I will be calling the `setUp` method defined in our 
+base class through `super()`. The super function is used to give access to methods
 and properties of a parent or sibling class. 
 
 
@@ -82,7 +82,7 @@ I will click on **Run** and then **Edit Configurations**.
 ![edit_configuration](./steps/step6.png)
 
 
-I will click on the **plus (+)** button and add Django tests. Make sure to replicate the environment variables from the django server.
+I will click on the **plus (+)** button and add Django tests. Make sure to replicate the environment variables from the Django server.
 
 
 ![django_test_configuration](./steps/step7.png)
@@ -96,7 +96,7 @@ Everything is done, Now I will click **Run** ⇒  **Run ‘DjangoUnitTests’**
 
 ![django_test_configuration_3](./steps/step9.png)
 
-Okay, our test case has failed, we received a 301 permanent redirect http response. 
+Our test case has failed: we received a 301 permanent redirect http response. 
 
 ![django_test_error](./steps/step10.png)
 
@@ -119,7 +119,7 @@ If you have completed implementing all the test cases, then you can observe the 
 
 ![django_test_final](./steps/step13.png)
 
-In the upcoming tutorial we will be focusing on writing acceptance tests using python bdd framework.
+In the upcoming tutorial step we will be focusing on writing acceptance tests using python bdd framework.
 
 
 

@@ -73,7 +73,7 @@ acceptance tests are stored, so our test runner can pick up the tests.
 
 Next, I will create two directories and name them as **features** and **steps**. 
 
-A feature file contain high level description of the test scenario in simple language, it is known as **Gherkin**. 
+A feature file contain high level description of the test scenario in simple language known as **Gherkin**. 
 Gherkin is a plain English text language.
 
 Feature files consist of following components:
@@ -104,14 +104,14 @@ the outcomes against expected results.
 First, I am going to do the necessary imports. After that, I will begin implementing the step definition.
 
 Behave uses ```step_impl``` as the function name by default and accepts context as an argument. We will be 
-using context to pass selenium information. Keep following up with me, you are going to enjoy it. 
+using context to pass selenium information. Keep following along with me, you are going to enjoy it. 
 
 ![behave_steps](./steps/step12.png)
 
-Okay, we have completed the first step **“I am on the Django Admin”**. Let me tell you what's going to happen, The Chrome 
+Okay, we have completed the first step **“I am on the Django Admin”**. Let me tell you what's going to happen. The Chrome 
 application is going to open the Django Admin login page and will pass username and password in the input fields and
 finally click on the Login button. This is what happens when a user tries to log in into Django Admin, we are 
-automating the manual stuff.
+automating the manual approach.
 
 The final code at the end is going to look like this.
 
@@ -170,7 +170,7 @@ def step_impl(context):
 
 ```
 
-Next, I will be installing a XPath plugin from Google WebStore, XPath stands for XML Path Language.
+Next, I will be installing a XPath plugin from Google WebStore. XPath stands for XML Path Language.
 
 XPath uses "path like" syntax to identify and navigate nodes in an XML document. This plugin will be very helpful in
 finding elements in our HTML page, and those are not having too much experience working with XPath.
