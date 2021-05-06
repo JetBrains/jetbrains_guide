@@ -66,12 +66,12 @@ const IndexPage: React.FC = () => {
                           </Link>
                         </div>
                         <div className="column">
-                          <Link to={`/technologies`}>
+                          <Link to={`/tutorials`}>
                             <div className="card">
                               <div className="card-content">
                                 <div className="media">
                                   <div className="media-content">
-                                    <h1 className="is-size-4">Technologies</h1>
+                                    <h1 className="is-size-4">Tutorials</h1>
                                   </div>
                                 </div>
                                 <div className="content">
