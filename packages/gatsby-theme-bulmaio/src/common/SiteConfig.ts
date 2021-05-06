@@ -18,6 +18,7 @@ export default interface SiteConfig {
             githubUrl: string;
             twitterUrl: string;
             twitterAccount: string;
+            twitterCardFallbackImage: string;
           },
           start: NavbarStartProps,
           end: NavbarEndProps

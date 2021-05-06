@@ -12,7 +12,8 @@ module.exports = {
         brand: {
           githubUrl: 'https://github.com/JetBrains/jetbrains_guide',
           twitterUrl: 'https://twitter.com/intellijidea',
-          twitterAccount: '@intellijidea'
+          twitterAccount: '@intellijidea',
+          twitterCardFallbackImage: 'https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png'
         },
         start: {
           items: [

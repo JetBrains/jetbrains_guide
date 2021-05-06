@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Enable Git Staging
 technologies: [java, kotlin]
-topics: [vcs, latest]
+topics: [vcs]
 author: hs
 subtitle: Git Staging is an alternative approach to IntelliJ IDEA Changelists
 thumbnail: ./thumbnail.png

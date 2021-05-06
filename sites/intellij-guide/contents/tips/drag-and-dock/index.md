@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Drag and Dock Editor tabs
 technologies: [java, kotlin]
-topics: [tricks, interface, latest]
+topics: [tricks, interface]
 author: hs
 subtitle: You can move editor tabs around as required
 thumbnail: ./thumbnail.png

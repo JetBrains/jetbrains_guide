@@ -30,6 +30,7 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({children, pageTitle, twitterCard
                   githubUrl
                   twitterUrl
                   twitterAccount
+                  twitterCardFallbackImage
                 }
                 start {
                   items {
@@ -79,12 +80,16 @@ const SiteLayout: React.FC<SiteLayoutProps> = ({children, pageTitle, twitterCard
     // If this page wants a Twitter card, add the site-wide and page-specific
     // Twitter Card meta info
     if (twitterCardPage) {
+        const twitterCardImage = twitterCardPage.image
+            ? twitterCardPage.image
+            : navbar.brand.twitterCardFallbackImage;
+
         helmetProps.twitterCard = {
             site: {creator: navbar.brand.twitterAccount, siteName: navbar.brand.twitterAccount},
             page: {
                 title: pageTitle,
                 description: twitterCardPage.description,
-                image: twitterCardPage.image
+                image: twitterCardImage
             }
         }
     }

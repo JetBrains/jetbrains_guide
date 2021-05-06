@@ -11,7 +11,8 @@ module.exports = {
                 brand: {
                     githubUrl: 'https://github.com/jetbrains/jetbrains_guide',
                     twitterUrl: 'https://twitter.com/pycharm',
-                    twitterAccount: '@PyCharm'
+                    twitterAccount: '@PyCharm',
+                    twitterCardFallbackImage: 'https://resources.jetbrains.com/storage/products/jetbrains/img/meta/preview.png'
                 },
                 start: {
                     items: [
