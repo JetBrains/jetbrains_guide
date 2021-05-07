@@ -1,10 +1,6 @@
 ---
 label: 16
 date: 2021-05-05
-thumbnail: ./thumbnail.png
-cardThumbnail: ./card.png
-screenshot: ./tip.png
-leadin: |
 title: Java 16
 technologies: [java]
 topics: [editing, latest]
