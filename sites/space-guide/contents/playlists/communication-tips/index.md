@@ -1,6 +1,6 @@
 ---
 label: communication-tips
-date: 2021-04-11
+date: 2021-05-07
 title: Communication Tips & Tricks
 topics: [teams, work, chats, code]
 author: maartenba
@@ -9,6 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 playlistItems:
     - /tips/chat-mentions/
+    - /tips/chat-tips/
     - /tips/targeted-blog-posts/
     - /tips/blog-post-events/
     - /tips/pin-chats-and-threads/

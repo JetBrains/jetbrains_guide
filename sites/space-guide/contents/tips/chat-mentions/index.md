@@ -3,7 +3,7 @@ date: 2021-04-11
 title: Find your chat mentions in no time
 topics: [teams, chats]
 author: maartenba
-subtitle: See all your personal or team mentions in one place
+subtitle: See all your personal or team mentions in one place.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./preview.png
