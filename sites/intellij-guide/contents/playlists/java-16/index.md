@@ -5,7 +5,7 @@ title: Java 16
 technologies: [java]
 topics: [editing, latest]
 author: tg
-subtitle: Get up to speed quickly on Java 16 with our top tips.
+subtitle: Get up to speed on Java 16 with our top tips.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -14,6 +14,10 @@ playlistItems:
     - /tips/convert-from-record/
     - /tips/pattern-matching-for-instanceof/
     - /tips/deprecation-warnings/
+    - /tips/new-methods-on-streams/
+    - /tips/turn-on-preview-features/
+    - /tips/create-a-correct-sealed-parent/
+    - /tips/create-a-correct-sealed-child/
 
 ---
 

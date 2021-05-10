@@ -1,20 +1,4 @@
 
-#JDK16 introduced some new methods on the Streams API. IntelliJ IDEA shows us places that can use the new methods and can automatically convert the code.
-
-#JDK16 #2021.1 #NewInIntelliJIDEA
-
-If you want to use preview features in the latest versions of #Java in IntelliJ IDEA, you need to set the language level to "Preview"
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
-Sealed classes (a preview feature in #JDK16) are a way to take control of the inheritance hierarchy of our classes. If we have a sealed class like this one, IntelliJ IDEA will tell us we need to "permit" the child class so it can extend this parent. It will also automatically make changes if it can.
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
-IntelliJ IDEA can let us know about problems in the classes that extend sealed classes (a preview feature in #JDK16), and suggest solutions.
-
-#JDK16 #2021.1 #GettingToKnowIntelliJ
-
 We can now select an inspection profile for running analysis before we commit. Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.
 
 #2021.1 #NewInIntelliJIDEA
