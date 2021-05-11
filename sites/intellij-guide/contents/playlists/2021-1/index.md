@@ -18,6 +18,8 @@ playlistItems:
     - /tips/run-targets/
     - /tips/profiler-basics/
     - /tips/change-font-weight/
+    - /tips/space-basics/
+    - /tips/space-code-reviews/
     - /tips/create-record/
     - /tips/convert-to-record/
     - /tips/convert-from-record/
