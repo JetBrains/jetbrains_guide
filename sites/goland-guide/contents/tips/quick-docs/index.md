@@ -17,9 +17,12 @@ leadin: |
     *Want to learn what a symbol is about, without going to a browser?*
 
     The IDE knows the symbol, its argument names/types/defaults, the
-    docstring. Let it give you a non-interrupting window, letting you get
-    back to work.
+    documentation it has.
+    Let it give you a non-interrupting window, letting you get back to work.
 
-    Invoke the _Quick Documentation_ feature using _Ctrl + Q on Windows/Linux_ or _F1 on macOS_, learn more about the different symbols you're working with.
+    **How to use:**
+    
+    Invoke the **Quick Documentation** feature using _Ctrl + Q on Windows/Linux_
+    or _F1 on macOS_, learn more about the different symbols you're working with.
 
 ---

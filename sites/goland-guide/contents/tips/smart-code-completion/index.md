@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Smart Code Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: The king of code completion in GoLand.
 thumbnail: ./thumbnail.png
@@ -14,10 +14,10 @@ leadin: |
     **Smart code completion** narrows down the matches to quickly give you a
      list of useful values.
 
-    Smart Code Completion is the king of code completion in GoLand, and here's why: it gives you a list of the most relevant symbols that are applicable in the current context.
+    _Smart Code Completion_ gives you a list of the most relevant symbols that are applicable in the current context.
     
     **How to use:**
 
-    Press _⌃+⇧+Space_ on macOS or _Ctrl+Shift+Space_ on Windows/Linux.
+    Press _Ctrl+Shift+Space_ on Windows/Linux or _⌃+⇧+Space_ on macOS.
 
 ---

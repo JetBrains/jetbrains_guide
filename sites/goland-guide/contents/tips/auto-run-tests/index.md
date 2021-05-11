@@ -16,9 +16,11 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=KKK1FqnBnMs&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=29&t=0s
 leadin: |
-    *Hands-free TDD mode.*
-
-    Test-driven development (TDD) means always run your tests. GoLand
-    makes that easy.
+    Test-driven development (TDD) means always run your tests.
+    
+    GoLand makes that easy by automatically running tests after
+    a small period of wait time.
+    
+    You can also configure the wait time to suit your style.
 
 ---

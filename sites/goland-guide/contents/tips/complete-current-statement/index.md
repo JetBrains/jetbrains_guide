@@ -14,10 +14,14 @@ shortVideo:
   url: https://www.youtube.com/watch?v=dsokGASiSNg&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA		
   poster: ./poster_short.png
 leadin: |
-    GoLand can complete statements and add required trailing commas for any 		
-     composite literals (like struct, slice, etc.), and even place caret in a 		
-     position where you can just start typing the next statement.
-
-    After typing parentheses, trigger the Complete Current Statement action, ⇧+⌘+↩︎  on macOS and ⇧+⌃+↩︎ on Windows/Linux, to add curly braces and move the cursor down to the beginning of the next row.
+    GoLand can complete statements and add required trailing commas for any
+    composite literals (like struct, slice, etc.), and even place caret in a
+    position where you can just start typing the next statement.
+  
+    **How to use:**
+  
+    After typing parentheses, trigger the **Complete Current Statement** action,
+    _Ctrl + Shift + Enter on Windows/Linux_ and _⇧ + ⌘ + Enter  on macOS_, to add curly braces and move
+    the cursor down to the beginning of the next row.
 
 ---

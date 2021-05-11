@@ -16,11 +16,10 @@ shortVideo:
 leadin: |
     *Language-aware line adding, no muss no fuss.*
 
-    It seems like a simple thing, but many forget about it. You
-    want a new line, so you first move to the end of the current
-    line and press _Enter_. A line above? Worse. There's a better way.
+    **How to use:**
+    Press _Shift + Enter on Windows/Linux_ or _⇧ + Enter on macOS_,
+    and you can add a line and place the cursor on it. 
     
-    Press _Shift + Enter on Windows/Linux_ or _⇧ + Enter on macOS_, and you can add a line and place the cursor on it. 
-    
-    Press _Ctrl + Alt + Enter on Windows/Linux_ or _⌘ + ⌥ + Enter on macOS_ to add a line above.
+    Press _Ctrl + Alt + Enter on Windows/Linux_ or _⌘ + ⌥ + Enter on macOS_
+    to add a line above.
 ---

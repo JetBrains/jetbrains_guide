@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Partial Match Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: Complete anything by typing just parts of the identifier
 thumbnail: ./thumbnail.png
@@ -19,7 +19,7 @@ leadin: |
     number of subsequent characters. For example, type _ReWrCl_ to get 
     _io.ReadWriteCloser_.
     
-    **How to use**
+    **How to use:**
     
     Works automatically, you don't have to do anything.
 

@@ -12,6 +12,6 @@ shortVideo:
   url: https://www.youtube.com/watch?v=vl1tZNEmjZQ&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=24
 leadin: |
     You can hide all the tool windows in the IDE and quickly switch to the
-    editor via _Ctrl + Shift + F12_ on Windows/Linux, or _⌘ + ⇧ + F12_ on macOS.
+    editor via _Ctrl + Shift + F12 on Windows/Linux_, or _⌘ + ⇧ + F12 on macOS_.
 
 ---

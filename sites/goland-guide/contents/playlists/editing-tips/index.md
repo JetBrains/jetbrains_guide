@@ -3,7 +3,7 @@ label: editing-tips
 date: 2020-02-05
 title: Editing Tips & Tricks
 technologies: [go]
-topics: ['editing']
+topics: []
 author: dlsniper
 subtitle: Learn some of the most useful Editing features of GoLand. 
 thumbnail: ./thumbnail.png
@@ -29,7 +29,6 @@ playlistItems:
     - /tips/show-usages/
     - /tips/compare-with-clipboard/
     - /tips/paste-from-history/
-    - /tips/adding-a-package-from-the-clipboard/
     - /tips/switch-to-the-editor/
     - /tips/hide-all-tool-windows/
     - /tips/speed-typing/

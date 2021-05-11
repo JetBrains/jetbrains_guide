@@ -2,7 +2,7 @@
 date: 2020-02-05
 title: Search Everywhere
 technologies: [go]
-topics: [navigation, ui, editing]
+topics: [navigation]
 author: dlsniper
 subtitle: Search anything in the whole IDE, from identifiers, to file names, to settings
 seealso:
@@ -14,8 +14,11 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=WIADmm2I3bw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=26&t=0s
 leadin: |
-    If you need to search for anything – from IDE settings to parts of your code – then 
-    _Search Everywhere_, _Shift + Shift_, is there to help.
+    **Search Everywhere** helps you search for anything – from IDE settings to parts of your code.
+    
+    **How to use:**
+
+    Press _Shift + Shift_.
     
     **Pro tip:**
     

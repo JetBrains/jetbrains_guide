@@ -11,18 +11,17 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
 leadin: |
-  Press _Ctrl + E_ on Windows/Linux, _⌘ + E_ on macOS, to bring up the _Recent Files_ tool window.
-  
-  This allows you to quickly navigate around the same list.
+  The **Recent Files** tool window allows you to quickly navigate around the recent open files list.
+
+  **How to use:**
+
+  Press _Ctrl + E on Windows/Linux_, _⌘ + E on macOS_, to bring up
 
   **Pro tip:**
   
-  You can use the _Speed Typing feature_ to filter it and see only what you need.
+  You can use the **Speed Typing** feature to filter it and see only what you need.
   
-  **Pro tip:**
-  
-  If you press the same _Ctrl + E_ on Windows/Linux, _⌘ + E_ on macOS, shortcut while the _Recent Files_
-  tool window is open, then the list will become more useful and display only the files that have been
-  changed recently.
+  If you press the same _Ctrl + E on Windows/Linux_, _⌘ + E on macOS_, shortcut while the **Recent Files**
+  tool window is open, then the list will only display the files that have been changed recently.
   
 ---

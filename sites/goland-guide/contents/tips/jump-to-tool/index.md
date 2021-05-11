@@ -11,10 +11,12 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
 leadin: |
-  *Want a fast way to open IDE tool windows without memorizing
-  shortcuts?*
+  The **Recent Files** popup is a fast way to open IDE tool windows
+  without memorizing shortcuts.
 
-  Get to GoLand tool windows from the Recent Files popup. Now that you
-  know _Recent Files_, Ctrl + E on Windows/Linux, ⌘ + E on macOS, put it to use for getting  to the tools windows
-  such as _Project_ and _Database_.
+  This allows you to navigate to the tools windows such
+  as _Project_ and _Database_
+
+  **How to use:**
+  Invoke it via  _Ctrl + E on Windows/Linux_, _⌘ + E on macOS_.
 ---

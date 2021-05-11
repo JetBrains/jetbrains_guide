@@ -2,9 +2,9 @@
 date: 2019-11-27
 title: Basic Code Completion
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
-subtitle: Code completion that helps you getting the job done
+subtitle: Code completion that helps you get the job done
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -20,7 +20,7 @@ leadin: |
     **How to use:**
     
     Basic completion pops up as you start typing code and GoLand recognizes
-     an opportunity to complete something for you, but you can invoke it anytime by pressing _⌃+Space_ on macOS or _Ctrl+Space_ on Windows/Linux.
+     an opportunity to complete something for you, but you can invoke it anytime by pressing _Ctrl+Space_ on Windows/Linux or _⌃+Space_ on macOS.
     
     **Pro tip:**
     

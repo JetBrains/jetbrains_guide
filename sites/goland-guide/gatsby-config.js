@@ -33,16 +33,9 @@ module.exports = {
                         {
                             accent: 'danger',
                             cssClass: 'documentation',
-                            href: '/technologies/',
-                            label: 'Technologies',
-                            icon: 'fas fa-project-diagram'
-                        },
-                        {
-                            accent: 'danger',
-                            cssClass: 'documentation',
                             href: '/topics/',
                             label: 'Topics',
-                            icon: 'fas fa-project-diagram'
+                            icon: 'fas fa-tags'
                         },
                         {
                             label: 'More...',
@@ -75,14 +68,24 @@ module.exports = {
                     ],
                     links: [
                         {
+                            color: 'FFFFFF',
+                            href: 'https://blog.jetbrains.com/go',
+                            icon: 'fa fa-blog'
+                        },
+                        {
+                            color: 'FFFFFF',
+                            href: 'https://www.jetbrains.com/help/go',
+                            icon: 'fa fa-question'
+                        },
+                        {
                             color: 'light',
                             href: 'https://github.com/jetbrains/jetbrains_guide',
-                            icon: 'github'
+                            icon: 'fab fa-lg fa-github'
                         },
                         {
                             color: '55acee',
                             href: 'https://twitter.com/GoLandIDE',
-                            icon: 'twitter'
+                            icon: 'fab fa-lg fa-twitter'
                         }
                     ]
                 }

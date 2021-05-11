@@ -14,17 +14,18 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=jLYhkvvPJ0M&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=9
 leadin: |
-    Since you'll likely be opening files, lots of them, during an editing session how
-    can you quickly switch between them? The _Switcher_, _Ctrl + Tab_ on Windows/Linux or
-    _^ + Tab_ on macOS, is here to help you. 
+    The **Switcher** allows you to quickly move between open files during your editing session.
     
-    You can use it to quickly switch between the previous file and the current one using 
-    the shortcut.
+    **How to use:**
+
+    Invoke the **Switcher** using _Ctrl + Tab on Windows/Linux_ or _^ + Tab on macOS_.
 
     **Pro tip:**
+
+    You can use it to quickly switch between the previous file and the current one using the shortcut.
     
-    Alternatively, use the shortcut but then hold _Ctrl_ on Windows/Linux or _Shift_ on macOS,
-    and you will be able to use _Ctrl + Tab_ on Windows/Linux or _^ + Tab_ on macOS again
+    If you want to browse the whole list, use the shortcut and hold _Ctrl on Windows/Linux_ or _Shift on macOS_.
+    You will be able to use _Ctrl + Tab on Windows/Linux_ or _^ + Tab on macOS_ again
     to move forward through the list of options, or press _Shift + Tab_ and move backward.
 
 ---

@@ -14,11 +14,10 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=WQ3oGpY6V3U&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=2&t=0s
 leadin: |
-  *Actions, keyboard, speed search.*
+    **Find Action** allows you to search IDE actions, using speed typing. This way you can stop memorizing all the shortcuts and focus on what matters.
 
-  Want to use your keyboard but can't memorize all the shortcuts? Find
-  actions by search, using speed typing.
-  
-  Use _Ctrl + Shift + A on Windows/Linux_ or _⌘ + Shift + A on macOS_ to invoke the _Find Action_ feature and change the make the IDE behave the way you want it to.
+    **How to use:**
+    
+    Use _Ctrl + Shift + A on Windows/Linux_ or _⌘ + ⇧ + A on macOS_ to invoke the **Find Action**.
 
 ---

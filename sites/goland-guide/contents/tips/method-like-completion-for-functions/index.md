@@ -2,7 +2,7 @@
 date: 2019-11-27
 title: Method-like completion for functions
 technologies: [go]
-topics: [completion, editing]
+topics: [completion]
 author: dlsniper
 subtitle: Completion for searching for functions that accept parameters of a certain type.
 thumbnail: ./thumbnail.png

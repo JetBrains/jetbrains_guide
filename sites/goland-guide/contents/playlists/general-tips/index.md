@@ -3,7 +3,7 @@ label: general-tips
 date: 2020-10-15
 title: General Tips & Tricks
 technologies: ['go']
-topics: ['editing', 'navigation', 'vcs']
+topics: []
 author: dlsniper
 subtitle: Become an IDE power-user with these bite-sized tips and tricks.
 thumbnail: ./thumbnail.png
@@ -21,7 +21,7 @@ playlistItems:
     - /tips/navbar-create-file/
     - /tips/navbar-find-in-path/
     - /tips/add-line-after-before/
-    - /tips/make-extend-selection/
+    - /tips/expanding-shrinking-selection/
     - /tips/move-block/
     - /tips/reformat-code/
     - /tips/optimize-imports/
@@ -38,12 +38,12 @@ playlistItems:
     - /tips/run-single-test/
     - /tips/auto-run-tests/
     - /tips/run-tests-with-coverage/
-    - /tips/local-history/
     - /tips/create-project-from-github/
     - /tips/put-project-under-vcs/
     - /tips/reword-commit-message/
     - /tips/undo-last-commit/
     - /tips/partial-commit/
+    - /tips/local-history/
 
 ---
 

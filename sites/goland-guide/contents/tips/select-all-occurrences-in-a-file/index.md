@@ -15,12 +15,17 @@ shortVideo:
   url: https://www.youtube.com/watch?v=8OIZ7WYZsSA&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=7
 leadin: |
     Do you want to select all the occurrences of a piece of code?
-    Then simply press _Ctrl + Alt + Shift + J_ on Windows/Linux, and _Cmd + ^ + G_ on macOS.
+    
+    **How to use:**
+    
+    Press _Ctrl + Alt + Shift + J_ on Windows/Linux, and _⌘ + ^ + G_ on macOS.
     
     After the selection is complete, you can start editing all the fragments
     as if they were all the same one.
     
-    Just to remind you, if you plan to use this feature to rename something,
+    **Pro tip:**
+    
+    If you plan to use this feature to rename something,
     then you should have a look at our [Rename refactoring](https://blog.jetbrains.com/go/2018/12/07/refactorings-in-goland-rename-refactoring/), which is designed
     to work safely across multiple packages, not just at the file level,
     with full preview and undo support.

@@ -14,11 +14,14 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=xVovi-VOkt0&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=26&t=0s
 leadin: |
-    *Get the right answer in the right context, easily, no typing.*
+    *Get the right answer in the right context, no typing.*
 
     Stopped at a breakpoint and want to see a result, either typed in
     or from a line fragment?
     
-    _Evaluate Expression_, _Alt + F8 on Windows/Linux_ or _⌥ + F8 on macOS_, to the rescue.
+    **How to use:**
+    
+    Invoke **Evaluate Expression** via _Alt + F8 on Windows/Linux_ or
+    _⌥ + F8 on macOS_.
 
 ---

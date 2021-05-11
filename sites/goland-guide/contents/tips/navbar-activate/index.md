@@ -16,12 +16,10 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=uROT6qvLH4k&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=9&t=0s
 leadin: |
-  *The no-distraction way to work with your files.*
+    Use the **Navigation Bar** to move around files, even when the whole UI is hidden away.
 
-  A minimal UI means no project tool window or _Navigation Bar_.  But
-  how do you then move around files?
-
-  Bring the _Navigation Bar_, Alt + Home on Windows/Linux_ or _⌘ + Up on macOS_, up as-needed, without the mouse. Do
-  what you need, then the popup disappears.
+    **How to use:**
+    
+    Bring the **Navigation Bar**, _Alt + Home on Windows/Linux_ or _⌘ + ↑ on macOS_.
 
 ---

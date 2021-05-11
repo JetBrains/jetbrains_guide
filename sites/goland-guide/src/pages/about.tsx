@@ -7,7 +7,7 @@ import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/Master
 
 const dataUri = `url("${splash}") center center`;
 
-const PAGE_TITLE = 'About';
+const PAGE_TITLE = '';
 const SUBTITLE = 'About the GoLand Guide';
 
 const twitterCardPage: TwitterCardPage = {

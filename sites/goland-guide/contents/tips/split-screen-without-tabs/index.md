@@ -2,9 +2,9 @@
 date: 2020-10-15
 title: Split Screen Without Tabs
 technologies: [go]
-topics: [editing, testing]
+topics: [editing]
 author: dlsniper
-subtitle: Get your code and tests side-by-side without resorting to tabs.
+subtitle: Get your code and tests side-by-side without using tabs.
 seealso:
   - title: Splitting and unsplitting editor window
     href: 'https://www.jetbrains.com/help/go/managing-editor-tabs.html#splitting-and-unsplitting-editor-window'
@@ -16,9 +16,12 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=6yhFWW5Kytg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=27&t=0s
 leadin: |
-    *Get into TDD focus with side-by-side editors.*
+    You can view multiple files at the same time using
+    **Split Horizontal** and **Split Vertical**.
 
-    Testing means three things: code that you're testing, the code for the test,
-    and the output from the test runner. Arrange all 3 to get into the testing flow.
+    **How to use:**
 
+    Invoke the **Split Horizontal** or **Split Vertical** via
+    **Find Action**, _Ctrl + Shift + A on Windows/Linux_ or
+    _⌘ + ⇧ + A on macOS_, then type the action names you need.
 ---

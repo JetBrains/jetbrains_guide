@@ -11,10 +11,12 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=2zKvP4sCciM&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=14
 leadin: |
-    What if you need to select the currently selected file in a particular tool window,
-    e.g. the _Project_ or the _Changes view_ tool windows? Or even in _Explorer/Finder_?
+    The **Select in...** action helps you select the currently selected file in a particular tool window.
+
+    It works in places such as the _Project_ or the _Changes view_ tool windows, and even in _Explorer/Finder_
     
-    This is where the _Select in..._ action, available via _Alt + F1_ on Windows/Linux,
-    _⌥ + F1_ on macOS, comes in handy.
+    **How to use:**
+
+    Press _Alt + F1 on Windows/Linux_ or _⌥ + F1 on macOS_.
 
 ---

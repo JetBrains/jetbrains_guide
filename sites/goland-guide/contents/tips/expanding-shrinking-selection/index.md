@@ -14,11 +14,14 @@ shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=XAlThsT8b_E&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=6
 leadin: |
-    With _Extend Selection_, _Ctrl + W_ on Windows/Linux and _⌥ + ↑_ on macOS, you can quickly 
-    select parts of your code using semantic knowledge about it.
+    Use **Extend Selection** to quickly select parts of your code using semantic knowledge about it.
     
-    _Shrink Selection_ complements the _Extend Selection_ feature, _Ctrl + Shift + W_ on Windows/Linux
-    and _⌥ + ↓_ on macOS. This lets you shrink the selection made, using the same 
-    semantic knowledge of the source code.
+    Selected too much, or using an already existing selection, and want to reduce the selection scope? Use the complimentary **Shrink Selection** feature.
+
+    **How to use:**
+
+    Press _Ctrl + W on Windows/Linux_ and _⌥ + ↑ on macOS_, to use **Extend Selection**.
+
+    **Shrink Selection** has a similar shortcut, _Ctrl + Shift + W on Windows/Linux_ and _⌥ + ↓ on macOS_.
 
 ---
