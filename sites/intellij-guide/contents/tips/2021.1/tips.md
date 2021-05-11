@@ -1,28 +1,4 @@
 
-We can now select an inspection profile for running analysis before we commit. Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.
-
-#2021.1 #NewInIntelliJIDEA
-
-IntelliJ IDEA's data flow analysis can locate even more places where we could have errors in our code. For example, if we use a negative number for initialising an array, or checking for negative values where the value couldn't be negative.
-
-#2021.1 #NewInIntelliJIDEA
-
-IntelliJ IDEA 2021.1 comes with a built-in preview for HTML, so we can get a good idea of what our changes will look like as we're making them.
-
-#2021.1 #NewInIntelliJIDEA
-
-IntelliJ IDEA 2021.1 comes with support for JSONPath expressions. We can open up a window to evaluate JSONPath expressions, and if we have a JSON file open, it will use this file to evaluate the expression.
-
-#2021.1 #NewInIntelliJIDEA
-
-If we have JSONPath expressions as Strings in our Java code, we can use "inject language" and say this is a JSONPath expression. We'll get code formatting and completion inside this string. 
-
-#2021.1 #NewInIntelliJIDEA
-
-We can evaluate a JSONPath expression. This will open up a tool window, enter a snippet of JSON into the input and try out if an expression finds the expected path.
-
-#2021.1 #NewInIntelliJIDEA
-
 #Kotlin developers can configure an inspection to define illegal package dependencies, which can prevent code from accidentally depending upon the wrong packages, for example the database layer depending upon the UI layer.
 
 #2021.1 #NewInIntelliJIDEA

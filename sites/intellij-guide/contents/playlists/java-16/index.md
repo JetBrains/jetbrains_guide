@@ -1,9 +1,9 @@
 ---
-label: 16
+label: 10
 date: 2021-05-05
 title: Java 16
 technologies: [java]
-topics: [editing, latest]
+topics: []
 author: tg
 subtitle: Get up to speed on Java 16 with our top tips.
 thumbnail: ./thumbnail.png
