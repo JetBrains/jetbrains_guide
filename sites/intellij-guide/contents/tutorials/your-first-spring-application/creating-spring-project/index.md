@@ -13,4 +13,37 @@ longVideo:
 ---
 
 ## Create your Spring Project
-- 
+We'll use IntelliJ IDEA Ultimate for this tutorial. 
+
+1) If you're in an IntelliJ IDEA project already, select **File** > **Project**. Alternatively click the **New Project** button on the Welcome screen. 
+2) Select Spring Initializr on the left-hand side and then enter the following options:
+
+| Field Name      | What you should enter |
+| ----------- | ----------- |
+| Name        | Give your project a helpful name such as _spring-hello-world-demo_.       |
+| Location    | This will be the default IntelliJ IDEA location, you can change it if you want to.   |
+| Type        |  This demo uses Maven so please select that option. If you want a Gradle one, then please let me know.   |
+| Language    | This demo uses Java. |
+| Group    | This forms part of your package name, you can change it if you want to.  |
+| Artifact    | This is the name given to any artifacts produced, it will be derived from the Name you used so you don't need to change it.  |
+| Package Name    | This is a concatenation of your Group and Name so you don't need to change it.   |
+| Project SDK    | This is the version of Java SDK that your project will be compiled against. This demo uses Java 11.   |
+| Java    | This is the Language Level for your project which determines coding assistance provided in the editor. Again this demo using Java 11.   |
+| Packaging    | We will use JAR for this demo. |
+
+Your page should look like this:
+
+![New Spring Project Details](new-spring-project-details.png)
+
+Click **Next**.
+
+3) The next page is where you can configure your Spring Initializr project and add the required dependencies. We're going to keep it really simple for this project as we just want to serve the string "Hello World" locally in our browser. Expand the Web node (second from the top) and select **Spring Web**. That's all you need to do here.
+
+Your page should look like this:
+
+![New Spring Project Dependencies](new-spring-project-dependencies.png)
+
+Click **Finish**.
+
+That's all we have to do to get our basic Spring project set up in IntelliJ IDEA. In the next step we'll take a look at what has been automatically created for you, and most importantly, why.
+
