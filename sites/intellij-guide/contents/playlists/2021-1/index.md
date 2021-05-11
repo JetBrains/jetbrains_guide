@@ -13,6 +13,11 @@ playlistItems:
     - /tips/data-flow-analysis/
     - /tips/html-real-time-preview/
     - /tips/evaluate-json-path-expressions/
+    - /tips/kotlin-prevent-illegal-package-dependencies/
+    - /tips/uml-diagrams-for-kotlin/
+    - /tips/run-targets/
+    - /tips/profiler-basics/
+    - /tips/change-font-weight/
     - /tips/create-record/
     - /tips/convert-to-record/
     - /tips/convert-from-record/
