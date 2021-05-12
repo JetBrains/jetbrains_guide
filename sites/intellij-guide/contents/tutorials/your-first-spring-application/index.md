@@ -10,5 +10,6 @@ tutorialItems:
   - /tutorials/your-first-spring-application/creating-spring-project/
   - /tutorials/your-first-spring-application/walking-through-project/
   - /tutorials/your-first-spring-application/creating-spring-controller/
+  - /tutorials/your-first-spring-application/testing-spring-application/
   - /tutorials/your-first-spring-application/summarising-spring-application/
 ---

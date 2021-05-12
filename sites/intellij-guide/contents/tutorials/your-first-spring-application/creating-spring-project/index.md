@@ -39,6 +39,8 @@ Click **Next**.
 
 3) The next page is where you can configure your Spring Initializr project and add the required dependencies. We're going to keep it really simple for this project as we just want to serve the string "Hello World" locally in our browser. Expand the Web node (second from the top) and select **Spring Web**. That's all you need to do here.
 
+One thing to note here is that it's really easy to add dependencies to your Spring project once you have created it. You should only ever add what you know you'll need at this step. It's easier to add dependencies at a later date than it is to remove dependencies that you may, or may not, be relying on at a future date!
+
 Your page should look like this:
 
 ![New Spring Project Dependencies](new-spring-project-dependencies.png)
