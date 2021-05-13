@@ -16,7 +16,7 @@ shortVideo:
 leadin: |
     *Rename files with peace of mind.*
 
-    Changed your name about what you named a file and now you need to rename
+    Changed your name about what you named a file, and now you need to rename
     the test and example files too? Let the IDE handle all this work.
   
     **How to use:**

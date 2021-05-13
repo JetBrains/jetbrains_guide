@@ -38,10 +38,10 @@ playlistItems:
 ---
 
 
-Editing code is a frequent activity that programmers do. But editing is not
+Editing code is a frequent activity that programmers do. However, editing is not
 only about typing the code but also navigation in a code-base.
 
-And if IDEs are good at one thing, is that they can help automate various
+If IDEs are good at one thing, is that they can help automate various
 tasks, including writing that tedious boilerplate code.
 
 In this playlist we're going to have a look at many of the code editing
