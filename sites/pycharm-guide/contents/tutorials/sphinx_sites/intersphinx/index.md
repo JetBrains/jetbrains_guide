@@ -62,7 +62,7 @@ When you save this file and run a Sphinx (full) build, you'll see this in the co
 loading intersphinx inventory from https://www.sphinx-doc.org/en/master/objects.inv...
 ```
 
-## Linking to Documents and Roles
+## Linking to a Role
 
 We can now put this to use.
 In our site, we are writing an article about -- of all things -- Sphinx!
