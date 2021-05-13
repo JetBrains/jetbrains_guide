@@ -3,19 +3,18 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide/.cache" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/goland-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/goland-guide/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/pycharm-guide/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/space-guide/.cache" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/space-guide/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide/public" />
+      <excludeFolder url="file://$MODULE_DIR$/sites/intellij-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/intellij-guide/public" />
-      <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide" />
-      <excludeFolder url="file://$MODULE_DIR$/sites/goland-guide" />
-      <excludeFolder url="file://$MODULE_DIR$/sites/space-guide" />
-      <excludeFolder url="file://$MODULE_DIR$/sites/webstorm-guide" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
