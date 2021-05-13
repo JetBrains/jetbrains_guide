@@ -1,12 +1,12 @@
 ---
 type: TutorialStep
-date: 2021-04-16
+date: 2021-05-13
 title: Linking Between Sites with Intersphinx
-technologies: []
+technologies: [sphinx]
 topics: []
 author: pwe
 subtitle: Rich structure and linking, between sites.
-thumbnail: ../python-logo.png
+thumbnail: thumbnail.png
 ---
 
 Perhaps you've gotten the point by now: Sphinx extracts a lot of *structure* in your site.
@@ -62,7 +62,7 @@ When you save this file and run a Sphinx (full) build, you'll see this in the co
 loading intersphinx inventory from https://www.sphinx-doc.org/en/master/objects.inv...
 ```
 
-## Linking to a Role
+## Linking to Documents and Roles
 
 We can now put this to use.
 In our site, we are writing an article about -- of all things -- Sphinx!
@@ -94,7 +94,7 @@ First, we can link to a *document*, such as the Sphinx page explaining roles:
 Let's talk about the power of [Sphinx roles](sphinx:usage/restructuredtext/roles).
 ```
 
-We can also link to *roles* -- that is, places *within* a document. 
+We can also link to *roles* -- that is, places *within* a document.
 For example, that page has a "role" set using `.. _ref-role:` before the heading `Cross-referencing arbitrary locations`.
 This means `ref-role` is a role *target* for a link:
 

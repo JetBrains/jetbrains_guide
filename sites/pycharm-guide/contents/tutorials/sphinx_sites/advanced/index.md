@@ -1,14 +1,13 @@
 ---
 type: TutorialStep
-date: 2020-09-10
+date: 2021-05-13
 title: Advanced Usage
-technologies: []
+technologies: [sphinx]
 topics: []
 author: pwe
-subtitle: TODO
-thumbnail: ../python-logo.png
+subtitle: MyST has a lot more to offer than just Markdown-in-Sphinx.
+thumbnail: thumbnail.png
 ---
-
 
 If you've been around Sphinx for a while, you know: it has some powerful machinery.
 MyST adds some power of its own.
@@ -24,10 +23,14 @@ MyST [also allows substitutions](https://myst-parser.readthedocs.io/en/latest/us
 First, enable them in `myst_enable_extensions` in the `conf.py` file:
 
 ```python
-myst_enable_extensions = ['substitution']
+myst_enable_extensions = [
+    "colon_fence",
+    "substitution",
+]
 ```
 
-Next, edit `page1.md` to add some frontmatter -- a `title` but also a substitution named `snippet`:
+Next, edit `about_us.md` to add some frontmatter -- a `title` but also a substitution named `snippet`.
+Then add the usage of the snippet at the top of the document:
 
 ```markdown
 ---
@@ -36,12 +39,14 @@ substitutions:
     snippet: "I'm a **substitution**"
 ---
 
+# About Us
+
 Let's see the `snippet`: {{ snippet }}
 ```
 
 When the file is saved and Sphinx rebuilds, we see the snippet, rendered from Markdown to HTML:
 
-TODO screenshot
+![Substitution](substitution.png)
 
 Of course, this snippet is only re-usable in this file.
 If we want to re-use the snippet across the whole site, move it to `conf.py`:
@@ -61,7 +66,7 @@ As the MyST docs show, there's a lot more that can be done with snippets:
 ## Comments
 
 It seems simple, but it's frequently important: you can hide blocks of Markdown content [using comments](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#comments).
-The Markdown that is commented out will then be omitted from being parsed into the document. 
+The Markdown that is commented out will then be omitted from being parsed into the document.
 
 As an example, imagine you have an admonition directive, using the optional colon syntax.
 You'd like to temporarily hide it from getting generated.
@@ -80,7 +85,7 @@ Want to produce HTML *and* PDF?
 No problem.
 
 However, that meant going through [LaTeX](https://en.wikipedia.org/wiki/LaTeX).
-More recently, [rhinotype](https://github.com/brechtm/rinohtype) is being used to produce structured PDF documents.
+More recently, [rinotype](https://github.com/brechtm/rinohtype) is being used to produce structured PDF documents.
 As [this Medium tutorial](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b) explains, "Rinohtype, paired with Sphinx, offers a modern alternative to LaTeX."
 
 Let's start by adding `rinohtype` to our `requirements.txt` file:
@@ -98,33 +103,32 @@ Then, install the requirements:
 $ .venv/bin/pip install -r requirements.txt
 ```
 
-We need to add `rinohtype` as a Sphinx extension:
-
-```python
-extensions = [
-  'rinoh.frontend.sphinx',
-  ...,
-]  
-```
-
 That's it...we can now use `rinoh` as a Sphinx build target:
 
 ```bash
-$ cd docs
 $ make rinoh
 $ open _build/rinoh/myamazingsite.pdf
 ```
 
 As you can see, the PDF has text, images, links, and a table of contents:
 
-TODO screenshot
+![PDF](rinohtype.png)
 
 PDF is great, but it isn't the only target.
 Sphinx has [other builders](https://www.sphinx-doc.org/en/3.x/usage/builders/index.html) as well.
 You can even [make your own builder](https://www.sphinx-doc.org/en/3.x/extdev/builderapi.html#sphinx.builders.Builder).
 
+## Blogging
+
+Many websites have a blog, where you can create posts and draft posts, then organize in rich ways by tags.
+These posts are then processed into an XML file which is sent to special RSS/Atom clients.
+
+For Sphinx, the [ABlog package](https://ablog.readthedocs.io/) provides such features.
+ABlog has been around a while and thus has quite a number of features, such as archive pages, custom sidebars, and commenting integration.
+In fact, it recently started supporting -- [MyST!](https://ablog.readthedocs.io/manual/markdown/)
+
 ## Conclusion
 
 That wraps up our tutorial series on static websites with Sphinx and Markdown.
-There are many other topics to cover -- for example, [blogging with ablog](https://ablog.readthedocs.io) and hosting at (Read the Docs)[https://readthedocs.org], both valuable parts of the ecosystem.
+There are many other topics to cover -- for example, hosting at (Read the Docs)[https://readthedocs.org] as well as other parts of the ecosystem.
 For now, we've covered the basics, and shown that you can indeed use Sphinx for regular sites and Markdown as the authoring language.

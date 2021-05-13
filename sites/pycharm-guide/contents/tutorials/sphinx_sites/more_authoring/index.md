@@ -2,11 +2,11 @@
 type: TutorialStep
 date: 2021-04-16
 title: More Authoring
-technologies: []
+technologies: [sphinx]
 topics: []
 author: pwe
 subtitle: Simple Markdown stuff is cool. The cool Markdown stuff is double cool.
-thumbnail: ../python-logo.png
+thumbnail: thumbnail.png
 ---
 
 In the previous step we showed simple, normal Markdown formatting text and images.
