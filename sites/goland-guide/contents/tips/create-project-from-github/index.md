@@ -4,7 +4,7 @@ title: Create a Project from GitHub
 technologies: []
 topics: [vcs]
 author: dlsniper
-subtitle: Let GoLand do the work to clone and setup a project hosted on GitHub.
+subtitle: Let GoLand do the work to clone and set up a project hosted on GitHub.
 seealso:
   - title: Check out a project
     href: 'https://www.jetbrains.com/help/go/manage-projects-hosted-on-github.html#clone-from-GitHub'

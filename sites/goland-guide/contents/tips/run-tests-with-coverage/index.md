@@ -23,7 +23,7 @@ leadin: |
     
     **How to use:**
     Launch the test with **Coverage** support and then use the
-    **Coverage** tool window to navigate to packages/files and
+    **Coverage** tool window to navigate to your packages/files and
     see their coverage.
 
 ---
