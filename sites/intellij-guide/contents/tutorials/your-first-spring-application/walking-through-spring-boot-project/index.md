@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-05-07
-title: Walking Through Your Project
+title: Walking Through Your Spring Boot Project
 technologies: [java, spring]
 topics: [gettingstarted]
 author: hs

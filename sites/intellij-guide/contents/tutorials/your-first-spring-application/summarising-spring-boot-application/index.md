@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-05-07
-title: Summarising Your Project 
+title: Summarising Your Spring Boot Project 
 technologies: [java, spring]
 topics: [gettingstarted]
 author: hs
