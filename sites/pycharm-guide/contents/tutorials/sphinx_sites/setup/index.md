@@ -5,20 +5,13 @@ title: Sphinx Setup
 technologies: [sphinx]
 topics: []
 author: pwe
-subtitle: Make a project and virtual environment with dependencies, then make a simple Sphinx website.
+subtitle: Make a project and virtual environment with dependencies, then make a simple Sphinx site.
 thumbnail: ../python-logo.png
 ---
 
 Sphinx can be added to an existing Python application or library to provide documentation.
 But it can also be used as the project itself -- for example, a website.
 In this tutorial step we start a new *website* as a new Python project, using Sphinx.
-
-# Scenario
-
-This tutorial will simulate building the website for a fictional company named "Schlockchain".
-The company has -- obviously -- a lot of marketing it wants to do.
-It also has some code with -- obviously -- patents that it wants to show.
-The venture capitalists want a website, the founders aren't really technical, so they want to use Markdown.
 
 # New Project
 
@@ -27,13 +20,13 @@ Let's start from...well, the beginning: an empty directory, into which we will s
 First, let's make a new directory and change into it:
 
 ```bash
-$ mkdir schlockchain
-$ cd schlockchain
+$ mkdir sphinx_site
+$ cd sphinx_site
 ```
 
 *Note: We're using macOS/Linux/WSL command shell syntax in this tutorial.*
 
-Python recommends that projects use a [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for isolation.
+Projects should work with a [virtual environment](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) for isolation.
 Real Python has a [nice primer on virtual environments](https://realpython.com/python-virtual-environments-a-primer/) with the why, what, and how.
 Let's make a new virtual environment, stored inside our project in the `.venv` directory.
 We'll then "activate" it, which changes our command path to first look in this virtual environment's `bin`:
@@ -51,13 +44,13 @@ Note that in the following, thanks to the `source` line above, our shell is usin
 $ pip install --upgrade pip
 ```
 
-Our new, blank Python project is now ready for a Sphinx installation.
+Our blank, new project is now ready for a Sphinx installation.
 
 ## Installing Sphinx
 
 Open this project directory in your favorite editor.
-We'll install our packages by creating a `requirements.txt` file, to store our dependency listing.
-For now, put the following line in this new file:
+We'll install our packages by editing a new `requirements.txt` file, to store our dependency listing.
+For now, put the following line in it:
 
 ```
 sphinx
@@ -70,11 +63,10 @@ $ pip install -r requirements.txt
 ```
 
 Sphinx has a number of dependencies itself, so this might take a while to get all the packages.
-When done, let's confirm that Sphinx is installed and on our path:
+When done, let's confirm that Sphinx is installed by running the quick start to generate a site:
 
 ```bash
-$ which sphinx-quickstart
-[some path prefix].venv/bin/sphinx-quickstart
+$ ls .venv/bin/sphinx-quickstart
 ```
 
 Sphinx has a number of commands (implemented in Python.)
@@ -103,7 +95,7 @@ Either, you use a directory "_build" within the root path, or you separate
 > Separate source and build directories (y/n) [n]: 
 
 The project name will occur in several places in the built documentation.
-> Project name: Schlockchain
+> Project name: My Site
 > Author name(s): Paul Everitt <pauleveritt@me.com>
 > Project release []: 
 
@@ -115,14 +107,14 @@ For a list of supported codes, see
 https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
 > Project language [en]: 
 
-Creating file /.../schlockchain/conf.py.
-Creating file /.../schlockchain/index.rst.
-Creating file /.../schlockchain/Makefile.
-Creating file /.../schlockchain/make.bat.
+Creating file /.../sphinx_sites/conf.py.
+Creating file /.../sphinx_sites/index.rst.
+Creating file /.../sphinx_sites/Makefile.
+Creating file /.../sphinx_sites/make.bat.
 
 Finished: An initial directory structure has been created.
 
-You should now populate your master file /.../schlockchain/index.rst and create other documentation
+You should now populate your master file /.../sphinx_sites/index.rst and create other documentation
 source files. Use the Makefile to build the docs, like so:
    make builder
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
@@ -130,15 +122,11 @@ where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
 Here's how our directory looks after running this:
 
-```shell
-(.venv) schlockchain pauleveritt$ ls
-Makefile		_templates		make.bat
-_build			conf.py			requirements.txt
-_static			index.rst
-```
+TODO screenshot from disk
+
 About some of these directory items:
 
-- `conf.py` is the [Sphinx configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html)
+- `conf.py` is the Sphinx configuration file
 
 - `index.rst` is the "home page" or document at the top of our site
 
@@ -151,13 +139,7 @@ About some of these directory items:
 ## Building (and Rebuilding)
 
 We are ready to build our site.
-
-On macOS or Linux, run the following to generate the site using the `html` "builder":
-
-```bash
-$ make html
-```
-
+On macOS or Linux, run `make html` to generate the `html` "builder".
 (As `sphinx-quickstart` noted at the end, Sphinx supports different builders for different kinds of output.)
 
 Uh oh, our `.venv` was picked up as part of our site!
@@ -175,16 +157,14 @@ We'll then run `make html`:
 $ make clean
 $ make html
 ```
-This time, no complaints about the `.venv` virtual environment directory, as Sphinx now ignores it.
 
-Just for fun, let's run the build again:
+Run the build again:
 
-```bash
-$ make clean
+```bash$ make clean
 $ make html
 ```
 
-Hmm, interesting, the second run's output says:
+Hmm, interesting, the output says:
 
 ```
 building [html]: targets for 0 source files that are out of date
@@ -199,65 +179,46 @@ Other static site generators (SSGs) have nice authoring servers: you type in som
 That helps during a tutorial, so let's do something similar for Python with the [livereload package](https://pypi.org/project/livereload/).
 
 First, install `livereload` into your virtual environment.
-We'll do so by adding `livereload` to `requirements.txt`:
-
-```
-sphinx
-livereload
-```
-
-Then run `pip` which comes from our virtual environment because we did the `source` above:
+We'll do so by adding `livereload` to `requirements.txt`.
+Then run:
 
 ```bash
-$ pip install -r requirements.txt
+$ .venv/bin/pip install -r requirements.txt
 ```
 
 With the package now installed, create a file such as `run_livereload.py`, in the same directory as `conf.py`:
 
-```python
-from livereload import Server, shell
-
-if __name__ == '__main__':
-    server = Server()
-    server.watch('*.rst', shell('make html'), delay=1)
-    server.watch('*.md', shell('make html'), delay=1)
-    server.watch('*.py', shell('make html'), delay=1)
-    server.watch('_static/*', shell('make html'), delay=1)
-    server.watch('_templates/*', shell('make html'), delay=1)
-    server.serve(root='_build/html')
-```
+`embed:tutorials/sphinx_sites/setup/run_livereload.py`
 
 When you execute this Python script, it starts a local web server at a URL:
 
 ```bash
-$ python ./run_livereload.py 
+$ .venv/bin/python ./run_livereload.py 
 [I 200910 13:47:15 server:335] Serving on http://127.0.0.1:5500
 [I 200910 13:47:15 handlers:62] Start watching changes
 [I 200910 13:47:15 handlers:64] Start detecting changes
 ```
 
-If you go to the URL at `http://127.0.0.1:5500`, you should see the site:
+If you go to that URL, you should see the site:
 
-![Browsing First Page](setup01.png)
+TODO Screenshot
 
 Very good, we have a running (local) site!
 Let's show the benefit of `livereload`.
-Edit `index.rst` and start making it into more of a company homepage:
+Edit `index.rst` and put a `Hello World` paragraph above the `toctree`:
 
 ```
-Schlockchain Homepage
-=====================
+Welcome to My Site's documentation!
+===================================
 
-Welcome to the future.
+Hello World.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 ```
 
-When you save, `livereload` tells Sphinx to rebuild, then tells the browser to reload, showing your new paragraph:
-
-![Updated Page](setup02.png)
+When you save, `livereload` tells Sphinx to rebuild and tells the browser to reload, showing your new paragraph.
 
 # Add Markdown
 
@@ -281,7 +242,7 @@ myst-parser
 With that in place, install it:
 
 ```bash
-$ pip install -r requirements.txt
+$ .venv/bin/pip install -r requirements.txt
 ```
 
 Since `MyST` is a Sphinx extension, we need to "mystify" (enable) it in `conf.py`, our Sphinx configuration file.
@@ -289,28 +250,24 @@ Change the value of `extensions` to include `myst-parser`:
 
 ```python
 extensions = [
-    "myst_parser",
+    'myst_parser',
 ]
 ```
 
 Our site can now speak both RST and Markdown!
-Let's put it to use by starting an "About Us" page.
-
-# First Markdown Page
-
-Let's add  `about_us.md` file alongside `index.rst`:
+Let's add a `page1.md` file alongside `index.rst`:
 
 ```
-# About Us
+# Page 1
 
-We are Schlockchain, thought leaders in innovation.
+Hello, Page 1.
 ```
 
 When you save this file, our "livereload" script runs Sphinx.
 But Sphinx is mad: it knows there is a file on disk which isn't included in the site:
 
 ```
-[E 200910 14:03:24 server:94] b"/.../schlockchain/about_us.md: WARNING: 
+[E 200910 14:03:24 server:94] b"/.../sphinx_sites/README.md: WARNING: 
 document isn't included in any toctree"
 ```
 
@@ -321,18 +278,16 @@ Sphinx works by linking files into the [toctree](https://www.sphinx-doc.org/en/m
    :maxdepth: 2
    :caption: Contents:
 
-   about_us
+   page1
 ```
 
 *Note: Don't want to always make such manual entries? You can use globbing in the `toctree` directive, but this will result in an unordered content listing.*
 
-Our browser now shows a link to `About Us`:
+Our browser now shows a link to `Page 1`:
 
-![About Us Link](about_us_link.png)
+TODO screenshot
 
 When we click on that link, we get a nicely formatted page, driven by Markdown.
-
-![About Us](about_us.png)
 
 # Clean Up
 
@@ -342,34 +297,13 @@ The configuration file has lots of comments and stuff not needed for the tutoria
 The configuration file has lots of comments and stuff not needed for the tutorial.
 Let's strip that baby down!
 
-```python
-project = "Schlockchain"
-copyright = "2021, Paul Everitt <pauleveritt@me.com>"
-author = "Paul Everitt <pauleveritt@me.com>"
-extensions = [
-    "myst_parser",
-]
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".venv"]
-html_static_path = ["_static"]
-templates_path = ["_templates"]
-```
+`embed:tutorials/sphinx_sites/setup/conf.py`
 
 Next, let's convert the `index.rst` page away from RST (reStructuredText) to Markdown.
 Start by renaming the file to `index.md`.
 Then replace its contents with the following:
 
-~~~
-# Schlockchain Homepage
-
-Welcome to the future.
-
-```{toctree}
-:maxdepth: 2
-:caption: "Contents:"
-   
-about_us
-```
-~~~
+`embed:tutorials/sphinx_sites/setup/index.md`
 
 Two specific notes: `Contents` needs to be in quotes and the `toctree` options need to be de-dented.
 Also, you might need to restart your `livereload` script and/or reload your browser.
