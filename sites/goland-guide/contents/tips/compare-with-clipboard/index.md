@@ -24,4 +24,5 @@ leadin: |
     If you have selected a single file, the IDE will prompt you to select another
     file to compare it to.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -21,4 +21,5 @@ leadin: |
 
     Press the same shortcut on a test and you'll be able to jump back to the element that is the subject of the test.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -24,5 +24,6 @@ leadin: |
     **How to use:**  
     Invoke it using _Ctrl + Alt + Shift + N on Windows/Linux_ or _⌘ + ⌥ + O on macOS_
     to bring up the search window and quickly navigate your way in the project.
-   
+
+    <span class="tag is-rounded">New in 2017.3</span> 
 ---

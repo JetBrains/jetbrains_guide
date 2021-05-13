@@ -28,4 +28,5 @@ leadin: |
     to get to a directory then use the keyboard to make and open a new file at
     the target, with _Alt + Insert on Windows/Linux_ or _⌘ + N on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

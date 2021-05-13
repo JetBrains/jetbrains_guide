@@ -19,4 +19,5 @@ leadin: |
     You started a new project or opened a local directory, and it's not
     yet under VCS. Here's the fastest way to do so, from the keyboard.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

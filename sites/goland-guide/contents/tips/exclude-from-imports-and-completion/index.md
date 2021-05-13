@@ -19,4 +19,5 @@ leadin: |
     In _Settings/Preferences | Go | Imports_ you can add as many as you want import 
      statements that will be excluded from code completion and auto-import.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

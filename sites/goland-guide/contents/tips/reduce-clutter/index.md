@@ -18,4 +18,6 @@ leadin: |
     tool windows visibility.
     
     This helps you maximize your work space in the IDE.
+
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

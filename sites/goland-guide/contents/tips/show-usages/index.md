@@ -18,7 +18,7 @@ leadin: |
 
     **How to use:**
 
-    Press _Ctrl + Alt + F7 on Windows/Linux_,
-    _⌥ + ⌘ + F7 on macOS_.
+    Press _Ctrl + Alt + F7 on Windows/Linux_, _⌥ + ⌘ + F7 on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

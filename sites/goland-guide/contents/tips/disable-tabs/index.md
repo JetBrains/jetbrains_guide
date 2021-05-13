@@ -28,4 +28,6 @@ leadin: |
     **How to use:**
     Control the tab placement to position where the tabs are in the IDE.
     Invoke **Tab placement | None** to hide them completely.
+
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

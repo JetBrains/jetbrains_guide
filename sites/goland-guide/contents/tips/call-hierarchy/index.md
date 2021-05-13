@@ -25,5 +25,6 @@ leadin: |
     You can then drill down into the call chain to see where those other functions are called.
 
     _Speed Typing_ is available to help you quickly navigate to the element you need.
-    
+ 
+    <span class="tag is-rounded">New in 2017.3</span>   
 ---

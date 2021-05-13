@@ -27,4 +27,5 @@ leadin: |
 
     Hold down the _Ctrl_ key and press _Space_ twice.
 
+    <span class="tag is-rounded">New in 2018.3</span>
 ---

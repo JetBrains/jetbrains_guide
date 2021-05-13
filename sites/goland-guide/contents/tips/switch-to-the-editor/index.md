@@ -19,4 +19,5 @@ leadin: |
     
     The tool window you're switching from will preserve its visibility state in this case.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

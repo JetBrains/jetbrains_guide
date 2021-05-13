@@ -20,4 +20,5 @@ leadin: |
     
     You can choose to test a _function/method_, _the whole file_, or _the whole package_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -22,4 +22,6 @@ leadin: |
     
     Press _Ctrl + Alt + Enter on Windows/Linux_ or _⌘ + ⌥ + Enter on macOS_
     to add a line above.
+  
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

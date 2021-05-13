@@ -23,4 +23,5 @@ leadin: |
     
     Use the _VCS Log's_ **Reword**, _F2 on Windows/Linux/macOS_, to fix it.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

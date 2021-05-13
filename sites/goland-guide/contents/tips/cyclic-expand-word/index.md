@@ -30,4 +30,5 @@ leadin: |
     
     Hold the _Alt on Windows/Linux_ or _⌥ on macOS_ key down and keep pressing / until you get to the word you need.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

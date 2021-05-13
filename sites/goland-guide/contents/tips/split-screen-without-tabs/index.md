@@ -24,4 +24,6 @@ leadin: |
     Invoke the **Split Horizontal** or **Split Vertical** via
     **Find Action**, _Ctrl + Shift + A on Windows/Linux_ or
     _⌘ + ⇧ + A on macOS_, then type the action names you need.
+
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

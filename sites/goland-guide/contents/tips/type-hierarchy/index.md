@@ -21,4 +21,5 @@ leadin: |
 
     You can dig deeper through the list of hierarchy to get as much information as you need.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

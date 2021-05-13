@@ -33,4 +33,5 @@ leadin: |
     By default, changes are retained for 5 days, but 
     [this is configurable](https://www.jetbrains.com/help/go/local-history.html#retention).
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

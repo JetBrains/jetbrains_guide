@@ -23,4 +23,5 @@ leadin: |
     
     You can also configure the wait time to suit your style.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

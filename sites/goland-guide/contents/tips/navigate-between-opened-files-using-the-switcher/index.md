@@ -28,4 +28,5 @@ leadin: |
     You will be able to use _Ctrl + Tab on Windows/Linux_ or _^ + Tab on macOS_ again
     to move forward through the list of options, or press _Shift + Tab_ and move backward.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -16,4 +16,5 @@ leadin: |
 
     You can then use the arrow keys to move through the list, or press _Esc_ to dismiss the filter.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

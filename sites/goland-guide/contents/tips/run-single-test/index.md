@@ -23,4 +23,6 @@ leadin: |
 
     To launch the test under the cursor, invoke the test runner
     via _Ctrl + Shift + F10 on Windows/Linux_ or _^ + ⇧ + R on macOS_.
+
+    <span class="tag is-rounded">New in 2017.3</span>
 ---
