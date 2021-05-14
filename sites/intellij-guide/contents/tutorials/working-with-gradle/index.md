@@ -16,4 +16,5 @@ tutorialItems:
   - /tutorials/working-with-gradle/group-id-and-version-number/
   - /tutorials/working-with-gradle/opening-a-gradle-project/
   - /tutorials/working-with-gradle/gradle-tool-window/
+  - /tutorials/working-with-gradle/setting-an-abbreviation/
 ---
