@@ -20,4 +20,6 @@ tutorialItems:
   - /tutorials/working-with-gradle/running-gradle-tasks/
   - /tutorials/working-with-gradle/syncing-and-reloading/
   - /tutorials/working-with-gradle/gradle-settings/
+  - /tutorials/working-with-gradle/gradle-wrapper/
+  - /tutorials/working-with-gradle/shortcuts-used/
 ---
