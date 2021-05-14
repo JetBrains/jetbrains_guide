@@ -12,3 +12,4 @@ thumbnail: ./thumbnail.png
 Some helpful shortcuts mentioned in the tutorial and video:
 
  - **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) - load Gradle changes
+ - **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) - use in the `build.gradle` file to add a new dependency
