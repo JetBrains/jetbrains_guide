@@ -18,4 +18,5 @@ tutorialItems:
   - /tutorials/working-with-gradle/gradle-tool-window/
   - /tutorials/working-with-gradle/setting-an-abbreviation/
   - /tutorials/working-with-gradle/running-gradle-tasks/
+  - /tutorials/working-with-gradle/syncing-and-reloading/
 ---
