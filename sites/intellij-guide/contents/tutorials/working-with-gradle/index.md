@@ -8,4 +8,5 @@ subtitle: Understand how IntelliJ IDEA integrates with Gradle.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/working-with-gradle/introduction/
+  - /tutorials/working-with-gradle/creating-a-gradle-project/
 ---
