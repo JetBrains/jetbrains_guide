@@ -32,7 +32,7 @@ myst_enable_extensions = [
 Next, edit `about_us.md` to add some frontmatter -- a `title` but also a substitution named `snippet`.
 Then add the usage of the snippet at the top of the document:
 
-```markdown
+```
 ---
 title: Welcome to the Site
 substitutions:
@@ -130,5 +130,5 @@ In fact, it recently started supporting -- [MyST!](https://ablog.readthedocs.io/
 ## Conclusion
 
 That wraps up our tutorial series on static websites with Sphinx and Markdown.
-There are many other topics to cover -- for example, hosting at (Read the Docs)[https://readthedocs.org] as well as other parts of the ecosystem.
+There are many other topics to cover -- for example, hosting at [Read the Docs](https://readthedocs.org) as well as other parts of the ecosystem.
 For now, we've covered the basics, and shown that you can indeed use Sphinx for regular sites and Markdown as the authoring language.

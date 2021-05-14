@@ -18,7 +18,6 @@ tutorialItems:
 - /tutorials/sphinx_sites/advanced/
 ---
 
-
 Everybody knows [Sphinx](https://www.sphinx-doc.org/en/master/) for documenting projects, Python and otherwise.
 But few think of Sphinx for the *rest* of a website.
 Why?
