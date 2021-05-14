@@ -16,3 +16,6 @@ In this tutorial, we're going to look at how to work with Gradle projects in Int
 - [Gradle user guide](https://docs.gradle.org/current/userguide/userguide.html)
 - [Webinar Recording: Composite Builds with Gradle and IntelliJ IDEA](https://blog.jetbrains.com/idea/2017/03/webinar-recording-composite-builds-with-gradle/)
 - [Working with Gradle in IntelliJ IDEA (2021) (video)](https://youtu.be/6V6G3RyxEMk)
+ 
+### IntelliJ IDEA Help Documentation
+ - [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)
