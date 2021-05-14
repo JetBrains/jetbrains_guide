@@ -10,4 +10,5 @@ tutorialItems:
   - /tutorials/working-with-gradle/introduction/
   - /tutorials/working-with-gradle/creating-a-gradle-project/
   - /tutorials/working-with-gradle/tour-of-a-gradle-project/
+  - /tutorials/working-with-gradle/the-build-gradle-file/
 ---
