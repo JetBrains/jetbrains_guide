@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Introduction
-technologies: [java, gradle]
+technologies: [gradle]
 topics: [build]
 author: tg
 subtitle: Introduction to working with Gradle and Gradle projects in IntelliJ IDEA
