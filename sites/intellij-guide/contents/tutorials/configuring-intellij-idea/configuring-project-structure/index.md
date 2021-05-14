@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Configuring Project Structure
-technologies: [idea]
+technologies: []
 topics: [settings]
 author: hs
 subtitle: The Project Structure is where you can change your Java SDK, Language Level and more

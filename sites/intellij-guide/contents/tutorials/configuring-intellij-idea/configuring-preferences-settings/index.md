@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Configuring Preferences/Settings in IntelliJ IDEA
-technologies: [idea]
+technologies: []
 topics: [settings]
 author: hs
 subtitle: There's lots of ways to make IntelliJ IDEA your own 

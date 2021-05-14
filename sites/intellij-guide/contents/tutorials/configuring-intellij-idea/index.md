@@ -10,6 +10,7 @@ tutorialItems:
   - /tutorials/configuring-intellij-idea/configuring-project-structure/
   - /tutorials/configuring-intellij-idea/configuring-preferences-settings/
   - /tutorials/configuring-intellij-idea/configuring-with-search-everywhere/
+  - /tutorials/configuring-intellij-idea/sharing-settings-intellij-idea/
   - /tutorials/configuring-intellij-idea/configuring-summary/
 ---
 
