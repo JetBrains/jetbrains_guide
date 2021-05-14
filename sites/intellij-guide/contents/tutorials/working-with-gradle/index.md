@@ -14,4 +14,5 @@ tutorialItems:
   - /tutorials/working-with-gradle/gradle-dependencies/
   - /tutorials/working-with-gradle/source-set-directories/
   - /tutorials/working-with-gradle/group-id-and-version-number/
+  - /tutorials/working-with-gradle/opening-a-gradle-project/
 ---
