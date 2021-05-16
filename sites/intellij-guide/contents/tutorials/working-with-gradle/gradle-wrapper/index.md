@@ -12,16 +12,16 @@ longVideo:
   url: https://youtu.be/6V6G3RyxEMk?start=1105
 ---
 
-## Gradle Wrapper
+In this last step, we'll look at how to configure the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
 
-Finally, the Gradle Wrapper.
+We saw how to tell IntelliJ IDEA where to get the [settings of the Gradle Wrapper](https://www.jetbrains.com/help/idea/gradle-settings.html) from. Projects generated using IntelliJ IDEA's [Gradle wizard](https://www.jetbrains.com/help/idea/gradle.html#project_create_gradle) will usually have a `gradle-wrapper.properties` file which contains the details of the version of Gradle to use for this project. Ideally we want this to use the [latest version of Gradle](https://gradle.org/releases/), where possible, so that we get the most up to date support and features. The current version of Gradle at the time of writing is [7.0.2](https://docs.gradle.org/7.0.2/release-notes.html).
 
-We saw how to tell IntelliJ IDEA where to get the settings of rthe Gradle weapper from. Projects generated using IntelliJ IDEA's Gradle wizard will usually have a gradle-wrapper.properties file which contains the details of the version of Gradle to use for this project. Ideally we want this to contain the latest versions of Gradle, where possible, so that we get the most up to date support and features. The current version of Gradle at the time of recording is 6.8.1, so let's go ahead and update this file to have that version number.
+![Gradle Wrapper properties file](./gradle-wrapper-file.png)
 
-Once again, intellij idea has detected the changes and asks us to reload these changes. You can see the IDE downloads this new version of Gradle, and then rebuilds the project using it.
+If you update the `gradle-wrapper.properties` file to have a different version number, IntelliJ IDEA will detect the changes and asks us to reload these changes. The IDE will download this new version of Gradle, and then rebuild the project using it.
 
-You may notice that the .gradle folder in your project has folders for all the versions of Gradle that you've used. We can safely delete the versions we're not using any more here.
+![Gradle versions](./gradle-versions.png)
 
-In this tutorial we saw an overview of the support for Gradle projects in IntelliJ IDEA, and some tips for working effectively with them.
+The ".gradle" folder in your project has folders for all the versions of Gradle that you've used. We can safely delete the versions we're not using any more if we want to reclaim some space.
 
 In our last step we'll summarise some of the shortcuts used and other tips.
