@@ -12,8 +12,6 @@ longVideo:
   url: https://youtu.be/6V6G3RyxEMk?start=824
 ---
 
-## Running Gradle tasks
-
 We saw earlier that we can navigate to a specific [Gradle task](https://docs.gradle.org/current/userguide/more_about_tasks.html) in a specific Gradle project in the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and we can double-click that task to get IntelliJ IDEA to run it.
 
 ![Select a Gradle task to run it](./gradle-task.png)
