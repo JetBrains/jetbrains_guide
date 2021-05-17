@@ -12,7 +12,6 @@ longVideo:
   url: https://youtu.be/FtGS81ZNTE0
 ---
 
-
 ## Summary - Configuring IntelliJ IDEA
 We've used the following shortcuts in this tutorial:
 
@@ -28,5 +27,5 @@ We've used the following shortcuts in this tutorial:
 - It's best to be a bit familiar with IntelliJ IDEA before you start customising your Preferences/Settings.
 - If you do need to reset your Preferences/Settings, you can do so with **File** > **Manage IDE Settings** > **Restore Default Settings**
 - You can also use shortcuts such as Search Everywhere and Find Actions to change your Preferences/Settings.
-
-
+- You can [export](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) settings to share with your other instances of IntelliJ IDEA. 
+- You can use a [Settings Repository](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) to share settings with your colleagues.

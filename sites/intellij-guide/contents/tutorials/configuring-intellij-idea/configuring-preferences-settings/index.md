@@ -30,18 +30,3 @@ The easiest way to navigate around this dialog is to type in what you're looking
 If you need to reset your Preferences/Settings back to the default you can use **File** > **Manage IDE Settings** > **Restore Default Settings**. 
 
 ![Reset your Preferences or Settings](reset-preferences-settings.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
