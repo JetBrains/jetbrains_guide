@@ -48,7 +48,7 @@ It's very easy to add dependencies to your ```pom.xml``` file once you have crea
 
 
 ### The SpringHelloWorldDemoApplication.java File
-Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your ```SpringHelloWorldDemoApplication.java``` file. Let's take a look in more detail.
+Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your `HelloWorldApplication.java` file. Let's take a look in more detail.
 
 This is what your Java file will look like. The name will be whatever your called the file with _Application_ appended to it.
 
@@ -67,18 +67,18 @@ public class HelloWorldApplication {
 } 
 ```
 
-We've got our package at the top of the class as you'd expect followed by our import statements. It's work noting that the first import is ***Spring** itself, the second import is **Spring Boot**.
+We've got our package at the top of the class as you'd expect followed by our import statements.
 
-This `@SpringBootApplication` annotation also pulls in a lot of core Spring dependencies that your project needs. While you don't need to necessarily know them all, you do need to know that this is happening, especially when it comes to solving errant behaviour in your code.
+This `@SpringBootApplication` annotation  enables additional Spring Boot functionality which is useful to know in case you find yourself troubleshooting your code.
 
 The main line here is:
 `SpringApplication.run(HelloWorldApplication.class, args);`
 
 This makes a call to SpringBoot's `run` method, and we need to pass the main class of our project to Spring, in this case, it's the same class.
 
-When you run this method, Spring looks at what Maven has pulled in to the class path from the dependencies in our pom.xml file and makes assumptions about the shape of your project from there. There are a bunch of _transitive_ dependencies that Spring can pull in based on what it finds on your class path and the `application.properties` file. Transitive dependencies are dependencies that your dependencies are reliant on.
+When you run this method, Spring looks at what Maven has pulled in to the class path from the dependencies in our pom.xml file among other things, and makes assumptions about the shape of your project from there. There are a bunch of _transitive_ dependencies that Maven can pull in based on what Spring finds on your class path and the `application.properties` file. Transitive dependencies are dependencies that your dependencies are reliant on.
 
-For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. When the Spring `run` method is called, it checks the class path and your `application.properties` file, sees `Tomcat.class` on your classpath and knows you want a Tomcat webserver, so it creates one for you.
+For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. In this instance, when the Spring `run` method is called, it checks the class path and your `application.properties` file (which is empty), and sees that you want a Tomcat webserver, so it creates one for you.
 
 ### The SpringHelloWorldDemoApplicationTests.java File
 If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called ```SpringHelloWorldDemoApplicationTests.java```. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.

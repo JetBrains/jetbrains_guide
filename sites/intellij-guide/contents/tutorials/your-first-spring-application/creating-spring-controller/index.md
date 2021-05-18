@@ -16,11 +16,11 @@ longVideo:
 Now we have our functioning Spring project we need to create a Spring Controller to handle the web requests. 
 
 ### Create our Controller
-One important thing to note here is that you don't need to tell your Spring Application class about your (new) Spring Controller class. That is handled by the Spring Boot annotation in the Application class meaning all the classes here will be scanned by Spring, and it will link your classes together without any explicit calls. It's a little unnerving when you first start using Spring but in time you'll get used to it once you have an appreciation of what Spring is doing behind the scenes for you.
+One important thing to note here is that you don't need to tell your Spring Application class about your (new) Spring Controller class. That is handled by the `@SpringBootApplication` annotation in the Application class which also consists of other annotations, including `@ComponentScan`. This means that the current package, and sub packages will be scanned for Spring Beans. It's a little unnerving when you first start using Spring but in time you'll get used to it once you have an appreciation of what Spring is doing behind the scenes for you.
 
 1) Create a new Java class in the same place as your `HelloWorldApplication.java` class called `HelloWorldController.java`. 
    
-2) The first thing we need to do is tell Spring that this is a REST Controller so you need to add a class level annotation of `@RestController`.
+2) The first thing we need to do is tell Spring that this is a REST Controller so you need to add a class level annotation of `@RestController`. This is a Spring Bean that will be picked up because it's in the same package as our Application class. 
    
 3) The next step is to create a method that will tell Spring that if we go the root of our webserver, we would like to see the string _Hello World_. To do that we need to add a method with a `@RequestMapping` annotation like our `helloWorld` one here:
 
