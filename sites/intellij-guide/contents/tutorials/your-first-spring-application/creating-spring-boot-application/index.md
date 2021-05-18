@@ -21,7 +21,7 @@ We'll use IntelliJ IDEA Ultimate for this tutorial because we want to create a n
 
 | Field Name      | What you should enter |
 | ----------- | ----------- |
-| Name        | Give your project a helpful name such as _spring-hello-world-demo_.       |
+| Name        | Give your project a helpful name such as _hello-world_.       |
 | Location    | This will be the default IntelliJ IDEA location, you can change it if you want to.   |
 | Type        |  This demo uses the [Maven build system](https://maven.apache.org/what-is-maven.html) so please select that option. If you want to use the [Gradle build system](https://gradle.org/), then please let us know and we'll add it to our list.   |
 | Language    | This demo uses Java. |

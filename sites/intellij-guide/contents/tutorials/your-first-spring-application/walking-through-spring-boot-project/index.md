@@ -25,41 +25,6 @@ Let's take a look around some aspects of the project. The easiest way to do this
 ### The .mvn Folder
 This folder has been created because Spring Boot uses the Maven wrapper when you create a Spring Boot project with the Maven build system. This means you don't have to install Maven locally to run your Spring Boot project. You should commit this project to version control, but you can ignore it from now on.
 
-### The SpringHelloWorldDemoApplication.java File
-Inside your **main** > **java** > **com.example.springhelloworlddemo** file structure you'll see your ```SpringHelloWorldDemoApplication.java``` file. Let's take a look in more detail.
-
-This is what your Java file will look like. The name will be whatever your called the file with _Application_ appended to it. 
-
-```java
-package com.example.springhelloworlddemo;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class SpringHelloWorldDemoApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(SpringHelloWorldDemoApplication.class, args);
-    }
-} 
-```
-
-We've got our package at the top of the class as you'd expect followed by our import statements. It's work noting that the first import is Spring itself, the second import is Spring Boot. 
-
-#### Main Body of Our Class
-The `@SpringBootApplication` annotation at the class level creates an ApplicationContext which is the container that is used for inversion of control in Spring applications. Instead of you managing the objects, the ApplicationContext does that for you. As part of that functionality, the ApplicationContext creates a Tomcat server for you (which will become important later).
-
-This Spring Boot annotation also pulls in a lot of core Spring dependencies that your project needs. While you don't need to necessarily know them all, you do need to know that this is happening, especially when it comes to solving errant behaviour in your code. 
-
-The main line here is:
-`SpringApplication.run(SpringHelloWorldDemoApplication.class, args);`
-
-This makes a call to Spring Boot's `run` method, and we need to pass the main class of our project to Spring, in this case, it's the same class. 
-
-### The SpringHelloWorldDemoApplicationTests.java File
-If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called ```SpringHelloWorldDemoApplicationTests.java```. This is a test you get for free with Spring Boot.  It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
-
 ### The Maven pom.xml File
 This file is generated with the dependencies that you selected when we created this project. 
 
@@ -81,15 +46,54 @@ The first dependency on ```spring-boot-starter-web``` is there because we select
 
 It's very easy to add dependencies to your ```pom.xml``` file once you have created your Project. Use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need. 
 
+
+### The SpringHelloWorldDemoApplication.java File
+Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your ```SpringHelloWorldDemoApplication.java``` file. Let's take a look in more detail.
+
+This is what your Java file will look like. The name will be whatever your called the file with _Application_ appended to it.
+
+```java
+package com.example.helloworld;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HelloWorldApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HelloWorld.class, args);
+    }
+} 
+```
+
+We've got our package at the top of the class as you'd expect followed by our import statements. It's work noting that the first import is ***Spring** itself, the second import is **Spring Boot**.
+
+This `@SpringBootApplication` annotation also pulls in a lot of core Spring dependencies that your project needs. While you don't need to necessarily know them all, you do need to know that this is happening, especially when it comes to solving errant behaviour in your code.
+
+The main line here is:
+`SpringApplication.run(HelloWorldApplication.class, args);`
+
+This makes a call to SpringBoot's `run` method, and we need to pass the main class of our project to Spring, in this case, it's the same class.
+
+When you run this method, Spring looks at what Maven has pulled in to the class path from the dependencies in our pom.xml file and makes assumptions about the shape of your project from there. There are a bunch of _transitive_ dependencies that Spring can pull in based on what it finds on your class path and the `application.properties` file. Transitive dependencies are dependencies that your dependencies are reliant on.
+
+For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. When the Spring `run` method is called, it checks the class path and your `application.properties` file, sees `Tomcat.class` on your classpath and knows you want a Tomcat webserver, so it creates one for you.
+
+### The SpringHelloWorldDemoApplicationTests.java File
+If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called ```SpringHelloWorldDemoApplicationTests.java```. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
+
 ## Running our Spring Application
 We have the basics of our Spring Application at this point. You can run it with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). Alternatively you can use the gutter icons:
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 
-The application will run and start the Tomcat webserver. You can verify it's working by going to your web browser and typing ```localhost:8080```. Port 8080 is the default port for Tomcat. 
+The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing ```localhost:8080```. Port 8080 is the default port for Tomcat. 
 
 You should get a 404 response which will look similar to this:
 
 ![White label 404 response](white-label-404-response.png)
 
-This means that the Spring application is working, but it has nothing to serve. We will fix that in the next step! Before we do any more development it's a good idea to stop your server from running. You can do this with **⌘** (macOS), or **Ctrl**+**F2** on Windows and Linux. 
+We're getting this page because we have support for REST Controllers with the `spring-boot-starter-web` dependency, but we also need to create a controller and add a request mapping for that controller. We will do both of those things in the next step.  
+
+Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘** (macOS), or **Ctrl**+**F2** on Windows and Linux. 
