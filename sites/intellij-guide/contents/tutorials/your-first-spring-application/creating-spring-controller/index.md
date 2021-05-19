@@ -13,14 +13,14 @@ longVideo:
 ---
 
 ## Create your Spring Controller
-Now we have our functioning Spring project we need to create a Spring Controller to handle the web requests. 
+Now we have our functioning Spring project we need to [create a Spring Controller](https://spring.io/guides/gs/serving-web-content/#initial) to handle the web requests. 
 
 ### Create our Controller
-One important thing to note here is that you don't need to tell your Spring Application class about your (new) Spring Controller class. That is handled by the `@SpringBootApplication` annotation in the Application class which also consists of other annotations, including `@ComponentScan`. This means that the current package, and sub packages will be scanned for Spring Beans. It's a little unnerving when you first start using Spring but in time you'll get used to it once you have an appreciation of what Spring is doing behind the scenes for you.
+One important thing to note here is that you don't need to tell your Spring Application class about your (new) Spring Controller class. That is handled by the `@SpringBootApplication` annotation in the Application class which also consists of other annotations, including `@ComponentScan`. This means that the current package, and sub packages will be scanned for Spring components. It's a little unnerving when you first start using Spring but in time you'll get used to it once you have an appreciation of what Spring is doing behind the scenes for you.
 
 1) Create a new Java class in the same place as your `HelloWorldApplication.java` class called `HelloWorldController.java`. 
    
-2) The first thing we need to do is tell Spring that this is a REST Controller so you need to add a class level annotation of `@RestController`. This is a Spring Bean that will be picked up because it's in the same package as our Application class. 
+2) The first thing we need to do is tell Spring that this is a REST Controller, so you need to add a class level annotation of `@RestController`. This annotation means this class will be picked up by the component scan, because it's in the same package as our Application class. Our REST Controller, `HelloWorldController`, will therefore be available from the application context.
    
 3) The next step is to create a method that will tell Spring that if we go the root of our webserver, we would like to see the string _Hello World from Spring Boot_. To do that we need to add a method with a `@RequestMapping` annotation like our `helloWorld` one here:
 
@@ -48,10 +48,10 @@ public class HelloWorldController {
 6) Assuming that's working correctly, you can start to get more adventurous. Try adding this new code below your first method:
 
 ```java
-  @RequestMapping("/goodbye")
-  public String helloWorld(){
-    return "Goodbye from Spring Boot";
-  }
+@RequestMapping("/goodbye")
+public String helloWorld(){
+  return "Goodbye from Spring Boot";
+}
 ```
 
 7) Now run your application again. At the root you should still see _Hello World from Spring Boot_ because the `@RequestMapping` is _/_ indicating root. However, if you now type in `localhost:8080/goodbye`, you should see _Goodbye from Spring Boot_.

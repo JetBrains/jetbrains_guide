@@ -28,19 +28,19 @@ This folder has been created because Spring Boot uses the Maven wrapper when you
 ### The Maven pom.xml File
 This file is generated with the dependencies that you selected when we created this project. 
 
-```java
+```xml
 <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+  </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
 ```
 The first dependency on ```spring-boot-starter-web``` is there because we selected **Spring Web** as a dependency. The second dependency on ```spring-boot-starter-test``` is something you get with any Spring application. It gives you the ability to create tests with various testing libraries.
 
@@ -88,7 +88,7 @@ We have the basics of our Spring Application at this point. You can run it with 
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 
-The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing localhost:8080`. Port 8080 is the default port for Tomcat. 
+The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing `localhost:8080`. Port 8080 is the default port for Tomcat. 
 
 You should get a 404 response which will look similar to this:
 
@@ -96,4 +96,4 @@ You should get a 404 response which will look similar to this:
 
 We're getting this page because we have support for REST Controllers with the `spring-boot-starter-web` dependency, but we also need to create a controller and add a request mapping for that controller. We will do both of those things in the next step.  
 
-Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘** (macOS), or **Ctrl**+**F2** on Windows and Linux. 
+Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘F2** (macOS), or **Ctrl**+**F2** on Windows and Linux. 

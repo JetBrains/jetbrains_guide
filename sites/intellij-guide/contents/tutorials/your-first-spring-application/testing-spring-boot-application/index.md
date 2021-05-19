@@ -15,7 +15,7 @@ longVideo:
 ## Creating a Test for your Spring Boot Application
 Let's write a test to check that in the event of an HTTP request, we get the response that we are expecting, in this case the string _Greetings from Spring Boot_.
 
-Tests for Spring Boot are written using the standard [JUnit5 Testing Library](https://junit.org/junit5/docs/current/user-guide/).
+Tests for Spring Boot are written using the standard [JUnit5 Testing Library](https://junit.org/junit5/docs/current/user-guide/). If a test is going to need access to Spring's application context, it needs to be annotated with `@SpringBootTest`. These are effectively integration tests, as they rely on bootstrapping the Spring context before you can run the test.
 
 1) We need to create a new Test class in the same place as our `HelloWorldApplicationTest.java`, we will call ours `CheckHTTPResponse.java`.
 2) Paste the following code into your test class:
@@ -30,14 +30,16 @@ public class CheckHTTPResponse {
 
     @Test
     public void shouldPassIfStringMatches() throws Exception {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
+        assertThat(restTemplate.getForObject("http://localhost:" + port + "/",
                 String.class)).contains("Hello World from Spring Boot");
     }
 }
 ```
-We get a TestRestTemplate for free with Spring. The `@Autowired` annotation tells Spring that we want to use that (that really is all we have to do to use it). 
+Passing `WebEnvironment.RANDOM_PORT` into the `@SpringBootTest` annotation starts the web server with a random port number. We can find out what that port number is by annotating an `int` field (in our case, `int port;`) with `@LocalServerPort`, the testing framework will inject this field with the random port number.  
 
-In our test itself, which is annotated with the `@Test` annotation, it will pass when our assertion is correct. Our assert statement is comparing the string we are serving on our local port with the string in the second half of the assert statement - _Hello world from Spring Boot_.
+We get a `TestRestTemplate` for free with tests annotated with `@SpringBootTest`. The `@Autowired` annotation tells Spring that we want to get it from the context. 
+
+Our test itself is annotated with `@Test`. It will pass when our expected value is the same as the actual value from the webserver - our assert statement is comparing the string we are serving from localhost at this random port, with the string in the second half of the assert statement - _Hello world from Spring Boot_.
 
 3) Let's run the test to check it works. You can run it again with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). We should see that our test is green. 
    
