@@ -12,11 +12,11 @@ longVideo:
   url: https://youtu.be/6V6G3RyxEMk?start=917
 ---
 
-We saw that IntelliJ IDEA usually shows us when the Gradle build file or settings have changed, and that we need to trigger a reload of the Gradle settings so IntelliJ IDEA can use them. We can [configure the settings](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) for how IntelliJ IDEA syncs with Gradle by pressing on the settings icon in the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and selecting Auto-Reload Settings.
+We saw that IntelliJ IDEA usually shows us when the Gradle build file or settings have changed, and that we need to trigger a reload of the Gradle settings so IntelliJ IDEA can use them. We can [configure the settings](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) for how IntelliJ IDEA syncs with Gradle by pressing the settings icon in the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and selecting **Auto-Reload Settings**.
 
 ![Open Gradle settings for loading](./gradle-load-settings.png)
 
-We can set IntelliJ IDEA to automatically reload the project after "Any changes" in the build script files, so changes are automatically reloaded, or we can have the project automatically reload only after those changes are made by an external system, for example getting updated files from version control. By default, the "External Changes" setting is selected, this prevents the project being reloaded after every small change, and puts us, the developer, in charge of when we want to reload our changes.
+We can set IntelliJ IDEA to automatically reload the project after "Any changes" in the build script files, so changes are automatically reloaded. Alternatively, we can have the project automatically reload only after those changes are made by an external system, for example getting updated files from version control. By default, the "External Changes" setting is selected. This prevents the project being reloaded after every small change, and puts us, the developer, in charge of when we want to reload our changes.
 
 ![Gradle settings](./gradle-settings.png)
 

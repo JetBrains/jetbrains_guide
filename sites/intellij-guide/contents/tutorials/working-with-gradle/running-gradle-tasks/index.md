@@ -36,7 +36,7 @@ If we type a Gradle command, IntelliJ IDEA highlights it. This means that this i
 
 ![Terminal command highlighted](./terminal-ide-command.png)
 
-If we press Enter, it will be run from the command line like we expect. If we press **⌘⏎** (macOS), or **Ctrl+Enter**  (Windows/Linux), this command will be run in IntelliJ IDEA. In this case, the [Run tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) is opened and the command run there, and we see the results the same way we would have if we'd run the command from the Gradle Tool Window.
+If we press **Enter**, it will be run from the command line like we expect. If we press **⌘⏎** (macOS), or **Ctrl+Enter**  (Windows/Linux), this command will be run in IntelliJ IDEA. In this case, the [Run tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) is opened and the command is run there. We see the results the same way we would have if we'd run the command from the Gradle Tool Window.
 
 ![Gradle task in run window](./gradle-run-window.png)
 
