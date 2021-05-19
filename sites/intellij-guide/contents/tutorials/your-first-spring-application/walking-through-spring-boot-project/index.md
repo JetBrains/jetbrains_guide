@@ -9,7 +9,7 @@ subtitle: Let's take a look at what IntelliJ IDEA has created for us and why.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?start=685
+  url: https://youtu.be/lBf0rQo5a3c
 ---
 
 ## Project Walk-through

@@ -5,11 +5,8 @@ title: Summarising Your Spring Boot Project
 technologies: [java, spring]
 topics: [gettingstarted]
 author: hs
-subtitle: Now we can summarise what we've done. There are also some resources in this section that you can take a look at.
+subtitle: There are some resources in this section that you can take a look at.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/we3zJE3hlWE?start=685
 ---
 
 ## Summary and Resources
