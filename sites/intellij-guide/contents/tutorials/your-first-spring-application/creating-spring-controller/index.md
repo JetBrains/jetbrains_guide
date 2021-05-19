@@ -22,10 +22,10 @@ One important thing to note here is that you don't need to tell your Spring Appl
    
 2) The first thing we need to do is tell Spring that this is a REST Controller so you need to add a class level annotation of `@RestController`. This is a Spring Bean that will be picked up because it's in the same package as our Application class. 
    
-3) The next step is to create a method that will tell Spring that if we go the root of our webserver, we would like to see the string _Hello World_. To do that we need to add a method with a `@RequestMapping` annotation like our `helloWorld` one here:
+3) The next step is to create a method that will tell Spring that if we go the root of our webserver, we would like to see the string _Hello World from Spring Boot_. To do that we need to add a method with a `@RequestMapping` annotation like our `helloWorld` one here:
 
 ```java
-package com.example.springhelloworlddemo;
+package com.example.helloworld;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -54,6 +54,6 @@ public class HelloWorldController {
   }
 ```
 
-7) Now run your application again. At the root you should still see _Hello World from Spring Boot_ because the `RequestMapping` is _/_ indicating root. However if you now type in `localhost:8080/goodbye`, you should see _Goodbye from Spring Boot_.
+7) Now run your application again. At the root you should still see _Hello World from Spring Boot_ because the `@RequestMapping` is _/_ indicating root. However, if you now type in `localhost:8080/goodbye`, you should see _Goodbye from Spring Boot_.
 
 That's it! You're done, congratulations on creating your first Spring Application and serving some text in the browser! In the next section we'll create a test for our application. 

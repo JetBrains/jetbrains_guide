@@ -88,7 +88,7 @@ We have the basics of our Spring Application at this point. You can run it with 
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 
-The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing ```localhost:8080```. Port 8080 is the default port for Tomcat. 
+The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing localhost:8080`. Port 8080 is the default port for Tomcat. 
 
 You should get a 404 response which will look similar to this:
 
