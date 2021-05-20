@@ -9,7 +9,7 @@ subtitle: Let's add a test to check the content being served locally
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/jayVY_AYvMc
+  url: https://youtu.be/hRZ34CMvQi0
 ---
 
 ## Creating a Test for your Spring Boot Application
