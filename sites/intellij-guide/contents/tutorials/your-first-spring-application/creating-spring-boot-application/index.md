@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-05-07
+date: 2021-05-20
 title: Creating your Spring Boot Project
 technologies: [java, spring]
 topics: [gettingstarted]
@@ -32,7 +32,7 @@ We'll use IntelliJ IDEA Ultimate for this tutorial because we want to create a n
 | Java    | This is the Language Level for your project which determines coding assistance provided in the editor. Again this demo using Java 11.   |
 | Packaging    | We will use JAR for this demo because we're not going to run it on an application server. To do the latter you would need to select WAR |
 
-Your page should look similar to this, depending on how you searched for **Spring Web**:
+Your page should look similar to this:
 
 ![New Spring Project Details](new-spring-project-details.png)
 
@@ -42,7 +42,7 @@ Click **Next**.
 
 One thing to note here is that it's really easy to add dependencies to your Spring project once you have created it. You should only ever add what you know you'll need at this step. It's easier to add dependencies at a later date than it is to remove dependencies that you may, or may not, be relying on at a future date!
 
-Your page should look like this:
+Your page should look like this, depending on how you searched for **Spring Web**:
 
 ![New Spring Project Dependencies](new-spring-project-dependencies.png)
 

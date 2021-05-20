@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-05-07
+date: 2021-05-20
 title: Walking Through Your Spring Boot Project
 technologies: [java, spring]
 topics: [gettingstarted]
@@ -17,10 +17,10 @@ In the previous step we asked IntelliJ IDEA to create us a Spring Boot project w
 
 Let's take a look around some aspects of the project. The easiest way to do this is from the Project tool window which you can access with **⌘1** on macOS, or **Ctrl**+**1** on Windows and Linux. We will look at:
 
-- The .mvn folder
-- SpringHelloWorldDemoApplication.java
-- SpringHelloWorldDemoApplicationTests.java
-- The pom.xml file
+- The .mvn Folder
+- The pom.xml File
+- HelloWorldApplication.java
+- HelloWorldApplicationTests.java
 
 ### The .mvn Folder
 This folder has been created because Spring Boot uses the Maven wrapper when you create a Spring Boot project with the Maven build system. This means you don't have to install Maven locally to run your Spring Boot project. You should commit this project to version control, but you can ignore it from now on.
@@ -78,13 +78,13 @@ This makes a call to SpringBoot's `run` method, and we need to pass the main cla
 
 When you run this method, Spring looks at what Maven has pulled in to the class path from the dependencies in our pom.xml file among other things, and makes assumptions about the shape of your project from there. There are a bunch of _transitive_ dependencies that Maven can pull in based on what Spring finds on your class path and the `application.properties` file. Transitive dependencies are dependencies that your dependencies are reliant on.
 
-For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. In this instance, when the Spring `run` method is called, it checks the class path and your `application.properties` file (which is empty), and sees that you want a Tomcat webserver, so it creates one for you.
+For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. In this instance, when the Spring `run` method is called, it checks the class path and your `application.properties` file (which is empty) among other things, and sees that you want a Tomcat webserver, so it creates one for you.
 
-### The SpringHelloWorldDemoApplicationTests.java File
+### The HelloWorldApplicationTests.java File
 If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called ```SpringHelloWorldDemoApplicationTests.java```. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
 
-## Running our Spring Application
-We have the basics of our Spring Application at this point. You can run it with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). Alternatively you can use the gutter icons:
+## Running your Spring Boot Application
+We have the basics of our Spring Boot Application at this point. You can run it with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). Alternatively you can use the gutter icons:
 
 ![Gutter icon to run the application](gutter-icon-run-application.png)
 
