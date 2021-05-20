@@ -11,4 +11,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/creating-a-spock-project/
   - /tutorials/writing-tests-with-spock/setting-up-the-dependencies/
   - /tutorials/writing-tests-with-spock/a-simple-assertion/
+  - /tutorials/writing-tests-with-spock/given-when-then/
 ---
