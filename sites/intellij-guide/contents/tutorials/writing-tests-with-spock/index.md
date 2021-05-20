@@ -8,4 +8,7 @@ subtitle: Learn about the Spock testing framework by creating a project that use
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/writing-tests-with-spock/introduction/
+  - /tutorials/writing-tests-with-spock/creating-a-spock-project/
+  - /tutorials/writing-tests-with-spock/setting-up-the-dependencies/
+  - /tutorials/writing-tests-with-spock/a-simple-assertion/
 ---
