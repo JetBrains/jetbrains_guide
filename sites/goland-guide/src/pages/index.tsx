@@ -62,8 +62,7 @@ const IndexPage: React.FC = () => {
                             href="https://github.com/JetBrains/jetbrains_guide">a repository in GitHub</a> that
                             hosts all the content. We write all the content in Markdown and render a static site.
                             If you'd like to contribute to it, please refer to the <a
-                            href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a>
-                            for more information.
+                            href="https://github.com/JetBrains/jetbrains_guide/blob/master/README.md">README</a>&nbsp;for more information.
                         </p>
                       </div>
                     </div>
