@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2020-05-14
 title: Learning F# by Designing Your Own Language
-technologies: [.net]
+technologies: [.net,fsharp]
 products: [rider,resharper]
 topics: [web, ide]
 author: maartenba

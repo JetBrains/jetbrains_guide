@@ -1,7 +1,7 @@
 ---
 date: 2021-04-21
 title: Docker For .NET Developers
-technologies: [asp.net, .net, csharp]
+technologies: [asp.net, .net, containers]
 topics: [web, data]
 products: [rider,resharper]
 author: khalidabuhakmeh

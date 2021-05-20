@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-04-26
 title: Why Should .NET Developers Care About Docker?
-technologies: [.net]
+technologies: [.net, containers]
 products: [rider,resharper]
 topics: [data]
 author: khalidabuhakmeh

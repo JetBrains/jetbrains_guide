@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2020-05-13
 title: Formatting F# Code
-technologies: [.net]
+technologies: [.net,fsharp]
 products: [rider,resharper]
 topics: [web, ide]
 author: maartenba
