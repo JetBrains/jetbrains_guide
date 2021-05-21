@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/i5Qu3qYOfsM?start=1290
 ---
 
-Sometimes we need to mock out classes or APIs to assert the expected behaviour. [Mocking is built in to Spock](http://spockframework.org/spock/docs/1.3/all_in_one.html#_interaction_based_testing), we don't need a separate library or framework for Mock support. It's also possible to mock concrete classes. If you're used to other Mocking frameworks you might expect to only be able to mock Java interfaces, but Spock lets us easily [create a mock](http://spockframework.org/spock/docs/1.3/all_in_one.html#_creating_mock_objects) from a concrete class.
+Sometimes we need to mock out classes or APIs to assert the expected behaviour. [Mocking is built in to Spock](https://spockframework.org/spock/docs/2.0/all_in_one.html#interaction-based-testing), we don't need a separate library or framework for Mock support. It's also possible to mock concrete classes. If you're used to other Mocking frameworks you might expect to only be able to mock Java interfaces, but Spock lets us easily [create a mock](http://spockframework.org/spock/docs/2.0/all_in_one.html#_creating_mock_objects) from a concrete class.
 
 The `given` block of a Spock test is the perfect place to set up mocks for our test. It's clear then that this is all code that's required to run the test, but is not the code that's being tested itself.
 
@@ -52,11 +52,11 @@ public void draw() {
 }
 ```
 
-The `then` block defines the expectations. Spock has a [nice, clear syntax for defining the behaviour](http://spockframework.org/spock/docs/1.3/all_in_one.html#_mocking) we expect to see on the mock. In this test, we might expect to see four calls on the renderer's `drawLine` method, given that the polygon has four sides. The `then` block states we expect to see `renderer.drawLine` called 4 times.
+The `then` block defines the expectations. Spock has a [nice, clear syntax for defining the behaviour](http://spockframework.org/spock/docs/2.0/all_in_one.html#_mocking) we expect to see on the mock. In this test, we might expect to see four calls on the renderer's `drawLine` method, given that the polygon has four sides. The `then` block states we expect to see `renderer.drawLine` called 4 times.
 
 Run this test now, it should fail. This is because the methods don't do anything yet. We expected to see this drawLine method called four times, but it wasn't called at all.
 
-![](https://blog.jetbrains.com/wp-content/uploads/2021/01/22.png)
+![](./22.png)
 
 Go into the implementation of the `Polygon.draw` method and change it to call the renderer's drawLine method in here as many times as there are sides (note that this is an extremely over-simplified example to demonstrate the testing):
 

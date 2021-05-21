@@ -14,7 +14,7 @@ longVideo:
 
 When we're testing a particular path, we sometimes want to check that a known set of values leads to the same result.
 
-The exception test [we just wrote](https://blog.jetbrains.com/?p=109722/) is a good example - we know there's more than one input which should cause this exception to be thrown, and we might want to test all of them. In our case, any integer that is less than three should cause the exception. When you're using tests to document the expected behaviour, it's helpful to add the full list of values that can cause the Exception, or at least a sample list that demonstrates our expectations. Create a new test method that uses [Data Pipes](http://spockframework.org/spock/docs/1.3/all_in_one.html#_data_pipes) to do this:
+The exception test [we just wrote](../expecting-exceptions/) is a good example - we know there's more than one input which should cause this exception to be thrown, and we might want to test all of them. In our case, any integer that is less than three should cause the exception. When you're using tests to document the expected behaviour, it's helpful to add the full list of values that can cause the Exception, or at least a sample list that demonstrates our expectations. Create a new test method that uses [Data Pipes](http://spockframework.org/spock/docs/2.0/all_in_one.html#_data_pipes) to do this:
 
 ```groovy
 def "should expect an Exception to be thrown for a number of invalid inputs"() {
@@ -52,7 +52,7 @@ Run this test to see what happens.
 
 The test is effectively run four different times, the whole test is run once per value in that list for `sides`. IntelliJ IDEA shows the name of the test, then underneath that the test name plus the value of `sides` for each of the four values. All four of these runs passed, because our code correctly throws the expected Exception for each of these values.
 
-If we want, we can change the method name to make it easier to understand what's being tested. We can use [hash and the name of a data variable in the method name](http://spockframework.org/spock/docs/1.3/all_in_one.html#_method_unrolling) to create a true description.
+If we want, we can change the method name to make it easier to understand what's being tested. We can use [hash and the name of a data variable in the method name](https://spockframework.org/spock/docs/2.0/all_in_one.html#_method_uprolling_and_unrolling) to create a true description.
 
 ```groovy
 def "should expect an Exception to be thrown for invalid input: #sides"() {
@@ -62,7 +62,7 @@ Re-run this, and IntelliJ IDEA will show this updated method name with the value
 
 ![](./16.png)
 
-(Note: this is the behaviour in the latest versions of Spock. If you don't see this behaviour, you may need to use the [@Unroll](http://spockframework.org/spock/docs/1.3/all_in_one.html#_method_unrolling) annotation on your method).
+(Note: this is the behaviour in the latest versions of Spock. If you don't see this behaviour, you may need to use the [@Unroll](https://spockframework.org/spock/docs/2.0/all_in_one.html#_method_uprolling_and_unrolling) annotation on your method).
 
 Let's look at what happens if one of these values causes the test to fail. We know this exception should be thrown for a number of sides that's two or fewer so let's change one value to three.
 

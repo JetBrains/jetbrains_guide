@@ -13,7 +13,7 @@ longVideo:
 ---
 We've seen `expect` and we've seen `given, when and then`, but Spock provides a lot of flexibility around which labels to use and when. It's all about creating descriptive tests.
 
-In our last test, it did look like the labels might add a lot of noise for such a short test. The setup, for example, is very simple, and we could inline this into the actual test itself. If you inline the setup code into the `when` block, you can remove the `given` label and just use [when and then](http://spockframework.org/spock/docs/1.3/all_in_one.html#_when_and_then_blocks).
+In our last test, it did look like the labels might add a lot of noise for such a short test. The setup, for example, is very simple, and we could inline this into the actual test itself. If you inline the setup code into the `when` block, you can remove the `given` label and just use [when and then](http://spockframework.org/spock/docs/2.0/all_in_one.html#_when_and_then_blocks).
 
 ```groovy
 def "should demonstrate given-when-then"() {

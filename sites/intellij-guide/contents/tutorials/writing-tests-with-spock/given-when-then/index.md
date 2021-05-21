@@ -14,7 +14,7 @@ longVideo:
 
 One of the most powerful features of Spock is how descriptive it is. It's not just for testing code, it's for describing and documenting expected behaviour.
 
-In our last test, we used the `expect` label to indicate a simple expectation. Spock supports a number of different labels for test [blocks](http://spockframework.org/spock/docs/1.3/all_in_one.html#_blocks). My personal favourite set of labels is `given`, `when`, `then`. Let's create a new test method:
+In our last test, we used the `expect` label to indicate a simple expectation. Spock supports a number of different labels for test [blocks](http://spockframework.org/spock/docs/2.0/all_in_one.html#_blocks). My personal favourite set of labels is `given`, `when`, `then`. Let's create a new test method:
 
 ```groovy
 def "should demonstrate given-when-then"() {
@@ -70,7 +70,7 @@ You can read a given/when/then test like this:
 
 Run this test to see if it passes. You should get an output like:
 
-![](https://blog.jetbrains.com/wp-content/uploads/2021/01/10.png)
+![](./10.png)
 
 Using these labels might look like it's doubling the number of lines of code for a test method, but remember that tests often have many more lines of code in them, and grouping them in this way helps describe what's happening.
 

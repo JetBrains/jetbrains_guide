@@ -17,6 +17,11 @@ Spock tests can be easy to read, and so this framework can be used not only to t
 
 ## Other Resources
 - [Spock reference documentation](https://spockframework.org/spock/docs/2.0/all_in_one.html).
-- [Spock Primer](http://spockframework.org/spock/docs/1.0/spock_primer.html).
+  - [Blocks](http://spockframework.org/spock/docs/2.0/all_in_one.html#_blocks)
+  - [Data Pipes](http://spockframework.org/spock/docs/2.0/all_in_one.html#_data_pipes)
+  - [Data Tables](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables)
+  - [Mocking and Stubbing](https://spockframework.org/spock/docs/2.0/all_in_one.html#interaction-based-testing)  
+  - [Helper methods](http://spockframework.org/spock/docs/2.0/all_in_one.html#_helper_methods) 
+- [Spock Primer](http://spockframework.org/spock/docs/2.0/spock_primer.html).
 - [Spock Framework Enhancements IntelliJ IDEA Plugin](https://plugins.jetbrains.com/plugin/7114-spock-framework-enhancements) (third party plugin) 
 - [Writing Tests with Spock in IntelliJ IDEA (2021) (video)](https://youtu.be/6V6G3RyxEMk)

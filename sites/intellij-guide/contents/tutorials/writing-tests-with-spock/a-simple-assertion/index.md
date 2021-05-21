@@ -22,7 +22,7 @@ Create the package and directory structure by typing the full package name befor
 
 ![](./06-new-class-name.png)
 
-Spock tests are often called Specifications, so call the test `ExampleSpecification`, put it into whichever package makes sense for you. Make sure this class extends Spock's [Specification](http://spockframework.org/spock/docs/1.3/all_in_one.html#_specification) class. 
+Spock tests are often called Specifications, so call the test `ExampleSpecification`, put it into whichever package makes sense for you. Make sure this class extends Spock's [Specification](http://spockframework.org/spock/docs/2.0/all_in_one.html#_specification) class. 
 
 ```groovy
 import spock.lang.Specification

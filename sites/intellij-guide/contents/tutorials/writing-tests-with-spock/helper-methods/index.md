@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/i5Qu3qYOfsM?start=1716
 ---
 
-When tests get big, we may want to split out large parts of code, or common code, into [helper methods](http://spockframework.org/spock/docs/1.3/all_in_one.html#_helper_methods).
+When tests get big, we may want to split out large parts of code, or common code, into [helper methods](http://spockframework.org/spock/docs/2.0/all_in_one.html#_helper_methods).
 
 Let's say we have a test like this one.
 

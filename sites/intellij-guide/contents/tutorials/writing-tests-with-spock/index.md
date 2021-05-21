@@ -25,4 +25,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/verify-all/
   - /tutorials/writing-tests-with-spock/setup-and-teardown/
   - /tutorials/writing-tests-with-spock/specifications-as-documentation/
+  - /tutorials/writing-tests-with-spock/shortcuts-used/
 ---

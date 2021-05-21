@@ -12,9 +12,9 @@ longVideo:
   url: https://youtu.be/i5Qu3qYOfsM?start=1122
 ---
 
-Data pipes are a nice way to specify a limited set of data to test. Spock also supports [Data Tables](http://spockframework.org/spock/docs/1.3/all_in_one.html#data-tables) for more complex data driven testing.
+Data pipes are a nice way to specify a limited set of data to test. Spock also supports [Data Tables](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables) for more complex data driven testing.
 
-As we've seen, it's not unusual to want to pass in a series of values to check the same condition applies to all of them. Often we may have multiple inputs, and want to check them against multiple outputs. Let's say we want to check the calculation of something like the maximum of two values, `a` and `b`. We'll want to check that the return is the expected maximum value (this is the [same example as the documentation]((http://spockframework.org/spock/docs/1.3/all_in_one.html#data-tables))).
+As we've seen, it's not unusual to want to pass in a series of values to check the same condition applies to all of them. Often we may have multiple inputs, and want to check them against multiple outputs. Let's say we want to check the calculation of something like the maximum of two values, `a` and `b`. We'll want to check that the return is the expected maximum value (this is the [same example as the documentation](http://spockframework.org/spock/docs/2.0/all_in_one.html#data-tables)).
 
 ```groovy
     def "should use data tables for calculating max"() {
@@ -39,7 +39,7 @@ There's a passing "test" for each of the rows in the data table, described with 
 
 ![](./20.png)
 
-Spock's [power assertions](http://spockframework.org/spock/docs/1.3/all_in_one.html#_assertions_with_explicit_messages_now_include_power_assertions_output) show the results of calculations, all the input values, and the comparison that failed. We can use this to fix the problem.
+Spock's [power assertions](http://spockframework.org/spock/docs/2.0/all_in_one.html#_assertions_with_explicit_messages_now_include_power_assertions_output) show the results of calculations, all the input values, and the comparison that failed. We can use this to fix the problem.
 
 ``` 
 Condition not satisfied:

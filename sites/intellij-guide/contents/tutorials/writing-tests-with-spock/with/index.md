@@ -30,7 +30,7 @@ Let's look at one approach to testing multiple properties of a single object. We
     }
 }
 ```
-We can use Spock's [with()](http://spockframework.org/spock/docs/1.3/all_in_one.html#_using_code_with_code_for_expectations) and a closure to check multiple values on the `polygon`. Inside this closure, we don't have to say `polygon.`, we just assert the property matches the expected value.
+We can use Spock's [with()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_with_for_expectations) and a closure to check multiple values on the `polygon`. Inside this closure, we don't have to say `polygon.`, we just assert the property matches the expected value.
 
 Note that in this test the mock Renderer created in the `given` block is called `mockRenderer` - this is so that it's clear that the `renderer` in the `with` block is `polygon.renderer`, not the renderer from the test scope.
 

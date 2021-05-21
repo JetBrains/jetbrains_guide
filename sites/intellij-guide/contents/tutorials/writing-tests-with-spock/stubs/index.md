@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/i5Qu3qYOfsM?start=1544
 ---
 
-Mocks are useful for checking calls out of our code, [Stubs](http://spockframework.org/spock/docs/1.3/all_in_one.html#_stubbing) are useful for providing data or values into the code we're testing.
+Mocks are useful for checking calls out of our code, [Stubs](http://spockframework.org/spock/docs/2.0/all_in_one.html#_stubbing) are useful for providing data or values into the code we're testing.
 
 Let's see an example of a stub in a new test method.
 
@@ -28,7 +28,7 @@ def "should be able to create a stub"() {
 }
 ```
 
-The `given` block sets up the preconditions for the test. This time, we're going to use the `Stub()` method to [create a Stub](http://spockframework.org/spock/docs/1.3/all_in_one.html#Stubs) of the concrete [Palette](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/Palette.java) class. Like with `Mock()`, you can define it this way, or use `def` and pass the type into the `Stub()` method.
+The `given` block sets up the preconditions for the test. This time, we're going to use the `Stub()` method to [create a Stub](http://spockframework.org/spock/docs/2.0/all_in_one.html#Stubs) of the concrete [Palette](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/Palette.java) class. Like with `Mock()`, you can define it this way, or use `def` and pass the type into the `Stub()` method.
 
 Next the test sets up the `palette` stub with the values it will produce when called by our code. We use right-shift (`>>`) to state that when the method `getPrimaryColour` is called, the Enum value `Red` will be returned.
 
@@ -63,6 +63,6 @@ public Colour getForegroundColour() {
 
 Re-run the test, it should pass. The test injects a Stub `palette` into the `renderer`, we tell the stub `palette` what to return when the `getPrimaryColour` method is called, so we can check that the `renderer` does what it's supposed to do when we call `getForegroundColour`.
 
-If we had set this up as a Mock instead of a Stub, this would have worked as well. Mock objects [support the mocking behaviour we saw in the previous test and the stubbing behaviour](http://spockframework.org/spock/docs/1.3/all_in_one.html#_combining_mocking_and_stubbing) we saw here, whereas [Stub objects _only_ support stubbing](http://spockframework.org/spock/docs/1.3/all_in_one.html#Stubs), and not mocking. My preference is to keep stub and mock behaviour separate where possible, so it's usually best to use Stubs just for stubbing and Mocks only for mocking.
+If we had set this up as a Mock instead of a Stub, this would have worked as well. Mock objects [support the mocking behaviour we saw in the previous test and the stubbing behaviour](http://spockframework.org/spock/docs/2.0/all_in_one.html#_combining_mocking_and_stubbing) we saw here, whereas [Stub objects _only_ support stubbing](http://spockframework.org/spock/docs/2.0/all_in_one.html#Stubs), and not mocking. My preference is to keep stub and mock behaviour separate where possible, so it's usually best to use Stubs just for stubbing and Mocks only for mocking.
 
 Now you know how to create a stub to provide an expected value, so a test can verify that expected value is used. Next, we're going to look at how to create helper methods in Spock tests.
