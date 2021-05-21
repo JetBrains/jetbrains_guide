@@ -20,4 +20,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/data-tables/
   - /tutorials/writing-tests-with-spock/mocks/
   - /tutorials/writing-tests-with-spock/stubs/
+  - /tutorials/writing-tests-with-spock/helper-methods/
 ---
