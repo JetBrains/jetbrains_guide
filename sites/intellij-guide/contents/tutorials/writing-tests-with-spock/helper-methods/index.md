@@ -67,4 +67,4 @@ Now if you run the test with incorrect values in `checkDefaultShape`, it should 
 
 There's something else to be aware of too - it fails on the first assertion that fails, it never runs the assertion to check the polygon's renderer. Later we'll look at how to address that.
 
-Now we know how to split sections of our tests into separate methods. Next, let's look at how to check all our conditions have passed (or failed), instead of failing at the first error.
+Now we know how to split sections of our tests into separate methods. Next, let's look at one way of checking multiple values on a single object.

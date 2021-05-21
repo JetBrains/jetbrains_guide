@@ -21,4 +21,6 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/mocks/
   - /tutorials/writing-tests-with-spock/stubs/
   - /tutorials/writing-tests-with-spock/helper-methods/
+  - /tutorials/writing-tests-with-spock/with/
+  - /tutorials/writing-tests-with-spock/verify-all/
 ---
