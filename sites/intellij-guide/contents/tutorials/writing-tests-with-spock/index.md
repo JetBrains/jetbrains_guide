@@ -13,4 +13,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/a-simple-assertion/
   - /tutorials/writing-tests-with-spock/given-when-then/
   - /tutorials/writing-tests-with-spock/groovy-tips-for-java-developers/
+  - /tutorials/writing-tests-with-spock/label-flexibility/
 ---

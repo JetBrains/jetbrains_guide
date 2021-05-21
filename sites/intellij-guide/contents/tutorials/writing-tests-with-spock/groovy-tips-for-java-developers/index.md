@@ -5,7 +5,7 @@ title: Groovy Tips for Java Developers
 technologies: [java, groovy]
 topics: [testing]
 author: tg
-subtitle: See how Spock tests are usually structured.
+subtitle: Groovy's syntax and functionality might be unusual for Java developers to begin with, but it can be very helpful for testing. 
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
