@@ -14,4 +14,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/given-when-then/
   - /tutorials/writing-tests-with-spock/groovy-tips-for-java-developers/
   - /tutorials/writing-tests-with-spock/label-flexibility/
+  - /tutorials/writing-tests-with-spock/spock-intellij-plugin/
 ---
