@@ -17,4 +17,5 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/spock-intellij-plugin/
   - /tutorials/writing-tests-with-spock/expecting-exceptions/
   - /tutorials/writing-tests-with-spock/data-pipes/
+  - /tutorials/writing-tests-with-spock/data-tables/
 ---
