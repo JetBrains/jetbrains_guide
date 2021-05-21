@@ -32,6 +32,13 @@ module.exports = {
               icon: 'fas fa-tasks'
             },
             {
+              accent: 'warning',
+              cssClass: 'documentation',
+              href: '/playlists/',
+              label: 'Playlists',
+              icon: 'fas fa-list'
+            },
+            {
               accent: 'danger',
               cssClass: 'documentation',
               href: '/technologies/',
