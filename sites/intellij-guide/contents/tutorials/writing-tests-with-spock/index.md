@@ -18,4 +18,6 @@ tutorialItems:
   - /tutorials/writing-tests-with-spock/expecting-exceptions/
   - /tutorials/writing-tests-with-spock/data-pipes/
   - /tutorials/writing-tests-with-spock/data-tables/
+  - /tutorials/writing-tests-with-spock/mocks/
+  - /tutorials/writing-tests-with-spock/stubs/
 ---
