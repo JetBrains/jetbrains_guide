@@ -17,7 +17,7 @@ leadin: |
     **How to use:**
     
     Place the cursor within the literal (_between_ the quotation marks) and press 
-    _Alt + Enter on Windows/Linux_ or _ ⌥ + ⏎ on macOS_, select **Inject language or reference**,
+    _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, select **Inject language or reference**,
     choose which one of supported injection language you want to use and 
     start typing, auto-completion will appear instantly.
 
