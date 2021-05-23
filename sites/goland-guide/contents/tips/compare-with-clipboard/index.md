@@ -15,7 +15,7 @@ leadin: |
     
     **How to use:**
 
-    Select any pair of files and press _Ctrl+D on Windows/Linux_ and _⌘ + D on macOS_.
+    Select any pair of files and press _Ctrl + D on Windows/Linux_ and _⌘ + D on macOS_.
     
     **Pro tip:**
 

@@ -15,7 +15,7 @@ leadin: |
     
     **How to use:**
 
-    Invoke with _Ctrl + Shift + T_ on Windows/Linux, _⌘ + ⇧ + T_ on macOS,
+    Invoke with _Ctrl + Shift + T on Windows/Linux_, _⌘ + ⇧ + T on macOS_,
     and select **Test for ...** from the popup.
     
     You can choose to test a _function/method_, _the whole file_, or _the whole package_.

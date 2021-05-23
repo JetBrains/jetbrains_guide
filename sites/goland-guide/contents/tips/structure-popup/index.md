@@ -22,7 +22,7 @@ leadin: |
     
     **Pro tip:**
     
-    Press _Ctrl + F12_ on Windows/Linux or _⌘ + F12_ on macOS, again with the window
+    Press _Ctrl + F12 on Windows/Linux_ or _⌘ + F12 on macOS_, again with the window
     still open, and it will show all the elements defined in the package of the current file.
     
     _Speed Typing_ can then help you to narrow down the list of elements to the one that you need.

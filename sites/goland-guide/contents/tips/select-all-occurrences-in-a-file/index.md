@@ -18,7 +18,7 @@ leadin: |
     
     **How to use:**
     
-    Press _Ctrl + Alt + Shift + J_ on Windows/Linux, and _⌘ + ^ + G_ on macOS.
+    Press _Ctrl + Alt + Shift + J on Windows/Linux_, and _⌘ + ^ + G on macOS_.
     
     After the selection is complete, you can start editing all the fragments
     as if they were all the same one.

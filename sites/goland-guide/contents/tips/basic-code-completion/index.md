@@ -20,7 +20,7 @@ leadin: |
     **How to use:**
     
     Basic completion pops up as you start typing code and GoLand recognizes
-     an opportunity to complete something for you, but you can invoke it anytime by pressing _Ctrl+Space_ on Windows/Linux or _⌃+Space_ on macOS.
+     an opportunity to complete something for you, but you can invoke it anytime by pressing _Ctrl + Space on Windows/Linux_ or _⌃ + Space on macOS_.
     
     **Pro tip:**
     

@@ -22,9 +22,9 @@ leadin: |
     
     **How to use:**
 
-    Press _Alt+/_ on Windows/Linux or _⌥+/_ on macOS to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
+    Press _Alt + / on Windows/Linux_ or _⌥ + / on macOS_ to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
     
-    Press _Shift + Alt + /_ on Windows/Linux or _⌥ + ⇧ + /_ on macOS for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
+    Press _Shift + Alt + / on Windows/Linux_ or _⌥ + ⇧ + / on macOS_ for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
     
     **Pro tip:**
     

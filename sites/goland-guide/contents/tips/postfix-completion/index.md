@@ -14,7 +14,7 @@ leadin: |
     **Postfix Completion** lets you transform an expression into another one
     , based on the postfix you specify after the dot, the current context, and the expression type.
     
-    For example, you can turn a bool expression into an if statement, or create a pointer to an expression. If anything goes not as planned, everything can be reverted via simple _Ctrl + Z_ on Windows/Linux or _⌘ + Z_ on macOS.
+    For example, you can turn a bool expression into an if statement, or create a pointer to an expression. If anything goes not as planned, everything can be reverted via simple _Ctrl + Z on Windows/Linux_ or _⌘ + Z on macOS_.
     
     **How to use:**
     
@@ -22,7 +22,7 @@ leadin: |
 
     **Pro tip:**
 
-    - _Postfix Completion_ options are displayed as a part of the `Basic Completion` suggestions list. Press _Ctrl+J_ on Windows/Linux or _⌘+J_ on macOS to see a full list of the _Postfix Completion_ templates applicable in the current context.
+    - _Postfix Completion_ options are displayed as a part of the `Basic Completion` suggestions list. Press _Ctrl + J on Windows/Linux_ or _⌘ + J on macOS_ to see a full list of the _Postfix Completion_ templates applicable in the current context.
     - You can change the names of all _Postfix Completions_ in the Settings/Preferences dialog.
     - In the same dialog, you can also disable the templates you don't need, or even turn off _Postfix Completion_ completely.
 
