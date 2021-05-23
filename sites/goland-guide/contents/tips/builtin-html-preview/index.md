@@ -1,0 +1,26 @@
+---
+date: 2021-05-24
+title: 'Builtin HTML preview'
+technologies: [go]
+topics: []
+author: dlsniper
+subtitle: 'Stop switching to a browser to inspect your template and get instant feedback in your IDE'
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+shortVideo:
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=A-MzFk1ELoM&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=17&t=0s
+leadin: |
+  **How to use:**
+  Hover the cursor on the top right side of the IDE and click on the 
+  IDE icon next to the browsers ones.
+
+  An embedded browser tool window will show up. You can the make 
+  changes to the template file and have them show up in the IDE
+  without having to switch to a standalone browser.
+
+  When you are done, close it like you would any other tool window.
+
+  **Pro tip:** Your IDE uses JCEF to display the page, which is based
+  on the Chromium browser.
+---
