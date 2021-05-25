@@ -11,7 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 In this tutorial we're going to use the Spock framework to create and run unit tests.
 
-We'll create a new project that's going to contain Java code, and use [Spock](https://spockframework.org/) to unit test that code. Although Spock tests are written in [Groovy](https://groovy-lang.org/), we can use this framework to test [Java](../../../technologies/java/) production code. 
+We'll create a new project that contains Java code, and use [Spock](https://spockframework.org/) to unit test that code. Although Spock tests are written in [Groovy](https://groovy-lang.org/), we can use this framework to test [Java](../../../technologies/java/) production code. 
 
 Spock tests can be easy to read, and so this framework can be used not only to test application code, but also to document its expected behaviour.
 

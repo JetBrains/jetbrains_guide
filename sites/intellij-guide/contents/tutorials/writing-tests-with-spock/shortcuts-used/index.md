@@ -5,17 +5,17 @@ title: Shortcuts used
 technologies: [java, groovy]
 topics: [testing]
 author: tg
-subtitle: Finally, let's summarise the shortcuts we've learnt and see links to further information 
+subtitle: Finally, let's summarise the shortcuts we've learnt and see links to further information.
 thumbnail: ./thumbnail.png
 ---
 
 In this tutorial we saw how to use the Spock testing framework to test Java code. We also saw how IntelliJ IDEA can help us to write and run tests.
 
-Spock is powerful and has even more to offer than we've looked at here. Believe it or not we've only touched the surface of what Spock can offer. We've seen the basics of a test, we've seen how to use labels to define tests, we've seen the power of data driven testing, and we've covered a range of tips and tricks for writing correct and readable tests.
+Spock is powerful and has even more to offer than we've looked at here. We've only touched the surface of what Spock can offer. We've seen the basics of a test, we've seen how to use labels to define tests, we've seen the power of data driven testing, and we've covered a range of tips and tricks for writing correct and readable tests.
 
 If you want to find out more about Spock, take a look at [the excellent reference documentation](http://spockframework.org/spock/docs/2.0/all_in_one.html). 
 
-Some helpful shortcuts mentioned in the tutorial and video:
+Here are some helpful shortcuts mentioned in the tutorial and video:
 
 - **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) - New
    - use in the project window to create a new file or directory
