@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-04-26
 title: Docker Compose and Multiple Containers
-technologies: [.net]
+technologies: [.net, containers]
 products: [rider,resharper]
 topics: [data]
 author: khalidabuhakmeh
