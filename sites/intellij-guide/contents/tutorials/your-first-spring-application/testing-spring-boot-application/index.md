@@ -13,7 +13,7 @@ longVideo:
 ---
 
 ## Creating a Test for your Spring Boot Application
-Let's write a test to check that in the event of an HTTP request, we get the response that we are expecting, in this case the string _Greetings from Spring Boot_.
+Let's write a test to check that in the event of an HTTP request, we get the response that we are expecting, in this case the string _Hello World from Spring Boot_.
 
 Tests for Spring Boot are written using the standard [JUnit5 Testing Library](https://junit.org/junit5/docs/current/user-guide/). If a test is going to need access to Spring's application context, it needs to be annotated with `@SpringBootTest`. These are effectively integration tests, as they rely on bootstrapping the Spring context before you can run the test.
 
