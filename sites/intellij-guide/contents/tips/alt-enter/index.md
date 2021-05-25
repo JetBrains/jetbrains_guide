@@ -11,6 +11,13 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/ukGjQxga6Wg
+seealso:
+  - title: IntelliJ Blog - Alt+Enter, the Problem-solving Shortcut
+    href: https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
+  - title: IntelliJ IDEA Help - Inspections
+    href: https://www.jetbrains.com/help/idea/inspections-settings.html
+  - title: IntelliJ IDEA Help - Intention Actions
+    href: https://www.jetbrains.com/help/idea/intention-actions.html
 leadin: |
   IntelliJ IDEA offers intelligent suggestions most places in the code. It can offer fixes for compiler errors and inspection warnings. It can even use intentions to suggest other ways in which you could write code even if there's no warning or error.
 
