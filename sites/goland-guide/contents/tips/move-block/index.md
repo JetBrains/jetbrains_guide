@@ -24,4 +24,6 @@ leadin: |
     **Move Statement Up** with _Ctrl + Shift + ↑ on Windows/Linux_ or _⌘ + ⇧ + ↑ on macOS_.
     
     **Move Statement Down** with _Ctrl + Shift + ↓ on Windows/Linux_ or _⌘ + ⇧ + ↓ on macOS_.  
+
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

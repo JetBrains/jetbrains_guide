@@ -28,5 +28,6 @@ leadin: |
     You can invoke this before you type any parameters, after you've typed
     a few, or later if you come back to make a change.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---
 

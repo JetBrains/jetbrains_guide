@@ -25,4 +25,5 @@ leadin: |
     You can even toggle the settings from the search results, and it can be used
     with fuzzy searching.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

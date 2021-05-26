@@ -21,4 +21,5 @@ leadin: |
     choose which one of supported injection language you want to use and 
     start typing, auto-completion will appear instantly.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

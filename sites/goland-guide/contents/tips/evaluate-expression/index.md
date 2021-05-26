@@ -24,4 +24,5 @@ leadin: |
     Invoke **Evaluate Expression** via _Alt + F8 on Windows/Linux_ or
     _⌥ + F8 on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

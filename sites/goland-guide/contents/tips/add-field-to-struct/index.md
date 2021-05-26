@@ -19,4 +19,5 @@ leadin: |
     or _⌥ + Enter on macOS_, and let the IDE generate the corresponding field in
     the structure definition.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

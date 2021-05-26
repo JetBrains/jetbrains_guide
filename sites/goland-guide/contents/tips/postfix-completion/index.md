@@ -26,4 +26,5 @@ leadin: |
     - You can change the names of all _Postfix Completions_ in the Settings/Preferences dialog.
     - In the same dialog, you can also disable the templates you don't need, or even turn off _Postfix Completion_ completely.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

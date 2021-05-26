@@ -17,4 +17,5 @@ leadin: |
 
     Press _Ctrl + Shift + V on Windows/Linux_ and _⌘ + ⇧ + V on macOS_ to open pop-up window.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -23,4 +23,5 @@ leadin: |
     
     Works automatically, you don't have to do anything.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

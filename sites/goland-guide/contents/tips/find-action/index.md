@@ -20,4 +20,5 @@ leadin: |
     
     Use _Ctrl + Shift + A on Windows/Linux_ or _⌘ + ⇧ + A on macOS_ to invoke the **Find Action**.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

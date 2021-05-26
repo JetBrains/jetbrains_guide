@@ -24,4 +24,5 @@ leadin: |
     the list of quick-fixes on the red import line and select
     **Sync packages of <project\>** to import the package into your project.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

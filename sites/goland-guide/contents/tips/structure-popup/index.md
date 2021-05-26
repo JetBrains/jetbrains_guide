@@ -27,4 +27,5 @@ leadin: |
     
     _Speed Typing_ can then help you to narrow down the list of elements to the one that you need.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

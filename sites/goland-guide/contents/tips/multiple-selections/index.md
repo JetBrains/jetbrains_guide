@@ -25,4 +25,5 @@ leadin: |
     You can press _Alt + J_ again to go forward further, or _⇧ + Alt + J_ to go back.
     When the search reaches the end of the file, it will start over again from the beginning.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

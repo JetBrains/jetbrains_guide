@@ -24,4 +24,5 @@ leadin: |
     Invoke the **Rename Refactoring** via _Shift + F6 on Windows/Linux_ or _⇧ + F6 on macOS_,
     and do the work, safely and quickly.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

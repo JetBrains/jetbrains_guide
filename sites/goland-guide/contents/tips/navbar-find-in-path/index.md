@@ -29,4 +29,5 @@ leadin: |
     Then navigate to the target, and use **Find in Path**, _Ctrl + Shift + F on Windows/Linux_
     or _⌘ + ⇧ + F on macOS_, from the keyboard.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

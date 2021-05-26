@@ -25,4 +25,5 @@ leadin: |
 
     The best part? _Speed Typing_ works here: you can type in code to filter the results further.
 
+    <span class="tag is-rounded">New in 2019.1</span>
 ---

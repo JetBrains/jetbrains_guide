@@ -19,4 +19,6 @@ leadin: |
 
   **How to use:**
   Invoke it via  _Ctrl + E on Windows/Linux_, _⌘ + E on macOS_.
+
+  <span class="tag is-rounded">New in 2017.3</span>
 ---

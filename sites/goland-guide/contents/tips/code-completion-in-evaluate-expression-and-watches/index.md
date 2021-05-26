@@ -20,4 +20,5 @@ leadin: |
     As you start typing in the _Evaluate Expression_, _Watches_ or _Conditional Breakpoints_ dialogs, code 
     completion will appear immediately.
 
+    <span class="tag is-rounded">New in 2019.1</span>
 ---

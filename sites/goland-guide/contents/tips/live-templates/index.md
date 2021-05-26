@@ -23,4 +23,5 @@ leadin: |
     Open _Settings/Preferences | Editor | Live Templates_ to see the full list
     of already supported templates.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

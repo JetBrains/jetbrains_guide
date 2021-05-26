@@ -18,4 +18,5 @@ leadin: |
 
     Use the **Tab** key instead of *Enter* to accept a suggestion from list.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

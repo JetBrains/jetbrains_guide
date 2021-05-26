@@ -25,4 +25,5 @@ leadin: |
 
     Invoke **Reformat Code** via _Ctrl + Alt + L on Windows/Linux_ or _⌘ + ⌥ + L on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -30,4 +30,5 @@ leadin: |
     to work safely across multiple packages, not just at the file level,
     with full preview and undo support.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

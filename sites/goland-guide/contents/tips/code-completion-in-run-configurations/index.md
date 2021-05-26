@@ -19,4 +19,5 @@ leadin: |
     As you start typing in the _Package_, _File_, or _Directory_ inputs, the IDE will 
     assist you.
 
+    <span class="tag is-rounded">New in 2018.2</span>
 ---

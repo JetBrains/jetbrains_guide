@@ -23,5 +23,6 @@ leadin: |
   
   If you press the same _Ctrl + E on Windows/Linux_, _⌘ + E on macOS_, shortcut while the **Recent Files**
   tool window is open, then the list will only display the files that have been changed recently.
-  
+
+  <span class="tag is-rounded">New in 2017.3</span>
 ---

@@ -24,4 +24,5 @@ leadin: |
     _Ctrl + Shift + Enter on Windows/Linux_ and _⇧ + ⌘ + Enter  on macOS_, to add curly braces and move
     the cursor down to the beginning of the next row.
 
+    <span class="tag is-rounded">New in 2018.3</span>
 ---

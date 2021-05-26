@@ -25,4 +25,5 @@ leadin: |
     
     _Speed Search_ is available here and it will help you quickly filter the files in your view.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---
