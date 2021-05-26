@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Testing You Spring Boot Application
+title: Testing Your Spring Boot Application
 technologies: [java, spring]
 topics: [gettingstarted]
 author: hs
@@ -18,6 +18,7 @@ Let's write a test to check that in the event of an HTTP request, we get the res
 Tests for Spring Boot are written using the standard [JUnit5 Testing Library](https://junit.org/junit5/docs/current/user-guide/). If a test is going to need access to Spring's application context, it needs to be annotated with `@SpringBootTest`. These are effectively integration tests, as they rely on bootstrapping the Spring context before you can run the test.
 
 1) We need to create a new Test class in the same place as our `HelloWorldApplicationTest.java`, we will call ours `CheckHTTPResponse.java`.
+   
 2) Paste the following code into your test class:
 ```java
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
