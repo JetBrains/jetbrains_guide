@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Setup and Teardown
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: See how to set up, or clean up, test classes and methods in Spock. 

@@ -2,10 +2,10 @@
 type: TutorialStep
 date: 2021-05-20
 title: Setting up the Dependencies
-technologies: [java, groovy]
+technologies: [gradle]
 topics: [testing]
 author: tg
-subtitle: Add the dependencies to the project
+subtitle: Add Spock framework dependencies to the project
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

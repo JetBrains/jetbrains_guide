@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Data Pipes
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Often we want to test the same set of criteria with different sets of data. Data pipes is one mechanism to do this.

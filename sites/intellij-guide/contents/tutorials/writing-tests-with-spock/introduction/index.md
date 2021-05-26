@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Introduction
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Introduction to the tutorial and links to further reading.
 thumbnail: ./thumbnail.png

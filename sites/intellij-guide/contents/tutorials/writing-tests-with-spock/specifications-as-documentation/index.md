@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Specifications as Documentation
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Spock tests don't just tell the computer how to test the application, they can help developers understand what the application is supposed to do. 
 thumbnail: ./thumbnail.png

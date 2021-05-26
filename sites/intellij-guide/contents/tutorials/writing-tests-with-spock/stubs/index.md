@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Stubs
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Stub objects allow us to state from a test what values get injected into our application code. They can provide simple interfaces, so we don't have to initialise the whole application to test a section. 

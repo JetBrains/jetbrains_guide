@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Expecting Exceptions
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Tests don't check just the happy paths, sometimes we want to say we're expecting a specific Exception.

@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Helper Methods
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Sometimes we need to move test code into a separate method. In this section, we look at some tips for this. 
 thumbnail: ./thumbnail.png

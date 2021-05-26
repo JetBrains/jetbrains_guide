@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Spock IntelliJ IDEA Plugin
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: [plugins]
 author: tg
 subtitle: Add the Spock plugin to IntelliJ IDEA to get some extra help in the IDE.
 thumbnail: ./thumbnail.png

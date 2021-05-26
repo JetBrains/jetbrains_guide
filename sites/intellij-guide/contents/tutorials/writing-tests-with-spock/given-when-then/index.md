@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Given, When and Then
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: See how Spock tests are usually structured.

@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Data Tables
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Data tables offer the same functionality as data pipes, but this syntax can sometimes be more readable for more complex sets of data.

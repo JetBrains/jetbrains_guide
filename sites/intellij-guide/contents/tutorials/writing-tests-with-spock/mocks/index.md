@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Mocks
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Mocks are a useful testing tool. We can provide "empty" objects, so we don't have to initialise the whole application to test a section, and we can use mocks to check our code is making the calls we expect. 

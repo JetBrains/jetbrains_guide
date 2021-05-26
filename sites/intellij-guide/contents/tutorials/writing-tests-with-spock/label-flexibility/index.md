@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Label Flexibility
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Spock supports a range of different test labels to help you write the most readable tests
 thumbnail: ./thumbnail.png

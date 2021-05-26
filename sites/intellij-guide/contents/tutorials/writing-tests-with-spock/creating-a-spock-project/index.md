@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Creating a Project for Spock
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: [gettingstarted]
 author: tg
 subtitle: Start by creating a new Java project which will be the basis for the rest of this tutorial.
 thumbnail: ./thumbnail.png

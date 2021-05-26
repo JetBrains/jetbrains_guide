@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-20
 title: Verify All
-technologies: [java, groovy]
+technologies: []
 topics: [testing]
 author: tg
 subtitle: Test frameworks often stop the test at the first failure. Find out how to run all conditions to see which pass and which fail. 

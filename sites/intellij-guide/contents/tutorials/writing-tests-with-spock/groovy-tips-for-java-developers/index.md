@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Groovy Tips for Java Developers
-technologies: [java, groovy]
-topics: [testing]
+technologies: [groovy]
+topics: []
 author: tg
 subtitle: Groovy's syntax and functionality might be unusual for Java developers to begin with, but it can be very helpful for testing. 
 thumbnail: ./thumbnail.png

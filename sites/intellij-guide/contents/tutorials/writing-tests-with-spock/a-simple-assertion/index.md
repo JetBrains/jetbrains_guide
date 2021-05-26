@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: A Simple Assertion
-technologies: [java, groovy]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Writing our first Spock test
 thumbnail: ./thumbnail.png
