@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Group ID and version number
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: []
 author: tg
 subtitle: How to set up or change a project's group ID and version number.
 thumbnail: ./thumbnail.png

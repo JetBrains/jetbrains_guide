@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Source set directories
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: []
 author: tg
 subtitle: Understand how IntelliJ IDEA deals with Gradle's source set directories
 thumbnail: ./thumbnail.png

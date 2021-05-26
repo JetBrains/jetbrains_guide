@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Creating a Gradle project
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: [gettingstarted]
 author: tg
 subtitle: Start by creating a brand-new project that uses Gradle as the build tool.
 thumbnail: ./thumbnail.png
