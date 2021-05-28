@@ -1,8 +1,3 @@
-Alt Enter
- - for errors
- - for context suggestions
- - 
-
 Basic completion
 Smart completion
  - enter vs tab selection
@@ -14,8 +9,6 @@ complete statement
 create code from red
 
 equals hashcode tostring
-
-live templates
 
 introduce variable
 
