@@ -12,7 +12,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/73w_X5Bfq7U
 seealso:
-  - title: IntelliJ Blog - Alt+Enter, the Problem-solving Shortcut
+  - title: IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut
     href: https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
   - title: IntelliJ IDEA Help - Inspections
     href: https://www.jetbrains.com/help/idea/inspections-settings.html
