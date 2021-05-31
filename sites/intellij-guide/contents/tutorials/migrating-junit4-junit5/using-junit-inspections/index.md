@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Using inspections
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Using JUnit 5 Inspections to migrate
 thumbnail: ./thumbnail.png

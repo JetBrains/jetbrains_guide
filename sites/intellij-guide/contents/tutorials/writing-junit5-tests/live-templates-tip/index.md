@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Live Templates Tip
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Use Live Templates to create tests faster
 thumbnail: ./thumbnail.png

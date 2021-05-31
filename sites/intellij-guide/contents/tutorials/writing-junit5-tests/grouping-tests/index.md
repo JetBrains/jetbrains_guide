@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Grouping Tests
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Writing nested tests
 thumbnail: ./thumbnail.png

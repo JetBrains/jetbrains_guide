@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Introduction
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Introduction to Migrating JUnit 4 to JUnit 5
 thumbnail: ./thumbnail.png

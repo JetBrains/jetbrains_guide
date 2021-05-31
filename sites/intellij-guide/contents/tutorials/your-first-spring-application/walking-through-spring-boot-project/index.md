@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Walking Through Your Spring Boot Project
-technologies: [java, spring]
-topics: [gettingstarted]
+technologies: []
+topics: []
 author: hs
 subtitle: Let's take a look at what IntelliJ IDEA has created for us and why.
 thumbnail: ./thumbnail.png

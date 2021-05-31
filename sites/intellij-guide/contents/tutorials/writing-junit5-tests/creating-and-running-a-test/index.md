@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Creating and running a test
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Getting a JUnit 5 Test running
 thumbnail: ./thumbnail.png

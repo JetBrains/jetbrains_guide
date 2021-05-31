@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Shortcuts
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Shortcuts used in the tutorial
 thumbnail: ./thumbnail.png

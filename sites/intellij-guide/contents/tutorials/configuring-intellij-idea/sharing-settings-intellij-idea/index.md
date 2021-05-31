@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-05-14
 title: Sharing IntelliJ IDEA Settings
 technologies: []
-topics: [settings]
+topics: []
 author: hs
 subtitle: You can share settings across your own instances of IntelliJ IDEA or with your colleagues
 thumbnail: ./thumbnail.png
