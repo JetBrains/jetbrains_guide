@@ -11,5 +11,5 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/7614UdY614c
 leadin: |
-    Press **⌘** (macOS), or **Alt**+**Ins** (Windows/Linux) to open the _Generate_ menu. The options you get will depend on the testing framework you are using in your project, for example, JUnit 5.  
+    Press **⌘N** (macOS), or **Alt**+**Ins** (Windows/Linux) to open the _Generate_ menu. The options you get will depend on the testing framework you are using in your project, for example, JUnit 5.  
 ---

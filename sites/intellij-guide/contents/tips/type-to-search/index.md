@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/dFGnL60u5_w
 leadin: |
-  You can filter dialogs in IntelliJ IDEA by typing your search directly in. For example, you can filter the Recent Files dialog - **⌘⇧E (macOS), **Ctrl**+**Shift**+**E** (Windows/Linux) - to just the Maven Window, or you can filter the Project window - **⌘1** (macOS), **Ctrl**+**1** (Windows/Linux) - to find a file.  
+  You can filter dialogs in IntelliJ IDEA by typing your search directly in. For example, you can filter the Recent Files dialog - **⌘⇧E** (macOS), **Ctrl**+**Shift**+**E** (Windows/Linux) - to just the Maven Window, or you can filter the Project window - **⌘1** (macOS), **Ctrl**+**1** (Windows/Linux) - to find a file.  
 
   Try searching in any dialog in IntelliJ IDEA to filter your results to just the ones you're interested in.
 
