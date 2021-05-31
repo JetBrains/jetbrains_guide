@@ -3,7 +3,6 @@ Smart completion
  - enter vs tab selection
  - .
 
-postfix
 complete statement
 
 create code from red

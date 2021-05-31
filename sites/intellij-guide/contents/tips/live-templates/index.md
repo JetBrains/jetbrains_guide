@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/XhsWS3SBxuw
+  url: https://youtu.be/RyJ0ucK8mFo
 longVideo:
   poster: ./live_templates.jpeg
   url: https://youtu.be/ffBeoE6NBSs
