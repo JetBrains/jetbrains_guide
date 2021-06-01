@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Opening a Gradle project
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: [gettingstarted]
 author: tg
 subtitle: What you need to know to get started with an existing Gradle project
 thumbnail: ./thumbnail.png

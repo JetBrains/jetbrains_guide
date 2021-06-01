@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Tour of a Gradle project
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: [interface]
 author: tg
 subtitle: Take a look around a standard Gradle project to understand it better.
 thumbnail: ./thumbnail.png

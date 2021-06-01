@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Gradle dependencies
-technologies: [java, gradle]
+technologies: [gradle]
 topics: [build]
 author: tg
 subtitle: Add or update dependencies in your build.gradle file.

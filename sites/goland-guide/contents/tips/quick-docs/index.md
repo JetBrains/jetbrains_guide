@@ -25,4 +25,5 @@ leadin: |
     Invoke the **Quick Documentation** feature using _Ctrl + Q on Windows/Linux_
     or _F1 on macOS_, learn more about the different symbols you're working with.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

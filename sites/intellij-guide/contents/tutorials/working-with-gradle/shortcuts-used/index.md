@@ -2,23 +2,25 @@
 type: TutorialStep
 date: 2021-05-14
 title: Shortcuts
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: tg
 subtitle: Shortcuts used in the tutorial
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial we saw an overview of the support for Gradle projects in IntelliJ IDEA, and some tips for working effectively with them.
+In this tutorial we saw an overview of the [support for Gradle projects](https://www.jetbrains.com/help/idea/gradle.html) in IntelliJ IDEA, and some tips for working effectively with them.
 
 Some helpful shortcuts mentioned in the tutorial and video:
 
- - **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) - load Gradle changes
- - **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) - use in the `build.gradle` file to add a new dependency
- - **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux) - [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) - we can use this to open the Gradle Tool Window
- - **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) - find action, you can use this to open the Gradle Tool Window
-- **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) - recent files, and it also lists all the tool windows, so it's an easy way to get to the Gradle window
-- **⌃⌃** (macOS), or **Ctrl+Ctrl**  (Windows/Linux) - [Run anything](https://www.jetbrains.com/help/idea/running-anything.html), you can even run Gradle commands from here
-- **⌘,** (macOS), or **Ctrl+Alt+S**  (Windows/Linux) - open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog
+| Name      | macOS Shortcut | Windows Shortcut |
+| ----------- | ----------- | ----------- |
+|Load Gradle changes | **⇧⌘I**|**Ctrl+Shift+O**|
+|Add a new dependency from inside the `build.gradle` file|**⌘N**|**Alt+Insert**
+|[Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) (can use this to open the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)) |**⇧⇧** |**Shift+Shift**|
+|[Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9) (can use this to open the Gradle Tool Window) |**⌘⇧A**|**Ctrl+Shift+A** |
+|[Recent files](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files) (can use this to open the Gradle Tool Window)|**⌘E** | **Ctrl+E**|
+|[Run anything](https://www.jetbrains.com/help/idea/running-anything.html) (can run Gradle commands from here)|**⌃⌃**|**Ctrl+Ctrl**|
+| Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog|**⌘,**|**Ctrl+Alt+S**| 
 
-There's links to more information on this tutorial's [introduction](../introduction).
+There are links to more information on this tutorial's [introduction](../introduction).

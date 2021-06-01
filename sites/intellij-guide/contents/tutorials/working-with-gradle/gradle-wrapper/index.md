@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Gradle Wrapper
-technologies: [java, gradle]
+technologies: [gradle]
 topics: [build]
 author: tg
 subtitle: Useful information for working with projects that use the Gradle Wrapper.

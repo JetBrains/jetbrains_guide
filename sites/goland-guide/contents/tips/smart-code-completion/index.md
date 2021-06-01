@@ -20,4 +20,5 @@ leadin: |
 
     Press _Ctrl+Shift+Space_ on Windows/Linux or _⌃+⇧+Space_ on macOS.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

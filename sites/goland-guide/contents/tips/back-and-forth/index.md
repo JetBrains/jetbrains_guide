@@ -23,4 +23,5 @@ leadin: |
 
     To go **Forward**, _Ctrl + Alt + Right on Windows/Linux_ or _⌘ + ] on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

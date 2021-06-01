@@ -26,4 +26,5 @@ leadin: |
     **Coverage** tool window to navigate to your packages/files and
     see their coverage.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

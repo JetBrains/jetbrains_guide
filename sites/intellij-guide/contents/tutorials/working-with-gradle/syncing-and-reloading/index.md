@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-14
 title: Syncing and reloading
-technologies: [java, gradle]
+technologies: [gradle]
 topics: [build]
 author: tg
 subtitle: Sometimes you may need to encourage IntelliJ IDEA to reload any changes from the Gradle configuration.

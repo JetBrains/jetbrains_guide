@@ -17,4 +17,5 @@ leadin: |
     Let the IDE help you _uncommit_ an un-pushed commit by
     using the **Undo Commit...** command.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

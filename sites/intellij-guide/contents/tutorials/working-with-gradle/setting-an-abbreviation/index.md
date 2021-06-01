@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: Setting an abbreviation
-technologies: [java, gradle]
-topics: [build]
+technologies: []
+topics: [tricks]
 author: tg
 subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window
 thumbnail: ./thumbnail.png

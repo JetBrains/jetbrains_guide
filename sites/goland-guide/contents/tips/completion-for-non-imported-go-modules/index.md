@@ -21,4 +21,5 @@ leadin: |
 
     Completion will work automatically as you start typing a package name.
 
+    <span class="tag is-rounded">New in 2019.2</span>
 ---

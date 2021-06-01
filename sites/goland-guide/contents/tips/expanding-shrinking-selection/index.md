@@ -24,4 +24,5 @@ leadin: |
 
     **Shrink Selection** has a similar shortcut, _Ctrl + Shift + W on Windows/Linux_ and _⌥ + ↓ on macOS_.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

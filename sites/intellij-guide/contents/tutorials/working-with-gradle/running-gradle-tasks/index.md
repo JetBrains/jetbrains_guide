@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-05-15
 title: Running Gradle tasks
-technologies: [java, gradle]
+technologies: [gradle]
 topics: [build]
 author: tg
 subtitle: There are several convenient ways to run Gradle tasks from IntelliJ IDEA.

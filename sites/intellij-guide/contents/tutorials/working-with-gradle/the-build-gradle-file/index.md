@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-14
 title: The build.gradle file
-technologies: [java, gradle]
-topics: [build]
+technologies: [gradle]
+topics: []
 author: tg
 subtitle: See how IntelliJ IDEA makes it easier to work with Gradle's configuration file.
 thumbnail: ./thumbnail.png

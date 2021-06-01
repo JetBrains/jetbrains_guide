@@ -19,4 +19,5 @@ leadin: |
     You've done a lot of work. Perhaps overlapping, perhaps some unfinished.
     Let the IDE help you leave files or parts of a file out of the commit.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---

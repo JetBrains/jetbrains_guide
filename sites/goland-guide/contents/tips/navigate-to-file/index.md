@@ -24,4 +24,5 @@ leadin: |
       
     As a hidden gem, try finding a directory by name.
 
+    <span class="tag is-rounded">New in 2017.3</span>
 ---
