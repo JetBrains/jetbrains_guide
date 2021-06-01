@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Adding dependencies
-technologies: [maven, junit]
-topics: [testing]
+technologies: [maven]
+topics: []
 author: hs
 subtitle: Adding JUnit 5 Dependencies
 thumbnail: ./thumbnail.png
