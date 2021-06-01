@@ -1,6 +1,6 @@
 ---
 date: 2021-05-31
-title: Generate Constructors and Setter & Getter methods
+title: Generate constructors and accessor methods
 technologies: [java]
 topics: [editing]
 author: hs
