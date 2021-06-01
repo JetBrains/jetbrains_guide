@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-01-01
 title: Live Templates Tip
 technologies: []
-topics: []
+topics: [livetemplates]
 author: hs
 subtitle: Use Live Templates to create tests faster
 thumbnail: ./thumbnail.png
