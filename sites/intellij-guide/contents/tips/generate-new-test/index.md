@@ -1,6 +1,6 @@
 ---
 date: 2021-05-31
-title: Generate Test Class
+title: Generate a Test Class
 technologies: [java]
 topics: [testing]
 author: hs
