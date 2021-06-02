@@ -28,4 +28,6 @@ leadin: |
 
   **Pro tip:** If you upgrade your module's import path to a new
   major version, don't forget to tag the release too.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

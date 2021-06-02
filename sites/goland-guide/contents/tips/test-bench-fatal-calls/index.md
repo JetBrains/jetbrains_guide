@@ -19,4 +19,6 @@ leadin: |
   enabled by default.
   
   Open your tests or benchmarks and see if it catches any issues.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

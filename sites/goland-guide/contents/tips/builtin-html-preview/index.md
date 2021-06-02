@@ -23,4 +23,6 @@ leadin: |
 
   **Pro tip:** Your IDE uses JCEF to display the page, which is based
   on the Chromium browser.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

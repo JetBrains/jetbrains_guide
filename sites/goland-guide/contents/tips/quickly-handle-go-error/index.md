@@ -14,4 +14,6 @@ leadin: |
   **How to use:**
   Press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ on
   function call that returns an error and select **Handle error**.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

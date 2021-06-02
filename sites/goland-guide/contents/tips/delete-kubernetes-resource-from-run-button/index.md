@@ -17,5 +17,7 @@ leadin: |
   action to teardown those resources.
 
   **Note:** You must have the Kubernetes plugin provided by JetBrains
-  installed for this action to work. 
+  installed for this action to work.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

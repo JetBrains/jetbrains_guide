@@ -22,4 +22,6 @@ leadin: |
 
   Give it a name and start reusing the newly created type in your
   code.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

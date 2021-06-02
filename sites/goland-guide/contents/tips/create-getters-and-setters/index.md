@@ -29,4 +29,5 @@ leadin: |
   **Pro tip:** You can choose either all fields, or select the 
   individual fields that need to have these methods generated.
 
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

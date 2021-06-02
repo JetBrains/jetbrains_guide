@@ -19,4 +19,6 @@ leadin: |
 
   From the *Context Actions* menu, select **Add key to tags**, and 
   start typing the key name. 
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

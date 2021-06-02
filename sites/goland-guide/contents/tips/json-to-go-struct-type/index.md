@@ -16,5 +16,7 @@ leadin: |
   place in your code.
 
   When the IDE asks you about converting the JSON to a Go type, press
-  *Yes* and finish the action by giving the new type a name. 
+  *Yes* and finish the action by giving the new type a name.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

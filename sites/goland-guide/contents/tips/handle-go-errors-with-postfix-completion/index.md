@@ -18,4 +18,6 @@ leadin: |
   It will surround your code with the appropriate boilerplate to 
   create any missing variables that are returned and handle the error
   checking part for you.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

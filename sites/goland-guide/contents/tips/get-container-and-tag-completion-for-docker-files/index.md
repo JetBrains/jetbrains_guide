@@ -16,4 +16,6 @@ leadin: |
   Windows/Linux_ or _⌃ + Space on macOS_ after the *FROM* directive
   in a *Dockerfile* and let the IDE assist you with the name and tag
   of the image you want to use.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

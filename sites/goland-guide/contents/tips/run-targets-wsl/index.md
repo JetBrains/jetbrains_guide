@@ -38,5 +38,7 @@ leadin: |
 
   **Pro tip:** You choose to compile on the local machine. This
   means you don't have to worry about the dependencies being
-  available in that environment. 
+  available in that environment.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---

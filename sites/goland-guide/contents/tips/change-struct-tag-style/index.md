@@ -25,4 +25,6 @@ leadin: |
 
     Select the **Change field name style in tags**, and choose 
     between one of the four styles available.
+
+    <span class="tag is-rounded">New in 2021.1</span>
 ---

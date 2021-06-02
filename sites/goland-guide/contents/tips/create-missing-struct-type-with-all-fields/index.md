@@ -18,4 +18,6 @@ leadin: |
   and select the **Create type** action.
 
   A type will be created. It will include all the fields too.
+
+  <span class="tag is-rounded">New in 2021.1</span>
 ---
