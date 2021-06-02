@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ---
 
-Whenever you're working with databases in your projects, it's very useful to create a data source connection to your database in IntelliJ IDEA. It allows you to easily interact with your database right within your IDE. Let's do that for our H2 database. If you're using a different database, you can use similar steps or you can follow the instructions outlined in the IntelliJ IDEA [database connection help page](https://www.jetbrains.com/help/idea/connecting-to-a-database.html).
+Whenever you're working with databases in your projects, it's very useful to create a data source connection to your database in IntelliJ IDEA. It allows you to easily interact with your database right within your IDE. Let's do that for our H2 database. If you're using a different database, you can use similar steps or you can follow the instructions outlined in the IntelliJ IDEA [database connection help page](https://www.jetbrains.com/help/idea/connecting-to-a-database.html). Note that this feature is only available in IntelliJ IDEA Ultimate.
 
 To create our H2 data source, we'll open the Database tool window (**View** -> **Tool Windows** -> **Database**) then click on the **+** button. There are various ways to create our connection. We'll use the **Data source from URL** option.
 

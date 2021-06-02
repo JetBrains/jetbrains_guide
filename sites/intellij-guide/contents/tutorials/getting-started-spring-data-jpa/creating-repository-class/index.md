@@ -26,7 +26,7 @@ We'll select `findEmployeesBy` for the introducer. Then, we will click **Ctrl**+
 
 ![Repository Method Suggestion Criteria](./RepositoryMethodSuggestion-Criteria.png)
 
-We'll select `LastNameContaining`. Finally, we'll declare a String method parameter representing the string that we want to check for. We now have a method finds all employees with a last name containing the string provided. 
+We'll select `LastNameContaining`. Finally, we'll declare a String method parameter representing the string that we want to check for. We now have a method that finds all employees with a last name containing the string provided. 
 
 You might be thinking: if I've defined this interface, don't I have to implement it? The answer is no. Spring Data JPA takes care of that for you! All you need to do is define your Repository interface and declare your methods following the Spring Data conventions. As you're adding more methods, if you make mistakes in the method name, IntelliJ IDEA will point it out. For example, if we try to create a method for querying employees with an incorrect `LName` property, IntelliJ IDEA gives us an error saying `Cannot resolve property LName`.
 
