@@ -15,6 +15,7 @@ playlistItems:
     - /tips/add-keys-to-struct-field-tags/
     - /tips/change-struct-tag-style/
     - /tips/json-to-go-struct-type/
+    - /tips/add-json-fields-to-struct-types/
     - /tips/quickly-handle-go-error/
     - /tips/create-missing-struct-type-with-all-fields/
     - /tips/create-getters-and-setters/
