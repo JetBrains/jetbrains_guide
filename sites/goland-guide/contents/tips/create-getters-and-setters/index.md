@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Create getters and setters for struct fields'
 technologies: [go]
-topics: []
+topics: [editing]
 author: dlsniper
 subtitle: 'Generate the support code to access fields indirectly, via getters and setters'
 thumbnail: ./thumbnail.png

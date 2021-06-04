@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Extract Type Refactoring'
 technologies: [go]
-topics: []
+topics: [refactoring]
 author: dlsniper
 subtitle: 'Extract a type into its own definition and improve the  reusability in your code'
 thumbnail: ./thumbnail.png

@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Handle Go errors by using a Postfix Completion'
 technologies: [go]
-topics: []
+topics: [completion]
 author: dlsniper
 subtitle: 'Keep writing code as you would and use the Postfix Completion to generate the boilerplate'
 thumbnail: ./thumbnail.png

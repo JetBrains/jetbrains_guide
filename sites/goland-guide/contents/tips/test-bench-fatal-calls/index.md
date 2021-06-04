@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Detect incorrect usages of t/b.Fatal* calls in goroutines'
 technologies: [go]
-topics: [testing]
+topics: [testing, inspections]
 author: dlsniper
 subtitle: 'Find if tests or benchmarks are using t/b.Fatal* calls inside goroutines incorrectly'
 thumbnail: ./thumbnail.png

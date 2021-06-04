@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Rename Go module refactoring'
 technologies: [go]
-topics: []
+topics: [refactoring]
 author: dlsniper
 subtitle: 'Upgrade Go modules to newer versions with ease'
 thumbnail: ./thumbnail.png
