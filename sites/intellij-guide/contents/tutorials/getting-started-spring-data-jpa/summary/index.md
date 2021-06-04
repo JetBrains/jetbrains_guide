@@ -5,11 +5,11 @@ title: Summary
 technologies: []
 topics: []
 author: da
-subtitle: Shortcuts, GitHub repo and other resources
+subtitle: Shortcuts, GitHub repository and other resources
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial, we created a simple Spring Boot application that uses Spring Data JPA to store and retrieve data from the database. 
+In this tutorial, we created a simple Spring Boot application that uses [Spring Data JPA](https://spring.io/projects/spring-data-jpa) to store and retrieve data from the database. 
 
 Some helpful shortcuts mentioned in the tutorial:
 

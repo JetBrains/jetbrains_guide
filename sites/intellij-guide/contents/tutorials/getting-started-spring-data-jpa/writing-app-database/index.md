@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: Writing and Reading from your Application to the Database
+title: Writing from your Application to the Database
 technologies: []
 topics: []
 author: da

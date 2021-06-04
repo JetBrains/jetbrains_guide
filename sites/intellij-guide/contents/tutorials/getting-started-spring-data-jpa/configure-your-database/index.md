@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 
 At this point, we can use the default in-memory database that Spring Boot creates for us. However, the default database functionality is limited and doesn't allow data to stay around after the application terminates so let's go ahead and configure a database.
 
-We'll bring up the search menu (**Shift**+**Shift**) and search for our `application.properties` file. In our `application.properties` file, we can utilize IntelliJ IDEA's suggestions to specify the properties we need to connect to our H2 database. We'll start typing `url` and choose the `spring.datasource.url` property from the list of suggestions.
+We'll bring up the search menu (**Shift**+**Shift**) and search for our `application.properties` file. In our `application.properties` file, we can utilize IntelliJ IDEA's suggestions to specify the properties we need to connect to our [H2](https://www.h2database.com/html/main.html) database. We'll start typing `url` and choose the `spring.datasource.url` property from the list of suggestions.
 
 ![Application Properties URL](./ApplicationProperties.png)
 
