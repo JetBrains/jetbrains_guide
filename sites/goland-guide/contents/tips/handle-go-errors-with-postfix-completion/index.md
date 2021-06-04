@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   **How to use:**
   Press _. (dot)_ after the function/method call and continue to
-  type the **varCheckError**, or simply **vce**, postfix completion.
+  type the *varCheckError*, or simply *vce*, postfix completion.
 
   It will surround your code with the appropriate boilerplate to 
   create any missing variables that are returned and handle the error

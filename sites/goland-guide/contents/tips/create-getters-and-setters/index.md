@@ -13,11 +13,11 @@ shortVideo:
 leadin: |
   Do you need to access your struct fields via getters and setters?
   Add all the boilerplate code you need using the dedicated
-  **Generate getter and setter** action.
+  *Generate getter and setter* action.
 
   **How to use:**
   Select a struct type, then press _Alt + Enter on Windows/Linux_ or
-  _⌥ + ⏎ on macOS_ and choose **Generate getter and setter** from the
+  _⌥ + ⏎ on macOS_ and choose *Generate getter and setter* from the
   list of available actions.
 
   Choose which fields should have these methods generated, then press

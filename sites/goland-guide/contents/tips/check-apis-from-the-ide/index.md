@@ -16,7 +16,7 @@ leadin: |
   the request you want to make.
 
   Finally, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_ 
-  and use the **Run "address"** action from the menu.
+  and use the *Run "address"* action from the menu.
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---

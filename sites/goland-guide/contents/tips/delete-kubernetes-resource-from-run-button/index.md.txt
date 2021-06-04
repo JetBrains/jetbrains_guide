@@ -13,10 +13,10 @@ shortVideo:
 leadin: |
   **How to use:**
   Click on the *Run* button in a Kubernetes resources definition file
-  and select the **Delete from Context "xyz" and Namespace "xyz"**
+  and select the *Delete from Context "xyz" and Namespace "xyz"*
   action to teardown those resources.
 
-  **Note:** You must have the Kubernetes plugin provided by JetBrains
+  **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains
   installed for this action to work.
 
   <span class="tag is-rounded">New in 2021.1</span>

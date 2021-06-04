@@ -21,8 +21,8 @@ leadin: |
 
   When you are done, close it like you would any other tool window.
 
-  **Pro tip:** Your IDE uses JCEF to display the page, which is based
-  on the Chromium browser.
+  **Pro tip:** Your IDE uses <a href="https://github.com/JetBrains/jcef">JCEF</a>
+  to display the page, which is based on the Chromium browser.
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---

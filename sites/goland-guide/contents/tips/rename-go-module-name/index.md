@@ -18,7 +18,7 @@ leadin: |
   invoke the *Refactor this* feature, _Ctrl + Alt + Shift + T on
   Windows/Linux_, and _^ + T on macOS_.
 
-  Select **Rename** from the list and change the module according to
+  Select *Rename* from the list and change the module according to
   your needs.
 
   **Pro tip:** You can preview the changes by clicking on the 

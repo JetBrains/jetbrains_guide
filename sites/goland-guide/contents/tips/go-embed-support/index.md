@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Support for go:embed directive'
 technologies: [go]
-topics: []
+topics: [editing]
 author: dlsniper
 subtitle: 'Embed files and folders into your binaries with no external tool'
 thumbnail: ./thumbnail.png
@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   Go 1.16 introduced a new feature called *go:embed*.
   
-  This works using a compiler directive, **//go:embed** and a
+  This works using a compiler directive, *//go:embed*, and a
   variable, or more, of type *string*, *[]byte*, or *embed.FS*.
   
   If you want to embed a directory, then you must use the *embed.FS*

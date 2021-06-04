@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Run Target support via WSL'
 technologies: [go]
-topics: []
+topics: [running, debugging, debugging]
 author: dlsniper
 subtitle: 'Run your application or tests in Windows Subsystem for Linux (WSL) with ease'
 thumbnail: ./thumbnail.png

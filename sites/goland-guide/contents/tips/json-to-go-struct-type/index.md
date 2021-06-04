@@ -2,7 +2,7 @@
 date: 2021-05-24
 title: 'Convert JSON to Go types via copy-paste'
 technologies: [go]
-topics: []
+topics: [editing]
 author: dlsniper
 subtitle: 'Converting a JSON response to a Go type has never been faster than this'
 thumbnail: ./thumbnail.png

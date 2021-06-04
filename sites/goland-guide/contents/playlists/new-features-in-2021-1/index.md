@@ -2,7 +2,7 @@
 label: new-features-in-goland-2021-1
 date: 2021-05-24
 title: New Features in GoLand 2021.1
-technologies: [go]
+technologies: [go, containers]
 topics: []
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2021.1 
@@ -22,20 +22,19 @@ playlistItems:
     - /tips/rename-go-module-name/
     - /tips/handle-go-errors-with-postfix-completion/
     - /tips/get-container-and-tag-completion-for-docker-files/
-    - /tips/delete-kubernetes-resource-from-run-button/
-    - /tips/convert-kubernetes-resources-format/
     - /tips/check-apis-from-the-ide/
     - /tips/builtin-html-preview/
 
 ---
-
-
 
 GoLand 2021.1, released on April 7th, 2021, allows you to build
 and run your program remotely via Docker, SSH, and WSL 2,
 use newly supported features from Go 1.16, including //go:embed,
 as well as quickly generate code from JSON, handle errors with
 ease using new quick-fixes, among other new features and enhancements!
+
+If you want to try some of these features, you can now do so using
+the builtin IDE Features Trainer functionality.
 
 Check out <a href="https://www.jetbrains.com/datagrip/whatsnew/">
 DataGrip 2021.1 What's New</a>
