@@ -11,6 +11,7 @@ require("prismjs/components/prism-java");
 require("prismjs/components/prism-groovy");
 require("prismjs/components/prism-go");
 require("prismjs/components/prism-csharp");
+require("prismjs/components/prism-yaml");
 
 // Aliases
 Prism.languages["gradle"] = Prism.languages.groovy;
