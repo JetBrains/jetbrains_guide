@@ -8,7 +8,7 @@ subtitle: 'Quickly switch between List and Multidocument YAML for Kubernetes res
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=sy25iR3z42Y&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=15&t=0s
 leadin: |
   **How to use:**

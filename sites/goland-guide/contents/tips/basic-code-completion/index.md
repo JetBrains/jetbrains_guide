@@ -8,7 +8,7 @@ subtitle: Code completion that helps you get the job done
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=cYZASKCFLUo&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Basic completion** provides a list of _all symbols_ available at the current caret position.

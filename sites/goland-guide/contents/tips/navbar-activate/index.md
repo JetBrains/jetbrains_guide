@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=uROT6qvLH4k&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=9&t=0s
 leadin: |
     Use the **Navigation Bar** to move around files, even when the whole UI is hidden away.

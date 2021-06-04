@@ -8,7 +8,7 @@ subtitle: Select the current file in the Project or Changes view and more
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=2zKvP4sCciM&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=14
 leadin: |
     The **Select in...** action helps you select the currently selected file in a particular tool window.

@@ -8,7 +8,7 @@ subtitle: The debugger also has code completion capabilities.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=HVVQCkOWiNk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     You got it right, debugger also has code completion! GoLand provides 

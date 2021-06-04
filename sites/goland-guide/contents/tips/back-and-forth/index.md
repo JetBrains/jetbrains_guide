@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=jbng41fXbs8&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=8&t=0s
 leadin: |
     Use the **Navigate | Backward** and **Navigate | Forward** to go up and down

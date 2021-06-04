@@ -8,7 +8,7 @@ subtitle: 'Quickly change from different styles the struct tags'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=0oCV5yVMwjY&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=5&t=0s
 leadin: |
     Need to change the case of struct tag keys?

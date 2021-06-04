@@ -8,7 +8,7 @@ subtitle: Hide all the tool windows in the IDE
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=vl1tZNEmjZQ&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=24
 leadin: |
     You can hide all the tool windows in the IDE and quickly switch to the

@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=XAlThsT8b_E&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=6
 leadin: |
     Use **Extend Selection** to quickly select parts of your code using semantic knowledge about it.

@@ -8,7 +8,7 @@ subtitle: 'Stop switching to a browser to inspect your template and get instant 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=A-MzFk1ELoM&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=17&t=0s
 leadin: |
   **How to use:**

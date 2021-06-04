@@ -8,7 +8,7 @@ subtitle: View the file or whole package structure and navigate to any element
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=L2fUieGhby8&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=13
 leadin: |
     The **File Structure** popup window allows you to get an overview of all the elements defined in a file or a package.

@@ -8,7 +8,7 @@ subtitle: 'Generate the support code to access fields indirectly, via getters an
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=4Xs3t-cNZAY&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=9&t=0s
 leadin: |
   Do you need to access your struct fields via getters and setters?

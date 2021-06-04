@@ -8,7 +8,7 @@ subtitle: 'Converting a JSON response to a Go type has never been faster than th
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=CTKeMh2jT8w&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=6&t=0s
 leadin: |
   **How to use:**

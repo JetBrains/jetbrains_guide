@@ -8,7 +8,7 @@ subtitle: Navigate to and from a test subject like a method or function
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=X67bE8fxU4c&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=16
 leadin: |
     Use the **Navigate | Test** feature to quickly go to a test for an element.

@@ -8,7 +8,7 @@ subtitle: Automate test generation
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=LcvIUPoUuS4&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=5
 leadin: |
     GoLand offers the option to quickly generate a test.

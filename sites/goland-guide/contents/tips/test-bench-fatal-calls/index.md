@@ -8,7 +8,7 @@ subtitle: 'Find if tests or benchmarks are using t/b.Fatal* calls inside gorouti
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=_berOV6vpTA&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=3&t=0s
 leadin: |
   Calling *t/b.Fatal\** methods from a goroutine is not advised as it

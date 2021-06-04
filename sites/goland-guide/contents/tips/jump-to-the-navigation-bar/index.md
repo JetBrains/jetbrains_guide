@@ -8,7 +8,7 @@ subtitle: Get an overview of your current location, and the project itself
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=uROT6qvLH4k&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=12
 leadin: |
     The **Navigation Bar** has a useful feature that can help you get an overview of both your current location and the

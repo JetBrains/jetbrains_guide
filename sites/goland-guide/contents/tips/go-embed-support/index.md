@@ -8,7 +8,7 @@ subtitle: 'Embed files and folders into your binaries with no external tool'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=gcgKG7E1BPw&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=2&t=0s
 leadin: |
   Go 1.16 introduced a new feature called *go:embed*.

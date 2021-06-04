@@ -8,7 +8,7 @@ subtitle: 'Extract a type into its own definition and improve the  reusability i
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=-2_LolKDunk&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=10&t=0s
 leadin: |
   If you have an anonymous type defined, you can extract it into a

@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=xVovi-VOkt0&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=26&t=0s
 leadin: |
     *Get the right answer in the right context, no typing.*

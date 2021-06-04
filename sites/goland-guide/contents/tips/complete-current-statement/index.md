@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:		
   url: https://www.youtube.com/watch?v=dsokGASiSNg&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA		
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
 leadin: |
     GoLand can complete statements and add required trailing commas for any
     composite literals (like struct, slice, etc.), and even place caret in a

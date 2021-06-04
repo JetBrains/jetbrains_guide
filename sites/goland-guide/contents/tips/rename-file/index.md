@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=mupOxP43qdk&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=20&t=0s
 leadin: |
     *Rename files with peace of mind.*

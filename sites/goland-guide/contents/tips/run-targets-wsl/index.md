@@ -8,7 +8,7 @@ subtitle: 'Run your application or tests in Windows Subsystem for Linux (WSL) wi
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=qjmNPEs0OoU&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=1&t=0s
 leadin: |
   Run Targets are a new IDE feature that allows you to run code

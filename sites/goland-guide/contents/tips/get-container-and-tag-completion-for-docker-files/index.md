@@ -8,7 +8,7 @@ subtitle: 'Save a few typos and use completion to handle the container name and 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=3qbhpWqdfC0&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=13&t=0s
 leadin: |
   **How to use:**

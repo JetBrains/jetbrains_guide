@@ -8,7 +8,7 @@ subtitle: See how to use code completion inside strings and other places
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=JUoejnuOIXs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     GoLand provides code completion and analysis in injected strings for _SQL_ and 

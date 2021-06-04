@@ -8,7 +8,7 @@ subtitle: 'Keep writing code as you would and use the Postfix Completion to gene
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=OH1lcVmasMw&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=12&t=0s
 leadin: |
   **How to use:**

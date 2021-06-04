@@ -8,7 +8,7 @@ subtitle: 'Quickly add JSON, XML, or custom keys to all struct fields'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=W-wCQ86dBa0&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=4&t=0s
 leadin: |
   If you need to add keys to existing struct types, you can now do

@@ -8,7 +8,7 @@ subtitle: Jump back and forth between files using code snippets you've recently 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=vEiGLHI6Jb0&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=11
 leadin: |
     The **Recent Locations** pop-up allows you to search for a specific change or recently viewed piece of code.
