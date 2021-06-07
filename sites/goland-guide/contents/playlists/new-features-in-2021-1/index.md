@@ -28,17 +28,14 @@ playlistItems:
 
 ---
 
-GoLand 2021.1, released on April 7th, 2021, allows you to build
-and run your program remotely via Docker, SSH, and WSL 2,
-use newly supported features from Go 1.16, including //go:embed,
-as well as quickly generate code from JSON, handle errors with
-ease using new quick-fixes, among other new features and enhancements!
-
-If you want to try some of these features, you can now do so using
-the builtin IDE Features Trainer functionality.
+GoLand 2021.1 was released on April 7th, 2021! It allows you to build
+and run your program remotely via Docker, SSH, and WSL 2, use newly
+supported features from Go 1.16, including //go:embed, quickly generate
+code from JSON, and handle errors with ease using new quick fixes,
+among other new features and enhancements!
 
 Check out <a href="https://www.jetbrains.com/datagrip/whatsnew/">
 DataGrip 2021.1 What's New</a>
 and <a href="https://www.jetbrains.com/webstorm/whatsnew/">
 WebStorm 2020.1 What's New</a> to read all about the new features
-related to database and modern web development included in it.
+related to database and modern web development included in GoLand.
