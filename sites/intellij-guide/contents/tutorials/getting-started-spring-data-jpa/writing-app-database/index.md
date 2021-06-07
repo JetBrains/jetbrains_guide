@@ -15,7 +15,7 @@ Now that we have our Employee entity, repository and database configuration, we 
 **Exercise**: Take a few minutes to see if you can create a `insertFourEmployees(EmployeeRepository repository)` method that inserts employees using the `save()` method.
 
 Done? Here is what your method would look like:
-```
+```java
 private void insertFourEmployees(EmployeeRepository repository) {
     repository.save(new Employee("Dalia", "Abo Sheasha"));
     repository.save(new Employee("Trisha", "Gee"));
@@ -26,7 +26,7 @@ private void insertFourEmployees(EmployeeRepository repository) {
 
 Now, let's go ahead and call that method in our application. In a typical Spring Boot application, we would have a service class that contains functionality provided by the service. However, since we're doing a few one-time operations, let's keep it simple and use a bean to call our `insertFourEmployees` method. Then, let's call `repository.findAll()` to retrieve the entities that were inserted. Here is what that looks like:
 
-```
+```java
 @Bean
 public CommandLineRunner run(EmployeeRepository repository) {
     return (args) -> {
