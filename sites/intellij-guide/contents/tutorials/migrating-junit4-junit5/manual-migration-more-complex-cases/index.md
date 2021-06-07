@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Manual migration for more complex cases
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Migrating more complex uses cases from JUnit 4 to JUnit 5
 thumbnail: ./thumbnail.png

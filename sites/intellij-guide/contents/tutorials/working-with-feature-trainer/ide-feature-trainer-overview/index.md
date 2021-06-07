@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-04-11
 title: Overview of the IDE Feature Trainer
-technologies: [java, kotlin]
-topics: [interface, plugins]
+technologies: []
+topics: [plugins]
 author: hs
 subtitle: The IDE Feature Trainer is a bundled plugin that's available within IntelliJ IDEA and other IDEs including PyCharm, RubyMine, AppCode, and GoLand.
 thumbnail: ./thumbnail.png

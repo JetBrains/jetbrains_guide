@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-04-11
 title: Summary
-technologies: [java, kotlin]
-topics: [interface]
+technologies: []
+topics: []
 author: hs
 subtitle: The IDE Feature Trainer is a great way to learn about features, workflows and keyboard shortcuts in IntelliJ IDEA. You do not need to complete the modules or lessons in order, allowing you to fit your learning around your schedule.
 thumbnail: ./thumbnail.png

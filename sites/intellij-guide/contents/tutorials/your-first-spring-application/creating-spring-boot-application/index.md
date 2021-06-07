@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Creating your Spring Boot Project
-technologies: [java, spring]
-topics: [gettingstarted]
+technologies: []
+topics: []
 author: hs
 subtitle: Using the IntelliJ IDEA New Project Wizard to create your Spring project and select dependencies.
 thumbnail: ./thumbnail.png

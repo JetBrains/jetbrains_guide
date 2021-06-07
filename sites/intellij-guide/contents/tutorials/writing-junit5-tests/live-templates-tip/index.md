@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Live Templates Tip
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Use Live Templates to create tests faster
 thumbnail: ./thumbnail.png
@@ -13,4 +13,4 @@ longVideo:
 ---
 
 ## Live Templates Tip
-- Using [live templates] to create new test methods exactly how we like them](https://www.jetbrains.com/help/idea/using-live-templates.html)
+- Using [live templates](https://www.jetbrains.com/help/idea/using-live-templates.html) to create new test methods exactly how we like them

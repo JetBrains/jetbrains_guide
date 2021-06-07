@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-05-14
 title: Summary - Configuring IntelliJ IDEA
 technologies: []
-topics: [settings]
+topics: []
 author: hs
 subtitle: Both Project Structure and Preferences/Settings provide ways to make IntelliJ IDEA your own 
 thumbnail: ./thumbnail.png

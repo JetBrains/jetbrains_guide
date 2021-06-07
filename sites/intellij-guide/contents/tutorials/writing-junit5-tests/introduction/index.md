@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Introduction
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Introduction to writing JUnit 5 Tests
 thumbnail: ./thumbnail.png

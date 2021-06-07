@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Automatically migrating tests
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically
 thumbnail: ./thumbnail.png

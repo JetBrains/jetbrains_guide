@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Summarising Your Spring Boot Project 
-technologies: [java, spring]
-topics: [gettingstarted]
+technologies: []
+topics: []
 author: hs
 subtitle: There are some resources in this section that you can take a look at.
 thumbnail: ./thumbnail.png

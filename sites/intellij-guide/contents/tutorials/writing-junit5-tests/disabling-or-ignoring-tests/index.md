@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Disabling or Ignoring Tests
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Using JUnit 5 annotations to disable tests
 thumbnail: ./thumbnail.png

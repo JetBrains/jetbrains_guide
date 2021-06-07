@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-05-20
 title: Testing Your Spring Boot Application
-technologies: [java, spring]
-topics: [gettingstarted]
+technologies: []
+topics: []
 author: hs
 subtitle: Let's add a test to check the content being served locally
 thumbnail: ./thumbnail.png

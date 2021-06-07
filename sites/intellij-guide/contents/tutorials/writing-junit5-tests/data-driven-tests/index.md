@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Data Driven Tests
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Using parameterised tests
 thumbnail: ./thumbnail.png

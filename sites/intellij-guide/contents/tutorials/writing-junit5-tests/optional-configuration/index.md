@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2021-01-01
 title: Optional Configuration
-technologies: [java, junit]
-topics: [testing]
+technologies: []
+topics: []
 author: hs
 subtitle: Configure parameters and how tests are run
 thumbnail: ./thumbnail.png
