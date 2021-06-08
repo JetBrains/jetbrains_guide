@@ -8,7 +8,7 @@ subtitle: Complete any word any from the current open files.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=1gBWO6Y-Kso&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Cyclic Expand Word** helps you complete any word any from the current
@@ -22,9 +22,9 @@ leadin: |
     
     **How to use:**
 
-    Press _Alt+/_ on Windows/Linux or _⌥+/_ on macOS to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
+    Press _Alt + / on Windows/Linux_ or _⌥ + / on macOS_ to search for matching words before the caret or choose _Code | Completion | Cyclic Expand Word_.
     
-    Press _Shift + Alt + /_ on Windows/Linux or _⌥ + ⇧ + /_ on macOS for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
+    Press _Shift + Alt + / on Windows/Linux_ or _⌥ + ⇧ + / on macOS_ for searching words after the caret or choose _Code | Completion | Cyclic Expand Word (Backward)_.
     
     **Pro tip:**
     

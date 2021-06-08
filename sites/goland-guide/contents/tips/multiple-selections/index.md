@@ -8,7 +8,7 @@ subtitle: Select multiple items faster
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=8OIZ7WYZsSA&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=7
 leadin: |
     Multiple selections is a very powerful feature in the editor, that lets you quickly 

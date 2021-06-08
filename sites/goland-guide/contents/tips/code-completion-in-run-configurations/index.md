@@ -8,7 +8,7 @@ subtitle: Run configurations also have code completion capabilities.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=CcDjN7o6mkQ&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     When you're editing _Run/Debug Configurations_, code completion will 

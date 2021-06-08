@@ -8,7 +8,7 @@ subtitle: Analyze call trees for functions or methods
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=alp6DFEuFYw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=18
 leadin: |
     **Call Hierarchy** allows you to quickly see all the places where a function or method is used.

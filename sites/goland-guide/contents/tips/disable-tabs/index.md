@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=kmct7D07lDg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=4&t=0s
 leadin: |
     *Want a cleaner UI with less noise to juggle in your head?*

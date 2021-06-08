@@ -8,7 +8,7 @@ subtitle: Add your own completion items via code snippets
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=hRfAr4yxY10&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     **Live Templates** are great for reducing the time you spend writing

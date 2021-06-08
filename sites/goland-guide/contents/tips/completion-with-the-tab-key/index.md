@@ -8,7 +8,7 @@ subtitle: A small, but handy feature that makes it a little easier to complete s
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=DlcYgZxKWqk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     This will overwrite the identifier at the caret, making it easy to quickly

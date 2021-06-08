@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=WQ3oGpY6V3U&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=2&t=0s
 leadin: |
     **Find Action** allows you to search IDE actions, using speed typing. This way you can stop memorizing all the shortcuts and focus on what matters.

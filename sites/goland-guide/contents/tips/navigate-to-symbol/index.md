@@ -15,7 +15,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=GRaSbV8GvOw&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=6&t=0s
 leadin: |
     Use **Navigate to Symbol** to jump between symbols in your project
