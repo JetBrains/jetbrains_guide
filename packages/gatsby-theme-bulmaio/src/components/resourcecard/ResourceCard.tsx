@@ -21,8 +21,8 @@ export interface ResourceCardProps {
     date: ResourceCardDateProps
 }
 
-function resourceTypeSuffixForDisplay(resourceType?: String): string | undefined {
-    if (resourceType !== undefined) {
+function resourceTypeSuffixForDisplay(resourceType?: String): String | undefined {
+    if (resourceType != null) {
         switch (resourceType.toLowerCase()) {
             case 'tip':
                 return 'tip';
@@ -35,7 +35,7 @@ function resourceTypeSuffixForDisplay(resourceType?: String): string | undefined
         }
     }
 
-    return undefined;
+    return resourceType;
 }
 
 const ResourceCard: React.FC<ResourceCardProps> = (
