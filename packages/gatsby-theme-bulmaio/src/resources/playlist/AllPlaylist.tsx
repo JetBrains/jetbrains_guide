@@ -37,6 +37,7 @@ const AllPlaylist: FC<AllPlaylistProps> = (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
+            resourceType={undefined} // do not show type on "all playlists" page
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             technologies={{ items: resource.technologies }}
             topics={{ items: resource.topics }}

@@ -8,6 +8,7 @@ interface Resource implements Node {
     title: String!
     subtitle: String
     excerpt: String
+    resourceType: String
     thumbnail: File @fileByRelativePath
     cardThumbnail: File @fileByRelativePath
     topics: [Topic]

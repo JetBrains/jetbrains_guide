@@ -59,6 +59,7 @@ const Author: FC<AuthorProps> = (
                                 <ResourceCard
                                     key={resource.slug}
                                     thumbnail={resource.thumbnail}
+                                    resourceType={resource.resourceType}
                                     media={{href: resource.slug, title: resource.title, subtitle: resource.subtitle}}
                                     technologies={{items: resource.technologies}}
                                     topics={{items: resource.topics}}

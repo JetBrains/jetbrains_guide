@@ -54,6 +54,7 @@ const Product: FC<ProductProps> = (
                                 <ResourceCard
                                     key={resource.slug}
                                     thumbnail={resource.thumbnail}
+                                    resourceType={resource.resourceType}
                                     media={{href: resource.slug, title: resource.title, subtitle: resource.subtitle}}
                                     products={{items: resource.products}}
                                     technologies={{items: resource.technologies}}

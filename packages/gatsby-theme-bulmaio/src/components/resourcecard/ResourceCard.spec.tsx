@@ -10,6 +10,7 @@ import { DUMMY_RCD } from './date/ResourceCardDate.spec';
 import { DUMMY_RCTH } from './thumbnail/ResourceCardThumbnail.spec';
 import { render } from '@testing-library/react';
 
+export const DUMMY_RCRT = 'Tip';
 
 export const DUMMY_RC: ResourceCardProps = {
   media: DUMMY_RCM2,
@@ -17,7 +18,8 @@ export const DUMMY_RC: ResourceCardProps = {
   products: DUMMY_RCPR,
   technologies: DUMMY_RCTE,
   topics: DUMMY_RCTO,
-  date: DUMMY_RCD
+  date: DUMMY_RCD,
+  resourceType: DUMMY_RCRT
 };
 
 describe('ResourceCard', () => {
