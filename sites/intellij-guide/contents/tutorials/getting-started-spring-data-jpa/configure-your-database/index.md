@@ -24,7 +24,11 @@ Then, we need to specify our driver class name. We can similarly search for `dri
 
 Next, we'll similarly search for the `username` and `password` properties and set their values to `sa` and `password` respectively. 
 
-Finally, we don't want to create any tables manually so we will add the `spring.jpa.hibernate.ddl-auto` property and set the value to `update`. You could also set the property to [other values](https://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/howto-database-initialization.html) such as `create-drop`. I like to set this property to `create-drop` when I'm writing my tests.
+Finally, we don't want to create any tables manually so we will add the `spring.jpa.hibernate.ddl-auto` property and use code completion to see a list of possible values.
+
+![Application Properties ddl-auto](./ApplicationPropertiesDDLAuto.png)
+
+For my application, I will set the property value to `update` which will create my tables in the database if they don't exist and update them if I make changes to my entities.
 
 ## End Result
 
