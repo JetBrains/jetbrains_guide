@@ -16,7 +16,7 @@ We'll bring up the search menu (**Shift**+**Shift**) and search for our `applica
 
 ![Application Properties URL](./ApplicationProperties.png)
 
-If you're not using H2 as your database, you can specify your own database URL here. In our case, we will specify `dbc:h2:file:./data/myDB` as our URL which will create an H2 database called `myDB`.
+If you're not using H2 as your database, you can specify your own database URL here. In our case, we will specify `jdbc:h2:file:./data/myDB` as our URL which will create an H2 database called `myDB`.
 
 Then, we need to specify our driver class name. We can similarly search for `driver` and choose `spring.datasource.driver-class-name` from our suggestions list. Once we select that, IntelliJ IDEA will suggest the H2 driver value based on the URL we specified earlier so we can select that.
 
