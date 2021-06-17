@@ -4,7 +4,7 @@ date: 2020-07-06
 title: Conclusion - Profiling in Rider
 technologies: [.net, csharp]
 topics: [ide, profiling]
-products: [rider]
+products: [rider, dottrace]
 author: maartenba
 subtitle: What have we learned? Profiling, profiler modes, optimizing code, DPA, and more. Let's summarize!
 thumbnail: ./thumbnail.png
