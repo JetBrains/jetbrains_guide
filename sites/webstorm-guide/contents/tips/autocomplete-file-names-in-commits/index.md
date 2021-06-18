@@ -3,7 +3,7 @@ date: 2021-06-10
 title: Autocomplete File Names in Commits
 technologies: []
 topics: [editing]
-author: er
+author: ed
 subtitle: Use autocompletion for filenames in your commit message
 seealso:
 - title: Renaming Files

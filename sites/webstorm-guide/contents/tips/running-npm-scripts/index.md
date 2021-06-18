@@ -3,7 +3,7 @@ date: 2021-06-11
 title: Running npm Scripts
 technologies: []
 topics: [running-debugging]
-author: er
+author: ed
 subtitle: Easily run npm scripts in WebStorm
 seealso:
 - title: Access Run Configurations Quickly
