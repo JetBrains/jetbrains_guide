@@ -3,7 +3,7 @@ date: 2021-06-11
 title: Show CSS Color Preview as Background
 technologies: []
 topics: [editing]
-author: er
+author: ed
 subtitle: Set the color you're using in a stylesheet as a background
 seealso:
 - title: Working with style sheets

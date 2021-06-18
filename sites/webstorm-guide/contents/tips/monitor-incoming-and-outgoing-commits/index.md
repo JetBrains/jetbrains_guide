@@ -3,7 +3,7 @@ date: 2021-06-11
 title: Monitor Incoming and Outgoing Commits
 technologies: []
 topics: [editing]
-author: er
+author: ed
 subtitle: How to know if a branch has new commits
 seealso:
 - title: Managing branches
