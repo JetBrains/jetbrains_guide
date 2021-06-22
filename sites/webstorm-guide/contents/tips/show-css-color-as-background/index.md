@@ -1,6 +1,6 @@
 ---
 date: 2021-06-11
-title: Show CSS Color Preview as Background
+title: Show CSS Color Preview as Background.
 technologies: []
 topics: [editing]
 author: ed

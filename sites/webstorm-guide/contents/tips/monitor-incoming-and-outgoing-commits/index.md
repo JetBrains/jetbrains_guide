@@ -4,7 +4,7 @@ title: Monitor Incoming and Outgoing Commits
 technologies: []
 topics: [editing]
 author: ed
-subtitle: How to know if a branch has new commits
+subtitle: Want to know if your branch has new commits? Here's how.
 seealso:
 - title: Managing branches
   href: https://www.jetbrains.com/help/webstorm/manage-branches.html

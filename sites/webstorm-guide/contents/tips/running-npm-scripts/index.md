@@ -4,7 +4,7 @@ title: Running npm Scripts
 technologies: []
 topics: [running-debugging]
 author: ed
-subtitle: Easily run npm scripts in WebStorm
+subtitle: Easily run npm scripts in WebStorm.
 seealso:
 - title: Access Run Configurations Quickly
   href: https://www.jetbrains.com/webstorm/guide/tips/access-run-configurations/
