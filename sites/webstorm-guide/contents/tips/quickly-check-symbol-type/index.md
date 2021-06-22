@@ -4,7 +4,7 @@ title: Quickly Check symbol Type
 technologies: []
 topics: [editing]
 author: ed
-subtitle: Get information about the type of a symbol
+subtitle: Here's how to get information about the type of a symbol.
 seealso:
 - title: Check Documentation in JavaScript
   href: https://www.jetbrains.com/webstorm/guide/tips/check-js-documentation/
