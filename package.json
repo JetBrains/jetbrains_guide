@@ -6,6 +6,10 @@
     "sites/*",
     "packages/*"
   ],
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ],
   "scripts": {
     "pc:develop": "yarn workspace pycharm-guide develop",
     "pc:build": "yarn workspace pycharm-guide build",
