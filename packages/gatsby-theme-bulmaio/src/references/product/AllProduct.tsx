@@ -1,11 +1,10 @@
-import React, { FC } from 'react';
-import { graphql } from 'gatsby';
+import React, {FC} from 'react';
 import ReferenceLayout from 'gatsby-theme-bulmaio/src/components/layout/ReferenceLayout';
-import { PageContext } from '../../components/models';
+import {PageContext} from '../../components/models';
 import Pagination from '../../components/Pagination';
-import { ProductReference } from './models';
+import {ProductReference} from './models';
 import SubsectionProduct from '../../components/subsections/SubsectionProduct';
-import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import {TwitterCardPage} from '../../components/layout/MasterLayout';
 
 interface ProductsProps {
   data: {
@@ -67,13 +66,3 @@ const AllProduct: FC<ProductsProps> = (
 
 // noinspection JSUnusedGlobalSymbols
 export default AllProduct;
-
-export const query = graphql`
-  query($skip: Int!, $limit: Int!) {
-    allProduct(limit: $limit, skip: $skip, sort: {fields: [title]}) {
-      nodes {
-        ...ListedProductFragment
-      }
-    }
-  }
-`;
