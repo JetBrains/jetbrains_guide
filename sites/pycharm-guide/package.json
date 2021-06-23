@@ -2,17 +2,18 @@
   "name": "pycharm-guide",
   "description": "Gatsby-driven compendium of PyCharm learning resources",
   "version": "1.0.0",
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ],
   "author": "Paul Everitt <paul.everitt@jetbrains.com>",
   "keywords": [
     "gatsby, typescript"
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "^3.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "gatsby": "^3.8.0"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
