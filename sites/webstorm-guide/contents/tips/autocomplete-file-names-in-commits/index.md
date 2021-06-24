@@ -12,5 +12,6 @@ thumbnail: ./thumbnail.jpeg
 cardThumbnail: ./card.png
 screenshot: ./card.jpeg
 leadin: |
-  You finished your work. Now you have to write...a meaningful commit message? Ugh, I just want to move on to the next issue. 
+  You finished your work. Now you have to write...a meaningful commit message? "Ugh, I just want to move on to the next issue." 
+  
   Let the IDE help. Often you want your commit message to refer to a file. We make it easy by autocompletion of filenames. Not just that...we only show files that were changed in the commit.
