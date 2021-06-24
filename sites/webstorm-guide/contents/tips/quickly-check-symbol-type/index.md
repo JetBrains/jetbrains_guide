@@ -1,6 +1,6 @@
 ---
 date: 2021-06-11
-title: Quickly Check symbol Type
+title: Quickly Check Symbol Type
 technologies: []
 topics: [editing]
 author: ed
