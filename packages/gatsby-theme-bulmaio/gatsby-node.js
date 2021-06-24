@@ -55,6 +55,9 @@ exports.onPreExtractQueries = async ({ getNodesByType, reporter }) => {
   const topicLabels = new Set(await getNodesByType('Topic')
     .map(topic => topic.label));
 
+  const productLabels = new Set(await getNodesByType('Product')
+      .map(product => product.label));
+
   markdownNodes.forEach(markdownNode => {
 
     const fm = markdownNode.frontmatter;
@@ -84,6 +87,15 @@ exports.onPreExtractQueries = async ({ getNodesByType, reporter }) => {
       fm.topics && fm.topics.forEach(topic => {
         if (!topicLabels.has(topic)) {
           reporter.warn(`GUIDE: Missing topic ${topic} on resource "${fm.title}"`);
+          hasMissing = true;
+        }
+      });
+
+      // ### 4. Check for missing products
+      // First get the known list of all author labels
+      fm.products && fm.products.forEach(product => {
+        if (!productLabels.has(product)) {
+          reporter.warn(`GUIDE: Missing product ${product} on resource "${fm.title}"`);
           hasMissing = true;
         }
       });

@@ -1,4 +1,5 @@
 import React, {FC} from 'react';
+import {graphql} from 'gatsby';
 import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import {ProductReference} from './models';
@@ -73,3 +74,17 @@ const Product: FC<ProductProps> = (
         </ReferenceLayout>
     );
 };
+
+// noinspection JSUnusedGlobalSymbols
+export default Product;
+
+export const query = graphql`
+  query($slug: String!) {
+    product(slug: { eq: $slug }) {
+      ...ListedProductFragment
+      referenceResources {
+        ...ListedResourceFragment
+      }
+    }
+  }
+`;
