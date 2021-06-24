@@ -11,16 +11,16 @@ module.exports = {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+              }
             }
           }
-        }
-      `,
+        `,
         feeds: [
           {
             serialize: ({query: {site, allResource}}) => {
@@ -35,22 +35,22 @@ module.exports = {
               })
             },
             query: `
-          {
-            allResource(
-              limit: 1000,
-              sort: { order: DESC, fields: [date] },
-            ) {
-              edges {
-                node {
-                  title
-                  excerpt
-                  date
-                  slug
+              {
+                allResource(
+                  limit: 1000,
+                  sort: { order: DESC, fields: [date] },
+                ) {
+                  edges {
+                    node {
+                      title
+                      excerpt
+                      date
+                      slug
+                    }
+                  }
                 }
               }
-            }
-          }
-          `,
+            `,
             output: '/rss.xml',
           },
         ],
@@ -131,28 +131,16 @@ module.exports = {
       options: {
         createLinkInHead: true,
         query: `
-                    {
-                      site {
-                        pathPrefix
-                      }
-            
-                      allSitePage {
-                        nodes {
-                          path
-                        }
-                      }
-                  }`,
-        resolveSiteUrl: ({site, allSitePage}) => {
-          return 'https://www.jetbrains.com'
-        },
-        serialize: ({site, allSitePage}) =>
-          allSitePage.nodes.map(node => {
-            return {
-              url: `https://www.jetbrains.com${node.path}`,
-              changefreq: `daily`,
-              priority: 0.8,
+          {
+            allSitePage {
+              nodes {
+                path
+              }
             }
-          })
+          }
+        `,
+        resolveSiteUrl: () => 'https://www.jetbrains.com',
+        resolvePagePath: (page) => page.path,
       }
     }
   ]
