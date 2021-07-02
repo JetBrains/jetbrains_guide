@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/tGxG3KZkRQI  
 leadin: |
-  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can type in camel case to search across Classes, Files, Symbols and Actions. 
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can type in camel case to search across Classes, Files, Symbols, Actions and Git. 
   
 ---
