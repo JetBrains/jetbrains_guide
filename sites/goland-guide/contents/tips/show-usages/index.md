@@ -8,7 +8,7 @@ subtitle: Quickly discover the usages of the element your cursor is at
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=taKlZlicpwM&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=19
 leadin: |
     The **Show usages** feature allows you to quickly answer the question "Where's this element used?"

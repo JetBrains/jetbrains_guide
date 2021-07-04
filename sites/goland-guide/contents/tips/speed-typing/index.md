@@ -8,7 +8,7 @@ subtitle: Quickly navigate to or filter any list of items in the IDE
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=zNBATrPbkTI&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=25
 leadin: |
     **Speed Typing** is the ability to type anything in a list and have the results

@@ -8,7 +8,7 @@ subtitle: Get the focus back to the editor regardless what is currently focused
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=iJHwMXw79k0&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=23
 leadin: |
     There are a lot of (tool) windows opening or appearing when using the IDE. 

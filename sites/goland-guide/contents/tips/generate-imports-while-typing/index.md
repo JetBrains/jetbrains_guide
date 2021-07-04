@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=-Y2D2ob2Yjo&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=17&t=0s
 leadin: |
     *Tired of stopping your coding to go write an import?*

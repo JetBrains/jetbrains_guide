@@ -65,6 +65,7 @@ const Tutorial: FC<TutorialProps> = (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
+            resourceType={undefined} // do not show type on "all tutorial steps" page
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             products={{ items: resource.products }}
             technologies={{ items: resource.technologies }}

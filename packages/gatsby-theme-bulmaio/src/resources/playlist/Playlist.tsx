@@ -57,6 +57,7 @@ const Playlist: FC<PlaylistProps> = (
             <ResourceCard
               key={resource.slug}
               thumbnail={resource.thumbnail}
+              resourceType={resource.resourceType}
               media={{ href: fullHref, title: resource.title, subtitle: resource.subtitle }}
               products={{ items: resource.products }}
               technologies={{ items: resource.technologies }}

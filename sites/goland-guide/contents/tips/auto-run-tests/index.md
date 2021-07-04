@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=KKK1FqnBnMs&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=29&t=0s
 leadin: |
     Test-driven development (TDD) means always run your tests.

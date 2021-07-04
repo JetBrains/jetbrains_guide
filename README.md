@@ -94,6 +94,10 @@ and tell the story of the body text.
 What goes in the body text? A deeper-dive on the tip: the problem it is
 solving, why you should give a crap, its variations, etc.
 
+> **Tip:- R** Install the [PNG Optimizer plugin](https://plugins.jetbrains.com/plugin/7942-png-optimizer) to make sure your PNG images are optimized in terms of file size.
+> This speeds up (re)build time, and saves precious bandwidth.
+> The plugin hooks into the commit tool window, and automatically runs optimization (when enabled).
+
 ### Authors
 
 Each Guide resource needs an author, so create a directory in `src/{guide}/contents/authors`

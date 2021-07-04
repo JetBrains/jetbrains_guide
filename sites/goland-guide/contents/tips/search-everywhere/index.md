@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=WIADmm2I3bw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=26&t=0s
 leadin: |
     **Search Everywhere** helps you search for anything – from IDE settings to parts of your code.

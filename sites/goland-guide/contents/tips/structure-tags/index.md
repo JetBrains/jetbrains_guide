@@ -8,7 +8,7 @@ subtitle: Quickly add tags to any fields from structures
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=KaXklqjrT1U&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=3
 leadin: |
     GoLand helps you add struct tags using custom live templates built into the IDE.

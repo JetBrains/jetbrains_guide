@@ -8,7 +8,7 @@ subtitle: See how to use code completion inside strings and other places
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=JUoejnuOIXs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
 leadin: |
     GoLand provides code completion and analysis in injected strings for _SQL_ and 
@@ -17,7 +17,7 @@ leadin: |
     **How to use:**
     
     Place the cursor within the literal (_between_ the quotation marks) and press 
-    _Alt + Enter on Windows/Linux_ or _ ⌥ + ⏎ on macOS_, select **Inject language or reference**,
+    _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, select **Inject language or reference**,
     choose which one of supported injection language you want to use and 
     start typing, auto-completion will appear instantly.
 

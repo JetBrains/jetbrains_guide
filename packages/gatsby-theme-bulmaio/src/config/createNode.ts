@@ -64,6 +64,7 @@ exports.setupCreateNode = async function onCreateNode(
       //    type doesn't ask for it. Perhaps later we'll split
       //    resource and reference into separate create steps.
       label,
+      resourceType,
       parent: node.id,
       children: [],
       internal: {

@@ -37,6 +37,7 @@ const AllTutorial: FC<AllTutorialProps> = (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
+            resourceType={undefined} // do not show type on "all tutorials" page
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             technologies={{ items: resource.technologies }}
             products={{ items: resource.products }}

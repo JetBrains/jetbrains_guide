@@ -11,14 +11,14 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=8OIZ7WYZsSA&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=7
 leadin: |
     Do you want to select all the occurrences of a piece of code?
     
     **How to use:**
     
-    Press _Ctrl + Alt + Shift + J_ on Windows/Linux, and _⌘ + ^ + G_ on macOS.
+    Press _Ctrl + Alt + Shift + J on Windows/Linux_, and _⌘ + ^ + G on macOS_.
     
     After the selection is complete, you can start editing all the fragments
     as if they were all the same one.

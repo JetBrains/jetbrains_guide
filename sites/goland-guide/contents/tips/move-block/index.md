@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url:  https://www.youtube.com/watch?v=R8B_xsb_leg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=14&t=0s
 leadin: |
     *Move lines and blocks, up or down, using the keyboard.*

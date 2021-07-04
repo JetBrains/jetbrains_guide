@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-01-01
 title: Setting up Gradle for JUnit 5
-technologies: []
+technologies: [gradle]
 topics: []
 author: hs
 subtitle: Laying the foundations for Writing JUnit 5 Tests

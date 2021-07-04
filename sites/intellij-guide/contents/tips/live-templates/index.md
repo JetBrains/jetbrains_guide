@@ -3,7 +3,7 @@ hasBody: true
 date: 2021-05-28
 title: Live Templates
 technologies: [java]
-topics: [editing]
+topics: [editing, livetemplates]
 author: tg
 subtitle: Use Live Templates to auto-complete common code structures for you
 thumbnail: ./thumbnail.png

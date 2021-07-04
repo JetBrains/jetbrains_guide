@@ -12,6 +12,7 @@ import {Thumbnail} from "../../models";
 export interface ResourceCardProps {
     logo?: ResourceCardLogoProps,
     thumbnail?: Thumbnail,
+    resourceType?: String,
     media: ResourceCardMediaProps,
     author?: ResourceCardAuthorProps,
     products?: ResourceCardProductsProps,
@@ -20,8 +21,25 @@ export interface ResourceCardProps {
     date: ResourceCardDateProps
 }
 
+function resourceTypeSuffixForDisplay(resourceType?: String): String | undefined {
+    if (resourceType != null) {
+        switch (resourceType.toLowerCase()) {
+            case 'tip':
+                return 'tip';
+            case 'tutorial':
+                return 'tutorial';
+            case 'tutorialstep':
+                return 'part of tutorial';
+            case 'playlist':
+                return 'playlist';
+        }
+    }
+
+    return resourceType;
+}
+
 const ResourceCard: React.FC<ResourceCardProps> = (
-    {logo, thumbnail, media, author, products, technologies, topics, date}
+    {logo, thumbnail, resourceType, media, author, products, technologies, topics, date}
 ) => {
 
     return (
@@ -35,7 +53,7 @@ const ResourceCard: React.FC<ResourceCardProps> = (
                 </div>
                 <div className="media-content is-clipped">
                     <div className="content">
-                        <ResourceCardMedia {...media} />
+                        <ResourceCardMedia {...media} resourceType={resourceTypeSuffixForDisplay(resourceType)} />
 
                         <nav className="level">
                             <div className="level-left">

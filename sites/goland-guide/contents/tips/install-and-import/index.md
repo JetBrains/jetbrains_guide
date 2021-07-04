@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=APsEgG4j24A&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=18&t=0s
 leadin: |
     *Type the symbol, let your IDE install the package and write the import.*

@@ -6,6 +6,7 @@ export const query = graphql`
     title
     subtitle
     date(formatString: "YYYY-MM-DD")
+    resourceType
     thumbnail {
       ...ThumbnailFragment
     }

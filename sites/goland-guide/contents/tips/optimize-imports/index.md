@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=iMO_scb96fg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=16&t=0s
 leadin: |
     **Optimize Imports** helps you deal with unsorted imports and unused imports.

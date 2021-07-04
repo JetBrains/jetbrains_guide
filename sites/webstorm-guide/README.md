@@ -50,6 +50,8 @@ npm run develop
 - gatsby-source-filesystem
 - gatsby-transformer-sharp
 
+...and more.
+
 ## Tools
 
 - Testing: [Jest](https://jestjs.io) and [react-testing-library](https://github.com/kentcdodds/react-testing-library)

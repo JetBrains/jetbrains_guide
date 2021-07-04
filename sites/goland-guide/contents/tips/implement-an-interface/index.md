@@ -8,7 +8,7 @@ subtitle: Implementing an interface is a common task that Go programmers need to
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=0ChuCzfdcSE&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=2
 leadin: |
     GoLand offers the option to quickly implement an interface using the
