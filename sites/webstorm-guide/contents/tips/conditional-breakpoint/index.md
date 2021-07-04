@@ -8,7 +8,7 @@ subtitle: Add a condition to a breakpoint when debugging.
 seealso:
 - title: How to debug with WebStorm
   href: https://blog.jetbrains.com/webstorm/2018/01/how-to-debug-with-webstorm/
-- title: Documenation for debugging code
+- title: Documentation for debugging code
   href: https://www.jetbrains.com/help/webstorm/debugging-code.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png

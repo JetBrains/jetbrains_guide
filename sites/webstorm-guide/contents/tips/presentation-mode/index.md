@@ -14,6 +14,9 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2020/05/plugins-for-webstorm-you-need-to-know-about/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.jpeg
+animatedGif:
+  file: ./tip.gif
+  width: 600
+  height: 300
 leadin: |
   Whenever you’re presenting at conferences or company events, use the *Presentation* mode which makes it easier for the audience to see what’s going on in the editor (*Ctrl + ` | View Mode | Enter/Exit Presentation Mode*).
