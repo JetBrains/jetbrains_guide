@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-    title: 'Space Guide',
-    description: 'Be more productive with a series of tips and tricks',
+        title: 'Space Guide',
+        description: 'Be more productive with a series of tips and tricks',
         siteUrl: 'https://www.jetbrains.com/space/guide/', // Used by feed
         theme: {
             helmet: {
