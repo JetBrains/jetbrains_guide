@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-    title: 'PyCharm Guide',
-    description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
+        title: 'PyCharm Guide',
+        description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
         siteUrl: 'https://www.jetbrains.com/pycharm/guide/', // Used by feed
         theme: {
             helmet: {
@@ -92,8 +92,8 @@ module.exports = {
                             icon: 'twitter'
                         }
                     ]
-                }
-            },
+                    }
+                },
             footer: {
                 copyright: 'Copyright © 2000–2021 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.'
             }
