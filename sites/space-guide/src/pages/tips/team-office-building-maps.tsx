@@ -4,7 +4,7 @@ import RedirectLayout from "gatsby-theme-bulmaio/src/components/layout/RedirectL
 const IndexPage: React.FC = () => {
 
     return (
-        <RedirectLayout to={`https://www.jetbrains.com/help/space/tips.html`} />
+        <RedirectLayout to={`https://www.jetbrains.com/help/space/tips-teams.html#team-office-building-maps`} />
     );
 };
 
