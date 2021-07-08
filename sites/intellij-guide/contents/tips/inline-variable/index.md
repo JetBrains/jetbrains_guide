@@ -9,7 +9,10 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/SgjZV5yHOmQ  
+  url: https://youtu.be/SgjZV5yHOmQ
+seealso:
+- title: IntelliJ IDEA Help - Lines of code
+  href: https://www.jetbrains.com/help/idea/inline.html#inline_variable
 leadin: |
   Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method.
 
