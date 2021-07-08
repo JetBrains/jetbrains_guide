@@ -23,6 +23,3 @@ leadin: |
   
   To explore the custom themes that are available, go to *Preferences/Settings | Plugins* and search the marketplace for *theme*. If none of the existing themes suit your needs, you can also create your [own](https://jetbrains.org/intellij/sdk/docs/reference_guide/ui_themes/themes_intro.html).
   
-  Themes used for the gif: [Material Theme UI](https://plugins.jetbrains.com/plugin/8006-material-theme-ui) (Material Deep Ocean), [One Dark](https://plugins.jetbrains.com/plugin/11938-one-dark-theme), [Gradianto](https://plugins.jetbrains.com/plugin/12334-gradianto), and [Dark Purple](https://plugins.jetbrains.com/plugin/12100-dark-purple-theme).
-  
-  
