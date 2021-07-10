@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Only Commit Some Changes
-technologies: []
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Unselect files or changed regions within files during the commit process.

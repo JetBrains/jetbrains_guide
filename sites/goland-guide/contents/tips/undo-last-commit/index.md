@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Undo Last Commit
-technologies: []
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Quickly and visually recover from a commit-in-error.

@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: 'Quick Documentation'
-technologies: []
+technologies: [platform]
 topics: [editing]
 author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.

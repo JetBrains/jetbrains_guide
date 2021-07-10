@@ -1,7 +1,7 @@
 ---
 date: 2021-05-24
 title: 'Builtin HTML preview'
-technologies: [go]
+technologies: [web]
 topics: [ui]
 author: dlsniper
 subtitle: 'Stop switching to a browser to inspect your template and get instant feedback in your IDE'

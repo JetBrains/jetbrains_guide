@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: 'Move Block Up/Down Using Keyboard'
-technologies: []
+technologies: [platform]
 topics: [editing]
 author: dlsniper
 subtitle: 'Use the keyboard to move a line or selection up or down in your file.'
