@@ -38,6 +38,13 @@ module.exports = {
                             icon: 'fas fa-tags'
                         },
                         {
+                            accent: 'danger',
+                            cssClass: 'documentation',
+                            href: '/technologies/',
+                            label: 'Technologies',
+                            icon: 'fas fa-project-diagram'
+                        },
+                        {
                             label: 'More...',
                             items: [
                                 {
