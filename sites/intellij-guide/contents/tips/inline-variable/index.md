@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/SgjZV5yHOmQ
 seealso:
-- title: IntelliJ IDEA Help - Lines of code
+- title: IntelliJ IDEA Help - Inline a Variable
   href: https://www.jetbrains.com/help/idea/inline.html#inline_variable
 leadin: |
   Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method.
