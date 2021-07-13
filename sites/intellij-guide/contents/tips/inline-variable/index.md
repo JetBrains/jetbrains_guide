@@ -14,7 +14,7 @@ seealso:
 - title: IntelliJ IDEA Help - Inline a Variable
   href: https://www.jetbrains.com/help/idea/inline.html#inline_variable
 leadin: |
-  Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method.
+  Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a variable.
 
   You can inline methods, variables, fields, and constants with the same shortcut.   
   
