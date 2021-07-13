@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   **How to use:**
 
-  Open a `docker-compose.yaml` file and go to any ports mapping section to see if it contains any messages or not.
+  Open a _docker-compose.yaml_ file and go to any ports mapping section to see if it contains any messages or not.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---

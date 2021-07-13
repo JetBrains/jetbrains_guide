@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   **How to use:**
 
-  You don't need to do anything special to use this feature. When using the `classnames` and `clsx` libraries, the IDE will show completion suggestions for your CSS classes and resolve all symbols in string literals and properties with literal names.
+  You don't need to do anything special to use this feature. When using the _classnames_ and _clsx_ libraries, the IDE will show completion suggestions for your CSS classes and resolve all symbols in string literals and properties with literal names.
 
    <span class="tag is-rounded">New in 2021.2</span>
 ---

@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   **How to use:**
 
-  Select a portion of the code, press _Alt+Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, then choose `Create new scratch file from selection` to quickly create a new scratch containing the same code.
+  Select a portion of the code, press _Alt+Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, then choose _Create new scratch file from selection_ to quickly create a new scratch containing the same code.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---

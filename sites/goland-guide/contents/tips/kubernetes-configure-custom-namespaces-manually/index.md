@@ -13,7 +13,7 @@ leadin: |
 
   **How to use:**
 
-  Go to `Settings/Preferences | Build, Execution, Deployment | Kubernetes` and configure the namespace in the corresponding section.
+  Go to _Settings/Preferences | Build, Execution, Deployment | Kubernetes_ and configure the namespace in the corresponding section.
 
   **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains installed for this action to work.
 

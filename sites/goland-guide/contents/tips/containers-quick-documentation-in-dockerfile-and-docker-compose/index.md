@@ -13,7 +13,7 @@ shortVideo:
 leadin: |
   **How to use:**
 
-  As with any regular programming language supported by the IDE, place the cursor on a key in a _Dockerfile_ or a _docker-compose.yaml_  then invoke the `Quick Documentation` feature via _Ctrl + Q on Windows/Linux_ or _F1 on macOS_ and learn more about the desired key.
+  As with any regular programming language supported by the IDE, place the cursor on a key in a _Dockerfile_ or a _docker-compose.yaml_  then invoke the **Quick Documentation** feature via _Ctrl + Q on Windows/Linux_ or _F1 on macOS_ and learn more about the desired key.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---

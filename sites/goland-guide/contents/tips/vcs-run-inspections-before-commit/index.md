@@ -15,7 +15,7 @@ leadin: |
 
   **How to use:**
 
-  Invoke the `Commit` using _Ctrl + K on Windows/Linux_ and _Cmd + K on macOS_, then select the `Commit options`, and select the `Analyze code` feature.
+  Invoke the _Commit_ using _Ctrl + K on Windows/Linux_ and _⌘ + K on macOS_, then select the _Commit options_, and select the **Analyze code** feature.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---

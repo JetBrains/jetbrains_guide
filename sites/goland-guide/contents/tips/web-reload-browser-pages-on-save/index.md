@@ -15,7 +15,7 @@ leadin: |
 
   **How to use:**
 
-  First, open the file from the IDE via the icon on the upper right-side of the editor or via `View | Open in Browser | <browser name>`.
+  First, open the file from the IDE via the icon on the upper right-side of the editor or via _View | Open in Browser | <browser name>_.
 
   Reloading is triggered whenever changes are saved in the IDE, either automatically or using Press _Ctrl + S on Windows/Linux_, _⌘ + S on macOS_, or when changes are made to a file externally.
 

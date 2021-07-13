@@ -13,7 +13,7 @@ leadin: |
 
   **How to use:**
 
-  The IDE will automatically clean up any cache and log directories that were last updated more than 180 days ago. To trigger this process manually, go to `Help | Delete Leftover IDE Directories...`.
+  The IDE will automatically clean up any cache and log directories that were last updated more than 180 days ago. To trigger this process manually, go to _Help | Delete Leftover IDE Directories..._.
 
   **Note:** The system settings and plugins directories will stay intact.
 

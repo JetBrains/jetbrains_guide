@@ -13,11 +13,11 @@ leadin: |
 
   **How to use:**
 
-  To use this feature, check the `On code reformat` option under `Settings/Preferences | Editor | Code Style | Go | Other`.
+  To use this feature, check the **On code reformat** option under _Settings/Preferences | Editor | Code Style | Go | Other_.
 
-  Now you can use the default shortcut, `Ctrl + Alt + L` on Windows/Linux or `Cmd + Alt + L` on macOS, to trigger the builtin formatter.
+  Now you can use the default shortcut, _Ctrl + Alt + L_ on Windows/Linux or _⌘ + ⌥ + L_ on macOS, to trigger the builtin formatter.
 
-  **Pro tip**: You can also search for `Run gofmt` in the IDE `Settings/Preferences`, and activate the option as described above.
+  **Pro tip**: You can also search for **Run gofmt** in the IDE _Settings/Preferences_, and activate the option as described above.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---

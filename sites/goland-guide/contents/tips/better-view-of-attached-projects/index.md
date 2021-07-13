@@ -15,9 +15,9 @@ leadin: |
 
   **How to use:**
 
-  Select the `Attach` feature when opening an existing project or creating a new one.
+  Select the **Attach** feature when opening an existing project or creating a new one.
 
-  When your work is done, right-click on the project you want to detach and select `Remove from Project View`.
+  When your work is done, right-click on the project you want to detach and select **Remove from Project View**.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---
