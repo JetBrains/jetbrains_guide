@@ -2,7 +2,7 @@
 label: 20
 date: 2021-13-07
 title: Navigating Code
-technologies: [all]
+technologies: []
 topics: [navigation]
 author: hs
 subtitle: Tips for navigating around your code base (in no particular order!)

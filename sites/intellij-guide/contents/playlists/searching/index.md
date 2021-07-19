@@ -2,7 +2,7 @@
 label: 20
 date: 2021-13-07
 title: Searching Codebase
-technologies: [all]
+technologies: []
 topics: [tricks,gettingstarted,interface]
 author: hs
 subtitle: Tips for searching and finding content in your codebase
