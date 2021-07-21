@@ -1,11 +1,11 @@
 ---
 label: 20
 date: 2021-13-07
-title: Navigating Code
+title: Moving Through Your Code
 technologies: []
 topics: [navigation]
 author: hs
-subtitle: Tips for navigating around your code base (in no particular order!)
+subtitle: Tips for moving through and navigating your code base 
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -16,6 +16,7 @@ playlistItems:
     - /tips/recent-files/
     - /tips/recent-locations/
     - /tips/f2/
+    - /tips/find-actions/
     
 ---
 
