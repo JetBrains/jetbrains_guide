@@ -16,7 +16,6 @@ playlistItems:
     - /tips/recent-files/
     - /tips/recent-locations/
     - /tips/f2/
-    - /tips/find-actions/
     
 ---
 
