@@ -48,6 +48,7 @@ public void Test1()
 {
   Assert.Pass();
 }
+```
 
 Running the newly authored test in ReSharper will create a new unit test session and open the **Unit Test Sessions** tool window.
 
