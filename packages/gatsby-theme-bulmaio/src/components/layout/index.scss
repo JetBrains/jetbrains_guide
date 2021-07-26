@@ -2,26 +2,7 @@
 
 // Pick and choose what we want from Bulma. Specifically, leave
 // out the tags as it conflicts with Prism.
-@import "../../../../../node_modules/bulma/sass/utilities/_all";
-@import "../../../../../node_modules/bulma/sass/base/_all";
-@import "../../../../../node_modules/bulma/sass/elements/box.sass";
-@import "../../../../../node_modules/bulma/sass/elements/button.sass";
-@import "../../../../../node_modules/bulma/sass/elements/container.sass";
-@import "../../../../../node_modules/bulma/sass/elements/content.sass";
-@import "../../../../../node_modules/bulma/sass/elements/icon.sass";
-@import "../../../../../node_modules/bulma/sass/elements/image.sass";
-@import "../../../../../node_modules/bulma/sass/elements/notification.sass";
-@import "../../../../../node_modules/bulma/sass/elements/progress.sass";
-@import "../../../../../node_modules/bulma/sass/elements/tag.sass";
-@import "../../../../../node_modules/bulma/sass/elements/title.sass";
-
-//@import "../../../../../node_modules/bulma/sass/elements/other.sass";
-
-@import "../../../../../node_modules/bulma/sass/form/_all";
-@import "../../../../../node_modules/bulma/sass/components/_all";
-@import "../../../../../node_modules/bulma/sass/grid/_all";
-@import "../../../../../node_modules/bulma/sass/layout/_all";
-
+@import "../../../../../node_modules/bulma/bulma";
 @import "../../../../../node_modules/bulma-o-steps/bulma-steps";
 
 @import "bulmaio/bulmaio";
