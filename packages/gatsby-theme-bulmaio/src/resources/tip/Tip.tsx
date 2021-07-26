@@ -73,10 +73,10 @@ const Tip: FC<TipProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: tip.title,
     description: tip.subtitle ? tip.subtitle : '',
-    image: tip.cardThumbnail
-        ? `https://www.jetbrains.com${tip.cardThumbnail.publicURL}`
-        : tip.thumbnail
-            ? `https://www.jetbrains.com${tip.thumbnail.publicURL}`
+    image: tip.thumbnail
+        ? `https://www.jetbrains.com${tip.thumbnail.publicURL}`
+        : tip.cardThumbnail
+            ? `https://www.jetbrains.com${tip.cardThumbnail.publicURL}`
             : ''
   };
 

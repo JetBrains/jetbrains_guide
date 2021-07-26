@@ -33,10 +33,10 @@ const Tutorial: FC<TutorialProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: tutorial.title,
     description: tutorial.subtitle ? tutorial.subtitle : '',
-    image: tutorial.cardThumbnail
-        ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}`
-        : tutorial.thumbnail
-            ? `https://www.jetbrains.com${tutorial.thumbnail.publicURL}`
+    image: tutorial.thumbnail
+        ? `https://www.jetbrains.com${tutorial.thumbnail.publicURL}`
+        : tutorial.cardThumbnail
+            ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}`
             : ''
   };
 
