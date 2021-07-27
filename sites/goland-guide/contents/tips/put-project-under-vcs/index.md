@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Put New Project Under Version Control
-technologies: []
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: The fastest way to register a new project directory under local version control.

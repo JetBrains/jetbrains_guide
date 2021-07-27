@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Conditional Breakpoints
-technologies: []
+technologies: [platform]
 topics: [debugging]
 author: dlsniper
 subtitle: Speed up your debugging by stopping execution only when you want to.

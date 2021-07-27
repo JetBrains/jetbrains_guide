@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Auto-Run Tests
-technologies: []
+technologies: [platform]
 topics: [testing]
 author: dlsniper
 subtitle: Get into testing mode by telling GoLand to automatically re-run tests as you type.

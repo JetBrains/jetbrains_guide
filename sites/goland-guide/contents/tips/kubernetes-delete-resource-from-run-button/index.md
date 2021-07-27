@@ -1,7 +1,7 @@
 ---
 date: 2021-05-24
 title: 'Delete Kubernetes resources from the run button'
-technologies: [go]
+technologies: [kubernetes]
 topics: []
 author: dlsniper
 subtitle: 'Teardown resources faster'
@@ -16,8 +16,7 @@ leadin: |
   and select the *Delete from Context "xyz" and Namespace "xyz"*
   action to teardown those resources.
 
-  **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains
-  installed for this action to work.
+  **Note:** You must have the <a href="https://plugins.jetbrains.com/plugin/10485-kubernetes">Kubernetes plugin</a> provided by JetBrains installed for this action to work.
 
   <span class="tag is-rounded">New in 2021.1</span>
 ---

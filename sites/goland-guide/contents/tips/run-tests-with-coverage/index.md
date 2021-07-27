@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Spot Coverage Gaps Using the Gutter
-technologies: []
+technologies: [platform]
 topics: [testing]
 author: dlsniper
 subtitle: Let the IDE help you spot coverage gaps in your testing.

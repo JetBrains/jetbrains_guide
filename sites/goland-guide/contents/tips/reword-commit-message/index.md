@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Reword Commit Message
-technologies: [go]
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Change the wording in your last commit message, after you committed.

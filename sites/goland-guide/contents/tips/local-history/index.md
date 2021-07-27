@@ -1,7 +1,7 @@
 ---
 date: 2020-02-05
 title: Use Local History to Avoid Disaster
-technologies: [go]
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.

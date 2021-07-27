@@ -1,7 +1,7 @@
 ---
 date: 2021-05-24
 title: 'Check APIs from the comfort of your IDE'
-technologies: [go]
+technologies: [web]
 topics: [running]
 author: dlsniper
 subtitle: 'Quickly inspect APIs and make HTTP requests to services in a reusable manner'

@@ -2,7 +2,7 @@
 label: new-features-in-goland-2021-1
 date: 2021-05-24
 title: New Features in GoLand 2021.1
-technologies: [go, containers]
+technologies: [go, web, containers, kubernetes]
 topics: []
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2021.1 
@@ -25,6 +25,8 @@ playlistItems:
     - /tips/get-container-and-tag-completion-for-docker-files/
     - /tips/check-apis-from-the-ide/
     - /tips/builtin-html-preview/
+    - /tips/kubernetes-convert-resources-format/
+    - /tips/kubernetes-delete-resource-from-run-button/
 
 ---
 
@@ -37,5 +39,5 @@ among other new features and enhancements!
 Check out <a href="https://www.jetbrains.com/datagrip/whatsnew/">
 DataGrip 2021.1 What's New</a>
 and <a href="https://www.jetbrains.com/webstorm/whatsnew/">
-WebStorm 2020.1 What's New</a> to read all about the new features
+WebStorm 2021.1 What's New</a> to read all about the new features
 related to database and modern web development included in GoLand.

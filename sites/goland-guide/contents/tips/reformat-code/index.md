@@ -19,7 +19,7 @@ shortVideo:
   url: https://www.youtube.com/watch?v=2OYlMKWRUHU&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=15&t=0s
 leadin: |
     **Reformat Code** makes it a piece of cake to fix style warnings
-    and make your code formatted like `gofmt` would.    
+    and make your code formatted like _go fmt_ would.    
 
     **How to use:**
 
