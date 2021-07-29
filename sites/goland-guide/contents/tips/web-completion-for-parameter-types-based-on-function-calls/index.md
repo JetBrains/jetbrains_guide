@@ -17,7 +17,7 @@ leadin: |
 
   You don't need to do anything to use this feature as the IDE will automatically infer the code suggestions based on what you typed already.
 
-  **Pro tip:** Use the Smart Type Completion to narrow-down the list further.
+  **Pro tip:** Use the Smart Type Completion, _Ctrl + Shift + Space on Windows/Linux_ or _^ + ⇧ + Space on macOS_, to narrow-down the list further.
 
   <span class="tag is-rounded">New in 2021.2</span>
 ---
