@@ -34,6 +34,7 @@ playlistItems:
     - /tips/tailwind-css-support/
     - /tips/vue3-support/
     - /tips/mongodb-query-using-sql/
+    - /tips/write-sql-queries-in-go/
     - /tips/mermaid-js-support-in-markdown/
     - /tips/download-kubernetes-pod-log/
     - /tips/open-console-in-kubernetes/
