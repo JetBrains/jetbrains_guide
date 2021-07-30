@@ -1,5 +1,5 @@
 ---
-date: 2020-07-29
+date: 2021-07-29
 title: 'Connect from the IDE to a MongoDB database'
 technologies: [databases]
 topics: [mongodb]
