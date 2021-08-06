@@ -12,10 +12,15 @@ longVideo:
   url: https://youtu.be/F8UTTTDtbH0?start=566
 ---
 
-## Manual Migration for More Complex Cases
-[Video snippet](https://youtu.be/F8UTTTDtbH0?t=566)
-- Removing the [dependency on the JUnit Vintage Engine](https://github.com/JetBrains/intellij-samples/blob/901b5f824e5ee2bbeb3f4b6eb213a237a70b4399/standard-java/pom.xml) from the Maven POM file to see JUnit 4 tests
-- Recompiling the project to see which tests relied on the JUnit Vintage Engine and need to be migrated manually
-- Updating imports for Hamcrest by statically importing it and then optimizing the imports
-- Managing migrations from JUnit 3 tests
-- Removing any outstanding references to JUnit 4
+If the tests in the project are fairly straightforward ones, this automatic migration should take care of most of the tasks that need to happen.  However, not all cases can be managed automatically.
+
+Migration from JUnit 4 to JUnit 5 could be a slow and steady process.
+
+At this point in our project, we have some tests fully migrated to JUnit 5, some partially migrated but using some JUnit 4 features, and potentially there may be some classic JUnit 4 (or even JUnit 3) tests running as they are. We're running them all using JUnit 5, so we can write new tests using the new JUnit 5 features but keep existing stable tests as they are, if we choose.
+
+However, we might want to remove the dependency on the vintage engine to prevent ourselves from accidentally writing tests in the old style.  If we remove this dependency, refresh the maven changes and rebuild the project, we will be able to see which classes require the vintage engine, and therefore which tests need more help migrating to JUnit 5.
+
+One example of a change that we might do manually is to use the correct import for `assertThat` from [Hamcrest](http://hamcrest.org/JavaHamcrest/).  We could do this by removing the reference to the JUnit `Assert` class, and getting IntelliJ IDEA to static import the Hamcrest `MatcherAssert.assertThat`. We can use optimise imports to remove the unnecessary JUnit 4 `Assert` import.
+
+We may discover that some of our tests are even JUnit 3 style tests - these tests extend a `TestCase` instead of using annotations.  Pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) on the class suggests that we can migrate this to JUnit 4, which seems like a good first step. Now the test will use annotations, and won't import anything from the old `junit.framework` package.  Now we can take the next step and migrate this test to JUnit 5.  We might also want to do optimise imports to remove any old imports that aren't needed.
+
