@@ -10,14 +10,9 @@ thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=247
-seealso:
-- title: IntelliJ IDEA Help - Inspections
-  href: https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings
-- title: IntelliJ IDEA Help - Refactoring Preview window
-  href: https://www.jetbrains.com/help/idea/refactoring-source-code.html#refactoring_preview
 ---
 
-Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ preferences and type in 'inspections'. IntelliJ IDEA's inspections can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
+Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
 
 To help with the migration, turn on 'JUnit 4 test can be JUnit 5' inspection.  You can only turn this on if you're using at least Java 8 and have JUnit 5 dependencies set up.
 
@@ -77,7 +72,7 @@ With this inspection turned on, JUnit 4 tests that are currently running using t
 
 ![alt_enter_migrate.png](alt_enter_migrate.png)
 
-The refactoring preview window will show the places where changes will be made, in this case a number of annotations will be changed to the new JUnit 5 annotations.
+The [refactoring preview](https://www.jetbrains.com/help/idea/refactoring-source-code.html#refactoring_preview) window will show the places where changes will be made, in this case a number of annotations will be changed to the new JUnit 5 annotations.
 
 ![refactoring_preview.png](refactoring_preview.png)
 
