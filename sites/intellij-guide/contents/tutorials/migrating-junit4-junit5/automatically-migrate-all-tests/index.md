@@ -16,7 +16,7 @@ Now we understand the individual steps to migrate a test, we can be a bit more a
 
 ![migrate.png](migrate.png)
 
-This migration is similar to what we did with the individual test class, but for all test classes. Press Run to see the refactoring preview. You can exclude specific classes or methods here using if you want to using **⌫**, or **Delete**. Press Do Refactor to do the refactoring.
+This migration is similar to what we did with the individual test class, but for all test classes. Press **Run** to see the refactoring preview. You can exclude specific classes or methods here using if you want to using **⌫**, or **Delete**. Press Do Refactor to do the refactoring.
 
 ![refactoring_preview.png](refactoring_preview.png)
 

@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/F8UTTTDtbH0?start=247
 ---
 
-Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
+Use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to load IntelliJ IDEA preferences and type in 'inspections'. [IntelliJ IDEA's inspections](https://www.jetbrains.com/help/idea/code-inspection.html#access-inspections-and-settings) can be very helpful for migrating code. In particular there are a number of inspections for JUnit tests.
 
 To help with the migration, turn on 'JUnit 4 test can be JUnit 5' inspection.  You can only turn this on if you're using at least Java 8 and have JUnit 5 dependencies set up.
 
@@ -68,7 +68,7 @@ public class JUnit4To5 {
 }
 ```
 
-With this inspection turned on, JUnit 4 tests that are currently running using the JUnit 5 vintage engine are flagged to show you that they can be migrated. Press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), in the class name and IntelliJ offers to migrate the test class to JUnit 5.
+With this inspection turned on, JUnit 4 tests that are currently running using the JUnit 5 vintage engine are flagged to show you that they can be migrated. Press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), in the class name and IntelliJ IDEA offers to migrate the test class to JUnit 5.
 
 ![alt_enter_migrate.png](alt_enter_migrate.png)
 
@@ -76,7 +76,7 @@ The [refactoring preview](https://www.jetbrains.com/help/idea/refactoring-source
 
 ![refactoring_preview.png](refactoring_preview.png)
 
-If you want to exclude any of the tests from the refactor you can click **⌫**, or **Delete**. To include them again click **⇧⌫**, or **Shift+Delete**.   Press Do Refactor and let's see what the new code looks like.
+If you want to exclude any of the tests from the refactor you can click **⌫**, or **Delete**. To include them again click **⇧⌫**, or **Shift+Delete**.   Press **Do Refactor** and let's see what the new code looks like.
 
 ```java
 public class JUnit4To5 {

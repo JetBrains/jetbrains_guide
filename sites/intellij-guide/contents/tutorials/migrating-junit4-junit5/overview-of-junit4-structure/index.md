@@ -112,7 +112,7 @@ public void after() throws Exception { }
 
 ### Code to run once to clean up after all tests
 
-We may want to do a final cleanup after all tests have finished, for example removing seed data or closing connections. We can annotated a method with [`@AfterClass`](https://junit.org/junit4/javadoc/4.13/org/junit/AfterClass.html) to have it run once when everything is finished.
+We may want to do a final cleanup after all tests have finished, for example removing seed data or closing connections. We can annotate a method with [`@AfterClass`](https://junit.org/junit4/javadoc/4.13/org/junit/AfterClass.html) to have it run once when everything is finished.
 
 ```
 @AfterClass

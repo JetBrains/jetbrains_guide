@@ -16,7 +16,7 @@ To finish removing references to JUnit 4 classes, we could do [Find in Files](ht
 
 ![find_in_files_with_regex.png](find_in_files_with_regex.png)
 
-Now we can see all the remaining files that import a class from` org.JUnit`.
+Now we can see all the remaining files that import a class from `org.JUnit`.
 
 ![files_to_change.png](files_to_change.png)
 
