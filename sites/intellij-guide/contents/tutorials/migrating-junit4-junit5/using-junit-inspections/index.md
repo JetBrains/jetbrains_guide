@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-08-06
+date: 2021-08-09
 title: Using inspections
 technologies: []
 topics: []
