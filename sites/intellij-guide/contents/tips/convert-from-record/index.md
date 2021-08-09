@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/byGjzMHqwcc
+seealso:
+  - title: IntelliJ IDEA Blog - Java 16 and IntelliJ IDEA
+    href: https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/
 leadin: |
   If we decide that maybe a record should be a full Java class, we can get IntelliJ IDEA to automatically convert a record into a Java class.
 

@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/rnJRe-lIaTI
+seealso:
+- title: IntelliJ IDEA Help - Extract Variable
+  href: https://www.jetbrains.com/help/idea/extract-variable.html
 leadin: |
   Highlight the code you want to extract to a variable and press **⌥⌘V** (macOS), or **Ctrl+Alt+V** (Windows/Linux), to extract it.
  
