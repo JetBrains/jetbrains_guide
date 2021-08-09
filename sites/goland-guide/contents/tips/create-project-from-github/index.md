@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Create a Project from GitHub
-technologies: []
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Let GoLand do the work to clone and set up a project hosted on GitHub.
@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=ugAAed7T3wA&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=32&t=0s
 leadin: |
     *From repo to project in no time.*

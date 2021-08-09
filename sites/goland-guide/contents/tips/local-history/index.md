@@ -1,7 +1,7 @@
 ---
 date: 2020-02-05
 title: Use Local History to Avoid Disaster
-technologies: [go]
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=HL0iFL27Emw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=27
 leadin: |
     **Local History** will come to the rescue whenever just deleted all the work you did for days by mistake.

@@ -4,7 +4,7 @@ date: 2021-03-01
 title: Writing and Running Unit Tests with ReSharper
 technologies: [.net, csharp]
 topics: [testing, inspections, profiling]
-products: [resharper]
+products: [resharper, dotcover, dottrace, dotmemory]
 author: khalidabuhakmeh
 subtitle: Run, debug and profile tests, do continuous testing, and inspect code coverage.
 thumbnail: ./thumbnail.png

@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-    title: 'GoLand Guide',
-    description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
+        title: 'GoLand Guide',
+        description: 'Be more productive and write high-quality code faster with a series of tips and tricks',
         siteUrl: 'https://www.jetbrains.com/go/guide/', // Used by feed
         theme: {
             helmet: {
@@ -36,6 +36,13 @@ module.exports = {
                             href: '/topics/',
                             label: 'Topics',
                             icon: 'fas fa-tags'
+                        },
+                        {
+                            accent: 'danger',
+                            cssClass: 'documentation',
+                            href: '/technologies/',
+                            label: 'Technologies',
+                            icon: 'fas fa-project-diagram'
                         },
                         {
                             label: 'More...',

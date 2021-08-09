@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=jLYhkvvPJ0M&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=9
 leadin: |
     The **Switcher** allows you to quickly move between open files during your editing session.

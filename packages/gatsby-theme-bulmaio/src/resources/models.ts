@@ -20,6 +20,7 @@ export interface Resource {
   title: string;
   subtitle?: string;
   excerpt?: string;
+  resourceType?: string;
   thumbnail: Thumbnail;
   products: ProductReference[];
   technologies: TechnologyReference[];
@@ -38,6 +39,7 @@ export interface ListedResource {
   technologies: ResourceCardTechnologies;
   topics: ResourceCardTopics;
   thumbnail: Thumbnail;
+  resourceType?: string;
 }
 
 export type ListedResources = ListedResource[];

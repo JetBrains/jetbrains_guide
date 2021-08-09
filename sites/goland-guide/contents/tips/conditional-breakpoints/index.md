@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Conditional Breakpoints
-technologies: []
+technologies: [platform]
 topics: [debugging]
 author: dlsniper
 subtitle: Speed up your debugging by stopping execution only when you want to.
@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=gQaCMsB5Vrg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=25&t=0s
 leadin: |
     *Stop stepping.*

@@ -34,8 +34,8 @@ const Topic: FC<TopicProps> = (
             {{
                 figure: (
                     <span className={`icon is-large has-text-${accent}`}>
-            <i className={`${icon} fa-3x`}/>
-          </span>
+                        <i className={`${icon} fa-3x`}/>
+                    </span>
                 ),
                 listing: (
                     <div>
@@ -53,6 +53,7 @@ const Topic: FC<TopicProps> = (
                                 <ResourceCard
                                     key={resource.slug}
                                     thumbnail={resource.thumbnail}
+                                    resourceType={resource.resourceType}
                                     media={{
                                         href: resource.slug,
                                         title: resource.title,

@@ -3,7 +3,7 @@ date: 2020-07-06
 title: Profiling in Rider
 technologies: [.net]
 topics: [ide, profiling]
-products: [rider]
+products: [rider, dottrace]
 author: maartenba
 subtitle: Explore performance and memory profiling options in Rider, and optimize an existing application.
 thumbnail: ./thumbnail.png

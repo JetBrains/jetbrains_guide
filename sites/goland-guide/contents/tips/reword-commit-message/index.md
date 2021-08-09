@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: Reword Commit Message
-technologies: [go]
+technologies: [platform]
 topics: [vcs]
 author: dlsniper
 subtitle: Change the wording in your last commit message, after you committed.
@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=g0Pcqduuj-I&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=34&t=0s
 leadin: |
     *Fix that commit message.*

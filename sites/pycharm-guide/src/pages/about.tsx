@@ -44,7 +44,7 @@ const AboutPage: React.FC = () => {
                                 <p>You can find useful information on our Twitter account, <a href="https://twitter.com/PyCharm">@PyCharm</a>, or our <a
                                         href="https://blog.jetbrains.com/pycharm/">product blog</a>.
 
-                                    Plus, the <a href="https://www.jetbrains.com/pycharm/documentation/documentation.html">documentation</a> is
+                                    Plus, the <a href="https://www.jetbrains.com/pycharm/learn/">documentation</a> is
                                     always there to help. However, wouldn't it be better if you had everything you needed to learn in one place?</p>
                                 <p>We have created the PyCharm Guide, a collection of bite-sized visual resources, organized to help spark your
                                     learning. We hope it helps you get into the flow and excel at what you do.</p>

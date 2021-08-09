@@ -1,7 +1,5 @@
 /*
-
-Interfaces and types common across the project.
-
+ * Interfaces and types common across the project.
  */
 
 export interface Thumbnail {

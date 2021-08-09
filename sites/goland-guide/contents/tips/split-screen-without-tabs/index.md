@@ -13,7 +13,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=6yhFWW5Kytg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=27&t=0s
 leadin: |
     You can view multiple files at the same time using

@@ -10,6 +10,7 @@ type Playlist implements Node & Resource {
     slug: String!
     subtitle: String
     excerpt: String
+    resourceType: String
     products: [Product] @link(by: "label")
     technologies: [Technology] @link(by: "label")
     thumbnail: File @fileByRelativePath

@@ -4,7 +4,7 @@ import ReferenceLayout from '../../components/layout/ReferenceLayout';
 import ResourceCard from '../../components/resourcecard/ResourceCard';
 import {ProductReference} from './models';
 import {Resource} from '../../resources/models';
-import { TwitterCardPage } from '../../components/layout/MasterLayout';
+import {TwitterCardPage} from '../../components/layout/MasterLayout';
 
 export interface ProductProps {
     data: {
@@ -54,6 +54,7 @@ const Product: FC<ProductProps> = (
                                 <ResourceCard
                                     key={resource.slug}
                                     thumbnail={resource.thumbnail}
+                                    resourceType={resource.resourceType}
                                     media={{href: resource.slug, title: resource.title, subtitle: resource.subtitle}}
                                     products={{items: resource.products}}
                                     technologies={{items: resource.technologies}}

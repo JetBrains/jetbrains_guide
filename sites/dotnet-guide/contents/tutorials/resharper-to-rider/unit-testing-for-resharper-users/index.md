@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-03-29
 title: Unit Testing For ReSharper Users
 technologies: [.net,csharp]
-products: [rider,resharper]
+products: [rider, resharper, dotcover]
 topics: [ide]
 author: khalidabuhakmeh
 subtitle: Learn the basics of the unit testing in Rider from a Visual Studio + ReSharper user's perspective.
@@ -48,6 +48,7 @@ public void Test1()
 {
   Assert.Pass();
 }
+```
 
 Running the newly authored test in ReSharper will create a new unit test session and open the **Unit Test Sessions** tool window.
 

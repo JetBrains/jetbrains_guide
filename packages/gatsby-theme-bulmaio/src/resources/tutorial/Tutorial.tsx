@@ -33,10 +33,10 @@ const Tutorial: FC<TutorialProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: tutorial.title,
     description: tutorial.subtitle ? tutorial.subtitle : '',
-    image: tutorial.cardThumbnail
-        ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}`
-        : tutorial.thumbnail
-            ? `https://www.jetbrains.com${tutorial.thumbnail.publicURL}`
+    image: tutorial.thumbnail
+        ? `https://www.jetbrains.com${tutorial.thumbnail.publicURL}`
+        : tutorial.cardThumbnail
+            ? `https://www.jetbrains.com${tutorial.cardThumbnail.publicURL}`
             : ''
   };
 
@@ -65,6 +65,7 @@ const Tutorial: FC<TutorialProps> = (
           <ResourceCard
             key={resource.slug}
             thumbnail={resource.thumbnail}
+            resourceType={undefined} // do not show type on "all tutorial steps" page
             media={{ href: resource.slug, title: resource.title, subtitle: resource.subtitle }}
             products={{ items: resource.products }}
             technologies={{ items: resource.technologies }}

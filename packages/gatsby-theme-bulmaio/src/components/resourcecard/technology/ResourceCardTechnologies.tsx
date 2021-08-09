@@ -17,7 +17,7 @@ export const ResourceCardTechnologies: React.FC<ResourceCardTechnologiesProps> =
   <>
     {items.map(technology => (
       <span data-testid={`rcte-key`} className="bio-common-card-references" key={technology.slug}>
-          <span className="tag is-rounded has-text-warning">
+          <span className="tag is-rounded">
             <Link to={technology.slug} className="has-text-danger">
               {technology.label}
             </Link>

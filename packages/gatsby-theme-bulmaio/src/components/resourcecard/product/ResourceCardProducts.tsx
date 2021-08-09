@@ -17,7 +17,7 @@ export const ResourceCardProducts: React.FC<ResourceCardProductsProps> = ({ item
   <>
     {items.map(product => (
       <span data-testid={`rcte-key`} className="bio-common-card-references" key={product.slug}>
-          <span className="tag is-rounded has-text-warning">
+          <span className="tag is-rounded">
             <Link to={product.slug} className="has-text-info">
               {product.label}
             </Link>

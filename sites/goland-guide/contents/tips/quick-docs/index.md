@@ -1,7 +1,7 @@
 ---
 date: 2020-10-15
 title: 'Quick Documentation'
-technologies: []
+technologies: [platform]
 topics: [editing]
 author: dlsniper
 subtitle: View arguments and documentation without interrupting your flow.
@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=sIBPzprpObE&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=22&t=0s
 leadin: |
     *Want to learn what a symbol is about, without going to a browser?*

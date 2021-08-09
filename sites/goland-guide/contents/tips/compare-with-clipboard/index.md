@@ -8,14 +8,14 @@ subtitle: Compare text, files or directories and even use the clipboard contents
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=hNZzC1jOeJ4&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=20
 leadin: |
     GoLand has a built-in diff viewer for code, revisions, and even images.
     
     **How to use:**
 
-    Select any pair of files and press _Ctrl+D on Windows/Linux_ and _⌘ + D on macOS_.
+    Select any pair of files and press _Ctrl + D on Windows/Linux_ and _⌘ + D on macOS_.
     
     **Pro tip:**
 

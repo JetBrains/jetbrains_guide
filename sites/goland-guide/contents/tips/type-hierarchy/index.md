@@ -8,7 +8,7 @@ subtitle: Discover what types implement an interface or what interfaces are impl
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=03CObRrfzAs&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=17
 leadin: |
     The _Type Hierarchy_ feature allows you to answer questions such as "What interfaces a type implements?" or "What the types are that implement an interface?"

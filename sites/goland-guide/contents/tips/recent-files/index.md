@@ -8,7 +8,7 @@ subtitle: 'Use Recent Files to quickly jump to last-visited file.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
+  poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
 leadin: |
   The **Recent Files** tool window allows you to quickly navigate around the recent open files list.

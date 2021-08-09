@@ -32,10 +32,10 @@ const Playlist: FC<PlaylistProps> = (
   const twitterCardPage: TwitterCardPage = {
     title: playlist.title,
     description: playlist.subtitle ? playlist.subtitle : '',
-    image: playlist.cardThumbnail
-        ? `https://www.jetbrains.com${playlist.cardThumbnail.publicURL}`
-        : playlist.thumbnail
-            ? `https://www.jetbrains.com${playlist.thumbnail.publicURL}`
+    image: playlist.thumbnail
+        ? `https://www.jetbrains.com${playlist.thumbnail.publicURL}`
+        : playlist.cardThumbnail
+            ? `https://www.jetbrains.com${playlist.cardThumbnail.publicURL}`
             : ''
   };
 
@@ -57,6 +57,7 @@ const Playlist: FC<PlaylistProps> = (
             <ResourceCard
               key={resource.slug}
               thumbnail={resource.thumbnail}
+              resourceType={resource.resourceType}
               media={{ href: fullHref, title: resource.title, subtitle: resource.subtitle }}
               products={{ items: resource.products }}
               technologies={{ items: resource.technologies }}
