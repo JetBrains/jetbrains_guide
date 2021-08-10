@@ -11,5 +11,6 @@ tutorialItems:
   - /tutorials/working-with-maven/creating-a-project/
   - /tutorials/working-with-maven/understanding-dependencies/
   - /tutorials/working-with-maven/importing-a-project/
+  - /tutorials/working-with-maven/maven-tool-window/
   - /tutorials/working-with-maven/shortcuts-used/
 ---
