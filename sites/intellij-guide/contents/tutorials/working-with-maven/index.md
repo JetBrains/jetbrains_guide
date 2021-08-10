@@ -7,6 +7,8 @@ author: tg
 subtitle: Understand how IntelliJ IDEA integrates with Maven.
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/working-with-gradle/introduction/
-  - /tutorials/working-with-gradle/shortcuts-used/
+  - /tutorials/working-with-maven/introduction/
+  - /tutorials/working-with-maven/creating-a-project/
+  - /tutorials/working-with-maven/understanding-dependencies/
+  - /tutorials/working-with-maven/shortcuts-used/
 ---
