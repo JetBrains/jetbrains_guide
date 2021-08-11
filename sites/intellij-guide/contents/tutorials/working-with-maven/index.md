@@ -1,5 +1,5 @@
 ---
-date: 2021-08-09
+date: 2021-08-11
 title: Working with Maven
 technologies: [java, maven]
 topics: [build]

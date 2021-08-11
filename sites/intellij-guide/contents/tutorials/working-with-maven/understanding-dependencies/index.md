@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-08-09
+date: 2021-08-11
 title: Understanding Dependencies
 technologies: []
 topics: []
@@ -13,7 +13,7 @@ longVideo:
 
 ---
 
-We can easily add new dependencies with the **Generate** menu from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 
+We can easily add new dependencies with the **Generate** option from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 
 
 ![generate-dependency.png](generate-dependency.png)
 
