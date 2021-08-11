@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-05-14
 title: The Gradle Tool Window
 technologies: [gradle]
-topics: []
+topics: [build]
 author: tg
 subtitle: How to find the Gradle tool window.
 thumbnail: ./thumbnail.png

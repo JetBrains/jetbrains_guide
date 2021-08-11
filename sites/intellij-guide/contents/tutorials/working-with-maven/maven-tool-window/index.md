@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-08-11
 title: The Maven Tool Window
 technologies: [maven]
-topics: []
+topics: [build]
 author: tg
 subtitle: The Maven Tool Window gives you access to goals, dependencies, and more.
 thumbnail: ./thumbnail.png

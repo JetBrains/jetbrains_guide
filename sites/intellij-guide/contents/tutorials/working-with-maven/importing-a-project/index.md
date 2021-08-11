@@ -1,9 +1,9 @@
 ---
 type: TutorialStep
 date: 2021-08-11
-title: Importing a Project
+title: Importing a Maven project
 technologies: [maven]
-topics: []
+topics: [gettingstarted]
 author: tg
 subtitle: IntelliJ IDEA understands projects that use Maven and can import them with minimal configuration
 thumbnail: ./thumbnail.png

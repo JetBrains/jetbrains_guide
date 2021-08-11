@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2021-05-14
 title: Gradle Settings
 technologies: [gradle]
-topics: [build]
+topics: []
 author: tg
 subtitle: Where to change IntelliJ IDEA's settings fo Gradle.
 thumbnail: ./thumbnail.png

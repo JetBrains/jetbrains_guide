@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-08-11
-title: Creating a Project
+title: Creating a Maven project
 technologies: [maven]
 topics: [gettingstarted]
 author: tg
