@@ -2,7 +2,7 @@
 type: TutorialStep
 date: 2021-08-11
 title: Understanding Dependencies
-technologies: []
+technologies: [maven]
 topics: []
 author: tg
 subtitle: Adding and visualising dependencies
