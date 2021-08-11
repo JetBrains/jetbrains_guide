@@ -24,7 +24,7 @@ Depending upon the version of IntelliJ IDEA you're using, you be shown specific 
 
 ![](open-as-project.png)
 
-If you did select the pom.xml file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to **Open as Project**.
+If you selected the `pom.xml` file to open the project (rather than the top level folder), IntelliJ IDEA will ask if you want to open just the file, or import the whole project. In this tutorial, we want to **Open as Project**.
 
 ![](trust-project.png)
 

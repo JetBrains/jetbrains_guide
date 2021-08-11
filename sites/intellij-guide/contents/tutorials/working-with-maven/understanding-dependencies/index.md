@@ -13,7 +13,7 @@ longVideo:
 
 ---
 
-We can easily add new dependencies via Generate on the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 
+We can easily add new dependencies with the **Generate** menu from the Code menu, or using **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). 
 
 ![generate-dependency.png](generate-dependency.png)
 

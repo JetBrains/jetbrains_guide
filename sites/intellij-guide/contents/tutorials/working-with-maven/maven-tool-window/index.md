@@ -13,7 +13,7 @@ longVideo:
 
 ---
 
-You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) to navigate to the Maven window, and here we can see the dependencies of this project.
+You can use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux) again to navigate to the Maven window, and here we can see the dependencies of this project.
 
 ![maven-window.png](maven-window.png)
 
@@ -33,7 +33,7 @@ You can choose to enable or disable one or more [profiles from the Maven Window]
 
 There are a number of things you can do with your project from the Maven window, be sure to take a look at all the icons to see what they can do.
 
-Everything we've looked at so far has been in the free Community Edition of IntelliJ IDEA. The full Ultimate version has some extra features.  One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram. 
+Everything we've looked at so far has been in the free Community Edition of IntelliJ IDEA. IntelliJ Ultimate has some extra features.  One which may be particularly useful in understanding your Maven project is seeing the Dependencies as a diagram. 
 
 ![](show-diagram.png)
 
