@@ -20,6 +20,16 @@ All developers can benefit from reading this quick start guide, and if you have 
 
 Let's get started!
 
+## Import Settings Wizard
+
+There is a **New Import Settings** feature as of [JetBrains Rider 2021.2](https://www.jetbrains.com/rider/whatsnew/2021-2/#user-experience). As a first-time Rider user, you will have the option to import settings from other development tools, such as Visual Studio, Visual Studio for Mac, and Visual Studio Code. In addition, the Rider import process will recognize settings from your current installation of [ReSharper](https://jetbrains.com/resharper).
+
+![import settings feature in Rider](./5-import-settings-from-other-ides.png)
+
+Using the import settings feature, you can expect to **import existing keymaps and keyboard shortcuts, recently used solutions, and current theme preferences (dark mode or light mode)**. Rider will also find the best plug-ins that match existing functionality you're used to using. The plugin recommendations are continually being evaluated by JetBrains based on the best options from the [JetBrains Plugins Marketplace](https://plugins.jetbrains.com/search?products=rider).
+
+If you'd prefer to start with a fresh installation, continue reading the following sections.
+
 ## Settings And Personalization
 
 Your development environment says a lot about your personality. Choose between a zen-like and clutter-free experience, a data-rich user experience with quickly accessible data, or any experience in-between.
