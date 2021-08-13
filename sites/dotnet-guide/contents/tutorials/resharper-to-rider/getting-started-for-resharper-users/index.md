@@ -20,7 +20,7 @@ All developers can benefit from reading this quick start guide, and if you have 
 
 Let's get started!
 
-## Import Settings Wizard
+## Import Settings From Existing Environments
 
 A **New Import Settings** feature is included with the [JetBrains Rider 2021.2](https://www.jetbrains.com/rider/whatsnew/2021-2/#user-experience) release. As a first-time Rider user, you will have the option to import settings from other development tools, such as Visual Studio, Visual Studio for Mac, and Visual Studio Code. In addition, the Rider import process will recognize settings from your current installation of [ReSharper](https://jetbrains.com/resharper).
 
