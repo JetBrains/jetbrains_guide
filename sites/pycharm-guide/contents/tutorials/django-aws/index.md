@@ -25,12 +25,12 @@ tutorialItems:
 
 ---
 
-AWS Lambda lets you run code without provisioning or managing servers.
- It is similar when it comes to PyCharm, which helps developers to build, ship and deploy serverless functions.
+[NICE DCV](https://aws.amazon.com/hpc/dcv/) is a high-performance remote display
+protocol that provides customers with a secure way to deliver remote desktops and
+application streaming from any cloud or data center to any device, over varying
+network conditions. With NICE DCV and Amazon EC2, customers can run graphics-intensive
+applications remotely on EC2 instances, and stream their user interface to simpler client
+machines, eliminating the need for expensive dedicated workstations.
 
-This tutorial helps to understand how we can easily write serverless functions and easily deploy through PyCharm.
-
-*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial. 
-We will also be using MongoDB database as our primary datastore. For that we will be
-relying on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).*
+*Note: We'll be using PyCharm Professional Edition for all the steps in this tutorial.*
 
