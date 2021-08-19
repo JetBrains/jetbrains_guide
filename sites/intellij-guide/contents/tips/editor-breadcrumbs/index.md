@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/2W0X0_nlpWo
+seealso:
+  - title: IntelliJ IDEA Help - Breadcrumbs
+    href: https://www.jetbrains.com/help/idea/settings-editor-breadcrumbs.html
 leadin: |
   Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) on Windows/Linux, to display the **Find Actions** dialog. Type in 'editor breadcrumbs' and select the option you want. 
    

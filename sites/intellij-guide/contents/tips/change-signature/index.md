@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/mEs1Mo2h1cg
+seealso:
+  - title: IntelliJ IDEA Help - Change Signature
+    href: https://www.jetbrains.com/help/idea/change-signature.html
 leadin: |
   Press **⌘F6** (macOS), or **Ctrl+F6** (Windows/Linux), to bring up the **Change Signature** dialog. You can add or remove method parameters here.  
 

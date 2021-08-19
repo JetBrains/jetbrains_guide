@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Ym6BM2VQuLM
+seealso:
+  - title: IntelliJ IDEA Help - Extract Field
+    href: https://www.jetbrains.com/help/idea/extract-field.html
 leadin: |
   Highlight the code you want to extract to a field and press **⌥⌘F** (macOS), or **Ctrl+Alt+F** (Windows/Linux), to extract it.
  

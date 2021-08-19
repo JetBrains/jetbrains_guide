@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/cuIeDZhpvM0
+seealso:
+  - title: IntelliJ IDEA Help - Navigate between test and test subject
+    href: https://www.jetbrains.com/help/idea/navigating-between-test-and-test-subject.html
 leadin: |
   You can use **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux), to navigate to a test class and back again.
 
