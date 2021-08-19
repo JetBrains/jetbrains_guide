@@ -11,8 +11,8 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/tvt3swsbxVw
 seealso:
-- title: IntelliJ IDEA Help - Lines of code
-  href: https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_lines_code_blocks
+  - title: IntelliJ IDEA Help - Lines of code
+    href: https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_lines_code_blocks
 leadin: |
   Place the caret on the line that you want to join with a lower line and press **⌃⇧J** (macOS), or **Ctrl+Shift+J** (Windows/Linux), to join lines of code.
  

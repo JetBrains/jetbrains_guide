@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/foKr1a9r250
+seealso:
+  - title: Generate code
+    href: https://www.jetbrains.com/help/idea/generating-code.html
 leadin: |
   You can generate new code quickly with **⌘N** (macOS), or **Alt+Insert** (Windows/Linux). For example, you can generate commonly used methods for Java beans in this way. 
  
