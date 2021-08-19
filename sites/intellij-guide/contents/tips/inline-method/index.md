@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/wSuqsDyX2nc
 seealso:
-  - title: Inline
+  - title: IntelliJ IDEA Help - Inline
     href: https://www.jetbrains.com/help/idea/inline.html
 leadin: |
   Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a method. 

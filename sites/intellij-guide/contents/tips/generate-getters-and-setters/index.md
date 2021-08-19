@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url:  https://youtu.be/JGREPK9W66w
 seealso:
-  - title: Create tests
+  - title: IntelliJ IDEA Help - Create tests
     https: www.jetbrains.com/help/idea/create-tests.html
 leadin: |
    You can use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) for the _Generate_ menu and then select `Constructor`, `Getter`, `Setter` or `Getter and Setter`.  

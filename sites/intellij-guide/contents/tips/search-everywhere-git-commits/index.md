@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/kIq4wD4RJEc   
+seealso:
+- title: IntelliJ IDEA Help - Searching Everywhere
+  href: https://www.jetbrains.com/help/idea/searching-everywhere.html
 leadin: |
   You can bring up the Search Everywhere dialog with **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), and searching for what you want to find. Git commits are displayed in your search results at the bottom if there are any matches. 
   

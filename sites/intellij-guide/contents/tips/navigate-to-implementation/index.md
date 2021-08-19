@@ -10,6 +10,11 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/SXW6IpP_uB0
+seealso:
+  - title: IntelliJ IDEA Help - Go to declaration and its type
+    https: www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_declaration
+  - title: IntelliJ IDEA Help - Go to implementation
+    https: www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_implementation
 leadin: |
   You can use **⌘B** (macOS), or **Ctrl+B** (Windows/Linux), to navigate to an implementation.
    

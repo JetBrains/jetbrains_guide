@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/xXyRb4VtItw
+seealso:
+- title: Space Help - Getting started
+  href: https://www.jetbrains.com/help/space/getting-started.html
 leadin: |
   The plugin for [JetBrains Space](https://www.jetbrains.com/space/), a new team collaboration tool, is bundled in IntelliJ IDEA. Log in to the team instance to access your projects.
 

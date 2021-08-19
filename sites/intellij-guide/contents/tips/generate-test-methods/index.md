@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/7614UdY614c
 seealso:
-  - title: Generate code
+  - title: IntelliJ IDEA Help - Generate code
     href: https://www.jetbrains.com/help/idea/generating-code.html
 leadin: |
     Press **⌘N** (macOS), or **Alt**+**Ins** (Windows/Linux) to open the _Generate_ menu. The options you get will depend on the testing framework you are using in your project, for example, JUnit 5.  

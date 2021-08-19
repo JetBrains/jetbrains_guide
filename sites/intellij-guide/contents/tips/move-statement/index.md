@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/TZdeOOhTHlc
+seealso:
+  - title: IntelliJ IDEA Help - Move statements
+    href: https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_statement_select
 leadin: |
   You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a statement down use **⇧⌘↓** (macOS), or **Ctrl+Shift+Down Arrow** (Windows/Linux).   
    

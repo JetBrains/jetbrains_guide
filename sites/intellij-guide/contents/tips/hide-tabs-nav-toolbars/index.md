@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/bPThFkyAGgs
 seealso:
-  - title: Editor Tabs
+  - title: IntelliJ IDEA Help - Editor Tabs
     href: https://www.jetbrains.com/help/idea/settings-editor-tabs.html
   - title: Menus and Toolbars
     href: https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html

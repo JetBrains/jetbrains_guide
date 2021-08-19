@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/3XkXEi5TcuQ=
 seealso:
-  - title: Preview output of HTML files
+  - title: IntelliJ IDEA Help - Preview output of HTML files
     href: https://www.jetbrains.com/help/idea/editing-html-files.html#ws_html_preview_output
 leadin: |
   IntelliJ IDEA comes with a built-in preview for HTML, so we can get a good idea of what our changes will look like as we're making them.
