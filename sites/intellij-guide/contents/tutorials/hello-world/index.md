@@ -1,14 +1,18 @@
 ---
-date: 2021-04-11
-title: Using the IDE Feature Trainer
-technologies: [java, kotlin]
-topics: [interface]
+date: 2021-24-09
+title: Hello World in IntelliJ IDEA
+technologies: [java]
+topics: [gettingstarted]
 author: hs
-subtitle: Learning new things in the IDE
+subtitle: Create a new Java application and JAR file that prints `Hello World` to the console. 
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/working-with-feature-trainer/ide-feature-trainer-overview/
-  - /tutorials/working-with-feature-trainer/completing-modules-and-lessons/
-  - /tutorials/working-with-feature-trainer/leaving-feedback/
-  - /tutorials/working-with-feature-trainer/summary-and-more-help/
+  - /tutorials/hello-world/creating-a-new-project/
+  - /tutorials/hello-world/creating-a-package-and-class/
+  - /tutorials/hello-world/compiling-and-running/
+  - /tutorials/hello-world/running-with-configurations/
+  - /tutorials/hello-world/packaging-the-application/
+  - /tutorials/hello-world/running-a-jar-file/
+  - /tutorials/hello-world/making-a-change/
+  - /tutorials/hello-world/summary-and-shortcuts/
 ---
