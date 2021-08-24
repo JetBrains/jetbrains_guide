@@ -12,12 +12,8 @@ longVideo:
   url: https://youtu.be/H_XxH66lm3U?start=365
 ---
 
-## Compiling and Running the application 
+## Summary & Shortcuts
 
-- Java files like this one can be compiled to bytecode and then run
-- IDEA does this by running classes with main method, using green icons in gutter
-- Could also debug it
-- IDE compiles to a class file and shows output in run window down the bottom
-- 1st line shows the command that was used to run the program (which class and which JDK if we have multiple versions)
-- 2nd line shows the output of our program
-- Final line - exist code 0 ran without error
+If we press control twice, this brings up the run, anything box, which is yet another way to run one of our configurations. If we start typing, hello, we can see both our hello world Java application and the hello world jar configuration. Let's run the jar configuration. It's printed out our new message and is doing it from the updated jar file.
+
+7

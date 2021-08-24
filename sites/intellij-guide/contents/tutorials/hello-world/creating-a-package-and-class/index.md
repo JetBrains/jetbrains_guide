@@ -14,22 +14,28 @@ longVideo:
 
 ## IDE Feature Trainer Overview
 
-- IDE has created a new project for our application
-- What the project window shows and how to nav it
-- Create a new package and class for our application
-- Packages group classes that belong to the same category or provide similar functionality 
-- Keyboard shortcuts to create a new class in SRC directory and select Java class
-- Type the whole package path with dots and then the class name and it will do it for us (both package and class)
-- See the HelloWorld.java file and created package statement and class declaration
-- Shift + Enter to go to the next line with caret in correct place
-- For Java main method type "main" and mention this is a live template, press Enter
-- PSVM generated with correct parameters - can save a lot of typing 
-- Cmd+J/Ctrl J to see all live templates valid for current context, then press Escape
-- Call a method that prints method to the output. Mention live templates but look at code completion
-- Instead use code completion, type in "Sy" and see that System is displayed
-- Press Ctrl + dot and see that System. is auto completed
-- Type "o" for accessible fields and methods that start with "o" and those that contain after it. Ctrl + dot again
-- Code completion shows the most likely methods, can just press enter if it's at the top
-- IDEA shows all teh param types avaiable
-- When we type double quote, we get a closing quote from the editor. It also highlights a string param so can see it's a valid type, press escape to hide it
-- Type in Hello World, congratulations!
+
+2
+
+
+I like to put the intelligent idea window into full screen to give me the maximum amount of space for code intelligent idea has created a project for our application. The project window shows us all the directories and the files that make up our projects. Of course, we can use the mouse to navigate this window, but we can also use the arrow keys.
+
+We're going to create the package and the class. For our example, application packages are used to group together classes that belong to the same category or provide similar functionality and a useful for organizing large applications. With hundreds of classes to create a new class, press command N on MacOSS or Alton insert on windows or Linux on the source directory and select Java class.
+
+We could type a simple class name in this. But if you want to create a new class in a particular package, we can type the whole package path separated by dots, followed by the class name, intelligent idea can create a number of different types of class files. For this tutorial. We just need a standard class.
+
+We can see that intelligent idea has created the package we wanted. And under the covers, it's also created the correct directory structure for this package. It's also created a new hello world.java file and generated the basic contents of this class file. For example, the package statement and class declaration, the class has the same name as the fall.
+
+Following Jarvis standards, we can move on to the next line in a class file by pressing shift in the enter. This will put us onto the next line in the correct position and won't break the previous line. The carrot was on. To create a standard Java main method. We can simply type main, intelligent idea we'll show via the code completion, drop down that there's a live template we can use that will generate code for us.
+
+If we press enter, when this is selected, intelligent idea will generate the public static void main method for us with the correct parameters, live templates. Like this can save us a lot of time. We can use command J or control J and windows to see a list of all live templates that are valid for the current context, pressing escape will always close a dropdown or dialogue without making changes.
+
+Let's call a method that print some text to the standard system output. There are live templates that can help us with this code too, but let's look at how code completion can help. If we type S Y we see a dropdown of likely classes we might want to call. We want system the first one, and it's already highlighted.
+
+If you press control and dot intelligent idea, we'll complete our code with the word system and place a dot after it. This will also bring up the next gestion typing. Oh, we'll list, accessible fields and methods on the system class that begin with oh, but then other methods and fields containing the letter O afterwards, the first option out is the one.
+
+So he can press control and dot again to select it and insert a dot code. Completion shows the most likely methods. If print Lynn is the one at the top of the list, as it is here for me, we can simply press enter to select it. There are a number of printing methods and they all take different types of parameters.
+
+Intelligent idea shows the different parameter types available to us, which can be useful type of double quote. We should notice several things. First the editor automatically inserts a closing quote. So we don't have to remember to close our strings. Second, it highlights the string parameter for our method.
+
+So we can see this as a valid type for the method. This popup can get in the way. So we'll press escape to hide it. Now let's type hello world. If this is your first time programming in Java, congratulations, you've just created your first Java application. Java files like this one can be compiled into bytecode and run intelligent.
