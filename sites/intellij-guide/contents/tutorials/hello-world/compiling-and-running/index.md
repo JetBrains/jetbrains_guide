@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2021-24-09
-title: Summary and Shortcuts
+date: 2021-25-09
+title: Compiling and Running
 technologies: []
 topics: []
 author: hs
-subtitle: Summary and the shortcuts we used
+subtitle: Compiling and running your Hello World application
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -14,15 +14,39 @@ longVideo:
 
 ## Compiling and Running the application 
 
-- 3
+Now we have written our 'HelloWorld.java' class we need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
 
-They can do all of this for you. We can run classes with a main method, either from the green run icon at the class level or from the run icon in the gutter next to the main method itself, we can see there's more than one way to run it. An application. For example, we could debug it, but for this tutorial, we're going to run it in a simplest way.
+You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's main method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class. 
 
-Intelligent is compiling the file into a class file. And then runs it and shows the output in the run window down at the bottom. The second line in this window is the output of our program. The hello world. We told it to print. The first line shows the command that was used to run the program. We don't usually need to worry about what this was, but it's useful to know in case you want to see exactly what was run and how, for example, we can see this command specifically runs our hello world class.
+The second green arrow is adjacent to Java's main method. Clicking this will run Java's main method. For the purpose of our application, both the green arrows do the same thing. When you click on the green arrow you'll get different options including debug, but we will just run it for now so select that option.
 
-We can also see exactly which JDK was used, which can be useful if we have multiple versions of Java on the same machine, the last line, which says the process finished with an exit code of zero shows the program ran without error. Let's take a quick look at what happened when we ran the application, intelligent adhere, compiled the hello world.java file into a class file by default, the IDE creates a folder called.
+![Running the class from the gutter icons](running-class-arrows.png)
 
-Production code meaning code that isn't test code is put into the production folder. Intelligent idea creates a folder for our hello world project. Then the directory structure for our package. The compiled class file. Hello world dot class can be found at the end of this directory hierarchy.
+IntelliJ IDEA will now compile the file into a class file and then run it. The output of the run is shown in the Run tool window at the bottom of your screen. 
 
-Intelligent idea also created something called a run configuration for the application we ran. If we want to, we can run or debug any of these run configurations from the navigation bar. If we want to go back to the run window, we can use command and four or ultim four on windows pressing the same keyboard shortcut again, we'll close the run window and put the focus back on the editor.
+### The Run Window
+
+Let's take a look at our Run Window in more detail.
+
+![Run window](run-window.png)
+
+The first line shows the command that was used to run the program. We don't usually need to worry about what this was, but it's useful to know in case you want to see exactly what was run and how, for example, if you scroll to the right at the end you will see `com.example.helloworld.HelloWorld`. This tells you that it was your HelloWorld class that was run. You can also see exactly which JDK was used, which can be useful if we have multiple versions of Java on the same machine.
+
+The second line in this window is the output of our program - the "Hello World" statement that we told it to print.
+
+the last line, which says `Process finished with exit code 0` shows the program ran without an error. 
+
+### What IntelliJ IDEA Created
+
+Let's take a quick look at what happened when we ran the application. IntelliJ IDEA compiled your HelloWorld.java file into a class file. By default the IDE creates a folder called `out`. Production code, meaning code that isn't test code is put into the `production` folder within the `out` folder. IntelliJ IDEA creates a folder for our `HelloWorld` project and then the directory structure for our package. The compiled class file. HelloWorld.class can be found at the end of this directory hierarchy.
+
+![Out folder directory structure](out-directory.png)
+
+### Run Configurations and Shortcuts
+
+IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) for the application we ran. If you want to, you can run or debug any run configurations from the navigation bar. We will take a more detailed look at run configurations later in this tutorial.
+
+![Run configuration in the navigation bar](run-config-nav-bar.png)
+
+If you want to go back to the Run Window, you can use **Cmd**+**4** on macOS, or **Alt**+**4**  on Windows to open it and the same shortcut again to close it and return the focus back on the editor. 
 

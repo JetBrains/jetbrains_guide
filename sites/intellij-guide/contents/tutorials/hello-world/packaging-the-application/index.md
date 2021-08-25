@@ -14,16 +14,34 @@ longVideo:
 
 ## Packaging our Application in a Java Archive File (JAR)
 
-4
+When the code is ready, we can [package our application in a Java archive](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar). JAR files are often used to deploy an application to the production server. Once a JAR file has been built, it is called an artifact. Let's take look at how to create artifacts in IntelliJ IDEA. 
 
-When the code is ready, we can package our application in a Java archive. Joe files are often used to deploy an application to the production server. A built jaw file is called an artifact. Let's look at how to create artifacts and intelligent idea. We can go to file project structure, or we can use the keyboard shortcut command semi-colon or shift control alt and S on windows to open the project structure.
+### Creating an Artifact
 
-Let's select artifacts. We need to add a new artifact to our project. Let's click the plus button and select jar. We need to choose from modules with dependencies. We don't need to change anything for the module. This is already correct. We do need to say which class in our project has the main method.
+1) Press **Cmd+;** on macOS, or **Shift+Control+Alt+S** on Windows to bring up the [Project Structure](https://www.jetbrains.com/help/idea/project-structure-dialog.html) dialog.
+2) Select **Artifacts** from the left-hand menu and then click the **+** icon. Select **JAR** and then **From modules with dependencies**. 
 
-We'll click on the browse button. Intelligent data shows as a list of classes. We only have one in our project. So let's go ahead and pick our hello world class. All of the other defaults are fine for us. So select, okay. Now a project structure dialogue shows our new hello world dot jar artifact. This all looks correct.
+![Selecting a JAR file to build](jar-modules-dependencies.png)
 
-So let's press okay here, too. What we've done is defined how to build the jar file, but we haven't actually built it yet. We need to go to build, build artifacts. We only have one to choose from the hello world dot jar that we've just defined less, press enter to build this. Now the status bar shows that this has been completed.
+You don't need to change anything for the Module, however you do need to say which class in our project has the main method. Click the browse button to navigate to your main method. IntelliJ IDEA shows as a list of classes in your project, you only have one so select that one. 
 
-Intelligent idea, puts the artifact in out artifacts in a hello world, underscore jar folder. We want to make sure this Jaffa was created correctly. So let's try running it when we run it, it should give us the same output as running the original application. To run a Java application packaged in a jar.
+![Main class selected for JAR](main-class.png)
 
+3) Click **OK** to select your class. All of the other defaults are fine for this tutorial, press **OK**. Now we can see our new JAR file defined in the Project Structure dialog. 
 
+![Hello World JAR in the Project Structure dialog](hello-world-jar.png)
+
+4) If it looks okay, press **OK**. You have now defined how to build the JAR file, but we haven't actually built it yet. We need to go to build it with our build artifacts.
+5) Go to **Build** > **Build Artifacts**. We only have one to choose from which is the one that we just defined.
+
+![Build artifacts](build-artifacts.png)
+
+6) Press **Enter** to build the artifact. Your status bar at the bottom-right of the screen will show you when this has completed. 
+
+![Status bar](status-bar.png)
+
+IntelliJ IDEA puts the artifact in your artifacts in a new folder in your `out` folder called `HelloWorld_jar`. 
+
+![Project window artifact](project-window-artifact.png)
+
+To make sure that this JAR file was created correctly we can run it. We should see the same output as with our Java file. We'll do this in the next step of this tutorial.

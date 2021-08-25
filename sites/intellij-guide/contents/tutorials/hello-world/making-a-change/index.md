@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-24-09
-title: Make a Change 
+title: Making a Change 
 technologies: []
 topics: []
 author: hs
@@ -14,10 +14,18 @@ longVideo:
 
 ## Making a Change to the Java file
 
-6
+Let's go ahead and make a change to the Java file and see if we get the new message printed out when we run our _HelloWorld JAR_ configuration again.
 
-How do we know this is running the jar file and not simply the class file.
+1) In your `HelloWorld.java` class, change the string from "Hello World" to something of your choice.
 
-If we look in the run window, we can see intelligent idea is using the minus jar argument to run the jar file. It also shows the full path to a hello world dot jar file. Whereas before it showed the fully qualified class name, including the package. Finally, just to prove that it works the way we wanted, let's make a change to the Java file and see if we get the new message printed out.
+![Changed Hello World string](changed-hello-world.png)
 
-If we press control twice, this brings up the run, anything box, which is yet another way to run one of our configurations. If we start typing, hello, we can see both our hello world Java application and the hello world jar configuration. Let's run the jar configuration. It's printed out our new message and is doing it from the updated jar file.
+2) Instead of clicking on the arrow next to the _HelloWorld JAR_ run configuration, you can press **Control** twice to display the [Run Anything](https://www.jetbrains.com/help/idea/running-anything.html) dialog. Start typing in _HelloWorld and you will see both your run configurations. Select _HelloWorld JAR_ and press Enter. 
+
+![Run anything dialog box with Hello World](run-anything.png)
+
+3) Select your _HelloWorld JAR_ file and press **Enter**. In your Run window you should see that IntelliJ IDEA has run your application and printed out your new string. This means it rebuilt the JAR file prior to running the application.
+
+![Run window showing new output](new-output-string.png)
+
+You can also scroll to the right of your run window to check which run configuration IntelliJ IDEA used if you want to. Let's summarise what we've learned in the final step of this tutorial. 

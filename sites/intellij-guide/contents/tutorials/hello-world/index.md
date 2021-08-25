@@ -9,8 +9,9 @@ thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/hello-world/creating-a-new-project/
   - /tutorials/hello-world/creating-a-package-and-class/
-  - /tutorials/hello-world/creating-and-running-a-jar-file/
+  - /tutorials/hello-world/compiling-and-running/
   - /tutorials/hello-world/packaging-the-application/
+  - /tutorials/hello-world/creating-a-run-configuration/
   - /tutorials/hello-world/making-a-change/
   - /tutorials/hello-world/summary-and-shortcuts/
 ---
