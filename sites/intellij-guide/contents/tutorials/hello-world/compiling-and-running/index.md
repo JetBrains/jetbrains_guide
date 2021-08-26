@@ -5,7 +5,7 @@ title: Compiling and Running
 technologies: []
 topics: []
 author: hs
-subtitle: Compiling and running your Hello World application
+subtitle: Compiling and running your Hello World application.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -14,9 +14,9 @@ longVideo:
 
 ## Compiling and Running the application 
 
-Now we have written our 'HelloWorld.java' class we need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
+Now you have written our 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
 
-You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's main method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class. 
+You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's `main` method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class. 
 
 The second green arrow is adjacent to Java's main method. Clicking this will run Java's main method. For the purpose of our application, both the green arrows do the same thing. When you click on the green arrow you'll get different options including debug, but we will just run it for now so select that option.
 
@@ -26,25 +26,25 @@ IntelliJ IDEA will now compile the file into a class file and then run it. The o
 
 ### The Run Window
 
-Let's take a look at our Run Window in more detail.
+Let's take a look at yourq Run Window in more detail.
 
 ![Run window](run-window.png)
 
-The first line shows the command that was used to run the program. We don't usually need to worry about what this was, but it's useful to know in case you want to see exactly what was run and how, for example, if you scroll to the right at the end you will see `com.example.helloworld.HelloWorld`. This tells you that it was your HelloWorld class that was run. You can also see exactly which JDK was used, which can be useful if we have multiple versions of Java on the same machine.
+The first line shows the command that was used to run the program. We don't usually need to worry about what this was, but it's useful to know in case you want to see exactly what was run and how. For example, if you scroll to the right you will see `com.example.helloworld.HelloWorld`. This tells you that it was your HelloWorld class that was run. You can also see exactly which JDK was used, which can be useful if you have multiple versions of Java on the same machine.
 
-The second line in this window is the output of our program - the "Hello World" statement that we told it to print.
+The second line in this window is the output of your program - the "Hello World" statement that you told it to print.
 
 the last line, which says `Process finished with exit code 0` shows the program ran without an error. 
 
 ### What IntelliJ IDEA Created
 
-Let's take a quick look at what happened when we ran the application. IntelliJ IDEA compiled your HelloWorld.java file into a class file. By default the IDE creates a folder called `out`. Production code, meaning code that isn't test code is put into the `production` folder within the `out` folder. IntelliJ IDEA creates a folder for our `HelloWorld` project and then the directory structure for our package. The compiled class file. HelloWorld.class can be found at the end of this directory hierarchy.
+Let's take a quick look at what happened when you ran the application. IntelliJ IDEA compiled your HelloWorld.java file into a class file. By default, the IDE created a folder called `out`. Production code, meaning code that isn't test code is put into the `production` folder within the `out` folder. IntelliJ IDEA creates a folder for our `HelloWorld` project and then the directory structure for our package. The compiled class file. `HelloWorld.class` can be found at the end of this directory hierarchy.
 
 ![Out folder directory structure](out-directory.png)
 
 ### Run Configurations and Shortcuts
 
-IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) for the application we ran. If you want to, you can run or debug any run configurations from the navigation bar. We will take a more detailed look at run configurations later in this tutorial.
+IntelliJ IDEA also created a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) for the application we ran. If you want to, you can run or debug any run configurations from the [navigation bar](https://www.jetbrains.com/help/idea/guided-tour-around-the-user-interface.html#navigation-bar). We will take a more detailed look at run configurations later in this tutorial.
 
 ![Run configuration in the navigation bar](run-config-nav-bar.png)
 
