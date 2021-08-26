@@ -19,6 +19,8 @@ When the code is ready, we can [package our application in a JAR](https://www.je
 ### Creating an Artifact
 
 1) Press **Cmd+;** on macOS, or **Shift+Control+Alt+S** on Windows to bring up the [Project Structure](https://www.jetbrains.com/help/idea/project-structure-dialog.html) dialog.
+
+
 2) Select **Artifacts** from the left-hand menu and then press the **+** icon. Select **JAR** and then **From modules with dependencies**. 
 
 ![Selecting a JAR file to build](jar-modules-dependencies.png)
@@ -32,6 +34,8 @@ You don't need to change anything for the Module, however you do need to say whi
 ![Hello World JAR in the Project Structure dialog](hello-world-jar.png)
 
 4) If it matches the above screenshot, press **OK**. You have now defined how to build the JAR file, but you haven't actually built it yet. You need to build it with your build artifacts.
+
+
 5) Go to **Build** > **Build Artifacts**. You will only have one to choose from which is the one that we just defined.
 
 ![Build artifacts](build-artifacts.png)

@@ -20,7 +20,7 @@ The project window shows all the directories and the files that make up our proj
 
 ![Project Window](project-window.png)
 
-Of course, you can use the mouse to navigate this window, but you can also use the arrow keys. You can also toggle the display of this tool window with **Cmd**+**1** on macOS, or **Alt**+**1** on Windows/Linux. 
+Of course, you can use the mouse to navigate the Project window, but you can also use the arrow keys. You can also toggle the display of this tool window with **Cmd**+**1** on macOS, or **Alt**+**1** on Windows/Linux. 
 
 ### Creating Your Package and Class
 
@@ -36,7 +36,7 @@ You can type a simple class name in here, but if you want to create a new class 
 
 Here, `example` might be your preferred domain and `HelloWorld` is the name of your Java class that IntelliJ IDEA will create. 
 
-When you press **Enter** IntelliJ IDEA will create the package you wanted, and the correct directory structure for this package that you specified. It's also created a new `HelloWorld.java` file and generated the basic contents of this class file. For example, the package statement and class declaration, the class has the same name as the file.
+When you press **Enter** IntelliJ IDEA will create the package you wanted, and the correct directory structure for this package that you specified. It has also created a new `HelloWorld.java` file and generated the basic contents of this class file. For example, the package statement and class declaration, the class has the same name as the file.
 
 ![New project and class created in IntelliJ IDEA](new-project-and-class-idea.png)
 

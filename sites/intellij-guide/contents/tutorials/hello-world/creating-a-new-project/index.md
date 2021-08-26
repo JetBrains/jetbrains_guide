@@ -12,9 +12,9 @@ longVideo:
   url: https://youtu.be/H_XxH66lm3U?start=25
 ---
 
-## Creating your HelloWorld Project
-
 In this walk-through, you will create, run and package a simple Java application that prints "Hello World" to the system output. You will also see some IntelliJ IDEA features that can boost your productivity, for example, coding assistance and supplementary tools. All the features in this tutorial are available in both IntelliJ IDEA Community edition and IntelliJ IDEA Ultimate.
+
+## Creating your HelloWorld Project
 
 1) You can use the [New Project Wizard](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html) to create a new Project inside IntelliJ IDEA. From the Welcome screen you can click **New Project**, or, if you're already inside a project, you can go to **File** > **New** > **Project**. 
 
@@ -32,7 +32,7 @@ If you have previously opened a project, the **New Project** button will be on t
 
 IntelliJ IDEA will show you a list of configured JDKs at the top of the list as well as a list of JDKs it's detected on your machine at the bottom of the list. You can select any of these, or you can click **Download JDK**. 
 
-Java is packaged and provided by a number of different vendors. This list shows some of the most common ones. Open JDK is Oracle's free, open JDK build, which will always be the latest version. If you pick another vendor, for example, Adopt Open JDK, you will see all the available versions for that vendor. 
+Java is packaged and provided by a number of different vendors. This list shows some of the most common ones. OpenJDK is Oracle's free, open JDK build, which will always be the latest version. If you pick another vendor, for example, Adopt OpenJDK, you will see all the available versions for that vendor. 
 
 ![Different JDK Vendors](different-jdk-vendors.png)
 

@@ -14,7 +14,7 @@ longVideo:
 
 ## Compiling and Running the application 
 
-Now you have written our 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
+Now you have written your 'HelloWorld.java' class, you need to compile and run it. IntelliJ IDEA can do this for you. There are lots of ways you can run an application but to start with, you can click the green arrows to the left of the method. These are known as [gutter icons](https://www.jetbrains.com/help/idea/settings-gutter-icons.html). 
 
 You'll notice that there are two green arrows. The top one is adjacent to the class, and it will run the class. Our class only contains Java's `main` method so that is all that it will run. However, if you're working with classes with multiple tests in for example, using this green run arrow will run all the tests in the class. 
 
@@ -26,7 +26,7 @@ IntelliJ IDEA will now compile the file into a class file and then run it. The o
 
 ### The Run Window
 
-Let's take a look at yourq Run Window in more detail.
+Let's take a look at your Run Window in more detail.
 
 ![Run window](run-window.png)
 
@@ -34,11 +34,11 @@ The first line shows the command that was used to run the program. We don't usua
 
 The second line in this window is the output of your program - the "Hello World" statement that you told it to print.
 
-the last line, which says `Process finished with exit code 0` shows the program ran without an error. 
+The last line, which says `Process finished with exit code 0` shows the program ran without an error. 
 
 ### What IntelliJ IDEA Created
 
-Let's take a quick look at what happened when you ran the application. IntelliJ IDEA compiled your HelloWorld.java file into a class file. By default, the IDE created a folder called `out`. Production code, meaning code that isn't test code is put into the `production` folder within the `out` folder. IntelliJ IDEA creates a folder for our `HelloWorld` project and then the directory structure for our package. The compiled class file. `HelloWorld.class` can be found at the end of this directory hierarchy.
+Let's take a quick look at what happened when you ran the application. IntelliJ IDEA compiled your HelloWorld.java file into a class file. By default, the IDE created a folder called `out`. Production code, meaning code that isn't test code, is put into the `production` folder within the `out` folder. IntelliJ IDEA creates a folder for our `HelloWorld` project and then the directory structure for our package. The compiled class file `HelloWorld.class` can be found at the end of this directory hierarchy.
 
 ![Out folder directory structure](out-directory.png)
 
