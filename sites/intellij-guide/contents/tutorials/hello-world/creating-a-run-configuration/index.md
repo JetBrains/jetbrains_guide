@@ -9,7 +9,7 @@ subtitle: Creating a run configuration for the JAR file we created.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=610
+  url: https://youtu.be/H_XxH66lm3U?start=611
 ---
 
 ## Creating a Dedicated Run Configuration

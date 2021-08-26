@@ -9,7 +9,7 @@ subtitle: Compiling and running your Hello World application.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?t=369
+  url: https://youtu.be/H_XxH66lm3U?start=371
 ---
 
 ## Compiling and Running the application 
