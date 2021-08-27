@@ -7,10 +7,10 @@ topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to create a new package and class.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=116
+
 ---
+
+[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=116)
 
 ## Creating Your Hello World Class
 

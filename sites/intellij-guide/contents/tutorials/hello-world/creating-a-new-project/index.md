@@ -7,14 +7,14 @@ topics: []
 author: hs
 subtitle: Using the New Project Wizard to create a new project.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=25
+
 ---
+[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=25)
 
 In this walk-through, you will create, run and package a simple Java application that prints "Hello World" to the system output. You will also see some IntelliJ IDEA features that can boost your productivity, for example, coding assistance and supplementary tools. All the features in this tutorial are available in both IntelliJ IDEA Community edition and IntelliJ IDEA Ultimate.
 
 ## Creating your HelloWorld Project
+
 
 1) You can use the [New Project Wizard](https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html) to create a new Project inside IntelliJ IDEA. From the Welcome screen you can click **New Project**, or, if you're already inside a project, you can go to **File** > **New** > **Project**. 
 

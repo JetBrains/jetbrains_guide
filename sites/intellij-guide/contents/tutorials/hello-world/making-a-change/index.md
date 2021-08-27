@@ -7,10 +7,10 @@ topics: []
 author: hs
 subtitle: Making a change to our file to check it's working as we expect.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=747
+
 ---
+
+[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=747)
 
 ## Making a Change to the Java file
 
