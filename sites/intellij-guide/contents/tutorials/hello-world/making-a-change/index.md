@@ -30,4 +30,6 @@ Let's go ahead and make a change to the Java file and see if you get a new messa
 You can also scroll to the right of your run window to check which run configuration IntelliJ IDEA used if you want to. Let's summarise what we've learned in the final step of this tutorial.
 
 
-### Screencast Link
+---
+
+### Video of Steps

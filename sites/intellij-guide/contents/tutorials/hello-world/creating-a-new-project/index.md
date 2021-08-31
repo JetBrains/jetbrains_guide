@@ -54,4 +54,6 @@ The IDE will spend a bit of time downloading and installing the Java Development
 6) Press **Finish** so IntelliJ IDEA can create your project.
 
 
-### Screencast Link
+---
+
+### Video of Steps
