@@ -8,6 +8,7 @@ export const query = graphql`
     slug
     date(formatString: "YYYY-MM-DD")
     resourceType
+    videoBottom
     thumbnail {
       ...ThumbnailFragment
     }

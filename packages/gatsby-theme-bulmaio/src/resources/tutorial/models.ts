@@ -6,4 +6,5 @@ export interface TutorialResource extends Resource {
   date: string
   cardThumbnail: Thumbnail
   tutorialItems: ListedResources
+  videoBottom: boolean
 }

@@ -6,6 +6,7 @@ topics: [testing]
 author: hs
 subtitle: Migrating your JUnit 4 test suite to JUnit 5
 thumbnail: ./thumbnail.png
+videoBottom: true
 tutorialItems:
   - /tutorials/migrating-junit4-junit5/introduction/
   - /tutorials/migrating-junit4-junit5/overview-of-junit4-structure/

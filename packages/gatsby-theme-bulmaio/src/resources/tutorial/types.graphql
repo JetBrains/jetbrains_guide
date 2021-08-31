@@ -6,6 +6,7 @@ type Tutorial implements Node & Resource {
     id: ID!
     parent: Node
     tutorialItems: [Resource] @link(by: "slug")
+    videoBottom: Boolean
     slug: String!
     subtitle: String
     excerpt: String

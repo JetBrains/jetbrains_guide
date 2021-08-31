@@ -105,9 +105,10 @@ const TutorialStep: FC<TutorialProps> = (
   />;
 
   // Main
+  const videoBottom = inTutorial.videoBottom;
   const main = (
     <>
-      {longVideo && (
+      {longVideo && !videoBottom && (
         <div style={{ marginBottom: '2rem' }}>
           <VideoPlayer {...videoOptions} />
         </div>
@@ -119,6 +120,11 @@ const TutorialStep: FC<TutorialProps> = (
           </div>
         </div>
       ) : null}
+      {longVideo && videoBottom && (
+          <div style={{ marginBottom: '2rem' }}>
+            <VideoPlayer {...videoOptions} />
+          </div>
+      )}
     </>
   );
 
