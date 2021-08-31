@@ -7,12 +7,10 @@ topics: []
 author: hs
 subtitle: Use IntelliJ IDEA to create a new package and class.
 thumbnail: ./thumbnail.png
-
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/H_XxH66lm3U?start=116
 ---
-
-[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=116)
-
-## Creating Your Hello World Class
 
 We recommend putting IntelliJ IDEA into full screen to give you the maximum amount of space for your new Hello World project. 
 
@@ -75,4 +73,7 @@ IntelliJ IDEA offers you [code completion](https://www.jetbrains.com/help/idea/a
 
 **Note**: Instead of the above steps, you can also type `sout` to see a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that will create the code construct for you as well, however we wanted to show you code completion!
 
-Congratulations, you've just created your first Java application! Java files like this one can be compiled into bytecode and run in IntelliJ IDEA. Let's take a look at that in the next step. 
+Congratulations, you've just created your first Java application! Java files like this one can be compiled into bytecode and run in IntelliJ IDEA. Let's take a look at that in the next step.
+
+
+### Screencast Link

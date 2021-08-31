@@ -5,15 +5,13 @@ title: Creating a Run Configuration
 technologies: []
 topics: []
 author: hs
-subtitle: Creating a run configuration for the JAR file we created.
+subtitle: Using an IntelliJ IDEA run configuration for the JAR file we created.
 thumbnail: ./thumbnail.png
-
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/H_XxH66lm3U?start=611
 ---
 
-[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=611)
-
-## Creating a Dedicated Run Configuration
- 
 Now you've created your JAR file, you need to run it to check that the behaviour is the same as running your main method in your `HelloWorld.java` file. To run your Java application as a JAR, you can create a new [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html). 
 
 1) Press **Shift** twice to use [search everywhere](https://www.jetbrains.com/idea/guide/tips/search-everywhere/). If you don't know a shortcut in IntelliJ IDEA, search everywhere is a great way to search for what you need. In this instance, you want to create a new run configuration, so type into the dialog _edit configurations_.
@@ -60,6 +58,7 @@ If you look in the [Run window](https://www.jetbrains.com/help/idea/run-tool-win
 
 `../IdeaProjects/HelloWorld/out/artifacts/HelloWorld_jar/HelloWorld.jar`
 
-Beforehand, it showed the fully qualified class name, including the package. You can be confident that your new run configuration did run your `HelloWorld.jar` that you created. Finally, let's check that your JAR file is being rebuilt each time you use the run configuration that we created as we configured it to do. We will do this in the next step of this tutorial by making a change to our class file and checking the output. 
+Beforehand, it showed the fully qualified class name, including the package. You can be confident that your new run configuration did run your `HelloWorld.jar` that you created. Finally, let's check that your JAR file is being rebuilt each time you use the run configuration that we created as we configured it to do. We will do this in the next step of this tutorial by making a change to our class file and checking the output.
 
 
+### Screencast Link

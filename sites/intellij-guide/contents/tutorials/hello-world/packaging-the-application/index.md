@@ -7,12 +7,11 @@ topics: []
 author: hs
 subtitle: We can package the application into a Java ARchive file (JAR).
 thumbnail: ./thumbnail.png
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/H_XxH66lm3U?start=495
 
 ---
-
-[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=495)
-
-## Packaging our Application in a Java ARchive File (JAR)
 
 When the code is ready, we can [package our application in a JAR](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar). JAR files are often used to deploy an application to the production server. Once a JAR file has been built, it is called an artifact. Let's take look at how to create artifacts in IntelliJ IDEA. 
 
@@ -48,4 +47,7 @@ IntelliJ IDEA puts the artifact in a new folder in your `out` folder called `Hel
 
 ![Project window artifact](project-window-artifact.png)
 
-To make sure that this JAR file was created correctly you will want to run it. We'll do this in the next step of this tutorial by using a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html). 
+To make sure that this JAR file was created correctly you will want to run it. We'll do this in the next step of this tutorial by using a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
+
+
+### Screencast Link

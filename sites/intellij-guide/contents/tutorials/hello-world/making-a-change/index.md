@@ -5,14 +5,13 @@ title: Making a Change
 technologies: []
 topics: []
 author: hs
-subtitle: Making a change to our file to check it's working as we expect.
+subtitle: Editing the output of our Hello World application to check it's working as we expect.
 thumbnail: ./thumbnail.png
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/H_XxH66lm3U?start=747
 
 ---
-
-[**Video link for this part of the tutorial**](https://youtu.be/H_XxH66lm3U?start=747)
-
-## Making a Change to the Java file
 
 Let's go ahead and make a change to the Java file and see if you get a new message printed out when you run your _HelloWorld JAR_ configuration again.
 
@@ -28,4 +27,7 @@ Let's go ahead and make a change to the Java file and see if you get a new messa
 
 ![Run window showing new output](new-output-string.png)
 
-You can also scroll to the right of your run window to check which run configuration IntelliJ IDEA used if you want to. Let's summarise what we've learned in the final step of this tutorial. 
+You can also scroll to the right of your run window to check which run configuration IntelliJ IDEA used if you want to. Let's summarise what we've learned in the final step of this tutorial.
+
+
+### Screencast Link
