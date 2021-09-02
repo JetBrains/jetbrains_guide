@@ -20,5 +20,6 @@ leadin: |
   all the UI elements hidden. 
   
   If you Want to get rid of every part of the IDE except your code, you can combine the 
-  full screen and distraction-free modes by entering the **Zen** mode:  
-  *Ctrl+` | View Mode | Enter Zen Mode*
+  full screen and distraction-free modes by entering the **Zen** mode: *Ctrl+` | View Mode | Enter Zen Mode*.
+
+  To exit the modes, hit *Ctrl+` and navigate to | View Mode | Exit Distraction Free (or zen) Mode* 
