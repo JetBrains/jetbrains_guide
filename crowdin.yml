@@ -1,3 +1,3 @@
 files:
-  - source: sites/*-guide/contents
-    translation: sites/*-guide/contents/%original_path%/%original_file_name%-%locale%.%file_extension%
+  - source: sites/**/contents
+    translation: sites/**/contents/%original_path%/%original_file_name%-%locale%.%file_extension%
