@@ -82,34 +82,6 @@ job("Build WebStorm Guide") {
     }
 }
 
-job("Build Space Guide") {
-    startOn {
-        gitPush {
-            pathFilter {
-                +"sites/space-guide/**"
-                +"packages/**"
-                +"package.json"
-            }
-        }
-    }
-    
-    container("node:14") {
-        resources {
-            cpu = 2.cpu
-            memory = 4.gb
-        }
-
-        env["GATSBY_TELEMETRY_DISABLED"] = "1";
-
-        shellScript {
-            content = """
-                yarn install
-                yarn run space:build
-            """.trimIndent()
-        }
-    }
-}
-
 job("Build .NET Guide") {
     startOn {
         gitPush {
