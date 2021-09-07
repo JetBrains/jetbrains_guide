@@ -78,4 +78,3 @@ Congratulations, you've just created your first Java application! Java files lik
 
 ---
 
-### Video of Steps

@@ -56,4 +56,3 @@ The IDE will spend a bit of time downloading and installing the Java Development
 
 ---
 
-### Video of Steps

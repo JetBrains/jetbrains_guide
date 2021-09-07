@@ -6,7 +6,6 @@ topics: [gettingstarted]
 author: hs
 subtitle: Create a new Java application and JAR file that prints `Hello World` to the console. 
 thumbnail: ./thumbnail.png
-videoBottom: true
 tutorialItems:
   - /tutorials/hello-world/creating-a-new-project/
   - /tutorials/hello-world/creating-a-package-and-class/

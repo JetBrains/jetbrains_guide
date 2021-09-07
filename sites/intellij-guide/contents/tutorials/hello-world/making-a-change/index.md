@@ -31,5 +31,3 @@ You can also scroll to the right of your run window to check which run configura
 
 
 ---
-
-### Video of Steps
