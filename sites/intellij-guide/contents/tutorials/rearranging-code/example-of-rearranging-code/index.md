@@ -17,9 +17,7 @@ Let's take a look at an example with the following default arrangement:
 
 ![Default code rules arrangement](default-arrangement.png)
 
-As a side note, if you do make some changes here, and you want to reset them without resetting all the settings, you can click the blue Reset command on the top-right of this dialog. It will only be shown when you've made a change to your settings.
-
-Given you can't scroll a screenshot, here is the order in text form so you can see what's happening:
+Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
 
 |   |   |   |  | |  
 | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -155,7 +153,7 @@ public class RearrangeCode {
 
 ```
 
-When you [Invoke Code Rearrangement](../invoking-rearranging-code) on this code either manually or on commit, the code will be reordered (see below). Here are a list of changes:
+When you [Invoke Code Rearrangement](../invoking-rearranging-code) on this code either manually or on commit, the code will be reordered (see below). Here is a list of changes:
 - All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
 - The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the [grouping rules](#grouping-rules).
 - The Override methods have been grouped together because we specified we wanted to keep them together in the [grouping rules](#grouping-rules) and they are public so line 22 of our [matching rules](#matching-rules) is applied. The Override methods are also implemented in the order they appear in the Object super class.

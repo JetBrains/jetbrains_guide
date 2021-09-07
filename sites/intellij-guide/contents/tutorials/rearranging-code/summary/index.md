@@ -10,6 +10,9 @@ thumbnail: ./thumbnail.png
 ---
 
 
+## Summary of Rearranging Code
+In this tutorial we took at look at some fast ways to move [lines](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) and [statements](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements) around in your classes. We then looked at how to [configure rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) and how to invoke rearrange code manually with Find Actions and then [Before Commit](https://www.jetbrains.com/help/idea/commit-changes-dialog.html#before_commit). Finally we took a look at a worked example. 
+
 ### Shortcuts Used
 Here are some of the shortcuts that we used and some additional ones that you can try out. 
 
