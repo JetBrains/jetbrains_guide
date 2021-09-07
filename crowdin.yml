@@ -1,3 +1,10 @@
 files:
   - source: sites/**/contents
-    translation: sites/**/contents/%original_path%/%original_file_name%-%locale%.%file_extension%
+    ignore:
+      - '*.jpg'
+      - '*.png'
+      - README.txt
+      - '*.svg'
+      - '*.gif'
+      - '*.jpeg'
+    translation: '%original_path%/%original_file_name%'
