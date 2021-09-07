@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-25-09
+date: 2021-25-08
 title: Compiling and Running
 technologies: []
 topics: []

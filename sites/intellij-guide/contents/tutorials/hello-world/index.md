@@ -1,5 +1,5 @@
 ---
-date: 2021-24-09
+date: 2021-24-08
 title: Hello World in IntelliJ IDEA
 technologies: [java]
 topics: [gettingstarted]
