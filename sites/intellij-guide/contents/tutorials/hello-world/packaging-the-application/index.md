@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-24-09
+date: 2021-24-08
 title: Packaging the Application
 technologies: []
 topics: []
@@ -50,5 +50,3 @@ IntelliJ IDEA puts the artifact in a new folder in your `out` folder called `Hel
 To make sure that this JAR file was created correctly you will want to run it. We'll do this in the next step of this tutorial by using a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
 
 ---
-
-### Video of Steps

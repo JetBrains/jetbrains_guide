@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-24-09
+date: 2021-24-08
 title: Making a Change 
 technologies: []
 topics: []
@@ -31,5 +31,3 @@ You can also scroll to the right of your run window to check which run configura
 
 
 ---
-
-### Video of Steps

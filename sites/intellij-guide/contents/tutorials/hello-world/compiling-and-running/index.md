@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-25-09
+date: 2021-25-08
 title: Compiling and Running
 technologies: []
 topics: []
@@ -51,4 +51,3 @@ If you want to go back to the Run Window, you can use **Cmd**+**4** on macOS, or
 
 ---
 
-### Video of Steps
