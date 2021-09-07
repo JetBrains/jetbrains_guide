@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-24-09
+date: 2021-24-08
 title: Creating a Run Configuration
 technologies: []
 topics: []
@@ -61,5 +61,3 @@ If you look in the [Run window](https://www.jetbrains.com/help/idea/run-tool-win
 Beforehand, it showed the fully qualified class name, including the package. You can be confident that your new run configuration did run your `HelloWorld.jar` that you created. Finally, let's check that your JAR file is being rebuilt each time you use the run configuration that we created as we configured it to do. We will do this in the next step of this tutorial by making a change to our class file and checking the output.
 
 ---
-
-### Video of Steps

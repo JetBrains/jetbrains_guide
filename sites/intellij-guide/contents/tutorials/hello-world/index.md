@@ -1,12 +1,11 @@
 ---
-date: 2021-24-09
+date: 2021-24-08
 title: Hello World in IntelliJ IDEA
 technologies: [java]
 topics: [gettingstarted]
 author: hs
 subtitle: Create a new Java application and JAR file that prints `Hello World` to the console. 
 thumbnail: ./thumbnail.png
-videoBottom: true
 tutorialItems:
   - /tutorials/hello-world/creating-a-new-project/
   - /tutorials/hello-world/creating-a-package-and-class/

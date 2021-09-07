@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-25-09
+date: 2021-25-08
 title: Creating a new project
 technologies: []
 topics: []
@@ -56,4 +56,3 @@ The IDE will spend a bit of time downloading and installing the Java Development
 
 ---
 
-### Video of Steps
