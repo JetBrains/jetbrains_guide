@@ -4,14 +4,14 @@ title: Rearranging Code in IntelliJ IDEA
 technologies: [java]
 topics: [settings, tricks]
 author: hs
-subtitle: Why and how you can rearrange code in your projects
+subtitle: How you can rearrange code in your projects at different stages.
 thumbnail: ./thumbnail.png
-videoBottom: true
 tutorialItems:
   - /tutorials/rearranging-code/introduction/
   - /tutorials/rearranging-code/moving-lines-around/
   - /tutorials/rearranging-code/moving-statements-around/
   - /tutorials/rearranging-code/rearranging-code-settings/
-  - /tutorials/rearranging-code/rearranging-on-commit/
+  - /tutorials/rearranging-code/invoking-rearranging-code/
+  - /tutorials/rearranging-code/example-of-rearranging-code/
   - /tutorials/rearranging-code/summary/
 ---
