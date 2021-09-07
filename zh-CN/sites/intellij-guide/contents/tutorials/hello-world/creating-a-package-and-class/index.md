@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-24-09
+date: 2021-24-08
 title: Creating the package and class
 technologies: [ ]
 topics: [ ]
@@ -78,4 +78,3 @@ Congratulations, you've just created your first Java application! Java files lik
 
 ---
 
-### Video of Steps
