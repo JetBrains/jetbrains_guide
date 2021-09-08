@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: Adjust Code Style
+title: 调整代码风格
 technologies:
   - java
 topics:
   - editing
 author: hs
-subtitle: Use quick intentions to adjust your code
+subtitle: 使用快速意图来调整代码
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Configuring code style
     href: https://www.jetbrains.com/help/idea/configuring-code-style.html
 leadin: |
-  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for your selection and then edit the code style.
+  您可以使用 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux）来显示您选择的上下文操作，然后调整代码风格。
 ---
 
