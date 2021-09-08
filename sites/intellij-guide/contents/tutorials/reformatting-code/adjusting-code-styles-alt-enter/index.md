@@ -10,13 +10,24 @@ thumbnail: ./thumbnail.png
 
 ---
 
-## Adjust Code Style Settings with Intention Actions (Alt + Enter)
+## Adjust Code Style Settings with Intention Actions 
 
-Must highlight code for this to work. 
+Intention Actions is one of those shortcuts in IntelliJ IDEA that works in a number of places, even if IntelliJ IDEA has not specifically highlighted the code.  
 
-_For example, if we want for loops to also have curly braces, we can highlight an example of the code we want to change the formatting of, and press Alt+Enter._
+In this code snippet, let's say you want your `for` loop to have curly braces. You can highlight it and then press **⌥⏎** (macOS), or **Alt+Enter** (Windows):
 
-_Screenshot of the menu item for Adjust Code Style Settings_
+![Adjust Code Style Menu](adjust-code-style-menu.png)
 
-_Then we select “Adjust code style settings”.  IntelliJ IDEA will show just the settings that apply to this bit of code. We can experiment with these settings and see the changes previewed live in our code. Under the “Wrapping and Braces” tab, under “‘for()’ statement” we can set “Force braces” to “true” always to have IntelliJ IDEA insert curly braces around the body of our for loop. When we save these changes, they will be saved to our current Code Style scheme._
+When you press **Adjust code style settings** IntelliJ IDEA will do two things. Firstly, it will show you a preview of the code reformatted according to your current reformatting rules (more on that in the next step), secondly it will show you the settings that apply to that bit of code.
+
+You can go to the **Wrapping and Braces** tab and change **Force Braces** to _Always_. 
+
+![Force Braces for our For Loop](force-braces.png)
+
+You get a live preview of what your code will look like if you press **Save**. When we save these changes, they are saved to your current [code style scheme](https://www.jetbrains.com/help/idea/configuring-code-style.html).
+
+If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous incorrect formatting and without the curly braces on our `for` loop.
+
+## Reformatting Code Settings
+In the next step we will take a look at the code style scheme in more detail and learn about some code style settings available to you.  
 

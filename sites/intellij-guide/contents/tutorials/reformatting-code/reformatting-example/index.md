@@ -12,3 +12,4 @@ thumbnail: ./thumbnail.png
 
 
 ## Reformatting Example
+Use teh Streams example from the video
