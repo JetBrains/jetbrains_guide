@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-09-06
-title: Adjusting Code Styles with Alt + Enter
+title: Reformatting with Alt + Enter
 technologies: []
 topics: []
 author: hs
@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 
 ---
 
-## Adjust Code Style Settings with Intention Actions 
+## Reformat with Intention Actions 
 
 Intention Actions is one of those shortcuts in IntelliJ IDEA that works in a number of places, even if IntelliJ IDEA has not specifically highlighted the code.  
 

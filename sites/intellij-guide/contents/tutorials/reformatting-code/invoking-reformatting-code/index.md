@@ -44,11 +44,11 @@ In this dialog, select **Only changes uncommitted to VCS**. When you press **Run
 
 You can get IntelliJ IDEA to reformat your code before you commit it which may be a half-way house for your team if you have a mix of new and old code. 
 
-You can reformat your code in the classes you are about to commit with the cog in the Commit Tool Window which is invoked with ⌘0 (macOS), or Ctrl+0 (Windows/Linux):
+You can reformat your code in the classes you are about to commit with the cog in the Commit Tool Window which is invoked with **⌘0** (macOS), or **Alt+0** (Windows/Linux):
 
 ![Amend Commit Cog](amend-commit-cog.png)
 
-When you click the cog you can select the checkbox adjacent to Reformat Code:
+When you click the cog you can select the **Reformat Code** check box:
 
 ![Reformat Code Checkbox](reformat-code-checkbox.png)
 
@@ -58,7 +58,7 @@ This will reformat your code in those classes when you commit them according to 
 
 If you always want to rearrange code at a project level before you commit it, you can use **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings and then search for _on commit_. The option you want is **Version Control > Commit** and then the **Before Commit** panel.
 
-Select the checkbox adjacent to the **Reformat Code** check box and press **OK** to always reformat your files prior to commit. This will apply to all your languages.
+Select the **Reformat Code** checkbox and press **OK** to always reformat your files prior to commit. This will apply to all your languages.
 
 ![Reformat Code Checkbox Before Commit](reformat-code-checkbox.png)
 
@@ -75,4 +75,6 @@ When you press **Enter** you will see the **Reformat dialog**. You can make any 
 It's worth mentioning here that you can also [exclude files from reformatting](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#exclude_file_from_reformat) if you want to.
 Why you might want to do that and how to (again) manage it if it's just your changes if required. 
 
-## Next step
+## A Worked Example for Reformat Code
+So now you know _when_ and _how_ to invoke reformat code. Let's take a look at a worked example in the next step of this tutorial.
+

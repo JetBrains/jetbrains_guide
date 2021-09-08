@@ -33,4 +33,4 @@ Using **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) will [reformat a co
  Note: There are key conflicts with the operating system shortcuts on certain versions of Linux.
 
 ## Reformatting with Intention Actions
-Let's keep working at the class level, and take a look at how are can format code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.  
+Let's keep working at the class level, and take a look at how are can reformat code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.  

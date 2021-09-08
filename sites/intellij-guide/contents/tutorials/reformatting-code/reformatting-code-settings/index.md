@@ -25,5 +25,5 @@ If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' s
 
 We have a separate tutorial on rearranging your code which is included in the Code Style, so you can check that out if it interests you in the [tutorials section](https://www.jetbrains.com/idea/guide/tutorials/).
 
-## Invoking Reformat Code
-Now you've defined what your code formatting settings are, you need to consider how and when to invoke them. We'll take a look at this in the next step of this tutorial.
+## EditorConfig
+IntelliJ IDEA also supports [EditorConfig files](https://editorconfig.org/). In the next step of this tutorial we will take a look at why they're useful and how to use them. 
