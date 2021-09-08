@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: Add Breakpoint
+title: 添加断点
 technologies:
   - kotlin
 topics:
   - debugging
 author: hs
-subtitle: Easily add breakpoints from the run window
+subtitle: 轻松从 Run 窗口添加断点
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Breakpoints
     href: https://www.jetbrains.com/help/idea/using-breakpoints.html
 leadin: |
-  When you run your code and get an unhandled exception, you can click _Create breakpoint_ in the Run window to debug it.
+  运行代码却获得未处理异常时，您可以单击 Run 窗口中的 _Create breakpoint_ 来添加断点并调试。
 ---
 
