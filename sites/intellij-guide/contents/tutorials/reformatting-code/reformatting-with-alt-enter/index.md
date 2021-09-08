@@ -14,7 +14,8 @@ thumbnail: ./thumbnail.png
 
 Intention Actions is one of those shortcuts in IntelliJ IDEA that works in a number of places, even if IntelliJ IDEA has not specifically highlighted the code.  
 
-In this code snippet, let's say you want your `for` loop to have curly braces. You can highlight it and then press **⌥⏎** (macOS), or **Alt+Enter** (Windows):
+In this code snippet, let's say you want your `for` loop to have curly braces. You can highlight it and then press
+:
 
 ![Adjust Code Style Menu](adjust-code-style-menu.png)
 
