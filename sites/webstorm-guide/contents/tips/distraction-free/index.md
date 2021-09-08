@@ -15,11 +15,11 @@ animatedGif:
     width: 600
     height: 300
 leadin: |
-  Switch to the **distraction-free** mode with *Ctrl+` | View Mode | Enter Distraction Free Mode* 
+- Switch to the **Distraction-free** mode with *Ctrl+` | View Mode | Enter Distraction Free Mode* 
   whenever you need to focus on coding – you’ll get the source code centered and 
-  all the UI elements hidden. 
-  
-  If you Want to get rid of every part of the IDE except your code, you can combine the 
-  full screen and distraction-free modes by entering the **Zen** mode: *Ctrl+` | View Mode | Enter Zen Mode*.
+  all the UI elements hidden.
 
-  To exit the modes, hit *Ctrl+` and navigate to | View Mode | Exit Distraction Free (or zen) Mode* 
+  If you want to get rid of every part of the IDE except your code, you can combine the 
+  full screen and distraction-free modes by entering the **Zen** mode: *Ctrl+` | View Mode | Enter Zen Mode.*
+
+  To exit the modes, hit *Ctrl+`* and navigate to *View Mode | Exit Distraction Free (or Zen) Mode.*
