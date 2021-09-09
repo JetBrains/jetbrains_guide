@@ -17,8 +17,8 @@ interface AllTutorialProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Tutorials';
-const SUBTITLE = 'Learn how to work with technologies using detailed, multi-step lessons accompanied by code samples, instructions, and videos.';
+const PAGE_TITLE = '主题教程';
+const SUBTITLE = '由代码示例、步骤指令及视频组成的手把手教程，探讨更多技术细节';
 
 const twitterCardPage: TwitterCardPage = {
   title: PAGE_TITLE,

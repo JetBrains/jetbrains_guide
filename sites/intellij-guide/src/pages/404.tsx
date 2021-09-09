@@ -10,8 +10,12 @@ const NotFoundPage = () => (
             <div className="media-content">
               <div className="content">
                 <div className="bd-header-titles">
-                  <h1 className="title">Not Found</h1>
-                  <p className="subtitle is-4">The requested page could not be not found</p>
+                  <h1 className="title">
+                    页面不存在
+                  </h1>
+                  <p className="subtitle is-4">
+                    找不到你搜索的页面
+                  </p>
                 </div>
               </div>
             </div>

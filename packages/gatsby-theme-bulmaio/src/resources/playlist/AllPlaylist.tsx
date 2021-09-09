@@ -17,8 +17,8 @@ interface AllPlaylistProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Playlists';
-const SUBTITLE = 'Curated, ordered collections of resources you can go through in a sitting.';
+const PAGE_TITLE = '播放列表';
+const SUBTITLE = '您可以在这些经过策划、有序的播放列表里取得所有学习材料的集合';
 
 const twitterCardPage: TwitterCardPage = {
   title: PAGE_TITLE,

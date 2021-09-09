@@ -21,42 +21,42 @@ module.exports = {
               accent: 'success',
               cssClass: 'documentation',
               href: '/tips/',
-              label: 'All Tips',
+              label: '操作小技巧',
               icon: 'fas fa-play-circle'
             },
             {
               accent: 'info',
               cssClass: 'documentation',
               href: '/tutorials/',
-              label: 'Tutorials',
+              label: '主题教程',
               icon: 'fas fa-tasks'
             },
             {
               accent: 'warning',
               cssClass: 'documentation',
               href: '/playlists/',
-              label: 'Playlists',
+              label: '播放列表',
               icon: 'fas fa-list'
             },
             {
               accent: 'danger',
               cssClass: 'documentation',
               href: '/technologies/',
-              label: 'Technologies',
+              label: '技术主题',
               icon: 'fas fa-project-diagram'
             },
             {
               accent: 'danger',
               cssClass: 'documentation',
               href: '/topics/',
-              label: 'Topics',
+              label: '话题',
               icon: 'fas fa-book-open'
             },
             {
               accent: 'warning',
               cssClass: 'documentation',
               href: '/about/',
-              label: 'About',
+              label: '关于',
               icon: 'fas fa-file'
             },
             {
@@ -78,7 +78,7 @@ module.exports = {
             {
               accent: 'light',
               href: 'https://jb.gg/zws7og',
-              label: 'Get IntelliJ IDEA'
+              label: '取得 IntelliJ IDEA'
             }
           ],
           links: [
@@ -88,9 +88,19 @@ module.exports = {
               icon: 'github'
             },
             {
-              color: '55acee',
-              href: 'https://twitter.com/intellijidea',
-              icon: 'twitter'
+              color: 'df2029', // TODO: change color
+              href: 'https://weibo.com/u/3220313942',
+              icon: 'weibo'
+            },
+            {
+              color: 'df2029', // TODO: change color
+              href: 'https://weibo.com/u/3220313942', // TODO: change url
+              icon: 'wechat' // TODO: change icon
+            },
+            {
+              color: 'df2029', // TODO: change color
+              href: 'https://weibo.com/u/3220313942', // TODO: change url
+              icon: 'bilibili' // TODO: change icon
             }
           ]
         }

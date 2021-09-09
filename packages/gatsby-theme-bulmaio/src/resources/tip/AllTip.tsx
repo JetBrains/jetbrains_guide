@@ -17,8 +17,8 @@ interface AllTipProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Tips';
-const SUBTITLE = 'Visual, standalone, bite-sized learning resources organized into different categories.';
+const PAGE_TITLE = 'IDE 操作小技巧';
+const SUBTITLE = '由截图、短视频组成的碎片式小技巧，可依据类别组成不同的学习资源';
 
 const twitterCardPage: TwitterCardPage = {
   title: PAGE_TITLE,

@@ -16,8 +16,8 @@ interface TechnologiesProps {
   pageContext: PageContext
 }
 
-const PAGE_TITLE = 'Technologies';
-const SUBTITLE = 'Jump to all available learning resources on specific technologies, such as libraries, languages, and frameworks.';
+const PAGE_TITLE = '技术主题';
+const SUBTITLE = '通过以下主题列表取得相关技术、库、语言和框架的相关学习材料';
 
 const twitterCardPage: TwitterCardPage = {
   title: PAGE_TITLE,

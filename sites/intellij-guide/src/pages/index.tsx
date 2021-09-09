@@ -8,7 +8,7 @@ import {TwitterCardPage} from "gatsby-theme-bulmaio/src/components/layout/Master
 const dataUri = `url("${splash}") center center`;
 
 const PAGE_TITLE = 'IntelliJ IDEA Guide';
-const SUBTITLE = 'Learning resources for IntelliJ IDEA and related technologies.';
+const SUBTITLE = 'IntelliJ IDEA 及相关技术的学习材料';
 
 const twitterCardPage: TwitterCardPage = {
   title: PAGE_TITLE,
@@ -30,7 +30,7 @@ const IndexPage: React.FC = () => {
                     <div className="columns">
                       <div className="column is-two-thirds" >
 
-                        <p className="is-size-4">Find out how you can be more productive with a series of tips and tricks.</p>
+                        <p className="is-size-4">通过这些 IDE 操作技巧能让您的开发工作更高效！</p>
                       </div>
                     </div>
                   </div>
@@ -40,10 +40,12 @@ const IndexPage: React.FC = () => {
           main: (
               <section className="section has-background-light">
                 <div className="container">
-                  <h1 className="title">Learn Something New Quickly</h1>
+                  <h1 className="title">
+                    来学点新东西吧！
+                  </h1>
                   <div>
                     <div className="is-size-5">
-                      To start learning, jump to the section you find most interesting from two broad categories:
+                      请从以下两种分类中挑一个您最感兴趣的方式开始学习：
                     </div>
 
                     <div className="container" style={{ marginTop: '2rem' }}>
@@ -54,12 +56,13 @@ const IndexPage: React.FC = () => {
                               <div className="card-content">
                                 <div className="media">
                                   <div className="media-content">
-                                    <h1 className="is-size-4">Tips</h1>
+                                    <h1 className="is-size-4">操作小技巧</h1>
                                   </div>
                                 </div>
                                 <div className="content">
-                                  <p className="is-size-5">Go through handy tips and tricks grouped by topics and
-                                    technologies.</p>
+                                  <p className="is-size-5">
+                                    通过短视频快速掌握 IDE 生产力技巧。
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -71,11 +74,13 @@ const IndexPage: React.FC = () => {
                               <div className="card-content">
                                 <div className="media">
                                   <div className="media-content">
-                                    <h1 className="is-size-4">Tutorials</h1>
+                                    <h1 className="is-size-4">主题教程</h1>
                                   </div>
                                 </div>
                                 <div className="content">
-                                  <p className="is-size-5">Explore our step-by-step tutorials grouped by topics and technologies.</p>
+                                  <p className="is-size-5">
+                                    通过手把手的主题教学来学习新技术。
+                                  </p>
                                 </div>
                               </div>
                             </div>
