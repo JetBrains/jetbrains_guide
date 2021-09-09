@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2020-03-16
 title: Make Your Work Environment Distraction Free
 subtitle: Need to focus on just your code? You can switch to the distraction-free or zen mode.
@@ -15,7 +16,7 @@ animatedGif:
     width: 600
     height: 300
 leadin: |
-- Switch to the **Distraction-free** mode with *Ctrl+` | View Mode | Enter Distraction Free Mode* 
+  Switch to the **Distraction-free** mode with *Ctrl+` | View Mode | Enter Distraction Free Mode* 
   whenever you need to focus on coding – you’ll get the source code centered and 
   all the UI elements hidden.
 
@@ -23,3 +24,4 @@ leadin: |
   full screen and distraction-free modes by entering the **Zen** mode: *Ctrl+` | View Mode | Enter Zen Mode.*
 
   To exit the modes, hit *Ctrl+`* and navigate to *View Mode | Exit Distraction Free (or Zen) Mode.*
+---
