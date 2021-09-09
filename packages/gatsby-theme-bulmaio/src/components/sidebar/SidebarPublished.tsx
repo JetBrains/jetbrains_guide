@@ -24,7 +24,7 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
             <figure className="media-left">
               <div className="image is-rounded is-48x48">
                 <img
-                  src={withPrefix(author.thumbnail.childImageSharp.resized.src)} 
+                  src={withPrefix(author.thumbnail.childImageSharp.resized.src /* TODO: need to fix this url to display image */)}
                   alt=""
                   loading="lazy"
                   width="48"

@@ -116,6 +116,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `contents`,
+        // TODO: need to change the path to load localized content
         path: `${__dirname}/contents`
       }
     },
