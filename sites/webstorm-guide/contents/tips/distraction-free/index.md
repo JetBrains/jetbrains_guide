@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2020-03-16
 title: Make Your Work Environment Distraction Free
 subtitle: Need to focus on just your code? You can switch to the distraction-free or zen mode.
