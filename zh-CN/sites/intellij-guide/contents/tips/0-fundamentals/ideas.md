@@ -1,5 +1,5 @@
-Basic completion Smart completion
- - enter vs tab selection
+智能代码补全的基本
+ - 输入 vs 按tab键选择
  - .
 
 complete statement
