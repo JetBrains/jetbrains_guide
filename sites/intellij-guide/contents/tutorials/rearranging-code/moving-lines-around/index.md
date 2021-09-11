@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/L_h8NJdYyj4
 ---
 
-## Moving a Line Up or Down in Your Class
+## Moving Content Up or Down in Your Class
 With your caret on a line, you can press **⌥⇧↑** (macOS), or **Alt+Shift+Up Arrow** (Windows/Linux), to move a line up. Alternatively, you can move a line down with **⌥⇧↓** (macOS), or **Alt+Shift+Down Arrow** (Windows/Linux). The same shortcut can move a selection up or down.
 
 This does not account for scope. That means you can easily break your code by moving a line outside its scope so be careful! IntelliJ IDEA will move the whole paragraph if you're working with something like markdown. 

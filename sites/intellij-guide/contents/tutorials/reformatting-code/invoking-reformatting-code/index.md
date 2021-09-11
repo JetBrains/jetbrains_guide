@@ -22,7 +22,9 @@ Alternatively, you might want to take a more gradual approach and just reformat 
 
 ## How to Invoke Reformatting Code
 
-There are a few ways that you can invoke reformat code. Let's take a look at each one in turn.
+There are a few ways that you can invoke reformat code:
+- [Manually at a class level](#manually-at-a-class-level)
+- [Reformat Code Before Commit](#reformat-code-before-commit)
 
 ### Manually at a Class Level
 We've already looked at this in an [earlier step of the tutorial](../reformatting-a-selection-or-class) with the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux). However, you can also invoke it at a class level with ⌘⇧A (macOS), or Ctrl+Shift+A (Windows/Linux), to bring up the Find Actions dialog and then type in _Reformat Code_:
@@ -31,16 +33,7 @@ We've already looked at this in an [earlier step of the tutorial](../reformattin
 
 Press **Enter** on the **Reformat Code** option to apply the settings to your class. This will give you a feel for how the Reformat Code Settings will apply to your project on a larger scale.
 
-### Reformatting Only Code You Have Changed
-Often you don’t want to reformat the whole file that you’re working on, particularly if this is a code base with inconsistent formatting. You don't want to commit a lot of white space changes as well as the feature or bug fix that you've done.  If you are working on a file with some inconsistently formatted code, but you’ve only changed a small part of it, using **Reformat Code** might change parts of the file you haven't touched. In this instance, you would ideally like to highlight the code you’ve changed and [just reformat that](../reformatting-a-selection-or-class), but that won’t work when your changes are scattered throughout the file.
-
-Instead, you can use **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux) to bring up the reformatting options dialog:
-
-![Reformat Only Code That's Changed](reformat-code-only-changed.png)
-
-In this dialog, select **Only changes uncommitted to VCS**. When you press **Run**, IntelliJ IDEA will reformat the lines in the file that you've changed and nothing else. 
-
-### Reformat Code Per Commit
+### Reformat Code Before Commit
 
 You can get IntelliJ IDEA to reformat your code before you commit it which may be a half-way house for your team if you have a mix of new and old code. 
 
@@ -48,7 +41,7 @@ You can reformat your code in the classes you are about to commit with the cog i
 
 ![Amend Commit Cog](amend-commit-cog.png)
 
-When you click the cog you can select the **Reformat Code** check box:
+When you click the cog you can select the **Reformat Code** checkbox:
 
 ![Reformat Code Checkbox](reformat-code-checkbox.png)
 

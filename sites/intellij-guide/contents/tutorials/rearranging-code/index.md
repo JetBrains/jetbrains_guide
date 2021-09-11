@@ -11,6 +11,7 @@ tutorialItems:
   - /tutorials/rearranging-code/moving-lines-around/
   - /tutorials/rearranging-code/moving-statements-around/
   - /tutorials/rearranging-code/rearranging-code-settings/
+  - /tutorials/rearranging-code/rearranging-only-code-you've-changed/
   - /tutorials/rearranging-code/invoking-rearranging-code/
   - /tutorials/rearranging-code/example-of-rearranging-code/
   - /tutorials/rearranging-code/summary/

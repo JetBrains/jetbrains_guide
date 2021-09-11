@@ -17,7 +17,9 @@ Before you go diving in and changing settings, be aware that these settings are 
 
 ![Copy Code Style Theme](copy-code-style-scheme.png)
 
-There are a lot of settings here, but the easiest way to familiarise yourself with them tem is to browse around and select or clear check boxes to see the impact on the code to the right. The live-preview is very helpful for understanding what the impact will be. 
+There are a lot of settings here, but the easiest way to familiarise yourself with them tem is to browse around and select or clear checkboxes to see the impact on the code to the right. The live-preview is very helpful for understanding what the impact will be. 
+
+As a side note, if you do make some changes here, and you want to reset them without resetting all the settings, you can click the blue **Reset** link on the top-right of this dialog. It will only be shown when you've made a change to your settings.
 
 If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' statement**, you will see the **Force braces** change we made earlier when we changed it to _Always_.
 
