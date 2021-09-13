@@ -7,9 +7,7 @@ topics: []
 author: hs
 subtitle: How you can invoke rearranging code and some best practices to consider 
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/L_h8NJdYyj4
+
 ---
 
 ## When to Invoke Rearrange Code

@@ -7,9 +7,7 @@ topics: []
 author: hs
 subtitle: Moving a line, paragraph or selection up and down 
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/L_h8NJdYyj4
+
 ---
 
 ## Moving Content Up or Down in Your Class

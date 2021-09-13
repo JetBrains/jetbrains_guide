@@ -7,9 +7,7 @@ topics: []
 author: hs
 subtitle: Moving a statements up and down within their scope
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/TZdeOOhTHlc
+
 ---
 
 ## Moving a Statement Up or Down in Your Class

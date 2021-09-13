@@ -7,9 +7,6 @@ topics: []
 author: hs
 subtitle: Invoking Rearrange Code on a Class and Viewing the results
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/L_h8NJdYyj4
 ---
 
 ## A Before and After Example of Code Rearrangement

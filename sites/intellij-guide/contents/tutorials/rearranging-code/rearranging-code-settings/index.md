@@ -7,9 +7,7 @@ topics: []
 author: hs
 subtitle: You can use your Preferences/Settings to define the order of your code
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/L_h8NJdYyj4
+
 ---
 
 ## Where and How to Change Settings for Rearrange Code 
