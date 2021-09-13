@@ -18,4 +18,4 @@ In the editor, place the caret in the statement you want to move and press **⇧
 IntelliJ IDEA will not let you move a statement outside its defined scope. This helps to keep your code green and compiling so it's a preferable way of moving your code as you're less likely to introduce errors. Of course, if you accidentally move the use of a variable higher than its definition, IntelliJ IDEA will highlight this in red to show you that while you're still in the correct scope, you need to define the variable first.   
 
 ## Rearranging Code Settings
-You're likely to want to do more than move the odd line or statement around. We'll take a look at the settings to achieve that in the next step of this tutorial. 
+You might want to do more than move the odd line or statement around. We'll take a look at the settings to achieve that in the next step of this tutorial. 

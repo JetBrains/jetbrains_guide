@@ -15,9 +15,9 @@ longVideo:
 ## When to Invoke Rearrange Code
 Before we talk about _how_ to invoke rearrange code, it's worth mentioning _when_ to invoke it. There are a couple of approaches here. Of course, if you're working on a brand-new codebase it's very simple to go with invoking it before you commit your code because it's all net-new code. You can find this option in the [Before Commit settings](https://www.jetbrains.com/help/idea/commit-changes-dialog.html#before_commit). 
 
-However, more often and more realistically, you'll be working on a code base where the standards that you, and your team, have agreed on have not been universally applied in the past, and you probably only want to rearrange code on a case by case basis. This is the use case we'll look at in this section.
+However, more often and more realistically when it comes to rearranging code, you'll be working on a code base where the standards that you, and your team, have agreed on have not been universally applied in the past, and you probably only want to rearrange code on a case by case basis. This is the use case we'll look at in this section.
 
-We recommend that you keep commits separate so that you have one commit for rearranging code and one or more where you have changed code. This helps to make the file history more readable. 
+We recommend that you separate commits for rearranging code and commits for changing code. This helps to make the file history more readable. 
 
 ## How to Invoke Rearranging Code
 If you want to rearrange code in a whole class, you can invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) manually. 
@@ -41,7 +41,7 @@ Instead, you can use **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Li
 
 In this dialog, select **Only changes uncommitted to VCS** and select the **Rearrange entries** checkbox. When you press **Run**, IntelliJ IDEA will [reformat](https://www.jetbrains.com/help/idea/reformat-file-dialog.html) (according to your reformat settings) **and** rearrange the lines in the file that you've changed.
 
-You can also use **⌥⌘L** (macOS), or **Ctrl+Alt+L** in the Project Window **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to bring up the Reformat Code dialog. You can then select the **Only changes uncommitted to VCS** and **Rearrange Code** checkboxes to get IntelliJ IDEA to do this action at a higher level.
+You can also use **⌥⌘L** (macOS), or **Ctrl+Alt+L** in the Project Window **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to bring up the Reformat Code dialog. You can then select the **Only changes uncommitted to VCS** and **Rearrange Code** checkboxes to get IntelliJ IDEA to perform this action at a higher level.
 
 ![Rearrange Code that you've changed](reformat-rearrange-code.png)
 
