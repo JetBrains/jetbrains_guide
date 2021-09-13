@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 ## When to Invoke Reformat Code
 Before we talk about _how_ to invoke reformat code, it's worth mentioning when to invoke it. There are a couple of approaches here. Of course, if you're working on a brand-new code base it's very simple to go with invoking it when you commit your code because it's all net-new code, we will talk about that option here. 
 
-However, more often and more realistically, you'll be working on a code base where the standards that you, and your team, have agreed on have not been universally applied in the past, and you probably only want to rearrange code on a case by case basis. This is the use case we'll look at in this section.
+However, more often and more realistically, you'll be working on a code base where the standards that you, and your team, have agreed on have not been universally applied in the past, and you probably only want to reformat code on a case by case basis. 
 
 We recommend that you keep commits separate so that you have one commit for reformatting code and one or more where you have changed code. This helps to make the file history more readable.
 
@@ -36,7 +36,7 @@ In this dialog, select **Only changes uncommitted to VCS**. When you press **Run
 ## Before Commit at Project Level 
 If you always want to reformat code in this Project before you commit it, you can do this in one of two ways. You can either use **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings and then search for _on commit_. The option you want is **Version Control > Commit** and then the **Before Commit** panel.
 
-Select the **Reformat Code** checkbox and press **OK** to always reformat your files prior to commit. This will apply to all your languages.
+Select the **Reformat Code** checkbox and press **OK** to always reformat your files prior to commit. This will apply to all your languages. 
 
 ![Rearrange Code Before Commit](before-commit-reformat-code.png)
 

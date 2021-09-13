@@ -23,7 +23,7 @@ Some settings in an `.editoconfig` file are IntelliJ IDEA specific, these are pr
 ### Adding an EditorConfig File
 Let's take a look at [adding a `.editorconfig` file](https://www.jetbrains.com/help/idea/configuring-code-style.html#66e1c5ae) to your project
 
-The easiest way to do this is by using **⌘1** (macOS), or ****Alt+1** (Windows/Linux) to display the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to get the **New** dialog. Type in _editor_ and the results will be filtered to the `.editorconfig` files. 
+The easiest way to do this is by using **⌘1** (macOS), or **Alt+1** (Windows/Linux) to display the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to get the **New** dialog. Type in _editor_ and the results will be filtered to the `.editorconfig` files. 
 
 ![New EditorConfig File](new-editor-config.png)
 
@@ -34,9 +34,7 @@ When you press **Enter** you will get the choice to configure your new `.editorc
 You can select the properties you want to define and IntelliJ IDEA will create stubs for them. If you leave the checkboxes empty IntelliJ IDEA will not populate the file with stubs - you can add them manually later.  
 
 ### Previewing Changes from EditorConfig File
-You can preview how changes in your `.editorconfig` file will impact your code by pressing the eye gutter icon and 
-
-click the eye icon in the gutter of the .editorconfig file and select a source file from the same directory or sub-directory as the `.editorconfig` file:
+You can preview how changes in your `.editorconfig` file will impact your code by pressing the _eye_ gutter icon and selecting the file in the directory listing that you want to preview.
 
 ![Preview Editor Config Changes](preview-editor-config-changes.png)
 

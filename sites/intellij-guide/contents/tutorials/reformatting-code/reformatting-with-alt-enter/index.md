@@ -27,8 +27,7 @@ You can go to the **Wrapping and Braces** tab and change **Force Braces** to _Al
 
 You get a live preview of what your code will look like if you press **Save**. When we save these changes, they are saved to your current [code style scheme](https://www.jetbrains.com/help/idea/configuring-code-style.html).
 
-If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous incorrect formatting and without the curly braces on our `for` loop.
+If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous formatting and without the curly braces on our `for` loop.
 
 ## Reformatting Code Settings
-In the next step we will take a look at the code style scheme in more detail and learn about some code style settings available to you.  
-
+You might want to configure the code style for your project. We'll take a look at the settings to achieve that in the next step of this tutorial. 
