@@ -253,4 +253,7 @@ public class RearrangeCode {
     }
 }
 
+
 ```
+## Summary
+Let's summarise everything we've learned in the final step of this tutorial.

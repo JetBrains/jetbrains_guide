@@ -12,7 +12,6 @@ tutorialItems:
   - /tutorials/reformatting-code/reformatting-a-selection-or-class/
   - /tutorials/reformatting-code/reformatting-with-alt-enter/
   - /tutorials/reformatting-code/reformatting-code-settings/
-  - /tutorials/reformatting-code/reformatting-only-code-youve-changed/
   - /tutorials/reformatting-code/working-with-editor-configs/
   - /tutorials/reformatting-code/invoking-reformatting-code/
   - /tutorials/reformatting-code/reformatting-example/
