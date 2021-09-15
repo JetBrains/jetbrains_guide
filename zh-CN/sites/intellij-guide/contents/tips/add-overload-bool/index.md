@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: Add Overload Bool
+title: 添加布尔参数的方法重载
 technologies:
   - java
 topics:
   - refactoring
 author: hs
-subtitle: You can refactor a method to change its signature
+subtitle: 你可以重构一个方法来改变它的方法签名
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
