@@ -8,7 +8,7 @@ topics:
   - editing
   - inspections
 author: tg
-subtitle: Context Actions are available from most places in the code.
+subtitle: 在代码中大多数的位置都可以使用上下文操作的功能。
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -16,13 +16,13 @@ shortVideo:
   url: https://youtu.be/73w_X5Bfq7U
 seealso:
   - 
-    title: IntelliJ IDEA Blog - Alt+Enter, the Problem-solving Shortcut
+    title: IntelliJ IDEA 博客 - Alt+Enter, the Problem-solving Shortcut
     href: https://blog.jetbrains.com/idea/2020/08/alt-enter-the-problem-solving-shortcut/
   - 
-    title: IntelliJ IDEA Help - Inspections
+    title: IntelliJ IDEA 帮助文档 - 检查
     href: https://www.jetbrains.com/help/idea/inspections-settings.html
   - 
-    title: IntelliJ IDEA Help - Intention Actions
+    title: IntelliJ IDEA 帮助文档 - 意图操作
     href: https://www.jetbrains.com/help/idea/intention-actions.html
 leadin: |
   IntelliJ IDEA offers intelligent suggestions most places in the code. It can offer fixes for compiler errors and inspection warnings. It can even use intentions to suggest other ways in which you could write code even if there's no warning or error.
