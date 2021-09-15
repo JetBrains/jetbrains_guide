@@ -1,18 +1,18 @@
 ---
 date: 2021-05-11
-title: Change your code font weight
+title: 更改代码字体的粗细
 technologies: [ ]
 topics:
   - latest
   - settings
 author: tg
-subtitle: We spend hours looking at our code. We can make this as pleasant as possible.
+subtitle: 我们花很多的时间看代码。 我们可以尽可能地使这成为令人愉快的事情。
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/-s6WGCklSaU
 leadin: |
-  You can change the font weights for your code. In settings or preferences, **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux), go to Editor -> Font, choose a different weight for the main code, and for the bolder sections. There's a preview area on the right so you can see the effect of your changes.
+  你可以更改代码字体的粗细。 在设置或首选项中，**⌘,** (macOS) 或 **Ctrl+Alt+S** (Windows/Linux)，进入到编辑器 -> 字体，为代码和加粗选择一个不同的粗细选项。 你可以在右侧的预览界面，看到你做的变更后的效果。
 ---
 
