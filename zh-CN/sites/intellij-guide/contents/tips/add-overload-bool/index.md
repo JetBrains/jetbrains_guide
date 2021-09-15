@@ -14,9 +14,9 @@ shortVideo:
   url: https://youtu.be/08A0t0KyKCA
 seealso:
   - 
-    title: IntelliJ IDEA Help - Change Signature
+    title: IntelliJ IDEA 帮助文档 - 修改签名
     href: https://www.jetbrains.com/help/idea/change-signature.html
 leadin: |
-  You can use **Shift+F6** (macOS, Windows, or Linux) to change the signature of a method and add a new boolean parameter to it. You can then select _Delegate via overloading method_ to complete the refactor.
+  你可以使用 **Shift+F6** (macOS、Windows 或 Linux) 来更改方法的签名，并在添加一个新的布尔参数。 然后你可以选择 _通过重载方法委托_ 来完成重构。
 ---
 
