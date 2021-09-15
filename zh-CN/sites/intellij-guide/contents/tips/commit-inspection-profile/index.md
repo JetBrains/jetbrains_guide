@@ -1,6 +1,6 @@
 ---
 date: 2021-05-10
-title: Use a lightweight inspection profile on commit
+title: 在提交时使用轻量级的检查配置
 technologies:
   - java
 topics:
@@ -8,7 +8,7 @@ topics:
   - vcs
   - inspections
 author: tg
-subtitle: Fully customise the checks you must perform before you commit your changes to version control
+subtitle: 在将变更提交到版本控制之前，你需要先完全自定义必须要执行的检查
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -19,6 +19,6 @@ seealso:
     title: IntelliJ IDEA Help - Configure profiles
     href: https://www.jetbrains.com/help/idea/customizing-profiles.html
 leadin: |
-  You can select an inspection profile for running analysis before commit. Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.
+  你可以在提交前选择用于运行分析的检查配置。 Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.
 ---
 
