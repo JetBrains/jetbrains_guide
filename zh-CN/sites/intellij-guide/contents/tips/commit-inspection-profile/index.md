@@ -19,6 +19,6 @@ seealso:
     title: IntelliJ IDEA Help - Configure profiles
     href: https://www.jetbrains.com/help/idea/customizing-profiles.html
 leadin: |
-  你可以在提交前选择用于运行分析的检查配置。 Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.
+  你可以在提交前选择用于运行分析的检查配置。 使用检查数量少得多的检查配置，例如，只有 Java 错误和警告，可以比我们的完整的检查配置运行得更快，并防止我们提交了一些不兼容的修改。
 ---
 
