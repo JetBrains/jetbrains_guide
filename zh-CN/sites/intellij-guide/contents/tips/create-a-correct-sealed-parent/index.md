@@ -1,12 +1,12 @@
 ---
 date: 2021-05-10
-title: Create a correct parent Sealed Class
+title: 创建正确的父密封类
 technologies:
   - java
 topics:
   - latest
 author: tg
-subtitle: Sealed types are a new idea for Java developers, let IntelliJ IDEA guide you in how to use them
+subtitle: 密封类是 Java 开发人员的新想法，请让 IntelliJ IDEA 指导您如何使用它们
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Blog - Java 16 and IntelliJ IDEA
     href: https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/
 leadin: |
-  Sealed classes (a preview feature in Java 16) are a way to take control of the inheritance hierarchy of our classes. If we have a sealed class like this one, IntelliJ IDEA will tell us we need to "permit" the child class so it can extend this parent. It will also automatically make changes if it can.
+  密封类（Java 16 中的预览功能）是控制我们类继承等级的一种方式。 如果我们有一个密封类， Intellij IDEA 会告诉我们， 我们需要 "允许" 子类， 以便它可以被继承。 如果可以，它也会自动做出更改。
 
-  Experiment with Sealed Types, use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to see and accept suggestions.
+  尝试密封类，可以通过按 **⌥⏎** (macOS), 或 **Alt+Enter** (Windows/Linux) 查看和采用提示的建议。
 ---
 
