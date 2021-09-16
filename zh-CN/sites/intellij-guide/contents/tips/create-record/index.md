@@ -1,12 +1,12 @@
 ---
 date: 2021-05-05
-title: Create Record
+title: 创建Record
 technologies:
   - java
 topics:
   - latest
 author: tg
-subtitle: Create a new Java record class
+subtitle: 创建新的 Java Record类
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Blog - Java 16 and IntelliJ IDEA
     href: https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/
 leadin: |
-  Create a new record by pressing **⌘N** (macOS) or **Alt+Insert** (Windows/Linux) on the Project Window. From the "New Java Class" dialog, type the name of the record and select the "Record" type.
+  可以通过在项目窗口按 **⌘N** (macOS) 或 **Alt+Insert** (Windows/Linux) 来创建新的Record类。 在"New Java Class"对话框中，键入Record的名称并选择"Record"类型。
 ---
 
