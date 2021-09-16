@@ -21,6 +21,6 @@ seealso:
     title: IntelliJ IDEA Screencast - Scratch files and scratch buffers
     href: https://www.youtube.com/watch?v=vVcPEcbRiNI
 leadin: |
-  您可以使用 **⇧⌘N** (macOS), 或 **Ctrl+Alt+Shift+Insert** (Windows/Linux) 来新建草稿文件。 If you have content selected then the new scratch file will contain that content.
+  您可以使用 **⇧⌘N** (macOS), 或 **Ctrl+Alt+Shift+Insert** (Windows/Linux) 来新建草稿文件。 如果您已选定内容，则新的草稿文件将包含该内容。
 ---
 
