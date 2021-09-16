@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: Copy to, or create a Scratch File
+title: 复制到或创建草稿文件
 technologies:
   - java
 topics:
   - latest
   - editing
 author: hs
-subtitle: Scratch files persist across all versions of IntelliJ IDEA
+subtitle: 草稿文件存在于所有版本的Intellij IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -21,6 +21,6 @@ seealso:
     title: IntelliJ IDEA Screencast - Scratch files and scratch buffers
     href: https://www.youtube.com/watch?v=vVcPEcbRiNI
 leadin: |
-  You can use **⇧⌘N** (macOS), or **Ctrl+Alt+Shift+Insert** (Windows/Linux) to create a new scratch file. If you have content selected then the new scratch file will contain that content.
+  您可以使用 **⇧⌘N** (macOS), 或 **Ctrl+Alt+Shift+Insert** (Windows/Linux) 来新建草稿文件。 If you have content selected then the new scratch file will contain that content.
 ---
 
