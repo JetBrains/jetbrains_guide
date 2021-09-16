@@ -41,11 +41,11 @@ add dependency refresh maven repo code completion for dependencies paste maven t
 commit log window
 - branches, fetch, search (Cmd L), e.g. "fixed"; branch; merge; push; cherry pick
 
-terminal window
- - run vs run in ide
+控制台窗口
+ - 运行 vs 在ide里运行
 
-code completion in sql statement
+在SQL语句中补全代码
 
-data flow analysis
+数据流分析
  - ctrl shift p
 
