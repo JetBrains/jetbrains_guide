@@ -22,7 +22,7 @@ Before you go diving in and changing settings, be aware that these settings are 
 
 ![Copy Code Style Theme](copy-code-style-scheme.png)
 
-Navigate to the **Arrangement **tab in this view. It is grouped into two areas:
+Navigate to the **Arrangement** tab in this view. It is grouped into two areas:
 - [Grouping Rules](#grouping-rules)
 - [Matching Rules](#matching-rules)
 
@@ -33,9 +33,9 @@ These rules allow you to group these three code elements:
 
 **Getters and Setters** is fairly self-explanatory. When this checkbox is selected, and you invoke rearrange code, your getters and setters will be grouped together in your class. 
 
-**Override methods** is similar to Getters and Setters in that it will group your Override methods together in your class. You also have the option to order them by the order they are defined in the super class or interface, or to order them by name.  
+**Override methods** is similar to Getters and Setters in that it will group together any methods in your class that override or implement a superclass or interface. You also have the option to order them by the order they are defined in the super class or interface, or to order them by name.  
 
-**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a user-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're not going to select this option. Instead, we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
+**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a use-case for this option, but for some Java code bases that have evolved over time, many methods may be related and grouping them together might not give the clarity you expect. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option _or_ Matching Rules, not both. In our example we're not going to select this option. Instead, we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
 
 #### Matching Rules
 This is where you can define how you'd like your classes to be ordered when you invoke rearrange code. You can select any line and move it up or down as required with the arrows in the top-right. You can also click the pencil icon to the right of each row to alter the rule and select a finer level of granularity. We're going to take a look at [an example](../example-of-rearranging-code) of how the default rules would be applied to some code later in this tutorial. 
