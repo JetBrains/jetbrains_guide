@@ -2,44 +2,44 @@
  - 输入 vs 按tab键选择
  - .
 
-complete statement
+完成语句
 
-create code from red
+从红色部分创建代码
 
-equals hashcode tostring
+等于hashcode tostring
 
-introduce variable
+引入变量
 
-extract method
- - include find duplicates
+提取方法
+ - 包括查找重复
 
-extract parameter
+提取参数
 
 inspections?
 
-intentions for if to while
- - boolean intentions
- - looping intentions
+对于if 和 while的提示
+ - boolean的提示
+ - 循环部分的提示
 
-run anything
- - tests
- - applications
- - gradle, maven, docker stop everything
+运行任意命令
+ - 测试
+ - 应用
+ - gradle, maven, docker 停止所有
 
-search everywhere
+全局检索
 
-run
- - file
- - current context
+运行
+ - 文件
+ - 当前上下文
 
-compile, errors, build
+编译，错误，构建
 
-debug
+调试
 
-add dependency refresh maven repo code completion for dependencies paste maven to gradle
+添加依赖 刷新 maven repo 依赖相关代码补全 粘贴 maven to gradle
 
-commit log window
-- branches, fetch, search (Cmd L), e.g. "fixed"; branch; merge; push; cherry pick
+提交 日志窗口
+- 分支，获取，搜索(Cmd L)，例如"固定"：分支;合并;推送;挑选提交
 
 控制台窗口
  - 运行 vs 在ide里运行
