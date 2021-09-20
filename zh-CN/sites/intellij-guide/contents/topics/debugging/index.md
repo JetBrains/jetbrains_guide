@@ -1,7 +1,7 @@
 ---
-title: Debugging
+title: 调试
 subtitle: You can debug your code to help you understand why exceptions are occurring.
-accent: primary
+accent: 主
 icon: fas fa-bug
 ---
 
