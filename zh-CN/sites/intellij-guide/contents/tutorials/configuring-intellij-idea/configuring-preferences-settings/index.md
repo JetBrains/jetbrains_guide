@@ -17,13 +17,13 @@ You can use **⌘,** (macOS), or **Ctrl**+**Alt**+**S** (Windows/Linux) to displ
 
 These are the broad categories that you can change here, but we recommend being at least a little bit familiar with IntelliJ IDEA before you change too many of them!
 - [Appearance & Behaviour](https://www.jetbrains.com/help/idea/appearance-and-behavior.html)
-- [Keymap](https://www.jetbrains.com/help/idea/settings-keymap.html)
-- [Editor](https://www.jetbrains.com/help/idea/settings-editor.html)
-- [Plugins](https://www.jetbrains.com/help/idea/plugins-settings.html)
-- [Version Control](https://www.jetbrains.com/help/idea/settings-version-control.html)
-- [Build, Execution, Deployment](https://www.jetbrains.com/help/idea/settings-build-execution-deployment.html)
+- [键盘映射](https://www.jetbrains.com/help/idea/settings-keymap.html)
+- [编辑器](https://www.jetbrains.com/help/idea/settings-editor.html)
+- [插件](https://www.jetbrains.com/help/idea/plugins-settings.html)
+- [版本控制](https://www.jetbrains.com/help/idea/settings-version-control.html)
+- [构建、执行、部署](https://www.jetbrains.com/help/idea/settings-build-execution-deployment.html)
 - [Languages & Frameworks](https://www.jetbrains.com/help/idea/settings-languages-and-frameworks.html)
-- [Tools](https://www.jetbrains.com/help/idea/settings-tools.html)
+- [工具](https://www.jetbrains.com/help/idea/settings-tools.html)
 
 The easiest way to navigate around this dialog is to type in what you're looking for. Some examples could be _font_, _folding_, _comments_, _braces_, _commit_, and much more.
 
