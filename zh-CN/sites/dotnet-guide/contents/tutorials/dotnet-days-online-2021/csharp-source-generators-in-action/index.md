@@ -10,7 +10,7 @@ products:
   - resharper
 topics:
   - editing
-  - completion
+  - 补全
   - ide
 author: maartenba
 subtitle: Andrey Dyatlov
@@ -26,7 +26,7 @@ In this talk, you will learn not only how to write your own source generator fro
 
 As metaprogramming isn't new to C#, this talk will also cover how a source generators' approach is different from other technologies such as Fody, PostSharp, T4, and so on. Do they still have unique niches and advantages, or is the future with generators?
 
-### Resources
+### 资源
 
 * [Source code for the first demo](https://github.com/TessenR/NotifyPropertyChangedDemo)
 * [Source code for the second demo](https://github.com/TessenR/BestPracticesSourceGeneratorsDemo)
