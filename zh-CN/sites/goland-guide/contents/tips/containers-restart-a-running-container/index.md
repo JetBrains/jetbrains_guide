@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Restart a running container'
 technologies:
-  - containers
+  - 容器
 topics:
   - running
 author: dlsniper
