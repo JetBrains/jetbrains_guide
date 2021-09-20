@@ -6,7 +6,7 @@ technologies:
   - .net
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - data
