@@ -1,13 +1,13 @@
 ---
-title: Data Access
+title: 数据访问
 subtitle: Working with data storage mechanisms
-accent: primary
+accent: 主
 icon: fas fa-database
 ---
 
 Data access is critical to many line-of-business applications. Whether it is a traditional SQL relational database or the latest in NoSQL storage, JetBrains can help with first-class tools.
 
-## See Also
+## 另请参阅
 
 - [DataGrip](https://www.jetbrains.com/datagrip/)
 - [Rider](https://www.jetbrains.com/rider/)
