@@ -7,7 +7,7 @@ technologies:
 products:
   - rider
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Working with databases using an object relational mapper
 thumbnail: ./thumbnail.png
@@ -160,7 +160,7 @@ namespace BasicsOfEntityFrameworkCore
 }
 ```
 
-### See Also
+### 另请参阅
 
 - [Microsoft Docs EF Core Overview](https://docs.microsoft.com/en-us/ef/core/)
 - [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/)
