@@ -4,7 +4,7 @@ title: Replace with var
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Use quick intentions to replace a local variable type with `var`
 thumbnail: ./thumbnail.png
