@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
   - ide
 author: maartenba
 subtitle: Matthew Groves
@@ -20,9 +20,9 @@ longVideo:
 
 Databases are like languages—it's very useful to know more than one. NoSQL databases promise better performance, scaling, lower cost of ownership, and flexibility for many use cases. With recent advances in NoSQL, including ACID transactions, SQL queries, scopes, collections, and more, making the jump to NoSQL is becoming more straightforward. In this session, I will demonstrate my work-in-progress open source tool to automatically migrate SQL Server's AdventureWorks sample (including tables, data, indexes, users, and even queries) over to a NoSQL database (Couchbase). I'll discuss the trade-offs, benefits, pros and cons. After this short session, you'll have taken a huge leap to learning a new technology.
 
-### Resources
+### 资源
 
-* [Example code](https://github.com/mgroves/SqlServerToCouchbase)
+* [示例代码](https://github.com/mgroves/SqlServerToCouchbase)
 
 ### About the Presenter
 
