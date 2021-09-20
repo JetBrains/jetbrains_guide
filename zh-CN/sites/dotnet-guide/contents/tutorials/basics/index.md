@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - web
-  - data
+  - 数据
 products:
   - rider
   - resharper
