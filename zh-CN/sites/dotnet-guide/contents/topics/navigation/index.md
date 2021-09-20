@@ -1,5 +1,5 @@
 ---
-title: Navigation
+title: 导航
 subtitle: Productive ways to move around in your project.
 accent: primary
 icon: fas fa-map-marked
