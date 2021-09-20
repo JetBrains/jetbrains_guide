@@ -4,12 +4,12 @@ date: 2021-04-26
 title: Why Should .NET Developers Care About Docker?
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: We'll see why containerization is an important topic for .NET Developers.
 thumbnail: ./thumbnail.png
@@ -42,7 +42,7 @@ In conclusion to this section, most developers work with distributed systems and
 
 By the end of this tutorial, we can decide whether we want anything to do with containerization, jump all in, or selectively apply it to our development process.
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [.NET](https://dot.net)
