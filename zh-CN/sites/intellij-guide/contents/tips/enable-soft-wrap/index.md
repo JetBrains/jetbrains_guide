@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Enable Soft Wrap
 technologies:
-  - markup
+  - 标记
 topics:
   - editing
 author: hs
