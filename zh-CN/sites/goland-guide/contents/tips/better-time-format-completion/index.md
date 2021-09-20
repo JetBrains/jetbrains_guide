@@ -4,7 +4,7 @@ title: 'Better time format in completion'
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: 'Use the commonly known date/time formatting strings while writing time formatting in Go'
