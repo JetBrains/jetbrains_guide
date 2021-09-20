@@ -5,7 +5,7 @@ title: The Gradle Tool Window
 technologies:
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
 subtitle: How to find the Gradle tool window.
 thumbnail: ./thumbnail.png
@@ -32,10 +32,10 @@ The Recent Files dialog, which we can open with **⌘E** (macOS), or **Ctrl+E** 
 
 We can also use Find Action, **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), and type "Gradle".
 
-![Find action](./find-action.png)
+![查找操作](./find-action.png)
 
 If we don't like having to remember the shortcut for Find Action, we can use the more versatile [Search Everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) by pressing Shift twice: **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux).
 
-![Search everywhere](./search-everywhere.png)
+![随处搜索](./search-everywhere.png)
 
 You may have noticed that there are a lot of results when we type "Gradle" into any of the search options. The next step walks through a tip for dealing with this.
