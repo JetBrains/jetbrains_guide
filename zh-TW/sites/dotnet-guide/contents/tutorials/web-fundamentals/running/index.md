@@ -9,7 +9,7 @@ topics:
   - web
   - running
 products:
-  - rider
+  - tRANSLATED Rider
 author: pwe
 subtitle: How to run your code and see the results? Let's explore.
 thumbnail: ./thumbnail.png
