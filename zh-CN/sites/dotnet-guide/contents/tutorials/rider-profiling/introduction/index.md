@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - ide
-  - profiling
+  - 分析
 products:
   - rider
   - dottrace
@@ -53,7 +53,7 @@ A profiling snapshot gives you the information required to start optimizing your
 
 In the next step, you will see the different profiling modes that are available.
 
-### See Also
+### 另请参阅
 
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub
 - [Performance Profiling in Rider](https://www.jetbrains.com/help/rider/Performance_Profiling.html)
