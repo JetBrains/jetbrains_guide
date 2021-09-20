@@ -1,10 +1,10 @@
 ---
 date: 2021-01-08
-title: Extract Field
+title: 提取常量
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Extract code to a field
 thumbnail: ./thumbnail.png
