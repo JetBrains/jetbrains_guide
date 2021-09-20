@@ -5,7 +5,7 @@ title: Basics of ASP.NET MVC
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
