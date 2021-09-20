@@ -4,12 +4,12 @@ date: 2021-04-26
 title: JetBrains Rider's Docker Integrations
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Learn about Rider's convenient Docker features that make working with containers feel like an ocean breeze.
 thumbnail: ./thumbnail.png
@@ -17,7 +17,7 @@ thumbnail: ./thumbnail.png
 
 When working with Docker in JetBrains Rider, developers will likely spend some of their time looking at the **Services** window. We'll walk through all the standard Docker features and settings we may want to modify.
 
-### Docker Connection
+### Docker 连接
 
 Rider will recognize that we have Docker desktop installed and show a Docker icon in our **Services** tree. We can modify the connection to connect to any docker execution engine, but we want to connect to our local instance in most cases.
 
@@ -55,7 +55,7 @@ If it is our first time running an image as a container, we'll receive a **Creat
 
 Here we can set any run arguments along with setting the container name explicitly. Like before, once we create a running container, we'll see the output of our .NET application in the **Log** tab.
 
-### Environment Variables
+### 环境变量
 
 Environment variables are essential for running containers, especially with .NET applications that support reading variables from the environment or through a configuration provider. We can see all the defined variables in the **Environment Variables** tab for a running container.
 
@@ -67,7 +67,7 @@ We can add new variables and edit existing ones as well.
 
 Depending on how we access our environment variables, we may need to restart our container.
 
-### Port Bindings
+### 端口绑定
 
 As we'll see in our next demo, publishing ports is essential to communicating with our containers. For web applications built on ASP.NET, we will need to expose at least the HTTP port, but since our **Hello Docker** project is a console application, we don't need to publish any ports.
 
@@ -119,7 +119,7 @@ While Rider's **Services** window has many of the features developers will need 
 
 For this reason, it is necessary to be comfortable with the Docker CLI commands and not entirely rely on Rider integration with Docker.
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [.NET](https://dot.net)
