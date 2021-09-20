@@ -6,7 +6,7 @@ technologies:
 topics:
   - ide
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 author: khalidabuhakmeh
 subtitle: A jumpstart guide for Visual Studio + ReSharper users wanting to try Rider.
