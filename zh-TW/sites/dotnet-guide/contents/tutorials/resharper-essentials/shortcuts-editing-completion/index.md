@@ -9,7 +9,7 @@ topics:
   - completion
   - editing
   - inspections
-  - navigation
+  - 導覽
 products:
   - resharper
 author: matkoch
@@ -46,6 +46,6 @@ Another kind are [postfix templates](https://www.jetbrains.com/help/resharper/Po
 
 ### See Also
 
-- [Search Everywhere](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
-- [Coding assistance](https://www.jetbrains.com/help/resharper/Coding_Assistance__Index.html)
+- [隨處搜索](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
+- [撰碼補助](https://www.jetbrains.com/help/resharper/Coding_Assistance__Index.html)
 - [Code Generation](https://www.jetbrains.com/help/resharper/Code_Generation__Index.html)
