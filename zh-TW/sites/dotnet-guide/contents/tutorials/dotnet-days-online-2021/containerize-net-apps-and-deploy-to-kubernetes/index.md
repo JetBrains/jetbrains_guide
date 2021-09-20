@@ -6,7 +6,7 @@ technologies:
   - .net
   - containers
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - ide
