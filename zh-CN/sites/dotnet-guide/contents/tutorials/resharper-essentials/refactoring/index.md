@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - refactoring
+  - 重构
 products:
   - rider
 author: rachelappel
@@ -17,7 +17,7 @@ longVideo:
   url: https://youtu.be/vd9BvAPVmEI
 ---
 
-### Refactoring
+### 重构
 
 Refactoring is the process of restructuring code to improve readability and future maintainability.
 
@@ -27,8 +27,8 @@ Refactorings exist for almost all the languages supported by ReSharper. Using th
 
 Some [refactorings can be applied inline](https://www.jetbrains.com/help/resharper/Refactorings__Inplace_Refactorings.html), without invoking any commands. If ReSharper sees a code change that could be an intention to refactor the code, the **Refactor This** action is shown in the gutter on the left-hand side of the editor. You can use this action and apply the refactoring with ease.
 
-### See Also
+### 另请参阅
 
 - [Refactorings in ReSharper](https://www.jetbrains.com/help/resharper/Refactorings__Index.html)
-- [Refactor This](https://www.jetbrains.com/help/resharper/Refactor_This.html)
+- [重构此](https://www.jetbrains.com/help/resharper/Refactor_This.html)
 - [Video: Refactoring to Patterns with ReSharper by Zoran Horvat](https://www.youtube.com/watch?v=_n3u5SjC7t4)
