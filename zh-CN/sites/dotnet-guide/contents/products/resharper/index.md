@@ -9,6 +9,6 @@ ReSharper makes Visual Studio a much better IDE! ReSharper extends Visual Studio
 
 查找并移除未使用的代码？ 将您的代码迁移到最新的 C# 版本？ 随意将循环转换为LINQ？ 查找并防止出现可能的异常？ Use a common naming standard? All that and a lot more code improvements are made possible with ReSharper's code analysis.
 
-## See Also
+## 另请参阅
 - [ReSharper home page](https://www.jetbrains.com/resharper/)
 - [ReSharper documentation](https://www.jetbrains.com/resharper/documentation/documentation.html)
