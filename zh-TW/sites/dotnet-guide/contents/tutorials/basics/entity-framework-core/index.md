@@ -5,7 +5,7 @@ title: Basics of Entity Framework Core
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
 topics:
   - data
 author: khalidabuhakmeh
