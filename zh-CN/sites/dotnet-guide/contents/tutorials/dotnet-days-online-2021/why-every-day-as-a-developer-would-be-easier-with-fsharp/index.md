@@ -20,7 +20,7 @@ longVideo:
 
 Those who develop with .NET probably do so with C#. But F#, in particular, has great potential to make daily work easier. Everything that C# can do can also be done with F#, and often in a more lightweight and less error-prone way. If you want to see where the differences are and why F# is a good programming language for normal software development, come to this session! And don't worry, the talk is free of functional programming jargon – I promise!
 
-### Resources
+### 资源
 
 * [Slides used in this presentation(https://www.dropbox.com/s/203mmhxldm71ryf/Why%20every%20day%20as%20a%20developer%20would%20be%20easier%20with%20F%23.pdf?dl=1)
 
