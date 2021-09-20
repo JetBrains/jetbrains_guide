@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Compare with clipboard
+title: 与剪贴板比较
 technologies:
   - go
 topics:
@@ -13,7 +13,7 @@ shortVideo:
   poster: ./thumbnail.png
   url: https://www.youtube.com/watch?v=hNZzC1jOeJ4&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=20
 leadin: |
-  GoLand has a built-in diff viewer for code, revisions, and even images.
+  GoLand 内置了代码、版本甚至图片的差异查看器。
 
   **How to use:**
 
