@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Implement an interface
+title: 实现接口
 technologies:
   - go
 topics:
