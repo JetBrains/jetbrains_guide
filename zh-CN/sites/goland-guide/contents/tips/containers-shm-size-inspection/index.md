@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Inspect size_size values for errors in docker-compose.yaml files'
 technologies:
-  - containers
+  - 容器
 topics:
   - inspections
 author: dlsniper
