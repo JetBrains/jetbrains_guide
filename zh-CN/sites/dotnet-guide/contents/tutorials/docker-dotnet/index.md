@@ -4,10 +4,10 @@ title: Docker For .NET Developers
 technologies:
   - asp.net
   - .net
-  - containers
+  - 容器
 topics:
   - web
-  - data
+  - 数据
 products:
   - rider
   - resharper
