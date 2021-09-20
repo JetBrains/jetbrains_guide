@@ -5,7 +5,7 @@ title: Request Pipeline
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - ide
