@@ -4,7 +4,7 @@ date: 2021-05-28
 title: Opening Tool Windows
 technologies: [ ]
 topics:
-  - navigation
+  - 導覽
 author: tg
 subtitle: Quickly open IntelliJ IDEA's tool windows without using the mouse, and easily find items in the window.
 thumbnail: ./thumbnail.png
