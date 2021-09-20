@@ -5,7 +5,7 @@ title: Build a Highly Performant Interservice Communication with gRPC for ASP NE
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
