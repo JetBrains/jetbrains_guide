@@ -1,7 +1,7 @@
 ---
-title: Navigation
+title: 导航
 subtitle:
-accent: primary
+accent: 主
 icon: fas fa-route
 ---
 
