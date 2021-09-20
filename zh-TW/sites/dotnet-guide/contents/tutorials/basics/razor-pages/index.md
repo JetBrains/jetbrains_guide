@@ -5,7 +5,7 @@ title: Basics of Razor Pages
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
