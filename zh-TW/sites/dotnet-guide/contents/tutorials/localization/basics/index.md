@@ -5,7 +5,7 @@ title: Localization Basics
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - data
