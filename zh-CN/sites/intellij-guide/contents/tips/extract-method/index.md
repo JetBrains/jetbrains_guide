@@ -1,10 +1,10 @@
 ---
 date: 2021-01-08
-title: Extract Method
+title: 提取方法
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Extract code to a new method
 thumbnail: ./thumbnail.png
