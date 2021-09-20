@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Jump to the Navigation Bar
+title: 跳到导航栏
 technologies:
   - go
 topics:
