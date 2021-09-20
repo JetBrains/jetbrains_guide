@@ -3,7 +3,7 @@ date: 2020-12-02
 title: Web Fundamentals in Rider
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - ide
