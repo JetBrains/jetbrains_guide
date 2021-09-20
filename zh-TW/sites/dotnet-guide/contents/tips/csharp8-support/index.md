@@ -4,7 +4,7 @@ title: 'C# 8 Support'
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - inspections
