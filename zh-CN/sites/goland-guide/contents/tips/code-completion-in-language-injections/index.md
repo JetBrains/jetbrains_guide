@@ -4,7 +4,7 @@ title: Code Completion in Language Injections
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: See how to use code completion inside strings and other places
