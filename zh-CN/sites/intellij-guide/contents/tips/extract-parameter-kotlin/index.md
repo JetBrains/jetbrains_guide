@@ -4,7 +4,7 @@ title: Extract Parameter
 technologies:
   - kotlin
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Extract code to a parameter in Kotlin
 thumbnail: ./thumbnail.png
