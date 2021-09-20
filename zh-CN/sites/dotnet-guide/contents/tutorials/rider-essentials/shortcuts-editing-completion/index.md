@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - completion
+  - 补全
   - editing
   - inspections
   - navigation
@@ -20,7 +20,7 @@ longVideo:
   url: https://youtu.be/ztQ9ez1bFNg
 ---
 
-### Keyboard Shortcuts
+### 键盘快捷键
 
 Rider has many keyboard shortcuts, and they all depend on which operating system you are using. Don't be overwhelmed, there are two essential shortcuts that help you achieve anything in Rider! They work cross-platform, and across all JetBrains IDE's:
 
@@ -31,14 +31,14 @@ Windows, menus and pop-ups will show more keyboard shortcut hints, so you can le
 
 In case you are looking for a full overview, use these cheat sheets to master your Rider keyboard scheme of choice:
 
--   [Default Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
--   [Mac OS X 10.5+ Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
--   [ReSharper OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
--   [ReSharper Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
--   [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
--   [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
+-   [默认键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_default_win_shortcuts.pdf)
+-   [Mac OS X 10.5+ 键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_macosx_shortcuts.pdf)
+-   [ReSharper OSX 键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_mac_shortcuts.pdf)
+-   [ReSharper 键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_ReSharper_win_shortcuts.pdf)
+-   [Visual Studio 键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
+-   [Visual Studio OSX 键盘映射](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
 
-### Search Everywhere
+### 随处搜索
 
 With [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html) (<kbd>Shift, Shift</kbd>), you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 
@@ -60,8 +60,8 @@ In the editor, we get code completion, and can complete statements. There are li
 
 With [expand/shrink selection](https://www.jetbrains.com/help/rider/Selecting_Text_in_the_Editor.html), you can select code using its semantics, rather than using just characters and lines. Similarly, you can [rearrange code](https://www.jetbrains.com/help/rider/Coding_Assistance__Moving_Code_Elements.html) and move expressions, statements, type members, and other elements in your code around.
 
-### See Also
+### 另请参阅
 
-- [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html)
+- [随处搜索](https://www.jetbrains.com/help/rider/Searching_Everywhere.html)
 - [Code analysis, inspections and quick-fixes](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
 - [Working with the Editor](https://www.jetbrains.com/help/rider/Working_in_the_Editor.html)
