@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Find Usages
+title: 查找用例
 technologies:
   - java
 topics:
