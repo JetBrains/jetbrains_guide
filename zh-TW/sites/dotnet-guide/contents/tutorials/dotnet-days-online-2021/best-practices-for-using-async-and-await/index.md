@@ -5,7 +5,7 @@ title: Best Practices for Using async and await
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - editing
