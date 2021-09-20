@@ -5,7 +5,7 @@ title: Going Real Time Using Azure CosmosDB and React
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
