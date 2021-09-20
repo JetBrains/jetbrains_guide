@@ -27,7 +27,7 @@ The scope of navigation and search is not limited to files of just your solution
 
 Some other options available are:
 
-* [Search by Name](https://www.jetbrains.com/help/rider/Navigation_and_Search__Search.html)
+* [按名称搜索](https://www.jetbrains.com/help/rider/Navigation_and_Search__Search.html)
 * [Navigate from Symbols](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigation_from_Symbols.html)
 * [Navigate To](https://www.jetbrains.com/help/rider/Navigation_and_Search__Navigate_from_Here.html), a general-purpose shortcut that groups all navigation options available
 * [Find Usages](https://www.jetbrains.com/help/rider/Navigation_and_Search__Finding_Usages.html) of a particular symbol in the current file, project, solution, or referenced libraries
@@ -39,11 +39,11 @@ The previous list is by no means complete. The [Rider web help on Navigation](ht
 
 You can use the <kbd>Tab</kbd> and <kbd>Shift+Tab</kbd> keys to quickly move text selection to the next or previous code element, without having to use the mouse, or the cursor keys. This way you can quickly jump to the next or previous logical piece of code.
 
-### Breadcrumbs
+### 路径导航
 
 Programming languages, and markup languages such as HTML, typically have a tree structure, of elements embedded in other elements. To visualize those, the editor may show colored guidelines for some languages, and provides [breadcrumbs](https://www.jetbrains.com/help/rider/Settings_Editor_Breadcrumbs.html)
 
-### See Also
+### 另请参阅
 
 - [Rider web help on Navigation](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html)
 - [Structural Navigation](https://www.jetbrains.com/help/rider/Navigation_and_Search_Structural_Navigation.html)
