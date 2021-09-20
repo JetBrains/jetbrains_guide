@@ -4,9 +4,9 @@ title: Open Recent Projects
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
 topics:
-  - navigation
+  - 導覽
 author: khalidabuhakmeh
 subtitle: Quick ways to navigate to other solutions
 thumbnail: ./thumbnail.png
