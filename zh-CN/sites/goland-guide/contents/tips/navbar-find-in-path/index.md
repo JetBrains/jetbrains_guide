@@ -12,7 +12,7 @@ seealso:
     title: Finding and replacing text in a project
     href: 'https://www.jetbrains.com/help/go/finding-and-replacing-text-in-project.html'
   - 
-    title: Navigation bar
+    title: 导航栏
     href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - 
     title: Navigating Tips and Tricks
