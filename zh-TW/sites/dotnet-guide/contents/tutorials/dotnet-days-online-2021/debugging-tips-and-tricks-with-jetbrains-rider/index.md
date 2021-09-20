@@ -5,7 +5,7 @@ title: Debugging Tips and Tricks with JetBrains Rider
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - debugging
