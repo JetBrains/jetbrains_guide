@@ -9,7 +9,7 @@ author: dlsniper
 subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
 seealso:
   - 
-    title: Navigation bar
+    title: 导航栏
     href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - 
     title: Navigating Tips and Tricks
