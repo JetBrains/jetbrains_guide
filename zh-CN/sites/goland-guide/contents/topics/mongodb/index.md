@@ -1,7 +1,7 @@
 ---
 title: MongoDB
 subtitle:
-accent: primary
+accent: 主
 icon: fas fa-database
 ---
 
