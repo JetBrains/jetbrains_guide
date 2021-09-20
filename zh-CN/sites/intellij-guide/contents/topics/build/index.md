@@ -1,7 +1,7 @@
 ---
-title: Build
+title: 构建：
 subtitle: Work effectively with build tools like Maven and Gradle.
-accent: primary
+accent: 主
 icon: fas fa-hammer
 ---
 
