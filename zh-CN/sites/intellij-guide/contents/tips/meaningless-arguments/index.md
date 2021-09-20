@@ -4,9 +4,9 @@ title: Meaningless Arguments
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
-subtitle: Use quick intentions to remove redundant code
+subtitle: 使用快速意图来删除冗余代码
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Code inspections
     href: https://www.jetbrains.com/help/idea/code-inspection.html
 leadin: |
-  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for meaningless arguments. You can then remove the redundant code.
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for meaningless arguments. 然后您可以删除冗余的代码了。
 ---
 
