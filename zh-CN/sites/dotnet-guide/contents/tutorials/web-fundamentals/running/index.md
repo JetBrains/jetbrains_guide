@@ -4,7 +4,7 @@ date: 2020-12-01
 title: Running code
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - running
@@ -28,10 +28,10 @@ Run/debug configurations can be either temporary or permanent. To turn a tempora
 
 Now, if you want to adjust the settings of a newly created configuration or use another one, you can do this here as well. To add a new one, hit **+**, select the desired configuration type, and specify the settings based on your project or configuration type. To fine-tune an existing configuration, click its name, and update what’s needed.
 
-### See Also
+### 另请参阅
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Running your code](https://www.jetbrains.com/dotnet/guide/topics/running/)
 - [WebStorm Guide - Running and debugging](https://www.jetbrains.com/webstorm/guide/topics/running-debugging/)
 - [Working with Run/Debug Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html)
-- [Run/debug configurations](https://blog.jetbrains.com/dotnet/2017/08/23/rundebug-configurations-rider/)
+- [运行/调试配置](https://blog.jetbrains.com/dotnet/2017/08/23/rundebug-configurations-rider/)
