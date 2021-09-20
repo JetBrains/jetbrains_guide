@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Basic Code Completion
+title: 基本代码补全
 technologies:
   - go
 topics:
-  - completion
+  - 补全
 author: dlsniper
 subtitle: Code completion that helps you get the job done
 thumbnail: ./thumbnail.png
