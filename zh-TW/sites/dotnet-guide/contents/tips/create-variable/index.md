@@ -4,7 +4,7 @@ title: Introducing Variables
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - inspections
