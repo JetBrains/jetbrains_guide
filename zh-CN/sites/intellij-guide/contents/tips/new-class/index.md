@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Create New Class
+title: 创建新类
 technologies:
   - java
 topics:
