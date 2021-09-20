@@ -5,7 +5,7 @@ title: Create Web APIs with ASP.NET Core Using Outside In TDD
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
