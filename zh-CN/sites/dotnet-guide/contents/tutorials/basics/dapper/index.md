@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Working with databases using Open Source
 thumbnail: ./thumbnail.png
@@ -96,7 +96,7 @@ class Program
 </Project>
 ```
 
-### See Also
+### 另请参阅
 
 - [Dapper](https://github.com/StackExchange/Dapper)
 - [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/)
