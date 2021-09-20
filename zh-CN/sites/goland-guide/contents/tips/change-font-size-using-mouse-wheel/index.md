@@ -2,7 +2,7 @@
 date: 2021-07-05
 title: 'Change the editor font size using the mouse wheel'
 technologies:
-  - platform
+  - 平台
 topics:
   - ui
 author: dlsniper
