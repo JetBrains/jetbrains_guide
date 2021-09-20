@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Hide all tool windows
+title: 隐藏所有工具窗口
 technologies:
   - go
 topics:
