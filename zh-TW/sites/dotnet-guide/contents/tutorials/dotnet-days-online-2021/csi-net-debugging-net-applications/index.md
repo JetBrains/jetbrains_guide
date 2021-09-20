@@ -5,7 +5,7 @@ title: CSI .NET – Debugging .NET Applications
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - debugging
