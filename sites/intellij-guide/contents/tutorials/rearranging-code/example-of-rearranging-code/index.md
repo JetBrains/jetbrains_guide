@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-09-06
+date: 2021-09-20
 title: Example of Moving Code Around
 technologies: []
 topics: []
@@ -10,9 +10,11 @@ thumbnail: ./thumbnail.png
 ---
 
 ## A Before and After Example of Code Rearrangement
-Let's take a look at an example with the following default arrangement:
+Let's take a look at an example with the following [code arrangement](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code):
 
-![Default code rules arrangement](default-arrangement.png)
+![Code rules arrangement](default-arrangement.png)
+
+Note that this is not the default arrangement, although it's very similar. There's a specific rule here that puts `private` methods at the bottom of the class which can be very useful. 
 
 Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
 
@@ -47,7 +49,11 @@ Given you can't scroll a screenshot, here is the order in text form, so you can 
 27| class | static | | |
 28| class | | | |
 
-We will use this example code and then [invoke rearrange code](../invoking-rearranging-code).
+We will use this example code and then invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux). In the Find Actions dialog you can type in _Rearrange Code_:
+
+![Rearrange Code](rearrange-code.png)
+
+Press **Enter** on **Rearrange Code** option to apply the settings to the whole class. 
 
 ```java
 public class RearrangeCode {
@@ -150,7 +156,7 @@ public class RearrangeCode {
 
 ```
 
-When you [Invoke Code Rearrangement](../invoking-rearranging-code) on this code either manually or on commit, the code will be rearranged (see below). Here is a list of changes:
+When you [Invoke Code Rearrangement](../rearrange-code-youve-changed) on this code either manually or on commit, the code will be rearranged (see below). Here is a list of changes:
 - All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
 - The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
 - The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules) and they are public so line 22 of our matching rules is applied. The Override methods are also implemented in the order they appear in the Object super class.
@@ -252,5 +258,5 @@ public class RearrangeCode {
 
 
 ```
-## Summary
-Let's summarise everything we've learned in the final step of this tutorial.
+## Rearranging Just Code You've Changed
+Now you've seen a worked example of rearranging a whole class, let's take a look at the use-case for only rearranging code that you've edited rather than the whole class. 

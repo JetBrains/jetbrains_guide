@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-09-06
+date: 2021-09-20
 title: Moving Lines Around
 technologies: []
 topics: []
@@ -15,5 +15,5 @@ With your caret on a line, you can press **⌥⇧↑** (macOS), or **Alt+Shift+U
 
 This does not account for scope. That means you can easily break your code by moving a line outside its scope so be careful! IntelliJ IDEA will move the whole paragraph if you're working with something like markdown. 
 
-## Moving Statements Around
-In the next section we'll look at how you can move a whole statement with keyboard shortcuts, which does take scope into account.
+## An Example of Moving Code Around
+Let's look at how you can rearrange your code in a whole class in the next step according to your code arrangement rules.  

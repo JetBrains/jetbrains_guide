@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-09-06
+date: 2021-09-20
 title: Moving Statements Around
 technologies: []
 topics: []
@@ -15,5 +15,5 @@ In the editor, place the caret in the statement you want to move and press **⇧
 
 IntelliJ IDEA will not let you move a statement outside its defined scope. This helps to keep your code green and compiling so it's a preferable way of moving your code as you're less likely to introduce errors. Of course, if you accidentally move the use of a variable higher than its definition, IntelliJ IDEA will highlight this in red to show you that while you're still in the correct scope, you need to define the variable first.   
 
-## Rearranging Code Settings
-You might want to do more than move the odd line or statement around. We'll take a look at the settings to achieve that in the next step of this tutorial. 
+## Moving Lines Around
+As well as moving statements around, you can also move lines around within your class. We'll look at this in the next step of this tutorial.   

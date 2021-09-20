@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-09-06
+date: 2021-09-20
 title: Introduction
 technologies: []
 topics: []
@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Rearranging Code - The How, Why and When
-You often need to move elements of your code around. That might be single lines or statements, or rearranging a whole class to adhere to some code arrangement rules you and your team have defined. For example, you might have a team rule that private methods always appear last in a class - you can use IntelliJ IDEA to enforce that. 
+You often need to move elements of your code around. That might be statements or single lines, or rearranging a whole class to adhere to some code arrangement rules you and your team have defined. For example, you might have a team rule that private methods always appear last in a class - you can use IntelliJ IDEA to enforce that. 
 
 ## Moving Lines Around
-Let's start off with moving a line or selection around manually within a class using keyboard shortcuts. 
+Let's start off with one of the most common use cases for rearrange code - moving a statement around. 
