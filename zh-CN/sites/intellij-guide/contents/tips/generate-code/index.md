@@ -1,10 +1,10 @@
 ---
 date: 2021-01-08
-title: Generate Code
+title: 生成代码
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Helps you to generate commonly used code constructs
 thumbnail: ./thumbnail.png
