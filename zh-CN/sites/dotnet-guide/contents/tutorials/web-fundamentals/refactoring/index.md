@@ -1,14 +1,14 @@
 ---
 type: TutorialStep
 date: 2020-12-01
-title: Refactoring
+title: 重构
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - ide
-  - refactoring
+  - 重构
 products:
   - rider
 author: pwe
@@ -31,7 +31,7 @@ There are quite a few other refactorings available. You can look them up from th
 
 Let’s try performing another action that Rider can help you with: extracting a component. Why do it yourself when the IDE can do it for you? We just need to decide on a few things and we’ll get a component created for us on one side and the usage on the other. Have a look at our web help about [safely refactoring code](https://www.jetbrains.com/help/rider/Refactoring_and_Cleaning_Code.html).
 
-### See Also
+### 另请参阅
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Refactoring](https://www.jetbrains.com/dotnet/guide/topics/refactoring/)
