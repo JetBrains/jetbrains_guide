@@ -4,7 +4,7 @@ title: Navigate to Implementation
 technologies:
   - java
 topics:
-  - navigation
+  - 導覽
 author: hs
 subtitle: Go to one or more implementations across your code base
 thumbnail: ./thumbnail.png
