@@ -8,7 +8,7 @@ create code from red
 
 equals hashcode tostring
 
-introduce variable
+引進變數
 
 extract method
  - include find duplicates
