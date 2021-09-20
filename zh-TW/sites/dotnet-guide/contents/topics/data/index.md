@@ -10,6 +10,6 @@ Data access is critical to many line-of-business applications. Whether it is a t
 ## See Also
 
 - [DataGrip](https://www.jetbrains.com/datagrip/)
-- [Rider](https://www.jetbrains.com/rider/)
+- [TRANSLATED Rider](https://www.jetbrains.com/rider/)
 - [ReSharper](https://www.jetbrains.com/resharper/)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
