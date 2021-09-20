@@ -30,7 +30,7 @@ If the list of search results contains too many entries, you can cycle through d
 Some other options available are:
 
 * [Search Everywhere/Go to Type](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
-* [Go To File](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File.html)
+* [转到文件](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File.html)
 * [Go To File Member](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_File_Member.html)
 * [Go To Symbol](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Symbol.html)
 * [Go To Text](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Go_to_Text.html)
@@ -53,7 +53,7 @@ This makes it easy to navigate to places where you have edited or just looked at
 
 When you get a textual stack trace (for example, from a bug report), you can open it in the [Stack Trace Explorer window](https://www.jetbrains.com/help/resharper/Reference__Windows__Stack_Trace_Explorer.html). ReSharper then lets you [navigate from Stack Trace to Exception](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Navigating_to_Exception.html), to make it easier to track down the origin of a particular exception.
 
-### See Also
+### 另请参阅
 
 - [ReSharper web help on Navigation](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Index.html)
 - [Navigate from here](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Navigate_from_Here.html)
