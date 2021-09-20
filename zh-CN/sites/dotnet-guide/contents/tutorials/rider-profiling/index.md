@@ -5,7 +5,7 @@ technologies:
   - .net
 topics:
   - ide
-  - profiling
+  - 分析
 products:
   - rider
   - dottrace
