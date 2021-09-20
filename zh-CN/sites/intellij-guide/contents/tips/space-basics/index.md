@@ -4,7 +4,7 @@ title: Tips for working with JetBrains Space
 technologies: [ ]
 topics:
   - latest
-  - plugins
+  - 插件
 author: tg
 subtitle: Space is an all-in-one collaboration tool, including chat, code repository, code review, issue tracking, and much more.
 thumbnail: ./thumbnail.png
