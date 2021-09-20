@@ -4,9 +4,9 @@ title: Manage Projects
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
 topics:
-  - navigation
+  - 導覽
 author: khalidabuhakmeh
 subtitle: Keep your projects organized for an efficient experience
 thumbnail: ./thumbnail.png
