@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
 date: 2020-12-01
-title: Coding Assistance
+title: 代码辅助
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - editing
@@ -36,7 +36,7 @@ Now, imagine you’ve got some badly formatted code, with lots of little problem
 
 Imports are another thing you no longer have to worry about. Let’s say we haven’t imported the `App` symbol and we want to use it. Start typing, accept the autocomplete suggestion, and the IDE will do the completion and create an import all for you. Optimize Imports can, amongst the other things, help me clear out any unused imports.
 
-### See Also
+### 另请参阅
 
 - [Rider - Creating and Editing Code](https://www.jetbrains.com/help/rider/Creating_and_Editing_Code.html)
 - [WebStorm Guide - Editing](https://www.jetbrains.com/webstorm/guide/topics/editing/)
