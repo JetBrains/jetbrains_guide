@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Search Everywhere
+title: 随处搜索
 technologies:
   - java
 topics:
