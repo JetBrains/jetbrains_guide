@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - refactoring
+  - 重构
 author: maartenba
 subtitle: Lorraine Steyn
 thumbnail: ./thumbnail.png
