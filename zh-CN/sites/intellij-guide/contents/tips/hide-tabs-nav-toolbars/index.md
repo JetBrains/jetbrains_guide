@@ -18,7 +18,7 @@ seealso:
     title: IntelliJ IDEA Help - Editor Tabs
     href: https://www.jetbrains.com/help/idea/settings-editor-tabs.html
   - 
-    title: Menus and Toolbars
+    title: 菜单和工具栏
     href: https://www.jetbrains.com/help/idea/customize-actions-menus-and-toolbars.html
 leadin: |
   Press **⇧⌘A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), for the Find Actions dialog. From here you can search for _Tab Placement_, _NBar_ and _TBar_ to turn on or off the tabs, Navigation Bar and Toolbar windows.
