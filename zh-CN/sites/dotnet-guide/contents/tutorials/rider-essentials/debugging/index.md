@@ -23,7 +23,7 @@ With the debugger in Rider, you can attach to a new or existing process, and pla
 
 In the debugger, you can inspect variables, the current call stack, step over/into specific methods, and more. The debugger supports all .NET frameworks, .NET Core, Mono, Xamarin, Unity, ASP.NET and ASP.NET Core, in standalone apps, web apps and unit tests.
 
-### Run Configurations
+### 运行配置
 
 Debugging starts with [Run Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html), where you specify which project to run or debug.
 
@@ -37,9 +37,9 @@ You can [step through code](https://www.jetbrains.com/help/rider/Stepping_Throug
 
 Once your application is suspended, you can [use the variables pane](https://www.jetbrains.com/help/rider/Inspecting_Variables.html) to get a closer look at the current state of your program. Make use of [Pin to Top](https://www.jetbrains.com/help/rider/Inspecting_Variables.html#pinned_items) to customize how values are displayed without having to change your code.
 
-### See Also
+### 另请参阅
 
 - [Debugging in Rider](https://www.jetbrains.com/help/rider/Debugging_Code.html)
-- [Run Configurations](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html)
+- [运行配置](https://www.jetbrains.com/help/rider/Run_Debug_Configuration.html)
 - [Run/Debug Configurations in Rider](https://blog.jetbrains.com/dotnet/2017/08/23/rundebug-configurations-rider/)
 - [Debugging third-party/external code](https://blog.jetbrains.com/dotnet/2017/12/20/debugging-third-party-code-rider/)
