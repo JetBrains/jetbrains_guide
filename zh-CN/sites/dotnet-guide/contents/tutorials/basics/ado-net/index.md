@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Working with databases using DbConnection, DbCommand, and DbDataReader
 thumbnail: ./thumbnail.png
@@ -101,7 +101,7 @@ ADO.NET assumes very little for us, and it is the lowest level approach to data 
 </Project>
 ```
 
-### See Also
+### 另请参阅
 
 - [Microsoft Docs ADO.NET Overview](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview)
 - [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/)
