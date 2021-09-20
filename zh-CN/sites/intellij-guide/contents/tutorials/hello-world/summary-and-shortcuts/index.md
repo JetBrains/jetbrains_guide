@@ -22,7 +22,7 @@ Finally, you made a change to your `HelloWorld.java` file and tested that change
 ### Shortcuts Used
 Here are some of the shortcuts that we used and some additional ones that you can try out.
 
-| Name                                                                                                                          | macOS Shortcut | Windows Shortcut     |
+| 名称                                                                                                                            | macOS Shortcut | Windows Shortcut     |
 | ----------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------- |
 | Add a new file in the Project Window                                                                                          | **⌘N**         | **Alt+Insert**       |
 | Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog                            | **⇧⇧**         | **Shift+Shift**      |
