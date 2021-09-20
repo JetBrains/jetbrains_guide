@@ -13,7 +13,7 @@ Whenever you're working with databases in your projects, it's very useful to cre
 
 To create our H2 data source, we'll open the Database tool window (**View** -> **Tool Windows** -> **Database**) then click on the **+** button. There are various ways to create our connection. We'll use the **Data source from URL** option.
 
-![New Database](./NewDatabase.png)
+![新建数据库](./NewDatabase.png)
 
 We'll enter in our databse URL: `jdbc:h2:file:./data/myDB` and click **OK**.
 
@@ -32,4 +32,4 @@ Once we click **OK**, we see a new data source for our H2 database.
 ## End Result
 In the database view, we can now navigate to our Employee table and see all our employee data by double-clicking on the table.
 
-![Database View](./DatabaseView.png)
+![数据库视图](./DatabaseView.png)
