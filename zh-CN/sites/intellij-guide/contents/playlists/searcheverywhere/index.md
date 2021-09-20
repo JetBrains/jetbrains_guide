@@ -1,12 +1,12 @@
 ---
 label: 20
 date: 2021-13-07
-title: Search Everywhere
+title: 随处搜索
 technologies: [ ]
 topics:
   - tricks
   - gettingstarted
-  - interface
+  - 接口
 author: hs
 subtitle: Tips for using Search Everywhere (Shift+Shift)
 thumbnail: ./thumbnail.png
