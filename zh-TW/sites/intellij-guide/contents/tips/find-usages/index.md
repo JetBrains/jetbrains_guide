@@ -4,7 +4,7 @@ title: Find Usages
 technologies:
   - java
 topics:
-  - navigation
+  - 導覽
 author: hs
 subtitle: Use Find Usages to search for references in your code base
 thumbnail: ./thumbnail.png
