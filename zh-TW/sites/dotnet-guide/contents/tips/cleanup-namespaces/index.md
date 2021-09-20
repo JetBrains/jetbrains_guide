@@ -4,7 +4,7 @@ title: Cleanup Namespaces
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - inspections
