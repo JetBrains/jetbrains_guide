@@ -4,7 +4,7 @@ title: Code Reviews with Space
 technologies: [ ]
 topics:
   - latest
-  - plugins
+  - 插件
 author: tg
 subtitle: Perform code reviews without leaving the IDE.
 thumbnail: ./thumbnail.png
