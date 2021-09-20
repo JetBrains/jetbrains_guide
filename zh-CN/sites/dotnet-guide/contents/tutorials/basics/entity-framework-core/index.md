@@ -32,7 +32,7 @@ Entity Framework Core has trade-offs of performance overhead and increased memor
 
 ### Code Snippets
 
-#### Commands
+#### 命令
 
 These commands need to be executed from a command line terminal, like the one found in Rider.
 
