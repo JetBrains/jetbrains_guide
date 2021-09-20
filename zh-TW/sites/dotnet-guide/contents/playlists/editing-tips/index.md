@@ -5,7 +5,7 @@ title: Editing Tips & Tricks
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - completion
