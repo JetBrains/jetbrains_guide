@@ -5,7 +5,7 @@ title: Embracing gRPC in .NET
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - data
