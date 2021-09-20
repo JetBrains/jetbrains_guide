@@ -4,7 +4,7 @@ title: Formatting code in columns
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - editing
