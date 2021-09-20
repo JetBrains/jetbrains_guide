@@ -1,5 +1,5 @@
 ---
-title: Profiling
+title: 性能分析
 subtitle: Analyze application performance and memory usage.
 accent: primary
 icon: fas fa-flag-checkered
