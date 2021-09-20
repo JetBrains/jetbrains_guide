@@ -9,7 +9,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
   - web
   - editing
   - inspections
@@ -102,7 +102,7 @@ The complete `ConfigureServices` method is below.
 
 **Note that we have an optional `RequestLocalizationCookieMiddleware` which retains the user-selected culture between requests.** [We can see the code for that on the GitHub repository](https://github.com/khalidabuhakmeh/aspnetcore_localization_sample/blob/master/WebApplication/Middlewares/RequestLocalizationCookiesMiddleware.cs).
 
-### Configure
+### 配置
 
 The `Configure` method is the simpler of the two setups. Here, we need to register the `RequestLocalizationMiddleware` utilizing the registration method provided by ASP.NET Core.
 
@@ -249,7 +249,7 @@ public string Superhero { get; set; }
 
 The Razor view utilizes the `DisplayAttribute` to determine a `<label>` tag's value. ASP.NET uses the `RequiredAttribute` for validation, and determines the error messages using the attribute properties of `ErrorMessageResourceName` and `ErrorMessageResourceType`.
 
-## Conclusion
+## 结论
 
 With a few steps, we can understand the ideas behind localizing an ASP.NET application. We can transfer many of our existing skills regarding resource files to the new paradigm created for web applications. Once configured, the localization framework stays out of our way, allowing us to develop our app while also leaving room to expand our audience.
 
