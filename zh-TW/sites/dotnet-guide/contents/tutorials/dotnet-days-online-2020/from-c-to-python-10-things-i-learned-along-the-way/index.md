@@ -5,7 +5,7 @@ title: 'From C# to Python – 10 Things I Learned Along the Way'
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
