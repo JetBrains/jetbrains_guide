@@ -5,7 +5,7 @@ title: Legacy Refactoring
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - refactoring
