@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - ide
@@ -44,7 +44,7 @@ When looking at Rider's toolbar, we'll notice it is a bit more sparse by default
 - Stop button
 - Profiling
 - Attach To Process
-- Search Everywhere
+- 隨處搜索
 - IDE and Project Settings
 
 Developers moving from Visual Studio might want the **Back** and **Forwards** navigation buttons. Rider hides those actions by default but can we can add them back by going to `View \| Appearance \| Toolbar`, after which we'll get an additional set of actions:
