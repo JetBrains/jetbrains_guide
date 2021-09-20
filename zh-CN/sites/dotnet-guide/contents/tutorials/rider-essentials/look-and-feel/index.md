@@ -32,7 +32,7 @@ Next to the general look and feel, your editor can be customized quite extensive
 
 The [editor settings](https://www.jetbrains.com/help/rider/Settings_Editor.html) give you many other options to customize Rider's editor according to your preferences.
 
-### See Also
+### 另请参阅
 
 - [Theme Switcher](https://www.jetbrains.com/help/rider/Switching_Between_Schemes.html)
 - [Colors and Fonts in the Editor](https://www.jetbrains.com/help/rider/Configuring_Colors_and_Fonts.html)
