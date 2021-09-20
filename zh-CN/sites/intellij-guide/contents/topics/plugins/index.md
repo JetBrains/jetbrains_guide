@@ -1,7 +1,7 @@
 ---
-title: Plugins
+title: 插件
 subtitle: See tips and suggestions for working with Plugins in IntelliJ IDEA
-accent: primary
+accent: 主
 icon: fas fa-plug
 ---
 
