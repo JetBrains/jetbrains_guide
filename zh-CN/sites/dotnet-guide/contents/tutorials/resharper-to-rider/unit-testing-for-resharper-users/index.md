@@ -70,24 +70,24 @@ While the UI is slightly different between ReSharper and Rider, developers can f
 
 Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://www.jetbrains.com/dotCover)**, **[dotMemory](https://www.jetbrains.com/dotMemory)**, and **[dotTrace](https://www.jetbrains.com/dotTrace)**.  All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
 
-- **Run**
-- **Debug**
-- **Cover**
-- **Profile**
+- **运行**
+- **调试**
+- **封面**
+- **个人资料**
 - **Run under dotMemory Unit**
 
 ![alt+enter menu from within Visual Studio an ReSharper](./resharper-alt-enter-menu.png)
 
-## Conclusion
+## 结论
 
 The unit testing experiences between Rider and ReSharper are almost identical, and developers transitioning to Rider as their full-time IDE will find it enjoyably familiar. Rider supports many of the popular unit testing frameworks, so users should have no issues running their unit test runner of choice. Additionally, dotUltimate license holders get more as integrations with **dotCover**, **dotMemory**, **dotCover** and **dotTrace** take unit testing to a whole new level. Unit testing is a cornerstone of modern software development, and with Rider, it's never been more powerful.
 
 Speaking of a whole new level, [check out our tutorial series on unit testing in Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/). You'll learn about the power of **continuous testing** and **code coverage**.
 
-### See Also
+### 另请参阅
 
 - [JetBrains Rider](https://jetbrains.com/rider)
 - [JetBrains ReSharper](https://jetbrains.com/resharper)
 - [Unit Testing with Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/)
 - [Getting Started With Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
-- [Unit Testing](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
+- [单元测试](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
