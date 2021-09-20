@@ -1,6 +1,6 @@
 ---
 date: 2021-07-01
-title: Smart Completion
+title: 智能补全
 technologies:
   - java
 topics:
