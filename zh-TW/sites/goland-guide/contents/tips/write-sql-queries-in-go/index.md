@@ -8,7 +8,7 @@ topics:
   - completion
   - editing
   - inspections
-  - navigation
+  - 導覽
   - refactoring
   - running
 author: dlsniper
