@@ -4,12 +4,12 @@ date: 2021-04-26
 title: ASP.NET Core Development with Docker
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Learn how Docker can work with your current ASP.NET Core development process.
 thumbnail: ./thumbnail.png
@@ -105,7 +105,7 @@ Secondly, most ecosystems outside .NET don't usually use HTTPS on each web appli
 
 Lastly, for folks who still want to use HTTPS within the container, it is possible. It requires managing a certificate deployed with the image and setting a container's environment variables. Check out the guidance found on the [Official Microsoft Documentation site.](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/self-signed-certificates-guide#with-openssl).
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [.NET](https://dot.net)
