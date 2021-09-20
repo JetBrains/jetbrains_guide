@@ -1,5 +1,5 @@
 ---
-title: Rider
+title: TRANSLATED Rider
 subtitle: Fast & powerful, cross platform .NET IDE.
 logo: ./logo.png
 website: https://www.jetbrains.com/rider/
