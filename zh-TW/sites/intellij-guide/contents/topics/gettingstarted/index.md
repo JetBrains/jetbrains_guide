@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: 入門指南
 subtitle: If you're new to IntelliJ IDEA or a technology, start here
 accent: primary
 icon: fas fa-graduation-cap
