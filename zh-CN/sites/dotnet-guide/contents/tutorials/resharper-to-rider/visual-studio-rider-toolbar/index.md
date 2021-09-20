@@ -10,7 +10,7 @@ products:
   - resharper
 topics:
   - ide
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Learn how Rider's toolbar UI compares with the toolbar found in Visual Studio.
 thumbnail: ./thumbnail.png
@@ -21,7 +21,7 @@ Developers with a mouse-focused workflow will likely be very familiar with Visua
 ![Visual Studio default toolbar](./visual-studio-toolbar.png)
 
 - Navigation buttons
-- New Project
+- 新建项目
 - Open File
 - Undo and Redo Changes
 - Solution Configurations dropdown
@@ -42,16 +42,16 @@ When looking at Rider's toolbar, we'll notice it is a bit more sparse by default
 - Run (Play) button
 - Debug (Bug) button
 - Stop button
-- Profiling
+- 性能分析
 - Attach To Process
-- Search Everywhere
-- IDE and Project Settings
+- 随处搜索
+- IDE 和项目设置
 
 Developers moving from Visual Studio might want the **Back** and **Forwards** navigation buttons. Rider hides those actions by default but can we can add them back by going to `View \| Appearance \| Toolbar`, after which we'll get an additional set of actions:
 
-- Open
-- Save All
-- Reload From Disk
+- 计划开放
+- 全部保存
+- 从磁盘重新加载
 - Navigation buttons
 
 ![JetBrains Rider Toolbar with additional navigation items](./rider-with-toolbar-extra.png)
