@@ -1,5 +1,5 @@
 ---
-title: Gaming
+title: 游戏
 subtitle: A smarter way to write code for games.
 accent: primary
 icon: fas fa-gamepad
