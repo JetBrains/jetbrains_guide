@@ -1,7 +1,7 @@
 ---
 title: Editing
 subtitle: Edit your code quickly and efficiently.
-accent: primary
+accent: 主
 icon: fas fa-edit
 ---
 
