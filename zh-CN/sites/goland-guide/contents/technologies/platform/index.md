@@ -1,5 +1,5 @@
 ---
-title: Platform
+title: 平台
 subtitle: A group of technologies or features shared among more than a single specific language
 website: https://jetbrains.com
 logo: ./platform.png
