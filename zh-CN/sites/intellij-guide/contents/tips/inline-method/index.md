@@ -4,7 +4,7 @@ title: Inline a method
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Inline a method
 thumbnail: ./thumbnail.png
