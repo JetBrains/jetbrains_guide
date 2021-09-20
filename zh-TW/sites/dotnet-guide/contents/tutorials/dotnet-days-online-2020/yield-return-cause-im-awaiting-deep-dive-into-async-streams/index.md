@@ -5,7 +5,7 @@ title: Yield Return ’cause I’m Awaiting Deep Dive into Async Streams
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
