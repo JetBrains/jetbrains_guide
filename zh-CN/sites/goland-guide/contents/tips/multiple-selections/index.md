@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Multiple selections
+title: 多重选择
 technologies:
   - go
 topics:
@@ -25,7 +25,7 @@ leadin: |
   which it then adds to the selection.
 
   You can press _Alt + J_ again to go forward further, or _⇧ + Alt + J_ to go back.
-  When the search reaches the end of the file, it will start over again from the beginning.
+  搜索到文件末尾后再次从头搜索。
 
   <span class="tag is-rounded">New in 2017.3</span>
 ---
