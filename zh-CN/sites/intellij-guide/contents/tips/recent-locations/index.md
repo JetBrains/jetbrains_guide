@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Recent Locations
+title: 最近的位置
 technologies:
   - java
 topics:
