@@ -5,7 +5,7 @@ technologies:
   - .net
 products:
   - dotcover
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - testing
