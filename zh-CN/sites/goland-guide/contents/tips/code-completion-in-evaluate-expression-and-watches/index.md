@@ -4,7 +4,7 @@ title: Code completion in Evaluate Expression, Watches or Conditional Breakpoint
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - debugging
 author: dlsniper
 subtitle: The debugger also has code completion capabilities.
