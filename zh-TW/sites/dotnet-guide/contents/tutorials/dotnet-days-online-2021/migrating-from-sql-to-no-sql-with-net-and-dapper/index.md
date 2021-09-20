@@ -5,7 +5,7 @@ title: Migrating from SQL to NoSQL with .NET and Dapper
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - data
