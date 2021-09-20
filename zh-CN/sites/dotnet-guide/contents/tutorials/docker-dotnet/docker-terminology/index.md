@@ -4,12 +4,12 @@ date: 2021-04-26
 title: Common Docker Terminology
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Common terms and phrases .NET developers will encounter when working with Docker.
 thumbnail: ./thumbnail.png
@@ -52,7 +52,7 @@ Docker offers a wide range of features, which is out of scope for this tutorial.
 
 At the very least, developers should install **Docker Desktop** on their development environments ([macOS](https://desktop.docker.com/mac/stable/Docker.dmg) and [Windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)), as we'll be using it later in the tutorial.
 
-## Images
+## 图像
 
 Containerizing our applications first starts with choosing a base image. An image is the foundation of what we will choose to build and run our application.
 
@@ -67,17 +67,17 @@ Most .NET developers will start with [Microsoft's images](https://hub.docker.com
 
 Picking a base image can have a substantial impact on deployment, along with resource utilization in a production environment. Dependencies of our .NET applications may constrain us to specific host environments and base images. Luckily for .NET developers utilizing .NET Core and .NET 5+ runtimes, we can use Linux base images that reduce our eventual container's size. Newly created images will only contain the additional data built on top of the base image, typically our application and its footprint.
 
-## Containers
+## 容器
 
 Containers are instances of images running on the execution engine and host OS. For .NET developers, an image is analogous to an executable on Windows or an App in macOS. A container is similar to the running process of that executable or App.
 
 When working with containers, we must configure our instance to expose ports, attach volumes, and specify entry points. We'll see how this is done later in the tutorial.
 
-### Ports
+### 端口
 
 Containers can be self-contained and shut-off from all external connections, but that wouldn't be very helpful. Like a physical machine, containers can communicate over ports, which are defined when creating the container. For example, a SQL Server database container might want to expose the port `1433`, which is typically the port for remote database connections. For an ASP.NET container, we might want the HTTP port, the HTTPS port, or both to be accessible.
 
-### Volumes
+### 卷
 
 Disposability is one of the greatest strengths of containers. That said, when a container is stopped and deleted, the contents of the container are gone. If our image writes to disk, there could be a legitimate concern for data loss. Have no fear! We can mount durable storage to any container, also known as [**volumes**](https://docs.docker.com/storage/volumes/).
 
@@ -113,7 +113,7 @@ Most cloud providers also offer an in-service image registry:
 
 Developers looking to keep deploy times fast and budget spend low will want to consider a container registry within the envelope of their production hosting environment. For example, if we were hosting our containers in DigitalOcean, it would make sense to use the DigitalOcean container registry. The same logic would apply to all other hosting platforms.
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [.NET](https://dot.net)
