@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Move Statement
+title: 移动语句
 technologies:
   - java
 topics:
