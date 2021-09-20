@@ -1,11 +1,11 @@
 ---
 hasBody: true
-date: 2021-09-16
+date: 2021-09-24
 title: Resolve Merge Conflicts in VCS
 technologies: [java]
 topics: [settings, vcs, editing]
 author: vb
-subtitle: Use VCS Options in IntelliJ to resolve merge conflicts visually
+subtitle: Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the editor
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -15,54 +15,51 @@ seealso:
   - title: IntelliJ IDEA Help - Resolving Merge Conflicts
     href: https://www.jetbrains.com/help/idea/resolving-conflicts.html
 leadin: |
-  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog and you can search for **Resolve Conflicts** to open Conflicts' dialog that helps in visually Resolving Merge Conflicts between two different versions of Code.
-  - You can utilize the option available in **Merge Revisions dialog** and **you should carefully review** to accept or ignore code changes as well as **Resolving Conflicts**. It visually helps users in easily reviewing and resolving merge conflicts.
-  - **Note:** Resolve Conflicts option is available only when there are any merge conflicts. 
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the **Conflicts** dialog which helps you to visually resolve merge conflicts between two different versions of the code.
+  - You can use the option available in the **Merge Revisions** dialog and **you should carefully review** before you accept or ignore code changes as well as resolving conflicts. This dialog visually helps you to review and resolve merge conflicts.
+  - **Note:** The **Resolve Conflicts** option from the Search Everywhere dialog will only display the **Conflicts** dialog when there are merge conflicts in your code, otherwise you will get an error. 
   
 ---
 
 ## Resolving Conflicts Using Git Toolbar Options
-Alternately, you can open Conflicts dialog by using **Git -> Resolve Conflicts** option available in ToolBar. 
+Alternately, you can open the **Conflicts** dialog by using **Git -> Resolve Conflicts** option available from the menu. 
 
 ![Resolve Conflicts Using Git Toolbar](git-resolve-conflicts-toolbar.png)
 
 ### Conflicts Dialog
-The Conflicts Dialog shows list of files that has merge conflicts. You can select files and merge manually, or you can accept either your changes or incoming changes. 
+The **Conflicts** dialog shows a list of files that have merge conflicts. You can select files and merge manually, or you can accept either your changes or their (incoming) changes. 
 
 ![Conflicts Dialog Showing List of Conflicted Files](conflicts-dialog.png)
 
 ### Manually Resolving Conflicts using Merge
-When you manually merge changes, IntelliJ **Merge Revisions Dialog** opens providing visual view of changes and conflicts between two versions of code. 
-It has 3 different views.
+When you manually merge changes, you use the **Merge Revisions** dialog which provides a visual view of changes and conflicts between two different versions of the code. It has three different views:
 
 ![Merge Revisions Dialog](merge-revisions-dialog.png)
 
 #### Left View
-Left view in the Merge Revisions dialog shows your changes of the file. 
+The Left view shows your changes of the file. 
 
 #### Result View
-Result view in the Merge Revisions dialog is where any changes made and conflicts resolved are visually shown. You can always refer Result View to keep making required changes and resolving conflicts.
+The Result view is where any changes made and conflicts resolved are shown visually. You can always refer to the Result View to keep making required changes and resolving conflicts.
 
 #### Right View
-Right view in the Merge Revisions dialog shows the incoming file changes.
-
+The Right view shows the incoming file changes.
 
 ### Resolving Merge Conflicts
+You should carefully review the changes **_(highlighted in blue)_** and accept any one of the changes that are required. In case of conflicts **_(highlighted in red)_**, you should accept the changes that you want, and ignore those that you don't.
 
-You have to carefully review the changes **_(highlighted in blue)_** and accept any of the one that is required. In case of conflicts **_(highlighted in red)_**, you can accept the change that is required and must ignore the one, that is not required.
-
-#### Accepting Code Change
+#### Accepting Code Changes
 ![Accept Code Change](accept-change.png)
 
-To **accept Code Change**, click on Double **>>** symbol in Left View or **<<** symbol in Right View pointing towards result view. This will apply the corresponding change in the result view.
+To accept a code change, click on the **>>** symbol in the Left View or the **<<** symbol in the Right View which is pointing towards the Result view. This will apply the corresponding change in the Result view.
 
-#### Ignoring Code Change
+#### Ignoring Code Changes
 ![Ignore Code Change](ignore-change.png)
 
-To **ignore Code Change**, click on **X** which ignores the change from selected view. Ignoring Code Changes will not apply changes in result view.
+To ignore a code change, click on the **X**. This means that the change is disregarded from the selected view (Left or Right). Ignoring code changes means that they are not applied to the Result view.
 
-### Save Changes to Finish Merging
+### Finish Merging
 
 ![Save Changes to Finish Merging](finish-merging.png)
 
-Upon successfully resolving by applying the correct changes and fixing the conflicts, the popup message appears stating that **All Changes have been processed**. When you apply the changes, the selected file's merge conflicts is successfully resolved and saved.
+When you have successfully resolved all your merge conflicts, IntelliJ IDEA will prompt you that **All Changes have been processed**. When you press **Apply** the conflicts in the file are all resolved.
