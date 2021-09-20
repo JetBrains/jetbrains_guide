@@ -4,7 +4,7 @@ title: Tool Window Management
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
 topics:
   - ide
 author: matkoch
