@@ -5,7 +5,7 @@ title: ASP.NET Routing
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - ide
