@@ -1,7 +1,7 @@
 ---
 hasBody: true
 date: 2021-05-28
-title: Live Templates
+title: 实时模板
 technologies:
   - java
 topics:
