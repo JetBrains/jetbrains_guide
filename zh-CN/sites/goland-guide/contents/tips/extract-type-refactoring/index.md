@@ -4,7 +4,7 @@ title: 'Extract Type Refactoring'
 technologies:
   - go
 topics:
-  - refactoring
+  - 重构
 author: dlsniper
 subtitle: 'Extract a type into its own definition and improve the  reusability in your code'
 thumbnail: ./thumbnail.png
