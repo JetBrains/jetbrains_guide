@@ -78,7 +78,7 @@ public class IndexModel : PageModel
 }
 ```
 
-### See Also
+### 另请参阅
 
 - [Microsoft Docs ASP.NET Razor pages](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1&tabs=visual-studio)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
