@@ -5,9 +5,9 @@ logo: ./logo.png
 website: https://www.jetbrains.com/dotcover/
 ---
 
-JetBrains dotCover is a .NET unit test runner and code coverage tool that integrates with Visual Studio and JetBrains Rider.
+JetBrains dotCover 是一款 .NET 单元测试运行程序和代码覆盖率工具，并且可与 Visual Studio 和 JetBrains Rider 集成。
 
-Make sure you know to what extent your code is covered with unit tests. dotCover calculates and reports statement-level code coverage in applications targeting .NET Framework, .NET Core, Mono, or Mono for Unity.
+确保您了解单元测试覆盖代码的程度。 dotCover calculates and reports statement-level code coverage in applications targeting .NET Framework, .NET Core, Mono, or Mono for Unity.
 
 ## See Also
 - [dotCover home page](https://www.jetbrains.com/dotcover/)
