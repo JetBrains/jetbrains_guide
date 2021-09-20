@@ -22,7 +22,7 @@ The async and await keywords have been a part of the C# programming language for
 
 In this talk, I will present some of the most common mistakes we can make when writing asynchronous code and show ways to avoid them.
 
-### Resources
+### 资源
 
 * [Sample code](https://github.com/damirarh/jbdnd-async-await)
 
