@@ -1,6 +1,6 @@
 ---
 date: 2020-10-15
-title: 'Optimize Imports'
+title: '优化 import'
 technologies:
   - go
 topics:
