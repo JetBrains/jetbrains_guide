@@ -1,6 +1,6 @@
 ---
 date: 2021-07-06
-title: 'Support for TypeScript types in JSDoc'
+title: '支持 JSDoc 中的 TypeScript 类型'
 technologies:
   - web
 topics:
