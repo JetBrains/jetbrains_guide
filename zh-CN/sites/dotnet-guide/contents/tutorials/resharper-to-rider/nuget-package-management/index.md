@@ -60,7 +60,7 @@ This feature is also available in the editor. We can recall types from memory an
 
 When working with NuGet packages, Rider gives developers options, regardless of your workflow. Whether we want to perform some exhaustive research or know precisely what package we need, Rider is there to help.
 
-### See Also
+### 另请参阅
 
 - [NuGet Tool Window in Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/nuget/)
 - [Using NuGet in Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html)
