@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Open file in split editor'
 technologies:
-  - platform
+  - 平台
 topics:
   - ui
 author: dlsniper
