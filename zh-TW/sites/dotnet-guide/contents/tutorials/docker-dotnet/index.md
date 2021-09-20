@@ -9,7 +9,7 @@ topics:
   - web
   - data
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 author: khalidabuhakmeh
 subtitle: A jump-start guide for .NET developers interested in Docker and containerization.
