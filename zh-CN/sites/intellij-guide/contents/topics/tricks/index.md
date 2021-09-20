@@ -1,7 +1,7 @@
 ---
 title: Tricks
 subtitle: Little tricks in IntelliJ IDEA that you might not know about.
-accent: primary
+accent: 主
 icon: fas fa-magic
 ---
 
