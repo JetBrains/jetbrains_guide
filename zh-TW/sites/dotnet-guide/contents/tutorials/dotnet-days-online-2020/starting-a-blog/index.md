@@ -5,7 +5,7 @@ title: Starting a Blog
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
