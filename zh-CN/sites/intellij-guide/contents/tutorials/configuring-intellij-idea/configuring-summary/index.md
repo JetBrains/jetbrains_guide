@@ -15,12 +15,12 @@ longVideo:
 ## Summary - Configuring IntelliJ IDEA
 We've used the following shortcuts in this tutorial:
 
-| Name                     | macOS Shortcut | Windows Shortcut                 |
+| 名称                       | macOS Shortcut | Windows Shortcut                 |
 | ------------------------ | -------------- | -------------------------------- |
 | Project Structure dialog | **⌘;**         | **Ctrl**+**Alt**+**Shift**+**S** |
 | Settings/Preferences     | **⌘,**         | **Ctrl**+**Alt**+**S**           |
-| Search Everywhere        | **⇧⇧**         | **Shift**+**Shift**              |
-| Find Action              | **⌘⇧A**        | **Ctrl** + **Shift** + **A**     |
+| 随处搜索                     | **⇧⇧**         | **Shift**+**Shift**              |
+| 查找操作                     | **⌘⇧A**        | **Ctrl** + **Shift** + **A**     |
 
 ### Key Points
 - Build systems such as Maven and Gradle will override settings in your Project Structure
