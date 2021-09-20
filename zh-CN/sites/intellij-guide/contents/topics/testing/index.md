@@ -1,7 +1,7 @@
 ---
-title: Testing
+title: 测试
 subtitle: Creating and running tests for your code.
-accent: primary
+accent: 主
 icon: fas fa-vial
 ---
 
