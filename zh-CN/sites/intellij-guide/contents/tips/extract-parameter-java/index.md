@@ -4,7 +4,7 @@ title: Extract Parameter
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Extract code to a parameter
 thumbnail: ./thumbnail.png
