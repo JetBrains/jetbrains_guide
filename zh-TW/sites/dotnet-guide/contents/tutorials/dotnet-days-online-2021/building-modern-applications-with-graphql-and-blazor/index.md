@@ -5,7 +5,7 @@ title: Building Modern Applications with GraphQL and Blazor
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
