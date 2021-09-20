@@ -1,7 +1,7 @@
 ---
-title: Settings
+title: 设置
 subtitle: Different configurations for your projects.
-accent: primary
+accent: 主
 icon: fas fa-cogs
 ---
 
