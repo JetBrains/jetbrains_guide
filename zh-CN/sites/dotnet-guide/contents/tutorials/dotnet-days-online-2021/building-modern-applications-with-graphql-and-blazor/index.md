@@ -9,7 +9,7 @@ products:
   - resharper
 topics:
   - web
-  - data
+  - 数据
 author: maartenba
 subtitle: Michael Staib
 thumbnail: ./thumbnail.png
@@ -26,7 +26,7 @@ Let us explore how we can put those together and change how we design components
 
 After having a fundamental understanding of how GraphQL improves our data fetching needs in web applications, we will move on and build a nice real-time application with Blazor and GraphQL. Let’s build a truly engaging next gen application and push Blazor to the limit!
 
-### Resources
+### 资源
 
 * [Demo code](https://github.com/michaelstaib/PublicSpeaking/tree/master/jetbrains_net_days_2021)
 * [Slides used during presentation](https://slides.com/michaelingmarstaib/developer-week-building-modern-applications-with-graphql-and-blazor)
