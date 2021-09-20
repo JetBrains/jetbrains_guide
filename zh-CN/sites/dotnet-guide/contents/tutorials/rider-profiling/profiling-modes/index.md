@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - ide
-  - profiling
+  - 分析
 products:
   - rider
   - dottrace
@@ -38,7 +38,7 @@ In this tutorial, I will use Debug mode, because it gives some interesting cases
 
 In the next step, you will start optimizing the Sudoku solver by profiling and making changes.
 
-### See Also
+### 另请参阅
 
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub
 - [Profiling Types in dotTrace](https://www.jetbrains.com/help/profiler/Profiling_Guidelines__Choosing_the_Right_Profiling_Mode.html)
