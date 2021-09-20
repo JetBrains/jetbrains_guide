@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-04-11
-title: Summary
+title: 摘要
 technologies: [ ]
 topics: [ ]
 author: hs
@@ -15,13 +15,13 @@ longVideo:
 ## More Resources
 There are lots of places that you can get additional information and resources to help you learn your IDE:
 
-- [Help](https://www.jetbrains.com/help/idea/)
+- [帮助](https://www.jetbrains.com/help/idea/)
   - All the IntelliJ IDEA product documentation.
-- [Getting Started](https://www.jetbrains.com/idea/resources/)
+- [入门指南](https://www.jetbrains.com/idea/resources/)
   - Lots of useful resources and additional tutorials.
-- [Demos and Screencasts](https://www.youtube.com/intellijidea)
+- [演示和截屏](https://www.youtube.com/intellijidea)
   - This is Our YouTube channel which includes screencasts, develop interviews and conference videos.
 - [Keymap Reference](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
   - Print this and keep it handy. Yes keyboard shortcuts might slow you down initially, but they will improve your productivity in time.
-- Tip of the Day
+- 每日小技巧
   - If you don't like the tip of the day to pop up when you load IntelliJ IDEA, you can click it here when you want to test your knowledge or learn something!
