@@ -4,7 +4,7 @@ title: Rename an Interface
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Renaming in IntelliJ IDEA including comments and texts
 thumbnail: ./thumbnail.png
