@@ -24,7 +24,7 @@ Luckily, there has been much progress towards making our lives as developers a b
 
 In this demo-rich session, we are going to build a real-time stock monitoring system using a serverless React App backed by the power of various Azure features. You will learn how to process documents from Azure Cosmos DB Change Feed, and then broadcast this newly received data to our client, all by using out-of-the-box Azure Functions bindings for Cosmos DB and SignalR.
 
-### Resources
+### 资源
 
 * [Demo code](https://github.com/OlenaBorzenko/Demos/tree/main/GoingRealTimeWithSignalR)
 
