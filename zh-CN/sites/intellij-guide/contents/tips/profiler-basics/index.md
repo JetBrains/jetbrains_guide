@@ -18,7 +18,7 @@ longVideo:
   url: https://youtu.be/OQcyAtukps4
 seealso:
   - 
-    title: Profiling tools
+    title: 分析工具
     href: https://www.jetbrains.com/help/idea/cpu-profiler.html
 leadin: |
   Access the profiler window using Find Action, **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or via the quick access buttons, and it shows a list of running processes
