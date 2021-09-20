@@ -1,7 +1,7 @@
 ---
 title: Editing
 subtitle:
-accent: primary
+accent: 主
 icon: fas fa-edit
 ---
 
