@@ -1,7 +1,7 @@
 ---
-title: Interface
+title: 接口
 subtitle: Tips and tricks for modifying the IntelliJ IDEA interface.
-accent: primary
+accent: 主
 icon: fas fa-desktop
 ---
 
