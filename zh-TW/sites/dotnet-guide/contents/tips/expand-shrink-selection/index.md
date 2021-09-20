@@ -4,7 +4,7 @@ title: Expand/Shrink Selection
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - editing
