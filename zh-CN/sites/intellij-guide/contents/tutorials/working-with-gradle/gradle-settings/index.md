@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: Gradle Settings
+title: Gradle 设置
 technologies:
   - gradle
 topics: [ ]
