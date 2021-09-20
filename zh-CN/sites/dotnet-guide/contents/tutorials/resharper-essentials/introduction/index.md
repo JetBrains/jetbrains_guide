@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-01
-title: Introduction
+title: 简介
 technologies:
   - .net
   - csharp
@@ -33,7 +33,7 @@ We will see how you can get more out of your Visual Studio IDE with ReSharper.
 - [Khalid Abuhakmeh](https://www.twitter.com/buhakmeh)
 - [Maarten Balliauw](https://www.twitter.com/MaartenBalliauw)
 
-### See Also
+### 另请参阅
 
 - [More about ReSharper...](https://www.jetbrains.com/resharper/)
 - [ReSharper Workshop - exercises for navigation, editing, inspections, refactoring, ...](https://github.com/JetBrains/resharper-rider-samples)
