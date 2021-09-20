@@ -5,7 +5,7 @@ title: Gradle Wrapper
 technologies:
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
 subtitle: Useful information for working with projects that use the Gradle Wrapper.
 thumbnail: ./thumbnail.png
