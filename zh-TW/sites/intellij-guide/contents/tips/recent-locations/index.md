@@ -4,7 +4,7 @@ title: Recent Locations
 technologies:
   - java
 topics:
-  - navigation
+  - 導覽
 author: hs
 subtitle: Quickly navigate around your recent locations in your code base
 thumbnail: ./thumbnail.png
