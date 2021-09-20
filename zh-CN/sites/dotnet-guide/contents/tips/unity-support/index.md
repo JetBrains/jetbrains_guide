@@ -1,6 +1,6 @@
 ---
 date: 2020-01-29
-title: Unity Support
+title: Unity 支持
 technologies:
   - .net
 products:
@@ -9,7 +9,7 @@ topics:
   - editing
   - running
   - debugging
-  - gaming
+  - 游戏
 author: matkoch
 subtitle: 'Write smarter C# for Unity!'
 thumbnail: ./thumbnail.png
