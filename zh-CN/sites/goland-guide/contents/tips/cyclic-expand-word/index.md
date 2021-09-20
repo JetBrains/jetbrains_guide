@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Cyclic Expand Word a.k.a. Hippie Completion
+title: Cyclic Expand Word a.k.a. Hippie 补全
 technologies:
   - go
 topics:
-  - completion
+  - 补全
 author: dlsniper
 subtitle: Complete any word any from the current open files.
 thumbnail: ./thumbnail.png
