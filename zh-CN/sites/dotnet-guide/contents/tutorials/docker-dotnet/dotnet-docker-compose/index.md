@@ -4,12 +4,12 @@ date: 2021-04-26
 title: Docker Compose and Multiple Containers
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Learn to use multiple containers to run a complete ASP.NET Solution.
 thumbnail: ./thumbnail.png
@@ -216,7 +216,7 @@ If we want to run everything inside a Docker environment, we can delete containe
 
 While this technique is effective, it can be somewhat slow because we need to rebuild the container on deployment.
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [Docker Compose Overview](https://docs.docker.com/compose/)
