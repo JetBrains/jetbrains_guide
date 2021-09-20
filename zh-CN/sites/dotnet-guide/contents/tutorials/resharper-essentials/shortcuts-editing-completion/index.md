@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - completion
+  - 补全
   - editing
   - inspections
   - navigation
@@ -38,14 +38,14 @@ Code completion also works for other languages and file formats, and even inside
 
 Replace that part with:
 
-### Code Templates
+### 代码模板
 
 ReSharper's code templates can generate otherwise tedious code for you! The most basic templates are [live/surround templates](https://www.jetbrains.com/help/resharper/Templates__Template_Basics__Template_Types.html) and [file templates](https://www.jetbrains.com/help/resharper/Creating_a_File_Template.html) (even with [multiple files](https://www.jetbrains.com/help/resharper/Templates__Creating_and_Editing_Templates__Multifile.html)). A lot of general-purpose templates come preinstalled, for instance the `cw` template for `Console.WriteLine`, the `nguid` template to generate a new `Guid`, or the `try` surround template to generate a `try-catch` block (even works by temporarily overwriting the selected code). Templates can have placeholders, which can be entered when applying a template. But these placeholders can also make use of the [wide range of macros](https://www.jetbrains.com/help/resharper/Template_Macros.html) to give suggestions, including the current user, date and time, expected types for generic arguments, or transformation of other macro values (identifier name from text).
 
 Another kind are [postfix templates](https://www.jetbrains.com/help/resharper/Postfix_Templates.html). These are typically written in a reverse order of thinking. For instance, instead of using the `foreach` live template and then defining the `numbers` collection as we go through the placeholders, with a postfix template we can write `numbers.foreach` and ReSharper will complete what we want with much less effort. A [full list of postfix templates](https://www.jetbrains.com/help/resharper/Postfix_Templates.html#list) is available from the options dialog. Postfix templates can't be defined in a simple way like live or surround templates (they require to use the ReSharper SDK), however, ReSharper also allows to define [source templates](https://www.jetbrains.com/help/resharper/Source_Templates.html) alongside our code. These can be used in a similar manner with just some smartness limitations.
 
-### See Also
+### 另请参阅
 
-- [Search Everywhere](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
-- [Coding assistance](https://www.jetbrains.com/help/resharper/Coding_Assistance__Index.html)
-- [Code Generation](https://www.jetbrains.com/help/resharper/Code_Generation__Index.html)
+- [随处搜索](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Go_to_Type.html)
+- [编码辅助](https://www.jetbrains.com/help/resharper/Coding_Assistance__Index.html)
+- [代码生成](https://www.jetbrains.com/help/resharper/Code_Generation__Index.html)
