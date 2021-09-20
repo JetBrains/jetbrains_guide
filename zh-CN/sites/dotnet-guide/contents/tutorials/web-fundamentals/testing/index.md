@@ -4,7 +4,7 @@ date: 2020-12-01
 title: Testing code
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - testing
@@ -32,7 +32,7 @@ Let’s re-run the test, but slightly differently this time. See the icon on the
 
 This report shows how many files were covered with tests, including the percentage of lines that were covered in those files. This information is also shown in the project tool window, as well as color-coding in the gutter of the file indicating coverage.
 
-### See Also
+### 另请参阅
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Testing](https://www.jetbrains.com/dotnet/guide/topics/testing/)
