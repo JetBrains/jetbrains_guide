@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
   - web
   - editing
 author: maartenba
