@@ -13,7 +13,7 @@ Let's say we want to query the database for all employees that have a space in t
 
 **Exercise**: Take a few minutes to write the code to find and print all employees with space in their last name.
 
-Done? Here is what that would look like:
+完成? Here is what that would look like:
 ```java
 @Bean
 public CommandLineRunner run(EmployeeRepository repository) {
