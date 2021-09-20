@@ -13,7 +13,7 @@ Now that we have our Employee entity, repository and database configuration, we 
 
 **Exercise**: Take a few minutes to see if you can create a `insertFourEmployees(EmployeeRepository repository)` method that inserts employees using the `save()` method.
 
-Done? Here is what your method would look like:
+完成? Here is what your method would look like:
 ```java
 private void insertFourEmployees(EmployeeRepository repository) {
     repository.save(new Employee("Dalia", "Abo Sheasha"));
