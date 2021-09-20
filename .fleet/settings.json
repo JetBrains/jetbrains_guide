@@ -1,0 +1,5 @@
+{
+  "launchTerminalOnOpen": true,
+  "git.autoFetch": true,
+  "git.fetchInterval": 5
+}
