@@ -1,5 +1,5 @@
 ---
-title: Testing
+title: 测试
 subtitle: Make sure code behaves as expected.
 accent: primary
 icon: fas fa-chart-bar
