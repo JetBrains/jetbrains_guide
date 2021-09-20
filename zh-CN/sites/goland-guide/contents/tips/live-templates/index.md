@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Live Templates
+title: 实时模板
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: Add your own completion items via code snippets
