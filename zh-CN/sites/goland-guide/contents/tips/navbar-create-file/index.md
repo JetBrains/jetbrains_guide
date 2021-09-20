@@ -12,7 +12,7 @@ seealso:
     title: 'Creating Files from Templates'
     href: 'https://www.jetbrains.com/help/go/creating-files-from-templates.html'
   - 
-    title: 'Navigation bar'
+    title: '导航栏'
     href: 'https://www.jetbrains.com/help/go/part-4-using-the-navigation-bar.html'
   - 
     title: 'Navigating Tips and Tricks'
