@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
 date: 2020-12-01
-title: Debugging code
+title: 正在调试模式
 technologies:
   - asp.net
-  - javascript
+  - javaScript
 topics:
   - web
   - debugging
@@ -42,7 +42,7 @@ Often you’re interested in one particular variable or expression as you step t
 
 Make sure to check the linked resources for more debugging tips and tricks - not only in HTML and JavaScript, but also in your C# code.
 
-### See Also
+### 另请参阅
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [.NET Guide - Debugging your code](https://www.jetbrains.com/dotnet/guide/topics/debugging/)
