@@ -17,7 +17,7 @@ There are lots of places that you can get additional information and resources t
 
 - [Help](https://www.jetbrains.com/help/idea/)
   - All the IntelliJ IDEA product documentation.
-- [Getting Started](https://www.jetbrains.com/idea/resources/)
+- [入門指南](https://www.jetbrains.com/idea/resources/)
   - Lots of useful resources and additional tutorials.
 - [Demos and Screencasts](https://www.youtube.com/intellijidea)
   - This is Our YouTube channel which includes screencasts, develop interviews and conference videos.
