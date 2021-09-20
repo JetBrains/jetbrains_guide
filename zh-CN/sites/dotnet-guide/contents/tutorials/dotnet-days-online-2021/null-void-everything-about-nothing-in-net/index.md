@@ -29,7 +29,7 @@ As a side effect, we will learn about the fundamental difference between nullabl
 
 Additionally, we will discover an alternative to null while still retaining the semantics of "nothing" - Spoiler: the null object pattern
 
-### Resources
+### 资源
 
 * [Slides and Try.NET notebook](https://github.com/Flash0ver/F0-Talks-NullVoid)
 
