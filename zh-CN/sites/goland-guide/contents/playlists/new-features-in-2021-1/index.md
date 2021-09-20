@@ -5,7 +5,7 @@ title: New Features in GoLand 2021.1
 technologies:
   - go
   - web
-  - containers
+  - 容器
   - kubernetes
 topics: [ ]
 author: dlsniper
