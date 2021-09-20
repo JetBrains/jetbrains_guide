@@ -1,5 +1,5 @@
 ---
-title: Web Development
+title: Web开发
 subtitle: Working with web technologies.
 accent: primary
 icon: fas fa-globe
