@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Go to/from a test
+title: 跳入测试/从测试跳出
 technologies:
   - go
 topics:
