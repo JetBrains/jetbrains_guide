@@ -1,5 +1,5 @@
 ---
-title: Completion
+title: 补全
 subtitle: Learning resources when using completion in ReSharper or Rider
 accent: primary
 icon: fas fa-clipboard-list
