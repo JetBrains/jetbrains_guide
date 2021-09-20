@@ -5,12 +5,12 @@ technologies:
   - go
 topics:
   - debugging
-  - completion
+  - 补全
 author: dlsniper
 subtitle: Select your code and execute it, in the right context.
 seealso:
   - 
-    title: Evaluating Expressions
+    title: 评估表达
     href: 'https://www.jetbrains.com/help/go/evaluating-expressions.html'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
