@@ -4,13 +4,13 @@ title: Complete Current Statement
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: Add trailing commas or braces and move the cursor with a single keystroke
 seealso:
   - 
-    title: Autocompleting code
+    title: 自动补全代码
     href: https://blog.jetbrains.com/go/2019/01/17/code-completion-in-goland/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
