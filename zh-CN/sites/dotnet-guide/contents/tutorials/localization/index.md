@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - web
-  - data
+  - 数据
   - editing
 products:
   - rider
