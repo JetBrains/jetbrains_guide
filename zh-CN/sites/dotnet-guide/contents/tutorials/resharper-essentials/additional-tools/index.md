@@ -23,7 +23,7 @@ longVideo:
 
 ReSharper comes with a number of architecture tools, including diagrams. There's a [project dependency diagram](https://www.jetbrains.com/help/resharper/Architecture__Project_Dependencies_Exploration.html), and a [type dependency diagram](https://www.jetbrains.com/help/resharper/Exploring_Type_Dependency_Graph.html).
 
-#### Project Dependency Diagram
+#### 项目依赖关系图
 
 The project dependency diagram lets you visualize project dependencies in your solution, and explore its architecture. They help to analyze project coupling in a solution. You can open it from the **ReSharper \| Architecture ** menu.
 
@@ -31,7 +31,7 @@ The toolbar on the left shows your solution, solution folders, and projects. You
 
 [Coupling analysis shows how a project dependency is used](https://www.jetbrains.com/help/resharper/Architecture__Project_Dependencies_Exploration.html#understanding-links-between-projects) - the thickness of the arrows on the diagram gives you information about how many usages there are. Using the context menu, you can show usages in a separate tool window and group them by type of usage.
 
-#### Type Dependency Diagram
+#### 类型依赖关系图
 
 The [type dependency diagram](https://www.jetbrains.com/help/resharper/Exploring_Type_Dependency_Graph.html) provides a way to investigate the inheritance hierarchy of types from your solution and from referenced libraries.
 
@@ -57,7 +57,7 @@ Build acceleration works based on several techniques:
 
 Some changes in a solution may need the entire project chain to be rebuilt, other changes may only require a couple of projects to be rebuilt. ReSharper Build orchestrates this process.
 
-### Run Configurations
+### 运行配置
 
 Visual Studio lets you run the current project, or define multiple startup projects. More complex solutions often have multiple projects that can be run, and switching between them is cumbersome.
 
@@ -77,7 +77,7 @@ When you hover an IL instruction, you can see what it does. For example, boxing 
 
 You can use profilers like dotMemory and dotTrace, or enable [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/resharper/Dynamic_Program_Analysis.html) in ReSharper to analyze at runtime.
 
-### Command Line Tools
+### 命令行工具
 
 ReSharper is not only a Visual Studio extension! It ships as a set of standalone [command line tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html) that can run outside Visual Studio, for example on your continuous integration server. They also exist as tools for the dotnet CLI.
 
@@ -86,13 +86,13 @@ These tools are available:
 * [dupFinder](https://www.jetbrains.com/help/resharper/dupFinder.html) will detect duplicated code in your solution or project, and gives hints about where you refactor code to make your code base more maintainable.
 * [CleanupCode](https://www.jetbrains.com/help/resharper/CleanupCode.html), which checks code style and reformats code based on your formatting settings. This command line tool helps you maintain a uniform, formatted code base.
 
-### See Also
+### 另请参阅
 
 - [Explore Type hierarchies in ReSharper](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Viewing_Type_Hierarchy.html)
 - [Localization Manager](https://www.jetbrains.com/help/resharper/Resources__LocalizationManager.html)
 - [Localizing applications with ReSharper](https://blog.jetbrains.com/dotnet/2019/12/09/localization-becomes-easier-localization-manager-resharper-2019-3/)
 - [ReSharper Build](https://www.jetbrains.com/help/resharper/Reference_Windows_ReSharper_Build.html)
-- [Run Configurations](https://www.jetbrains.com/help/resharper/Run_Configurations.html)
+- [运行配置](https://www.jetbrains.com/help/resharper/Run_Configurations.html)
 - [Exploring IL with ReSharper and dotPeek](https://blog.jetbrains.com/dotnet/2017/01/19/exploring-intermediate-language-il-with-resharper-and-dotpeek/)
 - [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/resharper/Dynamic_Program_Analysis.html)
 - [ReSharper Command Line Tools](https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html)
