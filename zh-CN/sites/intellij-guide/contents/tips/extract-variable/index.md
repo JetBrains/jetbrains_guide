@@ -1,10 +1,10 @@
 ---
 date: 2021-01-08
-title: Extract Variable
+title: 提取变量
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Extract code to a variable
 thumbnail: ./thumbnail.png
