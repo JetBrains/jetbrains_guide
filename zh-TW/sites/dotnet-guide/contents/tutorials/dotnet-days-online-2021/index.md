@@ -7,7 +7,7 @@ topics:
   - web
   - ide
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 author: maartenba
 subtitle: Session recordings of JetBrains .NET Days Online 2021.
