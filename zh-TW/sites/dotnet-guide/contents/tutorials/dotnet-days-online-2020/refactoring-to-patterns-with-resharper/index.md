@@ -5,7 +5,7 @@ title: Refactoring to Patterns with ReSharper
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
