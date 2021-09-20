@@ -4,7 +4,7 @@ title: Move Code
 technologies:
   - .net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - editing
