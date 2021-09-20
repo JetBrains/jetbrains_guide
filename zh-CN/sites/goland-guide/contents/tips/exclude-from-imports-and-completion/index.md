@@ -4,7 +4,7 @@ title: Exclude items from auto-imports and completion
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: Exclude certain paths from auto-import and completion
