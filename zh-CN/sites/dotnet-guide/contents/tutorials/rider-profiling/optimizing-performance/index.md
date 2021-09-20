@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - ide
-  - profiling
+  - 分析
 products:
   - rider
   - dottrace
@@ -43,11 +43,11 @@ This may mean the performance problem stems from high memory traffic. Each objec
 
 You can find garbage collection times and filters when profiling with Timeline mode, but using a memory profiler may be required. Another tool available in Rider is [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites). We will explore DPA in the next step.
 
-### See Also
+### 另请参阅
 
 - [Sudoku solver application](https://github.com/JetBrains/DPA-demo) on GitHub
 - [Performance Profiling in Rider](https://www.jetbrains.com/help/rider/Performance_Profiling.html)
 - [Analyze Profiling results](https://www.jetbrains.com/help/rider/Analyzing_Profiling_Snapshots.html)
-- [Inline Method refactoring](https://www.jetbrains.com/help/rider/Refactorings__Inline_Method.html)
+- [内联方法重构](https://www.jetbrains.com/help/rider/Refactorings__Inline_Method.html)
 - [Heap Allocations Viewer plugin](https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer)
 - [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html#prerequisites)
