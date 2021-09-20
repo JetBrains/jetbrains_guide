@@ -1,5 +1,5 @@
 ---
-title: Markup
+title: 标记
 subtitle: Languages such as markdown and asciidoc
 logo: markdown.png
 website: https://developer.mozilla.org/en-US/docs/Web/HTML
