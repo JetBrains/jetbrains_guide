@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Call Hierarchy
+title: 调用层次结构
 technologies:
   - go
 topics:
@@ -24,7 +24,7 @@ leadin: |
 
   This works for interface methods, type methods, methods, and calls.
 
-  You can then drill down into the call chain to see where those other functions are called.
+  随后，您可以在调用链向下挖掘，查看在哪里调用了其他函数。
 
   _Speed Typing_ is available to help you quickly navigate to the element you need.
 
