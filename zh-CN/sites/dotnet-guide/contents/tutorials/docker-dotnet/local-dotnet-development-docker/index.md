@@ -4,12 +4,12 @@ date: 2021-04-26
 title: Local .NET Development With Docker
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
 author: khalidabuhakmeh
 subtitle: Learn how to work with Docker and JetBrains Rider in our development environment.
 thumbnail: ./thumbnail.png
@@ -90,7 +90,7 @@ COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "HelloDocker.dll"]
 ```
 
-Great! Now, let's run this application inside a container. We'll go through two ways: Docker CLI and using JetBrains Rider's Docker integration.
+太棒了！ Now, let's run this application inside a container. We'll go through two ways: Docker CLI and using JetBrains Rider's Docker integration.
 
 Having stepped through the `Dockerfile`, a common question newcomers to Docker might ask is:
 
@@ -179,7 +179,7 @@ We'll talk more about the **Services** tool window in the following sections of 
 
 There we have it! We've created an image from our `Dockerfile` definition using the Docker CLI and JetBrains Rider's docker integration. Developers should be familiar with the CLI, but there's no beating the convenience of clicking a few buttons.
 
-### See Also
+### 另请参阅
 
 - [Docker Docs](https://docs.docker.com/)
 - [.NET](https://dot.net)
