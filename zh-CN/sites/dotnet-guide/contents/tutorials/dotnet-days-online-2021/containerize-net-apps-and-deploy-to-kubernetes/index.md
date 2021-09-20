@@ -4,7 +4,7 @@ date: 2021-05-12
 title: Containerize .NET Apps and deploy to Kubernetes
 technologies:
   - .net
-  - containers
+  - 容器
 products:
   - rider
   - resharper
