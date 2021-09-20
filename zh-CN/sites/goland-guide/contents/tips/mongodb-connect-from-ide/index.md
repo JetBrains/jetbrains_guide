@@ -2,7 +2,7 @@
 date: 2021-07-29
 title: 'Connect from the IDE to a MongoDB database'
 technologies:
-  - databases
+  - 数据库
 topics:
   - mongodb
 author: dlsniper
