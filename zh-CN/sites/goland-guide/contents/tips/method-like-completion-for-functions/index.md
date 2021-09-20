@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Method-like completion for functions
+title: 函数的方法式补全
 technologies:
   - go
 topics:
-  - completion
+  - 补全
 author: dlsniper
 subtitle: Completion for searching for functions that accept parameters of a certain type.
 thumbnail: ./thumbnail.png
