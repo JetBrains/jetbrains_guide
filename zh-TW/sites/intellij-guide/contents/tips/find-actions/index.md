@@ -4,7 +4,7 @@ title: Find Actions
 technologies:
   - java
 topics:
-  - navigation
+  - 導覽
   - interface
 author: hs
 subtitle: Use Find Actions to modify your IntelliJ IDEA interface.
