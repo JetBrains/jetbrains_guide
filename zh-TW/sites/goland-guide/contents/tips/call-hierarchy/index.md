@@ -4,7 +4,7 @@ title: Call Hierarchy
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Analyze call trees for functions or methods
 thumbnail: ./thumbnail.png
