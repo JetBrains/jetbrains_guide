@@ -4,7 +4,7 @@ title: Completion with the Tab key
 technologies:
   - go
 topics:
-  - completion
+  - 补全
   - editing
 author: dlsniper
 subtitle: A small, but handy feature that makes it a little easier to complete symbol names.
