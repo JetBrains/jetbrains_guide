@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Adding dependencies
+title: 添加依赖项
 technologies:
   - maven
 topics: [ ]
