@@ -32,7 +32,7 @@ Everything is a filter! If you want to update packages with a specific prefix, s
 
 In Rider, you can verify the size of all NuGet caches, and when needed, clear them. It's also possible to specify where downloaded packages should be stored on disk.
 
-### See Also
+### 另请参阅
 
 - [Using NuGet in Rider](https://www.jetbrains.com/help/rider/Using_NuGet.html)
 - [NuGet Tool Window Reference](https://www.jetbrains.com/help/rider/Reference_Windows_NuGet.html)
