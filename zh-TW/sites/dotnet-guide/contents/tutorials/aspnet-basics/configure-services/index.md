@@ -5,7 +5,7 @@ title: Dependency Injection and ConfigureServices
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - web
