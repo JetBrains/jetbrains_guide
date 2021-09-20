@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-29
-title: Plugins
+title: 插件
 technologies:
   - .net
   - csharp
