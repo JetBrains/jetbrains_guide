@@ -51,7 +51,7 @@ So we could add a new `testImplementation` dependency by starting to type the de
 ### Top Tip
 If you find you're not getting code completion for your libraries, or the results you expect in your Maven artifact search, there's a trick to help with that. Open the [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html), go to [Build, Execution, Deployment | Build Tools | Maven | Repositories](https://www.jetbrains.com/help/idea/maven-repositories.html).
 
-![Indexed Maven Repositories](./repositories.png)
+![已编制索引的 Maven 仓库](./repositories.png)
 
 You'll see IntelliJ IDEA has a list of indexed repositories, and the date it was last indexed. Selecting one, or all, of these and pressing "Update" usually helps IntelliJ IDEA to give good suggestions for artifacts.
 
