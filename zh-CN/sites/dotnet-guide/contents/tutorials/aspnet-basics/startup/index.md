@@ -28,7 +28,7 @@ Finally, we have the Configure method, which takes two parameters: `IApplication
 
 As ASP.NET developers, we'll often come back to this file as our application needs evolve.
 
-### See Also
+### 另请参阅
 
 - [Microsoft Docs Startup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-3.1)
 - [JetBrains Rider](https://jetbrains.com/rider)
