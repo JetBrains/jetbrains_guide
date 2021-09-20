@@ -2,7 +2,7 @@
 date: 2021-07-01
 title: Paste a clipboard image file into markdown
 technologies:
-  - markup
+  - 标记
 topics:
   - editing
 author: hs
