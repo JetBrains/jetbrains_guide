@@ -4,7 +4,7 @@ title: Inline Variable
 technologies:
   - java
 topics:
-  - refactoring
+  - 重构
 author: hs
 subtitle: Inline a variable in your code
 thumbnail: ./thumbnail.png
