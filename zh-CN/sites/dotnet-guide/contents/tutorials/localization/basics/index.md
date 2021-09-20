@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - data
+  - 数据
   - editing
   - inspections
 author: khalidabuhakmeh
@@ -121,7 +121,7 @@ We'll also notice that we now have a new resource file named `Program.de.resx` i
 
 ![Add German culture](6-german-culture.png)
 
-Great! We're so close to the end. Let's start changing the culture in our `Program`. Our generated interface has a `Culture` static property that we'll set using a new `CultureInfo` instance with a value of **"de"**.
+太棒了！ We're so close to the end. Let's start changing the culture in our `Program`. Our generated interface has a `Culture` static property that we'll set using a new `CultureInfo` instance with a value of **"de"**.
 
 ```c#
 using System;
@@ -148,6 +148,6 @@ Hallo Welt
 
 We did it! We've localized our console application for our German friends.
 
-## Conclusion
+## 结论
 
 Localization has some essential mechanical parts in .NET, from `CultureInfo`, resource files, and `ResourceManager`. Rider's localization manager can make the process of managing multiple cultures more straightforward. Ultimately, the process of localizing a client application for a single user scenario is the easiest to grasp. Many of the steps necessary for localizing are tedious, but with great tooling, a systematic approach, and a few translators, any application is ready to be localized.
