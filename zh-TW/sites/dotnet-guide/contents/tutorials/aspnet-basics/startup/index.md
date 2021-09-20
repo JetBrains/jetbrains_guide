@@ -5,7 +5,7 @@ title: Startup Class Walkthrough
 technologies:
   - asp.net
 products:
-  - rider
+  - tRANSLATED Rider
   - resharper
 topics:
   - ide
