@@ -14,8 +14,7 @@ thumbnail: ./thumbnail.png
 
 Intention Actions is one of those shortcuts in IntelliJ IDEA that works in a number of places, even if IntelliJ IDEA has not specifically highlighted the code.  
 
-In this code snippet, let's say you want your `for` loop to have curly braces. You can highlight it and then press
-:
+In this code snippet, let's say you want your `for` loop to have curly braces. You can highlight it and then press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux).
 
 ![Adjust Code Style Menu](adjust-code-style-menu.png)
 
@@ -30,4 +29,4 @@ You get a live preview of what your code will look like if you press **Save**. W
 If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous formatting and without the curly braces on our `for` loop.
 
 ## Reformatting Code Settings
-You might want to configure the code style for your project. We'll take a look at the settings to achieve that in the next step of this tutorial. 
+When you use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) you apply the current reformatting settings that are configured in your code style. We'll take a look at those settings to achieve that in the next step of this tutorial. 
