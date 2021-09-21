@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-24-08
-title: Summary and Shortcuts
+title: Summary and shortcuts
 technologies: []
 topics: []
 author: hs
@@ -12,10 +12,12 @@ longVideo:
   url:  https://youtu.be/tlEkrWU0d1M?start=422
 ---
 
+## Summary
 [IntelliJ IDEA’s terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html) is a powerful and helpful tool for developers. It keeps our attention in the same tools which reduces context switching. It makes it easy for us to share things between the editor and the command line. The terminal is integrated allowing us to easily move from the project code to the terminal and back again, and it also can show us alternative ways of doing the same thing, using the IDE’s version of the command line tool.
 
 ![Different Java Home](different-java-home.png)
 
+You may also find these links useful:
 - [Run IDEA Features From the Terminal](https://blog.jetbrains.com/idea/2020/07/run-ide-features-from-the-terminal/)
 - [Terminal Help Documentation](https://www.jetbrains.com/help/idea/terminal-emulator.html/)
 

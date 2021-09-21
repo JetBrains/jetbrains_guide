@@ -1,17 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-24-08
-title: Opening the IntelliJ IDEA Terminal Window
+title: Opening the IntelliJ IDEA Terminal window
 technologies: []
 topics: []
 author: hs
-subtitle: We can package the application into a Java ARchive file (JAR).
+subtitle: Opening a terminal window in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/tlEkrWU0d1M?start=20
 
 ---
+## Opening a Terminal Window
 In this example we have a simple Spring Boot application that needs a running [MongoDB](https://www.mongodb.com/) database. We can [open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) with **⌥F12** on macOS, or **Alt+F12** on Windows and Linux. The terminal supports all the same commands that the operating system supports.
 
 If we want to start the MongoDB database instance with a [specific path for storing the data](https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#specify-a-data-directory), we can type:
