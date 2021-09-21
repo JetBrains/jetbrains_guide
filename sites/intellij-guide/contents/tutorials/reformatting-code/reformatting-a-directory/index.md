@@ -17,6 +17,5 @@ Alternatively, you can [reformat a specific directory](https://www.jetbrains.com
 
 Alternatively, you can select the directory and use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to display the same dialog. 
 
-## A Worked Example for Reformat Code
-So now you know _when_ and _how_ to invoke reformat code. Let's take a look at a worked example in the next step of this tutorial.
-
+## EditorConfig
+IntelliJ IDEA also supports [EditorConfig files](https://editorconfig.org/). In the next step of this tutorial we will take a look at why they're useful and how to use them.

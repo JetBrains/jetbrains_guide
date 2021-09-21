@@ -40,5 +40,6 @@ You can preview how changes in your `.editorconfig` file will impact your code b
 
 When you select your file, any changes you make in the `.editorconfig` file will be reflected in the preview. The changes won't be saved and applied in this view. If your preview window doesn't appear, ensure you have selected the _Editor and Preview_ icon in the top-right hand corner. 
 
-## Invoking Reformat Code
-Now you've defined what your code formatting settings are, you need to consider how and when to invoke them. We'll take a look at this in the next step of this tutorial.
+
+## A Worked Example for Reformat Code
+Finally, let's take a look at a worked example in the next step of this tutorial.

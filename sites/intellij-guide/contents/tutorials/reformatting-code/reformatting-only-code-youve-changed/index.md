@@ -11,8 +11,6 @@ thumbnail: ./thumbnail.png
 ---
 
 ### Reformatting Only Code You Have Changed
-We recommend that you keep commits separate so that you have one commit for reformatting code and one or more where you have changed code. This helps to make the file history more readable.
-
 As we talked about in the previous step, you can use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code or the whole class according to your reformatting settings. You can also invoke it at a class level with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog and then type in _Reformat Code_:
 
 ![Reformat Code from Find Actions](reformat-code-find-actions.png)
@@ -27,5 +25,7 @@ In this instance, you can use **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (W
 
 In this dialog, select **Only changes uncommitted to VCS**. When you press **Run**, IntelliJ IDEA will reformat the lines in the file that you've changed and nothing else.
 
+We recommend that you keep commits separate so that you have one commit for reformatting code and one or more where you have changed code. This helps to make the file history more readable.
+
 ## Reformatting with Intention Actions
-Let's keep working at the class level, and take a look at how you can reformat code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.
+Let's take a look at how you can reformat code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.

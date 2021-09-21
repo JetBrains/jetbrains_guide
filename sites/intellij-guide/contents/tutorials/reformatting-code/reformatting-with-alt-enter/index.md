@@ -29,4 +29,4 @@ You get a live preview of what your code will look like if you press **Save**. W
 If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous formatting and without the curly braces on our `for` loop.
 
 ## Reformatting Code Settings
-When you use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) you apply the current reformatting settings that are configured in your code style. We'll take a look at those settings to achieve that in the next step of this tutorial. 
+When you use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) you apply the current reformatting settings that are configured in your code style. We'll take a look at those settings in the next step of this tutorial. 
