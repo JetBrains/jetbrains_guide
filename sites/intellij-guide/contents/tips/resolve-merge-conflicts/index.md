@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/tGxG3KZkRQI  
+  url: https://youtu.be/GvAUA-jD9d0 
 seealso:
   - title: IntelliJ IDEA Help - Resolving Merge Conflicts
     href: https://www.jetbrains.com/help/idea/resolving-conflicts.html
