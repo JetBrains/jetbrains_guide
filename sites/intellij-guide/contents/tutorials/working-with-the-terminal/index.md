@@ -1,5 +1,5 @@
 ---
-date: 2021-08-24
+date: 2021-24-08
 title: Using the Terminal in IntelliJ IDEA
 technologies: [java]
 topics: [testing]

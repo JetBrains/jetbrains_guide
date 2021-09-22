@@ -5,7 +5,7 @@ title: Opening the IntelliJ IDEA Terminal window
 technologies: []
 topics: []
 author: hs
-subtitle: Opening a terminal window in IntelliJ IDEA
+subtitle: How to open a new terminal window with keyboard shortcuts
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

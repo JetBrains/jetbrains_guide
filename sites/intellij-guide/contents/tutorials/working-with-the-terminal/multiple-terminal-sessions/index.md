@@ -21,7 +21,7 @@ Then we can interact with the server that’s running, and check everything is O
 
 ![Multiple MongoDB Shell](mulitple-mongo-shell.png)
 
-Running commands in different tabs is helpful, but sometimes two different processes are closely related and we want to see them together. For this, we can [split](https://www.jetbrains.com/help/idea/using-code-editor.html#split_screen) our terminal window so that we can run two in the same window. For example, you can open up the mongo shell in this split window and can see if the commands have any impact on the running server.
+Running commands in different tabs is helpful, but sometimes two different processes are closely related and we want to see them together. For this, we can [split](https://www.jetbrains.com/help/idea/using-code-editor.html#split_screen) our terminal window by right-clicking on it and selecting one of the options so that we can run two in the same window. For example, you can open up the mongo shell in this split window and can see if the commands have any impact on the running server.
 
 ![Split Terminal View](split-terminal-view.png)
 

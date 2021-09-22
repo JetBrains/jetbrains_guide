@@ -9,7 +9,7 @@ subtitle: Everything we covered in this tutorial including help links and shortc
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url:  https://youtu.be/tlEkrWU0d1M?start=422
+  url:  https://youtu.be/tlEkrWU0d1M?start=423
 ---
 
 ## Summary
@@ -33,5 +33,4 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 |[Move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)|**⌘⇧** or **⌘⇧** |**Alt+←** or **Alt+→** |
 |Switch between splits|**⌥⇥** |**Ctrl+Tab**|
 |Close splits|**⌘W** | **Ctrl+F4**|
-|[Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)|**⌘W** | **Ctrl+F4**|
- with **⌥F12** on macOS, or **Alt+F12**
+|[Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)|**⌥F12**| **Alt+F12**|

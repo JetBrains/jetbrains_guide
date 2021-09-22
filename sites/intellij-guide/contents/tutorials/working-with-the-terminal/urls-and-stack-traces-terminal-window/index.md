@@ -9,7 +9,7 @@ subtitle: File names link back to the project and you can click on URLs in the t
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url:  https://youtu.be/tlEkrWU0d1M?start=286
+  url:  https://youtu.be/tlEkrWU0d1M?start=299
 
 ---
 ## Opening URLs in your Terminal Window
