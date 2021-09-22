@@ -42,4 +42,4 @@ When you select your file, any changes you make in the `.editorconfig` file will
 
 
 ## A Worked Example for Reformat Code
-Finally, let's take a look at a worked example in the next step of this tutorial.
+Let's take a look at a worked example in the next step of this tutorial.

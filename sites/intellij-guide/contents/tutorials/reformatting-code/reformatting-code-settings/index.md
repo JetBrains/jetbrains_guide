@@ -25,7 +25,5 @@ If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' s
 
 ![For Loop - Setting for Braces Always](for-statement-braces-setting.png)
 
-We have a separate tutorial on rearranging your code which is included in the Code Style, so you can check that out if it interests you in the [tutorials section](https://www.jetbrains.com/idea/guide/tutorials/).
-
 ## Reformatting before you commit
 Often you will want to apply your reformatting settings before you commit your code (whether that's the whole class or just code that you've changed). We'll look at how to do this in the next step of the tutorial. 
