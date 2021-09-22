@@ -14,7 +14,7 @@ Let's take a look at an example with the following [code arrangement](https://ww
 
 ![Code rules arrangement](default-arrangement.png)
 
-Note that this is not the default arrangement, although it's very similar. There's a specific rule here that puts `private` methods at the bottom of the class which can be very useful. 
+Note that this is not the default arrangement, although it's very similar. There's a specific rule here that puts `private` methods at the bottom of the class which can be very useful. You can see this in rule 24.
 
 Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
 
