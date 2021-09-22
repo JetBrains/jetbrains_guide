@@ -29,6 +29,6 @@
     "intellij:clean": "yarn workspace intellij-guide clean"
   },
   "dependencies": {
-    "yarn": "^1.22.10"
+    "yarn": "^1.22.11"
   }
 }
