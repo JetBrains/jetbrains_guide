@@ -23,7 +23,7 @@ Some settings in an `.editoconfig` file are IntelliJ IDEA specific, these are pr
 ### Adding an EditorConfig File
 Let's take a look at [adding a `.editorconfig` file](https://www.jetbrains.com/help/idea/configuring-code-style.html#66e1c5ae) to your project
 
-The easiest way to do this is by using **⌘1** (macOS), or **Alt+1** (Windows/Linux) to display the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) to get the **New** dialog. Type in _editor_ and the results will be filtered to the `.editorconfig` files. 
+The easiest way to do this is by using **⌘1** (macOS), or **Alt+1** (Windows/Linux) to display the Project Window and then use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux), in the correct directory. This opens the **New** dialog. Type in _editor_ and the results will be filtered to the `.editorconfig` files. 
 
 ![New EditorConfig File](new-editor-config.png)
 

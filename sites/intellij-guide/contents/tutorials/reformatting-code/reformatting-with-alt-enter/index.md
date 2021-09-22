@@ -24,9 +24,9 @@ You can go to the **Wrapping and Braces** tab and change **Force Braces** to _Al
 
 ![Force Braces for our For Loop](force-braces.png)
 
-You get a live preview of what your code will look like if you press **Save**. When we save these changes, they are saved to your current [code style scheme](https://www.jetbrains.com/help/idea/configuring-code-style.html).
+You get a live preview of what your code will look like if you press **Save**. When you save these changes, they are saved to your current [code style scheme](https://www.jetbrains.com/help/idea/configuring-code-style.html).
 
-If you don't like the changes and press **Escape** or **Cancel** to leave the dialog without saving, the code will revert to its previous formatting and without the curly braces on our `for` loop.
+If you don't like the changes, press **Escape** or **Cancel** to leave the dialog without saving. The code will revert to its previous formatting and without the curly braces on our `for` loop.
 
 ## Reformatting Code Settings
 When you use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) you apply the current reformatting settings that are configured in your code style. We'll take a look at those settings in the next step of this tutorial. 
