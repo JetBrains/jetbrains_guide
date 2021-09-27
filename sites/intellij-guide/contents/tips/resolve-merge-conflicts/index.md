@@ -2,8 +2,8 @@
 hasBody: true
 date: 2021-09-24
 title: Resolve Merge Conflicts in VCS
-technologies: [java]
-topics: [settings, vcs, editing]
+technologies: [git]
+topics: [vcs, editing]
 author: vb
 subtitle: Use VCS options in IntelliJ IDEA to resolve merge conflicts visually in the editor
 thumbnail: ./thumbnail.png
