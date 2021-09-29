@@ -11,13 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Reformatting Before Commit  
-If you always want to reformat code in this Project before you commit it, you can do this in one of two ways. You can either use **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings and then search for _on commit_. The option you want is **Version Control > Commit** and then the **Before Commit** panel.
-
-Select the **Reformat Code** checkbox and press **OK** to always reformat your files prior to commit according to your settings. This will apply to all your languages. 
-
-![Rearrange Code Before Commit](before-commit-reformat-code.png)
-
-Alternatively, you can use the cog in the Commit Tool Window which is invoked with **⌘0** (macOS), or **Ctrl+0** (Windows/Linux):
+If you always want to reformat code in this Project before you commit it, you can do this with the cog in the Commit Tool Window which is invoked with **⌘0** (macOS), or **Ctrl+0** (Windows/Linux):
 
 ![Cog in the Commit Tool Window](amend-cog.png)
 

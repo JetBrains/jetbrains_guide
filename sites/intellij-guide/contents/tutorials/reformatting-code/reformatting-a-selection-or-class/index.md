@@ -9,7 +9,7 @@ subtitle: Use keyboard shortcuts to quickly reformat some code in your project
 thumbnail: ./thumbnail.png
 ---
 
-## Reformatting at the Class Level
+## Reformatting at the File Level
 Let's start with the basics for reformatting. While IntelliJ IDEA will do its best to place your caret in the right place, sometimes code can get out of alignment. There's a quick way to fix this code up. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings. 
 
 Let's press **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) in the class that contains this horribly formatted code:

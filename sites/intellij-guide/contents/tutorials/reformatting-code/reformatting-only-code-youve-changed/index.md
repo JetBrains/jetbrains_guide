@@ -25,7 +25,5 @@ In this instance, you can use **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (W
 
 In this dialog, select **Only changes uncommitted to VCS**. When you press **Run**, IntelliJ IDEA will reformat the lines in the file that you've changed and nothing else.
 
-We recommend that you keep commits separate so that you have one commit for reformatting code and one or more where you have changed code. This helps to make the file history more readable.
-
 ## Reformatting with Intention Actions
 Let's take a look at how you can reformat code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.
