@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-24-08
+date: 2021-08-30
 title: Opening URLs from your terminal window 
 technologies: []
 topics: []
