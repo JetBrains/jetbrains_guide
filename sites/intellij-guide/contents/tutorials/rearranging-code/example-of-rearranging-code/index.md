@@ -15,7 +15,6 @@ Let's modify the code arrangement settings for this example. Specifically we wan
 ### Modifying the Existing Rule Arrangement 
 You can change your rule arrangement preferences with **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab. 
 
-
 ### Arrangement Settings/Preferences
 To change your code arrangement settings, use **⌘,** (macOS), **Ctrl+Shift+S** (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
 
@@ -30,7 +29,7 @@ IntelliJ IDEA allows you to group these three code elements:
 
 **Override methods** is similar to Getters and Setters in that it will group your Override methods together in your class. You also have the option to order them by the order they are defined in the super class or interface, or to order them by name. For our example let's select this checkbox. 
 
-**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a user-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
+**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a use-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
 
 #### Matching Rules
 This is where you can define how you'd like your classes to be ordered when you invoke rearrange code. You can select any line and move it up or down as required with the arrows in the top-right. You can also click the pencil icon to the right of each row to alter the rule and select a finer level of granularity.
