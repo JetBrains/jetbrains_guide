@@ -22,8 +22,8 @@ export class Counter extends Component<CounterProps, CounterState> {
     const { label = "Count" } = this.props;
     return (
       <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter">
+        <span title="Count Label">{label}</span>
+        <span id="counter" title="Current Count">
           {this.state.count}
         </span>
       </div>
