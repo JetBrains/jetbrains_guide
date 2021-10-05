@@ -1,10 +1,10 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App, { label } from "./App";
 
 test("renders hello react", () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/hello react/i);
+  render(<App />);
+  const linkElement = screen.getByText(/hello react/i);
   expect(linkElement).toBeInTheDocument();
 });
 
