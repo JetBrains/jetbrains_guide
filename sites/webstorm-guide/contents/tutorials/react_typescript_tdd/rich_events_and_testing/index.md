@@ -43,10 +43,10 @@ import { render, fireEvent } from "@testing-library/react";
 // ...
 
 test("should increment the count by one", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
-  fireEvent.click(counter)
+  fireEvent.click(counter);
   expect(counter).toHaveTextContent("1");
 });
 ```
@@ -71,9 +71,9 @@ Let's head to `Counter.tsx` and add a click handler on the `<span>`:
 
 ```typescript
 <span
-  id="counter"
-  role="counter"
-  onClick={() => this.setState({ count: this.state.count + 1 })}
+    id="counter"
+    title="Current Count"
+    onClick={() => this.setState({ count: this.state.count + 1 })}
 >
   {this.state.count}
 </span>
@@ -86,21 +86,25 @@ Also, inline arrow functions inside the `render` can have a performance impact.
 Let's move it out into a class method, which also makes that behavior easier to test in isolation:
 
 ```typescript
-  incrementCounter = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+incrementCounter = () => {
+  this.setState({ count: this.state.count + 1 });
+};
 
-  render() {
-    const { label = "Count" } = this.props;
-    return (
-      <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter" onClick={this.incrementCounter}>
-          {this.state.count}
-        </span>
-      </div>
-    );
-  }
+render() {
+  const { label = "Count" } = this.props;
+  return (
+    <div>
+      <span title="Count Label">{label}</span>
+      <span
+        id="counter"
+        title="Current Count"
+        onClick={this.incrementCounter}
+      >
+        {this.state.count}
+      </span>
+    </div>
+  );
+}
 ```
 
 The above was a bit of a lie: this isn't strictly a class *method*.
@@ -205,8 +209,8 @@ Clone the last test and change it to the following:
 
 ```typescript
 test("should increment the count by ten", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
   userEvent.click(counter, { shiftKey: true });
   expect(counter).toHaveTextContent("10");
