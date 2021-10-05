@@ -3,27 +3,27 @@ import { render } from "@testing-library/react";
 import { Counter } from "./Counter";
 
 test("should render a label and counter", () => {
-  const { getByLabelText, getByRole } = render(<Counter />);
-  const label = getByLabelText("Count");
+  const { getByTitle } = render(<Counter />);
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
-  const counter = getByRole("counter");
-  expect(counter).toBeInTheDocument();
+  const count = getByTitle("Current Count");
+  expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
-  const { getByLabelText } = render(<Counter label={`Current`} />);
-  const label = getByLabelText("Current");
+  const { getByTitle } = render(<Counter label={`Current`} />);
+  const label = getByTitle("Current Count");
   expect(label).toBeInTheDocument();
 });
 
 test("should start at zero", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
 });
 
 test("should start at another value", () => {
-  const { getByRole } = render(<Counter start={10} />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter start={10} />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("10");
 });

@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Class Components With Props
 technologies: [react, typescript]
 topics: []
@@ -39,13 +39,14 @@ Make a new file called `Counter.test.tsx` with this test, to ensure we have a la
 ```typescript
 import React from "react";
 import { render } from "@testing-library/react";
+import { Counter } from "./Counter";
 
 test("should render a label and counter", () => {
-  const { getByLabelText, getByRole } = render(<Counter />);
-  const label = getByLabelText("Count");
+  const { getByTitle } = render(<Counter />);
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
-  const counter = getByRole("counter");
-  expect(counter).toBeInTheDocument();
+  const count = getByTitle("Current Count");
+  expect(count).toBeInTheDocument();
 });
 ```
 
@@ -61,8 +62,8 @@ export class Counter extends Component {
   render() {
     return (
       <div>
-        <label htmlFor="counter">Count</label>
-        <span id="counter" role="counter">
+        <span title="Count Label">Count</span>
+        <span id="counter" title="Current Count">
           1
         </span>
       </div>
@@ -70,8 +71,6 @@ export class Counter extends Component {
   }
 }
 ```
-
-Note that `for` in JSX is mapped to `htmlFor` -- like `class` to `className`, to prevent a collision with the JavaScript symbol of the same name.
 
 Back in our test, click on `<Counter/>` and hit `Alt-Enter` to resolve the import. 
 Save the file and see that your test passes:
@@ -94,8 +93,8 @@ Thus, let's add a test for the case of passing in a label:
 
 ```typescript
 test("should render a counter with custom label", () => {
-  const { getByLabelText } = render(<Counter label={`Current`} />);
-  const label = getByLabelText("Current");
+  const { getByTitle } = render(<Counter label={`Current`} />);
+  const label = getByTitle("Current Count");
   expect(label).toBeInTheDocument();
 });
 ```
@@ -134,8 +133,8 @@ export class Counter extends Component<CounterProps> {
     const { label = "Count" } = this.props;
     return (
       <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter">
+        <span title="Count Label">{label}</span>
+        <span id="counter" title="Current Count">
           1
         </span>
       </div>
@@ -176,10 +175,10 @@ Let's change the `renders hello react` test in `App.test.tsx` to look for the la
 
 ```typescript
 test("renders hello react", () => {
-  const { getByLabelText, getByText } = render(<App />);
+  const { getByTitle, getByText } = render(<App />);
   const linkElement = getByText(/hello react/i);
   expect(linkElement).toBeInTheDocument();
-  const label = getByLabelText("Current");
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
 });
 ```

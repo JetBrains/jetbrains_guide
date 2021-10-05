@@ -27,8 +27,12 @@ export class Counter extends Component<CounterProps, CounterState> {
     const { label = "Count" } = this.props;
     return (
       <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter" onClick={this.incrementCounter}>
+        <span title="Count Label">{label}</span>
+        <span
+          id="counter"
+          title="Current Count"
+          onClick={this.incrementCounter}
+        >
           {this.state.count}
         </span>
       </div>

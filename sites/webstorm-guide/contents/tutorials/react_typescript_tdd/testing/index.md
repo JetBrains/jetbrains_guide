@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Testing
 technologies: [react, jest]
 topics: []
@@ -114,7 +114,7 @@ JavaScript development is usually a bunch of switching between the editor, the b
 Let's stay *in the IDE* to focus on our code, and observe our code through tests instead of a browser reload.
 
 First, let's get our code and our tests side-by-side.
-Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Vertically`.
+Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Right`.
 This gives us a left and right side editor without needing tabs. 
 On the left, open `App.tsx` and keep `App.test.tsx` on the right. 
 We can now see `function App` alongside our tests. 
