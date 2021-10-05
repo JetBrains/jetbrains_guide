@@ -53,8 +53,8 @@ export const Counter = ({ label = "Count", count }: CounterProps) => {
       className="counter"
       // onClick={handleClick}
     >
-      <label htmlFor="counter">{label}</label>
-      <span id="counter" role="counter">
+      <span title="Count Label">{label}</span>
+      <span id="counter" title="Current Count">
         {count}
       </span>
     </div>
@@ -69,23 +69,23 @@ Let's fix the first two tests in `Counter.test.tsx`, to see if we are in the bal
 
 ```typescript {2,10}
 test("should render a label and counter", () => {
-  const { getByLabelText, getByRole } = render(<Counter count={0} />);
-  const label = getByLabelText("Count");
+  const { getByTitle } = render(<Counter count={0} />);
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
-  const counter = getByRole("counter");
-  expect(counter).toBeInTheDocument();
+  const count = getByTitle("Current Count");
+  expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
-  const { getByLabelText } = render(<Counter label={`Current`} count={0} />);
-  const label = getByLabelText("Current");
+  const { getByTitle } = render(<Counter label={`Current`} count={0} />);
+  const label = getByTitle("Current Count");
   expect(label).toBeInTheDocument();
 });
 ```
 
 These two tests now pass.
 
-Since the `<Counter/>` component will longer control the starting value, you can remove the `should default start at zero` and `should start at another value` tests from `Counter.test.tsx`.
+Since the `<Counter/>` component will longer control the starting value, you can remove the `should start at zero` and `should start at another value` tests from `Counter.test.tsx`.
 
 ## Passing In Click Function
 
@@ -113,22 +113,19 @@ Now *that's* a type definition, baby. It captures quite a bit of the contract.
 
 Next, use ES6 object destructuring to "unpack" that from the props into the local scope, then refer to that prop in the `onClick` handler:
 
-```typescript {4,9}
+```typescript
 export const Counter = ({
-                          label = 'Count',
-                          count,
-                          onCounterIncrease,
-                        }: CounterProps) => {
+  label = "Count",
+  count,
+  onCounterIncrease,
+}: CounterProps) => {
   return (
-      <div
-          className="counter"
-          onClick={onCounterIncrease}
-      >
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter">
+    <div className="counter" onClick={onCounterIncrease}>
+      <span title="Count Label">{label}</span>
+      <span id="counter" title="Current Count">
         {count}
       </span>
-      </div>
+    </div>
   );
 };
 ```
@@ -143,7 +140,7 @@ For example, in the first test:
 
 ```typescript
   const handler = jest.fn();
-  const { getByLabelText, getByRole } = render(
+  const { getByTitle } = render(
     <Counter count={0} onCounterIncrease={handler} />
   );
 ```
@@ -156,21 +153,21 @@ Do this for both tests:
 ```typescript {2,4,13,15}
 test("should render a label and counter", () => {
   const handler = jest.fn();
-  const { getByLabelText, getByRole } = render(
+  const { getByTitle } = render(
     <Counter count={0} onCounterIncrease={handler} />
   );
-  const label = getByLabelText("Count");
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
-  const counter = getByRole("counter");
-  expect(counter).toBeInTheDocument();
+  const count = getByTitle("Current Count");
+  expect(count).toBeInTheDocument();
 });
 
 test("should render a counter with custom label", () => {
   const handler = jest.fn();
-  const { getByLabelText } = render(
+  const { getByTitle } = render(
     <Counter label={`Current`} count={0} onCounterIncrease={handler} />
   );
-  const label = getByLabelText("Current");
+  const label = getByTitle("Current Count");
   expect(label).toBeInTheDocument();
 });
 ```
@@ -185,10 +182,10 @@ Let's change the third test and *delete* the last test:
 ```typescript
 test("should call the incrementer function", () => {
   const handler = jest.fn();
-  const { getByRole } = render(
+  const { getByTitle } = render(
     <Counter count={0} onCounterIncrease={handler} />
   );
-  const counter = getByRole("counter");
+  const counter = getByTitle("Current Count");
   fireEvent.click(counter);
   expect(handler).toBeCalledTimes(1);
 });
@@ -222,21 +219,22 @@ No more type information details about events.
 Our functional component gains a local arrow function which does the extraction and calling:
 
 ```typescript
-const Counter: FC<ICounterProps> = (
-    {label = 'Count', count, onCounterIncrease}
-) => {
-    const handleClick = (event: React.MouseEvent<HTMLElement>) => {
-        onCounterIncrease(event.shiftKey);
-    };
-    return (
-        <div
-            className="counter"
-            onClick={handleClick}
-        >
-            <label>{label}</label>
-            <span>{count}</span>
-        </div>
-    )
+export const Counter: FC<CounterProps> = ({
+  label = "Count",
+  count,
+  onCounterIncrease,
+}: CounterProps) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    onCounterIncrease(event.shiftKey);
+  };
+  return (
+    <div className="counter" onClick={handleClick}>
+      <span title="Count Label">{label}</span>
+      <span id="counter" title="Current Count">
+        {count}
+      </span>
+    </div>
+  );
 };
 ```
 
@@ -245,10 +243,10 @@ Our third test can now change, to see if our "spy" was called with a boolean ins
 ```typescript {8}
 test("should call the incrementer function", () => {
   const handler = jest.fn();
-  const { getByRole } = render(
+  const { getByTitle } = render(
     <Counter count={0} onCounterIncrease={handler} />
   );
-  const counter = getByRole("counter");
+  const counter = getByTitle("Current Count");
   fireEvent.click(counter);
   expect(handler).toBeCalledWith(false);
 });
@@ -330,16 +328,16 @@ import userEvent from "@testing-library/user-event";
 // ...
 
 test("updates state when increment is called without shift", () => {
-  const { getByRole } = render(<App />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<App />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
   userEvent.click(counter);
   expect(counter).toHaveTextContent("1");
 });
 
 test("updates state when increment is called with shift", () => {
-  const { getByRole } = render(<App />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<App />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
   userEvent.click(counter, { shiftKey: true });
   expect(counter).toHaveTextContent("10");
