@@ -9,7 +9,7 @@ subtitle: Everything we covered in this tutorial including help links and shortc
 thumbnail: ./thumbnail.png
 ---
 
-In this blog, we learned two ways to create a GitHub repository and local Git repository for an existing IntelliJ IDEA project.
+In this blog, we learned two ways to create a local Git repository for an existing IntelliJ IDEA project and then share the Project To GitHub.
 
 ### Shortcuts Used
 Here are some of the shortcuts that we used and some additional ones that you can try out. 
@@ -18,4 +18,8 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | ----------- | ----------- | ----------- |
 |[Commit Files](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)|**⌘K**|**Ctrl+K**
 |[Open the Git Tool Window](https://www.jetbrains.com/help/idea/version-control-tool-window.html) |**⌘9**|**Alt+9**|
+|[Open the Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) |**⌘1**|**Alt+1**|
+| [Settings/Preferences](https://www.jetbrains.com/help/idea/configure-project-settings.html)   | **⌘,** | **Ctrl+Alt+S** |
+| [Open the terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)   | **⌥F12** | **Alt+F12** |
+
 
