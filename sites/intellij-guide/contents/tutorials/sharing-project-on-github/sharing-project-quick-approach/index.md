@@ -42,7 +42,7 @@ Tip: if you have multiple GitHub accounts, you can [add your GitHub accounts](ht
 Now you can press **Enter** or click **Share**, IntelliJ IDEA will go ahead and create that repository on your GitHub profile. 
 
 ### Making Your First Commit 
-The IDE will ask you which files you want to put into this first commit. You could commit everything, but generally you don’t need to add the `.gradle folder` (if you’re using the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html), and we don’t need to add the build folder, which is where IntelliJ IDEA puts the compiler output like class files.
+The IDE will ask you which files you want to put into this first commit. You could commit everything, but generally you don’t need to add the `.gradle` folder (if you’re using the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)), and we don’t need to add the build folder, which is where IntelliJ IDEA puts the compiler output like class files.
 
 ![Add Files for Initial Commit](add-files-for-Initial-commit.png)
 
