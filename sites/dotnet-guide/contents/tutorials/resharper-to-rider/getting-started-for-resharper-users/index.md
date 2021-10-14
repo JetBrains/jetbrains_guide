@@ -20,7 +20,10 @@ All developers can benefit from reading this quick start guide, and if you have 
 
 Let's get started!
 
-> This page is part of the **Secret Decoder Challenge at .NET Conf 2021**! If you are looking for the clue, here it is... Find out what the next steps are and use the last alphabetical character of that sentence.
+> This page is part of the **Secret Decoder Challenge at .NET Conf 2021**!
+> 
+> If you are looking for the clue, here it is:
+> _Find out what the <kbd>Ctrl+Shift+B</kbd> shortcut does in the ReSharper keymap, and use the second letter of the second word. To verify the letter, compare it with the last alphabetical character of the next steps._
 
 ## Download and Install Rider and the .NET 6 SDK
 
