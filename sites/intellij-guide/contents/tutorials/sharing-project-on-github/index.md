@@ -6,7 +6,6 @@ topics: [vcs]
 author: hs
 subtitle: How you can share a local project to GitHub
 thumbnail: ./thumbnail.png
-videoBottom: true
 tutorialItems:
   - /tutorials/sharing-project-on-github/introduction/
   - /tutorials/sharing-project-on-github/sharing-project-quick-approach/
