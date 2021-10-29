@@ -24,7 +24,7 @@ Join the JetBrains .NET developer advocates, and uncover the essential features 
 
 We will look at navigation in a code base, editing code, inspections and quick-fixes, refactoring, some additions to the Visual Studio debugger, unit testing, architecture tools and diagrams, the localization manager, and more!
 
-> This page is part of the **Secret Decoder Challenge at .NET Conf 2021**!
+> ## This page is part of the **Secret Decoder Challenge at .NET Conf 2021**!
 >
 > Here is your clue:
 > _I'm a vowel, and also the last letter of the product for which ReSharper is a productivity extension. You'll also find me 3 times in the title of the last tutorial on this page._
