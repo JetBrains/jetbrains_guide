@@ -20,12 +20,7 @@ All developers can benefit from reading this quick start guide, and if you have 
 
 Let's get started!
 
-> This page is part of the **Secret Decoder Challenge at .NET Conf 2021**!
-> 
-> If you are looking for the clue, here it is:
-> _Find out what the <kbd>Ctrl+Shift+B</kbd> shortcut does in the ReSharper keymap, and use the second letter of the second word._
-
-## Download and Install Rider and the .NET 6 SDK
+## Download and Install Rider and the .NET SDK
 
 To get started, you will need a couple of things first: Rider itself, and the .NET SDK.
 
@@ -34,7 +29,7 @@ or use the [Toolbox App](https://www.jetbrains.com/toolbox/app) that makes it mo
 
 > **Note:** To work with .NET 6, you will need the [Rider 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/rider/).
 
-Next, [**download the .NET 6 SDK**](https://dotnet.microsoft.com/download/dotnet/6.0). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK,
+Next, [**download the .NET SDK**](https://dotnet.microsoft.com/download/dotnet/). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK,
 not just the runtime - the SDK contains all the compiler and build tools to develop in .NET.
 
 ## Import Settings From Existing Environments
