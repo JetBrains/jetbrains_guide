@@ -1,6 +1,6 @@
 ---
 label: 20
-date: 2021-05-10
+date: 2021-10-05
 title: IntelliJ IDEA 2021.1
 technologies: [java]
 topics: [latest]
