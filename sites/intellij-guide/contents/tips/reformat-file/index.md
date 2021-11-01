@@ -1,10 +1,10 @@
 ---
 date: 2021-11-01
-title: Format File
+title: Reformat File
 technologies: []
 topics: [interface,tricks]
 author: hs
-subtitle: Format File
+subtitle: How to reformat a file or section of code
 thumbnail: ./thumbnail.png 
 cardThumbnail: ./card.png 
 shortVideo:
