@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png 
 shortVideo:
   poster: ./tip.png 
-  url: https://youtu.be/hHDsG-sdb3U
+  url: https://youtu.be/mbR8zTr1dqA
 seealso:
    - title: IntelliJ IDEA Help - Run Anything
      href:  https://www.jetbrains.com/help/idea/running-anything.html
