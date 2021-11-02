@@ -27,7 +27,7 @@ To get started, you will need a couple of things first: Rider itself, and the .N
 You can [download and install Rider](https://www.jetbrains.com/rider/) from our website,
 or use the [Toolbox App](https://www.jetbrains.com/toolbox/app) that makes it more convenient to update the IDE or install multiple versions side-by-side.
 
-> **Note:** To work with .NET 6, you will need the [Rider 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/rider/).
+> **Note:** To work with .NET 6, you will need the [Rider 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/rider/eap/).
 
 Next, [**download the .NET SDK**](https://dotnet.microsoft.com/download/dotnet/). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK,
 not just the runtime - the SDK contains all the compiler and build tools to develop in .NET.

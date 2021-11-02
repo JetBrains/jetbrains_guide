@@ -19,6 +19,8 @@ In the ReSharper Essentials series, Rachel, Khalid, Matthias, Matt, and Maarten,
 
 We will see how you can get more out of your Visual Studio IDE with ReSharper.
 
+> **Note:** To work with Visual Studio 2022, you will need the [ReSharper 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/resharper/eap/).
+
 ### .NET Advocates on Twitter
 
 - [Rachel Appel](https://www.twitter.com/RachelAppel)
