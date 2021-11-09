@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-11-09
-title: Cloning and updating Remotes
+title: Adding and Updating Remotes
 technologies: []
 topics: []
 author: hs
