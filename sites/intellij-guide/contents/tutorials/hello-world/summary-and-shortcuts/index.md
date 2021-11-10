@@ -19,17 +19,4 @@ You then created a new [Run Configuration](https://www.jetbrains.com/help/idea/r
 
 Finally, you made a change to your `HelloWorld.java` file and tested that change with the [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) that you made for your JAR file to check that it was being rebuilt before it was [being run](https://www.jetbrains.com/help/idea/running-applications.html).
 
-### Shortcuts Used
-Here are some of the shortcuts that we used and some additional ones that you can try out. 
-
-| Name      | macOS Shortcut | Windows Shortcut |
-| ----------- | ----------- | ----------- |
-|Add a new file in the Project Window|**⌘N**|**Alt+Insert**
-|Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog |**⇧⇧** |**Shift+Shift**|
-|Open the [Run anything](https://www.jetbrains.com/help/idea/running-anything.html) dialog (can run Gradle commands from here)|**⌃⌃**|**Ctrl+Ctrl**|
-|Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html) |**⌘1**|**Alt+1**|
-|Display or hide the [Run Window](https://www.jetbrains.com/help/idea/run-tool-window.html) |**⌘4**|**Alt+4**|
-|Open the [Project Structure](https://www.jetbrains.com/help/idea/project-settings-and-structure.html) dialog|**⌘;**|**Ctrl+Alt+Shift+S**| 
-|[Run in the Current Context](https://www.jetbrains.com/help/idea/run-debug-configuration.html) |**⌃⇧R**|**Ctrl+Shift+F10** |
-|Show me my [Run Configurations](https://www.jetbrains.com/help/idea/run-debug-configuration.html) |**⌃⌥R**|**Alt+Shift+F10** |
 
