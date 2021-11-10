@@ -9,7 +9,7 @@ subtitle: How the Git Tool Window can help you
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/aBVOAnygcZw?t=121
+  url: https://youtu.be/aBVOAnygcZw?start=121
 
 ---
 
