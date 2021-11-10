@@ -9,12 +9,12 @@ subtitle: Managing your remotes for your repository
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/v=aBVOAnygcZw?start=173
+  url: https://youtu.be/aBVOAnygcZw?t=173
 ---
 
 When you're working with open source projects on GitHub, it's common to have more than one remote associated with a repository. If you go back to the intellij-samples project that we cloned from GitHub, we can see that this is actually a fork of another repository. 
 
-![Forked repository in GitHub](github-fork.png)
+![Forked repository in GitHub](contents/tutorials/creating-a-project-from-github/adding-updating-remotes/github-fork.png)
 
 This upstream repository is in the JetBrains organisation, and is likely to be updated by multiple people at a different rate to my fork. Ideally you want visibility of the upstream repository as well as your own fork, in order to get a better idea of what changes have gone in, and to update our own fork with these changes.
 
@@ -32,7 +32,7 @@ Lets add this repository by pressing the **+** button. You can now give it a nam
 
 ![Adding a remote in IntelliJ IDEA](add-remote-intelij-idea.png)
 
-When you have pressed **OK** on your new remote, the Git Remotes dialog will show both your remotes/
+When you have pressed **OK** on your new remote, the Git Remotes dialog will show both your remotes.
 
 ![Add and rename remotes](add-rename-remotes.png)
 

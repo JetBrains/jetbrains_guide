@@ -9,10 +9,10 @@ subtitle: Cloning your project from GitHub
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/v=aBVOAnygcZw?start=9
+  url: https://youtu.be/aBVOAnygcZw?t=9
 ---
 
-The first thing we need to do is to clone the repository to our local machine. You need to navigate to the code in GitHub that you want to clone to IntelliJ IDEA. In this tutorial we will use the _intellij-samples_ project. 
+The first thing we need to do is to clone the repository to our local machine. You need to navigate to the code in GitHub that you want to clone to IntelliJ IDEA. In this tutorial we will use the [_intellij-samples_ project](https://github.com/JetBrains/intellij-samples). 
 
 ![IntelliJ IDEA GitHub Repository](github-project.png)
 
@@ -26,10 +26,10 @@ Now you've got the link from GitHub, you need to open IntelliJ IDEA. If you don'
 
 When you press this button, you will get an option to select your Version Control location, GitHub in this instance, and then to enter the URL that's on your clipboard into the URL field.
 
-![Cloning a Project into IntelliJ IDEA](intellij-clone-button.png)
+![GitHub Clone Dialog](github-clone-dialog.png)
 
 Press **Enter** or **Clone** to clone the GitHub repository to the directory you selected. IntelliJ IDEA will also pick up common build tools like Gradle or Maven, and automatically download the required dependencies and build the project.
 
-When you open up the project window, you'll also see that IntelliJ IDEA has detected the modules in the project, and correctly set up the test, main and resources folders in a Maven project like this one.
+When you open up the project window, you'll also see that IntelliJ IDEA has detected the modules in the project, and correctly set up the _test_, _main_ and _resources_ folders in a Maven project like this one.
 
 ![Project Window](project-window.png)

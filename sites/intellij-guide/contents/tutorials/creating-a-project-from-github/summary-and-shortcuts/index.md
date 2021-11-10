@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 You have now configured an IntelliJ IDEA project from a GitHub repository, with all the relevant remotes added, and a Git log window that shows the current status of the remote repositories. You are now ready to start making changes to this project and to commit, push, and create pull requests.
 
 ### Shortcuts Used
-Here are some of the shortcuts that we used and some additional ones that you can try out.
+Here are the shortcuts that we used.
 
 | Name      | macOS Shortcut | Windows Shortcut |
 | ----------- | ----------- | ----------- |
