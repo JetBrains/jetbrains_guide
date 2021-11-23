@@ -16,10 +16,11 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 
 | Name      | macOS Shortcut | Windows Shortcut |
 | ----------- | ----------- | ----------- |
-|[Commit Files](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)|**⌘K**|**Ctrl+K**
+|[Commit Files dialog](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)|**⌘K**|**Ctrl+K**
+|[Push Commits dialog](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)|**⌘⇧K**|**Ctrl+Shift+K**
 |[Open the Git Tool Window](https://www.jetbrains.com/help/idea/version-control-tool-window.html) |**⌘9**|**Alt+9**|
 |[Open the Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) |**⌘1**|**Alt+1**|
-| [Settings/Preferences](https://www.jetbrains.com/help/idea/configure-project-settings.html)   | **⌘,** | **Ctrl+Alt+S** |
-| [Open the terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)   | **⌥F12** | **Alt+F12** |
+|[Settings/Preferences](https://www.jetbrains.com/help/idea/configure-project-settings.html)   | **⌘,** | **Ctrl+Alt+S** |
+|[Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)   | **⌥F12** | **Alt+F12** |
 
 
