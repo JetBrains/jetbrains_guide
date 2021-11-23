@@ -15,47 +15,53 @@ seealso:
   - title: IntelliJ IDEA Help - Manage Changelists
     href: https://www.jetbrains.com/help/idea/managing-changelists.html
 leadin: |
-  Use **⌘0** (macOS) or **Alt + 0** (Windows/Linux), to show the **Commit** tool window. 
+  Select the files or changed lines in a file which you want to group together for certain tasks, use **⌘⇧M** (macOS) or **Alt + Shift + M** (Windows/Linux) to bring up **Move Files to Another Changelist** dialog. 
   
-  Select the files or changed lines in a file, use **⌘⇧M** (macOS) or **Alt + Shift + M** (Windows/Linux) to bring up **Move Files to Another Changelist** dialog. Now type your preferred name to create new changelist or choose existing changelist. 
+  Name to create new changelist or choose from existing changelists. IntelliJ IDEA restores the selected changes in corresponding changelist.
 
 ---
 
-## Alternative Ways of Managing VCS Changelists 
+## Default Active Changelist
 
-TODO: Add idea on creating new changelist from commit dialog and managing files across different changelists.
+Use **⌘0** (macOS) or **Alt + 0** (Windows/Linux), to show the **Commit** tool window.
 
+**Changes** in **Commit Tool Window** is default active changelist. Active changelist is highlighted in bold.
 
-### Using View Toolbar Options
-You can use the menu **View > Appearance** > **Enter Distraction Free Mode**. 
+![Default Active Changelist](default-active-changelist.png)
 
-![Enter Distraction Free Mode using View Toolbar](distraction-free-mode-using-menu.png)
+### Set Active Changelist
+You can set changelist to Active if you want to commit your changes to VCS. Select the changelist, use **^Space** (macOS) or **Ctrl + Space** (Windows/Linux) to set as active changelist.
 
-### Using Search Everywhere
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Enter Distraction Free Mode**.
+![Set Active Changelist](set-active-changelist-ctrl-space.png)
 
-![Enter Distraction Free Mode using Search Everywhere](distraction-free-mode-search-everywhere.png)
-
-## Exiting Distraction Free Mode
-
-You can follow anyone of the above-mentioned ways to exit Distraction Free Mode.
-
-### Using the Quick Switch Schema
-
-You can use the same shortcuts as above, **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Schema** dialog, then select **4** followed by **2** to exit distraction free mode.
-
-![Exit Distraction Free Mode from Quick Switch Schema](exit-distraction-free-mode-schema-switch.png)
-
-### Using View Toolbar Options
-
-Alternately, you can also use the menu **View > Appearance** > **Exit Distraction Free Mode**.
-
-![Exit Distraction Free Mode using Toolbar Options](exit-distraction-free-mode-menu.png)
+## Creating Changelist
 
 ### Using Search Everywhere
+Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Changelist_ and select **New changelist...** to bring up **New changelist** dialog.
 
-Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Exit Distraction Free Mode**.
+![New Changelist using Search Everywhere](create-change-list-using-search-everywhere.png)
 
-![Toggle Distraction Free Mode using Search Everywhere](exit-distraction-free-mode-searcheverywhere.png)
+### Using Commit Window
+You can also right-click or secondary click on Commit Window to show options and click **New changelist...** to bring up **New changelist** dialog.
 
-Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions. 
+![New Changelist using Commit Window](new-changelist-using-commit-window.png)
+
+### New changelist dialog
+
+[New Changelist dialog Reference](https://www.jetbrains.com/help/idea/2021.2/new-changelist-dialog.html)
+
+![New Changelist dialog](new-changelist.png)
+
+
+
+## Deleting Changelist
+
+You can use Commit Window to **Delete Changelist**
+
+![Delete Changelist using Commit Window](delete-changelist-using-commit-window.png)
+
+Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions.
+
+# Scenarios to use different changelists
+  - Suppose you are working on your code which requires only selected changes to be committed in VCS and still you want to continue developing your code. In that case, you can move your changes to different changelist and group together.
+  - If you want to run your application with unique configuration without impacting your existing code, you can maintain the changed files in different changelist
