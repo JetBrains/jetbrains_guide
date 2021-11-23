@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2021-10-22
+date: 2021-11-30
 title: Manage VCS Changelists in IntelliJ IDEA
 technologies: [git]
 topics: [vcs, refactoring, interface]
@@ -12,16 +12,19 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/fO8oDVBsHWA
 seealso:
-  - title: IntelliJ IDEA Help - Manage changelists
+  - title: IntelliJ IDEA Help - Manage Changelists
     href: https://www.jetbrains.com/help/idea/managing-changelists.html
 leadin: |
   Use **⌘0** (macOS) or **Alt + 0** (Windows/Linux), to show the **Commit** tool window. 
   
-  Select the files or changed lines in the file, use **⌘⇧M** (macOS) or **Alt + Shift + M** (Windows/Linux) to bring up **Move Files to Another Changelist** dialog. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding. 
+  Select the files or changed lines in a file, use **⌘⇧M** (macOS) or **Alt + Shift + M** (Windows/Linux) to bring up **Move Files to Another Changelist** dialog. Now type your preferred name to create new changelist or choose existing changelist. 
 
 ---
 
-## Alternative Ways of Entering Distraction Free Mode 
+## Alternative Ways of Managing VCS Changelists 
+
+TODO: Add idea on creating new changelist from commit dialog and managing files across different changelists.
+
 
 ### Using View Toolbar Options
 You can use the menu **View > Appearance** > **Enter Distraction Free Mode**. 
