@@ -30,29 +30,14 @@ When looking at Rider's toolbar, we'll notice it is a bit more sparse by default
 
 ![JetBrains Rider's default toolbar](./rider-default-toolbar.png)
 
-- Build Solution
-- Solution Configurations dropdown
-- Run Configurations dropdown
-- Run (Play) button
-- Debug (Bug) button
-- Stop button
-- Profiling
-- Attach To Process
-- Search Everywhere
+- Version Control Widget
+- Search Everywhere button
+- Build Solution button
+- Solution Configurations
+- Run Widget (Run, Debug, Attach to Process)
 - IDE and Project Settings
 
-Developers moving from Visual Studio might want the **Back** and **Forwards** navigation buttons. Rider hides those actions by default but can we can add them back by going to `View \| Appearance \| Toolbar`, after which we'll get an additional set of actions:
-
-- Open
-- Save All
-- Reload From Disk
-- Navigation buttons
-
-![JetBrains Rider Toolbar with additional navigation items](./rider-with-toolbar-extra.png)
-
-As in Visual Studio, the toolbar is highly customizable. We can right-click anywhere on the toolbar and click the resulting `Customize Menus and Toolbars...` option. A new dialog should appear with Rider's menu and toolbar locations ready to be customized for our unique workflow style.
-
-![JetBrains Rider Toolbar With Customizations](./rider-toolbar-customizations.png)
+The **Run Widget** is of particular interest as you'll be using it to run and debug applications. It's quite intuitive to use and you'll be reading more about it in the debugger section of this guide.
 
 While the UI is fully customizable, Rider's development team has gone through the meticulous process of making all functionality accessible via shortcut keys. The **Search Everywhere** feature is beneficial, as it is only a <kbd>Shift+Shift</kbd> away from helping developers find the action they need.
 
