@@ -26,7 +26,8 @@
     "dotnet:clean": "yarn workspace dotnet-guide clean",
     "intellij:develop": "yarn workspace intellij-guide develop",
     "intellij:build": "yarn workspace intellij-guide build",
-    "intellij:clean": "yarn workspace intellij-guide clean"
+    "intellij:clean": "yarn workspace intellij-guide clean",
+    "intellij:cn": "./i10n.sh intellij"
   },
   "dependencies": {
     "yarn": "^1.22.11"
