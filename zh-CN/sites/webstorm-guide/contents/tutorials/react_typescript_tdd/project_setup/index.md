@@ -20,7 +20,7 @@ React has become very popular, as has TypeScript. But it can be difficult to kee
 
 React's [create-react-app](../../../technologies/cra) takes care of this, including for TypeScript projects. In this tutorial step, we will generate a React+TypeScript project then open it in the IDE.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_setup).
 
@@ -94,7 +94,7 @@ $ npm run-script test
 
 We can also run this `npm` script in the IDE. `Ctrl-C` to stop the test runner in the terminal, then back in `package.json`, click the green play icon in the gutter beside `test`.
 
-## 结论
+## Conclusion
 
 In this first step we used existing tools to generate a working React+TypeScript project, with all the tooling configured. We also gave a brief tour of driving this in the IDE.
 
