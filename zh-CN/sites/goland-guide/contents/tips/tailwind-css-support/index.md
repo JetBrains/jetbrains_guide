@@ -1,6 +1,6 @@
 ---
 date: 2020-12-03
-title: 'Tailwind CSS 支持'
+title: 'Tailwind CSS support'
 technologies:
   - web
 topics:
