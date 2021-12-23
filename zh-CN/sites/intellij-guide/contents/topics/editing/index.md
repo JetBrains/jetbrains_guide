@@ -1,8 +1,8 @@
 ---
-title: Editing
-subtitle: Edit your code quickly and efficiently.
-accent: 主
+title: 编辑
+subtitle: 快速高效地编辑您的代码。
+accent: primary
 icon: fas fa-edit
 ---
 
-With IntelliJ IDEA, you can edit your code quickly and efficiently with a range of shortcuts to help you.
+使用 IntelliJ IDEA，您可以通过一系列快捷键高效快速地编辑代码。
