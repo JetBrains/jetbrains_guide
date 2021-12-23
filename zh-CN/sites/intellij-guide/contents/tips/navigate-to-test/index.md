@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: 导航到测试
+title: Navigate to Test
 technologies:
   - java
 topics:
   - navigation
   - testing
 author: hs
-subtitle: 跳转到匹配的测试类
+subtitle: Go to your matching test class
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,6 +18,6 @@ seealso:
     title: IntelliJ IDEA Help - Navigate between test and test subject
     href: https://www.jetbrains.com/help/idea/navigating-between-test-and-test-subject.html
 leadin: |
-  您可以使用 **⇧⌘T**（macOS）或 **Ctrl+Shift+T**（Windows/Linux）导航到测试类，然后再返回。
+  You can use **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux), to navigate to a test class and back again.
 ---
 
