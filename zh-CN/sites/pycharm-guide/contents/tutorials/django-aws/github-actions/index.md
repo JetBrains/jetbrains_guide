@@ -27,7 +27,7 @@ There are tons of alternative flavours you can try out.
 - [TravisCI](https://travis-ci.org/)
 
 
-# Setup
+# 安装
 
 You can see I am already logged into my GitHub repository:
 
