@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: 查找下一个关键字
+title: Find Next Word
 technologies:
   - java
   - kotlin
 topics:
   - editing
 author: hs
-subtitle: 查找下一个关键字并高亮显示所有查找结果
+subtitle: Find next word and highlight all instances
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,10 +18,10 @@ seealso:
     title: IntelliJ IDEA Help - Source code navigation
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 leadin: |
-  按 **⌘G**（macOS），或**F3**（Windows/Linux），以移动到下一个查找结果。
+  Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word.
 
-  **提示：**
+  **Pro tip:**
 
-  使用 **⌃⌘G**（macOS），或**Ctrl+Alt+Shift+J**（Windows/Linux），以选择同一关键字的所有查找结果。
+  Use **⌃⌘G** (macOS), or **Ctrl+Alt+Shift+J** (Windows/Linux), to select all occurrences of the same word.
 ---
 
