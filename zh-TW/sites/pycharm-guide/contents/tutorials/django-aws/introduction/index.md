@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-04-09
-title: 簡介
+title: Introduction
 technologies:
   - django
   - aws
