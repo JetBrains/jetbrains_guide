@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - 分析
+  - profiling
   - editing
 author: khalidabuhakmeh
 subtitle: Introduce variables the way you like!
