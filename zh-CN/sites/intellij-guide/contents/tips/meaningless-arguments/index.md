@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: 无意义的参数
+title: Meaningless Arguments
 technologies:
   - java
 topics:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Code inspections
     href: https://www.jetbrains.com/help/idea/code-inspection.html
 leadin: |
-  您可以使用 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux）来显示针对无意义参数的上下文操作。 然后您可以删除冗余的代码了。
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for meaningless arguments. You can then remove the redundant code.
 ---
 
