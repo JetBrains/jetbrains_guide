@@ -21,4 +21,4 @@ playlistItems:
 
 There are two screencasts on Navigation which you may also find useful:
 - [Top 5 IntelliJ IDEA Navigation Shortcuts](https://youtu.be/crnEBqbBWuo)
-- [在 IntelliJ IDEA 中导航](https://youtu.be/1UHsJyCq1SU)
+- [Navigation in IntelliJ IDEA](https://youtu.be/1UHsJyCq1SU)
