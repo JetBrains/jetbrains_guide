@@ -16,7 +16,7 @@ So what about the features beyond basic Markdown formatting?
 
 Let's have fun, showing how MyST surfaces some really useful, really powerful features in Sphinx. As we go along, keep in mind...this all works when generating PDFs, ePub, and other formats.
 
-## 图像
+## Images
 
 In the previous step we showed pointing at a remote image and a local image:
 
