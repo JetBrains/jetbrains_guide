@@ -10,7 +10,7 @@ products:
   - resharper
 topics:
   - ide
-  - 数据
+  - data
 author: khalidabuhakmeh
 subtitle: Effectively working with databases in Rider from a Visual Studio + ReSharper user's perspective.
 thumbnail: ./thumbnail.png
@@ -44,7 +44,7 @@ In this window, we can add connections to all types of engines:
 - [PostgreSQL](https://www.postgresql.org/)
 - [SQLite](https://sqlite.org/index.html)
 - [Microsoft SQL Server](https://www.microsoft.com/sql-server)
-- 更多内容!
+- and more!
 
 Developers may notice that these databases vary in storage philosophies. The database tools in JetBrains Rider are powered by [DataGrip](https://jetbrains.com/datagrip), giving us access to a wide array of database products.
 
@@ -86,13 +86,13 @@ The SQL console in Rider is a powerful tool for developers who prefer to write t
 
 ![JetBrains Rider SQL Console code completion](./9-jetbrains-rider-sql-console.png)
 
-## 结论
+## Conclusion
 
 While developers coming to Rider from Visual Studio may want to use an external tool for database management tasks, we hope they give the built-in database tools in Rider a try first. We believe they'll be surprised by the powerful features, supported database engines, and overall pleasurable experience.
 
 We've only begun to scratch the surface of what Rider database tools can do for developers. To learn more, we suggest diving deeper into our official documentation.
 
-### 另请参阅
+### See Also
 
 - [JetBrains Rider Database tools and SQL](https://jetbrains.com/help/rider/Relational_Databases.html)
 - [DataGrip Introduction](https://www.jetbrains.com/help/datagrip/meet-the-product.html)
