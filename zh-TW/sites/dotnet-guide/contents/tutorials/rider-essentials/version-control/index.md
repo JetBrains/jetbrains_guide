@@ -9,7 +9,7 @@ topics:
   - ide
   - vcs
 products:
-  - tRANSLATED Rider
+  - rider
 author: matkoch
 subtitle: Working with Git, commit code, rebase and switch branches. Let's explore version control (VCS)!
 thumbnail: ./thumbnail.png
