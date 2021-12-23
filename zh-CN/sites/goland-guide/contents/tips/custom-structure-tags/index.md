@@ -24,7 +24,7 @@ leadin: |
   You can add your own structure field tag by going to _Settings/Preferences | Editor | Live Templates_
   and then select _Go Struct Tags_.
 
-  随后可以自定义、复制现有模板或新建模板。
+  Then you can either customize an existing template, duplicate it, or create a new one.
 
   <span class="tag is-rounded">New in 2017.3</span>
 ---
