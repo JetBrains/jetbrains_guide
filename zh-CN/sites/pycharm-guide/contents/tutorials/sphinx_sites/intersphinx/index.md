@@ -16,7 +16,7 @@ Wouldn't it be great if linking to structure in another site was almost as easy 
 
 Enter...[Intersphinx](https://docs.readthedocs.io/en/stable/guides/intersphinx.html) -- one of those amazing, Sphinx-only things that kind of blows your mind, is really useful, and you don't expect it when coming from other systems.
 
-## 工作原理是什么
+## How It Works
 
 When you run Sphinx, it reads your source material, makes a tree of rich structure, then generates artifacts in a build directory. It also, though, generates an `objects.inv` file. What's that? It is a serialized "inventory" of the structure of your site, written to the build directory, and available at a URL in your published site.
 
@@ -99,7 +99,7 @@ Sometimes the role we want to link to is part of a [Sphinx domain](https://www.s
 Let's talk about the power of {rst:dir}`code-block`.
 ```
 
-## 调试
+## Debugging
 
 This Intersphinx magic is, well, magical. It can misfire and cause frustration.
 
@@ -111,6 +111,6 @@ If you stumble trying to find what's available in an inventory, Sphinx provides 
 $ python -msphinx.ext.intersphinx https://www.sphinx-doc.org/en/master/objects.inv
 ```
 
-## 结论
+## Conclusion
 
 If you're working on content that links to other Sphinx content -- for example, anything on `readthedocs.io` -- the richer link structure can be a big win. Intersphinx takes a tiny bit of thinking to adjust to it. Once it becomes habit, though, it really becomes a productive way to work.
