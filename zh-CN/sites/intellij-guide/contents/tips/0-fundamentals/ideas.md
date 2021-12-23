@@ -1,12 +1,12 @@
 智能代码补全的基本
- - 输入 vs 按tab键选择
+ - 输入 vs 按 tab 键选择
  - .
 
 完成语句
 
 从红色部分创建代码
 
-等于hashcode tostring
+等于 hashcode tostring
 
 引入变量
 
