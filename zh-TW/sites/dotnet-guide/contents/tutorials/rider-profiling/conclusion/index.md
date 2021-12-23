@@ -9,7 +9,7 @@ topics:
   - ide
   - profiling
 products:
-  - tRANSLATED Rider
+  - rider
   - dottrace
 author: maartenba
 subtitle: What have we learned? Profiling, profiler modes, optimizing code, DPA, and more. Let's summarize!
