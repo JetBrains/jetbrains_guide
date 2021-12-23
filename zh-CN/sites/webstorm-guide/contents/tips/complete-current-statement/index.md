@@ -3,14 +3,14 @@ date: 2020-03-16
 title: Complete Current Statement
 subtitle: Add curly braces and move the cursor with a single keystroke.
 technologies:
-  - javaScript
+  - javascript
   - typescript
 topics:
   - editing
 author: er
 seealso:
   - 
-    title: 自动补全代码
+    title: Autocompleting code
     href: 'https://www.jetbrains.com/help/webstorm/auto-completing-code.html#'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
