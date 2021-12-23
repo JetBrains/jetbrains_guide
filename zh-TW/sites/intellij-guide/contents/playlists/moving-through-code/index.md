@@ -4,7 +4,7 @@ date: 2021-07-13
 title: Moving Through Your Code
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
 author: hs
 subtitle: Tips for moving through and navigating your code base
 thumbnail: ./thumbnail.png
