@@ -1,7 +1,7 @@
 ---
 title: Running and Debugging
 subtitle: Learn how to run a program step by step and identify problems in it
-accent: 主
+accent: primary
 icon: fas fa-bug
 ---
 
