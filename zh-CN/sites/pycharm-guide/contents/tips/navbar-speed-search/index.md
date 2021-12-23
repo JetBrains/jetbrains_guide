@@ -14,7 +14,7 @@ seealso:
     title: Speed Search in Tool Windows
     href: https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html
   - 
-    title: Navigation bar
+    title: 导航栏
     href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - 
     title: Navigating Tips and Tricks
