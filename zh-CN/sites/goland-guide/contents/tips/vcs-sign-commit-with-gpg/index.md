@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Sign Git commits with GPG keys'
 technologies:
-  - 平台
+  - platform
 topics:
   - vcs
 author: dlsniper
