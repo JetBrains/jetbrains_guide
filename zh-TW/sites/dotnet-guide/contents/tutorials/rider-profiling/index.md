@@ -7,7 +7,7 @@ topics:
   - ide
   - profiling
 products:
-  - tRANSLATED Rider
+  - rider
   - dottrace
 author: maartenba
 subtitle: Explore performance and memory profiling options in Rider, and optimize an existing application.
