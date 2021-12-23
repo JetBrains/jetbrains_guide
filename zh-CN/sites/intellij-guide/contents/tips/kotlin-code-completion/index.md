@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: Kotlin Code Completion
+title: Kotlin代码补全
 technologies:
   - kotlin
 topics:
   - editing
 author: hs
-subtitle: Use code and statement completion to write code faster
+subtitle: 使用代码和语句补全来更快地编写代码
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Code completion
     href: https://www.jetbrains.com/help/idea/auto-completing-code.html
 leadin: |
-  You can use Statement Completion to finish the current statement using **⌘⇧⏎** (macOS) or **Ctrl+Shift+Return** (Windows/Linux). Basic completion is available without using a shortcut, but you can use Advanced Completion with **⌃⇧␣** (macOS), or **Ctrl**+**Shift**+**Space** (Windows/Linux).
+  您可以使用代码补全来完成当前代码行，使用**⌘⇧⏎**（macOS）或**Ctrl+Shift+Enter**（Windows/Linux）。 基本代码补全无需使用快捷键，但您可以使用高级代码补全，即**⌃⇧␣**（macOS），或**Ctrl**+**Shift**+**Space**（Windows/Linux）。
 ---
 
