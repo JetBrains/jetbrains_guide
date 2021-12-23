@@ -4,7 +4,7 @@ title: 'Use Recent Files to Open Tool Window'
 technologies:
   - 'go'
 topics:
-  - '導覽'
+  - 'navigation'
 author: dlsniper
 subtitle: 'From the Recent Files popup, open one of the IDE tool windows.'
 thumbnail: ./thumbnail.png
