@@ -1,7 +1,7 @@
 ---
 title: 实时模板
-subtitle: Write common code quickly with just a few keystrokes.
-accent: 主
+subtitle: 只需敲几下键即可快速生成通用代码。
+accent: primary
 icon: fas fa-expand-alt
 ---
 
