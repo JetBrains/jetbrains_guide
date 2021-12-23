@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-01
-title: 簡介
+title: Introduction
 technologies:
   - .net
   - csharp
