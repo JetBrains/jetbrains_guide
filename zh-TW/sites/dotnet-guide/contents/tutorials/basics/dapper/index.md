@@ -5,7 +5,7 @@ title: Basics of Dapper
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - data
