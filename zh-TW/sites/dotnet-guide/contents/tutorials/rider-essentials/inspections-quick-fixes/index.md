@@ -9,7 +9,7 @@ topics:
   - completion
   - inspections
 products:
-  - tRANSLATED Rider
+  - rider
 author: matkoch
 subtitle: Dive into inspections and quick-fixes, nullability inspections, the Heap Allocations Viewer plugin, and more!
 thumbnail: ./thumbnail.png
