@@ -4,7 +4,7 @@ date: 2018-11-07
 title: Navigate to File
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
 author: pwe
 subtitle: Jump to a file without using the Project Tool and your mouse.
 seealso:
