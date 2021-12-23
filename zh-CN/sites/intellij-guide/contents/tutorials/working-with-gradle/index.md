@@ -1,13 +1,13 @@
 ---
 date: 2021-05-14
-title: Working with Gradle
+title: 使用 Gradle 工作
 technologies:
   - java
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
-subtitle: Understand how IntelliJ IDEA integrates with Gradle.
+subtitle: 了解 IntelliJ IDEA 如何与 Gradle 集成。
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/working-with-gradle/introduction/
