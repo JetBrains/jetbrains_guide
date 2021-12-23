@@ -2,7 +2,7 @@
 date: 2021-07-29
 title: 'Query MongoDB databases'
 technologies:
-  - 数据库
+  - databases
 topics:
   - mongodb
 author: dlsniper
