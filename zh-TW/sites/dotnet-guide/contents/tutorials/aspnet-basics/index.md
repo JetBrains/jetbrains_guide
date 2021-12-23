@@ -7,7 +7,7 @@ topics:
   - web
   - ide
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 author: khalidabuhakmeh
 subtitle: A set of short videos to understand the basic landscape of an ASP.NET Application.
