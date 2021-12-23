@@ -1,8 +1,8 @@
 ---
 title: 导航
-subtitle: See how to find your way through a project.
-accent: 主
+subtitle: 了解如何在项目中高效的找到文件及各种功能菜单。
+accent: primary
 icon: fas fa-route
 ---
 
-With IntelliJ IDEA, you can get around your code faster regardless of how large your projects are.
+使用 IntelliJ IDEA，无论您的项目有多大，您都可以更快地处理代码。
