@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: 配置编辑器
+title: Configure Your Editor
 technologies:
   - java
 topics:
   - interface
   - navigation
 author: hs
-subtitle: 设置编辑器以满足您的要求
+subtitle: Setup the editor to suit your requirements
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -15,9 +15,9 @@ shortVideo:
   url: https://youtu.be/9n7cWADTvRo
 seealso:
   - 
-    title: 编辑器选项卡
+    title: Editor Tabs
     href: https://www.jetbrains.com/help/idea/settings-editor-tabs.html
 leadin: |
-  按 **⌘⇧A**（macOS），或 **Ctrl+Shift+A**（Windows/Linux），打开 **查找操作**，然后您可以键入_选项卡_，_导航栏_，_工具窗口_修改或禁用这些元素。
+  Press **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or  to display **Find Actions** and then you can type _tab placement_, _navigation bar_, _tool windows_ to modify or disable these elements.
 ---
 
