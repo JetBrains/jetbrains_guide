@@ -5,7 +5,7 @@ technologies:
   - go
 topics:
   - testing
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: 'Jump to the specific test case from the results window'
 thumbnail: ./thumbnail.png
