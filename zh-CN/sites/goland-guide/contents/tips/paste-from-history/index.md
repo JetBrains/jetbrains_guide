@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 从历史粘贴
+title: Paste from history
 technologies:
   - go
 topics:
