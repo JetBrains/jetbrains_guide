@@ -1,12 +1,12 @@
 ---
-title: 性能分析
+title: Profiling
 subtitle: Analyze application performance and memory usage.
-accent: 主
+accent: primary
 icon: fas fa-flag-checkered
 ---
 
 Detect performance and memory bottlenecks in a variety of .NET and .NET Core applications.
 
-## 另请参阅
+## See Also
 - [dotTrace performance profiler](https://www.jetbrains.com/profiler/)
 - [dotMemory memory profiler](https://www.jetbrains.com/dotmemory/)
