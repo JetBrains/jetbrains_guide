@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 提取变量
+title: Extract Variable
 technologies:
   - java
 topics:
   - 重构
 author: hs
-subtitle: 提取代码成为变量
+subtitle: Extract code to a variable
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Extract Variable
     href: https://www.jetbrains.com/help/idea/extract-variable.html
 leadin: |
-  高亮选择你要提取成字段的值，并按  **⌥⌘V**（macOS），或 **Ctrl+Alt+V**（Windows/Linux）来提取它。
+  Highlight the code you want to extract to a variable and press **⌥⌘V** (macOS), or **Ctrl+Alt+V** (Windows/Linux), to extract it.
 
-  提取参数有助于提高您的代码的可读性。
+  Extracting parameters can be useful in improving the readability of your code.
 ---
 
