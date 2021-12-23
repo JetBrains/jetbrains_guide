@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 最近的文件
+title: Recent Files
 technologies:
   - java
 topics:
   - navigation
 author: hs
-subtitle: 导航到您最近打开的文件
+subtitle: Navigate to any of the files that you recently had open
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Find recent files
     href: 'https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files'
 leadin: |
-  使用 **⌘E**（macOS），或 **Ctrl+E**（Windows/Linux），或者在该对话框，直接输入内容来查看最近的文件和访问窗口。
+  Use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), or  to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog.
 
-  您可以再次使用相同的快捷键将最近的文件列表过滤成仅显示已编辑的文件。
+  You can filter the recent files list to files that you've changed by using the same shortcut again.
 ---
 
