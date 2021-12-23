@@ -18,7 +18,7 @@ longVideo:
 Hello everyone, welcome to the Django tutorial series. In this tutorial step, we are going to set up a VPC in AWS and securely launch an RDS instance in a private subnet.
 
 
-# Background
+# 背景
 
 Before stepping forward let me give you brief background on what is AWS VPC and RDS.
 
@@ -44,7 +44,7 @@ I am going to search for **VPC** and navigate towards the **VPC Management Conso
 
 To know how we got 64 IP addresses, I would suggest to research about **CIDR ( Classless inter-domain routing)**.
 
-Reference:
+引用:
   -  [CIDR - The Internet Address Assignment and Aggregation Plan](https://tools.ietf.org/html/rfc4632)
   -  [CIDR Range Visualizer](https://cidr.xyz/)
 
@@ -60,7 +60,7 @@ Under DjangoVPC, I am going to create 4 subnets with two private and two public 
 
 We have successfully created the subnets. As you can see in the image below, the available IPv4 addresses is only 11, but what about the remaining 5? The remaining 5 are reserved by AWS. Amazon reserves the first four (4) IP addresses and the last one (1) IP address of every subnet for IP networking purposes.
 
-![subnets](steps/step3.png)
+![子网](steps/step3.png)
 
 To know more about subnets, please visit [VPCs and subnets - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html).
 
