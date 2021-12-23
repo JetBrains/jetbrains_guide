@@ -1,5 +1,5 @@
 ---
-title: 導覽
+title: Navigation
 subtitle: See how to find your way through a project
 accent: primary
 icon: fas fa-bezier-curve
