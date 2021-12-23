@@ -8,7 +8,7 @@ topics:
   - editing
   - navigation
   - debugging
-  - javaScript
+  - javascript
   - web
 author: pwe
 subtitle: Become an IDE champ with these bite-sized tips and tricks.
