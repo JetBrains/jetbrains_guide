@@ -16,7 +16,7 @@ longVideo:
 
 Python has projects and PyCharm does as well. In this tutorial step, let's make both, with a virtual environment, and set the project up to use `pytest`.
 
-# New Project
+# 新建项目
 
 We'll let the IDE guide us through the process. First, we use `File -> New Project` to make a new project, in a directory:
 
@@ -67,7 +67,7 @@ One last step...we need to tell PyCharm to use `pytest` for its built-in Python 
 
 Go to `Settings -> Tools -> Python Integrated Tools` and change `Default test runner:` to `pytest`:
 
-![Python Integrated Tools](./python_integrated_tools.png)
+![Python 集成工具](./python_integrated_tools.png)
 
 Mine is set automatically because I set `pytest` as my [default test runner for all projects](https://www.jetbrains.com/help/pycharm/configure-project-settings.html#new-default-settings) using `File | New Projects Settings | Settings/Preferences for New Projects`:
 
@@ -75,4 +75,4 @@ Finally, make a top-level directory called `tests`. This mimics the [pytest good
 
 When done, your directory structure should look like this:
 
-![Directory Structure](./directory.png)
+![目录结构](./directory.png)
