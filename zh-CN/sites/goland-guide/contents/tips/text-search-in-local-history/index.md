@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Search text in Local History'
 technologies:
-  - 平台
+  - platform
 topics:
   - vcs
 author: dlsniper
