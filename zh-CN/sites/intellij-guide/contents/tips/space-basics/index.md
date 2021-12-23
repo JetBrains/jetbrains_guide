@@ -1,12 +1,12 @@
 ---
 date: 2021-05-11
-title: 在 IDE 中使用 JetBrains Space 的技巧
+title: Tips for working with JetBrains Space
 technologies: [ ]
 topics:
   - latest
-  - 插件
+  - plugins
 author: tg
-subtitle: Space 是一个综合的一对一的协作工具，包括聊天、代码存储库、代码审查、问题跟踪等等。
+subtitle: Space is an all-in-one collaboration tool, including chat, code repository, code review, issue tracking, and much more.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,12 +17,12 @@ seealso:
     title: Space Help - Getting started
     href: https://www.jetbrains.com/help/space/getting-started.html
 leadin: |
-  [JetBrains Space](https://www.jetbrains.com/space/) 插件是一种新的团队协作工具，捆绑在 IntelliJ IDEA 中。 登录到团队实例以访问您的项目。
+  The plugin for [JetBrains Space](https://www.jetbrains.com/space/), a new team collaboration tool, is bundled in IntelliJ IDEA. Log in to the team instance to access your projects.
 
-  如果您登录到 Space，则可以通过"从 VCS 获取"来克隆代码库，并且可以配置将代码克隆到何处。
+  If you're logged in to Space, you can clone a repo via "Get from VCS", and you can configure where the code is cloned to.
 
-  如果您正在 Space 上面做项目，您可以右键单击 Git 日志中的提交，以便在 Space 中打开它。
+  If you're working with a Space project, you can right click on a commit in the Git log to open it in Space.
 
-  在我们的 [Space Guide](https://www.jetbrains.com/space/guide/) 中查看更多与 使用 Space 的提示和技巧。
+  See more tips and tricks for working with Space in our [Space Guide](https://www.jetbrains.com/space/guide/).
 ---
 
