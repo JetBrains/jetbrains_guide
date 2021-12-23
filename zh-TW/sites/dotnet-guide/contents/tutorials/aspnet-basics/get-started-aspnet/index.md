@@ -5,7 +5,7 @@ title: Start A New ASP.NET Web Application
 technologies:
   - asp.net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - ide
