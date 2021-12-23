@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 类型层次结构
+title: Type Hierarchy
 technologies:
   - go
 topics:
