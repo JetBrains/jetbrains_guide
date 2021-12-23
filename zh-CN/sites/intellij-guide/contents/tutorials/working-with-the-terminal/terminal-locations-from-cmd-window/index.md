@@ -1,19 +1,19 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: 命令窗口中的终端位置
+title: Terminal locations from the command window
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 您可以在终端窗口里打开项目窗口上的某一个位置
+subtitle: You can open a location from the project window in the terminal window
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/tlEkrWU0d1M?start=249
 ---
 
-## 在终端中打开项目位置
-IDE 提供的集成还扩展成能够从上下文菜单在终端窗口里[打开项目窗口上的某一个位置](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)。 例如右键单击项目窗口中的某一项，然后选择 “Open in Terminal（在终端中打开）”。 这意味着我们可以立刻有一个有正确的位置的终端窗口，而不需要使用命令行导航。
+## Opening a Project Location in the Terminal
+The integration provided by the IDE also extends to being able to [open a location from inside the project window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) in the terminal window from the context menu. Right click on an item in the Project Window, for example, and select "Open in Terminal". This means that we can have a terminal window in the correct location immediately without having to navigate using the command line.
 
 ![Open in Terminal](open-in-terminal.png)
 
