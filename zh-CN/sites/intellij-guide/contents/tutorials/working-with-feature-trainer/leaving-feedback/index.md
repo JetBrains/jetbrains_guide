@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-04-11
-title: Leaving Feedback
+title: 提供反馈
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Feedback from you is really helpful for us and will enable us to provide more modules and lessons in the IDE Feature Trainer.
+subtitle: 您的反馈对我们非常有帮助，这使得我们能够在 IDE 功能培训中提供更多的模块和课程。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/Uxwi4ibDoHE
 ---
 
-## We Want to Hear Your Feedback
-The feedback survey will ask you a few questions such as which of our IDEs you were working with and your experience with them, and it will ask you for your feedback as well. You can optionally rank lessons that you liked the most and even vote for what you'd like to see in the Feature Trainer in a future release.
+## 我们希望听到您的反馈
+反馈调查会问您一些问题，例如您用过的 IDE 以及体验，并且还会询问您的反馈。 您可以对您最喜欢的课程进行排名，而且可以投票选出您希望在将来版本的功能培训中看到的内容。
 
-Please do take the time to provide us with your thoughts by clicking [Leave feedback](https://surveys.jetbrains.com/s3/features-trainer-feedback-java) at the bottom of the module list. 
+请花一点时间点击模块列表底部的 [提供反馈](https://surveys.jetbrains.com/s3/features-trainer-feedback-java)  ，向我们说说您的想法。 
