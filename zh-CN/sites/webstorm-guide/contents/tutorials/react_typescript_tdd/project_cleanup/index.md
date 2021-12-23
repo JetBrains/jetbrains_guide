@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Project Cleanup
 technologies:
   - react
@@ -22,7 +22,7 @@ In our [previous step](../project_setup/) we generated a project then took a loo
 
 Along the way we'll show some IDE features in action.
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_cleanup).
 
