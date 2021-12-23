@@ -6,7 +6,7 @@ technologies:
   - pytest
 topics:
   - editing
-  - navigation
+  - 導覽
   - debugging
   - javascript
   - web
