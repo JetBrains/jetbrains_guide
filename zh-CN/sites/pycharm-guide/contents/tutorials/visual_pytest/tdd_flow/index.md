@@ -32,7 +32,7 @@ Run the test by right-clicking in the editor *outside any block* and choosing to
 
 Yay, the test passes. Let's switch to running *all* of our tests. In the project tool window, right-click on `tests` and choose `Run 'pytest in tests'`. The test runner now shows a tab with `pytest in tests`, with 2 tests passing:
 
-![All Tests](./all_tests.png)
+![所有测试](./all_tests.png)
 
 Not a major victory, but allows us to start inching forward:
 
