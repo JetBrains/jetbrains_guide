@@ -1,26 +1,26 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: 快捷键
+title: Shortcuts
 technologies: [ ]
 topics: [ ]
 author: tg
-subtitle: 教程中使用的快捷键列表
+subtitle: Shortcuts used in the tutorial
 thumbnail: ./thumbnail.png
 ---
 
-在本教程中，我们了解到了 [IntelliJ IDEA 对 Gradle 项目的支持](https://www.jetbrains.com/help/idea/gradle.html) ，以及一些可以提升工作效率的技巧。
+In this tutorial we saw an overview of the [support for Gradle projects](https://www.jetbrains.com/help/idea/gradle.html) in IntelliJ IDEA, and some tips for working effectively with them.
 
-教程和视频中提到的一些有用的快捷键：
+Some helpful shortcuts mentioned in the tutorial and video:
 
-| 名称                                                                                                                                                           | macOS 快捷键 | Windows 快捷键      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---------------- |
-| 加载 Gradle 配置变更                                                                                                                                               | **⇧⌘I**   | **Ctrl+Shift+O** |
-| 在 `build.gradle` 文件添加新的依赖项                                                                                                                                   | **⌘N**    | **Alt+Insert**   |
-| [随处搜索](https://www.jetbrains.com/help/idea/searching-everywhere.html)（可以用它来打开 [Gradle 工具窗口](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)） | **⇧⇧**    | **Shift+Shift**  |
-| [查找操作](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9)（可以使用此打开 Gradle 工具窗口）                                                      | **⌘⇧A**   | **Ctrl+Shift+A** |
-| [最近的文件](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files)（可以使用它来打开 Gradle 工具窗口）                                                  | **⌘E**    | **Ctrl+E**       |
-| [运行全部](https://www.jetbrains.com/help/idea/running-anything.html)（可以从这里运行 Gradle 命令）                                                                         | **⌃⌃**    | **Ctrl+Ctrl**    |
-| 打开 [首选项/设置](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) 对话框                                                                        | **⌘,**    | **Ctrl+Alt+S**   |
+| Name                                                                                                                                                                                               | macOS Shortcut | Windows Shortcut |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
+| Load Gradle changes                                                                                                                                                                                | **⇧⌘I**        | **Ctrl+Shift+O** |
+| Add a new dependency from inside the `build.gradle` file                                                                                                                                           | **⌘N**         | **Alt+Insert**   |
+| [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) (can use this to open the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)) | **⇧⇧**         | **Shift+Shift**  |
+| [Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9) (can use this to open the Gradle Tool Window)                                                            | **⌘⇧A**        | **Ctrl+Shift+A** |
+| [Recent files](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files) (can use this to open the Gradle Tool Window)                                                         | **⌘E**         | **Ctrl+E**       |
+| [Run anything](https://www.jetbrains.com/help/idea/running-anything.html) (can run Gradle commands from here)                                                                                      | **⌃⌃**         | **Ctrl+Ctrl**    |
+| Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog                                                                                           | **⌘,**         | **Ctrl+Alt+S**   |
 
-有关本教程[ 介绍 ](../introduction)的更多链接信息。
+There are links to more information on this tutorial's [introduction](../introduction).
