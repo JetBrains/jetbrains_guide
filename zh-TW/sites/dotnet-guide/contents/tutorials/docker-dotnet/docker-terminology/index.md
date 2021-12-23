@@ -6,7 +6,7 @@ technologies:
   - .net
   - containers
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - data
@@ -52,7 +52,7 @@ Docker offers a wide range of features, which is out of scope for this tutorial.
 
 At the very least, developers should install **Docker Desktop** on their development environments ([macOS](https://desktop.docker.com/mac/stable/Docker.dmg) and [Windows](https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe)), as we'll be using it later in the tutorial.
 
-## 圖像
+## Images
 
 Containerizing our applications first starts with choosing a base image. An image is the foundation of what we will choose to build and run our application.
 
