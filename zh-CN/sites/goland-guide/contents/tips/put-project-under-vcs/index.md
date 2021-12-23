@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Put New Project Under Version Control
 technologies:
-  - 平台
+  - platform
 topics:
   - vcs
 author: dlsniper
