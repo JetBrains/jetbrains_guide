@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-04-09
-title: 简介
+title: Introduction
 technologies:
   - django
   - aws
@@ -18,7 +18,7 @@ longVideo:
 Hello everyone, welcome to part one of the AWS Django tutorial series. In this tutorial step, I will be explaining in brief about Django Framework and different Python frameworks available in the market.
 
 
-# 背景
+# Background
 
 Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development, shortly before Simon Willison's internship ended. It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt. Adrian Holovaty is a Romani jazz guitar player and a big fan of Django Reinhardt.
 
