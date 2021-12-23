@@ -4,7 +4,7 @@ date: 2018-11-04
 title: Jump to Recent File
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
   - speedsearch
 author: pwe
 subtitle: Use Recent Files to quickly jump to last-visited file.
