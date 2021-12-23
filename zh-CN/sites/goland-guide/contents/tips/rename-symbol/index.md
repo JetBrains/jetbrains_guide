@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Rename Symbol'
 technologies:
-  - 平台
+  - platform
 topics:
   - 重构
 author: dlsniper
