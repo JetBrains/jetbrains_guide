@@ -1,7 +1,7 @@
 ---
 title: Editing
 subtitle: Learn how to be more productive and write better code
-accent: primary
+accent: 主
 icon: fas fa-user-edit
 ---
 
