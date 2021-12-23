@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: 创建编辑器中的可折叠区域
+title: Create an Editor Fold
 technologies:
   - java
   - kotlin
@@ -8,7 +8,7 @@ topics:
   - editing
   - interface
 author: hs
-subtitle: 创建编辑器中可折叠区域以隐藏您的类中的某些部分
+subtitle: Create an editor fold to hide parts of your class
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -19,8 +19,8 @@ seealso:
     title: IntelliJ IDEA Help - Code folding
     href: https://www.jetbrains.com/help/idea/code-folding-settings.html
 leadin: |
-  您可以按范围选择某些代码，然后使用 **⌥⌘T** (macOS), 或 **Ctrl+Alt+T** (Windows/Linux)来创建编辑器中可折叠区域。
+  You can select some code by scope and then use **⌥⌘T** (macOS), or **Ctrl+Alt+T** (Windows/Linux), to create an editor fold.
 
-  当您在一个类的其他区域工作时，这些折叠起来的代码有助于最大限度地减少代码显示。 之后，你也可以再次展开它们。
+  These are useful to minimise some code while you're working in other areas of the class. You can always maximise them again later.
 ---
 
