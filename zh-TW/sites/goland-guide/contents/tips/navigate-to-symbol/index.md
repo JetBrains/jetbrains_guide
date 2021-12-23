@@ -4,7 +4,7 @@ title: Navigate to Symbol
 technologies:
   - go
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: Navigate your project by code, not files.
 seealso:
