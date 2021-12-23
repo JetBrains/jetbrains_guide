@@ -6,7 +6,7 @@ technologies:
 topics:
   - 重构
 author: hs
-subtitle: Extract code to a new method
+subtitle: 提取代码成新的方法
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Extract Method
     href: https://www.jetbrains.com/help/idea/extract-method.html
 leadin: |
-  Highlight the code you want to extract to a method and press **⌥⌘M** (macOS), or **Ctrl+Alt+M** (Windows/Linux), to extract it.
+  高亮选择你想提取到一个方法的代码，并按 **⌥⌘M**（macOS），或 **Ctrl+Alt+M**（Windows/Linux）来提取它。
 
-  Extracting code into a new method can be useful in improving the readability of your code.
+  将代码提取到新方法中有助于提高您的代码的可读性。
 ---
 
