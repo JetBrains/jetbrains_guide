@@ -8,7 +8,7 @@ technologies:
 topics:
   - testing
   - inspections
-  - 分析
+  - profiling
 products:
   - resharper
   - dotcover
@@ -39,7 +39,7 @@ You can manage how unit tests are displayed by clicking the **Group By** icons i
 
 From the tool window, you can start a new unit testing session. You can select which tests to run, and then **Create New Session** in the context menu.
 
-### 键盘快捷键
+### Keyboard Shortcuts
 
 When working with unit tests, keyboard shortcuts can help you be more productive. By default, unit test shortcuts will be a key combination that starts with <kbd>Ctrl+U</kbd> (for **U**nit testing). Some shortcuts are context-dependent, others are global. Here are some useful shortcuts to remember:
 
@@ -74,7 +74,7 @@ You can profile your unit tests directly from the IDE. We recommend taking a loo
 
 Using these approaches, you can assert an application meets certain performance guidelines. You can also write regression tests for performance problems or memory allocations problems, and ensure these don't come back.
 
-### 另请参阅
+### See Also
 
 - [Unit Testing in ReSharper](https://www.jetbrains.com/help/resharper/Unit_Testing__Index.html)
 - [Speed up creation of unit tests](https://www.jetbrains.com/help/resharper/Speed_up_Creation_of_Unit_Tests.html)
