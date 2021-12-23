@@ -4,7 +4,7 @@ title: Hiding all tool windows
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - ide
 author: matkoch
