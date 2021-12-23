@@ -9,9 +9,9 @@ topics:
   - completion
   - editing
   - inspections
-  - navigation
+  - 導覽
 products:
-  - rider
+  - tRANSLATED Rider
 author: citizenmatt
 subtitle: Where to start? Let's learn the two most important shortcuts, editing, and code completion.
 thumbnail: ./thumbnail.png
@@ -38,7 +38,7 @@ In case you are looking for a full overview, use these cheat sheets to master yo
 -   [Visual Studio Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_win_shortcuts.pdf)
 -   [Visual Studio OSX Keymap](https://resources.jetbrains.com/storage/products/rider/docs/Rider_VS_mac_shortcuts.pdf)
 
-### Search Everywhere
+### 隨處搜索
 
 With [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html) (<kbd>Shift, Shift</kbd>), you can navigate to types, symbols, files, recent files, actions, tool windows, run configurations, and preferences.
 
@@ -62,6 +62,6 @@ With [expand/shrink selection](https://www.jetbrains.com/help/rider/Selecting_Te
 
 ### See Also
 
-- [Search Everywhere](https://www.jetbrains.com/help/rider/Searching_Everywhere.html)
+- [隨處搜索](https://www.jetbrains.com/help/rider/Searching_Everywhere.html)
 - [Code analysis, inspections and quick-fixes](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
 - [Working with the Editor](https://www.jetbrains.com/help/rider/Working_in_the_Editor.html)
