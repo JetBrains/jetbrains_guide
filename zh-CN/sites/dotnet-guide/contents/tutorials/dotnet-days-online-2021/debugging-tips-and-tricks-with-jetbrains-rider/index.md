@@ -23,7 +23,7 @@ Debugging issues within applications is challenging! In this session, I'll show 
 
 At the end of the session, you'll walk away with a lot of knowledge to help you find those annoying issues in your applications. As a bonus, you'll walk away with a little debugging secret.
 
-### 资源
+### Resources
 
 * [Master debugging](https://github.com/jguadagno/mastering-debugging)
 * [Joe's stream](http://jjg.me/stream)
