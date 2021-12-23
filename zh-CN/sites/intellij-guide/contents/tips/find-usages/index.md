@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 查找用例
+title: 查找用法
 technologies:
   - java
 topics:
   - navigation
 author: hs
-subtitle: Use Find Usages to search for references in your code base
+subtitle: 使用"查找用法"在代码库中搜索引用
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Search for usages
     href: https://www.jetbrains.com/help/idea/find-highlight-usages.html
 leadin: |
-  Press **⌥F7** (macOS), or **Alt+F7** (Windows/Linux), to bring up the **Find Usages** tool window. You can search a single file, your whole project, or customise the scope.
+  按 **⌥F7**（macOS） 或**Alt+F7**（Windows/Linux）， 打开 **查找用法** 窗口。 您可以搜索单个文件、整个项目或自定义范围。
 
-  You can also configure the color of the usages highlighting or disable the automatic highlighting of usages.
+  您还可以配置高亮显示的颜色，或禁用自动高亮显示。
 ---
 
