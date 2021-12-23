@@ -8,7 +8,7 @@ products:
   - resharper
 topics:
   - editing
-  - 补全
+  - completion
 author: matkoch
 subtitle: Move code the smart way!
 thumbnail: ./thumbnail.png
