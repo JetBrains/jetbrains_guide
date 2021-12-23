@@ -32,7 +32,7 @@ Routing is essential to building any non-trivial web application. The advent of 
 
 Now that you have seen the basics of ASP.NET, [The Basics Series](../../basics/) will broaden your view of different .NET technologies.
 
-### 另请参阅
+### See Also
 
 - [Microsoft Docs Routing](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
