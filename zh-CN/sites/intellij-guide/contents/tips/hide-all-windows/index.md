@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: Hide all Windows
+title: 隐藏所有窗口
 technologies:
   - java
   - kotlin
 topics:
   - interface
 author: hs
-subtitle: Hide all the windows to increase your workspace
+subtitle: 隐藏所有窗口以增加您的工作空间
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,8 +18,8 @@ seealso:
     title: IntelliJ IDEA Help - Editor Basics
     href: https://www.jetbrains.com/help/idea/using-code-editor.html
 leadin: |
-  Press **⇧⌘F12** (macOS), or **Ctrl+Shift+F12** (Windows/Linux), to hide all the windows so that you can focus on your code window.
+  按**⇧⌘F12**（macOS）， 或**Ctrl+Shift+F12**（Windows/Linux），隐藏所有的窗口，以便您可以专注于代码窗口。
 
-  The same shortcut will bring your interface back to how it was before.
+  同样的快捷键也可以让界面回到隐藏以前的样子。
 ---
 
