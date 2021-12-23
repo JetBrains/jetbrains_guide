@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2020-07-15
-title: 简介
+title: Introduction
 technologies:
   - .net
   - csharp
@@ -31,7 +31,7 @@ We assume you are already familiar with Rider, so we can focus on the essential 
 - [Khalid Abuhakmeh](https://www.twitter.com/buhakmeh)
 - [Maarten Balliauw](https://www.twitter.com/MaartenBalliauw)
 
-### 另请参阅
+### See Also
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/)
 - [Rider Workshop - exercises for navigation, editing, inspections, refactoring, ...](https://github.com/JetBrains/resharper-rider-samples)
