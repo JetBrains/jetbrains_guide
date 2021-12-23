@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Undo Last Commit
 technologies:
-  - platform
+  - 平台
 topics:
   - vcs
 author: dlsniper
