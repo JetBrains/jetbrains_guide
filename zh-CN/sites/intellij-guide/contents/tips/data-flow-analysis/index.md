@@ -1,12 +1,12 @@
 ---
 date: 2021-05-10
-title: 数据流分析
+title: Data flow analysis
 technologies:
   - java
 topics:
   - latest
 author: tg
-subtitle: 数据流分析一直在改进，以显示我们逻辑中的潜在错误。
+subtitle: Data flow analysis is always being improved to show us potential errors in our logic.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Analyze data flow
     href: https://www.jetbrains.com/help/idea/analyzing-data-flow.html
 leadin: |
-  IntelliJ IDEA 的数据流分析可以定位代码中可能出现错误的位置。 例如，如果我们使用负数初始化数组，或检查一个不能为负值的值。
+  IntelliJ IDEA's data flow analysis can locate places where we could have errors in our code. For example, if we use a negative number for initialising an array, or checking for negative values where the value couldn't be negative.
 ---
 
