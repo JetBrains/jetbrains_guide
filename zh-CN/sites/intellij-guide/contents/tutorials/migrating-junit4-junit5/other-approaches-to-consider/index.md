@@ -1,30 +1,30 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Other approaches to consider
+title: 考虑其他方法
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: There are other approaches that you can consider for migration
+subtitle: 您还可以考虑其他迁移的方法
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=771
 ---
 
-To finish removing references to JUnit 4 classes, we could do [Find in Files](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html) search for `org.junit`. This will show up everything, including our new Jupiter classes. We could try an expression to capture that the next character after the dot needs to be an upper case letter: `org.JUnit.[A-Z]`. This is a regular expression, we need to toggle the case-sensitive option, and we need to make sure we specify searching [with a regular expression](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html#limit_search).
+要删除对 JUnit 4 类的引用，我们可以 [在文件中查找](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html) `org.junit`。 这将显示所有的，且包括新的 Jupiter 类。 我们可以尝试以一个表达式来表示点后面的下一个字符需要是一个大写字母：`org.JUnit.[A-Z]`. 这是一个正则表达式，我们需要切换对大小写敏感的选项，另外确保我们采用 [正则表达式](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html#limit_search) 来查找。
 
 ![find_in_files_with_regex.png](find_in_files_with_regex.png)
 
-Now we can see all the remaining files that import a class from `org.junit`.
+现在，我们可以看到所有从 `org.junit` 导入类的文件。
 
 ![files_to_change.png](files_to_change.png)
 
-There are lots of ways we could fix this, one option is to simply remove the old import, use the new JUnit 5 `Assertions` class, and add a static import for the `assertEquals` method, so it can be used by all tests in the class.
+有很多方法我们可以解决这个问题，一个是简单地删除旧的导入，使用新的JUnit 5 的 `Assertions` 类，并添加静态导入 `assertEquals` 方法，以用于类中的所有测试。
 
-Some problems can be fixed with an inspection. If we turn on "Obsolete assertions in JUnit 5 tests" we can get IntelliJ IDEA to suggest using the new JUnit 5 assertions. When we go to the editor, we have a warning on the old assert statement, and we can get IntelliJ IDEA to automatically use the new JUnit 5 Assertions instead.
+有些问题可以通过代码检查来解决。 如果我们启用“JUnit 5 测试中的已废弃断言”的代码检查，就可以让 IntelliJ IDEA 建议使用新的 JUnit 5 断言。 当我们看到编辑器里，有一个警告提示旧断言声明，我们可以让 IntelliJ IDEA 自动使用新的JUnit 5 的 Assertions 代替。
 
 ![replace_assertions.png](replace_assertions.png)
 
-IntelliJ IDEA does have inspections and automatic fixes to help migrate code from JUnit 4 to JUnit 5, but if there isn't a specific fix, we might take another approach, like doing a find and replace, or a [Structural Search](https://www.jetbrains.com/help/idea/structural-search-and-replace.html), which might be more appropriate if there are a lot of files to change but the changes are all the same. We could use [Live Templates](https://youtu.be/ffBeoE6NBSs) for common code, and we could configure our auto import settings to make sure the new JUnit imports are suggested over the old ones. The right solution will depend upon what sort of changes need to be made and how many files are affected.
+IntelliJ IDEA 有代码检查和自动修复，以帮助将代码从 JUnit 4 迁移到 JUnit 5，但如果没有特定的修复方法，我们可以采取另一种方法，比如查找和替换，或 [结构搜索](https://www.jetbrains.com/help/idea/structural-search-and-replace.html)，在有很多文件要更改，但更改都是一样的情况下就更合适。 对于一些共通的代码我们可以使用  [实时模板](https://youtu.be/ffBeoE6NBSs)，而且我们可以配置自动导入设置，以确保新的 JUnit 导入会出现在提示里。 正确的解决方案将取决于需要进行何种更改以及受影响的文件数量。
 
