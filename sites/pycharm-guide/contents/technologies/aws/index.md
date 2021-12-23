@@ -1,6 +1,6 @@
 ---
 title: Amazon AWS
-subtitle: Amazon Web Services (AWS) is a secure cloud services platform.
+subtitle: Amazon Web Services (AWS) is a secure cloud services platform
 logo: ./aws_logo.svg
 website: https://aws.amazon.com
 ---
