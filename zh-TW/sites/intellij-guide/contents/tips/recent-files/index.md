@@ -4,7 +4,7 @@ title: Recent Files
 technologies:
   - java
 topics:
-  - 導覽
+  - navigation
 author: hs
 subtitle: Navigate to any of the files that you recently had open
 thumbnail: ./thumbnail.png
