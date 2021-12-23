@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Only Commit Some Changes
 technologies:
-  - platform
+  - 平台
 topics:
   - vcs
 author: dlsniper
