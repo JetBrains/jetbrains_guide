@@ -7,8 +7,8 @@ website: https://www.jetbrains.com/resharper/
 
 ReSharper makes Visual Studio a much better IDE! ReSharper extends Visual Studio with over 2200 on-the-fly code inspections for C#, VB.NET, ASP.NET, JavaScript, TypeScript and other technologies. For most inspections, ReSharper provides quick-fixes (light bulbs) to improve the code.
 
-查找并移除未使用的代码？ 将您的代码迁移到最新的 C# 版本？ 随意将循环转换为LINQ？ 查找并防止出现可能的异常？ Use a common naming standard? All that and a lot more code improvements are made possible with ReSharper's code analysis.
+Find and remove unused code? Migrate your code to the latest C# version? Convert loops to LINQ at will? Find and prevent possible exceptions? Use a common naming standard? All that and a lot more code improvements are made possible with ReSharper's code analysis.
 
-## 另请参阅
+## See Also
 - [ReSharper home page](https://www.jetbrains.com/resharper/)
 - [ReSharper documentation](https://www.jetbrains.com/resharper/documentation/documentation.html)
