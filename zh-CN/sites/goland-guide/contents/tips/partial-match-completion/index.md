@@ -4,7 +4,7 @@ title: Partial Match Completion
 technologies:
   - go
 topics:
-  - 补全
+  - completion
 author: dlsniper
 subtitle: Complete anything by typing just parts of the identifier
 thumbnail: ./thumbnail.png
