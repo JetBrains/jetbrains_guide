@@ -12,7 +12,7 @@ seealso:
     title: PyCharm Django Support
     href: https://www.jetbrains.com/help/pycharm/django-support7.html
   - 
-    title: Code Navigation
+    title: 代码导航
     href: https://www.jetbrains.com/help/pycharm/auto-completing-code.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
