@@ -19,7 +19,7 @@ In the [previous step](../testing/) we used testing as a way to develop our comp
 
 Sometimes, though, our code has problems that require investigation with a debugger. For React, that usually means a trip to the browser to set a breakpoint and use the Chrome developer tools. Instead, let's show how the IDE's *debugger*, combined with TDD, can make this investigation far more productive.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/nodejs_debugging/).
 
@@ -133,7 +133,7 @@ Click the `Step Into` button in the debugger to step into our function call. Exe
 
 We can now poke and prod our code interactively, in the execution context where it fails.
 
-![评估表达](./screenshots/evaluate_expression.png)
+![Evaluate Expression](./screenshots/evaluate_expression.png)
 
 This is a very productive development cycle: write tests, when stuck, use the debugger. No flailing around with `console.log` in a browser's dev tools window.
 
