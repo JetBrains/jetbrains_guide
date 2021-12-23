@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - editing
