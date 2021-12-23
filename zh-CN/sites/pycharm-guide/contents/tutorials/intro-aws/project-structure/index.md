@@ -15,7 +15,7 @@ longVideo:
 
 In this tutorial step, we will be setting up the new project and exploring the project structure.
 
-# New Project
+# 新建项目
 
 As you can see the latest PyCharm Interface as they are offering in **2020.3**
 
