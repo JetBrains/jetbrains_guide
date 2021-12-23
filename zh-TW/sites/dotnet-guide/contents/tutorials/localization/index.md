@@ -10,7 +10,7 @@ topics:
   - data
   - editing
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 author: khalidabuhakmeh
 subtitle: Localization and the art of reaching more users
