@@ -1,54 +1,54 @@
 ---
 type: TutorialStep
 date: 2021-09-20
-title: 移动代码的例子
+title: Example of Moving Code Around
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 在一个类上调用重新排列代码并查看结果
+subtitle: Invoking Rearrange Code on a Class and Viewing the results
 thumbnail: ./thumbnail.png
 ---
 
-## 代码重新排列前后的示例
-让我们为这个例子修改代码排列设置。 具体来说，我们希望创建一个新的规则，将 private 方法放置在每个类的底部。
+## A Before and After Example of Code Rearrangement
+Let's modify the code arrangement settings for this example. Specifically we want to create a new rule that puts private methods at the bottom of each class.
 
-### 修改现有的排列规则
-您可以使用 **⌘,**（macOS）或 **Ctrl+Alt+S**（Windows/Linux），然后搜索 _arrangement（排列）_来变更您的排列规则偏好设置。 从过滤列表中选择 **Editor（编辑器）> Code Style（代码样式）> Java**，然后选择 **Arrangement（排列）**标签。
+### Modifying the Existing Rule Arrangement
+You can change your rule arrangement preferences with **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
 
-### 排序设置/偏好设置
-要修改您的代码排列的设置，使用 **⌘,**（macOS）或 **Ctrl+Shift+S**（Windows/Linux）打开偏好设置/设置对话框。 这个对话框是可以搜索的，所以您可以输入 _arrangement（排列）_。 这可以把对话框过滤到 **Code Style（代码样式）**。 然后您可以选择您正在使用的语言。 在这个教程中，我们将使用 **Java**。 或者您可以导航到 **Editor（编辑器）> Code Stytle（代码样式）> Java**。
+### Arrangement Settings/Preferences
+To change your code arrangement settings, use **⌘,** (macOS), **Ctrl+Shift+S** (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
 
-排列标签可以分为两个区域：
-- [分组规则](#grouping-rules)
-- [匹配规则](#matching-rules)
+The Arrangement tab is grouped into two areas:
+- [Grouping Rules](#grouping-rules)
+- [Matching Rules](#matching-rules)
 
-#### 分组规则
-IntelliJ IDEA 允许您对这三个代码元素进行分组：
+#### Grouping Rules
+IntelliJ IDEA allows you to group these three code elements:
 
-**Getters and Setters（getter 和 setter）** 是相当不言自明的。 当选择此复选框，并调用重排代码时，您的 getter 和 setter 将在您的类中被分组在一起。 这是默认选项。
+**Getters and Setters** is fairly self-explanatory. When this checkbox is selected, and you invoke rearrange code, your getters and setters will be grouped together in your class. This is enabled by default.
 
-**Override methods（重写方法）**类似 Getters 和 Setters，因为它将在您的类中将您的重写方法分组在一起。 您还可以使用根据它们在超类或者接口的顺序的选项来排序它们，或者根据它们的名字排序。 在我们的例子里，让我们选择此复选框。
+**Override methods** is similar to Getters and Setters in that it will group your Override methods together in your class. You also have the option to order them by the order they are defined in the super class or interface, or to order them by name. For our example let's select this checkbox.
 
-**Dependent methods（依赖方法）** 有下拉框，可以允许您选择广度优先或者深度优先的方式来组合方法。 您可能有此选项的用例，但对于大多数随着时间的推移而演变的 Java 代码库，尝试将_相关_的方法放在一起通常不是您想要做的。 如果您选择使用此选项，则它会优先于匹配规则。 我们建议您使用此选项或匹配规则，而不是两者都使用。 在我们的示例中，我们将使用下一节中定义的匹配规则，因为这是一个更常见的真实场景。
+**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a use-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
 
-#### 匹配规则
-这里您可以定义当您使用重新排列代码时，您希望您的类如何被排序。 您可以选择一行，并根据需要用右上角的箭头向上或向下移动。 您也可以点击每一行右边的铅笔图标来修改规则，选择更精细的粒度。
+#### Matching Rules
+This is where you can define how you'd like your classes to be ordered when you invoke rearrange code. You can select any line and move it up or down as required with the arrows in the top-right. You can also click the pencil icon to the right of each row to alter the rule and select a finer level of granularity.
 
-### 添加新的排列规则
-要添加我们的新规则，请滑到规则 22 并按下 **+** 按钮。 这将使新规则在 22 之下。 选择类型：**method（方法）** 和修饰符：**private**。 如果需要的话，您可以给它起个名字，但是类型和修饰符都显示了，所以对这个例子来说可能没有必要。
+### Adding a New Arrangement Rule
+To add our new rule, go down to rule 22 and press the **+** button. This will place the new rule below 22. Select Type: **method** and Modifier: **private**. You can give it a name if required but both the type and modifier are displayed so that may not be necessary for this example.
 
 ![New rule for private methods](new_arrangement_rule.png)
 
-现在我们已经修改了我们的[代码排列](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code)，让我们来看看它是什么样子的。 请注意，我们在这里的具体规则把 `private` 方法放在类的底部，这可能是非常有用的。 您可以在规则 23 中看到这一点。
+Now we've modified our [code arrangement](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) let's take a look at what it looks like. Note our specific rule here that puts `private` methods at the bottom of the class which can be very useful. You can see this in rule 23.
 
-鉴于您无法滚动屏幕截图，以下是顺序的文本形式，这样您就可以查看发生了什么：
+Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
 
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
  1 | field | public | static | final | 2 | field | protected | static | final | 3| field | package private | static | final| 4| field | private | static | final| 5| field | public | static | | 6| field | protected | static | | 7| field | package private | static | | 8| field | private | static | | 9| initializer block | static | | | 10| field | public | final | | 11| field | protected | final | | 12| field | package private | final | | 13| field | private | final | | 14| field | public | | | 15| field | protected | | | 16| field | package private | | | 17| field | private | | | 18| field | | | | 19| initializer block | | | | 20| constructor | | | | 21| method | static | | | 22| method | | | | 23| method | private | | | 24| enum | | | | 25| interface | | | | 26| class | static | | | 27| class | | | |
 
-下面是我们要重新排列的代码。 正如您所看到的，getter 和 setter 方法不在一起，private 方法在类的中间，重写方法也分散在类中。
+Here's the code that we're going to rearrange. As you can see, the getter and setter methods are not together, private methods are in the middle of the class and override methods are also scattered throughout the class.
 
 ```java
 public class RearrangeCode {
@@ -74,7 +74,7 @@ public class RearrangeCode {
     private String firstName;
 
     private void privateHelperMethod() {
-        // 在这里做点什么
+        // does something in here
     }
 
     public void setId(int id) {
@@ -151,48 +151,31 @@ public class RearrangeCode {
 
 ```
 
-让我们使用 **⌘⇧A**（macOS）或 **Ctrl+Shift+A**（Windows/Linux）调用
- **rearrange code（重新排列代码）</a>。 在查找操作对话框中，您可以输入 _Rearrange Code（重新排列代码）_：</p> 
+Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux). In the Find Actions dialog you can type in _Rearrange Code_:
 
 ![Rearrange Code](rearrange-code.png)
 
-在**重新排列代码**选项上按 **Enter** 来应用到当前的整个类中。
+Press **Enter** on **Rearrange Code** option to apply the settings to the whole class.
 
-当您这样做时，代码将被重新排列（见下文）。 以下是更改列表：
-
-- 所有的字段都移到了类的顶部，因为这是我们在分组行 1-8 中指定的。
-- getter 和 setter 方法被分组，因为 IntelliJ IDEA 根据分组规则将其分组在一起。
-- 重写方法已分组在一起，因为我们在分组规则中指定要把它们放在一起。 重写方法也按照它们在 Object 超类中出现的顺序实现。
-- 接下来是剩下的两个 public 方法，它们遵守了我们匹配规则的第 22 行。
-- 最后，还有一个 private 方法，它遵守我们匹配规则的第 23 行。
-
-
+When you do this, the code will be rearranged (see below). Here is a list of changes:
+- All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
+- The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
+- The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules). The Override methods are also implemented in the order they appear in the Object super class.
+- Next are the remaining two public methods, which are obeying line 22 of our matching rules.
+- Finally, there's the private method which is obeying line 23 of our matching rules.
 
 ```java
 public class RearrangeCode {
     private int id;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String phone;
+    private String notes;
+    private Collection<Order> ordersById;
 
     public int getId() {
         return id;
-    }
-
-    @Override
-    public String toString() {
-        return "RearrangeCode{" +
-               "id=" + id +
-               ", firstName='" + firstName + '\'' +
-               ", middleName='" + middleName + '\'' +
-               ", lastName='" + lastName + '\'' +
-               ", phone='" + phone + '\'' +
-               ", notes='" + notes + '\'' +
-               ", ordersById=" + ordersById +
-               '}';
-    }
-
-    private String firstName;
-
-    private void privateHelperMethod() {
-        // 在这里做点什么
     }
 
     public void setId(int id) {
@@ -200,8 +183,6 @@ public class RearrangeCode {
         System.out.println(newID);
         this.id = id;
     }
-
-    private String middleName;
 
     public String getMiddleName() {
         return middleName;
@@ -211,13 +192,9 @@ public class RearrangeCode {
         this.middleName = middleName;
     }
 
-    private String lastName;
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    private String phone;
 
     public String getPhone() {
         return phone;
@@ -227,14 +204,17 @@ public class RearrangeCode {
         this.phone = phone;
     }
 
-    private String notes;
-
     public String getNotes() {
         return notes;
     }
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, middleName, lastName, phone, notes, ordersById);
     }
 
     @Override
@@ -252,11 +232,17 @@ public class RearrangeCode {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, middleName, lastName, phone, notes, ordersById);
+    public String toString() {
+        return "RearrangeCode{" +
+               "id=" + id +
+               ", firstName='" + firstName + '\'' +
+               ", middleName='" + middleName + '\'' +
+               ", lastName='" + lastName + '\'' +
+               ", phone='" + phone + '\'' +
+               ", notes='" + notes + '\'' +
+               ", ordersById=" + ordersById +
+               '}';
     }
-
-    private Collection<Order> ordersById;
 
     public Collection<Order> getOrdersById() {
         return ordersById;
@@ -265,13 +251,13 @@ public class RearrangeCode {
     public void setOrdersById(Collection<Order> ordersById) {
         this.ordersById = ordersById;
     }
+
+    private void privateHelperMethod() {
+        // does something in here
+    }
 }
 
 
 ```
-
-
-
-## 重新排列刚刚您已经更改的代码
-
-现在您已经看到了重新排列整个类的一个工作示例，让我们来看看只重新排列您所编辑的代码，而不是整个类的用例。 
+## Rearranging Just Code You've Changed
+Now you've seen a worked example of rearranging a whole class, let's take a look at the use-case for only rearranging code that you've edited rather than the whole class. 
