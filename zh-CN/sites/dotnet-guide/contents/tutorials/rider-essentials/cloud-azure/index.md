@@ -18,7 +18,7 @@ longVideo:
   url: https://youtu.be/9zxUywlFXmY
 ---
 
-### 云支持
+### Cloud Support
 
 Rider has plugins available to work with different clouds. The [Azure Toolkit for Rider](https://plugins.jetbrains.com/plugin/11220-azure-toolkit-for-rider) gives you support for Azure, and the [AWS Toolkit for Rider](https://aws.amazon.com/rider/) does the same for AWS.
 
@@ -34,7 +34,7 @@ For Azure Functions, basic management of function apps is supported. Coding func
 
 The AWS Toolkit for Rider is an open source plugin for Rider. It's not covered in this tutorial, but there are many examples on the [AWS Toolkit for Rider](https://aws.amazon.com/rider/) website.
 
-### 另请参阅
+### See Also
 
 - [Azure Toolkit for Rider](https://plugins.jetbrains.com/plugin/11220-azure-toolkit-for-rider)
 - [AWS Toolkit for Rider](https://aws.amazon.com/rider/)
