@@ -20,7 +20,7 @@ tutorialItems:
   - /tutorials/visual_pytest/testing_exceptions/
 ---
 
-Python developers love writing code. Tests? Not so much. Whether it’s the concepts of testing, or the interface of testing tools, testing is a chasm not all developers cross.
+Python developers love writing code. 测试? Not so much. Whether it’s the concepts of testing, or the interface of testing tools, testing is a chasm not all developers cross.
 
 This tutorial aims to bring Python testing to the masses, taking a new approach to first contact with Python testing:
 
