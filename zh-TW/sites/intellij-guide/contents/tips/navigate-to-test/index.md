@@ -4,7 +4,7 @@ title: Navigate to Test
 technologies:
   - java
 topics:
-  - 導覽
+  - navigation
   - testing
 author: hs
 subtitle: Go to your matching test class
