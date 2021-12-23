@@ -13,6 +13,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/MnN2z3WSaN8
 leadin: |
-  您可以在冗余的条件表达式上使用 **⌥⏎** (macOS) 或 **Alt+Enter** (Windows/Linux) 来显示上下文操作的选项。 然后您可以删除冗余的代码了。
+  您可以在冗余的条件表达式上使用 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux）来显示上下文操作的选项。 然后您可以删除冗余的代码了。
 ---
 
