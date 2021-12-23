@@ -1,11 +1,11 @@
 ---
-title: Version Control
+title: 版本控制
 subtitle: Integrated, visual version control across your project.
-accent: primary
+accent: 主
 icon: fas fa-code-branch
 ---
 
 Working with version control systems (VCS) such as Git, Mercurial, and others is an integral part of development. WebStorm puts a common abstraction atop each system, then puts a visual face on all your VCS activities.
 
-## See Also
+## 另请参阅
 - [Version control with WebStorm](https://www.jetbrains.com/help/webstorm/version-control-integration.html)
