@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2020-07-15
-title: 簡介
+title: Introduction
 technologies:
   - .net
   - csharp
@@ -10,7 +10,7 @@ topics:
   - editing
   - inspections
 products:
-  - tRANSLATED Rider
+  - rider
 author: maartenba
 subtitle: Introduction to the Rider Essentials series.
 thumbnail: ./thumbnail.png
