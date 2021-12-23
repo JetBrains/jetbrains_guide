@@ -1,3 +1,5 @@
+"commit_message": "[ci skip]"
+
 files:
   - source: sites/**/contents
     ignore:
