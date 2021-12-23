@@ -1,13 +1,13 @@
 ---
 hasBody: true
 date: 2021-09-27
-title: IntelliJ IDEA 的免打扰模式
+title: Distraction Free Mode in IntelliJ IDEA
 technologies: [ ]
 topics:
   - settings
-  - 接口
+  - interface
 author: vb
-subtitle: 隐藏所有其他 UI 元素（工具窗、工具栏和编辑器选项卡），以便编辑器以代码为中心占据整个主窗口。
+subtitle: Hide all UI elements (tool windows, toolbars, and editor tabs) so the editor occupies the entire main window with the source code centered.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,43 +18,43 @@ seealso:
     title: IntelliJ IDEA Help - IDE viewing modes
     href: https://www.jetbrains.com/help/idea/ide-viewing-modes.html
 leadin: |
-  使用 **^\`**（macOS），或 **Ctrl+\`**（Windows/Linux），打开**快速切换方案**对话框。
+  Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Schema** dialog.
 
-  现在，您可以按 **4** 或使用箭头键移动到 **4** 并选择_视图模式_查看可用的模式列表。 现在按 **2** 或单击**进入免打扰模式**，就会仅显示编辑器窗口并专注于代码。
+  You can now press **4** or use the arrow keys to scroll to **4** and select _View Mode_ to see list of view modes available. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding.
 ---
 
-## 其他进入免打扰模式的方法
+## Alternative Ways of Entering Distraction Free Mode
 
-### 使用查看工具栏选项
-您可以使用菜单 **视图 > 外观** > **进入免打扰模式**。
+### Using View Toolbar Options
+You can use the menu **View > Appearance** > **Enter Distraction Free Mode**.
 
-![从视图工具栏进入免打扰模式](distraction-free-mode-using-menu.png)
+![Enter Distraction Free Mode using View Toolbar](distraction-free-mode-using-menu.png)
 
-### 使用“随处搜索”
-使用  **⇧⇧** （macOS）或 **Shift+Shift**（Windows/Linux）来打开“随处搜索”对话框。 现在，您可以搜索 _免打扰_ 并选择 **进入免打扰模式**。
+### Using Search Everywhere
+Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Enter Distraction Free Mode**.
 
-![使用"随处搜索"进入免打扰模式](distraction-free-mode-search-everywhere.png)
+![Enter Distraction Free Mode using Search Everywhere](distraction-free-mode-search-everywhere.png)
 
-## 退出免打扰模式
+## Exiting Distraction Free Mode
 
-您可以按照任意上述方法退出免打扰模式。
+You can follow anyone of the above-mentioned ways to exit Distraction Free Mode.
 
-### 使用快速切换方案
+### Using the Quick Switch Schema
 
-您可以使用与上述相同的快捷方式， **^\`**（macOS）， 或 **Ctrl+\`**（Windows/Linux），打开 **快速切换方案** 对话框， 然后选择 **4** 然后 **2** 退出免打扰模式。
+You can use the same shortcuts as above, **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Schema** dialog, then select **4** followed by **2** to exit distraction free mode.
 
-![使用快速切换方案退出免打扰模式](exit-distraction-free-mode-schema-switch.png)
+![Exit Distraction Free Mode from Quick Switch Schema](exit-distraction-free-mode-schema-switch.png)
 
-### 使用查看工具栏选项
+### Using View Toolbar Options
 
-或者，您也可以使用菜单 **视图 > 外观** > **退出免打扰模式**。
+Alternately, you can also use the menu **View > Appearance** > **Exit Distraction Free Mode**.
 
-![使用工具栏选项退出免打扰模式](exit-distraction-free-mode-menu.png)
+![Exit Distraction Free Mode using Toolbar Options](exit-distraction-free-mode-menu.png)
 
-### 使用“随处搜索”
+### Using Search Everywhere
 
-使用  **⇧⇧** （macOS）或 **Shift+Shift**（Windows/Linux）来打开“随处搜索”对话框。 现在，您可以搜索 _免打扰_ ，并选择 **退出免打扰模式**。
+Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Distraction_ and select **Exit Distraction Free Mode**.
 
-![使用“随处搜索”切换免打扰模式](exit-distraction-free-mode-searcheverywhere.png)
+![Toggle Distraction Free Mode using Search Everywhere](exit-distraction-free-mode-searcheverywhere.png)
 
-或者，您也可以使用 **⌘⇧A**（macOS），或 **Ctrl+Shift+A** 来打开"查找操作"对话框，"随处搜索"会过滤成只有操作。 
+Alternatively, you can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog which will filter the Search Everywhere dialog to just Actions. 
