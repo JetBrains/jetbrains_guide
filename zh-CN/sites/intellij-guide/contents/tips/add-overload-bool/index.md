@@ -6,7 +6,7 @@ technologies:
 topics:
   - refactoring
 author: hs
-subtitle: 你可以重构一个方法来改变它的方法签名
+subtitle: 您可以重构一个方法来改变它的方法签名
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -14,9 +14,9 @@ shortVideo:
   url: https://youtu.be/08A0t0KyKCA
 seealso:
   - 
-    title: IntelliJ IDEA 帮助文档 - 更改签名
+    title: IntelliJ IDEA Help - Change Signature
     href: https://www.jetbrains.com/help/idea/change-signature.html
 leadin: |
-  你可以使用 **Shift+F6** (macOS、Windows 或 Linux) 来更改方法的签名，并在添加一个新的布尔参数。 然后你可以选择 _通过重载方法委托_ 来完成重构。
+  您可以使用 **Shift+F6**（macOS、Windows 或 Linux）来更改方法的签名，并在添加一个新的布尔参数。 然后您可以选择_通过重载方法委托（Delegate via overloading method）_来完成重构。
 ---
 
