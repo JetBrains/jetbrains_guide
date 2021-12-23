@@ -1,8 +1,8 @@
 ---
-title: 最新
-subtitle: See features that are new in the latest release of IntelliJ IDEA.
-accent: 主
+title: 新特性
+subtitle: 查看最新版 IntelliJ IDEA 中的新增功能。
+accent: primary
 icon: fas fa-plus
 ---
 
-We will update this tag each time IntelliJ IDEA is released.
+每次 IntelliJ IDEA 发布时，我们都会更新此标签。
