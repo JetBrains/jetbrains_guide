@@ -1,8 +1,8 @@
 ---
 title: 测试
-subtitle: Creating and running tests for your code.
-accent: 主
+subtitle: 为您的代码创建和运行测试。
+accent: primary
 icon: fas fa-vial
 ---
 
-You can use IntelliJ IDEA to help you create and run tests across your project. 
+您可以使用 IntelliJ IDEA 来帮助您在项目中创建和运行测试。 
