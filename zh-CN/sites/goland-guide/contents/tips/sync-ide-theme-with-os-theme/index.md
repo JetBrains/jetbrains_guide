@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Sync the IDE theme with the OS theme'
 technologies:
-  - platform
+  - 平台
 topics:
   - ui
 author: dlsniper
