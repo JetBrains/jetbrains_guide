@@ -4,7 +4,7 @@ date: 2020-12-01
 title: Navigation in web applications
 technologies:
   - asp.net
-  - javaScript
+  - javascript
 topics:
   - web
   - ide
@@ -39,7 +39,7 @@ Now, what if I want to go back to a file I recently opened? There’s the **Rece
 
 The **Structure** tool window can be very handy for examining a file quickly. It provides an overview of its structure and lets you jump to a specific item by simply typing its name.
 
-### 另请参阅
+### See Also
 
 - [Sample code (ZIP file with 3 projects)](https://raw.githubusercontent.com/JetBrains/jetbrains_guide/master/sites/dotnet-guide/demos/tutorials/web-fundamentals/rider-web-fundamentals.zip) used throughout this tutorial.
 - [Rider - Navigate and Search](https://www.jetbrains.com/help/rider/Navigation_and_Search__Index.html)
