@@ -6,7 +6,7 @@ technologies:
 topics:
   - ide
 products:
-  - rider
+  - tRANSLATED Rider
 author: maartenba
 subtitle: Our developer advocates show their favourite tips and tricks, uncovering how they work with Rider.
 thumbnail: ./thumbnail.png
