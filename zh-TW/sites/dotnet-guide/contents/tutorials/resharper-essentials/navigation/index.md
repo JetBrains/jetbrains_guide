@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - 導覽
+  - navigation
 products:
   - resharper
 author: citizenmatt
