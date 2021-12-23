@@ -4,7 +4,7 @@ title: Select in
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Select the current file in the Project or Changes view and more
 thumbnail: ./thumbnail.png
