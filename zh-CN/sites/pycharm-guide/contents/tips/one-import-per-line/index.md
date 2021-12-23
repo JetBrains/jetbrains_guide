@@ -12,7 +12,7 @@ seealso:
     title: Code Style Preferences for Python Imports
     href: 'https://www.jetbrains.com/help/pycharm/2018.3/code-style-python.html#imports'
   - 
-    title: 优化 import
+    title: Optimize Imports
     href: 'https://www.jetbrains.com/help/pycharm/2018.3/creating-and-optimizing-imports.html#optimize-imports-in-project'
   - 
     title: YouTrack Feature Ticket for One-Per-Line
