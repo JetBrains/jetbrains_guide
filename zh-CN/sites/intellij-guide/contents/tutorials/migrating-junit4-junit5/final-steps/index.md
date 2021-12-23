@@ -1,23 +1,23 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Final Steps
+title: 最后的一些步骤
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Wrapping the migration up
+subtitle: 完成迁移
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=808
 ---
 
-Now we've removed all references to JUnit 4 classes and functionality, we can remove the vintage engine and use just the modern JUnit 5 test engine. Load the maven changes with **⇧⌘I** (macOS), or **Ctrl+Shift+O** (Windows/Linux) and rebuild the project **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux), to see it all compiles.
+现在，我们已经删除了所有涉及到JUnit 4的类和功能，可以删除旧的测试引擎，只使用更先进的JUnit 5测试引擎了。 按 **⇧⌘I**（macOS），或 **Ctrl+Shift+O**（Windows/Linux）来加载Maven的变更内容，然后按  **⌘F9**（macOS），或 **Ctrl+F9**（Windows/Linux）重新构建项目，并查看编译结果。
 
-Check the tests still work and pass, for example by pressing **Ctrl** twice to bring up the Run Anything window. If you type _All_ you should see the "All Tests" run configuration and run all our project's tests.
+如要检查测试是否仍然有效并可以通过，例如，通过按 **Ctrl** 两次，打开运行全部的窗口。 如果您键入 _所有_ ，您应该可以查看到"所有"的运行配置并执行我们项目的所有测试。
 
 ![run_anything.png](run_anything.png)
 
-If everything passes, you can be comfortable checking in these changes.
+如果测试都通过了，您可以悠闲地查看这些变更的地方了。
 
-We have successfully migrated all the tests in this project to JUnit 5.  The first step was to migrate the project to run our JUnit 4 tests on the JUnit 5 platform. For many projects it may be enough to do this, and there may be no need to go all the way to removing the vintage engine. The most important thing is to be able to write and run tests in the new JUnit 5 style. We've covered the advantages of using JUnit 5 in [another tutorial](../../writing-junit5-tests).
+我们已经成功地将这个项目中的所有测试迁移到JUnit 5。  第一步是迁移项目，以便在 JUnit 5 平台上运行我们的 JUnit 4 测试。 对于大多数项目，都应该能做到这一点，可能没有必要去掉所有旧的测试引擎。 最重要的是能够以新的 JUnit 5 样式编写和运行测试。 我们在[另一个教程](../../writing-junit5-tests)中涵盖了使用JUnit 5的优势 。
