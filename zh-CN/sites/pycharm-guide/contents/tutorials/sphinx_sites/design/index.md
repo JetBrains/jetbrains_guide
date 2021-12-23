@@ -28,12 +28,12 @@ All the pages on our site certainly look different now:
 
 We've replaced the [`page.html` template used Sphinx](https://github.com/sphinx-doc/sphinx/blob/master/sphinx/themes/basic/page.html) template with something static. It's used on every "page" in the site, although Sphinx also has other kinds of pages with specially-named `_templates` files to override:
 
-- 关于
+- about
 - donate
-- 布局
+- layout
 - navigation
 - relations
-- 支持
+- support
 
 Before getting into the intricacies of injecting content, let's put in a nice look-and-feel.
 
