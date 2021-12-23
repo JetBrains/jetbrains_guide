@@ -1,7 +1,7 @@
 ---
 label: 20
 date: 2021-07-13
-title: 隨處搜索
+title: Search Everywhere
 technologies: [ ]
 topics:
   - tricks
