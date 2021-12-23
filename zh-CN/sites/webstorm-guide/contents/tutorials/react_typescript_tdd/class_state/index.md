@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Class Components With State
 technologies:
   - react
@@ -22,7 +22,7 @@ That's the topic of this step. We want a reusable counter component that interna
 
 This step, though, will be just the minimum: no actual clicking to update state, for example. We will stick to introducing component state and modeling it in TypeScript.
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
@@ -42,8 +42,8 @@ Here's a `Counter.test.tsx` test to show that the counter starts at zero, which 
 
 ```typescript
 test("should start at zero", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
 });
 ```
@@ -66,8 +66,8 @@ export class Counter extends Component<CounterProps, CounterState> {
     const { label = "Count" } = this.props;
     return (
       <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter">
+        <span title="Count Label">{label}</span>
+        <span id="counter" title="Current Count">
           {this.state.count}
         </span>
       </div>
@@ -108,8 +108,8 @@ export class Counter extends Component<CounterProps, CounterState> {
     const { label = "Count" } = this.props;
     return (
       <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter">
+        <span title="Count Label">{label}</span>
+        <span id="counter" title="Current Count">
           {this.state.count}
         </span>
       </div>
@@ -130,8 +130,8 @@ First, a failing test in `Counter.test.tsx`:
 
 ```typescript
 test("should start at another value", () => {
-  const { getByRole } = render(<Counter start={10} />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter start={10} />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("10");
 });
 ```
@@ -167,14 +167,14 @@ This lifecycle method is run once, when the component is initialized. If a prop 
 
 We wrap up each step by wiring the standalone component changes into the parent component, first through testing, then by looking in the browser. Our `App.test.tsx` currently tests the label but not the counter. Let's open `App.test.tsx` and add a test of the count value:
 
-```typescript {2,7,8}
+```typescript {7,8}
 test("renders hello react", () => {
-  const { getByLabelText, getByText, getByRole } = render(<App />);
+  const { getByTitle, getByText } = render(<App />);
   const linkElement = getByText(/hello react/i);
   expect(linkElement).toBeInTheDocument();
-  const label = getByLabelText("Current");
+  const label = getByTitle("Count Label");
   expect(label).toBeInTheDocument();
-  const counter = getByRole("counter");
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
 });
 ```
