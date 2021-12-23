@@ -4,7 +4,7 @@ title: Find In Path With Navigation Bar
 technologies:
   - go
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: Use keyboard and Navigation Bar to find files under a path.
 seealso:
