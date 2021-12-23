@@ -6,7 +6,7 @@ technologies:
   - go
   - web
   - kubernetes
-  - 平台
+  - platform
 topics: [ ]
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2020.3
