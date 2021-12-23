@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - 补全
+  - completion
   - editing
   - inspections
   - ide
