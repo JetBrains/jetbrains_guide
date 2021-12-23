@@ -217,7 +217,7 @@ extensions = [
 
 It's visually attractive. More than that, though...it's semantically rich: links to navigate around, styling for the structure, and more.
 
-更多优势?
+More?
 
 ## Referencing Symbols in Docs
 
