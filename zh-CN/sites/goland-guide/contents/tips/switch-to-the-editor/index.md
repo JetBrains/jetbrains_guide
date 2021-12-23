@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: Switch to the editor
+title: 切换到编辑器
 technologies:
   - go
 topics:
@@ -15,7 +15,7 @@ shortVideo:
 leadin: |
   There are a lot of (tool) windows opening or appearing when using the IDE.
 
-  How can we quickly get back to the editor?
+  如何快速返回编辑器？
 
   We can press the _Esc_ key, and the focus will switch back to the editor.
 
