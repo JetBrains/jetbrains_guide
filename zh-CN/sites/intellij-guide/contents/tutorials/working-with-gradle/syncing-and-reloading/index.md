@@ -5,7 +5,7 @@ title: Syncing and reloading
 technologies:
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
 subtitle: Sometimes you may need to encourage IntelliJ IDEA to reload any changes from the Gradle configuration.
 thumbnail: ./thumbnail.png
