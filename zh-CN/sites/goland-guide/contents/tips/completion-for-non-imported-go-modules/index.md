@@ -4,7 +4,7 @@ title: Completion for non-imported Go Modules
 technologies:
   - go
 topics:
-  - 补全
+  - completion
   - editing
 author: dlsniper
 subtitle: Import a module even if it was imported or used in your project
