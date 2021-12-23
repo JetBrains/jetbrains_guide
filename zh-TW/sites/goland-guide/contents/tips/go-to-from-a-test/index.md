@@ -4,7 +4,7 @@ title: Go to/from a test
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Navigate to and from a test subject like a method or function
 thumbnail: ./thumbnail.png
