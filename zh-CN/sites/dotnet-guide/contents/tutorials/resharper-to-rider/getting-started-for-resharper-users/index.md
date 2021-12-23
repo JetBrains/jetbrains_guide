@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2021-03-29
+date: 2021-10-12
 title: 入门指南
 technologies:
   - .net
@@ -24,6 +24,16 @@ We understand that you've likely spent most of your .NET development career work
 All developers can benefit from reading this quick start guide, and if you have used ReSharper before, you'll be at home quickly; as you'll see, there are many similarities. This guide covers common topics from a high-level perspective. For detailed information about any particular subject, we suggest going to [the official JetBrains documentation](https://www.jetbrains.com/help/rider/Introduction.html) for more in-depth details.
 
 Let's get started!
+
+## Download and Install Rider and the .NET SDK
+
+To get started, you will need a couple of things first: Rider itself, and the .NET SDK.
+
+You can [download and install Rider](https://www.jetbrains.com/rider/) from our website, or use the [Toolbox App](https://www.jetbrains.com/toolbox/app) that makes it more convenient to update the IDE or install multiple versions side-by-side.
+
+> **Note:** To work with .NET 6, you will need the [Rider 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/rider/eap/).
+
+Next, [**download the .NET SDK**](https://dotnet.microsoft.com/download/dotnet/). You will find downloads for Windows, macOS and Linux. Make sure to install the SDK, not just the runtime - the SDK contains all the compiler and build tools to develop in .NET.
 
 ## Import Settings From Existing Environments
 
