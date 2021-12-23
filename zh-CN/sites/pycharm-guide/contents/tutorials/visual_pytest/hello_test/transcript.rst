@@ -24,7 +24,7 @@ If you don't see the pytest menu entry, make sure you setup pytest as the test r
 
     * Right click
     * Mouse over ``Run pytest`` but pause a long time
-    * 选择
+    * Select
 
 PyCharm runs pytest with results in the test runner tool window tests on the left and output of the selected test on the right:
 
@@ -41,7 +41,7 @@ Then in the body, assert that doing so returns something truthy, just as a simpl
     * Change the test name to ``test_construction``
     * Delete "True"
     * Type ``Pla`` and Ctrl-Space | Ctrl-Space
-    * 添加 ``()``
+    * Add ``()``
 
 When we re-run the tests, our single test passes.
 
