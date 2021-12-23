@@ -1,26 +1,26 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Manual migration for more complex cases
+title: 更复杂的手动迁移案例
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Migrating more complex uses cases from JUnit 4 to JUnit 5
+subtitle: 迁移更复杂的从 Junit 4 到 Junit 5的案例
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=566
 ---
 
-If the tests in the project are fairly straightforward ones, this automatic migration should take care of most of the tasks that need to happen.  However, not all cases can be managed automatically.
+如果项目中的测试相当简单，则自动迁移应该会处理需要执行的大部分任务。  但是，并非所有案例都可以自动。
 
-Migration from JUnit 4 to JUnit 5 could be a slow and steady process.
+从 Junit 4 迁移到 Junit 5 可能是一个慢慢的过程。
 
-At this point in our project, we have some tests fully migrated to JUnit 5, some partially migrated but using some JUnit 4 features, and potentially there may be some classic JUnit 4 (or even JUnit 3) tests running as they are. We're running them all using JUnit 5, so we can write new tests using the new JUnit 5 features but keep existing stable tests as they are, if we choose.
+在我们的项目中，我们有一些测试完全迁移到了 JUnit 5，有些部分迁移，会用一些 JUnit 4 的功能，并且可能有一些按照它们原有的经典的 JUnit 4（甚至 JUnit 3）的方式运行。 我们可以选择使用 JUnit 5 运行它们，用新的 JUnit 5 功能编写新的测试，并保持现有的稳定。
 
-However, we might want to remove the dependency on the vintage engine to prevent ourselves from accidentally writing tests in the old style.  If we remove this dependency, refresh the maven changes and rebuild the project, we will be able to see which classes require the vintage engine, and therefore which tests need more help migrating to JUnit 5.
+然而，我们可能想要消除对旧测试引擎的依赖，以防止意外地用旧风格编写测试。  如果我们消除这种依赖，刷新 maven 的配置更改并重新构建项目，我们将能够看到哪些类需要旧的测试引擎，哪些测试需要付出更多来迁移到 JUnit 5。
 
-One example of a change that we might do manually is to use the correct import for `assertThat` from [Hamcrest](http://hamcrest.org/JavaHamcrest/).  We could do this by removing the reference to the JUnit `Assert` class, and getting IntelliJ IDEA to static import the Hamcrest `MatcherAssert.assertThat`. We can use optimise imports to remove the unnecessary JUnit 4 `Assert` import.
+举个例子，我们手动从 [Hamcrest](http://hamcrest.org/JavaHamcrest/) 导入 `assertThat` 。  我们可以通过删除对 Junit `Assert` 类的引用， 并让 Intellij IDEA 静态导入 Hamcrest 的 `MatcherAssert.assertThat`。 我们可以使用优化 import 来消除不必要的 Junit 4 `Assert` 导入。
 
-We may discover that some of our tests are even JUnit 3 style tests - these tests extend a `TestCase` instead of using annotations.  Pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) on the class suggests that we can migrate this to JUnit 4, which seems like a good first step. Now the test will use annotations, and won't import anything from the old `junit.framework` package.  Now we can take the next step and migrate this test to JUnit 5.  We might also want to do optimise imports to remove any old imports that aren't needed.
+我们可能会发现，一些测试甚至是JUnit 3样式 - 这些测试继承了 `TestCase` 而不是使用注解。  按 **⌥⏎**（macOS），或 **Alt+Enter**（Windows/Linux）打开提示我们可以将此迁移到 JUnit 4，这似乎是一个很好的开始。 现在测试将使用注解，不会从旧的 `junit.framework` 包中导入任何东西。  接下来，我们可以进行下一步，将此测试迁移到 JUnit 5。  我们还可以优化 import，来消除任何不需要的旧的导入。
 
