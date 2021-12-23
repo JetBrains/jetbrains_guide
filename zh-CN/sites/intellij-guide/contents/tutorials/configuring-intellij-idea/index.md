@@ -1,11 +1,11 @@
 ---
 date: 2021-05-14
-title: 配置您的项目结构和 IntelliJ IDEA 偏好设置/设置
+title: Configuring your project structure and IntelliJ IDEA preferences/settings
 technologies: [ ]
 topics:
   - settings
 author: hs
-subtitle: 您可以在 IntelliJ IDEA 里配置您的项目结构以及您的偏好设置/设置。
+subtitle: You can configure your project structure as well as your preferences/settings for IntelliJ IDEA.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/configuring-intellij-idea/configuring-project-structure/
