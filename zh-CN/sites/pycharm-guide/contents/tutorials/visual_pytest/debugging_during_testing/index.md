@@ -54,7 +54,7 @@ The debugger was meant for this. Fortunately PyCharm has a great "visual" debugg
 
 Remove the `print` statement and instead, click in the gutter beside the first line in that test function. This adds a red circle to indicate a breakpoint at `assert player_one.primary_guardian`:
 
-![设置断点](./breakpoint.png)
+![Set Breakpoint](./breakpoint.png)
 
 Let's now run that *one* test, but under the debugger, which itself will then run `pytest`. Click the green triangle in the gutter to the left of `test_primary_guardian` and choose `Debug 'pytest for test_play...'. This brings up a new tool window in the bottom, running the debugger:
 
@@ -68,7 +68,7 @@ Aha, that's the problem! But let's say we *still* couldn't spot it. We want to p
 
 Highlight `player_one.primary_guardian` in that line of code -- the one triggering the error -- then right click and choose `Evaluate Expression`. When you click the `Evaluate` button, you see the output:
 
-![评估表达](./evaluate_expression.png)
+![Evaluate Expression](./evaluate_expression.png)
 
 You can now poke around interactively in the state at that point by typing in the `Expression:` field. You can even overwrite the value of a variable in the scope or create new variables.
 
