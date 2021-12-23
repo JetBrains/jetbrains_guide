@@ -1,7 +1,7 @@
 ---
-title: 调试
+title: Debugging
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-bug
 ---
 
