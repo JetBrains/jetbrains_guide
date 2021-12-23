@@ -1,19 +1,19 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: build.gradle 文件
+title: The build.gradle file
 technologies:
   - gradle
 topics: [ ]
 author: tg
-subtitle: 了解如何更轻松地在 IntelliJ IDEA 里使用 Gradle 配置文件。
+subtitle: See how IntelliJ IDEA makes it easier to work with Gradle's configuration file.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=281
 ---
 
-让我们来看看 IntelliJ IDEA 为我们生成的 build.gradle 文件。
+Let's take a look at the build.gradle file IntelliJ IDEA generated for us.
 
 ```groovy
 plugins {
@@ -37,12 +37,12 @@ test {
 }
 ```
 
-在插件部分，我们有 [`java`](https://docs.gradle.org/current/userguide/java_plugin.html) 插件。 这下面的元数据是我们保留为默认值的组和版本信息。 我们使用 Maven Central 作为默认依赖项的库。
+In the plugins section we have the [`java`](https://docs.gradle.org/current/userguide/java_plugin.html) plugin. The metadata underneath this is the group and version information that we left as the defaults. We're using Maven Central as the default dependency repository.
 
-IntelliJ IDEA 为我们默认设置了一些我们可能需要的项目的依赖项。 我们有 [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) 设置为测试依赖项，在录制时是 5.7 版本。 我们还有 [junit-jupiter-engine](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine)，因为我们需要它来运行我们编写的 JUnit 5 测试。
+IntelliJ IDEA has set us up with a couple of default dependencies that we probably need for the project. We have [JUnit 5](https://junit.org/junit5/docs/current/user-guide/), specifically 5.7 at the time of recording, set up as a test dependency. We also have [junit-jupiter-engine](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine), since we need this to run any JUnit 5 tests that we write.
 
-请注意，IntelliJ IDEA 使用更新的 [依赖项的设置名称](https://docs.gradle.org/current/userguide/declaring_dependencies.html)，例如` testImplementation ` 取代了` testCompile `。 还有使用紧凑形式的依赖项声明，冒号分隔的组名、工件名称和版本号。
+Note that IntelliJ IDEA uses the updated [configuration names for the dependencies](https://docs.gradle.org/current/userguide/declaring_dependencies.html), for example `testImplementation` instead of `testCompile`. It also uses the compact form for dependency declaration, with the group name, artifact name and version number separated by colons.
 
-为了让 Gradle 运行 JUnit 5 测试， `build.gradle` 文件的测试部分需要 `useJUnitPlatform`，所以 IntelliJ IDEA 也为我们生成了这个测试。
+In order for Gradle to run JUnit 5 tests, the test section of the `build.gradle` file needs to say `useJUnitPlatform`, so IntelliJ IDEA has generated this for us too.
 
-现在我们知道了应该为 Gradle 项目声明依赖项的位置，让我们看一下如何添加或更新依赖项。
+Now that we know where the dependencies should be declared for a Gradle project, let's look at how to add or update dependencies.
