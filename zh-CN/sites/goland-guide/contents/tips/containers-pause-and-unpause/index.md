@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Pause and unpause containers'
 technologies:
-  - 容器
+  - containers
 topics:
   - running
 author: dlsniper
