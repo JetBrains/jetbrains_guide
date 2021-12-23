@@ -1,12 +1,12 @@
 ---
 date: 2021-05-31
-title: 生成测试方法
+title: Generate Test Methods
 technologies:
   - java
 topics:
   - testing
 author: hs
-subtitle: 在测试类中生成测试方法
+subtitle: Generate a test method in your Test class
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Generate code
     href: https://www.jetbrains.com/help/idea/generating-code.html
 leadin: |
-  按 **⌘N**（macOS），或 **Alt**+**Ins**（Windows/Linux） 打开 _生成_ 菜单。 可用的选项取决于您在项目中使用的测试框架，例如 JUnit 5。
+  Press **⌘N** (macOS), or **Alt**+**Ins** (Windows/Linux) to open the _Generate_ menu. The options you get will depend on the testing framework you are using in your project, for example, JUnit 5.
 ---
 
