@@ -7,7 +7,7 @@ products:
   - dotmemory
 topics:
   - inspections
-  - 分析
+  - profiling
 author: khalidabuhakmeh
 subtitle: Inspect retention paths for an instance or a group of objects.
 thumbnail: ./thumbnail.png
