@@ -1,8 +1,8 @@
 ---
 title: 重构
-subtitle: Refactor your code safely.
-accent: 主
+subtitle: 安全的重构代码。
+accent: primary
 icon: fas fa-exchange-alt
 ---
 
-With IntelliJ IDEA, you can refactor your code as requirements change, and new language features are introduced.
+您可以在需求变化时使用 IntelliJ IDEA 重构代码，并引入新的语言功能。
