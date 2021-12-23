@@ -10,7 +10,7 @@ topics:
   - ide
   - refactoring
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: See how the IDE helps you safely refactor code, without breaking existing code.
 thumbnail: ./thumbnail.png
