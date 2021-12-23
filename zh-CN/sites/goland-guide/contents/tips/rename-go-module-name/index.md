@@ -4,7 +4,7 @@ title: 'Rename Go module refactoring'
 technologies:
   - go
 topics:
-  - refactoring
+  - 重构
 author: dlsniper
 subtitle: 'Upgrade Go modules to newer versions with ease'
 thumbnail: ./thumbnail.png
