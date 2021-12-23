@@ -5,7 +5,7 @@ title: TDD and The Terminator — An Introduction to Test Driven Development
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - web
