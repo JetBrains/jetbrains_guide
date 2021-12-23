@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Rich Events and Testing
 technologies:
   - react
@@ -30,7 +30,7 @@ As in previous steps, start with the following setup:
 
 - Stop the `start` run configuration
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/rich_events_and_testing).
 
@@ -43,10 +43,10 @@ import { render, fireEvent } from "@testing-library/react";
 // ...
 
 test("should increment the count by one", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
-  fireEvent.click(counter)
+  fireEvent.click(counter);
   expect(counter).toHaveTextContent("1");
 });
 ```
@@ -65,9 +65,9 @@ The component doesn't handle clicks. Let's head to `Counter.tsx` and add a click
 
 ```typescript
 <span
-  id="counter"
-  role="counter"
-  onClick={() => this.setState({ count: this.state.count + 1 })}
+    id="counter"
+    title="Current Count"
+    onClick={() => this.setState({ count: this.state.count + 1 })}
 >
   {this.state.count}
 </span>
@@ -78,21 +78,25 @@ Our test passes. But that's putting some logic into the component TSX. Also, inl
 Let's move it out into a class method, which also makes that behavior easier to test in isolation:
 
 ```typescript
-  incrementCounter = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
+incrementCounter = () => {
+  this.setState({ count: this.state.count + 1 });
+};
 
-  render() {
-    const { label = "Count" } = this.props;
-    return (
-      <div>
-        <label htmlFor="counter">{label}</label>
-        <span id="counter" role="counter" onClick={this.incrementCounter}>
-          {this.state.count}
-        </span>
-      </div>
-    );
-  }
+render() {
+  const { label = "Count" } = this.props;
+  return (
+    <div>
+      <span title="Count Label">{label}</span>
+      <span
+        id="counter"
+        title="Current Count"
+        onClick={this.incrementCounter}
+      >
+        {this.state.count}
+      </span>
+    </div>
+  );
+}
 ```
 
 The above was a bit of a lie: this isn't strictly a class *method*. It is a property that is an arrow function. This solves the issue of binding, allowing `this` to be bound to the component instance, not the event.
@@ -179,8 +183,8 @@ On to the feature, first by writing a test. Clone the last test and change it to
 
 ```typescript
 test("should increment the count by ten", () => {
-  const { getByRole } = render(<Counter />);
-  const counter = getByRole("counter");
+  const { getByTitle } = render(<Counter />);
+  const counter = getByTitle("Current Count");
   expect(counter).toHaveTextContent("0");
   userEvent.click(counter, { shiftKey: true });
   expect(counter).toHaveTextContent("10");
