@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: 'Move Block Up/Down Using Keyboard'
 technologies:
-  - 平台
+  - platform
 topics:
   - editing
 author: dlsniper
