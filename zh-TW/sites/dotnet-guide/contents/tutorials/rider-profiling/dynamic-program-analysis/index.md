@@ -9,7 +9,7 @@ topics:
   - ide
   - profiling
 products:
-  - rider
+  - tRANSLATED Rider
 author: maartenba
 subtitle: Rider automatically analyzes memory of your applications, all the time!
 thumbnail: ./thumbnail.png
