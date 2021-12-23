@@ -1,28 +1,28 @@
 ---
 type: TutorialStep
 date: 2021-09-06
-title: 仅格式化您刚更改的代码
+title: Reformatting code you've changed
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 如何仅对编辑过的代码进行重新格式化
+subtitle: How you can reformat only code you've edited
 thumbnail: ./thumbnail.png
 ---
 
-### 仅重新格式化您已更改的代码
-正如我们在上一步中谈到的，您可以使用快捷键 **⌘⌥L**（macOS），或 **Ctrl+Alt+L**（Windows/Linux）根据您的设置重新格式选择的代码或整个类。 您也可以在类级别上进行操作， 通过 **⌘⇧A**（macOS），或 **Ctrl+Shift+A**（Windows/Linux）打开查找操作对话框， 然后搜索 _重新格式化代码_：
+### Reformatting Only Code You Have Changed
+As we talked about in the previous step, you can use the keyboard shortcut **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code or the whole class according to your reformatting settings. You can also invoke it at a class level with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), to bring up the Find Actions dialog and then type in _Reformat Code_:
 
-![通过查找操作来格式化代码](reformat-code-find-actions.png)
+![Reformat Code from Find Actions](reformat-code-find-actions.png)
 
-在 **重新格式化代码** 选项按 **回车键** ，将当前的样式设置应用于您的类。
+Press **Enter** on the **Reformat Code** option to apply the current reformatting settings to your class.
 
-然而，您通常不想重新格式化您正在处理的整个文件，特别是如果这是格式不一致的代码。 您不想与您已完成的功能或 bug 修复一起提交大量的空格更改。  如果您正在处理一个格式不一致的代码的文件，但您只更改了其中的一小部分，那么使用  **重新格式化代码** 可能会更改未触及的部分。 在这种情况下，推荐您选择更改的代码，[只格式化那部分](../reformatting-a-selection-or-class)，但当您的更改分散落在文件中时，这将起不到作用。
+However, often you don’t want to reformat the whole file that you’re working on, particularly if this is a code base with inconsistent formatting. You don't want to commit a lot of white space changes as well as the feature or bug fix that you've done.  If you are working on a file with some inconsistently formatted code, but you’ve only changed a small part of it, using **Reformat Code** might change parts of the file you haven't touched. In this instance, you would ideally like to highlight the code you’ve changed and [just reformat that](../reformatting-a-selection-or-class), but that won’t work when your changes are scattered throughout the file.
 
-在这种情况下，您可以使用 **⌥⇧⌘L**（macOS），或 **Ctrl+Alt+Shift+L**（Windows/Linux）来打开重新格式化选项的对话框：
+In this instance, you can use **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux) to bring up the reformatting options dialog:
 
-![仅格式化您更改的代码](reformat-code-only-changed.png)
+![Reformat Only Code That's Changed](reformat-code-only-changed.png)
 
-在此对话框中，选择 **仅未提交到 VCS 的变更**。 当你按下 **运行**，IntelliJ IDEA将格式化文件中您改变过的行，不涉及其他行。
+In this dialog, select **Only changes uncommitted to VCS**. When you press **Run**, IntelliJ IDEA will reformat the lines in the file that you've changed and nothing else.
 
-## 用提示操作进行重新格式化
-让我们在下一步中来看看如何通过 [提示操作](https://www.jetbrains.com/help/idea/intention-actions.html) 来格式化代码。
+## Reformatting with Intention Actions
+Let's take a look at how you can reformat code with [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) in the next step.
