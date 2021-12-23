@@ -1,8 +1,8 @@
 ---
 title: HTML
-subtitle: Standard markup language for creating web pages
+subtitle: 用于创建网页的标准标记语言。
 logo: html5-plain.svg
 website: https://developer.mozilla.org/en-US/docs/Web/HTML
 ---
 
-HTML is the standard markup language for documents designed to be displayed in a web browser.
+HTML 是设计用于在 Web 浏览器中显示文档的标准标记语言。
