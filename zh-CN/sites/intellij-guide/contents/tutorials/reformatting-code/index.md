@@ -1,13 +1,13 @@
 ---
 date: 2021-09-06
-title: 在 IntelliJ IDEA 中重新格式化代码
+title: Reformatting Code in IntelliJ IDEA
 technologies:
   - java
 topics:
   - settings
   - tricks
 author: hs
-subtitle: 为什么以及如何在项目中格式化代码
+subtitle: Why and how you can reformat code in your projects
 thumbnail: ./thumbnail.png
 videoBottom: true
 tutorialItems:
