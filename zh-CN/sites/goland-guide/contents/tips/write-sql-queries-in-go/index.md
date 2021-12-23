@@ -2,14 +2,14 @@
 date: 2021-07-30
 title: 'Write SQL queries using popular database packages'
 technologies:
-  - 数据库
+  - databases
 topics:
   - mongodb
-  - 补全
+  - completion
   - editing
   - inspections
   - navigation
-  - 重构
+  - refactoring
   - running
 author: dlsniper
 subtitle: 'Work with SQL queries and get completion and other features automatically.'
