@@ -17,11 +17,11 @@ If you want to find out more about Spock, take a look at [the excellent referenc
 
 Here are some helpful shortcuts mentioned in the tutorial and video:
 
-| 名称 | macOS 快捷键 | Windows 快捷键    |
-| -- | --------- | -------------- |
-| 新  | **⌘N**    | **Alt+Insert** |
+| Name | macOS Shortcut | Windows Shortcut |
+| ---- | -------------- | ---------------- |
+| New  | **⌘N**         | **Alt+Insert**   |
 - use in the project window to create a new file or directory||
 - use inside a test class to generate a new test method||
 - use inside the `build.gradle` or `pom.xml` file to add a new dependency|| |[Run](https://www.jetbrains.com/help/idea/junit.html#c0ec7ecb) test class|**⌃R**|**Shift+F10**| |[Inline](https://www.jetbrains.com/help/idea/inline.html) variable or method|**⌘⌥N**|**Ctrl+Alt+N**| |[Clone caret](https://www.jetbrains.com/help/idea/inline.html) above or below|**⌥** twice without releasing it, then press the **Up** or **Down** arrow keys|**Ctrl** twice without releasing it, then press the **Up** or **Down** arrow keys| |[Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9), use if you don't remember a keyboard shortcut. We used this for "rerun tests"|**⌘⇧A**|**Ctrl+Shift+A**| |[Context suggestions](https://www.jetbrains.com/help/idea/intention-actions.html). IntelliJ IDEA suggests ways to fix or change the code at the caret. In our case, we used this to generate methods when we called a method that didn't exist yet.|**⌥⏎**|**Alt+Enter**| |Load Gradle/Maven changes|**⇧⌘I**|**Ctrl+Shift+O**| | Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog|**⌘,**|**Ctrl+Alt+S**|
 
-有关本教程[ 介绍 ](../introduction)的更多链接信息。
+There are links to more information on this tutorial's [introduction](../introduction).
