@@ -1,5 +1,5 @@
 Whether its the concepts or the interface, it's hard to get everybody into
-测试. In this course, we make testing fun and productive, using PyCharm
+testing. In this course, we make testing fun and productive, using PyCharm
 as a UI for pytest.
 
 
@@ -24,7 +24,7 @@ to a problem.
 - Skipping Tests
 
 Sometimes you want to silence a test while you're still working on your
-代码. pytest has decorators which help this.
+code. pytest has decorators which help this.
 
 - Fixtures
 
