@@ -9,7 +9,7 @@ author: pwe
 subtitle: Use the keyboard to put a wrapper tag around a selection of code.
 seealso:
   - 
-    title: Surround code fragments
+    title: 环绕代码段
     href: 'https://www.jetbrains.com/help/pycharm/surrounding-blocks-of-code-with-language-constructs.html#Surrounding_Blocks_of_Code_with_Language_Constructs.xml'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
