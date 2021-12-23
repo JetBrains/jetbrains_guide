@@ -70,7 +70,7 @@ different kinds of sequences. The warning disappears:
     * Accept first selection (from typing)
 
 Now a second feature: denoting a *primary* guardian, meaning, the first
-assigned. Same pattern: write a failing test, mark it with skip, implement,
+已分配. Same pattern: write a failing test, mark it with skip, implement,
 remove skip.
 
 We will clone the previous test [pause], change its name to denote testing
@@ -80,7 +80,7 @@ guardian:
 
     * Click in ``test_add_guardians`` first line
     * Expand selection
-    * Duplicate
+    * 副本
     * Change the test name to ``test_primary_guardian``
 
 In the Player class, we will add a Python property that holds this logic. The
@@ -88,7 +88,7 @@ In the Player class, we will add a Python property that holds this logic. The
 
     * Click in other window
     * Use the ``property`` live template
-    * ``@property``
+    * ``@属性``
     * ``def primary_guardian(self):``
     * ``    return self.guardians[0]``
 
