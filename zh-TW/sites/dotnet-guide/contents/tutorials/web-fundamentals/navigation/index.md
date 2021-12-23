@@ -8,9 +8,9 @@ technologies:
 topics:
   - web
   - ide
-  - 導覽
+  - navigation
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: How can you find what you want? Let's look at navigating around a code base.
 thumbnail: ./thumbnail.png
