@@ -8,7 +8,7 @@ technologies:
 topics:
   - refactoring
 products:
-  - tRANSLATED Rider
+  - rider
 author: rachelappel
 subtitle: How to safely refactor code, without breaking the build? Let's have a look.
 thumbnail: ./thumbnail.png
