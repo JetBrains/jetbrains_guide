@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-10-13
-title: 简介
+title: Introduction
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 您可以使用 GitHub 共享本地仓库的两种方式
+subtitle: Two ways you can share your local repository with GitHub
 thumbnail: ./thumbnail.png
 ---
 
-有几种方法可以使用 Intellij IDEA 将我们在 IntelliJ IDEA 中编写的代码发布到 GitHub 上。 在本教程中，我们将介绍两种方法。
+There are a few ways to use IntelliJ IDEA to publish code that we’ve written in IntelliJ IDEA on GitHub. In this tutorial, we will go over two approaches.
 
-第一个方法是最快，您可以在一步中创建您的本地和远程仓库。 第二种方法先创建本地存储库，然后在另外的步骤中将您的项目共享到 GitHub。
+The first is the quickest where you create your local and remote repository in one step. The second approach is where you first create your local repository and then, in a separate step, you share your project to GitHub.
 
-让我们假设您已经创建了一个 IntelliJ IDEA 项目，其中包含您要在 GitHub 上共享的代码。 此教程假定您的项目当前未使用 Git 版本控制。 您可以通过使用 **⌘9**（macOS）或 **Alt+9**（Windows/Linux）来尝试加载您的 Git 日志窗口来验证这一点。 如果您没有使用 Git 创建本地仓库，这将不起作用。
+Let’s assume you have created an IntelliJ IDEA project containing the code you want to share on GitHub. This tutorial assumes that your project is not currently using Git version control. You can verify this by trying to load your Git log window with **⌘9** (macOS), or **Alt+9** (Windows/Linux). This won't work if you have not created a local repository with Git.
 
-您也可以查看项目下的 `.git` 文件夹来验证项目版本控制的状态。 如果您没有看到它，那么您还没有在您的项目里配置 Git。 
+You can also verify the status of your project version control by looking for a `.git` folder in the project. If you don't have one, you have not yet configured Git for your project. 
