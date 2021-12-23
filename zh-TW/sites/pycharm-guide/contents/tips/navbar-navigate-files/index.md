@@ -4,7 +4,7 @@ date: 2019-01-21
 title: Navigate Files With Navigation Bar
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
   - navigationbar
 author: pwe
 subtitle: Move around your project tree and select files, from your keyboard, with the Navigation Bar.
