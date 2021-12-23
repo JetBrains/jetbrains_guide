@@ -1,7 +1,7 @@
 ---
-title: 用户界面
+title: User Interface
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-laptop
 ---
 
