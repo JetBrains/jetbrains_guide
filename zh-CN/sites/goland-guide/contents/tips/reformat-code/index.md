@@ -1,6 +1,6 @@
 ---
 date: 2020-10-15
-title: 'Reformat Code'
+title: '重新格式化代码'
 technologies:
   - go
 topics:
