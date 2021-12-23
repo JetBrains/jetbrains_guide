@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Drag & drop editor tabs'
 technologies:
-  - 平台
+  - platform
 topics:
   - ui
 author: dlsniper
