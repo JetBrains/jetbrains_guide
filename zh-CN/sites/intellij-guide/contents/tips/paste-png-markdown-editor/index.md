@@ -1,18 +1,18 @@
 ---
 date: 2021-07-01
-title: 将剪贴板图片文件粘贴到 markdown 中
+title: Paste a clipboard image file into markdown
 technologies:
-  - 标记
+  - markup
 topics:
   - editing
 author: hs
-subtitle: 您可以将剪贴板中的 PNG 图片直接粘贴到 markdown 文件中
+subtitle: You can paste a PNG image from the clipboard directly into a markdown file
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/2TxKxwKD_z0
 leadin: |
-  当您将剪贴板中的图片粘贴到 markdown 文件时，IntelliJ IDEA 将会把 PNG 添加到项目中，并在 markdown 中添加该图片所需的语法。
+  When you paste an image from the clipboard into a markdown file, IntelliJ IDEA will add the PNG to the project and provide the syntax in the markdown for the image.
 ---
 
