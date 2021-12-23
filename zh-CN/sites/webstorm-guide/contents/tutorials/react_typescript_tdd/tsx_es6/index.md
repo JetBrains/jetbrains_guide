@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: TSX and ES6
 technologies:
   - react
@@ -18,7 +18,7 @@ TypeScript is a JavaScript superset with a compiler that enforces the types. It'
 
 We glazed over the ES6 and JSX (that is, TSX) in previous steps. Let's take more of a look.
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/tsx_es6/).
 
@@ -88,7 +88,7 @@ export function Heading() {
 
 As a note, since so much of React is about refactoring big components into small "presentation" components, the IDE can automate this. Instead of typing the above, we could just select `<h1>Hello React</h1>`, invoked Refactor, and chosen `Extract Component`.
 
-![Extract Component](./screenshots/extract_component.png)
+![提取组件](./screenshots/extract_component.png)
 
 With this component in place, we can now go back to the test and import it. Instead of doing so manually, click on `<Heading />`, hit `Alt-Enter`, and choose `Add import statement`. When you save, the test re-runs, and now both tests pass:
 
@@ -205,7 +205,7 @@ React likes to promote something called the [single responsibility principle](ht
 
 Let's move the heading to its own file. This is another frequent task which the IDE can automate. Click somewhere in `Heading`, open the Refactor menu, and select `Move`. You will get a dialog like this:
 
-![Move Members](./screenshots/move.png)
+![移动成员](./screenshots/move.png)
 
 Make sure to choose `HeadingProps` as part of the move, and optionally do a preview first. Once done, the IDE will make the following changes for you:
 
@@ -265,7 +265,7 @@ Error:(6, 14) TS2322: Type '{ children: string[]; class: string; }' is not assig
 
 Also, the IDE refuses to autocomplete on `class`. It does, though, autocomplete on `className`, the JSX/TSX equivalent:
 
-![Autocomplete](./screenshots/class_name.png)
+![自动补全](./screenshots/class_name.png)
 
 Accepting the autocomplete shows that the IDE fills in `{}` for an attribute value instead of double-quotes. What's the difference? A double-quote contains a regular string, whereas brackets contain JavaScript expressions, which we saw above.
 
