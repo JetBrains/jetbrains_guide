@@ -1,7 +1,7 @@
 ---
-title: 测试
+title: Testing
 subtitle: Review some tips on how to streamline the testing workflow
-accent: 主
+accent: primary
 icon: fas fa-chart-bar
 ---
 
