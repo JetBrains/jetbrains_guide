@@ -8,7 +8,7 @@ products:
   - rider
   - resharper
 topics:
-  - 分析
+  - profiling
   - web
   - inspections
 author: khalidabuhakmeh
