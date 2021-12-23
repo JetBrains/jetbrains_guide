@@ -109,6 +109,6 @@ Now time for the implementation. We're doing this as a Python "property", so add
 
 Remove the `@pytest.mark.skip` mark from `test_primary_guardian` and the test now passes.
 
-# 结论
+# Conclusion
 
 The `pytest.mark.skip` facility, with related `skipIf` and `xFail`, have a broad set of uses. As you mature in test writing, start to include other people, and have tests that execute in different environments, you'll put them to good use.
