@@ -20,7 +20,7 @@ React encourages a separation of concerns. UI components, aka presentation compo
 
 Our Counter component is, as originally intended, a *class component* with state. Let's make it a *presentation component* by moving the state up to the container (App), as well as the incrementing logic.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/presentation_components/).
 
