@@ -70,10 +70,10 @@ While the UI is slightly different between ReSharper and Rider, developers can f
 
 Users with a **[dotUltimate license](https://www.jetbrains.com/dotUltimate)** will also have access to integrated tools like **[dotCover](https://www.jetbrains.com/dotCover)**, **[dotMemory](https://www.jetbrains.com/dotMemory)**, and **[dotTrace](https://www.jetbrains.com/dotTrace)**.  All these tools are available via the <kbd>Alt+Enter</kbd> shortcut menu, and within the **Unit Tests** window. Within Visual Studio, hitting <kbd>Alt+Enter</kbd> over our unit test reveals several options. Rider users will see the same options listed within the IDE, in a slightly different order:
 
-- **运行**
-- **调试**
-- **封面**
-- **个人资料**
+- **Run**
+- **Debug**
+- **Cover**
+- **Profile**
 - **Run under dotMemory Unit**
 
 ![alt+enter menu from within Visual Studio an ReSharper](./resharper-alt-enter-menu.png)
@@ -84,10 +84,10 @@ The unit testing experiences between Rider and ReSharper are almost identical, a
 
 Speaking of a whole new level, [check out our tutorial series on unit testing in Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/). You'll learn about the power of **continuous testing** and **code coverage**.
 
-### 另请参阅
+### See Also
 
 - [JetBrains Rider](https://jetbrains.com/rider)
 - [JetBrains ReSharper](https://jetbrains.com/resharper)
 - [Unit Testing with Rider](https://jetbrains.com/dotnet/guide/tutorials/rider-essentials/unit-testing/)
 - [Getting Started With Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
-- [单元测试](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
+- [Unit Testing](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
