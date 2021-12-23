@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-09-20
-title: 移动语句
+title: Moving Statements Around
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 在其范围内上下移动语句
+subtitle: Moving a statements up and down within their scope
 thumbnail: ./thumbnail.png
 ---
 
-## 在您的类中上下移动语句
-在编辑器中，放置文本光标在您想要移动的语句上，按 **⇧⌘↑**（macOS）或 **Ctrl+Shift+向上箭头**（Windows/Linux）来向上移动语句。 或者使用 **⇧⌘↓**（macOS）或 **Ctrl+Shift+向下箭头**（Windows/Linux）来向下移动语句。
+## Moving a Statement Up or Down in Your Class
+In the editor, place the caret in the statement you want to move and press **⇧⌘↑** (macOS), or **Ctrl+Shift+Up** (Windows/Linux) to move a statement up. Alternatively, use **⇧⌘↓** (macOS), or **Ctrl+Shift+Down** (Windows/Linux) to move a statement down.
 
-IntelliJ IDEA 将不会允许您将语句移出其定义的范围外。 这有助于保持您的代码没有错误并可以编译，所以这是移动您的代码的一个更好的方式，因为您不太可能引入错误。 当然如果您不小心把一个变量的使用移到了比它的定义更高的位置，IntelliJ IDEA 将会红色高亮它来表示虽然您仍处于正确的范围，您需要先定义该变量。
+IntelliJ IDEA will not let you move a statement outside its defined scope. This helps to keep your code green and compiling so it's a preferable way of moving your code as you're less likely to introduce errors. Of course, if you accidentally move the use of a variable higher than its definition, IntelliJ IDEA will highlight this in red to show you that while you're still in the correct scope, you need to define the variable first.
 
-## 移动行
-除了移动语句外，您还可以在您的类中移动行。 我们将在本教程的下一步来看看。   
+## Moving Lines Around
+As well as moving statements around, you can also move lines around within your class. We'll look at this in the next step of this tutorial.   
