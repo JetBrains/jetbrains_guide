@@ -1,7 +1,7 @@
 ---
-title: 重构
+title: Refactoring
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-tools
 ---
 
