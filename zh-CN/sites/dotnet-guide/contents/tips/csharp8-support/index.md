@@ -9,7 +9,7 @@ products:
 topics:
   - inspections
   - editing
-  - 补全
+  - completion
 author: matkoch
 subtitle: 'Master all the C# 8 language features!'
 thumbnail: ./thumbnail.png
