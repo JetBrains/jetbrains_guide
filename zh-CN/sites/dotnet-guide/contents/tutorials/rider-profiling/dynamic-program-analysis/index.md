@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - ide
-  - 分析
+  - profiling
 products:
   - rider
 author: maartenba
@@ -44,7 +44,7 @@ In the Sudoku solver, you can optimize a call to `.FirstOrDefault()` by converti
 
 There are various other memory issues that you can discover when using Dynamic Program Analysis. Check our [list of fixes for issues found by DPA](https://www.jetbrains.com/help/rider/Fixing_Issues_Found_by_DPA.html) to learn more.
 
-### 另请参阅
+### See Also
 
 - [Dynamic Program Analysis (DPA)](https://www.jetbrains.com/help/rider/Dynamic_Program_Analysis.html)
 - [Heap Allocations Viewer plugin](https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer)
