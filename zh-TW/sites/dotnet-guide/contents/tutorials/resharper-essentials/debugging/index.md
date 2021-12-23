@@ -33,7 +33,7 @@ You can also can choose which values get displayed inline, so you don't have to 
 
 ### Go to Breakpoints and Breakpoints Window
 
-When dealing with breakpoints, it's easy to forget when and where you placed them. ReSharper comes with [**Go to Brakpoints**](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Navigating_Breakpoints.html) - you can trigger it using the <kbd>Ctrl+Alt+F9</kbd> shortcut.
+When dealing with breakpoints, it's easy to forget when and where you placed them. ReSharper comes with [**Go to Breakpoints**](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Navigating_Breakpoints.html) - you can trigger it using the <kbd>Ctrl+Alt+F9</kbd> shortcut.
 
 ReSharper also adds a custom breakpoints tool window, where you can:
 * Group breakpoints by file/folder/project/type/member
