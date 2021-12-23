@@ -4,7 +4,7 @@ date: 2019-01-25
 title: Find In Path With Navigation Bar
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
   - navigationbar
 author: pwe
 subtitle: Use keyboard and Navigation Bar to find files under a path.
