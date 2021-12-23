@@ -5,7 +5,7 @@ technologies:
   - .net
 products:
   - dottrace
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - profiling
