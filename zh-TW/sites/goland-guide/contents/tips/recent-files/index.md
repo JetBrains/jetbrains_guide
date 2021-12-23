@@ -4,7 +4,7 @@ title: 'Jump to Recent File'
 technologies:
   - go
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: 'Use Recent Files to quickly jump to last-visited file.'
 thumbnail: ./thumbnail.png
