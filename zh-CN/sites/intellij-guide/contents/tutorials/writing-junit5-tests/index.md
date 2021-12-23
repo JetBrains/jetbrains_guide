@@ -1,13 +1,13 @@
 ---
 date: 2021-01-01
-title: Writing JUnit 5 Tests
+title: 编写 JUnit 5 测试
 technologies:
   - java
   - junit
 topics:
   - testing
 author: hs
-subtitle: Writing JUnit 5 Tests
+subtitle: 编写 JUnit 5 测试
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/writing-junit5-tests/introduction/
