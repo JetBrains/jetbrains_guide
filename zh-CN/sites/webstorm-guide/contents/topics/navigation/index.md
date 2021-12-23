@@ -1,7 +1,7 @@
 ---
-title: 导航
+title: Navigation
 subtitle: See how to find your way through a project
-accent: 主
+accent: primary
 icon: fas fa-bezier-curve
 ---
 
