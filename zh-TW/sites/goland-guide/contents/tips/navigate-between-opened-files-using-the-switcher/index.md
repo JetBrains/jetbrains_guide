@@ -4,7 +4,7 @@ title: Navigate between opened files using the Switcher
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Don't use the mouse to quickly move between multiple files
 seealso:
