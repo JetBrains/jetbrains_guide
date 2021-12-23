@@ -1,6 +1,6 @@
 ---
 title: Helen Scott
-subtitle: Java Developer Advocate
+subtitle: Java 技术布道师
 thumbnail: ./hs.jpg
 ---
 
