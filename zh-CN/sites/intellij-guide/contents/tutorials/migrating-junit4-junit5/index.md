@@ -1,13 +1,13 @@
 ---
 date: 2021-08-09
-title: 将 Junit 4 迁移到 JUnit 5
+title: Migrating JUnit 4 to JUnit 5
 technologies:
   - java
   - junit
 topics:
   - testing
 author: hs
-subtitle: 将您的 Junit 4 测试套件迁移到 Junit 5
+subtitle: Migrating your JUnit 4 test suite to JUnit 5
 thumbnail: ./thumbnail.png
 videoBottom: true
 tutorialItems:
