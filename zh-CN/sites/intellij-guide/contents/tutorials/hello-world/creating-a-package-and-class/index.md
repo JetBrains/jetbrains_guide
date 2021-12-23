@@ -1,79 +1,79 @@
 ---
 type: TutorialStep
 date: 2021-24-08
-title: Creating the package and class
+title: 创建包和类
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Use IntelliJ IDEA to create a new package and class.
+subtitle: 使用 IntelliJ IDEA 创建新的包和类。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/H_XxH66lm3U?start=116
 ---
 
-We recommend putting IntelliJ IDEA into full screen to give you the maximum amount of space for your new Hello World project.
+我们建议将 IntelliJ IDEA 应用全屏，为您的新的 Hello World 项目提供最大的空间。
 
-The project window shows all the directories and the files that make up our projects.
+项目窗口显示构成我们项目的所有目录和文件。
 
 ![Project Window](project-window.png)
 
-Of course, you can use the mouse to navigate the Project window, but you can also use the arrow keys. You can also toggle the display of this tool window with **Cmd**+**1** on macOS, or **Alt**+**1** on Windows/Linux.
+当然，您可以使用鼠标来浏览项目窗口，但是您也可以使用方向键。 您还可以在 macOS 上使用 **Cmd**+**1** ，或在 Windows/Linux 上 **Alt**+**1** 切换是否显示该工具窗口。
 
-### Creating Your Package and Class
+### 创建您的包和类
 
-Next, you're going to create the package and the class. Application packages are used to group together classes that belong to the same category or provide similar functionality. They are useful for organising large applications that might have hundreds of classes.
+接下来，您将创建包和类。 应用程序的包用来把属于同一类别或提供类似功能的类归类到一起。 它们对于组织可能具有数百个类的大型应用程序很有用。
 
-1) To create a new class, select the blue src folder and press **Cmd**+**N** on macOS, or **Alt**+**Insert** on Windows/Linux. Select _Java Class_ from the popup.
+1) 要创建一个新类，请选择蓝色的 src 文件夹，在 macOS 上按 **Cmd**+**N** ，或在 Windows/Linux 上按 **Alt**+**Insert**。 从弹出窗口里选择 _Java Class（Java 类）_ 。
 
 ![New Java class](new-java-class.png)
 
-You can type a simple class name in here, but if you want to create a new class in a particular package, you can type the whole package path separated by dots, followed by the class name. For example `com.example.helloworld.HelloWorld`.
+您可以在此处输入一个简单的类名，但如果您要在特定的包中创建新的类的话，您可以输入按点分隔的整个包路径，然后输入类名。 例如 `com.example.helloworld.HelloWorld`。
 
 ![New package and class](new-package-and-class.png)
 
-Here, `example` might be your preferred domain and `HelloWorld` is the name of your Java class that IntelliJ IDEA will create.
+在这里， `example` 可以是您想使用的域名， `HelloWorld` 是您的 Java 类的名字，来让 IntelliJ IDEA 创建它。
 
-When you press **Enter** IntelliJ IDEA will create the package you wanted, and the correct directory structure for this package that you specified. It has also created a new `HelloWorld.java` file and generated the basic contents of this class file. For example, the package statement and class declaration, the class has the same name as the file.
+当您按下 **Enter**，IntelliJ IDEA 将创建您想要的包，以及您指定的此包的正确目录结构。 它还创建了一个新的 `HelloWorld.java` 文件，并生成了此类文件的基本内容。 例如，包语句和类声明，这个类与文件具有相同的名称。
 
 ![New project and class created in IntelliJ IDEA](new-project-and-class-idea.png)
 
 
-### Coding Your HelloWorld Class
+### 编码您的 HelloWorld 类
 
-1) You can move on to the next line in a class file by pressing **Shift**+**Enter**. This moves the caret to the next line in the correct position and won't break the previous line.
+1) 您可以通过按 **Shift**+**Enter**，在类文件中移动到下一行。 这样就可以把文本光标移动到下一行的正确位置，而且不会破坏前一行的内容。
 
-2) To create the standard Java main method, type `main`. IntelliJ IDEA displays a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that you can use to generate the full code construct and save a lot of time. You can also use **Cmd**+**J** on macOS, or **Ctrl**+**J** on Windows/Linux to see all the Live Templates in IntelliJ IDEA that are valid for the current context.
+2) 要创建标准的 Java 主方法，输入 `main`。 IntelliJ IDEA 会显示一个 [live template（实时模板）](https://www.jetbrains.com/help/idea/using-live-templates.html) ，您可以使用该模板生成完整的代码构造来节省大量时间。 您还可以在 macOS 上使用 **Cmd**+**J**，或在 Windows/Linux 上使用 **Ctrl**+**J** ，查看 IntelliJ IDEA 中适用于当前上下文的所有实时模板。
 
-**Note**: Pressing **Escape** will always close a drop-down or dialogue without making any changes.
+**注意**： 按下 **Escape** 总是会关闭一个下拉菜单或者对话框， 且不做改变。
 
 ![Main method live template](main-live-template.png)
 
-3) Press **Enter** to select it. IntelliJ IDEA will generate the rest of the code for you.
+3) 按 **Enter** 来选择它。 IntelliJ IDEA 将为您生成代码的其余部分。
 
 ![Main method created](main-method-created.png)
 
-4) Now, you need to call a method that prints some text to the standard system output.
+4) 现在，您需要调用一个方法，将一些文本打印到标准系统输出。
 
-IntelliJ IDEA offers you [code completion](https://www.jetbrains.com/help/idea/auto-completing-code.html). If you type `Sy` you will see a drop-down of likely classes you might want to call. You want `System` so you can press **Control**+**dot** on the highlighted option.
+IntelliJ IDEA 为您提供 [代码完成](https://www.jetbrains.com/help/idea/auto-completing-code.html)。 如果您输入 `Sy`，您会看到一个下拉菜单显示您可能想要调用的类。 您需要 `System` ，那么您可以在高亮的选项下按 **Control**+**.**。
 
 ![System using code completion](system-code-completion.png)
 
-**Note**: It's case-sensitive, typing in `sy` rather than `Sy` will give you different results!
+**注意**：它对大小写敏感，输入 `sy` 而不是 `Sy` 会给您不同的结果！
 
-5) Now type `o` IntelliJ IDEA will suggest you want to use `out` as the next function. IntelliJ IDEA is showing you a list of accessible fields and methods on the `System` class. Those that start with the letter `o` are listed first, followed by other methods and fields that contain the letter `o`.
-
-
-6) press **Control+dot** and this time IntelliJ IDEA will suggest `println`. Press **Enter** to select it.
+5) 现在输入 `o`， IntelliJ IDEA 将建议您使用 `out` 作为下一个函数。 IntelliJ IDEA 正在向您展示 `System` 类的可访问字段和方法列表。 那些以字母 `o` 开头的方法和字段列在前面，接下来是包含字母 `o` 的其他方法和字段。
 
 
-7) IntelliJ IDEA will also place the caret in the brackets, so you can provide the argument to the method. Type in a quote mark `"` and IntelliJ IDEA will close the quote mark for you. You can now type your text, `Hello World` in between the quotes.
+6) 按 **Control+.**，这次 IntelliJ IDEA 将会建议 `println`。 按 **Enter** 来选择它。
+
+
+7) IntelliJ IDEA 也会把文本光标放在括号里，这样您就可以提供方法的实参。 输入一个引号 `"`，IntelliJ IDEA 将为您输出一对引号。 现在您可以在引号之间输入您的文本—— `Hello World`。
 
 ![Hello World statement](hello-world-statement.png)
 
-**Note**: Instead of the above steps, you can also type `sout` to see a [live template](https://www.jetbrains.com/help/idea/using-live-templates.html) that will create the code construct for you as well, however we wanted to show you code completion!
+**注意**：除了以上的步骤，您也可以输入 `sout` ，来使用 [实时模板](https://www.jetbrains.com/help/idea/using-live-templates.html)，该模板将为您创建代码构造，但我们想向您展示代码补全的功能！
 
-Congratulations, you've just created your first Java application! Java files like this one can be compiled into bytecode and run in IntelliJ IDEA. Let's take a look at that in the next step.
+恭喜，您刚刚创建了您的第一个 Java 应用程序！ 像这样的 Java 文件可以编译成字形码， 并在 Intellij IDEA 中运行。 让我们在下一步看看。
 
 
 ---
