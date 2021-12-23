@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Postfix Completion
+title: 后缀补全
 technologies:
   - go
 topics:
-  - completion
+  - 补全
 author: dlsniper
 subtitle: Transform an expression into another one.
 thumbnail: ./thumbnail.png
