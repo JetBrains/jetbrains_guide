@@ -5,7 +5,7 @@ title: Better Object Mapping in .NET with Dapper
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - web
