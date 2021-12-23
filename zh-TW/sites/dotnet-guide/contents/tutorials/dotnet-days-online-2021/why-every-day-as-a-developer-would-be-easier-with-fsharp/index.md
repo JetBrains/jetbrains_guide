@@ -6,7 +6,7 @@ technologies:
   - .net
   - fsharp
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - ide
