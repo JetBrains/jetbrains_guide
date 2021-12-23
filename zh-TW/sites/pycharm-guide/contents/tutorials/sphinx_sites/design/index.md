@@ -31,7 +31,7 @@ We've replaced the [`page.html` template used Sphinx](https://github.com/sphinx-
 - about
 - donate
 - layout
-- 導覽
+- navigation
 - relations
 - support
 
