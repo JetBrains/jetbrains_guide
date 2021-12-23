@@ -26,7 +26,7 @@ A middleware instance has two options when handling a client's request.
 
 First, It can respond immediately with an HTTP Response, breaking the chain, and ending the request. Secondly, It can pass the incoming request to the next middleware in the chain. At this time, it can handle the returning response and change it, or do nothing at all. ASP.NET Core has pre-packaged middleware, and open-source contributions designed to enhance our application's request pipeline. Shaping our app depends on middleware, and it occurs here, in the Configure method.
 
-### 另请参阅
+### See Also
 
 - [Microsoft Docs Startup](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/startup?view=aspnetcore-3.1)
 - [Middleware](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1)
