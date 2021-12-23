@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Mermaid.js support in Markdown files'
 technologies:
-  - 平台
+  - platform
 topics: [ ]
 author: dlsniper
 subtitle: 'Preview beautiful diagrams in Markdown files using Mermaid.js'
