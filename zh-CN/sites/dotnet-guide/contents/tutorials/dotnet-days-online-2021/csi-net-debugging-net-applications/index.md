@@ -23,7 +23,7 @@ We will look at techniques, strategies, and tools that you can use to troublesho
 
 The session is very demo-heavy.
 
-### 资源
+### Resources
 
 * [Tutorials and labs on debugging .NET](https://www.tessferrandez.com/postindex/)
 
