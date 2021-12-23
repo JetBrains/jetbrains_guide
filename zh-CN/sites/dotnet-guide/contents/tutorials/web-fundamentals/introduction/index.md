@@ -1,10 +1,10 @@
 ---
 type: TutorialStep
 date: 2020-12-01
-title: 简介
+title: Introduction
 technologies:
   - asp.net
-  - javaScript
+  - javascript
 topics:
   - web
 products:
@@ -27,7 +27,7 @@ Tutorial steps make use of the [sample code (ZIP file with 3 projects)](https://
 
 As a companion to this tutorial, make sure to check out [the WebStorm Guide](https://www.jetbrains.com/webstorm/guide/) for more tips, tricks and deep-dives into front-end topics!
 
-### 另请参阅
+### See Also
 
 - [JetBrains Rider](https://www.jetbrains.com/rider/)
 - [WebStorm Guide](https://www.jetbrains.com/webstorm/guide/)
