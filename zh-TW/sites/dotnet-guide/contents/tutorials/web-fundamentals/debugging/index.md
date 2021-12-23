@@ -9,7 +9,7 @@ topics:
   - web
   - debugging
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: What's your code doing? Step through code with the debugger, and find out.
 thumbnail: ./thumbnail.png
