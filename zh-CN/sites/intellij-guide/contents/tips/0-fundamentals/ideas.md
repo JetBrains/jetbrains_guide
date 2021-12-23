@@ -17,8 +17,8 @@
 
 inspections?
 
-对于if 和 while的提示
- - boolean的提示
+对于 if 和 while 的提示
+ - boolean 的提示
  - 循环部分的提示
 
 运行任意命令
@@ -42,9 +42,9 @@ inspections?
 - 分支，获取，搜索(Cmd L)，例如"固定"：分支;合并;推送;挑选提交
 
 控制台窗口
- - 运行 vs 在ide里运行
+ - 运行 vs 在 ide 里运行
 
-在SQL语句中补全代码
+在 SQL 语句中补全代码
 
 数据流分析
  - ctrl shift p
