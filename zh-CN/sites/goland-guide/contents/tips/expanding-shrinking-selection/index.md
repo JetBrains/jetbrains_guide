@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 展开/收缩选择
+title: Expanding/shrinking selection
 technologies:
   - go
 topics:
