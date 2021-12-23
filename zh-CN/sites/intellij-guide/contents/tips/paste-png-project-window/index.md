@@ -1,12 +1,12 @@
 ---
 date: 2021-07-01
-title: 将剪贴板图片粘贴到项目窗口
+title: Paste a clipboard image onto the Project Window
 technologies:
   - java
 topics:
   - editing
 author: hs
-subtitle: 如果您有图片在剪贴板上，您可以将其直接粘贴到项目窗口
+subtitle: If you have an image on your clipboard you can paste it straight into the Project Window
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -20,6 +20,6 @@ seealso:
     title: IntelliJ IDEA Help - Import an image
     href: 'https://www.jetbrains.com/help/idea/add-items-to-project.html#import-image-to-project'
 leadin: |
-  当您从剪贴板粘贴图片到项目窗口时，IntelliJ IDEA 将会为你创建一个 PNG 文件。
+  When you paste an image from your clipboard into the Project Window, IntelliJ IDEA will create a PNG file for you.
 ---
 
