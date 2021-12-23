@@ -1,25 +1,25 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: 打开 IntelliJ IDEA 终端窗口
+title: Opening the IntelliJ IDEA Terminal window
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 如果使用键盘快捷键打开新的终端窗口
+subtitle: How to open a new terminal window with keyboard shortcuts
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/tlEkrWU0d1M?start=20
 ---
 
-## 打开终端窗口
-在这个例子中，我们有一个简单的 Spring Boot 应用程序，它需要一个正在运行的 [MongoDB](https://www.mongodb.com/) 数据库。 我们可以在 macOS 上使用 **⌥F12**，或在 Windows 和 Linux 上使用 **Alt+F12** [打开终端窗口](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)。 终端支持操作系统支持的所有相同的命令。
+## Opening a Terminal Window
+In this example we have a simple Spring Boot application that needs a running [MongoDB](https://www.mongodb.com/) database. We can [open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) with **⌥F12** on macOS, or **Alt+F12** on Windows and Linux. The terminal supports all the same commands that the operating system supports.
 
-如果我们想启动 MongoDB 数据库实例，并使用[特定的路径来存储数据](https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#specify-a-data-directory)，我们可以输入：
+If we want to start the MongoDB database instance with a [specific path for storing the data](https://docs.mongodb.com/manual/tutorial/manage-mongodb-processes/#specify-a-data-directory), we can type:
 
 `mongod --dbpath [path to data here]`
 
-然后按 Enter。 当 MongoDB 在终端会话中运行时，我们可以回到编辑器中编写应用程序的代码。 通过使用内置的终端，我们不必在应用程序之间切换，并且我们可以很容易地在同一个窗口中看到我们开发中的方方面面。
+and press enter. When MongoDB is running in the terminal session, we can go back to writing the application code in the editor. By using the built-in terminal, we don’t have to switch between applications, and we can easily have all aspects of our development right in front of us in the same window.
 
 ![MongoDB Running in the Terminal](mongodb-running-in-terminal.png)
 ---
