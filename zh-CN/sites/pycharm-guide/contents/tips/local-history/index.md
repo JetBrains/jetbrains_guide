@@ -9,7 +9,7 @@ author: pwe
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
 seealso:
   - 
-    title: 本地历史
+    title: Local History
     href: 'https://www.jetbrains.com/help/pycharm/local-history.html#local_history.xml'
   - 
     title: Retention period for Local History
