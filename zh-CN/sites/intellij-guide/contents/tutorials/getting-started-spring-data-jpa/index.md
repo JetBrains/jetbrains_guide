@@ -1,6 +1,6 @@
 ---
 date: 2021-06-02
-title: Getting Started with Spring Data JPA
+title: 从 Spring Data JPA 开始。
 technologies:
   - java
   - spring
@@ -8,7 +8,7 @@ topics:
   - gettingstarted
   - ultimate
 author: da
-subtitle: Learn how to use Spring Data JPA to store and retrieve data from your database.
+subtitle: 了解如何使用 Spring Data JPA 从数据库中存储和检索数据。
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/getting-started-spring-data-jpa/introduction/
