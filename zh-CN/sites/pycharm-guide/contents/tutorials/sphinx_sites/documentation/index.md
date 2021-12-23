@@ -217,7 +217,7 @@ extensions = [
 
 It's visually attractive. More than that, though...it's semantically rich: links to navigate around, styling for the structure, and more.
 
-More?
+更多优势?
 
 ## Referencing Symbols in Docs
 
@@ -245,7 +245,7 @@ The link text comes from the target. Of course, we can also provide our own link
 As we can see in {py:class}`HW <my_demo.MyDemo>`, Python is fun!
 ```
 
-## Conclusion
+## 结论
 
 There are lots, *lots* more features regarding Sphinx and including source code:
 
