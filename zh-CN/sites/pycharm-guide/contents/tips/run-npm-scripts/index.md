@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Run npm Scripts from package.json
 technologies: [ ]
 topics:
-  - javascript
+  - javaScript
   - web
 author: pwe
 subtitle: Browse your package.json scripts and run in a dedicated tool window.
