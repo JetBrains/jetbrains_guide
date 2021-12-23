@@ -8,7 +8,7 @@ topics:
   - editing
   - livetemplates
 author: tg
-subtitle: Use Live Templates to auto-complete common code structures for you
+subtitle: 使用实时模板自动为您完成常用代码结构
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -28,18 +28,18 @@ seealso:
     title: IntelliJ IDEA Guide - Create a Custom Test Live Template
     href: ../../tutorials/writing-junit5-tests/live-templates-tip/
 leadin: |
-  Live Templates reduce the amount of code you need to type for the more common code constructs. You can use _psvm_ or _main_ to create the main Java method, for example. There are lots of live templates including _fori_ for a for i loop and _nn_ for not null, plus many more.
+  实时模板可减少您为更常用的代码构造键入的代码量。 例如，您可以使用 _psvm_ 或 _main_ 创建 Java 的 main 方法。 有很多现成的实时模板， 包括 _fori_ 的 for i 循环和 _nn_ 的 not null， 还有更多。
 ---
 
-Live templates are a really convenient way to get IntelliJ IDEA to fill out standard-shaped code, so we don't have to type it all.
+实时模板是让 IntelliJ IDEA 填写一些标准的代码的非常方便的方法，因此我们不必全部自己键入。
 
-In the video, we saw:
+在视频中，我们看到：
  - _iter_
  - _sout_
  - _souv_
 
-We also saw a custom live template. We walked through how to create this live template in the [JUnit 5 Tutorial](../../tutorials/writing-junit5-tests/live-templates-tip/).
+我们还看到了一个自定义的实时模板。 我们实践了如何在 [JUnit 5 Tutorial](../../tutorials/writing-junit5-tests/live-templates-tip/) 中创建这个实时模板。
 
-You can see a list of all available live templates in **[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)**.
+您可以在**[Preferences/Settings | Editor | Live Templates](https://www.jetbrains.com/help/idea/settings-live-templates.html)**中查看所有可用的实时模板。
 
 ---
