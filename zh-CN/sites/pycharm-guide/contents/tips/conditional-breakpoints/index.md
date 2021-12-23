@@ -27,7 +27,7 @@ leadin: |
   met.
 ---
 
-Debugging? Super-useful. Visual debugging? Super-super-useful. Stepping through a loop until the end, when your problem surfaces? Not so much.
+调试? Super-useful. Visual debugging? Super-super-useful. Stepping through a loop until the end, when your problem surfaces? Not so much.
 
 Take a step forward on your debugging zen with *conditional* breakpoints.
 
