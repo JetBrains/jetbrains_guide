@@ -4,7 +4,7 @@ title: 'Create New File With Navigation Bar'
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: 'Activate the Navigation Bar and create a new file somewhere in the project tree.'
 seealso:
