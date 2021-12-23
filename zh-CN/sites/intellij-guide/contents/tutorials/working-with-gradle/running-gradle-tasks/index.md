@@ -5,7 +5,7 @@ title: Running Gradle tasks
 technologies:
   - gradle
 topics:
-  - 构建
+  - build
 author: tg
 subtitle: There are several convenient ways to run Gradle tasks from IntelliJ IDEA.
 thumbnail: ./thumbnail.png
