@@ -1,26 +1,26 @@
 ---
 type: TutorialStep
 date: 2021-08-11
-title: 快捷键
+title: Shortcuts
 technologies: [ ]
 topics: [ ]
 author: tg
-subtitle: 教程中使用的快捷键列表
+subtitle: Shortcuts used in the tutorial
 thumbnail: ./thumbnail.png
 ---
 
-在本教程中，我们看到了 IntelliJ IDEA 中 [Maven 项目支持](https://www.jetbrains.com/help/idea/maven-support.html)的概述，以及一些使用它们高效工作的技巧。
+In this tutorial we saw an overview of the [support for Maven projects](https://www.jetbrains.com/help/idea/maven-support.html) in IntelliJ IDEA, and some tips for working effectively with them.
 
-教程和视频中提到的一些有用的快捷键：
+Some helpful shortcuts mentioned in the tutorial and video:
 
-| 名称                                                                                                                                                                                  | macOS 快捷键 | Windows 快捷键      |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ---------------- |
-| 加载 Maven 变更                                                                                                                                                                         | **⇧⌘I**   | **Ctrl+Shift+O** |
-| 在 `pom.xml` 文件里添加新的依赖项                                                                                                                                                              | **⌘N**    | **Alt+Insert**   |
-| [Search everywhere（随处搜索）](https://www.jetbrains.com/help/idea/searching-everywhere.html)（可以用它来打开 [Maven 工具窗口](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)） | **⇧⇧**    | **Shift+Shift**  |
-| [查找操作](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9)（可以使用它来打开 Maven 工具窗口）                                                                             | **⌘⇧A**   | **Ctrl+Shift+A** |
-| [最近的文件](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files)（可以使用它来打开 Maven 工具窗口）                                                                          | **⌘E**    | **Ctrl+E**       |
-| [运行任何内容](https://www.jetbrains.com/help/idea/running-anything.html)（可以用它来运行 Maven 命令）                                                                                               | **⌃⌃**    | **Ctrl+Ctrl**    |
-| 打开 [首选项/设置](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) 对话框                                                                                               | **⌘,**    | **Ctrl+Alt+S**   |
+| Name                                                                                                                                                                                                   | macOS Shortcut | Windows Shortcut |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- | ---------------- |
+| Load Maven changes                                                                                                                                                                                     | **⇧⌘I**        | **Ctrl+Shift+O** |
+| Add a new dependency from inside the `pom.xml` file                                                                                                                                                    | **⌘N**         | **Alt+Insert**   |
+| [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) (can use this to open the [Maven Tool Window](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)) | **⇧⇧**         | **Shift+Shift**  |
+| [Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9) (can use this to open the Maven Tool Window)                                                                 | **⌘⇧A**        | **Ctrl+Shift+A** |
+| [Recent files](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files) (can use this to open the Maven Tool Window)                                                              | **⌘E**         | **Ctrl+E**       |
+| [Run anything](https://www.jetbrains.com/help/idea/running-anything.html) (can run Maven commands from here)                                                                                           | **⌃⌃**         | **Ctrl+Ctrl**    |
+| Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog                                                                                               | **⌘,**         | **Ctrl+Alt+S**   |
 
-有关本教程[ 介绍 ](../introduction)的更多链接信息。
+There are links to more information on this tutorial's [introduction](../introduction).
