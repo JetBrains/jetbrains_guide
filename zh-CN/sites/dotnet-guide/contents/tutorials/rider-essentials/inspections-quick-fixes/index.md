@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - 补全
+  - completion
   - inspections
 products:
   - rider
@@ -49,7 +49,7 @@ Code inspections have their own default severity level, which is set according t
 
 Severities and several other settings can be [shared with your team using settings layers](https://www.jetbrains.com/help/rider/Sharing_Configuration_Options.html).
 
-### 另请参阅
+### See Also
 
 - [Code analysis, inspections and quick-fixes](https://blog.jetbrains.com/dotnet/2018/05/17/introduction-code-analysis-rider/)
 - [Rider and nullable reference types](https://blog.jetbrains.com/dotnet/2020/04/20/nullable-reference-types-migration/)
