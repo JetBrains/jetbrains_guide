@@ -10,7 +10,7 @@ We'll use test-driven development, or TDD, to add a feature.
 
 Players have guardians, so add a ``guardians.py`` file containing another placeholder class.
 
-    * Activate navigation bar
+    * 激活导航栏
     * Create file ``guardians.py``
     * ``class Guardian: pass``
 
