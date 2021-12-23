@@ -5,7 +5,7 @@ title: 摘要
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: The IDE Feature Trainer is a great way to learn about features, workflows and keyboard shortcuts in IntelliJ IDEA. You do not need to complete the modules or lessons in order, allowing you to fit your learning around your schedule.
+subtitle: IDE 功能培训是了解 IntelliJ IDEA 中的功能、工作流和键盘快捷键的好方法。 您不需要按顺序完成模块或课程，可以将学习安排在平时的日程中。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -13,15 +13,15 @@ longVideo:
 ---
 
 ## More Resources
-There are lots of places that you can get additional information and resources to help you learn your IDE:
+还有其他很多你可以得到的信息和资源，以帮助您学习IDE的使用：
 
 - [帮助](https://www.jetbrains.com/help/idea/)
-  - All the IntelliJ IDEA product documentation.
+  - 所有 IntelliJ IDEA 的产品文档。
 - [入门指南](https://www.jetbrains.com/idea/resources/)
-  - Lots of useful resources and additional tutorials.
+  - 大量的有用资源和附加的教程。
 - [演示和截屏](https://www.youtube.com/intellijidea)
-  - This is Our YouTube channel which includes screencasts, develop interviews and conference videos.
-- [Keymap Reference](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
-  - Print this and keep it handy. Yes keyboard shortcuts might slow you down initially, but they will improve your productivity in time.
+  - 这是我们的YouTube频道，包括一些演示，开发者采访和会议的视频。
+- [快捷键映射参考](https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf)
+  - 打印并保存一份，它很方便。 是的，键盘快捷键最初可能会放慢您的速度，但它们最终会提高您的工作效率。
 - 每日小技巧
-  - If you don't like the tip of the day to pop up when you load IntelliJ IDEA, you can click it here when you want to test your knowledge or learn something!
+  - 如果您不喜欢在启动 IntelliJ IDEA 时弹出的每天提示， 但当您想要测试或学一些东西时， 您可以点击这里！
