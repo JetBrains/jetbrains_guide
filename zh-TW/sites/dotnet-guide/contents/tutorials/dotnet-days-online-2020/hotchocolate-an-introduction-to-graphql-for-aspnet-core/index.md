@@ -5,7 +5,7 @@ title: HotChocolate - An Introduction to GraphQL for ASP.NET Core
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - web
