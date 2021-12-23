@@ -4,7 +4,7 @@ date: 2019-01-22
 title: Open File With Navigation Bar
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
   - navigationbar
 author: pwe
 subtitle: Open a file somewhere in the project tree using the keyboard and Navigation Bar.
