@@ -4,7 +4,7 @@ title: Code completion in Run Configurations
 technologies:
   - go
 topics:
-  - 补全
+  - completion
 author: dlsniper
 subtitle: Run configurations also have code completion capabilities.
 thumbnail: ./thumbnail.png
