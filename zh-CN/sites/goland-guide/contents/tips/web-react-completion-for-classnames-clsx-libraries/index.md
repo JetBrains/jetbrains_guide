@@ -4,7 +4,7 @@ title: 'Code Completion for classnames and clsx libraries in React code'
 technologies:
   - web
 topics:
-  - 补全
+  - completion
 author: dlsniper
 subtitle: 'Spend less time typing or explore the possibilities for various CSS class names in React aps'
 thumbnail: ./thumbnail.png
