@@ -16,7 +16,7 @@ Sphinx can be added to an existing Python application or library to provide docu
 
 This tutorial will simulate building the website for a fictional company named "Schlockchain". The company has -- obviously -- a lot of marketing it wants to do. It also has some code with -- obviously -- patents that it wants to show. The venture capitalists want a website, the founders aren't really technical, so they want to use Markdown.
 
-# New Project
+# 新建项目
 
 Let's start from...well, the beginning: an empty directory, into which we will slowly build a website.
 
@@ -303,7 +303,7 @@ When we click on that link, we get a nicely formatted page, driven by Markdown.
 
 ![About Us](about_us.png)
 
-# Clean Up
+# 清理
 
 Let's do two cleanups as closeout: `conf.py` and `index.rst`.
 
