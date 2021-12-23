@@ -4,7 +4,7 @@ title: JSON schema support
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - inspections
   - editing
