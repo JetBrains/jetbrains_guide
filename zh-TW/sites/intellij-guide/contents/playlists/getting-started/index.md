@@ -1,6 +1,6 @@
 ---
 label: 20
-date: 2021-13-07
+date: 2021-07-13
 title: Getting Started with IntelliJ IDEA
 technologies:
   - java
