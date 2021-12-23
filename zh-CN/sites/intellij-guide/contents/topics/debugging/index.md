@@ -1,8 +1,8 @@
 ---
 title: 调试
-subtitle: You can debug your code to help you understand why exceptions are occurring.
-accent: 主
+subtitle: 调试代码以帮助您了解异常发生的原因。
+accent: primary
 icon: fas fa-bug
 ---
 
-IntelliJ IDEA has a debugger that you can learn more about here - https://blog.jetbrains.com/idea/2020/05/debugger-basics-in-intellij-idea/. 
+关于 IntelliJ IDEA 调试器功能，您可以在此处了解详细信息 - https://blog.jetbrains.com/idea/2020/05/debugger-basics-in-intellij-idea/ 。 
