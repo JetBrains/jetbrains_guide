@@ -1,5 +1,5 @@
 ---
-title: 導覽
+title: Navigation
 subtitle:
 accent: primary
 icon: fas fa-route
