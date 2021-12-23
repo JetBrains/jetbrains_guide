@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: Refactor an Unreachable Statement
+title: 重构无法用到的语句
 technologies:
   - java
 topics:
