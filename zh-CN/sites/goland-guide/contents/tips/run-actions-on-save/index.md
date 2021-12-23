@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Run actions on save'
 technologies:
-  - 平台
+  - platform
 topics:
   - running
 author: dlsniper
