@@ -9,7 +9,7 @@ topics:
   - ide
   - profiling
 products:
-  - tRANSLATED Rider
+  - rider
   - dottrace
 author: maartenba
 subtitle: Let's run a first profiling session on a Sudoku solver sample application.
