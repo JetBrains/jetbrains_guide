@@ -1,28 +1,28 @@
 ---
 type: TutorialStep
 date: 2021-09-06
-title: 重新格式化代码设置
+title: Reformatting Code Settings
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 重新格式化代码的设置以及在哪里可以找到它们
+subtitle: What the settings are for reformatting code and where to find them
 thumbnail: ./thumbnail.png
 ---
 
-## 更改代码格式化设置的方法
-您可以按 **⌘,**（macOS），或 **Ctrl+Alt+S**（Windows/Linux）来打开设置对话框，查看代码格式化设置。 此对话框是可搜索的，因此查找设置的最快方式是搜索 _代码样式_。 然后，您可以选择要更改设置的编程语言。 这个教程里，我选择 _Java_。
+## Where and How to Change Settings for Reformat Code
+You can view the settings for code formatting with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings dialog. This dialog is searchable so the fastest way to find the settings is by typing in _code style_. You can then select the language you want to change the settings for. I'm going to use _Java_ for this tutorial.
 
-在更改设置之前，请注意这些设置是分别在项目级别和 IDE 级别定义的。 您只能有一个项目级别的设置，它适用于您当前的项目。 要更改它，您需要首先选择默认的 IDE 级别设置，然后按下拉菜单旁边的小齿轮并选择“副本”。 如果愿意，您可以随后将此设置复制到您的项目级别设置中。
+Before you go diving in and changing settings, be aware that these settings are defined at the project and IDE level. You can only have one Project scheme, and it's applied to your current project. If you want to change it, you need to first select the Default IDE scheme, then press the cog to the right of the drop-down and select Duplicate. You can subsequently copy this new scheme to your project if you want to.
 
-![复制代码样式](copy-code-style-scheme.png)
+![Copy Code Style Theme](copy-code-style-scheme.png)
 
-这里有很多设置，熟悉它们的最简单方法是四处浏览并尝试，选择或清除复选框，然后查看对右侧代码的影响。 实时预览非常有助于了解设置将影响些什么。
+There are a lot of settings here, but the easiest way to familiarise yourself with them is to browse around and select or clear checkboxes to see the impact on the code to the right. The live-preview is very helpful for understanding what the impact will be.
 
-另一方面，如果您确实在此处进行了一些更改，并且您希望重置它们而不重置IDE其他的设置，则可以单击此对话右上角的蓝色 **重置** 链接。 只有当您更改了设置后，它才会显示。
+As a side note, if you do make some changes here, and you want to reset them without resetting all the settings, you can click the blue **Reset** link on the top-right of this dialog. It will only be shown when you've made a change to your settings.
 
-如果您打开 **换行和括号** 标签，然后向下滚动到 **'for()' 语句**，你会看到 **强制加大括号** 选项，我们早些时候已将它改为 _总是_。
+If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' statement**, you will see the **Force braces** change we made earlier when we changed it to _Always_.
 
-![对于 for 循环 - 始终添加大括号](for-statement-braces-setting.png)
+![For Loop - Setting for Braces Always](for-statement-braces-setting.png)
 
-## 重新格式化后再提交
-通常，您会希望在提交代码之前应用重新格式设置（无论是整个类还是仅仅针对您更改的代码）。 我们将在下一步中看看如何做到这一点。 
+## Reformatting before you commit
+Often you will want to apply your reformatting settings before you commit your code (whether that's the whole class or just code that you've changed). We'll look at how to do this in the next step of the tutorial. 
