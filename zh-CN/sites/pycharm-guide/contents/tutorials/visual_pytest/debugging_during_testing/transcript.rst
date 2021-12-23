@@ -42,6 +42,6 @@ and poke around some more. We'll quickly spot the problem:
 
     * Smart Step Into
     * Highlight the line getting 0
-    * 评估表达式
+    * Evaluate expression
 
 
