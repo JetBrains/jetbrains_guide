@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Cleanup code before commit'
 technologies:
-  - platform
+  - 平台
 topics:
   - vcs
 author: dlsniper
