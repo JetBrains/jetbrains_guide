@@ -9,7 +9,7 @@ topics:
   - ide
   - inspections
 products:
-  - rider
+  - tRANSLATED Rider
 author: matkoch
 subtitle: Customize the look and feel of Rider, and make the editor work the way you want.
 thumbnail: ./thumbnail.png
