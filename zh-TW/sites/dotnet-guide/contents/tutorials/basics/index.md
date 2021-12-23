@@ -9,7 +9,7 @@ topics:
   - web
   - data
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 author: khalidabuhakmeh
 subtitle: A set of short basic walkthroughs of different .NET technologies
