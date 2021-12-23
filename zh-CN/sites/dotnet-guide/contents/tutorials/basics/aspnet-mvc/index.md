@@ -98,7 +98,7 @@ The following view is located under `/Views/Widgets/Index.cshtml`.
 </form>
 ```
 
-#### 模型
+#### Models
 
 The following C# objects are located under `/Models/IndexModel.cs` and `/Models/CreateModel.cs`.
 
@@ -115,7 +115,7 @@ public class CreateModel
 }
 ```
 
-### 另请参阅
+### See Also
 
 - [Microsoft Docs ASP.NET MVC Overview](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview)
 - [ASP.NET](https://dotnet.microsoft.com/apps/aspnet)
