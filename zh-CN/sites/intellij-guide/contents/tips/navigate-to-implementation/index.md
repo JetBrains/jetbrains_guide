@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 导航到实现
+title: Navigate to Implementation
 technologies:
   - java
 topics:
   - navigation
 author: hs
-subtitle: 在您的代码库中跳转到一个或多个实现
+subtitle: Go to one or more implementations across your code base
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -20,8 +20,8 @@ seealso:
     title: IntelliJ IDEA Help - Go to implementation
     href: 'https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_implementation'
 leadin: |
-  您可以使用 **⌘B**（macOS） 或 **Ctrl+B**（Windows/Linux） 来导航到实现。
+  You can use **⌘B** (macOS), or **Ctrl+B** (Windows/Linux), to navigate to an implementation.
 
-  如果一个方法具有多个实现，IntelliJ IDEA 将会列出它们，以便您可以选择您想要的。 如果只有一个实现，IntelliJ IDEA 将会直接跳转到那里。
+  If a method has multiple implementations, IntelliJ IDEA will list them, so you can choose the one that you want. If there is only one implementation, IntelliJ IDEA will take you straight to it.
 ---
 
