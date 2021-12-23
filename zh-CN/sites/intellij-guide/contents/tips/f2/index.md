@@ -8,7 +8,7 @@ topics:
   - editing
   - inspections
 author: tg
-subtitle: 快速移动到文件中的下一个（或之前的）错误或警告。
+subtitle: Quickly move to the next (or previous) error or warning in the file.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -25,15 +25,15 @@ seealso:
     title: IntelliJ IDEA Guide - Alt+Enter
     href: ../alt-enter
 leadin: |
-  当您在编辑器中打开代码文件时，可能会看到此文件中的警告或错误。 您可以快速检查所有这些问题，而无需使用鼠标，只需按**F2**。
+  When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press **F2**.
 ---
 
-  在编写代码时，您可能需要跳转到下一个错误或警告（**F2**）或最后一个错误或警告（**Shift+F2**）。 这样，您就可以快速跳到下一件需要修复或解决的事情，而无需将手移到鼠标上。
+  While you're coding, you may want to jump to the next error or warning (**F2**) or the last one (**Shift+F2**). This way, you can quickly hop to the next thing that needs fixing or addressing without having to move your hand to the mouse.
 
-  将此与 **⌥⏎**（macOS） 或 **Alt+Enter**（Windows/Linux）相结合，就可以快速查看建议的解决方案并修复程序。 这将显示一个建议的解决方案列表，正如我们在[关于  Alt+Enter提示](../alt-enter)中看到的，我们可以选择最适合我们的解决方案。
+  Combine this with **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) to quickly see the suggested solution to the problem and apply a fix. This will show a list of suggested solutions, as we saw in the [tip about Alt+Enter](../alt-enter), and we can pick the solution that suits us best.
 
-  如果您确信 IntelliJ IDEA 有正确的问题解决方法，您可以跳过列出解决方案的步骤。 按 **F2** 导航到问题，然后按 **⌥⇧⏎** （macOS），或 **Shift+Alt+Enter**（Windows/Linux），以接受 IntelliJ IDEA 建议的修复方案。
+  If you're confident IntelliJ IDEA has the correct fix for the problem, you can skip the step of listing the solutions. Press **F2** to navigate to the problem, then press **⌥⇧⏎** (macOS), or **Shift+Alt+Enter** (Windows/Linux), to accept IntelliJ IDEA's suggested fix.
 
-![接受建议的修复方法](accept-suggestion.png)
+![Accept suggested fix](accept-suggestion.png)
 
 ---
