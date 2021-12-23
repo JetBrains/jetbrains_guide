@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: Toggle Tool Windows On and Off
+title: 打开和关闭工具窗口
 technologies:
   - java
   - kotlin
 topics:
   - interface
 author: hs
-subtitle: Toggle Tool Windows to tailor your interface
+subtitle: 切换工具窗口以定制您的 IDE 界面
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,6 +18,6 @@ seealso:
     title: IntelliJ IDEA Help - Tool windows
     href: https://www.jetbrains.com/help/idea/tool-windows.html
 leadin: |
-  You can use **⌘** + each number in turn (macOS), or **Alt** + each number in turn (Windows/Linux), to toggle the Tool windows on, and off. See [our documentation](https://www.jetbrains.com/help/idea/tool-windows.html) for more information on the Tool windows.
+  您可以使用 **⌘** + 每个数字 （macOS）， 或 **Alt** + 每个数字（Windows/Linux）， 切换工具窗口打开和关闭。 有关工具窗口的更多信息，请参阅[我们的文档](https://www.jetbrains.com/help/idea/tool-windows.html)。
 ---
 
