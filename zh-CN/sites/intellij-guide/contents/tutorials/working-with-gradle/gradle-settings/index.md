@@ -6,25 +6,25 @@ technologies:
   - gradle
 topics: [ ]
 author: tg
-subtitle: Where to change IntelliJ IDEA's settings fo Gradle.
+subtitle: IntelliJ IDEA 里面更改 Gradle 设置的地方
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=1013
 ---
 
-Let's look at some more useful Gradle settings in IntelliJ IDEA.
+让我们来看看 IntelliJ IDEA 中一些有用的 Gradle 设置。
 
-![Gradle settings from the Gradle Tool Window](./gradle-settings-menu.png)
+![Gradle 工具窗口中的设置](./gradle-settings-menu.png)
 
-We can get to the settings from the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), or from the usual [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) (**⌘,** (macOS), or **Ctrl+Alt+S**  (Windows/Linux)) and navigating to [**Build, Execution, Deployment | Build Tools | Gradle**](https://www.jetbrains.com/help/idea/gradle-settings.html). Generally these settings are fine for most projects, and don't need changing.
+我们可以从[ Gradle 工具窗口 ](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)，或者打开 [ 设置 / 首选项](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) (**⌘,**（macOS），或 **Ctrl+Alt+S** （Windows/Linux）），然后导航到[** 文件 | 设置 | 构建、执行、部署 | 构建工具 | Gradle **](https://www.jetbrains.com/help/idea/gradle-settings.html). 通常，这些设置对于大多数项目都适用，不需要更改。
 
-![Settings/Preferences Gradle settings](./settings-gradle.png)
+![设置/首选项 的 Gradle 设置](./settings-gradle.png)
 
-Notice that IntelliJ IDEA has selected a specific JVM to use to run Gradle. We can use a different JVM to the project JVM if we want. If we set this JVM to be the same as the project JVM, we can assume exactly the same version of Java for running things both from Gradle and from inside the IDE. However, sometimes we might want to set it to a different version, especially if we want to test compatibility across versions.
+请注意，IntelliJ IDEA 会选择一个特定的 JVM 来运行 Gradle。 如果需要，我们可以使用与项目不同的 JVM 设置。 如果我们将此 JVM 设置为与项目的相同，则可以假定从 Gradle 和 IDE 内部运行代码的 Java 版本完全相同。 但是，有时我们可能希望将其设置为其他版本，特别是如果我们要测试跨版本的兼容性。
 
-The "Use Gradle from" dropdown is how we can configure using the Gradle wrapper to run Gradle. By default IntelliJ IDEA uses the version of Gradle defined in `gradle-wrapper.properties`.
+“使用来自此位置的Gradle”下拉列表里可以选择使用 Gradle 包装器。 默认情况下，IntelliJ IDEA 使用在 `gradle-wrapper.properties `中定义的 Gradle 版本。
 
-We can say whether we want IntelliJ IDEA to run applications and tests via Gradle or use IntelliJ IDEA to run them. By default, if the project is a Gradle project, IntelliJ IDEA will use Gradle to run the applications and tests in that project. This is a good way to make sure we get the same results whether we run things from the IDE or via the build tool. Sometimes using IntelliJ IDEA to run tests can be faster for running unit tests than using Gradle. However, since Gradle also has some optimisations for running applications, this is not always the case.
+我们可以设置 IntelliJ IDEA 通过 Gradle 运行应用程序和测试，还是使用 IntelliJ IDEA 本身。 默认情况下，如果项目是 Gradle 项目，IntelliJ IDEA 将使用 Gradle 运行该项目中的程序和测试。 这是确保无论从 IDE 还是通过构建工具运行内容都能获得相同结果的好方法。 有时，使用 IntelliJ IDEA 运行测试比使用 Gradle 运行单元测试更快。 但是，由于Gradle也对运行应用程序进行了一些优化，因此情况并非总是如此。
 
-In the next section, we're going to look at the Gradle Wrapper.
+在下一节中，我们将介绍 Gradle 包装器。
