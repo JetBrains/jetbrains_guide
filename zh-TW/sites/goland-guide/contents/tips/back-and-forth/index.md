@@ -4,7 +4,7 @@ title: 'Navigate Cursor Position Back and Forth'
 technologies:
   - 'go'
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: 'Navigate back to where you were, or where you went.'
 seealso:
