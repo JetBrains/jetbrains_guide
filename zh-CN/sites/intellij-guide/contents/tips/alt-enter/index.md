@@ -8,7 +8,7 @@ topics:
   - editing
   - inspections
 author: tg
-subtitle: 在代码中大多数的位置都可以使用上下文操作的功能。
+subtitle: Context Actions are available from most places in the code.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -25,18 +25,18 @@ seealso:
     title: IntelliJ IDEA Help - Intention Actions
     href: https://www.jetbrains.com/help/idea/intention-actions.html
 leadin: |
-  IntelliJ IDEA 在代码中大多数的位置都可以提供智能的建议。 它可以为编译器的错误和检查的警告提供修复功能。 即使没有警告或者错误，它也可以使用意图功能来建议使用其他的方式编写代码。
+  IntelliJ IDEA offers intelligent suggestions most places in the code. It can offer fixes for compiler errors and inspection warnings. It can even use intentions to suggest other ways in which you could write code even if there's no warning or error.
 ---
 
-  IntelliJ IDEA 会在代码的左侧显示灯泡，来让您知道它为您提供了一些建议。 红色的灯泡用于错误，黄色的用于其他建议。
+  IntelliJ IDEA lets you know that it has suggestions for you with a light-bulb on the left-hand side of the code. This light-bulb is red for errors, and yellow for other suggestions.
 
 ![Alt Enter on errors](red-light-bulb.png)
 
-  如果代码中有错误，按 **⌥⏎**（macOS），或 **Alt+Enter**（Windows/Linux），可以显示建议的选项，使代码能够编译。
+  If there's an error in the code, pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), can suggest options that will make the code compile.
 
-  如果有一个警告，IntelliJ IDEA 会向您展示警告的内容是什么，并可能就如何修复该警告提供一个或多个建议。 这些警告通常来自在代码上运行[检查](../../topics/inspections/)的结果。
+  If there's a warning, IntelliJ IDEA will show you what the warning is, and may offer one or more suggestions on how to fix that warning. These warnings are often from [inspections](../../topics/inspections/) running on the code.
 
-  即使代码运行得非常好，按 **⌥⏎**（macOS）, 或 **Alt+Enter**（Windows/Linux），往往也会提示使用其他的方式来编写这段代码的建议。 这些建议可以帮助我们重塑代码，例如使其更具有可读性，或者作为更大的重构的一部分，以实现一些其他的模式。 这些建议通常可以通过[意图](https://www.jetbrains.com/help/idea/intention-actions.html)来配置。
+  Even if the code is working perfectly well, pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), will often show suggestions on other ways to express this code. These suggestions can help us to reshape the code, for example to make it more readable, or as part of a larger refactoring towards some other pattern. These suggestions can often be configured via [intentions](https://www.jetbrains.com/help/idea/intention-actions.html).
 
 ![Alt Enter on errors](suggestions-on-working-code.png)
 
