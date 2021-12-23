@@ -27,43 +27,43 @@ leadin: |
 
 ## 默认活动的变更列表
 
-Use **⌘0** (macOS) or **Alt+0** (Windows/Linux), to show the **Commit** tool window.
+按下  **⌘0**（macOS），或**Alt+0**（Windows/Linux）显示** 提交 **工具窗口。
 
-**Changes** in the **Commit Tool Window** are in the default active changelist. The active changelist is highlighted in bold.
+**提交窗口** 中的** Changes **是默认的活动变更列表。 活动的变更列表会以高亮的方式突出显示。
 
 ![默认活动的变更列表](default-active-changelist.png)
 
-### Set Active Changelist
-You can set a changelist to Active if you want to commit your changes to VCS. Select the changelist and use **^Space** (macOS) or **Ctrl + Space** (Windows/Linux) to set it to the active changelist.
+### 设置活动的变更列表
+如果要将变更提交到 VCS，则可以将变更列表设置为活动。 选择变更列表，然后按 **^ 空格**（macOS），或 **Ctrl + 空格**（Windows/Linux）将其设置为活动的变更列表。
 
-![Set Active Changelist](set-active-changelist-ctrl-space.png)
+![设置活动的变更列表](set-active-changelist-ctrl-space.png)
 
-## Creating Changelist
+## 创建变更列表
 
 ### 使用“随处搜索”
-使用  **⇧⇧** （macOS）或 **Shift+Shift**（Windows/Linux）来打开“随处搜索”对话框。 You can now search for _Changelist_ and select **New changelist...** to bring up **New changelist** dialog.
+使用  **⇧⇧** （macOS）或 **Shift+Shift**（Windows/Linux）来打开“随处搜索”对话框。 现在，您可以搜索 _变更列表_，然后选择** 新建变更列表 ** 来打开 **新建** 对话框。
 
 ![New Changelist using Search Everywhere](create-change-list-using-search-everywhere.png)
 
-### Using Commit Window
-You can also right-click or secondary click on the Commit Window to show the options and click **New changelist...** to bring up the **New changelist** dialog.
+### 使用提交窗口
+还可以右键单击提交窗口，然后选择** 新建变更列表...** 来打开 **新建** 对话框。
 
 ![New Changelist using Commit Window](new-changelist-using-commit-window.png)
 
-### New changelist dialog
+### 新建变更列表对话框
 
-[New Changelist dialog Reference](https://www.jetbrains.com/help/idea/2021.2/new-changelist-dialog.html)
+[新建变更列表对话框相关](https://www.jetbrains.com/help/idea/2021.2/new-changelist-dialog.html)
 
 ![New Changelist dialog](new-changelist.png)
 
-## Deleting Changelist
+## 删除变更列表
 
-You can use the Commit Window to **Delete Changelist**
+可以使用提交窗口来 **删除变更列表**
 
 ![Delete Changelist using Commit Window](delete-changelist-using-commit-window.png)
 
 或者，您也可以使用 **⌘⇧A**（macOS），或 **Ctrl+Shift+A** 来打开"查找操作"对话框，"随处搜索"会过滤成只有操作。
 
-# Scenarios to use different changelists
-  - Suppose you are working on your code which requires only selected changes to be committed in VCS and you want to continue developing your code. In that case, you can move your changes to a different changelist and group together.
-  - If you want to run your application with a unique configuration without impacting your existing code, you can maintain the changed files in different changelists.
+# 使用不同变更列表的场景
+  - 假设您正在处理代码，该代码只需要在 VCS 中提交选定的更改，并且您希望继续开发您的代码。 在这种情况下，您可以将变更移动到其他列表并分组在一起。
+  - 如果要在不影响现有代码的情况下使用独立的配置运行应用程序，则可以在不同的变更列表中维护已更改的文件。
