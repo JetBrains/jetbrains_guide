@@ -4,7 +4,7 @@ date: 2019-01-23
 title: Narrow Navigation Bar With Speed Search
 technologies: [ ]
 topics:
-  - navigation
+  - 導覽
   - navigationbar
   - speedsearch
 author: pwe
