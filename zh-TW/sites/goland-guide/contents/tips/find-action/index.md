@@ -4,7 +4,7 @@ title: 'Find Action'
 technologies:
   - 'go'
 topics:
-  - '導覽'
+  - 'navigation'
 author: dlsniper
 subtitle: Skip memorizing keyboard shortcuts and speed search for actions instead.
 seealso:
