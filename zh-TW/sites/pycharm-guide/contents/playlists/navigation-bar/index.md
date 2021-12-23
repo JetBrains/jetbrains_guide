@@ -5,7 +5,7 @@ title: Navigation Bar Intro
 technologies:
   - pytest
 topics:
-  - 導覽
+  - navigation
   - navigationbar
 author: pwe
 subtitle: Move around files with keyboard, without wasting screen UI space
