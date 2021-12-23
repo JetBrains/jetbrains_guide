@@ -57,7 +57,7 @@ As the MyST docs show, there's a lot more that can be done with snippets:
 - Insert values using Jinja2 expressions
 - Combine with filters to transform
 
-## Comments
+## 消息
 
 It seems simple, but it's frequently important: you can hide blocks of Markdown content [using comments](https://myst-parser.readthedocs.io/en/latest/using/syntax.html#comments). The Markdown that is commented out will then be omitted from being parsed into the document.
 
@@ -71,7 +71,7 @@ As an example, imagine you have an admonition directive, using the optional colo
 
 ## PDF
 
-Multi-format output has long been one of Sphinx's killer features. Want to produce HTML *and* PDF? No problem.
+Multi-format output has long been one of Sphinx's killer features. Want to produce HTML *and* PDF? 也没问题。
 
 However, that meant going through [LaTeX](https://en.wikipedia.org/wiki/LaTeX). More recently, [rinotype](https://github.com/brechtm/rinohtype) is being used to produce structured PDF documents. As [this Medium tutorial](https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b) explains, "Rinohtype, paired with Sphinx, offers a modern alternative to LaTeX."
 
@@ -109,6 +109,6 @@ Many websites have a blog, where you can create posts and draft posts, then orga
 
 For Sphinx, the [ABlog package](https://ablog.readthedocs.io/) provides such features. ABlog has been around a while and thus has quite a number of features, such as archive pages, custom sidebars, and commenting integration. In fact, it recently started supporting -- [MyST!](https://ablog.readthedocs.io/manual/markdown/)
 
-## Conclusion
+## 结论
 
 That wraps up our tutorial series on static websites with Sphinx and Markdown. There are many other topics to cover -- for example, hosting at [Read the Docs](https://readthedocs.org) as well as other parts of the ecosystem. For now, we've covered the basics, and shown that you can indeed use Sphinx for regular sites and Markdown as the authoring language.
