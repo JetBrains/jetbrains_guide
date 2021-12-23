@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 重命名接口
+title: Rename an Interface
 technologies:
   - java
 topics:
   - 重构
 author: hs
-subtitle: IntelliJ IDEA 中的重命名功能，包括注释和文本
+subtitle: Renaming in IntelliJ IDEA including comments and texts
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,10 +17,10 @@ seealso:
     title: IntelliJ IDEA Help - Rename refactorings
     href: https://www.jetbrains.com/help/idea/rename-refactorings.html
 leadin: |
-  按 **⇧F6**（macOS），或 **Shift+F6** （Windows/Linux），来重命名在 IntelliJ IDEA 中的任何东西， 包括接口。 任何使用该接口的内容也都会被重命名。
+  Press **⇧F6** (macOS), or **Shift+F6** (Windows/Linux), to rename anything in IntelliJ IDEA, including interfaces. Everything that uses that interface will also be renamed.
 
-  **使用技巧：**
+  **Pro tip:**
 
-  您可以使用 **⌥⇧O**（macOS） 或 **Alt+Shift+O**（Windows/Linux）来展开嵌入提示，来包含注释和文本。
+  You can use **⌥⇧O** (macOS), or **Alt+Shift+O** (Windows/Linux), to expand the inlay hints to also consider Comments and Text.
 ---
 
