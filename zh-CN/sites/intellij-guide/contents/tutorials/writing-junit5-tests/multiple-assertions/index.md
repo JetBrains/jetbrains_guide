@@ -1,16 +1,16 @@
 ---
 type: TutorialStep
 date: 2021-01-01
-title: 多个断言
+title: Multiple Assertions
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 管理您必须检查多个断言的情况
+subtitle: Managing the situation where you have to check more than one assertion
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/we3zJE3hlWE?start=513
 ---
 
-## 管理多个断言
-- 使用 JUnit 5 `assertAll` 断言来验证[多个行为](https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions)
+## Managing Multiple Assertions
+- Proving that [more than one thing](https://junit.org/junit5/docs/current/user-guide/#writing-tests-assertions) works with JUnit 5 `assertAll` assertion
