@@ -1,45 +1,45 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: Creating an Employee Entity
+title: 创建员工实体
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: Create a JPA entity representing an Employee.
+subtitle: 创建代表员工的 JPA 实体。
 thumbnail: ./thumbnail.png
 ---
 
-An Entity is a Java class representing data you want to insert into a database. For our application, we will create an Employee entity that we will use to insert Employee data into an Employee table in our database.
+实体是要插入到数据库的数据 Java 类。 对于我们的应用程序，我们将创建一个员工实体，我们将使用该实体将员工数据插入到我们数据库中的员工表中。
 
-In the **Project** window, we'll navigate to our `src/main/java` directory, select the `com.jetbrains.springdatajpaapp` package and press **Alt**+**Insert** for Windows/Linux or **⌘N** for macOS. Choose **Java Class** and then type in our entity name - `Employee`. Then, press **Enter**.
+在 **项目** 窗口中，找到到我们的 `src/main/java` 目录，选择 ` com.jetbrains.springdatajpaapp` 包，然后按 **Alt** + **Insert**（Windows/Linux），或 **⌘N**（macOS）。 选择 **Java 类** ，然后键入我们的实体名称 - `Employee`。 然后，按 **回车键**。
 
-In the Employee class, we'll make it an entity by adding the `@Entity` annotation to our class definition and importing the `javax.persistence.Entity` package. Once you do that, you'll notice an error in your class.
+在员工类中，我们将通过在班级定义中添加 `@Entity` 注释并导入 `javax.persistence.Entity` 包，使其成为一个实体。 这样之后，你会注意到你的类里有错误。
 
-![Employee Entity Error](./EmployeeEntity.png)
+![Employee 实体报错](./EmployeeEntity.png)
 
-As the error message indicates, entities must have a primary key which is specified by having a field annotated by the `@Id` annotation. We'll use the **Alt**+**Shift**+**Enter** shortcut so IntelliJ IDEA can add the ID for us which will result in a prompt to enter the ID field's information. We'll take the default *Name* and *Type*. You can select the *Field Access* checkbox (I prefer annotations on fields instead of the setter methods because I find it more readable). You can also select the *Generated* checkbox so you don't have to assign Employee Ids yourself.
+正如错误消息所示，实体类里必须具有主键。主键通过由 `@Id` 注解的字段来指定。 我们将使用 **Alt**+**Shift**+**回车键** 快捷方式，以便 IntelliJ IDEA 可以为我们添加 ID，从而提示输入 ID 字段的信息。 我们将采取默认的 *名称* 和 *类型*。 您也可以选择 *字段访问* 选项（我更喜欢字段上的注解，而不是setter方法，因为我觉得它更具有可读性）。 您还可以选择*生成* 选项，这样您就不必自己分配员工 ID。
 
-![Add Employee ID](./AddIdAttribute.png)
+![添加员工 ID](./AddIdAttribute.png)
 
-Then, we'll click **OK**. You'll notice that IntelliJ IDEA creates an `id` field with its setters and getters.
+然后，我们点击 **OK**。 你会注意到， Intellij IDEA 创建了一个 `id` 字段与它的setter和getter方法。
 
-Next, let's add a couple of String fields: `firstName` and `lastName`.
+接下来，让我们添加几个字符串字段： `firstName` 和 `lastName`。
 
-Next, we'll generate our constructors by bringing up the *Generate* menu (**Alt**+**Insert** for Windows/Linux or **⌘N** for macOS) and select **Constructor**. We don't need the constructor to take in an `id` because ours will be generated so we'll click on **firstName** then hold down **Ctrl** (Windows) or **⌘** (macOS) and select **lastName**.
+然后，我们将通过 *生成* 菜单（**Alt**+**Insert** （Windows/Linux）或 **⌘N**（macOS）来生成构造函数，选择 **构造函数**。 我们不需要构造器去管 `ID` 因为我们的 ID 将被自动生成，因此我们将单击 ** firstName **，然后按住 **Ctrl**（Windows）或 **⌘**（macOS）再选择 **lastName**。
 
-![Generate Constructor](./GenerateConstructor.png)
+![生成构造函数](./GenerateConstructor.png)
 
-Then, we'll click **OK**.
+然后，我们点击 **OK**。
 
-You'll now notice that you have an error on your `Employee` class because you don't have a no-arg constructor. If you press **Alt+Enter** (Windows/Linux), or **⌥⏎** (macOS), on the error, IntelliJ IDEA offers to create it for you - let's go ahead and do that.
+现在，您会发现您的 `Employee` 类中出现错误，因为您没有无参数的构造器。 如果您按 **Alt + Enter** （Windows/Linux），或 **⌥⏎** （macOS），IntelliJ IDEA 会为您创建它。好的，让我们继续。
 
-Next, we'll generate our field's setters and getters. We'll bring up the *Generate* menu (**Alt**+**Insert** for Windows/Linux or **⌘N** for macOS) and select **Getter and Setter**. We'll hold down **Ctrl** (Windows) or **⌘** (macOS) and select both variables. Then, we'll click **OK**. IntelliJ IDEA generates the getters and setters for both variables.
+接下来，我们来生成字段的setter和getter方法。 我们将通过 *生成* 菜单（**Alt** + **Insert**（Windows/Linux）或 **⌘N**（macOS）），并选择 **Getter和Setter**。 按住 **Ctrl** （Windows）或 **⌘** （macOS）并选择两个变量。 然后，我们点击 **OK**。 IntelliJ IDEA 将为两个变量生成getter和setter方法。
 
-Finally, let's generate a `toString` method by bring up the *Generate* menu again (**Alt**+**Insert** for Windows/Linux or **⌘N** for macOS) and selecting **toString**. We'll keep all the fields selected and click **OK**.
+最后，让我们生成一个 `toString` 方法，再次打开 *生成* 菜单（**Alt** + **Insert**（Windows/Linux）或 **⌘N**（macOS）），并选择 **toString**。 选取所有字段，并单击 **OK**。
 
-## End Result
+## 最终结果
 
-Your final `Employee` entity should look similar to this (formatting may vary):
+您的` Employee `实体类应看起来如下（格式可能有所不同）：
 ```java
 package com.jetbrains.springdatajpaapp;
 
