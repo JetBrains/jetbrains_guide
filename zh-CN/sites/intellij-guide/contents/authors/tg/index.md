@@ -1,6 +1,6 @@
 ---
 title: Trisha Gee
-subtitle: Lead Java Advocate
+subtitle: Java 技术布道师领导
 thumbnail: ./tg.jpg
 ---
 
