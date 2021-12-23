@@ -1,5 +1,5 @@
 ---
-title: 版本控制
+title: Version Control
 subtitle:
 accent: primary
 icon: fas fa-code-branch
