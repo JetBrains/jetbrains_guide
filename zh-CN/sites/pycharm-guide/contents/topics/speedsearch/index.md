@@ -1,13 +1,13 @@
 ---
 title: Speed Search
 subtitle: Quickly find an item in a long list by typing to narrow.
-accent: primary
+accent: 主
 icon: fas fa-search-location
 ---
 
 Want to quickly find a choice in a long list? Whether it's a file in the project tool, a symbol in `Find Symbol`, an action in `Search Everywhere`, or a choice in `File | New`, speed search makes it fast and simple...without using the mouse.
 
-Filter by:
+筛选依据:
 
 - Typing a letter, causing the list to narrow
 
@@ -17,5 +17,5 @@ Filter by:
 
 - Use punctuation such as forward-slash to mean directory separator and period to mean file extension
 
-## See Also
+## 另请参阅
 - [Speed Search in Tool Windows](https://www.jetbrains.com/help/pycharm/speed-search-in-the-tool-windows.html)
