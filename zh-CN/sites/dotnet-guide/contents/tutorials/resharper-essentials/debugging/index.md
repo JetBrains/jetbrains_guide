@@ -25,7 +25,7 @@ Debugging in Visual Studio has always been great. With ReSharper, it gets better
 
 Traditionally, Visual Studio users would have to rely on the Auto, Locals, and Watch windows to see what values are in the current scope. With ReSharper, you can step through your code base and [see values displayed directly in the editor](https://www.jetbrains.com/help/resharper/Debugging_Assistance.html#inline-debugging). This is especially useful in looping scenarios, where you can see values change in real-time.
 
-### 可搜索的 DataTips
+### Searchable DataTips
 
 ReSharper provides an improved replacement for Visual Studio's DataTips. You can [search for specific values](https://www.jetbrains.com/help/resharper/Debugging_Assistance.html#searchable-datatips) in the current context by typing in the DataTip. DataTips will say open until you click away or press the <kbd>Esc</kbd>button.
 
@@ -40,7 +40,7 @@ ReSharper also adds a custom breakpoints tool window, where you can:
 * Type to search for breakpoints
 * Enable/disable, or remove breakpoints
 * See a preview of the code where you set the breakpoint
-* 还有更多！
+* And more!
 
 > **Tip:** To track a symbol across your solution, use the **Find Results** tool window and then **Set a Breakpoint** on all occurrences.
 
@@ -48,8 +48,8 @@ ReSharper also adds a custom breakpoints tool window, where you can:
 
 It can be frustrating when assemblies don't ship with debugging information (PDB). When you come across an assembly with no symbols loaded, you can use ReSharper's decompiler to generate a PDB and load it into the debugger. Once done, you can debug third-party code as if it was your own.
 
-### 另请参阅
+### See Also
 
-- [调试辅助](https://www.jetbrains.com/help/resharper/Debugging_Assistance.html)
+- [Debugging assistance](https://www.jetbrains.com/help/resharper/Debugging_Assistance.html)
 - [Navigate to breakpoints](https://www.jetbrains.com/help/resharper/Navigation_and_Search_Navigating_Breakpoints.html)
 - [Debugging without source code](https://www.jetbrains.com/help/resharper/Debugging_Without_Source_Code.html)
