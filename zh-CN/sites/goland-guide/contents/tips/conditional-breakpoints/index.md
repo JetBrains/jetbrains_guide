@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Conditional Breakpoints
 technologies:
-  - 平台
+  - platform
 topics:
   - debugging
 author: dlsniper
