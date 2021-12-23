@@ -120,7 +120,7 @@ Instead, in the `Player` dataclass, let's signify that it is a list of `Guardian
 guardians: List[Guardian] = field(default_factory=list)
 ```
 
-## 注释
+## Note
 
 As you type `List`, use `Ctrl-Space | Ctrl-Space` to complete it, which also generates the import. Same for `Guardian`.
 
