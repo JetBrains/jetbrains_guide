@@ -1,7 +1,7 @@
 ---
 title: VCS
-subtitle: IntelliJ IDEA has support for Git and a number of other version control systems.
-accent: 主
+subtitle: IntelliJ IDEA 支持 Git 和众多版本控制系统。
+accent: primary
 icon: fas fa-code-branch
 ---
 
