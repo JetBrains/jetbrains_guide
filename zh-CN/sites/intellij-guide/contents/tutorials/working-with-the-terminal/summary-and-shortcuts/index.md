@@ -1,36 +1,36 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: 总结和快捷键
+title: Summary and shortcuts
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 我们在本教程中涉及的所有内容，包括帮助的链接和快捷键。
+subtitle: Everything we covered in this tutorial including help links and shortcuts.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/tlEkrWU0d1M?start=423
 ---
 
-## 摘要
-[IntelliJ IDEA 终端窗口](https://www.jetbrains.com/help/idea/terminal-emulator.html)对于开发者来说是一个强大和有用的工具。 它将我们的注意力集中在相同的工具上，从而减少了上下文切换。 它使我们能够容易地在编辑器和命令行之间共享内容。 终端的集成允许我们轻松地从项目代码移动到终端并返回，它还可以向我们展示其他的方法来使用 IDE 版本的命令行工具做同样的事情。
+## Summary
+[IntelliJ IDEA’s terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html) is a powerful and helpful tool for developers. It keeps our attention in the same tools which reduces context switching. It makes it easy for us to share things between the editor and the command line. The terminal is integrated allowing us to easily move from the project code to the terminal and back again, and it also can show us alternative ways of doing the same thing, using the IDE’s version of the command line tool.
 
 ![Different Java Home](different-java-home.png)
 
-您可能还会发现这些链接很有用：
-- [从终端中运行 IDE 功能](https://blog.jetbrains.com/idea/2020/07/run-ide-features-from-the-terminal/)
-- [终端帮助文档](https://www.jetbrains.com/help/idea/terminal-emulator.html/)
+You may also find these links useful:
+- [Run IDEA Features From the Terminal](https://blog.jetbrains.com/idea/2020/07/run-ide-features-from-the-terminal/)
+- [Terminal Help Documentation](https://www.jetbrains.com/help/idea/terminal-emulator.html/)
 
 
-### 使用的快捷键
-以下是我们使用的一些快捷键以及一些您可以尝试的额外的快捷键。
+### Shortcuts Used
+Here are some of the shortcuts that we used and some additional ones that you can try out.
 
-| 名称                                                                                                   | macOS 快捷键        | Windows 快捷键            |
-| ---------------------------------------------------------------------------------------------------- | ---------------- | ---------------------- |
-| 在项目窗口中添加新文件                                                                                          | **⌘N**           | **Alt+Insert**         |
-| 打开 [Search everywhere（随处搜索）](https://www.jetbrains.com/help/idea/searching-everywhere.html)对话框       | **⇧⇧**           | **Shift+Shift**        |
-| [打开第二个终端选项卡](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)                 | **⌘T**           | **Ctrl+Shift+T**       |
-| [在不同选项卡之间移动](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)                 | **⌘⇧** or **⌘⇧** | **Alt+←** or **Alt+→** |
-| 在拆分的窗口之间切换                                                                                           | **⌥⇥**           | **Ctrl+Tab**           |
-| 关闭拆分                                                                                                 | **⌘W**           | **Ctrl+F4**            |
-| [Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal) | **⌥F12**         | **Alt+F12**            |
+| Name                                                                                                      | macOS Shortcut   | Windows Shortcut       |
+| --------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------- |
+| Add a new file in the Project Window                                                                      | **⌘N**           | **Alt+Insert**         |
+| Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog        | **⇧⇧**           | **Shift+Shift**        |
+| [Open a second terminal tab](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)      | **⌘T**           | **Ctrl+Shift+T**       |
+| [Move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) | **⌘⇧** or **⌘⇧** | **Alt+←** or **Alt+→** |
+| Switch between splits                                                                                     | **⌥⇥**           | **Ctrl+Tab**           |
+| Close splits                                                                                              | **⌘W**           | **Ctrl+F4**            |
+| [Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)      | **⌥F12**         | **Alt+F12**            |
