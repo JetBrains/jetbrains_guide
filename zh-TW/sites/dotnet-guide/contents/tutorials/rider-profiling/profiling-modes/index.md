@@ -9,7 +9,7 @@ topics:
   - ide
   - profiling
 products:
-  - rider
+  - tRANSLATED Rider
   - dottrace
 author: maartenba
 subtitle: What are the differences between Sampling, Tracing, Line-by-Line, and Timeline profiling?
