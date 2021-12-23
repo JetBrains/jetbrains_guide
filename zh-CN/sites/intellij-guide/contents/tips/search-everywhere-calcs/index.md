@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: '“随处搜索”中的计算器'
+title: Calculations in Search Everywhere
 technologies:
   - java
   - kotlin
 topics:
   - tricks
 author: hs
-subtitle: 在“随处搜索”中执行基本计算
+subtitle: Perform basic calculations with Search Everywhere
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,6 +18,6 @@ seealso:
     title: IntelliJ IDEA Help - Searching Everywhere
     href: https://www.jetbrains.com/help/idea/searching-everywhere.html
 leadin: |
-  使用 **⇧⇧**（macOS），或 **Shift+Shift**（Windows/Linux），然后输入您的算式。 结果将显示在“随处搜索”对话框的顶部的_Result:_。
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux) and then type in your sum. The result will appear at the top of the Search Everywhere dialog as _Result:_.
 ---
 
