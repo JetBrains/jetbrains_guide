@@ -9,7 +9,7 @@ topics:
   - testing
   - inspections
 products:
-  - tRANSLATED Rider
+  - rider
   - dotcover
 author: maartenba
 subtitle: Learn how Rider can help make sure code behaves as expected, with continuous testing and code coverage.
