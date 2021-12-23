@@ -1,6 +1,6 @@
 ---
 date: 2021-01-08
-title: 拖动和固定编辑器选项卡
+title: Drag and Dock Editor tabs
 technologies:
   - java
   - kotlin
@@ -8,13 +8,13 @@ topics:
   - tricks
   - interface
 author: hs
-subtitle: 您可以根据需要移动编辑器选项卡
+subtitle: You can move editor tabs around as required
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/QK_5IBkBMJQ
 leadin: |
-  您可以在编辑器中移动选项卡以利用更大的显示器，并让代码并排显示，例如类及其测试类。
+  You can move tabs around in your editor to take advantage of bigger monitors and have code appear side by side, for example a class and its test class.
 ---
 
