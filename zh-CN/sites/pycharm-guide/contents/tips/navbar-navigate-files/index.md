@@ -10,7 +10,7 @@ author: pwe
 subtitle: Move around your project tree and select files, from your keyboard, with the Navigation Bar.
 seealso:
   - 
-    title: 导航栏
+    title: Navigation bar
     href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - 
     title: Navigating Tips and Tricks
