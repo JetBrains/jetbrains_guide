@@ -56,4 +56,4 @@ public String helloWorld(){
 
 7) Now run your application again. At the root you should still see _Hello World from Spring Boot_ because the `@RequestMapping` is _/_ indicating root. However, if you now type in `localhost:8080/goodbye`, you should see _Goodbye from Spring Boot_.
 
-就是这样！ You're done, congratulations on creating your first Spring Application and serving some text in the browser! In the next section we'll create a test for our application. 
+That's it! You're done, congratulations on creating your first Spring Application and serving some text in the browser! In the next section we'll create a test for our application. 
