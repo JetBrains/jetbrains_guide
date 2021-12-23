@@ -4,7 +4,7 @@ title: Iterating Collections
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - completion
