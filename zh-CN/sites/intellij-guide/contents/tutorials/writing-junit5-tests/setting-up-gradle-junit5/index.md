@@ -1,19 +1,19 @@
 ---
 type: TutorialStep
 date: 2021-01-01
-title: Setting up Gradle for JUnit 5
+title: 为 JUnit 5 设置 Gradle
 technologies:
   - gradle
 topics: [ ]
 author: hs
-subtitle: Laying the foundations for Writing JUnit 5 Tests
+subtitle: 为编写 JUnit 5 测试奠定基础
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/we3zJE3hlWE?start=11
 ---
 
-## Setting up Gradle for JUnit 5
-- Adding the JUnit 5 dependency to your Gradle build file
-- Telling Gradle to use JUnit 5
-- Applying changes to your Gradle configuration
+## 为 JUnit 5 设置 Gradle
+- 添加 JUnit 5 依赖到 Gradle 构建文件
+- 让 Gradle 使用 JUnit 5
+- 将更改应用于您的 Gradle 配置
