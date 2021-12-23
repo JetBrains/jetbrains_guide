@@ -1,14 +1,14 @@
 ---
 type: TutorialStep
 date: 2020-12-01
-title: Introduction
+title: 簡介
 technologies:
   - asp.net
   - javascript
 topics:
   - web
 products:
-  - rider
+  - tRANSLATED Rider
 author: maartenba
 subtitle: Introduction to the Web Fundamentals in Rider series.
 thumbnail: ./thumbnail.png
