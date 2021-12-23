@@ -4,7 +4,7 @@ title: Settings Layers
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - ide
