@@ -4,7 +4,7 @@ title: Jump to the Navigation Bar
 technologies:
   - go
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: Get an overview of your current location, and the project itself
 thumbnail: ./thumbnail.png
