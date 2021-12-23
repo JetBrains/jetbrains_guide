@@ -1,12 +1,12 @@
 ---
 date: 2021-08-24
-title: 在 IntelliJ IDEA 中 Hello World
+title: Hello World in IntelliJ IDEA
 technologies:
   - java
 topics:
   - gettingstarted
 author: hs
-subtitle: 创建一个新的 Java 应用程序和 JAR 文件，将 `Hello World` 打印到控制台。
+subtitle: Create a new Java application and JAR file that prints `Hello World` to the console.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/hello-world/creating-a-new-project/
