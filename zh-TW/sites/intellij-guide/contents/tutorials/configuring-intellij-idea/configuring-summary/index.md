@@ -19,7 +19,7 @@ We've used the following shortcuts in this tutorial:
 | ------------------------ | -------------- | -------------------------------- |
 | Project Structure dialog | **⌘;**         | **Ctrl**+**Alt**+**Shift**+**S** |
 | Settings/Preferences     | **⌘,**         | **Ctrl**+**Alt**+**S**           |
-| 隨處搜索                     | **⇧⇧**         | **Shift**+**Shift**              |
+| Search Everywhere        | **⇧⇧**         | **Shift**+**Shift**              |
 | Find Action              | **⌘⇧A**        | **Ctrl** + **Shift** + **A**     |
 
 ### Key Points
