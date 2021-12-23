@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Select the builtin Terminal shell'
 technologies:
-  - 平台
+  - platform
 topics: [ ]
 author: dlsniper
 subtitle: 'Run multiple shells from the same UI with ease'
