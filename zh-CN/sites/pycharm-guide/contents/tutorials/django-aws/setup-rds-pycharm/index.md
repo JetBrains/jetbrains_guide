@@ -78,7 +78,7 @@ I can even pass **ALLOWED_HOSTS** in the environment variable. It's fine to use 
 
 Before deploying your application on the production server, make sure you follow the deployment checklist as provided in the Django documentation.
 
-引用:
+Reference:
 - [Deployment checklist](https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/)
 - [Security in Django](https://docs.djangoproject.com/en/3.1/topics/security/)
 
