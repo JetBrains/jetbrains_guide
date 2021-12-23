@@ -1,7 +1,7 @@
 ---
-title: 检查
+title: Inspections
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-search
 ---
 
