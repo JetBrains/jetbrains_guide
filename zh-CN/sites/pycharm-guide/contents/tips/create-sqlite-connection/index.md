@@ -4,7 +4,7 @@ date: 2019-04-17
 title: Create SQLite Database Connection By Drag-and-Drop
 technologies: [ ]
 topics:
-  - database
+  - 数据库
 author: pwe
 subtitle: Drag-and-drop a .sqlite database file onto the Database tool to create a connection.
 seealso:
