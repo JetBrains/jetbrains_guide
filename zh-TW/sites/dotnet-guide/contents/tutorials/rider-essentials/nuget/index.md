@@ -9,7 +9,7 @@ topics:
   - ide
   - editing
 products:
-  - tRANSLATED Rider
+  - rider
 author: maartenba
 subtitle: Working with NuGet, including search with typos, CamelHumps, Update All, and more!
 thumbnail: ./thumbnail.png
