@@ -4,7 +4,7 @@ date: 2019-01-24
 title: Create New File With Navigation Bar
 technologies: [ ]
 topics:
-  - navigation
+  - 導覽
   - navigationbar
 author: pwe
 subtitle: Activate the Navigation Bar and create a new file somewhere in the project tree.
