@@ -20,13 +20,13 @@ In this example, we're going to look at how to open a Gradle project from a loca
 
 In the [Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html) we can select "Open", and navigate to the location with the project code.
 
-![打开已有项目](./open-project.png)
+![Open an existing project](./open-project.png)
 
 IntelliJ IDEA will look for known build systems in the project, for example Maven and Gradle, or IntelliJ IDEA config files.
 
 This project that I've selected is a multi-module Gradle project, it has the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) configured:
 
-![项目文件](./existing-project.png)
+![Project files](./existing-project.png)
 
 The `settings.gradle` file states which modules make up the gradle project, and each module contains its own `build.gradle` file.
 
@@ -38,7 +38,7 @@ IntelliJ IDEA creates IntelliJ IDEA modules for each of the sub-projects in this
 
 Each of these IntelliJ IDEA modules is a Gradle project in its own right, with its own `build.gradle` and its own tasks and dependencies. If we open the Gradle Tool Window, we can see the top level tasks for the whole project, and the tasks and dependencies for each of the sub-projects, or modules. These may be different, since they reflect what's configured in each module's `build.gradle` file.
 
-![Gradle 工具窗口](./gradle-tool-window.png)
+![Gradle tool window](./gradle-tool-window.png)
 
 We can build the whole project by double-clicking on the `build` task in the Gradle tool window, to see if it all works the way we expect.
 
