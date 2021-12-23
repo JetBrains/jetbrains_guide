@@ -1,30 +1,30 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: 从终端中运行 IDE 功能
+title: Run IDE features from the terminal
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 在终端中运行高亮显示的命令
+subtitle: Running highlighted commands in the terminal
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/tlEkrWU0d1M?start=327
 ---
 
-## 在终端中运行命令
-您可能会注意到终端窗口中的某些命令被高亮显示。 这是一个 [IntelliJ IDEA 2020.2 的功能](https://www.jetbrains.com/help/idea/terminal-emulator.html#smart-command-execution) ，它表明该命令可以在 IDE 中运行，这意味着我们不需要使用命令行。
+## Running Commands in the Terminal
+You may notice that some commands in the terminal window are highlighted. This is a [feature in IntelliJ IDEA 2020.2](https://www.jetbrains.com/help/idea/terminal-emulator.html#smart-command-execution) that shows that the command could be run in the IDE, meaning we don’t need to use the command line.
 
 ![Yellow Highlight](yellow-highlight.png)
 
-如果它以黄色高亮显示，并且我们按 **Enter**，那么该命令将按照我们的预期的那样在终端窗口中运行。 如果我们再次输入相同的命令，但这次我们在 macOS上 使用 **⌘⏎** ，或在 Windows 和 Linux 上使用 **Ctrl+Enter** ，IntelliJ IDEA 将使用 IntelliJ IDEA 中的功能，并打开相关的工具窗口。
+If it’s highlighted in yellow and we press **Enter**, the command will be run in the terminal window just as we’d expect. If we type the same command again, but this time use **⌘⏎** on macOS, or **Ctrl+Enter** on Windows and Linux, IntelliJ IDEA will use the feature in IntelliJ IDEA and open the relevant tool window.
 
-IntelliJ IDEA 检测许多不同的命令，这些命令可以在 IDE 中运行，而不用从命令行运行。 例如 git 命令：
+IntelliJ IDEA detects a number of different commands that could be run in the IDE instead of from the command line. For example, the git command:
 
 `git log`
 
-如果我们按 **Enter**，它将会正常执行。 如果我们在macOS上按 **⌘⏎** ，或在 Windows 和 Linux 上按 **Ctrl+Enter** ，它将打开 intelliJ IDEA 中 [Git 日志窗口](https://www.jetbrains.com/help/idea/log-tab.html)。
+will execute normally if we press **Enter**. If we press **⌘⏎** on macOS, or **Ctrl+Enter** on Windows and Linux, it opens the [Git log window](https://www.jetbrains.com/help/idea/log-tab.html) in IntelliJ IDEA.
 
-这是发现 IDE 中的功能的好方法，这些功能是使用命令行的替代方式。 如果我们决定不需要这些建议，我们可以使用上下文菜单，从终端窗口的设置里关闭 “Run Commands using IDE（从终端运行IDE功能）”。 这些命令将不再高亮显示。
+This is a great way to discover features in the IDE that are an alternative approach to using the command line. If we decide we’re not going to need these suggestions, we can turn off "Run IDE Features from the Terminal" from the terminal window’s settings using the context menu. The commands will no longer be highlighted.
 
 ---
