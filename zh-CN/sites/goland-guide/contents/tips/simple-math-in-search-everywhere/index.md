@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Perform simple math in Search Everywhere'
 technologies:
-  - 平台
+  - platform
 topics:
   - editing
 author: dlsniper
