@@ -24,7 +24,7 @@ We are going to use Docker. Docker is an open platform for developing, shipping,
 Just follow the official documentation for the installation process, and you will be good to go.
 
 
-# 配置
+# Configurations
 
 PyCharm Professional is already running. I will click on **Run** then I will go to **Edit Configurations**.
 
