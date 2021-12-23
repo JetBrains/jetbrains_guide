@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Configuring code style
     href: https://www.jetbrains.com/help/idea/configuring-code-style.html
 leadin: |
-  您可以使用 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux）来显示您选择的上下文操作，然后调整代码风格。
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for your selection and then edit the code style.
 ---
 
