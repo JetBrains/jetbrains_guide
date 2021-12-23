@@ -31,7 +31,7 @@ The idea of [continuous testing](https://www.jetbrains.com/help/rider/Work_with_
 
 Using the [code coverage tool window](https://www.jetbrains.com/help/rider/Unit_Tests_Coverage_window.html), you can see which lines of code are covered by test logic (or not), and helps you figure out which parts of your code base may need more tests to cover all cases.
 
-### 另请参阅
+### See Also
 
 - [Unit Testing in ReSharper/Rider](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
 - [Getting Started with Unit Testing](https://www.jetbrains.com/help/rider/Getting_Started_with_Unit_Testing.html)
