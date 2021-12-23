@@ -9,7 +9,7 @@ author: pwe
 subtitle: Select your code and execute it, in the right context.
 seealso:
   - 
-    title: Evaluating Expressions
+    title: 评估表达
     href: https://www.jetbrains.com/help/pycharm/evaluating-expressions.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
