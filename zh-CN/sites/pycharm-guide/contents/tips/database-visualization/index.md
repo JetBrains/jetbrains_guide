@@ -4,7 +4,7 @@ title: Database Visualization
 technologies:
   - django
 topics:
-  - 数据库
+  - database
 author: mm
 subtitle: Visualize the structure of a database with diagrams
 seealso:
