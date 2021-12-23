@@ -13,7 +13,7 @@ seealso:
     title: Finding and replacing text in a project
     href: https://www.jetbrains.com/help/pycharm/finding-and-replacing-text-in-project.html
   - 
-    title: 导航栏
+    title: Navigation bar
     href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - 
     title: Navigating Tips and Tricks
