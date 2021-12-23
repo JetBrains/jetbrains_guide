@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 使用 Switcher 在打开的文件之间导航
+title: Navigate between opened files using the Switcher
 technologies:
   - go
 topics:
