@@ -2,7 +2,7 @@
 date: 2020-10-15
 title: Spot Coverage Gaps Using the Gutter
 technologies:
-  - 平台
+  - platform
 topics:
   - testing
 author: dlsniper
