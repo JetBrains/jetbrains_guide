@@ -14,7 +14,7 @@ In this tutorial we used the [New Project Wizard](https://www.jetbrains.com/help
 
 We created a Spring Controller and served some text to the local Tomcat webserver. Finally, we added a test for our HTTP call.
 
-### 资源
+### Resources
 - I referenced [this guide](https://spring.io/guides/gs/spring-boot/) to create this tutorial.
 
 - The [New Project Wizard](https://www.jetbrains.com/help/idea/new-project-wizard.html) in IntelliJ IDEA Ultimate uses [Spring Initializr](https://start.spring.io/) to create the project behind the scenes.
