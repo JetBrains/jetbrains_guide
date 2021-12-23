@@ -9,7 +9,7 @@ topics:
   - web
   - debugging
 products:
-  - tRANSLATED Rider
+  - rider
 author: rachelappel
 subtitle: Using the Azure plugin in Rider, and working with Azure Functions.
 thumbnail: ./thumbnail.png
