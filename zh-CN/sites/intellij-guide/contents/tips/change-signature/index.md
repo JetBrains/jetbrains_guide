@@ -14,11 +14,11 @@ shortVideo:
   url: https://youtu.be/mEs1Mo2h1cg
 seealso:
   - 
-    title: IntelliJ IDEA 帮助文档 - 更改签名
+    title: IntelliJ IDEA Help - Change Signature
     href: https://www.jetbrains.com/help/idea/change-signature.html
 leadin: |
-  按 **⌘F6** (macOS)， 或 **Ctrl+F6** (Windows/Linux)， 显示 **更改签名** 的对话。 你可以在这里添加或删除方法的参数。
+  按 **⌘F6**（macOS）， 或 **Ctrl+F6**（Windows/Linux）， 显示 **更改签名** 的对话。 您可以在这里添加或删除方法的参数。
 
-  您可以使用 **⌘N** (macOS) 或 **Alt+Ins** (Windows/Linux) 来添加新的参数。
+  您可以使用 **⌘N**（macOS）或 **Alt+Ins**（Windows/Linux）来添加新的参数。
 ---
 
