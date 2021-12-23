@@ -1,23 +1,23 @@
 ---
 date: 2021-05-05
-title: 对 instanceof 使用模式匹配
+title: Use Pattern Matching for instanceof
 technologies:
   - java
 topics:
   - latest
   - inspections
 author: tg
-subtitle: 检查可以引导我们使用新的 Java 功能
+subtitle: Inspections can guide us to use new Java features
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/qCfuQkddCEM
 leadin: |
-  如果我们的代码在 instanceof 之后使用了类型转换，IntelliJ IDEA 会用一个警告来高亮它们，并建议用instanceof 的模式匹配来代替。
+  If our code uses an instanceof followed by a cast, IntelliJ IDEA highlights these with a warning and suggests replacing this with pattern matching for instanceof.
 
-  按 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux），并选择 "Replace with pattern variable"（替换为模式变量）。
+  Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace with pattern variable".
 
-  请注意，只有当您使用 Java 16 及以上的语言级别时，才能使用此功能。
+  Note that this is only available if you're using a language level of Java 16 or above.
 ---
 
