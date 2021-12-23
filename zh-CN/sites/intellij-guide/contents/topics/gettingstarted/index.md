@@ -1,8 +1,8 @@
 ---
 title: 入门指南
-subtitle: If you're new to IntelliJ IDEA or a technology, start here
-accent: 主
+subtitle: 提供给不熟悉 IntelliJ IDEA 或任一项技术的初学者的专属入口。
+accent: primary
 icon: fas fa-graduation-cap
 ---
 
-IntelliJ IDEA is a powerful 'Integrated Developer Environment' (IDE). This is a collection of tips and tutorials to help you get started. 
+IntelliJ IDEA 是一个强大的 "集成开发人员环境"（IDE）， 这是帮助您入门的小技巧和教程的集合。 
