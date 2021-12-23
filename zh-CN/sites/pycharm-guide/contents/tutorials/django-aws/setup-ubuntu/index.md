@@ -38,7 +38,7 @@ There are many ways to securely connect to your instances, for example a bastion
 
 Security is a big topic, and it's an endless debate. I would recommend following the principle of least-privilege. If you are interested to know more about AWS Security & Compliance, please follow the below reference.
 
-引用:
+Reference:
  - [Best Practices for Security, Identity, & Compliance](https://aws.amazon.com/architecture/security-identity-compliance)
 
 
@@ -116,7 +116,7 @@ After successfully installing the NICE DCV Client in your machine, I will connec
 
 As you can see, I have connected to my ec2 instance through Putty. There are multiple ways to connect to your ec2 instance, which you might already be aware of. If not, please refer below the reference link.
 
-引用:
+Reference:
  - [Connect to your Linux instance in AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html)
 
 
