@@ -1,13 +1,13 @@
 ---
 date: 2021-04-11
-title: Using the IDE Feature Trainer
+title: 使用 IDE 功能培训
 technologies:
   - java
   - kotlin
 topics:
   - interface
 author: hs
-subtitle: Learning new things in the IDE
+subtitle: 在 IDE 中学习新事物
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/working-with-feature-trainer/ide-feature-trainer-overview/
