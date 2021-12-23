@@ -42,7 +42,7 @@ Now that we have a test -- albeit simple -- let's see what it looks like to *run
 
 Yay, our first test runs -- and fails! Sure, small victory -- but small victories can help get us into the TDD flow.
 
-## 警告
+## Warning
 
 Don't see `pytest` in the context menu as a way to run your tests? You probably didn't configure `pytest` as the test framework in the `Python Integrated Tools` section of the PyCharm's project settings. It should configure automatically, though, if your environment has `pytest` when you first open in PyCharm (or have it set globally.)
 
