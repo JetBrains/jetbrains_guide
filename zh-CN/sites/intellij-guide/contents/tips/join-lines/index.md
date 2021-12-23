@@ -6,7 +6,7 @@ technologies:
 topics:
   - editing
 author: hs
-subtitle: Join lines of code together
+subtitle: 将代码行连接在一起
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Lines of code
     href: 'https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_lines_code_blocks'
 leadin: |
-  Place the caret on the line that you want to join with a lower line and press **⌃⇧J** (macOS), or **Ctrl+Shift+J** (Windows/Linux), to join lines of code.
+  将光标放在要与下行连接的地方，然后按 **⌃⇧J**（macOS），或**Ctrl+Shift+J**（Windows/Linux），来连接代码行。
 ---
 
