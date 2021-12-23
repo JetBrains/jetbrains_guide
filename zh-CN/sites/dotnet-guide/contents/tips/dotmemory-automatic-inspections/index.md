@@ -7,7 +7,7 @@ products:
   - dotmemory
 topics:
   - inspections
-  - 分析
+  - profiling
 author: khalidabuhakmeh
 subtitle: Detect common memory issues - automatically.
 thumbnail: ./thumbnail.png
