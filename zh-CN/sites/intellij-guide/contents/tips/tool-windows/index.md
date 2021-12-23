@@ -1,12 +1,12 @@
 ---
 hasBody: false
 date: 2021-05-28
-title: 打开工具窗口
+title: Opening Tool Windows
 technologies: [ ]
 topics:
   - navigation
 author: tg
-subtitle: 无需使用鼠标即可快速打开 IntelliJ IDEA 的工具窗口，并轻松在窗口中找到想要的。
+subtitle: Quickly open IntelliJ IDEA's tool windows without using the mouse, and easily find items in the window.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -26,8 +26,8 @@ seealso:
     title: IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/
 leadin: |
-  在 IDE 里移动最快的方式是使用键盘。 大多数工具窗口都有一个简单的数字快捷方式，例如项目工具窗口是 **⌘1** （macOS），或 **Alt+1** （Windows/Linux）。 对于那些没有键盘快捷方式的，您可以使用[查找操作](../find-actions)，或[随处搜索](../search-everywhere)打开这些快捷方式。
+  The fastest way to move around the IDE is with the keyboard. Most tool windows have a simple numeric shortcut, for example the project tool window is **⌘1** (macOS), or **Alt+1** (Windows/Linux). For those that don't have a keyboard shortcut, you can open these by using [Find Action](../find-actions), or [Search Everywhere](../search-everywhere).
 
-  别忘了，只要输入要搜索的东西，您就可以轻松地搜索 IntelliJ IDEA 中的任何对话框或窗口。
+  Don't forget, you can easily search any dialog or window in IntelliJ IDEA simply by typing the thing you want to search for.
 ---
 
