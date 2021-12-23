@@ -1,18 +1,18 @@
 ---
 date: 2021-11-01
-title: 使用 Esc 键
+title: Using Escape
 technologies: [ ]
 topics:
-  - 接口
+  - interface
   - tricks
 author: hs
-subtitle: 如何退出对话框并将焦点返回给编辑器
+subtitle: How to exit dialogs and return your focus to the editor
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/nbcedEBc-mg
 leadin: |
-  如果有一个打开的对话框，按**Escape**将忽略当前对话框，并将焦点返回给编辑器。 如果您打开的是工具窗口（如项目窗口，然后按**Escape**），IntelliJ IDEA 将将焦点返回给编辑器，但项目工具窗口会保持打开的状态。
+  Pressing **Escape** will dismiss the current dialog if there's one open and return your focus to the editor. If you open a tool window such as the Project Window and then press **Escape**, IntelliJ IDEA will return the focus to your editor but leave the Project Tool window open.
 ---
 
