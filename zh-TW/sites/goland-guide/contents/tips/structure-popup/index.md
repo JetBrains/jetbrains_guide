@@ -4,7 +4,7 @@ title: Structure popup
 technologies:
   - go
 topics:
-  - 導覽
+  - navigation
 author: dlsniper
 subtitle: View the file or whole package structure and navigate to any element
 thumbnail: ./thumbnail.png
