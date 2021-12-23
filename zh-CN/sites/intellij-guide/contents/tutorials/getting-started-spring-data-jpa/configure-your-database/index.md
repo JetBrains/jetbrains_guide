@@ -1,37 +1,37 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: Configuring your Database
+title: 配置数据库
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: Configure the application to connect to our database.
+subtitle: 配置应用程序来连接我们的数据库。
 thumbnail: ./thumbnail.png
 ---
 
-At this point, we can use the default in-memory database that Spring Boot creates for us. However, the default database functionality is limited and doesn't allow data to stay around after the application terminates so let's go ahead and configure a database.
+这时候，我们可以使用 Spring Boot 来为我们创建默认的内存数据库。 但是默认的数据库功能有限，不允许数据在应用程序终止后保留数据，所以让我们来继续配置一个数据库。
 
-We'll bring up the search menu (**Shift**+**Shift**) and search for our `application.properties` file. In our `application.properties` file, we can utilize IntelliJ IDEA's suggestions to specify the properties we need to connect to our [H2](https://www.h2database.com/html/main.html) database. We'll start typing `url` and choose the `spring.datasource.url` property from the list of suggestions.
+我们将调出搜索菜单（**Shift**+**Shift**），并搜索我们的 `application.properties` 文件。 在我们的 `application.properties` 文件中，我们可以利用 IntelliJ IDEA 的建议来指定我们需要连接到我们的 [H2](https://www.h2database.com/html/main.html) 数据库的属性。 我们将开始输入 `url` ，并从建议的列表中选择 `spring.datasource.url` 属性。
 
 ![Application Properties URL](./ApplicationProperties.png)
 
-If you're not using H2 as your database, you can specify your own database URL here. In our case, we will specify `jdbc:h2:file:./data/myDB` as our URL which will create an H2 database called `myDB`.
+如果您没有使用 H2 作为数据库，您可以在此处指定自己的数据库 URL。 在我们的例子中，我们将指定 `jdbc:h2:file:./data/myDB` 作为我们的 URL，这将创建一个名为 `myDB` 的 H2 数据库。
 
-Then, we need to specify our driver class name. We can similarly search for `driver` and choose `spring.datasource.driver-class-name` from our suggestions list. Once we select that, IntelliJ IDEA will suggest the H2 driver value based on the URL we specified earlier so we can select that.
+然后我们需要指定我们的 driver 的类的名称。 我们同样可以从建议列表中寻找 `driver` 并选择 `spring.datasource.driver-class-name` 。 一旦我们选择了它，IntelliJ IDEA 将根据我们之前指定的 URL 来建议 H2 driver 的值，以便我们可以选择。
 
 ![Application Properties Driver Class](./ApplicationPropertiesDriverClass.png)
 
-Next, we'll similarly search for the `username` and `password` properties and set their values to `sa` and `password` respectively.
+接下来，我们将同样寻找 `username` 和 `password` 属性，并分别将其值设置为 `sa` 和 `password` 。
 
-Finally, we don't want to create any tables manually so we will add the `spring.jpa.hibernate.ddl-auto` property and use code completion to see a list of possible values.
+最后，我们不想手动地创建任何表，因此我们将添加 `spring.jpa.hibernate.ddl-auto` 属性，并使用代码补全来查看可能的值的列表。
 
 ![Application Properties ddl-auto](./ApplicationPropertiesDDLAuto.png)
 
-For my application, I will set the property value to `update` which will create my tables in the database if they don't exist and update them if I make changes to my entities.
+对于我的应用程序，我将设置属性值为 `update` 。这将在我的表不存在的时候，在数据库中创建它们，如果我对我的实体进行了更改，更新它们。
 
-## End Result
+## 最终结果
 
-Your `application.properties` file should look like this:
+您的 `application.properties` 文件应该看起来像这样：
 
 ```
 spring.datasource.url=jdbc:h2:file:./data/myDB
