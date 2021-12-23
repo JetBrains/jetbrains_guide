@@ -18,7 +18,7 @@ longVideo:
   url: https://youtu.be/_fTwymtpg78
 ---
 
-### 提交变更
+### Commit Changes
 
 After working on some code, there comes a time to commit it to source control. Whether you are using Git, Mercurial, Perforce, Subversion, or another Version Control System (VCS), Rider gives you the same [Commit tool window (or dialog)](https://www.jetbrains.com/help/rider/Commit_and_push_changes.html).
 
@@ -26,7 +26,7 @@ In the commit tool window, you can share the results of your work - in full, or 
 
 While you prepare to commit code, you can look at the diff between the previous version and the new version. Rider gives you syntax highlighting, and shows code analysis results. Even better is that you can make last-minute changes directly from the diff viewer!
 
-### 变更列表
+### Changelists
 
 A changelist is a set of local changes that have not yet been committed to a VCS repository. You can [create multiple changelists](https://www.jetbrains.com/help/rider/Managing_Changelists.html) in Rider, so you can group changes related to different tasks, and commit these sets of changes separately.
 
@@ -40,7 +40,7 @@ In Rider, you can [manage branches](https://www.jetbrains.com/help/rider/Manage_
 
 There are also options to merge branches, or [perform a Git rebase](https://www.jetbrains.com/help/rider/Apply_changes_from_one_branch_to_another.html#rebase-branch).
 
-### 本地历史
+### Local History
 
 Sometimes you are in a project that's isn't yet under version control. Or, you've done a lot of work since your last commit. You then make a big change, or delete a chunk of code, and the **Undo** action not sufficient. Now what?
 
@@ -48,10 +48,10 @@ Sometimes you are in a project that's isn't yet under version control. Or, you'v
 
 Keep in mind it is not a replacement for proper version control. It does save the day when disaster strikes!
 
-### 另请参阅
+### See Also
 
 - [Version Control in Rider](https://www.jetbrains.com/help/rider/Version_Control_Integration.html)
 - [Commit and Push Changes](https://www.jetbrains.com/help/rider/Commit_and_push_changes.html)
 - [Working with Changelists](https://www.jetbrains.com/help/rider/Managing_Changelists.html)
 - [Branches (Git)](https://www.jetbrains.com/help/rider/Manage_branches.html)
-- [本地历史](https://www.jetbrains.com/help/rider/local_history.html)
+- [Local History](https://www.jetbrains.com/help/rider/local_history.html)
