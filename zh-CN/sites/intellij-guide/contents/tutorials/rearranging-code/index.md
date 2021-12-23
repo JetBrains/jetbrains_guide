@@ -1,13 +1,13 @@
 ---
 date: 2021-09-20
-title: 在 IntelliJ IDEA 中重新排列代码
+title: Rearranging Code in IntelliJ IDEA
 technologies:
   - java
 topics:
   - settings
   - tricks
 author: hs
-subtitle: 如何在您的类和项目中重新排列代码
+subtitle: How you can rearrange code in your classes and projects
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/rearranging-code/introduction/
