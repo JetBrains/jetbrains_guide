@@ -1,12 +1,12 @@
 ---
 date: 2021-08-30
-title: 在 IntelliJ IDEA 中使用终端
+title: Using the Terminal in IntelliJ IDEA
 technologies:
   - java
 topics:
   - testing
 author: hs
-subtitle: IntelliJ IDEA 有一个内置的终端，您可以在您的 IDE 中使用它来执行许多功能。
+subtitle: IntelliJ IDEA has a built-in terminal that you can use to perform a number of functions inside your IDE
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/working-with-the-terminal/introduction/
