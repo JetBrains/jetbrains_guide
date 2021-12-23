@@ -4,7 +4,7 @@ title: 'Completion for parameter types based on function calls'
 technologies:
   - web
 topics:
-  - 补全
+  - completion
 author: dlsniper
 subtitle: 'Better code completion makes working on modern web frontends faster and more enjoyable'
 thumbnail: ./thumbnail.png
