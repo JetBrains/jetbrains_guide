@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Quick documentation for keys in Dockerfiles and docker-compose.yaml files'
 technologies:
-  - 容器
+  - containers
 topics:
   - editing
 author: dlsniper
