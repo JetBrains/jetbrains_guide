@@ -4,7 +4,7 @@ title: Activate Navigation Bar
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
 seealso:
