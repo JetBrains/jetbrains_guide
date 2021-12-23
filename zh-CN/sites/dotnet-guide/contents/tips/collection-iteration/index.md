@@ -7,7 +7,7 @@ products:
   - rider
   - resharper
 topics:
-  - 补全
+  - completion
   - editing
 author: matkoch
 subtitle: There's no faster way to iterate!
