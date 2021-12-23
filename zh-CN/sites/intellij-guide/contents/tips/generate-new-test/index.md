@@ -1,12 +1,12 @@
 ---
 date: 2021-05-31
-title: 生成测试类
+title: Generate a Test Class
 technologies:
   - java
 topics:
   - testing
 author: hs
-subtitle: 从Java类生成新的测试类
+subtitle: Generate a new test class from your Java class
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Generate code
     href: https://www.jetbrains.com/help/idea/generating-code.html
 leadin: |
-  按 **⇧⌘T**（macOS）， 或 **Ctrl+Shift+T**（Windows/Linux）， 以创建新的测试类 （或导航到现有的测试类） 。
+  Press **⇧⌘T** (macOS), or **Ctrl+Shift+T** (Windows/Linux), to create the new Test class (or navigate to an existing Test class).
 ---
 
