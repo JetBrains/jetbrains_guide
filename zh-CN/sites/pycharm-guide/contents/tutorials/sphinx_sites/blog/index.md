@@ -9,7 +9,7 @@ subtitle: Let's change the look on the website with new templates.
 thumbnail: ../python-logo.png
 ---
 
-## 安装
+## Installation
 
 - Add to requirements.txt
 - pip install etc.
@@ -21,7 +21,7 @@ thumbnail: ../python-logo.png
 ## Making a Blog Post
 
 
-## 工作原理是什么
+## How It Works
 
-## 其他功能
+## Other Features
 
