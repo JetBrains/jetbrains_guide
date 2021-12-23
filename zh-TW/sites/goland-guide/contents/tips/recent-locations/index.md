@@ -4,7 +4,7 @@ title: Recent Locations
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Jump back and forth between files using code snippets you've recently seen
 thumbnail: ./thumbnail.png
