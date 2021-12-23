@@ -1,7 +1,7 @@
 ---
 title: IDE
 subtitle: Resources related to IDE functionality independent of language.
-accent: 主
+accent: primary
 icon: fas fa-edit
 ---
 
