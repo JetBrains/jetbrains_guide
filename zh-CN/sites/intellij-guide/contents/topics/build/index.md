@@ -1,8 +1,8 @@
 ---
-title: 构建：
-subtitle: Work effectively with build tools like Maven and Gradle.
-accent: 主
+title: 构建
+subtitle: 使用 Maven 和 Gradle 等构建工具高效工作。
+accent: primary
 icon: fas fa-hammer
 ---
 
-IntelliJ IDEA integrates seamlessly with common build systems like Maven and Gradle. As well as the tips and tutorials in this guide, you can find out more in the [help documentation](https://www.jetbrains.com/help/idea/compiling-applications.html).
+IntelliJ IDEA 与常见的构建系统（如 Maven 和 Gradle）无缝集成， 除了本指南提供的教程和小技巧外，您还可以在 [帮助文档](https://www.jetbrains.com/help/idea/compiling-applications.html) 中找到更多学习材料。
