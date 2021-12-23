@@ -1,8 +1,8 @@
 ---
-title: Customizing the IDE
+title: 定制 IDE
 subtitle: Extend the built-in functionality and change the look and feel
-accent: primary
+accent: 主
 icon: fas fa-sliders-h
 ---
 
-Don’t feel like using the defaults? Adjust the appearance and behavior of the IDE by playing around with themes, code styles, plugins, and more, so that it fits your unique needs better.
+不喜欢使用默认值？ 通过调整主题、代码风格、插件等来调整 IDE 的外观和行为，以便它更加符合您的独特需要。
