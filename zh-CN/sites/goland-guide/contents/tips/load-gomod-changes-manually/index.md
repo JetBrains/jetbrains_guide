@@ -1,6 +1,6 @@
 ---
 date: 2021-07-06
-title: '手动加载 go.mod 变更'
+title: 'Load go.mod changes manually'
 technologies:
   - go
 topics:
