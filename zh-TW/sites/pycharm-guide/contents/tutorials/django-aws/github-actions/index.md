@@ -22,7 +22,7 @@ Hello everyone, welcome to the Django tutorial series. In this tutorial step, we
 There are tons of alternative flavours you can try out.
 
 - [Jenkins](https://www.jenkins.io/)
-- [TeamCity](https://www.jetbrains.com/teamcity/)
+- [TRANSLATED TeamCity](https://www.jetbrains.com/teamcity/)
 - [CircleCI](https://circleci.com/)
 - [TravisCI](https://travis-ci.org/)
 
