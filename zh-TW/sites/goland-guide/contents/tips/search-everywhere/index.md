@@ -1,10 +1,10 @@
 ---
 date: 2020-02-05
-title: Search Everywhere
+title: 隨處搜索
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Search anything in the whole IDE, from identifiers, to file names, to settings
 seealso:
