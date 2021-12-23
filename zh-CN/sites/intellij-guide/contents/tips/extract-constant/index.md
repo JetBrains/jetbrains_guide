@@ -6,7 +6,7 @@ technologies:
 topics:
   - 重构
 author: hs
-subtitle: Extract a value to a constant
+subtitle: 提取值成常数
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Extract Constant
     href: https://www.jetbrains.com/help/idea/extract-constant.html
 leadin: |
-  Highlight the value that you want to extract to a constant and press **⌥⌘C** (macOS), or **Ctrl+Alt+C** (Windows/Linux), to extract it.
+  高亮选择你要提取成常量的值，并按 **⌥⌘C**（macOS），或 **Ctrl+Alt+C**（Windows/Linux）来提取它。
 
-  Extracting constants can be useful in improving the readability of your code.
+  提取常数有助于提高您的代码的可读性。
 ---
 
