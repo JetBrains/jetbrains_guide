@@ -4,7 +4,7 @@ date: 2018-11-01
 title: Find Action
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
 author: pwe
 subtitle: Skip memorizing keyboard shortcuts and speed search for actions instead.
 seealso:
