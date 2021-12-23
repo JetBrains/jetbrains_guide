@@ -28,7 +28,7 @@ These features can seem complicated, unapproachable, and difficult to apply. In 
 
 This talk is for developers, who like Steve, are ready to begin their journey towards writing faster .NET code, which allocates less.
 
-### 资源
+### Resources
 
 * [High performance .NET](https://bit.ly/highperfdotnet)
 
