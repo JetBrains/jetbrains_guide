@@ -1,10 +1,10 @@
 ---
 date: 2021-01-08
-title: 隨處搜索
+title: Search Everywhere
 technologies:
   - java
 topics:
-  - 導覽
+  - navigation
 author: hs
 subtitle: Use Search Everywhere to search everything in IntelliJ IDEA
 thumbnail: ./thumbnail.png
