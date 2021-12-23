@@ -9,7 +9,7 @@ topics:
   - web
   - testing
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: Get started with testing. We will use Jest as an example.
 thumbnail: ./thumbnail.png
