@@ -4,9 +4,9 @@ title: Search Anywhere
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
-  - 導覽
+  - navigation
   - editing
 author: matkoch
 subtitle: Start typing anywhere to search!
