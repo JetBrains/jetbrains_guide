@@ -1,8 +1,8 @@
 ---
-title: 标记
-subtitle: Languages such as markdown and asciidoc
+title: 标记语言
+subtitle: 包括 Markdown 和 AsciiDoc 等语言。
 logo: markdown.png
 website: https://developer.mozilla.org/en-US/docs/Web/HTML
 ---
 
-Any markup language such as markdown and asciidoc. 
+任何标记语言如 Markdown 和 AsciiDoc 等。 
