@@ -124,7 +124,7 @@ If you don't provide any necessary information, the API is going to return respo
 You can see the below image, it's saying **"This field is required"**. The error message and validation is actually taken care by the serializer. This is one of the good points how serializers are doing the heavy work behind the scenes.
 
 The three fields :
-- name
+- 名称
 - registration_code
 - established_on
 
@@ -173,9 +173,9 @@ I will override the **create** function by changing the response structure. Let 
 
 
 I will do the necessary imports which are required. Next, I will do a minor modification in our response by adding three keys :
- - **status**
- - **message**
- - **data**
+ - **状态**
+ - **消息**
+ - **数据**
 
 ![modified_response](steps/step20.png)
 
