@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: 簡介
+title: Introduction
 technologies: [ ]
 topics: [ ]
 author: hs
@@ -9,7 +9,7 @@ subtitle: Introduction to Migrating JUnit 4 to JUnit 5
 thumbnail: ./thumbnail.png
 ---
 
-## 簡介
+## Introduction
 JUnit has been around for a long time, and many applications will have a large number of tests written using JUnit 4. JUnit 5 was released in 2017, and provides a lot of features that weren't in the previous version. Let's look at how to migrate existing JUnit 4 tests to JUnit 5
 
 This tutorial will cover the configuration changes you need to make (using Maven) to tell IntelliJ IDEA to use JUnit 5. We will then step through using IntelliJ IDEA inspections to complete the migration where possible and look at other approaches for more challenging use cases where you cannot perform the migration automatically.
