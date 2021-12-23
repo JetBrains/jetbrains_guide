@@ -4,7 +4,7 @@ date: 2019-01-20
 title: Activate Navigation Bar
 technologies: [ ]
 topics:
-  - navigation
+  - 導覽
   - navigationbar
 author: pwe
 subtitle: Bring up the Navigation Bar as needed, let it disappear when finished.
