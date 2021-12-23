@@ -4,7 +4,7 @@ title: Occurrence Selection
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - editing
 author: matkoch
