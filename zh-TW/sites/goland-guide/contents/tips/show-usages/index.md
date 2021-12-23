@@ -4,7 +4,7 @@ title: Show usages
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Quickly discover the usages of the element your cursor is at
 thumbnail: ./thumbnail.png
