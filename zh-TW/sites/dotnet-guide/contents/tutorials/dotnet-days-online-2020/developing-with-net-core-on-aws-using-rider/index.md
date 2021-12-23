@@ -5,7 +5,7 @@ title: Developing with .NET Core on AWS Using Rider
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - web
