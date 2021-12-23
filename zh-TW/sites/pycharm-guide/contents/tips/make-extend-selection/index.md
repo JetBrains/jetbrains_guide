@@ -15,7 +15,7 @@ seealso:
     title: Extending selection
     href: 'https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#extend_selection'
   - 
-    title: 縮小選擇
+    title: Shrinking selection
     href: 'https://www.jetbrains.com/help/pycharm/selecting-text-in-the-editor.html#shrink_selection'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
