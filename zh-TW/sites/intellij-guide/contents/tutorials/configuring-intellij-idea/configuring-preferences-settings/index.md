@@ -18,9 +18,9 @@ You can use **⌘,** (macOS), or **Ctrl**+**Alt**+**S** (Windows/Linux) to displ
 These are the broad categories that you can change here, but we recommend being at least a little bit familiar with IntelliJ IDEA before you change too many of them!
 - [Appearance & Behaviour](https://www.jetbrains.com/help/idea/appearance-and-behavior.html)
 - [Keymap](https://www.jetbrains.com/help/idea/settings-keymap.html)
-- [編輯器](https://www.jetbrains.com/help/idea/settings-editor.html)
+- [Editor](https://www.jetbrains.com/help/idea/settings-editor.html)
 - [Plugins](https://www.jetbrains.com/help/idea/plugins-settings.html)
-- [版本控制](https://www.jetbrains.com/help/idea/settings-version-control.html)
+- [Version Control](https://www.jetbrains.com/help/idea/settings-version-control.html)
 - [Build, Execution, Deployment](https://www.jetbrains.com/help/idea/settings-build-execution-deployment.html)
 - [Languages & Frameworks](https://www.jetbrains.com/help/idea/settings-languages-and-frameworks.html)
 - [Tools](https://www.jetbrains.com/help/idea/settings-tools.html)
