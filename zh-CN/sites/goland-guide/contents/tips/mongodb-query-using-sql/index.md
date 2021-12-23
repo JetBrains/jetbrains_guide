@@ -2,7 +2,7 @@
 date: 2020-12-03
 title: 'Query MongoDB databases using SQL statements'
 technologies:
-  - 数据库
+  - databases
 topics:
   - mongodb
 author: dlsniper
