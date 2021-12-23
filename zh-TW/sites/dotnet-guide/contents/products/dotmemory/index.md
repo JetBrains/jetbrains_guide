@@ -1,5 +1,5 @@
 ---
-title: TRANSLATED dotMemory
+title: dotMemory
 subtitle: The .NET Memory Profiler.
 logo: ./logo.png
 website: https://www.jetbrains.com/dotmemory/
