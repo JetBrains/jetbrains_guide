@@ -1,7 +1,7 @@
 ---
-title: 补全
+title: Completion
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-code
 ---
 
