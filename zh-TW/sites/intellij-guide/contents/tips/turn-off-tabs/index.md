@@ -5,7 +5,7 @@ technologies:
   - java
 topics:
   - interface
-  - 導覽
+  - navigation
 author: hs
 subtitle: Setup the editor to suit your requirements
 thumbnail: ./thumbnail.png
