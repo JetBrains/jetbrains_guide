@@ -2,9 +2,9 @@
 date: 2021-05-24
 title: 'Use completion for container names and tags'
 technologies:
-  - 容器
+  - containers
 topics:
-  - 补全
+  - completion
 author: dlsniper
 subtitle: 'Save a few typos and use completion to handle the container name and tag in a Dockerfile'
 thumbnail: ./thumbnail.png
