@@ -81,7 +81,7 @@ When the test runs, it fails. We can navigate to the line with the exception:
 Fix the problem and the tests pass again.
 
 TDD helped us "fail faster" but we can use type hints for even earlier
-检测. What if we accidentally added a Player as a Guardian? We can
+detection. What if we accidentally added a Player as a Guardian? We can
 prevent that by first changing the field's type hint to be a List [pause]
 of Guardian instances [pause]. Then, change our method to say it must
 receive a Guardian:
