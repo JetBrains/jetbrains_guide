@@ -10,7 +10,7 @@ author: pwe
 subtitle: Open a file somewhere in the project tree using the keyboard and Navigation Bar.
 seealso:
   - 
-    title: Navigation bar
+    title: 导航栏
     href: https://www.jetbrains.com/help/pycharm/part-4-using-the-navigation-bar.html
   - 
     title: Navigating Tips and Tricks
