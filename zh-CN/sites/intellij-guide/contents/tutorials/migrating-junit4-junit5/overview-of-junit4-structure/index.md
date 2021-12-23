@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Overview of JUnit 4 Structure
+title: JUnit 4 结构概述
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: An overview of what a typical JUnit 4 test suite might contain
+subtitle: 典型的 JUnit 4 测试框架可能包含的内容的概述
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=23
 ---
 
-Here's the test class we're going to migrate from JUnit 4 to JUnit 5 ([original code on GitHub](https://github.com/JetBrains/intellij-samples/blob/9afc1e77d269e0d4a0cbcf57f9862e9b321f2e68/standard-java/src/test/com/jetbrains/testing/JUnit4To5.java)):
+以下是我们将要从 Junit 4 迁移到 Junit 5 的测试类（[GitHub上面的源代码](https://github.com/JetBrains/intellij-samples/blob/9afc1e77d269e0d4a0cbcf57f9862e9b321f2e68/standard-java/src/test/com/jetbrains/testing/JUnit4To5.java)）：
 
 ```java
 import org.junit.*;
@@ -71,28 +71,28 @@ public class JUnit4To5 {
 
 ```
 
-A typical JUnit 4 test can be broken into sections.
+典型的 JUnit 4 测试可以分为几个部分。
 
-### Code to run once at the start
+### 开始前运行一次的代码
 
-We can state the steps that need to be run once at the beginning of the test class, before any tests are run. This could be something like setting up core data that all the tests use. In JUnit 4, we annotate the method with [`@BeforeClass`](https://junit.org/junit4/javadoc/4.13/org/junit/BeforeClass.html) to tell JUnit to run this method once at the start of the test suite.
+我们可以在测试开始时声明需要运行一次的步骤，然后再运行任何测试。 这可能有点像是设置所有测试使用的核心数据。 在 JUnit 4 中，我们用 [`@BeforeClass`](https://junit.org/junit4/javadoc/4.13/org/junit/BeforeClass.html) 注解该方法，告诉 JUnit 在测试开始时运行此方法一次。
 
 ```
 @BeforeClass
 public static void beforeClass() {}
 ```
-### Code to run before each individual test
+### 在每个单独测试之前运行的代码
 
-Often, we may want each test method to start with the same set of criteria, but not allow other tests to modify this. We can set up a clean state that every test will need with a method annotated with [`@Before`](https://junit.org/junit4/javadoc/4.13/org/junit/Before.html).
+通常，我们可能希望每个测试方法从相同的标准设置开始，不允许其他测试修改。 我们可以建立一个干净的状态，每个测试需要一个 [`@Before`](https://junit.org/junit4/javadoc/4.13/org/junit/Before.html) 方法注解。
 
 ```
 @Before
 public void before() throws Exception { }
 ```
 
-### The tests themselves
+### 测试方法本身
 
-JUnit 4 tests are annotated with [`@org.junit.Test`](https://junit.org/junit4/javadoc/4.13/org/junit/Test.html). Any method annotated with this will be counted as a separate test. Sometimes, especially if the test isn't complete yet, we might want to tell JUnit not to run them. We do that with [`@Ignore`](https://junit.org/junit4/javadoc/4.13/org/junit/Ignore.html).
+Junit 4 测试带有 [`@org.junit.Test`](https://junit.org/junit4/javadoc/4.13/org/junit/Test.html) 注解。 任何附有此注解的方法都将计为单独的测试。 有时，特别是如果测试尚未完成，我们会想告诉 JUnit 不要运行它们。 我们用 [`@Ignore`](https://junit.org/junit4/javadoc/4.13/org/junit/Ignore.html) 来应对这种情况。
 
 ```
 @Test
@@ -102,17 +102,17 @@ public void simpleTest() { }
 @Ignore
 public void ignoredTest() { }
 ```
-### Code to run to clean up after each test
-In the same way we might want to set up clean data at the start of every test, we should also clean up after ourselves after every test. We can do this by annotating a method with [`@After`](https://junit.org/junit4/javadoc/4.13/org/junit/After.html).
+### 每次测试后运行清理的代码
+同样，我们可能希望在每次测试开始时设置干净的数据，我们也应该在每次测试后自行清理。 通过用 [`@After`](https://junit.org/junit4/javadoc/4.13/org/junit/After.html) 注解方法来做到这一点。
 
 ```
 @After
 public void after() throws Exception { }
 ```
 
-### Code to run once to clean up after all tests
+### 所有测试后运行一次的清理代码
 
-We may want to do a final cleanup after all tests have finished, for example removing seed data or closing connections. We can annotate a method with [`@AfterClass`](https://junit.org/junit4/javadoc/4.13/org/junit/AfterClass.html) to have it run once when everything is finished.
+在完成所有测试后，我们可能需要进行最后的清理，例如删除测试用的种子数据或关闭各种连接。 可以用 [`@AfterClass`](https://junit.org/junit4/javadoc/4.13/org/junit/AfterClass.html) 注解一个方法，以便在一切完成后执行一次。
 
 ```
 @AfterClass
