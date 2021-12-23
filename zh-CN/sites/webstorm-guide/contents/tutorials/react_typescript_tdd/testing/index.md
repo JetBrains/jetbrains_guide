@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
-date: 2020-10-12
-title: Testing
+date: 2021-10-04
+title: 测试
 technologies:
   - react
   - jest
@@ -20,7 +20,7 @@ We briefly saw the [Jest](../../../technologies/jest) test runner in [Project Se
 
 In this tutorial step we start the process of test driven development. After this step, we'll develop first in our Jest tests. Then, only at the end of development, we will look at the app in the browser.
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/testing).
 
@@ -92,7 +92,7 @@ Let's fix the test by changing `expected` to `1` then save. The Jest watcher spo
 
 JavaScript development is usually a bunch of switching between the editor, the browser, the browser console, and a terminal window, with the build tools displaying messages. Let's use a better flow. Let's stay *in the IDE* to focus on our code, and observe our code through tests instead of a browser reload.
 
-First, let's get our code and our tests side-by-side. Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Vertically`. This gives us a left and right side editor without needing tabs. On the left, open `App.tsx` and keep `App.test.tsx` on the right. We can now see `function App` alongside our tests. If you need more room, close the Project tool window.
+First, let's get our code and our tests side-by-side. Use `Find Action` (`Shift-Ctrl-A` Win/Linux, macOS `Shift-Cmd-A`) and type in `Split Right`. This gives us a left and right side editor without needing tabs. On the left, open `App.tsx` and keep `App.test.tsx` on the right. We can now see `function App` alongside our tests. If you need more room, close the Project tool window.
 
 ![Component and Test side-by-side](./screenshots/side_by_side.png)
 
@@ -116,7 +116,7 @@ test("renders learn react link", () => {
 });
 ```
 
-## See Also
+## 另请参阅
 
 - [Running Unit Tests on Jest](https://www.jetbrains.com/help/webstorm/running-unit-tests-on-jest.html)
 
