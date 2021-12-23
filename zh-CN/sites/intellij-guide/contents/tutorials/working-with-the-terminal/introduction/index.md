@@ -1,17 +1,17 @@
 ---
 type: TutorialStep
 date: 2021-08-30
-title: 简介
+title: Introduction
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 让我们来看看 IntelliJ IDEA 中的终端窗口
+subtitle: Let's take a tour of the Terminal Window in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 ---
 
-## 在 IntelliJ IDEA 中使用终端
-在本教程中，我们将看看 IntelliJ IDEA 里的内置终端。 它可以执行与操作系统里的终端或者命令功能相同的功能，但在 IntelliJ IDEA 里使用终端有很多好处。
+## Using the Terminal in IntelliJ IDEA
+In this tutorial we’re going to take a look at IntelliJ IDEA’s built-in terminal. This performs the same function as your operating system’s terminal or command feature, but using the terminal inside IntelliJ IDEA has a number of benefits.
 
-本教程基于[该视频](https://youtu.be/tlEkrWU0d1M)和[该博文](https://blog.jetbrains.com/idea/2020/09/using-the-terminal-in-intellij-idea/).
+This tutorial is based off [this video](https://youtu.be/tlEkrWU0d1M) and [this blog](https://blog.jetbrains.com/idea/2020/09/using-the-terminal-in-intellij-idea/).
 
 ---
