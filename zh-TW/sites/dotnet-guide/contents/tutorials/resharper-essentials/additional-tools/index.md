@@ -23,7 +23,7 @@ longVideo:
 
 ReSharper comes with a number of architecture tools, including diagrams. There's a [project dependency diagram](https://www.jetbrains.com/help/resharper/Architecture__Project_Dependencies_Exploration.html), and a [type dependency diagram](https://www.jetbrains.com/help/resharper/Exploring_Type_Dependency_Graph.html).
 
-#### 專案相依關係圖
+#### Project Dependency Diagram
 
 The project dependency diagram lets you visualize project dependencies in your solution, and explore its architecture. They help to analyze project coupling in a solution. You can open it from the **ReSharper \| Architecture ** menu.
 
