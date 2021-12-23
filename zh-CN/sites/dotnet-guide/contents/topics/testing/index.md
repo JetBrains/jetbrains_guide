@@ -1,13 +1,13 @@
 ---
-title: 测试
+title: Testing
 subtitle: Make sure code behaves as expected.
-accent: 主
+accent: primary
 icon: fas fa-chart-bar
 ---
 
 Testing and test-driven development is an important part of professional coding. ReSharper and Rider come with a friendly user interface for writing and running tests, using frameworks as xUnit, NUnit, and MSTest.
 
-## 另请参阅
+## See Also
 
 - [Unit Testing in ReSharper/Rider](https://www.jetbrains.com/help/rider/Unit_Testing__Index.html)
 - [xUnit](https://xunit.github.io/)
