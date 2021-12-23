@@ -1,7 +1,7 @@
 ---
-title: 运行中...
+title: Running
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-play
 ---
 
