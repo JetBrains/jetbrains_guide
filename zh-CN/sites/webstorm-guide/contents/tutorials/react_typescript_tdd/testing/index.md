@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-10-04
-title: 测试
+title: Testing
 technologies:
   - react
   - jest
@@ -20,7 +20,7 @@ We briefly saw the [Jest](../../../technologies/jest) test runner in [Project Se
 
 In this tutorial step we start the process of test driven development. After this step, we'll develop first in our Jest tests. Then, only at the end of development, we will look at the app in the browser.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/testing).
 
@@ -116,7 +116,7 @@ test("renders learn react link", () => {
 });
 ```
 
-## 另请参阅
+## See Also
 
 - [Running Unit Tests on Jest](https://www.jetbrains.com/help/webstorm/running-unit-tests-on-jest.html)
 
