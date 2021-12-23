@@ -6,7 +6,7 @@ technologies: [ ]
 topics:
   - gettingstarted
 author: hs
-subtitle: Our handpicked top shortcuts
+subtitle: 我们精心挑选的常用快捷链清单
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
