@@ -1,13 +1,13 @@
 ---
 date: 2021-08-11
-title: 使用 Maven
+title: Working with Maven
 technologies:
   - java
   - maven
 topics:
-  - 构建
+  - build
 author: tg
-subtitle: 了解 IntelliJ IDEA 如何与 Maven 集成。
+subtitle: Understand how IntelliJ IDEA integrates with Maven.
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/working-with-maven/introduction/
