@@ -1,8 +1,8 @@
 ---
 date: 2021-07-06
-title: '在提交前运行测试'
+title: 'Run tests before commit'
 technologies:
-  - 平台
+  - platform
 topics:
   - vcs
 author: dlsniper
