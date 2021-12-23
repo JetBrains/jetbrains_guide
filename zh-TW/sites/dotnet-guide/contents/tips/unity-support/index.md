@@ -4,7 +4,7 @@ title: Unity Support
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - editing
   - running
