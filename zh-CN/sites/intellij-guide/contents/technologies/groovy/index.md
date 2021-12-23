@@ -1,6 +1,6 @@
 ---
 title: Groovy
-subtitle: Groovy is a powerful, optionally typed and dynamic language for the JVM.
+subtitle: Groovy 是一种强大的、可选类型的动态 JVM 语言。
 logo: groovy.svg
 website: https://groovy-lang.org/
 ---
