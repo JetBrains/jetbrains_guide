@@ -1,6 +1,6 @@
 ---
 date: 2020-07-02
-title: 管理项目
+title: Manage Projects
 technologies:
   - .net
 products:
