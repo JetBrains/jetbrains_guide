@@ -1,18 +1,18 @@
 ---
 date: 2021-01-08
-title: 删除不必要的条件
+title: Remove Unnecessary Condition
 technologies:
   - java
 topics:
   - refactoring
 author: hs
-subtitle: 使用快速意图来删除冗余代码
+subtitle: Use quick intentions to remove redundant code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/MnN2z3WSaN8
 leadin: |
-  您可以在冗余的条件表达式上使用 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux）来显示上下文操作的选项。 然后您可以删除冗余的代码了。
+  You can use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to show context actions for redundant condition statements. You can then remove the redundant code.
 ---
 
