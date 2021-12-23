@@ -1,8 +1,8 @@
 ---
 date: 2020-10-15
-title: 'Quick Documentation'
+title: '快速文档'
 technologies:
-  - platform
+  - 平台
 topics:
   - editing
 author: dlsniper
