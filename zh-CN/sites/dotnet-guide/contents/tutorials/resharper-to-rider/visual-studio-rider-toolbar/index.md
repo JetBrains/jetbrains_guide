@@ -10,7 +10,7 @@ products:
   - resharper
 topics:
   - ide
-  - 数据
+  - data
 author: khalidabuhakmeh
 subtitle: Learn how Rider's toolbar UI compares with the toolbar found in Visual Studio.
 thumbnail: ./thumbnail.png
@@ -21,7 +21,7 @@ Developers with a mouse-focused workflow will likely be very familiar with Visua
 ![Visual Studio default toolbar](./visual-studio-toolbar.png)
 
 - Navigation buttons
-- 新建项目
+- New Project
 - Open File
 - Undo and Redo Changes
 - Solution Configurations dropdown
