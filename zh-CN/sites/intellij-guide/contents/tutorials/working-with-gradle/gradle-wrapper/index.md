@@ -1,29 +1,29 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: Gradle Wrapper
+title: Gradle 包装器
 technologies:
   - gradle
 topics:
   - 构建
 author: tg
-subtitle: Useful information for working with projects that use the Gradle Wrapper.
+subtitle: 有关使用 Gradle 包装器的项目的有用信息。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=1105
 ---
 
-In this last step, we'll look at how to configure the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html).
+在最后一步中，我们将介绍如何配置 [Gradle 包装器](https://docs.gradle.org/current/userguide/gradle_wrapper.html)。
 
-We saw how to tell IntelliJ IDEA where to get the [settings of the Gradle Wrapper](https://www.jetbrains.com/help/idea/gradle-settings.html) from. Projects generated using IntelliJ IDEA's [Gradle wizard](https://www.jetbrains.com/help/idea/gradle.html#project_create_gradle) will usually have a `gradle-wrapper.properties` file which contains the details of the version of Gradle to use for this project. Ideally we want this to use the [latest version of Gradle](https://gradle.org/releases/), where possible, so that we get the most up to date support and features. The current version of Gradle at the time of writing is [7.0.2](https://docs.gradle.org/7.0.2/release-notes.html).
+我们知道如何告诉 IntelliJ IDEA 从哪里获取[ Gradle 包装器](https://www.jetbrains.com/help/idea/gradle-settings.html) 的设置。 使用 IntelliJ IDEA 的 [Gradle 向导](https://www.jetbrains.com/help/idea/gradle.html#project_create_gradle) 时通常会有 `gradle-wrapper.properties` 文件，其中包含用于此项目的 Gradle 版本的详细信息。 理想情况下，我们希望它尽可能使用 [最新版的 Gradle ](https://gradle.org/releases/)，以便我们获得最新的支持和功能。 在撰写本文时，Gradle 的当前版本是 [7.0.2](https://docs.gradle.org/7.0.2/release-notes.html)。
 
-![Gradle Wrapper properties file](./gradle-wrapper-file.png)
+![Gradle 包装器的属性文件](./gradle-wrapper-file.png)
 
-If you update the `gradle-wrapper.properties` file to have a different version number, IntelliJ IDEA will detect the changes and asks us to reload these changes. The IDE will download this new version of Gradle, and then rebuild the project using it.
+如果您将 `gradle-wrapper.properties` 文件更新为不同的版本号，IntelliJ IDEA 将检测到更改并要求我们重新加载这些更改。 IDE 将下载此新版本的 Gradle，然后使用它重新构建项目。
 
-![Gradle versions](./gradle-versions.png)
+![Gradle 版本](./gradle-versions.png)
 
-The ".gradle" folder in your project has folders for all the versions of Gradle that you've used. We can safely delete the versions we're not using any more if we want to reclaim some space.
+项目中的“.gradle”文件夹会包含您使用过的所有 Gradle 版本的文件夹。 如果要回收一些存储空间，我们可以删除不再使用的版本。
 
-In our last step we'll summarise some of the shortcuts used and other tips.
+在最后一章中，我们将总结一些使用的快捷方式和其他的窍门。
