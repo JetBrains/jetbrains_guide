@@ -2,14 +2,14 @@
 date: 2020-02-05
 title: Use Local History to Avoid Disaster
 technologies:
-  - 平台
+  - platform
 topics:
   - vcs
 author: dlsniper
 subtitle: Use the IDE's built-in history facility to recover changes when VCS can't help you.
 seealso:
   - 
-    title: 本地历史
+    title: Local History
     href: 'https://www.jetbrains.com/help/go/local-history.html'
   - 
     title: Retention period for Local History
@@ -32,7 +32,7 @@ leadin: |
   You can also see the difference between different points in time, and you can put
   labels on known points in time to make sure you can always return to a safe state.
 
-  例如：通过测试后，会自动打上标记。
+  Labels get automatically added when tests pass, for example.
 
   By default, changes are retained for 5 days, but
   [this is configurable](https://www.jetbrains.com/help/go/local-history.html#retention).
