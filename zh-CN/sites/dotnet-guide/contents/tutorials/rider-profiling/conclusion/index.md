@@ -7,7 +7,7 @@ technologies:
   - csharp
 topics:
   - ide
-  - 分析
+  - profiling
 products:
   - rider
   - dottrace
@@ -33,7 +33,7 @@ A good profiling workflow is cyclic: start with a baseline profiling session, ma
 
 Dynamic Program Analysis (or DPA) analyzes your code automatically, every time it runs. It gives you feedback around memory usage and allocations, and shows the call stacks where most memory allocation is happening. The Heap Allocations viewer may help you figure out where hidden allocations and boxing occur in code.
 
-### 另请参阅
+### See Also
 
 - [Performance Profiling in Rider](https://www.jetbrains.com/help/rider/Performance_Profiling.html)
 - [Profiling Applications](https://www.jetbrains.com/help/rider/Profiling_Applications.html)
