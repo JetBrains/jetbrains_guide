@@ -11,7 +11,7 @@ products:
   - resharper
 topics:
   - ide
-  - 数据
+  - data
 author: khalidabuhakmeh
 subtitle: Effectively working with ASP.NET Core and IIS in Rider from a Visual Studio + ReSharper user's perspective.
 thumbnail: ./thumbnail.png
@@ -112,7 +112,7 @@ From here, we should be able to step into our code as if we were running our app
 
 ![Debugging an IIS ASP.NET Core web application from Rider](./13-debugging-iis-aspnet-core-from-rider.png)
 
-## 结论
+## Conclusion
 
 Regardless of the hosting platform, Rider allows developers to write, deploy, and debug ASP.NET web applications with ease. Developers can find many of the concepts they've learned in Visual Studio within Rider's user interface.
 
