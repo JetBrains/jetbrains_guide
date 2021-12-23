@@ -14,9 +14,9 @@ shortVideo:
   url: https://youtu.be/cSQ1w-a_5nc
 seealso:
   - 
-    title: IntelliJ IDEA 帮助文档 - 在源代码中跳转
+    title: IntelliJ IDEA Help - Navigating through the source code
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 leadin: |
-  使用 **⌘[** (macOS)，**Ctrl+Alt+Left Arrow** (Windows/Linux) 前进，**⌘]** (macOS)，**Ctrl+Alt+Right Arrow** (Windows/Linux) 后退。
+  使用 **⌘[**（macOS），**Ctrl+Alt+Left Arrow**（Windows/Linux）前进，**⌘]**（macOS），**Ctrl+Alt+Right Arrow**（Windows/Linux）后退。
 ---
 
