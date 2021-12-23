@@ -6,9 +6,9 @@ technologies: [ ]
 topics:
   - tricks
   - gettingstarted
-  - 接口
+  - interface
 author: hs
-subtitle: Tips for using Search Everywhere (Shift+Shift)
+subtitle: 使用 "随处搜索"（Shift+Shift）的小技巧
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
