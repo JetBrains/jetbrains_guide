@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Project Setup
 technologies:
   - cra
@@ -20,7 +20,7 @@ React has become very popular, as has TypeScript. But it can be difficult to kee
 
 React's [create-react-app](../../../technologies/cra) takes care of this, including for TypeScript projects. In this tutorial step, we will generate a React+TypeScript project then open it in the IDE.
 
-## Code
+## 代码
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/project_setup).
 
@@ -31,7 +31,7 @@ Before starting, make sure to install [NodeJS](../../../technologies/nodejs) on 
 As shown [in the create-react-app docs](https://create-react-app.dev/docs/adding-typescript/), use the `npx` command introduced in npm 5.2 to get a package and install a command, without having to globally install a package. Thus, to use `create-react-app` to make a TypeScript project:
 
 ```shell script
-$ npx create-react-app my-app --template typescript
+$ npx create-react-app cra --template typescript
 ```
 
 If you are using a JetBrains IDE that includes [WebStorm](https://www.jetbrains.com/webstorm/), you can use a nice UI for new projects:
@@ -94,7 +94,7 @@ $ npm run-script test
 
 We can also run this `npm` script in the IDE. `Ctrl-C` to stop the test runner in the terminal, then back in `package.json`, click the green play icon in the gutter beside `test`.
 
-## Conclusion
+## 结论
 
 In this first step we used existing tools to generate a working React+TypeScript project, with all the tooling configured. We also gave a brief tour of driving this in the IDE.
 
