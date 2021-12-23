@@ -1,23 +1,23 @@
 ---
 date: 2021-05-10
-title: Use new methods on the Streams API
+title: 使用 Streams API 里的新方法
 technologies:
   - java
 topics:
   - latest
   - inspections
 author: tg
-subtitle: Inspections can show us new features from Java 16
+subtitle: 检查可以向我们展示 Java 16 里的新功能
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/4XkazKdTO1U
 leadin: |
-  Java 16 introduced some new methods on the Streams API. IntelliJ IDEA shows us places that can use the new methods and can automatically convert the code to use these new methods.
+  Java 16 在 Streams API 里引入了一些新方法。 IntelliJ IDEA 可以显示哪些地方能使用新方法，并且可以自动转换代码以使用这些新方法。
 
-  The code will be highlighted in yellow as a warning. Press **⌥⏎** (macOS) or **Alt+Enter** (Windows/Linux) and choose "Replace collect(toUnmodifiableList()) with toList()".
+  这些代码将以黄色高亮警告显示。 按 **⌥⏎**（macOS）或 **Alt+Enter**（Windows/Linux），选择 ”Replace collect(toUnmodifiableList()) with toList()“（将 collect(toUnmodifiableList()) 替换为 toList()）。
 
-  Note that this is only available if you're using a language level of Java 16 or above.
+  请注意，只有当您使用 Java 16 及以上的语言级别时，才能使用此功能。
 ---
 
