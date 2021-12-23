@@ -1,22 +1,22 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: 创建 Spring Boot 项目
+title: Creating a New Spring Boot Project
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: 使用 Spring Initializr 创建新的 Spring Boot 项目。
+subtitle: Use the Spring Initializr to create a new Spring Boot project.
 thumbnail: ./thumbnail.png
 ---
 
-首先，我们通过点击欢迎窗口中的** 新建项目 ** 按钮，在 IntelliJ IDEA Ultimate 中创建一个新项目。 从左侧菜单中选择 **Spring Initializr** 。 然后，指定定我们项目的名称 - 你可以称之为 `SpringDataJPA`。 我们还可以将 **组** 的输入内容更改为公司名称。 其他内容，您可以采用默认值。 请随时使用最新的 Java 版本来做您的项目。
+First, we'll create a new project in IntelliJ IDEA Ultimate by clicking on the **New Project** button in the Welcome Screen. We'll select **Spring Initializr** from the left menu. Then, we'll specify our project's name - you can call it `SpringDataJPA`. We can also change the **Group** field to our company name. For the rest of the fields, you can accept the defaults. Feel free to use the latest Java version for your project.
 
-![新建项目窗口](./NewProject.png)
+![New Project Window](./NewProject.png)
 
-然后，我们将点击 **下一步**。
+Then, we'll click **Next**.
 
-在下一个窗口中，我们将选择最新的 Spring Boot 版本。 然后，在 *依赖项* 里，我们搜索 `data`。 在 *SQL* 的下面，我们将从列表中选择 **Spring Data JPA** 和 **H2 Database**。 在此教程，我们将使用 H2 作为我们的数据库，因为它易于设置。 如果您想要使用不同的数据库，如 MySQL 或 HyperSQL，请随时选择这些依赖项，而不是稍后将其添加到 pom.xml 文件中。
+In the next window, we'll select the latest Spring Boot version available to us. Then under *Dependencies*, we'll search for `data` in the search field. Under *SQL*, we'll select the checkboxes for **Spring Data JPA** and **H2 Database** from the list. For this tutorial, we'll be using H2 as our database because it is easy to setup. If you want to use a different database, such as MySQL or HyperSQL, feel free to select those dependencies instead or add them later to your pom.xml file.
 
-![新建项目窗口依赖项](./NewProject-Deps.png)
+![New Project Window Dependency](./NewProject-Deps.png)
 
-一旦我们点击 **完成**，IntelliJ IDEA就会创建一个新的带有 Spring Data JPA 和数据库依赖项的 Spring Boot 项目。
+Once we click **Finish**, IntelliJ IDEA creates a new Spring Boot project with the Spring Data JPA and database dependencies.
