@@ -1,10 +1,10 @@
 ---
 date: 2019-11-27
-title: Smart Code Completion
+title: 智能代码补全
 technologies:
   - go
 topics:
-  - completion
+  - 补全
 author: dlsniper
 subtitle: The king of code completion in GoLand.
 thumbnail: ./thumbnail.png
