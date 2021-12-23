@@ -6,9 +6,9 @@ technologies:
   - .net
   - csharp
 topics:
-  - 導覽
+  - navigation
 products:
-  - tRANSLATED Rider
+  - rider
 author: rachelappel
 subtitle: How to navigate around a code base? Let's look at some easy ways of doing so.
 thumbnail: ./thumbnail.png
