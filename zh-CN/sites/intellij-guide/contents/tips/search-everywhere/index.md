@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 随处搜索
+title: Search Everywhere
 technologies:
   - java
 topics:
   - navigation
 author: hs
-subtitle: 使用“随处搜索”在 IntelliJ IDEA 中检索一切
+subtitle: Use Search Everywhere to search everything in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Searching Everywhere
     href: https://www.jetbrains.com/help/idea/searching-everywhere.html
 leadin: |
-  使用 **⇧⇧**（macOS）或 **Shift+Shift**（Windows/Linux）来打开"随处搜索"对话框。 您可以跨类、文件、符号和操作进行搜索。
+  Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can search across Classes, Files, Symbols and Actions.
 
-  您还可以使用斜线将结果过滤到特定区域，比如 _/editor_。
+  You can also use forward slash to filter the results to a specific area, such as _/editor_.
 ---
 
