@@ -5,9 +5,9 @@ title: New Features in GoLand 2021.2
 technologies:
   - go
   - web
-  - 容器
+  - containers
   - kubernetes
-  - 平台
+  - platform
 topics: [ ]
 author: dlsniper
 subtitle: A selection of useful features from GoLand 2021.2
