@@ -1,20 +1,20 @@
 ---
 type: TutorialStep
 date: 2021-01-01
-title: Introduction
+title: 简介
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Introduction to writing JUnit 5 Tests
+subtitle: 编写 JUnit 5 测试的介绍
 thumbnail: ./thumbnail.png
 ---
 
-In this tutorial we’re going to look at features of JUnit 5 that can make it easier for us to write effective and readable automated tests.
+在本教程中，我们要看看 JUnit 5 的功能，这些功能可以使我们更容易编写有效和可读的自动化测试。
 
-## Other Resources
-- [JUnit docs](https://junit.org/junit5/docs/current/user-guide/)
-- [Migrating from JUnit 4 to JUnit 5 – blog, with embedded video](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)
-- [Unit Testing and Coverage in IntelliJ IDEA (video)](https://youtu.be/QDFI19lj4OM)
-- [Editor Tips & Tricks (blog and video)](https://blog.jetbrains.com/idea/2020/08/editor-tips-and-tricks-in-intellij-idea/)
-- [Top 15 IntelliJ IDEA Shortcuts Blog (blog and video)](https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/)
-- [Code used in blog, video and guide](https://github.com/trishagee/junit5-showcase)
+## 其他资料
+- [JUnit 文档](https://junit.org/junit5/docs/current/user-guide/)
+- [从 JUnit 4 迁移到 JUnit 5 – 博客，并内嵌视频](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)
+- [IntelliJ IDEA 中的单元测试和覆盖（视频）](https://youtu.be/QDFI19lj4OM)
+- [编辑器提示 & 技巧（博客和视频）](https://blog.jetbrains.com/idea/2020/08/editor-tips-and-tricks-in-intellij-idea/)
+- [15 个最常用的 IntelliJ IDEA 快捷键的博客（博客和视频）](https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/)
+- [博客、视频和指南中使用的代码](https://github.com/trishagee/junit5-showcase)
