@@ -4,7 +4,7 @@ title: Navigating Forward & Backward
 technologies:
   - java
 topics:
-  - 導覽
+  - navigation
 author: hs
 subtitle: Move forward and backward between your locations in the code
 thumbnail: ./thumbnail.png
