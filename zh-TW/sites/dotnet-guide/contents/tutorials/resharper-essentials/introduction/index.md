@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-01
-title: Introduction
+title: 簡介
 technologies:
   - .net
   - csharp
@@ -24,6 +24,8 @@ ReSharper is an extension for Visual Studio. It helps you write and refactor cod
 In the ReSharper Essentials series, Rachel, Khalid, Matthias, Matt, and Maarten, the JetBrains .NET developer advocates, will go over the essential features and workflows in ReSharper.
 
 We will see how you can get more out of your Visual Studio IDE with ReSharper.
+
+> **Note:** To work with Visual Studio 2022, you will need the [ReSharper 2021.3 Early Access Preview (EAP)](https://www.jetbrains.com/resharper/eap/).
 
 ### .NET Advocates on Twitter
 
