@@ -13,6 +13,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/7R1b5G3yx8U
 leadin: |
-  当 Kotlin 表达式要求我们涵盖参数所有可能的选项时，我们可以使用 **⌥⏎** (macOS) 或 **Alt+Return** (Windows/Linux) 来自动生成所有的分支。
+  当 Kotlin 表达式要求我们涵盖参数所有可能的选项时，我们可以使用 **⌥⏎**（macOS）或 **Alt+Return**（Windows/Linux）来自动生成所有的分支。
 ---
 
