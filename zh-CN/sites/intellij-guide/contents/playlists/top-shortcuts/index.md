@@ -1,7 +1,7 @@
 ---
 label: 20
 date: 2021-11-01
-title: Top Shortcuts
+title: 常用快捷键
 technologies: [ ]
 topics:
   - gettingstarted
