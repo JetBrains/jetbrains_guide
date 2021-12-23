@@ -4,7 +4,7 @@ title: 'Refactor names in React useState hooks'
 technologies:
   - web
 topics:
-  - refactoring
+  - 重构
 author: dlsniper
 subtitle: 'Rename both values of from useState hooks at once'
 thumbnail: ./thumbnail.png
