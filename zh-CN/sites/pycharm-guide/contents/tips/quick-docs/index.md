@@ -1,7 +1,7 @@
 ---
 hasBody: true
 date: 2019-03-11
-title: 快速文档
+title: Quick Documentation
 technologies: [ ]
 topics:
   - editing
