@@ -4,7 +4,7 @@ title: IDE & Project Backgrounds
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - ide
 author: khalidabuhakmeh
