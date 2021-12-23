@@ -15,7 +15,7 @@ subtitle: Learn the basics of the Rider debugger from a Visual Studio + ReSharpe
 thumbnail: ./thumbnail.png
 ---
 
-As developers, we try our hardest to avoid introducing bugs and exceptions into our codebase. Unfortunately, regardless of the care we take, mistakes are inevitable. The debugging experience is a stand-out feature of the .NET platform, and it gets even better withing JetBrains Rider. Many of the same features ReSharper users have learned to enjoy are there in the Rider experience, along with some additional UI upgrades that we know our users love.
+As developers, we try our hardest to avoid introducing bugs and exceptions into our codebase. Unfortunately, regardless of the care we take, mistakes are inevitable. The debugging experience is a stand-out feature of the .NET platform, and it gets even better with JetBrains Rider. Many of the same features ReSharper users have learned to enjoy are there in the Rider experience, along with some additional UI upgrades that we know our users love.
 
 ## Main Toolbar and Run Button
 
@@ -26,6 +26,12 @@ One of the first changes developers will notice from Visual Studio is the **Run*
 - Utilize more resources during development than is necessary.
 
 In Rider, users will see a clear functional difference, as the **Run** button will only start the current run configuration. To attach the debugger, we can either click the **Debug** icon, use the **Debug** shortcut, or attach the debugger to an existing process.
+
+When you initiate a debugging session, the **run widget** will change in appearance with a clear yellow highlight and the word **Debugging** next to the run configuration name. You'll also notice the visible buttons have changed to provide quicker access to debugging actions **restart**, **resume**, and **stop**.
+
+![Rider main toolbar](./rider-debugger-main-toolbar.png)
+
+The **run widget** is a recent addition to Rider and should help you more easily transition from Visual Studio. While the run widget is the most prominent debugging interface in Rider, as you continue to read, you'll see we've exposed several ways to interact with a debugging session.
 
 ## Debugging Shortcuts
 
@@ -44,7 +50,7 @@ Unlike Visual Studio, Rider has a dedicated window for all things debugging. Thi
 
 ![JetBrains Rider debugger tool window](./rider-debugger-tool-window.png)
 
-In addition to relevant information about our application, we can also access the debugging toolbar on the window's far-left border. Here we can **restart**, **resume**, **pause**, and **stop** the current debugging session.
+In addition to relevant information about our application, we can also access the debugging toolbar on the window's top-most border. Here we can **restart**, **stop**, **resume**, and **pause** the current debugging session. We can also **step-over**, **step-into**, and **step-out** of our code. Finally we have some additional elements to quickly manage breakpoints.
 
 ![JetBrains Rider debugger tool window's buttons](./rider-debugger-tool-window-buttons.png)
 
