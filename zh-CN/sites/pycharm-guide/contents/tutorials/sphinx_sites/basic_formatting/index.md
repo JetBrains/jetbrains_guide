@@ -12,11 +12,11 @@ thumbnail: thumbnail.png
 
 Unlike Python's original [reStructuredText](https://docutils.sourceforge.io/rst.html), Markdown is pretty simple. But even that simplicity has some cool benefits when used in Sphinx. Let's look at basic formatting and images in Markdown, and how it connects to Sphinx.
 
-## Background
+## 背景
 
 "Markdown" is a [troubled word](https://arstechnica.com/information-technology/2014/10/markdown-throwdown-what-happens-when-foss-software-gets-corporate-backing/). It needed a spec, so the [CommonMark](https://commonmark.org) project arose. Sphinx, via the [MyST parser](https://myst-parser.readthedocs.io/en/latest/), implements the CommmonMark verion of Markdown -- with extensions atop that which we'll discuss in the next section.
 
-## Formatting
+## 格式化
 
 Let's visit our `http://127.0.0.1:5500/about_us.html` URL in the browser and edit our `about_us.md` file to make some formatting changes.
 
@@ -59,7 +59,7 @@ We have a patented algorithm:
 1. Start an LLC
 2. Get a Series A investment round
 3. Get a Series B investment round
-4. Continue
+4. 继续
 ```
 
 Want to link to the Python home page? Links follow the regular Markdown syntax:
@@ -103,7 +103,7 @@ Let's see a screenshot with all of this Markdown content:
 
 ![All Formatting](all_formatting.png)
 
-## Images
+## 图像
 
 Let's use the Python logo from `https://www.python.org/static/community_logos/python-logo.png` as an image in our page. We'll use the standard Markdown image support to point to a URL, adding this after our text about Python support:
 
