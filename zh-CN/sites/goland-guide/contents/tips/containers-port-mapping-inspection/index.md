@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Inspect port mapping for errors in docker-compose.yaml files'
 technologies:
-  - 容器
+  - containers
 topics:
   - inspections
 author: dlsniper
