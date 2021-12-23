@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-01-29
-title: Testing
+title: 测试
 technologies:
   - 
     "aws]topics": '['
@@ -15,7 +15,7 @@ longVideo:
 
 In this tutorial we are going to work on Unit Tests.
 
-# Unit Testing
+# 单元测试
 
 According to Wikipedia : *Unit tests are automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended.*
 
