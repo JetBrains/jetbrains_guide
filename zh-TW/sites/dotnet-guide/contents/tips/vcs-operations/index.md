@@ -4,7 +4,7 @@ title: VCS Operations Quicklist
 technologies:
   - .net
 products:
-  - tRANSLATED Rider
+  - rider
 topics:
   - vcs
   - ide
