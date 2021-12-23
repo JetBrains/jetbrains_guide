@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 结构弹出窗口
+title: Structure popup
 technologies:
   - go
 topics:
