@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2020-10-12
+date: 2021-10-04
 title: Project Setup
 technologies:
   - cra
@@ -31,7 +31,7 @@ Before starting, make sure to install [NodeJS](../../../technologies/nodejs) on 
 As shown [in the create-react-app docs](https://create-react-app.dev/docs/adding-typescript/), use the `npx` command introduced in npm 5.2 to get a package and install a command, without having to globally install a package. Thus, to use `create-react-app` to make a TypeScript project:
 
 ```shell script
-$ npx create-react-app my-app --template typescript
+$ npx create-react-app cra --template typescript
 ```
 
 If you are using a JetBrains IDE that includes [WebStorm](https://www.jetbrains.com/webstorm/), you can use a nice UI for new projects:
