@@ -16,11 +16,11 @@ longVideo:
 Hello everyone, welcome to the part one of the AWS PyCharm tutorial series. Today I will be explaining in brief about micro-services architecture and different serverless frameworks.
 
 
-# 背景
+# Background
 
 Before taking a deep dive into micro-services, let's understand first what is a monolithic architecture. In a traditional monolithic architecture, all processes are tightly coupled and run in a single service. This means that if one process of the application experiences a spike in demand, then the entire architecture must be scaled. If any single service is not functioning properly, then it's going to affect all the services.
 
-![微服务](./microservices.png) Image Source : Amazon Web Services (AWS)
+![microservices](./microservices.png) Image Source : Amazon Web Services (AWS)
 
 The scenario is completely different when it comes to micro-services. In a micro-service architecture, the services are: loosely coupled, managed by a small team, easily scalable, and the most important part : if one the services goes down, then it won't affect the other services.
 
