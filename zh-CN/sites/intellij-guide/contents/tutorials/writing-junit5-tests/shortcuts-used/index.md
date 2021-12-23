@@ -1,24 +1,24 @@
 ---
 type: TutorialStep
 date: 2021-01-01
-title: 快捷键
+title: Shortcuts
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 教程中使用的快捷键列表
+subtitle: Shortcuts used in the tutorial
 thumbnail: ./thumbnail.png
 ---
 
-该博文包括了一些快捷键，但还有许多捷径会在视频中演示，这里没有全部提到：
+This blog post includes some shortcuts, but many more were demonstrated in the video and not all of them were mentioned here:
 
-`⌘[ 或 Ctrl+Alt+向左箭头` 后退 – 让您在编写代码和运行测试时轻松地在您去过的所有位置之间导航
+`⌘[ or Ctrl+Alt+left arrow` to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
 
-`⌘[ 或 Ctrl+Alt+向左箭头` 后退 – 让您在编写代码和运行测试时轻松地在您去过的所有位置之间导航
+`⌘[ or Ctrl+Alt+left arrow` to navigate back – makes it easy to navigate between all the places you’ve been while writing code and running tests
 
-`⌘⇧T 或 Ctrl+Shift+T` 在测试和测试对象之间导航。 这在前 5 的导航小技巧中进行了探讨（博客和视频）。
+`⌘⇧T or Ctrl+Shift+T` to navigate between test and test subject. This is explored in the Top 5 Navigation Tips (blog and video).
 
-`⌃⇧J 或 Ctrl+Shift+J` 来连接行以创建编译代码。
+`⌃⇧J or Ctrl+Shift+J` to join Lines to create compiling code.
 
-`⇧⌘⏎ 或 Ctrl+Shift+Enter` 来使用语句，关闭中括号和语句，并且它还会格式化代码。
+`⇧⌘⏎ or Ctrl+Shift+Enter` to complete Statement close off the brackets and statement, and it also formats the code too.
 
-`⌃⇧空格 或 Ctrl+Shift+空格` 来使用智能补全
+`⌃⇧Space or Ctrl+Shift+Space` to use smart completion
