@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Cleanup unused IDE directories'
 technologies:
-  - 平台
+  - platform
 topics: [ ]
 author: dlsniper
 subtitle: If you stopped using an older version of the IDE, it's the right time to do some cleanup
