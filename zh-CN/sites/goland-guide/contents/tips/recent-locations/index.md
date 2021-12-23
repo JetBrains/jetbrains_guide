@@ -1,6 +1,6 @@
 ---
 date: 2020-02-05
-title: 最近的位置
+title: Recent Locations
 technologies:
   - go
 topics:
