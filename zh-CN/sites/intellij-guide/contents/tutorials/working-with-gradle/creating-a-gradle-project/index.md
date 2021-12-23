@@ -1,36 +1,36 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: 创建一个新的 Gradle 项目
+title: Creating a Gradle project
 technologies:
   - gradle
 topics:
   - gettingstarted
 author: tg
-subtitle: 首先创建一个使用 Gradle 作为构建工具的全新项目。
+subtitle: Start by creating a brand-new project that uses Gradle as the build tool.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=17
 ---
 
-首先，让我们看看创建一个新的 Gradle 项目。 我们可以从[欢迎画面中选择“新建项目”](https://www.jetbrains.com/help/idea/new-project-wizard.html)，或者如果我们已经打开了一个 IntelliJ IDEA 项目，从文件菜单中选择新建项目。这两种方法都将打开新建项目的窗口。
+First, let's look at creating a new Gradle project. We can choose ["New Project" from the Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html), or choose New Project from the File menu if we already have an IntelliJ IDEA project open, either will bring up the New Project window.
 
-![新建项目窗口](./new-project.png)
+![New project window](./new-project.png)
 
-然后，我们从左侧的选项中选择 Gradle。 该项目将需要一个 JDK 来运行 Gradle 构建，项目 SDK 下拉菜单中会显示所有在 IntelliJ IDEA 中配置的 JDK，但也显示了在此计算机上检测到的其他 JDK。 如果需要，我们还可以从多个不同的供应商中任何一个下载新的 JDK。 对于本视频，我将选择 JDK 11，因为这是当前的长期支持的版本。
+From here, we want to select "Gradle" from the options on the left-hand side. The project will need a JDK to run Gradle builds, the Project SDK dropdown shows all the JDKs that have been configured in IntelliJ IDEA, but also all the JDKs detected on this computer. We can also download a new JDK from any of a number of different vendors if we need to. For this video, I'm going to select JDK 11 as this is the current Long Term Support release.
 
-接下来，我们有一些其他选项来配置我们的 Gradle 构建。 如果我们选中 [Kotlin DSL 构建脚本](https://docs.gradle.org/current/userguide/kotlin_dsl.html) 我们可以创建一个 Kotlin DSL 构建文件。 如果我们不选它，IntelliJ IDEA 将创建一个 `build.gradle` 文件，它使用 [Groovy](https://groovy-lang.org/)，是更常见的选择。
+Next we have some other options for configuring our Gradle build. We can optionally choose to create a [Kotlin DSL](https://docs.gradle.org/current/userguide/kotlin_dsl.html) build file, if we check this box. If we leave this empty, IntelliJ IDEA will create a `build.gradle` file which uses [Groovy](https://groovy-lang.org/), which is the more common choice.
 
-我们可以选择外部的库、语言或框架来添加到我们新的 Gradle 项目中。 如果我们知道我们将在新应用程序中使用其中任何一个，我们可以在向导中选择它们，但如果把它们留空，我们也可以在以后需要的时候添加。
+We can choose extra libraries, languages or frameworks to add to our new Gradle project. If we know we're going to use any of these in our new application we could select them in the wizard, but if we leave them blank we can add them at a later date if we need them.
 
-我们将创建一个使用 `build.gradle` 文件的基本的 Java 项目。然后，我们前往下一步。
+We're going to create a basic Java project with a Groovy `build.gradle` file, so let's move on to the next step.
 
-![项目名称和详细信息](./project-name.png)
+![Project name and details](./project-name.png)
 
-这里，我们输入项目的名称，如果需要，我们可以更改其位置。 让我们将其命名为“first-gradle-project”。 如果我们想保持尽可能简单，我们可以在这里按完成。 如果我们单击“工件坐标”的标题，则可以看到更多的选项，如果需要，我们可以进行更改，但对于这个简单的案例，我们将保留这些选项。
+Here we enter the name of the project, and we can change the location if we need to. Let's call it "first-gradle-project". If we want to keep things as simple as possible, we can just press Finish here. We can see more options if we click the "artifact coordinates" title, and make changes if we need to, but for this simple case we'll leave these as they are.
 
-IntelliJ IDEA 会以最小规模的 `build.gradle`文件创建基本的项目结构，然后你会发现 Gradle 在构建项目了。 完成后，项目窗口将显示项目结构，并带有标准的 Gradle 目录结构。
+IntelliJ IDEA creates the basic project structure, with a minimal `build.gradle` file, and you'll see Gradle is building the project. Once this finishes, the project window will show the structure of the project, with the standard Gradle directory structure.
 
-我们将在下一节中更详细地查看该项目。
+We'll look at the project in more detail in the next section.
 
