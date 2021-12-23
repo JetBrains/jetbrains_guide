@@ -4,7 +4,7 @@ title: Navigate to File
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: 'Jump to a file without using the Project Tool Window, and your mouse'
 thumbnail: ./thumbnail.png
