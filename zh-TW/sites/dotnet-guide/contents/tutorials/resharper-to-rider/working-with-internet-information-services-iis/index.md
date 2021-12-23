@@ -7,7 +7,7 @@ technologies:
   - csharp
   - asp.net
 products:
-  - tRANSLATED Rider
+  - rider
   - resharper
 topics:
   - ide
