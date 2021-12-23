@@ -1,12 +1,12 @@
 ---
 date: 2021-07-01
-title: 内联变量
+title: Inline Variable
 technologies:
   - java
 topics:
   - 重构
 author: hs
-subtitle: 在代码中内联变量
+subtitle: Inline a variable in your code
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Inline
     href: https://www.jetbrains.com/help/idea/inline.html
 leadin: |
-  按**⌥⌘N**（macOS）， 或 **Ctrl+Alt+N**（Windows/Linux），来内联一个变量。
+  Press **⌥⌘N** (macOS), or **Ctrl+Alt+N** (Windows/Linux), to inline a variable.
 
-  您可以使用相同的快捷方式、来对变量、字段和常量进行内联。
+  You can inline methods, variables, fields, and constants with the same shortcut.
 ---
 
