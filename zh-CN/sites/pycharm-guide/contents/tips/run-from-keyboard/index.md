@@ -9,7 +9,7 @@ author: pwe
 subtitle: Use the keyboard to select and run a run configuration.
 seealso:
   - 
-    title: 运行中...
+    title: Running
     href: https://www.jetbrains.com/help/pycharm/running-code.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
