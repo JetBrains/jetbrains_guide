@@ -1,12 +1,12 @@
 ---
 date: 2021-05-10
-title: Preview HTML updates in real time
+title: 实时预览 HTML 更新
 technologies:
   - html
 topics:
   - latest
 author: tg
-subtitle: See what your changes look like as you make them
+subtitle: 查看您所做的更改
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Preview output of HTML files
     href: 'https://www.jetbrains.com/help/idea/editing-html-files.html#ws_html_preview_output'
 leadin: |
-  IntelliJ IDEA comes with a built-in preview for HTML, so we can get a good idea of what our changes will look like as we're making them.
+  IntelliJ IDEA 为 HTML 配备了内置预览功能，因此我们可以很好地了解我们在进行更改时会是什么样子。
 ---
 
