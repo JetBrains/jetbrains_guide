@@ -13,7 +13,7 @@ seealso:
     title: Creating and Optimizing Imports
     href: https://www.jetbrains.com/help/pycharm/creating-and-optimizing-imports.html
   - 
-    title: Basic Completion
+    title: 基本完成
     href: 'https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
