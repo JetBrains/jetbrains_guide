@@ -6,7 +6,7 @@ technologies:
   - .net
   - csharp
 topics:
-  - 重构
+  - refactoring
 products:
   - rider
 author: rachelappel
@@ -25,6 +25,6 @@ The easiest entry point into refactorings is using the [**Refactor This...**](ht
 
 Some [refactorings can be applied without invoking any commands](https://www.jetbrains.com/help/rider/Refactorings__Inplace_Refactorings.html). If Rider detects that a code change could be an intention to refactor the code, the **Refactor This** action appears on the left-hand side of the editor. You can use this action to apply the refactoring solution-wide.
 
-### 另请参阅
+### See Also
 
 - [Refactoring in Rider](https://www.jetbrains.com/help/rider/Refactorings__Index.html)
