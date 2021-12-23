@@ -1,12 +1,12 @@
 ---
 date: 2021-01-08
-title: 更改方法的签名
+title: Change Method Signature
 technologies:
   - java
 topics:
   - refactoring
 author: hs
-subtitle: 重构方法的签名
+subtitle: Refactor the signature of a method
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Change Signature
     href: https://www.jetbrains.com/help/idea/change-signature.html
 leadin: |
-  按 **⌘F6**（macOS）， 或 **Ctrl+F6**（Windows/Linux）， 显示 **更改签名** 的对话。 您可以在这里添加或删除方法的参数。
+  Press **⌘F6** (macOS), or **Ctrl+F6** (Windows/Linux), to bring up the **Change Signature** dialog. You can add or remove method parameters here.
 
-  您可以使用 **⌘N**（macOS）或 **Alt+Ins**（Windows/Linux）来添加新的参数。
+  You can use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux), to add a new parameter.
 ---
 
