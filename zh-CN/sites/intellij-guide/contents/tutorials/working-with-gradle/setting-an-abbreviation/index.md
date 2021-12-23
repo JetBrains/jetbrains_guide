@@ -13,7 +13,7 @@ longVideo:
   url: https://youtu.be/6V6G3RyxEMk?start=767
 ---
 
-You may have noticed that there are a lot of results when we type "Gradle" into any of the search options. We may want to provide a way to quickly access the Gradle tool window.
+您可能已经注意到，当我们在随处搜索选项中输入“Gradle”时，会有很多结果。 We may want to provide a way to quickly access the Gradle tool window.
 
 You can, of course, [set a keyboard shortcut](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut) for any IntelliJ IDEA action, and you may want to set one for opening the Gradle tool window.
 
