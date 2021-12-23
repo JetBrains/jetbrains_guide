@@ -1,10 +1,10 @@
 ---
 title: Gradle
-subtitle: Gradle is an open-source build automation tool focused on flexibility and performance.
+subtitle: Gradle 是一个开源的构建自动化工具，专注于灵活性和性能。
 logo: gradle-elephant.svg
 website: https://gradle.org/
 ---
 
-IntelliJ IDEA [integrates seamlessly with Gradle](https://www.jetbrains.com/help/idea/gradle.html), applying project settings from the build file and delegating build and test tasks to Gradle where appropriate.
+IntelliJ IDEA [与 Gradle 无缝集成](https://www.jetbrains.com/help/idea/gradle.html)，可自动应用构建文件中的项目设置并将构建和测试任务委托给 Gradle。
 
-Gradle build scripts are written using a Groovy or Kotlin DSL, and IntelliJ IDEA provides code completion and generation within the build file.
+Gradle 构建脚本是使用 Groovy 或 Kotlin DSL 编写的，IntelliJ IDEA 在构建文件中提供代码补全和生成。
