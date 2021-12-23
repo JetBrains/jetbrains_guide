@@ -7,7 +7,7 @@ technologies:
 products:
   - rider
 topics:
-  - 数据
+  - data
 author: khalidabuhakmeh
 subtitle: Working with databases using an object relational mapper
 thumbnail: ./thumbnail.png
@@ -32,7 +32,7 @@ Entity Framework Core has trade-offs of performance overhead and increased memor
 
 ### Code Snippets
 
-#### 命令
+#### Commands
 
 These commands need to be executed from a command line terminal, like the one found in Rider.
 
@@ -160,7 +160,7 @@ namespace BasicsOfEntityFrameworkCore
 }
 ```
 
-### 另请参阅
+### See Also
 
 - [Microsoft Docs EF Core Overview](https://docs.microsoft.com/en-us/ef/core/)
 - [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/)
