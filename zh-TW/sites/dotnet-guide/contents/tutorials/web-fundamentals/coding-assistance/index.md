@@ -9,7 +9,7 @@ topics:
   - web
   - editing
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: Find out how Rider helps you write better code, faster.
 thumbnail: ./thumbnail.png
