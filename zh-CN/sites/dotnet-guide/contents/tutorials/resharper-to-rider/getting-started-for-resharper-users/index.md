@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-10-12
-title: 入门指南
+title: Getting Started
 technologies:
   - .net
   - csharp
