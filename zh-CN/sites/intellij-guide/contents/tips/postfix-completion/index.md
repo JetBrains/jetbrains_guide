@@ -6,7 +6,7 @@ technologies: [ ]
 topics:
   - editing
 author: tg
-subtitle: Postfix completion allows you to keep typing forwards, it minimises the amount of time you spend moving the cursor around while you're coding.
+subtitle: 后缀补全允许你继续输入，它最大限度地减少了您在编码时移动光标的时间。
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -23,11 +23,11 @@ seealso:
     title: IntelliJ IDEA Help - Create custom postfix templates
     href: 'https://www.jetbrains.com/help/idea/auto-completing-code.html#reference.custom.postfix.templates'
 leadin: |
-  Postfix completion is designed so that you append some abbreviation to the end of your code, and IntelliJ IDEA will know to generate more valid code. Type your code, followed by a postfix abbreviation like _.sout_ or _.var_, and see IntelliJ IDEA generate code at the start of your expression.
+  后缀补全的设计可以让您在代码的末尾附加上一些缩写，然后 IntelliJ IDEA 就会知道如果生成更多有效的代码。 输入您的代码，然后再输入后缀缩写，如 _.sout_ 或 _.var_ ，就可以看到 IntelliJ IDEA 在您的表达式的开头生成代码。
 
-  To see a full list of postfix abbreviations for your code, type "." (dot) and press the "up" arrow on the dropdown list of suggestions. The postfix completions can be found at the bottom of the code suggestions list.
+  要查看您的代码的后缀缩写的完整列表的话，请输入 "."（点），并在下拉的建议列表中按向上箭头。 后缀补全可以在代码建议列表的底部找到。
 
-  Find all available abbreviations **[Preferences/Settings | Editor | General | Postfix Completion](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)**.
+  可以在 **[Preferences/Settings | Editor | General | Postfix Completion（偏好设置/设置 | 编辑器 | 常规 | 后缀补全）](https://www.jetbrains.com/help/idea/settings-postfix-completion.html)** 中查看所有可用的缩写。
 ---
 
 ---
