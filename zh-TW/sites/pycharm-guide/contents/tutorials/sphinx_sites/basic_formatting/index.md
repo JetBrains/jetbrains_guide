@@ -103,7 +103,7 @@ Let's see a screenshot with all of this Markdown content:
 
 ![All Formatting](all_formatting.png)
 
-## Images
+## 圖像
 
 Let's use the Python logo from `https://www.python.org/static/community_logos/python-logo.png` as an image in our page. We'll use the standard Markdown image support to point to a URL, adding this after our text about Python support:
 
