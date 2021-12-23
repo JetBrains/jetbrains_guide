@@ -22,7 +22,7 @@ That's the topic of this step. We want a reusable counter component that interna
 
 This step, though, will be just the minimum: no actual clicking to update state, for example. We will stick to introducing component state and modeling it in TypeScript.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_state).
 
