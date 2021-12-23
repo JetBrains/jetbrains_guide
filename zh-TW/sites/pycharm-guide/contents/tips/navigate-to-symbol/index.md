@@ -4,7 +4,7 @@ date: 2018-11-08
 title: Navigate to Symbol
 technologies: [ ]
 topics:
-  - 導覽
+  - navigation
 author: pwe
 subtitle: Navigate your project by code, not files.
 seealso:
