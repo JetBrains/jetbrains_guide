@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-03-01
-title: 代码格式化
+title: Code Formatting
 technologies:
   - .net
   - csharp
@@ -42,7 +42,7 @@ You can [export code styles from ReSharper to `.editorconfig`](https://www.jetbr
 
 > **Tip:** When not using `.editorconfig`, you can also share code styles (and other ReSharper settings) using [Settings Layers](https://www.jetbrains.com/help/resharper/Sharing_Configuration_Options.html).
 
-### 代码清理
+### Code Cleanup
 
 Based on the current code style, or using [custom profiles](https://www.jetbrains.com/help/resharper/Code_Cleanup__Index.html#profiles), you can run [code cleanup in bulk for a project or even a full solution](https://www.jetbrains.com/help/resharper/Code_Cleanup__Index.html). A [command line code formatting tool](https://www.jetbrains.com/help/resharper/CleanupCode.html) is also available.
 
@@ -50,7 +50,7 @@ Based on the current code style, or using [custom profiles](https://www.jetbrain
 
 Code styles not only apply to the syntax, but also apply to the order of elements in a file or type. You can [configure how to reorder type members when cleaning up your code](https://www.jetbrains.com/help/resharper/Reference__Options__Languages__CSharp__Type_Members_Layout.html).
 
-### 另请参阅
+### See Also
 
 - [Code formatting and style](https://www.jetbrains.com/help/resharper/Code_Formatting_Style.html)
 - [Indentation style](https://www.jetbrains.com/help/resharper/Indentation_Style.html)
