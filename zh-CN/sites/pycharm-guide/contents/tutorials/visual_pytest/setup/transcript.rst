@@ -41,7 +41,7 @@ These last two arguments are obscure but, as the docs indicate, it is STRONGLY s
 Make the directory and a first file for our source, naming it ``src/laxleague/player.py``.
 The file will, for now, just have an empty class:
 
-    * 激活导航栏
+    * Activate navigation bar
     * Make a directory
 
 Open the terminal and run Python's ``pip``, with ``-e .`` used to make a Python "editable install".
