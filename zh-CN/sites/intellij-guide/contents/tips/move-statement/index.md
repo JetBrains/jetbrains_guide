@@ -6,7 +6,7 @@ technologies:
 topics:
   - editing
 author: hs
-subtitle: Move a statement around within your method
+subtitle: 在方法内移动语句
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,8 +17,8 @@ seealso:
     title: IntelliJ IDEA Help - Move statements
     href: 'https://www.jetbrains.com/help/idea/working-with-source-code.html#editor_statement_select'
 leadin: |
-  You can use **⇧⌘↑** (macOS), or **Ctrl+Shift+Up Arrow** (Windows/Linux), to move a line up. To move a statement down use **⇧⌘↓** (macOS), or **Ctrl+Shift+Down Arrow** (Windows/Linux).
+  您可以使用 **⇧⌘↑**（macOS）或 **Ctrl+Shift+向上箭头**（Windows/Linux）来向上移动一行代码。 向下移动一行代码时可使用 **⇧⌘↓**（macOS），或 **Ctrl+Shift+向下箭头**（Windows/Linux）。
 
-  This shortcut factors in scope. You cannot move a statement outside of the scope its contained within.
+  此快捷键将范围考虑在内。 您不能将语句移到它所包含的范围之外。
 ---
 
