@@ -8,7 +8,7 @@ topics:
   - web
   - ide
 products:
-  - tRANSLATED Rider
+  - rider
 author: pwe
 subtitle: Learn how Rider helps you with web applications to build full-stack apps with ease.
 thumbnail: ./thumbnail.png
