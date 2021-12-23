@@ -1,31 +1,31 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: 总结 - 配置 IntelliJ IDEA
+title: Summary - Configuring IntelliJ IDEA
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Project Structure（项目结构）和 Preferences/Settings（偏好设置/设置）都提供了配置 IntelliJ IDEA 的方法
+subtitle: Both Project Structure and Preferences/Settings provide ways to make IntelliJ IDEA your own
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/FtGS81ZNTE0
 ---
 
-## 总结 - 配置 IntelliJ IDEA
-我们在本教程中使用了以下快捷方式：
+## Summary - Configuring IntelliJ IDEA
+We've used the following shortcuts in this tutorial:
 
-| 名称      | macOS 快捷键 | Windows 快捷键                      |
-| ------- | --------- | -------------------------------- |
-| 项目结构对话框 | **⌘;**    | **Ctrl**+**Alt**+**Shift**+**S** |
-| 设置/偏好设置 | **⌘,**    | **Ctrl**+**Alt**+**S**           |
-| 随处搜索    | **⇧⇧**    | **Shift**+**Shift**              |
-| 查找操作    | **⌘⇧A**   | **Ctrl** + **Shift** + **A**     |
+| Name                     | macOS Shortcut | Windows Shortcut                 |
+| ------------------------ | -------------- | -------------------------------- |
+| Project Structure dialog | **⌘;**         | **Ctrl**+**Alt**+**Shift**+**S** |
+| Settings/Preferences     | **⌘,**         | **Ctrl**+**Alt**+**S**           |
+| Search Everywhere        | **⇧⇧**         | **Shift**+**Shift**              |
+| Find Action              | **⌘⇧A**        | **Ctrl** + **Shift** + **A**     |
 
-### 要点
-- 比如说 Maven 或者 Gradle 这类的构建系统会覆盖您的项目结构中的配置
-- 最好在开始自定义偏好设置/设置之前，先熟悉一下 IntelliJ IDEA。
-- 如果您需要重置 Preferences/Settings（偏好设置/设置），您可以使用 **File（文件）** > **Manage IDE Settings（管理 IDE 设置）** > **Restore Default Settings（恢复默认设置）**。
-- 您还可以使用快捷方式如 Search Everywhere（随处搜索），Find Actions（查找操作）更改偏好设置/设置。
-- 您可以 [导出](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) 设置，以便与您的其他 IntelliJ IDEA 实例共享。
-- 您可以使用 [设置存储库](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) 与您的同事共享设置。
+### Key Points
+- Build systems such as Maven and Gradle will override settings in your Project Structure
+- It's best to be a bit familiar with IntelliJ IDEA before you start customising your Preferences/Settings.
+- If you do need to reset your Preferences/Settings, you can do so with **File** > **Manage IDE Settings** > **Restore Default Settings**
+- You can also use shortcuts such as Search Everywhere and Find Actions to change your Preferences/Settings.
+- You can [export](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) settings to share with your other instances of IntelliJ IDEA.
+- You can use a [Settings Repository](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) to share settings with your colleagues.
