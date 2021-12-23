@@ -178,7 +178,7 @@ html_sidebars = {
 }
 ```
 
-## Logo
+## Logos
 
 Websites have logos. Sphinx provides a configuration knob for logos. Let's see it in action.
 
@@ -202,7 +202,7 @@ Our sidebar should now have a Python logo at the top:
 
 `html_logo` is explained [in more depth in the Sphinx docs](https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_logo).
 
-## 自定义 CSS
+## Custom CSS
 
 It's quite easy to get your own CSS injected into the site. Not just CSS, but "templated" CSS.
 
