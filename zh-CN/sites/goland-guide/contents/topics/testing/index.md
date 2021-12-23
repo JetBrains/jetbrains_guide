@@ -1,7 +1,7 @@
 ---
-title: 测试
+title: Testing
 subtitle:
-accent: 主
+accent: primary
 icon: fas fa-chart-bar
 ---
 
