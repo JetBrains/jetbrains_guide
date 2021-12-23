@@ -1,20 +1,20 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: 共享 IntelliJ 设置
+title: Sharing IntelliJ IDEA Settings
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 您可以在您自己的多个 IntelliJ IDEA 实例之间或者与您的同事共享设置
+subtitle: You can share settings across your own instances of IntelliJ IDEA or with your colleagues
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/pnKBkblUV84
 ---
 
-## 共享 IntelliJ 设置
-您可以在您的多个 IntelliJ IDEA 实例之间或者与您的同事[共享设置](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html) 。
+## Sharing IntelliJ IDEA Settings
+You can [share IDE Settings](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html) between your different instances of IntelliJ IDEA, or with your colleagues.
 
-如果您想在多个 IntelliJ IDEA 实例之间共享设置，并且您正在使用 IntelliJ IDEA Ultimate，您可以使用[IDE Settings Sync（IDE 设置同步）](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#IDE_settings_sync) 来实现共享。 如果您在使用我们的社区版，您可以[导出您的设置](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) ，然后导入它们。
+If you want to share settings across instances of IntelliJ IDEA and you are using IntelliJ IDEA Ultimate you can use [IDE Settings Sync](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#IDE_settings_sync) to achieve this. If you are using our Community Edition you can [export your settings](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) and subsequently import them.
 
-如果您想与同事共享 IntelliJ IDEA 设置，您可以使用[Settings Repository（设置仓库）](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) ，使每个人都保持同步。
+If you want to share IntelliJ IDEA settings with your colleagues, you can use a [Settings Repository](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) to keep everyone in sync.
