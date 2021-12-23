@@ -1,4 +1,5 @@
-"commit_message": "[ci skip]"
+"commit_message": "[Crowdin] New translations %original_file_name% (%language%)"
+"append_commit_message": false
 
 files:
   - source: sites/**/contents
