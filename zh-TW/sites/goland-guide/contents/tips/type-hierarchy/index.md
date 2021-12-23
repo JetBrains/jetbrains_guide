@@ -4,7 +4,7 @@ title: Type Hierarchy
 technologies:
   - go
 topics:
-  - navigation
+  - 導覽
 author: dlsniper
 subtitle: Discover what types implement an interface or what interfaces are implemented by a type
 thumbnail: ./thumbnail.png
