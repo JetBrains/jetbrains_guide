@@ -2,7 +2,7 @@
 date: 2021-07-06
 title: 'Inspect device_cgroup_rules values for errors'
 technologies:
-  - 容器
+  - containers
 topics:
   - inspections
 author: dlsniper
