@@ -1,16 +1,16 @@
 ---
 type: TutorialStep
 date: 2021-09-06
-title: 重新格式化代码示例
+title: Example of Reformatting Code
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: 在类里进行重新格式化并查看结果
+subtitle: Invoking Reformat Code on a class and viewing the results
 thumbnail: ./thumbnail.png
 ---
 
-## 代码重新排列前后的示例
-让我们来看一些代码，然后将它们格式化。 我们将为此使用 Java 8 的 Stream 类。 目前，我们的代码样式设置意味着我们的 stream 是长链的方法调用，这使得代码行非常长：
+## A Before and After Example of Code Rearrangement
+Let's take a look at some code that we will reformat. We will use Java 8 Streams for this. At the moment, our Code Style settings mean that our stream operators are long chained method calls which makes for an extremely long line of code:
 
 ```java
 private int replaceWithMapToInt() {
@@ -19,11 +19,11 @@ private int replaceWithMapToInt() {
 }
 ```
 
-假设您想要更改代码样式设置，以便 stream 的操作都处于单独的一行，并且它们彼此排成一排。 您可以选择代码后，通过按 **⌥⏎**（macOS），或 **Alt+Enter**（Windows），然后使用调整代码样式的 [提示操作](https://www.jetbrains.com/help/idea/intention-actions.html)，这样可以取代进入设置对话框。 选择 **调整代码样式设置** ，然后转到换行和括号选项卡。 当您在此处进行更改时，它们将在您的编辑器中得到预览。 找到 _链式方法调用_ 并将其更改为 **始终换行**：
+Let's say you want to change your Code Style Settings so that your Stream operations are always on separate lines, and they are lined up underneath each other. Instead of going into settings, you can highlight the code and then use [intention actions](https://www.jetbrains.com/help/idea/intention-actions.html) by pressing **⌥⏎** (macOS), or **Alt+Enter** (Windows). Select **Adjust code style settings** and go to your Wrapping and Braces tab. As you make changes here, they will be previewed in your editor. Locate the _Chained method calls_ and change it to **Wrap always**:
 
-![更改链式方法调用为始终换行](chained-method-call-wrap-always.png)
+![Change Chained Method Call Wrap Always](chained-method-call-wrap-always.png)
 
-我们的代码看起来更好看了， 但还不完美：
+Our code is looking better, but it's not quite there:
 
 ```java
 private int replaceWithMapToInt() {
@@ -38,11 +38,11 @@ private int replaceWithMapToInt() {
     }
 ```
 
-在这种情况下，您还希望所有点在  `.values` 下垂直排列。 对于此设置，我们需要按 **⌘,**（macOS），或 **Ctrl+Alt+S**（Windows/Linux）打开首选项/设置，然后搜索 _对齐_。 转到 **编辑器 > 代码样式 > Java > 换行和括号**，并找到 _链式方法调用_ 。 这一次选择 **多行时对齐** 复选框：
+You also want all the dots to line up vertically under `.values` in this case. For this setting we'll need to go into Preferences/Settings with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then type in _align_ to filter the results. Navigate to **Editor > Code Style > Java > Wrapping and Braces** and find the option called _Chained method calls_ again. This time select the **Align when multiline** checkbox:
 
-![选择多行时对齐](align-when-multi-line.png)
+![Align when multi-line selected](align-when-multi-line.png)
 
-现在，当您按 **确定** 您的代码应该看起来像这样：
+Now when you press **OK** your code should look like this:
 
 ```java
 private int replaceWithMapToInt() {
@@ -57,7 +57,7 @@ private int replaceWithMapToInt() {
     }
 ```
 
-这样比最开始的很长一行容易阅读得多！
+This is much easier to read than the long line you started with!
 
-## 摘要
-现在，我们已经看到了如何格式化代码，让我们通过进一步阅读来总结我们使用的快捷键。 
+## Summary
+Now we've looked at when and how you can reformat your code, let's summarise it all with further reading and the shortcuts we used. 
