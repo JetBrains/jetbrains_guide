@@ -1,13 +1,13 @@
 ---
 date: 2021-01-08
-title: Git Commits in Search Everywhere
+title: 在“随处搜索”中的Git 提交内容
 technologies:
   - java
   - kotlin
 topics:
   - vcs
 author: hs
-subtitle: View your git commits in the Search Everywhere dialog
+subtitle: 在”随处搜索“对话框中查看您的 Git 提交内容
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -18,6 +18,6 @@ seealso:
     title: IntelliJ IDEA Help - Searching Everywhere
     href: https://www.jetbrains.com/help/idea/searching-everywhere.html
 leadin: |
-  You can bring up the Search Everywhere dialog with **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), and searching for what you want to find. Git commits are displayed in your search results at the bottom if there are any matches.
+  您可以通过 **⇧⇧**（macOS），或 **Shift+Shift**（Windows/Linux）打开”随处搜索“的对话框，并搜索你想找到的东西。 如果有任何匹配项，Git 提交内容将显示在底部的搜索结果中。
 ---
 
