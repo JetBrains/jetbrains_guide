@@ -19,7 +19,7 @@ In the previous step we made a "dumb" presentational component with one property
 
 We're going to build a stateful counter component. Each click increments the click count, with the current count value stored in local component state. The `<Counter/>` component will be passed in some props. In this step, we'll show component props -- as done with a function in the previous step -- for class-based components. We'll do state in the next step, followed by event handlers.
 
-## 代码
+## Code
 
 The finished code for this tutorial step is [in the repository](https://github.com/JetBrains/jetbrains_guide/tree/master/sites/webstorm-guide/demos/tutorials/react_typescript_tdd/class_props).
 
