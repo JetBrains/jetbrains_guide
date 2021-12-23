@@ -9,7 +9,7 @@ topics:
   - ide
   - profiling
 products:
-  - rider
+  - tRANSLATED Rider
   - dottrace
 author: maartenba
 subtitle: Let's try to optimize the Sudoku solver by profiling, and then optimizing code based on the performance snapshot.
