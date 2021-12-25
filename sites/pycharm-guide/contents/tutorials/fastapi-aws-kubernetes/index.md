@@ -8,6 +8,7 @@ subtitle: Build seamless FastAPI applications in PyCharm through Kubernetes & AW
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/fastapi-aws-kubernetes/introduction/
+  - /tutorials/fastapi-aws-kubernetes/project_setup/
 
 ---
 Interested in running your entire application in AWS and feel like working in the local machine, then you
