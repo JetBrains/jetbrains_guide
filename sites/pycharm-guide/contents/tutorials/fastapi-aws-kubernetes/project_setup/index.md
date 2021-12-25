@@ -5,7 +5,7 @@ title: Project Setup
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Setting up FastAPI project type
+subtitle: Setting up FastAPI project type in PyCharm Professional.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
