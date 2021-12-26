@@ -10,6 +10,7 @@ tutorialItems:
   - /tutorials/fastapi-aws-kubernetes/introduction/
   - /tutorials/fastapi-aws-kubernetes/project_setup/
   - /tutorials/fastapi-aws-kubernetes/setup_sqlalchemy_1/
+  - /tutorials/fastapi-aws-kubernetes/setup_sqlalchemy_2/
 
 ---
 Interested in running your entire application in AWS and feel like working in the local machine, then you

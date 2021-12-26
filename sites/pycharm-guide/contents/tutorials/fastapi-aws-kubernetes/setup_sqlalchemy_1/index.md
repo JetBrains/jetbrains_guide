@@ -5,7 +5,7 @@ title: Database Setup - Part I
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Configuring database connection and SQLAlchemy in FastAPI.
+subtitle: Configuring database connection with SQLAlchemy and FastAPI.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
