@@ -414,7 +414,7 @@ the django migrations table if you have previously worked with Django.
 
 Also, the user table has been migrated.  
 
-In the next tutorial, we will be focusing on writing RestAPIs and performing CRUD operations. 
+In the next tutorial, we will be focusing on writing RestAPIs and performing CRUD operations.  
 
 
 
