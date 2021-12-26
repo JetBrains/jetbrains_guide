@@ -110,9 +110,9 @@ We are done with the db config part, next we need to deal with something called 
 
 It basically performs schema migrations whenever we add (or drop) tables or columns from our databases.
 
-According to FastAPI docs : <em>A **"migration"** is the set of steps needed
+According to FastAPI docs : *A **"migration"** is the set of steps needed
 whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to 
-replicate those changes in the database, add a new column, a new table, etc.</em>
+replicate those changes in the database, add a new column, a new table, etc.*
 
 To know more about migration, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
 
