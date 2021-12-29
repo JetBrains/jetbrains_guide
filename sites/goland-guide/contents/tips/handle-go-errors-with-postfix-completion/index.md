@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=OH1lcVmasMw&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=12&t=0s
+  url: https://www.youtube.com/watch?v=3OYoV4mDC1s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
 leadin: |
   **How to use:**
   Press _. (dot)_ after the function/method call and continue to

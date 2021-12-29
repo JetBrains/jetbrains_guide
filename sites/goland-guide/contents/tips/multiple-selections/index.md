@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=8OIZ7WYZsSA&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=7
+  url: https://www.youtube.com/watch?v=QU9WvVN1hCo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=83
 leadin: |
     Multiple selections is a very powerful feature in the editor, that lets you quickly 
     select and edit multiple pieces of code at once.

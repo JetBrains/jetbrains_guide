@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=uROT6qvLH4k&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=12
+  url: https://www.youtube.com/watch?v=5d0Iq_UxMeg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=58
 leadin: |
     The **Navigation Bar** has a useful feature that can help you get an overview of both your current location and the
     structure of the project itself.

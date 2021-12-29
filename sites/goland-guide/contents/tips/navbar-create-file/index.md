@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=6yvoFApmZCs&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=10&t=0s
+  url: https://www.youtube.com/watch?v=tkJQmxhMPP0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=38
 leadin: |
     *Want to create files without interrupting your flow?*
 

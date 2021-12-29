@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=A-MzFk1ELoM&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=17&t=0s
+  url: https://www.youtube.com/watch?v=EN27C5oDbpg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=20
 leadin: |
   **How to use:**
   Hover the cursor on the top right side of the IDE and click on the 

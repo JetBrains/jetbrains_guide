@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=0oCV5yVMwjY&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=5&t=0s
+  url: https://www.youtube.com/watch?v=dYDFUADPp1Q&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=19
 leadin: |
     Need to change the case of struct tag keys?
 

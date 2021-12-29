@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=t1K7Qqy2f1k&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=12&t=0s
+  url: https://www.youtube.com/watch?v=aQMRNp3ARTc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=8
 leadin: |
     *Language-aware line adding, no muss no fuss.*
 

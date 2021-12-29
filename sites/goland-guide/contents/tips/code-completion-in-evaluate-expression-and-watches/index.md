@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=HVVQCkOWiNk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=UVkc2qDQAUk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=15
 leadin: |
     You got it right, debugger also has code completion! GoLand provides 
     suggestions list when you evaluate the state of your application in a 

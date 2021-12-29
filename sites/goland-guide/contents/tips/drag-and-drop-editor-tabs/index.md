@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=FzAF7jhvHTI&list=PLM-t1Z4tbFfl-umlMg_ND7gW9rGjTDzKt&index=15
+  url: https://www.youtube.com/watch?v=tBWqmQ21eBI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=49
 leadin: |
     Move the editor tabs to form what layout you need, whenever you need them to.
 

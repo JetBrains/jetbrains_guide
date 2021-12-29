@@ -11,7 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:		
-  url: https://www.youtube.com/watch?v=dsokGASiSNg&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA		
+  url: https://www.youtube.com/watch?v=Nu1BclhDykk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33		
   poster: ./thumbnail.png
 leadin: |
     GoLand can complete statements and add required trailing commas for any

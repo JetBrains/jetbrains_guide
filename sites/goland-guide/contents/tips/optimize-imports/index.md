@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=iMO_scb96fg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=16&t=0s
+  url: https://www.youtube.com/watch?v=6wZnk41gVEg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=73
 leadin: |
     **Optimize Imports** helps you deal with unsorted imports and unused imports.
 

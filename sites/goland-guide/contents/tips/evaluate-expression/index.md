@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=xVovi-VOkt0&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=26&t=0s
+  url: https://www.youtube.com/watch?v=h-Ok3k5kZo4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=47
 leadin: |
     *Get the right answer in the right context, no typing.*
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=hNZzC1jOeJ4&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=20
+  url: https://www.youtube.com/watch?v=VBhXtk11K3M&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=12
 leadin: |
     GoLand has a built-in diff viewer for code, revisions, and even images.
     

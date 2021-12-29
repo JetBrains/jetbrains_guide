@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=DlcYgZxKWqk&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=v-SK8BYbcaw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=27
 leadin: |
     This will overwrite the identifier at the caret, making it easy to quickly
     replace identifiers in code.

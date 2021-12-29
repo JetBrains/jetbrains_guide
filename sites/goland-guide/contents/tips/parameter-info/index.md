@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=zZLDRtF2Ut8&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=23&t=0s
+  url: https://www.youtube.com/watch?v=e0WVojUB020&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=134
 leadin: |
     Have a function with lots of arguments? Or a struct with many fields?
     **Parameter Info** gives just the basics without using lots of real estate.

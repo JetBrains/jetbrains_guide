@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=gcgKG7E1BPw&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=2&t=0s
+  url: https://www.youtube.com/watch?v=Dv28uFbn7I0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
 leadin: |
   Go 1.16 introduced a new feature called *go:embed*.
   

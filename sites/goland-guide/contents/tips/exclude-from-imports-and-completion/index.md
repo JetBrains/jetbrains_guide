@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=v-ieZgbwK0c&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=HLRiJvadfXo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=46
 leadin: |
     Exclude undesired imports from being automatically imported or added to
      completion list.

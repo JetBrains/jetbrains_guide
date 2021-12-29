@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=RYSHXGRcTdg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=36&t=0s
+  url: https://www.youtube.com/watch?v=OiKAkU9fQHg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=77
 leadin: |
     *Time to commit but not everything is ready?*
 

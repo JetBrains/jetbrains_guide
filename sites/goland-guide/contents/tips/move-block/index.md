@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url:  https://www.youtube.com/watch?v=R8B_xsb_leg&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=14&t=0s
+  url:  https://www.youtube.com/watch?v=1ip3lu6wgSc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=84
 leadin: |
     *Move lines and blocks, up or down, using the keyboard.*
 

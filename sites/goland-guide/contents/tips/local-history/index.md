@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=HL0iFL27Emw&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=27
+  url: https://www.youtube.com/watch?v=Ow06Si9PZKI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=136
 leadin: |
     **Local History** will come to the rescue whenever just deleted all the work you did for days by mistake.
     

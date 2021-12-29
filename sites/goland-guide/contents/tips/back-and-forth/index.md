@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: './card.png'
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=jbng41fXbs8&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=8&t=0s
+  url: https://www.youtube.com/watch?v=kC4cCmYEbGo&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 leadin: |
     Use the **Navigate | Backward** and **Navigate | Forward** to go up and down
     the code path you are exploring while navigating from one symbol to another. 

@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=0xzTziehsoU&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=4
+  url: https://www.youtube.com/watch?v=VMuwBmWW2QA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=37
 leadin: |
     GoLand has a few _Live Templates_ builtin for struct tags, such as _json_ or _xml_.
 

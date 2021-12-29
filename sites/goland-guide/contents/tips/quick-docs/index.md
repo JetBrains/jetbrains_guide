@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=sIBPzprpObE&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=22&t=0s
+  url: https://www.youtube.com/watch?v=vGuov3VZeQw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=93
 leadin: |
     *Want to learn what a symbol is about, without going to a browser?*
 

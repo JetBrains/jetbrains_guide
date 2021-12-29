@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=nvZNmMTGbW0&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=11&t=0s
+  url: https://www.youtube.com/watch?v=fnVaPcMHSWs&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=117
 leadin: |
   If you need to change your Go module's name or upgrade it to a new major, then the **Rename refactoring** has you covered.
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=qUZ3KjrRRcA&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=18&t=0s
+  url: https://www.youtube.com/watch?v=rusJaogFL78&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=7
 leadin: |
   **How to use:**
   Copy a part of the JSON data in the clipboard then paste it inside

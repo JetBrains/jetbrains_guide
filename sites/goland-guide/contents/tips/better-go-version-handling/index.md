@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=y5clmoxm33Y&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=2
+  url: https://youtu.be/vUt-WAYY4cw
 leadin: |
   The IDE now reads the _go_ directive in the _go.mod_ file when it analyzes files.
 
