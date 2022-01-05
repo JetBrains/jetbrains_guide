@@ -68,7 +68,7 @@ const MasterLayout: React.FC<MasterLayoutProps> = (
         {twitterCard && <meta name={`twitter:image`} content={twitterCard.page.image} />}
         <body className='layout-default' />
         {Favicon}
-        <script defer={true} src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" />
+        <script defer={true} src="https://use.fontawesome.com/releases/v6.0.0-beta3/js/all.js" />
       </Helmet>
       <Navbar {...navbar} />
       {page.children}
