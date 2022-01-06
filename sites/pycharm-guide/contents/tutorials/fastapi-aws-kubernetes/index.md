@@ -14,6 +14,7 @@ tutorialItems:
   - /tutorials/fastapi-aws-kubernetes/rest_api_1/
   - /tutorials/fastapi-aws-kubernetes/rest_api_2/
   - /tutorials/fastapi-aws-kubernetes/rest_api_3/
+  - /tutorials/fastapi-aws-kubernetes/rest_api_4/
 
 ---
 
