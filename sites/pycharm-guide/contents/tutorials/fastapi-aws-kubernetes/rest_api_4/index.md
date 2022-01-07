@@ -171,9 +171,9 @@ specific product exists in our database or not.
 
 ```python
 @router.get('/add', status_code=status.HTTP_201_CREATED)
-async def add_product_to_cart(product_id: int, current_user: User = Depends(get_current_user),
+async def add_product_to_cart(product_id: int, 
                               database: Session = Depends(db.get_db)):
-    result = await add_to_cart(product_id, current_user, database)
+    result = await add_to_cart(product_id, database)
     return result
 ```
 
@@ -198,7 +198,7 @@ Now, I am going to create one more async function ```add_items``` in which I wil
 **services.py**
 
 ```python
-async def add_to_cart(product_id: int, current_user, database: Session = Depends(db.get_db)):
+async def add_to_cart(product_id: int, database: Session = Depends(db.get_db)):
     product_info = database.query(Product).get(product_id)
     if not product_id:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Data Not Found !")
@@ -304,9 +304,9 @@ In delete api there is no response in return, only the status code of 204.
 
 ```python
 @router.delete('/{cart_item_id}', status_code=status.HTTP_204_NO_CONTENT, response_class=Response)
-async def remove_cart_item_by_id(cart_item_id: int, current_user: User = Depends(get_current_user),
+async def remove_cart_item_by_id(cart_item_id: int, 
                                  database: Session = Depends(db.get_db)):
-    await remove_cart_item(cart_item_id, current_user, database)
+    await remove_cart_item(cart_item_id, database)
 ```
 
 
@@ -316,7 +316,7 @@ First, we need to get the user information, then the cart id of that specific us
 **services.py**
 
 ```python
-async def remove_cart_item(cart_item_id: int, current_user, database) -> None:
+async def remove_cart_item(cart_item_id: int, database) -> None:
     user_info = database.query(User).filter(User.email == "elon@tesla.com").first()
     cart_id = database.query(Cart).filter(User.id == user_info.id).first()
     database.query(CartItems).filter(and_(CartItems.id == cart_item_id, CartItems.cart_id == cart_id.id)).delete()
