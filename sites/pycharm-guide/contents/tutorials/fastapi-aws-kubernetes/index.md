@@ -17,7 +17,9 @@ tutorialItems:
   - /tutorials/fastapi-aws-kubernetes/rest_api_4/
   - /tutorials/fastapi-aws-kubernetes/rest_api_5/
   - /tutorials/fastapi-aws-kubernetes/redis_celery/
+  - /tutorials/fastapi-aws-kubernetes/auth_jwt/
   - /tutorials/fastapi-aws-kubernetes/cleanup/
+  - /tutorials/fastapi-aws-kubernetes/references/
 
 ---
 
