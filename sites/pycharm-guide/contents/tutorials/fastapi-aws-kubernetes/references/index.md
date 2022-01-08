@@ -53,7 +53,7 @@ suggest watching video courses provided by Talk Python Training.
 Source : [https://training.talkpython.fm/](https://training.talkpython.fm/)
 
 
-Michael Kennedy and his team really create amazing courses. They have two courses 
+[Michael Kennedy](https://twitter.com/mkennedy) and his team really create amazing courses. They have two courses 
 on FastAPI, if you want to get deeper inside do check them out. Also, if you work with PyCharm 
 then definitely you will always have a feeling that I know only 10% of PyCharm. Nothing to worry about because there
 is a great course [Effective PyCharm](https://training.talkpython.fm/courses/explore_pycharm/mastering-pycharm-ide), definitely check this out if you want to take productivity 
