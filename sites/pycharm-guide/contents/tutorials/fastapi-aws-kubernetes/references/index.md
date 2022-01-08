@@ -43,7 +43,7 @@ are going to get help from the FastAPI community, and I would also suggest
 helping others in the problems the users are facing. In this way the community grows,
 It’s a great experience working with like-minded people.
 
-# TalkPython
+# Talk Python
 
 If you are interested in taking your Python knowledge to the next level then I would 
 suggest watching video courses provided by Talk Python Training. 
