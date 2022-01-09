@@ -528,15 +528,735 @@ References:
 
 We are done with the code part. Let’s move forward with the web server configuration that is [NGINX](https://www.nginx.com/).
 
-## NGINX
+# NGINX
 
 
 I am going to speed up the process. I expect you to check my source code, as I have already provided all the YAML files.
 
 
+![step24](./steps/step24.png)
+
+This is the nginx deployment blueprint, as you can observe we will be running 8 replicas of nginx 1.21 version and the 
+container port is 80 and as usual we are doing the common health checks.
+
+**k8s/nginx/nginx-deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+spec:
+  replicas: 8
+  selector:
+    matchLabels:
+      app: ecommerce-nginx
+  template:
+    metadata:
+      labels:
+        app: ecommerce-nginx
+    spec:
+      containers:
+        - image: nginx:1.21
+          name: nginx-container
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              port: 80
+              path: /docs
+            initialDelaySeconds: 15
+          livenessProbe:
+            httpGet:
+              port: 80
+              path: /docs
+            initialDelaySeconds: 15
+            periodSeconds: 15
+          volumeMounts:
+            - name: nginx-config
+              mountPath: /etc/nginx/conf.d/default.conf
+              subPath: default.conf
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: nginx-config
+```
+
+We are using a volume mount to mount our configuration and replace the default configuration provided by NGINX.
+
+## ConfigMap
+
+Next, we will define ConfigMap.
+
+According to Kubernetes documentation : *A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods 
+can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume*.
+
+If you observe carefully from line number 10 to 23 we are changing the nginx configuration 
+and proxying the request to the backend application.
+
+![step25](./steps/step25.png)
+
+Line number 11 clearly shows that the request is going to the internal ecommerce service which is running at port 5000.
+
+**k8s/nginx/nginx-config.yml**
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+data:
+  default.conf: |
+    upstream ecommerce_project {
+        server ecommerce-service:5000;
+    }
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://ecommerce_project;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header Host $host;
+            proxy_redirect off;
+        }
+    }
+```
+
+Next, we will create the nginx service which is basically a **nodeport** service.
+
+![step26](./steps/step26.png)
+
+Observe carefully from line number 13 to 15.
+
+We are using port, targetPort and nodePort.
+
+- **Port** exposes the Kubernetes service on the specified port within the cluster. Other pods within the cluster can communicate with this server on the specified port.
+
+- **TargetPort** is the port on which the service will send requests to, that your pod will be listening on. Your application in the container will need to be listening on this port also.
+
+- **NodePort** exposes a service externally to the cluster by means of the target node's IP address and the NodePort.
 
 
+As I said earlier we have different service types and the nginx service is a **nodeport** service. In simple terms we can access the pod externally through the port number 30009.
+
+**k8s/nginx/nginx-service.yml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+spec:
+  type: NodePort
+  selector:
+    app: ecommerce-nginx
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30009
+```
+
+We have completed the nginx, next we will work on postgres.
 
 
+# Postgres
 
+![step27](./steps/step27.png)
+
+
+As you can observe the postgres deployment we will be only running one pod.
+
+**k8s/postgres/postgres-deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-deployment
+  namespace: fastapi-project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres-container
+  template:
+    metadata:
+      labels:
+        app: postgres-container
+        tier: backend
+    spec:
+      containers:
+        - name: postgres-container
+          image: postgres:10.17
+          envFrom:
+            - secretRef:
+                name: postgres-secret
+          ports:
+            - containerPort: 5432
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "0.5"
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+          volumeMounts:
+            - name: postgres-volume-mount
+              mountPath: /var/lib/postgresql/data
+      volumes:
+        - name: postgres-volume-mount
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+```
+
+The container will be running on port 5432 and some memory limits have been applied.
+
+We will be introducing two major things : **[persistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)** and **[persistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)**.
+
+
+Volumes let your pod write to a filesystem that exists as long as the pod exists. Volumes also let you share data between containers in the same pod. 
+
+
+Persistent volumes exist beyond containers, pods, and nodes. A pod uses a persistent volume claim to get read and write access to the persistent volume.
+
+
+You can observe the PersistentVolume, we are creating a storage of 2GB in size, also the access mode is ReadWriteMany. 
+
+There are 4 types of access modes: 
+
+- **RWO** - ReadWriteOnce
+- **ROX** - ReadOnlyMany
+- **RWX** - ReadWriteMany
+- **RWOP** - ReadWriteOncePod
+
+**k8s/postgres/postgres-pv.yml**
+
+```yaml
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: postgres-pv
+  namespace: fastapi-project
+  labels:
+    type: local
+    app: ecommerce
+spec:
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: local-storage
+  capacity:
+    storage: 2Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteMany
+  local:
+    #path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with docker desktop in windows
+     path: /data
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - minikube # <-- name of the node (docker-desktop, minikube) etc.
+```
+
+We have set a reclaim policy to **Delete**, and you have the option to retain as well. Deletion removes both the PersistentVolume object from Kubernetes, and the 
+associated storage asset in the external infrastructure.
+
+**storageClassName** is currently local storage, but even you can use AWS EBS Storage, Google Storage etc.
+
+Observe carefully on line number 18 and 26.
+
+![step28](./steps/step28.png)
+
+**Path** is basically pointing towards the directory where the postgres files will be installed. If you are using Docker Desktop in Windows then this is the way you need to provide the path and the postgres-data folder is already present in the E drive.
+
+As you know we are running our application in a linux machine, then we need to provide the home directory path of the postgres-data folder which we mounted in the beginning when starting the minikube.
+
+
+And line number 26, will be replaced with minikube.
+
+Next, I will create the persistent volume claim.
+
+## PersistentVolumeClaim
+
+A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier,  
+A pod uses a persistent volume claim to get read and write access to the persistent volume. For our case we are pointing
+the volume name to **postgres-pv**.
+
+**k8s/postgres/postgres-pvc.yml**
+
+```yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: postgres-pvc
+  namespace: fastapi-project
+  labels:
+    type: local
+    app: ecommerce
+spec:
+  storageClassName: local-storage
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 2Gi
+  volumeName: postgres-pv
+```
+
+After we are done with volumes, we will create the secrets and services.
+
+**k8s/postgres/postgres-secret.yml**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgres-secret
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+data:
+  POSTGRES_DB: c2FtcGxlZGI=  # sampledb
+  POSTGRES_USER: bXVrdWxtYW50b3No   # mukulmantosh
+  POSTGRES_PASSWORD: bXVrdWwxMjM=   # mukul123
+```
+
+
+**k8s/postgres/postgres-service.yml**
+
+```yaml
+kind: Service
+apiVersion: v1
+metadata:
+  name: postgres-service
+  namespace: fastapi-project
+spec:
+  selector:
+    app: postgres-container
+  ports:
+    - protocol: TCP
+      port: 5432
+      targetPort: 5432
+```
+
+The postgres service is a clusterIP service, so we will only do internal communication.
+
+We are done with Postgres, now we will move to Redis.
+
+## Redis
+
+Same as usual we will create deployment and service files for [Redis](https://redis.io/).
+
+We will run the redis 6.2.5 alpine image.
+
+
+**k8s/redis/deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis-app
+  template:
+    metadata:
+      labels:
+        app: redis-app
+    spec:
+      containers:
+        - image: redis:6.2.5-alpine
+          imagePullPolicy: IfNotPresent
+          name: redis-container
+          ports:
+            - containerPort: 6379
+          readinessProbe:
+            tcpSocket:
+              port: 6379
+          livenessProbe:
+            tcpSocket:
+              port: 6379
+            periodSeconds: 15
+          resources:
+            limits:
+              memory: 256Mi
+              cpu: 125m
+            requests:
+              cpu: 70m
+              memory: 200Mi
+
+
+```
+The redis service will be running on port 6379.
+
+**k8s/redis/service.yml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+spec:
+  selector:
+    app: redis-app
+  ports:
+    - port: 6379
+      targetPort: 6379
+
+```
+
+We are done with redis, now we will move to celery.
+
+
+## Celery
+
+[Celery](https://docs.celeryproject.org/en/stable/getting-started/introduction.html) is a task queue implementation for Python web applications used to asynchronously execute work outside the HTTP request-response cycle.
+
+It won’t be having any service, only deployment and secret because celery will be used for processing the background tasks.
+
+**k8s/celery/deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-deployment
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: celery-app
+  template:
+    metadata:
+      labels:
+        app: celery-app
+    spec:
+      initContainers:
+        - name: init-redis-service
+          image: busybox:1.28
+          command: [ 'sh', '-c', "until nslookup redis-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for redis-service; sleep 2; done" ]
+
+      containers:
+        - image: mukulmantosh/ecommerce-fastapi:latest
+          command: ['celery', '-A', 'main.celery', 'worker', '-l', 'info']
+          envFrom:
+            - secretRef:
+                name: celery-secret
+          name: celery-container
+
+```
+
+You can observe that we are using a busybox image in our init containers just to do nslookup of whether our redis service is present or not. Don’t consider this as a health check.
+
+
+![step29](./steps/step29.png)
+
+Observe line number 25, we will spin up a container from our backend image and execute the celery command.
+
+Next, I will create the celery secret. I will also decode the values and show you what I am passing.
+
+
+**k8s/celery/secret.yml**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: celery-secret
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+data:
+  REDIS_HOST: cmVkaXMtc2VydmljZQo=  # redis-service
+  REDIS_PORT: NjM3OQo=              # 6379 
+  REDIS_DB: MAo=                    # 0
+```
+
+After we are done with celery, I will create a Job which will handle database migration.
+
+
+# Job
+
+A Kubernetes job is a supervisor for pods carrying out batch processes, that is, a process that runs for a certain time to completion, for example a calculation or a backup operation.
+
+I will create migration and secret yaml files.
+
+
+![step30](./steps/step30.png)
+
+If you observe the code carefully, in line number 13 the migration command will run with backoff limit set to 15.
+
+I will also check in the init container whether the postgres database is running or not. If it’s healthy then only the migration command will run.
+
+Also, after 100 seconds the job will expire, it does not matter whether the job was finished successfully or not.
+
+![step31](./steps/step31.png)
+
+**k8s/job/migration.yml**
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fastapi-migrations
+  namespace: fastapi-project
+spec:
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+        - name: migration-container
+          image: mukulmantosh/ecommerce-fastapi:latest
+          command: ['alembic', 'upgrade', 'head']
+          envFrom:
+            - secretRef:
+                name: migration-secret
+      initContainers:
+        - name: init-postgres-service
+          image: postgres:10.17
+          command: [ 'sh', '-c',
+              'until pg_isready -h postgres-service.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local -p 5432;
+          do echo waiting for database; sleep 2; done;' ]
+      restartPolicy: OnFailure
+  backoffLimit: 15
+```
+
+**k8s/job/secret.yml**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: migration-secret
+  namespace: fastapi-project
+  labels:
+    app: ecommerce
+data:
+  DATABASE_USERNAME: bXVrdWxtYW50b3No              # mukulmantosh
+  DATABASE_PASSWORD: bXVrdWwxMjM=                  # mukul123
+  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ==          # postgres-service
+  DATABASE_NAME: c2FtcGxlZGI=                      # sampledb
+```
+
+Finally, we have completed all modules which are required for Kubernetes.
+
+# Deployment
+
+Let’s now begin the deployment.
+
+I will open up the **Terminal** and move inside **k8s** directory.
+
+I will run a set of commands, just follow along with me.
+
+First, I am going to create the namespace.
+
+```bash
+kubectl apply -f namespace
+```
+
+namespace got created.
+
+After namespace, I will create postgres and the other remaining modules.
+
+![step32](./steps/step32.png)
+
+![step33](./steps/step33.png)
+
+![step34](./steps/step34.png)
+
+Something is wrong, let me check what is being missed out.
+
+Ohh ok, I got it. The path needs to **/data**. This is what we mounted when we started the minikube.
+
+![step35](./steps/step35.jpg)
+
+Let me try again.
+
+![step36](./steps/step36.png)
+
+And Yes, Postgres is running now.
+
+Let me now move forward and deploy the other remaining modules.
+
+Except Job, everything has been created.
+
+Let me now check the status of the pods by typing :
+
+```bash
+kubectl get pods -n fastapi-project
+```
+
+As you can see some pods are in the pending state, creation state and some are still in the initialization phase.
+
+Let’s wait for a few more seconds to see the progress.
+
+![step37](./steps/step37.png)
+
+For your information, if your system has less resources than try to decrease the number of replicas instead of running 8 replicas trying running with 1 or 2. 
+
+
+As you can see almost all the applications are running except ecommerce which has 3 pending pods and the reason behind this is insufficient cpu and our system is running on low resources, So I am going to decrease the number of replicas for both codebase and nginx.
+
+![step38](./steps/step38.png)
+
+As you can see all the pods are running now. There are three backend pods, three nginx pods, one pod for redis, celery and postgres.
+
+![step39](./steps/step39.png)
+
+
+Everything looks good.
+
+
+There is one remaining thing which we haven’t run yet and that is the migration.
+
+
+Let’s complete that.
+
+![step40](./steps/step40.png)
+
+![step41](./steps/step41.png)
+
+Yes, the migration has been completed.
+
+# Results
+
+Let me now check in the browser. But before that we need to retrieve the service ip address. If you are working with Docker Desktop in Windows you can simply access through localhost.
+
+But with Minikube we need to get the IP.
+I will type : 
+
+```bash
+minikube service list
+```
+
+![step42](./steps/step42.png)
+
+And  Yes, the IP address is running on port 30009, docs have been loaded. Let’s test our API.
+
+![step43](./steps/step43.png)
+
+I will create a new user, and won't change anything in the request body. I care about the response.
+
+![step44](./steps/step44.png)
+
+Yes, our user has been successfully created and received 201 status code and the entire stack is running in Kubernetes.
+
+If you are new to Kubernetes, then this video does not make any sense. But if you have already got an understanding of Kubernetes, then it would be very easy to conceptualize what I am trying to do.
+
+
+# Diagram
+This diagram will help you to visualize the K8s deployments and the interconnected services.
+
+
+![step45](./steps/step45.png)
+
+# Kubernetes Plugin
+
+Taking a small break, there is one more interesting thing that PyCharm provides. You can directly manage your
+Kubernetes resources through PyCharm instead of using the terminal.
+
+Let me give you a sneak peek.
+
+As you remember we have already installed the Kubernetes Plugin, and now we are going to check how it works.
+
+
+Click on **View** → **Tool Windows** → **Services**
+
+![step46](./steps/step46.png)
+
+You can check that it has detected the minikube. It has automatically detected the configuration.
+
+![step47](./steps/step47.png)
+
+I will try to create a namespace. I will click on this green play button, and it will execute it directly.
+
+![step48](./steps/step48.png)
+
+![step49](./steps/step49.png)
+
+![step50](./steps/step50.png)
+
+
+As you know we already have the namespace, let me change it quickly.
+
+![step51](./steps/step51.png)
+
+![step52](./steps/step52.png)
+
+Now, I am going to deploy all the stack but through PyCharm using the play button.
+
+![step53](./steps/step53.png)
+
+You can even see the status of all the pods which have been deployed.
+
+![step54](./steps/step54.png)
+
+Great part is that I can also see the Jobs, Deployments, Services, Cron Jobs, Replica Sets etc.
+
+This makes life easy by managing everything at one place.
+
+
+![step55](./steps/step55.png)
+
+You can even see the PersistentVolume and PersistentVolumeClaim.
+
+![step56](./steps/step56.png)
+
+There is one more thing provided by Minikube, and that is the dashboard.
+
+
+I will the below command and press enter :
+
+```
+minikube dashboard
+```
+
+This is basically the [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/), the same way you can easily check all your cluster information.
+
+![step57](./steps/step57.png)
+
+You will find more detailed information over here.
+
+![step58](./steps/step58.png)
+
+Coming back to PyCharm, you can even follow logs of the specific pod, and you can open the shell as well.
+
+![step59](./steps/step59.png)
+
+![step60](./steps/step60.png)
+
+
+One last thing before we end this tutorial, you can also change the **kubeconfig** file. For example: if your cluster 
+is running on a public cloud like AWS or its being self-hosted in an on-premise server 
+then you can easily communicate with the cluster by changing the kubeconfig. 
+
+![step61](./steps/step61.png)
+
+![step62](./steps/step62.png)
+
+So, I hope you liked this tutorial, if not take some time it’s not a race. I will see you in the next tutorial where
+we will be talking about Helm Charts.
 
