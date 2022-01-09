@@ -20,6 +20,8 @@ tutorialItems:
   - /tutorials/fastapi-aws-kubernetes/auth_jwt/
   - /tutorials/fastapi-aws-kubernetes/testing/
   - /tutorials/fastapi-aws-kubernetes/kubernetes_deploy/
+  - /tutorials/fastapi-aws-kubernetes/helm_charts/
+  - /tutorials/fastapi-aws-kubernetes/aws_eks/
   - /tutorials/fastapi-aws-kubernetes/cleanup/
   - /tutorials/fastapi-aws-kubernetes/references/
 
