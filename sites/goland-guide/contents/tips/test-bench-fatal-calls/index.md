@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=_berOV6vpTA&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=3&t=0s
+  url: https://www.youtube.com/watch?v=NEtGV-cfoJM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=33
 leadin: |
   Calling *t/b.Fatal\** methods from a goroutine is not advised as it
   may produce unexpected behavior.

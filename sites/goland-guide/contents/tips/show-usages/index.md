@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=taKlZlicpwM&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=19
+  url: https://www.youtube.com/watch?v=jlP26JUFE4o&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=152
 leadin: |
     The **Show usages** feature allows you to quickly answer the question "Where's this element used?"
     

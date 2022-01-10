@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=2rVB2N6SVys&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=3
+  url: https://www.youtube.com/watch?v=ITCnQrd7Fco&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=32
 leadin: |
   *Be on top of your dependencies and quickly locate unused modules with this inspection.*
 

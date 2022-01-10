@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=JZo4V65FmK4&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=35&t=0s
+  url: https://www.youtube.com/watch?v=I6JMPMRIem4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=138
 leadin: |
     Let the IDE help you _uncommit_ an un-pushed commit by
     using the **Undo Commit...** command.

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=qpi-cJ2lI-k&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=7
+  url: https://www.youtube.com/watch?v=C-eBw3dcq_4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=57
 leadin: |
   Live templates are a great way to quickly write common/repeating code. Arrow functions are no exception from this, so we introduced the **arf** live template to create them. 
 

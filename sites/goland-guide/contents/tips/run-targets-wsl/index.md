@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=qjmNPEs0OoU&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=1&t=0s
+  url: https://www.youtube.com/watch?v=bjukeT3p0Mc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=108
 leadin: |
   Run Targets are a new IDE feature that allows you to run code
   in environments where GoLand is not installed.

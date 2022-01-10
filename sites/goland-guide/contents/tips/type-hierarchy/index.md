@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=03CObRrfzAs&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=17
+  url: https://www.youtube.com/watch?v=LODWfMNOYbk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=139
 leadin: |
     The _Type Hierarchy_ feature allows you to answer questions such as "What interfaces a type implements?" or "What the types are that implement an interface?"
 

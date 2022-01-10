@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=7RDx8TxNQak&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=13
+  url: https://www.youtube.com/watch?v=thUuuSoOKoU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=111
 leadin: |
   Committing error-free code reduces the time it takes for reviews to go happen and makes everyone happy. Since not all errors may be caught by tests, you can choose to run Inspections before a commit. This will improve your chances to have fewer bugs in code.
 
