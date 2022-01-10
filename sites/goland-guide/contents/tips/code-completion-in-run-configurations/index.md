@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=CcDjN7o6mkQ&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=dyUsxQJLFZQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=13
 leadin: |
     When you're editing _Run/Debug Configurations_, code completion will 
     automatically appear to help you, for example, type a package name.

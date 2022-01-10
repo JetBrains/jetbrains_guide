@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=z0mJGEBcPGI&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=8&t=0s
+  url: https://www.youtube.com/watch?v=OKfYRk3nO0s&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=39
 leadin: |
   **How to use:**
   Place the cursor on a type that's not yet defined but used.

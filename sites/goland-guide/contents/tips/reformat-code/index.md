@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=2OYlMKWRUHU&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=15&t=0s
+  url: https://www.youtube.com/watch?v=-yj17Ps678k&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=89
 leadin: |
     **Reformat Code** makes it a piece of cake to fix style warnings
     and make your code formatted like _go fmt_ would.    

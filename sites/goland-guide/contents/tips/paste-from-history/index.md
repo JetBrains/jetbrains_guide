@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=0tf5TkASTFg&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=21
+  url: https://www.youtube.com/watch?v=jn0F8C-y5aw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=100
 leadin: |
     The **Paste from History** feature you to use the (limited) history of everything you put in the clipboard.
 

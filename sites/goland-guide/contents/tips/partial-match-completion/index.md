@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=8z-_pJO5cIM&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=KjPmCoyTbQQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=101
 leadin: |
     GoLand provides completion suggestions when you typed only a part of a 
     word (any part, even characters from somewhere in the middle).

@@ -1,0 +1,9 @@
+{
+  "configurations": [
+    {
+      "name": "Run Terminal",
+      "type": "command",
+      "program": "/bin/bash"
+    }
+  ]
+}

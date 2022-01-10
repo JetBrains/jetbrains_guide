@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=-Y2D2ob2Yjo&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=17&t=0s
+  url: https://www.youtube.com/watch?v=XTk7QlnVM5c&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=69
 leadin: |
     *Tired of stopping your coding to go write an import?*
 

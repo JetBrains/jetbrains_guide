@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=mupOxP43qdk&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=20&t=0s
+  url: https://www.youtube.com/watch?v=xDCbeCV3orw&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=102
 leadin: |
     *Rename files with peace of mind.*
 

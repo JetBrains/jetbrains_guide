@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=vEiGLHI6Jb0&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=11
+  url: https://www.youtube.com/watch?v=2aI1BhIhjs4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=92
 leadin: |
     The **Recent Locations** pop-up allows you to search for a specific change or recently viewed piece of code.
     

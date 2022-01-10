@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=LcvIUPoUuS4&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=5
+  url: https://www.youtube.com/watch?v=q4C9vALS4oc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=70
 leadin: |
     GoLand offers the option to quickly generate a test.
     

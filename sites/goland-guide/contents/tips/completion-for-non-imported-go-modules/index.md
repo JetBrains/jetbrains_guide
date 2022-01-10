@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=NvuvJbXJqfs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=cPn30TtZRO0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=30
 leadin: |
     GoLand provides code completion suggestions for all modules in the modules 
     cache as you type.

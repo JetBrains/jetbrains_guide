@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=OwMTgGz_OWQ&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=5&t=0s
+  url: https://www.youtube.com/watch?v=5L7WF63JCvA&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=135
 leadin: |
   The **Recent Files** popup is a fast way to open IDE tool windows
   without memorizing shortcuts.

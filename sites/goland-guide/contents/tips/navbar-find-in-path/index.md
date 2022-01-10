@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=khf_rqG1WwA&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=11&t=0s
+  url: https://www.youtube.com/watch?v=qx1LPa38M18&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=71
 leadin: |
     *Need a fast way to find files in a path, without disrupting your flow?*
 

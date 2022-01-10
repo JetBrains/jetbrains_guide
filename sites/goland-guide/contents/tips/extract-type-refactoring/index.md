@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=-2_LolKDunk&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=10&t=0s
+  url: https://www.youtube.com/watch?v=fFJi3OSSWns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=44
 leadin: |
   If you have an anonymous type defined, you can extract it into a
   standalone type and reuse it across your code.

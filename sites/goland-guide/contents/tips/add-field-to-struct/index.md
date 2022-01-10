@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=FCLSkTrFXEc&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=19&t=0s
+  url: https://youtu.be/yd7_1iz7ZUY
 leadin: |
     *Use a Quick Fix to generate the missing field of a structure.*
 

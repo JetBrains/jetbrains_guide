@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=W-wCQ86dBa0&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=4&t=0s
+  url: https://youtu.be/rusJaogFL78
 leadin: |
   If you need to add keys to existing struct types, you can now do
   this quicker using the dedicated *Add key to tags* feature.

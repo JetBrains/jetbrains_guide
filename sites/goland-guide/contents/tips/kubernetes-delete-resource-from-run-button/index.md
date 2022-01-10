@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=Xp5zK-dpZ7o&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=14&t=0s
+  url: https://www.youtube.com/watch?v=qOZ6rIZGiYI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=34
 leadin: |
   **How to use:**
   Click on the *Run* button in a Kubernetes resources definition file

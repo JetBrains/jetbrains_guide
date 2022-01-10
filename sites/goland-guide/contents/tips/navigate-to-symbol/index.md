@@ -16,7 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=GRaSbV8GvOw&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=6&t=0s
+  url: https://www.youtube.com/watch?v=FSo0-9oFXmE&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=78
 leadin: |
     Use **Navigate to Symbol** to jump between symbols in your project
     and stop thinking about the file they are in.

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=X67bE8fxU4c&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=16
+  url: https://www.youtube.com/watch?v=DV_OBMaXvMc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=67
 leadin: |
     Use the **Navigate | Test** feature to quickly go to a test for an element.
 

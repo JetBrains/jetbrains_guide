@@ -168,3 +168,35 @@ job("Docker - Content creators image") {
         push("registry.jetbrains.team/p/evan/guide-containers/guide-content-creators")
     }
 }
+
+job("Warmup - Content creators (Fleet)") {
+    git {
+        depth = UNLIMITED_DEPTH
+        refSpec = "refs/*:refs/*"
+    }
+
+    startOn {
+        schedule { cron("0 0 * * *") }
+        gitPush { enabled = true }
+    }
+
+    warmup(ide = Ide.Fleet) {
+        scriptLocation = "./dev-env-warmup.sh"
+    }
+}
+
+job("Warmup - Content creators (Gateway)") {
+    git {
+        depth = UNLIMITED_DEPTH
+        refSpec = "refs/*:refs/*"
+    }
+
+    startOn {
+        schedule { cron("0 0 * * *") }
+        gitPush { enabled = true }
+    }
+
+    warmup(ide = Ide.WebStorm) {
+        scriptLocation = "./dev-env-warmup.sh"
+    }
+}

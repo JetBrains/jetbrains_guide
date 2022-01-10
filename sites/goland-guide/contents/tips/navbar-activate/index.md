@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=uROT6qvLH4k&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=9&t=0s
+  url: https://www.youtube.com/watch?v=xfrzu-GMvjU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=11
 leadin: |
     Use the **Navigation Bar** to move around files, even when the whole UI is hidden away.
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=iTBhZSCPzd0&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=1
+  url: https://www.youtube.com/watch?v=wynrU83Ajns&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=52
 leadin: |
   *Make all your changes then run _go list_ at the push of a button.*
 

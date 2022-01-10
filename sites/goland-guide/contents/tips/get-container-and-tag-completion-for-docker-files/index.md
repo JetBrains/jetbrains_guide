@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=3qbhpWqdfC0&list=PLM-t1Z4tbFflGjn5Qzjjku5J7SX3p-nhY&index=13&t=0s
+  url: https://www.youtube.com/watch?v=XhRXDbv_lBk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=137
 leadin: |
   **How to use:**
   Invoke the *Basic Completion* feature using _Ctrl + Space on 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=JUoejnuOIXs&list=PLM-t1Z4tbFfn291KlSOQE_ulCAyzXO3uA
+  url: https://www.youtube.com/watch?v=B_jO9p3zxSI&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=14
 leadin: |
     GoLand provides code completion and analysis in injected strings for _SQL_ and 
     _databases statements_, _JavaScript_, _CSS_, _HTML_, _XML_, and _RegExp_, etc.

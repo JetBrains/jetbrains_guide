@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=bA0WCTgaKbw&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=4
+  url: https://www.youtube.com/watch?v=Q1ts4UzK_AM&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=63
 leadin: |
   *Stop switching between IDE windows and keep all your projects in the same window.*
 
