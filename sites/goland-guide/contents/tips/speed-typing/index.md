@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=zNBATrPbkTI&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=25
+  url: https://www.youtube.com/watch?v=dNGyprUoLWQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=150
 leadin: |
     **Speed Typing** is the ability to type anything in a list and have the results
     filtered.

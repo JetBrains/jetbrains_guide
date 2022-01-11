@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=KaXklqjrT1U&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=3
+  url: https://www.youtube.com/watch?v=I-XxOL4bFB0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=143
 leadin: |
     GoLand helps you add struct tags using custom live templates built into the IDE.
 

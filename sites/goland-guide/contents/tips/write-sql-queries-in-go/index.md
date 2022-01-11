@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=hWIS1harw3M&list=PLM-t1Z4tbFfl-umlMg_ND7gW9rGjTDzKt&index=27
+  url: https://www.youtube.com/watch?v=9oGVEUWehy0&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=4
 leadin: |
     SQL queries are recognized automatically when these strings are used in popular SQL packages such as _database/sql_, _github.com/jmoiron/sqlx_, and _github.com/gobuffalo/pop_.
 

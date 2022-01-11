@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=KsWMIZciveo&list=PLM-t1Z4tbFfl-umlMg_ND7gW9rGjTDzKt&index=4
+  url: https://www.youtube.com/watch?v=VshkrFowxjQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=113
 leadin: |
     When you have a testing table of more than a handful of cases, it can be hard to focus on a specific test case.
 

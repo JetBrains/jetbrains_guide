@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=dieYjfEsWcA&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=12
+  url: https://www.youtube.com/watch?v=Uq79t_XpWkc&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=122
 leadin: |
   **How to use:**
 

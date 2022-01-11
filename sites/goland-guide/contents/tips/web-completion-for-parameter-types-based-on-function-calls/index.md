@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=JkU3EjdDmc8&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=6
+  url: https://www.youtube.com/watch?v=UKtT9tbt0Xg&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=28
 leadin: |
   The IDE will show you completion suggestions based on the type used in the function call for the parameters in the function body.
 

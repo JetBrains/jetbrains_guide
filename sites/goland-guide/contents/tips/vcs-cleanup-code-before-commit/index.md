@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=cXzphrn-WiI&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=14
+  url: https://www.youtube.com/watch?v=emXVGjkIoz4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=17
 leadin: |
   Sometimes an extra pair of parenthesis make their way into our code. Since it's not needed to improve the clarity or help the code function in any way, its better to remove it. That's why, it's useful to run a _Cleanup_ step before the code reaches upstream.
 

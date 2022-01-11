@@ -59,7 +59,7 @@ open a terminal in the root of this repository and run:
 docker build . -f Dockerfile-ContentCreators -t registry.jetbrains.team/p/evan/guide-containers/guide-content-creators:latest
 ```
 
-Once finished, you can run the Docker frun configurations to test out things.
+Once finished, you can run the Docker from configurations to test out things.
 
 ## Authoring
 

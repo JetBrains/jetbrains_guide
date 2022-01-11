@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=9RWWSKUc0CM&list=PLM-t1Z4tbFflp57RnfgjXOdpOg6fLhs_q&index=22
+  url: https://www.youtube.com/watch?v=Vm7maCICcXk&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=154
 leadin: |
   Use the shell that you need in each Terminal tabs with only a few clicks.
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=L2fUieGhby8&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=13
+  url: https://www.youtube.com/watch?v=1vrZkrl1T2U&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=145
 leadin: |
     The **File Structure** popup window allows you to get an overview of all the elements defined in a file or a package.
 

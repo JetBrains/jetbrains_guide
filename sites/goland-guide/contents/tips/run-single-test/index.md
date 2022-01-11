@@ -14,7 +14,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=14vRaLytex4&list=PLM-t1Z4tbFfnXnghmtk6WVz10_pivOw25&index=28&t=0s
+  url: https://www.youtube.com/watch?v=OhNeN8diWb4&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=109
 leadin: |
     Want to focus your testing on just one test? Then you can
     launch the test under the cursor using a shortcut.

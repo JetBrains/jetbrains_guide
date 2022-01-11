@@ -12,7 +12,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=8OIZ7WYZsSA&list=PLM-t1Z4tbFflkIOaap4P-BV30ZrZwrDld&index=7
+  url: https://www.youtube.com/watch?v=CriTJ6kmeaQ&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=104
 leadin: |
     Do you want to select all the occurrences of a piece of code?
     
