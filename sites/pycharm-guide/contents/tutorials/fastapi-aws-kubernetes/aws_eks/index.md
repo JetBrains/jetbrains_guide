@@ -324,6 +324,111 @@ The OIDC provider is successfully created.
 
 # Postgres
 
+Next, we are going to create a Security Group for Postgres database, this will be required 
+when we will be launching the RDS database.
+
+
+I will goto **VPC** and then under **Security** you will find **Security Groups**.
+
+![step36](./steps/step36.png)
+
+![step37](./steps/step37.png)
+
+
+I am going to provide a name and description. I will choose **fastapi-demo-cluster** as my vpc, this VPC is created by the EKS.
+
+
+Under **Inbound Rules**, I will select Postgres which will be running on port 5432 
+and IP access will be set to anywhere. It does not matter because the cluster nodes are in private mode, so we
+won’t be able to access the database publicly.
+
+![step38](./steps/step38.png)
+
+![step39](./steps/step39.png)
+
+
+Next we will move to RDS where we will be creating our **Subnet Group**.
+
+![step40](./steps/step40.png)
+
+![step41](./steps/step41.png)
+
+I will be providing the VPC subnet private IP addresses from the  three availability zones:
+
+- ap-south-1a
+- ap-south-1b
+- ap-south-1c
+
+![step42](./steps/step42.png)
+
+Our subnet group is created, now we will go ahead and complete the process of creating a new database.
+
+![step43](./steps/step43.png)
+
+Creation method is going to be **standard create** and the engine will be **Postgres** and the version which
+we are going to use is **10.17**
+
+![step44](./steps/step44.png)
+
+![step45](./steps/step45.png)
+
+DB instance identifier will be set to **sampledb**. Username is going to be **postgres**, and I will provide the 
+master password.
+
+![step46](./steps/step46.png)
+
+DB instances will be **t2.micro**, we need to be in control of our costs.
+
+We will disable the storage autoscaling.
+
+![step47](./steps/step47.png)
+
+
+Under **Connectivity**, choose **fastapi-demo** cluster, and automatically it has picked our custom rds eks db subnet group.
+
+Public access will be set to No. Kind of extra precaution no one can access our db instance outside our cluster.
+
+![step48](./steps/step48.png)
+
+Next, I will be choosing the Security Group which we created earlier.
+
+![step49](./steps/step49.png)
+
+
+Under **Additional Configuration**, I am going to provide the database name. 
+
+
+![step50](./steps/step50.png)
+
+![step51](./steps/step51.png)
+
+Disable backup, performance insights, maintenance and monitoring. As this is not a production setup , we can skip this.
+
+![step52](./steps/step52.png)
+
+Everything looks good, I am going to click on **Create database**.
+
+![step53](./steps/step53.png)
+
+It will take a few minutes to initialize our new db. We will come back to this later.
+
+![step54](./steps/step54.png)
+
+# RBAC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
