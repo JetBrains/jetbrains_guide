@@ -734,3 +734,471 @@ $ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ing
 # Replace kubeconfig with fastapi-demo
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/alb-ingress-controller.yaml --kubeconfig=fastapi-demo
 ```
+
+**eks/utils/alb-ingress-controller.yaml**
+
+```yaml
+# Application Load Balancer (ALB) Ingress Controller Deployment Manifest.
+# This manifest details sensible defaults for deploying an ALB Ingress Controller.
+# GitHub: https://github.com/kubernetes-sigs/aws-alb-ingress-controller
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: alb-ingress-controller
+  name: alb-ingress-controller
+  # Namespace the ALB Ingress Controller should run in. Does not impact which
+  # namespaces it's able to resolve ingress resource for. For limiting ingress
+  # namespace scope, see --watch-namespace.
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: alb-ingress-controller
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: alb-ingress-controller
+    spec:
+      containers:
+        - name: alb-ingress-controller
+          args:
+            # Limit the namespace where this ALB Ingress Controller deployment will
+            # resolve ingress resources. If left commented, all namespaces are used.
+            # - --watch-namespace=your-k8s-namespace
+
+            # Setting the ingress-class flag below ensures that only ingress resources with the
+            # annotation kubernetes.io/ingress.class: "alb" are respected by the controller. You may
+            # choose any class you'd like for this controller to respect.
+            - --ingress-class=alb
+
+            # REQUIRED
+            # Name of your cluster. Used when naming resources created
+            # by the ALB Ingress Controller, providing distinction between
+            # clusters.
+            # - --cluster-name=devCluster
+
+            # AWS VPC ID this ingress controller will use to create AWS resources.
+            # If unspecified, it will be discovered from ec2metadata.
+            # - --aws-vpc-id=vpc-xxxxxx
+
+            # AWS region this ingress controller will operate in.
+            # If unspecified, it will be discovered from ec2metadata.
+            # List of regions: http://docs.aws.amazon.com/general/latest/gr/rande.html#vpc_region
+            # - --aws-region=us-west-1
+
+            # Enables logging on all outbound requests sent to the AWS API.
+            # If logging is desired, set to true.
+            # - --aws-api-debug
+
+            # Maximum number of times to retry the aws calls.
+            # defaults to 10.
+            # - --aws-max-retries=10
+          env:
+            # AWS key id for authenticating with the AWS API.
+            # This is only here for examples. It's recommended you instead use
+            # a project like kube2iam for granting access.
+            # - name: AWS_ACCESS_KEY_ID
+            #   value: KEYVALUE
+
+            # AWS key secret for authenticating with the AWS API.
+            # This is only here for examples. It's recommended you instead use
+            # a project like kube2iam for granting access.
+            # - name: AWS_SECRET_ACCESS_KEY
+            #   value: SECRETVALUE
+          # Repository location of the ALB Ingress Controller.
+          image: docker.io/amazon/aws-alb-ingress-controller:v1.1.9
+      serviceAccountName: alb-ingress-controller
+```
+
+Ingress Controller has been created, but we need to update some config which is basically the cluster name.
+
+I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano, 
+completely your choice. To use your favorite editor by default, set the environment variable **KUBE_EDITOR**, even you can use sublime text, notepad etc.
+
+![step67](./steps/step67.png)
+
+The controller is deployed in the **kube-system** namespace.
+
+Under spec, I will provide the cluster name **fastapi-demo**.
+
+![step68](./steps/step68.png)
+
+Save and exit.
+
+I will verify whether the controller is running or not. 
+
+![step69](./steps/step69.png)
+
+Looks fine. 
+
+# Subnet Discovery
+
+Next, after the controller we need to tag our subnets for subnet discovery by the load balancer.
+
+For more information, visit the below link :
+- [https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/](https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/)
+
+I will tag all the subnets. The **shared** value allows more than one cluster to use the subnet.
+
+![step70](./steps/step70.png)
+
+![step71](./steps/step71.jpg)
+
+![step72](./steps/step72.png)
+
+
+Once, we are done with tagging all subnets, I will come back to RDS to check the status.
+
+
+# K8s Manifests
+
+The db is now available. I am going to copy the **endpoint**. But before that I will 
+create a folder called **“deploy”** under **eks**.
+
+![step73](./steps/step73.jpg)
+
+![step74](./steps/step74.png)
+
+
+I am going to create a new file and name it **db-service.yml**.
+
+![step75](./steps/step75.png)
+
+
+We are going to create an **ExternalName** Service.
+
+**eks/deploy/rds/db-service.yml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-service
+spec:
+  type: ExternalName
+  externalName:  <RDS_ENDPOINT_URL>
+```
+
+Services with type **ExternalName** work as other regular services, but when you want to access that service name,
+instead of returning cluster ip of this service, it returns **CNAME** record with value that is mentioned in externalName
+which in this case is the RDS endpoint.
+
+![step76](./steps/step76.png)
+
+I will be doing the same operation for Redis as well. For redis 
+we will be using the **[ElastiCache](https://aws.amazon.com/elasticache/)** service provided by AWS.
+
+![step77](./steps/step77.png)
+
+Service name is going to be redis service, and I will come back and replace the external name.
+
+
+**eks/deploy/elasticache/redis-service.yml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+spec:
+  type: ExternalName
+  externalName:  <ELASTICACHE_ENDPOINT_URL>
+```
+
+Let’s go to **ElastiCache** and create our redis instance.
+
+![step78](./steps/step78.png)
+
+
+Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**), the same we did for postgres. We are not covering this, if 
+you have any confusion then follow the postgres private subnet setup. It's going to be same for elasticache as well.
+
+![step79](./steps/step79.png)
+
+I also need to create a custom security group for redis.
+
+![step80](./steps/step80.png)
+
+I will choose the version **5.0.6**
+
+Make sure the node type is **t2.micro**, elasticache is an expensive service, be careful with that. 
+
+Set replicas to 1 and uncheck Multi-AZ. Encryption I am leaving it as unchecked, completely your choice.
+
+![step81](./steps/step81.png)
+
+Backups are not required for this tutorial.
+
+I will click on **Create**, and it’s going to take some time to initialize.
+
+![step82](./steps/step82.png)
+
+Okay, redis is now available.
+
+I will copy the endpoint and replace it in the external name service.
+
+![step83](./steps/step83.jpg)
+
+![step84](./steps/step84.png)
+
+I will copy the other services which we have done earlier when working with kubernetes locally and there is no change in that.
+
+I need to replace the image url and this time we will be pointing to ECR Container Registry url instead of DockerHub.
+
+**eks/deploy/code/deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommerce-deployment
+  labels:
+    app: ecommerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecommerce-app
+  template:
+    metadata:
+      labels:
+        app: ecommerce-app
+    spec:
+      containers:
+        - image: 254501641575.dkr.ecr.ap-south-1.amazonaws.com/fastapi-ecommerce:latest # replace with ECR
+          imagePullPolicy: Always
+          name: sample-container
+          envFrom:
+          - secretRef:
+              name: ecommerce-secret
+          ports:
+            - containerPort: 5000
+              name: fastapi
+          readinessProbe:
+            httpGet:
+              port: 5000
+              path: /docs
+            initialDelaySeconds: 15
+          livenessProbe:
+            httpGet:
+              port: 5000
+              path: /docs
+            initialDelaySeconds: 15
+            periodSeconds: 15
+```
+
+**eks/deploy/code/service.yml**
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecommerce-service
+  labels:
+    app: ecommerce
+spec:
+  type: NodePort
+  selector:
+    app: ecommerce-app
+  ports:
+    - port: 5000
+      targetPort: 5000
+```
+
+The service file will be running on port 5000, and you can see this needs to be a **NodePort** 
+not cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort
+for your Service and then proxied to your pods.
+
+**eks/deploy/code/secret.yml**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: ecommerce-secret
+  labels:
+    app: ecommerce
+data:
+  DATABASE_USERNAME: cG9zdGdyZXM=                 # postgres
+  DATABASE_PASSWORD: bXVrdWwxMjM=                 # mukul123
+  DATABASE_HOST: cG9zdGdyZXMtc2VydmljZQ==         # postgres-service
+  DATABASE_NAME: c2FtcGxl                         # sample
+  REDIS_HOST: cmVkaXMtc2VydmljZQ==                # redis-service
+  REDIS_PORT: NjM3OQ==                            # 6379
+  REDIS_DB: MA==                                  # 0
+```
+
+**eks/deploy/celery/deployment.yml**
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-deployment
+  labels:
+    app: ecommerce
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: celery-app
+  template:
+    metadata:
+      labels:
+        app: celery-app
+    spec:
+      containers:
+        - image: 254501641575.dkr.ecr.ap-south-1.amazonaws.com/fastapi-ecommerce:latest
+          command: ['celery', '-A', 'main.celery', 'worker', '-l', 'info']
+          envFrom:
+            - secretRef:
+                name: celery-secret
+          name: celery-container
+```
+
+**eks/deploy/celery/secret.yml**
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: celery-secret
+  labels:
+    app: ecommerce
+data:
+  REDIS_HOST: cmVkaXMtc2VydmljZQ==      # redis-service
+  REDIS_PORT: NjM3OQ==                  # 6379
+  REDIS_DB: MA==                        # 0
+```
+
+**eks/deploy/job/migration.yml**
+
+```yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fastapi-migrations
+spec:
+  template:
+    spec:
+      containers:
+        - name: migration-container
+          image: 254501641575.dkr.ecr.ap-south-1.amazonaws.com/fastapi-ecommerce:latest
+          command: ['alembic', 'upgrade', 'head']
+          envFrom:
+            - secretRef:
+                name: ecommerce-secret
+      restartPolicy: Never
+  backoffLimit: 3
+```
+
+## Ingress
+
+Next, we are going to create an ingress, this is something which we did not do in our local system but indeed we 
+need it here. In Kubernetes, an Ingress is an **object that allows access to your Kubernetes services from outside
+the Kubernetes cluster** typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic
+without creating a bunch of Load Balancers or exposing each service on the node.   
+
+![step85](./steps/step85.png)
+
+
+From the point of view of a Kubernetes pod, **ingress** is incoming traffic to the pod, and **egress** is outgoing 
+traffic from the pod.
+
+As you can observe from the file, carefully see the data being passed in the annotations.
+
+These are a few values you must have definitely observed when you have created an Application Load Balancer in AWS.
+
+**eks/deploy/ingress/ingress.yml**
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-ecommerce-service
+  labels:
+    app: ecommerce
+  annotations:
+    kubernetes.io/ingress.class: "alb"
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/healthcheck-protocol: HTTP
+    alb.ingress.kubernetes.io/healthcheck-port: traffic-port
+    alb.ingress.kubernetes.io/healthcheck-interval-seconds: '15'
+    alb.ingress.kubernetes.io/healthcheck-timeout-seconds: '5'
+    alb.ingress.kubernetes.io/success-codes: '200'
+    alb.ingress.kubernetes.io/healthy-threshold-count: '2'
+    alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}, {"HTTP":80}]'
+    alb.ingress.kubernetes.io/certificate-arn: <REPLACE_CERTIFICATE_ARN>
+    alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
+    alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: ssl-redirect
+              servicePort: use-annotation
+          - path: /*
+            backend:
+              serviceName: ecommerce-service
+              servicePort: 5000
+```
+
+We are doing some health checks and looking for a success response code of 200.
+
+The listening ports are 80 and 443.
+
+Observing line number 18, we need to replace the certificate ARN and for that we need to create a 
+new certificate in **[AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)**. We are going to do
+it in a while.
+
+![step86](./steps/step86.png)
+
+
+Under **Rules** we are performing two operations, one is the SSL redirection which is being taken from the annotation
+as mentioned in line number 20.
+
+![step87](./steps/step87.png)
+
+Next, we will be sending the traffic to our **ecommerce-service** which is running on port **5000** which indeed points
+to FastAPI backend.
+
+Just imagine in your head that NGINX is proxying requests internally 
+to your backend service. This is what we are trying to achieve through the ingress.
+
+You can also perform path based routing and redirect applications to different services based on the path.
+
+Let me now deploy the kubernetes manifests except the ingress.
+
+I will open up the terminal and move inside the eks directory.
+
+Just to clarify I have deployed these manifests in the default namespace, completely up to you. If you want a 
+separate namespace you can go ahead with that.
+
+![step88](./steps/step88.png)
+
+Celery and backend are running fine, and we don’t need to worry about postgres and redis as they 
+are managed services provided by AWS.
+
+We are having enough resources, let’s try to run six replicas of our backend service.
+
+![step89](./steps/step89.png)
+
+Six pods are running completely fine.
+
+Now, let’s run the migration job.
+
+![step90](./steps/step90.png)
+
+![step91](./steps/step91.png)
+
+Migration is completed. It was quite fast.
+
+We are not using the **[ttlSecondsAfterFinished](https://kubernetes.io/docs/concepts/workloads/controllers/job/#clean-up-finished-jobs-automatically)**. If we use that then after a certain amount of seconds the job will be automatically removed.
+
+Reference:
+- [Automatic Clean-up for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
+
