@@ -9,7 +9,7 @@ subtitle: TODO
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=ZVL6h_8rXCM
+  url: https://www.youtube.com/watch?v=dbS8NakYlSU
 ---
 
 
