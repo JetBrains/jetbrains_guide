@@ -412,35 +412,325 @@ Everything looks good, I am going to click on **Create database**.
 
 It will take a few minutes to initialize our new db. We will come back to this later.
 
-![step54](./steps/step54.png)
+## ![step54](./steps/step54.png)
 
 # RBAC
 
+Coming back to the PyCharm Terminal, I am going to create the role based access control (RBAC) for our ingress controller.
+
+A **RoleBinding** grants permissions within a specific namespace whereas a **ClusterRoleBinding** grants that access cluster-wide.
 
 
+```bash
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/rbac-role.yaml
+```
+
+**eks/utils/rbac-role.yml**
+
+```yaml
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: alb-ingress-controller
+  name: alb-ingress-controller
+rules:
+  - apiGroups:
+      - ""
+      - extensions
+    resources:
+      - configmaps
+      - endpoints
+      - events
+      - ingresses
+      - ingresses/status
+      - services
+      - pods/status
+    verbs:
+      - create
+      - get
+      - list
+      - update
+      - watch
+      - patch
+  - apiGroups:
+      - ""
+      - extensions
+    resources:
+      - nodes
+      - pods
+      - secrets
+      - services
+      - namespaces
+    verbs:
+      - get
+      - list
+      - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  labels:
+    app.kubernetes.io/name: alb-ingress-controller
+  name: alb-ingress-controller
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: alb-ingress-controller
+subjects:
+  - kind: ServiceAccount
+    name: alb-ingress-controller
+    namespace: kube-system
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  labels:
+    app.kubernetes.io/name: alb-ingress-controller
+  name: alb-ingress-controller
+  namespace: kube-system
+...
+```
+
+Kubernetes [service accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) are Kubernetes resources, 
+created and managed using the Kubernetes API, meant to be used by in-cluster Kubernetes-created entities, such as Pods, 
+to authenticate to the Kubernetes API server or external services.
+
+Reference:
+- [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
 
+Next, I will go to IAM and create an **AWS Load Balancer Policy**.
+
+![step55](./steps/step55.png)
+
+I already have the IAM policy file, you can take it directly from my repository placed under the EKS directory, simply I will copy and paste the JSON.
+
+**eks/utils/iam-policy.json**
+
+```json
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "Allow",
+"Action": [
+"acm:DescribeCertificate",
+"acm:ListCertificates",
+"acm:GetCertificate"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"ec2:AuthorizeSecurityGroupIngress",
+"ec2:CreateSecurityGroup",
+"ec2:CreateTags",
+"ec2:DeleteTags",
+"ec2:DeleteSecurityGroup",
+"ec2:DescribeAccountAttributes",
+"ec2:DescribeAddresses",
+"ec2:DescribeInstances",
+"ec2:DescribeInstanceStatus",
+"ec2:DescribeInternetGateways",
+"ec2:DescribeNetworkInterfaces",
+"ec2:DescribeSecurityGroups",
+"ec2:DescribeSubnets",
+"ec2:DescribeTags",
+"ec2:DescribeVpcs",
+"ec2:ModifyInstanceAttribute",
+"ec2:ModifyNetworkInterfaceAttribute",
+"ec2:RevokeSecurityGroupIngress"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"elasticloadbalancing:AddListenerCertificates",
+"elasticloadbalancing:AddTags",
+"elasticloadbalancing:CreateListener",
+"elasticloadbalancing:CreateLoadBalancer",
+"elasticloadbalancing:CreateRule",
+"elasticloadbalancing:CreateTargetGroup",
+"elasticloadbalancing:DeleteListener",
+"elasticloadbalancing:DeleteLoadBalancer",
+"elasticloadbalancing:DeleteRule",
+"elasticloadbalancing:DeleteTargetGroup",
+"elasticloadbalancing:DeregisterTargets",
+"elasticloadbalancing:DescribeListenerCertificates",
+"elasticloadbalancing:DescribeListeners",
+"elasticloadbalancing:DescribeLoadBalancers",
+"elasticloadbalancing:DescribeLoadBalancerAttributes",
+"elasticloadbalancing:DescribeRules",
+"elasticloadbalancing:DescribeSSLPolicies",
+"elasticloadbalancing:DescribeTags",
+"elasticloadbalancing:DescribeTargetGroups",
+"elasticloadbalancing:DescribeTargetGroupAttributes",
+"elasticloadbalancing:DescribeTargetHealth",
+"elasticloadbalancing:ModifyListener",
+"elasticloadbalancing:ModifyLoadBalancerAttributes",
+"elasticloadbalancing:ModifyRule",
+"elasticloadbalancing:ModifyTargetGroup",
+"elasticloadbalancing:ModifyTargetGroupAttributes",
+"elasticloadbalancing:RegisterTargets",
+"elasticloadbalancing:RemoveListenerCertificates",
+"elasticloadbalancing:RemoveTags",
+"elasticloadbalancing:SetIpAddressType",
+"elasticloadbalancing:SetSecurityGroups",
+"elasticloadbalancing:SetSubnets",
+"elasticloadbalancing:SetWebAcl"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"iam:CreateServiceLinkedRole",
+"iam:GetServerCertificate",
+"iam:ListServerCertificates"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"cognito-idp:DescribeUserPoolClient"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"waf-regional:GetWebACLForResource",
+"waf-regional:GetWebACL",
+"waf-regional:AssociateWebACL",
+"waf-regional:DisassociateWebACL"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"tag:GetResources",
+"tag:TagResources"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"waf:GetWebACL"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"wafv2:GetWebACL",
+"wafv2:GetWebACLForResource",
+"wafv2:AssociateWebACL",
+"wafv2:DisassociateWebACL"
+],
+"Resource": "*"
+},
+{
+"Effect": "Allow",
+"Action": [
+"shield:DescribeProtection",
+"shield:GetSubscriptionState",
+"shield:DeleteProtection",
+"shield:CreateProtection",
+"shield:DescribeSubscription",
+"shield:ListProtections"
+],
+"Resource": "*"
+}
+]
+}
+```
+
+![step56](./steps/step56.png)
+
+![step57](./steps/step57.png)
+
+There is a warning coming up in the visual editor, I will remove elb and add it again.
 
 
+![step58](./steps/step58.png)
+
+![step59](./steps/step59.png)
+
+![step60](./steps/step60.png)
+
+As you can see I am specifying resources to all resources, but it’s prompting me as a best practice, define permissions
+for only specific resources. 
+
+I completely agree to that point, as this is a tutorial I am not getting 
+too strict but **please follow the concept of the least privilege**.
+
+![step61](./steps/step61.png)
+
+# IAM Service Account
+
+Next, I am going to create **iam service account**. You can associate an IAM role with a Kubernetes service account. This
+service account can then provide AWS permissions to the containers in any pod that uses that service account.
+
+Reference:
+- [https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html](https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html)
 
 
+![step62](./steps/step62.png)
+
+```bash
+eksctl create iamserviceaccount \
+--region ap-south-1 \
+--name alb-ingress-controller \
+--namespace kube-system \
+--cluster fastapi-demo \
+--attach-policy-arn <YOUR_POLICY_ARN> \
+--override-existing-serviceaccounts \
+--approve
+```
+
+I will copy the policy ARN and replace it.
+
+![step63](./steps/step63.png)
+
+The IAM service account is created, let me verify that.
+
+![step64](./steps/step64.png)
+
+![step65](./steps/step65.png)
+
+You can see one role has been successfully attached. You can check this role is present under Roles in the IAM Console.
 
 
+# Ingress Controller
+
+I will go ahead and create the **ingress controller**. An Ingress controller is a specialized load balancer
+for Kubernetes (and other containerized) environments. It abstracts away the complexity of Kubernetes application
+traffic routing and provides a bridge between Kubernetes services and external ones.
+
+![step66](./steps/step66.png)
+
+Reference : 
+- [https://kubernetes-sigs.github.io/aws-load-balancer-controller/](https://kubernetes-sigs.github.io/aws-load-balancer-controller/)
+- [https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/](https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/)
 
 
+You can check out the website for more information related to deployment, configuration etc. 
+
+This project was formerly known as **"AWS ALB Ingress Controller"**, and later rebranded to **"AWS Load Balancer Controller"**.
 
 
+I will go ahead and apply the ingress controller.  A copy of this controller file is placed in my repository you can check for more reference.
 
+```bash
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/alb-ingress-controller.yaml --kubeconfig=<PATH_TO_CONFIG_FILE>
 
-
-
-
-
-
-
-
-
-
-
-
-
+# Replace kubeconfig with fastapi-demo
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/alb-ingress-controller.yaml --kubeconfig=fastapi-demo
+```
