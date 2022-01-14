@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2022-01-02
-title: RestAPI - Part II
+title: REST API - Part II
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Performing CRUD operations in our User Module
+subtitle: Performing CRUD operations in our User module.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=FDaC6OkvIU8
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 We have successfully created the user registration API. Let’s quickly move on
 and complete the remaining APIs for our User module like getting a 
@@ -41,10 +41,9 @@ I will be returning **id**, **name** and **email**.
 We will be creating a Config class, which controls the behaviour of Pydantic, 
 in this we are going to set the attribute ```orm_mode=True```, which basically
 is to map the ORM Objects defined in our models. As per the FastAPI
-Documentation, Without ```orm_mode```, if you returned a SQLAlchemy 
-model from your path operation, it wouldn't include the relationship data.
-
-Even if you declared those relationships in your Pydantic models.
+Documentation, without ```orm_mode```, if you returned a SQLAlchemy 
+model from your path operation, it wouldn't include the relationship 
+data...even if you declared those relationships in your Pydantic models.
 
 But with ORM mode, as Pydantic itself will try to access the data 
 it needs from attributes (instead of assuming a dict).
@@ -67,9 +66,9 @@ Let's go ahead and create our service for ```all_users```
 
 We will be returning all users from the database.
 
-Once done, I will check the API is reflecting in Swagger UI.
+Once done, I will check the API is reflecting in the Swagger UI.
 
-And Yes, the new endpoint is reflecting. Let me test it out.
+And yes, the new endpoint is reflecting. Let me test it out.
 
 ![step4](./steps/step4.png)
 
@@ -118,7 +117,7 @@ async def get_user_by_id(user_id, database) -> Optional[models.User]:
     return user_info
 ```
 
-Looks Good ! Let me check in the browser again. 
+Looks good! Let me check in the browser again. 
 
 Yes, it’s reflecting. I will try to send the ```user id``` of a specific user and test.
 
@@ -136,11 +135,11 @@ If I pass 1 it will return **Elon Musk**, 2 and 3 will return **Sample User 2** 
 # Delete User
 
 Let’s move back again to the router and create our last 
-endpoint **delete user by id**. Same as previous, only difference 
-we won’t return any response instead delete the object from the database.
+endpoint **delete user by id**. Same as previous, only difference... 
+we won’t return any response. Instead, we delete the object from the database.
 
 
-The response class will be the base ```Response``` class. You can create your own custom 
+The response class will be the base `Response` class. You can create your own custom 
 response class or when creating a FastAPI class instance or an 
 APIRouter you can specify which response class to use by default.
 
@@ -162,7 +161,7 @@ async def delete_user_by_id(user_id, database):
 To know more about custom response, visit this [link](https://fastapi.tiangolo.com/advanced/custom-response/#default-response-class).
 
 
-We successfully created the four endpoints : 
+We successfully created the four endpoints: 
 - user registration
 - listing
 - retrieving user by id
@@ -276,6 +275,6 @@ You can also see, the user listing is returning two objects, the third object ha
 
 ![step15](./steps/step15.png)
 
-Great ! We have successfully completed the User module.
+Great! We have successfully completed the User module.
 
 So, stay tuned. I will see you in the next tutorial, where we will be covering the products.

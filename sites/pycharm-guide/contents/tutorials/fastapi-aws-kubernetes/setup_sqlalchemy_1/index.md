@@ -12,16 +12,16 @@ longVideo:
   url: https://www.youtube.com/watch?v=aOy_pcNnjjM
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
-In this tutorial we are going to create an ecommerce application. So, as you know what
+In this tutorial we are going to create an ecommerce application. So, as you know, what
 we normally see in an ecommerce store, we have users, products, cart items, 
 orders, authentication etc.
 
 ![shopping](./images/shopping.png)
 Image Credit: [Freepik](https://www.freepik.com/)
 
-We will be building APIs for all the known features, like the 
+We will be building APIs for all the known features, like the:
 
 - Users can log in or register.
 - Add Products, Order Products as well add products to the cart.
@@ -52,7 +52,7 @@ in the root folder.
 
 ![step1](./steps/step1.png)
 
-I will create more subdirectories under ecommerce which I will explain them in the later tutorials.
+I will create more subdirectories under ecommerce which I will explain in the later tutorials.
 
 This is how the app structure is going to look. 
 
@@ -85,8 +85,8 @@ to communicate with databases.
 
 ![step5](./steps/step5.png)
 
-We will be also installing the **psycopg2** which is a database connector for python and postgres.
-You must have observed that we did not use the SQLAlchemy 1.4.0 or [psycopg3](https://www.psycopg.org/psycopg3/) project 
+We will be also installing **psycopg2** which is a database connector for python and postgres.
+You may have seen that we did not use the SQLAlchemy 1.4.0 or [psycopg3](https://www.psycopg.org/psycopg3/) package 
 which supports the asyncio feature, which indeed definitely is going to be faster. During 
 the time of recording, the [psycopg3](https://www.psycopg.org/psycopg3/) project was still under active 
 development and the asyncio extension of SQLAlchemy 1.4.3 is considered to be in **beta** level.

@@ -5,19 +5,19 @@ title: Database Setup - Part II
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Setting up database migration with Alembic.
+subtitle: Setting up database migrations with Alembic.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=CWm40_n0eu8
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres. 
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. In this tutorial we are going to connect FastAPI with Postgres. 
 
 
 # DataGrip
 
-Before moving ahead, let us connect to our Postgres Database via the 
+Before moving ahead, let us connect to our Postgres database via the 
 [DataGrip](https://www.jetbrains.com/datagrip/) plugin which is already
 bundled in PyCharm Professional.
 
@@ -49,11 +49,11 @@ variables like the username, password etc.
 ![step4](./steps/step4.png)
 
 
-I will create the connecting string and name the variable ```SQLALCHEMY_DATABASE_URL```
+I will create the connection string and name the variable ```SQLALCHEMY_DATABASE_URL```
 
 Next, I will use the common functions like ```create_engine``` and ```sessionmaker``` 
 
-As per the sqlalchemy documentation, the engine is the starting point for any 
+As per the SQLAlchemy documentation, the engine is the starting point for any 
 SQLAlchemy application. It's the **“home base”** for the actual database and its db api.
 
 ![step5](./steps/step5.png)
@@ -64,7 +64,7 @@ of ```sessionmaker``` is to provide a factory for session objects with a fixed c
 
 
 The ```declarative_base``` characteristic is used to create a base class. This function is
-described in ```sqlalchemy.Ext.Declarative``` module. Later we are going to inherit it to
+described in the ```sqlalchemy.Ext.Declarative``` module. Later we are going to inherit it to
 create database models.
 
 ![step6](./steps/step6.png)
@@ -110,15 +110,15 @@ We are done with the db config part, next we need to deal with something called 
 
 It basically performs schema migrations whenever we add (or drop) tables or columns from our databases.
 
-According to FastAPI docs : *A **"migration"** is the set of steps needed
+According to the FastAPI docs: *A **"migration"** is the set of steps needed
 whenever you change the structure of your SQLAlchemy models, add a new attribute, etc. to 
 replicate those changes in the database, add a new column, a new table, etc.*
 
-To know more about migration, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
+To know more about migrations, check out this [link](https://fastapi.tiangolo.com/tutorial/sql-databases/).
 
 
 For our tutorial, we will be using [Alembic](https://alembic.sqlalchemy.org/en/latest/). It is a widely used library for database 
-migrations, you might have already heard about it.
+migrations. You might have already heard about it.
 
 Let’s begin by installing the package alembic with version 1.6.5, this is the version which we are going to use.
 
@@ -273,9 +273,9 @@ name will be represented as **“users”**
 
 I will define the necessary columns like id, name, email, password.
 
-- **“Id”** will be the primary key and gets auto-increment on every new row insert. 
-- **“Name”** will be string with max length of 50
-- **“Email”** will be string but with a unique index.
+- **“Id”** will be the primary key and gets auto-incremented on every new row insert. 
+- **“Name”** will be a string with max length of 50.
+- **“Email”** will be a string but with a unique index.
 - **“Password”** will also be a string with max 255 characters.
 
 ![step16](./steps/step16.png)
@@ -285,7 +285,7 @@ We won’t be storing passwords as plain-text, it will be stored in encrypted fo
 For encrypting the password, I will create a separate file called **hashing**, where I will be writing the 
 encryption logic.
 
-We are going to use the **passlib** package, you can observe it has been mentioned in the FastAPI 
+We are going to use the **passlib** package. You can see it has been mentioned in the FastAPI 
 documentation as well.
 
 ![step17](./steps/step17.png)
@@ -303,12 +303,12 @@ pip install passlib[argon2]
 
 Once the installation is complete, update the **requirements.txt** file.
 
-Next, I will move to the hashing file and do the necessary imports from passlib library.
+Next, I will move to the hashing file and do the necessary imports from the passlib library.
 
 ![step18](./steps/step18.png)
 
-I will create two functions ```verify_password``` and ```get_password_hash```, this is
-something which I have taken directly from the FastAPI [documentation](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/), even you can 
+I will create two functions ```verify_password``` and ```get_password_hash```. This is
+something which I have taken directly from the FastAPI [documentation](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/) -- you can 
 also refer to that directly.
 
 ![step19](./steps/step19.png)
@@ -377,7 +377,7 @@ But before that, I need to register the model in the environment (**env.py**), s
 ![step20](./steps/step20.png)
 
 
-Once, you have imported the user model in environment, I will go ahead to the Terminal and run the
+Once you have imported the user model in environment, go ahead to the Terminal and run the
 below command : 
 
 ```
@@ -391,8 +391,8 @@ which will be residing under the **versions** directory.
 
 ![step22](./steps/step22.png)
 
-The migration file has been created successfully, let's move and 
-migrate the new changes into our database.
+The migration file has been created successfully. 
+Let's move and migrate the new changes into our database.
 
 I will type the command:
 
@@ -409,12 +409,12 @@ Let me check in the **Database Explorer** and verify that new tables are appeari
 
 
 Yes, two new tables have been created. There is a table name called **alembic_version**, which
-basically keeps history of all migrations applied. You can compare its similarity with
-the django migrations table if you have previously worked with Django.
+basically keeps a history of all migrations applied. You can compare its similarity with
+the Django migrations table if you have previously worked with Django.
 
 Also, the user table has been migrated.  
 
-In the next tutorial, we will be focusing on writing RestAPIs and performing CRUD operations.  
+In the next tutorial, we will be focusing on writing REST APIs and performing CRUD operations.  
 
 
 

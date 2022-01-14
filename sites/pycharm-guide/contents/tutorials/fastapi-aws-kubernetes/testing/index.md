@@ -5,21 +5,21 @@ title: Testing
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Writing Unit Tests using Pytest & Asyncio
+subtitle: Writing Unit Tests using Pytest & Asyncio.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=uk7EcDIZEfY
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we are going to work on Unit Testing using [Pytest](https://docs.pytest.org/) and [Asyncio](https://docs.python.org/3/library/asyncio.html).
 
 # AnyIO
 
 As you can see on my screen, recently FastAPI introduced **[AnyIO](https://anyio.readthedocs.io/en/stable/)**. AnyIO is an asynchronous networking
-and concurrency library that works on top of either asyncio or [trio](https://trio.readthedocs.io/en/stable/).
+and concurrency library that works on top of either asyncio or [Trio](https://trio.readthedocs.io/en/stable/).
 
 ![step1](./steps/step1.png)
 
@@ -40,7 +40,7 @@ support for both HTTP/1.1 and HTTP/2.
 
 Do check the official documentation, it has tons of cool examples.
 
-Even if you don’t want to use asyncio, you can work with the ```TestClient``` which is backed by **Startlette**.
+Even if you don’t want to use asyncio, you can work with the ```TestClient``` which is backed by **Starlette**.
 
 Reference :
 - [https://fastapi.tiangolo.com/tutorial/testing/](https://fastapi.tiangolo.com/tutorial/testing/)
@@ -173,7 +173,7 @@ We are done now with the configuration. Let’s begin our first test.
 
 # Begin Testing
 
-I will create different modules and place them under tests, we will begin first with users.
+I will create different modules and place them under tests. We will begin first with users.
 
 ![step8](./steps/step8.png)
 
@@ -225,7 +225,7 @@ update the working directory. Make sure it’s pointing to the correct python in
 
 And finally click on Apply then OK.
 
-And Yes, it works perfectly fine. We don’t need to manually type again.
+And yes, it works perfectly fine. We don’t need to manually type again.
 
 ![step14](./steps/step14.png)
 
@@ -246,13 +246,13 @@ Make sure to sync the **requirements.txt** from my source code.
 
 ![step16](./steps/step16.png)
 
-We  are done with the implementation and expect the user will be successfully registered and 201 status code will be returned.
+We are done with the implementation and expect the user will be successfully registered and 201 status code will be returned.
 
 Let’s test it out.
 
 ![step17](./steps/step17.png)
 
-And Yes, the test has passed.
+And yes, the test has passed.
 
 We are done with the registration, next we will move to products.
 
@@ -260,7 +260,7 @@ We will be testing products and categories. I will create separate files for the
 
 ![step18](./steps/step18.png)
 
-In Category, we will test : create, list and delete endpoints.
+In Category, we will test: create, list and delete endpoints.
 
 **test_categories.py**
 
@@ -400,7 +400,7 @@ We are now done with the products, let’s test it out.
 
 Yes, all the seven apis have passed successfully.
 
-Next, we will be completing the remaining modules like ```orders```, ```cart```, ```home``` and ```login```.
+Next, we will complete the remaining modules like ```orders```, ```cart```, ```home``` and ```login```.
 
 Same kind of operation I will be doing, you can follow me.
 
@@ -478,7 +478,7 @@ async def test_cart_listing():
 
 ![step20](./steps/step20.png)
 
-As you can see on line number 11,  once you place an order successfully you need to send an email. But this 
+As you can see on line number 11, once you place an order successfully, you need to send an email. But this 
 is something we need to do on a live server, not during a test, so I will try to do a mock which basically is
 going to return true. 
 
@@ -524,12 +524,12 @@ async def test_order_listing():
 
 We have finally completed all the unit tests. Let me run and check the results.
 
-Great ! 13 of 13 tests have been successfully passed, and it was quite fast. 
+Great! 13 of 13 tests have been successfully passed, and it was quite fast. 
 
 ![step21](./steps/step21.png)
 
 
-So, I hope you understand the testing flow. I do recommend checking the fastapi, pytest documentation 
+So, I hope you understand the testing flow. I do recommend checking the FastAPI pytest documentation 
 if you want to get deeper into this topic.
 
 
@@ -540,7 +540,7 @@ written by [Brian Okken](https://twitter.com/brianokken) which is expected to be
 
 ![step22](./steps/step22.jpg)
 
-Image Credit : [The Pragmatic Bookshelf](https://pragprog.com/)
+Image Credit: [The Pragmatic Bookshelf](https://pragprog.com/)
 
 There are lots of things which we did not cover, but it’s covered in this book. I hope you will enjoy it.
 

@@ -5,18 +5,18 @@ title: Celery & Redis
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Configuring Celery & Redis with FastAPI
+subtitle: Configuring Celery & Redis with FastAPI.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=RWxnQW1bU3E
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series. 
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 
 
 As you know in our previous video we completed the feature of placing the new order. But we
-wanted to make sure that once the order has been placed then we need to send an email saying
-that your order has been successfully placed, that’s what we are going to cover in today’s tutorial.
+wanted to make sure that, once the order has been placed, then we need to send an email saying
+that your order has been successfully completed. That’s what we are going to cover in today’s tutorial.
 
 # AWS SES
 
@@ -28,18 +28,18 @@ We will be using [Amazon SES](https://aws.amazon.com/ses/) also known as **Simpl
 [Redis](https://docs.celeryproject.org/en/stable/) as in-memory datastore.
 
 You can even use FastAPI [Background Tasks](https://fastapi.tiangolo.com/tutorial/background-tasks/), but
-if you are performing some heavy computation then it's  better to go for Celery.
+if you are performing some heavy computation, then it's  better to go for Celery.
 
 For sending email, the background tasks are good enough, but we intended to use Celery.
 
-Coming back to AWS, for our testing purpose we need to verify an email and after that only we will be able to send it.
+Coming back to AWS, for our testing purpose we need to verify an email, and only after that, we will be able to send it.
 
 Only verified email addresses can be sent under **From** & **To**.
 
 
 When you apply for a production use case, you don’t need to focus on verifying email addresses. But 
 Amazon has stringent controls of sending emails, like handling bounces and complaints and not spamming users. Amazon
-has a good reputation with the ISPs, if you don’t follow that carefully then you might end up
+has a good reputation with the ISPs. Thus, if you don’t follow that carefully, then you might end up
 losing reputation and indeed your service might get stopped.
 
 ![step1](./steps/step1.png)
@@ -54,7 +54,7 @@ Follow the below link for more information :
 
 
 Coming back, I will be using a temporary email for verification where I will be 
-sending emails for testing, even you can use your personal email accounts.
+sending emails for testing. You can also use your personal email accounts.
 
 I will go to this website **[getnada](https://getnada.com/)** or you can 
 also check **[mailinator](https://www.mailinator.com/)**. They provide temporary email service.
@@ -145,14 +145,14 @@ celery -A main.celery worker -l info ---pool=prefork
 
 - **-A** stands for application
 - **-l** stands for loglevel
-- **--pool** is basically the execution pool, it supports different pools like prefork,solo,eventlet and gevent.
+- **--pool** is basically the execution pool, it supports different pools like prefork, solo, eventlet and gevent.
 
 The prefork pool implementation is based on Python’s multiprocessing. It allows your Celery 
 worker to side-step Python’s [Global Interpreter Lock](https://docs.python.org/3/glossary.html#term-global-interpreter-lock) and fully leverage multiple processors.
 
 ![step15](./steps/step15.png)
 
-You can observe that Celery has now been listening to our registered tasks ```send_email```.
+You can observe that Celery is now listening to our registered tasks ```send_email```.
 
 I need to complete the implementation for order notification.
 
@@ -170,7 +170,7 @@ def send_email(email):
 
 **mail.py**
 
-You can observe the code that contains a short snippet of html code which is going to show the message of order 
+You can see that the code that contains a short snippet of html code which is going to show the message of order 
 placed successfully.
 
 We have also defined the sender email, the one which we verified earlier along-with aws region and subject name.
@@ -261,7 +261,7 @@ def order_notification(recipient):
         print(response['MessageId'])
 ```
 
-The structure of sending email has been taken from the boto3 official documentation.
+The structure of sending email has been taken from the `boto3` official documentation.
 
 References:
 - [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-using-sdk-python.html)
@@ -279,7 +279,7 @@ pip install boto3==1.18.26
 
 # AWS CLI
 
-Before moving ahead, make sure you have [AWS CLI](https://aws.amazon.com/cli/) installed in your machine.
+Before moving ahead, make sure you have [AWS CLI](https://aws.amazon.com/cli/) installed on your machine.
 
 
 ![step17](./steps/step17.png)
@@ -306,7 +306,7 @@ I will update the **Access Key ID** and **Secret Access Key** in the [IAM](https
 
 Let me now try to do a dry run by sending an email and check whether I am receiving it or not.
 
-I will open up the python console and import the mail function.
+I will open up the Python console and import the mail function.
 
 I will try to send to the same verified email address.
 
@@ -323,11 +323,11 @@ should have stringent controls over your access.
 ![step24](./steps/step24.png)
 
 
-I will revoke this access key and create a new one. I hope you are already aware of how to do this, in case not then watch the
-video it will be helpful for you to navigate.
+I will revoke this access key and create a new one. I hope you are already aware of how to do this, if not, then watch the
+video. It will be helpful for you to navigate.
 
-* The access keys shown in the image will be different for yours. Don't copy the access keys which is 
-being shown in the image, because later we will delete these keys, and it stays invalid.
+The access keys shown in the image will be different than yours. Don't copy the access key which is 
+ shown in the image, because later we will delete these keys, and it stays invalid.
 
 
 ![step25](./steps/step25.png)
@@ -343,7 +343,7 @@ Yes, the email has been sent successfully, and we have successfully received the
 
 ![step27](./steps/step27.png)
 
-I will restart celery to pick up the new changes.
+I will restart Celery to pick up the new changes.
 
 Now, I will try to place an order from swagger UI and expect that once the order has been placed, we will receive an email.
 
@@ -368,7 +368,7 @@ Now, I will come back and try to execute the order.
 
 ![step29](./steps/step29.png)
 
-As you can see the celery has picked up the task, and we got the response as **“Email Sent”** with the message ID.
+As you can see, Celery has picked up the task, and we got the response as **“Email Sent”** with the message ID.
 
 
 ![step30](./steps/step30.png)
@@ -381,14 +381,12 @@ We have also received the new mail.
 
 So, I hope you got a basic understanding of how things are working behind the scenes. 
 
-If you are more interested, please check the Celery [documentation](https://docs.celeryproject.org/en/stable/).
+If you have more interest, please check the Celery [documentation](https://docs.celeryproject.org/en/stable/).
 
-You must now be able to clearly visualize the entire flow of adding products and
+You can now clearly visualize the entire flow of adding products and
 then pushing to cart and finally placing order and getting the order confirmation over the mail.
 
 I will see you in the next tutorial, where we will be focusing on Authentication & JWT.
-
-
 
 
 

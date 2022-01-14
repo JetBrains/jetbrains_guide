@@ -1,37 +1,38 @@
 ---
 type: TutorialStep
 date: 2022-01-02
-title: RestAPI - Part I
+title: REST API - Part I
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Implementing RestAPI for User Module using Pydantic & API Router
+subtitle: Implementing a REST API for User modules using Pydantic & API Router.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=cj8yw1u__D0
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series. 
-In this tutorial we are going to implement RestAPIs for our User module. Before 
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 
+In this tutorial we are going to implement REST APIs for our User module. Before 
 moving forward, I need to speak about Pydantic and its benefits.
 
 
 # Pydantic
 
-You must be aware that FastAPI & Typer uses Pydantic. [Pydantic](https://pydantic-docs.helpmanual.io/) helps 
-in data validation and setting management also enforces python 
-type hints during runtime. It’s extremely fast and easy to use as well !
+You might know that FastAPI & Typer use Pydantic. [Pydantic](https://pydantic-docs.helpmanual.io/) helps 
+in data validation and settings management. It also enforces Python 
+type hints during *runtime*. It’s extremely fast and easy to use as well!
 
 
-If you have already worked with serializers in drf and marshmallow 
-with flask then definitely you can compare their similarity with pydantic.
+If you have already worked with serializers in [Django ReST Framework](https://www.django-rest-framework.org) and 
+[marshmallow](https://github.com/marshmallow-code/marshmallow) 
+with Flask then definitely you can compare their similarity with pydantic.
 
 
 Pydantic also supports dataclasses, if you want the same kind of
 validation in dataclasses instead of using the base model. 
 
-Keep in mind that pydantic data class is a drop-in replacement.
+Keep in mind that Pydantic data class is a drop-in replacement.
 
 ![step1](./steps/step1.png)
 
@@ -60,7 +61,7 @@ pydantic is via models *(models are simply classes which inherit from BaseModel)
 As you can see we have created three fields: ```name```, ```email```, ```password```.
 
 
-**Name** is constr which is basically a **Constrained Type**. It’s possible to 
+**Name** is `constr` which is basically a **Constrained Type**. It’s possible to 
 define primitive types that have more constraints on their values. The 
 str must have at least 2 characters and max 50 characters.
 
@@ -94,7 +95,7 @@ Our schema has been successfully defined, now switch back to **router.py** file.
 # API Router
 Once your application starts growing up, you might need to place your
 path operations in a specific file like what we are going to do in our 
-router.py file. This helps better organize your code and focus only on 
+`router.py` file. This helps better organize your code and focus only on 
 the user routes.
 
 We are going to import the **APIRouter** and create an instance for it.
@@ -106,10 +107,10 @@ will be required.
 I am also going to do imports from ```sqlalchemy```, ```services```, ```validator```, ```schema``` etc.
 
 
-Don’t worry about now I will be writing the implementation in the above files which I mentioned like services and validator.
+Don’t worry about How I will be writing the implementation in the above files which I mentioned like services and validator.
 
 
-As you can see on line number **8**, we are going to create an instance of our APIRouter.
+As you can see on line number **8**, we are going to create an instance of our `APIRouter`.
 
 ![step6](./steps/step6.png)
 
@@ -149,7 +150,7 @@ This is very useful when you need to:
 - Have shared logic (the same code logic again and again).
 - Share database connections.
 - Enforce security, authentication, role requirements, etc.
-- minimizing code repetition.
+- Minimize code repetition.
 
 I encourage you to check more about this in the FastAPI Documentation. You can
 even create [sub-dependencies](https://fastapi.tiangolo.com/tutorial/dependencies/sub-dependencies/) and [global dependencies](https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/) as well.
@@ -166,7 +167,7 @@ I am going to create a ```verify_email_exist``` function which is going to take 
 ![step8](./steps/step8.png)
 
 
-Email will be string and database will be session, let me change database 
+Email will be string and database will be a session. Let me change database 
 to db_session that looks more clear to me.
 
 The function might return User, or it will return None. 
@@ -176,7 +177,8 @@ Let me come back to the router.
 
 If a user exists then I will raise an HTTPException with status 400 and a message.
 
-If the user is not present then I will move ahead and store the new record in the db.  I will write the business logic in services where I will create a function called ```new_user_register```.
+If the user is not present then I will move ahead and store the new record in the db.  
+I will write the business logic in services where I will create a function called ```new_user_register```.
 
 ![step9](./steps/step9.png)
 
@@ -235,7 +237,7 @@ generated through PyCharm. We don’t need this anymore.
 
 ![step13](./steps/step13.png)
 
-Let me give brief information to our API Docs, we can add more information. I am
+Let me give a brief information to our API Docs, we can add more information. I am
 just sticking to only title and version.
 
 Now, we need to include the router. I will type ```app.include_router()```
@@ -250,7 +252,7 @@ Looks like I missed something.  I missed adding the router decorator to our func
 
 ![step15](./steps/step15.png)
 
-It’s going to be a POST method, pointing at / slash path and 201 status code will be returned in response.
+It’s going to be a `POST` method, pointing at / slash path and 201 status code will be returned in response.
 
 
 **router.py**
@@ -322,9 +324,9 @@ Yes, it works. Our user has been successfully registered.
 I am returning the user model response, if you want you can even return a custom response.
 
 I hope you enjoyed this tutorial. In the upcoming tutorial I will be 
-focusing more on writing rest apis for other modules. 
+focusing more on writing REST APIs for other modules. 
 
-Stay tuned !
+Stay tuned!
 
 
 

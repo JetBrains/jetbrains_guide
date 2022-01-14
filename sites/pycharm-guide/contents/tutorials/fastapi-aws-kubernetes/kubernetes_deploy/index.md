@@ -5,14 +5,14 @@ title: Kubernetes Deployment
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Writing K8s manifests & deploying in minikube
+subtitle: Writing K8s manifests & deploying in minikube.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=WC4e3Yq8k8A
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series. 
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series. 
 
 In this tutorial we will be focusing on deploying our application in [Kubernetes](https://kubernetes.io/). It is an open-source container-orchestration 
 system for automating computer application deployment, scaling, and management. It was originally designed by [Google](https://about.google/) and is now
@@ -80,14 +80,14 @@ sudo chmod +x /usr/local/bin/minikube
 
 I will type the minikube version, just to verify.
 
-Looks Good, minikube is successfully installed.
+Looks good, minikube is successfully installed.
 
 ![step6](./steps/step6.png)
 
 Next, I will install the **[kubectl](https://kubernetes.io/docs/reference/kubectl/overview/)** which is the Kubernetes command-line tool,
 which allows you to run commands against Kubernetes clusters.
 
-For your reference, you can follow this link : [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+For your reference, you can follow this link: [https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
 ### Install kubectl binary with curl on Linux
 
@@ -113,13 +113,13 @@ share a good tutorial which I found in the DigitalOcean community, you can check
 
 - [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04)
 
-Once docker is installed, we will move ahead and start the minikube.
+Once Docker is installed, we will move ahead and start the minikube.
 
 At the time of this recording we are using Kubernetes **1.22** version.
 
 ### Starting Minikube
 
-To start the minikube server run the below command :
+To start the minikube server run the below command:
 
 ```bash
 minikube start --mount-string "$HOME/postgres-data:/data" --driver=docker --install-addons=true --kubernetes-version=stable
@@ -130,7 +130,7 @@ minikube start --mount-string "$HOME/postgres-data:/data" --driver=docker --inst
 
 The installation will take some time.
 
-Once minikube has been started successfully, to verify I will run the below command :
+Once minikube has been started successfully, to verify I will run the below command:
 
 ```bash
 kubectl get nodes
@@ -145,17 +145,18 @@ Now, it's time to come back to PyCharm and write our Dockerfile.
 
 # Dockerfile
 
-According to docker documentation, A Dockerfile is a text document that contains all the 
+According to the Docker documentation, a Dockerfile is a text document that contains all the 
 commands a user could call on the command line to assemble an image. 
 
 - [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
 
-We are using Python 3.8 slim image. The slim image is a paired down version of the full image. This image generally only installs the minimal packages needed to run your particular tool. 
+We are using Python 3.8 slim image. The slim image is a paired down version of the full image. 
+This image generally only installs the minimal packages needed to run your particular tool. 
 
 ![step11](./steps/step11.png)
 
-There is an interesting article in [Medium](https://medium.com/) talking about different docker images, do check that out.
+There is an interesting article in [Medium](https://medium.com/) talking about different Docker images, do check that out.
 
 - [Alpine, Slim, Stretch, Buster, Jessie, Bullseye — What are the Differences in Docker Images?](https://medium.com/swlh/alpine-slim-stretch-buster-jessie-bullseye-bookworm-what-are-the-differences-in-docker-62171ed4531d)
 
@@ -222,9 +223,9 @@ Docker plugin is already installed, let me check for Kubernetes.
 
 We will use the Kubernetes plugin later, and I will show you how cool it is to manage pods through PyCharm.
 
-Before that, let's build our docker image.
+Before that, let's build our Docker image.
 
-I will run the below command : 
+I will run the below command: 
 
 ```bash
 docker build -t mukulmantosh/ecommerce-fastapi:1.0  .
@@ -234,11 +235,11 @@ The build process is complete.
 
 ![step14](./steps/step14.png)
 
-Next, we need to host this docker image, so we will deploy this image in DockerHub. [DockerHub](https://hub.docker.com/) is basically a
-docker registry where you can store and share your docker images, the same way you store code in GitHub repositories. 
+Next, we need to host this Docker image, so we will deploy this image in DockerHub. [DockerHub](https://hub.docker.com/) is basically a
+ Docker registry where you can store and share your Docker images, the same way you store code in GitHub repositories. 
 
 
-As you can see I have already created the docker repository, currently it is private but later, I will make it public.
+As you can see I have already created the Docker repository, currently it is private but later, I will make it public.
 
 As you can see I already have an image with a tag as latest.
 
@@ -251,13 +252,13 @@ Before pushing the image to DockerHub, I will create a **.dockerignore** file wh
 ![step16](./steps/step16.png)
 
 
-I will add some files and directories which won’t be part of the docker image.
+I will add some files and directories which won’t be part of the Docker image.
 
 I will rebuild the image and provide the tag as shown in the DockerHub. As we have already **latest** tag, we will create a tag with version **1.0**
 
 Now, we are going to push the image to DockerHub, before that we need to authenticate our credentials.
 
-I will type the below command and pass the credentials (username & password) :
+I will type the below command and pass the credentials (username & password):
 
 ```bash
 docker login
@@ -265,7 +266,7 @@ docker login
 
 ![step17](./steps/step17.png)
 
-For pushing the docker image, I will type the below command : 
+For pushing the Docker image, I will type the below command: 
 
 ```bash
 docker push mukulmantosh/ecommerce- fastapi:1.0
@@ -279,12 +280,12 @@ I will change the visibility of the repository to public because it's required w
 
 ![step19](./steps/step19.png)
 
-If you have a use case when working with Kubernetes, you need to use images from a private registry, 
+If you have a use case when working with Kubernetes that you need to use images from a private registry, 
 then definitely check out the documentation provided by Kubernetes.
 
 - [Pull an Image from a Private Registry](https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/)
 
-They have clearly explained in the documentation.
+They have clearly explained this in the documentation.
 
 We are done with the Dockerfile and the image got built successfully, and we hosted the image in DockerHub.
 
@@ -421,14 +422,14 @@ Kubernetes can automatically create a new replica of that pod to continue operat
 containers (such as Docker containers).
 
 You can see we have defined **InitContainers**. In Kubernetes, an init container is the one that 
-starts and executes before other containers in the same Pod. It's meant to perform initialization
+starts and executes before other containers in the same pod. It's meant to perform initialization
 logic for the main application hosted on the Pod. For example, create the necessary user accounts, 
 perform database migrations, create database schemas and so on.
 
-But over here we are just checking whether our database server is up and running using the **[pg_ready](https://www.postgresql.org/docs/9.3/app-pg-isready.html)** command.
+But here we are just checking whether our database server is up and running using the **[pg_ready](https://www.postgresql.org/docs/9.3/app-pg-isready.html)** command.
 
 
-Now, under the **containers** section, we will define the docker image which we have already pushed to DockerHub.
+Now, under the **containers** section, we will define the Docker image which we have already pushed to DockerHub.
 
 **imagePullPolicy** has been set to **Always**. Every time the kubelet launches a container, it's going to pull the 
 image from the container registry.
@@ -439,9 +440,11 @@ The container port is going to 5000.
 
 Then we are going to do health checks using the **readiness probe** and **liveness probe**.
 
-Readiness probes are designed to let Kubernetes know when your app is ready to serve traffic. Kubernetes makes sure the readiness probe passes before allowing a service to send traffic to the pod.
+Readiness probes are designed to let Kubernetes know when your app is ready to serve traffic. 
+Kubernetes makes sure the readiness probe passes before allowing a service to send traffic to the pod.
 
-The kubelet uses liveness probes to know when to restart a container. For example, liveness probes could catch a deadlock, where an application is running, but unable to make progress.
+The kubelet uses liveness probes to know when to restart a container. 
+For example, liveness probes could catch a deadlock, where an application is running, but unable to make progress.
 
 As you can observe we are using the **httpGet** request to check for path **/docs** to return 200 response at a period of 15 seconds.
 
@@ -463,7 +466,8 @@ CPU is always requested as an absolute quantity, never as a relative quantity; 0
 Next, we are going to create a secret. A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key. 
 Secrets are similar to **[ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)** but are specifically intended to hold confidential data.
 
-Kubernetes accepts secrets as base64 encoded values, encoding and encryption both are different. If you are interested in encryption, then check out [bitnami sealed secrets](https://github.com/bitnami-labs/sealed-secrets).
+Kubernetes accepts secrets as base64 encoded values, encoding and encryption both are different. 
+If you are interested in encryption, then check out [bitnami sealed secrets](https://github.com/bitnami-labs/sealed-secrets).
 
 We have provided the base64 values, decrypted values you can see in the comments what we are exactly passing.
 
@@ -488,16 +492,18 @@ data:
 
 Next, we are going to work on **[Service](https://kubernetes.io/docs/concepts/services-networking/service/)**.
 
-We could use a deployment without a service to keep a set of identical pods running in the Kubernetes cluster. The deployment could be scaled up and down and pods could be replicated. Each pod could be accessed individually via direct network requests (rather than abstracting them behind a service), but keeping track of this for a lot of pods is difficult and this is where we introduce service.
+We could use a deployment without a service to keep a set of identical pods running in the Kubernetes cluster. 
+The deployment could be scaled up and down and pods could be replicated. 
+Each pod could be accessed individually via direct network requests (rather than abstracting them behind a service), but keeping track of this for a lot of pods is difficult and this is where we introduce service.
 
 A service is responsible for enabling network access to a set of pods. It does not matter how many pods come and go, the service is going to maintain a single IP address.
 
 
 ![step23](./steps/step23.png)
 
-Image Credit : [Kubernetes : Using a Service to Expose Your App](https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/)
+Image Credit: [Kubernetes: Using a Service to Expose Your App](https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/)
 
-As you can see we have created a clusterIP service, internally we can talk with this service at port 5000. You can specify the type as ClusterIP otherwise it will be considered as a ClusterIP only if you don’t mention any type. 
+As you can see, we have created a clusterIP service, internally we can talk with this service at port 5000. You can specify the type as ClusterIP otherwise it will be considered as a ClusterIP only if you don’t mention any type. 
 
 **k8s/code/service.yml**
 
@@ -517,12 +523,12 @@ spec:
       targetPort: 5000
 ```
 
-There are many service type like :
+There are many service type like:
 
-- **ClusterIP** : Exposes a service which is only accessible from within the cluster.
-- **NodePort** : Exposes a service via a static port on each node’s IP.
-- **LoadBalancer** : Exposes the service via the cloud provider’s load balancer.
-- **ExternalName** : Maps a service to a predefined externalName field by returning a value for the CNAME record.
+- **ClusterIP**: Exposes a service which is only accessible from within the cluster.
+- **NodePort**: Exposes a service via a static port on each node’s IP.
+- **LoadBalancer**: Exposes the service via the cloud provider’s load balancer.
+- **ExternalName**: Maps a service to a predefined externalName field by returning a value for the CNAME record.
 
 References:
 - [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/)
@@ -594,7 +600,7 @@ We are using a volume mount to mount our configuration and replace the default c
 
 Next, we will define ConfigMap.
 
-According to Kubernetes documentation : *A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods 
+According to Kubernetes documentation: *A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods 
 can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume*.
 
 If you observe carefully from line number 10 to 23 we are changing the nginx configuration 
@@ -722,7 +728,7 @@ spec:
 
 The container will be running on port 5432 and some memory limits have been applied.
 
-We will be introducing two major things : **[persistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)** and **[persistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)**.
+We will be introducing two major things: **[persistentVolume](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)** and **[persistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims)**.
 
 
 Volumes let your pod write to a filesystem that exists as long as the pod exists. Volumes also let you share data between containers in the same pod. 
@@ -781,19 +787,20 @@ Observe carefully on line number 18 and 26.
 
 ![step28](./steps/step28.png)
 
-**Path** is basically pointing towards the directory where the postgres files will be installed. If you are using Docker Desktop in Windows then this is the way you need to provide the path and the postgres-data folder is already present in the E drive.
+**Path** is basically pointing to the directory where the postgres files will be installed. 
+If you are using Docker Desktop in Windows then this is the way you need to provide the path and the postgres-data folder is already present in the E drive.
 
-As you know we are running our application in a linux machine, then we need to provide the home directory path of the postgres-data folder which we mounted in the beginning when starting the minikube.
+As you know we are running our application in a linux machine We need to provide the home directory path of the postgres-data folder which we mounted in the beginning when starting the minikube.
 
 
-And line number 26, will be replaced with minikube.
+And line number 26 will be replaced with minikube.
 
 Next, I will create the persistent volume claim.
 
 ## PersistentVolumeClaim
 
 A PersistentVolumeClaim is a request for a resource with specific attributes, such as storage size. As I said earlier,  
-A pod uses a persistent volume claim to get read and write access to the persistent volume. For our case we are pointing
+a pod uses a persistent volume claim to get read and write access to the persistent volume. In our case we are pointing
 the volume name to **postgres-pv**.
 
 **k8s/postgres/postgres-pvc.yml**
@@ -972,7 +979,7 @@ spec:
 
 ```
 
-You can observe that we are using a busybox image in our init containers just to do **nslookup** of whether our redis service is present or not. Don’t consider this as a health check.
+You can see that we are using a busybox image in our init containers just to do **nslookup** of whether our redis service is present or not. Don’t consider this as a health check.
 
 
 Reference:
@@ -1083,7 +1090,7 @@ First, I am going to create the namespace.
 kubectl apply -f namespace
 ```
 
-namespace got created.
+The namespace got created.
 
 After namespace, I will create postgres and the other remaining modules.
 
@@ -1103,13 +1110,13 @@ Let me try again.
 
 ![step36](./steps/step36.png)
 
-And Yes, Postgres is running now.
+And yes, Postgres is running now.
 
 Let me now move forward and deploy the other remaining modules.
 
-Except Job, everything has been created.
+Except fo Job, everything has been created.
 
-Let me now check the status of the pods by typing :
+Let me now check the status of the pods by typing:
 
 ```bash
 kubectl get pods -n fastapi-project
@@ -1124,7 +1131,8 @@ Let’s wait for a few more seconds to see the progress.
 For your information, if your system has less resources than try to decrease the number of replicas instead of running 8 replicas trying running with 1 or 2. 
 
 
-As you can see almost all the applications are running except ecommerce which has 3 pending pods and the reason behind this is insufficient cpu and our system is running on low resources, So I am going to decrease the number of replicas for both codebase and nginx.
+As you can see almost all the applications are running except ecommerce which has 3 pending pods and the reason behind this is insufficient cpu and our system is running on low resources.
+So I am going to decrease the number of replicas for both codebase and nginx.
 
 ![step38](./steps/step38.png)
 
@@ -1152,7 +1160,7 @@ Yes, the migration has been completed.
 Let me now check in the browser. But before that we need to retrieve the service ip address. If you are working with Docker Desktop in Windows you can simply access through localhost.
 
 But with Minikube we need to get the IP.
-I will type : 
+I will type: 
 
 ```bash
 minikube service list
@@ -1160,7 +1168,7 @@ minikube service list
 
 ![step42](./steps/step42.png)
 
-And  Yes, the IP address is running on port 30009, docs have been loaded. Let’s test our API.
+And yes, the IP address is running on port 30009, docs have been loaded. Let’s test our API.
 
 ![step43](./steps/step43.png)
 
@@ -1170,7 +1178,8 @@ I will create a new user, and won't change anything in the request body. I care 
 
 Yes, our user has been successfully created and received 201 status code and the entire stack is running in Kubernetes.
 
-If you are new to Kubernetes, then this video does not make any sense. But if you have already got an understanding of Kubernetes, then it would be very easy to conceptualize what I am trying to do.
+If you are new to Kubernetes, then this video does not make any sense. 
+But if you have already got an understanding of Kubernetes, then it would be very easy to conceptualize what I am trying to do.
 
 
 # Diagram
@@ -1234,7 +1243,7 @@ You can even see the PersistentVolume and PersistentVolumeClaim.
 There is one more thing provided by Minikube, and that is the dashboard.
 
 
-I will the below command and press enter :
+I will the below command and press enter:
 
 ```
 minikube dashboard
@@ -1263,6 +1272,6 @@ then you can easily communicate with the cluster by changing the kubeconfig.
 
 ![step62](./steps/step62.png)
 
-So, I hope you liked this tutorial, if not take some time it’s not a race. I will see you in the next tutorial where
+So, I hope you liked this tutorial, if not... take some time it’s not a race. I will see you in the next tutorial where
 we will be talking about Helm Charts.
 

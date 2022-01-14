@@ -12,8 +12,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=iCVEhVI07Ig
 ---
 
-Hello everyone, welcome to PyCharm FastAPI tutorial series.
-In this tutorial we are going to explore the FastAPI framework 
+Hello everyone, Welcome to the PyCharm FastAPI tutorial series.
+In this tutorial we are going to explore [FastAPI](https://fastapi.tiangolo.com) 
 which is a high-performance framework. It’s a modern web framework 
 which recently got huge popularity over the Internet, it’s backed by
 [starlette](https://www.starlette.io/) and [pydantic](https://pydantic-docs.helpmanual.io/) and based on 
@@ -25,7 +25,7 @@ standard [type hints](https://www.python.org/dev/peps/pep-0484/).
 
 ![fastapi](./fastapi.png)
 
-FastAPI is a modern, fast (high-performance), web framework 
+FastAPI is a modern, fast (high-performance) web framework 
 for building APIs with Python 3.6+ based on standard Python type hints.
 
 The key features are:
@@ -85,7 +85,7 @@ It achieves high utilization by combining admission control, efficient task-pack
 sharing with process-level performance isolation. 
 
 It supports high-availability applications with runtime features that minimize fault-recovery time, and scheduling policies that reduce the probability of correlated failures. Borg simplifies
-life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior
+life for its users by offering a declarative job specification language, name service integration, real-time job monitoring, and tools to analyze and simulate system behavior.
 
 You can also say Borg is the **predecessor** to Kubernetes.
 
@@ -98,7 +98,7 @@ To know more about Borg, read the research paper : [Large-scale cluster manageme
 
 Image Credits : [Amazon Web Services](https://aws.amazon.com/)
 
-It’s not going to happen that we worked on Kubernetes, and we are not going to deploy it
+It’s not going to happen that we worked on Kubernetes, but then not deploy it
 on a live server. 
 
 We will be deploying our application on AWS using the [EKS (Elastic Kubernetes Service](https://aws.amazon.com/eks/) and

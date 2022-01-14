@@ -13,7 +13,7 @@ longVideo:
 ---
 
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we will be deploying our application in AWS using the 
 [Elastic Kubernetes Service(EKS)](https://aws.amazon.com/eks/) along-with setting up domain with SSL.
@@ -81,7 +81,7 @@ We have successfully configured.
 # Elastic Container Registry (ECR)
 
 Next, we will go to ECR which is the [Elastic Container Registry](https://aws.amazon.com/ecr/). We will push our 
-docker image to our ECR repository. I am actually trying to cover the use case when some people out
+ Docker image to our ECR repository. I am actually trying to cover the use case when some people out
 there want to work with a private registry instead of using a public registry like DockerHub.
 
 I will create a repository and name it  **fastapi-ecommerce*. Visibility is going to be **private**.
@@ -90,7 +90,7 @@ I will create a repository and name it  **fastapi-ecommerce*. Visibility is goin
 
 ![step10](./steps/step10.png)
 
-Repository is created, let me push the docker image to ECR. But before pushing we need to authenticate
+Repository is created, let me push the Docker image to ECR. But before pushing we need to authenticate
 our credentials and after that only we would be able to push the image to AWS.
 
 
@@ -155,7 +155,7 @@ I will create a new file and name it **cluster.yml**.
 
 We are going to create a three node cluster and the good part is the **[control plane](https://kubernetes.io/docs/concepts/overview/components/)** is taken care of by AWS itself.
 
-Just for your  information EKS is not a free service. You pay **$0.10** per hour for each Amazon EKS cluster
+Just for your information EKS is not a free service. You pay **$0.10** per hour for each Amazon EKS cluster
 that you create even if you don’t use it and separate cost of instances which are acting as nodes; their costs
 are different based on instance types.
 
@@ -184,7 +184,7 @@ managedNodeGroups:
     volumeSize: 20
     privateNetworking: true
     iam:
-      attachPolicyARNs:  # Reference : https://eksctl.io/usage/iam-policies/
+      attachPolicyARNs:  # Reference: https://eksctl.io/usage/iam-policies/
         - arn:aws:iam::<REPLACE_THIS_NUMBER>:policy/SES_EKS_Policy   # <-- custom policy
         - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
         - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
@@ -227,7 +227,7 @@ if you can create Spot Instances or go serverless like [Fargate](https://aws.ama
 Next, observe line number 18 we are using the **attachPolicyARNs**. There are 4 policies which we have added to work
 smoothly with the cluster. 
 
-If a nodegroup includes the **attachPolicyARNs** it must also include the default node policies, like :
+If a nodegroup includes the **attachPolicyARNs** it must also include the default node policies, like:
 
 - ```AmazonEKSWorkerNodePolicy```
 - ```AmazonEKS_CNI_Policy``` 
@@ -307,7 +307,7 @@ feature allows customers to integrate an OIDC identity provider with a new or ex
 Kubernetes version 1.16 or later. The OIDC IDP can be used as an alternative to, or along with 
 AWS Identity and Access Management (IAM). 
 
-I am going to type : 
+I am going to type: 
 
 ```bash
 eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster fastapi-demo --approve
@@ -324,7 +324,7 @@ The OIDC provider is successfully created.
 
 # Postgres
 
-Next, we are going to create a Security Group for Postgres database, this will be required 
+Next, we are going to create a Security Group for Postgres database. This will be required 
 when we will be launching the RDS database.
 
 
@@ -402,7 +402,7 @@ Under **Additional Configuration**, I am going to provide the database name.
 
 ![step51](./steps/step51.png)
 
-Disable backup, performance insights, maintenance and monitoring. As this is not a production setup , we can skip this.
+Disable backup, performance insights, maintenance and monitoring. As this is not a production setup, we can skip this.
 
 ![step52](./steps/step52.png)
 
@@ -494,7 +494,7 @@ metadata:
 ```
 
 Kubernetes [service accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) are Kubernetes resources, 
-created and managed using the Kubernetes API, meant to be used by in-cluster Kubernetes-created entities, such as Pods, 
+created and managed using the Kubernetes API. They are meant to be used by in-cluster Kubernetes-created entities, such as Pods, 
 to authenticate to the Kubernetes API server or external services.
 
 Reference:
@@ -505,7 +505,7 @@ Next, I will go to IAM and create an **AWS Load Balancer Policy**.
 
 ![step55](./steps/step55.png)
 
-I already have the IAM policy file, you can take it directly from my repository placed under the EKS directory, simply I will copy and paste the JSON.
+I already have the IAM policy file, you can take it directly from my repository placed under the EKS directory. I will copy and paste the JSON.
 
 **eks/utils/iam-policy.json**
 
@@ -665,7 +665,7 @@ There is a warning coming up in the visual editor, I will remove elb and add it 
 
 ![step60](./steps/step60.png)
 
-As you can see I am specifying resources to all resources, but it’s prompting me as a best practice, define permissions
+As you can see I am specifying resources to "all resources", but it’s prompting me as a best practice, define permissions
 for only specific resources. 
 
 I completely agree to that point, as this is a tutorial I am not getting 
@@ -675,7 +675,7 @@ too strict but **please follow the concept of the least privilege**.
 
 # IAM Service Account
 
-Next, I am going to create **iam service account**. You can associate an IAM role with a Kubernetes service account. This
+Next, I am going to create **IAM service account**. You can associate an IAM role with a Kubernetes service account. This
 service account can then provide AWS permissions to the containers in any pod that uses that service account.
 
 Reference:
@@ -716,7 +716,7 @@ traffic routing and provides a bridge between Kubernetes services and external o
 
 ![step66](./steps/step66.png)
 
-Reference : 
+Reference: 
 - [https://kubernetes-sigs.github.io/aws-load-balancer-controller/](https://kubernetes-sigs.github.io/aws-load-balancer-controller/)
 - [https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/](https://aws.amazon.com/blogs/opensource/kubernetes-ingress-aws-alb-ingress-controller/)
 
@@ -845,7 +845,7 @@ Looks fine.
 
 Next, after the controller we need to tag our subnets for subnet discovery by the load balancer.
 
-For more information, visit the below link :
+For more information, visit the below link:
 - [https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/](https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/)
 
 I will tag all the subnets. The **shared** value allows more than one cluster to use the subnet.
@@ -1015,8 +1015,8 @@ spec:
       targetPort: 5000
 ```
 
-The service file will be running on port 5000, and you can see this needs to be a **NodePort** 
-not cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort
+The service file will be running on port 5000, and you can see this needs to be a **NodePort**.
+Not a cluster IP because traffic reaching the ALB (Application Load Balancer) is routed to NodePort
 for your Service and then proxied to your pods.
 
 **eks/deploy/code/secret.yml**
@@ -1104,7 +1104,7 @@ spec:
 
 ## Ingress
 
-Next, we are going to create an ingress, this is something which we did not do in our local system but indeed we 
+Next, we are going to create an ingress. This is something which we did not do in our local system but indeed we 
 need it here. In Kubernetes, an Ingress is an **object that allows access to your Kubernetes services from outside
 the Kubernetes cluster** typically via HTTPS/HTTP. With Ingress, you can easily set up rules for routing traffic
 without creating a bunch of Load Balancers or exposing each service on the node.   
@@ -1189,10 +1189,10 @@ separate namespace you can go ahead with that.
 
 ![step88](./steps/step88.png)
 
-Celery and backend are running fine, and we don’t need to worry about postgres and redis as they 
+Celery and the backend are running fine, and we don’t need to worry about postgres and redis as they 
 are managed services provided by AWS.
 
-We are having enough resources, let’s try to run six replicas of our backend service.
+We have enough resources, let’s try to run six replicas of our backend service.
 
 ![step89](./steps/step89.png)
 
@@ -1206,7 +1206,8 @@ Now, let’s run the migration job.
 
 Migration is completed. It was quite fast.
 
-We are not using the **[ttlSecondsAfterFinished](https://kubernetes.io/docs/concepts/workloads/controllers/job/#clean-up-finished-jobs-automatically)**. If we use that then after a certain amount of seconds the job will be automatically removed.
+We are not using the **[ttlSecondsAfterFinished](https://kubernetes.io/docs/concepts/workloads/controllers/job/#clean-up-finished-jobs-automatically)**. 
+If we use that then after a certain amount of seconds the job will be automatically removed.
 
 Reference:
 - [Automatic Clean-up for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
@@ -1220,7 +1221,7 @@ I will now open Route53 and click on **Create hosted zone**.
 
 ![step93](./steps/step93.png)
 
-I will provide the domain name :  **mukul.xyz**, make sure the hosted zone should be a **public hosted zone**.
+I will provide the domain name:  **mukul.xyz**, make sure the hosted zone should be a **public hosted zone**.
 
 ![step94](./steps/step94.png)
 
@@ -1305,7 +1306,7 @@ Ingress has been deployed. Let me check the status.
 
 ![step112](./steps/step112.png)
 
-Looks like there is some issue, We haven’t tagged our subnets properly.
+Looks like there is some issue, we haven’t tagged our subnets properly.
 
 ![step113](./steps/step113.png)
 
@@ -1359,7 +1360,7 @@ The **CNAME** record maps a name to another name. It should only be used when th
 
 Let me now try to check whether the domain is pointing to the backend or not.
 
-And Yes, finally the domain is pointing to our FastAPI backend with SSL secured.
+And yes, finally the domain is pointing to our FastAPI backend with SSL secured.
 
 
 ![step122](./steps/step122.png)

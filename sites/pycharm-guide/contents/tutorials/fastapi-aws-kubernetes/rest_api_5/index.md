@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2022-01-02
-title: RestAPI - Part V
+title: REST API - Part V
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Performing CRUD operations in Orders along-with placing a new order.
+subtitle: Performing CRUD operations in Orders along with placing a new order.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=2CRq3FxVvQA
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 
 As you know we have covered most of our apis, we have completed working on the cart feature.
@@ -69,7 +69,7 @@ class OrderDetails(Base):
     created = Column(DateTime, default=datetime.now)
 ```
 
-Order table will contain columns like ordering date, amount, order status, 
+The Order table will contain columns like ordering date, amount, order status, 
 shipping address and foreign key relationship with user and order details.
 
 
@@ -81,10 +81,10 @@ and products table along-with quantity and created date.
 
 ![step2](./steps/step2.png)
 
-Basically, we shouldn’t do ```CASCADE```, because in future if someone deletes 
+Basically, we shouldn’t do ```CASCADE```, because in the future, if someone deletes 
 the product then order & order details will also get removed. But of course we don’t want 
-to do that because we need to preserve order information. It doesn't matter in future 
-if the product gets removed from the system the order information should be preserved. 
+to do that because we need to preserve order information. It doesn't matter in the future 
+if the product gets removed from the system; the order information should be preserved. 
 
 This is a tutorial. We can ignore this scenario, but when working 
 in a real-world scenario we need to store it which may be beneficial
@@ -111,7 +111,7 @@ You can observe the table along-with the connected relationships.
 
 Next, I am going to create the router file and do necessary imports.
 
-I will also create other two files : services and schema.
+I will also create other two files: services and schema.
 
 I am going to initialize the ```APIRouter``` and provide the tags name as ```Orders```.
 
@@ -155,7 +155,7 @@ async def initiate_order_processing(database: Session = Depends(db.get_db)):
     return result
 ```
 
-I am going to create a pydantic schema for our ```ShowOrder``` class.
+I am going to create a Pydantic schema for our ```ShowOrder``` class.
 
 **schema.py**
 
@@ -259,11 +259,13 @@ Next, I will be retrieving cart items. Then, we are going to calculate the total
 
 After that we are going to initiate the new order. We will do bulk insert of our order details objects.
 
-Once the order has been successfully placed, we will send an email. But pausing it for now, we will come back later and work on the implementation. 
+Once the order has been successfully placed, we will send an email. 
+But pausing it for now, we will come back later and work on the implementation. 
 
 After we have successfully sent the email, we will clear the cart items and return the new order instance.
 
-We are done with the implementation for placing an order. Let’s come back to the router and work on the second api : getting a list of orders.
+We are done with the implementation for placing an order. 
+Let’s come back to the router and work on the second api: getting a list of orders.
 
 
 **router.py**
@@ -318,7 +320,7 @@ I am going to execute the **Initiate Order**.
 
 You can observe that the order has been successfully placed and the current status 
 is under processing. The response returned contains a nested schema which has order 
-id  followed by order details and then product 
+id followed by order details and then product 
 information along-with detailed category information.
 
 Now, let’s check what’s coming in the order list.
@@ -327,7 +329,7 @@ Something is wrong. I forgot to add the customer id when creating a new order. L
 
 ![step12](./steps/step12.jpg)
 
-Let me manually update the customer id in the database itself. As you know we only missed the customer id otherwise everything is correct, I am just avoiding to repeat the whole process.
+Let me manually update the customer id in the database itself. As you know we only missed the customer id otherwise everything is correct. I am just avoiding to repeat the whole process.
 
 ![step13](./steps/step13.png)
 

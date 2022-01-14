@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2022-01-02
-title: RestAPI - Part III
+title: REST API - Part III
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Performing CRUD operations in Products & Category Module
+subtitle: Performing CRUD operations in Products & Category Module.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=KsTKgi26CgU
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 We have successfully completed the user module, let’s now move to products
 where we are going to do the same kind of operations creating models, apis,
@@ -49,7 +49,7 @@ every product comes under a category.
 
 ![step3](./steps/step3.png)
 
-I will do an import from ```sqlalchemy.orm``` import ```relationship```
+I will do an import from ```sqlalchemy.orm``` import ```relationship```.
 
 I will define relationships for products. The ```back_populates``` argument
 tells SQLAlchemy which column to link with when it joins the two tables
@@ -117,8 +117,8 @@ and you can see the foreign key relationship attached with the category.
 
 # Router & Services
 
-Let’s begin by creating the router, schema and services, as usual what we did
-previously for the user module, the same approach we are going to follow.
+Let’s begin by creating the router, schema and services. As usual what we did
+previously for the user module, the same approach we are going to follow here.
 
 I am going to do the necessary imports.
 
@@ -130,7 +130,7 @@ Let’s begin by creating our API for Category model. But before that we need to
 
 I will quickly move to the schema.py file. 
 
-I will do the necessary imports like BaseModal and constr from Pydantic. 
+I will do the necessary imports like BaseModal and `constr` from Pydantic. 
 
 **constr** comes under **Constrained Types**. It’s possible to define primitive
 types that have more constraints on their values. I will show the use case in a
@@ -140,7 +140,7 @@ while.
 
 I am going to create a Category Schema which inherits from BaseModal.
 
-We need to accept names whose minimum length needs to be 2 characters to max length upto 50.
+We need to accept names whose minimum length needs to be 2 characters to max length up to 50.
 
 To know more about the Field Types, visit the pydantic documentation : [https://pydantic-docs.helpmanual.io/usage/types/](https://pydantic-docs.helpmanual.io/usage/types/).
 
@@ -151,9 +151,9 @@ Let’s begin with our Create Category API.
 ![step8](./steps/step8.png)
 
 
-The ```create_category``` function accepts two parameters : ```request``` and ```database```, whatever is
+The ```create_category``` function accepts two parameters: ```request``` and ```database```, whatever is
 coming in the request pydantic is going to take care of it. After getting the
-information we will be committing this information into the database.
+information, we will be committing this information into the database.
 
 
 I will create a new function : ```create_new_category``` where I will be writing the
@@ -225,7 +225,7 @@ will be returning a list of categories.
 
 ![step20](./steps/step20.png)
 
-Once, the routes have been registered, we will check in the Swagger UI.
+Once the routes have been registered, we will check in the Swagger UI.
 
 
 ![step21](./steps/step21.png)
@@ -269,13 +269,13 @@ Let me give the category id 1, and it should return MobilePhones.
 
 ![step23](./steps/step23.png)
 
-All the scenarios are working fine. Let’s move with our last api for category that is to delete the category by id.
+All the scenarios are working fine. Let’s move with our last api for category, that is, to delete the category by id.
 
 # Removing Category by Id
 
-We will be deleting the object from the database, the function won’t return anything. 
+We will be deleting the object from the database. The function won’t return anything. 
 
-You can define the type annotation as None or else it’s not required. I am leaving up to you, 
+You can define the type annotation as `None` or else it’s not required. I am leaving up to you, 
 whatever you feel good, better to follow the type annotation.
 
 **router.py**
@@ -325,10 +325,10 @@ Let’s begin by creating our product API, but before that we need to create the
 I will create a ```ProductBase``` class which will be reused later.
 
 - Id is going to be int but optional.
-- Name will be string
-- Quantity will be integer
-- Description will be string
-- Price will be float
+- Name will be string.
+- Quantity will be integer.
+- Description will be string.
+- Price will be float.
 
 **schema.py**
 
@@ -377,8 +377,8 @@ I will raise an exception if there is no category present else we will create ou
 Before inserting the product in the database, we need to make sure whether the specific
 category exists in the database or not. So, we are going to write a small validation for it.
 
-I am going to write a validator : ```verify_category_exist``` which will return the 
-category object or none if not present.
+I am going to write a validator: ```verify_category_exist``` which will return the 
+category object or None if not present.
 
 **validator.py**
 
@@ -435,7 +435,7 @@ I will create one more product and name it IPhone 12 with less quantity and pric
 
 ![step32](./steps/step32.png)
 
-Great ! two products have been successfully created.
+Great! two products have been successfully created.
 
 # Listing Products
 
@@ -516,12 +516,12 @@ async def get_all_products(database) -> List[models.Product]:
     return products
 ```
 
-Ok, our product functionality is complete, let me check what response we are getting in the swagger.
+Ok, our product functionality is complete, let me check what response we are getting in the Swagger UI.
 
 ![step33](./steps/step33.png)
 
 As you can observe the response, we are getting the product information
-along-with category information from our pydantic class. So, how smoothly
+along with category information from our pydantic class. So, how smoothly
 the nested modelling has been done over here.
 
 I hope by now you have got the understanding how we are creating apis, pydantic, validation etc. 

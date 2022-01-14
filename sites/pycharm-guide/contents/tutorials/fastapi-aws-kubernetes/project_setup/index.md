@@ -12,10 +12,10 @@ longVideo:
   url: https://www.youtube.com/watch?v=_AFwFvGnEpY
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we are going to set up the FastAPI project with PyCharm. We are
-going to use the PyCharm Professional EAP **2021.3** which includes FastAPI project type, EAP stands
+going to use the PyCharm Professional EAP **2021.3** which includes a FastAPI project type. EAP stands
 for **Early Access Program** but very soon it will be part of the stable release.
 
 * **Note**: Just for your information, I am running this entire project in a virtual machine  through VMWare workstation which has Ubuntu 20.04 LTS
@@ -23,8 +23,8 @@ for **Early Access Program** but very soon it will be part of the stable release
 
 # Virtual Environment
 
-Let’s begin. So, before going ahead we have to create a virtual environment, 
-if you are interested you can even create a virtual environment from PyCharm itself, but I 
+Let’s begin. So, before going ahead we have to create a virtual environment. 
+If you are interested you can even create a virtual environment from PyCharm itself, but I 
 would like to go with the terminal.
 
 ```
@@ -82,7 +82,7 @@ the interpreter like Docker, remote SSH, WSL etc.
 
 ![step5](./steps/step5.png)
 
-Once, the interpreter has been configured, I am going to click on **Create**.
+Once the interpreter has been configured, I am going to click on **Create**.
 
 Our project got successfully bootstrapped. PyCharm has generated two files:  ```main.py``` and ```test_main.http```
 
@@ -126,12 +126,12 @@ It uses two flavours: [Swagger UI](https://swagger.io/tools/swagger-ui/) &
 
 ![step11](./steps/step11.png)
 
-Let me test one of our API. I am going to pass the **name** and click on **execute**.
+Let me test one of our APIs. I am going to pass the **name** and click on **execute**.
 
 
 ![step12](./steps/step12.png)
 
-And Yes, it works. You can see the response message **“Hello Sample”**
+And yes, it works. You can see the response message **“Hello Sample”**
 
 ![step13](./steps/step13.png)
 
@@ -142,10 +142,10 @@ check the [official documentation](https://fastapi.tiangolo.com/).
 ![step14](./steps/step14.png)
 
 I am going to provide a little more meta information to my docs like 
-title, description, version etc.
+title, description, version, etc.
 
 Let me save it and refresh. You can see that title, description and version
-has been updated.
+have been updated.
 
 ![step15](./steps/step15.png)
 
@@ -154,7 +154,7 @@ expose docs to the outside world.
 
 ![step16](./steps/step16.png)
 
-You can see now it's showing not Found, this is really cool. 
+You can see now it's showing Not Found, this is really cool. 
 
 You can change path name in ```docs_url``` to point towards a 
 different path name, completely up to you.

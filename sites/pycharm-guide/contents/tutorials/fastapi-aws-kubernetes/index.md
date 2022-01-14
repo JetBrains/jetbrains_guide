@@ -33,7 +33,7 @@ tutorialItems:
 This tutorial will be entirely focused on [FastAPI](https://fastapi.tiangolo.com/) along-with playing with titans 
 like [Kubernetes](https://kubernetes.io/) & [Amazon Web Services](https://aws.amazon.com/).
 
-There are a lot of features we are going to cover : 
+There are a lot of features we are going to cover: 
 
 * Working with SQLAlchemy & Alembic
 * Implementing APIs along-with securing with JSON Web Tokens (JWT)

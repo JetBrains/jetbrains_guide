@@ -5,18 +5,18 @@ title: Authentication
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Integrating FastAPI with JWT Tokens
+subtitle: Integrating FastAPI with JWT Tokens.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=88ka51diyUc
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 In this tutorial we are going to set up the authentication process by protecting our apis using JWT.
 
-We will cover the security part. You can also follow the FastAPI documentation, it has a clear and detailed explanation. 
+We will cover the security part. You can also follow the FastAPI documentation. It has a clear and detailed explanation. 
 
 
 
@@ -59,7 +59,7 @@ Just for speeding up the installation process, clone **requirements.txt** from t
 
 To know about JWT, visit this [link](https://jwt.io/).
 
-Before beginning, I expect that you have already installed the python dependencies.
+Before beginning, I expect that you have already installed the Python dependencies.
 
 I will go to the **auth** folder and create the **router.py** file. 
 
@@ -73,7 +73,7 @@ takes parameters:  ```grant_type```, ```username```, ```password```, ```client i
 
 ![step6](./steps/step6.png)
 
-For your information, The **OAuth2** spec actually requires a field ```grant_type``` with a fixed value 
+For your information, the **OAuth2** spec actually requires a field ```grant_type``` with a fixed value 
 of password, but ```OAuth2PasswordRequestForm``` doesn't enforce it.
 
 If you need to enforce it, use ```OAuth2PasswordRequestFormStrict``` instead of ```OAuth2PasswordRequestForm```.
@@ -85,8 +85,8 @@ I will initialize the **APIRouter** and set the tag name to **auth**.
 ![step7](./steps/step7.png)
 
 
-Next, I will create an endpoint for login. I will pause the implementation for some time,
-before that I need to create a jwt file where I will be creating and verifying tokens.
+Next, I will create an endpoint for login. I will pause the implementation for some time.
+Before that, I need to create a jwt file where I will be creating and verifying tokens.
 
 ![step8](./steps/step8.png)
 
@@ -106,7 +106,7 @@ For the secret key, I will provide a long random string.
 ![step10](./steps/step10.png)
 
 I will create a function called ```create_access_token``` where I will write the implementation to 
-encode the data and generate the JWT token, this is something which I have directly taken from 
+encode the data and generate the JWT token. This is something which I directly took from 
 the FastAPI documentation.
 
 ![step11](./steps/step11.png)
@@ -137,7 +137,7 @@ def create_access_token(data: dict):
 
 Next, I will be creating a few pydantic classes.
 
-I will be creating three different classes : ```Login```, ```Token``` and ```TokenData```.
+I will be creating three different classes: ```Login```, ```Token``` and ```TokenData```.
 
 Login will be used for accepting parameters like username and password.
 
@@ -342,7 +342,7 @@ After we registered the router successfully, I will go to the user module.
 
 I will open the router and import ```get_current_user```.
 
-I will pass it in all of my apis as a dependency, excluding few. 
+I will pass it in all of my apis as a dependency, excluding a few. 
 
 **user/router.py**
 
@@ -370,7 +370,7 @@ router = APIRouter(
 
 @router.post('/', status_code=status.HTTP_201_CREATED)
 async def create_user_registration(request: schema.User, database: Session = Depends(db.get_db)):
-    # Read More : Pydantic Validation with Database (https://github.com/tiangolo/fastapi/issues/979)
+    # Read More: Pydantic Validation with Database (https://github.com/tiangolo/fastapi/issues/979)
 
     user = await validator.verify_email_exist(request.email, database)
     if user:
@@ -420,7 +420,7 @@ You can observe the lock symbol which means the endpoint is protected, and you n
 You can also observe that a link is appearing named **Authorize** with a lock sign.
 
 
-Once I click on it. It’s going to prompt me to enter a valid username and password.
+Once I click, it’s going to prompt me to enter a valid username and password.
 
 ![step20](./steps/step20.png)
 
@@ -447,7 +447,7 @@ There is an interesting discussion which I came across, and maybe you might want
 apis to be not protected like load balancer health checks, but you want to take the advantage of 
 [global dependency](https://fastapi.tiangolo.com/tutorial/dependencies/global-dependencies/).
 
-Then you should check this issue :
+Then you should check this issue:
  - [https://github.com/tiangolo/fastapi/issues/2481](https://github.com/tiangolo/fastapi/issues/2481)
 
 
@@ -512,7 +512,7 @@ async def get_order_listing(current_user, database) -> List[Order]:
 
 So, we have protected carts and orders, excluding products. It’s completely up to you which endpoints you want to protect or ignore.
 
-If I now try adding something to the cart, it’s not going to workout. We need to have a valid token.
+If I now try adding something to the cart, it’s not going to work out. We need to have a valid token.
 
 ![step25](./steps/step25.png)
 

@@ -5,21 +5,21 @@ title: Helm Charts
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Combine your K8s manifests into a single package using Helm Charts
+subtitle: Combine your K8s manifests into a single package using Helm Charts.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=wQJ6NBpHY0s
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 
 # Helm
 In this tutorial we will be working with Helm. In simple terms, [Helm](https://helm.sh/) is a package manager for Kubernetes. It is a tool
 that streamlines installing and managing Kubernetes applications. Think of it like ```Apt/Yum/Homebrew``` for K8s.
 
-* Note : I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm
+*Note: I will be showing a high-level use case of Helm. We won’t be getting deeper dive into Helm*
 
 
 # Installation
@@ -44,7 +44,7 @@ binary, scripts, apt, or homebrew etc.
 
 ![step4](./steps/step4.png)
 
-I am using **Ubuntu**, So I will follow the apt installation commands.
+I am using **Ubuntu**, so I will follow the apt installation commands.
 
 ![step5](./steps/step5.png)
 
@@ -56,7 +56,7 @@ sudo apt-get update
 sudo apt-get install helm
 ```
 
-Reference : [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)
+Reference: [https://helm.sh/docs/intro/install/](https://helm.sh/docs/intro/install/)
 
 Okay, we have successfully installed Helm.
 
@@ -85,8 +85,8 @@ Let me try to check for the **NGINX** package.
 
 ![step8](./steps/step8.png)
 
-As you can see there are multiple charts for NGINX, some have been uploaded by organizations and 
-some by users, you can filter them out based on **verified publishers** or **official providers**.
+As you can see there are multiple charts for NGINX. Some have been uploaded by organizations and 
+some by users. You can filter them out based on **verified publishers** or **official providers**.
 
 # Installing NGINX Chart
 
@@ -131,11 +131,11 @@ helm search repo drupal
 
 ![step12](./steps/step12.png)
 
-You can observe we got the latest version of Drupal 9.2.7
+You can observe we got the latest version of Drupal `9.2.7`.
 
-**Chart Version** and **App Version** are completely different. App version is pointing to the stable version of drupal.
+**Chart Version** and **App Version** are completely different. App version is pointing to the stable version of Drupal.
 
-I will try to search again but this time I will append **“--versions”** and it’s going to return a list of all drupal versions.
+I will try to search again but this time I will append **“--versions”** and it’s going to return a list of all Drupal versions.
 
 ```bash
 helm search repo drupal --versions
@@ -151,7 +151,7 @@ Now, I will try to search for the NGINX package. As of this recording 1.21.3 is 
 
 I will move forward and install a nginx chart.
 
-I will type the command : 
+I will type the command: 
 
 ```bash
 helm install my-release bitnami/nginx
@@ -161,7 +161,7 @@ helm install my-release bitnami/nginx
 
 ![step16](./steps/step16.png)
 
-Once  a chart has been installed, you can check them by typing the command : 
+Once a chart has been installed, you can check them by typing the command: 
 
 ```bash
 helm list
@@ -186,7 +186,7 @@ I will type:
 minikube service list
 ```
 
-which is going to provide me with the list of services running.
+...which is going to provide me with the list of services running.
 
 ![step19](./steps/step19.png)
 
@@ -198,7 +198,7 @@ I will try to search for a different version of NGINX and try to install that.
 
 We have the installed the latest stable release, I will go for an older release.
 
-I will type the command : 
+I will type the command: 
 
 ```bash
 helm install my-release-2 bitnami/nginx --version 6.0.0
@@ -206,7 +206,7 @@ helm install my-release-2 bitnami/nginx --version 6.0.0
 
 Version 6 is the chart version which indeed going to install the NGINX **1.19**.
 
-As you can see there are two versions of NGINX running parallely, one is 1.21.3 and the second is 1.19.0
+As you can see there are two versions of NGINX running in parallel: one is 1.21.3 and the second is 1.19.0
 
 ![step21](./steps/step21.png)
 
@@ -221,12 +221,12 @@ The latest release is running on port 30214 and the older release which is my-re
 So, this is the simplest use case of Helm. You can observe the benefits of using Helm Charts,  
 also you can roll back or upgrade helm charts.
 
-When you type : helm list it will provide a list of releases in the default namespace. You can 
+When you type: helm list it will provide a list of releases in the default namespace. You can 
 also pass **all-namespaces** to get all releases present across namespaces.
 
 ![step23](./steps/step23.png)
 
-You can also update the repository by typing :
+You can also update the repository by typing:
 
 ```bash
 helm repo update
@@ -234,7 +234,7 @@ helm repo update
 Update gets the latest information about charts from the respective chart repositories. 
 
 
-If you want to delete or remove the resources then you can type :
+If you want to delete or remove the resources then you can type:
 
 ```bash
 helm uninstall release
@@ -244,7 +244,7 @@ I am going to uninstall release 2 as well.
 
 ![step24](./steps/step24.png)
 
-If I now type : **helm list** it will return empty. In the background Kubernetes will be clearing up the resources.
+If I now type: **helm list** it will return empty. In the background Kubernetes will be clearing up the resources.
 
 ![step25](./steps/step25.png)
 
@@ -311,13 +311,15 @@ Let me explain one by one.
 
 This file basically contains metadata about your chart.
 
-The **apiVersion** is basically the chart api version which is v2 which is basically pointing to the Helm 3 version. If apiVersion is v1 it's basically telling that it uses previous versions of Helm.
+The **apiVersion** is basically the chart api version which is v2 which is basically pointing to the Helm 3 version. 
+If apiVersion is v1 it's basically telling that it uses previous versions of Helm.
 
 **Description** is something optional. You can give brief information about your application.
 
-Type of chart can be an **application** or **library** chart. As we are working on an application it’s going to be an application chart. According to Helm docs : *A library
-chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts. This allows users to share snippets of code
-that can be reused across charts, avoiding repetition and keeping charts DRY*.
+Type of chart can be an **application** or **library** chart. As we are working on an application it’s going to be an application chart. 
+According to Helm docs: *A library
+chart is a type of Helm chart that defines chart primitives or definitions which can be shared by Helm templates in other charts. 
+This allows users to share snippets of code that can be reused across charts, avoiding repetition and keeping charts DRY*.
 
 **Version** is basically pointing towards the chart version and appVersion is basically the application version. 
 
@@ -607,7 +609,7 @@ spec:
 
 As I said earlier, I have explicitly ignored parameterizing the ecommerce fastapi image, but you are free to do that.
 
-Same I have done for Secret. As you see I have parameterized only a few things, but you have power to even customize the port number as well.
+I have done the same for Secret. As you see I have parameterized only a few things, but you have power to even customize the port number as well.
 
 All the chart files are already committed in my [source code](https://github.com/mukulmantosh/FastAPI_EKS_Kubernetes/), and you can directly check it out on GitHub.
 
@@ -634,7 +636,7 @@ directly create the namespace through Helm itself by passing **--create-namespac
 ```yaml
 
   local:
-    path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with docker desktop in windows
+    path: /run/desktop/mnt/host/e/postgres-data   # <-- if running with Docker desktop in windows
   nodeAffinity:
     required:
       nodeSelectorTerms:
@@ -648,7 +650,7 @@ directly create the namespace through Helm itself by passing **--create-namespac
 
 ![step40](./steps/step40.png)
 
-Great ! chart has been installed. As you can see in the screen the instruction is coming from the **NOTES.txt** file. 
+Great! Chart has been installed. As you can see in the screen the instruction is coming from the **NOTES.txt** file. 
 This file does not get installed.
 
 ![step41](./steps/step41.png)
@@ -672,7 +674,7 @@ export NODE_PORT=$(kubectl get svc nginx-service-{{ include "fastapi-helm.fullna
 
 echo "Visit http://127.0.0.1:$NODE_PORT to use your application"
 
-echo "Happy Helming with FastAPI :)"
+echo "Happy Helming with FastAPI:)"
 ```
 
 Let me quickly check how my pods are performing.
@@ -687,13 +689,13 @@ I will type: **minikube service list**.
 
 Application is running on port 30790, let me try it out.
 
-Great ! Finally, it works. So you saw how easy it was to perform repeatable deployments in Kubernetes using Helm.
+Great! Finally, it works. So you saw how easy it was to perform repeatable deployments in Kubernetes using Helm.
 
 ![step44](./steps/step44.png)
 
 Also, there are many commands which we haven’t used like the linting.
 
-I will type : 
+I will type: 
 
 ```bash
 helm lint fastapi-helm

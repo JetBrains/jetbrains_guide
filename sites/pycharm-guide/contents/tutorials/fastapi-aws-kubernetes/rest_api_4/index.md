@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2022-01-02
-title: RestAPI - Part IV
+title: REST API - Part IV
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Performing CRUD operations in Orders & Cart Module
+subtitle: Performing CRUD operations in Orders & Cart Module.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
   url: https://www.youtube.com/watch?v=hRYNGvBm8dk
 ---
 
-Hello everyone ! Welcome to PyCharm FastAPI Tutorial Series.
+Hello everyone! Welcome to the PyCharm FastAPI Tutorial Series.
 
 
 # ReDoc
@@ -34,7 +34,7 @@ By default, Redoc offers a three-panel, responsive layout:
 - The right panel contains request and response examples.
 
 
-You can even disable the docs along-with changing the docs url path.
+You can even disable the docs along with changing the docs url path.
 
 ![step2](./steps/step2.png)
 
@@ -45,14 +45,14 @@ You can even disable the docs along-with changing the docs url path.
 
 # HTTPClient
 
-There is one more thing I would like to mention,  you can test the APIs through 
+There is one more thing I would like to mention. You can test the APIs through 
 PyCharm itself via [HTTPClient](https://www.jetbrains.com/help/pycharm/http-client-in-product-code-editor.html).
 
 Click on **Tools** → **HTTP Client** → **Create Request in HTTP Client**.
 
 ![step5](./steps/step5.png)
 
-I am going to copy the curl request and try to run it.
+I am going to copy the `curl` request and try to run it.
 
 ![step6](./steps/step6.png)
 
@@ -83,7 +83,7 @@ So, in the cart table you can see that every user will be getting a unique cart 
 
 And CartItems will be storing cart id and product id. In this way, we will easily identify how many items are there in the cart for a particular user.
 
-You can observe that we have created relationships with cart and product, also foreign key mapping of user in cart model.
+You can observe that we have created relationships with cart and product, also a foreign key mapping of user in cart model.
 
 **models.py**
 ```python
@@ -142,7 +142,7 @@ The tables are reflecting in our database.
 You can observe the foreign key relationships. In cart items we have the foreign key
 with cart id and product id. 
 
-In the cart table we have foreign key with user id.
+In the cart table we have a foreign key with user id.
 
 ![step13](./steps/step13.png)
 
@@ -177,8 +177,8 @@ async def add_product_to_cart(product_id: int,
     return result
 ```
 
-We will also validate whether product quantity, if quantity is less than
-or equal to 0 then the item is out of stock.
+We will also validate whether product quantity is less than
+or equal to 0. If so, then the item is out of stock.
 
 ![step15](./steps/step15.png)
 
@@ -336,7 +336,7 @@ You can see the item has been deleted. Let me verify that.
 
 ![step27](./steps/step27.png)                                             
 
-As you can see, the get all cart items has returned an empty list, that means
+As you can see, the "get all cart items" API has returned an empty list. That means
 our cart item was successfully deleted and now our cart is completely empty.
 
 ![step28](./steps/step28.png)                                             
@@ -348,4 +348,4 @@ that completely up to you.
 In the next tutorial, we will work on the Order where we are going to see
 how to place an order successfully.
 
-Stay tuned !
+Stay tuned!
