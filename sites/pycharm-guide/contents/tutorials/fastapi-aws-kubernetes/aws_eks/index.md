@@ -315,7 +315,7 @@ eksctl utils associate-iam-oidc-provider --region ap-south-1 --cluster fastapi-d
 
 Reference:
 - [https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html](https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html)
-
+- [https://eksctl.io/usage/iamserviceaccounts/](https://eksctl.io/usage/iamserviceaccounts/)
 
 ![step35](./steps/step35.png)
 

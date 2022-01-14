@@ -306,6 +306,9 @@ Under K8s directory, I will create multiple directories.
 First I will create a **namespace**. In Kubernetes, namespaces provide a mechanism for isolating groups of resources
 within a single cluster. Names of resources need to be unique within a namespace, but not across namespaces.
 
+Reference:
+- [https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace)
+
 
 ![step21](./steps/step21.png)
 
@@ -969,8 +972,11 @@ spec:
 
 ```
 
-You can observe that we are using a busybox image in our init containers just to do nslookup of whether our redis service is present or not. Don’t consider this as a health check.
+You can observe that we are using a busybox image in our init containers just to do **nslookup** of whether our redis service is present or not. Don’t consider this as a health check.
 
+
+Reference:
+- [livenessProbe and readinessProbe for celery beat and workers](https://github.com/celery/celery/issues/4079)
 
 ![step29](./steps/step29.png)
 
