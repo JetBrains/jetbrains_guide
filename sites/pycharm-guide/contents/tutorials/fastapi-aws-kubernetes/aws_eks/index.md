@@ -824,6 +824,15 @@ Under spec, I will provide the cluster name **fastapi-demo**.
 
 ![step68](./steps/step68.png)
 
+
+```yaml
+    spec:
+      containers:
+      - args:
+        - --ingress-class=alb
+        - --cluster-name=fastapi-demo 
+```
+
 Save and exit.
 
 I will verify whether the controller is running or not. 
@@ -1249,6 +1258,157 @@ Fingers crossed this is something which is not under our control.
 
 Fast forwarding time our hosted zone setup is complete and the DNS has successfully applied the new records. Now, 
 we will go ahead and set up SSL in Certificate Manager.
+
+
+# AWS Certificate Manager
+
+![step100](./steps/step100.png)
+
+I am going to provide the domain name along-with the wildcard entry.
+
+![step101](./steps/step101.png)
+
+I will make sure to add these records in Route53. 
+
+![step102](./steps/step102.png)
+
+I will choose DNS validation, it's going to add the record in Route53.
+
+![step103](./steps/step103.png)
+
+The validation may take somewhat around 30 minutes of time.
+
+![step104](./steps/step104.png)
+
+![step105](./steps/step105.png)
+
+Okay, as you can see the certificate has been issued successfully. Now, I am going to
+copy the **ARN** and replace it in the **ingress.yaml** file.
+
+![step106](./steps/step106.png)
+
+![step107](./steps/step107.png)
+
+![step108](./steps/step108.png)
+
+![step109](./steps/step109.png)
+
+Observing line number 19 we are using the TLS 1.2 protocol.
+
+![step110](./steps/step110.png)
+
+Next, I am going to deploy the ingress.
+
+![step111](./steps/step111.png)
+
+Ingress has been deployed. Let me check the status.
+
+![step112](./steps/step112.png)
+
+Looks like there is some issue, We haven’t tagged our subnets properly.
+
+![step113](./steps/step113.png)
+
+Let me remove the ingress and tag my subnets properly. After that I will re-deploy the ingress again.
+
+![step114](./steps/step114.png)
+
+Yes I made a mistake, I need to replace the cluster name with **fastapi-demo**.
+
+![step115](./steps/step115.jpg)
+
+Once, it's fixed. I will try to deploy again and check the logs.
+
+![step116](./steps/step116.png)
+
+![step117](./steps/step117.png)
+
+You can see it has been successfully reconciled.
+
+
+Let me quickly show you the load balancer address where ingress is pointing to.
+
+![step118](./steps/step118.png)
+
+Next, I will go to Route 53 and create a new record pointing to our website. 
+
+We are not covering this, but you don’t need to do this manually; you can easily achieve this 
+through **externalDNS** provided by Kubernetes.
+
+ExternalDNS is **a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services** to make them discoverable.
+
+We will create two records: **A** and **CNAME**.
+
+![step119](./steps/step119.png)
+
+We will create two records: A and CNAME
+
+The two records have been created successfully.
+
+The **A** record maps a name to one or more IP addresses when the IP is known and stable. Here we are pointing to the load balancer.
+
+The **CNAME** record maps a name to another name. It should only be used when there are no other records on that name.
+
+
+![step120](./steps/step120.png)
+
+![step121](./steps/step121.png)
+
+
+# FastAPI running live !
+
+Let me now try to check whether the domain is pointing to the backend or not.
+
+And Yes, finally the domain is pointing to our FastAPI backend with SSL secured.
+
+
+![step122](./steps/step122.png)
+
+
+Let me do a quick test. We have already done it multiple times in our local machine, but now it’s live.
+
+![step123](./steps/step123.png)
+
+![step124](./steps/step124.png)
+
+Yes, our record has been created. Let me now try out the remaining apis.
+
+![step125](./steps/step125.png)
+
+We have successfully executed and listed our orders. So, this is how we did the entire journey of application development, 
+testing and finally end to end deploying the kubernetes stack in AWS with fully qualified domain name and SSL.
+
+Let me check if I receive any new order email. Okay not yet.
+
+![step126](./steps/step126.png)
+
+Nothing to worry about. Sometimes the email gets delayed because we are using a temp email service. I recommend using 
+a full-fledged email service like Gmail when you are trying out this application.
+
+There is one more thing which I haven’t shown you.
+
+You can manage your EKS resources directly through PyCharm instead of doing it manually.
+
+I hope you have already played with the Kubernetes plugin or checked out my previous video/tutorial.
+
+![step127](./steps/step127.png)
+
+I am just going to point the **kubeconfig** file to **fastapi-demo**, and then it works like a charm.
+
+![step128](./steps/step128.png)
+
+And now you can see our Pods, Deployments, Jobs which are running.
+
+![step129](./steps/step129.png)
+
+![step130](./steps/step130.png)
+
+I hope you definitely like the video & tutorial and enjoy this long journey from development to deployment.
+
+Do check my next tutorials about reference materials which I have used when I was working on this tutorial. I will share
+some good tutorials/blogs where you can go and enhance your skills more when working with FastAPI or EKS.
+
+
 
 
 
