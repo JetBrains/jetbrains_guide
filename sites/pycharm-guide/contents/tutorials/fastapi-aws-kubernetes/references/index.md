@@ -43,6 +43,31 @@ are going to get help from the FastAPI community, and I would also suggest
 helping others in the problems the users are facing. In this way the community grows,
 It’s a great experience working with like-minded people.
 
+
+# PyCharm by JetBrains 
+
+Interesting videos provided by the official PyCharm YouTube Channel.
+
+
+## Smarter FastAPI Tooling
+
+![fastapi_smarter_api_tooling](./steps/pycharm_video_1.jpg)
+
+Source : [https://www.youtube.com/watch?v=r6fBoBTRfT4](https://www.youtube.com/watch?v=r6fBoBTRfT4)
+
+## Let's Build a Fast, Modern Python API with FastAPI
+
+![modern_api_fast_api](./steps/pycharm_video_2.jpg)
+
+Source : [https://www.youtube.com/watch?v=sBVb4IB3O_U](https://www.youtube.com/watch?v=sBVb4IB3O_U)
+
+
+## 10 Reasons You'll Love PyCharm Even More in 2021
+
+![love_pycharm](./steps/pycharm_video_3.jpg)
+
+Source : [https://www.youtube.com/watch?v=sJriZQsMHrw](https://www.youtube.com/watch?v=sJriZQsMHrw)
+
 # Talk Python
 
 If you are interested in taking your Python knowledge to the next level then I would 
