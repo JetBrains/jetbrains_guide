@@ -188,6 +188,7 @@ managedNodeGroups:
         - arn:aws:iam::<REPLACE_THIS_NUMBER>:policy/SES_EKS_Policy   # <-- custom policy
         - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
         - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryReadOnly
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
       withAddonPolicies:
         autoScaler: true
         imageBuilder: true
@@ -238,6 +239,21 @@ Carefully observe line number 19 the ```SES EKS Policy```, this is not the defau
 instead it’s a custom policy which we have created to grant permission to send email through SES. Hang tight, 
 I will show you in a while. Your ARN number is going to be different so make to sure replace that otherwise the
 cluster creation will fail.
+
+**SES_EKS_Policy**
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ses:SendRawEmail",
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 ![step26](./steps/step26.png)
 
@@ -422,7 +438,7 @@ A **RoleBinding** grants permissions within a specific namespace whereas a **Clu
 
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/rbac-role.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-alb-ingress-controller/master/docs/examples/rbac-role.yaml --kubeconfig=fastapi-demo
 ```
 
 **eks/utils/rbac-role.yml**
@@ -690,7 +706,7 @@ eksctl create iamserviceaccount \
 --name alb-ingress-controller \
 --namespace kube-system \
 --cluster fastapi-demo \
---attach-policy-arn <YOUR_POLICY_ARN> \
+--attach-policy-arn <YOUR_POLICY_ARN> \           # <-- AWSLoadBalancerControllerIAMPolicy
 --override-existing-serviceaccounts \
 --approve
 ```
@@ -702,6 +718,10 @@ I will copy the policy ARN and replace it.
 The IAM service account is created, let me verify that.
 
 ![step64](./steps/step64.png)
+
+```bash
+eksctl get iamserviceaccount --cluster fastapi-demo
+```
 
 ![step65](./steps/step65.png)
 
@@ -816,6 +836,11 @@ Ingress Controller has been created, but we need to update some config which is 
 I am directly going to live edit the deployment file, the default editor which is picked is vim, but I am using nano, 
 completely your choice. To use your favorite editor by default, set the environment variable **KUBE_EDITOR**, even you can use sublime text, notepad etc.
 
+
+```bash
+kubectl edit deployment alb-ingress-controller -n kube-system --kubeconfig=fastapi-demo
+```
+
 ![step67](./steps/step67.png)
 
 The controller is deployed in the **kube-system** namespace.
@@ -849,6 +874,10 @@ For more information, visit the below link:
 - [https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/](https://aws.amazon.com/premiumsupport/knowledge-center/eks-vpc-subnet-discovery/)
 
 I will tag all the subnets. The **shared** value allows more than one cluster to use the subnet.
+
+```
+kubernetes.io/cluster/fastapi-demo : shared
+```
 
 ![step70](./steps/step70.png)
 
@@ -920,8 +949,12 @@ Let’s go to **ElastiCache** and create our redis instance.
 ![step78](./steps/step78.png)
 
 
-Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**), the same we did for postgres. We are not covering this, if 
-you have any confusion then follow the postgres private subnet setup. It's going to be same for elasticache as well.
+Same as usual I will create a private subnet group for redis (**redis-eks-subnetgroup**), 
+the same we did for postgres, three private subnets. We are not covering this, 
+if you have any confusion then follow the postgres subnet group setup. It's going 
+to be same for elasticache as well.
+
+![redis_eks_subnet_group](./steps/redis_eks_subnet_group.png)
 
 ![step79](./steps/step79.png)
 
@@ -1403,6 +1436,30 @@ And now you can see our Pods, Deployments, Jobs which are running.
 ![step129](./steps/step129.png)
 
 ![step130](./steps/step130.png)
+
+* **Important** : Make sure your policy has the permission ```ses:SendEmail```, otherwise your email won't be sent.
+
+**SES_EKS_Policy**
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ses:SendEmail",      
+                "ses:SendRawEmail"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+![step131](./steps/step131.png)
+
+
 
 I hope you definitely like the video & tutorial and enjoy this long journey from development to deployment.
 
