@@ -5,11 +5,11 @@ title: Elastic Kubernetes Service (EKS)
 technologies: [fastapi, kubernetes, aws]
 topics: [python]
 author: mm
-subtitle: Deploying application using EKS, RDS, ElastiCache, Route53 & AWS Certificate Manager
+subtitle: Deploying application using EKS, RDS, ElastiCache, Route53 & AWS Certificate Manager.
 thumbnail: thumbnail.png
 longVideo:
   poster: poster_long.png
-  url: https://www.youtube.com/watch?v=dbS8NakYlSU
+  url: https://www.youtube.com/watch?v=fAb6OW9Uur4
 ---
 
 
