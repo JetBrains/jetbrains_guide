@@ -177,7 +177,14 @@ job("Warmup - Content creators (Fleet)") {
 
     startOn {
         schedule { cron("0 0 * * *") }
-        gitPush { enabled = true }
+
+        gitPush {
+            enabled = true
+
+            branchFilter {
+                +"refs/heads/main"
+            }
+        }
     }
 
     warmup(ide = Ide.Fleet) {
@@ -193,7 +200,14 @@ job("Warmup - Content creators (Gateway)") {
 
     startOn {
         schedule { cron("0 0 * * *") }
-        gitPush { enabled = true }
+
+        gitPush {
+            enabled = true
+
+            branchFilter {
+                +"refs/heads/main"
+            }
+        }
     }
 
     warmup(ide = Ide.WebStorm) {
