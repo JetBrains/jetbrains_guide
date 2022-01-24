@@ -30,6 +30,6 @@
     "intellij:cn": "./i10n.sh intellij"
   },
   "dependencies": {
-    "yarn": "^1.22.11"
+    "yarn": "^1.22.17"
   }
 }
