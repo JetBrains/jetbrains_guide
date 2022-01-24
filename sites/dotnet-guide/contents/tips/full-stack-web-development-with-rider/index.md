@@ -26,7 +26,7 @@ leadin: |
     * [2:34](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=154s) Endpoints
     * [3:16](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=196s) Docker and containers
     * [4:05](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=245s) Databases & SQL support
-    * [4:40](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=280s) Could technologies (Azure / AWS support)
+    * [4:40](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=280s) Cloud technologies (Azure / AWS support)
     * [5:17](https://www.youtube.com/watch?v=dgUyhd-4EeM&t=317s) NuGet package manager
 
     ### See Also
