@@ -1,5 +1,5 @@
 ---
-date: 2021-06-18
+date: 2021-12-30
 title: Automatic Inspections
 technologies: [.net]
 products: [dotmemory]
