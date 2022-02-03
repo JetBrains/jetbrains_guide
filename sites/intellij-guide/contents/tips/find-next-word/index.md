@@ -14,7 +14,7 @@ seealso:
   - title: IntelliJ IDEA Help - Source code navigation
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 leadin: |
-  Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word. 
+  Press **^G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word. 
 
   **Pro tip:**
   
