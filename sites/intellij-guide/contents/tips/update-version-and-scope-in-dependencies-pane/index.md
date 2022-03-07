@@ -14,6 +14,6 @@ seealso:
   - title: IntelliJ IDEA Help - Package Search
     href:  https://www.jetbrains.com/help/idea/package-search.html
 leadin: |
-  Managing dependencies is hard. But with the built-in Dependencies tool window, you can upgrade, downgrade, remove existing dependencies, and change their scope.
+  Managing dependencies is hard, but with the built-in Dependencies tool window, you can upgrade, downgrade, remove existing dependencies, and change their scope.
 
 ---

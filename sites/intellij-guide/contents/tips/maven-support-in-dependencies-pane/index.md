@@ -4,7 +4,7 @@ title: Maven Support in Dependencies Tool Window
 technologies: [maven]
 topics: [packagesearch]
 author: sf
-subtitle: Add dependencies straight into POM file with a click
+subtitle: Add dependencies straight into your POM file with a single click
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -14,6 +14,6 @@ seealso:
   - title: IntelliJ IDEA Help - Package Search build system support
     href:  https://www.jetbrains.com/help/idea/package-search-build-system-support-limitations.html#maven_support
 leadin: |
-  The Package Search works for Maven. Search for libraries in the Dependencies tool window, and add them straight into your POM with a click. Voila!
+  You can search for libraries in the Dependencies tool window, and add them straight into your Maven POM file with a single click. 
 
 ---

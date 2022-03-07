@@ -11,6 +11,6 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/mbR8zTr1dqA
 leadin: |
-  Want to search for dependencies and their information but don't have access to IntelliJ IDEA at the moment? Head over to [Package Search Web UI](https://package-search.jetbrains.com/) then type and search the information you need, without the need for an IDE.
+  Do you want to search for dependencies and their information but don't have access to IntelliJ IDEA at the moment? Head over to our [Package Search](https://package-search.jetbrains.com/) web page then type and search the information you need, without the need for an IDE.
 
 ---
