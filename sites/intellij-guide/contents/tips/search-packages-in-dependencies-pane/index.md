@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/mbR8zTr1dqA
+  url: https://youtu.be/WFSwUNjeXq8
 seealso:
   - title: IntelliJ IDEA Help - Package Search
     href:  https://www.jetbrains.com/help/idea/package-search.html

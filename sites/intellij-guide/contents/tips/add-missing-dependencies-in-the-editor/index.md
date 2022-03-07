@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/mbR8zTr1dqA
+  url: https://youtu.be/4Ywt0R29wzM
 leadin: |
   Focus on your code and add any classes that you need. If it doesn’t exist in your classpath, use quick fix **⌥+↩** (macOS) or **Alt+Enter** (Windows/Linux) to let Package Search help you add the missing dependencies. Neat! ✨
 

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/mbR8zTr1dqA
+  url: https://youtu.be/u2keaYbs1Vg
 seealso:
   - title: IntelliJ IDEA Help - Package Search build system support
     href:  https://www.jetbrains.com/help/idea/package-search-build-system-support-limitations.html#maven_support

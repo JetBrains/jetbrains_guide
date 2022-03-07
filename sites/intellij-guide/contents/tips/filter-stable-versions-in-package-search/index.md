@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/mbR8zTr1dqA
+  url: https://youtu.be/oSvjckoIUbM
 leadin: |
   You can filter out unstable versions in the Dependencies tool window by selecting the "Only stable" checkbox.
 
