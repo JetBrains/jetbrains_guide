@@ -6,7 +6,7 @@ technologies: [.net,fsharp]
 products: [rider,resharper]
 topics: [web, ide]
 author: maartenba
-subtitle: Alexey Golub
+subtitle: Oleksii Holub
 thumbnail: ./thumbnail.png
 longVideo: 
     poster: ./thumbnail.png
