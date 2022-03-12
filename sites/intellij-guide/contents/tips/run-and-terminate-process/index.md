@@ -11,9 +11,9 @@ shortVideo:
   poster: ./tip.png 
   url: https://youtu.be/BvqnP2RZjOM
 seealso:
-   - title: IntelliJ IDEA Help - Run Applications
+   - title: (documentation) IntelliJ IDEA Help - Run Applications
      href: https://www.jetbrains.com/help/idea/running-applications.html
-   - title: IntelliJ IDEA Help - Stop and Pause Applications
+   - title: (documentation) IntelliJ IDEA Help - Stop and Pause Applications
      href: https://www.jetbrains.com/help/idea/running-applications.html#stop-pause
 leadin: | 
   You can run a process with **⌃R** (macOS), or **Shift+F10** (Windows/Linux). To stop a process, you can use **⌘F2** on macOS, or **Ctrl+F2** on Windows/Linux.

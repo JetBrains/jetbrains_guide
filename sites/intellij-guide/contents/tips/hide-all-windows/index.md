@@ -11,7 +11,11 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Mg3ZaKFv6H8
 seealso:
-  - title: IntelliJ IDEA Help - Editor Basics
+  - title: (video) Navigation in IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=1UHsJyCq1SU
+  - title: (video) Editor Tips and Tricks in IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=JEpeHNsWIMk
+  - title: (documentation) IntelliJ IDEA Help - Editor Basics
     href: https://www.jetbrains.com/help/idea/using-code-editor.html
 leadin: |
   Press **⇧⌘F12** (macOS), or **Ctrl+Shift+F12** (Windows/Linux), to hide all the windows so that you can focus on your code window. 

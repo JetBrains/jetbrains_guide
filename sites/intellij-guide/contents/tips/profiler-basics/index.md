@@ -14,7 +14,11 @@ longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/OQcyAtukps4
 seealso:
-  - title: Profiling tools
+  - title: (video) Profile Tools and IntelliJ IDEA Ultimate
+    href: https://www.youtube.com/watch?v=OQcyAtukps4
+  - title: (video) A Simple Approach to Advanced JVM Profiling
+    href: https://www.youtube.com/watch?v=TDpbt4thECc
+  - title: (documentation) IntelliJ IDEA Help - Profiling tools
     href: https://www.jetbrains.com/help/idea/cpu-profiler.html
 leadin: |
   Access the profiler window using Find Action, **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux), or via the quick access buttons, and it shows a list of running processes

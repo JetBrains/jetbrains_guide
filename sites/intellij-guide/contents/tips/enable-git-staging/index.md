@@ -11,6 +11,8 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/a-7y6ATlplg
 seealso:
+  - title: (video) What's New for Java Developers in IntelliJ IDEA 2020.3
+    href: https://www.youtube.com/watch?v=KffXqIZ0tYg
   - title: IntelliJ IDEA Help - Use the Git staging area to commit changes
     href: https://www.jetbrains.com/help/idea/commit-and-push-changes.html#use-git-staging-area-to-commit-changes
 leadin: |

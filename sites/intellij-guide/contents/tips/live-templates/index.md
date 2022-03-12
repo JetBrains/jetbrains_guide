@@ -15,11 +15,15 @@ longVideo:
   poster: ./live_templates.jpeg
   url: https://youtu.be/ffBeoE6NBSs
 seealso:
-  - title: IntelliJ IDEA Help - Using Live Templates
+  - title: (video) IntelliJ IDEA Write Code Faster Using Live Templates
+    href: https://www.youtube.com/watch?v=ffBeoE6NBSs&t=56s
+  - title: "(video) IntelliJ IDEA Pro Tips: Live Templates"
+    href: https://www.youtube.com/watch?v=XhCNoN40QTU
+  - title: (documentation) IntelliJ IDEA Help - Using Live Templates
     href: https://www.jetbrains.com/help/idea/using-live-templates.html
-  - title: IntelliJ IDEA Help - Creating Live Templates
+  - title: (documentation) IntelliJ IDEA Help - Creating Live Templates
     href: https://www.jetbrains.com/help/idea/creating-and-editing-live-templates.html
-  - title: IntelliJ IDEA Guide - Create a Custom Test Live Template
+  - title: (documentation) IntelliJ IDEA Guide - Create a Custom Test Live Template
     href: ../../tutorials/writing-junit5-tests/live-templates-tip/
 leadin: |
   Live Templates reduce the amount of code you need to type for the more common code constructs. You can use _psvm_ or _main_ to create the main Java method, for example. There are lots of live templates including _fori_ for a for i loop and _nn_ for not null, plus many more.

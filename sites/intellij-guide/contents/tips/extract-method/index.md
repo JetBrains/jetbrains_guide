@@ -11,7 +11,11 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/VwEK2_FohFw
 seealso:
-  - title: IntelliJ IDEA Help - Extract Method
+  - title: (video) IntelliJ IDEA Everyday Refactorings
+    href: https://www.youtube.com/watch?v=rPq7fBo5JVs
+  - title: (video) IntelliJ IDEA 3 Ways to Simplify Your Code
+    href: https://www.youtube.com/watch?v=HgWU25YwDfc
+  - title: (documentation) IntelliJ IDEA Help - Extract Method
     href: https://www.jetbrains.com/help/idea/extract-method.html
 leadin: |
   Highlight the code you want to extract to a method and press **⌥⌘M** (macOS), or **Ctrl+Alt+M** (Windows/Linux), to extract it.

@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Y0LhKg2tJfQ
 seealso:
-  - title: IntelliJ IDEA Help - Source code navigation
+  - title: (documentation) IntelliJ IDEA Help - Source code navigation
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html
 leadin: |
   Press **⌘G** (macOS), or **F3** (Windows/Linux), to move to the next occurrence of a word. 

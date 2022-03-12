@@ -11,7 +11,11 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/QJEEtaTV-Yg
 seealso:
-  - title: IntelliJ IDEA Help - Find recent files
+  - title: (video) Navigation in IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=1UHsJyCq1SU
+  - title: (video) Top 5 IntelliJ IDEA Navigation Shortcuts
+    href: https://www.youtube.com/watch?v=crnEBqbBWuo
+  - title: (documentation) IntelliJ IDEA Help - Find recent files
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#recent_files
 leadin: |
   Use **⌘E** (macOS), or **Ctrl+E** (Windows/Linux), or  to view the recent files and access windows that don't have shortcuts by typing them straight into the dialog. 

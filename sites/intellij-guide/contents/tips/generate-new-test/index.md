@@ -11,6 +11,10 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/e79F8mEXcTE
 seealso:
+  - title: (video) CodeGeneration in IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=btqCYUc3nFE
+  - title: "(video) Helen's Take On: Generating Code in IntelliJ IDEA"
+    href: https://www.youtube.com/watch?v=vF_18ZsM1lE
   - title: IntelliJ IDEA Help - Generate code
     href: https://www.jetbrains.com/help/idea/generating-code.html
 leadin: |
