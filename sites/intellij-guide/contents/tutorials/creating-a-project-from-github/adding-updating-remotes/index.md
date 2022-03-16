@@ -37,3 +37,6 @@ When you have pressed **OK** on your new remote, the Git Remotes dialog will sho
 ![Add and rename remotes](add-rename-remotes.png)
 
 Like most features in IntelliJ IDEA, there's more than one way to open the Manage Remotes dialog. You can also right-click on the _Remote_ node in the branches tree of the Git Log tool window, and select **Manage Remotes**.
+
+### Related YouTube Links
+- [Adding a Project to Git and GitHub](https://www.youtube.com/watch?v=mf2-MOl0VXY)

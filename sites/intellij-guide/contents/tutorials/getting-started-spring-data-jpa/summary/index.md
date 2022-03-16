@@ -31,3 +31,6 @@ You can find the final project created through this tutorial in this [GitHub rep
 - [Spring Support in IntelliJ IDEA](https://www.jetbrains.com/help/idea/spring-support.html)
 - [Explore Spring support features](https://www.jetbrains.com/help/idea/spring-support-tutorial.html)
 - [Database Connection in IntelliJ IDEA](https://www.jetbrains.com/help/idea/connecting-to-a-database.html)
+
+### Related YouTube Links
+- [Getting started with Spring Data JPA](https://www.youtube.com/watch?v=wuX2ESOy-Ts)
