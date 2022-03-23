@@ -36,7 +36,7 @@ public CommandLineRunner run(EmployeeRepository repository) {
 }
 ```
 
-Let's run our application and see it in action. We'll press **Shift**+**F10** for Windows/Linux or **⇧R** for macOS.
+Let's run our application and see it in action. We'll press **Shift**+**F10** for Windows/Linux or **⌃R** for macOS.
 
 ## End Result
 Once our application starts, we can see the Console logs showing our Spring Boot application starting. Then, we can see the result of our `findAll` call which prints all our employees from the database.
