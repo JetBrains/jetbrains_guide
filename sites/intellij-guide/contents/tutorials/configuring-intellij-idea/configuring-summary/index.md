@@ -30,9 +30,9 @@ We've used the following shortcuts in this tutorial:
 - You can [export](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#import-export-settings) settings to share with your other instances of IntelliJ IDEA. 
 - You can use a [Settings Repository](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository) to share settings with your colleagues.
 
-### Related YouTube Links
-- [Code formatting in IntelliJ IDEA](https://www.youtube.com/watch?v=vjVWjocENLg)
-- [Helen's Take on Settings & Preferences](https://www.youtube.com/watch?v=u-iA1yjS6GY)
-- [Helen's Take on Project SDK, Language Level and JDKs](https://www.youtube.com/watch?v=W4EK_KVgfkw)
-- [Helen's Take On Everyday Shortcuts](https://www.youtube.com/watch?v=matPBmotxvY)
-- [Editor Tips and Tricks in IntelliJ IDEA](https://www.youtube.com/watch?v=JEpeHNsWIMk)
+### Related Links
+- [(video) Code formatting in IntelliJ IDEA](https://www.youtube.com/watch?v=vjVWjocENLg)
+- [(video) Helen's Take on Settings & Preferences](https://www.youtube.com/watch?v=u-iA1yjS6GY)
+- [(video) Helen's Take on Project SDK, Language Level and JDKs](https://www.youtube.com/watch?v=W4EK_KVgfkw)
+- [(video) Helen's Take On Everyday Shortcuts](https://www.youtube.com/watch?v=matPBmotxvY)
+- [(video) Editor Tips and Tricks in IntelliJ IDEA](https://www.youtube.com/watch?v=JEpeHNsWIMk)

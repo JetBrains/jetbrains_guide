@@ -26,5 +26,5 @@ There are lots of places that you can get additional information and resources t
 - Tip of the Day
   - If you don't like the tip of the day to pop up when you load IntelliJ IDEA, you can click it here when you want to test your knowledge or learn something!
 
-### Related YouTube Links
-- [Learn IntelliJ IDEA](https://www.youtube.com/watch?v=vsUx-kod2O4)
+### Related Links
+- [(video) Learn IntelliJ IDEA](https://www.youtube.com/watch?v=vsUx-kod2O4)

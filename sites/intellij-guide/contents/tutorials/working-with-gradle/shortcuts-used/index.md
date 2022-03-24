@@ -25,5 +25,5 @@ Some helpful shortcuts mentioned in the tutorial and video:
 
 There are links to more information on this tutorial's [introduction](../introduction).
 
-### Related YouTube Links
-- [Working with Gradle in IntelliJ IDEA](https://www.youtube.com/watch?v=6V6G3RyxEMk)
+### Related Links
+- [(video) Working with Gradle in IntelliJ IDEA](https://www.youtube.com/watch?v=6V6G3RyxEMk)

@@ -35,5 +35,5 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | Close splits                                                                                              | **⌘W**           | **Ctrl+F4**            |
 | [Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)      | **⌥F12**         | **Alt+F12**            |
 
-### Related YouTube Links
-- [Using the Terminal](https://www.youtube.com/watch?v=tlEkrWU0d1M)
+### Related Links
+- [(video) Using the Terminal](https://www.youtube.com/watch?v=tlEkrWU0d1M)

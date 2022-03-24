@@ -25,5 +25,5 @@ This tutorial includes some shortcuts, but many more were demonstrated [in the v
 | Find in Files                                                                                                         | **⇧⌘F**        | **Shift+Ctrl+F**   |
 | Run Anything                                                                                                          | **⌃⌃**         | **Ctrl+Ctrl**/     |
 
-### Related YouTube Links
-- [Migrating from JUnit 4 to JUnit 5](https://www.youtube.com/watch?v=F8UTTTDtbH0)
+### Related Links
+- [(video) Migrating from JUnit 4 to JUnit 5](https://www.youtube.com/watch?v=F8UTTTDtbH0)

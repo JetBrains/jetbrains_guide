@@ -9,7 +9,6 @@ subtitle: Summary and shortcuts we used
 thumbnail: ./thumbnail.png
 ---
 
-
 ## Summary of Rearranging Code
 In this tutorial we took at look at some fast ways to move [statements](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements) and [lines](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) around in your classes. We then looked at an example and applied our [code arrangement rules](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code).  
 
@@ -32,5 +31,5 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | [Commit Tool Window](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)                                              | **⌘0**         | **Alt+0**                 |
 | [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html)                                                 | **⌘1**         | **Alt+1**                 |
 
-### Related YouTube Links
-- [Helen's Take On: Moving Around Your Codebase](https://www.youtube.com/watch?v=2sDCA25qfKk)
+### Related Links
+- [(video) Helen's Take On: Moving Around Your Codebase](https://www.youtube.com/watch?v=2sDCA25qfKk)

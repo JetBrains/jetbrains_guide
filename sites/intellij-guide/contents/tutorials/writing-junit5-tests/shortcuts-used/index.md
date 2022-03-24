@@ -23,5 +23,5 @@ This blog post includes some shortcuts, but many more were demonstrated in the v
 
 `⌃⇧Space or Ctrl+Shift+Space` to use smart completion
 
-### Related YouTube Links
-- [Writing Tests with JUnit 5](https://www.youtube.com/watch?v=we3zJE3hlWE)
+### Related Links
+- [(video) Writing Tests with JUnit 5](https://www.youtube.com/watch?v=we3zJE3hlWE)

@@ -22,5 +22,5 @@ Here are the shortcuts that we used.
 |Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html) |**⌘1**|**Alt+1**|
 
 ### Related YouTube Links
-- [Cloning a Project from GitHub](https://www.youtube.com/watch?v=aBVOAnygcZw)
-- [Adding a Project to Git and GitHub](https://www.youtube.com/watch?v=mf2-MOl0VXY)
+- [(video) Cloning a Project from GitHub](https://www.youtube.com/watch?v=aBVOAnygcZw)
+- [(video) Adding a Project to Git and GitHub](https://www.youtube.com/watch?v=mf2-MOl0VXY)

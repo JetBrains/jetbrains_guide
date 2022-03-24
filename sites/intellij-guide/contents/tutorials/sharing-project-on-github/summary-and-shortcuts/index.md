@@ -23,5 +23,5 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | [Settings/Preferences](https://www.jetbrains.com/help/idea/configure-project-settings.html)      | **⌘,**         | **Ctrl+Alt+S**   |
 | [Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)                  | **⌥F12**       | **Alt+F12**      |
 
-### Related YouTube Links
-- [Share a Project on GitHub](https://www.youtube.com/watch?v=4ukhZvOmAtk)
+### Related Links
+- [(video) Share a Project on GitHub](https://www.youtube.com/watch?v=4ukhZvOmAtk)

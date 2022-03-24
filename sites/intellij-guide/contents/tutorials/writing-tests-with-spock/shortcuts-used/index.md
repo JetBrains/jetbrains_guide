@@ -33,5 +33,5 @@ Here are some helpful shortcuts mentioned in the tutorial and video:
 
 There are links to more information on this tutorial's [introduction](../introduction).
 
-### Related YouTube Links
-- [Writing Tests with Spock](https://www.youtube.com/watch?v=i5Qu3qYOfsM)
+### Related Links
+- [(video) Writing Tests with Spock](https://www.youtube.com/watch?v=i5Qu3qYOfsM)

@@ -27,5 +27,5 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | [Reformat File](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_code)           | **⌘⌥L**        | **Ctrl+Alt+L**       |
 | [Reformat File Options](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file)   | **⌘⌥⇧L**       | **Ctrl+Alt+Shift+L** |
 
-### Related YouTube Links
-- [Code Formatting in IntelliJ IDEA](https://www.youtube.com/watch?v=vjVWjocENLg)
+### Related Links
+- [(video) Code Formatting in IntelliJ IDEA](https://www.youtube.com/watch?v=vjVWjocENLg)

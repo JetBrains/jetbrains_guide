@@ -19,5 +19,5 @@ You then created a new [Run Configuration](https://www.jetbrains.com/help/idea/r
 
 Finally, you made a change to your `HelloWorld.java` file and tested that change with the [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html) that you made for your JAR file to check that it was being rebuilt before it was [being run](https://www.jetbrains.com/help/idea/running-applications.html).
 
-### Related YouTube Links
-- [Creating Your First Java Application](https://www.youtube.com/watch?v=H_XxH66lm3U)
+### Related Links
+- [(video) Creating Your First Java Application](https://www.youtube.com/watch?v=H_XxH66lm3U)
