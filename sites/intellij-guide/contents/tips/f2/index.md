@@ -12,11 +12,13 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/9TlIOdfli80
 seealso:
-  - title: IntelliJ IDEA Help - Navigate between errors or warnings
+  - title: "(video) IntelliJ IDEA Pro Tips: Move to the Next Issue"
+    href: https://www.youtube.com/watch?v=9nAvkNBYZwY
+  - title: (documentation) IntelliJ IDEA Help - Navigate between errors or warnings
     href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#navigate-errors-warnings
-  - title: IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
+  - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/
-  - title: IntelliJ IDEA Guide - Alt+Enter
+  - title: (guide) IntelliJ IDEA Guide - Alt+Enter
     href: ../alt-enter
 leadin: |
   When you open a source file in the editor, you may see warnings or errors in this file. You can quickly step through to check all these issues without having to use the mouse, just press **F2**.

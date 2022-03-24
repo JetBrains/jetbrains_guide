@@ -13,7 +13,7 @@ longVideo:
 ---
 
 ## Configuring IntelliJ IDEA 
-You can use **⌘,** (macOS), or **Ctrl**+**Alt**+**S** (Windows/Linux) to display the Preferences/Settings dialog in IntelliJ IDEA.
+You can use **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) to display the Preferences/Settings dialog in IntelliJ IDEA.
 
 These are the broad categories that you can change here, but we recommend being at least a little bit familiar with IntelliJ IDEA before you change too many of them!
 - [Appearance & Behaviour](https://www.jetbrains.com/help/idea/appearance-and-behavior.html)
@@ -30,3 +30,7 @@ The easiest way to navigate around this dialog is to type in what you're looking
 If you need to reset your Preferences/Settings back to the default you can use **File** > **Manage IDE Settings** > **Restore Default Settings**. 
 
 ![Reset your Preferences or Settings](reset-preferences-settings.png)
+
+### Related YouTube Links
+- [Code formatting in IntelliJ IDEA](https://www.youtube.com/watch?v=vjVWjocENLg)
+- [Helen's Take on Settings & Preferences](https://www.youtube.com/watch?v=u-iA1yjS6GY)

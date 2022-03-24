@@ -11,7 +11,9 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Csv5TKu0TeY
 seealso:
-  - title: IntelliJ IDEA Blog - Java 16 and IntelliJ IDEA
+  - title: (video) Using Java 15 with IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=IvytsoAUEZA
+  - title: (documentation) IntelliJ IDEA Blog - Java 16 and IntelliJ IDEA
     href: https://blog.jetbrains.com/idea/2021/03/java-16-and-intellij-idea/
 leadin: |
   IntelliJ IDEA can identify classes that are data holders and can be converted to records. The class will be highlighted with a warning (yellow underline) - press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) and IntelliJ IDEA will suggest converting the class to a record.

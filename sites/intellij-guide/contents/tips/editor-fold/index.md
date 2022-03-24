@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url:  https://youtu.be/q-Z2fRhMZF4
 seealso:
-  - title: IntelliJ IDEA Help - Code folding
+  - title: (documentation) IntelliJ IDEA Help - Code folding
     href: https://www.jetbrains.com/help/idea/code-folding-settings.html
 leadin: |
   You can select some code by scope and then use **⌥⌘T** (macOS), or **Ctrl+Alt+T** (Windows/Linux), to create an editor fold. 

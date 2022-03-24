@@ -10,6 +10,9 @@ cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
   url: https://youtu.be/4XkazKdTO1U
+seealso:
+  - title: (video) Good Old Stream API - JetBrains Technology Day for Java
+    href: https://www.youtube.com/watch?v=nklbYYQpQi8
 leadin: |
   Java 16 introduced some new methods on the Streams API. IntelliJ IDEA shows us places that can use the new methods and can automatically convert the code to use these new methods.
 

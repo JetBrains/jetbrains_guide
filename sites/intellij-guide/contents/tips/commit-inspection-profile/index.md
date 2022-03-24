@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/9i6EeC2OVqU
 seealso:
-  - title: IntelliJ IDEA Help - Configure profiles
+  - title: (documentation) IntelliJ IDEA Help - Configure profiles
     href: https://www.jetbrains.com/help/idea/customizing-profiles.html
 leadin: |
   You can select an inspection profile for running analysis before commit. Using an inspection profile with a much smaller number of checks, for example only Java errors and warnings, can run much faster than our full inspection profile and prevent us from committing breaking changes.

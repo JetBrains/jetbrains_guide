@@ -12,7 +12,9 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/gg3yi-yc2ys
 seealso:
-  - title: IntelliJ IDEA Help - Manage Changelists
+  - title: (video) Version Control with IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=-S3Q_-b52rA
+  - title: (documentation) IntelliJ IDEA Help - Manage Changelists
     href: https://www.jetbrains.com/help/idea/managing-changelists.html
 leadin: |
   Select the files or changed lines in a file which you want to group together for certain tasks and use **⌘⇧M** (macOS) or **Alt+Shift+M** (Windows/Linux) to bring up the **Move Files to Another Changelist** dialog. 

@@ -11,6 +11,8 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/D-CGuIAANW0
 seealso:
+  - title: (video) Creating your first Java application with IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=H_XxH66lm3U
   - title: IntelliJ IDEA Help - SDKs
     href: https://www.jetbrains.com/help/idea/sdk.html
 leadin: |

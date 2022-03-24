@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/ukGjQxga6Wg
 seealso:
-  - title: IntelliJ IDEA Help - Auto import
+  - title: (documentation) IntelliJ IDEA Help - Auto import
     href: https://www.jetbrains.com/help/idea/creating-and-optimizing-imports.html
 leadin: | 
   Use **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux), to import static methods into classes to improve the readability of your code. 

@@ -25,12 +25,15 @@ You may also find these links useful:
 ### Shortcuts Used
 Here are some of the shortcuts that we used and some additional ones that you can try out. 
 
-| Name      | macOS Shortcut | Windows Shortcut |
-| ----------- | ----------- | ----------- |
-|Add a new file in the Project Window|**⌘N**|**Alt+Insert**
-|Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog |**⇧⇧** |**Shift+Shift**|
-|[Open a second terminal tab](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)|**⌘T**|**Ctrl+Shift+T**|
-|[Move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)|**⌘⇧** or **⌘⇧** |**Alt+←** or **Alt+→** |
-|Switch between splits|**⌥⇥** |**Ctrl+Tab**|
-|Close splits|**⌘W** | **Ctrl+F4**|
-|[Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)|**⌥F12**| **Alt+F12**|
+| Name                                                                                                      | macOS Shortcut   | Windows Shortcut       |
+|-----------------------------------------------------------------------------------------------------------|------------------|------------------------|
+| Add a new file in the Project Window                                                                      | **⌘N**           | **Alt+Insert**         |
+| Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog        | **⇧⇧**           | **Shift+Shift**        |
+| [Open a second terminal tab](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session)      | **⌘T**           | **Ctrl+Shift+T**       |
+| [Move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) | **⌘⇧** or **⌘⇧** | **Alt+←** or **Alt+→** |
+| Switch between splits                                                                                     | **⌥⇥**           | **Ctrl+Tab**           |
+| Close splits                                                                                              | **⌘W**           | **Ctrl+F4**            |
+| [Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)      | **⌥F12**         | **Alt+F12**            |
+
+### Related Links
+- [(video) Using the Terminal](https://www.youtube.com/watch?v=tlEkrWU0d1M)

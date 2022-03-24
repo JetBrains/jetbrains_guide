@@ -14,7 +14,9 @@ longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/z1RnxBvF2Xk
 seealso:
-  - title: Space Help - Review code
+  - title: (video)IntelliJ IDEA + Space = Complete Environment for Collaborative Software Development
+    href: https://www.youtube.com/watch?v=iHSbWIW48uM
+  - title: (documentation) Space Help - Review code
     href: https://www.jetbrains.com/help/space/space-plugin-for-ide.html#review-code
 leadin: |
   The bundled plugin for [JetBrains Space](https://www.jetbrains.com/space/) is really helpful for code reviews. You can perform the whole review, as an author or reviewer, inside the IDE.

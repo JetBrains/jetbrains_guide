@@ -24,3 +24,6 @@ We created a Spring Controller and served some text to the local Tomcat webserve
 - You can [read more about Spring Boot](https://spring.io/projects/spring-boot), and the project is also [available on GitHub](https://github.com/spring-projects/spring-boot).
 
 - Finally, there are lots of [excellent blogs](https://www.marcobehler.com/guides) from [Marco Behler](https://twitter.com/MarcoBehler) that you can explore (all under the _Spring_ header).
+
+### Related Links
+- [(video) Creating a Spring Boot "Hello World" Application with IntelliJ IDEA](https://www.youtube.com/watch?v=5kOGdZmpSDI)

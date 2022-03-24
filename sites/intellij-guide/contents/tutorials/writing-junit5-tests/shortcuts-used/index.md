@@ -22,3 +22,6 @@ This blog post includes some shortcuts, but many more were demonstrated in the v
 `⇧⌘⏎ or Ctrl+Shift+Enter` to complete Statement close off the brackets and statement, and it also formats the code too.
 
 `⌃⇧Space or Ctrl+Shift+Space` to use smart completion
+
+### Related Links
+- [(video) Writing Tests with JUnit 5](https://www.youtube.com/watch?v=we3zJE3hlWE)

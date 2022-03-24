@@ -11,7 +11,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/Ww2pLAGtWrA
 seealso:
-  - title: IntelliJ IDEA Help - Run applications
+  - title: (documentation) IntelliJ IDEA Help - Run applications
     href: https://www.jetbrains.com/help/idea/running-applications.html
 leadin: |
   Press **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux), to run the file in its current context.

@@ -20,3 +20,7 @@ Here are the shortcuts that we used.
 |Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog |**⇧⇧** |**Shift+Shift**|
 |Display or hide the [Git Log tool Window](https://www.jetbrains.com/help/idea/investigate-changes.html) |**⌘9**|**Alt+9**|
 |Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html) |**⌘1**|**Alt+1**|
+
+### Related YouTube Links
+- [(video) Cloning a Project from GitHub](https://www.youtube.com/watch?v=aBVOAnygcZw)
+- [(video) Adding a Project to Git and GitHub](https://www.youtube.com/watch?v=mf2-MOl0VXY)

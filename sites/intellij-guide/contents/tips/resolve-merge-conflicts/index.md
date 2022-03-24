@@ -12,7 +12,7 @@ shortVideo:
   poster: ./tip.png
   url: https://youtu.be/GvAUA-jD9d0 
 seealso:
-  - title: IntelliJ IDEA Help - Resolving Merge Conflicts
+  - title: (documentation) IntelliJ IDEA Help - Resolving Merge Conflicts
     href: https://www.jetbrains.com/help/idea/resolving-conflicts.html
 leadin: |
   Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Search Everywhere dialog. You can now search for _Resolve Conflicts_ to open the **Conflicts** dialog which helps you to visually resolve merge conflicts between two different versions of the code.
