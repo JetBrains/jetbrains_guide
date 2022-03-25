@@ -1,14 +1,13 @@
 ---
 type: TutorialStep
 date: 2022-03-30
-title: Summary
+title: Summary and shortcuts used
 technologies: []
 topics: []
 author: hs
 subtitle: Summary and shortcuts used 
 thumbnail: ./thumbnail.png
 ---
-
 
 ## Helpful Links
 Here are some helpful links for you to consider when you need to migrate your application from the `javax` namespace to `jakarta`:

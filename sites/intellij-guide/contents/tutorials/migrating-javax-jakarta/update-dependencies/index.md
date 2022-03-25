@@ -5,7 +5,7 @@ title: Updating Dependencies
 technologies: []
 topics: []
 author: hs
-subtitle: Update your dependencies  
+subtitle: Modifying your `pom.xml` file to use jakarta dependencies
 thumbnail: ./thumbnail.png
 ---
 

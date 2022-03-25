@@ -1,6 +1,6 @@
 ---
 date: 2022-03-30
-title: Migrating from the javax namespace to jakarta
+title: Migrating from the `javax` to `jakarta` namespace
 technologies: [java]
 topics: [refactoring]
 author: hs

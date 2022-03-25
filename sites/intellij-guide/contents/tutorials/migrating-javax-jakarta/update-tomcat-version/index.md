@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2022-03-30
-title: Docker Setup
+title: Updating Tomcat version
 technologies: []
 topics: []
 author: hs

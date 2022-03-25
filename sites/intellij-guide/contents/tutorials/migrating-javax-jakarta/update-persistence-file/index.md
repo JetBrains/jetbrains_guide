@@ -1,15 +1,15 @@
 ---
 type: TutorialStep
 date: 2022-03-30
-title: Updating the persistance file
+title: Updating the persistence file
 technologies: []
 topics: []
 author: hs
-subtitle: Fix final `javax` references
+subtitle: Fixing the final `javax` references in your files
 thumbnail: ./thumbnail.png
 ---
 
-Now if you do a search across your whole project with **⌘⇧F** or **Crl+Shift+F** for *javax* you will see that it still appears in your `persistence.xml` file.
+Now if you do a search across your whole project with **⌘⇧F** (macOS), or **Crl+Shift+F** (Windows/Linux) for *javax* you will see that it still appears in your `persistence.xml` file.
 
 We need to update the `persistence.xml` file and change the namespace from:
 
@@ -27,7 +27,7 @@ To:
 
 ```
 
-Now you need to change the property names from `javax` to `jakarta`:
+Now you need to change the property name from `javax`:
 
 ```xml
 <properties>
@@ -39,7 +39,7 @@ Now you need to change the property names from `javax` to `jakarta`:
 </properties>
 ```
 
-to:
+to `jakarta`:
 
 ```xml
 <properties>
@@ -51,7 +51,7 @@ to:
 </properties>
 ```
 
-Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **Shift**+**F10** |**⌃R**. 
+Now let's rebuild our application again with **⌘F9** (macOS), or **Ctrl+F9** (Windows/Linux) and then run it with **⌃R** (macOS), **Shift+F10** (Windows/Linux). 
 
 Your application should still be available at [localhost:8080/MyWebApp](localhost:8080/MyWebApp).
 
