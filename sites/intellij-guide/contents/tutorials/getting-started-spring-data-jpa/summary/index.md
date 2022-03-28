@@ -13,12 +13,12 @@ In this tutorial, we created a simple Spring Boot application that uses [Spring 
 
 Some helpful shortcuts mentioned in the tutorial:
 
-| Name      | Windows Shortcut | macOS Shortcut |
-| ----------- | ----------- | ----------- |
-|Create classes and generate constructors/methods|**Alt+Insert**|**⌘N**|
-|Context-aware code completion|**Ctrl**+**Space**|**⌃Space**|
-|Search everywhere|**Shift**+**Shift**|**Shift**+**Shift**|
-|Run your application|**Shift**+**F10** |**⇧R**|
+| Name      | Windows Shortcut | macOS Shortcut      |
+| ----------- | ----------- |---------------------|
+|Create classes and generate constructors/methods|**Alt+Insert**| **⌘N**              |
+|Context-aware code completion|**Ctrl**+**Space**| **⌃Space**          |
+|Search everywhere|**Shift**+**Shift**| **Shift**+**Shift** |
+|Run your application|**Shift**+**F10** | **⌃R**              |
 
 You can find the final project created through this tutorial in this [GitHub repository](https://github.com/daliasheasha/SpringDataJPA). 
 
