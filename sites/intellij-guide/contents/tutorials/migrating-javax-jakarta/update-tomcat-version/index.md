@@ -9,7 +9,7 @@ subtitle: How the project is set up in Docker and upgrading Tomcat
 thumbnail: ./thumbnail.png
 ---
 
-This project uses Docker so you can update the version of Tomcat from 9 to 10 in your Docker file:
+This project uses Docker so you can update the version of Tomcat from 9 to 10 in your `Dockerfile`:
 
 ```dockerfile
 FROM tomcat:9-jdk17
@@ -18,7 +18,7 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 ```
 
-Now your Docker file will look like this: 
+Now your `Dockerfile` will look like this: 
 
 ```dockerfile
 FROM tomcat:10-jdk17

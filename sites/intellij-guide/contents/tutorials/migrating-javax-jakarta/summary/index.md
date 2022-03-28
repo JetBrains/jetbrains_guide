@@ -9,6 +9,9 @@ subtitle: Summary and shortcuts used
 thumbnail: ./thumbnail.png
 ---
 
+## Summary
+Congratulations, you've successfully migrated the project from the `javax` namespace to `jakarta` using IntelliJ IDEA's migration too. You also updated your `persistence.xml` file as part of that migration. Here are some helpful links and a summary of the shortcuts we used.
+
 ## Helpful Links
 Here are some helpful links for you to consider when you need to migrate your application from the `javax` namespace to `jakarta`:
 
@@ -18,14 +21,14 @@ Here are some helpful links for you to consider when you need to migrate your ap
 - [JetBrains documentation - Using JPA Console](https://www.jetbrains.com/help/idea/using-jpa-console.html)
 - [JetBrains plugins - Using JPA Buddy](https://plugins.jetbrains.com/plugin/15075-jpa-buddy)
 
-## Shortcuts Used
 
+## Shortcuts Used
 Here are the shortcuts that we used.
 
 | Name                                                                                                 | macOS Shortcut | Windows Shortcut |
 |------------------------------------------------------------------------------------------------------|----------------|------------------|
-| Rebuild the project                                                                                  | **⌘F9**        | **Ctrl+F9**      |
-| Run the project                                                                                      | **⌃R**         | **Ctrl+F10**     |
+| [Rebuild](https://www.jetbrains.com/help/idea/compiling-applications.html) the project               | **⌘F9**        | **Ctrl+F9**      |
+| [Run](https://www.jetbrains.com/help/idea/running-applications.html) the project                     | **⌃R**         | **Ctrl+F10**     |
 | Reload Maven changes                                                                                 | **⇧⌘I**        | **Ctrl+Shift+O** |
 | Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html)   | **⌘1**         | **Alt+1**        |
 | Display or hide the [Services Window](https://www.jetbrains.com/help/idea/services-tool-window.html) | **⌘8**         | **Alt+8**        |
