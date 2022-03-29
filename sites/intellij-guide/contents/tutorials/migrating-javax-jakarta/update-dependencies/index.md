@@ -7,6 +7,9 @@ topics: []
 author: hs
 subtitle: Modifying your `pom.xml` file to use jakarta dependencies
 thumbnail: ./thumbnail.png
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/mukr2Q_zBm4?start=307
 ---
 
 The first thing we need to do is update our dependencies. This project uses Maven so that's our `pom.xml` file. If you're using Gradle you need to update your `build.gradle` file.

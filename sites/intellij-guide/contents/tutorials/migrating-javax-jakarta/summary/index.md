@@ -7,10 +7,13 @@ topics: []
 author: hs
 subtitle: Summary and shortcuts used 
 thumbnail: ./thumbnail.png
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/mukr2Q_zBm4?start=956
 ---
 
 ## Summary
-Congratulations, you've successfully migrated the project from the `javax` namespace to `jakarta` using IntelliJ IDEA's migration too. You also updated your `persistence.xml` file as part of that migration. Here are some helpful links and a summary of the shortcuts we used.
+Congratulations, you've successfully migrated the project from the `javax` namespace to `jakarta` using IntelliJ IDEA's migration tool. You also updated your `persistence.xml` file as part of that migration. Here are some helpful links and a summary of the shortcuts we used.
 
 ## Helpful Links
 Here are some helpful links for you to consider when you need to migrate your application from the `javax` namespace to `jakarta`:

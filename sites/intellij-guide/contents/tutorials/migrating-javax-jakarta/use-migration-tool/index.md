@@ -7,6 +7,9 @@ topics: []
 author: hs
 subtitle: Migrating to Java EE with IntelliJ IDEA's refactoring  tool
 thumbnail: ./thumbnail.png
+longVideo:
+  poster: ./poster_long.png
+  url: https://youtu.be/mukr2Q_zBm4?start=463
 ---
 
 One common question you might have at this stage is "why don't I just do a find and replace for `javax` to `jakarta`?" The answer is that not all `javax` packages have been migrated to the `jakarta` namespace. For example, `javax.transaction.xa` package is not using Jakarta.
