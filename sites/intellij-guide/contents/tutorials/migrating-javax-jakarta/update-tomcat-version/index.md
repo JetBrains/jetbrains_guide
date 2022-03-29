@@ -40,4 +40,4 @@ You can check the logs for your container to ensure you're running Tomcat 10.0 i
 
 `2022-03-23T13:40:24.787157700Z 23-Mar-2022 13:40:24.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.0.17`
 
-Now we're confident that we're using Tomcat 10.0, let's go to the webserver front end and see what happens. In your browser go to [localhost:8080/MyWebApp](localhost:8080/MyWebApp) and try to enter a name and fruit and you will get a 404 error. We're getting this error because Tomcat 9 used Java Servlet 4.0 which uses `javax.*` and Tomcat 10 uses Jakarta Servlet 5.0 which uses `jakarta.*`. Let's fix the problem now!
+Now we're confident that we're using Tomcat 10.0, let's go to the webserver front end and see what happens. In your browser go to [localhost:8080/MyWebApp](localhost:8080/MyWebApp) and try to enter a name and fruit - you will get a 404 error. We're getting this error because Tomcat 9 used Java Servlet 4.0 which uses `javax.*` and Tomcat 10 uses Jakarta Servlet 5.0 which uses `jakarta.*`. Let's fix the problem now!
