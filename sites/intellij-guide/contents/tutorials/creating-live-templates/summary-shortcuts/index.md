@@ -14,7 +14,7 @@ longVideo:
 ---
 
 ## Summary
-In this tutorial we created two different Live Templates, one from scratch and one from an existing code snippet.
+In this tutorial we created two different Live Templates, one from scratch and one from an existing code snippet. Remember, you can invoke Live Templates with **⌘J** (macOS), and **Ctrl+J** (Windows/Linux). You can view existing Live Templates, duplicate them and add new ones in your Settings/Preferences **⌘** (macOS), **Ctrl+Alt+S** (Windows/Linux).
 
 ## Shortcuts
 | Name                               | macOS Shortcut | Windows Shortcut |

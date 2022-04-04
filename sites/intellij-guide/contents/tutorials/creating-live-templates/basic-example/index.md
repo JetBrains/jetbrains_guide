@@ -22,12 +22,12 @@ private void <methodName>(<optional arguments>) {
 ```
 
 1. Open your Settings/Preferences **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux).
-2. Search for `live templates`:
+2. Search for "live templates":
 
 ![Settings and Preferences](settings-preferences.png)
 
 3. The Live Templates are grouped by language. For this example, select the **Java** node.
-4. Select the new icon and **1. Live Template**. 
+4. Select the new icon on the right and then **1. Live Template**. 
 
 ![New Live Template option](new-live-template.png)
 
@@ -41,16 +41,15 @@ private void $METHOD_NAME$($ARGS$) {
 }
 ```
 
-Variables start and end with the $ (dollar) sign and are used to capture your input when you use the live template. You can name your variables in any way you like, however the $END$ variable is pre-defined in IntelliJ IDEA and determines where the caret lands at the end of your live template:
+Variables start and end with the $ (dollar) sign and are used to capture your input when you use the Live Template. You can name your variables in any way you like, however the $END$ variable is pre-defined in IntelliJ IDEA and determines where the caret lands at the end of your Live Template:
 
-| Code         | Meaning                                | 
-|--------------|----------------------------------------|
-| $METHOD_NAME$  | Variable for the name of the method  |
-| $ARGS$  | Variable for method arguments          |
-| $END$  | Variable for the carets final location |
+| Code          | Meaning                                | 
+|---------------|----------------------------------------|
+| $METHOD_NAME$ | Variable for the name of the method    |
+| $ARGS$        | Variable for method arguments          |
+| $END$         | Variable for the carets final location |
 
-
-6. Press **Edit variables**. Default values aren't mandatory, however they are helpful in some live templates to remind you what code to enter when you use the Live Template. Enter a default value for $METHOD_NAME$ of `methodName`.
+6. Press **Edit variables**. Default values aren't mandatory, however they are helpful in some Live Templates to remind you what code to enter when you use the Live Template. Enter a default value for $METHOD_NAME$ of `methodName`.
 7. You can enter a default value for $ARGS$ if you want to, however we're going to leave it blank. The $END$ variable doesn't appear here because you can't edit it:
 
 ![Edit variables](edit-template-variables.png)
@@ -60,7 +59,7 @@ Variables start and end with the $ (dollar) sign and are used to capture your in
 
 ![Code for basic live template example](basic-example.png)
 
-10. Press **OK** and go to your Java class. Remember the context for this Live Template is declaration so inside a class type `prvm`. This is the acronym we used when we created the Live Template:
+10. Press **OK** and go back to your Java class. Remember the context for this Live Template is declaration so inside a class type `prvm`. This is the acronym we used when we created the Live Template:
 
 ![Invoking the private void method live template](prvm.png)
 
@@ -70,6 +69,6 @@ Variables start and end with the $ (dollar) sign and are used to capture your in
 
 ![Private void method declaration](private-void-method.png)
 
-Congratulations, you've created a Live Template to insert a private void method!
+Congratulations, you've created a Live Template to insert a private void method! In the next example we will create a Live Template from an existing snippet of code and use Expressions.
 
 ---

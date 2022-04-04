@@ -21,4 +21,6 @@ IntelliJ IDEA comes with several Live Templates, but you can also create your ow
 
 You can scroll through the available live templates and press **⏎** (macOS), **Enter** (Windows/Linux) to select them. However, what if you want to create your own? You can view existing live templates and create your own in your Settings and Preferences with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux).
 
+We're going to walk through two examples, a basic one and a more complex one in the next two sections of this tutorial.
+
 ---
