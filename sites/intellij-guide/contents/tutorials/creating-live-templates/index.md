@@ -10,7 +10,8 @@ tutorialItems:
   - /tutorials/creating-live-templates/introduction/
   - /tutorials/creating-live-templates/basic-example/
   - /tutorials/creating-live-templates/advanced-example/
+  - /tutorials/creating-live-templates/summary-shortcuts/
 ---
 
-In this tutorial, we’re going to look at what live templates are, how to access them and how you can create your own.
+In this tutorial, we’re going to look at what [Live Templates](https://www.jetbrains.com/help/idea/using-live-templates.html) are, how to access them and how you can create your own.
 
