@@ -20,9 +20,9 @@ Here are some of the shortcuts that we used and some additional ones that you ca
 | Name                                                                                                                                | macOS Shortcut | Windows Shortcut          |
 |-------------------------------------------------------------------------------------------------------------------------------------|----------------|---------------------------|
 | [Move a Line Up](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) | **⌥⇧↑**        | **Alt+Shift+Up Arrow**    |
-| [Move a Line Up](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) | **⌥⇧↓**        | **Alt+Shift+Down Arrow**  |
+| [Move a Line Down](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#editor_lines_code_blocks) | **⌥⇧↓**        | **Alt+Shift+Down Arrow**  |
 | [Move a Statement Up](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements)     | **⇧⌘↑**        | **Ctrl+Shift+Up Arrow**   |
-| [Move a Statement Up](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements)     | **⇧⌘↓**        | **Ctrl+Shift+Down Arrow** |
+| [Move a Statement Down](https://www.jetbrains.com/help/idea/working-with-source-code.html?keymap=primary_windows#move-statements)     | **⇧⌘↓**        | **Ctrl+Shift+Down Arrow** |
 | [Format File](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file)                                   | **⌥⇧⌘L**       | **Ctrl+Alt+Shift+L**      |
 | [Format Code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_code)                                   | **⌥⌘L**        | **Ctrl+Alt+L**            |
 | [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog                                           | **⇧⇧**         | **Shift+Shift**           |
