@@ -5,7 +5,7 @@ title: Basic Example
 technologies: []
 topics: []
 author: hs
-subtitle: Creating a live template to add a `private void method`
+subtitle: Creating a Live Template to add a `private void method`
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

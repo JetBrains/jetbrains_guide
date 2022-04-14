@@ -5,7 +5,7 @@ title: Advanced Example
 technologies: []
 topics: []
 author: hs
-subtitle: Creating a live template to add a JUnit test 
+subtitle: Creating a Live Template to add a JUnit test 
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -44,11 +44,8 @@ You can choose the name of your variables, but remember to keep the quotes for t
 
 4. Press **Edit variables**. Give your $DISPLAY_NAME$ variable a default value such as `Display name for my test`. 
 5. For your $METHOD_NAME$ variable, use the [Expression](https://www.jetbrains.com/help/idea/template-variables.html) drop-down and select `camelCase(String)`.
-6. Pass your $DISPLAY_NAME$ String into your `camelCase` expression so that it reads `camelCase(DISPLAY_NAME)` - you do not need the quotes around your variable here. We will see how this works in a few steps.
+6. Pass your $DISPLAY_NAME$ String into your `camelCase` expression so that it reads `camelCase(DISPLAY_NAME)` - you do not need the dollar signs around your variable here. We will see how this works in a few steps.
 7. Lastly, in quotes, paste the body of your method that you placed on your clipboard earlier. Remove any errant preceding spaces and escape the quote marks correctly. Your final string should read `"Assertions.fail(\"Not implemented\")";`.
-
-![Edit template variables](edit-template-variables.png)
-
 8. Press **OK**. Your context should not need changing as IntelliJ IDEA will correctly detect the context if you highlighted the code and then created the Live Template using the **Code** menu. If you typed the code snippet in manually, you'll need to select **Java: declaration** as we did in the simple example in the previous step.
 9. Press **OK** to return to the JUnit4to5 class and type in `junit` to create a new test using the Live Template we created:
 
