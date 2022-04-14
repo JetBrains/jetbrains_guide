@@ -1,10 +1,10 @@
 ---
 date: 2022-04-01
-title: Creating a Live Template
+title: Writing Less Code With Live Templates
 technologies: [java]
 topics: [livetemplates]
 author: hs
-subtitle: How you can create your own live templates
+subtitle: How you can use live templates to get IntelliJ IDEA to write more code for you
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/creating-live-templates/introduction/

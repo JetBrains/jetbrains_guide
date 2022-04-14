@@ -9,7 +9,7 @@ subtitle: What are Live Templates and why might you want to use them?
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=747
+  url: https://youtu.be/Sio9MdSqXZo?start=32
 
 ---
 

@@ -9,7 +9,7 @@ subtitle: Creating a live template to add a `private void method`
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=747
+  url: https://youtu.be/Sio9MdSqXZo?start=147
 
 ---
 

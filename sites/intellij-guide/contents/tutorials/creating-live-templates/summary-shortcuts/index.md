@@ -7,9 +7,6 @@ topics: []
 author: hs
 subtitle: Live Template summary and shortcuts used
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=747
 
 ---
 
