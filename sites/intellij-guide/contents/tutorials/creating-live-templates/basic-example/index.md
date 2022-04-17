@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-04-01
+date: 2022-04-18
 title: Basic Example 
 technologies: []
 topics: []
@@ -41,7 +41,7 @@ private void $METHOD_NAME$($ARGS$) {
 }
 ```
 
-Variables start and end with the $ (dollar) sign and are used to capture your input when you use the Live Template. You can name your variables in any way you like, however the $END$ variable is pre-defined in IntelliJ IDEA and determines where the caret lands at the end of your Live Template:
+[Variables](https://www.jetbrains.com/help/idea/template-variables.html) start and end with the $ (dollar) sign and are used to capture your input when you use the Live Template. You can name your variables in any way you like, however the $END$ [variable is pre-defined](https://www.jetbrains.com/help/idea/template-variables.html#pdtv) in IntelliJ IDEA and determines where the caret lands at the end of your Live Template:
 
 | Code          | Meaning                                | 
 |---------------|----------------------------------------|
@@ -69,6 +69,6 @@ Variables start and end with the $ (dollar) sign and are used to capture your in
 
 ![Private void method declaration](private-void-method.png)
 
-Congratulations, you've created a Live Template to insert a private void method! In the next example we will create a Live Template from an existing snippet of code and use Expressions.
+Congratulations, you've created a Live Template to insert a private void method! In the next example we will create a Live Template from an existing snippet of code and use [Functions](https://www.jetbrains.com/help/idea/template-variables.html#predefined_functions).
 
 ---
