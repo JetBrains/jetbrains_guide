@@ -13,7 +13,7 @@ longVideo:
     url: https://youtu.be/MQ35KMg1Wnk
 ---
 
-So far in this video series, we've leaned on HTMX to power a range of user scenarios. It may seem like an obvious statement, but HTMX relies on our ability to generate ASP.NET Core links to endpoints. So far, we've used the `UrlHelper` class, but the ASP.NET Core class' use wit our HTMX attribute definitions can add unwanted noise to already crowded HTML elements. Luckily for ASP.NET Core developers, we can use TagHelpers. With TagHelpers, we can process HTML elements before we render them to the client. Let's take a look at a before and after using [HTMX.NET](https://www.nuget.org/packages?q=htmx+owner%3Akhalidabuhakmeh) and the included TagHelpers.
+So far in this video series, we've leaned on HTMX to power a range of user scenarios. It may seem like an obvious statement, but HTMX relies on our ability to generate ASP.NET Core links to endpoints. So far, we've used the `UrlHelper` class, but the ASP.NET Core class' use with our HTMX attribute definitions can add unwanted noise to already crowded HTML elements. Luckily for ASP.NET Core developers, we can use TagHelpers. With TagHelpers, we can process HTML elements before we render them to the client. Let's take a look at a before and after using [HTMX.NET](https://www.nuget.org/packages?q=htmx+owner%3Akhalidabuhakmeh) and the included TagHelpers.
 
 Before using the HTMX.NET TagHelpers, let's take a look at an HTML element in our Razor page.
 
