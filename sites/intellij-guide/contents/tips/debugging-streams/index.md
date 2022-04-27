@@ -12,7 +12,9 @@ shortVideo:
   url: https://youtu.be/rVFqXZNoq-s
 seealso:
   - title: (video) Pro Tip Debugging Java Streams
-    href: https://www.youtube.com/watch?v=uYsFlbXJbog
+    href: https://www.youtube.com/watch?v=BeJu9bMPLGU
+  - title: (documentation) Analyze Stream Operations in IntelliJ IDEA
+    href: https://www.jetbrains.com/help/idea/analyze-java-stream-operations.html
 leadin: |
 
    Debugging stream operations is easier if you can visualize the flow of data through your stream and see how each method manipulates it. First you need to set a breakpoint by placing your caret on line 23 and using **⌘F8** (macOS), or **Ctrl+F8** on Windows and Linux. You can also do this by clicking in the gutter area next to line 23.
