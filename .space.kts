@@ -187,9 +187,7 @@ job("Warmup - Content creators (Fleet)") {
         }
     }
 
-    warmup(ide = Ide.Fleet) {
-        scriptLocation = "./dev-env-warmup.sh"
-    }
+    warmup(ide = Ide.Fleet)
 }
 
 job("Warmup - Content creators (Gateway)") {
