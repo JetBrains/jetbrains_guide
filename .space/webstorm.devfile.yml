@@ -4,6 +4,9 @@ attributes:
     instanceType: xlarge
     editor:
       type: WebStorm
+      vmoptions:
+        - '-Xms2048m'
+        - '-Xmx4096m'
 components:
   - name: image-build
     image:
