@@ -165,7 +165,7 @@ job("Docker - Content creators image") {
             file = "./Dockerfile-ContentCreators"
             labels["vendor"] = "JetBrains"
         }
-        push("registry.jetbrains.team/p/evan/guide-containers/guide-content-creators")
+        push("registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators")
     }
 }
 
