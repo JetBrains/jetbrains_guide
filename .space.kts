@@ -190,7 +190,7 @@ job("Warmup - Content creators (Fleet)") {
     warmup(ide = Ide.Fleet)
 }
 
-job("Warmup - Content creators (Gateway)") {
+job("Warmup - Content creators (WebStorm)") {
     git {
         depth = UNLIMITED_DEPTH
         refSpec = "refs/*:refs/*"

@@ -1,0 +1,12 @@
+schemaVersion: 2.2.0
+attributes:
+  space:
+    instanceType: xlarge
+    editor:
+      type: WebStorm
+components:
+  - name: image-build
+    image:
+      imageName: jetbrains-guide-ws:latest
+      dockerfile:
+        uri: .space/webstorm/Dockerfile
