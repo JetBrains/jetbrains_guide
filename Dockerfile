@@ -4,7 +4,7 @@
 # WebStorm run configurations to run it with the
 # correct volume mounts.
 
-FROM registry.jetbrains.team/p/evan/guide-containers/guide-content-creators
+FROM registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators
 EXPOSE 8000
 EXPOSE 33949
 

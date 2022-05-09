@@ -1,0 +1,15 @@
+schemaVersion: 2.2.0
+attributes:
+  space:
+    instanceType: xlarge
+    editor:
+      type: WebStorm
+      vmoptions:
+        - '-Xms2048m'
+        - '-Xmx4096m'
+components:
+  - name: image-build
+    image:
+      imageName: jetbrains-guide-ws:latest
+      dockerfile:
+        uri: .space/webstorm/Dockerfile
