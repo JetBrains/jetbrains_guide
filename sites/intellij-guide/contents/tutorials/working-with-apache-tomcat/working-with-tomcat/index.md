@@ -9,8 +9,6 @@ subtitle: Working with Tomcat in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 ---
 
-## Working with Tomcat in IntelliJ IDEA
-
 Now that you know how to set up your IDE to work with Tomcat for both new and existing applications, let’s look at how to work with Tomcat during application development. We'll refer to the first application we created called `HelloWebApp` for this section.
 
 Let’s say we want to change our application and add a new POST method that takes in a name as a parameter and returns a custom greeting.
