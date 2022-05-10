@@ -9,8 +9,6 @@ subtitle: How to create a new application that uses Apache Tomcat
 thumbnail: ./thumbnail.png
 ---
 
-## Creating a new Application based on Tomcat
-
 We're going to create a small web application that runs on Tomcat to demonstrate the integration in IntelliJ IDEA Ultimate:
 
 1. From the Welcome Screen select New Project. 

@@ -9,12 +9,10 @@ subtitle: How to add Apache Tomcat to your application
 thumbnail: ./thumbnail.png
 ---
 
-## Using an Existing Application with Tomcat
-
 If you’re not creating a new project from scratch and instead have an existing project that runs on Tomcat, you can configure IntelliJ IDEA Ultimate to connect to your existing Tomcat installation. Let's work with [this application](https://github.com/helenjoscott/MyWebApp) from GitHub:
 
-1. Clone the Project in IntelliJ IDEA and then go to **Run &gt;  Edit Configurations**.
-2. Select the **+** button and then **Tomcat Server &gt; Local** (because we are running our Apache Tomcat server on our machine) from the drop-down:
+1. Clone the Project in IntelliJ IDEA and then go to **Run >  Edit Configurations**.
+2. Select the **+** button and then **Tomcat Server > Local** (because we are running our Apache Tomcat server on our machine) from the drop-down:
 
 ![Adding Apache Tomcat to Project](new_tomcat.png)
 
