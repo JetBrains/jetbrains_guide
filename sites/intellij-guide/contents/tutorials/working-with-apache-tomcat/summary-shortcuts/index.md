@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-05-13
+date: 2022-05-10
 title: Summary and Shortcuts 
 technologies: []
 topics: []

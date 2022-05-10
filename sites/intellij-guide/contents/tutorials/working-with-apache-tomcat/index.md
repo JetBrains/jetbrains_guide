@@ -1,5 +1,5 @@
 ---
-date: 2022-05-13
+date: 2022-05-12
 title: Working with Apache Tomcat in IntelliJ IDEA
 technologies: [tomcat]
 topics: [ultimate]
@@ -7,10 +7,10 @@ author: hs
 subtitle: How to start a new project that uses Apache Tomcat and work with existing projects
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/sharing-project-on-github/introduction-downloading-tomcat/
-  - /tutorials/sharing-project-on-github/creating-new-application/
-  - /tutorials/sharing-project-on-github/using-existing-application/
-  - /tutorials/sharing-project-on-github/working-with-tomcat/
-  - /tutorials/sharing-project-on-github/summary-shortcuts/
+  - /tutorials/working-with-apache-tomcat/introduction-downloading-tomcat/
+  - /tutorials/working-with-apache-tomcat/creating-new-application/
+  - /tutorials/working-with-apache-tomcat/using-existing-application/
+  - /tutorials/working-with-apache-tomcat/working-with-tomcat/
+  - /tutorials/working-with-apache-tomcat/summary-shortcuts/
 
 ---
