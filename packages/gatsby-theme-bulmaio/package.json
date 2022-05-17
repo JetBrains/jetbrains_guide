@@ -5,6 +5,7 @@
   "types": "index.d.ts",
   "license": "MIT",
   "scripts": {
+    "sass": "node-sass src/components/layout/index.scss -o build/css/",
     "build": "tsc -w"
   },
   "browserslist": [

@@ -2,8 +2,8 @@
 
 // Pick and choose what we want from Bulma. Specifically, leave
 // out the tags as it conflicts with Prism.
-@import "../../../../../node_modules/bulma/bulma";
-@import "../../../../../node_modules/bulma-o-steps/bulma-steps";
+@import "../../../../../node_modules/bulma/bulma.sass";
+@import "../../../../../node_modules/bulma-o-steps/bulma-steps.sass";
 
 @import "bulmaio/bulmaio";
 
