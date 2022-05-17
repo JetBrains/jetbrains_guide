@@ -1,0 +1,15 @@
+{
+  "name": "guide-sass",
+  "version": "1.0.0",
+  "description": "Move the node-sass and bulma sass out of the main package.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node-sass index.scss -o ."
+  },
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "bulma-o-steps": "^1.1.0",
+    "node-sass": "6.0.1"
+  }
+}

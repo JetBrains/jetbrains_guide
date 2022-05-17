@@ -1,6 +1,6 @@
 import * as React from 'react';
 // @ts-ignore
-import './NavBrand.scss';
+// import '../../../../guide-sass/NavBrand.scss';
 import NavbarBrandLogo from './NavbarBrandLogo';
 
 export interface NavbarBrandProps {

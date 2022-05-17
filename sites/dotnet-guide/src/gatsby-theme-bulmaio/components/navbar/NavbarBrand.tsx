@@ -1,6 +1,6 @@
 import * as React from 'react';
 // @ts-ignore
-import '../../../../../../packages/gatsby-theme-bulmaio/src/components/navbar/NavBrand.scss';
+import '../../../../../../packages/guide-sass/NavBrand.scss';
 import NavbarBrandLogo from '../../../../../../packages/gatsby-theme-bulmaio/src/components/navbar/NavbarBrandLogo';
 
 export interface NavbarBrandProps {

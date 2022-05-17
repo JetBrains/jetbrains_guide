@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import Navbar from '../navbar';
 import Footer from '../footer';
 // @ts-ignore
-import './guide.css';
+import '../../../../guide-sass/index.css';
 import { FooterProps } from '../footer/Footer';
 import { NavbarProps } from '../navbar/Navbar';
 import Favicon from '../favicon/Favicon';

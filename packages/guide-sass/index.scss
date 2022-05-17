@@ -2,14 +2,20 @@
 
 // Pick and choose what we want from Bulma. Specifically, leave
 // out the tags as it conflicts with Prism.
-@import "../../../../../node_modules/bulma/bulma.sass";
-@import "../../../../../node_modules/bulma-o-steps/bulma-steps.sass";
+@import "../../node_modules/bulma/bulma";
+@import "../../node_modules/bulma-o-steps/bulma-steps.sass";
 
 @import "bulmaio/bulmaio";
 
-@import "./bulmaio_jinja2/article_card";
-@import "./bulmaio_jinja2/breadcrumb";
-@import "./bulmaio_jinja2/content";
+@import "bulmaio_jinja2/article_card";
+@import "bulmaio_jinja2/breadcrumb";
+@import "bulmaio_jinja2/content";
+
+// Now get the related files
+@import "NavbarSearch";
+@import "NavbarButton";
+@import "NavBrand";
+@import '../../node_modules/react-gif-player/src/GifPlayer.scss';
 
 .bio-page-sidebar {
   font-size: $size-small;

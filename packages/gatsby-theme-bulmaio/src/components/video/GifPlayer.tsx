@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GifPlayer = require('react-gif-player');
-import '../../../../../node_modules/react-gif-player/src/GifPlayer.scss';
+// import '../../../../../node_modules/react-gif-player/src/GifPlayer.scss';
 
 const AnimatedGifPlayer = ({ animatedGif }: any) => {
   return (

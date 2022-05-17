@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './NavbarButton.scss';
+// import '../../../../guide-sass/NavbarButton.scss';
 
 export interface NavbarButtonProps {
   accent: string;

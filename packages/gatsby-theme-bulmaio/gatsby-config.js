@@ -6,7 +6,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-typescript`,
     `gatsby-transformer-yaml`,
-    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-feed`,
       options: {
