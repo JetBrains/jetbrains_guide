@@ -1,5 +1,5 @@
-import Favicon from './Favicon';
+import Favicon from "./Favicon"
 
-test('Favicon', () => {
-  expect(Favicon).toBeTruthy();
-});
+test("Favicon", () => {
+  expect(Favicon).toBeTruthy()
+})

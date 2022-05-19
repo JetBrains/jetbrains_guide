@@ -66,53 +66,12 @@
     "@types/react-test-renderer": "^18.0.0",
     "@types/sharp": "^0.30.2",
     "@types/video.js": "^7.3.29",
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
-    "eslint": "^8.15.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.0",
     "postcss": "^8.3.5",
-    "prettier": "^2.6.2",
     "react-test-renderer": "^18.0.0",
+    "ts-jest": "^28.0.2",
     "typescript": "^4.6.4"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "./setup-jest.js"
-    ],
-    "globals": {
-      "__PATH_PREFIX__": ""
-    },
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(tsx?|jsx?)$": "ts-jest"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby)/)"
-    ],
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
-    "testPathIgnorePatterns": [
-      "node_modules",
-      ".cache"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "moduleNameMapper": {
-      "typeface-*": "identity-obj-proxy",
-      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file.js"
-    },
-    "collectCoverage": false,
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
   },
   "peerDependencies": {}
 }

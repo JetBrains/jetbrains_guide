@@ -7,10 +7,10 @@ src/components/favicon/Favicon.tsx file.
 
  */
 
-import React from 'react';
+import React from "react"
 // @ts-ignore
-import favicon from './favicon.ico';
+import favicon from "./favicon.ico"
 
-const Favicon: React.ReactNode = <link rel='shortcut icon' href={favicon}/>;
+const Favicon: React.ReactNode = <link rel="shortcut icon" href={favicon} />
 
-export default Favicon;
+export default Favicon

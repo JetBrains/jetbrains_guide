@@ -1,33 +1,15 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "allowJs": true,
-    "declaration": false,
-    "importHelpers": true,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017",
-      "es2019"
-    ],
     "module": "commonjs",
-    "noEmitHelpers": false,
-    "noImplicitAny": true,
-    "noResolve": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "sourceMap": false,
-    "strictNullChecks": true,
     "target": "esnext",
-    "outDir": "$$ts-jest"
-
+    "jsx": "preserve",
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "allowJs": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "exclude": ["node_modules", "dist"]
 }
