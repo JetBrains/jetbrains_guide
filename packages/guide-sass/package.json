@@ -10,6 +10,6 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "bulma-o-steps": "^1.1.0",
-    "node-sass": "6.0.1"
+    "node-sass": "7.0.1"
   }
 }
