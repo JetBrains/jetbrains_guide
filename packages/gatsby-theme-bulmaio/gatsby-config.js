@@ -22,6 +22,7 @@ module.exports = {
         `,
         feeds: [
           {
+            title: "JetBrains Guide",
             serialize: ({query: {site, allResource}}) => {
               return allResource.edges.map(edge => {
                 return Object.assign({}, edge.node, {
