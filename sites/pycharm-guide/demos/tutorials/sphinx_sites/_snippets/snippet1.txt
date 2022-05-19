@@ -1,0 +1,6 @@
+Some `valid code` inline but also in a block:
+
+```
+Preformatted text
+in here.
+```

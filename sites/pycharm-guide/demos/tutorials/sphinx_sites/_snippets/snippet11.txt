@@ -1,0 +1,8 @@
+```{warning}
+
+This *only* works in [Python](https://www.python.org/) versions as follows:
+
+- 3.8
+
+- 3.9
+```
