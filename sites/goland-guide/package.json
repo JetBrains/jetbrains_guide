@@ -8,7 +8,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "^3.1.0"
+    "gatsby": "^4.14.1"
   },
   "devDependencies": {},
   "scripts": {
