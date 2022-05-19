@@ -1,7 +1,0 @@
-```{code-block} javascript
-:emphasize-lines: 2,3
-
-function hello(name) {
-  return `Hello ${name}`
-}
-```

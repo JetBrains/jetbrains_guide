@@ -1,8 +1,0 @@
-# Welcome to My Site
-
-```{toctree}
-:maxdepth: 2
-:caption: "Contents:"
-
-A Second Page <page1>
-```

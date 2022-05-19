@@ -1,4 +1,0 @@
-```{note}
-
-This only works in Python 3.8 or higher.
-```

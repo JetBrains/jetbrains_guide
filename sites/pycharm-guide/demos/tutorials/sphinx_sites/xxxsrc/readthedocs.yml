@@ -1,8 +1,0 @@
-version: 2
-sphinx:
-  configuration: conf.py
-formats:
-  - pdf
-python:
-  install:
-    - requirements: requirements.txt

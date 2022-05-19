@@ -1,6 +1,0 @@
-```{image} python-logo.png
-:alt: Python Logo
-:class: bg-primary
-:width: 600px
-:align: center
-```

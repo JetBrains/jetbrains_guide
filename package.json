@@ -31,5 +31,8 @@
   },
   "dependencies": {
     "yarn": "^1.22.17"
+  },
+  "jest": {
+    "preset": "jest-preset-gatsby/typescript"
   }
 }
