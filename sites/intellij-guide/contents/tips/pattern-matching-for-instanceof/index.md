@@ -17,4 +17,28 @@ leadin: |
 
   Note that this is only available if you're using a language level of Java 16 or above.
 
+```java
+public class PatternMatchingSwitch {
+	
+	void outputValueInUpperCase(Object obj) {
+		if (obj instanceof String) {
+			String s = (String) obj;
+			System.out.println(s);
+		}
+	}
+}
+```
+
+You can press ⌥⏎ (macOS) or Alt+Enter (Windows/Linux) and choose "Replace 's' with pattern variable".
+
+```java
+public class PatternMatchingSwitch {
+
+    void outputValueInUpperCase(Object obj) {
+        if (obj instanceof String s) {
+            System.out.println(s);
+        }
+    }
+}
+```
 ---
