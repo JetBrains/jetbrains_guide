@@ -1,4 +1,5 @@
 ---
+hasBody: true
 date: 2022-05-18
 title: Pattern Matching for Switch
 technologies: [java]
@@ -21,3 +22,28 @@ leadin: |
     Press ⌥⏎ (macOS) or Alt+Enter (Windows/Linux) and choose "Replace with pattern variable".
 
 ---
+
+```java
+public class PatternMatchingSwitch {
+	
+	void outputValueInUpperCase(Object obj) {
+		if (obj instanceof String) {
+			String s = (String) obj;
+			System.out.println(s);
+		}
+	}
+}
+```
+
+You can press ⌥⏎ (macOS) or Alt+Enter (Windows/Linux) and choose "Replace 's' with pattern variable".
+
+```java
+public class PatternMatchingSwitch {
+
+    void outputValueInUpperCase(Object obj) {
+        if (obj instanceof String s) {
+            System.out.println(s);
+        }
+    }
+}
+```
