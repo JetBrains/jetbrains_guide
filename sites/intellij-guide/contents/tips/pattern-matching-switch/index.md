@@ -1,5 +1,4 @@
 ---
-hasBody: true
 date: 2022-05-23
 title: Pattern Matching for Switch
 technologies: [java]
