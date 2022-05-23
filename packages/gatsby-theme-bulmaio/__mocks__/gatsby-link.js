@@ -1,2 +1,2 @@
-jest.unmock('gatsby')
-module.exports = jest.requireActual('gatsby-link')
+// jest.unmock('gatsby')
+// module.exports = jest.requireActual('gatsby-link')
