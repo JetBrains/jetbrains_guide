@@ -3,7 +3,7 @@ label: 20
 date: 2021-10-05
 title: IntelliJ IDEA 2021.1
 technologies: [java]
-topics: [latest]
+topics: []
 author: tg
 subtitle: Tips to get you productive with the new or improved features in IntelliJ IDEA 2021.1
 thumbnail: ./thumbnail.png

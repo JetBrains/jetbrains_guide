@@ -2,7 +2,7 @@
 date: 2021-05-11
 title: Run your code with Docker, SSH or WSL
 technologies: [java]
-topics: [latest]
+topics: []
 author: tg
 subtitle: Set a Run Target to change where your code runs
 thumbnail: ./thumbnail.png

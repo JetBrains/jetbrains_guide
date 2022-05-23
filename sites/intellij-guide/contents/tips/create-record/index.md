@@ -2,7 +2,7 @@
 date: 2021-05-05
 title: Create Record
 technologies: [java]
-topics: [latest]
+topics: []
 author: tg
 subtitle: Create a new Java record class
 thumbnail: ./thumbnail.png

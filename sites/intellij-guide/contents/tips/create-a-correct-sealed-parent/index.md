@@ -2,7 +2,7 @@
 date: 2021-05-10
 title: Create a correct parent Sealed Class
 technologies: [java]
-topics: [latest]
+topics: []
 author: tg
 subtitle: Sealed types are a new idea for Java developers, let IntelliJ IDEA guide you in how to use them
 thumbnail: ./thumbnail.png

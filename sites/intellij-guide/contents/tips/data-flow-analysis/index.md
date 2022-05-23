@@ -2,7 +2,7 @@
 date: 2021-05-10
 title: Data flow analysis
 technologies: [java]
-topics: [latest]
+topics: []
 author: tg
 subtitle: Data flow analysis is always being improved to show us potential errors in our logic.
 thumbnail: ./thumbnail.png
