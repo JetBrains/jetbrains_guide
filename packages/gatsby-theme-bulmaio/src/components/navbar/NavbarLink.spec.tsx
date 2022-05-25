@@ -6,11 +6,11 @@ import NavbarLink, { NavbarLinkProps } from './NavbarLink';
 export const DUMMY_LINK: NavbarLinkProps = {
   href: '/href1',
   color: 'color1',
-  icon: 'icon1'
+  icon: 'icon1',
 };
 
 test('NavbarLink', () => {
-  const { getByTestId } = render(<NavbarLink {...DUMMY_LINK}/>);
+  const { getByTestId } = render(<NavbarLink {...DUMMY_LINK} />);
 
   // href
   const a = getByTestId('navbarlink-a');

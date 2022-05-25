@@ -22,12 +22,17 @@ class NavbarBrand extends React.Component<NavbarBrandProps> {
   public render() {
     return (
       <div className="navbar-brand">
-        <NavbarBrandLogo/>
+        <NavbarBrandLogo />
 
-        <div id="navbarBurger" className="navbar-burger burger" onClick={this.toggleBurger}>
-          <span/>
-          <span/>
-          <span/>
+        <div
+          id="navbarBurger"
+          role="burger"
+          className="navbar-burger burger"
+          onClick={this.toggleBurger}
+        >
+          <span />
+          <span />
+          <span />
         </div>
       </div>
     );

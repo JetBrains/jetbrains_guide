@@ -1,10 +1,12 @@
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
 import React from 'react';
-import { render } from 'react-testing-library';
-import 'jest-dom/extend-expect';
+import { render } from '@testing-library/react';
 
 import MasterLayout, { MasterLayoutProps } from './MasterLayout';
 import { DUMMY_NAVBAR } from '../navbar/Navbar.spec';
-import { DUMMY_FOOTER } from '../footer/Footer.spec';
+import { DUMMY_FOOTER } from '../footer/Footer.test';
 import { DUMMY_MENUITEM } from '../navbar/NavbarMenuItem.spec';
 import { DUMMY_SUBITEM } from '../navbar/NavbarSubItem.spec';
 import { DUMMY_LINK } from '../navbar/NavbarLink.spec';
@@ -13,21 +15,24 @@ test('MasterLayout', () => {
   const children: React.ReactNode = <div>children1</div>;
   const props: MasterLayoutProps = {
     helmet: {
-      siteTitle: 'siteTitle1'
+      siteTitle: 'siteTitle1',
     },
     navbar: DUMMY_NAVBAR,
     page: {
       pageTitle: 'pageTitle1',
-      twitterCardConfig: {
-        title: 'title1',
-        description: 'description1',
-        imageUrl: 'imageUrl1'
-      },
-      children
+      // twitterCardConfig: {
+      //     site: {
+      //         siteName: "title1",
+      //         creator: "creator1"
+      //     }
+      //     description: "description1",
+      //     imageUrl: "imageUrl1",
+      // },
+      children,
     },
-    footer: DUMMY_FOOTER
+    footer: DUMMY_FOOTER,
   };
-  const { getByText, getByTestId } = render(<MasterLayout {...props} children={children}/>);
+  const { getByText, getByTestId } = render(<MasterLayout {...props} />);
 
   // Now test all those things
   // Helmet stuff doesn't seem to work :(

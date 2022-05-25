@@ -1,11 +1,30 @@
-const React = require("react")
+const React = require('react');
 // eslint-disable-next-line no-undef
-const gatsby = jest.requireActual("gatsby")
+const gatsby = jest.requireActual('gatsby');
 
 // Mocking importing of images leaves an ugly console.warn
 global.console = {
   warn: jest.fn(),
+};
+
+// React seems to want an intersection observer now
+class IntersectionObserver {
+  observe = jest.fn();
+  disconnect = jest.fn();
+  unobserve = jest.fn();
 }
+
+Object.defineProperty(window, 'IntersectionObserver', {
+  writable: true,
+  configurable: true,
+  value: IntersectionObserver,
+});
+
+Object.defineProperty(global, 'IntersectionObserver', {
+  writable: true,
+  configurable: true,
+  value: IntersectionObserver,
+});
 
 module.exports = {
   ...gatsby,
@@ -31,15 +50,15 @@ module.exports = {
       to,
       ...rest
     }) =>
-      React.createElement("a", {
+      React.createElement('a', {
         ...rest,
         href: to,
       })
   ),
   StaticQuery: jest.fn(),
   useStaticQuery: jest.fn(),
-}
+};
 
 beforeEach(() => {
-  jest.clearAllMocks()
-})
+  jest.clearAllMocks();
+});

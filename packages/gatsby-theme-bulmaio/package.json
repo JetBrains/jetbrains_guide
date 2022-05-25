@@ -54,6 +54,7 @@
     "videojs-youtube": "^2.6.1"
   },
   "devDependencies": {
+    "@happy-dom/jest-environment": "^4.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.2.0",
     "@types/jest": "^27.5.1",

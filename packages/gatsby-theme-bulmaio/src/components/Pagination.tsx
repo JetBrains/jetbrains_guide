@@ -1,16 +1,15 @@
 import React, { FC } from 'react';
+
 // import { Link } from 'gatsby';
 
 interface PaginationProps {
-  numPages: number
-  prefix: string
+  numPages: number;
+  prefix: string;
 }
 
-const Pagination: FC<PaginationProps> = (
-  { numPages, prefix }
-) => (
+const Pagination: FC<PaginationProps> = ({ numPages, prefix }) => (
   // TODO Re-enable this for 2.1
-  <div/>
+  <div />
 );
 // const Pagination: FC<PaginationProps> = (
 //   { numPages, prefix }
