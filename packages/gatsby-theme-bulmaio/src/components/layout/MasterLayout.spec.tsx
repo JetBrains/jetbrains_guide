@@ -1,7 +1,7 @@
 /**
  * @jest-environment @happy-dom/jest-environment
  */
-import React from 'react';
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import MasterLayout, { MasterLayoutProps } from './MasterLayout';

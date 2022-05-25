@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import NavbarEnd, { NavbarEndProps } from './NavbarEnd';
@@ -13,11 +16,11 @@ const DUMMY_BUTTONS: NavbarButtonProps[] = [DUMMY_BUTTON];
 
 export const DUMMY_END: NavbarEndProps = {
   links: DUMMY_LINKS,
-  buttons: DUMMY_BUTTONS
+  buttons: DUMMY_BUTTONS,
 };
 
 test('NavbarEnd', () => {
-  const { getByTestId, getByText } = render(<NavbarEnd {...DUMMY_END}/>);
+  const { getByTestId, getByText } = render(<NavbarEnd {...DUMMY_END} />);
 
   // LINK
   // href
@@ -26,7 +29,7 @@ test('NavbarEnd', () => {
 
   // color
   const span = getByTestId('navbarlink-span');
-  expect(span).toHaveStyle(`color: ${DUMMY_LINK.color}`);
+  expect(span).toHaveStyle(`color: #color1`);
 
   // icon
   const i = getByTestId('navbarlink-i');

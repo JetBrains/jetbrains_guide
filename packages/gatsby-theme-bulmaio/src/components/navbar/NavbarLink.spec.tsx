@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import NavbarLink, { NavbarLinkProps } from './NavbarLink';
@@ -18,7 +21,7 @@ test('NavbarLink', () => {
 
   // color
   const span = getByTestId('navbarlink-span');
-  expect(span).toHaveStyle(`color: ${DUMMY_LINK.color}`);
+  expect(span).toHaveStyle(`color: #color1`);
 
   // icon
   const i = getByTestId('navbarlink-i');

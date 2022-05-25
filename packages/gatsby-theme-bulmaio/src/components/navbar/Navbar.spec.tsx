@@ -1,7 +1,7 @@
 /**
  * @jest-environment @happy-dom/jest-environment
  */
-import React from 'react';
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import Navbar, { NavbarProps } from './Navbar';
@@ -21,7 +21,7 @@ export const DUMMY_NAVBAR: NavbarProps = {
 };
 
 test('Navbar', () => {
-  const { getByTestId, getByText } = render(<Navbar {...DUMMY_NAVBAR} />);
+  const { getByTestId } = render(<Navbar {...DUMMY_NAVBAR} />);
 
   // ####  BRAND
   // const github = getByTestId('navbarbrand-github');

@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import NavbarStart, { NavbarStartProps } from './NavbarStart';
@@ -7,14 +10,11 @@ import { DUMMY_SUBMENU } from './NavbarSubMenu.spec';
 import { DUMMY_SUBITEM } from './NavbarSubItem.spec';
 
 export const DUMMY_START: NavbarStartProps = {
-  items: [
-    DUMMY_MENUITEM,
-    DUMMY_SUBMENU
-  ]
+  items: [DUMMY_MENUITEM, DUMMY_SUBMENU],
 };
 
 test('NavbarStart', () => {
-  const { getByTestId } = render(<NavbarStart {...DUMMY_START}/>);
+  const { getByTestId } = render(<NavbarStart {...DUMMY_START} />);
 
   // #### MENUITEM
   const menuitem = getByTestId('navbarmenuitem-link');

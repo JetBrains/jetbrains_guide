@@ -21,5 +21,5 @@ module.exports = {
     url: `http://localhost`,
   },
   setupFiles: [`<rootDir>/loadershim.js`],
-  setupFilesAfterEnv: ['<rootDir>/jest-setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
 };
