@@ -16,7 +16,7 @@ seealso:
   - title: (blog) IntelliJ IDEA Blog - Top 15 IntelliJ IDEA Shortcuts
     href: https://blog.jetbrains.com/idea/2020/03/top-15-intellij-idea-shortcuts/
 leadin: |
-  You can use **Cmd**+**Shift**+**A** on macOS, or **Ctrl**+**Shift**+**A** on Windows and Linux, to display the Find Actions dialog and then use it to hide some of the interface, including the Tabs, Navigation Bar and Tool Windows.
+  You can use **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows and Linux), to display the Find Actions dialog and then use it to hide some of the interface, including the Tabs, Navigation Bar and Tool Windows.
 
   **Pro tip:**
   
