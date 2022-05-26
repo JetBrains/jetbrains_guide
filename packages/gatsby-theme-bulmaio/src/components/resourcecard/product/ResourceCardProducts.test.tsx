@@ -1,12 +1,16 @@
-import React from 'react';
-
-import { ResourceCardProducts, ResourceCardProductsProps } from './ResourceCardProducts';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
+import {
+  ResourceCardProducts,
+  ResourceCardProductsProps,
+} from './ResourceCardProducts';
+
 export const DUMMY_RCPR: ResourceCardProductsProps = {
-  items: [
-    { label: 'productlabel1', slug: '/productslug1' }
-  ]
+  items: [{ label: 'productlabel1', slug: '/productslug1' }],
 };
 
 describe('ResourceCardProducts', () => {

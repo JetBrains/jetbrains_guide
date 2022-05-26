@@ -1,5 +1,7 @@
-import React from 'react';
-import SidebarPublished, { SidebarPublishedProps } from '../../components/sidebar/SidebarPublished';
+import * as React from 'react';
+import SidebarPublished, {
+  SidebarPublishedProps,
+} from '../../components/sidebar/SidebarPublished';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author/ResourceCardAuthor';
@@ -18,12 +20,18 @@ export interface TutorialstepSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = (
-  { author, date, slug, products, technologies, topics, steps }
-) => {
+export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = ({
+  author,
+  date,
+  slug,
+  products,
+  technologies,
+  topics,
+  steps,
+}) => {
   const published: SidebarPublishedProps = {
     date: date,
-    author: author
+    author: author,
   };
   return (
     <Sidebar>
@@ -41,9 +49,9 @@ export const TutorialStepSidebar: React.FC<TutorialstepSidebarProps> = (
       <SidebarReferencesGroup
         reftype={`topics`}
         accent={`success`}
-        references={topics ? topics.map(t => t.label) : []} />
-      <SidebarSteps currentSlug={slug} steps={steps}
+        references={topics ? topics.map(t => t.label) : []}
       />
+      <SidebarSteps currentSlug={slug} steps={steps} />
     </Sidebar>
   );
 };

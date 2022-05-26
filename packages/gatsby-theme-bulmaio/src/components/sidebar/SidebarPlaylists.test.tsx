@@ -1,12 +1,13 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import SidebarPlaylists, { SidebarPlaylistsProps } from './SidebarPlaylists';
 
 export const DUMMY_PROPS: SidebarPlaylistsProps = {
-  playlists: [
-    { title: 'title1', href: '/href1' }
-  ]
+  playlists: [{ title: 'title1', href: '/href1' }],
 };
 
 test('SidebarPlaylists', () => {

@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 import { SeeAlsoProps } from './models';
 import { SeeAlso } from './SeeAlso';
@@ -8,13 +11,13 @@ test('SeeAlso', async () => {
     items: [
       {
         title: 'First',
-        href: 'first'
+        href: 'first',
       },
       {
         title: 'Second',
-        href: 'second'
+        href: 'second',
       },
-    ]
+    ],
   };
 
   const { getByText } = render(<SeeAlso {...seeAlsoProps} />);

@@ -57,6 +57,7 @@ module.exports = {
   ),
   StaticQuery: jest.fn(),
   useStaticQuery: jest.fn(),
+  withPrefix: jest.fn(),
 };
 
 beforeEach(() => {

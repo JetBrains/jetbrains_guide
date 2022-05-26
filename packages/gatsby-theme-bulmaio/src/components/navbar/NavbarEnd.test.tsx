@@ -6,9 +6,9 @@ import { render } from '@testing-library/react';
 
 import NavbarEnd, { NavbarEndProps } from './NavbarEnd';
 import { NavbarLinkProps } from './NavbarLink';
-import { DUMMY_LINK } from './NavbarLink.spec';
+import { DUMMY_LINK } from './NavbarLink.test';
 import { NavbarButtonProps } from './NavbarButton';
-import { DUMMY_BUTTON } from './NavbarButton.spec';
+import { DUMMY_BUTTON } from './NavbarButton.test';
 
 const DUMMY_LINKS: NavbarLinkProps[] = [DUMMY_LINK];
 

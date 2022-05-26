@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { SeeAlsoProps } from './models';
 
 export const SeeAlso: React.FC<SeeAlsoProps> = ({ items }) => {

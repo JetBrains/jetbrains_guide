@@ -5,9 +5,9 @@ as children.
 
  */
 
-import React from 'react';
+import * as React from 'react';
 import SiteLayout from './SiteLayout';
-import {TwitterCardPage} from './MasterLayout';
+import { TwitterCardPage } from './MasterLayout';
 
 interface HomepageLayoutProps {
   title: string;
@@ -18,16 +18,11 @@ interface HomepageLayoutProps {
   twitterCardPage?: TwitterCardPage;
 }
 
-const HomepageLayout: React.FC<HomepageLayoutProps> = (
-    {
-        title,
-        children: {
-            hero,
-            main
-        },
-        twitterCardPage
-    }
-) => {
+const HomepageLayout: React.FC<HomepageLayoutProps> = ({
+  title,
+  children: { hero, main },
+  twitterCardPage,
+}) => {
   return (
     <SiteLayout pageTitle={title} twitterCardPage={twitterCardPage}>
       <div className="content">

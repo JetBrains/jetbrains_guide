@@ -1,16 +1,26 @@
-import React from 'react';
-import ResourceCard, { ResourceCardProps } from './ResourceCard';
-import { DUMMY_RCL } from './logo/ResourceCardLogo.spec';
-import { DUMMY_RCM, DUMMY_RCM2 } from './media/ResourceCardMedia.spec';
-import { DUMMY_RCA } from './author/ResourceCardAuthor.spec';
-import { DUMMY_RCPR } from './product/ResourceCardProducts.spec';
-import { DUMMY_RCTE } from './technology/ResourceCardTechnologies.spec';
-import { DUMMY_RCTO } from './topic/ResourceCardTopics.spec';
-import { DUMMY_RCD } from './date/ResourceCardDate.spec';
-import { DUMMY_RCTH } from './thumbnail/ResourceCardThumbnail.spec';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
+import * as Gatsby from 'gatsby';
+
+import ResourceCard, { ResourceCardProps } from './ResourceCard';
+import { DUMMY_RCL } from './logo/ResourceCardLogo.test';
+import { DUMMY_RCM, DUMMY_RCM2 } from './media/ResourceCardMedia.test';
+import { DUMMY_RCA } from './author/ResourceCardAuthor.test';
+import { DUMMY_RCPR } from './product/ResourceCardProducts.test';
+import { DUMMY_RCTE } from './technology/ResourceCardTechnologies.test';
+import { DUMMY_RCTO } from './topic/ResourceCardTopics.test';
+import { DUMMY_RCD } from './date/ResourceCardDate.test';
+import { DUMMY_RCTH } from './thumbnail/ResourceCardThumbnail.test';
 
 export const DUMMY_RCRT = 'Tip';
+
+const withPrefix = jest.spyOn(Gatsby, 'withPrefix');
+withPrefix.mockImplementation(src => {
+  return src;
+});
 
 export const DUMMY_RC: ResourceCardProps = {
   media: DUMMY_RCM2,
@@ -19,16 +29,18 @@ export const DUMMY_RC: ResourceCardProps = {
   technologies: DUMMY_RCTE,
   topics: DUMMY_RCTO,
   date: DUMMY_RCD,
-  resourceType: DUMMY_RCRT
+  resourceType: DUMMY_RCRT,
 };
 
 describe('ResourceCard', () => {
   it('should have a card with a thumbnail', () => {
-    const { getByText, queryByTestId, getByAltText } = render(<ResourceCard {...DUMMY_RC} thumbnail={DUMMY_RCTH}/>);
+    const { getByText, queryByTestId, getByAltText } = render(
+      <ResourceCard {...DUMMY_RC} thumbnail={DUMMY_RCTH.thumbnail} />
+    );
 
     // Thumbnail
     expect(queryByTestId('rcl-publicURL')).toBeNull();
-    expect(getByAltText('rcg-thumbnail')).toHaveAttribute('sizes', '987');
+    expect(getByAltText('rcg-thumbnail')).toHaveAttribute('src', 'image1.png');
 
     // Media
     expect(queryByTestId('rcm-href')).toHaveAttribute('href', DUMMY_RCM.href);
@@ -60,11 +72,12 @@ describe('ResourceCard', () => {
   });
 
   it('should have a card with a logo', () => {
-    const { queryByTestId } = render(<ResourceCard {...DUMMY_RC} logo={DUMMY_RCL}/>);
+    const { queryByTestId } = render(
+      <ResourceCard {...DUMMY_RC} logo={DUMMY_RCL} />
+    );
 
     // Logo
-    expect(queryByTestId('rcl-publicURL')).toHaveAttribute('src', DUMMY_RCL.publicURL);
+    expect(queryByTestId('rcl-publicURL')).toHaveAttribute('src', 'image1.png');
     expect(queryByTestId('rcg-thumbnail')).toBeNull();
   });
-
 });

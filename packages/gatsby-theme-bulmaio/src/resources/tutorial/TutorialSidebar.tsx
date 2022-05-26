@@ -1,12 +1,14 @@
-import React from 'react';
-import SidebarPublished, { SidebarPublishedProps } from '../../components/sidebar/SidebarPublished';
+import * as React from 'react';
+import SidebarPublished, {
+  SidebarPublishedProps,
+} from '../../components/sidebar/SidebarPublished';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author/ResourceCardAuthor';
 import { ResourceCardTechnologies } from '../../components/resourcecard/technology/ResourceCardTechnologies';
 import { ResourceCardTopics } from '../../components/resourcecard/topic/ResourceCardTopics';
 import { ResourceCardProducts } from '../../components/resourcecard/product/ResourceCardProducts';
-import SidebarSteps from "../../components/sidebar/SidebarSteps";
+import SidebarSteps from '../../components/sidebar/SidebarSteps';
 
 export interface TutorialSidebarProps {
   author: ResourceCardAuthorProps;
@@ -17,12 +19,17 @@ export interface TutorialSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const TutorialSidebar: React.FC<TutorialSidebarProps> = (
-  { author, date, products, technologies, topics, steps }
-) => {
+export const TutorialSidebar: React.FC<TutorialSidebarProps> = ({
+  author,
+  date,
+  products,
+  technologies,
+  topics,
+  steps,
+}) => {
   const published: SidebarPublishedProps = {
     date: date,
-    author: author
+    author: author,
   };
   return (
     <Sidebar>
@@ -38,12 +45,11 @@ export const TutorialSidebar: React.FC<TutorialSidebarProps> = (
         references={products ? products.map(t => t.label) : []}
       />
       <SidebarReferencesGroup
-        reftype={`topics`} accent={`success`}
+        reftype={`topics`}
+        accent={`success`}
         references={topics ? topics.map(t => t.label) : []}
       />
-      <SidebarSteps currentSlug="" steps={steps}
-      />
+      <SidebarSteps currentSlug="" steps={steps} />
     </Sidebar>
   );
-
 };

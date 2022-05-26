@@ -5,14 +5,14 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import Navbar, { NavbarProps } from './Navbar';
-import { DUMMY_LINK } from './NavbarLink.spec';
-import { DUMMY_BUTTON } from './NavbarButton.spec';
-import { DUMMY_BRAND } from './NavbarBrand.spec';
-import { DUMMY_MENUITEM } from './NavbarMenuItem.spec';
-import { DUMMY_SUBITEM } from './NavbarSubItem.spec';
-import { DUMMY_START } from './NavbarStart.spec';
-import { DUMMY_END } from './NavbarEnd.spec';
-import { DUMMY_SUBMENU } from './NavbarSubMenu.spec';
+import { DUMMY_LINK } from './NavbarLink.test';
+import { DUMMY_BUTTON } from './NavbarButton.test';
+import { DUMMY_BRAND } from './NavbarBrand.test';
+import { DUMMY_MENUITEM } from './NavbarMenuItem.test';
+import { DUMMY_SUBITEM } from './NavbarSubItem.test';
+import { DUMMY_START } from './NavbarStart.test';
+import { DUMMY_END } from './NavbarEnd.test';
+import { DUMMY_SUBMENU } from './NavbarSubMenu.test';
 
 export const DUMMY_NAVBAR: NavbarProps = {
   brand: DUMMY_BRAND,

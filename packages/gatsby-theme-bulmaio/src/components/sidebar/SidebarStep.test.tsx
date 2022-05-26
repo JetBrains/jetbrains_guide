@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment @happy-dom/jest-environment
+ */
+import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import SidebarStep, { SidebarStepProps } from './SidebarStep';
@@ -7,7 +10,7 @@ export const DUMMY_STEP: SidebarStepProps = {
   label: 'label1',
   target: 'target1',
   marker: 9,
-  isActive: true
+  isActive: true,
 };
 
 test('SidebarStep', () => {

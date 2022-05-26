@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import SidebarStep from './SidebarStep';
 
 export interface Step {
@@ -11,18 +11,26 @@ export interface SidebarStepsProps {
   currentSlug?: string;
 }
 
-const SidebarSteps: React.FC<SidebarStepsProps> = (
-  { currentSlug, steps }
-) => {
+const SidebarSteps: React.FC<SidebarStepsProps> = ({ currentSlug, steps }) => {
   return (
-    <div className="bio-page-sidebar-references-group" style={{ marginTop: '1rem' }}>
+    <div
+      className="bio-page-sidebar-references-group"
+      style={{ marginTop: '1rem' }}
+    >
       {steps.length > 0 && (
         <>
-          <p className="menu-label bio-page-sidebar-published">Tutorial Steps</p>
+          <p className="menu-label bio-page-sidebar-published">
+            Tutorial Steps
+          </p>
           <ul className="steps has-content-centered is-vertical is-small">
             {steps.map((step, index) => (
-              <SidebarStep key={step.href} label={step.label} target={step.href} marker={index + 1}
-                           isActive={step.href === currentSlug}/>
+              <SidebarStep
+                key={step.href}
+                label={step.label}
+                target={step.href}
+                marker={index + 1}
+                isActive={step.href === currentSlug}
+              />
             ))}
           </ul>
         </>

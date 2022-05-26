@@ -5,7 +5,7 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import NavbarSubMenu, { NavbarSubMenuProps } from './NavbarSubMenu';
-import { DUMMY_SUBITEM } from './NavbarSubItem.spec';
+import { DUMMY_SUBITEM } from './NavbarSubItem.test';
 
 export const DUMMY_SUBMENU: NavbarSubMenuProps = {
   label: 'label1',

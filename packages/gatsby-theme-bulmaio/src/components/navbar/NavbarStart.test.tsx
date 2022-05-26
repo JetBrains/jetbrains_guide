@@ -5,9 +5,9 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import NavbarStart, { NavbarStartProps } from './NavbarStart';
-import { DUMMY_MENUITEM } from './NavbarMenuItem.spec';
-import { DUMMY_SUBMENU } from './NavbarSubMenu.spec';
-import { DUMMY_SUBITEM } from './NavbarSubItem.spec';
+import { DUMMY_MENUITEM } from './NavbarMenuItem.test';
+import { DUMMY_SUBMENU } from './NavbarSubMenu.test';
+import { DUMMY_SUBITEM } from './NavbarSubItem.test';
 
 export const DUMMY_START: NavbarStartProps = {
   items: [DUMMY_MENUITEM, DUMMY_SUBMENU],

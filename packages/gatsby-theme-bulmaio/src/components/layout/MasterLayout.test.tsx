@@ -5,11 +5,11 @@ import * as React from 'react';
 import { render } from '@testing-library/react';
 
 import MasterLayout, { MasterLayoutProps } from './MasterLayout';
-import { DUMMY_NAVBAR } from '../navbar/Navbar.spec';
+import { DUMMY_NAVBAR } from '../navbar/Navbar.test';
 import { DUMMY_FOOTER } from '../footer/Footer.test';
-import { DUMMY_MENUITEM } from '../navbar/NavbarMenuItem.spec';
-import { DUMMY_SUBITEM } from '../navbar/NavbarSubItem.spec';
-import { DUMMY_LINK } from '../navbar/NavbarLink.spec';
+import { DUMMY_MENUITEM } from '../navbar/NavbarMenuItem.test';
+import { DUMMY_SUBITEM } from '../navbar/NavbarSubItem.test';
+import { DUMMY_LINK } from '../navbar/NavbarLink.test';
 
 test('MasterLayout', () => {
   const children: React.ReactNode = <div>children1</div>;

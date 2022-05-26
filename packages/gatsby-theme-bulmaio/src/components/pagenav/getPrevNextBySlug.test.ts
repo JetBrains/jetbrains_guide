@@ -6,7 +6,7 @@ const entries: PrevNext[] = [
   { slug: 'slug2', label: 'label2' },
   { slug: 'slug3', label: 'label3' },
   { slug: 'slug4', label: 'label4' },
-  { slug: 'slug5', label: 'label5' }
+  { slug: 'slug5', label: 'label5' },
 ];
 
 describe('Get Previous Next', () => {
@@ -38,5 +38,4 @@ describe('Get Previous Next', () => {
       expect(next.label).toBe(entries[3].label);
     }
   });
-
 });
