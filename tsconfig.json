@@ -12,6 +12,8 @@
     "noUnusedLocals": false,
     "allowJs": true
   },
-  "include": ["./jest-setup.ts", "global.d.ts"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "./packages/gatsby-theme-bulmaio/jest-setup.ts", "global.d.ts"],
+  "exclude": [
+    "packages/gatsby-theme-bulmaio/node_modules", "dist"]
 }

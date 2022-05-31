@@ -127,7 +127,6 @@ module.exports = {
         path: `${__dirname}/contents`
       }
     },
-    'gatsby-plugin-sass',
     'gatsby-plugin-typescript',
     'gatsby-theme-bulmaio',
     {

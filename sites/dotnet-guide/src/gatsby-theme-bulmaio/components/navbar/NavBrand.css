@@ -1,0 +1,21 @@
+.bio-navbar-brand-twitter span {
+    color: #55acee;
+}
+
+.jetbrains {
+    background-image: url("https://www.jetbrains.com/company/annualreport/2016/img/jetbrains-logo-square.svg");
+}
+
+.rider {
+    background-image: url("https://resources.jetbrains.com/storage/products/rider/img/meta/rider_logo_300x300.png");
+}
+
+.resharper {
+    background-image: url("https://resources.jetbrains.com/storage/products/resharper/img/meta/resharper_logo_300x300.png");
+}
+
+.gif_player {
+    /* fix GIF icon going wonky */
+    height: 100%;
+}
+

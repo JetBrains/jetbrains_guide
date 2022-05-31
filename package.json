@@ -17,7 +17,6 @@
     "ws:develop": "yarn workspace webstorm-guide develop",
     "ws:build": "yarn workspace webstorm-guide build",
     "ws:clean": "yarn workspace webstorm-guide clean",
-    "production": "yarn workspace pycharm-guide production",
     "go:develop": "yarn workspace goland-guide develop",
     "go:build": "yarn workspace goland-guide build",
     "go:clean": "yarn workspace goland-guide clean",
