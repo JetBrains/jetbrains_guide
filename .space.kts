@@ -188,6 +188,7 @@ job("Warmup - Content creators (WebStorm)") {
     }
 
     warmup(ide = Ide.WebStorm) {
+        devfile = ".space/webstorm.devfile.yml"
         scriptLocation = "./dev-env-warmup.sh"
     }
 }
