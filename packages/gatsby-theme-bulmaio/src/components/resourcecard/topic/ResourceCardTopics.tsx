@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { Link } from 'gatsby';
 
@@ -10,19 +10,23 @@ interface ResourceCardTopic {
 export type ResourceCardTopics = ResourceCardTopic[];
 
 export interface ResourceCardTopicsProps {
-  items: ResourceCardTopics
+  items: ResourceCardTopics;
 }
 
-export const ResourceCardTopics: React.FC<ResourceCardTopicsProps> = (
-  { items }
-) => (
+export const ResourceCardTopics: React.FC<ResourceCardTopicsProps> = ({
+  items,
+}) => (
   <>
     {items.map(topic => (
-      <span data-testid={`rcto-key`} className="bio-common-card-references" key={topic.slug}>
-          <span className="tag is-rounded">
-            <Link to={topic.slug} className="has-text-primary">
-              {topic.label}
-            </Link>
+      <span
+        data-testid={`rcto-key`}
+        className="bio-common-card-references"
+        key={topic.slug}
+      >
+        <span className="tag is-rounded">
+          <Link to={topic.slug} className="has-text-primary">
+            {topic.label}
+          </Link>
         </span>
       </span>
     ))}

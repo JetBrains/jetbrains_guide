@@ -2,58 +2,18 @@
   "name": "pycharm-guide",
   "description": "Gatsby-driven compendium of PyCharm learning resources",
   "version": "1.0.0",
-  "browserslist": [
-    ">0.25%",
-    "not dead"
-  ],
   "author": "Paul Everitt <paul.everitt@jetbrains.com>",
   "keywords": [
     "gatsby, typescript"
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "gatsby": "^3.8.0"
+    "gatsby": "^4.14.1"
   },
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "test": "jest"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "./setup-jest.js"
-    ],
-    "globals": {
-      "__PATH_PREFIX__": ""
-    },
-    "testURL": "http://localhost",
-    "transform": {
-      "^.+\\.(tsx?|jsx?)$": "ts-jest"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby)/)"
-    ],
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
-    "testPathIgnorePatterns": [
-      "node_modules",
-      ".cache"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "moduleNameMapper": {
-      "typeface-*": "identity-obj-proxy",
-      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file.js"
-    },
-    "collectCoverage": false,
-    "coverageReporters": [
-      "lcov",
-      "text",
-      "html"
-    ]
   }
 }

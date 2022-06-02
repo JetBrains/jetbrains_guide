@@ -1,11 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { VideoPlayerProps } from './models';
 import VideoPlayer from './VideoPlayer';
 
-export const ShortVideo: React.FC<VideoPlayerProps> = (
-  { video }
-) => {
-
+export const ShortVideo: React.FC<VideoPlayerProps> = ({ video }) => {
   // TODO(florin): Improve this code if it makes it to production
   interface videoPlayerOptions {}
 
@@ -16,9 +13,9 @@ export const ShortVideo: React.FC<VideoPlayerProps> = (
       sources: [
         {
           src: video.youtubeURL,
-          type: 'video/youtube'
-        }
-      ]
+          type: 'video/youtube',
+        },
+      ],
     };
     if (video.likeGIF) {
       options = {
@@ -30,7 +27,7 @@ export const ShortVideo: React.FC<VideoPlayerProps> = (
         autoplay: 1,
         rel: 0,
         fs: 0,
-      }
+      };
     }
 
     return (
@@ -39,9 +36,5 @@ export const ShortVideo: React.FC<VideoPlayerProps> = (
       </div>
     );
   }
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
-

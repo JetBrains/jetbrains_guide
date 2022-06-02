@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
 
 export interface SidebarReferencesGroupProps {
@@ -7,15 +7,20 @@ export interface SidebarReferencesGroupProps {
   references: string[];
 }
 
-const SidebarReferencesGroup: React.FC<SidebarReferencesGroupProps> = (
-  { reftype, accent, references }
-  ) => {
+const SidebarReferencesGroup: React.FC<SidebarReferencesGroupProps> = ({
+  reftype,
+  accent,
+  references,
+}) => {
   return (
     <div className="bio-page-sidebar-references-group">
       {references.length > 0 && (
         <>
           <p className="menu-label" style={{ marginTop: '1rem' }}>
-            <span style={{ textTransform: 'uppercase' }} className="bio-page-sidebar-references-reftype">
+            <span
+              style={{ textTransform: 'uppercase' }}
+              className="bio-page-sidebar-references-reftype"
+            >
               {reftype}
             </span>
           </p>
@@ -28,7 +33,11 @@ const SidebarReferencesGroup: React.FC<SidebarReferencesGroupProps> = (
                 style={{ display: 'inline-block', margin: '0 0.2rem' }}
                 className="bio-page-sidebar-references-href"
               >
-                <span className={`tag bio-page-sidebar-references-label has-text-${accent}`}>{reference}</span>
+                <span
+                  className={`tag bio-page-sidebar-references-label has-text-${accent}`}
+                >
+                  {reference}
+                </span>
               </Link>
             ))}
           </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
 
 export interface SubsectionTopicProps {
@@ -9,12 +9,21 @@ export interface SubsectionTopicProps {
   icon: string;
 }
 
-const SubsectionTopic: React.FC<SubsectionTopicProps> = ({ title, subtitle, href, accent, icon }) => (
+const SubsectionTopic: React.FC<SubsectionTopicProps> = ({
+  title,
+  subtitle,
+  href,
+  accent,
+  icon,
+}) => (
   <Link data-testid={`sto-href`} className="bd-link" to={href}>
     <h2 className="bd-link-name">
       <figure className="bd-link-figure">
-        <span data-testid={`sto-accent`} className={`bd-link-icon has-text-${accent}`}>
-          <i data-testid={`sto-icon`} className={icon}/>
+        <span
+          data-testid={`sto-accent`}
+          className={`bd-link-icon has-text-${accent}`}
+        >
+          <i data-testid={`sto-icon`} className={icon} />
         </span>
       </figure>
       {title}

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
 
 interface PlaylistItem {
@@ -12,7 +12,10 @@ export interface SidebarPlaylistsProps {
 
 const SidebarPlaylists: React.FC<SidebarPlaylistsProps> = ({ playlists }) => {
   return (
-    <div className="bio-page-sidebar-references-group" style={{ marginTop: '1rem' }}>
+    <div
+      className="bio-page-sidebar-references-group"
+      style={{ marginTop: '1rem' }}
+    >
       {playlists && playlists.length > 0 && (
         <>
           <p className="menu-label bio-page-sidebar-published">In Playlists</p>

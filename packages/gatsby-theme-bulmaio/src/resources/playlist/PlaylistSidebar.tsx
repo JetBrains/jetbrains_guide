@@ -1,5 +1,7 @@
-import React from 'react';
-import SidebarPublished, { SidebarPublishedProps } from '../../components/sidebar/SidebarPublished';
+import * as React from 'react';
+import SidebarPublished, {
+  SidebarPublishedProps,
+} from '../../components/sidebar/SidebarPublished';
 import Sidebar from '../../components/sidebar/Sidebar';
 import SidebarReferencesGroup from '../../components/sidebar/SidebarReferencesGroup';
 import { ResourceCardAuthorProps } from '../../components/resourcecard/author/ResourceCardAuthor';
@@ -15,12 +17,16 @@ export interface PlaylistSidebarProps {
   topics: ResourceCardTopics;
 }
 
-export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
-  { author, date, products, technologies, topics }
-) => {
+export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = ({
+  author,
+  date,
+  products,
+  technologies,
+  topics,
+}) => {
   const published: SidebarPublishedProps = {
     date: date,
-    author: author
+    author: author,
   };
   return (
     <Sidebar>
@@ -36,10 +42,10 @@ export const PlaylistSidebar: React.FC<PlaylistSidebarProps> = (
         references={products ? products.map(t => t.label) : []}
       />
       <SidebarReferencesGroup
-        reftype={`topics`} accent={`success`}
+        reftype={`topics`}
+        accent={`success`}
         references={topics ? topics.map(t => t.label) : []}
       />
     </Sidebar>
   );
-
 };

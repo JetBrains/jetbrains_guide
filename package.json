@@ -17,7 +17,6 @@
     "ws:develop": "yarn workspace webstorm-guide develop",
     "ws:build": "yarn workspace webstorm-guide build",
     "ws:clean": "yarn workspace webstorm-guide clean",
-    "production": "yarn workspace pycharm-guide production",
     "go:develop": "yarn workspace goland-guide develop",
     "go:build": "yarn workspace goland-guide build",
     "go:clean": "yarn workspace goland-guide clean",
@@ -31,5 +30,14 @@
   },
   "dependencies": {
     "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.6.2"
   }
 }

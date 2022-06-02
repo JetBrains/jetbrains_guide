@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { Link } from 'gatsby';
 import { Thumbnail } from '../../models';
-import { withPrefix } from 'gatsby'
+import { withPrefix } from 'gatsby';
 
 export interface SidebarPublishedProps {
   date: string;
@@ -12,9 +12,10 @@ export interface SidebarPublishedProps {
   };
 }
 
-const SidebarPublished: React.FC<SidebarPublishedProps> = (
-  { date, author }
-) => {
+const SidebarPublished: React.FC<SidebarPublishedProps> = ({
+  date,
+  author,
+}) => {
   return (
     <div className="bio-page-sidenav-published-heading">
       <p className="menu-label bio-page-sidebar-published">Published</p>
@@ -24,12 +25,13 @@ const SidebarPublished: React.FC<SidebarPublishedProps> = (
             <figure className="media-left">
               <div className="image is-rounded is-48x48">
                 <img
-                  src={withPrefix(author.thumbnail.childImageSharp.resized.src)} 
+                  src={withPrefix(author.thumbnail.childImageSharp.resized.src)}
                   alt=""
                   loading="lazy"
                   width="48"
                   height="48"
-                  className="bio-resourcecard-logo" />
+                  className="bio-resourcecard-logo"
+                />
               </div>
             </figure>
             <div className="media-content">

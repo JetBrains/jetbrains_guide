@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import { Link } from 'gatsby';
 
@@ -6,16 +6,25 @@ export interface ResourceCardMediaProps {
   href: string;
   title: string;
   subtitle?: string;
-  resourceType?: String,
+  resourceType?: string;
 }
 
-export const ResourceCardMedia: React.FC<ResourceCardMediaProps> = (
-  { href, title, subtitle, resourceType }
-) => (
+export const ResourceCardMedia: React.FC<ResourceCardMediaProps> = ({
+  href,
+  title,
+  subtitle,
+  resourceType,
+}) => (
   <div className="content bio-resourcecard-props">
     <Link data-testid={`rcm-href`} to={href}>
-      <strong>{title} {resourceType && <small>({resourceType})</small>}</strong>
+      <strong>
+        {title} {resourceType && <small>({resourceType})</small>}
+      </strong>
     </Link>
-    {subtitle && <div data-testid={`rcm-subtitle`} style={{ minHeight: '2.2rem' }}>{subtitle}</div>}
+    {subtitle && (
+      <div data-testid={`rcm-subtitle`} style={{ minHeight: '2.2rem' }}>
+        {subtitle}
+      </div>
+    )}
   </div>
 );

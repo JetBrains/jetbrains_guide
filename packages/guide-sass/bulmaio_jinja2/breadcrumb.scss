@@ -1,0 +1,10 @@
+@import "../../../node_modules/bulma/sass/utilities/derived-variables";
+
+.bd-breadcrumb {
+  margin-bottom: 1rem;
+  .breadcrumb {
+    li {
+      margin-top: 0;
+    }
+  }
+}

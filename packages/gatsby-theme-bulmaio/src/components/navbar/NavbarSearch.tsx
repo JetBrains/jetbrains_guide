@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { Search } from '../search/Search';
 
-import './NavbarSearch.scss';
+// import '../../../../guide-sass/NavbarSearch.scss';
 
 export interface NavbarSearchProps {
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import videojs from 'video.js';
 
 interface VideoPlayerPropsInferface {
