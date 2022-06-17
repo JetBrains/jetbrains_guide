@@ -2,7 +2,7 @@
 date: 2022-05-25
 title: Determining the return type of expression
 technologies: [java]
-topics: [refactoring]
+topics: [editing]
 author: hs
 subtitle: Type Info is very helpful on a per-expression basis
 thumbnail: ./thumbnail.png
