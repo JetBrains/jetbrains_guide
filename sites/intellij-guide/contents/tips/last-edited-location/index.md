@@ -2,7 +2,7 @@
 date: 2022-06-17
 title: Navigate to the last edited location
 technologies: [java]
-topics: [refactoring]
+topics: [editing]
 author: hs
 subtitle: Move around the files you're working on quickly with keyboard shortcuts
 thumbnail: ./thumbnail.png

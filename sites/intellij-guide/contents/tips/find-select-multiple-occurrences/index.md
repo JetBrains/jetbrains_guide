@@ -2,7 +2,7 @@
 date: 2022-06-17
 title: Find & Select Multiple Occurrences 
 technologies: [java]
-topics: [editing]
+topics: [refactoring]
 author: hs
 subtitle: Select multiple occurrences of the same word and change them all at once
 thumbnail: ./thumbnail.png
