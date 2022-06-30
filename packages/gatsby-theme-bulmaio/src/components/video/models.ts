@@ -3,7 +3,7 @@ export interface VideoPlayerProps {
     posterURL: string;
     youtubeURL: string;
     likeGIF: boolean;
-    posterNumber: number;
+    posterNumber?: number;
   }
 }
 

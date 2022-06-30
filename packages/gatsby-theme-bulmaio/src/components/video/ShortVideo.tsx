@@ -12,6 +12,7 @@ export type VideoPlayerOptions = {
     autoplay?: number;
     rel?: number;
     fs?: number;
+    fill?: boolean;
 }
 
 export const ShortVideo: React.FC<VideoPlayerProps> = ({video}) => {

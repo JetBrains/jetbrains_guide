@@ -3,13 +3,13 @@ import { Element } from 'react-scroll';
 
 import { VideoPlayerProps } from './models';
 import VideoPlayer from './VideoPlayer';
+import {VideoPlayerOptions} from "./ShortVideo";
 
 export const LongVideo: React.FC<VideoPlayerProps> = ({ video }) => {
   // TODO(florin): Improve this code if it makes it to production
-  interface videoPlayerOptions {}
 
   if (video) {
-    let options: videoPlayerOptions = {
+    let options: VideoPlayerOptions = {
       controls: 1,
       poster: video.posterURL,
       fill: true,
