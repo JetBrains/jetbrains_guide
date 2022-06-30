@@ -2,18 +2,26 @@ import * as React from 'react';
 import { VideoPlayerProps } from './models';
 import VideoPlayer from './VideoPlayer';
 
+export type VideoPlayerOptions = {
+  controls: number;
+  poster: string;
+  sources: {src: string, type?: string}[];
+  modestbranding?: number;
+  playsinline?: number;
+  disablekb?: number;
+  autoplay?: number;
+  rel?: number;
+  fs?: number;
+}
 export const ShortVideo: React.FC<VideoPlayerProps> = ({ video }) => {
-  // TODO(florin): Improve this code if it makes it to production
-  interface videoPlayerOptions {}
-
   if (video) {
-    let options: videoPlayerOptions = {
+    let options: VideoPlayerOptions = {
       controls: 1,
       poster: video.posterURL,
       sources: [
         {
-          src: video.youtubeURL,
-          type: 'video/youtube',
+          src: "https://d2b7umwc7tvlq5.cloudfront.net/assets/fields/HLS/fields.m3u8",
+          // type: 'video/youtube',
         },
       ],
     };
