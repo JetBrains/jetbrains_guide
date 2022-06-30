@@ -116,6 +116,7 @@ const Tip: FC<TipProps> = (
             posterURL: shortVideo.poster ? shortVideo.poster.publicURL : '',
             youtubeURL: shortVideo.url,
             likeGIF: shortVideo.likeGIF ? shortVideo.likeGIF : false,
+            posterNumber: shortVideo.posterNumber,
           }} />
         }
         <div
