@@ -2,7 +2,6 @@ export interface VideoPlayerProps {
   video?: {
     posterURL: string;
     youtubeURL: string;
-    likeGIF: boolean;
     posterNumber?: number;
   }
 }
@@ -14,5 +13,4 @@ export interface Video {
     publicURL: string;
     childImageSharp: any;
   };
-  likeGIF: boolean;
 }

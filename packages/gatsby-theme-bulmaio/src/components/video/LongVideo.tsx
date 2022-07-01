@@ -9,7 +9,7 @@ export const LongVideo: React.FC<VideoPlayerProps> = ({ video }) => {
   // TODO(florin): Improve this code if it makes it to production
 
   if (video) {
-    let options: VideoPlayerOptions = {
+    const options: VideoPlayerOptions = {
       controls: 1,
       poster: video.posterURL,
       fill: true,
@@ -20,19 +20,6 @@ export const LongVideo: React.FC<VideoPlayerProps> = ({ video }) => {
         },
       ],
     };
-
-    if (video.likeGIF) {
-      options = {
-        ...options,
-        controls: 0,
-        modestbranding: 0,
-        playsinline: 1,
-        disablekb: 1,
-        autoplay: 1,
-        rel: 0,
-        fs: 0,
-      };
-    }
 
     return (
       <Element

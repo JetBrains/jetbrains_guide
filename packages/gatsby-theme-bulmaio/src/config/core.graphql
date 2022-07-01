@@ -36,7 +36,6 @@ type AnimatedGif {
 type Video {
     poster: File @fileByRelativePath
     url: String
-    likeGIF: Boolean
     posterNumber: Int
 }
 
