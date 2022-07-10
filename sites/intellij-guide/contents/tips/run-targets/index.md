@@ -13,9 +13,11 @@ shortVideo:
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Run applications
     href: https://www.jetbrains.com/help/idea/running-applications.html
+  - title: (video) Marco Codes - SSH Crash Course
+    href: https://www.youtube.com/watch?v=UnM4QAumuCQ
 leadin: |
-  You can configure a Run Target of Docker, SSH or WSL for Java unit tests, Maven and Gradle projects, and for Spring Boot, Micronaut and Quarkus applications.
+    You can configure a Run Target of Docker, SSH or WSL for Java unit tests, Maven and Gradle projects, and for Spring Boot, Micronaut and Quarkus applications.
 
-  This means you can, for example, run Spring Boot applications with a Docker target.
+    This means you can, for example, run Spring Boot applications with a Docker target.
 
 ---

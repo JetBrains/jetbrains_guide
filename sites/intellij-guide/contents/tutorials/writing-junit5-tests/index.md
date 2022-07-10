@@ -21,3 +21,11 @@ tutorialItems:
   - /tutorials/writing-junit5-tests/grouping-tests/
   - /tutorials/writing-junit5-tests/shortcuts-used/
 ---
+
+**See Also - Marco Codes**
+
+In addition to this tutorial, we recommend you check out [Marco Codes - JUnit Tutorial - Crash Course](https://www.youtube.com/watch?v=6uSnF6IuWIw) to learn how to use JUnit 5 like a professional including:
+- Understand what Maven/Gradle dependencies you'll need
+- How to write tests
+- How to use other assertion libraries like AssertJ and asserting JSON & XML
+- Explore new JUnit 5 features like @ParameterizedTests, @TestFactorys, and @ExtendWith

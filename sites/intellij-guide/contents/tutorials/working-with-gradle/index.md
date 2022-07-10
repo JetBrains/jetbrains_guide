@@ -23,3 +23,11 @@ tutorialItems:
   - /tutorials/working-with-gradle/gradle-wrapper/
   - /tutorials/working-with-gradle/shortcuts-used/
 ---
+
+**See Also - Marco Codes**
+
+In addition to this tutorial, we recommend you check out [Marco Codes - Gradle Tutorial - Crash Course](https://www.youtube.com/watch?v=gKPMKRnnbXU) - to learn how to use Gradle like a professional including
+- Using the Gradle wrapper
+- Using Gradle together with IDEs 
+- Gradle basics like build.gradle and settings.gradle
+- Running commands (clean build) as well as understanding multi-project Gradle builds
