@@ -4,7 +4,7 @@ title: 'Rename constants that use reserved names'
 technologies: [go]
 topics: [quick-fixes, inspections]
 author: ap
-subtitle: 'Rename a constant if it uses the name of a built-in constant.'
+subtitle: 'Rename a constant if it uses a name of a built-in constant.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
@@ -13,7 +13,7 @@ leadin: |
   
   **How to use:**
 
-  Place the cursor on highlighted constant name, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select *Reserved word used as name*. Type a new name that differs from names of built-in constants. 
+  Place the cursor on a highlighted constant name, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select **Rename constant**. Type a new name and press _Enter_. 
 
   <span class="tag is-rounded">New in 2022.2</span>
 ---

@@ -4,7 +4,7 @@ title: 'Group multiple `use` directives in `go.work`'
 technologies: [go]
 topics: [quick-fixes]
 author: ap
-subtitle: 'Apply a quick-fix to group multiple `use` directives in `go.work` into one directive.'
+subtitle: 'Merge multiple `use` directives in `go.work` into one directive.'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
@@ -13,7 +13,7 @@ leadin: |
   
   **How to use:**
 
-  Place the cursor on a use directive, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select *Merge multiple use directives into one*. 
+  Place the cursor on a `use` directive, press _Alt + Enter on Windows/Linux_ or _⌥ + ⏎ on macOS_, and select *Merge multiple use directives into one*. 
 
   <span class="tag is-rounded">New in 2022.2</span>
 ---

@@ -5,7 +5,7 @@ title: New Features in GoLand 2022.2
 technologies: [go]
 topics: [quick-fixes,generics,settings]
 author: ap
-subtitle: A selection of useful features from GoLand 2022.2
+subtitle: A selection of useful features from GoLand 2022.2.
 cardThumbnail: ./card.png
 thumbnail: ./thumbnail.png
 playlistItems:
