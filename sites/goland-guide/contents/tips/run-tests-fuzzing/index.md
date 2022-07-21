@@ -6,7 +6,7 @@ topics: ['testing']
 author: ap
 subtitle: Automate your tests by continuously submitting various input.
 seealso:
-  - title: Fuzz testing
+  - title: GoLand Documentation – Fuzz testing
     href: https://www.jetbrains.com/help/go/2022.2/performing-tests.html#run-fuzz-testing
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
@@ -16,7 +16,7 @@ leadin: |
 
     **How to use:**
     
-    In the _test_ file, click the _Run Test_ icon in the gutter and navigate to _Run | go test -fuzz FuzzMyTest_.
+    In the __test_ file, click the **Run Test** icon in the gutter and navigate to **Run | go test -fuzz FuzzMyTest**.
 
     <span class="tag is-rounded">New in 2021.2</span>
 ---
