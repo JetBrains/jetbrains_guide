@@ -2,7 +2,7 @@
 date: 2022-07-23
 title: Marco Codes - Spring Boot
 technologies: []
-topics: [settings]
+topics: [ultimate]
 author: hs
 subtitle: Spring Boot Nice n Easy
 thumbnail: ./thumbnail.png

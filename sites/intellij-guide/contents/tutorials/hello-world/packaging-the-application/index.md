@@ -9,7 +9,7 @@ subtitle: We can package the application into a Java ARchive file (JAR).
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/H_XxH66lm3U?start=495
+
 
 ---
 
