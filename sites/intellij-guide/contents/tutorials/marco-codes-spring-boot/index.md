@@ -15,35 +15,31 @@ tutorialItems:
   - /tutorials/marco-codes-spring-boot/maven-project-structure/
   - /tutorials/marco-codes-spring-boot/starting-the-project-for-the-first-time/
   - /tutorials/marco-codes-spring-boot/hello-world-restcontroller/
+  - /tutorials/marco-codes-spring-boot/rest-api-design/
+  - /tutorials/marco-codes-spring-boot/photoz-model-class/
+  - /tutorials/marco-codes-spring-boot/get-mapping/
+  - /tutorials/marco-codes-spring-boot/delete-mapping/
+  - /tutorials/marco-codes-spring-boot/browser-http-delete/
+  - /tutorials/marco-codes-spring-boot/post-mapping/
+  - /tutorials/marco-codes-spring-boot/browser-http-post/
+  - /tutorials/marco-codes-spring-boot/requestbody-receiving-json/
+  - /tutorials/marco-codes-spring-boot/validating-user-input/
+  - /tutorials/marco-codes-spring-boot/photo-upload/
+  - /tutorials/marco-codes-spring-boot/handling-spring-boot-error-messages/
+  - /tutorials/marco-codes-spring-boot/application-properties/
+  - /tutorials/marco-codes-spring-boot/jackson-and-jsonignore/
+  - /tutorials/marco-codes-spring-boot/photo-download/
+  - /tutorials/marco-codes-spring-boot/dependency-injection-intro/
+  - /tutorials/marco-codes-spring-boot/dependency-injection-different-styles/
+  - /tutorials/marco-codes-spring-boot/dependency-injection-refactorings/
+  - /tutorials/marco-codes-spring-boot/downloading-images/
+  - /tutorials/marco-codes-spring-boot/recommended-project-structure/
+  - /tutorials/marco-codes-spring-boot/h2-database-intro/
+  - /tutorials/marco-codes-spring-boot/database-schema-creation/
+  - /tutorials/marco-codes-spring-boot/spring-data-jdbc-repositories/
+  - /tutorials/marco-codes-spring-boot/spring-data-jdbc-annotations/
+  - /tutorials/marco-codes-spring-boot/spring-data-jdbc-refactorings/
+  - /tutorials/marco-codes-spring-boot/packaging-and-deployment/
+  - /tutorials/marco-codes-spring-boot/the-end-and-next-steps/
 
-
-00:10:41 Hello World @RestController
-00:14:15 REST API Design
-00:15:17 Photoz Model Class
-00:16:18 @GetMapping
-00:22:28 @DeleteMapping
-00:24:11 Browser - HTTP Delete
-00:25:10 @PostMapping
-00:26:45 Browser - HTTP Post
-00:28:13 @RequestBody - Receiving JSON
-00:29:33 Validating User Input
-00:32:28 Photo Upload
-00:37:07 Handling Spring Boot Error Messages
-00:38:24 application.properties
-00:40:18 Jackson & @JsonIgnore
-00:40:45 Photo Download
-00:43:15 Dependency Injection - Intro
-00:47:09 Dependency Injection - Different Styles
-00:48:06 Dependency Injection - Refactorings
-00:51:39 Downloading Images
-00:57:09 Recommended Project Structure
-00:57:57 H2 Database - Intro
-01:00:08 Database Schema Creation
-01:05:22 Spring Data JDBC - Repositories
-01:07:33 Spring Data JDBC - Annotations
-01:08:53 Spring Data JDBC - Refactorings
-01:13:57 Packaging & Deployment
-01:15:58 The End & Next Steps
 ---
-
-
