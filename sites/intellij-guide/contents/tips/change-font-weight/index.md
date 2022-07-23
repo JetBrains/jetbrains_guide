@@ -2,7 +2,7 @@
 date: 2021-05-11
 title: Change your code font weight
 technologies: []
-topics: [latest, settings]
+topics: [settings]
 author: tg
 subtitle: We spend hours looking at our code. We can make this as pleasant as possible.
 thumbnail: ./thumbnail.png

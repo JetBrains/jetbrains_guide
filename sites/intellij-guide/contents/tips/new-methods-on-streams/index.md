@@ -2,7 +2,7 @@
 date: 2021-05-10
 title: Use new methods on the Streams API
 technologies: [java]
-topics: [latest, inspections]
+topics: [inspections]
 author: tg
 subtitle: Inspections can show us new features from Java 16
 thumbnail: ./thumbnail.png

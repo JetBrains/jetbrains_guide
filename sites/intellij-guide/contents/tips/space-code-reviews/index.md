@@ -2,7 +2,7 @@
 date: 2021-05-11
 title: Code Reviews with Space
 technologies: []
-topics: [latest, plugins]
+topics: [plugins]
 author: tg
 subtitle: Perform code reviews without leaving the IDE. 
 thumbnail: ./thumbnail.png

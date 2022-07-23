@@ -2,7 +2,7 @@
 date: 2021-05-10
 title: Evaluate JSON Path expressions 
 technologies: [json]
-topics: [latest, editing]
+topics: [editing]
 author: tg
 subtitle: Use IntelliJ IDEA to check if your JSON Path expression are correct.
 thumbnail: ./thumbnail.png

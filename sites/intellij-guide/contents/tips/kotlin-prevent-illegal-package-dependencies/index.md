@@ -2,7 +2,7 @@
 date: 2021-05-11
 title: Prevent a package depending upon another
 technologies: [kotlin]
-topics: [latest, inspections]
+topics: [inspections]
 author: tg
 subtitle: Enforce architecture rules, such as data access layers not depending upon UI layers.
 thumbnail: ./thumbnail.png
