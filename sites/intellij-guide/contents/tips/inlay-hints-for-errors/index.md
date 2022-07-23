@@ -4,7 +4,7 @@ title: Inlay hints for errors
 technologies: [java]
 topics: [editing]
 author: hs
-subtitle: 
+subtitle: IntelliJ IDEA will show you related usages errors in your editor
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/4XkazKdTO1U
+  url: https://youtu.be/sqt9iiyrpCg
 seealso:
   - title: (video) Good Old Stream API - JetBrains Technology Day for Java
     href: https://www.youtube.com/watch?v=nklbYYQpQi8
