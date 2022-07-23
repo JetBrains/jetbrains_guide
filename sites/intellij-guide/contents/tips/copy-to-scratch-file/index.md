@@ -2,7 +2,7 @@
 date: 2021-01-08
 title: Copy to, or create a Scratch File
 technologies: [java]
-topics: [latest, editing]
+topics: [editing]
 author: hs
 subtitle: Scratch files persist across all versions of IntelliJ IDEA
 thumbnail: ./thumbnail.png

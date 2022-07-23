@@ -3,7 +3,7 @@ hasBody: true
 date: 2021-05-05
 title: Use Pattern Matching for instanceof
 technologies: [java]
-topics: [latest, inspections]
+topics: [inspections]
 author: tg
 subtitle: Inspections can guide us to use new Java features
 thumbnail: ./thumbnail.png
