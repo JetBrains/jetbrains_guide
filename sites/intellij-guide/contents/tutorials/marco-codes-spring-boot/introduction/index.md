@@ -5,7 +5,7 @@ title: Introduction to Spring Boot Crash Course
 technologies: []
 topics: []
 author: hs
-subtitle: https://www.youtu.be/QuvS_VLbGko?start=0
+subtitle: Intro
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

@@ -1,15 +1,15 @@
 ---
 type: TutorialStep
 date: 2022-07-23
-title: Introduction to Spring Boot Crash Course
+title: Starting the project for the first time
 technologies: []
 topics: []
 author: hs
-subtitle: There are lots of ways to make IntelliJ IDEA your own 
+subtitle: Starting the project for the first time
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/xWiKJEVRFlc
+  url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=549s
 ---
 
-## Introduction
+## Starting the project for the first time

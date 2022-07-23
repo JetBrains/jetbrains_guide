@@ -1,15 +1,15 @@
 ---
 type: TutorialStep
 date: 2022-07-23
-title: Introduction to Spring Boot Crash Course
+title: Maven Project Structure
 technologies: []
 topics: []
 author: hs
-subtitle: There are lots of ways to make IntelliJ IDEA your own 
+subtitle: Maven Project Structure
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://youtu.be/xWiKJEVRFlc
+  url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=400s
 ---
 
 ## Introduction
