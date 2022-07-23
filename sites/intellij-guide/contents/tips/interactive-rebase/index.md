@@ -3,7 +3,7 @@ date: 2022-07-23
 title: Interactive Rebase
 technologies: [java]
 topics: [vcs]
-author: tg
+author: hs
 subtitle: Using interactive rebase in IntelliJ IDEA
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
