@@ -2,7 +2,7 @@
 date: 2021-05-10
 title: Use a lightweight inspection profile on commit
 technologies: [java]
-topics: [latest, vcs, inspections]
+topics: [vcs, inspections]
 author: tg
 subtitle: Fully customise the checks you must perform before you commit your changes to version control
 thumbnail: ./thumbnail.png

@@ -2,7 +2,7 @@
 date: 2021-05-05
 title: Convert class to record
 technologies: [java]
-topics: [latest, editing, inspections]
+topics: [editing, inspections]
 author: tg
 subtitle: Use inspections to convert classes to Java 16 records
 thumbnail: ./thumbnail.png

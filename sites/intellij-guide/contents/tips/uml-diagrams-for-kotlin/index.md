@@ -2,7 +2,7 @@
 date: 2021-05-11
 title: Generate UML diagrams for your Kotlin code
 technologies: [kotlin, java]
-topics: [latest, ultimate]
+topics: [ultimate]
 author: tg
 subtitle: JVM developers working with Kotlin code can create UML diagrams for their Kotlin classes, just like they could with Java classes
 thumbnail: ./thumbnail.png
