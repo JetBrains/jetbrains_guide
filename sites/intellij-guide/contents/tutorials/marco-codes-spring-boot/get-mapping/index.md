@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2022-07-23
-title: @GetMapping
+title: GetMapping
 technologies: []
 topics: []
 author: hs
-subtitle: @GetMapping
+subtitle: GetMapping
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

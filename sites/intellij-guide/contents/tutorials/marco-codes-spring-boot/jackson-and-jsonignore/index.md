@@ -12,4 +12,4 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2418s
 ---
 
-## Jackson & @JsonIgnore
+## Jackson & JsonIgnore
