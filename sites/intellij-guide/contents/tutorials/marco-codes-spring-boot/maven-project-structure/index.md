@@ -12,4 +12,4 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=400s
 ---
 
-## Introduction
+## Maven Project Structure
