@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./tip.png
-  url: https://youtu.be/ZxSEewm8nOAN
+  url: https://youtu.be/YxKlIIS19iA
 seealso:
   - title: (documentation) Code Refactoring in IntelliJ IDEA
     href: https://www.jetbrains.com/help/idea/refactoring-source-code.html
