@@ -12,4 +12,4 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&t=917s
 ---
 
-## Introduction
+## Photoz Model Class
