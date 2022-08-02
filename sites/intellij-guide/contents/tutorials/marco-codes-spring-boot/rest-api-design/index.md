@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=855s
 ---
 
-## REST API Design
+## What's in the video?
+
+* Reasoning about the REST endpoints for our Photo API
+* Create/Read/Update : CRUD

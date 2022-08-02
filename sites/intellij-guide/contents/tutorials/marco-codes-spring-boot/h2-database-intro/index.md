@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=3477s
 ---
 
-## H2 Database - Intro
+## What's in the video?
+
+* What the H2 database is
+* How to work with it

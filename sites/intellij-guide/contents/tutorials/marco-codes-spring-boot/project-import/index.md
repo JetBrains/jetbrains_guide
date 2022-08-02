@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=370s
 ---
 
-## Project Import
+## What's in the video?
+
+* How to successfully import Spring Boot projects into IntelliJ IDEA

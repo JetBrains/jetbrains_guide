@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1605s
 ---
 
-## Browser - HTTP Post
+## What's in the video?
+
+* Using the Javascript Console in your browser to execute POST requests

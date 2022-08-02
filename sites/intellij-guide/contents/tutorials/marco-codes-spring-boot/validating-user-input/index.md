@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1773s
 ---
 
-## Validating User Input
+## What's in the video?
+
+* How to validate data users send in

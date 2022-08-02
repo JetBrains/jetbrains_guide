@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1693s
 ---
 
-## RequestBody - Receiving JSON
+## What's in the video?
+
+* Using the @RequestBody annotation accept JSON submissions

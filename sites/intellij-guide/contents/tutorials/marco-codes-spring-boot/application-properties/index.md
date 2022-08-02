@@ -12,5 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2304s
 ---
 
-## application.properties 
+## What's in the video?
 
+* A look at Spring Boot's properties file
+* Upload specific parameters

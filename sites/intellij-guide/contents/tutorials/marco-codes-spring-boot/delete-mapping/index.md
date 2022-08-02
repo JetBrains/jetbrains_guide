@@ -12,4 +12,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1348s
 ---
 
-## DeleteMapping
+## What's in the video?
+
+* Using @DeleteMapping to create a DELETE endpoint
+* Testing our endpoint
+

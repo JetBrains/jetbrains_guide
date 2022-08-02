@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=336s
 ---
 
-## Which IDE to use
+## What's in the video?
+
+* Which IDE to use to follow along this guide
+* Where to download id

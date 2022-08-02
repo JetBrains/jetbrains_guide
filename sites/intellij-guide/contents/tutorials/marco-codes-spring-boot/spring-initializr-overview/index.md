@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=51s
 ---
 
-## Spring Initializr Overview
+## What's in the video?
+
+* What Spring Initializr is
+* How to use https://start.spring.io to generate new Spring Boot Projects 

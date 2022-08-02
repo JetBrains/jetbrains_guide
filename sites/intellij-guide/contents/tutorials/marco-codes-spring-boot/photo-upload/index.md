@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1948s
 ---
 
-## Photo Upload
+## What's in the video?
+
+* How to handle file uploads, photos in our case

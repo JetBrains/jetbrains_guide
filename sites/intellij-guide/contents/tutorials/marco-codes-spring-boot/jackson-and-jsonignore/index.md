@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2418s
 ---
 
-## Jackson & JsonIgnore
+## What's in the video?
+
+* How to configure Jackson to exclude/include specific JSON fields
+
