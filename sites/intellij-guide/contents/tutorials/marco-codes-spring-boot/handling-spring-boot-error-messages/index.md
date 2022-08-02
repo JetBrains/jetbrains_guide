@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2227s
 ---
 
-## Handling Spring Boot Error Messages
+## What's in the video?
+
+* How to do proper REST API error handling

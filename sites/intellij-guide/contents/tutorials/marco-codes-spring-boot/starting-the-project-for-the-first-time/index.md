@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=549s
 ---
 
-## Starting the project for the first time
+## What's in the video?
+
+* Starting your Spring Boot project for the first time

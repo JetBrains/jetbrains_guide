@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=978s
 ---
 
-## @GetMapping
+## What's in the video?
+
+* Using @GetMapping to create a GET endpoint
+* Testing our endpoint

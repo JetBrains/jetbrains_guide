@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&t=917s
 ---
 
-## Photoz Model Class
+## What's in the video?
+
+* Creating a simple class modeling our domain

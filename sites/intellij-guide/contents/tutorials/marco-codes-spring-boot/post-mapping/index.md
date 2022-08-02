@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=1510s
 ---
 
-## PostMapping
+## What's in the video?
+
+* Using @PostMapping to create a POST endpoint
+* Testing our endpoint

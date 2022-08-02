@@ -12,4 +12,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=204s
 ---
 
-## Spring Initializr - Dependencies
+## What's in the video?
+
+* How to make sense of Spring Initializr Dependencies
+* What dependencies you need for a typical web app project
+

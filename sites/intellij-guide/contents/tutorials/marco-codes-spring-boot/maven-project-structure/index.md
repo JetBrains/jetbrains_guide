@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=400s
 ---
 
-## Maven Project Structure
+## What's in the video?
+
+* A look at your new Spring Boot project's maven directory structure
+* A look at the pom.xml file

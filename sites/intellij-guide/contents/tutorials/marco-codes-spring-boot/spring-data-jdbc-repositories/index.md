@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=3922s
 ---
 
-## Spring Data JDBC - Repositories
+## What's in the video?
+
+* What Spring Data JDBC is
+* How to write repositories

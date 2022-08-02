@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2595s
 ---
 
-## Dependency Injection - Intro
+## What's in the video?
+
+* How Spring Boot's dependency injection mechanism works
+* How to properly refactor our code to make use of DI

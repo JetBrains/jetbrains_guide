@@ -12,4 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=641s
 ---
 
-## Hello World @RestController
+## What's in the video?
+
+* Writing the first @RestController
+* Seeing the result in the browser

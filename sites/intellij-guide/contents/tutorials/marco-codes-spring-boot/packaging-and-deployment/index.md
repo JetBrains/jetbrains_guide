@@ -12,4 +12,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=4437s
 ---
 
-## Packaging & Deployment
+## What's in the video?
+
+* How to package up the application into a .jar file
+* How to execute your application on the command line
+

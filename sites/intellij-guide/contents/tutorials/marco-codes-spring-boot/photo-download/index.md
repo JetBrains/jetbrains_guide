@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=2445s
 ---
 
-## Photo Download
+## What's in the video?
+
+* How to implement the photo download functionality

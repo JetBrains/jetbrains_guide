@@ -12,4 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=QuvS_VLbGko&start=3099s
 ---
 
-## Downloading Images
+## What's in the video?
+
+* How to make images downloadable
