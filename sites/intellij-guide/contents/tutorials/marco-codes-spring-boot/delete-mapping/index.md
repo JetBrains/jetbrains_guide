@@ -16,4 +16,4 @@ longVideo:
 
 * Using @DeleteMapping to create a DELETE endpoint
 * Testing our endpoint
-
+* Using the Javascript Console in your browser to execute DELETE requests
