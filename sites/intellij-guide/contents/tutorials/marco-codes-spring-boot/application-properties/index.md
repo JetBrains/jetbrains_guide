@@ -15,4 +15,6 @@ longVideo:
 ## What's in the video?
 
 * A look at Spring Boot's properties file
-* Upload specific parameters
+* Upload specific parameters 
+* How to configure Jackson to exclude/include specific JSON fields
+

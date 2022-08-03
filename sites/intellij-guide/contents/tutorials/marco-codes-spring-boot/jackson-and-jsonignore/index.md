@@ -14,5 +14,4 @@ longVideo:
 
 ## What's in the video?
 
-* How to configure Jackson to exclude/include specific JSON fields
 

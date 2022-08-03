@@ -16,3 +16,6 @@ longVideo:
 
 * Writing the first @RestController
 * Seeing the result in the browser
+* Reasoning about the REST endpoints for our Photo API
+* Create/Read/Update : CRUD
+* Creating a simple class modeling our domain

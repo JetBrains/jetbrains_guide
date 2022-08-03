@@ -15,3 +15,4 @@ longVideo:
 ## What's in the video?
 
 * How to handle file uploads, photos in our case
+* How to do proper REST API error handling
