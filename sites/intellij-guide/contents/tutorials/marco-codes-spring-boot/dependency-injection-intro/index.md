@@ -5,7 +5,7 @@ title: Dependency Injection - Intro
 technologies: []
 topics: []
 author: hs
-subtitle: Dependency Injection - Intro
+subtitle: Working with Dependency Injection
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

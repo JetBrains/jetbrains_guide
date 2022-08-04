@@ -5,7 +5,7 @@ title: DeleteMapping
 technologies: []
 topics: []
 author: hs
-subtitle: DeleteMapping
+subtitle: Creating and testing @DeleteMapping
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

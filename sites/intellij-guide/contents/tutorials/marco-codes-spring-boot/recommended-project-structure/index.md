@@ -5,7 +5,7 @@ title: Recommended Project Structure
 technologies: []
 topics: []
 author: hs
-subtitle: Recommended Project Structure
+subtitle: What Spring Boot's Projects look like
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

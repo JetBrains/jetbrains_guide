@@ -5,7 +5,7 @@ title: PostMapping
 technologies: []
 topics: []
 author: hs
-subtitle: PostMapping
+subtitle: Creating and testing @PostMapping
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

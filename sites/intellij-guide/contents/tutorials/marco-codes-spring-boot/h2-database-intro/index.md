@@ -5,7 +5,7 @@ title: H2 Database - Intro
 technologies: []
 topics: []
 author: hs
-subtitle: H2 Database - Intro
+subtitle: Working with an H2 Database
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

@@ -5,7 +5,7 @@ title: The End & Next Steps
 technologies: []
 topics: []
 author: hs
-subtitle: The End & Next Steps
+subtitle: References Used in the
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

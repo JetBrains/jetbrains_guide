@@ -5,7 +5,7 @@ title: Spring Data JDBC - Repositories
 technologies: []
 topics: []
 author: hs
-subtitle: Spring Data JDBC - Repositories
+subtitle: Working with Spring Data JDBC
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

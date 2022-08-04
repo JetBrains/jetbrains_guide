@@ -5,7 +5,7 @@ title: Photo Upload
 technologies: []
 topics: []
 author: hs
-subtitle: Photo Upload
+subtitle: Upload the photos
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

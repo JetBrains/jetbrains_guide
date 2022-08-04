@@ -5,7 +5,7 @@ title: Downloading Images
 technologies: []
 topics: []
 author: hs
-subtitle: Downloading Images
+subtitle: Next steps for download
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

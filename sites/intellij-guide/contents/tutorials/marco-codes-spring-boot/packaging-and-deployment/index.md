@@ -5,7 +5,7 @@ title: Packaging & Deployment
 technologies: []
 topics: []
 author: hs
-subtitle: Packaging & Deployment
+subtitle: Creating a .jar file and executing it
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
