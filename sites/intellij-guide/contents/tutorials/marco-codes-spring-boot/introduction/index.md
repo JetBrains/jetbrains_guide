@@ -5,7 +5,7 @@ title: Introduction to Spring Boot Crash Course
 technologies: []
 topics: []
 author: hs
-subtitle: Intro
+subtitle: Spring Initializr setup and choosing your IDE
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

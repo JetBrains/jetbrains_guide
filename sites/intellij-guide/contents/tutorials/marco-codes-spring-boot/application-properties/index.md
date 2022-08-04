@@ -5,7 +5,7 @@ title: application.properties
 technologies: []
 topics: []
 author: hs
-subtitle: application.properties
+subtitle: Spring Boot's properties file and configuring JSON
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

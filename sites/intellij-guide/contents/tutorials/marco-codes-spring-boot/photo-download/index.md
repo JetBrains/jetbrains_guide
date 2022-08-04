@@ -5,7 +5,7 @@ title: Photo Download
 technologies: []
 topics: []
 author: hs
-subtitle: Photo Download
+subtitle: Download the photos
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

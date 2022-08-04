@@ -5,7 +5,7 @@ title: GetMapping
 technologies: []
 topics: []
 author: hs
-subtitle: GetMapping
+subtitle: Creating and testing @GetMapping
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
