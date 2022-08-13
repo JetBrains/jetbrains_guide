@@ -20,34 +20,17 @@ def get_s3_source_key_path(event):
 # noinspection PyUnusedLocal
 def lambda_handler(event, context):
     s3_key, s3_source_path = get_s3_source_key_path(event)
-    s3_source_basename = s3_source_path.name
+    s3_source_basename = s3_source_path.stem
 
-    destination_s3 = "s3://" + os.environ["DestinationBucket"]
     region = os.environ["AWS_DEFAULT_REGION"]
     status_code = 200
     body = {}
-    if s3_key.__contains__(".mp4"):
-        # Trim off the "jbguideinput" part of the path and keep the rest
-        # chopped_path = "-".join(s3_key.split("/")[:-1])
-        # assetID = chopped_path + '-' + s3_key.split(".mp4")[0]
-        asset_id = s3_key.split(".mp4")[0]
-    else:
-        asset_id = str(uuid.uuid4())
-
-    # Clean up the CDN caching
-    cdn_path = f"/assets/{asset_id}/HLS/*"
-    cdn_client = boto3.client("cloudfront")
-    cdn_client.create_invalidation(
-        DistributionId="E1166YMX8A3BF5",
-        InvalidationBatch={
-            "Paths": {"Quantity": 1, "Items": [cdn_path]},
-            "CallerReference": str(time.time()),
-        },
-    )
+    if not s3_key.endswith(".mp4"):
+        raise ValueError("Tried to upload a file not ending in .mp4")
 
     # Use MediaConvert SDK UserMetadata to tag jobs with the assetID
     # Events from MediaConvert will have the assetID in UserMedata
-    job_metadata = {"assetID": asset_id}
+    job_metadata = {"assetID": s3_source_basename}
 
     try:
         # Job settings are in the lambda zip file in the current working directory
@@ -64,20 +47,42 @@ def lambda_handler(event, context):
             "s3://" + s3_source_path.parent.name + "/" + s3_key
         )
 
-        s3_key_hls = "assets/" + asset_id + "/HLS/" + s3_source_basename
-        job_settings["OutputGroups"][0]["OutputGroupSettings"]["HlsGroupSettings"][
-            "Destination"
-        ] = (destination_s3 + "/" + s3_key_hls)
+        destination_s3 = "s3://" + os.environ["DestinationBucket"]
+        og = job_settings["OutputGroups"]
 
-        # S3KeyWatermark = "assets/" + assetID + "/MP4/" + s3_source_basename
-        # jobSettings["OutputGroups"][1]["OutputGroupSettings"]["FileGroupSettings"][
-        #     "Destination"
-        # ] = (destinationS3 + "/" + S3KeyWatermark)
+        # We need the correct initials to use as a subdirectory under assets
+        principal_id = event["Records"][0]["userIdentity"]["principalId"]
+        if "paul.everitt@jetbrains.com" in principal_id:
+            initials = "pwe/"
+        else:
+            initials = ""
 
-        s3_key_thumbnails = "assets/" + asset_id + "/Thumbnails/" + s3_source_basename
-        job_settings["OutputGroups"][1]["OutputGroupSettings"]["FileGroupSettings"][
-            "Destination"
-        ] = (destination_s3 + "/" + s3_key_thumbnails)
+        # Clean up the CDN caching
+        cdn_path = f"/assets/{initials}{s3_source_basename}/HLS/*"
+        cdn_client = boto3.client("cloudfront")
+        cdn_client.create_invalidation(
+            DistributionId="E1166YMX8A3BF5",
+            InvalidationBatch={
+                "Paths": {"Quantity": 1, "Items": [cdn_path]},
+                "CallerReference": str(time.time()),
+            },
+        )
+
+        # HLS
+        hd = (
+            destination_s3
+            + "/"
+            + f"assets/{initials}{s3_source_basename}/HLS/{s3_source_basename}"
+        )
+        og[0]["OutputGroupSettings"]["HlsGroupSettings"]["Destination"] = hd
+
+        # Thumbnails
+        td = (
+            destination_s3
+            + "/"
+            + f"assets/{initials}{s3_source_basename}/Thumbnails/{s3_source_basename}"
+        )
+        og[1]["OutputGroupSettings"]["FileGroupSettings"]["Destination"] = td
 
         # Convert the video using AWS Elemental MediaConvert
         media_convert_role = os.environ["MediaConvertRole"]

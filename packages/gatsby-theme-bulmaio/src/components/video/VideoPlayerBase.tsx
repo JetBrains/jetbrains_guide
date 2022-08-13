@@ -1,9 +1,7 @@
 import * as React from 'react';
 import videojs from 'video.js';
+import {VideoPlayerPropsInferface} from "./models";
 
-interface VideoPlayerPropsInferface {
-    videoJsOptions: videojs.PlayerOptions;
-}
 
 export default class VideoPlayerBase extends React.Component {
     private player?: videojs.Player;
@@ -35,7 +33,7 @@ export default class VideoPlayerBase extends React.Component {
         return (
             <div data-testid={`vplayer-wrapper`} className="c-player">
                 <div className="c-player__screen" data-vjs-player="true">
-                    <video
+                    <video role="player"
                         ref={(node: HTMLVideoElement) => (this.videoNode = node)}
                         className="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered"
                     />
