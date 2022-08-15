@@ -23,8 +23,6 @@ Here are the IntelliJ IDEA shortcuts that we used.
 | Open the Commit Window                                                                           | **⌘0**         | **Alt+0**                |
 | [Open the Terminal](https://www.jetbrains.com/help/idea/terminal-emulator.html)                  | **⌥F12**       | **Alt+F12**              |
 | Select Fixup (in the "Rebasing Commits" popup)                                                   | **⌥F12**       | **Alt+F**                |
-| Select Up (in the "Rebasing Commits" popup)                                                      | **⌥↑**         | **Alt+↑**                |
-| Select Down (in the "Rebasing Commits" popup)                                                    | **⌥↓**         | **Alt+↓**                |
 | Edit commit message (in the Git Log)                                                             | **F2**         | **F2**                   |
 
 ### Git commands Used
@@ -53,6 +51,6 @@ Here are the  shortcuts that we used.
 ### Related Links
 - [(video) Using Git Interactive Rebase](https://www.youtube.com/watch?v=bPX9VHjviEM)
 - [(docs) Edit project history by performing interactive rebase](https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase)
-- [(docs) Git rebase](https://git-scm.com/docs/git-rebase)
 - [(code) gitdemo project on GitHub](https://github.com/mlvandijk/gitdemo)
+- [(docs) Git rebase](https://git-scm.com/docs/git-rebase)
 - [(docs) Basic vi Commands](https://docs.oracle.com/cd/E19253-01/806-7612/editorvi-43/index.html)
