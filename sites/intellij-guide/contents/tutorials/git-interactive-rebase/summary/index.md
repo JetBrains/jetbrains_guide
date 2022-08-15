@@ -49,8 +49,8 @@ Here are the  shortcuts that we used.
 
 
 ### Related Links
-- [(video) Using Git Interactive Rebase](https://www.youtube.com/watch?v=bPX9VHjviEM)
-- [(docs) Edit project history by performing interactive rebase](https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase)
+- [(video) JetBrains Using Git Interactive Rebase](https://www.youtube.com/watch?v=bPX9VHjviEM)
+- [(docs) JetBrains - Edit project history by performing interactive rebase](https://www.jetbrains.com/help/idea/edit-project-history.html#interactive-rebase)
 - [(code) gitdemo project on GitHub](https://github.com/mlvandijk/gitdemo)
-- [(docs) Git rebase](https://git-scm.com/docs/git-rebase)
-- [(docs) Basic vi Commands](https://docs.oracle.com/cd/E19253-01/806-7612/editorvi-43/index.html)
+- [(docs) Git SCM rebase](https://git-scm.com/docs/git-rebase)
+- [(docs) Oracle Basic vi Commands](https://docs.oracle.com/cd/E19253-01/806-7612/editorvi-43/index.html)
