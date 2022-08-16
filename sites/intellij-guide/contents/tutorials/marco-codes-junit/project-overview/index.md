@@ -15,5 +15,5 @@ longVideo:
 
 ## Introduction
 
-* Project Overview - Classes
-* First Test Class & Fixture
+* How to find & set up the correct Maven/Gradle dependencies for JUnit 5.
+* How to create the classes you need to follow along this guide.

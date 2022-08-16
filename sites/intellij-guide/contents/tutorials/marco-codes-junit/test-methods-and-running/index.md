@@ -14,5 +14,6 @@ longVideo:
 
 ## Introduction
 
-* @Test methods
-* First Test Run
+* How to write your first JUNit 5 test class & test method.
+* Looking at the @Test annotation.
+* How to name your test methods.

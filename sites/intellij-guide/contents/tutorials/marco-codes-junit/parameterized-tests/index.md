@@ -15,8 +15,6 @@ longVideo:
 
 ## Introduction
 
-23:13 @ParameterizedTest
-24:12 @ParameterizedTest - @ValueSource
-25:22 @ParameterizedTest - @CSV Sources
-26:47 @ParameterizedTest - @EnumSource
-27:12 @TestFactory - Creating Dynamic Tests
+* What @ParameterizedTests are and how to use them.
+* Using different sources, like @ValueSource, @CsvSource and @EnumSource for your tests.
+* Creating completely dynamic tests with @TestFactory.
