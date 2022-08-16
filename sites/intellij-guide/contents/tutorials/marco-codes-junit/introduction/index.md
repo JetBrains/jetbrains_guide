@@ -15,6 +15,4 @@ longVideo:
 
 ## Introduction
 
-* Intro
-* Project Skeleton Overview
-* Maven/Gradle Dependencies
+* An introduction on what to expect from this guide.

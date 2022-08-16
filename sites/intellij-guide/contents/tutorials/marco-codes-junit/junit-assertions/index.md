@@ -15,9 +15,8 @@ longVideo:
 
 ## Introduction
 
-* Mvn + Junit5 Issues
-* JUnit Assertions
-* AssertJ - assertThat
-* @DisplayName
-* JSON Unit - Asserting JSON
-* XML Unit - Asserting XML
+* How to use JUnit 5's built in assertion methods.
+* How to use the AssertJ library for better assertions.
+* How to use @DisplayName to change test method names.
+* How to assert JSON: JSON Unit. 
+* How to assert XML: XML Unit.

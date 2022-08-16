@@ -15,5 +15,5 @@ longVideo:
 
 ## Introduction
 
-* @Tag
-* @ExtendWith - 3rd Party Integrations
+* How to @Tag your tests to be able to run them in groups later on.
+* How to use @ExtendWith to integrate JUnit 5 with other libraries such as Spring Boot.

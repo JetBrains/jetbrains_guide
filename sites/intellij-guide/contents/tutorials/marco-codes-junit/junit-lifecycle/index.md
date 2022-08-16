@@ -15,7 +15,6 @@ longVideo:
 
 ## Introduction
 
-* Lifecycle Intro
-* @BeforeEach
-* @AfterEach
-* @BeforeAll / @AfterAll
+* How JUnit's lifecycle works.
+* @BeforeEach / @AfterEach: Running something before/after every test method.
+* @BeforeAll / @AfterAll: Running something once before/after a test class.
