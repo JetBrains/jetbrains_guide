@@ -12,3 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=Xatr8AZLOsE&start=1158s
 ---
 
+# Maven repositories
+Local Maven Repository
+Central Maven Repository 
