@@ -12,3 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=Xatr8AZLOsE&start=177s
 ---
 
+# Maven wrapper
+Maven Wrapper
+mvn validate
+IntelliJ - Importing Maven Projects 
