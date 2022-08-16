@@ -7,12 +7,12 @@ author: hs
 subtitle: Working with Maven in your projects
 thumbnail: ./thumbnail.png
 tutorialItems:
-  - /tutorials/hello-world/introduction/
-  - /tutorials/hello-world/installing-maven/
-  - /tutorials/hello-world/maven-wrapper/
-  - /tutorials/hello-world/pom-xml/
-  - /tutorials/hello-world/intellij-and-maven/
-  - /tutorials/hello-world/maven-commands/
-  - /tutorials/hello-world/maven-repositories/
-  - /tutorials/hello-world/multi-module-projects/
+  - /tutorials/marco-codes-maven/introduction/
+  - /tutorials/marco-codes-maven/installing-maven/
+  - /tutorials/marco-codes-maven/maven-wrapper/
+  - /tutorials/marco-codes-maven/pom-xml/
+  - /tutorials/marco-codes-maven/intellij-and-maven/
+  - /tutorials/marco-codes-maven/maven-commands/
+  - /tutorials/marco-codes-maven/maven-repositories/
+  - /tutorials/marco-codes-maven/multi-module-projects/
 ---
