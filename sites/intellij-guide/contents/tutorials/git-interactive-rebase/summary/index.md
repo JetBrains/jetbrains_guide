@@ -11,8 +11,7 @@ thumbnail: ./thumbnail.png
 ---
 
 ## Summary 
-Now we know how to use git interactive rebase either from the UI or the command line.
-Give them a try and use whichever way you prefer.
+Now we know how to use git interactive rebase either from the UI or from the command line. Give them a try and use whichever way you prefer.
 
 ### IntelliJ IDEA Shortcuts Used
 Here are the IntelliJ IDEA shortcuts that we used.
