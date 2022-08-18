@@ -12,9 +12,7 @@ thumbnail: ./thumbnail.png
 
 This guide tutorial will cover how to clean up your Git commit history with Git interactive rebase, both via the UI and from the command line.
 
-Git interactive rebase allows you to change individual commits, squash commits together, drop commits or change the order of the commits.
-This allows you to clean up your Git commit history to make it linear and meaningful, which can make it easier to understand
-the history of the project in the future.
+Git interactive rebase allows you to change individual commits, squash commits together, drop commits or change the order of the commits. This allows you to clean up your Git commit history to make it linear and meaningful, which can make it easier to understand the history of the project in the future.
 
 Open the Git window in IntelliJ IDEA using **⌘+9** on Mac (or **Alt+9** on Windows & Linux). In the Git log window we can see the commits that were made to the project. 
 
