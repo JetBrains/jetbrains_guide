@@ -13,6 +13,7 @@ longVideo:
 ---
 
 # Maven wrapper
-Maven Wrapper
-mvn validate
-IntelliJ - Importing Maven Projects 
+
+* What Maven Wrapper (mvnw) is and how to use it.
+* How to check if a Maven project is valid - mvn validate.
+* How to import Maven projects into IntelliJ.

@@ -13,4 +13,6 @@ longVideo:
 ---
 
 # Multi-module projects
-Multi Module Projects
+
+* How Maven multi-module-projects work.
+* How to structure your pom.xmls.

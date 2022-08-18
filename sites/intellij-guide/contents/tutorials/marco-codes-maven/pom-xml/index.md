@@ -13,8 +13,9 @@ longVideo:
 ---
 
 # Pom.xml
-Pom.xml - Basics
-Pom.xml - Properties
-Pom.xml - Build Section
-Pom.xml - Dependencies
-Pom.xml - Dependency Scopes 
+
+* What pom.xml files are all about.
+* Coverage of the <properties> block. 
+* Coverage of the <build> block.
+* Coverage of the <dependencies> block.
+* What dependency scopes are there and what do they do?

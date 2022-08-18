@@ -13,5 +13,7 @@ longVideo:
 ---
 
 # Maven repositories
-Local Maven Repository
-Central Maven Repository 
+
+* What Maven repositories are.
+* Where your local Maven repository is stored and how to use it.
+* What Maven Central is.

@@ -13,5 +13,6 @@ longVideo:
 ---
 
 # Introduction
-Intro
-Cloning The Sample Project 
+
+* What this guide is all about.
+* How to clone the sample project.

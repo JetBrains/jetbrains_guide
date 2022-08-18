@@ -14,9 +14,9 @@ longVideo:
 
 # Maven Commands
 
-Maven Directory Structure
-mvn clean
-mvn compile
-mvn test
-mvn package
-mvn install 
+* What Maven's default directory structure looks like.
+* What 'mvn clean' does.
+* What 'mvn compile' does.
+* What 'mvn test' does.
+* What 'mvn package' does.
+* What 'mvn install' does.

@@ -14,5 +14,5 @@ longVideo:
 
 # Installing Maven
 
-Installing Maven - Package Manager
-Installing Maven - Manual 
+* How to install Maven through a Package Manager.
+* How to install Maven manually through its zip distribution.
