@@ -1,20 +1,20 @@
 ---
 type: TutorialStep
 date: 2022-16-08
-title: Pom.xml
+title: Pom file
 technologies: []
 topics: []
 author: hs
-subtitle: Maven directory structure and your pom.xml
+subtitle: Maven directory structure and your pom file
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://www.youtube.com/watch?v=Xatr8AZLOsE&start=372s
 ---
 
-# Pom.xml
+# Pom file
 
-* What pom.xml files are all about.
+* What `pom.xml` files are all about.
 * Coverage of the <properties> block. 
 * Coverage of the <build> block.
 * Coverage of the <dependencies> block.
