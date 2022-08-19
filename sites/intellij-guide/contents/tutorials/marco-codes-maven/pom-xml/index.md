@@ -14,7 +14,7 @@ longVideo:
 
 # Pom file
 
-* What `pom.xml` files are all about.
+* What is your pom file all about?
 * Coverage of the <properties> block. 
 * Coverage of the <build> block.
 * Coverage of the <dependencies> block.
