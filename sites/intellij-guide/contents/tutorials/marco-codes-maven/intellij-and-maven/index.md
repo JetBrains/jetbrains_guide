@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2022-16-08
-title: Introduction
+title: IntelliJ IDEA and Maven
 technologies: []
 topics: []
 author: hs
-subtitle: IntelliJ IDEA and Maven
+subtitle: Tips for using Maven inside IntelliJ IDEA
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
