@@ -13,7 +13,6 @@ playlistItems:
     - /tips/workspaces-group-use-directives/
     - /tips/run-tests-fuzzing/
     - /tips/run-anything/
-    - /tips/rename-constants-that-use-names-of-builtin-constants/
     - /tips/quick-documentation/
     - /tips/delete-type-parameter-with-empty-parameter-list/
     - /tips/convert-empty-interfaces-to-any/
