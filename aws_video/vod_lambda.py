@@ -53,7 +53,6 @@ def lambda_handler(event, context):
     # Use MediaConvert SDK UserMetadata to tag jobs with the assetID
     # Events from MediaConvert will have the assetID in UserMedata
     job_metadata = {"assetID": s3_source_basename}
-
     try:
         # Job settings are in the lambda zip file in the current working directory
         with open("job.json") as json_data:
@@ -66,8 +65,9 @@ def lambda_handler(event, context):
         # Update the job settings with the source video from the S3 event and destination
         # paths for converted videos
         job_settings["Inputs"][0]["FileInput"] = (
-            "s3://" + s3_source_path.parent.name + "/" + s3_key
+            "s3://" + "jetvideo-source" + "/" + s3_key
         )
+        print(f"Job metadata", job_settings["Inputs"][0]["FileInput"])
 
         destination_s3 = "s3://" + os.environ["DestinationBucket"]
         og = job_settings["OutputGroups"]
@@ -85,12 +85,12 @@ def lambda_handler(event, context):
         )
 
         # HLS
-        print(f"####### HLS Setup")
         hd = (
             destination_s3
             + "/"
             + f"assets/{s3_source_basename}/HLS/{s3_source_basename}"
         )
+        print(f"####### HLS Setup")
         og[0]["OutputGroupSettings"]["HlsGroupSettings"]["Destination"] = hd
 
         # Thumbnails
