@@ -3,30 +3,52 @@
 import json
 import os
 import time
-import uuid
+from dataclasses import dataclass
 from pathlib import PurePath
 
 import boto3
+
+
+def pathlib_parents(path: PurePath) -> str:
+    """Convert a nested path (minus the extension) to a key for CDN."""
+    if path.root == "/":
+        # Remove the root to avoid a part for /
+        parts = list(path.parts)[1:]
+    else:
+        parts = list(path.parts)
+    parts[-1] = path.stem
+    return "/".join(parts)
 
 
 def get_s3_source_key_path(event):
     this_s3 = event["Records"][0]["s3"]
     this_bucket_name = this_s3["bucket"]["name"]
     this_bucket_key = this_s3["object"]["key"]
+    print(f"#### Name: {this_bucket_name} Key: {this_bucket_key} ")
     this_bucket_path = PurePath(f"s3://{this_bucket_name}/{this_bucket_key}")
     return this_bucket_key, this_bucket_path
 
 
+@dataclass
+class VideoRecord:
+    # Comes from event["Records"][0]["s3"]["bucket"]["name"]
+    bucket_name: str
+    # Comes from event["Records"][0]["s3"]["object"]["key"]
+    object_key: str
+
+
 # noinspection PyUnusedLocal
 def lambda_handler(event, context):
+    # #### Name: jetvideo-source Key: pwe/failed_tests.mp4
     s3_key, s3_source_path = get_s3_source_key_path(event)
     s3_source_basename = s3_source_path.stem
+    print(f"####### Uploading: {s3_key}")
 
     region = os.environ["AWS_DEFAULT_REGION"]
     status_code = 200
     body = {}
     if not s3_key.endswith(".mp4"):
-        raise ValueError("Tried to upload a file not ending in .mp4")
+        raise ValueError(f"Tried to upload a file {s3_key} not ending in .mp4")
 
     # Use MediaConvert SDK UserMetadata to tag jobs with the assetID
     # Events from MediaConvert will have the assetID in UserMedata
@@ -50,15 +72,9 @@ def lambda_handler(event, context):
         destination_s3 = "s3://" + os.environ["DestinationBucket"]
         og = job_settings["OutputGroups"]
 
-        # We need the correct initials to use as a subdirectory under assets
-        principal_id = event["Records"][0]["userIdentity"]["principalId"]
-        if "paul.everitt@jetbrains.com" in principal_id:
-            initials = "pwe/"
-        else:
-            initials = ""
-
         # Clean up the CDN caching
-        cdn_path = f"/assets/{initials}{s3_source_basename}/HLS/*"
+        print(f"####### CDN update")
+        cdn_path = f"/assets/pwe/{s3_source_basename}/HLS/*"
         cdn_client = boto3.client("cloudfront")
         cdn_client.create_invalidation(
             DistributionId="E1166YMX8A3BF5",
@@ -69,22 +85,25 @@ def lambda_handler(event, context):
         )
 
         # HLS
+        print(f"####### HLS Setup")
         hd = (
             destination_s3
             + "/"
-            + f"assets/{initials}{s3_source_basename}/HLS/{s3_source_basename}"
+            + f"assets/{s3_source_basename}/HLS/{s3_source_basename}"
         )
         og[0]["OutputGroupSettings"]["HlsGroupSettings"]["Destination"] = hd
 
         # Thumbnails
+        print(f"####### Thumbnails Setup")
         td = (
             destination_s3
             + "/"
-            + f"assets/{initials}{s3_source_basename}/Thumbnails/{s3_source_basename}"
+            + f"assets/{s3_source_basename}/Thumbnails/{s3_source_basename}"
         )
         og[1]["OutputGroupSettings"]["FileGroupSettings"]["Destination"] = td
 
         # Convert the video using AWS Elemental MediaConvert
+        print(f"####### Send to MediaConvert")
         media_convert_role = os.environ["MediaConvertRole"]
         client = boto3.client(
             "mediaconvert",
@@ -95,6 +114,12 @@ def lambda_handler(event, context):
         client.create_job(
             Role=media_convert_role, UserMetadata=job_metadata, Settings=job_settings
         )
+        print(
+            "##### MC settings",
+            s3_source_basename,
+            job_metadata,
+        )
+        print(f"####### Finished uploading video")
 
     except Exception as e:
         print("Exception: %s" % e)

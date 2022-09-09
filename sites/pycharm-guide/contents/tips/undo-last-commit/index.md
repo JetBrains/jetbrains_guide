@@ -9,14 +9,12 @@ subtitle: Easily and visually recover from a commit-in-error.
 seealso:
   - title: Undo the last commit
     href: https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit
+  - title: Manage changelists
+    href: https://www.jetbrains.com/help/pycharm/managing-changelists.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=okmwq-oa2zY
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/R5L5fZi_ldg
+    posterNumber: 1
 leadin: |
     *Oops, I committed again.*    
 
@@ -24,18 +22,39 @@ leadin: |
     you "uncommit" an un-pushed commit.
 
 ---
+You are editing, say a Markdown file. 
+Let’s leave the Commit tool window and Git tool window open, to see the updates as we go.
 
-We get into the flow, moving fast, committing fast, then... uh-oh, we committed 
-too soon. Usually two seconds after clicking `Commit`. Fortunately PyCharm makes 
-it easy to undo the commit if it hasn't yet been pushed.
+You change the title, and make a commit. 
+And for the thousandth consecutive time, you spot a typo, just as the onkeyup event fires when clicking commit. 
+Alas, the commit tool window shows that there are no changes.
 
-Go to the `Version Control` tool window and click on the `Log` tab. Then 
-right-click on the commit and choose `Undo` from the context menu.
+And, in your Git log, there it is, the mistaken commit.
+That means it’s too late, right!
+Nope, if you haven’t pushed to a “protected” branch, you can clean things up locally. 
+And the IDE puts a convenient UI atop the underlying Git command.
 
-The changes in that commit need to go "somewhere." In PyCharm, that 
-"somewhere" is called a changelist. You can send that commit's changes to 
-a new changelist (by default, one labeled with the commit message) or to 
-the `Default Changelist`. Then click `Undo`.
+In the Git tool window, find the most recent commit. 
+It’s the one at the top. 
+When we select it, we get more detail about the commit. 
+We can double-click the file to see a diff of the change.
 
-You can now deal with the changes in that commit using normal "changelist" 
-machinery. It's as if the commit never happened.
+When you right-click on a commit, you get some actions you can take on it. 
+Some might be grayed-out. 
+For example, if we right-click on an older, pushed commit, we’ll see “Undo Commit” is grayed-out.
+
+Back to the first commit. 
+Right-click on it, and select “Undo Commit”.
+
+Now, the commit had some changes in them, and these changes need to go somewhere. 
+The IDE’s [changelists](https://www.jetbrains.com/help/pycharm/managing-changelists.html) provide such a place. 
+We’ll stick with the default changelist. 
+This results in our commit tool window showing the changes when we click ok.
+
+A look in the Git log also shows a change.
+Our commit is…gone! 
+We’re back to where we were before the commit.
+
+What would this have been like from the command line? 
+Let’s take a look at the Git tool’s Console tab, to see behind the scenes. 
+There it is, the command that we would have had to type, from the command line.

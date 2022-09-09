@@ -12,7 +12,8 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-  posterNumber: 1
+  poster: ./poster_short.png
+  url: https://www.youtube.com/watch?v=aPufd3UPEHU
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/pHmv6RzKrDk
