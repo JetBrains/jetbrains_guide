@@ -1,40 +1,24 @@
 import * as React from 'react';
-import { VideoPlayerProps } from './models';
+import {VideoPlayerProps} from './models';
 import VideoPlayer from './VideoPlayer';
+import {extractVideoDetails} from "./index";
 
-export const ShortVideo: React.FC<VideoPlayerProps> = ({ video }) => {
-  // TODO(florin): Improve this code if it makes it to production
-  interface videoPlayerOptions {}
-
-  if (video) {
-    let options: videoPlayerOptions = {
-      controls: 1,
-      poster: video.posterURL,
-      sources: [
-        {
-          src: video.youtubeURL,
-          type: 'video/youtube',
-        },
-      ],
-    };
-    if (video.likeGIF) {
-      options = {
-        ...options,
-        controls: 0,
-        modestbranding: 0,
-        playsinline: 1,
-        disablekb: 1,
-        autoplay: 1,
-        rel: 0,
-        fs: 0,
-      };
+export const ShortVideo: React.FC<VideoPlayerProps> = (
+    {videoURL, authorLabel, slug, posterURL, posterNumber}
+) => {
+    const options = extractVideoDetails({
+            slug, authorLabel, videoURL, posterURL, posterNumber
+        }
+    )
+    if (!videoURL && !options.sources) {
+        // Bailout if there's no video
+        return <></>;
     }
 
     return (
-      <div className="column is-three-fifths">
-        <VideoPlayer {...options} />
-      </div>
+        <div className="column is-three-fifths">
+            <VideoPlayer {...options} />
+        </div>
     );
-  }
-  return <></>;
+
 };

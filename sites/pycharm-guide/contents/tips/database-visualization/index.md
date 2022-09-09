@@ -11,6 +11,7 @@ seealso:
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
+  posterNumber: 4
   poster: ./poster_short.png
   url: https://youtu.be/_vPIrbFm7Hs
 leadin: |

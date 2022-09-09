@@ -1,5 +1,5 @@
 import { Resource } from '../models';
-import { Video } from '../../components/video';
+import { Video } from '../../components/video/models';
 import { SeeAlsos } from '../../components/seealso';
 import { InPlaylists } from '../../components/playlists';
 

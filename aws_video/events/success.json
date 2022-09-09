@@ -1,0 +1,38 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-west-1",
+      "eventTime": "2022-08-29T20:40:32.989Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AROA2OZMIU3UHFM3B7PP4:paul.everitt@jetbrains.com"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "173.71.195.206"
+      },
+      "responseElements": {
+        "x-amz-request-id": "SA7CEYF1B7S125JC",
+        "x-amz-id-2": "yLZA2cn1qAyewHowy2hPP2EZMGN7ORvHMxZ0uCmPuVbfyMmGRvMiW2eRg6xw3+Po5lkfK9/xSsnN2EgB6mDcWvnL/mEV1Ts2"
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "d916f121-0406-441f-9950-8b99b978c0c6",
+        "bucket": {
+          "name": "jetvideo-source",
+          "ownerIdentity": {
+            "principalId": "A2UWC6D54HL148"
+          },
+          "arn": "arn:aws:s3:::jetvideo-source"
+        },
+        "object": {
+          "key": "pwe/failed_tests.mp4",
+          "size": 224715,
+          "eTag": "594ff1bde50d8cfc7a1b5916338d48fb",
+          "sequencer": "00630D243F8351FB1D"
+        }
+      }
+    }
+  ]
+}

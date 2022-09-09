@@ -50,7 +50,7 @@
     "remark-html": "13.0.2",
     "remark-plain-text": "^0.2.0",
     "sharp": "^0.30.4",
-    "video.js": "^7.12.3",
+    "video.js": "^7.19.2",
     "videojs-youtube": "^2.6.1"
   },
   "devDependencies": {
