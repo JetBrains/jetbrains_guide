@@ -9,7 +9,7 @@ subtitle: Resolving Merges
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=bPX9VHjviEM
+  url: https://youtu.be/WgipWkaU2MM?start=136
 ---
 
 ## Resolving Merges

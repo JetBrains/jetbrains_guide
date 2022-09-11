@@ -9,7 +9,7 @@ subtitle: Git Merge Dialog
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=bPX9VHjviEM
+  url: https://www.youtube.com/watch?v=WgipWkaU2MM
 ---
 
 ## Git Merge Dialog
