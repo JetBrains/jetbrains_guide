@@ -1,5 +1,5 @@
 ---
-date: 2022-08-24
+date: 2022-09-12
 title: Resolving Conflicts During Git Merge
 technologies: []
 topics: [settings]

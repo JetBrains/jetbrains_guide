@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-08-24
+date: 2022-09-12
 title: Summary
 technologies: []
 topics: []
@@ -18,3 +18,9 @@ In this tutorial we covered:
 You can find the [Demo code here](https://github.com/mlvandijk/gitdemo).
 
 You can find the [full video here](https://www.youtube.com/watch?v=bPX9VHjviEM).
+
+## Shortcuts used
+
+- Tp undo an action **⌘+Z** (macOS), or **Ctrl+Z** on (Windows/Linux)
+- To open the Commit tool window **⌘0** (macOS), or **Alt+0** (Windows/Linux)
+- To open the Git tool window **⌘9** (macOS), or **Alt+9** (Windows/Linux)
