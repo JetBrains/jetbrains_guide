@@ -38,7 +38,7 @@ If you click **Close** in the _Conflicts_ dialog, IntelliJ IDEA tells you that t
 
 ![Feature merged with conflict](feature-merged-with-conflict.png)
 
-Alternatively, if you accidentally click **Close**, a _Merge Conflicts_ node will appear in the _Local Changes_ view too. You can open the _Commit tool window_ using **⌘0** (macOS), or **Alt+0** (Windows/Linux) and open the file.
+Alternatively, if you accidentally click **Close**, a _Merge Conflicts_ node will appear in the _Local Changes_ view too. You can open the _Commit tool window_ using **⌘0** (macOS), or **Alt+0** (Windows/Linux).
 
 ![Commit tool window file changes](changes-commit-tool-window.png)
 
