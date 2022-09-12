@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2022-09-15
 title: Introduction
-technologies: [ssh]
-topics: [security]
+technologies: []
+topics: []
 author: hs
 subtitle: Introduction to SSH
 thumbnail: ./thumbnail.png

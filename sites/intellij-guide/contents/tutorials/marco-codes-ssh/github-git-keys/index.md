@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2022-09-15
 title: GitHub & Git Keys
-technologies: [ssh]
-topics: [security]
+technologies: []
+topics: []
 author: hs
 subtitle: GitHub & SSH Keys, Git Windows OpenSSH Config and Multiple Git Keys (Personal/Work)
 thumbnail: ./thumbnail.png

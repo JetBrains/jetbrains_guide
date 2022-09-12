@@ -1,7 +1,7 @@
 ---
 date: 2022-09-15
 title: Marco Codes - SSH
-technologies: [ssh]
+technologies: []
 topics: [security]
 author: hs
 subtitle: Working with SSH

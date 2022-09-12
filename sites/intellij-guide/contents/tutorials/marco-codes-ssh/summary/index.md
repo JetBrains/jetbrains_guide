@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2022-09-15
 title: Summary
-technologies: [ssh]
-topics: [security]
+technologies: []
+topics: []
 author: hs
 subtitle: Further reading
 thumbnail: ./thumbnail.png

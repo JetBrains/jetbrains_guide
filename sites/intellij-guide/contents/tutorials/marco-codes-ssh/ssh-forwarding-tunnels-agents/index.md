@@ -2,8 +2,8 @@
 type: TutorialStep
 date: 2022-09-15
 title: SSH Agents
-technologies: [ssh]
-topics: [security]
+technologies: []
+topics: []
 author: hs
 subtitle: SSH Agent Forwarding, SSH Tunnels, Password Managers & SSH Agents
 thumbnail: ./thumbnail.png
