@@ -1,11 +1,10 @@
 ---
 date: 2022-28-08
-title: Marco Codes - JDBC
-title: DataSource, Connection Pools, HikariCP and Library Landscape
+title: DataSource and Connection Pools
 technologies: []
 topics: []
 author: hs
-subtitle: DataSource, Connection Pools, HikariCP and Library Landscape
+subtitle: DataSource
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

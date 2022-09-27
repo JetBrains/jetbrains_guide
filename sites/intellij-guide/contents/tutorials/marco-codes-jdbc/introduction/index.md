@@ -1,6 +1,5 @@
 ---
 date: 2022-28-08
-title: Marco Codes - JDBC
 title: Introduction to JDBC
 technologies: []
 topics: []
