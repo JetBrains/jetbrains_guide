@@ -1,4 +1,5 @@
 ---
+type: TutorialStep
 date: 2022-28-08
 title: H2 Database and JDBC
 technologies: []

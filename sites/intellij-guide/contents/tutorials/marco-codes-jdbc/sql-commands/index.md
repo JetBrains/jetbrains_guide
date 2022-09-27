@@ -1,4 +1,5 @@
 ---
+type: TutorialStep
 date: 2022-28-08
 title: SQL Commands
 technologies: []
@@ -19,4 +20,3 @@ longVideo:
 - 13:52 SQL - INSERT INTO
 - 15:16 SQL - UPDATE
 - 16:11 SQL - DELETE
-ama

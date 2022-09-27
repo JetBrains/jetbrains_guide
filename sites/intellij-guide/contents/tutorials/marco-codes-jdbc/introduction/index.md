@@ -1,4 +1,5 @@
 ---
+type: TutorialStep
 date: 2022-28-08
 title: Introduction to JDBC
 technologies: []
@@ -16,4 +17,3 @@ longVideo:
 
 - 00:00 Intro
 - 00:16 Project Overview
-
