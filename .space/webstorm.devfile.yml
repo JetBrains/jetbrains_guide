@@ -7,6 +7,16 @@ attributes:
       vmoptions:
         - '-Xms2048m'
         - '-Xmx4096m'
+    warmup:
+      startOn:
+      - type: schedule
+        cron: '0 20 * * *'
+      - type: gitPush
+        branchFilter:
+          include:
+            - 'refs/heads/main'
+      script: |
+        ./dev-env-warmup.sh
 components:
   - name: image-build
     image:
