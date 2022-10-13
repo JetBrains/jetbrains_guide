@@ -168,27 +168,3 @@ job("Docker - Content creators image") {
         push("registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators")
     }
 }
-
-job("Warmup - Content creators (WebStorm)") {
-    git {
-        depth = UNLIMITED_DEPTH
-        refSpec = "refs/*:refs/*"
-    }
-
-    startOn {
-        schedule { cron("0 0 * * *") }
-
-        gitPush {
-            enabled = true
-
-            branchFilter {
-                +"refs/heads/main"
-            }
-        }
-    }
-
-    warmup(ide = Ide.WebStorm) {
-        devfile = ".space/webstorm.devfile.yml"
-        scriptLocation = "./dev-env-warmup.sh"
-    }
-}
