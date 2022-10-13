@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-10-05
+date: 2022-10-13
 title: Use Local History to Avoid Disaster
 technologies: []
 topics: [vcs]
@@ -15,10 +15,8 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=7R1AtB42-BE
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/hoCkDQCfjwM
+  url: https://youtu.be/QZumMOtf6Hc
+
 leadin: |
     *Movies aren't the only things with time machines.*    
 
