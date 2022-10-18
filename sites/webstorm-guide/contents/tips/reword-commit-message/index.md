@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/5RV5cU_FPUU
+  url: https://youtu.be/qjaCu9BYeUg
 leadin: |
     *Fix that message.*    
 
