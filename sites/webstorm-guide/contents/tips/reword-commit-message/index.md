@@ -8,7 +8,7 @@ author: pwe
 subtitle: Edit the wording in your last commit message, after you committed.
 seealso:
   - title: Edit a commit message
-    href: https://www.jetbrains.com/help/pycharm/edit-project-history.html#reword-commit
+    href: https://www.jetbrains.com/help/webstorm/edit-project-history.html#reword-commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
