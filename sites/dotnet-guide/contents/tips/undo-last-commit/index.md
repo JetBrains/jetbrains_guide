@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-09-22
+date: 2022-10-19
 title: Undo Last Commit
 technologies: []
 topics: [vcs,]
@@ -8,9 +8,9 @@ author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
   - title: Undo the last commit
-    href: https://www.jetbrains.com/help/pycharm/undo-changes.html#revert-last-commit
+    href: https://www.jetbrains.com/help/rider/Undo_changes.html#revert-last-commit
   - title: Manage changelists
-    href: https://www.jetbrains.com/help/pycharm/managing-changelists.html
+    href: https://www.jetbrains.com/help/rider/Managing_Changelists.html#0
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -60,7 +60,7 @@ For example, if we right-click on an older, pushed commit, we’ll see “Undo C
 Back to the first commit. Right-click on it, and select “Undo Commit”.
 
 Now, the commit had some changes in them, and these changes need to go somewhere. 
-The IDE’s [changelists](https://www.jetbrains.com/help/pycharm/managing-changelists.html) provide such a place. 
+The IDE’s [changelists](https://www.jetbrains.com/help/rider/Managing_Changelists.html#0) provide such a place. 
 We’ll stick with the `Default Changelist`.
 
 This results in our Commit tool window showing the changes when we click ok.
