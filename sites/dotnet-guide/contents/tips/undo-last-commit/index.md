@@ -3,10 +3,10 @@ hasBody: true
 date: 2022-10-21
 title: Undo Last Commit
 technologies: []
-topics: [vcs,]
+topics: [vcs,ide]
 products: [rider]
 author: pwe
-subtitle: Undo a commit...without misery.
+subtitle: Undo a commit... without misery.
 seealso:
   - title: Undo the last commit
     href: https://www.jetbrains.com/help/rider/Undo_changes.html#revert-last-commit
