@@ -8,9 +8,9 @@ author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
   - title: Undo the last commit
-    href: https://www.jetbrains.com/help/go/undo-changes.html#revert-last-commit
+    href: https://www.jetbrains.com/help/webstorm/undo-changes.html#revert-last-commit
   - title: Manage changelists
-    href: https://www.jetbrains.com/help/go/managing-changelists.html
+    href: https://www.jetbrains.com/help/webstorm/managing-changelists.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -60,14 +60,14 @@ For example, if we right-click on an older, pushed commit, we’ll see “Undo C
 Back to the first commit. Right-click on it, and select “Undo Commit”.
 
 Now, the commit had some changes in them, and these changes need to go somewhere. 
-The IDE’s [changelists](https://www.jetbrains.com/help/go/managing-changelists.html) provide such a place. 
+The IDE’s [changelists](https://www.jetbrains.com/help/webstorm/managing-changelists.html) provide such a place. 
 We’ll stick with the `Default Changelist`.
 
 This results in our Commit tool window showing the changes when we click ok.
 
 A look in the Git log also shows a change.
 
-That commit is...gone! We’re back to where we were before the commit.
+That commit is…gone! We’re back to where we were before the commit.
 
 What would this have been like from the command line? 
 Let’s take a look at the Git tool’s Console tab, to see behind the scenes. 
