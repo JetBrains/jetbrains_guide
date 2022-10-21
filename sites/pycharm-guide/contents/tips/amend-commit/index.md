@@ -1,5 +1,5 @@
 ---
-date: 2022-10-16
+date: 2022-10-21
 title: Fix Your Work with Amend Commit
 technologies: []
 topics: [vcs]
@@ -9,7 +9,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://youtu.be/QZumMOtf6Hc
+  url: https://www.youtube.com/watch?v=pFHfIemzOs4
 hasBody: true
 leadin: |
     *You committed too soon.*
