@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-10-20
+date: 2022-10-21
 title: Undo Last Commit
 technologies: []
 topics: [vcs,]
