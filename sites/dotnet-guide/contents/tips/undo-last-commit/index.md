@@ -4,6 +4,7 @@ date: 2022-10-21
 title: Undo Last Commit
 technologies: []
 topics: [vcs,]
+products: [rider]
 author: pwe
 subtitle: Undo a commit...without misery.
 seealso:
