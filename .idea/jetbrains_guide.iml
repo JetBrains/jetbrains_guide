@@ -3,6 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/aws_video" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide/.cache" />
       <excludeFolder url="file://$MODULE_DIR$/sites/dotnet-guide/public" />
       <excludeFolder url="file://$MODULE_DIR$/sites/goland-guide/.cache" />
