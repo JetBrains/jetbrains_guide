@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-10-19
+date: 2022-10-27
 title: Only Commit Some Changes
 technologies: []
 topics: [vcs]
@@ -8,15 +8,12 @@ author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html?section=Windows%20or%20Linux#partial_commit
+    href: https://www.jetbrains.com/help/pycharm/commit-and-push-changes.html?partial_commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=xo_tzr6q29o
-longVideo:
-  poster: ./poster_long.png
-  url: https://youtu.be/NQ-q361wD9Q
+  url: https://youtu.be/BZeTUiRChVE
 leadin: |
     *Time to commit but not everything is ready?*    
 
@@ -45,12 +42,11 @@ You write it down.
 You get a phone call: you forgot a change in something that you did last week. 
 Need to make a small fix.
 
-
 Back to what you were doing at first.
 You wrap it up.
 
 Time to ship it, with a good commit message.
-But…there are actually 3 units of work slotted for this commit.
+But there are actually 3 units of work slotted for this commit.
 
 - Today’s work
 - Next week’s work, 
