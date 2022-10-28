@@ -1,6 +1,6 @@
 ---
 title: Paul Everitt
-subtitle: PyCharm Developer Advocate at JetBrains
+subtitle: Python Developer Advocate at JetBrains
 thumbnail: ./pwe.jpg
 ---
 

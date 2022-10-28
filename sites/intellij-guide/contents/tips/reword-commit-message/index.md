@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-10-05
+date: 2022-10-06
 title: Edit Commit Message
 technologies: []
 topics: [vcs]
