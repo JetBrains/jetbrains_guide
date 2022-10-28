@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2019-04-17
+date: 2022-10-30
 title: See VCS Changed Lines In Gutter
 technologies: []
 topics: [editing, vcs]
@@ -8,15 +8,12 @@ author: pwe
 subtitle: Quickly spot which parts of your file have changed since the last commit.
 seealso:
   - title: Tracking changes to a file in the editor
-    href: https://www.jetbrains.com/help/pycharm/viewing-changes-information.html?section=Windows%20or%20Linux#local_changes
+    href: https://www.jetbrains.com/help/pycharm/viewing-changes-information.html#local_changes
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
   url: https://www.youtube.com/watch?v=YxFtsFUMb1Y
-longVideo:
-  poster: ./poster_long.png
-  url: https://www.youtube.com/watch?v=3eFDyZ1q5LM
 leadin: |
     *Visually scan to see a file's changes.*    
 
@@ -26,26 +23,68 @@ leadin: |
 
 ---
 
-Another line. 
+I’m working hard. Adds... edits... deletes.
+I go away then come back. 
+Uhhhhh, what was it that I did?
 
-Coding under version control means lines get added or changed since the 
-last commit. Sometimes you want to spot what you've changed without the 
-disruption of going to a diff dialog.
+Let the IDE’s gutter show you! Green shows additions, blue means changes, and the expando triangle means deletions.
 
-Time to get in the gutter. Adding some changes.
+But wait, there’s more! 
+Click to see an inline diff, and actions, such as rollback.
+All right there in your editor: no “losing your flow.”
 
-The IDE marks adds and changes in respective colors in the "gutter" to 
-the left of the editor. You get colored stripes in regions that are 
-uncommitted. This makes it easy to scan and see changes -- adds in 
-one color, changes in another -- since the last commit.
+## The Problem
 
-Clicking in the gutter beside the line, on the decoration, brings up 
-a popup toolbar with some useful VCS operations for that changed line:
+It’s easy to forget what you did -- an hour ago.
+For example, you’re cranking out something big, such as this tip.
 
-- Navigate to prev/next change
+You’re adding new lines of content.
+You’re changing lines.
+You’re deleting lines. 
+You spent HOURS in thought. 
+It feels good to get it all written down.
 
-- Revert that change
+You then go away to some other work. 
+When you come back, you’ve lost your train of thought. 
+What were you doing? 
+What had you done?
 
-- Copy the previous revision for that line to the clipboard
+VCS could help.
+You can do it the caveman way, from the command-line.
+Or, you can use the IDE’s nice Git integration. 
+It will show you the changed files. 
+But you then need to go into them, and go through a diff.
+And the listing will show you every change in the project.
 
-- Move the change to a different changelist
+What you want is something in the editor, to use while you’re editing, at a glance, what’s changed. 
+So you can stay in the flow.
+
+## The Solution
+
+Use the IDE’s gutter markers to spot changes with just a quick look. 
+Changed regions have a color block. 
+Maybe one region was added: it’s in green.
+Maybe another had an edit: it’s in blue.
+
+A third region had the line contents deleted, with a blank line in its place. 
+It’s in yet another color:
+And finally, another region had a deletion. 
+The gutter marker is now a little expando triangle.
+
+Next, perhaps you want to know more about that change. 
+These regions are clickable.
+This gives you a little, non-obtrusive, easily-dismissed, inline inlay.
+The inlay shows a little preview of the diff. 
+Nice!
+
+It also has some really-useful buttons. 
+You can:
+
+- Move between changes
+- Rollback that change (which you will use ALL THE TIME)
+- Launch a full diff
+- Copy that change region to the clipboard
+- Toggle highlighting the change
+- *se the changelist facility to move this change out-of-the-way.
+
+When you’re done, hit escape or click elsewhere to dismiss the panel, and you’re right back where you were.
