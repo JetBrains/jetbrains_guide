@@ -29,7 +29,7 @@
     "intellij:cn": "./i10n.sh intellij"
   },
   "dependencies": {
-    "yarn": "^1.22.17"
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
