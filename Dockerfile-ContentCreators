@@ -4,12 +4,12 @@
 # Once published, it is used by the Dockerfile file
 # and the WebStorm run configurations.
 
-FROM node:14
+FROM node:14-bullseye
 ENV CHOKIDAR_USEPOLLING=1
 ENV CHOKIDAR_INTERVAL=2500
 ENV GATSBY_TELEMETRY_DISABLED=1
 ENV INTERNAL_STATUS_PORT=33949
-ENV GATSBY_CPU_COUNT=2
+
 EXPOSE 8000
 EXPOSE 33949
 

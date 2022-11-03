@@ -9,14 +9,14 @@ job("Build PyCharm Guide") {
         }
     }
     
-    container("node:14") {
+    container("node:14-bullseye") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
         }
 
         env["GATSBY_TELEMETRY_DISABLED"] = "1";
-        
+
         shellScript {
             content = """
                 yarn install
@@ -36,15 +36,15 @@ job("Build GoLand Guide") {
             }
         }
     }
-    
-    container("node:14") {
+
+    container("node:14-bullseye") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
         }
 
         env["GATSBY_TELEMETRY_DISABLED"] = "1";
-        
+
         shellScript {
             content = """
                 yarn install
@@ -64,15 +64,15 @@ job("Build WebStorm Guide") {
             }
         }
     }
-    
-    container("node:14") {
+
+    container("node:14-bullseye") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
         }
 
         env["GATSBY_TELEMETRY_DISABLED"] = "1";
-        
+
         shellScript {
             content = """
                 yarn install
@@ -92,8 +92,8 @@ job("Build .NET Guide") {
             }
         }
     }
-    
-    container("node:14") {
+
+    container("node:14-bullseye") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
@@ -120,8 +120,8 @@ job("Build IntelliJ IDEA Guide") {
             }
         }
     }
-    
-    container("node:14") {
+
+    container("node:14-bullseye") {
         resources {
             cpu = 2.cpu
             memory = 4.gb
