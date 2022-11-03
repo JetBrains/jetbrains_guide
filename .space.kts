@@ -154,17 +154,20 @@ job("Docker - Content creators image") {
         }
     }
 
-    docker {
+    host {
         resources {
             cpu = 4.cpu
             memory = 6.gb
         }
         
-        build {
+        dockerBuildPush {
             context = "."
             file = "./Dockerfile-ContentCreators"
             labels["vendor"] = "JetBrains"
+            tags {
+                +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators:dev-${"$"}JB_SPACE_EXECUTION_NUMBER"
+                +"registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators:latest"
+            }
         }
-        push("registry.jetbrains.team/p/jetbrains-guide/guide-containers/guide-content-creators")
     }
 }
