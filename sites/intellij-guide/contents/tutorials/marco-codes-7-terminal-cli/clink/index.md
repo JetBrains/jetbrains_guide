@@ -15,4 +15,4 @@ longVideo:
 
 ## clink
 
-* 
+* Your Windows terminal on steroids
