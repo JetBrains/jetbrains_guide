@@ -12,7 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1040s
 ---
 
-# Introduction
+# Modifying Gradle Tasks
 
-- 17:20 Modifying Gradle Tasks
-- 17:38 Common Gradle Issues
+* How to modify Gradle tasks
+* Common issues with Gradle that people encounter during builds

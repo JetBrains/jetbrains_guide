@@ -12,8 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=184s
 ---
 
-# Introduction
+# Gradle Project Structure
 
-- 03:04 Gradle Multi-Projects
-- 04:24 Gradle Project Structure Explained
-
+* An overview of Gradle's default project structure
+* How to structure Gradle projects for multiple modules

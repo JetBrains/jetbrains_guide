@@ -12,7 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=920s
 ---
 
-# Introduction
+# Plugin Repositories
 
-- 15:20 Plugins
-- 16:47 Repositories
+* What plugins are and how Gradle depends on them to do anything meaningful
+* How Gradle uses repositories to download dependencies

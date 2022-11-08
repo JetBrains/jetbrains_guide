@@ -12,8 +12,8 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=64s
 ---
 
-# Introduction
+# Getting Started
 
-- 01:04 Gradlew Build - First Try
-- 01:37 Gradle Wrapper
-- 02:24 settings.gradle
+* How to execute 'gradlew build' and what it does
+* What Gradle Wrapper is
+* Overview of settings.gradle

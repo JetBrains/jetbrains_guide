@@ -12,7 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=859s
 ---
 
-# Introduction
+# Scopes
 
-- 14:19 Implementation Scope
-- 14:51 API Scope
+* What the 'implementation scope' in Gradle means
+* What the 'API scope' in Gradle means

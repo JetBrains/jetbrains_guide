@@ -12,8 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=1120s
 ---
 
-# Introduction
+# Creating new Gradle Project
 
-- 18:40 Creating New Gradle Projects
-- 19:23 Gradle Init
-
+* How to create new Gradle projects on the command line
+* Using the 'gradle init' command line tool

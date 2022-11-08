@@ -12,9 +12,9 @@ longVideo:
   url: https://www.youtube.com/watch?v=gKPMKRnnbXU&start=421s
 ---
 
-# Introduction
+# Gradle Basics
 
-- 07:01 Gradlew Clean
-- 07:19 Gradlew Test
-- 08:56 Gradle's Smart Features
-- 09:52 Build.Gradle Explained
+* What 'gradlew clean' does
+* What 'gradlew test' does
+* What makes gradle so smart
+* An overview of the build.gradle file
