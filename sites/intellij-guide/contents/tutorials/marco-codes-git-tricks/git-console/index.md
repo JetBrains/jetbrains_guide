@@ -14,4 +14,4 @@ longVideo:
 ---
 ## Git Console
 
-- 
+* How to use IntelliJ IDEA's Git console to see which Git commands IntelliJ executes

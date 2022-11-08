@@ -14,4 +14,4 @@ longVideo:
 
 ## Git Rebase
 
-- 
+* How to use IntelliJ IDEA's Git support to rebase without problems

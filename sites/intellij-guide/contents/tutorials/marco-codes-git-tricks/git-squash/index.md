@@ -13,11 +13,6 @@ longVideo:
 
 ---
 
-## Introduction
+## Git Squash
 
-- Intro
-- Git Rebase - Keeping Feature Branches Up to Date
-- Git Console - What happens under the hood?
-- Git Squash - Clean up your history
-- Compare Branches - What's the difference?
-- Merged Commits - See effective changes
+* How to do Git Squashes from inside IntelliJ IDEA

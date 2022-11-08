@@ -13,9 +13,8 @@ longVideo:
 
 ---
 
-## Introduction
+## Overview
 
-- Intro
 - Git Rebase - Keeping Feature Branches Up to Date
 - Git Console - What happens under the hood?
 - Git Squash - Clean up your history

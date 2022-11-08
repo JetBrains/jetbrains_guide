@@ -15,4 +15,4 @@ longVideo:
 
 ## Merged Commits
 
-- 
+- How to merge commits properly from inside IntelliJ IDEA

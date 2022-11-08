@@ -12,3 +12,4 @@ thumbnail: ./thumbnail.png
 
 ## More Resources
 
+* Further Reading & Resources
