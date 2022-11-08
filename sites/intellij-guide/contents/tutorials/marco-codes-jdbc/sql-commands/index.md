@@ -15,8 +15,7 @@ longVideo:
 
 ## SQL Commands
 
-- 10:10 SQL - SELECT FROM
-- 10:52 SQL Injection
-- 13:52 SQL - INSERT INTO
-- 15:16 SQL - UPDATE
-- 16:11 SQL - DELETE
+* How to execute SQL SELECTS with Java
+* How to execute SQL INSERT INTO with Java
+* How to execute SQL UPDATE with Java
+* How to execute SQL DELETE with Java

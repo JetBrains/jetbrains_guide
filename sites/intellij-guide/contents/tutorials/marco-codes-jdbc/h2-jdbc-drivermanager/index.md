@@ -15,10 +15,9 @@ longVideo:
 
 ## H2 and JDBC
 
-- 01:05 H2 Database Setup
-- 02:01 JDBC Driver List
-- 02:41 DriverManager
-- 03:37 JDBC Urls - Overview
-- 04:16 H2 JDBC Url - Options
-- 07:02 H2 - Schema/Data Initialization
+* What an H2 database is and how to set it up
+* A look at the JDBC Driver reference list
+* How to open connections to a database with Java, through the DriverManager
+* A look at JDBC URLs and how they are built
+* A look at H2 specific JDBC urls and options for schema initialization
 
