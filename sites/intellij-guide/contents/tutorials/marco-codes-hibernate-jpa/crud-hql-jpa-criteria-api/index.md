@@ -13,11 +13,11 @@ longVideo:
 
 ---
 
-## Basic CRUD
+## Intermediate Hibernate
 
-## HQL Queries
+* How to use Hibernate to execute CRUD (select, read, update, delete) queries
+* How to execute HQL queries with Hibernate
+* How to use Hibernate's Criteria API for dynamic queries
+* How to use JPA with Hibernate
 
-## JPA
-
-## Criteria API
 

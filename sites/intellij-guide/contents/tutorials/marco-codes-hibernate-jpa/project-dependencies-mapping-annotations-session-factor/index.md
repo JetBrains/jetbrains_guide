@@ -13,8 +13,8 @@ longVideo:
 
 ---
 
-## Project Dependencies
+## Hibernate Basics
 
-## Mapping Annotations
-
-## SessionFactory
+* What Project Dependencies you need for Hibernate to work
+* How to use Hibernate's Mapping Annotations
+* First Steps with Hibernate's SessionFactory

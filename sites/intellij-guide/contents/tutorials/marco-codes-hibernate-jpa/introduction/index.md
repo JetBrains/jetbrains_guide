@@ -14,3 +14,6 @@ longVideo:
 ---
 
 ## Introduction
+
+* What this video is about
+* What Hibernate is
