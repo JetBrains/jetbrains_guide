@@ -12,8 +12,7 @@ longVideo:
   url: https://www.youtube.com/watch?v=UnM4QAumuCQ&start=1160s
 ---
 
-# SSH Overview
+# Keys
 
-- 19:21 GitHub & SSH Keys
-- 20:35 Git Windows OpenSSH Config
-- 21:16 Multiple Git Keys (Personal/Work)
+* The best way to work with GitHub & SSH Kezs
+* How to use Windows' OpenSSH config to manage multiple GitHub Keys

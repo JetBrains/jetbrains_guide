@@ -12,10 +12,9 @@ longVideo:
   url: https://www.youtube.com/watch?v=UnM4QAumuCQ&start=174s
 ---
 
-# Getting Started with SSH
+# SSH Basics
 
-- 02:54 SSH - AWS GUI
-- 05:28 SSH - Command Line
-- 06:51 SSH-Keygen
-- 10:35 Authorized_Keys
-- 11:25 SCP
+* How to use SSH via the command line
+* How to generate SSH Keys with SSH keygen
+* What authorized keys are
+* What SCP is and how to use it to copy files securely

@@ -14,4 +14,4 @@ longVideo:
 
 # SSH Overview
 
-- 00:12 SSH Overview
+* What you'll learn in this video
