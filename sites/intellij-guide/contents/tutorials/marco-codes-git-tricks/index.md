@@ -13,8 +13,5 @@ tutorialItems:
   - /tutorials/marco-codes-git-tricks/git-squash/
   - /tutorials/marco-codes-git-tricks/compare-branches/
   - /tutorials/marco-codes-git-tricks/merged-commits/
-  - /tutorials/marco-codes-git-tricks/summary/
 
 ---
-
-# Introduction

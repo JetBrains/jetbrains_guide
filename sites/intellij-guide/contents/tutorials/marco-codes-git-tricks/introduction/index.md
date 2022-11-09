@@ -15,8 +15,8 @@ longVideo:
 
 ## Overview
 
-- Git Rebase - Keeping Feature Branches Up to Date
+- Git Rebase - Keeping feature branches up to date.
 - Git Console - What happens under the hood?
-- Git Squash - Clean up your history
+- Git Squash - Clean up your history.
 - Compare Branches - What's the difference?
-- Merged Commits - See effective changes
+- Merged Commits - See effective changes.

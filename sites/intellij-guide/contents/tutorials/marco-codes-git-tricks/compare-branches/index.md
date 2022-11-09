@@ -15,4 +15,4 @@ longVideo:
 
 ## Compare Branches
 
-* How to compare Git branches with IntelliJ IDEA 
+* How to compare Git branches with IntelliJ IDEA.
