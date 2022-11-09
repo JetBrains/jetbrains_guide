@@ -14,6 +14,6 @@ longVideo:
 
 ## Hibernate/JPA and Spring Boot
 
-* How Hibernate works together with Spring Boot
-* What Spring Data JPA is
-* What Spring Data JDBC is
+* How Hibernate works together with Spring Boot.
+* What is Spring Data JPA?
+* What is Spring Data JDBC?
