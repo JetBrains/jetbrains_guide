@@ -2,7 +2,8 @@
 type: TutorialStep
 date: 2022-11-08
 title: Summary
-technologies: []sl
+technologies: []
+topics: []
 author: hs
 subtitle: 7 Terminal/CLI tools you now know!
 thumbnail: ./thumbnail.png
