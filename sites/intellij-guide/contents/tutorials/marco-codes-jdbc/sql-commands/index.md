@@ -15,7 +15,7 @@ longVideo:
 
 ## SQL Commands
 
-* How to execute SQL SELECTS with Java
-* How to execute SQL INSERT INTO with Java
-* How to execute SQL UPDATE with Java
-* How to execute SQL DELETE with Java
+* How to execute SQL SELECTS with Java.
+* How to execute SQL INSERT INTO with Java.
+* How to execute SQL UPDATE with Java.
+* How to execute SQL DELETE with Java.

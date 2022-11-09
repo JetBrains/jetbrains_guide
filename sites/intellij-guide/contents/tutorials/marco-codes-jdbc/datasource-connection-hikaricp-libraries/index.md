@@ -15,7 +15,7 @@ longVideo:
 
 ## DataSource, Connection Pools, HikariCP and Library Landscape
 
-* How to connect to databases with Java through the DataSource interface
-* What connection pools are and how they use the DataSource interface to handle load with just a couple connections
-* HikariCP - an intro of the most popular 
-* An overview of popular Java database libraries
+* How to connect to databases with Java through the DataSource interface.
+* What connection pools are and how they use the DataSource interface to handle load with just a couple connections.
+* HikariCP - an intro of the most popular.
+* An overview of popular Java database libraries.

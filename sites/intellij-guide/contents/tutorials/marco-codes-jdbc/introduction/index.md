@@ -15,5 +15,5 @@ longVideo:
 
 ## Introduction
 
-* An introduction to JDBC video
-* An overview of the project you are going to be working on
+* An introduction to JDBC.
+* An overview of the project you are going to be working on.
