@@ -14,5 +14,5 @@ longVideo:
 
 # Introduction
 
-* What this video is about
-* How to clone the sample project to play along
+* What this video is about.
+* How to clone the sample project to play along.

@@ -14,5 +14,5 @@ longVideo:
 
 # Modifying Gradle Tasks
 
-* How to modify Gradle tasks
-* Common issues with Gradle that people encounter during builds
+* How to modify Gradle tasks.
+* Common issues with Gradle that people encounter during builds.

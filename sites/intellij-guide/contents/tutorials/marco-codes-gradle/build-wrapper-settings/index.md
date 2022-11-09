@@ -14,6 +14,6 @@ longVideo:
 
 # Getting Started
 
-* How to execute 'gradlew build' and what it does
-* What Gradle Wrapper is
-* Overview of settings.gradle
+* How to execute 'gradlew build' and what it does.
+* What Gradle Wrapper is.
+* Overview of settings.gradle.

@@ -14,6 +14,6 @@ longVideo:
 
 # Dependencies
 
-* What scopes dependencies in Gradle can have
-* How to add dependencies to your project
-* How to use the IDE's package search to add dependencies
+* What scopes dependencies in Gradle can have.
+* How to add dependencies to your project.
+* How to use the IDE's package search to add dependencies.

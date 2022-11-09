@@ -14,7 +14,7 @@ longVideo:
 
 # Gradle Basics
 
-* What 'gradlew clean' does
-* What 'gradlew test' does
-* What makes gradle so smart
-* An overview of the build.gradle file
+* What 'gradlew clean' does.
+* What 'gradlew test' does.
+* What makes gradle so smart.
+* An overview of the build.gradle file.

@@ -14,5 +14,5 @@ longVideo:
 
 # Plugin Repositories
 
-* What plugins are and how Gradle depends on them to do anything meaningful
-* How Gradle uses repositories to download dependencies
+* What plugins are and how Gradle depends on them to do anything meaningful.
+* How Gradle uses repositories to download dependencies.

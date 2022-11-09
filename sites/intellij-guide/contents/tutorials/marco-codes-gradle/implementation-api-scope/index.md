@@ -14,5 +14,5 @@ longVideo:
 
 # Scopes
 
-* What the 'implementation scope' in Gradle means
-* What the 'API scope' in Gradle means
+* What the 'implementation scope' in Gradle means.
+* What the 'API scope' in Gradle means.

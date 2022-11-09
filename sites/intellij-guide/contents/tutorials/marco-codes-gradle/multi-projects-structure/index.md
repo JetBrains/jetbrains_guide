@@ -14,5 +14,5 @@ longVideo:
 
 # Gradle Project Structure
 
-* An overview of Gradle's default project structure
-* How to structure Gradle projects for multiple modules
+* An overview of Gradle's default project structure.
+* How to structure Gradle projects for multiple modules.
