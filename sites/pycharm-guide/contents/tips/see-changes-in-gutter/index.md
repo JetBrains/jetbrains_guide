@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url: https://www.youtube.com/watch?v=YxFtsFUMb1Y
+  url: https://www.youtube.com/watch?v=80W3BGaIt_s
 leadin: |
     *Visually scan to see a file's changes.*    
 
@@ -22,16 +22,16 @@ leadin: |
     codes in the gutter and click for more info.
 
 ---
+We've all been there.
 
 I’m working hard. Adds... edits... deletes.
-I go away then come back. 
+You go away then come back. 
 Uhhhhh, what was it that I did?
 
 Let the IDE’s gutter show you! Green shows additions, blue means changes, and the expando triangle means deletions.
 
-But wait, there’s more! 
 Click to see an inline diff, and actions, such as rollback.
-All right there in your editor: no “losing your flow.”
+
 
 ## The Problem
 
