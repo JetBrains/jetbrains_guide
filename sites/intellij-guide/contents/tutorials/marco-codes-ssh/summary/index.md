@@ -9,7 +9,7 @@ subtitle: Further reading
 thumbnail: ./thumbnail.png
 ---
 
-# Summary
+# Further Reading
 
 * Final Notes
 * Cheat Sheet available here: https://www.marcobehler.com/guides/ssh-commands

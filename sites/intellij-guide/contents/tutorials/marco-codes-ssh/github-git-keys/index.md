@@ -14,5 +14,5 @@ longVideo:
 
 # Keys
 
-* The best way to work with GitHub & SSH Kezs
+* The best way to work with GitHub & SSH Keys
 * How to use Windows' OpenSSH config to manage multiple GitHub Keys
