@@ -15,4 +15,4 @@ longVideo:
 
 ## plocate
 
-* plocate is a faster and smaller replacement for mlocate
+* plocate is a faster and smaller replacement for mlocate.

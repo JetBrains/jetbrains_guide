@@ -14,4 +14,4 @@ longVideo:
 
 ## bat
 
-* A modern replacement for 'cat'
+* A modern replacement for 'cat'.

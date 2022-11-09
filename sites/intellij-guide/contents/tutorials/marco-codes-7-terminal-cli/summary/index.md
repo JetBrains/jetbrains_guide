@@ -11,6 +11,6 @@ longVideo:
   url: https://youtu.be/6FFNeDiRGK0&start=357s
 ---
 
-## Summary
+## Summary and Notes
 
 * Any tools you like and that weren't listed here?

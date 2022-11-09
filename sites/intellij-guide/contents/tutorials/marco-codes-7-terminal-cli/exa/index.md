@@ -15,4 +15,4 @@ longVideo:
 
 ## exa
 
-* A modern replacement for 'ls'
+* A modern replacement for 'ls'.
