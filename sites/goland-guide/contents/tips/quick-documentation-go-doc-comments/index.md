@@ -6,8 +6,8 @@ topics: [editing]
 author: ap
 subtitle: Support for links, lists, and new headings in doc comments.
 seealso:
-    title: GoLand Documentation – Viewing Inline Documentation
-    href: 'https://www.jetbrains.com/help/go/viewing-reference-information.html#inline-quick-documentation'
+- title: GoLand Documentation – Viewing Inline Documentation
+  href: 'https://www.jetbrains.com/help/go/viewing-reference-information.html#inline-quick-documentation'
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./screenshot.png
