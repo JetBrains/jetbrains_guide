@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2022-28-08
+date: 2022-11-08
 title: SQL Commands
 technologies: []
 topics: []
