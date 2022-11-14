@@ -1,6 +1,6 @@
 ---
 label: new-features-in-goland-2022-3
-date: 2022-12-01
+date: 2022-11-14
 title: New Features in GoLand 2022.3
 technologies: [go]
 topics: [quick-fixes,generics,settings]
