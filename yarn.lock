@@ -7275,7 +7275,7 @@ gatsby-parcel-config@^0.5.0:
     "@parcel/transformer-raw" "^2.3.2"
     "@parcel/transformer-react-refresh-wrap" "^2.3.2"
 
-gatsby-plugin-feed@^4.14.0:
+gatsby-plugin-feed@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.14.0.tgz#2d4e16e7ffdc78229ab95cbe75198114738c2d77"
   integrity sha512-1s9R4usqdqHQzDkQyo2cYwT23AB3KhugefpqnL1A2biDUvy0Dmu2tHnUXMYb62BqcRF3YTSbpUTxkdw8bxcamg==
@@ -7288,7 +7288,7 @@ gatsby-plugin-feed@^4.14.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-tagmanager@^4.14.0:
+gatsby-plugin-google-tagmanager@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-4.14.0.tgz#2ab999558c91cfb3e33200c21bed623d0148de78"
   integrity sha512-jsqnFrb/ugFItckuPgvf98TgoYMNEUi9rNcUYLSfQS2Dp9Wo9Ief5akY9oPEAgVmZs8O98k/2hBrUyRPhfs9vw==
@@ -7397,7 +7397,7 @@ gatsby-plugin-remove-serviceworker@^1.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-serviceworker/-/gatsby-plugin-remove-serviceworker-1.0.0.tgz#9fb433bc8bd766e14e1d3711c4ac6f051e1dff7c"
   integrity sha1-n7QzvIvXZuFOHTcRxKxvBR4d/3w=
 
-gatsby-plugin-sharp@^4.14.1:
+gatsby-plugin-sharp@4.14.1:
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.14.1.tgz#bc8402c014e8d4ad9b304adad6d56be5e54912ea"
   integrity sha512-izYl9XcnWdAY+rDtZtnKfzZ/djBioGSDg/k84cgLVbTzLB29jgqipw3PkjV7IlvmJmlw2v78YCHO5mk3bfcitg==
@@ -7432,7 +7432,7 @@ gatsby-plugin-sitemap@^5.14.0:
     minimatch "^3.1.2"
     sitemap "^7.0.0"
 
-gatsby-plugin-typescript@^4.14.0:
+gatsby-plugin-typescript@4.14.0, gatsby-plugin-typescript@^4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-4.14.0.tgz#4d2dfc15ded7d1a01ae0e9fcbb67534484ffd58c"
   integrity sha512-iAeC1dnpj99hjnRpD4FetXaJ9b321AuIf0q9vAw4G9FvddG0pxDtg3X9roUV8cmJ+VaLNsLr0DYc4fvOfrFGUQ==
@@ -7519,7 +7519,7 @@ gatsby-sharp@^0.8.0:
     "@types/sharp" "^0.30.0"
     sharp "^0.30.3"
 
-gatsby-source-filesystem@^4.14.0:
+gatsby-source-filesystem@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.14.0.tgz#c08f91b88f262edc6d899fb17ee901ecb2b8aa2c"
   integrity sha512-r6QTNS0Y8DAWN/cHtA3P/cRXE41TAa0QuOeK+6lnoxAbDmgGt2/EvfXy0wIDvKJTYLQQL0WgY5/pxbvsUqTS5g==
@@ -7584,7 +7584,7 @@ gatsby-transformer-remark@^5.14.0:
     unist-util-select "^3.0.4"
     unist-util-visit "^2.0.3"
 
-gatsby-transformer-sharp@^4.14.0:
+gatsby-transformer-sharp@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-4.14.0.tgz#cd21ad60e38fa146b11f528b614ff304b38fd901"
   integrity sha512-V8tpCavnmK05GK7LoSAUyd/KZBoZr2NK4IdyIbBdxOcXBqtsD/yrThOyLP00hEV03myTv/6nzSIBZdEL+AGG5g==
@@ -7598,7 +7598,7 @@ gatsby-transformer-sharp@^4.14.0:
     semver "^7.3.7"
     sharp "^0.30.3"
 
-gatsby-transformer-yaml@^4.14.0:
+gatsby-transformer-yaml@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-yaml/-/gatsby-transformer-yaml-4.14.0.tgz#75220cbbe40a0aa849723e5c64acf8db6517910c"
   integrity sha512-zFLy4JPh5xlW6cArBfKaDPCWayS3+/54eSZEk2t5G1o9OdFT49Ef8qn0zIdWoduLJkXIyQcLyR3L3PDt0+E9iw==
@@ -7616,7 +7616,7 @@ gatsby-worker@^1.14.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.14.1:
+gatsby@4.14.1:
   version "4.14.1"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.14.1.tgz#6d92761bb98dd2504ea0868977c8ded793eeb6dd"
   integrity sha512-YWA7Xn4yUCinTyIVJXGYp0ZHNeCsHyDVCU3KpVfCyFbhAsLi4gzGlZsFJPqnWRikMNrvT5yXR5Ni314+oQmCYg==
@@ -13606,9 +13606,9 @@ socket.io-client@3.1.3:
     socket.io-parser "~4.0.4"
 
 socket.io-parser@~4.0.3, socket.io-parser@~4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-4.0.4.tgz#9ea21b0d61508d18196ef04a2c6b9ab630f4c2b0"
-  integrity sha512-t+b0SS+IxG7Rxzda2EVvyBZbvFPBCjJoyHuE0P//7OAsN23GItzDRdWa6ALxZI/8R5ygK7jAR6t028/z+7295g==
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/socket.io-parser/-/socket.io-parser-4.0.5.tgz#cb404382c32324cc962f27f3a44058cf6e0552df"
+  integrity sha512-sNjbT9dX63nqUFIOv95tTVm6elyIU4RvB1m8dOeZt+IgWwcWklFDOdmGcfo3zSiRsnR/3pJkjY5lfoGqEe4Eig==
   dependencies:
     "@types/component-emitter" "^1.2.10"
     component-emitter "~1.3.0"
@@ -15670,7 +15670,7 @@ yargs@^17.2.1, yargs@^17.3.1:
     y18n "^5.0.5"
     yargs-parser "^21.0.0"
 
-yarn@^1.22.19:
+yarn@1.22.19:
   version "1.22.19"
   resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.19.tgz#4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
   integrity sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ==
