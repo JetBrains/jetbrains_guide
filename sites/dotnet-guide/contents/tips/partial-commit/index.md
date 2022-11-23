@@ -4,6 +4,7 @@ date: 2022-11-23
 title: Only Commit Some Changes
 technologies: []
 topics: [vcs]
+products: [rider]
 author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:

@@ -3,6 +3,7 @@ date: 2022-11-22
 title: Fix Your Work with Amend Commit
 technologies: []
 topics: [vcs]
+products: [rider]
 author: pwe
 subtitle: Put some missing work back into your last commit, before you push.
 thumbnail: ./thumbnail.png
