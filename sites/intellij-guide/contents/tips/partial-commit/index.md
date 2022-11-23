@@ -8,7 +8,7 @@ author: pwe
 subtitle: Unselect files or changed regions within files during the commit process.
 seealso:
   - title: Commit part of a file
-    href: https://www.jetbrains.com/help/go/commit-and-push-changes.html?partial_commit
+    href: https://www.jetbrains.com/help/idea/commit-and-push-changes.html?partial_commit
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
