@@ -5,6 +5,7 @@ title: See VCS Changed Lines In Gutter
 technologies: []
 topics: [editing, vcs]
 author: pwe
+products: [rider]
 subtitle: Quickly spot which parts of your file have changed since the last commit.
 seealso:
   - title: Tracking changes to a file in the editor
