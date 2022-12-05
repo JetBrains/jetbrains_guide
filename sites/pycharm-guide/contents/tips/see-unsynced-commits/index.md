@@ -15,7 +15,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
     poster: ./poster_short.png
-    url:  https://www.youtube.com/watch?v=MTSwlr4blMA
+    url:  https://youtu.be/JJUJeBOpAQY
 leadin: |
     *Don't let other work trample on yours.*    
 
