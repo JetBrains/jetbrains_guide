@@ -5,7 +5,7 @@ title: Introduction
 technologies: []
 topics: []
 author: hs
-subtitle: Introduction
+subtitle: Overview of the tutorial
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

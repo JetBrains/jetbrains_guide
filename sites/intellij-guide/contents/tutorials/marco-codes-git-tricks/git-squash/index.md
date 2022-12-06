@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2022-11-11
-title: Introduction
+title: Git Squash
 technologies: []
 topics: []
 author: hs
-subtitle: Introduction
+subtitle: Squashing commits 
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

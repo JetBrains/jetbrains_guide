@@ -5,7 +5,7 @@ title: Basic CRUD, HQL Queries, JPA and Criteria API
 technologies: []
 topics: []
 author: hs
-subtitle: Basic CRUD, HQL Queries, JPA and Criteria API
+subtitle: Overview of everything from CRUD, executing queries and using JPA with Hibernate
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

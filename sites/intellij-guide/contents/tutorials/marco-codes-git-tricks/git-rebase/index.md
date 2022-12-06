@@ -5,7 +5,7 @@ title: Git Rebase
 technologies: []
 topics: []
 author: hs
-subtitle: Overview
+subtitle: Rebasing commits
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

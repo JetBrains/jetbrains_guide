@@ -5,7 +5,7 @@ title: Introduction to JDBC
 technologies: []
 topics: []
 author: hs
-subtitle: xxx
+subtitle: Overview
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

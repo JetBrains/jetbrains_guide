@@ -5,7 +5,7 @@ title: Git Console
 technologies: []
 topics: []
 author: hs
-subtitle: Overview
+subtitle: Working with the console
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

@@ -5,7 +5,7 @@ title: Project Dependencies, Mapping Annotations, SessionFactory
 technologies: []
 topics: []
 author: hs
-subtitle: Project Dependencies, Mapping Annotations, SessionFactory
+subtitle: The basics of Hibernate
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

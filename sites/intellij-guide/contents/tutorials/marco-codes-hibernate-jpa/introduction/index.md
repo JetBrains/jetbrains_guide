@@ -5,7 +5,7 @@ title: Introduction to Hibernate & JPA Tutorial
 technologies: []
 topics: []
 author: hs
-subtitle: Introduction to Hibernate & JPA Tutorial
+subtitle: Overview to the tutorial
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

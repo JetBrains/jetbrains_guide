@@ -5,7 +5,7 @@ title: Merged Commits
 technologies: []
 topics: []
 author: hs
-subtitle: Overview
+subtitle: Merging commits
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

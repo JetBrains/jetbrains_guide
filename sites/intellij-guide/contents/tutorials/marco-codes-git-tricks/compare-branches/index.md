@@ -5,7 +5,7 @@ title: Compare Branches
 technologies: []
 topics: []
 author: hs
-subtitle: Summary
+subtitle: Comparing branches
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

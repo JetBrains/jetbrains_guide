@@ -5,7 +5,7 @@ title: DataSource and Connection Pools
 technologies: []
 topics: []
 author: hs
-subtitle: DataSource
+subtitle: Connecting to databases and more
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

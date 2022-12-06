@@ -5,7 +5,7 @@ title: H2 Database and JDBC
 technologies: []
 topics: []
 author: hs
-subtitle: H2 Database and JDBC
+subtitle: Working with an H2 Database and JDBC
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
