@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-12-2
+date: 2022-12-02
 title: See VCS Changed Lines In Gutter
 technologies: []
 topics: [editing, vcs]
