@@ -15,8 +15,6 @@ longVideo:
 
 ## Terminal Raw Mode 
 
--
-
-## Setting Terminal Attributes With The Termios API 
-
-- 
+- What is Terminal Raw mode?
+- How to use JNA to call native OS methods
+- Setting a terminal into raw mode

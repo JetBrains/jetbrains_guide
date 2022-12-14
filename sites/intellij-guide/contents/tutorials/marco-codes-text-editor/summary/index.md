@@ -10,5 +10,7 @@ thumbnail: ./thumbnail.png
 
 ---
 
-== Summary & Acknowledgements
-- 
+## Summary & Acknowledgements
+- A pat on the back
+- Further Readings
+- Acknowledgements

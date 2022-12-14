@@ -13,8 +13,9 @@ longVideo:
 
 ---
 
-== How to Load and Display Text Files
-- 
+## How to Load and Display Text Files
+- Using Java's PATH API to load text files
+- Displaying the loaded text file to the user
 
 
 

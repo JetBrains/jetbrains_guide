@@ -15,4 +15,5 @@ longVideo:
 
 ## Building The Text Viewer Skeleton
 
--
+- How to use escape codes to show an empty text editor screen
+- How to print placeholder icons for every row of the screen

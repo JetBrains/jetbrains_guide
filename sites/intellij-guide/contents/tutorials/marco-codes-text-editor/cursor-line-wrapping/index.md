@@ -13,5 +13,6 @@ longVideo:
 
 ---
 
-== Cursor Line Wrapping
-- 
+## Cursor Line Wrapping
+- How to make the cursor wrap around at the end or the beginning of the line
+- Hint to a future video

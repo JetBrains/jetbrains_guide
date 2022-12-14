@@ -15,4 +15,5 @@ longVideo:
 
 ## Getting Terminal Rows & Columns With The IOCTL API
 
--
+- How to find out how many rows & columns a terminal window has
+- Using the IOCTL API

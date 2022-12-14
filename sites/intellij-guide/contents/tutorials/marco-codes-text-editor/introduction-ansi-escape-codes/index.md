@@ -12,10 +12,10 @@ longVideo:
   url: https://youtu.be/kT4JYQi9w4w
 ---
 
-## Introduction
 
--
 
 ## ANSI Escape Codes 
 
-- 
+- What are ANSI Escape Codes?
+- How can you use them?
+- How every terminal application is built on top of ANSI Escape Codes

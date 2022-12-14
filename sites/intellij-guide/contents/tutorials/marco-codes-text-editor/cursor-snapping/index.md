@@ -13,5 +13,5 @@ longVideo:
 
 ---
 
-== Cursor Snapping
-- 
+## Cursor Snapping
+- How to make sure the cursor auto-snaps when moving vertically between lines

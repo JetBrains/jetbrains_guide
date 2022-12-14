@@ -13,5 +13,6 @@ longVideo:
 
 ---
 
-== Refactoring and Scrolling
-- 
+## Refactoring and Scrolling
+- Cleaning up the text editor
+- Minor Improvements

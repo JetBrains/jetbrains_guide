@@ -13,5 +13,6 @@ longVideo:
 
 ---
 
-== MacOS and Windows Support
-- 
+## MacOS and Windows Support
+- How to make our editor support Windows
+- How to make our editor support macOS

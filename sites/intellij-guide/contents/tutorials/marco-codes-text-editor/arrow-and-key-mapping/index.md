@@ -13,10 +13,9 @@ longVideo:
 
 ---
 
-== The Problem with Arrow Up, Arrow Down and Friends
-- 
+## Arrow Key Handling
 
-== How to Map 3 or 4 Keys to 1 
-- 
-
+* What actually happens when you press Arrow Up/Down/Left/Right
+* How to handle complex keypress sequences in the application
+* How to map three or four key presses to one
 

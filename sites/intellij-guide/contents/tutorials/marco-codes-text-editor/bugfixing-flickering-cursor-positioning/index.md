@@ -15,4 +15,5 @@ longVideo:
 
 ## Bugfixing Flickering & Cursor Positioning
 
--
+* Why the text viewer flickers when scrolling up or down
+* How to fix the flickering by making sure lines do not overflow

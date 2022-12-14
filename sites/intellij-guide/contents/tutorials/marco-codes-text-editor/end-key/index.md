@@ -13,5 +13,5 @@ longVideo:
 
 ---
 
-== End Key
-- 
+## End Key
+- How to make the cursor snap to the end of a line when you press END

@@ -13,5 +13,6 @@ longVideo:
 
 ---
 
-== Horizontal Scrolling
-- 
+## Horizontal Scrolling
+- How to implement horizontal scrolling of lines
+- How to detect which part of the line should be drawn depending on the horizontal cursor position

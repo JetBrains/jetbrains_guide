@@ -12,5 +12,6 @@ longVideo:
   url: https://www.youtube.com/watch?v=72Dt_U9DQh4&start=60s
 ---
 
-== Page Up and Down
-- 
+## Page Up and Down
+- How to implement Page Up & Down
+- Reusing functionality for Arrow Up & Down to implement paging
