@@ -1,6 +1,6 @@
 ---
 hasBody: true
-date: 2022-11-23
+date: 2022-12-15
 title: See Unsynced Commits
 technologies: []
 topics: [vcs,]
@@ -8,14 +8,14 @@ author: pwe
 subtitle: See what's happening on that other branch.
 seealso:
   - title: Sync with a remote Git repository
-    href: https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html
+    href: https://www.jetbrains.com/help/go/sync-with-a-remote-repository.html
   - title: Explicitly check for incoming commits on remotes
-    href: https://www.jetbrains.com/help/pycharm/settings-version-control-git.html#66be8a1d
+    href: https://www.jetbrains.com/help/go/settings-version-control-git.html#d2aedc79
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
     poster: ./poster_short.png
-    url:  https://youtu.be/JJUJeBOpAQY
+    url:  https://youtu.be/K6v4tAmXfLs
 leadin: |
     *Don't let other work trample on yours.*    
 
@@ -67,8 +67,8 @@ A mouseover explains that branch has incoming AND outgoing commits.
 
 
 You might ask: "I wonder if this has a setting?"
-Well of course our IDEs [have a knob](https://www.jetbrains.com/help/pycharm/settings-version-control-git.html#66be8a1d) for that, in the Git settings. 
+Well of course our IDEs [have a knob](https://www.jetbrains.com/help/go/settings-version-control-git.html#d2aedc79) for that, in the Git settings. 
 Here you can adjust the policy.
 
-You can learn a LOT from our help pages. Let’s see [this topic in the PyCharm help](https://www.jetbrains.com/help/pycharm/sync-with-a-remote-repository.html). 
+You can learn a LOT from our help pages. Let’s see [this topic in the GoLand help](https://www.jetbrains.com/help/go/sync-with-a-remote-repository.html). 
 There you go, an explanation of the green/blue up/down arrows on the branch.
