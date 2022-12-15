@@ -5,7 +5,7 @@ title: Terminal Raw Mode & Terminal Attributes
 technologies: []
 topics: []
 author: hs
-subtitle: Raw Mode and Setting Terminal Attributes With The Termios API
+subtitle: Using RAW Mode and JNA
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

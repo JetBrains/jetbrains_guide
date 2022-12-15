@@ -5,7 +5,7 @@ title: Bugfixing Flickering & Cursor Positioning
 technologies: []
 topics: []
 author: hs
-subtitle: Bugfixing Flickering & Cursor Positioning
+subtitle: Fixing bugs with flickering
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

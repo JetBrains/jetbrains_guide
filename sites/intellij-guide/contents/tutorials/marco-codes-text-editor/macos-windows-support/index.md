@@ -5,7 +5,7 @@ title: MacOS and Windows Support
 technologies: []
 topics: []
 author: hs
-subtitle: MacOS and Windows Support
+subtitle: Support for different OS
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

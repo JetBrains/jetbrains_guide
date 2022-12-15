@@ -5,7 +5,7 @@ title: Some Refactoring and Scrolling
 technologies: []
 topics: []
 author: hs
-subtitle: Refactorings, Cleanup and Scrolling Theory
+subtitle: Tidying up and tweaking
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

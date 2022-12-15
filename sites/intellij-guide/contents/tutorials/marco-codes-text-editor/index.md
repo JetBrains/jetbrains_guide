@@ -14,6 +14,8 @@ tutorialItems:
   - /tutorials/marco-codes-text-editor/bugfixing-flickering-cursor-positioning/
   - /tutorials/marco-codes-text-editor/arrow-and-key-mapping/
   - /tutorials/marco-codes-text-editor/move-cursor/
+  - /tutorials/marco-codes-text-editor/how-to-load-and-display-text-files/
+  - /tutorials/marco-codes-text-editor/refactorings-and-scrolling/
   - /tutorials/marco-codes-text-editor/page-up-down/
   - /tutorials/marco-codes-text-editor/horizontal-scrolling/
   - /tutorials/marco-codes-text-editor/end-key/

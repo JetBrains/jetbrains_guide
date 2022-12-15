@@ -5,7 +5,7 @@ title: Cursor Line Wrapping
 technologies: []
 topics: []
 author: hs
-subtitle: Cursor Line Wrapping
+subtitle: Wrap around on lines
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

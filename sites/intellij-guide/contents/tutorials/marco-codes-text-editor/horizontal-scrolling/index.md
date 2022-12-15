@@ -5,7 +5,7 @@ title: Horizontal Scrolling
 technologies: []
 topics: []
 author: hs
-subtitle: Horizontal Scrolling
+subtitle: Implementing horizontal scrolling
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

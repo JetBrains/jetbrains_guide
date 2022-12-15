@@ -5,7 +5,7 @@ title: Cursor Snapping
 technologies: []
 topics: []
 author: hs
-subtitle: Cursor Snapping
+subtitle: Autosnapping when you need it
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

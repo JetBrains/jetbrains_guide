@@ -5,7 +5,7 @@ title: End Key
 technologies: []
 topics: []
 author: hs
-subtitle: End key
+subtitle: Getting the End key to the end
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

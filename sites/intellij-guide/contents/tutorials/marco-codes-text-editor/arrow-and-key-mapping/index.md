@@ -5,7 +5,7 @@ title: The Problem with Arrow Up & Down and Key Mappings
 technologies: []
 topics: []
 author: hs
-subtitle: The Problem with Arrow Up, Arrow Down and Friends & How to Map 3 or 4 Keys to 1
+subtitle: Arrow motion & How to map 3 or 4 keys to 1
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

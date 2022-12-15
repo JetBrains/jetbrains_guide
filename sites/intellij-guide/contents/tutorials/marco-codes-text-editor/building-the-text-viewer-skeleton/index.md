@@ -5,7 +5,7 @@ title: Building The Text Viewer Skeleton
 technologies: []
 topics: []
 author: hs
-subtitle: Building The Text Viewer Skeleton
+subtitle: Using escape codes and placeholder icons
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

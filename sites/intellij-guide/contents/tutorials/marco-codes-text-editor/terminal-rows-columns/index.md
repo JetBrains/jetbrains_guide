@@ -5,7 +5,7 @@ title: Getting Terminal Rows & Columns With The IOCTL API
 technologies: []
 topics: []
 author: hs
-subtitle: Getting Terminal Rows & Columns With The IOCTL API
+subtitle: Counting rows and columns and using the IOCTL API
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

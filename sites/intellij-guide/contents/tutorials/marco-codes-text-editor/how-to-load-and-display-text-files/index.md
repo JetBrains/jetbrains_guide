@@ -5,7 +5,7 @@ title: How to Load and Display Text Files
 technologies: []
 topics: []
 author: hs
-subtitle: How to Load and Display Text Files
+subtitle: Using the PATH API
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

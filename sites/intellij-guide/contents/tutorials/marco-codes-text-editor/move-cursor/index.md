@@ -5,7 +5,7 @@ title: How to Move your Cursor
 technologies: []
 topics: []
 author: hs
-subtitle: How to Move your Cursor
+subtitle: Drawing and cursor
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

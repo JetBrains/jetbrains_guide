@@ -5,7 +5,7 @@ title: Page Up and Page Down
 technologies: []
 topics: []
 author: hs
-subtitle: Page up and down
+subtitle: Implementing arrow keys for page up and down
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

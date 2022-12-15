@@ -5,7 +5,7 @@ title: Introduction & ANSI Escape Codes
 technologies: []
 topics: []
 author: hs
-subtitle: Introduction & ANSI Escape Codes
+subtitle: The role of ANSI escape codes
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
