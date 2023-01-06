@@ -9,8 +9,8 @@ subtitle: Turn show line numbers off and on
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-poster: ./tip.png
-url: https://youtu.be/pdPxVqrKYIw
+  poster: ./tip.png
+  url: https://youtu.be/pdPxVqrKYIw
 seealso:
 - title: (documentation) IntelliJ IDEA Help - Find a line or a column
   href: https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#find_line

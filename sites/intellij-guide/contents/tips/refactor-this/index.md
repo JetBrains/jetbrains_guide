@@ -9,8 +9,8 @@ subtitle: Refactoring options for the selection
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
-poster: ./tip.png
-url: https://youtu.be/iMWcPz_RWnU
+  poster: ./tip.png
+  url: https://youtu.be/iMWcPz_RWnU
 seealso:
   - title: (documentation) IntelliJ IDEA Help - Invoke refactoring
     href: https://www.jetbrains.com/help/idea/refactoring-source-code.html#refactoring_invoke
