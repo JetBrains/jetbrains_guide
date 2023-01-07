@@ -13,9 +13,9 @@ thumbnail: ./thumbnail.png
 There are several ways to add new dependencies to your project.
 
 ## From the build file using copy-paste
-You have probably copied a dependency from [Maven Repository](https://mvnrepository.com/) (or another website) and pasted into your build file. 
+You have probably copied a dependency from [Maven Repository](https://mvnrepository.com/) (or another website) and pasted into your build file.
 
-For example, we can copy the Gradle format for this dependency and paste it into our build.gradle file. 
+For example, we can copy the Gradle format for this dependency and paste it into our build.gradle file.
 
 ![MvnRepository Gradle format](mvnrepository-gradle.png)
 
@@ -30,7 +30,7 @@ Or, if we are using Maven, we can copy the Maven xml format into our pom.xml.
 Did you know that if you copy-paste a Maven XML dependency into your build.gradle file, IntelliJ IDEA automatically turns it into the correct format for Gradle?
 
 ## From the build file using code completion
-We can also add dependencies to our build file using code completion. For example, let's add a new dependency to our pom.xml. 
+We can also add dependencies to our build file using code completion. For example, let's add a new dependency to our pom.xml.
 
 ![Code completion in pom.xml](pom-xml-code-completion-1.png)
 
@@ -46,7 +46,7 @@ We see that IntelliJ IDEA autocompletes the dependency xml, and we can search fo
 
 ![Code completion in pom.xml](pom-xml-code-completion-6.png)
 
-Code completion works in Gradle too, as you can see below. 
+Code completion works in Gradle too, as you can see below.
 
 ![Code completion in build.gradle](build-gradle-code-completion-1.png)
 
@@ -72,7 +72,7 @@ Alternatively, we can open it by clicking **Quick Launch** in the bottom-left an
 
 ![Quick Launch Dependencies](quick-launch-dependencies.png)
 
-In the Dependencies tool window, we can search for a dependency. For example, let's search for AssertJ. 
+In the Dependencies tool window, we can search for a dependency. For example, let's search for AssertJ.
 
 ![Search AssertJ](search-assertj-gradle.png)
 
@@ -80,11 +80,11 @@ Note that we can select a scope for this dependency. The names of the scopes are
 
 ![Set Scope](set-scope.png)
 
-We can also select the version we want to use. 
+We can also select the version we want to use.
 
 ![Set Version](set-version.png)
 
-We can do the same in Maven. 
+We can do the same in Maven.
 
 ![Search AssertJ](search-assertj-mvn.png)
 
@@ -114,7 +114,7 @@ Finally, let's also add a new dependency to the Kotlin module. Let's switch to t
 
 ![Search Ktor](search-ktor.png)
 
-Notice that some dependencies are marked as Multiplatform. 
+Notice that some dependencies are marked as Multiplatform.
 
 ![Show Kotlin Multiplatform](show-kotlin-multiplatform.png)
 
