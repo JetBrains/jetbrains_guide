@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./thumbnail.png
-  url: https://www.youtube.com/watch?v=ZdaWB9C4UdU&list=PLQ176FUIyIUZrbrlz4AY1V8VzBJKZyVlW&index=25
+  url: https://youtu.be/k2aEBenPTnM
 seealso:
 - title: IntelliJ IDEA - Database Tool Window
   href: https://www.jetbrains.com/help/idea/database-tool-window.html
