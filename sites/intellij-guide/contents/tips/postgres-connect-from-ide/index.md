@@ -1,11 +1,11 @@
 ---
 hasBody: true
-date: 2023-01-11
+date: 2023-01-16
 title: 'Connect from the IDE to a postgreSQL database'
 technologies: [databases]
 topics: [postgreSQL]
 author: vb
-subtitle: 'Gain access to the database from the IDE and do all the work in the same window.'
+subtitle: Gain access to the database from the IDE and do all the work in the same window.
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
