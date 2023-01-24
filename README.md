@@ -1,3 +1,4 @@
+
 # JetBrains Guide
 
 The JetBrains Guide is a collection of resources for learning JetBrains IDEs. 
@@ -41,7 +42,7 @@ For humans: if you launch `Docker - IntelliJ Guide`, you can work on any content
 
 To set up a local development copy of this project, you will need:
 
-* NodeJS 14.*
+* NodeJS 18.*
 * Yarn
 
 When those are in place, you will have to:

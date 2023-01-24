@@ -4,7 +4,7 @@
 # Once published, it is used by the Dockerfile file
 # and the WebStorm run configurations.
 
-FROM node:14-bullseye
+FROM node:18-bullseye
 ENV CHOKIDAR_USEPOLLING=1
 ENV CHOKIDAR_INTERVAL=2500
 ENV GATSBY_TELEMETRY_DISABLED=1
