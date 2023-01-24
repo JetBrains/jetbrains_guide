@@ -96,7 +96,7 @@ module.exports = {
         }
       },
       footer: {
-        copyright: 'Copyright © 2000–2022 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.'
+        copyright: 'Copyright © 2000–2023 <a href="https://www.jetbrains.com/">JetBrains</a> s.r.o.'
       }
     }
   },
