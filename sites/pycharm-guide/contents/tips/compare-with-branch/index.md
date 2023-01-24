@@ -13,7 +13,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
   poster: ./poster_short.png
-  url:  https://youtu.be/buBsdd0ym08
+  url:  https://youtu.be/oGbAj89ttZw
 leadin: |
   *You want to merge -- but what's in those commits?*
 
