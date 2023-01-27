@@ -1,6 +1,6 @@
 ---
 type: TutorialStep
-date: 2023-02-06
+date: 2023-01-27
 title: Remediate dependencies
 technologies: [gradle, maven]
 topics: [build,packagesearch,security,ultimate]
