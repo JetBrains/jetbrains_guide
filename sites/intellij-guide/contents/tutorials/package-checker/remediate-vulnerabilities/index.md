@@ -24,7 +24,7 @@ Alternatively, we can use the intention action shortcut, **⌥ ⏎** on MacOs, o
 
 ![Show context actions](context-actions.png)
 
-![Fixed version from context actions](context-actions.png)
+![Fixed version from context actions](fix-from-context-actions.png)
 
 After we update the versions, we can **Load Maven Changes**, using **⌘⇧I** on MacOs or **Ctrl+Shift+O** on Windows/Linux. We see that the overview in the Vulnerable Checker tool window is updated, and we see that dependencies that we have upgraded and are no longer vulnerable are removed, or shown with a green checkmark if we have enabled **Show safe** dependencies.
 
