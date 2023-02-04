@@ -7,9 +7,6 @@ topics: []
 author: hs
 subtitle: The Productivity Guide is a fun way to see what you know, and what you don't!
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-
 
 ---
 
