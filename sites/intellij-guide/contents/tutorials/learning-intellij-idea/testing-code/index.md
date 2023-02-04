@@ -7,9 +7,6 @@ topics: []
 author: hs
 subtitle: Testing is an important part of the development workflow, irrespective of where you do it in the process.
 thumbnail: ./thumbnail.png
-longVideo:
-  poster: ./poster_long.png
-
 
 ---
 
