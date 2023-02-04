@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
-date: 2021-24-08
-title: Packaging the Application
+date: 2023-02-03
+title: Testing code
 technologies: []
 topics: []
 author: hs
-subtitle: We can package the application into a Java ARchive file (JAR).
+subtitle: Testing is an important part of the development workflow, irrespective of where you do it in the process.
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
@@ -13,40 +13,20 @@ longVideo:
 
 ---
 
-When the code is ready, we can [package our application in a JAR](https://www.jetbrains.com/help/idea/compiling-applications.html#package_into_jar). JAR files are often used to deploy an application to the production server. Once a JAR file has been built, it is called an artifact. Let's take look at how to create artifacts in IntelliJ IDEA. 
+Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. 
 
-### Creating an Artifact
+## Split Windows
 
-1) Press **Cmd+;** on macOS, or **Shift+Control+Alt+S** on Windows to bring up the [Project Structure](https://www.jetbrains.com/help/idea/project-structure-dialog.html) dialog.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7gUpiWRPiY" >
+</iframe>
 
+Sometimes it's helpful to see the code and its test next to each other which you can do with a right-split window in IntelliJ IDEA. You can open a right-split from the Recent Files (**⌘E** | **Ctrl+E**) by holding down (**⇧** | **Shift**) when you press Enter to open the file. There's also an icon to the right of the Recent Files dialog that you can use if you prefer the mouse.
 
-2) Select **Artifacts** from the left-hand menu and then press the **+** icon. Select **JAR** and then **From modules with dependencies**. 
+You can also hold down (**⇧** | **Shift**) and press Enter to open a file from the Project tool window in a right split.
 
-![Selecting a JAR file to build](jar-modules-dependencies.png)
+## Navigate to Test
 
-You don't need to change anything for the Module, however you do need to say which class in your project has the main method. Click the browse button to navigate to your main method. IntelliJ IDEA will show you a list of classes in your project, you only have one so select that. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ky-LGO0_iq4" >
+</iframe>
 
-![Main class selected for JAR](main-class.png)
-
-3) Press **OK** to select your class. All the other defaults are fine for this tutorial, press **OK**. Now you can see your new JAR file defined in the Project Structure dialog. 
-
-![Hello World JAR in the Project Structure dialog](hello-world-jar.png)
-
-4) If it matches the above screenshot, press **OK**. You have now defined how to build the JAR file, but you haven't actually built it yet. You need to build it with your build artifacts.
-
-
-5) Go to **Build** > **Build Artifacts**. You will only have one to choose from which is the one that we just defined.
-
-![Build artifacts](build-artifacts.png)
-
-6) Press **Enter** to build the artifact. Your status bar at the bottom-left of the screen will show you when this has completed. 
-
-![Status bar](status-bar.png)
-
-IntelliJ IDEA puts the artifact in a new folder in your `out` folder called `HelloWorld_jar`. 
-
-![Project window artifact](project-window-artifact.png)
-
-To make sure that this JAR file was created correctly you will want to run it. We'll do this in the next step of this tutorial by using a [run configuration](https://www.jetbrains.com/help/idea/run-debug-configuration.html).
-
----
+You can use (**⇧⌘T** | **Ctrl+Shift+T**) to Navigate to Test and if IntelliJ IDEA can find a Test file that it thinks tests that file based on the name of your class it will navigate there. If there isn't a test file that IntelliJ IDEA can find, it will suggest creating a test and can add some of the code constructs for the tests as well. 

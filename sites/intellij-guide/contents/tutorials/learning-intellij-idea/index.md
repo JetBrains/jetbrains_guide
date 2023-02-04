@@ -16,9 +16,6 @@ tutorialItems:
   - /tutorials/learning-intellij-idea/understanding-code/
   - /tutorials/learning-intellij-idea/writing-code/
   - /tutorials/learning-intellij-idea/changing-code/
-  - /tutorials/learning-intellij-idea/debugging-code/
   - /tutorials/learning-intellij-idea/testing-code/
-  - /tutorials/learning-intellij-idea/version-controlling-code/
   - /tutorials/learning-intellij-idea/seeing-how-far-youve-come/
-  - /tutorials/learning-intellij-idea/summary-and-shortcuts/
 ---

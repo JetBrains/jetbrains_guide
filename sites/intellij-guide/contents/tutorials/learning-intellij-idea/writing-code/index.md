@@ -29,21 +29,27 @@ Postfix completion allows you to keep typing forward. It's a more linguistically
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4jAXV67MRyA" >
 </iframe>
 
-IntelliJ IDEA is excellent at generating code constructs for you. It's always worth using (**⌘N** | **Alt+Ins**)
+IntelliJ IDEA is excellent at generating code constructs for you. It's always worth using (**⌘N** | **Alt+Ins**) to see what the IDE can do for you in this respect. When it comes to Java code, here are just some of the common code constructs that IntelliJ IDEA can generate for you:
+
+- getters and setters
+- constructors
+- equals and hashCode methods
+- override methods
+
+... and more. You can also use the same shortcut to generate new files in your Project tool window. 
 
 ## Run Anything
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFV-iaJCI1c" >
 </iframe>
 
-
-## Refactoring
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wDkTiWhlGyE" >
-</iframe>
-
+Similarly to Search Everywhere, Run Anything (**⌃⌃** | **Ctrl+Ctrl**) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
 
 ## Manage Dependencies Tool Window
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-TO8pNIuks" >
 </iframe>
+
+Managing dependencies is something that we're all likely to need to do sooner or later and IntelliJ IDEA supports multiple ways of achieving it. Many of you will be used to using IntelliJ IDEA's completion capabilities in the `pom.xml` or `build.gradle` file. 
+
+IntelliJ IDEA has also introduced a Dependencies window which you can access with Search Everywhere (**⇧⇧** + **Shift+Shift**) and then by typing in "dependencies" and pressing Enter. In this window you can add, remove and update you dependencies. You can also take a look at [Package Search](https://package-search.jetbrains.com/) if you don't have the IDE open.
