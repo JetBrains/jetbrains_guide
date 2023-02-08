@@ -15,7 +15,7 @@ seealso:
   - title: (documentation) IntelliJ IDEA Help - IDE viewing modes
     href: https://www.jetbrains.com/help/idea/ide-viewing-modes.html
 leadin: |
-  Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Schema** dialog. 
+  Use **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Scheme** dialog. 
   
   You can now press **4** or use the arrow keys to scroll to **4** and select _View Mode_ to see list of view modes available. Now press **2** or click on **Enter Distraction Free Mode** to display just your editor window and focus on coding. 
 
@@ -37,11 +37,11 @@ Use **⇧⇧** (macOS), or **Shift+Shift** (Windows/Linux), to bring up the Sear
 
 You can follow anyone of the above-mentioned ways to exit Distraction Free Mode.
 
-### Using the Quick Switch Schema
+### Using the Quick Switch Scheme
 
-You can use the same shortcuts as above, **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Schema** dialog, then select **4** followed by **2** to exit distraction free mode.
+You can use the same shortcuts as above, **^\`** (macOS), or **Ctrl+\`** (Windows/Linux), to bring up the **Quick Switch Scheme** dialog, then select **4** followed by **2** to exit distraction free mode.
 
-![Exit Distraction Free Mode from Quick Switch Schema](exit-distraction-free-mode-schema-switch.png)
+![Exit Distraction Free Mode from Quick Switch Scheme](exit-distraction-free-mode-schema-switch.png)
 
 ### Using View Toolbar Options
 
