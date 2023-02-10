@@ -11,3 +11,5 @@ sites/*/public
 .idea/
 package-lock.json
 /deploy/pycharm/guide/
+/.yarn/
+.yarnrc.yml
