@@ -1,45 +1,6 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="DotEnvDuplicateKeyInspection" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
-      <Languages>
-        <language minSize="134" name="JavaScript" />
-      </Languages>
-    </inspection_tool>
     <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="HCLBlockConflictingProperties" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="HCLBlockMissingProperty" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="HCLDeprecatedElement" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="HCLSimplifyExpression" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="HCLUnknownBlockType" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="HILConvertToHCL" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="HILMissingSelfInContext" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="HILOperationTypesMismatch" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="HILUnknownResourceType" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="HILUnresolvedReference" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="myValues">
-        <value>
-          <list size="1">
-            <item index="0" class="java.lang.String" itemvalue="class" />
-          </list>
-        </value>
-      </option>
-      <option name="myCustomValuesEnabled" value="true" />
-    </inspection_tool>
-    <inspection_tool class="SassScssResolvedByNameOnly" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="SassScssUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="SassScssUnresolvedPlaceholderSelector" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="SassScssUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="TFBlockNameValidness" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFDuplicatedBlockProperty" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFDuplicatedOutput" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFDuplicatedProvider" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFDuplicatedVariable" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFIncorrectVariableType" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFMissingModule" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="TFNoInterpolationsAllowed" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="TFVARSIncorrectElement" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>

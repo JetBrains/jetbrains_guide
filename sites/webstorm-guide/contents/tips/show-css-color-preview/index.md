@@ -13,4 +13,4 @@ cardThumbnail: ./card.png
 screenshot: ./card.png
 leadin: |
   You can display the color you're using in the stylesheet in the background of the editor.
-- To enable this option go to _Preferences / Settings | Editor | General | Appearance_ and select _Show CSS color preview as background_.
+  To enable this option go to _Preferences / Settings | Editor | General | Appearance_ and select _Show CSS color preview as background_.

@@ -43,6 +43,6 @@
     "@nrwl/nx-cloud": "latest"
   },
   "volta": {
-    "node": "14.21.1"
+    "node": "18.14.0"
   }
 }

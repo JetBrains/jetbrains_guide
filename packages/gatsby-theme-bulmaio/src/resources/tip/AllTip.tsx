@@ -32,6 +32,12 @@ const AllTip: FC<AllTipProps> = (
     pageContext: { numPages }
   }) => {
 
+  nodes.map(node => {
+    if (!node.author) {
+      console.log(`\n\n\nMissing Author for ${node.slug}`)
+    }
+  })
+
   const listing = (
     <div>
       {nodes && nodes.map(resource => (

@@ -10,8 +10,8 @@ seealso:
   href: https://www.jetbrains.com/help/webstorm/angular.html
 - title: Debugging Angular applications
   href: https://blog.jetbrains.com/webstorm/2017/01/debugging-angular-apps/
-- title: WebStorm’s Power User Manual: Angular Edition
-    href: https://blog.jetbrains.com/webstorm/2022/07/recording-webstorms-power-user-manual-angular-edition/
+- title: "WebStorm’s Power User Manual: Angular Edition"
+  href: https://blog.jetbrains.com/webstorm/2022/07/recording-webstorms-power-user-manual-angular-edition/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
