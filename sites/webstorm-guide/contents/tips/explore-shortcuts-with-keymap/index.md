@@ -1,7 +1,7 @@
 ---
-date: 2020-06-03
+date: 2023-01-27
 title: Explore Shortcuts the Easy Way
-subtitle: Get access to all WebStorm shortcuts in one place.
+subtitle: How to see all WebStorm's shortcuts.
 technologies: []
 topics: [editing]
 author: er
@@ -15,7 +15,7 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  In Preferences/Settings | Keymap, you can search by shortcut or by action name and see the assigned shortcut. 
+  You'll find a list of all the shortcuts in WebStorm under _Preferences / Settings | Keymap_. Here you can search for the action name and see the assigned shortcut. You can also use the _Find Actions by Shortcut_ to tell you what action a keymap input performs.
   
-  Alternatively, you can use the [Find Action](https://www.jetbrains.com/webstorm/guide/tips/toggle-options-in-find/) command for that: Press *Cmd+Shift+A/Ctrl+Shift+A*, look for an action, then you'll see its name with a shortcut if it exists.
+  Alternatively, you can use [Find Action](https://www.jetbrains.com/webstorm/guide/tips/toggle-options-in-find/). Press _⇧⌘A / Ctrl+Shift+A_, search for an action, then you'll see the name of the action and its shortcut if it exists.
   

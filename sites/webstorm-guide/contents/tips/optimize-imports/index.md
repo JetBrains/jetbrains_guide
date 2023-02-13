@@ -1,5 +1,5 @@
 ---
-date: 2020-03-16
+date: 2023-01-27
 title: Optimize Imports
 subtitle: Quickly remove any unused imports and more.
 technologies: []
@@ -12,7 +12,7 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2018/05/optimize-imports-in-webstorm/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.png
+screenshot: ./tip.gif
 leadin: |
-  With the *Optimize imports action (Ctrl+Alt+O)*, you can quickly remove any unused imports, merge 
+  With the _Optimize Imports_ action (_⌃⌥O_ / _Ctrl+Alt+O_), you can quickly remove any unused imports, merge 
   imports from the same module, and optionally sort the import statements.

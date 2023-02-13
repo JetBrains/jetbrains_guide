@@ -1,10 +1,10 @@
 ---
-date: 2020-05-26
+date: 2023-01-27
 title: Evaluate Expressions When Debugging
 technologies: [javascript]
 topics: [running-debugging]
 author: er
-subtitle: Learn how to check the value of an expression.
+subtitle: How to check the value of an expression in WebStorm.
 seealso:
 - title: How to debug with WebStorm
   href: https://blog.jetbrains.com/webstorm/2018/01/how-to-debug-with-webstorm/
@@ -17,4 +17,11 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  When debugging, use the *Evaluate* dialog (*Alt+F8*) to quickly check the value of an expression.
+  You can easily check the value of an expression when you are debugging using _Evaluate Expression_.
+
+There are 3 ways you can use it:
+1. Click the debug toolbar button to launch it.
+2. Invoke the _Evaluate Expression_ action (_⌥F8_ macOS / _Ctrl+F8_ Windows/Linux).
+3. Right-click in the editor and select _Evaluate Expression_.
+
+

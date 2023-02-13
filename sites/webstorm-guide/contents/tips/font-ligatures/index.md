@@ -1,16 +1,15 @@
 ---
-date: 2020-03-02
+date: 2023-01-27
 title: Enable Font Ligatures
 technologies: []
 topics: [editing]
 author: er
-subtitle: Use ligatures if your font supports it.
+subtitle: How to use ligatures in your font in WebStorm.
 seealso:
 - title: How to configure font
   href: https://www.jetbrains.com/help/webstorm/settings-editor-font.html
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.jpeg
+screenshot: ./tip.png
 leadin: |
-  If the font you're using supports ligatures, you can turn them on 
-  in *Preferences/Settings | Editor | Font*. 
+  If the font you're using in your JetBrains IDE supports ligatures, you can turn them on in _Preferences / Settings | Editor | Font_. 

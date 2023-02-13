@@ -1,17 +1,15 @@
 ---
-date: 2021-06-10
+date: 2023-01-27
 title: Autocomplete File Names in Commits
 technologies: []
 topics: [vcs]
 author: ed
-subtitle: Write better commit messages by more easily referencing filenames in the commit.
+subtitle: How to reference filenames in a commit in WebStorm.
 seealso:
 - title: Renaming Files
   href: https://www.jetbrains.com/webstorm/guide/tips/rename-file-based-on-class-name/
-thumbnail: ./thumbnail.jpeg
+thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./card.jpeg
+screenshot: ./tip.png
 leadin: |
-  You finished your work. Now you have to write...a meaningful commit message? "Ugh, I just want to move on to the next issue." 
-  
-  Let the IDE help. Often you want your commit message to refer to a file. We make it easy by autocompletion of filenames. Not just that...we only show files that were changed in the commit.
+WebStorm makes it easy to reference the right file with autocompletion for filenames that were changed in the commit. So you can provide more meaningful commit messages.

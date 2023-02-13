@@ -1,7 +1,7 @@
 ---
-date: 2020-09-17
-title: Last Edit Location
-subtitle: Navigate to the place of your last edit.
+date: 2023-01-27
+title: Navigate to the Last Edited Location
+subtitle: How to navigate to your last edit in WebStorm.
 technologies: []
 topics: [navigation]
 author: er
@@ -17,4 +17,5 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Press *⇧⌘⌫ / Ctrl+Shift+Delete* or select *Navigate | Last Edit Location* from the main menu to quickly jump to the place of your last edit.
+  You can move around the locations in the files you're working on faster with keyboard shortcuts.
+- Press _⇧⌘⌫ / Ctrl+Shift+Delete_ or select _Navigate | Last Edit Location_ from the main menu to quickly jump to the code you last edited.

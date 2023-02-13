@@ -1,5 +1,5 @@
 ---
-date: 2020-02-14
+date: 2023-01-27
 title: Quickly Sort Lines
 technologies: []
 topics: [editing]
@@ -16,5 +16,5 @@ animatedGif:
   height: 300
 leadin: |
   To quickly sort lines alphabetically, select them in the editor and choose 
-  *Edit | Sort Lines* from the main menu. Alternatively, you can 
-  run this action using the *Find Action* command *(Cmd/Ctrl+Shift+A)*.
+  _Edit | Sort Lines_ from the main menu. Alternatively, you can 
+  run this action using the _Find Action_ command (_⇧⌘A_ / _Ctrl+Shift+A_).

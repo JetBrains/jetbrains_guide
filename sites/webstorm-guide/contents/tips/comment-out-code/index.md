@@ -1,5 +1,5 @@
 ---
-date: 2020-03-02
+date: 2023-01-27
 title: Comment Out Code
 technologies: []
 topics: [editing]
@@ -15,6 +15,6 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  In WebStorm, you can comment and uncomment blocks of code with *Cmd+Shift+/* 
-  on macOS and *Ctrl+Shift+/* on Windows/Linux. To do the same for lines, 
-  use *Cmd+/* or *Ctrl+/.*
+  In WebStorm, you can comment and uncomment blocks of code in your JetBrains IDEs with _⌘⇧/_ 
+  on macOS and _Ctrl+Shift+/_ on Windows/Linux. To do the same for lines, 
+  use _⌘/_ or _Ctrl+/_.

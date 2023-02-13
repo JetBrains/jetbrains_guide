@@ -1,7 +1,7 @@
 ---
-date: 2020-06-19
+date: 2023-02-02
 title: Share Run Configurations
-subtitle: Make work with your project easier for your teammates by sharing your run configurations.
+subtitle: How to export and share your project’s run configurations in WebStorm.
 technologies: []
 topics: [running-debugging]
 author: er
@@ -16,6 +16,7 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 leadin: |
-  To make work with your project easier for your team members, you can share the run configuration you used for that project with them. This way, they’ll be able to run the project code using the same configuration settings regardless of what operating systems they are on.
+  You can make it easier for members of your team to work on your project by sharing your run configuration with them. This way, they’ll be able to run the project code using the same configuration settings regardless of the operating system they’re using.
   
-  To share a run configuration, open it in the [Run/Debug Configurations dialog](https://www.jetbrains.com/help/webstorm/run-debug-configurations-dialog.html), then tick the *Store as project file* checkbox and specify the path to the folder where you want to store the *.run.xml file with the selected run configuration.
+  To share a run configuration, open it in the [Run/Debug Configurations dialog](https://www.jetbrains.com/help/webstorm/run-debug-configurations-dialog.html), then select the _Store as project file_ checkbox and specify the path to the folder where the `*.run.xml` file with the selected run configuration will be stored.
+

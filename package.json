@@ -38,7 +38,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "nx": "15.0.11",
+    "@nrwl/nx-cloud": "latest"
   },
   "volta": {
     "node": "14.21.1"
