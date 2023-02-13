@@ -10,9 +10,14 @@ thumbnail: ./thumbnail.png
 
 ---
 
-Reading code is a crucial skill that we acquire as we go through our careers. IntelliJ IDEA can help you to read code and understand what it does with various mechanisms that you can tailor to the level of *support* that you want.
+Reading code is a crucial skill that we acquire as we go through our careers. IntelliJ IDEA can help you to read code and understand what it does with various mechanisms that you can tailor to the level of *support* that you want. We will look at:
+- Viewing Problems
+- Moving Between Errors
+- Getting Hints in Your Code
+- Understanding Gutter Information
+- Interpreting Scrollbars
 
-## Problem Window
+## Viewing Problems
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hn51Z91rO4k" >
 </iframe>
@@ -23,7 +28,7 @@ IntelliJ IDEA will tell you if your file has any warnings or errors in with the 
 
 You can click on this to open the Problems tool window or use (**⌘6** | **Alt+6**). You can navigate to each error by clicking on it or use **F2** to get to the next error and **Shift+F2** to go back to the previous error. Of course the goal is to keep your code always compiling but the Inspections Widget is very helpful to see the *state* of your file at a glance.
 
-## Go to Next Error
+## Moving Between Errors
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
 </iframe>
@@ -32,7 +37,7 @@ Errors are hard to avoid at times but it's much easier to address them as they h
 
 You can also use the Problem Window (**⌘6** | **Alt+6**) to see all the errors in one place and address them by clicking on each one.
 
-## Inlay Hints 
+## Getting Hints in Your Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
 </iframe>
@@ -47,7 +52,7 @@ Inlay hints that IntelliJ IDEA can provide include:
 
 ... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "inlay hints". 
 
-## Gutter Icons
+## Understanding Gutter Information
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
 </iframe>
@@ -62,7 +67,7 @@ Gutter icons can show you:
 
 ... and more. You can configure them in your Preferences/Settings (**⌘,** | **Ctrl+Alt+S**) and searching for "gutter".
 
-## Scrollbars
+## Interpreting Scrollbars
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UfN8iWKHvt0" >
 </iframe>

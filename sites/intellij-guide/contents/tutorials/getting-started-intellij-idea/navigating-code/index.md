@@ -10,9 +10,12 @@ thumbnail: ./thumbnail.png
 
 ---
 
-Navigating code is a crucial skill that we can get faster at with our IDE by using the various keyboard shortcuts to move around the codebase based on recent context, what something in the code does, or to move backwards and forwards based on our movements in time.
+Navigating code is a crucial skill that we can get faster at with our IDE by using the various keyboard shortcuts to move around the codebase based on recent context, what something in the code does, or to move backwards and forwards based on our movements in time. We will look at:
+- Viewing Recent Files and Locations
+- Going to a Declaration or Implementations
+- Navigating Forward and Backwards & Preview Tab
 
-## Recent Files and Locations
+## Viewing Recent Files and Locations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dKac7GRjSVQ" >
 </iframe>
@@ -21,7 +24,7 @@ You can think of Recent Files (**⌘E** | **Ctrl+E**) as your *working context*.
 
 In addition to Recent Files, IntelliJ IDEA allows you to go to your Recent Locations (**⌘⇧E** | **Ctrl+Shift+E**) which is most helpful when you are navigating around specific points in longer classes.
 
-## Go to Declaration or Implementation
+## Going to a Declaration or Implementations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K_v965EzAJg" >
 </iframe>
@@ -30,7 +33,7 @@ Go To Declaration or Usages (**⌘B** | **Ctrl+B**) is a great way to answer the
 
 Similarly, Go to Implementation (**⌘⌥B** | **Ctrl+Alt+B**) can tell you and subsequently take you to where a method has been implemented. 
 
-## Navigate Forward and Backwards & Preview Tab
+## Navigating Forward and Backwards & Preview Tab
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Cog66wZvPhg" >
 </iframe>

@@ -10,9 +10,10 @@ thumbnail: ./thumbnail.png
 
 ---
 
-There may come a time when you either want to see your progress or perhaps identify areas where you want to learn more. The Productivity Guide is a great way to achieve both of those objectives.
+There may come a time when you either want to see your progress or perhaps identify areas where you want to learn more. The Productivity Guide is a great way to achieve both of those objectives. We will look at:
+- Your Usage Statistics
 
-## Productivity Guide
+## Your Usage Statistics
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W0z9FVoG34c" >
 </iframe>

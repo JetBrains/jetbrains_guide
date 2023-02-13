@@ -9,9 +9,14 @@ subtitle: Use IntelliJ IDEA to create a new package and class.
 thumbnail: ./thumbnail.png
 ---
 
-IntelliJ IDEA is your IDE and, thankfully, we're all different! You probably want to use the same code style as your team but there's a lot of customisation that you can do to ensure your IDE environment is exactly how you like it. We will take a look at some of them in this section.
+IntelliJ IDEA is your IDE and, thankfully, we're all different! You probably want to use the same code style as your team but there's a lot of customisation that you can do to ensure your IDE environment is exactly how you like it. We will take a look at some of them in this section. We will look at:
+- Minimising the UI
+- Changing the Theme and Installing Plugins
+- Assigning Shortcuts and Abbreviations
+- Viewing Notifications
 
-## Zen Mode and Hiding Tool Windows
+## Minimising the UI
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xfiE76fpgAo" >
 </iframe>
@@ -22,7 +27,7 @@ A great way to immediately hide the peripheries in the IDE and focus on your cod
 
 If you prefer an even sparser interface then Zen mode might be for you. You can access it from the menu with **View > Appearance > Enter Zen Mode**. It's worth noting in Zen Mode that you can still bring back your line numbers and gutter icons by right-clicking in the gutter area and selecting them from the pop-up menu.
 
-## Themes and Plugins
+## Changing the Theme and Installing Plugins
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAo456wgRCo" >
 </iframe>
@@ -33,7 +38,7 @@ The Preferences/Settings dialog (**⌘,** | **Ctrl+Alt+S**) is quite busy due to
 
 If you are searching for new plugins for your project, make sure you're on the *Marketplace* tab, rather than the *Installed* tab otherwise you may not find what you're looking for!
 
-## Shortcuts and Abbreviations
+## Assigning Shortcuts and Abbreviations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Fk79fAS7Phk" >
 </iframe>
@@ -44,7 +49,7 @@ IntelliJ IDEA has a very rich set of keyboard shortcuts that you can take advant
 
 The steps for adding an abbreviation are somewhat similar to above, just select **Add Abbreviation** instead. Abbreviations are helpful when you want to jump to an action quickly without a shortcut, such as setting _mvn_ for the Maven tool window so it always appears first in the Search Everywhere dialog when you type in _mvn_. 
 
-## Notifications Tool Window
+## Viewing Notifications
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kg6tnhejqrI" >
 </iframe>

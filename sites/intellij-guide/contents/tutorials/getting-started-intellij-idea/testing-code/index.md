@@ -10,9 +10,11 @@ thumbnail: ./thumbnail.png
 
 ---
 
-Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. 
+Writing tests for our code is another task you're likely to be looking to your IDE to support you with. IntelliJ IDEA can generate your tests for you with its Code Generation capabilities but there's a couple more tips that I recommend you check out when working with tests in IntelliJ IDEA. We will look at:
+- Splitting Windows
+- Navigating to a Test
 
-## Split Windows
+## Splitting Windows
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k7gUpiWRPiY" >
 </iframe>
@@ -21,7 +23,7 @@ Sometimes it's helpful to see the code and its test next to each other which you
 
 You can also hold down (**⇧** | **Shift**) and press Enter to open a file from the Project tool window in a right split.
 
-## Navigate to Test
+## Navigating to a Test
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ky-LGO0_iq4" >
 </iframe>

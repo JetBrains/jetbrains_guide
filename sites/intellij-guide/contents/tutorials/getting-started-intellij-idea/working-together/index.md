@@ -10,12 +10,13 @@ thumbnail: ./thumbnail.png
 
 ---
 
+**This tutorial uses the new user interface throughout. You can access it from your Settings/Preferences (**⌘,** | **Ctrl+Alt+S**) and then search for "new UI". IntelliJ IDEA will then ask to restart and away you go!**
 
-We often need to work collaboratively. We might not be located in the same physical space as our friends and colleagues and they might not have the IDE installed. [JetBrains Code With](https://www.jetbrains.com/code-with-me/) me is the solution to both of these challenges. Individuals can use Code With Me in IntelliJ IDEA Community Edition for up to 30 minutes and 3 guests for free. You can learn more about the licensing for [organisations](https://www.jetbrains.com/code-with-me/buy/#commercial) and [individuals](https://www.jetbrains.com/code-with-me/buy/#personal) from JetBrains. 
+We often need to work collaboratively. We might not be located in the same physical space as our friends and colleagues and they might not have the IDE installed. [JetBrains Code With](https://www.jetbrains.com/code-with-me/) me is the solution to both of these challenges. Individuals can use Code With Me in IntelliJ IDEA Community Edition for up to 30 minutes and 3 guests for free. You can learn more about the licensing for [organisations](https://www.jetbrains.com/code-with-me/buy/#commercial) and [individuals](https://www.jetbrains.com/code-with-me/buy/#personal) from JetBrains. We will look at:
 
-This tutorial uses the new user interface throughout. You can access it from your Settings/Preferences (**⌘,** | **Ctrl+Alt+S**) and then search for "new UI". IntelliJ IDEA will then ask to restart and away you go! 
+- Collaborating with others in the same instance of the IDE
 
-## Code With Me
+## Collaborating with Others
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xaJ_nJJ-NX8" >
 </iframe>

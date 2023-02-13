@@ -10,9 +10,15 @@ thumbnail: ./thumbnail.png
 
 ---
 
-Changing code is more common than writing code and IntelliJ IDEA can support you here as well. The tips listed here are just a few of the most helpful ones to get you started and also to potentially come to your assistance if things don't go the way you think!
+Changing code is more common than writing code and IntelliJ IDEA can support you here as well. The tips listed here are just a few of the most helpful ones to get you started and also to potentially come to your assistance if things don't go the way you think! We will look at:
+- Refactoring Code
+- Reformatting Code
+- Working with Multiple Carets
+- Extending or Shrinking Selection
+- Using the Clipboard History
+- Using Local History
 
-## Refactoring
+- ## Refactoring Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wDkTiWhlGyE" >
 </iframe>
@@ -28,7 +34,7 @@ Some of the more common refactorings are:
 
 You should always use IntelliJ IDEA's refactoring capability when you're refactoring your code, but if you do forget and edit a variable name directly, for example, IntelliJ IDEA will prompt you with an `R` in the gutter. When you click this `R` icon IntelliJ IDEA will ask if you want to go ahead and let the IDE manage the refactor and show you associated problems as a result of your actions, so you can fix them before continuing.
 
-## Reformat File
+## Reformatting Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/24praE09oxE" >
 </iframe>
@@ -46,34 +52,34 @@ You can select a section of code and then use Context Actions (**⌥⏎** | **Al
 To automatically reformat code before you check it into version control:
 In your Commit tool window (**⌘1** | **Alt+1**) there's a small cog icon, when you click that there's an option called **Reformat code**. Select this to ask IntelliJ IDEA to reformat your code according to your code style settings before you commit it to source control.
 
-## Multiple Carets
+## Working with Multiple Carets
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z39jUnMZy44" >
 </iframe>
 
 Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use (**⌥** | **Ctrl**) twice, holding it down the second time to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
 
-## Extend and Shrink Selection
+## Extending or Shrinking Selection
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KFqqOP89XJA" >
 </iframe>
 
 IntelliJ IDEA allows you to select code by scope which is helpful when you have longer methods or code that hasn't been formatted properly. Use (**⌥↑** | **Ctrl+W**) to expand the scope and (**⌥↓** | **Ctrl+Shift+W**) to collapse the scope.
 
-## Clipboard History
+## Using the Clipboard History
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TY_CqQYx4g0" >
 </iframe>
 
 Clipboard history is like your normal clipboard but multiple of them! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing on your clipboard that you copied outside the IDE. You can search through your Clipboard history, paste a subset or paste multiple entries. 
 
-## Local History
+## Using Local History
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/l0SWLbYitHg" >
 </iframe>
 
-Local history is not a substitute for version control, but it can get you out of trouble when something unexpected happens. IntelliJ IDEA takes snapshots of your code when certain events happen such as tests pass (or fail), you make some changes, or you perform a refactor. You can view the local history of a directory from the Project tool window by right-clicking on the directory and selecting **Local History > Show History**. You can view the local history of a file by either right-clicking on it in the Project tool window or by right-clicking in the file itself and selecting **Local History > Show History**.
+Local History is not a substitute for version control, but it can get you out of trouble when something unexpected happens. IntelliJ IDEA takes snapshots of your code when certain events happen such as tests pass (or fail), you make some changes, or you perform a refactor. You can view the local history of a directory from the Project tool window by right-clicking on the directory and selecting **Local History > Show History**. You can view the local history of a file by either right-clicking on it in the Project tool window or by right-clicking in the file itself and selecting **Local History > Show History**.
 
-The Local history dialog shows you a diff view so you can choose to roll back the whole file to a specific snapshot or just take a subset of the changes.
+The Local History dialog shows you a diff view so you can choose to roll back the whole file to a specific snapshot or just take a subset of the changes.
 
 Just remember when something unexpected happens, check your Local history in IntelliJ IDEA before you rewrite all that code that you think you've lost!

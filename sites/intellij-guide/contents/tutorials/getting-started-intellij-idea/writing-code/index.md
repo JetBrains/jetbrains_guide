@@ -9,9 +9,13 @@ subtitle: IntelliJ IDEA can help you to write code quickly and efficiently while
 thumbnail: ./thumbnail.png
 ---
 
-Writing code is an integral part of our jobs and it's worth knowing what IntelliJ IDEA can do here to help you write great code but also give you 
+Writing code is an integral part of our jobs and it's worth knowing what IntelliJ IDEA can do here to help you write great code. We will look at:
+- Completing Code
+- Generating Code
+- Running Anything
+- Managing Dependencies
 
-## Completion
+## Completing Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K51K5Jc_MGc" >
 </iframe>
@@ -24,7 +28,7 @@ Statement completion (**⌘⇧⏎** | **Ctrl+Shift+Return**) is a great way to k
 
 Postfix completion allows you to keep typing forward. It's a more linguistically natural way of thinking and arguably more efficient to _type forward_ all the time.
 
-## Code Generation
+## Generating Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4jAXV67MRyA" >
 </iframe>
@@ -38,14 +42,14 @@ IntelliJ IDEA is excellent at generating code constructs for you. It's always wo
 
 ... and more. You can also use the same shortcut to generate new files in your Project tool window. 
 
-## Run Anything
+## Running Anything
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFV-iaJCI1c" >
 </iframe>
 
 Similarly to Search Everywhere, Run Anything (**⌃⌃** | **Ctrl+Ctrl**) allows you to run any of your Run Configurations as well as scripts and commands such as `mvn clean` or `gradle --status`. You can also use Run Anything to open your recent projects such as `open intellij-samples`.
 
-## Manage Dependencies Tool Window
+## Managing Dependencies
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4-TO8pNIuks" >
 </iframe>
