@@ -18,7 +18,7 @@ Changing code is more common than writing code and IntelliJ IDEA can support you
 - Using the Clipboard History
 - Using Local History
 
-- ## Refactoring Code
+## Refactoring Code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wDkTiWhlGyE" >
 </iframe>
@@ -57,7 +57,7 @@ In your Commit tool window (**⌘1** | **Alt+1**) there's a small cog icon, when
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z39jUnMZy44" >
 </iframe>
 
-Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use (**⌥** | **Ctrl**) twice, holding it down the second time to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
+Multiple carets are very useful for making the same change in multiple places and when you're working with list formats. You can use (**⌥** | **Ctrl**) twice, holding it down the second time and the pressing the Down key to create a stack of carets. [This blog post](https://foojay.io/today/working-with-multiple-carets-in-intellij-idea/) also covers how you can create carets at the end of your lines or in random places.
 
 ## Extending or Shrinking Selection
 
