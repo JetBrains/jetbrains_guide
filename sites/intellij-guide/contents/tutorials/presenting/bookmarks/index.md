@@ -20,7 +20,7 @@ To add a mnemonic line bookmark, press **⌥ F3** (on Mac) or **Control+F11** (o
 
 ![Mnemonic bookmark](mnemonic-bookmark.png)
 
-There are several ways to navigate between bookmarks. Press **⌘ F3** (on Mac) or **Control+F11** (on Windows/Linux) to open a popup showing bookmarks and select the desired bookmark with the keyboard and press **⏎**, or select the corresponding digit or letter for a mnemonic bookmark.
+There are several ways to navigate between bookmarks. Press **⌘ F3** (on Mac) or **Alt+F2** (on Windows/Linux) to open a popup showing bookmarks and select the desired bookmark with the keyboard and press **⏎**, or select the corresponding digit or letter for a mnemonic bookmark.
 
 ![Bookmarks](bookmarks.png)
 
