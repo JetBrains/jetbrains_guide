@@ -71,7 +71,7 @@ IntelliJ IDEA allows you to select code by scope which is helpful when you have 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TY_CqQYx4g0" >
 </iframe>
 
-Clipboard history is like your normal clipboard but multiple of them! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing on your clipboard that you copied outside the IDE. You can search through your Clipboard history, paste a subset or paste multiple entries. 
+Clipboard history (**⌘⇧V** | **Ctrl+Shift+V**) is like your normal clipboard but multiple of them! IntelliJ IDEA keeps track of everything you copy inside the IDE and the last thing on your clipboard that you copied outside the IDE. You can search through your Clipboard history, paste a subset or paste multiple entries. 
 
 ## Using Local History
 
