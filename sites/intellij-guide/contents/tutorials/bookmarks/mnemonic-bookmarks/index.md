@@ -5,7 +5,7 @@ title: Add mnemonic bookmarks
 technologies: []
 topics: []
 author: md
-subtitle: How to add mnemonic bookmarks
+subtitle: How to add bookmarks with an identifier
 thumbnail: ./thumbnail.png
 
 ---
