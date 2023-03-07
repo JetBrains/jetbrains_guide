@@ -10,6 +10,9 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2-eap-6/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.gif
+animatedGif:
+  file: ./tip.gif
+  width: 600
+  height: 300
 leadin: |
   WebStorm will warn you if a boolean expression has unnecessary parts that could be simplified. You can then just press _⌥Enter_ on macOS or _Alt+Enter_ on Windows/Linux, and WebStorm will simplify the expression for you.
