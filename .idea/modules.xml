@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jetbrains_guide.iml" filepath="$PROJECT_DIR$/.idea/jetbrains_guide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/guide-main.iml" filepath="$PROJECT_DIR$/.idea/guide-main.iml" />
     </modules>
   </component>
 </project>

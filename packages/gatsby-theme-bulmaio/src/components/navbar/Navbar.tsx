@@ -1,7 +1,7 @@
 import * as React from 'react';
-import NavbarBrand, { NavbarBrandProps } from './NavbarBrand';
 import NavbarStart, { NavbarStartProps } from './NavbarStart';
 import NavbarEnd, { NavbarEndProps } from './NavbarEnd';
+import NavbarBrand, { NavbarBrandProps } from "./NavbarBrand";
 
 export interface NavbarProps {
   brand: NavbarBrandProps;

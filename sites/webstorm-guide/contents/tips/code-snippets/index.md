@@ -1,7 +1,7 @@
 ---
-date: 2020-03-16
+date: 2023-01-27
 title: Using Code Snippets
-subtitle: Learn how to work with built-in code snippets in WebStorm.
+subtitle: How to use the built-in code snippets in WebStorm.
 technologies: []
 topics: [editing]
 author: er
@@ -17,7 +17,6 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Code snippets can save you a lot of time: type the abbreviation and then 
-  press *Tab* to expand it into the code. Or press *Cmd/Ctrl+J* and see 
-  what snippets are available in this context.
-  In *Preferences/Settings | Editor | Live Templates* you can find a full list of snippets.
+  Code snippets, or _Live Templates_ as they are called in JetBrains IDEs, can help you save and reuse code. To use them, type the _Live Template_ abbreviation and press _⇥ / Tab_ to expand it. You can also press _⌘J / Ctrl+J_ to check what code snippets are available in the current context.
+
+  To see the full list of available code snippets, go to _Preferences / Settings | Editor | Live Templates_.

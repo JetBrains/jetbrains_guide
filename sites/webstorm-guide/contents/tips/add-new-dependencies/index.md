@@ -1,5 +1,5 @@
 ---
-date: 2020-05-26
+date: 2023-01-27
 title: Add New Dependencies
 technologies: [javascript]
 topics: [editing]
@@ -12,5 +12,5 @@ thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 screenshot: ./tip.png
 leadin: |
-  To quickly add a new dependency to your project, add an import statement first, then hit *Alt+Enter*, and click *Install and add to dependencies/devDependencies in package.json*.
+  To quickly add a new dependency to your project, add an import statement first, then press _⌥Enter / Alt+Enter_, and click _Install and add to dependencies/devDependencies in package.json_.
 

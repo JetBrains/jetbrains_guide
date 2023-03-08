@@ -1,5 +1,5 @@
 ---
-date: 2020-03-16
+date: 2023-01-27
 title: Add console.log Faster
 subtitle: Use Postfix Completion to quickly add console.log.
 technologies: [javascript, typescript]
@@ -16,5 +16,5 @@ animatedGif:
   height: 300
 leadin: |
   Need to add `console.log()`?
-  Type `log` and press *Tab*.
-  Or first add the value, then type `.log` and press *Tab*.
+  Type `log` and press _⇥ / Tab_.
+  Or first add the value, then type `.log` and press _⇥ / Tab_.

@@ -1,7 +1,7 @@
 ---
-date: 2020-08-13
+date: 2023-01-27
 title: Add and Remove Breakpoints Quickly
-subtitle: Find out how to toggle breakpoints without using the mouse.
+subtitle: How to toggle breakpoints without using the mouse.
 technologies: [javascript]
 topics: [running-debugging]
 author: er
@@ -18,6 +18,6 @@ animatedGif:
   height: 300
 leadin: |
   Want to add or remove a breakpoint to the current line without using a mouse?
-  Just press Cmd+F8 on macOS or Ctrl+F8 on Windows/Linux.
+  Just press _⌘F8_ on macOS or _Ctrl+F8_ on Windows/Linux.
   
   

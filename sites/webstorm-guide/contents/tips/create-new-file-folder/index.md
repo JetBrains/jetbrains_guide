@@ -1,7 +1,7 @@
 ---
 date: 2020-06-19
 title: Create New Files and Folders
-subtitle: Use the New popup to add files and folders faster.
+subtitle: Use the _New_ popup to add files and folders faster.
 technologies: []
 topics: [editing]
 author: er
@@ -17,4 +17,4 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Focus on the [*Project* tool window](https://www.jetbrains.com/help/webstorm/project-tool-window.html) and press *Cmd+N/Alt+Insert* - WebStorm will open the *New* popup. Use this popup to add a new file quickly. You can also create a new folder for that new file: type the name of the folder (or folders) and then add / before the file name.
+  Focus on the [_Project_ tool window](https://www.jetbrains.com/help/webstorm/project-tool-window.html) and press _⌘+N / Alt+Insert_ - WebStorm will open the _New_ popup. Use this popup to add a new file quickly. You can also create a new folder for that new file: type the name of the folder (or folders) and then add `/` before the file name.

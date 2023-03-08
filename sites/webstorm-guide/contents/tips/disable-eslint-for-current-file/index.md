@@ -1,5 +1,5 @@
 ---
-date: 2020-05-26
+date: 2023-01-27
 title: Disable ESLint Rules for Current Line
 technologies: []
 topics: [editing]
@@ -15,4 +15,4 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  If you want to temporarily disable an ESLint rule, WebStorm can help you with that. Hover over the warning and select *Suppress for current line*. 
+  If you want to temporarily disable an ESLint rule, WebStorm can help you with that. Hover over the warning and select _Suppress for current line_. 

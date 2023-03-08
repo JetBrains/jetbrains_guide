@@ -1,7 +1,7 @@
 ---
-date: 2020-06-19
+date: 2023-01-27
 title: Simplify Boolean Expression
-subtitle: Learn how to simplify an overly complex boolean expression with a quick fix.
+subtitle: How to simplify a complex boolean expression in WebStorm.
 technologies: [javascript]
 topics: [editing]
 author: er
@@ -10,6 +10,9 @@ seealso:
   href: https://blog.jetbrains.com/webstorm/2019/07/webstorm-2019-2-eap-6/
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
-screenshot: ./tip.jpeg
+animatedGif:
+  file: ./tip.gif
+  width: 600
+  height: 300
 leadin: |
-  The IDE will warn you if the boolean expression has some unnecessary parts and could be simplified – press *Alt+Enter* to do that.
+  WebStorm will warn you if a boolean expression has unnecessary parts that could be simplified. You can then just press _⌥Enter_ on macOS or _Alt+Enter_ on Windows/Linux, and WebStorm will simplify the expression for you.

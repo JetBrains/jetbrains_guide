@@ -1,10 +1,10 @@
 ---
-date: 2020-05-26
+date: 2023-01-27
 title: Open New Projects Quickly
 technologies: []
 topics: [editing]
 author: er
-subtitle: Use drag and drop to open a new project.
+subtitle: How to use drag and drop to open a new project in WebStorm.
 seealso:
 - title: Getting started with WebStorm
   href: https://www.jetbrains.com/help/webstorm/getting-started-with-webstorm.html
@@ -17,4 +17,4 @@ animatedGif:
   width: 600
   height: 300
 leadin: |
-  Did you know that you can drag a folder to the welcome screen from the file manager or desktop and drop it there to open a new project in WebStorm?
+  Did you know that you can drag and drop a folder from your file manager or desktop onto the WebStorm _Welcome_ screen to open it?

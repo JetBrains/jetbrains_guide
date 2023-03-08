@@ -1,5 +1,5 @@
 ---
-date: 2020-05-15
+date: 2023-01-27
 title: Convert to async Function
 technologies: [javascript]
 topics: [editing]
@@ -15,4 +15,4 @@ animatedGif:
   width: 600
   height: 240
 leadin: |
-  Need to convert a function that returns a Promise to an async function that uses the async/await syntax? Place the caret on that function, press *Alt+Enter* and select *Convert to async function*.
+  Need to convert a function that returns a Promise to an async function that uses the async/await syntax? Place the caret on that function, press _⌥Enter / Alt+Enter_ and select _Convert to async function_.
