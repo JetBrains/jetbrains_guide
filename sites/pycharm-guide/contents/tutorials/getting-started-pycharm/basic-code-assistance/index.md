@@ -56,36 +56,17 @@ First off, let’s talk about context-aware code completion, where the IDE uses 
 
 PyCharm also offers you basic and type-based smart completion. For example, if we start typing something here, PyCharm prompts with options to complete my code, so we won’t need to type the full line. For example, if you have this code in the above class and type in `C`, PyCharm will offer you `Car`.
 
-```Python
-if __name__ == '__main__':
-  bmw = C
-```
-
 ![basic-completion.png](basic-completion.png)
 
 If it’s the correct completion, as it is in this case, we can just press *Enter*, and PyCharm will complete the line for you. If the correct completion is in the list, but not selected, we can use the arrows in your keyboard to go up and down to select it and then press `Enter`. And finally, if the correct completion is not in the list yes, we can keep typing until PyCharm figures it out for you.
 
-Code completion is not only available for classes, but also for methods. We created a variable called `bmw` that instantiates from the `Car` class. If we want to use one of its methods, we can write `bmw` plus `dot`...
-
-```Python
-if __name__ == '__main__':
-  bmw = Car
-  bmw.
-```
-...and PyCharm will offer [basic completion](https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion) for the available methods.
+Code completion is not only available for classes, but also for methods. We created a variable called `bmw` that instantiates from the `Car` class. If we want to use one of its methods, we can write `bmw` plus `dot` and PyCharm will offer [basic completion](https://www.jetbrains.com/help/pycharm/auto-completing-code.html#basic_completion) for the available methods.
 
 ![basic-completion.png](basic-completion.png)
 
 Here's a cool tip - while `Enter` adds the suggested completion, you can also press `tab` to switch an existing one for the new one, saving you time.
 
-Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file...
-
-
-```Python
-i
-```
-
-... PyCharm will immediately offer `import` as a possible completion.
+Code completion is also available for keywords. Let’s say you want to import a package. If you start typing `i` at the top of your file, PyCharm will immediately offer `import` as a possible completion.
 
 ![import-basic-completion.png](import-basic-completion.png)
 
@@ -124,7 +105,7 @@ I can also undo this to go back to the way the code was if I want to.
 
 We've looked at warnings, but sometimes there are errors and PyCharm can also find any problems within your code. In this case, whenever it happens, the light bulb color will be red. This is a signal that a quick-fix is available and to check possible solutions you can use the same commands as before.
 
-We can see one example of a quick fix if we try to use a package without installing it first. Let’s change our car from bmw to tesla and add `web_page` as a property of the class Car. Now, let’s create a quick method to fetch the Tesla website, assuming that the car needs this information to work.
+We can see one example of a quick fix if we try to use a package without installing it first. Let’s change our car from bmw to tesla and add `web_page` as a property of the `class Car`. Now, let’s create a quick method to fetch the Tesla website, assuming that the car needs this information to work.
 
 I’ve written the method mentioning the package `requests` but I haven’t installed it yet. Let’s see what PyCharm offers us, using (*Alt+Enter* | *⌥⏎*) this time.
 

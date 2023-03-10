@@ -60,7 +60,7 @@ Back on the New Project screen, click “Previously configured interpreter”. T
 
 If you already have interpreters previously configured you can just pick the one you would like to use from this dropdown.
 
-If you see a <no interpreter> message here you can click the three dots.
+If you see a no interpreter message here you can click the three dots.
 
 Then, select it from the different options, including virtualenv environments, conda environments, pipenv interpreters, or even your system interpreter.
 
@@ -86,7 +86,7 @@ One last case to cover: changing the interpreter of an existing project.
 ## Open project
 We have a cloned project open and PyCharm has a “project interpreter” for it. But what if you want to change the interpreter used by a project? Let’s take a look.
 
-Now, as you can see in the bottom right of my screen, this project is using < say the interpreter name >. We have two ways we can change this for an opened project.
+Now, as you can see in the bottom right of my screen, this project is using say the interpreter name. We have two ways we can change this for an opened project.
 
 You can click the interpreter name in the status bar.
 

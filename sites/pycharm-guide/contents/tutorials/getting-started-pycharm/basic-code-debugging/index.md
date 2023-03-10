@@ -31,7 +31,7 @@ One way is by clicking the little ‘bug’ button on the top of PyCharm. This r
 
 This project was made from the Flask project template so it had a Flask run configuration made from the start.
 
-Another way, easier for beginners, is just right-click inside the editor and select ‘Debug <name>’ and PyCharm will create a temporary run configuration and run it for you.
+Another way, easier for beginners, is just right-click inside the editor and select ‘Debug name’ and PyCharm will create a temporary run configuration and run it for you.
 
 If you don’t know what is a Run Configuration, jump to the video showing in the link where I explain run configurations in more detail.
 

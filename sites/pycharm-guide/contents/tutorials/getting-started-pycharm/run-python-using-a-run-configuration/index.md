@@ -27,7 +27,7 @@ It basically means that PyCharm doesn’t know how to run this script yet.
 
 The easiest way to do it is by letting PyCharm automatically create a run configuration for you. To do it you have two options:
 
-First, you can right-click anywhere inside the editor and press ‘Run <script name>’.
+First, you can right-click anywhere inside the editor and press ‘Run script name’.
 
 As you can see here, PyCharm created a run configuration for us, ran our script, and displayed the output inside a ‘Run’ tool window.
 
@@ -82,7 +82,7 @@ Let’s see how to do it.
 
 The first and easiest way to do it is by transforming a temporary run configuration into a permanent one.
 
-To do it you can simply click the dropdown menu and select ‘Save <project name> Configuration’
+To do it you can simply click the dropdown menu and select ‘Save project name Configuration’
 You can also use pre configured templates to create your run configurations.
 
 To do it, just open the ‘Edit configurations’ dialog.

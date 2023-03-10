@@ -29,7 +29,7 @@ I have here an empty Django project that I just created from the welcome screen.
 
 Here I have a sample project with a couple of modules that import each other.
 
-Let’s start by changing its signature of <method name>. We will add a new parameter here.
+Let’s start by changing its signature of method name. We will add a new parameter here.
 
 The easiest approach is to do it inline.
 
