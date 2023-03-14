@@ -19,8 +19,8 @@ Here are the IntelliJ IDEA shortcuts that we used.
 |--------------------------------------------------------------------------------------------------|------------------|--------------------------|
 | Recent files                                                                                     | **⌘ E**          | **Ctrl+E**               |
 | Open / Close [Project Tool Window](https://www.jetbrains.com/help/idea/project-tool-window.html) | **⌘ 1**          | **Alt+1**                |
-| Add anonymous bookmark                                                                           | **⌥ F3**         | **Ctrl+F11**             |
-| Add mnemonic bookmark                                                                            | **F3**           | **F11**                  |
+| Add anonymous bookmark                                                                           | **F3**           | **F11**                  |
+| Add mnemonic bookmark                                                                            | **⌥ F3**         | **Ctrl+F11**             |
 | Open bookmarks popup                                                                             | **⌘ F3**         | **Shift+F11**            |
 | Jump to mnemonic bookmark                                                                        | **^ + mnemonic** | **Ctrl+mnemonic**        |
 | Open Bookmarks Tool Window                                                                       | **⌘ 2**          | **Alt+2**                |
