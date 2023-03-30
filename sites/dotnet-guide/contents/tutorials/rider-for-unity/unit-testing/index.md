@@ -3,7 +3,7 @@ type: TutorialStep
 date: 2023-04-04
 title: Unit testing
 technologies: [.net,unity]
-topics: [gaming,ide,editing,testing]
+topics: [gaming,testing]
 products: [rider]
 author: citizenmatt
 subtitle: What is RiderFlow? And where to find it?
