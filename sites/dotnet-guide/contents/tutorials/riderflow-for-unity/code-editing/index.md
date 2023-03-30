@@ -4,7 +4,7 @@ date: 2023-04-02
 title: Code Editing
 technologies: [.net,unity]
 topics: [gaming,ide,editing]
-products: [rider]
+products: [riderflow]
 author: citizenmatt
 subtitle: Dive deeper into code with the smart editor in Unity!
 thumbnail: ./thumbnail.png

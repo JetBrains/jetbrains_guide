@@ -3,8 +3,8 @@ type: TutorialStep
 date: 2023-04-02
 title: Search Everywhere
 technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics: [gaming,navigation]
+products: [riderflow]
 author: citizenmatt
 subtitle: Quickly search throughout your project. For anything!
 thumbnail: ./thumbnail.png

@@ -1,5 +1,5 @@
 ---
-date: 2023-03-22
+date: 2023-04-08
 title: Remote development with JetBrains Rider
 technologies: [.net]
 topics: [ide]

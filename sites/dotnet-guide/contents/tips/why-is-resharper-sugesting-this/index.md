@@ -1,5 +1,5 @@
 ---
-date: 2023-03-20
+date: 2023-04-09
 title: Why is ReSharper/Rider suggesting this?
 technologies: [.net,csharp,fsharp,unity,unreal]
 topics: [inspections,ide]

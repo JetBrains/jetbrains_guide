@@ -4,7 +4,7 @@ date: 2023-04-02
 title: Introducing RiderFlow
 technologies: [.net,unity]
 topics: [gaming,ide,editing]
-products: [rider]
+products: [riderflow]
 author: citizenmatt
 subtitle: What is RiderFlow? And where to find it?
 thumbnail: ./thumbnail.png

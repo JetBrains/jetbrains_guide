@@ -1,5 +1,5 @@
 ---
-date: 2023-03-29
+date: 2023-04-10
 title: Connect to a Running Docker Container Shell
 technologies: [containers,.net]
 topics: [ide]

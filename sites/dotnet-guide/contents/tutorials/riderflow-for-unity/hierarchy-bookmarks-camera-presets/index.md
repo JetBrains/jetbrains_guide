@@ -3,8 +3,8 @@ type: TutorialStep
 date: 2023-04-02
 title: Hierarchy, bookmarks and camera presets
 technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics: [gaming,navigation,editing]
+products: [riderflow]
 author: citizenmatt
 subtitle: Find your way through complex scenes.
 thumbnail: ./thumbnail.png

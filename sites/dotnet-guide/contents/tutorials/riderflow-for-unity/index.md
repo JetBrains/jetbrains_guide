@@ -3,7 +3,7 @@ date: 2023-04-02
 title: Design and Manage Scenes With RiderFlow
 technologies: [.net,unity]
 topics: [gaming,ide,editing]
-products: [rider]
+products: [riderflow]
 author: maartenba
 subtitle: We'll walk you through the best tips for RiderFlow to help speed up your Unity development!
 thumbnail: ./thumbnail.png

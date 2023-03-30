@@ -3,8 +3,8 @@ type: TutorialStep
 date: 2023-04-02
 title: Find and Show Asset Usages
 technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics: [gaming,navigation]
+products: [riderflow]
 author: citizenmatt
 subtitle: Visually understand the scene structure and where an asset is used.
 thumbnail: ./thumbnail.png

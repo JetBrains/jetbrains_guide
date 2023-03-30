@@ -3,8 +3,8 @@ type: TutorialStep
 date: 2023-04-02
 title: Replace Assets
 technologies: [.net,unity]
-topics: [gaming,ide,editing]
-products: [rider]
+topics: [gaming,refactoring,editing]
+products: [riderflow]
 author: citizenmatt
 subtitle: Replace assets on your scene. It's like refactoring, but visually!
 thumbnail: ./thumbnail.png
