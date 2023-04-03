@@ -72,8 +72,15 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   topics,
   date,
 }) => {
+  const referenceDate = new Date();
+  referenceDate.setDate(referenceDate.getDate() - 30);
+
+  const resourceDate = new Date(date.date);
+
+  const shouldHighlight = resourceDate > referenceDate;
+
   return (
-    <div className="bio-resourcecard box">
+    <div className={"bio-resourcecard box " + (shouldHighlight ? "has-background-info-light": "")}>
       <article className="media">
         <div className="media-left">
           {logo && <ResourceCardLogo {...logo} />}
@@ -81,6 +88,8 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
         </div>
         <div className="media-content is-clipped">
           <div className="content">
+            {shouldHighlight && <span className="tag is-warning is-pulled-right">New</span>}
+
             <ResourceCardMedia
               {...media}
               resourceType={resourceTypeSuffixForDisplay(resourceType)}
