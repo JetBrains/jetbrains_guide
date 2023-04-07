@@ -1,6 +1,6 @@
 [![obsolete project](https://jb.gg/badges/obsolete-flat-square.svg)](https://github.com/JetBrains)
 
-**Obsolete – The JetBrains Guide has a new home: [jetbrains/newrepo](https://www.github.com/JetBrains/newrepo/)**
+**Obsolete – The JetBrains Guide has a new home: [jetbrains/guide](https://www.github.com/JetBrains/guide/)**
 
 # JetBrains Guide
 
